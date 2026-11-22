@@ -1,0 +1,411 @@
+[
+  {
+    "id": "auto-made-r01-s02-q02",
+    "source_question_id": "auto-r01-s02-q02",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "연료레일 압력 및 시동정지 진단은 엔진 연료계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r01-s02-q04",
+    "source_question_id": "auto-r01-s02-q04",
+    "current_subject": "chassis",
+    "suggested_subject": "electrical",
+    "reason": "차량 네트워크 통신/전원접지 진단은 전기전자",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q14",
+    "source_question_id": "auto-r01-s03-q14",
+    "current_subject": "electrical",
+    "suggested_subject": "engine",
+    "reason": "연료분사 인젝터·분사 보정은 엔진 계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q18",
+    "source_question_id": "auto-r01-s04-q18",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "AEB 센서·자동제동/ADAS은 전기전자 장치",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q19",
+    "source_question_id": "auto-r01-s04-q19",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "차체 제어 모듈 BCM 기능은 전기전자",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q02",
+    "source_question_id": "auto-r02-s02-q02",
+    "current_subject": "chassis",
+    "suggested_subject": "electrical",
+    "reason": "실내 송풍기 소음의 구동계 구별/공조 전장",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q04",
+    "source_question_id": "auto-r02-s02-q04",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "OBD P0300은 엔진 실화 진단코드",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r03-s02-q02",
+    "source_question_id": "auto-r03-s02-q02",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "엔진 냉각수 소모·냉각계 진단은 엔진 계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r03-s03-q14",
+    "source_question_id": "auto-r03-s03-q14",
+    "current_subject": "electrical",
+    "suggested_subject": "engine",
+    "reason": "사용 엔진오일 마모분석은 엔진 윤활계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r03-s04-q18",
+    "source_question_id": "auto-r03-s04-q18",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "카메라 기반 LKA는 ADAS 전기전자",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q16",
+    "source_question_id": "auto-r04-s02-q16",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보차저 컴프레서 파손 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q17",
+    "source_question_id": "auto-r04-s02-q17",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "부스트 압력 부족 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q18",
+    "source_question_id": "auto-r04-s02-q18",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 흡입측 누유 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q19",
+    "source_question_id": "auto-r04-s02-q19",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 출력저하·소음 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q20",
+    "source_question_id": "auto-r04-s02-q20",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "엔진 진단스캐너 데이터",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q05",
+    "source_question_id": "auto-r04-s04-q05",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "EPB 브레이크 캘리퍼 패드 정비는 섀시 제동계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q12",
+    "source_question_id": "auto-r04-s04-q12",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "토크컨버터 스톨 상태 정의는 변속계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q13",
+    "source_question_id": "auto-r04-s04-q13",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "ATF 레벨 점검은 변속계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q14",
+    "source_question_id": "auto-r04-s04-q14",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "SRS 에어백 작동·교체 기준은 안전 전장",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q15",
+    "source_question_id": "auto-r04-s04-q15",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "SRS 점화회로 DTC와 안전 진단은 전기전자",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s02-q16",
+    "source_question_id": "auto-r05-s02-q16",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 웨이스트게이트/과급은 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r05-s02-q17",
+    "source_question_id": "auto-r05-s02-q17",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 액추에이터 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s02-q18",
+    "source_question_id": "auto-r05-s02-q18",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보차저 교환 후 초기 윤활",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s02-q19",
+    "source_question_id": "auto-r05-s02-q19",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "엔진 진단스캐너 취급",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s02-q20",
+    "source_question_id": "auto-r05-s02-q20",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "TPS와 스로틀 제어는 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r05-s03-q13",
+    "source_question_id": "auto-r05-s03-q13",
+    "current_subject": "electrical",
+    "suggested_subject": "engine",
+    "reason": "디젤 매연·흡기량 제어는 엔진 계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s04-q05",
+    "source_question_id": "auto-r05-s04-q05",
+    "current_subject": "eco",
+    "suggested_subject": "engine",
+    "reason": "타이밍벨트 교환·엔진 위상",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s04-q12",
+    "source_question_id": "auto-r05-s04-q12",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "일반 유성기어 운동학/변속기는 섀시·동력전달 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r05-s04-q13",
+    "source_question_id": "auto-r05-s04-q13",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "CVT 벨트 교환은 동력전달",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s04-q14",
+    "source_question_id": "auto-r05-s04-q14",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "TPMS는 타이어/주행안전 관리 계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r05-s04-q15",
+    "source_question_id": "auto-r05-s04-q15",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "EPS 조향각 센서 정렬은 조향계통",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q16",
+    "source_question_id": "auto-r06-s02-q16",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 윤활 배출은 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s02-q17",
+    "source_question_id": "auto-r06-s02-q17",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "터보 부품 재조립은 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s02-q18",
+    "source_question_id": "auto-r06-s02-q18",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "과급 부족 진단은 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s02-q19",
+    "source_question_id": "auto-r06-s02-q19",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "연료 분사 ECU는 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s02-q20",
+    "source_question_id": "auto-r06-s02-q20",
+    "current_subject": "chassis",
+    "suggested_subject": "engine",
+    "reason": "산소센서 공연비 신호는 엔진 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s03-q13",
+    "source_question_id": "auto-r06-s03-q13",
+    "current_subject": "electrical",
+    "suggested_subject": "engine",
+    "reason": "가솔린 엔진 공회전 높음 진단",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q05",
+    "source_question_id": "auto-r06-s04-q05",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "클러치 디스크는 섀시·동력전달 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s04-q12",
+    "source_question_id": "auto-r06-s04-q12",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "변속 충격/ATF/TCM은 동력전달 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s04-q13",
+    "source_question_id": "auto-r06-s04-q13",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "디퍼렌셜 내부 정비는 동력전달 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s04-q14",
+    "source_question_id": "auto-r06-s04-q14",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "스마트키/차량 RF는 전기전자 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s04-q15",
+    "source_question_id": "auto-r06-s04-q15",
+    "current_subject": "eco",
+    "suggested_subject": "electrical",
+    "reason": "후방카메라/영상 신호는 전기전자 계통",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r06-s04-q20",
+    "source_question_id": "auto-r06-s04-q20",
+    "current_subject": "eco",
+    "suggested_subject": "out_of_scope",
+    "reason": "가정용 태양광 인버터는 자동차정비산업기사 친환경 차량 맥락에서 이탈",
+    "review_status": "quarantined_not_publishable"
+  },
+  {
+    "id": "auto-made-r08-s04-q20",
+    "source_question_id": "auto-r08-s04-q20",
+    "current_subject": "eco",
+    "suggested_subject": "chassis",
+    "reason": "전자식 주차브레이크 EPB는 섀시 제동",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q06",
+    "source_question_id": "auto-r09-s03-q06",
+    "current_subject": "electrical",
+    "suggested_subject": "chassis",
+    "reason": "TCS는 구동력 제어·차체자세 제어(섀시) 영역",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q19",
+    "source_question_id": "auto-r09-s03-q19",
+    "current_subject": "electrical",
+    "suggested_subject": "chassis",
+    "reason": "EPB 주차 브레이크 기능은 섀시/제동",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  },
+  {
+    "id": "auto-made-r09-s04-q20",
+    "source_question_id": "auto-r09-s04-q20",
+    "current_subject": "eco",
+    "suggested_subject": "engine",
+    "reason": "디젤 SCR 요소수 후처리",
+    "review_status": "quarantined_not_publishable",
+    "origin": "additional_cross_subject_manual_stem_review"
+  }
+]
