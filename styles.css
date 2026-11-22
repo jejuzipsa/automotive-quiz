@@ -2259,3 +2259,23 @@ body.reading-large .choice{font-size:19px}
 .feature-card strong{font-size:15px}
 @media(max-width:1020px){.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:640px){.feature-grid{grid-template-columns:1fr}}
+
+/* QA8 browser-local text question bank; respects public GitHub Pages safety boundary. */
+.qa8-import-panel{display:flex;flex-direction:column;gap:12px;padding:18px 20px;
+  margin:16px 0 18px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}
+.qa8-import-info{display:flex;flex-direction:column;gap:5px;line-height:1.5}
+.qa8-import-info strong{font-size:16px;color:var(--text)}
+.qa8-import-info span{font-size:13px;color:var(--muted)}
+.qa8-import-actions{display:flex;gap:9px;align-items:center;flex-wrap:wrap}
+.qa8-file-label{display:inline-flex;align-items:center;justify-content:center;min-height:42px;
+  cursor:pointer;text-align:center}
+.qa8-file-input{position:absolute!important;width:1px!important;height:1px!important;
+  overflow:hidden!important;clip-path:inset(50%)!important;white-space:nowrap!important}
+.qa8-file-input:focus-visible + button{outline:2px solid var(--primary)}
+.qa8-technical-warning{font-size:12px!important;color:var(--muted);margin:0!important;line-height:1.6}
+.qa8-audit-info{padding:10px 13px;margin:0 0 16px;font-size:13px;
+  background:var(--surface-2);border:1px solid var(--line);color:var(--muted);
+  border-radius:10px;line-height:1.55}
+.qa8-audit-info:not(.hidden){display:block}
+@media(max-width:580px){.qa8-import-panel{padding:14px 15px}
+ .qa8-import-actions>*{flex:1}.qa8-import-actions{align-items:stretch}}
