@@ -1,19 +1,14 @@
-name: Validate automotive quiz, QA7 and QA8 text bank
+name: Validate automotive quiz JSON bank
 
 on:
   push:
     branches: [main]
     paths:
-      - "private.html"
-      - "private-bank.js"
-      - "private-bank.css"
-      - "vendor/**"
-      - "tests/**"
       - "index.html"
       - "app.js"
-      - "data/questions.js"
       - "quiz-utils.js"
-      - "personal-text-bank.js"
+      - "data/**"
+      - "tests/**"
       - ".github/workflows/check-qa7.yml"
   workflow_dispatch:
 
@@ -24,14 +19,11 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-      - name: Setup Node.js 22
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Verify site and local QA7 bank import
+      - name: Validate bundled JSON banks and quiz behavior
         run: |
           node tests/validate.cjs
-          node tests/private-bank.test.cjs
-          node tests/qa8-text-bank.test.cjs
+          node tests/json-bank.test.cjs
