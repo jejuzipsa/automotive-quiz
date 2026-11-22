@@ -140,18 +140,19 @@
     "source_question_id": "auto-r09-s03-q07",
     "round": 9,
     "question_number": 7,
-    "question": "차량 냉방 응축기에서 고온 고압 기체 냉매가 열을 방출한다. 출구의 대표적인 상태는?",
+    "question": "자동차 에어컨이 정상 작동 중이고 냉매가 응축기에서 충분히 응축된 상황이다. 응축기 출구의 대표적인 냉매 상태는?",
     "choices": [
-      "반드시 저압 액체 냉매로 직접 감압",
-      "엔진 오일과 화학 결합한 고체",
-      "고압 액체 냉매 또는 액체가 많은 상태",
-      "증발기에서만 생기는 순수 저압 기체"
+      "팽창밸브를 지난 뒤와 같은 저압의 액·증기 혼합상태",
+      "압축기로 들어가기 직전의 저압 과열증기 상태",
+      "고압의 액상 냉매(또는 과냉각 액체)",
+      "증발기를 통과한 뒤의 저압 기체 냉매"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r09-s03-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r09-s03-q08",

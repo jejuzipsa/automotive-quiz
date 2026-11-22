@@ -74,18 +74,19 @@
     "source_question_id": "auto-r01-s04-q04",
     "round": 1,
     "question_number": 4,
-    "question": "고전압 배터리의 충전·방전 능력이 저하됐는지 평가할 때 직접 관련된 진단 정보는?",
+    "question": "고전압 배터리의 노화로 저장 가능한 에너지가 줄었는지 비교하려 한다. 단순히 현재 충전량(SOC)이 아닌 열화 판단에 직접 적합한 항목은?",
     "choices": [
-      "배터리 SOH와 셀 전압·온도 데이터",
-      "머플러 소음",
-      "와이퍼 길이",
-      "차량 번호판 조명"
+      "규정 조건에서 평가한 사용가능 용량 및 SOH 지표",
+      "현재 주차 중 표시된 충전상태 SOC 한 번의 값",
+      "12V 보조배터리의 단자전압만",
+      "현재 팩의 단자전압 한 순간의 측정값만"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s04-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q05",
@@ -140,18 +141,19 @@
     "source_question_id": "auto-r01-s04-q07",
     "round": 1,
     "question_number": 7,
-    "question": "순수 전기차의 구동모터에서 발생한 회전력을 바퀴에 전달하는 기계 장치로 알맞은 것은?",
+    "question": "배터리 전기차에서 구동모터의 회전력을 바퀴까지 전달하는 주요 기계적 동력 전달 구성은?",
     "choices": [
-      "연료 분사 펌프",
-      "배기가스 재순환 밸브",
-      "점화코일",
-      "감속기 및 차동기어"
+      "온보드 충전기와 DC/DC 컨버터",
+      "인버터와 고전압 배터리 관리 ECU",
+      "배터리 냉각펌프와 차체제어 모듈",
+      "감속기·차동기어·구동축"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r01-s04-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q08",
@@ -252,16 +254,17 @@
     "question_number": 12,
     "question": "배터리 구동계의 성능 저하가 의심된다. 동일한 시험 조건에서 확인할 수 있는 변화로 알맞은 것은?",
     "choices": [
-      "사용 가능한 배터리 에너지 감소와 주행거리 단축",
-      "기름통이 새로 만들어짐",
-      "모터 효율이 반드시 100% 달성",
-      "타이어 공기압이 자동으로 0이 됨"
+      "동일 조건에서 사용 가능한 배터리 에너지와 주행 가능 거리 감소",
+      "동일 조건에서 배터리의 SOC 표시가 100%에 도달하면 반드시 신품 용량 복구",
+      "배터리 노화가 진행될수록 모든 셀의 내부저항은 항상 0으로 수렴",
+      "노화가 진행된 차량도 동일 조건에서 배터리 가용 에너지는 무조건 증가"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s04-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q13",
@@ -363,15 +366,16 @@
     "question": "모터의 회전력이 타이어까지 전달되는 전기차 구동계의 올바른 연결은?",
     "choices": [
       "구동모터 → 감속기/차동장치 → 드라이브샤프트 → 바퀴",
-      "연료 분사기 → 머플러 → 타이어",
-      "산소 센서 → 워셔펌프 → 바퀴",
-      "고전압 배터리 → 퓨즈 → 머플러"
+      "온보드 충전기 → DC/DC 컨버터 → 디퍼렌셜 → 바퀴",
+      "BMS → 구동모터 → 브레이크 유압모듈 → 바퀴",
+      "인버터 → 고전압 배터리 → 기계식 차동기어 → 바퀴"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s04-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q18",
@@ -382,18 +386,19 @@
     "source_question_id": "auto-r01-s04-q18",
     "round": 1,
     "question_number": 18,
-    "question": "전방 차량과의 충돌 위험을 감지해 운전자가 제동하지 않을 때 자동 제동을 수행하는 장치는?",
+    "question": "전방 충돌이 임박했는데 운전자가 충분히 제동하지 않을 때, 충돌 피해를 줄이도록 긴급 자동 제동을 수행하는 기능은?",
     "choices": [
-      "타이어 공기압 감시 TPMS",
-      "온도 조절식 히터",
-      "자동 긴급 제동 AEB",
-      "연료 증발가스 제어 EVAP"
+      "어댑티브 크루즈컨트롤(ACC)의 주행 간격 제어만",
+      "차로유지보조(LKA)의 조향 보조",
+      "자동긴급제동(AEB)",
+      "사각지대 경고(BSW)의 후측방 경보"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r01-s04-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q19",

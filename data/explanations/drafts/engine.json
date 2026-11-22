@@ -18,14 +18,17 @@
     "question_id": "auto-made-r01-s01-q02",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "배기가 터빈을 돌리고 연결 축의 압축기가 흡입 공기를 압축한다",
+    "correct_choice": "배기가 터빈을 돌리고 같은 축의 압축기가 흡입 공기를 압축한다",
     "reason": "터보차저는 배기 흐름이 터빈을 회전시키면 같은 축의 컴프레서가 흡입 공기를 압축한다. 과급압과 엔진 출력은 다양한 제어 요소의 영향을 받지만 촉매가 공기를 압축하지는 않는다.",
     "key_point": "배기 터빈과 흡기 컴프레서는 축으로 연결된다.",
     "source_question_id": "auto-r01-s01-q02",
     "original_issue_flags": [],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.garrettmotion.com/turbo-replacement/turbo-diagnosis/knowledge-base/"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q03",
@@ -76,7 +79,7 @@
     "question_id": "auto-made-r01-s01-q06",
     "subject": "engine",
     "correct_answer": 3,
-    "correct_choice": "촉매 전단 배기관",
+    "correct_choice": "삼원촉매 앞쪽의 배기관",
     "reason": "산소 센서 또는 람다 센서는 배기가스의 잔류 산소 정보를 제공한다. 촉매 전단 센서는 연료 혼합비 제어에 사용되며 차량에 따라 촉매 후단 센서가 추가될 수 있다.",
     "key_point": "람다 센서는 배기관에서 배기가스 산소 상태를 감지한다.",
     "source_question_id": "auto-r01-s01-q06",
@@ -85,7 +88,8 @@
       "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/switching-type-lambda-sensor/"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q07",
@@ -106,30 +110,33 @@
     "question_id": "auto-made-r01-s01-q08",
     "subject": "engine",
     "correct_answer": 1,
-    "correct_choice": "흡입 공기 질량 유량",
+    "correct_choice": "MAF 센서가 측정한 흡입 공기 질량 유량",
     "reason": "MAF 방식에서는 측정된 흡입 공기 질량이 기본 분사량 계산의 주요 입력이다. ECU는 회전속도·온도·산소 센서 등으로 값을 보정한다.",
     "key_point": "연료량은 공기량과 운전 상태를 함께 고려한다.",
     "source_question_id": "auto-r01-s01-q08",
     "original_issue_flags": [],
     "reference_urls": [
-      "https://www.boschaftermarket.com/gb/en/parts/products/sensors/"
+      "https://www.boschaftermarket.com/gb/en/parts/products/sensors/",
+      "https://www.bosch-mobility.com/en/solutions/sensors/hotfilm-airflow-sensor/"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q09",
     "question_id": "auto-made-r01-s01-q09",
     "subject": "engine",
     "correct_answer": 3,
-    "correct_choice": "ECU 전원·접지와 배터리 전압",
+    "correct_choice": "ECU 공급 전압과 전원·접지 및 관련 퓨즈를 측정한다",
     "reason": "전원 전압 부족이나 접지 불량은 ECU의 동작 및 통신 장애를 유발할 수 있다. 따라서 고장코드 분석 전에 전원 공급과 접지 상태를 제조사 절차대로 확인한다.",
     "key_point": "ECU 진단의 기본은 전원과 접지 확인이다.",
     "source_question_id": "auto-r01-s01-q09",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q10",
@@ -150,7 +157,7 @@
     "question_id": "auto-made-r01-s01-q11",
     "subject": "engine",
     "correct_answer": 1,
-    "correct_choice": "엔진 압축누설(리크다운) 시험",
+    "correct_choice": "압축누설 시험으로 실린더에 공기를 공급하고 누출 경로를 확인한다",
     "reason": "리크다운 시험은 실린더에 시험 공기를 공급해 누설 경로를 확인하는 방법이다. 누설 위치에 따라 밸브·피스톤 링·헤드가스켓 등을 구별할 단서를 얻을 수 있다. 압축압력이 낮다는 이유만으로 헤드가스켓 불량을 확정해서는 안 된다.",
     "key_point": "압축압력 저하 원인은 누설 경로를 확인해 구분한다.",
     "source_question_id": "auto-r01-s01-q11",
@@ -160,7 +167,8 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q12",
@@ -223,7 +231,7 @@
     "question_id": "auto-made-r01-s01-q16",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "측정 조건과 밸브 타이밍 등 전체 실린더에 공통으로 영향을 주는 요인",
+    "correct_choice": "크랭킹 속도·측정 조건·밸브 타이밍처럼 공통 원인을 함께 살핀다",
     "reason": "전체 실린더의 낮은 압축압력은 시험 중 스로틀 조건, 회전속도, 게이지 상태, 밸브 타이밍 등 여러 공통 원인에서 발생할 수 있다. 헤드가스켓 하나의 불량으로 곧바로 결론 내리면 오진할 수 있다.",
     "key_point": "모든 실린더의 동일 증상은 측정 조건·공통 요인을 확인한다.",
     "source_question_id": "auto-r01-s01-q16",
@@ -232,7 +240,8 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q17",
@@ -256,13 +265,16 @@
     "subject": "engine",
     "correct_answer": 1,
     "correct_choice": "질소산화물(NOx)",
-    "reason": "NOx는 고온의 연소 과정에서 생성될 수 있으며 대기 중에서 광화학 반응에 관여한다. 여러 대기오염물질 중 NOx의 성질을 묻는 문항으로 범위를 한정했다.",
-    "key_point": "NOx는 광화학 스모그 생성과 관련 있다.",
+    "reason": "고온 연소에서는 공기 중 질소와 산소가 반응해 NO와 NO₂ 등 질소산화물이 생성될 수 있다. NOx는 휘발성유기화합물과 햇빛의 광화학 반응에 관여하여 지표 오존을 만든다. CO·HC·CO₂는 생성 기전과 역할이 다르다.",
+    "key_point": "NOx의 고온 생성 경로와 지표 오존 형성 과정(NOₓ+VOC+햇빛)을 구분한다.",
     "source_question_id": "auto-r01-s01-q18",
     "original_issue_flags": [],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.epa.gov/ground-level-ozone-pollution/ground-level-ozone-basics"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s01-q19",
@@ -285,7 +297,7 @@
     "question_id": "auto-made-r01-s01-q20",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "공연비 제어가 불안정해 연료 소비와 배출가스가 악화될 수 있다",
+    "correct_choice": "공연비 제어가 흐트러져 연료소비나 배출가스가 악화될 수 있다",
     "reason": "산소 센서는 배기가스의 잔류 산소에 대한 정보를 ECU에 제공한다. 센서 신호에 이상이 생기면 연료 보정이 부정확해져 연비 및 배출가스에 영향을 줄 수 있다. 실제 증상은 고장 형태에 따라 다르다.",
     "key_point": "산소 센서는 배기가스 측정으로 연료 보정을 돕는다.",
     "source_question_id": "auto-r01-s01-q20",
@@ -294,6 +306,7 @@
       "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/switching-type-lambda-sensor/"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   }
 ]

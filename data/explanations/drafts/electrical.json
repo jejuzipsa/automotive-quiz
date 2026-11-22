@@ -5,15 +5,18 @@
     "subject": "electrical",
     "correct_answer": 2,
     "correct_choice": "CAN",
-    "reason": "CAN은 ECU 사이에서 식별자 기반 메시지를 교환하는 차량용 통신 방식이다. 제어 데이터 교환에 적합하며, 오디오·영상 연결 규격과 용도를 구분한다.",
-    "key_point": "CAN은 차량 제어기 간 메시지 통신에 널리 쓰인다.",
+    "reason": "CAN은 CAN_H/CAN_L 차동 신호와 식별자 비트별 우성·열성 중재로 송신 우선순위를 정한다. LIN은 마스터-슬레이브 기반이고, FlexRay의 시간 트리거 구간은 스케줄을 사용하며, 스위치형 이더넷과 접근 방식이 다르다.",
+    "key_point": "CAN: 2선 차동 통신 + 식별자 기반 비파괴 중재.",
     "source_question_id": "auto-r01-s03-q01",
     "original_issue_flags": [
       "technical_review_USB_possible_vehicle_exception"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.keil.com/dd/docs/datashts/silabs/boschcan_ug.pdf"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q02",
@@ -48,30 +51,34 @@
     "question_id": "auto-made-r01-s03-q04",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "메시지 식별자 기반의 비파괴 중재",
+    "correct_choice": "식별자의 우성·열성 비트를 비교하는 비파괴 중재",
     "reason": "CAN은 메시지 식별자 비트에 따른 중재를 사용한다. 우선순위가 높은 프레임이 버스를 계속 사용하고 다른 노드는 재시도할 수 있다. TCP 혼잡 제어와는 다른 개념이다.",
     "key_point": "CAN의 버스 중재는 메시지 식별자로 이루어진다.",
     "source_question_id": "auto-r01-s03-q04",
     "original_issue_flags": [
       "technical_review_TCP_congestion_is_not_vehicle_CAN"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.keil.com/dd/docs/datashts/silabs/boschcan_ug.pdf"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q05",
     "question_id": "auto-made-r01-s03-q05",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "회로에 흐르는 전류를 제한한다",
-    "reason": "저항은 전류를 제한하거나 전압을 분배하는 데 사용된다. 전압과 저항의 관계는 옴의 법칙으로 설명할 수 있다.",
-    "key_point": "저항은 전류 제한 및 분압에 사용된다.",
+    "correct_choice": "1A",
+    "reason": "직렬 저항은 합산되므로 전체 저항은 6Ω+6Ω=12Ω이다. 일정한 직류 전압 12V를 가하면 옴의 법칙 I=V/R=12V/12Ω=1A다. 기존 6Ω 단독 회로의 2A보다 전류가 줄어든다.",
+    "key_point": "직렬 R합=R1+R2, I=V/R. 12V/12Ω=1A.",
     "source_question_id": "auto-r01-s03-q05",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q06",
@@ -92,8 +99,8 @@
     "question_id": "auto-made-r01-s03-q07",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "정전기 방지 작업대와 적절하게 접지된 ESD 보호구 사용",
-    "reason": "정전기 방전(ESD)은 민감한 반도체 부품을 손상할 수 있어 적절한 ESD 장비를 쓴다. 단, 정전기 방지 손목밴드는 고전압 감전 보호장비가 아니므로 전기차 고전압 작업에 적용해서는 안 된다.",
+    "correct_choice": "적절한 ESD 작업대와 안전하게 접지한 손목 보호구를 사용한다",
+    "reason": "ESD 민감 부품에는 정전기 방지 작업대와 승인된 접지형 손목띠·보호구를 사용한다. 고전압 절연장갑은 감전 위험을 낮추는 장비이지 모든 ESD 대책을 대체하지 않는다. 특히 ESD 손목띠를 고전압 활선 작업에서 사용하지 않는다.",
     "key_point": "ESD 보호구와 고전압 절연 보호구는 용도가 다르다.",
     "source_question_id": "auto-r01-s03-q07",
     "original_issue_flags": [
@@ -101,7 +108,8 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q08",
@@ -156,9 +164,9 @@
     "question_id": "auto-made-r01-s03-q11",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "휠 속도의 변화",
-    "reason": "ABS 모듈은 휠 속도 센서 신호에서 바퀴 회전과 감속 상태를 분석해 잠김 위험을 감지한다. 제동압 조절을 통해 조향 가능성과 안정성 유지에 기여한다.",
-    "key_point": "ABS 핵심 입력은 바퀴 속도 변화다.",
+    "correct_choice": "각 바퀴의 휠 속도 센서 신호",
+    "reason": "ABS는 바퀴별 휠 속도 센서 데이터를 이용해 회전 감속과 잠김 위험을 판단한 뒤 제동압을 제어한다. 조향각·요레이트·브레이크 스위치는 ESP 등 다른 제어 기능과 연동될 수 있으나 바퀴별 잠김 판단 자체를 대체하지 않는다.",
+    "key_point": "ABS의 핵심 입력은 바퀴별 휠 속도 변화다.",
     "source_question_id": "auto-r01-s03-q11",
     "original_issue_flags": [
       "technical_review_source_mislabels_ABS_expansion"
@@ -167,7 +175,8 @@
       "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q12",
@@ -260,14 +269,15 @@
     "question_id": "auto-made-r01-s03-q18",
     "subject": "electrical",
     "correct_answer": 4,
-    "correct_choice": "엔진에 들어 있는 오일의 실제 잔량",
-    "reason": "전기 회로도는 연결·단자·전원 경로를 나타낸다. 엔진오일 잔량은 배선도 자체에서 직접 측정할 수 없는 물리적 상태다.",
-    "key_point": "배선도는 회로 연결을 보여 주며 실제 액면을 측정하지 않는다.",
+    "correct_choice": "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다",
+    "reason": "일반적인 브러시형 DC 파워윈도우 모터는 양단 공급전압의 극성을 반대로 바꾸면 회전 방향이 반전된다. H브리지나 릴레이 전환 회로 등이 이 원리를 구현한다. 퓨즈 용량 변경은 정상적인 방향 제어 방법이 아니다.",
+    "key_point": "브러시형 직류모터의 정·역회전은 공급 전압의 극성 반전으로 구현할 수 있다.",
     "source_question_id": "auto-r01-s03-q18",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s03-q19",

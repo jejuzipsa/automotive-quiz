@@ -93,17 +93,20 @@
     "question_id": "auto-made-r08-s03-q07",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "두 냉매의 지구온난화지수와 가연성 등급이 다르다",
-    "reason": "R-134a는 비교적 높은 GWP를 갖고 R-1234yf는 매우 낮은 GWP를 갖지만 약한 가연성 등급을 가진다. 냉매 교체는 전용 장비와 차량 승인 규격을 따라야 한다.",
-    "key_point": "R-134a 고GWP, R-1234yf 저GWP·A2L.",
+    "correct_choice": "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+    "reason": "EPA 자료 기준 R-134a는 GWP가 큰 냉매이며 R-1234yf는 상대적으로 훨씬 낮은 GWP를 갖는다. R-1234yf는 약한 가연성을 가진 A2L로 분류되며 차량별 장비·충전 포트·오일 규격을 확인해야 한다. GWP 수치는 적용한 평가 기준에 따라 달라질 수 있다.",
+    "key_point": "R-1234yf: R-134a보다 낮은 GWP, A2L 약가연성. 임의 혼용 금지.",
     "source_question_id": "auto-r08-s03-q07",
     "original_issue_flags": [
       "question_number_needs_review",
       "technical_review: R-134a GWP 수치와 냉매 가연성 분류의 기준·개정 연도 확인"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.epa.gov/mvac/acceptable-refrigerants-and-their-impacts"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r08-s03-q08",

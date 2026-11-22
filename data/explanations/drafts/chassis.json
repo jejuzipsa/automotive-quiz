@@ -88,28 +88,30 @@
     "question_id": "auto-made-r01-s02-q07",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "현가장치의 높이 제어와 관련 부품",
-    "reason": "정상적인 차고 유지 기능이 있는 차량에서 좌우 높이 차이가 계속된다면 현가 높이 센서·유압·기계적 스프링 등의 이상을 점검한다. 차고 차이는 정비 정보의 측정 조건에 맞춰 판단한다.",
-    "key_point": "좌우 차고 차이는 현가장치의 높이 유지 상태를 살핀다.",
+    "correct_choice": "해당 바퀴의 에어스프링·공기배관 누설과 높이 제어 계통",
+    "reason": "공기식 차고 유지 장치에서는 에어스프링·배관·밸브·높이 센서가 처짐 원인일 수 있다. 시간에 따라 발생하는 편측 처짐은 누설 여부를 안전하게 점검하고, 정비정보에 따라 차고 제어 신호를 확인한다.",
+    "key_point": "공기식 현가 편측 처짐은 공압 누설과 높이제어 계통을 분리 진단한다.",
     "source_question_id": "auto-r01-s02-q07",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q08",
     "question_id": "auto-made-r01-s02-q08",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "유압 누설 또는 마스터실린더 내부 바이패스",
+    "correct_choice": "마스터실린더 내부 바이패스 또는 제동유압 외부 누설을 점검한다",
     "reason": "페달 유지 중 서서히 내려가는 현상은 누유나 마스터실린더 내부 밀봉 불량 등으로 압력을 유지하지 못할 때 나타날 수 있다. 외부 누유와 내부 누설을 구별해 점검해야 한다.",
     "key_point": "유압이 유지되지 않으면 외부·내부 누설을 구분한다.",
     "source_question_id": "auto-r01-s02-q08",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q09",
@@ -130,14 +132,17 @@
     "question_id": "auto-made-r01-s02-q10",
     "subject": "chassis",
     "correct_answer": 4,
-    "correct_choice": "주행 조건에 따라 감쇠력을 조절해 승차감과 차체 움직임을 관리",
+    "correct_choice": "주행 상태에 따라 감쇠력을 조정해 승차감과 차체 거동을 관리한다",
     "reason": "전자제어 현가장치는 센서 입력과 제어기에 따라 감쇠력 또는 높이 등을 조절한다. 엔진 연료분사장치 자체를 제어하는 시스템으로 볼 수 없다.",
     "key_point": "전자제어 현가는 감쇠력·차고 등 주행 거동을 관리한다.",
     "source_question_id": "auto-r01-s02-q10",
     "original_issue_flags": [],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/semi-active-damping-control-system-2w/"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q11",
@@ -202,28 +207,30 @@
     "question_id": "auto-made-r01-s02-q15",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "오디오 음질 설정값 조정",
-    "reason": "댐퍼의 누유, 감쇠력, 체결 상태는 현가 성능과 관련된다. 오디오 설정은 현가장치 성능을 나타내는 검사 항목이 아니다.",
-    "key_point": "정비 검사는 평가 대상의 기능과 연결되어야 한다.",
+    "correct_choice": "차륜 정렬의 토인 수치만 측정",
+    "reason": "댐퍼는 작동유 누설, 압축·신장 감쇠 특성, 체결·부싱 이상 등을 점검해 평가한다. 토인값은 휠 얼라인먼트 요소이며 쇼크업소버 내부 감쇠특성을 직접 나타내는 수치는 아니다.",
+    "key_point": "댐퍼 자체 성능검사와 차륜 정렬(토인) 검사를 구분한다.",
     "source_question_id": "auto-r01-s02-q15",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q16",
     "question_id": "auto-made-r01-s02-q16",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "EPS 모듈의 전원·접지와 관련 퓨즈 확인",
+    "correct_choice": "EPS 모듈의 전원·접지와 관련 퓨즈·통신 상태를 확인한다",
     "reason": "EPS 모터를 제어하려면 안정적인 전원이 공급되어야 한다. 오류코드와 함께 관련 퓨즈·전원·접지를 먼저 확인해 전원 문제인지 부품 문제인지 구별한다.",
     "key_point": "조향 보조 불능 시 EPS 전원·접지 진단이 우선이다.",
     "source_question_id": "auto-r01-s02-q16",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q17",
@@ -266,10 +273,12 @@
     "source_question_id": "auto-r01-s02-q19",
     "original_issue_flags": [],
     "reference_urls": [
-      "https://www.hella.com/microsite-electronics/Steering-torque-and-angle-sensors-512.html"
+      "https://www.hella.com/microsite-electronics/Steering-torque-and-angle-sensors-512.html",
+      "https://www.hella.com/microsite-electronics/Steering-torque-sensors-513.html"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s02-q20",

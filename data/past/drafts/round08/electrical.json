@@ -142,16 +142,17 @@
     "question_number": 7,
     "question": "R-134a와 R-1234yf 냉매를 비교해 환경규제를 설명한다. 더 주의할 특성은?",
     "choices": [
-      "두 냉매의 지구온난화지수와 가연성 등급이 다르다",
-      "두 냉매를 혼합하면 항상 성능이 향상",
-      "두 냉매의 충전 포트와 윤활유는 언제나 호환",
-      "R-134a는 GWP가 정확히 0이다"
+      "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+      "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+      "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+      "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r08-s03-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r08-s03-q08",

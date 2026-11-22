@@ -382,18 +382,19 @@
     "source_question_id": "auto-r07-s04-q18",
     "round": 7,
     "question_number": 18,
-    "question": "수소 저장탱크가 화재 열에 노출되었다. 용기의 압력 해제 안전장치가 수행하는 역할은?",
+    "question": "수소 저장용기에 설치된 열작동식 압력방출장치(TPRD)의 기본 작동 원리로 알맞은 것은?",
     "choices": [
-      "수소 누출을 불꽃으로 감지한다",
-      "고압수소를 차량 실내로 자동 유입시킨다",
-      "위험 조건에서 압력을 안전한 지정 경로로 방출하도록 한다",
-      "탱크의 내압을 무한히 올린다"
+      "충전압력이 조금만 상승해도 운전자에게 경고등만 보낸다",
+      "스택 온도와 관계없이 수소를 실내로 자동 방출한다",
+      "화재 등의 열에 일정 조건으로 노출되면 지정된 경로로 가스를 방출한다",
+      "모든 조건에서 수소의 압력을 더 높여 탱크 파열을 막는다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r07-s04-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r07-s04-q19",

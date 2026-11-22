@@ -291,9 +291,9 @@
     "question_id": "auto-made-r07-s04-q18",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "위험 조건에서 압력을 안전한 지정 경로로 방출하도록 한다",
-    "reason": "수소용기에는 온도 또는 압력 조건에 반응하는 안전밸브가 사용될 수 있다. TPRD는 보통 온도 반응형 압력 해제장치로, 작동조건은 제품별로 확인한다.",
-    "key_point": "수소탱크 방출장치는 과열·과압 보호 목적.",
+    "correct_choice": "화재 등의 열에 일정 조건으로 노출되면 지정된 경로로 가스를 방출한다",
+    "reason": "TPRD는 Thermally-activated Pressure Relief Device로, 고온 노출 같은 열적 작동 조건에 이르면 저장용기 내부 가스를 설계된 안전 방출 경로로 배출해 열로 인한 용기 파열 위험을 낮춘다. 일반적인 압력 설정만으로 작동하는 PRD와 원리를 혼동해서는 안 되며 제조사 장치별 지침이 우선이다.",
+    "key_point": "TPRD는 온도에 의해 작동하는 방출장치이며 방출 경로와 조건은 제품 규격을 따른다.",
     "source_question_id": "auto-r07-s04-q18",
     "original_issue_flags": [
       "question_number_needs_review",
@@ -301,9 +301,12 @@
       "qa19_ocr_source_compared",
       "source_tprd_is_thermal_trigger_not_generic_pressure_relief"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.law.cornell.edu/cfr/text/49/571.307"
+    ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r07-s04-q19",

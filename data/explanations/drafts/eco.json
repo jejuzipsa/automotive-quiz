@@ -52,14 +52,15 @@
     "question_id": "auto-made-r01-s04-q04",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "배터리 SOH와 셀 전압·온도 데이터",
-    "reason": "BMS는 셀 전압·전류·온도 등을 이용해 충전 상태(SOC)와 건강 상태(SOH) 등을 계산할 수 있다. 판정에는 차량별 진단 절차와 수치 해석이 필요하다.",
-    "key_point": "배터리 열화 평가에는 SOH·셀 상태 데이터가 유용하다.",
+    "correct_choice": "규정 조건에서 평가한 사용가능 용량 및 SOH 지표",
+    "reason": "SOH는 배터리의 건강상태 및 성능 저하를 나타내는 지표이며, 규정된 조건의 사용 가능 용량·내부저항·셀 상태 등과 결합해 판단한다. SOC는 지금 얼마나 충전됐는지를 나타낼 뿐 그 수치 하나만으로 노화 정도를 판정할 수 없다.",
+    "key_point": "SOC=현재 충전상태, SOH=성능·건강상태(열화 평가).",
     "source_question_id": "auto-r01-s04-q04",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q05",
@@ -98,16 +99,18 @@
     "question_id": "auto-made-r01-s04-q07",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "감속기 및 차동기어",
-    "reason": "구동모터의 회전력은 감속기와 차동장치 등을 거쳐 바퀴로 전달된다. 내연기관의 연료 분사 계통은 이 동력 전달에 해당하지 않는다.",
-    "key_point": "전기차는 모터 동력을 감속기·차동장치를 통해 전달한다.",
+    "correct_choice": "감속기·차동기어·구동축",
+    "reason": "전기차 구동 모터의 출력은 보통 감속기·차동장치·구동축을 통해 바퀴에 전달된다. 인버터·OBC·DC/DC는 전력변환·충전 관련 장치로 모터 이후의 기계적 동력 전달 장치가 아니다.",
+    "key_point": "기계적 전달: 모터 → 감속기·차동장치 → 구동축 → 바퀴.",
     "source_question_id": "auto-r01-s04-q07",
     "original_issue_flags": [],
     "reference_urls": [
-      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html",
+      "https://afdc.energy.gov/vehicles/electric-basics-ev"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q08",
@@ -176,14 +179,15 @@
     "question_id": "auto-made-r01-s04-q12",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "사용 가능한 배터리 에너지 감소와 주행거리 단축",
-    "reason": "배터리의 유효 용량이 감소하면 다른 조건이 일정할 때 사용할 수 있는 에너지가 줄고 주행거리도 짧아질 수 있다. 실제 주행거리는 기온·운전 습관 등 다른 요인도 영향을 준다.",
+    "correct_choice": "동일 조건에서 사용 가능한 배터리 에너지와 주행 가능 거리 감소",
+    "reason": "배터리 열화로 사용 가능 용량이 줄어들면 일정한 소비전력·운전 조건에서 확보 가능한 총 에너지와 주행 거리가 줄어들 수 있다. SOC=100%는 충전 상태를 뜻하며 신품 용량의 완전 복원을 의미하지 않는다.",
     "key_point": "배터리 용량 저하는 동일 조건에서 주행 가능 거리에 영향을 준다.",
     "source_question_id": "auto-r01-s04-q12",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q13",
@@ -253,7 +257,7 @@
     "subject": "eco",
     "correct_answer": 1,
     "correct_choice": "구동모터 → 감속기/차동장치 → 드라이브샤프트 → 바퀴",
-    "reason": "전기차에서는 모터가 만든 회전력이 감속기·차동장치를 통해 좌우 구동축과 바퀴에 전달된다. 차량별로 각 장치가 하나의 구동 유닛에 통합될 수 있다.",
+    "reason": "전기차의 구동모터 토크는 감속기와 차동장치를 거쳐 드라이브샤프트와 바퀴에 전달된다. OBC·DC/DC·BMS·인버터 등은 전력 관리 또는 변환을 담당하므로 이를 기계적 토크 전달 경로의 순서에 끼워 넣으면 잘못된 구성이다.",
     "key_point": "구동모터의 토크는 감속·차동기구를 지나 바퀴로 간다.",
     "source_question_id": "auto-r01-s04-q17",
     "original_issue_flags": [],
@@ -261,21 +265,23 @@
       "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
     ],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q18",
     "question_id": "auto-made-r01-s04-q18",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "자동 긴급 제동 AEB",
-    "reason": "AEB는 전방 센서(예: 레이더·카메라) 정보를 이용해 충돌 위험을 판단하고 조건을 만족하면 경고 또는 자동 제동을 수행한다. 시스템 성능과 작동 영역은 차량별로 다르다.",
-    "key_point": "AEB는 센서로 충돌 위험을 감지해 제동을 보조한다.",
+    "correct_choice": "자동긴급제동(AEB)",
+    "reason": "AEB는 전방 충돌 위험을 판단해 정해진 조건에서 긴급 제동을 지원하거나 자동 수행한다. ACC는 주행속도·간격 유지, LKA는 차로유지 조향, BSW는 사각지대 경보가 주기능이다. 기능의 세부 동작 및 중복 구성은 차종별로 다를 수 있다.",
+    "key_point": "AEB=전방 충돌 위험 시 긴급 자동 제동; ACC·LKA·BSW와 구분.",
     "source_question_id": "auto-r01-s04-q18",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r01-s04-q19",

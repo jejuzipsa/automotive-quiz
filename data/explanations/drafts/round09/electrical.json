@@ -92,16 +92,17 @@
     "question_id": "auto-made-r09-s03-q07",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "고압 액체 냉매 또는 액체가 많은 상태",
-    "reason": "응축기는 고압 냉매가 열을 잃어 응축되는 열교환기다. 응축 과정에서 압력이 크게 떨어지는 것이 기본 목적이 아니며 감압은 팽창장치가 수행한다.",
-    "key_point": "응축기 = 고압 기체의 열방출·고압 액화.",
+    "correct_choice": "고압의 액상 냉매(또는 과냉각 액체)",
+    "reason": "압축기에서 나온 고온 고압 증기는 응축기에서 외부에 열을 방출하며 보통 고압 액체로 응축된다. 고압 액체가 저압 액·증기 혼합상태로 바뀌는 주된 감압은 팽창밸브 또는 오리피스에서 발생한다. 냉매 충전량이나 운전조건 이상 시 상태는 달라질 수 있어 정상 작동 조건을 명시했다.",
+    "key_point": "응축기: 고압 기체 → 고압 액체; 팽창장치: 감압.",
     "source_question_id": "auto-r09-s03-q07",
     "original_issue_flags": [
       "technical_review: 원본 질문 고압 기체→저압 액체와 정답 콘덴서/해설 고압 액체가 충돌: 기술 검증 필수"
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa1_reviewed"
   },
   {
     "id": "auto-made-r09-s03-q08",
