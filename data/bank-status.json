@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 reconstructed-exam OCR source: 720/720 image-compared (private). Our newly written independent questions 720/720 and separate explanations 720/720 saved as 9 rounds x4 subjects; editorial drafts awaiting full independent technical/answer quality review. No new source items left to rewrite. Zero drafts publicly connected.",
+  "source_of_truth": "QA23 original 720-question OCR transcription image-compared (private); Our edited QA1 question JSON 720 and separate explanations 720 (all editorial drafts, 28 substantive edits, 47 subject-review holds, 0 technical final approvals). Separate source OCR not modified.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -674,5 +674,46 @@
     "live_site_manifest_unchanged": true,
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
+  },
+  "latest_qa_stage": "technical-qa1-expanded-classification",
+  "technical_qa1": {
+    "stage": "risk_triage_and_limited_direct_content_edits",
+    "scanned_question_explanation_pairs": 720,
+    "manually_read_all_four_subjects_round_1": 80,
+    "manually_revised_questions": 28,
+    "revised_subjects": {
+      "engine": 8,
+      "chassis": 6,
+      "electrical": 8,
+      "eco": 6
+    },
+    "originals_QA23_unchanged": true,
+    "subject_classification_hold_candidates": 47,
+    "baseline_classification_holds": 14,
+    "additional_holds_after_expanded_review": 33,
+    "held_items_inline_in_both_question_and_explanation_json": 47,
+    "subject_hold_registry": "data/qa/technical-qa1-subject-holds-expanded.json",
+    "technical_validation_report": "docs/TECHNICAL_QA1.md",
+    "detailed_change_log": "data/qa/technical-qa1-changes.json",
+    "heuristic_risk_report": "data/qa/technical-qa1-triage.json",
+    "question_files": "data/past/drafts/{subject}.json and roundXX/{subject}.json for rounds2-9",
+    "separate_explanations": "data/explanations/drafts/{subject}.json and roundXX/{subject}.json",
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_QA1_기술검수/",
+    "private_question_master": "questions_all_720.json",
+    "private_explanation_master": "explanations_all_720.json",
+    "question_sha256": "56f88a5ad5262b90fc5379131b2114afdbcc2b131ce236423342f3cd08796626",
+    "explanation_sha256": "c1d9a48eb4f10290e9d855a0b9cff30c5c9f965d6ea127d56e4841fc2fc703ae",
+    "heuristic_short_explanation_candidates": 431,
+    "heuristic_offtopic_distractor_candidates": 129,
+    "heuristic_safety_reviews": 112,
+    "heuristic_effective_date_reviews": 48,
+    "heuristic_numeric_standard_reviews": 24,
+    "independent_technical_answer_approvals": 0,
+    "final_publication_approvals": 0,
+    "site_connected": 0,
+    "review_status": "editorial_draft",
+    "publishable": false,
+    "no_zip": true,
+    "next_work": "manual question-by-question technical fact-check + distractor plausibility + uniqueness + official subject scope approval, then release approved only"
   }
 }
