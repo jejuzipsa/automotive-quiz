@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f4f8f7">
+  <meta name="referrer" content="no-referrer">
+  <title>내 문제은행 · 자동차정비산업기사</title>
+  <link rel="stylesheet" href="styles.css?v=1.0.2">
+  <link rel="stylesheet" href="private-bank.css?v=1.0.0">
+</head>
+<body>
+<main class="app-shell private-shell">
+  <header class="topbar">
+    <div class="topbar-title-wrap">
+      <div class="brand-mark" aria-hidden="true">⚙</div>
+      <h1>자동차정비산업기사 <span class="private-title-tail">· 내 문제은행</span></h1>
+    </div>
+    <div class="topbar-actions"><a href="./" class="secondary-btn">홈</a></div>
+  </header>
+  <section class="notice-line private-privacy" role="note">
+    <span aria-hidden="true">ⓘ</span>
+    <div><strong>이 화면에는 교재 문제가 저장되어 있지 않아.</strong> 본인이 가진 QA6/QA7 ZIP을 선택하면 브라우저 안에서만 열어. ZIP 파일을 GitHub나 서버로 업로드하지 않고, 웹 브라우저를 새로 열면 파일을 다시 선택해야 해. 다른 기기와도 자동 동기화되지 않아.</div>
+  </section>
+  <section id="importView" class="private-section" aria-labelledby="privateImportTitle">
+    <p class="eyebrow">개인 학습용 · 로컬 파일</p>
+    <h2 id="privateImportTitle">원본 이미지 문제은행 불러오기</h2>
+    <p>QA6 또는 QA7 문제은행 ZIP을 선택해. 문제·보기는 원본 이미지로 표시되며, 채점은 교재 정답표 기준이야. OCR 검수 전 문장을 정답으로 확정하거나 서버에 저장하지 않아.</p>
+    <label class="private-upload-label" for="privateZipInput">
+      <span class="upload-icon" aria-hidden="true">⌁</span>
+      <span><strong>QA6 / QA7 ZIP 파일 선택</strong><small>약 50MB · 압축 해제하지 않은 ZIP 파일 그대로</small></span>
+    </label>
+    <input id="privateZipInput" type="file" accept=".zip,application/zip">
+    <p id="importStatus" class="private-status" aria-live="polite">파일을 선택하면 720문항과 원본 이미지 연결을 확인할게.</p>
+  </section>
+  <section id="setupView" class="private-section hidden" aria-labelledby="bankSetupTitle">
+    <div class="private-section-header">
+      <div><p class="eyebrow">개인 문제은행</p><h2 id="bankSetupTitle">학습 설정</h2></div>
+      <span id="bankVersion" class="tiny-tag">QA7</span>
+    </div>
+    <p id="bankMeta" class="private-meta"></p>
+    <div class="private-form-grid">
+      <label>과목
+        <select id="privateSubject">
+          <option value="all">4과목 전체</option>
+          <option value="1">자동차 엔진정비</option>
+          <option value="2">자동차 섀시정비</option>
+          <option value="3">자동차 전기·전자장치정비</option>
+          <option value="4">친환경 자동차정비</option>
+        </select>
+      </label>
+      <label>회차
+        <select id="privateRound">
+          <option value="all">1~9회 전체</option>
+          <option value="1">1회</option><option value="2">2회</option>
+          <option value="3">3회</option><option value="4">4회</option>
+          <option value="5">5회</option><option value="6">6회</option>
+          <option value="7">7회</option><option value="8">8회</option>
+          <option value="9">9회</option>
+        </select>
+      </label>
+      <label>문제 수
+        <select id="privateCount">
+          <option value="10">10문제</option>
+          <option value="20" selected>20문제</option>
+          <option value="all">선택 범위 전체</option>
+        </select>
+      </label>
+      <label>순서
+        <select id="privateOrder">
+          <option value="sequential">문항 번호순</option>
+          <option value="random">무작위</option>
+        </select>
+      </label>
+    </div>
+    <div class="private-action-row">
+      <button id="privateStartBtn" class="primary-btn" type="button">문제 풀기</button>
+      <button id="privateWrongListBtn" class="secondary-btn" type="button">이전 오답 복습</button>
+      <button id="privateChangeBtn" class="secondary-btn" type="button">다른 ZIP 불러오기</button>
+    </div>
+    <p id="privateSelectionMeta" class="private-meta"></p>
+    <div class="private-warning">정답 번호 720개는 교재 정답표와 대조했지만 <strong>정답의 기술적 정확성이 승인된 문항은 아직 0개</strong>야. 특히 안전 절차·차종별 규격·복수 정답 가능성은 주의해서 학습해.</div>
+  </section>
+  <section id="privateQuizView" class="hidden">
+    <div class="private-progress-head">
+      <div><p id="privateQuizMeta" class="eyebrow"></p><strong id="privateQuizProgress">문제 1 / 20</strong></div>
+      <button id="privateExitBtn" class="secondary-btn" type="button">학습 종료</button>
+    </div>
+    <div class="progress-track" aria-hidden="true"><div id="privateProgressFill" class="progress-fill"></div></div>
+    <article class="question-card private-question-card">
+      <div class="question-number" id="privateQuestionNumber"></div>
+      <div id="privateTextStatus" class="private-text-status"></div>
+      <div id="privateQuestionImageBox" class="private-source-frame" aria-label="교재 문제 원본 이미지"><p>문제 이미지를 읽는 중이야.</p></div>
+      <p class="private-answer-hint">원본 그림에 있는 ①~④ 중 하나를 골라.</p>
+      <div id="privateChoices" class="private-choices"></div>
+      <div id="privateFeedback" class="private-feedback hidden" aria-live="polite">
+        <strong id="privateFeedbackTitle"></strong>
+        <p>교재 정답표 기준 채점 결과이며, 기술적 정답 검증 전이야.</p>
+        <div id="privateExplanationImageBox" class="private-source-frame" aria-label="교재 해설 원본 이미지"></div>
+      </div>
+      <div class="private-action-row private-quiz-actions">
+        <button id="privateNextBtn" class="primary-btn hidden" type="button">다음 문제</button>
+        <button id="privateReviewReturnBtn" class="secondary-btn hidden" type="button">오답 목록으로 돌아가기</button>
+      </div>
+    </article>
+  </section>
+  <section id="privateResultView" class="private-section hidden">
+    <p class="eyebrow">교재 정답표 기준</p>
+    <h2>풀이 결과</h2>
+    <p id="privateScore" class="score-line"></p>
+    <p id="privateResultNote" class="private-meta">번호를 선택하면 해당 문제를 다시 볼 수 있어.</p>
+    <div id="privateResultGrid" class="private-result-grid"></div>
+    <div class="private-action-row">
+      <button id="privateRetryWrongBtn" class="primary-btn" type="button">오답만 다시 풀기</button>
+      <button id="privateAllWrongBtn" class="secondary-btn" type="button">오답 목록</button>
+      <button id="privateBackSetupBtn" class="secondary-btn" type="button">과목 선택</button>
+    </div>
+  </section>
+  <section id="privateWrongView" class="private-section hidden">
+    <p class="eyebrow">이 기기의 마지막 풀이</p>
+    <h2>오답 복습</h2>
+    <p>문제를 선택하면 1문항만 다시 풀고 이 목록으로 돌아와.</p>
+    <div id="privateWrongList" class="private-wrong-list"></div>
+    <div class="private-action-row"><button id="privateWrongBackBtn" type="button" class="secondary-btn">과목 선택</button></div>
+  </section>
+  <footer class="private-footer">자동차정비산업기사 · 개인용 ZIP 로컬 학습 · 웹 공개 교재 데이터 0문항</footer>
+</main>
+<script src="vendor/jszip.min.js?v=3.10.1"></script>
+<script src="private-bank.js?v=1.0.0"></script>
+</body>
+</html>
