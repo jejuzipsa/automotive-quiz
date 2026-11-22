@@ -1,27 +1,30 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA20 personal OCR-corrected bank with 581/720 source-image text compared; QA7 original images remain comparison basis, 139 unchecked",
+  "source_of_truth": "QA20 OCR source is four UTF-8 per-subject JSON files in personal Library, classified as reconstructed_past_exam. 581 source-compared/139 pending. No ZIP workflow.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
     "publisher_source_uploaded": false,
     "past_exam_published": 0,
-    "expected_exam_published": 0,
+    "expected_exam_published": 80,
     "demo_questions": 8,
     "demo_concepts": 4,
-    "personal_zip_import_available": true,
-    "personal_zip_import_url": "https://jejuzipsa.github.io/automotive-quiz/private.html",
+    "personal_zip_import_available": false,
+    "personal_zip_import_url": null,
     "personal_imported_content_uploaded_to_host": false,
-    "text_bank_import_available": true,
-    "text_bank_import_mode": "user-selected QA8-TEXT-DRAFT JSON/ZIP only (QA20 incompatible until importer version update), browser-local IndexedDB; no hosted publisher text",
+    "text_bank_import_available": false,
+    "text_bank_import_mode": "none; JSON files listed in data/manifest.json fetched automatically",
     "text_bank_imported_into_public_github": false,
-    "live_subject_cards_after_local_import": {
-      "engine": 180,
-      "chassis": 180,
-      "electrical": 180,
-      "eco": 180
-    }
+    "live_subject_cards_after_local_import": null,
+    "current_automatic_json_banks": {
+      "engine": 20,
+      "chassis": 20,
+      "electrical": 20,
+      "eco": 20
+    },
+    "current_original_practice_count": 80,
+    "public_exam_reconstruction_count": 0
   },
   "source_captures": {
     "original": 57,
@@ -47,7 +50,7 @@
   },
   "next_text_review": "auto-r08-s02-q01",
   "publication_gate": "Personal OCR study bank in local IndexedDB only. All source-text/technical/rights approval gates separately required for publishing textbook content.",
-  "current_private_source": "QA20-TEXT-DRAFT",
+  "current_private_source": "QA20-JSON",
   "private_source_sha256": "36cd569b94ea48c13bb259025b2a11fbfed85a76fcc8a0475bc18ce84fd85fe7",
   "qa7": {
     "total_questions": 720,
@@ -406,8 +409,25 @@
       ]
     ],
     "sha256": "36cd569b94ea48c13bb259025b2a11fbfed85a76fcc8a0475bc18ce84fd85fe7",
-    "private_zip_library": "/기출문제_자동차정비산업기사/자동차정비산업기사_QA20_텍스트문제은행_581문항원문대조_20261122.zip",
+    "private_zip_library": "historical QA20 archive only; superseded by 4 JSON subject files",
     "next_review": "auto-r08-s02-q01",
-    "note": "Full round8 engine original problem+choices+explanation image comparison. Technical approval and rights clearance are separate. QA20 personal bank is not yet supported by website's QA8-only importer."
-  }
+    "note": "The reconstructed exam OCR bank is preserved as 4 text JSON files (180 per subject). 581 original text checks done; no claim of 720 fully reworded/verified. Website loads public authored JSON automatically.",
+    "source_category": "reconstructed_past_exam",
+    "storage_format": "four per-subject UTF-8 JSON arrays",
+    "files": [
+      "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_engine_180문항.json",
+      "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_chassis_180문항.json",
+      "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_electrical_180문항.json",
+      "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_eco_180문항.json"
+    ],
+    "rewrite_and_verification_completed": 0,
+    "future_backup_format": "JSON only, never ZIP"
+  },
+  "current_private_format": "4 UTF-8 JSON arrays, 180 problems per subject, no ZIP",
+  "private_source_files": [
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_engine_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_chassis_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_electrical_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_eco_180문항.json"
+  ]
 }
