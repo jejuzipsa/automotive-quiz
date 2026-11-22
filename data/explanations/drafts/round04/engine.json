@@ -1,0 +1,341 @@
+[
+  {
+    "id": "auto-made-r04-s01-q01",
+    "question_id": "auto-made-r04-s01-q01",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "배기 측 터빈 휠",
+    "reason": "배기 흐름이 터빈을 돌리고 동일 축의 컴프레서가 흡입 공기를 압축한다. 배기 압력만으로 움직인다고 설명하기보다 배기가스의 에너지 전달로 이해해야 한다.",
+    "key_point": "터보차저 에너지 경로: 배기 → 터빈 → 축 → 컴프레서.",
+    "source_question_id": "auto-r04-s01-q01",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_technical_explanation_exhaust_pressure_vs_exhaust_energy"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q02",
+    "question_id": "auto-made-r04-s01-q02",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "기존보다 약 0.10 mm 두꺼운 심을 검토한다",
+    "reason": "이 구조에서는 새 심 두께 = 기존 심 두께 + (측정 간극−목표 간극)이다. 측정 간극이 0.10 mm 크므로 심을 0.10 mm 두껍게 해야 간극이 줄어든다. 부품 규격과 제조사 절차가 우선이다.",
+    "key_point": "심-캠 직접 접촉식에서 간극 과대 → 더 두꺼운 심.",
+    "source_question_id": "auto-r04-s01-q02",
+    "original_issue_flags": [
+      "short_question",
+      "source_text_corrected",
+      "source_answer_key_suspect_mismatch",
+      "qa16_ocr_corrected_against_original_images",
+      "source_answer_and_explanation_wrong_shim_thickness_for_excessive_valve_clearance"
+    ],
+    "reference_urls": [
+      "https://manuals.sucatisse.com/k11/em/em-5028"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_note": "원본은 0.35mm 과대 간극에서 얇은 심을 고르도록 되어 있었으나, 문제에서 정의한 캠-심 접촉 구조에서는 두꺼운 심이 맞으므로 정답 논리를 수정함."
+  },
+  {
+    "id": "auto-made-r04-s01-q03",
+    "question_id": "auto-made-r04-s01-q03",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "터보차저로 가는 윤활유 공급·회수 경로",
+    "reason": "윤활유 공급 부족이나 회수 불량은 베어링에 손상을 줄 수 있다. 교환 전 오일 공급라인의 막힘·오염과 배유 상태 및 제조사 설치 절차를 확인한다.",
+    "key_point": "터보 재손상 예방에는 오일라인 원인 확인이 중요하다.",
+    "source_question_id": "auto-r04-s01-q03",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q04",
+    "question_id": "auto-made-r04-s01-q04",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "뱅크 1의 혼합기가 희박한 상태",
+    "reason": "P0171은 System Too Lean (Bank 1) 코드이다. 흡기 누설, 연료 공급 부족, 측정 오류 등 원인이 다양하므로 코드만으로 특정 부품 고장을 단정하면 안 된다.",
+    "key_point": "P0171 = Bank 1 희박 조건.",
+    "source_question_id": "auto-r04-s01-q04",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q05",
+    "question_id": "auto-made-r04-s01-q05",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "상대적으로 희박한 배기 상태 쪽으로 변화",
+    "reason": "가열된 협대역 지르코니아 산소센서는 배기 산소가 많을수록 낮은 전압을 보이는 경향이 있다. 광대역 센서나 회로 종류가 다르면 동일한 전압 기준을 적용하면 안 된다.",
+    "key_point": "협대역 지르코니아: 고전압 농후, 저전압 희박.",
+    "source_question_id": "auto-r04-s01-q05",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [
+      "https://www.boschdiagnostics.com/sites/default/files/documents/573864_0.pdf"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q06",
+    "question_id": "auto-made-r04-s01-q06",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "크랭크축 위치 센서 신호",
+    "reason": "크랭크축 위치 센서는 각 위치와 회전 속도 판단의 핵심 입력이다. 차량에 따라 캠축 위치 센서와 함께 동기화 및 분사·점화 타이밍을 결정한다.",
+    "key_point": "크랭크각 입력은 엔진 제어의 기초.",
+    "source_question_id": "auto-r04-s01-q06",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q07",
+    "question_id": "auto-made-r04-s01-q07",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "제조사 규정의 센서 온도·운전 조건과 측정 방법",
+    "reason": "산소센서 전환 속도는 센서 종류, 활성 온도, 폐루프 여부, 시동 후 경과 및 샘플링 속도에 좌우된다. 1초 같은 고정 주기 하나로 모든 차량을 판정할 수 없다.",
+    "key_point": "산소센서 진단은 센서 종류와 시험 조건이 전제.",
+    "source_question_id": "auto-r04-s01-q07",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_fixed_one_second_o2_sensor_switching_period_requires_operating_conditions"
+    ],
+    "reference_urls": [
+      "https://aa-bosch-ecat-ap.resource.bosch.com/sao_ecat/downloads/bosch%20australia%20oxygen%20sensor%20catalogue%202013.pdf"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q08",
+    "question_id": "auto-made-r04-s01-q08",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "현재·과거 DTC와 프리즈프레임 운전 조건",
+    "reason": "스캔툴로 DTC와 프리즈프레임을 먼저 수집하면 고장 당시 부하·회전수·온도 조건을 보존해 다음 측정의 방향을 정할 수 있다. 코드만 보고 부품 교체를 확정하면 안 된다.",
+    "key_point": "진단 첫 단계: DTC와 고장 당시 데이터 확보.",
+    "source_question_id": "auto-r04-s01-q08",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q09",
+    "question_id": "auto-made-r04-s01-q09",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "배기가스 온도와 DPF 전후 차압",
+    "reason": "DPF 재생은 매연 산화에 필요한 열 관리와 축적량 판단이 중요하다. 배기가스 온도와 차압 데이터를 추적하되 재생 중단 조건은 제작사 규정을 적용한다.",
+    "key_point": "DPF 재생 핵심 데이터: 온도·차압.",
+    "source_question_id": "auto-r04-s01-q09",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q10",
+    "question_id": "auto-made-r04-s01-q10",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "실제 압력·목표 압력·배선 및 센서 신호를 비교한다",
+    "reason": "레일압력센서의 신호 이상은 출력 제한이나 시동 불량 등 여러 증상을 일으킬 수 있다. 목표값과 실측값, 공급 전원·접지, 배선 및 압력 생성 계통을 함께 확인해야 한다.",
+    "key_point": "레일압력 진단은 목표/실제값과 회로를 함께 본다.",
+    "source_question_id": "auto-r04-s01-q10",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_rps_fault_almost_always_causes_immediate_engine_stop_unsubstantiated"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q11",
+    "question_id": "auto-made-r04-s01-q11",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "시동 불량과 엔진 출력 저하",
+    "reason": "연료 압력 제어에 문제가 생기면 ECU가 요구한 분사 압력을 유지하기 어렵다. 원인은 조절 밸브뿐 아니라 펌프·누설·센서 등도 가능해 실측 확인이 필요하다.",
+    "key_point": "압력 제어 불량 → 분사 조건 저하 가능.",
+    "source_question_id": "auto-r04-s01-q11",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q12",
+    "question_id": "auto-made-r04-s01-q12",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "리턴 유량과 압축 상태 등을 함께 비교한다",
+    "reason": "인젝터 보정량은 실린더 출력 균형을 맞추는 ECU 계산 결과다. 인젝터 외에도 압축압력·공기 유입·연료압력 문제가 영향을 줄 수 있어 제조사 절차에 따라 교차 검증한다.",
+    "key_point": "인젝터 보정량 하나만으로 결함 확정 금지.",
+    "source_question_id": "auto-r04-s01-q12",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_injector_balance_20_percent_fixed_threshold_requires_vehicle_spec"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q13",
+    "question_id": "auto-made-r04-s01-q13",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "요구 옥탄가와 실제 사용 연료의 적합성",
+    "reason": "비정상 연소 노킹은 연료 옥탄가·실린더 온도·점화 시기·혼합비 등의 영향을 받는다. 기계적 타격음과 구분한 뒤 연소 조건을 확인해야 한다.",
+    "key_point": "연소 노킹은 옥탄가·온도·점화시기 등과 연관.",
+    "source_question_id": "auto-r04-s01-q13",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_knock_engine_oil_viscosity_never_related_requires_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q14",
+    "question_id": "auto-made-r04-s01-q14",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "해당 엔진의 최소 압력과 실린더 편차 규격을 적용한다",
+    "reason": "압축압력은 엔진 설계·시험 조건에 따라 정상 범위가 달라진다. 제조사 규정 온도·스로틀 상태·크랭킹 속도를 준수하고 최소값과 편차를 함께 판단한다.",
+    "key_point": "압축압력 합격선은 차종별 매뉴얼 기준.",
+    "source_question_id": "auto-r04-s01-q14",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_compression_pressure_plus_minus_10_percent_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q15",
+    "question_id": "auto-made-r04-s01-q15",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "제조사가 지정한 인젝터 또는 글로우플러그 측정 경로를 사용한다",
+    "reason": "디젤 압축 측정은 차종에 따라 인젝터 또는 예열플러그 장착부에 어댑터를 설치한다. 연료 분사·시동 방지 및 크랭킹 조건은 정비 지침을 따른다.",
+    "key_point": "디젤 압축 시험의 연결 위치는 엔진별로 다르다.",
+    "source_question_id": "auto-r04-s01-q15",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_claim_all_diesel_injectors_must_be_removed_for_compression_test"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q16",
+    "question_id": "auto-made-r04-s01-q16",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "제조사가 정한 체결 순서·토크·각도 규정",
+    "reason": "헤드 변형이나 가스켓 밀착 불량을 막기 위해 각 단계의 토크·각도와 지정 순서를 지켜야 한다. 일반적인 중앙→외측 패턴이 있어도 정확한 도면은 엔진마다 확인한다.",
+    "key_point": "헤드 볼트는 규정 순서·단계·각도 체결.",
+    "source_question_id": "auto-r04-s01-q16",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q17",
+    "question_id": "auto-made-r04-s01-q17",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "피스톤 링과 실린더 벽면 사이의 기밀",
+    "reason": "습식 압축시험에서 오일이 링·실린더 틈을 일시적으로 밀봉하면 압력이 상승할 수 있다. 밸브 누설 여부는 리크다운 시험 등으로 구별한다.",
+    "key_point": "습식 시험 압력 상승 → 링/실린더 측 누설 단서.",
+    "source_question_id": "auto-r04-s01-q17",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q18",
+    "question_id": "auto-made-r04-s01-q18",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "최신 법령과 자동차검사 안내의 해당 차량 기한을 확인한다",
+    "reason": "자동차 검사 주기와 최초 검사 시점은 차량 종류·용도·등록 조건·현행 규정에 따라 달라진다. 예전 교재의 숫자를 영구적으로 정답으로 사용하지 않고 최신 공식 안내를 확인한다.",
+    "key_point": "차량 검사 규정은 날짜와 차종을 함께 확인한다.",
+    "source_question_id": "auto-r04-s01-q18",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_law_emissions_inspection_period_and_initial_four_years_may_be_outdated_or_misframed"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q19",
+    "question_id": "auto-made-r04-s01-q19",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "삼원촉매(TWC)",
+    "reason": "삼원촉매는 가솔린 엔진의 배출가스에서 CO와 HC를 산화해 줄이고, NOx를 환원해 저감한다. 정상적인 공연비 제어와 촉매 작동 온도가 전제된다.",
+    "key_point": "TWC 기능: CO·HC 산화 / NOx 환원.",
+    "source_question_id": "auto-r04-s01-q19",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s01-q20",
+    "question_id": "auto-made-r04-s01-q20",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "연료 보정값과 전단 산소센서의 반응",
+    "reason": "높은 CO는 불완전 연소나 혼합비 과농 및 촉매 문제와 관련될 수 있다. 연료 보정·산소센서·연료압력과 촉매 효율을 함께 검사해야 하며 EGR만으로 원인을 배제하지 않는다.",
+    "key_point": "CO 증가 진단: 연소 상태·혼합비·촉매를 함께 본다.",
+    "source_question_id": "auto-r04-s01-q20",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
