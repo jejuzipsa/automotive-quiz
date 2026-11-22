@@ -1,0 +1,58 @@
+[
+  {
+    "id": "concept-engine-01",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가솔린 엔진의 점화 플러그는 전기적인 (    )을 발생시켜 연소를 시작한다.",
+    "choices": [
+      "불꽃",
+      "유압",
+      "냉각수",
+      "배기가스"
+    ],
+    "answer": 1,
+    "explanation": "가솔린 엔진은 점화 플러그의 전기 불꽃을 사용해 혼합기를 점화해."
+  },
+  {
+    "id": "concept-chassis-01",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압식 제동장치에서 압력을 전달하는 유체는 (    )이다.",
+    "choices": [
+      "워셔액",
+      "브레이크액",
+      "엔진오일",
+      "휘발유"
+    ],
+    "answer": 2,
+    "explanation": "유압식 브레이크는 브레이크액을 통해 유압을 전달해."
+  },
+  {
+    "id": "concept-electrical-01",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "회로의 과전류 보호를 위해 사용하는 부품은 (    )이다.",
+    "choices": [
+      "퓨즈",
+      "헤드램프",
+      "혼",
+      "스피커"
+    ],
+    "answer": 1,
+    "explanation": "퓨즈는 정해진 전류 조건에서 회로를 차단해 과전류로 인한 손상을 줄여."
+  },
+  {
+    "id": "concept-eco-01",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기자동차가 감속하면서 운동에너지 일부를 전기로 회수하는 제동 방식은 (    )이다.",
+    "choices": [
+      "엔진 브레이크",
+      "주차 브레이크",
+      "회생제동",
+      "공기압 제동"
+    ],
+    "answer": 3,
+    "explanation": "회생제동은 감속 시 모터를 발전기로 작동시켜 전기에너지를 회수하는 방식이야."
+  }
+]
