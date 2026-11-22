@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 original 720-question OCR transcription image-compared (private); Our edited QA1 question JSON 720 and separate explanations 720 (all editorial drafts, 28 substantive edits, 47 subject-review holds, 0 technical final approvals). Separate source OCR not modified.",
+  "source_of_truth": "QA23 original OCR source privately archived 720/720; our draft questions+separate explanations 720/720. QA2 editor reviewed all 129 off-topic-distractor heuristic candidates (128 rewritten, 1 valid negative-choice false positive) plus one distinct out-of-scope inverter item rewritten (129 unique Q+reason revisions). 47 classification holds persist. First-pass manufacturer-backed evidence on 7. Final technical approvals 0; live connected 0.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -675,7 +675,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa1-expanded-classification",
+  "latest_qa_stage": "technical-qa2-full-distractor-candidate-editorial-review",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -714,6 +714,47 @@
     "review_status": "editorial_draft",
     "publishable": false,
     "no_zip": true,
-    "next_work": "manual question-by-question technical fact-check + distractor plausibility + uniqueness + official subject scope approval, then release approved only"
+    "next_work": "manual question-by-question technical fact-check + distractor plausibility + uniqueness + official subject scope approval, then release approved only",
+    "superseded_for_current_drafts_by": "technical_qa2; retained as original QA1 ledger"
+  },
+  "technical_qa2": {
+    "reviewed_pairs_schema": 720,
+    "off_topic_distractor_candidates_flagged_before": 129,
+    "off_topic_distractor_candidates_editorially_rewritten": 128,
+    "off_topic_distractor_candidates_recognized_false_positive": 1,
+    "off_topic_distractor_candidates_left_unreviewed_in_QA2": 0,
+    "additional_out_of_scope_question_rewritten": 1,
+    "total_unique_question_choice_explanation_revised": 129,
+    "revised_per_subject": {
+      "engine": 27,
+      "chassis": 42,
+      "electrical": 33,
+      "eco": 27
+    },
+    "category_mismatch_candidates_screened": 47,
+    "category_mismatch_likely_other_subject_pending_syllabus": 39,
+    "category_cross_disciplinary_uncertain_pending_syllabus": 7,
+    "category_reframed_eco_EV_traction_inverter_pending_final": 1,
+    "category_holds_still_enforced_in_both_banks": 47,
+    "qa2_diff_ledger": "data/qa/technical-qa2-changes.json",
+    "qa2_false_positive": "data/qa/technical-qa2-false-positive.json",
+    "qa2_classification_ledger": "data/qa/technical-qa2-classifications.json",
+    "qa2_reference_firstpass": "data/qa/technical-qa2-firstpass-evidence.json",
+    "qa2_readme": "docs/TECHNICAL_QA2.md",
+    "qa2_summary": "data/qa/technical-qa2-summary.json",
+    "primary_source_qnet": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+    "technical_reference_firstpass_supported_count": 7,
+    "final_technical_answer_approved_count": 0,
+    "live_site_connected_count": 0,
+    "revision_status": "editorial_draft_pending_independent_review",
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_QA2_오답보기검수/",
+    "private_question_master": "questions_all_720.json",
+    "private_explanation_master": "explanations_all_720.json",
+    "qa2_questions_sha256": "df4c70e888b7a55a7fcf8e4d1f1910f3ceae4abc5f16cd2f1ac1ab7480f6506f",
+    "qa2_explanations_sha256": "7bb88989bea3e46106e9a5dca4b084c5f140ea43947c0b7164cbf5d15556cfad",
+    "keep_qa23_original_unchanged": true,
+    "keep_qa1_history_unchanged": true,
+    "zip_created": false,
+    "next_review": "technically verify all correct/incorrect options with independent sources, adjudicate 47 subject holds, improve 431 short explanations; promote only verified questions to mock exam; generate blank-choice concept quiz from approved explanations"
   }
 }
