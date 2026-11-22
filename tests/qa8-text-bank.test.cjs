@@ -8,16 +8,21 @@ const quiz=require("../quiz-utils.js");
 globalThis.JSZip=JSZip;
 const bankApi=require("../personal-text-bank.js");
 
-const demo=["engine","chassis","electrical","eco"].flatMap((subject,s)=>
-  Array.from({length:9},(_,r)=>Array.from({length:20},(_,i)=>({
-    id:`auto-r${String(r+1).padStart(2,"0")}-s${String(s+1).padStart(2,"0")}-q${String(i+1).padStart(2,"0")}`,
-    track:"expected",subject,round:r+1,question_number:i+1,
-    question:"독립 시험용 문제",choices:["A 정답 후보","B 보기","C 보기","D 보기"],
-    answer:(i%4)+1,explanation:"독립적으로 만든 테스트 해설.",
-    transcription_status:(r===0&&s===0&&i<20)?"source_compared":"ocr_unverified",
-    technical_answer_status:"unreviewed",review_status:"needs_review",publishable:false,flags:[]
-  })).flat()
-);
+const demo=[];
+for (const [s,subject] of ["engine","chassis","electrical","eco"].entries()) {
+  for(let r=1;r<=9;r++){
+    for(let i=1;i<=20;i++){
+      const id=`auto-r${String(r).padStart(2,"0")}-s${String(s+1).padStart(2,"0")}-q${String(i).padStart(2,"0")}`;
+      demo.push({
+        id,track:"expected",subject,round:r,question_number:i,
+        question:"독립 시험용 문제",choices:["A 정답 후보","B 보기","C 보기","D 보기"],
+        answer:((i-1)%4)+1,explanation:"독립적으로 만든 테스트 해설.",
+        transcription_status:(r===1&&s===0)?"source_compared":"ocr_unverified",
+        technical_answer_status:"unreviewed",review_status:"needs_review",publishable:false,flags:[]
+      });
+    }
+  }
+}
 const payload={manifest:{version:"QA8-TEXT-DRAFT",total:720},questions:demo};
 const normalized=bankApi.validate(payload);
 assert.equal(normalized.total,720);
