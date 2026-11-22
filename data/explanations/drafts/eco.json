@@ -1,0 +1,308 @@
+[
+  {
+    "id": "auto-made-r01-s04-q01",
+    "question_id": "auto-made-r01-s04-q01",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "규격에 맞는 절연장갑과 필요한 보호구",
+    "reason": "고전압 계통 작업에는 전압 등급과 상태가 적합한 절연 보호구가 필요하다. 전기 작업 절차에 따라 절연장갑 검사, 보호구 착용, 접근 통제를 시행해야 한다.",
+    "key_point": "고전압 전기작업 보호구는 전압 등급과 상태가 중요하다.",
+    "source_question_id": "auto-r01-s04-q01",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q02",
+    "question_id": "auto-made-r01-s04-q02",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "제조사 차단·대기 절차를 따르고 적합한 계측기로 무전압을 확인한다",
+    "reason": "고전압 차단은 차종별 지정 절차·방전 대기·재통전 방지 및 무전압 확인을 포함한다. 서비스 플러그를 분리하는 동작만으로 회로의 모든 지점이 안전하다고 볼 수 없다. 자격을 갖춘 사람만 작업해야 한다.",
+    "key_point": "고전압 작업은 차단 후 무전압 확인이 필수다.",
+    "source_question_id": "auto-r01-s04-q02",
+    "original_issue_flags": [
+      "technical_review_HV_deenergization_procedure_vehicle_specific"
+    ],
+    "reference_urls": [
+      "https://www.fluke.com/en/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q03",
+    "question_id": "auto-made-r01-s04-q03",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "가솔린 연료 레일의 잔압 제거",
+    "reason": "순수 전기차는 내연기관 연료레일을 사용하지 않는다. 배터리 팩 교체에는 차종별 고전압 격리, 냉각계통 및 체결·설정 절차가 포함될 수 있다.",
+    "key_point": "BEV 배터리 작업과 내연기관 연료 계통을 구분한다.",
+    "source_question_id": "auto-r01-s04-q03",
+    "original_issue_flags": [],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q04",
+    "question_id": "auto-made-r01-s04-q04",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "배터리 SOH와 셀 전압·온도 데이터",
+    "reason": "BMS는 셀 전압·전류·온도 등을 이용해 충전 상태(SOC)와 건강 상태(SOH) 등을 계산할 수 있다. 판정에는 차량별 진단 절차와 수치 해석이 필요하다.",
+    "key_point": "배터리 열화 평가에는 SOH·셀 상태 데이터가 유용하다.",
+    "source_question_id": "auto-r01-s04-q04",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q05",
+    "question_id": "auto-made-r01-s04-q05",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "가솔린 연료 분사기",
+    "reason": "BEV는 고전압 배터리에 저장된 전기에너지로 모터를 구동하므로 가솔린 분사기가 필요하지 않다. 구동모터·인버터·감속기는 대표적인 구동 계통이다.",
+    "key_point": "순수 전기차에는 가솔린 연료 분사기가 없다.",
+    "source_question_id": "auto-r01-s04-q05",
+    "original_issue_flags": [
+      "technical_review_EVCU_vs_OBC_inverter_architecture"
+    ],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q06",
+    "question_id": "auto-made-r01-s04-q06",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "정해진 절연 등급, 외관 손상 및 규정된 점검 상태를 확인한다",
+    "reason": "고전압 절연장갑은 사용 전 외관 및 공기 누설 등 지정된 점검을 거쳐야 한다. 정해진 시험·교체 기준을 준수하고 손상된 보호구를 사용하지 않는다.",
+    "key_point": "절연장갑은 적정 등급과 이상 유무를 먼저 확인한다.",
+    "source_question_id": "auto-r01-s04-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q07",
+    "question_id": "auto-made-r01-s04-q07",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "감속기 및 차동기어",
+    "reason": "구동모터의 회전력은 감속기와 차동장치 등을 거쳐 바퀴로 전달된다. 내연기관의 연료 분사 계통은 이 동력 전달에 해당하지 않는다.",
+    "key_point": "전기차는 모터 동력을 감속기·차동장치를 통해 전달한다.",
+    "source_question_id": "auto-r01-s04-q07",
+    "original_issue_flags": [],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q08",
+    "question_id": "auto-made-r01-s04-q08",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "차량에 맞는 진단기로 관련 ECU의 DTC 및 데이터 확인",
+    "reason": "전기차도 여러 제어기에서 고장코드와 실시간 상태값을 기록한다. 구동·충전·배터리 관련 제어기를 구분해 점검해야 하며 고장코드만으로 부품 교환을 확정하지 않는다.",
+    "key_point": "전기차 구동 이상은 관련 ECU DTC·상태 데이터를 이용한다.",
+    "source_question_id": "auto-r01-s04-q08",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q09",
+    "question_id": "auto-made-r01-s04-q09",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "충전 설비와 저장 탱크 사이 압력 차이를 이용한다",
+    "reason": "압축 수소는 충전 설비의 고압 저장·압축 시스템에서 차량 저장탱크로 공급된다. 충전 압력·온도 관리와 통신 등은 관련 표준 및 차량 시스템에 따른다.",
+    "key_point": "수소 충전은 압력 차이와 충전 제어를 사용한다.",
+    "source_question_id": "auto-r01-s04-q09",
+    "original_issue_flags": [],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q10",
+    "question_id": "auto-made-r01-s04-q10",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "수소가 양성자와 전자로 분리된다",
+    "reason": "PEM 연료전지의 애노드 촉매에서 수소 분자가 양성자와 전자로 나뉜다. 양성자는 막을 통과하고 전자는 외부 회로로 흘러 전기에너지를 제공한다.",
+    "key_point": "연료전지 애노드는 수소의 산화 반응이 일어난다.",
+    "source_question_id": "auto-r01-s04-q10",
+    "original_issue_flags": [
+      "technical_review_question_sequence_does_not_match_all_steps"
+    ],
+    "reference_urls": [
+      "https://www.energy.gov/cmei/fuels/fuel-cell-basics"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q11",
+    "question_id": "auto-made-r01-s04-q11",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "액화석유가스의 프로판",
+    "reason": "바이오디젤은 식물성 기름이나 동물성 지방을 전환하여 제조한다. 프로판은 LPG의 주요 성분으로 일반적인 FAME 바이오디젤 원료가 아니다.",
+    "key_point": "바이오디젤의 원료는 주로 유지류다.",
+    "source_question_id": "auto-r01-s04-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q12",
+    "question_id": "auto-made-r01-s04-q12",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "사용 가능한 배터리 에너지 감소와 주행거리 단축",
+    "reason": "배터리의 유효 용량이 감소하면 다른 조건이 일정할 때 사용할 수 있는 에너지가 줄고 주행거리도 짧아질 수 있다. 실제 주행거리는 기온·운전 습관 등 다른 요인도 영향을 준다.",
+    "key_point": "배터리 용량 저하는 동일 조건에서 주행 가능 거리에 영향을 준다.",
+    "source_question_id": "auto-r01-s04-q12",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q13",
+    "question_id": "auto-made-r01-s04-q13",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "BMS 고장코드와 셀 온도·전압 상태",
+    "reason": "충전 제한은 셀 전압 불균형, 온도 관리, BMS 판단 등 여러 원인으로 생길 수 있다. 실제 차량 진단 데이터로 제약 조건과 오류를 확인한다.",
+    "key_point": "충전 이상은 BMS·셀·온도 상태를 함께 점검한다.",
+    "source_question_id": "auto-r01-s04-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q14",
+    "question_id": "auto-made-r01-s04-q14",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "엔진에서 바퀴까지 전달된 실제 총 효율의 정밀 수치",
+    "reason": "고장코드는 특정 진단 조건에서 감지한 오류를 나타낸다. 실제 전달 효율은 회전수·토크·에너지 유량 등을 적절히 측정·계산해야 하므로 코드만으로 직접 산출할 수 없다.",
+    "key_point": "고장코드 확인과 동력 전달 효율 측정은 다르다.",
+    "source_question_id": "auto-r01-s04-q14",
+    "original_issue_flags": [
+      "technical_review_source_method_and_answer_ambiguous"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q15",
+    "question_id": "auto-made-r01-s04-q15",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "현재 배터리의 SOH(건강 상태)",
+    "reason": "회로도는 설계상 연결 관계를 알려 준다. 배터리의 현재 건강 상태는 진단 계측이나 BMS 데이터가 필요하며 회로도만으로 확인할 수 없다.",
+    "key_point": "배선 회로도와 배터리 실제 건강 상태는 별도 정보다.",
+    "source_question_id": "auto-r01-s04-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q16",
+    "question_id": "auto-made-r01-s04-q16",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "충전 회로 콘덴서는 차단 후에도 잔류 전압이 있을 수 있어 규정 대기·무전압 확인이 필요하다",
+    "reason": "고전압 시스템에는 차단 후에도 전하가 남는 콘덴서 등이 있을 수 있다. 정비사는 제조사 지정 차단과 방전 대기 후 검증된 측정 기기로 무전압을 확인해야 한다.",
+    "key_point": "고전압 차단과 안전한 무전압 확인은 별개 단계다.",
+    "source_question_id": "auto-r01-s04-q16",
+    "original_issue_flags": [
+      "technical_review_service_plug_removal_not_complete_HV_safety"
+    ],
+    "reference_urls": [
+      "https://www.fluke.com/en/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q17",
+    "question_id": "auto-made-r01-s04-q17",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "구동모터 → 감속기/차동장치 → 드라이브샤프트 → 바퀴",
+    "reason": "전기차에서는 모터가 만든 회전력이 감속기·차동장치를 통해 좌우 구동축과 바퀴에 전달된다. 차량별로 각 장치가 하나의 구동 유닛에 통합될 수 있다.",
+    "key_point": "구동모터의 토크는 감속·차동기구를 지나 바퀴로 간다.",
+    "source_question_id": "auto-r01-s04-q17",
+    "original_issue_flags": [],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q18",
+    "question_id": "auto-made-r01-s04-q18",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "자동 긴급 제동 AEB",
+    "reason": "AEB는 전방 센서(예: 레이더·카메라) 정보를 이용해 충돌 위험을 판단하고 조건을 만족하면 경고 또는 자동 제동을 수행한다. 시스템 성능과 작동 영역은 차량별로 다르다.",
+    "key_point": "AEB는 센서로 충돌 위험을 감지해 제동을 보조한다.",
+    "source_question_id": "auto-r01-s04-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q19",
+    "question_id": "auto-made-r01-s04-q19",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "차체제어모듈(BCM)",
+    "reason": "실내등·도어록 등은 일반적으로 BCM이 담당한다. EVCU는 차량 구동과 에너지 흐름의 상위 제어를 담당할 수 있지만, 세부 역할 분담은 차종 설계에 따라 달라진다.",
+    "key_point": "BCM은 차체 편의기능, EVCU는 구동/에너지 제어를 주로 담당한다.",
+    "source_question_id": "auto-r01-s04-q19",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s04-q20",
+    "question_id": "auto-made-r01-s04-q20",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "누설 예상 부위에 불꽃을 접근시키기",
+    "reason": "수소는 가연성이 높은 기체이므로 불꽃이나 점화원을 가까이하면 화재·폭발 위험이 있다. 승인된 장비와 제조사 안전 지침에 따라 누설을 확인해야 한다.",
+    "key_point": "수소 누설 검사는 절대로 불꽃으로 하지 않는다.",
+    "source_question_id": "auto-r01-s04-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
