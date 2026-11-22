@@ -3,6 +3,17 @@
 > **이 문서를 다음 채팅 첫 번째에 읽고, `docs/WORK_LOG.md`, `docs/DATA_BANK.md`, `docs/REVIEW_PROTOCOL.md`를 확인한 뒤 이어서 작업한다.**  
 > 마지막 업데이트: 2026-11-22 (KST). 기존 공인중개사 사이트는 별도 프로젝트이며 변경하지 않는다.
 
+## 2026-11-23 — 기술·편집 QA2: 오답 보기 후보 129건 전수 편집 검토
+
+- **원본 QA23 OCR 720/720 대조본은 수정하지 않음.** QA1의 기술 위험탐지에서 `potentially_off_topic_distractor`로 표시한 **129문항 모두 질문·4보기·해설 실제 확인**. 그중 **128문항 오답선지/조건 교정**, **1문항 `auto-made-r02-s03-q18`은 정상 부정형(속하지 않는 것은?)으로 확인해 유지**. 별도로 가정용 태양광 인버터 출제범위 이탈 1문항 `auto-made-r06-s04-q20`을 **전기차 구동 인버터 DC→모터 AC** 개념으로 다시 작성. **이번 직접 내용수정 고유 129문항**이며 QA1 이전의 28개 수정과 고유 합산하지 않는다.
+- **전체 720 문제·720 별도 해설** ID/정답번호/정답보기 연동·고유성/4선지 유지, QA2 129개 **전후 기록** `data/qa/technical-qa2-changes.json`, 오탐 기록 `data/qa/technical-qa2-false-positive.json`.
+- **과목 분류 의심 47개**에 대해 문제 질문과 정답 중심으로 1차 재점검: 39건 다른 과목으로 분류할 가능성이 높음(세부 공식 기준 대조 대기), 7건 조향·제동/전기제어 등 공통 주제라 추가 판단 필요, 1건은 가정용 인버터를 자동차 구동용으로 재작성. 모두 `subject_classification_review.status:"hold_do_not_publish"` **문제·해설 양쪽에서 유지**. 제안은 `data/qa/technical-qa2-classifications.json`. 큐넷 2025~2027 출제과목 공식 안내 <https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0> 참고. **공식 세부 시험범위 확인 전 과목 재배치나 승인 금지**.
+- **7문항 외부 제조사/장비사 1차 교차검토**: Garrett 터보 가스켓·윤활, Bosch·기아 구동 인버터/OBC/DC-DC, Bosch ESP 요레이트·ACC, Fluke/Pico 고전압 점화픽업. 질문 4선지와 근거·URL: `data/qa/technical-qa2-firstpass-evidence.json`. 기술자료 1차 대조이지 전체 기술적 정답의 최종 승인이 아님.
+- **최종 기술승인 0/720 / 신규 실전 출제 0/720**. 모든 문항 아직 `editorial_draft`, `pending_independent_review`, `publishable:false`. 사이트 `data/manifest.json`을 수정하지 않았으며 기존 공개 예상문제80에는 영향 없음.
+- GitHub `data/past/drafts/roundXX/` 및 `data/explanations/drafts/roundXX/` **9회×4과목, 720쌍 JSON 동기화**, `docs/TECHNICAL_QA2.md`, `tests/technical-qa2.test.cjs`와 기존 QA1 회귀테스트 계보 보존; CI https://github.com/jejuzipsa/automotive-quiz/actions/runs/45056047774 **성공**.
+- 개인 Library `/기출문제_자동차정비산업기사/우리문제은행_QA2_오답보기검수/`: 최신 720 질문·720 해설, 과목별180, 129변경 전후, 1오탐, 47분류, 7기술자료 대조, 검증 스크립트 저장. **ZIP 없음**.
+- **다음 작업은 내용 정확성 본 검증**: 720문항별 각 선지 참·거짓과 정답 유일성의 독립 자료 대조, 47 과목 경계 판정, QA1 짧은 해설 431개 등 품질 개선. 검증 승인 문항만 모의고사로 자동 연결하고 검증된 해설로 괄호문제 생성.
+
 ## 2026-11-23 — 기술·편집 QA1 (720문항 위험점검, 직접수정 28, 과목검토 47)
 
 - 기준: 비공개 QA23 OCR 원본 **720/720 대조 완료** 자료와 별도 자체제작 문제은행/해설은행 **720쌍**. 원본은 수정하지 않음. 질문·보기·해설 연결과 ID/객관식 구조 **720/720 자동검사 통과**. 기술 정답 전수승인과 구분.
