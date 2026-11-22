@@ -1,0 +1,18 @@
+{
+  "baseline_held": 14,
+  "new_holds": 33,
+  "total_subject_holds": 47,
+  "by_source_subject": {
+    "chassis": 20,
+    "electrical": 6,
+    "eco": 21
+  },
+  "by_suggested_subject": {
+    "engine": 24,
+    "electrical": 9,
+    "chassis": 13,
+    "out_of_scope": 1
+  },
+  "publication_policy": "all source-misclassified/possibly-off-scope items remain publishable:false. Proposed moves require new item review and count reconciliation.",
+  "note": "Likely misclassification from question topic, not a final determination of the national exam syllabus. Suggested subject assignments require final independent confirmation."
+}
