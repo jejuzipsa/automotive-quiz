@@ -29,3 +29,4 @@ jobs:
           node tests/json-bank.test.cjs
           node tests/draft-bank.test.cjs
           node tests/draft-bank-rounds.test.cjs
+          node tests/technical-qa1.test.cjs
