@@ -1,0 +1,10 @@
+# Paid textbooks, private OCR, and user-provided scans must never be committed to this public repository.
+private-data/
+source-scans/
+ocr-drafts/
+publisher-data/
+*.private.json
+*.source.zip
+*.scan.zip
+.DS_Store
+Thumbs.db
