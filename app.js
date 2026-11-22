@@ -16,7 +16,70 @@
     (q.track==="demo" || q.track==="concept" ||
       ((q.track==="past" || q.track==="expected") && q.review_status==="approved" && q.publishable===true))
   );
-  // Publisher scans and unreviewed OCR are intentionally not loaded into the public site.
+  // Unverified publisher text never ships with the public bundle.
+  // QA8 is loaded only from the user's own local IndexedDB store.
+  let localItems = [];
+  const lastOrdersById = new Map();
+  const QUIZ_UTILS = window.AutomotiveQuizUtils;
+  function buildOrder(q) {
+    const order = QUIZ_UTILS.shuffleOrder(q.choices.length);
+    const previous = lastOrdersById.get(q.id);
+    const reference = previous || Array.from({length:q.choices.length},(_,i)=>i+1);
+    if (order.every((value,i)=>value===reference[i])) {
+      [order[0],order[1]]=[order[1],order[0]];
+    }
+    lastOrdersById.set(q.id,[...order]);
+    return order;
+  }
+  function isAnswerCorrect(session,index) {
+    const q=session.items[index];
+    const displayNumber=session.choices[index];
+    return QUIZ_UTILS.isCorrect(session.orders?.[index],displayNumber,q.answer);
+  }
+  async function restorePersonalBank() {
+    const message=$("personalTextBankStatus");
+    const api=window.AutomotivePersonalBank;
+    if(!api){message.textContent="개인 문제은행 모듈을 불러오지 못했어.";return;}
+    try {
+      const saved=await api.load();
+      if(saved && Array.isArray(saved.questions) && saved.questions.length===720) {
+        localItems=saved.questions.map(q=>({...q,personal_bank:true}));
+        $("personalTextBankClearBtn").disabled=false;
+        message.textContent=`이 기기에 QA8 ${saved.total}문항 저장됨 · 원본 대조 ${saved.reviewed}문항 · 미검수 ${saved.unreviewed}문항`;
+        setTrack("expected");
+      } else {localItems=[];renderSubjects();}
+    } catch(error){
+      message.textContent="브라우저 저장소를 읽지 못했어: "+(error?.message||"오류");
+    }
+  }
+  async function importPersonalBank(file) {
+    if(!file)return;
+    const message=$("personalTextBankStatus");
+    message.textContent="QA8 텍스트 문제를 검증하고 이 기기에 저장하는 중이야.";
+    try {
+      const api=window.AutomotivePersonalBank;
+      const parsed=await api.parseFile(file);
+      const saved=await api.save(parsed);
+      localItems=parsed.questions.map(q=>({...q,personal_bank:true}));
+      $("personalTextBankClearBtn").disabled=false;
+      message.textContent=`${parsed.total}문항 불러오기 완료 · 원본 대조 ${parsed.reviewed} · 미검수 ${parsed.unreviewed}${saved.persistent?" · 기기에 저장됨":" · 임시 보관만 가능 ("+saved.reason+")"}`;
+      setTrack("expected");
+    } catch(error){
+      message.textContent="불러오기 실패: "+(error?.message||"오류");
+    } finally {
+      $("personalTextBankInput").value="";
+    }
+  }
+  async function clearPersonalBank() {
+    const message=$("personalTextBankStatus");
+    try {
+      await window.AutomotivePersonalBank.clear();
+      localItems=[];
+      $("personalTextBankClearBtn").disabled=true;
+      message.textContent="이 기기의 QA8 문제은행을 삭제했어. 다시 가져오면 사용할 수 있어.";
+      renderSubjects();
+    } catch(error){message.textContent="삭제 실패: "+(error?.message||"오류");}
+  }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
   let activeTrack = "past";
   let current = null;
@@ -49,7 +112,7 @@
     return SUBJECTS.find(s=>s.id===subject)?.name || "전체 과목";
   }
   function poolFor(track,subject=null) {
-    return ITEMS.filter(q=>q.track===track && (!subject||q.subject===subject));
+    return [...ITEMS,...localItems].filter(q=>q.track===track && (!subject||q.subject===subject));
   }
   function shuffled(items) {
     const a=[...items];
@@ -86,15 +149,18 @@
   function renderSubjects() {
     const box=$("subjectGrid");box.replaceChildren();
     const total=poolFor(activeTrack).length;
-    $("trackSummary").textContent=`${TRACKS[activeTrack]} · 총 ${total}문항 — 현재는 사이트 기능을 시험하는 단계로, 출처 확인·검수가 끝난 문제만 이 메뉴에 추가할 예정이야.`;
-    for (const subject of SUBJECTS) {
+    $("trackSummary").textContent=activeTrack==="expected" && localItems.length
+      ? `예상문제 · 개인 QA8 텍스트 문제은행 ${total}문항 · 검수 전 OCR 초안 포함 · 기술적 정답 미승인`
+      : `${TRACKS[activeTrack]} · 총 ${total}문항 · 공개 검수 데이터는 아직 준비 중이야. QA8은 위에서 개인 파일을 불러와 사용할 수 있어.`;
+    for(const subject of SUBJECTS){
       const count=poolFor(activeTrack,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
       const detail=make("div","subject-btn");
       detail.append(make("strong","",subject.name),make("span","",`${count}문항`));
       const action=make("div","subject-action-stack");
-      action.style.cssText="display:flex;flex-direction:column;gap:7px;min-width:91px";
-      appendButton(action,"10문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,10));
+      action.style.cssText="display:flex;flex-direction:column;gap:7px;min-width:95px";
+      appendButton(action,"10문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,10),count===0);
+      appendButton(action,"20문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,20),count===0);
       appendButton(action,"전체 보기","subject-browse-btn",()=>openBrowse(activeTrack,subject.id));
       card.append(detail,action);box.appendChild(card);
     }
@@ -161,7 +227,8 @@
   function startSession(items,options) {
     if(!items.length){showHome();return;}
     const mode=options.mode||"practice";
-    current={items:[...items],choices:Array(items.length).fill(0),index:0,
+    current={items:[...items],choices:Array(items.length).fill(0),
+      orders:items.map(buildOrder),index:0,
       mode,title:options.title||"문제풀이",track:options.track||"demo",
       subject:options.subject||null,
       examDeadline:mode==="exam"?Date.now()+10*60*1000:null};
@@ -186,19 +253,30 @@
     if(!current)return;
     const {items,index,choices,mode}=current;
     const q=items[index],chosen=choices[index],locked=mode!=="exam" && chosen!==0;
+    const order=current.orders[index];
+    const isCorrect=isAnswerCorrect(current,index);
+    const correctNumber=QUIZ_UTILS.correctDisplayIndex(order,q.answer);
     $("quizSubject").textContent=current.title;
     $("quizProgress").textContent=`${index+1} / ${items.length}`;
-    $("quizSource").textContent=mode==="exam"?"시험 진행 중":currentSubjectLabel(q.subject);
+    $("quizSource").textContent=mode==="exam"?"시험 진행 중":`${currentSubjectLabel(q.subject)}${q.round?" · "+q.round+"회":""}`;
     $("progressFill").style.width=`${(index+1)*100/items.length}%`;
     $("questionNumber").textContent=`문제 ${index+1}`;
     $("questionText").textContent=q.question;
+    const audit=$("quizAuditInfo");
+    if(q.personal_bank) {
+      audit.classList.remove("hidden");
+      audit.textContent=q.transcription_status==="source_compared"
+        ?"QA8 · 원본 문자 대조 완료 · 정답의 기술적 정확성은 미검증"
+        :"QA8 · OCR 미검수 초안 · 정답의 기술적 정확성은 미검증";
+    } else audit.classList.add("hidden");
     $("questionCard").classList.remove("correct","wrong");
     const box=$("answerChoices");box.replaceChildren();
-    q.choices.forEach((choice,i)=>{
+    order.forEach((originalIndex,i)=>{
       const number=i+1;
+      const choice=q.choices[originalIndex-1];
       const cls="choice"+(mode==="exam" && chosen===number?" selected":
-        locked && number===q.answer?" correct":
-        locked && chosen===number && chosen!==q.answer?" incorrect":"");
+        locked && originalIndex===q.answer?" correct":
+        locked && chosen===number && !isCorrect?" incorrect":"");
       const button=make("button",cls);button.type="button";
       button.disabled=locked;
       button.append(make("span","choice-index",String(number)),make("span","choice-text",choice));
@@ -206,7 +284,7 @@
       box.appendChild(button);
     });
     $("feedback").classList.add("hidden");
-    $("nextBtn").classList.toggle("hidden",locked===false && mode!=="exam");
+    $("nextBtn").classList.toggle("hidden",!locked && mode!=="exam");
     $("reviewBackBtn").classList.add("hidden");
     if(mode==="exam") {
       $("nextBtn").classList.remove("hidden");
@@ -214,20 +292,20 @@
     } else if(locked) {
       const feedback=$("feedback");
       feedback.classList.remove("hidden");
-      feedback.classList.toggle("good",chosen===q.answer);
-      feedback.classList.toggle("bad",chosen!==q.answer);
+      feedback.classList.toggle("good",isCorrect);
+      feedback.classList.toggle("bad",!isCorrect);
       feedback.replaceChildren(
-        make("strong","",chosen===q.answer?"정답이야.":"오답이야. 정답은 "+q.answer+"번이야."),
+        make("strong","",isCorrect?"정답이야.":"오답이야. 정답은 "+correctNumber+"번이야."),
         make("span","",q.explanation)
       );
-      $("questionCard").classList.add(chosen===q.answer?"correct":"wrong");
+      $("questionCard").classList.add(isCorrect?"correct":"wrong");
       if(mode==="review") $("reviewBackBtn").classList.remove("hidden");
       else {
         $("nextBtn").classList.remove("hidden");
         $("nextBtn").textContent=index===items.length-1?"결과 보기":"다음 문제";
       }
     }
-    if(mode!=="exam" && mode==="review") $("nextBtn").classList.add("hidden");
+    if(mode==="review") $("nextBtn").classList.add("hidden");
   }
   function selectAnswer(number) {
     if(!current)return;
@@ -247,7 +325,8 @@
     stopTimer();
     if(current.mode==="review"){backFromReview();return;}
     recentResult={
-      items:current.items,choices:[...current.choices],title:current.title,
+      items:current.items,choices:[...current.choices],
+      orders:current.orders.map(o=>[...o]),title:current.title,
       track:current.track,subject:current.subject,mode:current.mode
     };
     lastSaved=recentResult;
@@ -255,7 +334,7 @@
     renderResults();showView("result");
   }
   function wrongIndices(s) {
-    return s.items.map((q,i)=>s.choices[i]!==q.answer?i:-1).filter(i=>i>=0);
+    return s.items.map((q,i)=>!isAnswerCorrect(s,i)?i:-1).filter(i=>i>=0);
   }
   function renderResults(){
     const s=recentResult;if(!s)return;
@@ -269,7 +348,7 @@
     $("resultHint").textContent="빨간 문제 번호를 누르면 해당 문제를 다시 풀 수 있어.";
     const grid=$("resultGrid");grid.replaceChildren();
     s.items.forEach((q,i)=>{
-      const correct=s.choices[i]===q.answer;
+      const correct=isAnswerCorrect(s,i);
       const btn=appendButton(grid,String(i+1),"result-number "+(correct?"correct":"wrong"),()=>openReview(s,i,"result"),correct);
       btn.title=correct?"정답":s.choices[i]===0?"미응답 · 다시 풀기":"오답 · 다시 풀기";
     });
@@ -278,7 +357,7 @@
   function openReview(s,index,goBack){
     returnSession=recentResult;
     returnView=goBack;
-    current={items:[s.items[index]],choices:[0],index:0,mode:"review",
+    current={items:[s.items[index]],choices:[0],orders:[buildOrder(s.items[index])],index:0,mode:"review",
       title:`오답 다시 풀기 · 원래 ${index+1}번`,
       track:s.items[index].track,subject:s.items[index].subject};
     renderQuestion();showView("quiz");
@@ -354,6 +433,8 @@
   function connect(){
     $("trackPast").addEventListener("click",()=>setTrack("past"));
     $("trackExpected").addEventListener("click",()=>setTrack("expected"));
+    $("personalTextBankInput").addEventListener("change",event=>importPersonalBank(event.target.files?.[0]));
+    $("personalTextBankClearBtn").addEventListener("click",clearPersonalBank);
     $("themeToggleBtn").addEventListener("click",toggleTheme);
     for(const b of document.querySelectorAll(".reading-size-btn"))b.addEventListener("click",()=>setReadingSize(b.dataset.readingSize));
     $("homeBtn").addEventListener("click",showHome);
@@ -374,6 +455,7 @@
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
     setTrack("past");showView("home");
+    restorePersonalBank();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",connect);
   else connect();
