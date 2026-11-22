@@ -1,0 +1,337 @@
+[
+  {
+    "id": "auto-made-r05-s03-q01",
+    "question_id": "auto-made-r05-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "빨강·검정 프로브가 반대 극성에 닿았다",
+    "reason": "DC 전압 측정에서 리드의 기준 극성이 반대면 계기에 음수 부호가 표시된다. 값을 절댓값과 부호로 함께 해석한다.",
+    "key_point": "DC 전압 음수 표시 = 기준 프로브 극성 반대 가능.",
+    "source_question_id": "auto-r05-s03-q01",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q02",
+    "question_id": "auto-made-r05-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "ABS 경고등이 켜지고 제어가 제한된다",
+    "reason": "휠 속도 정보가 불명확하면 제어기는 ABS 기능을 제한하고 경고를 표시할 수 있다. 배선·센서·톤휠을 구별해 진단한다.",
+    "key_point": "휠속도 신호 상실 → ABS 제한·경고 가능.",
+    "source_question_id": "auto-r05-s03-q02",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q03",
+    "question_id": "auto-made-r05-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "자세제어 기능을 부분 또는 전체 제한한다",
+    "reason": "ESC는 차량의 실제 요율 신호가 필요하다. 센서 오류 시 잘못된 제동 개입을 막기 위해 기능을 제한하고 경고등을 켤 수 있다.",
+    "key_point": "요레이트 이상 → ESC 기능 제한 가능.",
+    "source_question_id": "auto-r05-s03-q03",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "explanation_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q04",
+    "question_id": "auto-made-r05-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "정비 지침에 영점 보정이 지정됐는지 확인 후 수행",
+    "reason": "조향각 센서 교환이나 휠 정렬 작업 후 차종에 따라 영점 학습이 필요할 수 있다. 단순 ESC 수리 모두에 공통 의무는 아니다.",
+    "key_point": "조향각 영점학습은 차종·작업 조건 기준.",
+    "source_question_id": "auto-r05-s03-q04",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_esp_repair_steering_angle_calibration_not_always_required"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q05",
+    "question_id": "auto-made-r05-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "장비와 차량 매뉴얼이 지정한 점화·통신 종료 조건을 따른다",
+    "reason": "진단 중 강제 분리는 통신 오류나 데이터 손상 가능성을 높일 수 있다. 연결과 해제는 장비·차량 절차를 기준으로 한다.",
+    "key_point": "스캔툴 해제도 장비·차량 지정 절차 준수.",
+    "source_question_id": "auto-r05-s03-q05",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_scan_tool_disconnect_while_ignition_on_requires_manual"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q06",
+    "question_id": "auto-made-r05-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "요레이트·횡가속도 값과 센서 보정 상태",
+    "reason": "스캔툴은 ECU의 디지털 데이터와 보정상태·DTC를 확인한다. 물리적 타이어 마모는 별도의 측정 도구가 필요하다.",
+    "key_point": "스캐너: 전자 데이터 / 기계 마모: 별도 계측.",
+    "source_question_id": "auto-r05-s03-q06",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q07",
+    "question_id": "auto-made-r05-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "현재 자동차관리법 및 시행규칙의 보고·시정절차",
+    "reason": "리콜 보고·시정조치의 시점과 절차는 현행 법령·공식 안내에 따라 확인해야 한다. 법령에 따른 담당기관과 신고 기한을 단정하기 전에 법 조문을 확인한다.",
+    "key_point": "리콜 의무는 적용 법령·기준 시점 확인.",
+    "source_question_id": "auto-r05-s03-q07",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_vehicle_recall_reporting_law_currentness_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q08",
+    "question_id": "auto-made-r05-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "냉각수 양·히터 코어로 가는 유량과 에어 포켓",
+    "reason": "히터 코어에 냉각수 흐름이 부족하거나 공기가 갇히면 열교환이 나빠질 수 있다. 블렌드도어와 난방 조절도 구별해 확인한다.",
+    "key_point": "히터 불량: 냉각수 유량·에어록·블렌드도어.",
+    "source_question_id": "auto-r05-s03-q08",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_heater_not_warm_first_check_multiple_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q09",
+    "question_id": "auto-made-r05-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "냉매 수분과 이물 관리·액상 냉매 저장 역할",
+    "reason": "리시버드라이어는 시스템 구성에 따라 액상 냉매를 저장하고 수분·이물질을 제거한다. 압축작업은 컴프레서가 수행한다.",
+    "key_point": "리시버드라이어 ≠ 컴프레서.",
+    "source_question_id": "auto-r05-s03-q09",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q10",
+    "question_id": "auto-made-r05-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "실내 달콤한 냄새·바닥 습기·냉각수 감소",
+    "reason": "히터 코어는 엔진 냉각수를 이용하는 열교환기다. 누수는 실내 습기, 냉각수 손실과 특유 냄새로 나타날 수 있다.",
+    "key_point": "히터 코어 누수 → 냉각수 감소·실내 습기.",
+    "source_question_id": "auto-r05-s03-q10",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_similarity_with_r05s03q11_heater_core_leak"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q11",
+    "question_id": "auto-made-r05-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "히터코어와 연결호스의 냉각수 누설",
+    "reason": "히터코어가 누수되면 증기가 공조덕트를 통해 실내로 유입될 수 있다. 유리 김서림과 바닥 젖음, 냉각수량 변화를 함께 검사한다.",
+    "key_point": "김서림·냉각수 냄새 → 히터코어 누설 의심.",
+    "source_question_id": "auto-r05-s03-q11",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_similarity_with_r05s03q10_heater_core_leak"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q12",
+    "question_id": "auto-made-r05-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "냉각수 누설·에어빼기·히터 작동 확인",
+    "reason": "히터코어는 냉각수 계통과 연결되므로 새 코어와 호스의 누설 및 공기 제거가 중요하다. 공조 케이스 분해 범위에 따라 냉매 회수 필요성은 다를 수 있다.",
+    "key_point": "히터 코어 교환 후 냉각계 누설·에어빼기.",
+    "source_question_id": "auto-r05-s03-q12",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_heater_core_service_could_require_hvac_aircon_disconnect_varies"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q13",
+    "question_id": "auto-made-r05-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "MAF 측정값과 목표 공기량·과급압력",
+    "reason": "흡기량 부족과 센서 오차는 공기-연료비를 악화해 매연과 출력 부족을 일으킬 수 있다. MAF 값은 EGR·과급·배선과 함께 검증한다.",
+    "key_point": "디젤 매연/출력 저하 → MAF·부스트·흡기 검사.",
+    "source_question_id": "auto-r05-s03-q13",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_airflow_sensor_smoke_link_depends_on_fuel_strategy"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q14",
+    "question_id": "auto-made-r05-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "해당 도어의 액추에이터와 커넥터·배선",
+    "reason": "개별 도어만 불량하면 국부적인 구동기, 기구 걸림 또는 연결 회로 문제 가능성이 높다. 구동 명령과 실제 동작을 비교한다.",
+    "key_point": "개별 도어 잠금 불량 → 도어별 구동계 점검.",
+    "source_question_id": "auto-r05-s03-q14",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q15",
+    "question_id": "auto-made-r05-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "도어 스위치의 접점 상태 변화",
+    "reason": "도어 스위치 또는 래치 내 위치센서가 열림 상태를 감지한다. 제어 모듈은 이를 받아 실내등을 구동한다.",
+    "key_point": "도어 스위치 = 문 개폐 신호 입력.",
+    "source_question_id": "auto-r05-s03-q15",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q16",
+    "question_id": "auto-made-r05-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "윈도 위치 학습과 끼임방지 초기화 수행",
+    "reason": "원터치·끼임방지 기능은 기준 상·하단 위치 학습을 필요로 할 수 있다. 차량에 따라 초기화 방법이 다르다.",
+    "key_point": "원터치 기능 복구 → 위치 학습·초기화.",
+    "source_question_id": "auto-r05-s03-q16",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_window_auto_reset_which_models"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q17",
+    "question_id": "auto-made-r05-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "원터치 설정·학습 상태와 스위치 신호",
+    "reason": "수동 움직임이 정상이면 기본 모터·전원은 일단 동작한다. 학습 상태, 도어 ECU의 스위치 신호와 오류코드를 확인한다.",
+    "key_point": "수동 정상·원터치 불량 → 학습/제어 입력.",
+    "source_question_id": "auto-r05-s03-q17",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q18",
+    "question_id": "auto-made-r05-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "공통 잠금 명령·배선 분기와 다른 도어 구동전원 확인",
+    "reason": "여러 도어가 동시에 반응하지 않으면 제어기 출력과 공통 회로가 원인일 수 있다. 각 도어별 액추에이터도 확인해 범위를 좁혀야 한다.",
+    "key_point": "여러 도어 불량 → 공통 제어·전원 경로 점검.",
+    "source_question_id": "auto-r05-s03-q18",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_central_lock_other_doors_fault_multiple_possible_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q19",
+    "question_id": "auto-made-r05-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "가이드 레일과 구동 케이블 오염·변형",
+    "reason": "선루프 레일에 이물이나 윤활 불량, 케이블 손상이 있으면 저항과 소음이 증가한다. 장애물을 제거하고 지정 윤활·조정 절차를 따른다.",
+    "key_point": "선루프 거친 움직임 → 레일·케이블·윤활.",
+    "source_question_id": "auto-r05-s03-q19",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s03-q20",
+    "question_id": "auto-made-r05-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "배수호스 내부의 물때만 존재하는 상태",
+    "reason": "선루프 소음은 기계 구동계와 패널 체결에서 많이 생긴다. 배수 막힘은 주로 누수·실내 젖음으로 나타나므로 별도 증상으로 구분한다.",
+    "key_point": "선루프 기계 소음 ↔ 구동/체결, 배수막힘 ↔ 누수.",
+    "source_question_id": "auto-r05-s03-q20",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
