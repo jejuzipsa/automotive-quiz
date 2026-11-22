@@ -822,8 +822,8 @@
     "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_QA3_선지검증/",
     "private_question_master": "questions_all_720.json",
     "private_explanation_master": "explanations_all_720.json",
-    "question_sha256": "10274fb60c52",
-    "explanation_sha256": "59bf29a65fb4",
+    "question_sha256": "10274fb60c521e11735291d9308087b538979992a7a5ff1adf14ca24e545477a",
+    "explanation_sha256": "59bf29a65fb4dd73a0ecda17689ee8402b722678c986f82ec991dd318fc0f6ae",
     "next_to_review": "r01-s02-q01 (1회 섀시정비 1번) and 3 engine holds",
     "note": "17 supported are source-backed first pass, NOT final technical answer approval; new drafts remain editorial_draft and publishable=false. Original OCR unchanged.",
     "no_zip": true
