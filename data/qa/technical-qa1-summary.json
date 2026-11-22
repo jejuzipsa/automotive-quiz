@@ -21,5 +21,7 @@
   "answer_number_changed": 0,
   "editorial_quality_revision_count": 28,
   "pending_full_question_technical_review": 720,
-  "notes": "문제의 보기·조건·정답 근거를 직접 재작성하여 오류 가능성을 줄인 배치다. 외부 자료를 일부 대조했지만 전체 문항/보기의 독립 기술 승인은 아직 아니다."
+  "notes": "문제의 보기·조건·정답 근거를 직접 재작성하여 오류 가능성을 줄인 배치다. 외부 자료를 일부 대조했지만 전체 문항/보기의 독립 기술 승인은 아직 아니다.",
+  "subject_classification_holds_total": 47,
+  "additional_subject_classification_holds_after_deeper_manual_review": 33
 }
