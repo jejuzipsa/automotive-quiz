@@ -1,0 +1,341 @@
+[
+  {
+    "id": "auto-made-r04-s04-q01",
+    "question_id": "auto-made-r04-s04-q01",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "해당 전압 등급에 맞는 절연장갑과 지정 보호장갑",
+    "reason": "고전압 작업 보호구는 정격 절연성능과 적절한 외부 보호가 필요하다. 손상·시험 유효기간 등을 점검하고 제조사 작업 절차에 따라 사용해야 한다.",
+    "key_point": "고전압 PPE는 정격과 상태를 확인한다.",
+    "source_question_id": "auto-r04-s04-q01",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q02",
+    "question_id": "auto-made-r04-s04-q02",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "배터리 방전 전력과 모터 보조출력을 제한한다",
+    "reason": "충전 상태가 너무 낮으면 배터리 손상을 막기 위해 방전을 제한한다. 차종에 따라 엔진 개입 또는 충전 제어도 이루어진다.",
+    "key_point": "SOC 하한 보호: 배터리 출력 제한.",
+    "source_question_id": "auto-r04-s04-q02",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q03",
+    "question_id": "auto-made-r04-s04-q03",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "지정 차단·잔류전압 대기·무전압 확인을 추가한다",
+    "reason": "시동 종료만으로 인버터 커패시터의 잔류전압이 즉시 사라지는 것은 아니다. 자격 있는 작업자가 제조사의 차단 및 대기·검증 절차를 완료해야 한다.",
+    "key_point": "OFF ≠ 무전압 확인 완료.",
+    "source_question_id": "auto-r04-s04-q03",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_hv_vehicle_off_is_not_complete_deenergization_require_oem_service_disconnect_wait_and_test"
+    ],
+    "reference_urls": [
+      "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_note": "READY OFF만으로 고전압계통이 무전압이라는 원본의 위험한 인상을 교정함."
+  },
+  {
+    "id": "auto-made-r04-s04-q04",
+    "question_id": "auto-made-r04-s04-q04",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "차량 제조사의 측정 위치·시험 전압·분리 조건",
+    "reason": "절연저항계는 시험전압을 인가하므로 고전압 배터리나 전력전자부품 연결 상태에서 무분별한 측정이 위험하다. 지정한 절연 절차와 측정점을 확인한다.",
+    "key_point": "절연저항 시험은 OEM 지정 경로·전압을 준수.",
+    "source_question_id": "auto-r04-s04-q04",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_megohmmeter_on_battery_requires_oem_method_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q05",
+    "question_id": "auto-made-r04-s04-q05",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "제조사 정비모드와 차량 고정 지침을 확인한다",
+    "reason": "EPB 장착 차량은 캘리퍼 피스톤 후퇴에 정비모드가 필요한 경우가 있다. 차량은 별도로 안전하게 고정하고 제조사 절차대로 작업해야 한다.",
+    "key_point": "EPB 브레이크 패드 작업: 정비모드·차량 고정.",
+    "source_question_id": "auto-r04-s04-q05",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_parking_brake_during_pad_replacement_can_be_unsafe_for_electronic_parking_brake_rear_caliper"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q06",
+    "question_id": "auto-made-r04-s04-q06",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "지정 절연·무전압 확인 및 진단시험을 매뉴얼대로 수행한다",
+    "reason": "인버터 수리 후 절연불량과 연결 상태를 확인할 때는 정격 계측기·안전절차와 지정 측정 조건을 사용한다. 정비 인력 자격이 전제된다.",
+    "key_point": "HV 수리 후 시험은 절연과 안전 조건 확인.",
+    "source_question_id": "auto-r04-s04-q06",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_insulation_test_must_follow_hv_oem_isolation_and_meter_safety"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q07",
+    "question_id": "auto-made-r04-s04-q07",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "육안 손상 확인과 공기 누설시험을 함께 실시한다",
+    "reason": "절연장갑은 손상·오염을 눈으로 점검하고 공기를 넣어 미세 누설을 확인한다. 정기적인 전기적 성능시험 유효기간도 관리해야 한다.",
+    "key_point": "절연장갑 점검: 육안 + 공기 누설 + 유효 시험.",
+    "source_question_id": "auto-r04-s04-q07",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_insulating_gloves_require_visual_check_and_air_test_both"
+    ],
+    "reference_urls": [
+      "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.137"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q08",
+    "question_id": "auto-made-r04-s04-q08",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "현재 충전 상태를 사용 가능 용량 기준으로 추정한 비율",
+    "reason": "SOC는 State of Charge로 현재 충전량을 사용 가능 용량에 견주어 나타낸 추정치다. SOH(건전도)나 배터리 온도와는 다른 개념이다.",
+    "key_point": "SOC(충전 상태) ≠ SOH(건전도).",
+    "source_question_id": "auto-r04-s04-q08",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q09",
+    "question_id": "auto-made-r04-s04-q09",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "제조사 기준에 따른 모듈 상태·전압 균형 및 조립 검증",
+    "reason": "모듈의 전압과 상태 편차가 크면 팩 내부 불균형과 제어 불량이 생길 수 있다. 단순 단자 전압만이 아니라 매뉴얼의 조립·절연·BMS 진단을 수행한다.",
+    "key_point": "배터리 모듈 교체 후 균형·BMS·절연 확인.",
+    "source_question_id": "auto-r04-s04-q09",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q10",
+    "question_id": "auto-made-r04-s04-q10",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "인버터·전력변환 경로를 통해 구동 배터리로 회수된다",
+    "reason": "회생제동에서 모터는 운동에너지를 전기에너지로 전환한다. 인버터와 전력 제어기, 배터리 관리제어에 따라 회수량이 제한된다.",
+    "key_point": "회생제동: 운동 → 전기 → 배터리.",
+    "source_question_id": "auto-r04-s04-q10",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_ipu_pcu_mcu_regenerative_braking_role_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q11",
+    "question_id": "auto-made-r04-s04-q11",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "해당 차종의 코딩·학습·냉각계 점검 등 교환 절차",
+    "reason": "차량 통합제어기 교체는 부품 번호·차종에 따라 코딩, 냉각 회로, 학습 절차가 다르다. 하나의 보정작업이 모든 차종에 의무라고 단정하지 않는다.",
+    "key_point": "제어기 교체 후 필요한 학습은 차종별로 확인.",
+    "source_question_id": "auto-r04-s04-q11",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_pcu_replacement_calibration_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q12",
+    "question_id": "auto-made-r04-s04-q12",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "펌프 임펠러는 도는데 터빈은 정지한 상태",
+    "reason": "토크 컨버터 스톨은 입력측 임펠러가 엔진에 의해 회전하지만 출력측 터빈은 멈춰 있는 경우다. 단순히 회전수 차이가 있다는 사실만으로 스톨이라 부르지 않는다.",
+    "key_point": "스톨: 임펠러 회전, 터빈 0 rpm.",
+    "source_question_id": "auto-r04-s04-q12",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_torque_converter_stall_requires_turbine_stationary_not_merely_lower_rpm"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q13",
+    "question_id": "auto-made-r04-s04-q13",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "규정한 ATF 온도와 변속 레버 조건에서 레벨을 확인한다",
+    "reason": "ATF 레벨 확인 방법은 변속기마다 다르다. 지정 온도, 공회전 여부, 레인지 전환 등 정비 지침에 따라 점검하지 않으면 과소·과다 주입이 생길 수 있다.",
+    "key_point": "ATF 레벨 점검은 온도·절차가 중요.",
+    "source_question_id": "auto-r04-s04-q13",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q14",
+    "question_id": "auto-made-r04-s04-q14",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "전개 부품과 충돌 관련 구성품을 제조사 지침에 따라 확인한다",
+    "reason": "에어백과 벨트 프리텐셔너, 충돌 센서, 제어기 등의 처리 범위는 해당 제조사 수리 지침이 기준이다. 손상되지 않은 도어트림까지 일률적으로 교환하는 것은 아니다.",
+    "key_point": "에어백 전개 후 교환 범위는 OEM 충돌 수리 매뉴얼.",
+    "source_question_id": "auto-r04-s04-q14",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_airbag_ecu_replacement_after_deployment_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q15",
+    "question_id": "auto-made-r04-s04-q15",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "회로·커넥터를 정비 매뉴얼의 안전 절차로 진단한다",
+    "reason": "에어백 점화장치에는 임의 계측 전류를 흘려서는 안 된다. 정비 모드, 전원 차단 및 대기·전용 진단절차와 배선 점검 기준을 따른다.",
+    "key_point": "SRS 점화회로는 일반 저항계 직접 측정 금지.",
+    "source_question_id": "auto-r04-s04-q15",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_airbag_squib_resistance_testing_and_module_replacement_danger_requires_oem_safety_procedure"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q16",
+    "question_id": "auto-made-r04-s04-q16",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "수소 탱크 온도와 충전소 공급 압력",
+    "reason": "수소 충전은 탱크 온도 상승, 압력과 충전 프로토콜에 따라 속도가 조절된다. 타이어 공기압은 충전 흐름을 직접 제어하는 요소가 아니다.",
+    "key_point": "수소 충전: 탱크 온도와 공급 압력.",
+    "source_question_id": "auto-r04-s04-q16",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q17",
+    "question_id": "auto-made-r04-s04-q17",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "안전한 곳에서 정지하고 전원을 끈 뒤 주변 접근을 통제한다",
+    "reason": "수소 누설이 의심되면 차량을 안전하게 정지시키고 점화원을 멀리하며 제조사 긴급 조치와 전문 정비 절차를 따른다. 누설 부품에 즉시 접근해 분해하지 않는다.",
+    "key_point": "수소 누설 경고: 정지·격리·전문 조치.",
+    "source_question_id": "auto-r04-s04-q17",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_hydrogen_leak_warning_requires_immediate_safe_stop_no_live_regulator_inspection"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q18",
+    "question_id": "auto-made-r04-s04-q18",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "연소가 아닌 전기화학적 산화·환원 반응",
+    "reason": "연료전지의 전해질과 전극에서 수소·산소가 전기화학 반응을 일으켜 전자가 외부회로로 흐른다. 물과 열이 부산물이며 일반적인 불꽃 연소와 다르다.",
+    "key_point": "연료전지 전기 생산 = 전기화학 반응.",
+    "source_question_id": "auto-r04-s04-q18",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [
+      "https://www.energy.gov/cmei/fuels/fuel-cells"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q19",
+    "question_id": "auto-made-r04-s04-q19",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "모터 토크와 전력 출력을 제한한다",
+    "reason": "과전류 상황에서는 반도체·모터·배터리를 보호하려고 토크 명령을 줄이거나 출력 차단 등 보호제어를 수행할 수 있다. 실제 고장 조치는 차종별 DTC 기준을 따른다.",
+    "key_point": "인버터 과전류 → 출력 제한·보호 정지.",
+    "source_question_id": "auto-r04-s04-q19",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s04-q20",
+    "question_id": "auto-made-r04-s04-q20",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "지방산 알킬에스터(FAME 등)",
+    "reason": "바이오디젤은 식물성·동물성 지방 원료의 트리글리세리드와 메탄올 등 알코올의 전이에스테르화 반응으로 만든 지방산 에스터다. 글리세롤이 부산물로 발생한다.",
+    "key_point": "바이오디젤: 전이에스테르화로 지방산 에스터 생성.",
+    "source_question_id": "auto-r04-s04-q20",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_biodiesel_transesterification_vs_esterification_chemistry_confusion"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
