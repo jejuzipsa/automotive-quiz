@@ -2,15 +2,16 @@
 
 [공인중개사 문제은행 사이트](https://github.com/jejuzipsa/gichul-quiz)의 과목별 JSON 관리 방식을 참고한 모바일·PC 반응형 자동차정비산업기사 필기 문제풀이 사이트.
 
-## **우리 문제은행 / 별도 해설은행 (누적 400문항 편집 초안 · 320 미작성)**
+## 우리 문제은행 및 별도 해설은행 — 720문항 편집 초안 완료 (2026-11-23)
 
-QA23 원문 대조 완료 720문항을 바탕으로 1~5회차 4과목 각20씩 **우리 문제 400개와 별도 해설 400개**를 새로 작성했어. 기존 원본 OCR JSON은 참고자료로 따로 유지해.
-
-- **문제**: `data/past/drafts/{engine,chassis,electrical,eco}.json`. 질문·보기4·정답·`explanation_id` 포함.
-- **해설**: `data/explanations/drafts/{engine,chassis,electrical,eco}.json`. 같은 `id`에 정답 이유·핵심 개념·검토 참고링크 포함.
-- **상태**: 400문항은 `editorial_draft` / 기술 검증 대기 / `publishable:false`이고, **미작성 320문항**은 작업 목록으로 추적해. 기출 복원 신규 400문항은 아직 사이트에서 출제되지 않아. 사이트의 기존 독립 예상문제 80개와 별개야. 2~5회차 신규 파일은 문제 `data/past/drafts/round02/*.json`, `round03/*.json`, `round04/*.json`, `round05/*.json`, 해설 `data/explanations/drafts/round02/*.json`, `round03/*.json`에 별도 저장돼.
-- **검증**: `node tests/draft-bank.test.cjs`(1회차), `node tests/draft-bank-rounds.test.cjs`(1~5회차)로 파일 수, 중복 ID, 4지선다, 정답-해설 1:1 연결, 출제 미연결 상태를 확인해. 기술 내용 및 복수 정답 여부는 별도로 검수해야 해.
-- 개인 Library `/기출문제_자동차정비산업기사/우리문제은행_v1/`에서 과목별 최신 작업본은 `/기출문제_자동차정비산업기사/우리문제은행_v5/`의 합본 `questions_all_400.json`과 `explanations_all_400.json`, `rewrite_tracking_720.json`에 반영했어. ZIP 생성·파일 업로드 UI 없음.
+- **QA23 원본 OCR 이미지 대조 720/720**(개인 자료)은 변형하지 않고 보관.
+- 원본을 학습 참고자료로 사용하여 **우리 문제 720문항 + 별도 해설 720개를 새로 작성**했어. 9회차 × 4과목 × 20, 과목당 180문항. 모든 문제와 해설은 동일한 `id`로 1:1 연결돼.
+- **GitHub 질문 데이터**: 1회차 `data/past/drafts/{subject}.json`, 2~9회 `data/past/drafts/roundXX/{subject}.json`. **GitHub 해설 데이터**: 1회차 `data/explanations/drafts/{subject}.json`, 2~9회 `data/explanations/drafts/roundXX/{subject}.json`.
+- **최신 합본 JSON**은 개인 파일 라이브러리 `/기출문제_자동차정비산업기사/우리문제은행_v9/`: `questions_all_720.json` / `explanations_all_720.json`. 과목별 각 180문항·해설, 720문항 진행표, 기술 검토 대기 목록도 보관.
+- **내용 상태는 편집 초안**: `review_status:"editorial_draft"`, `technical_answer_status:"pending_independent_review"`, `publishable:false` (720개 모두). 질문·보기·정답/해설 연결의 스키마 검사 **720/720 통과**. **기술 정답 최종 승인 0/720**이며 오답선택지의 개연성, 정답 유일성, 차종·법령 등 기술 근거 검토가 별도로 남아 있음.
+- **현재 사이트의 모의고사에는 새 720개를 아직 연결하지 않았어.** 공개된 `data/manifest.json`은 승인되지 않은 `drafts/`를 읽지 않음. 승인본에 한해서 자동 출제 연결하고, 해설 기반 괄호형 객관식 문제를 별도 생성할 계획.
+- 최종 집계 확인: `node tests/draft-bank-rounds.test.cjs`(1~9회 720 문제·해설 1:1), `node tests/validate.cjs`, `node tests/json-bank.test.cjs`.
+- **ZIP 없이** 질문/해설/검수/진행 이력을 전부 JSON으로 관리.
 
 ## 데이터 저장 및 출제
 
