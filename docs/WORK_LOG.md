@@ -62,3 +62,7 @@
 - 검증: ZIP CRC 정상, QA7 ID/정답/PNG 720쌍 정상, JS 문법 및 HTML ID 참조 정상, 가상 DOM/ZIP 테스트에서 720문항 수용→20문항 풀이→채점→오답 재시험 성공. 실제 아이폰 Safari에서 49MB ZIP 수동 테스트는 미수행.
 - private.html은 공개 정적 페이지이지만 교재 데이터는 포함하지 않음. 저작권/로그인 문제 미해결 상태로 기록.
 - 다음 작업: 1회 섀시정비 1~20번 (auto-r01-s02-q01~q20) 원본 전사 및 기술적 정답 검증, 각 처리 이후 QA ZIP·HANDOFF·WORK_LOG·bank-status 갱신.
+- CI 추가: `.github/workflows/check-qa7.yml`, `tests/private-bank.test.cjs`. 실제 JSZip 라이브러리로 720문항 가상 ZIP을 생성하여 로컬 이미지 은행 문제/해설, 20문항 풀이, 정답표 채점, 오답 재풀이 테스트.
+- GitHub Actions 실행 성공: https://github.com/jejuzipsa/automotive-quiz/actions/runs/44987407820.
+- QA7 실제 ZIP(49MB)은 비공개 개인 파일 라이브러리에 백업 성공. 공개 저장소에는 저작권 원문/이미지 없음.
+- 개인 풀이 화면은 원본 전사 확인 상태와 기술적 재검토 후보 경고를 표시하므로, 교재 답안 번호만으로 기술적 정답이라고 오인하지 않도록 설계.
