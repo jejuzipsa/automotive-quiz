@@ -7,7 +7,7 @@ const read=x=>JSON.parse(fs.readFileSync(path.join(root,x),'utf8'));
 const subjects=['engine','chassis','electrical','eco'];
 const ids=new Set(),sources=new Set();
 let seen=0;
-for(let round=1;round<=3;round++){
+for(let round=1;round<=5;round++){
   const segment=round===1?'':`round${String(round).padStart(2,'0')}/`;
   for(const subject of subjects){
     const questions=read(`data/past/drafts/${segment}${subject}.json`);
@@ -50,13 +50,23 @@ for(let round=1;round<=3;round++){
     }
   }
 }
-assert.equal(seen,240);
+assert.equal(seen,400);
 const progress=read('data/past/drafts/progress.json');
-assert.equal(progress.draft_questions_created,240);
-assert.equal(progress.separate_explanations_created,240);
-assert.equal(progress.pending_question_rewrites,480);
+assert.equal(progress.draft_questions_created,400);
+assert.equal(progress.separate_explanations_created,400);
+assert.equal(progress.pending_question_rewrites,320);
 assert.equal(progress.technical_answer_verified,0);
 assert.equal(progress.site_connected,0);
+
+// Known incorrect reference answers were reconstructed using explicitly checked principles.
+const sourceShim=read('data/past/drafts/round04/engine.json')[1];
+const shimExplanation=read('data/explanations/drafts/round04/engine.json')[1];
+assert.match(sourceShim.choices[sourceShim.answer-1], /두꺼운/);
+assert.match(shimExplanation.reason, /0\\.10 mm|두껍/);
+const planet=read('data/past/drafts/round05/eco.json')[11];
+const planetExplanation=read('data/explanations/drafts/round05/eco.json')[11];
+assert.match(planet.choices[planet.answer-1], /같은 정방향/);
+assert.match(planetExplanation.reason, /캐리어와 같은 방향/);
 const live=read('data/manifest.json');
 assert.ok(live.banks.every(b=>!b.file.includes('/drafts/')), 'drafts must stay off live quiz');
-console.log('PASS: 240 authored draft questions, 240 separate explanations, 240 1:1 ID/answer mappings; no live publication; 480 pending.');
+console.log('PASS: 400 authored draft questions, 400 separate explanations, 400 1:1 ID/answer mappings; no live publication; 320 pending.');
