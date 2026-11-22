@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-22",
+  "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 original OCR JSON 720/720 source-compared (private). Our independent reconstructed multiple-choice drafts 400/720 and separate explanations 400/720 from rounds 1-5; 320 pending. Technical answer approvals 0/400; site live past exam drafts 0.",
+  "source_of_truth": "QA23 reconstructed-exam OCR source: 720/720 image-compared (private). Our newly written independent questions 720/720 and separate explanations 720/720 saved as 9 rounds x4 subjects; editorial drafts awaiting full independent technical/answer quality review. No new source items left to rewrite. Zero drafts publicly connected.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -25,7 +25,7 @@
     },
     "current_original_practice_count": 80,
     "public_exam_reconstruction_count": 0,
-    "current_unpublished_reauthored_question_drafts": 400
+    "current_unpublished_reauthored_question_drafts": 720
   },
   "source_captures": {
     "original": 57,
@@ -580,7 +580,7 @@
     "next_steps": "complete 480 question/explanation rewrites; independent subject matter and unique answer audit; then publish-approved mock exam integration and explanation-based fill-in bank"
   },
   "our_question_bank_v5": {
-    "phase": "editorial_draft",
+    "phase": "superseded_by_v9_720_drafts",
     "source": "QA23 private OCR reference 720 source-compared",
     "rounds_reauthored": [
       1,
@@ -625,5 +625,54 @@
     "review_status": "editorial_draft",
     "next_batch": "round06 80 questions+explanations",
     "no_zip": true
+  },
+  "our_question_bank_v9": {
+    "phase": "editorial_draft",
+    "source": "QA23 private source OCR JSON 720/720 previously checked",
+    "authored_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "new_rounds_last_batch": [
+      6,
+      7,
+      8,
+      9
+    ],
+    "new_question_drafts": 320,
+    "new_explanations": 320,
+    "question_drafts_total": 720,
+    "separate_explanations_total": 720,
+    "remaining_to_rewrite": 0,
+    "per_subject_drafted": {
+      "engine": 180,
+      "chassis": 180,
+      "electrical": 180,
+      "eco": 180
+    },
+    "question_paths": "data/past/drafts/{subject}.json for round 1; data/past/drafts/roundXX/{subject}.json for round 02..09",
+    "separate_explanation_paths": "data/explanations/drafts/{subject}.json for round 1; data/explanations/drafts/roundXX/{subject}.json for round 02..09",
+    "status_file": "data/past/drafts/progress.json",
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_v9/",
+    "private_question_master": "questions_all_720.json",
+    "private_explanation_master": "explanations_all_720.json",
+    "private_review_queue": "technical_review_queue_720.json",
+    "question_sha256": "78ec273bf644ccf88d05940d9367a593031af7b2a851cfef60426c47e3d206a7",
+    "explanation_sha256": "1ae046580a2c58640a02d3aea7078139e039629d1b57a0ffaa3b4cbeb7ee5f49",
+    "editorial_schema_validation": "720 question/720 explanations pair ID match; zero duplicate ID; four unique choices; no exact source question or full choice array duplicate",
+    "editorial_flags_for_specific_review": 528,
+    "technical_answers_approved": 0,
+    "quality_approval_status": "pending independent fact check, 1-correct-answer and plausible distractor checks",
+    "public_site_connected": 0,
+    "live_site_manifest_unchanged": true,
+    "no_zip": true,
+    "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   }
 }
