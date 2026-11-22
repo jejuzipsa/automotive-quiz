@@ -1,54 +1,22 @@
-# 자동차정비산업기사 필기 문제은행
+# 자동차정비산업기사 기출 복원문제 사이트
 
-공인중개사 기출문제 사이트 `jejuzipsa/gichul-quiz`를 참고한 독립 반응형 자동차정비산업기사 학습 사이트.
+[공인중개사 문제은행 사이트](https://github.com/jejuzipsa/gichul-quiz)의 과목별 JSON 관리 방식을 참고한 모바일·PC 반응형 자동차정비산업기사 필기 문제풀이 사이트.
 
-- 과목: 자동차 엔진정비 / 자동차 섀시정비 / 자동차 전기·전자장치정비 / 친환경 자동차정비
-- 데이터 분리: 기존 공개 기출 / 예상문제 / 핵심 개념 퀴즈
-- 4지선다 문제풀이, 정답·오답, 해설, 결과, 오답 복습, 실전 모의고사 화면
-- 초기 배포에는 직접 작성한 시연 문제만 포함. 상업용 출판사 교재 OCR/스캔 원문은 **공개 저장소 또는 GitHub Pages로 배포하지 않음**
+## 데이터 저장 및 출제
 
-## GitHub Pages
-Settings → Pages → Deploy from a branch → main → /(root) → Save.
+- 사이트에 접속하면 `data/manifest.json`을 통해 **과목별 JSON 파일을 자동으로 읽음**. 사용자 ZIP/JSON 파일 선택·업로드 기능 없음.
+- 현재 배포된 자체제작 연습문제 **80문항**: `data/expected/engine.json`, `chassis.json`, `electrical.json`, `eco.json`, 각 20문항. 시연용 8문항 `data/demo.json`, 개념 4문항 `data/concept.json`.
+- **기출 시험 복원 자료 720문항(9회 × 4과목 × 20)**: QA20 **4개 JSON 파일(과목별 180)**로 개인 라이브러리 `/기출문제_자동차정비산업기사/JSON문제은행/`에 저장. OCR 원문 대조 **581/720**, 미대조 139. 현재 사이트에 720개가 배포되어 있다는 의미는 아님.
+- OCR 원본 확인 → 기출 복원 내용 정리 → 질문·보기·해설 문장 재작성 → 정답·해설 검증 → 사이트용 과목별 JSON에 누적 등록. 원본 이미지 문제풀이·ZIP 백업을 다시 도입하지 않음.
+- 문항형식: `id, track, subject, round, question_number, question, choices[4], answer(1~4), explanation, source_type, transcription_status, technical_answer_status, review_status`. 편집용 JSON에서 출제용 JSON으로 승격할 때 검수 상태를 확인.
+- 보기를 새로 출제하거나 오답 복습할 때마다 섞되, 정답 번호는 원본 보기 인덱스로 재계산. 정답 파랑, 오답 빨강, 해설·결과·오답복습 제공.
+- JSON 추가·변경 후 `node tests/validate.cjs` 및 `node tests/json-bank.test.cjs` 실행.
 
-주의: GitHub Pages 웹사이트는 인터넷에 공개된다. GitHub 저장소를 Private으로 변경한다고 기존 Pages에 올린 콘텐츠가 자동으로 비공개가 되는 것은 아니다.
+## 관련 링크
 
-## **현재 기본 방식: 텍스트 문제은행 (최신 교정 QA20, 사이트 가져오기 QA8 전용)**
+- [사이트](https://jejuzipsa.github.io/automotive-quiz/)
+- [자동차정비 저장소](https://github.com/jejuzipsa/automotive-quiz)
+- [공인중개사 레퍼런스](https://github.com/jejuzipsa/gichul-quiz)
+- [필수 개발 지침](AGENTS.md) · [진행 인계](docs/HANDOFF.md) · [검수 기록](docs/WORK_LOG.md)
 
-**공인중개사 사이트 `gichul-quiz`와 같은 텍스트 객관식 출제 방식이 공식 개발 원칙이다.** 사진/스캔은 OCR과 원본 대조에만 쓰고, 실제 출제는 문제 텍스트 + 선택지 4개 + 정답 + 텍스트 해설로 한다.
-
-- 개인용 `QA8-TEXT-DRAFT` ZIP / JSON **720문항**(4과목 각 180) → 홈페이지 **QA8 파일 불러오기** → 브라우저 IndexedDB 로컬 저장 → **예상문제** 과목 카드에서 10/20문제 풀기 또는 전체 보기.
-- 매회 새 문제풀이/오답 복습을 시작할 때 보기 4개를 섞고 원본 보기 ID로 **정답 새 위치를 자동 재계산**한다.
-- **최신 QA20 기준 581문항 원본 대조 완료, 139문항 OCR 미검수 초안, 기술적 정답 승인 0문항**. 다만 아래 사이트 가져오기 코드는 아직 QA8 전용이므로 QA20 ZIP을 그대로 선택하면 버전 검사에 실패한다. 사용자 화면에 검수 상태를 표시한다.
-- 구매한 교재의 텍스트는 공개 GitHub/Pages에 게시하지 않는다. 파일을 **개인 기기에서** 선택해서 로컬에만 저장한다. PC와 아이폰은 각각 가져와야 한다.
-- 현재 개인 QA20 ZIP: `/기출문제_자동차정비산업기사/자동차정비산업기사_QA20_텍스트문제은행_581문항원문대조_20261122.zip`; SHA256 `36cd569b94ea48c13bb259025b2a11fbfed85a76fcc8a0475bc18ce84fd85fe7` (**현재 웹사이트 가져오기에는 미지원**). 사이트 가져오기 검증에 사용한 기존 QA8 ZIP: `/기출문제_자동차정비산업기사/자동차정비산업기사_QA8_텍스트문제은행_720문항_검수전_20261122.zip` (SHA256 `04a565eb86b0054db14531615188d5c10fe0bff453d954d6816807056c24bf3c`).
-- CI: [QA8 텍스트 문제은행 테스트 성공](https://github.com/jejuzipsa/automotive-quiz/actions/runs/44996253593). 실제 iPhone Safari에서의 수동 가져오기 시험은 남음.
-- **개발·인계 지침:** [AGENTS.md](AGENTS.md) → [docs/HANDOFF.md](docs/HANDOFF.md). 기존 QA7 이미지 문제풀이(`private.html`)는 과도기 검수용이며 **최종 출제 방식이 아니다**.
-
-## 작업 재개 — 다음 채팅에서 반드시 읽을 것
-
-**[인계 문서](docs/HANDOFF.md)** → [진행 기록](docs/WORK_LOG.md) → [문제은행 상태](docs/DATA_BANK.md) → [검수 기준](docs/REVIEW_PROTOCOL.md)
-
-- 기계적으로 처리된 전체 데이터 상태: [data/bank-status.json](data/bank-status.json)
-- 원본 교재 문제 720문항: QA7 원본 이미지 및 최신 QA20 비공개 텍스트 문제은행에 보관, **공개 Pages에는 교재 원문 0문항**
-- **최신 QA20 다음 검수 시작점:** `auto-r08-s02-q01` (8회 섀시정비 1번부터 20문항 단위)
-- 새 채팅 지시문: `automotive-quiz 저장소의 AGENTS.md와 docs/HANDOFF.md부터 읽고 QA20 이후 원본 OCR 검수를 이어서 진행해줘.`
-
-## 아이콘 / 공통 디자인
-
-2026-11-22에 `gichul-quiz/assets`의 기존 섹션 아이콘 PNG 6개를 `assets/`로 그대로 복사했어. 섹션·시험·개념·복습 등에 사용하고, **자동차정비의 메인 톱니바퀴 아이콘은 유지**해. 원본 아이콘 재동기화는 `.github/workflows/sync-reference-icons.yml`에서 담당해.
-
-## 현재 테스트
-
-`node tests/validate.cjs`
-
-샘플 문제 데이터와 UI 코드의 구조를 검사한다. 실제 사용자의 모든 기기에서의 브라우저 동작이나 QA6의 기술적 정답을 검증하는 테스트는 아니다.
-
-## QA7 개인 문제은행 720문항 (2026-11-22)
-
-- [내 문제은행 화면](https://jejuzipsa.github.io/automotive-quiz/private.html) · 홈페이지에서도 '내 문제은행' 카드 클릭.
-- 사이트 코드에는 저작권이 있는 교재 데이터가 포함되어 있지 않음. 사용자가 **개인용 QA7 ZIP**을 직접 선택하면 브라우저에서 원본 질문 이미지·4지선다 채점·해설 이미지·오답 복습 가능.
-- 개인용 ZIP: ChatGPT 파일 라이브러리 `/기출문제_자동차정비산업기사/자동차정비산업기사_QA7_원본20문항대조_개인용_20261122.zip` (약 49MB).
-- 최신 진행 상황: **문자 전체 대조 20/720, 지문/보기만 부분 대조 3/720, 기술적 정답 승인 0/720**.
-- [QA7 검수 내용](docs/QA7_REVIEW.md) · [로컬 ZIP 사용법](docs/PRIVATE_BANK_IMPORT.md) · [다음 채팅 인계](docs/HANDOFF.md)
-- 이 모드는 웹 브라우저 메모리에서만 학습함. 다시 방문할 때 ZIP을 재선택해야 하고 PC↔모바일 자동 동기화 없음.
-- GitHub Pages 자체는 공개 상태이며, 서버 인증 기반 비공개 사이트는 아직 구현 전.
+> 다음 작업: `auto-r08-s02-q01`(8회 섀시 1번)부터 OCR 원문 대조. 이후 재작성한 기출 복원 문항을 공개 사이트의 `data/past/`에 등록한다. 데이터 파일과 버전 기록은 **JSON/TXT만 사용**한다.
