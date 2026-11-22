@@ -1,0 +1,334 @@
+[
+  {
+    "id": "auto-made-r04-s02-q01",
+    "question_id": "auto-made-r04-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "엔진 출력 부족이나 토크 컨버터 이상을 함께 검토한다",
+    "reason": "스톨 속도는 엔진 출력과 컨버터 특성에 영향을 받는다. 저속 스톨을 유압펌프 단독 원인으로 단정하지 말고 제조사 진단표와 엔진 상태를 대조한다.",
+    "key_point": "저스톨 속도 = 엔진 출력·컨버터 특성 검토.",
+    "source_question_id": "auto-r04-s02-q01",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_low_stall_speed_diagnosis_requires_engine_and_transmission_context"
+    ],
+    "reference_urls": [
+      "https://charm.li/Hyundai/2008/Accent%20L4-1.6L/Repair%20and%20Diagnosis/Transmission%20and%20Drivetrain/Automatic%20Transmission%2FTransaxle/Testing%20and%20Inspection/Component%20Tests%20and%20General%20Diagnostics/Torque%20Converter%20Stall%20Test/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_note": "원본의 저스톨 원인으로 오일펌프 고장을 단정한 내용을 일반화 없이 재설계함."
+  },
+  {
+    "id": "auto-made-r04-s02-q02",
+    "question_id": "auto-made-r04-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "오일펌프·압력조절밸브와 내부 누설",
+    "reason": "유압 발생장치 고장이나 밸브 고착, 내부 누설이 모두 저압 원인이 될 수 있다. 부품을 곧바로 교환하지 말고 측정 위치·온도·레인지별 시험 결과를 확인한다.",
+    "key_point": "저라인압은 펌프·조절밸브·누설 모두 검토.",
+    "source_question_id": "auto-r04-s02-q02",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q03",
+    "question_id": "auto-made-r04-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "스테이터 원웨이 클러치",
+    "reason": "스테이터는 원웨이 클러치로 특정 운전 상태에서 지지되어 유체 흐름을 바꾼다. 이상 소음만으로 이 클러치가 확정 고장이라고 단정하지 않는다.",
+    "key_point": "스테이터 지지에는 일방향 클러치가 사용된다.",
+    "source_question_id": "auto-r04-s02-q03",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_torque_converter_noise_stator_sprag_specificity_ambiguous"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q04",
+    "question_id": "auto-made-r04-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "제조사가 지정한 지지·인양·분리 도구를 사용한다",
+    "reason": "컨버터는 중량과 내부 유체 때문에 탈거 시 낙하·손상 위험이 있다. 지정 공구가 있는 차종은 이를 따르고, 전 차종에 같은 이름의 리무버가 필수인 것은 아니다.",
+    "key_point": "토크 컨버터 탈거는 차종별 지지·분리 절차.",
+    "source_question_id": "auto-r04-s02-q04",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_torque_converter_dedicated_remover_claim_depends_on_service_manual"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q05",
+    "question_id": "auto-made-r04-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "토크 컨버터 록업 클러치",
+    "reason": "록업 클러치는 컨버터 내 구동측 커버와 터빈측을 기계적으로 결합해 유체 슬립을 줄인다. 항상 모든 속도에서 붙는 것은 아니다.",
+    "key_point": "록업 클러치 = 유체 슬립 저감.",
+    "source_question_id": "auto-r04-s02-q05",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_lock_up_clutch_wording_impeller_and_turbine_connection_inaccurate"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q06",
+    "question_id": "auto-made-r04-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "댐퍼 누유·마운트와 차체의 반복 반동을 확인한다",
+    "reason": "반동시험은 현가장치의 대략적 상태만 보여준다. 정량적인 감쇠력 평가는 차종별 장비·시험조건을 따른다. 반복 반동과 누유·타이어 상태를 함께 점검한다.",
+    "key_point": "차체 반동시험은 보조 진단, 단독 합격 판정 아님.",
+    "source_question_id": "auto-r04-s02-q06",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_bounce_test_1_to_1_point_5_cycles_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q07",
+    "question_id": "auto-made-r04-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "센서 커넥터·하네스·전원 및 신호를 차종 규정대로 확인한다",
+    "reason": "신호 소실은 센서 자체뿐 아니라 커넥터 부식, 배선 손상, 톤휠 또는 베어링 문제에서 생길 수 있다. 신호 파형과 회로 검사가 우선이다.",
+    "key_point": "휠속도 신호 소실 → 센서·커넥터·배선·신호원 점검.",
+    "source_question_id": "auto-r04-s02-q07",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q08",
+    "question_id": "auto-made-r04-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "반동 양상은 참고하고 누유·타이어·정량 시험을 함께 고려한다",
+    "reason": "차체 형상과 서스펜션 특성에 따라 반동 횟수가 다르다. 바운스 테스트는 과도한 진동의 간이 관찰이지 단독 합격선이 아니다.",
+    "key_point": "바운스 횟수의 보편적 합격 기준은 없다.",
+    "source_question_id": "auto-r04-s02-q08",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_bounce_test_one_cycle_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q09",
+    "question_id": "auto-made-r04-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "전자제어 현가장치(ECS)",
+    "reason": "가변 감쇠식 ECS는 차속·차체 거동 등 센서 신호와 운전 모드에 따라 댐퍼 밸브 제어량을 조절한다. 모든 ECS가 차고까지 조절하는 것은 아니다.",
+    "key_point": "가변 댐퍼 ECS는 감쇠력을 전자 제어.",
+    "source_question_id": "auto-r04-s02-q09",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q10",
+    "question_id": "auto-made-r04-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "링크 손상과 센서 출력의 움직임 대응 관계를 확인한다",
+    "reason": "차고 센서는 차체와 차축 상대 위치를 읽는다. 링크 휨·탈락은 신호를 왜곡하므로 전원·접지·배선과 함께 움직임에 따른 출력을 검사한다.",
+    "key_point": "차고 센서 링크 변형은 위치 신호에 영향을 준다.",
+    "source_question_id": "auto-r04-s02-q10",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q11",
+    "question_id": "auto-made-r04-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "조향 토크 센서",
+    "reason": "토크 센서는 조향축에서 발생한 비틀림을 전기 신호로 만들어 EPS 제어기에 전달한다. 조향각은 차량 구성에 따라 별도 센서에서 수집할 수 있다.",
+    "key_point": "EPS 입력: 운전자 조향 토크.",
+    "source_question_id": "auto-r04-s02-q11",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_combined_torque_angle_sensor_varies_by_design"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q12",
+    "question_id": "auto-made-r04-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "조향축에 걸리는 운전자 토크의 크기·방향",
+    "reason": "조향 토크 센서는 운전자가 어느 방향으로 얼마나 힘을 가하는지 감지한다. EPS ECU는 차량 속도 등 다른 정보와 함께 모터 보조력을 계산한다.",
+    "key_point": "EPS 토크 센서 = 힘 크기와 방향 감지.",
+    "source_question_id": "auto-r04-s02-q12",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q13",
+    "question_id": "auto-made-r04-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "배터리·충전전압과 센서 전원·접지",
+    "reason": "전원 전압이 불안정하면 EPS 제어기의 센서 값에도 영향을 줄 수 있다. 전원·접지 상태를 먼저 확인하고 센서 규정값과 비교한다.",
+    "key_point": "EPS 이상 신호는 전원 품질도 점검.",
+    "source_question_id": "auto-r04-s02-q13",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q14",
+    "question_id": "auto-made-r04-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "ABS 경고등 상태와 기본 제동 기능을 각각 점검한다",
+    "reason": "ABS 고장이면 관련 경고등이 켜질 수 있고 ABS 기능이 제한될 수 있다. 기초 유압 제동이 남아 있어도 제동 안전 확인과 고장 수리는 필요하다.",
+    "key_point": "ABS 경고등 점등 ≠ 일반 제동의 무조건 소실.",
+    "source_question_id": "auto-r04-s02-q14",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q15",
+    "question_id": "auto-made-r04-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "경고등 확인과 DTC 수집 후 회로별 점검",
+    "reason": "경고등·프리즈프레임·DTC는 진단 방향을 정한다. 원인이 해결되지 않은 코드를 지워도 실제 고장은 재발할 수 있다.",
+    "key_point": "ABS 진단: 경고등·DTC·실시간 신호.",
+    "source_question_id": "auto-r04-s02-q15",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q16",
+    "question_id": "auto-made-r04-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "흡입 경로 이물 유입과 필터·덕트 손상",
+    "reason": "이물질로 인한 블레이드 손상은 회전 불균형과 2차 파손 위험이 있다. 이물 유입 경로를 제거하고 샤프트·하우징 손상도 확인해야 한다.",
+    "key_point": "터보 날개 결손 → 이물 유입 원인 제거.",
+    "source_question_id": "auto-r04-s02-q16",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q17",
+    "question_id": "auto-made-r04-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "흡기 누설·웨이스트게이트·터보 구동 상태",
+    "reason": "낮은 과급압은 흡기 누설, 배기 누설, 웨이스트게이트·액추에이터 및 터보 상태 등 여러 원인으로 생긴다. 연료분사만으로 터보 고장을 단정하지 않는다.",
+    "key_point": "저과급압: 누설·액추에이터·터보 점검.",
+    "source_question_id": "auto-r04-s02-q17",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_question_engine_oil_viscosity_vs_injection_timing_both_debatable_for_boost"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q18",
+    "question_id": "auto-made-r04-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "베어링·오일 회수·크랭크케이스 환기 상태를 구별해 검사한다",
+    "reason": "흡기 오일 흔적은 터보 밀봉부 문제 외에도 PCV와 배유 라인 압력 이상 등으로 나타날 수 있다. 축 유격과 압력 조건을 확인한다.",
+    "key_point": "터보 오일 흔적은 원인 구분이 필요.",
+    "source_question_id": "auto-r04-s02-q18",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q19",
+    "question_id": "auto-made-r04-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "흡기·배기 덕트 누설과 외관 누유, 연결 상태 점검",
+    "reason": "외관과 연결부 점검은 빠르고 위험이 적다. 누설·부품 손상 흔적과 오일 상태를 확인한 뒤 계측과 분해 여부를 결정한다.",
+    "key_point": "터보 진단 첫 단계는 육안·연결부 확인.",
+    "source_question_id": "auto-r04-s02-q19",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s02-q20",
+    "question_id": "auto-made-r04-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "연료탱크 레벨을 ECU가 전송하는지는 차량 구성에 따라 다르다",
+    "reason": "연료 레벨은 차종·프로토콜에 따라 계기판 모듈 또는 진단 데이터로 읽힐 수 있다. 일부 스캐너에서 보이지 않는다고 원천적으로 측정 불가능한 데이터로 분류하면 안 된다.",
+    "key_point": "스캔 데이터 항목은 ECU·통신규격에 종속된다.",
+    "source_question_id": "auto-r04-s02-q20",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_fuel_tank_level_may_be_available_over_scan_tool_vehicle_dependent"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
