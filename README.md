@@ -2,6 +2,16 @@
 
 [공인중개사 문제은행 사이트](https://github.com/jejuzipsa/gichul-quiz)의 과목별 JSON 관리 방식을 참고한 모바일·PC 반응형 자동차정비산업기사 필기 문제풀이 사이트.
 
+## **우리 문제은행 / 별도 해설은행 (신규 80문항 편집 초안)**
+
+QA23 원문 대조 완료 720문항을 바탕으로 1회차 4과목 각20, **우리 문제 80개와 별도 해설 80개**를 새로 작성했어. 기존 원본 OCR JSON은 참고자료로 따로 유지해.
+
+- **문제**: `data/past/drafts/{engine,chassis,electrical,eco}.json`. 질문·보기4·정답·`explanation_id` 포함.
+- **해설**: `data/explanations/drafts/{engine,chassis,electrical,eco}.json`. 같은 `id`에 정답 이유·핵심 개념·검토 참고링크 포함.
+- **상태**: 80문항은 `editorial_draft` / 기술 검증 대기 / `publishable:false`이고, **미작성 640문항**은 작업 목록으로 추적해. 기출 복원 80문항은 아직 사이트에서 출제되지 않아. 사이트의 기존 독립 예상문제 80개와 별개야.
+- **검증**: `node tests/draft-bank.test.cjs`로 파일 수, 중복 ID, 4지선다, 정답-해설 1:1 연결, 출제 미연결 상태를 확인해. 기술 내용 및 복수 정답 여부는 별도로 검수해야 해.
+- 개인 Library `/기출문제_자동차정비산업기사/우리문제은행_v1/`에서 합본 JSON과 720문항 작업 현황까지 관리해. ZIP 생성·파일 업로드 UI 없음.
+
 ## 데이터 저장 및 출제
 
 - 사이트에 접속하면 `data/manifest.json`을 통해 **과목별 JSON 파일을 자동으로 읽음**. 사용자 ZIP/JSON 파일 선택·업로드 기능 없음.
