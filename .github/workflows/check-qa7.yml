@@ -1,4 +1,4 @@
-name: Validate automotive quiz and private bank reader
+name: Validate automotive quiz, QA7 and QA8 text bank
 
 on:
   push:
@@ -12,6 +12,8 @@ on:
       - "index.html"
       - "app.js"
       - "data/questions.js"
+      - "quiz-utils.js"
+      - "personal-text-bank.js"
       - ".github/workflows/check-qa7.yml"
   workflow_dispatch:
 
@@ -32,3 +34,4 @@ jobs:
         run: |
           node tests/validate.cjs
           node tests/private-bank.test.cjs
+          node tests/qa8-text-bank.test.cjs
