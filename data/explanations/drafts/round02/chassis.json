@@ -1,0 +1,300 @@
+[
+  {
+    "id": "auto-made-r02-s02-q01",
+    "question_id": "auto-made-r02-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "변속기 오일 상태와 주행·변속 조건별 소음 변화",
+    "reason": "소음이 발생하는 기어·부하·속도와 ATF 상태를 함께 확인해야 원인을 좁힐 수 있다. 타이어 공기압 부족은 승차감에 영향을 줄 수 있지만 변속기 내부 기계음의 직접 원인이라고 단정하기 어렵다.",
+    "key_point": "소음 진단은 발생 위치·조건·관련 유체를 대조한다.",
+    "source_question_id": "auto-r02-s02-q01",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q02",
+    "question_id": "auto-made-r02-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "실내 공조 송풍기 또는 오디오 등 편의장치 소음",
+    "reason": "차량 소음은 여러 계통에서 생길 수 있다. 블로워 ON/OFF에 따라 발생한다면 공조계의 전기모터나 주변 진동을 먼저 구별해야 하고, 기계적 구동계 고장으로 단정하지 않는다.",
+    "key_point": "소음 발생 조건은 원인 계통을 분리하는 단서다.",
+    "source_question_id": "auto-r02-s02-q02",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q03",
+    "question_id": "auto-made-r02-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "주행조건과 차종별 정비 주기·ATF 규격",
+    "reason": "자동변속기 유체의 교환주기와 규격은 변속기 구조·사용 환경·제조사 정책에 따라 다르다. 특정 주행거리 한 값을 모든 차량의 표준으로 적용하면 안 된다.",
+    "key_point": "ATF 교환주기는 차종과 가혹조건별 정비자료를 따른다.",
+    "source_question_id": "auto-r02-s02-q03",
+    "original_issue_flags": [
+      "maintenance_interval_vehicle_specific",
+      "source_claim_60000_km_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q04",
+    "question_id": "auto-made-r02-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "불규칙·복수 실린더 실화가 감지되었다는 뜻",
+    "reason": "P0300은 엔진에서 랜덤 또는 복수 실린더 실화가 감지됐다는 일반적인 OBD 고장코드다. 해당 코드 하나만으로 점화코일 불량을 확정할 수는 없다.",
+    "key_point": "P0300은 특정 부품명이 아니라 실화 감지 정보다.",
+    "source_question_id": "auto-r02-s02-q04",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q05",
+    "question_id": "auto-made-r02-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "솔레노이드 명령·입출력축 회전속도·ATF 온도",
+    "reason": "변속기 전자제어 진단에는 변속 상태, 솔레노이드 지령, 입출력 회전속도, 온도, 고장코드가 직접적인 단서가 된다. 관련 없는 편의장치 상태는 우선 검사항목이 아니다.",
+    "key_point": "변속기 진단에는 변속 제어·속도·유체 온도 정보가 중요하다.",
+    "source_question_id": "auto-r02-s02-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q06",
+    "question_id": "auto-made-r02-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "유압 펌프·배관·누유·압력센서",
+    "reason": "유압 현가의 압력 저하는 펌프 작동, 유체 부족, 배관 누설, 센서 오류 등으로 발생할 수 있다. 적절한 감압·안전 확보 후 시스템 전용 정비 절차를 따른다.",
+    "key_point": "현가 유압 저하는 유체 공급·누설·센서 상태를 확인한다.",
+    "source_question_id": "auto-r02-s02-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q07",
+    "question_id": "auto-made-r02-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "지정 절차로 압력을 안전하게 처리하고 호스·체결부의 누유 흔적을 관찰한다",
+    "reason": "유압계에는 압력이 남아 있을 수 있다. 정비사의 신체를 누설 분사부에 가까이하지 않고 규정된 감압 후 호스·씰·조인트를 확인해야 한다.",
+    "key_point": "유압 누유 점검에는 잔압 안전 관리가 우선이다.",
+    "source_question_id": "auto-r02-s02-q07",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q08",
+    "question_id": "auto-made-r02-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "바퀴 잠김을 줄이도록 해당 바퀴 제동압을 유지·감압·재가압할 수 있다",
+    "reason": "ABS 유압모듈은 휠 속도 정보를 이용해 바퀴 잠김 징후가 있으면 밸브와 펌프로 압력을 조절한다. 정상 작동을 단일한 상승→감소 파형으로 일반화할 수 없다.",
+    "key_point": "ABS는 제동압을 단계적으로 제어하여 잠김을 억제한다.",
+    "source_question_id": "auto-r02-s02-q08",
+    "original_issue_flags": [
+      "source_abs_korean_expansion_questionable",
+      "abs_hydraulic_pressure_pattern_oversimplified"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q09",
+    "question_id": "auto-made-r02-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "부품·차종별 서비스 압력과 센서 출력 특성",
+    "reason": "차고조절 장치의 압력 범위와 센서 특성은 공기 스프링 형식·하중·제어 로직에 따라 달라질 수 있다. 정비정보에 제시된 조건과 측정값을 비교한다.",
+    "key_point": "공압현가 압력은 차량별 기준값을 사용한다.",
+    "source_question_id": "auto-r02-s02-q09",
+    "original_issue_flags": [
+      "suspension_pressure_universal_40_50_psi_unsourced"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q10",
+    "question_id": "auto-made-r02-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "차고·차체 가속도 등 현가 제어 센서 정보",
+    "reason": "전자제어 현가는 차체 운동과 속도 등을 바탕으로 댐퍼 감쇠를 조절한다. 온도·압력 센서가 있어도 엔진 냉각계를 직접 제어하는 것으로 혼동하지 않는다.",
+    "key_point": "현가 제어 입력은 차체 운동·차고와 관련된 센서다.",
+    "source_question_id": "auto-r02-s02-q10",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q11",
+    "question_id": "auto-made-r02-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "회로의 퓨즈·공급전압·접지 및 통신 상태 확인",
+    "reason": "ECU의 통신 불량은 전원·접지·CAN 등 통신회로 문제에서 시작할 수 있다. 부품 교체 전에 규정 조건에서 기본 전원과 통신 상태를 측정한다.",
+    "key_point": "전자제어 통신 불능은 전원·접지·통신회로 확인이 선행된다.",
+    "source_question_id": "auto-r02-s02-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q12",
+    "question_id": "auto-made-r02-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차종별 지정 토크·초기화·차고 및 기능 시험을 확인한다",
+    "reason": "정비 후에는 지정 토크를 준수하고 장착 상태·진단코드·높이 교정 등 제조사가 요구하는 절차를 확인해야 한다. 규정 체결은 기능검사와 함께 중요하다.",
+    "key_point": "현가 수리 후 체결 토크와 보정·작동 시험을 확인한다.",
+    "source_question_id": "auto-r02-s02-q12",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q13",
+    "question_id": "auto-made-r02-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "조향 토크 센서",
+    "reason": "EPS의 토크센서는 운전자의 조향 입력을 전기적 신호로 전송한다. 제어기는 차량속도 등과 함께 보조 조향력을 계산한다.",
+    "key_point": "EPS는 조향 토크 신호로 운전자 의도를 파악한다.",
+    "source_question_id": "auto-r02-s02-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q14",
+    "question_id": "auto-made-r02-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "방식별 전원·신호 및 서비스 매뉴얼 규격을 적용한다",
+    "reason": "조향토크센서는 센서 형식과 회로 구성에 따라 출력 특성이 달라질 수 있다. 저항값 범위 하나를 모든 EPS 센서에 공통 적용하는 것은 부정확하다.",
+    "key_point": "EPS 센서 진단은 제품별 회로·신호 규격 기준이다.",
+    "source_question_id": "auto-r02-s02-q14",
+    "original_issue_flags": [
+      "steering_torque_sensor_resistance_2_5_ohm_unsourced"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q15",
+    "question_id": "auto-made-r02-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "전원 조건을 정상화하고 정비절차의 센서 보정·작동검사 실시",
+    "reason": "낮거나 불안정한 공급전압은 ECU와 액추에이터 검사 결과에 영향을 미칠 수 있다. 단순한 배터리 전압 측정 자체를 불필요한 검사로 배제하면 안 된다.",
+    "key_point": "전자제어 진단은 안정적인 공급전압 조건에서 한다.",
+    "source_question_id": "auto-r02-s02-q15",
+    "original_issue_flags": [
+      "battery_voltage_not_directly_relevant_claim_questionable"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q16",
+    "question_id": "auto-made-r02-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차종별 전원 차단·에어백 대기시간 등 제조사 지침을 따른다",
+    "reason": "EPS 주변에는 SRS 관련 부품이나 전자제어회로가 있을 수 있다. 안전한 전원 차단과 커넥터 분리 절차는 제조사 서비스 지침을 먼저 확인한다.",
+    "key_point": "EPS 정비는 차종에 맞는 전원·SRS 안전 절차를 준수한다.",
+    "source_question_id": "auto-r02-s02-q16",
+    "original_issue_flags": [
+      "disconnect_battery_vehicle_specific_safety_procedure"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q17",
+    "question_id": "auto-made-r02-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "바퀴 잠김 방지 제어 기능",
+    "reason": "ABS 고장 시 차량에 따라 기본 유압제동은 남을 수 있지만 잠김 방지 제어에 문제가 생길 수 있다. 실제 적용 상태와 경고등 조합을 확인해야 한다.",
+    "key_point": "ABS 경고는 바퀴 잠김 방지 기능 점검 대상이다.",
+    "source_question_id": "auto-r02-s02-q17",
+    "original_issue_flags": [
+      "hazard_lamp_relation_context_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q18",
+    "question_id": "auto-made-r02-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "차속·조향 토크·조향각 등 제어 입력",
+    "reason": "EPS 보조력은 운전자의 조향 토크와 차속 등의 신호를 기반으로 조절될 수 있다. 연료레일 압력은 기본 조향 입력이 아니다.",
+    "key_point": "EPS 제어에는 차속과 조향 입력 신호가 사용된다.",
+    "source_question_id": "auto-r02-s02-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q19",
+    "question_id": "auto-made-r02-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "타이로드 엔드 등 기계 연결부의 실제 마모",
+    "reason": "전자 스캔 데이터로 기계적 유격의 원인을 항상 확인할 수 있는 것은 아니다. 타이로드·랙·기어 등은 물리적 점검이 필요하다.",
+    "key_point": "조향계 진단은 전자 정보와 기계적 유격 검사를 병행한다.",
+    "source_question_id": "auto-r02-s02-q19",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r02-s02-q20",
+    "question_id": "auto-made-r02-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "액추에이터 시험·유압 상태 등 추가 확인이 필요할 수 있다",
+    "reason": "스캔툴은 고장코드, 데이터, 액추에이터 명령 등을 제공하지만 실제 유압 응답과 기계 상태까지 언제나 확정할 수는 없다. 제조사 절차의 기능시험을 함께 수행한다.",
+    "key_point": "ABS 점검은 스캔 데이터와 실제 유압·작동 시험을 결합한다.",
+    "source_question_id": "auto-r02-s02-q20",
+    "original_issue_flags": [
+      "scan_tool_alone_may_not_verify_mechanical_abs_function"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
