@@ -2,6 +2,17 @@
 
 [공인중개사 문제은행 사이트](https://github.com/jejuzipsa/gichul-quiz)의 과목별 JSON 관리 방식을 참고한 모바일·PC 반응형 자동차정비산업기사 필기 문제풀이 사이트.
 
+## 기술·편집 검수 QA2 (2026-11-23)
+
+**오답 보기 품질 의심 129문항을 모두 다시 읽어 128문항 수정하고, 1문항은 의도된 ‘속하지 않는 것’을 고르는 부정형 문제로 확인해 유지했어.** 별도로 가정용 태양광 인버터 1문항을 전기차 구동 인버터로 재작성해 **이번 고유 수정 129문항**이야.
+
+- 질문·보기·해설 수정 전후: [QA2 129개 변경내역](data/qa/technical-qa2-changes.json), [부정형 오탐1개](data/qa/technical-qa2-false-positive.json), [상세 보고서](docs/TECHNICAL_QA2.md).
+- 과목 분류 검토 47건 계속 보류: [QA2 분류 47개 평가](data/qa/technical-qa2-classifications.json) (39건 다른 과목 의심·7건 경계영역·1건 EV 구동개념으로 재작성).
+- Bosch·Garrett·Fluke·기아 등 1차 기술 근거와 보기 4개를 확인한 [7문항 자료 대조](data/qa/technical-qa2-firstpass-evidence.json). 이는 기술 정답 최종 승인과는 별개야.
+- **720문항·720해설 연결 자동검사 통과, 기술적 정답 최종승인 0/720, 실전 모의고사 신규 연결 0/720**. `publishable:false` 유지. 기존 QA23 원본과 사이트 출제 매니페스트는 변경하지 않았어.
+- 최신 QA2 합본은 개인 라이브러리 `/기출문제_자동차정비산업기사/우리문제은행_QA2_오답보기검수/`의 `questions_all_720.json`, `explanations_all_720.json`. ZIP 없음.
+- 회귀테스트: `node tests/technical-qa1.test.cjs` 및 `node tests/technical-qa2.test.cjs`.
+
 ## 정밀 기술·편집 검수 QA1 (2026-11-23)
 
 **우리 문제 720문항과 별도 해설 720개에 대해 스키마/연결 전체 검사**, 1회차 80문항을 직접 읽고 주요 오답 보기 등을 포함해 **28문항 실제 수정**(1회차25+기타3), **과목/시험범위 분류 의심 47문항 전부 출제 보류**로 표시했어. 47건은 검토 후보이지 공식 분류가 확정된 게 아니야.
