@@ -27,3 +27,4 @@ jobs:
         run: |
           node tests/validate.cjs
           node tests/json-bank.test.cjs
+          node tests/draft-bank.test.cjs
