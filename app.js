@@ -8,20 +8,10 @@
     {id:"eco",name:"친환경 자동차정비"}
   ];
   const TRACKS = {past:"기존 기출문제",expected:"예상문제",demo:"시연용 문제",concept:"핵심 개념 퀴즈"};
-  const ITEMS = [...(Array.isArray(window.AUTO_QUIZ_DATA) ? window.AUTO_QUIZ_DATA : []),
-    ...(Array.isArray(window.AUTO_ORIGINAL_QUESTION_BANK) ? window.AUTO_ORIGINAL_QUESTION_BANK : [])].filter(q =>
-    q && typeof q.id === "string" && SUBJECTS.some(s=>s.id===q.subject) &&
-    Array.isArray(q.choices) && q.choices.length===4 &&
-    q.choices.every(x=>typeof x==="string"&&x.trim()) && [1,2,3,4].includes(q.answer) &&
-    typeof q.question==="string" && typeof q.explanation==="string" &&
-    (q.track==="demo" || q.track==="concept" ||
-      ((q.track==="past" || q.track==="expected") && q.publishable===true &&
-        (q.review_status==="approved" || (q.origin==="original_practice" && q.review_status==="editorial_draft"))))
-  );
-  // Unverified publisher text never ships with the public bundle.
-  // QA8 is loaded only from the user's own local IndexedDB store.
-  let localItems = [];
-  const lastOrdersById = new Map();
+  // The public site reads six same-origin JSON files automatically; no ZIP/file picker.
+  let ITEMS = [];
+  let bankLoadState = "loading";
+    const lastOrdersById = new Map();
   const QUIZ_UTILS = window.AutomotiveQuizUtils;
   function buildOrder(q) {
     const order = QUIZ_UTILS.shuffleOrder(q.choices.length);
@@ -38,49 +28,59 @@
     const displayNumber=session.choices[index];
     return QUIZ_UTILS.isCorrect(session.orders?.[index],displayNumber,q.answer);
   }
-  async function restorePersonalBank() {
-    const message=$("personalTextBankStatus");
-    const api=window.AutomotivePersonalBank;
-    if(!api){message.textContent="개인 문제은행 모듈을 불러오지 못했어.";return;}
-    try {
-      const saved=await api.load();
-      if(saved && Array.isArray(saved.questions) && saved.questions.length===720) {
-        localItems=saved.questions.map(q=>({...q,personal_bank:true}));
-        $("personalTextBankClearBtn").disabled=false;
-        message.textContent=`이 기기에 QA8 ${saved.total}문항 저장됨 · 원본 대조 ${saved.reviewed}문항 · 미검수 ${saved.unreviewed}문항`;
-        setTrack("expected");
-      } else {localItems=[];renderSubjects();}
-    } catch(error){
-      message.textContent="브라우저 저장소를 읽지 못했어: "+(error?.message||"오류");
-    }
+  const PUBLIC_BANK_PATHS = new Set([
+    "data/expected/engine.json","data/expected/chassis.json",
+    "data/expected/electrical.json","data/expected/eco.json",
+    "data/demo.json","data/concept.json"
+  ]);
+  function validPublicQuestion(q) {
+    return q && typeof q.id === "string" && SUBJECTS.some(s=>s.id===q.subject) &&
+      Array.isArray(q.choices) && q.choices.length === 4 &&
+      q.choices.every(x=>typeof x==="string" && x.trim()) &&
+      [1,2,3,4].includes(q.answer) &&
+      typeof q.question==="string" && !!q.question.trim() &&
+      typeof q.explanation==="string" && !!q.explanation.trim() &&
+      (q.track==="demo" || q.track==="concept" ||
+        ((q.track==="past" || q.track==="expected") && q.publishable===true &&
+        (q.review_status==="approved" ||
+          (q.origin==="original_practice" && q.review_status==="editorial_draft"))));
   }
-  async function importPersonalBank(file) {
-    if(!file)return;
-    const message=$("personalTextBankStatus");
-    message.textContent="QA8 텍스트 문제를 검증하고 이 기기에 저장하는 중이야.";
+  async function loadPublicBank() {
+    const status=$("bankLoadStatus");
     try {
-      const api=window.AutomotivePersonalBank;
-      const parsed=await api.parseFile(file);
-      const saved=await api.save(parsed);
-      localItems=parsed.questions.map(q=>({...q,personal_bank:true}));
-      $("personalTextBankClearBtn").disabled=false;
-      message.textContent=`${parsed.total}문항 불러오기 완료 · 원본 대조 ${parsed.reviewed} · 미검수 ${parsed.unreviewed}${saved.persistent?" · 기기에 저장됨":" · 임시 보관만 가능 ("+saved.reason+")"}`;
-      setTrack("expected");
-    } catch(error){
-      message.textContent="불러오기 실패: "+(error?.message||"오류");
-    } finally {
-      $("personalTextBankInput").value="";
+      const manifestResponse=await fetch("data/manifest.json",{cache:"no-cache"});
+      if(!manifestResponse.ok)throw new Error("목록 HTTP "+manifestResponse.status);
+      const manifest=await manifestResponse.json();
+      if(manifest?.version!==1 || !Array.isArray(manifest.banks) ||
+          manifest.banks.length!==PUBLIC_BANK_PATHS.size ||
+          new Set(manifest.banks.map(x=>x.file)).size!==PUBLIC_BANK_PATHS.size ||
+          !manifest.banks.every(x=>PUBLIC_BANK_PATHS.has(x.file)))
+        throw new Error("과목별 목록 형식 오류");
+      const groups=await Promise.all(manifest.banks.map(async def=>{
+        const response=await fetch(def.file,{cache:"no-cache"});
+        if(!response.ok)throw new Error(def.file+" HTTP "+response.status);
+        const records=await response.json();
+        if(!Array.isArray(records) || records.length!==def.count ||
+          !records.every(q=>validPublicQuestion(q) && q.track===def.track &&
+            (!def.subject || q.subject===def.subject)))
+          throw new Error(def.file+" 데이터 형식 또는 문항 수 오류");
+        return records;
+      }));
+      const result=groups.flat();
+      if(new Set(result.map(q=>q.id)).size!==result.length)
+        throw new Error("문제 ID 중복");
+      ITEMS=result;
+      bankLoadState="ready";
+      const expected=result.filter(q=>q.track==="expected").length;
+      status.textContent=`과목별 JSON 자동 연결 완료 · 자체제작 예상문제 ${expected}문항 · 파일 선택 필요 없음`;
+    }catch(error){
+      ITEMS=[];
+      bankLoadState="error";
+      status.textContent="문제은행을 읽지 못했어. 새로고침하거나 잠시 후 다시 확인해 줘. ("+
+        (error?.message||"원인 미상")+")";
     }
-  }
-  async function clearPersonalBank() {
-    const message=$("personalTextBankStatus");
-    try {
-      await window.AutomotivePersonalBank.clear();
-      localItems=[];
-      $("personalTextBankClearBtn").disabled=true;
-      message.textContent="이 기기의 QA8 문제은행을 삭제했어. 다시 가져오면 사용할 수 있어.";
-      renderSubjects();
-    } catch(error){message.textContent="삭제 실패: "+(error?.message||"오류");}
+    renderSubjects();
+    if(view==="concept")renderConcepts();
   }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
   let activeTrack = "past";
@@ -114,7 +114,7 @@
     return SUBJECTS.find(s=>s.id===subject)?.name || "전체 과목";
   }
   function poolFor(track,subject=null) {
-    return [...ITEMS,...localItems].filter(q=>q.track===track && (!subject||q.subject===subject));
+    return ITEMS.filter(q=>q.track===track && (!subject||q.subject===subject));
   }
   function shuffled(items) {
     const a=[...items];
@@ -151,9 +151,8 @@
   function renderSubjects() {
     const box=$("subjectGrid");box.replaceChildren();
     const total=poolFor(activeTrack).length;
-    $("trackSummary").textContent=activeTrack==="expected" && localItems.length
-      ? `예상문제 · 개인 QA8 텍스트 문제은행 ${total}문항 · 검수 전 OCR 초안 포함 · 기술적 정답 미승인`
-      : `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" (독립 제작 연습문제)":" · 기존 기출 수록 전"} · QA8 OCR 문제 720개는 별도로 파일 불러오기로 사용할 수 있어.`;
+    $("trackSummary").textContent=bankLoadState==="loading"?"문제은행을 불러오는 중이야.":
+      `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" · 자체 제작 연습문제(편집 검토 중)":" · 이용이 허가된 기출문제 등록 전"}`;
     for(const subject of SUBJECTS){
       const count=poolFor(activeTrack,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
@@ -265,11 +264,9 @@
     $("questionNumber").textContent=`문제 ${index+1}`;
     $("questionText").textContent=q.question;
     const audit=$("quizAuditInfo");
-    if(q.personal_bank) {
+    if(q.review_status==="editorial_draft") {
       audit.classList.remove("hidden");
-      audit.textContent=q.transcription_status==="source_compared"
-        ?"QA8 · 원본 문자 대조 완료 · 정답의 기술적 정확성은 미검증"
-        :"QA8 · OCR 미검수 초안 · 정답의 기술적 정확성은 미검증";
+      audit.textContent="자체제작 연습문제 · 편집 검토 단계";
     } else audit.classList.add("hidden");
     $("questionCard").classList.remove("correct","wrong");
     const box=$("answerChoices");box.replaceChildren();
@@ -435,13 +432,12 @@
   function connect(){
     $("trackPast").addEventListener("click",()=>setTrack("past"));
     $("trackExpected").addEventListener("click",()=>setTrack("expected"));
-    $("personalTextBankInput").addEventListener("change",event=>importPersonalBank(event.target.files?.[0]));
-    $("personalTextBankClearBtn").addEventListener("click",clearPersonalBank);
     $("themeToggleBtn").addEventListener("click",toggleTheme);
     for(const b of document.querySelectorAll(".reading-size-btn"))b.addEventListener("click",()=>setReadingSize(b.dataset.readingSize));
     $("homeBtn").addEventListener("click",showHome);
     $("demoEntryBtn").addEventListener("click",startDemo);
     $("demoBrowseBtn").addEventListener("click",()=>openBrowse("demo"));
+    $("bankEntryBtn").addEventListener("click",()=>openBrowse("expected"));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
     $("conceptEntryBtn").addEventListener("click",()=>{renderConcepts();showView("concept");});
     $("wrongEntryBtn").addEventListener("click",()=>{renderWrong();showView("wrong");});
@@ -456,8 +452,8 @@
     window.addEventListener("pagehide",stopTimer);
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
-    setTrack("past");showView("home");
-    restorePersonalBank();
+    setTrack("expected");showView("home");
+    loadPublicBank();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",connect);
   else connect();
