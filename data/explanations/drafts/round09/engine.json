@@ -174,7 +174,7 @@
     "question_id": "auto-made-r09-s01-q12",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "절연 정격에 맞는 오실로스코프용 점화 픽업",
+    "correct_choice": "점화 2차 파형용 절연/정격 측정 픽업",
     "reason": "점화 2차파형의 상승전압·스파크 시간 등은 전용 프로브를 연결한 오실로스코프로 측정한다. 고전압에 일반 프로브를 직접 접촉하면 위험하다.",
     "key_point": "점화 2차파형 → 전용 프로브+오실로스코프.",
     "source_question_id": "auto-r09-s01-q12",
@@ -183,7 +183,23 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "점화 2차전압 전용 측정장비의 필요성",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.fluke.com/en-us/product/accessories/test-leads/fluke-pm9096-201",
+        "https://www.picoauto.com/library/automotive-guided-tests/ignition/distributor-/AGT-389-primary-voltage-vs-secondary-king-lead/"
+      ],
+      "review_note": "Fluke와 Pico 자동차 오실로스코프 지침에서 점화 2차 고전압을 전용 픽업으로 결합한다는 점을 확인했다. 일반 저전압 프로브 직접 연결은 안전하지 않다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r09-s01-q13",

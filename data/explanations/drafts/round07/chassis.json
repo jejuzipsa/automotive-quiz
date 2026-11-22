@@ -20,7 +20,7 @@
     "question_id": "auto-made-r07-s02-q02",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "오일펌프·필터·압력조절 밸브 및 누설",
+    "correct_choice": "오일펌프·흡입필터·압력조절기와 내부 누설을 점검한다",
     "reason": "라인압 저하는 펌프 마모·흡입 불량·내부 누설 및 압력조절 이상으로 생길 수 있다. 고압·저압 판정은 차종 지정 기어 위치와 조건을 따른다.",
     "key_point": "자동변속기 저라인압 → 펌프·조절밸브·누설 점검.",
     "source_question_id": "auto-r07-s02-q02",
@@ -29,7 +29,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "라인압 저하의 공급/레귤레이터/누설 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s02-q03",
@@ -53,7 +60,7 @@
     "question_id": "auto-made-r07-s02-q04",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "좌우 공기압·차고·얼라인먼트와 부싱 상태",
+    "correct_choice": "좌우 타이어 공기압·차고·얼라인먼트와 부싱을 확인한다",
     "reason": "쏠림은 타이어, 제동 끌림, 정렬, 현가부품 등 여러 원인으로 발생한다. 좌우 조건과 주행 방향을 비교해 진단해야 한다.",
     "key_point": "편향 주행은 타이어·정렬·제동·현가를 구분한다.",
     "source_question_id": "auto-r07-s02-q04",
@@ -63,7 +70,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "쏠림 기본 조건을 복합적으로 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s02-q05",
@@ -121,7 +135,7 @@
     "question_id": "auto-made-r07-s02-q08",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "조향 토크·모터전류와 보조 명령을 비교하는 것",
+    "correct_choice": "조향 토크·모터 전류와 보조 명령을 상호 비교한다",
     "reason": "타이어 공기압은 조향감에 영향을 주지만 EPS 모터의 토크 신호와 전류 응답을 직접 보여주지 않는다. 요구 토크와 제어기 출력을 확인해야 한다.",
     "key_point": "EPS 진단은 토크 신호·모터 구동 데이터를 확인.",
     "source_question_id": "auto-r07-s02-q08",
@@ -131,7 +145,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 보조력 직접 측정과 간접 현상 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s02-q09",
@@ -256,7 +277,7 @@
     "question_id": "auto-made-r07-s02-q16",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "유압 공급·압력 조절과 클러치 작동 조건의 이상",
+    "correct_choice": "라인압 값으로 유압공급·조절·클러치 회로 이상을 판단한다",
     "reason": "변속기 라인압은 펌프와 레귤레이터·유압 회로 상태를 반영한다. 규정 위치·온도·회전수에서 목표값과 비교해야 한다.",
     "key_point": "라인압 진단은 지정 운전조건에서 유압계통 평가.",
     "source_question_id": "auto-r07-s02-q16",
@@ -265,7 +286,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속기 라인압 계측이 의미하는 대상",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s02-q17",

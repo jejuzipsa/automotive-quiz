@@ -318,16 +318,23 @@
     "question_number": 15,
     "question": "EPS 전자제어기가 모터 보조량을 결정하려 한다. 직접적으로 필요한 센서 자료는?",
     "choices": [
-      "도어잠금 액추에이터의 외관 도장색",
-      "타이어가 제조된 공장의 주소",
-      "스티어링 휠에 가해지는 운전자 조향 토크",
-      "실내 송풍구 플라스틱 경도"
+      "브레이크 페달을 밟은 시간의 누계",
+      "EPS 모터 내부 온도만",
+      "스티어링 휠에 가해진 조향 토크의 크기와 방향",
+      "차량 전조등의 밝기조절 명령"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r08-s02-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 운전자 토크 센서와 다른 신호 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s02-q16",
@@ -362,16 +369,23 @@
     "question_number": 17,
     "question": "쇼크업소버 로드 표면에 흠집이 난 뒤 오일이 새기 시작했다. 직접 연관된 부위는?",
     "choices": [
-      "브레이크 유압조절 모터만",
-      "연료분사 ECU의 메모리",
-      "로드 표면과 맞닿는 오일 씰의 밀봉 상태",
-      "차량 라디오 안테나 위치"
+      "스트럿 어퍼마운트 베어링의 작동음",
+      "쇼크업소버 스프링 자유장 변화",
+      "로드 표면 상처와 그에 접촉하는 오일씰의 밀봉성",
+      "차체 높이 센서의 보정 값"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r08-s02-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "쇼크업소버 로드씰 누유 원인 검사",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s02-q18",

@@ -37,14 +37,21 @@
     "question_id": "auto-made-r09-s02-q03",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "로드 손상·오일 씰과 실제 누유량",
+    "correct_choice": "로드 표면의 흠집·오일씰 손상과 실제 누유 상태",
     "reason": "쇼크업소버에서 오일이 새면 감쇠 성능이 저하될 수 있다. 단순 오염인지 실제 오일 누유인지 구분하고 부품 상태를 점검해야 한다.",
     "key_point": "쇽업소버 오일 누유 → 실링·로드·감쇠 확인.",
     "source_question_id": "auto-r09-s02-q03",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "로드 씰 유막/누유 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q04",
@@ -81,14 +88,21 @@
     "question_id": "auto-made-r09-s02-q06",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "액추에이터 코일 저항·전원·접지·배선 상태",
+    "correct_choice": "액추에이터 저항·전원·접지·배선의 상태",
     "reason": "댐퍼 제어회로의 저항 이상은 단선·접촉 불량·코일 문제를 시사할 수 있다. 차종별 회로 및 기준 저항을 확인한다.",
     "key_point": "전자 댐퍼 회로 = 코일·하네스·전원 점검.",
     "source_question_id": "auto-r09-s02-q06",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자댐퍼 전원·코일의 기본 측정",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q07",
@@ -112,7 +126,7 @@
     "question_id": "auto-made-r09-s02-q08",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "EPS 전원 공급·접지·릴레이와 배선 접촉",
+    "correct_choice": "EPS 전원·접지·릴레이·전원배선 접촉상태",
     "reason": "EPS 모터는 큰 전류를 필요로 한다. 전원릴레이 접촉불량이나 접지 저항이 커지면 보조가 제한될 수 있다.",
     "key_point": "EPS 보조 상실 → 전원·접지·릴레이 확인.",
     "source_question_id": "auto-r09-s02-q08",
@@ -121,7 +135,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "저전압 DTC와 일치하는 EPS 공급 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q09",
@@ -209,7 +230,7 @@
     "question_id": "auto-made-r09-s02-q14",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "엔진 RPM과 변속기 입력축 RPM 및 TCC 제어 상태",
+    "correct_choice": "엔진 RPM·변속기 입력 회전수와 TCC 제어 상태",
     "reason": "토크컨버터 클러치가 완전히 결합되면 엔진과 변속기 입력축의 회전 차가 작아진다. 실제 슬립은 제어명령과 부하 상태를 함께 봐야 한다.",
     "key_point": "TCC 슬립 = 엔진 회전수와 입력축 회전수 차.",
     "source_question_id": "auto-r09-s02-q14",
@@ -218,7 +239,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCC 슬립 검증 데이터/간접 항목 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q15",
@@ -272,14 +300,29 @@
     "question_id": "auto-made-r09-s02-q18",
     "subject": "chassis",
     "correct_answer": 4,
-    "correct_choice": "운전자 조향 명령과 센서로 본 실제 요거동",
+    "correct_choice": "조향각에 따른 목표 요거동과 실제 요레이트를 비교한다",
     "reason": "ESC는 조향각·요레이트·휠속도·횡가속도 등을 비교해 회전 방향 안정성을 판단하고 필요 시 제동 개입을 수행한다.",
     "key_point": "ESC = 조향 의도 대비 실제 주행 거동 비교.",
     "source_question_id": "auto-r09-s02-q18",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ESC 목표·실제 요거동 비교",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "review_note": "Bosch ESC 설명상 조향각은 운전자 목표 거동, 요레이트는 실제 회전거동을 감지하며 차이를 비교해 제어할 수 있다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q19",

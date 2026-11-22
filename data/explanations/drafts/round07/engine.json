@@ -54,7 +54,7 @@
     "question_id": "auto-made-r07-s01-q04",
     "subject": "engine",
     "correct_answer": 1,
-    "correct_choice": "노즐 구멍 막힘이나 분사기 내부 손상",
+    "correct_choice": "분사노즐 분무구 막힘·니들 고착 등 노즐 상태",
     "reason": "노즐 내부 오염과 마모는 연료 분사 방향·형상·미립화에 영향을 준다. 분사패턴 불량은 인젝터 자체의 분무 조건과 시험압력부터 점검한다.",
     "key_point": "불균일 분사 분무 → 노즐 막힘·마모·분사압 검사.",
     "source_question_id": "auto-r07-s01-q04",
@@ -63,7 +63,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인젝터 벤치 시험 분무 형상과 노즐 직접 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q05",
@@ -168,7 +175,7 @@
     "question_id": "auto-made-r07-s01-q11",
     "subject": "engine",
     "correct_answer": 1,
-    "correct_choice": "크랭크축과 캠축 사이의 회전 위상 관계",
+    "correct_choice": "크랭크축과 캠축 사이의 상대 회전 위상",
     "reason": "타이밍 벨트는 크랭크축 회전을 캠축에 정해진 위상으로 전달한다. 치형이 어긋나면 밸브 개폐시기가 변하며 엔진 손상 가능성도 있다.",
     "key_point": "타이밍 벨트는 캠-크랭크 동기를 유지한다.",
     "source_question_id": "auto-r07-s01-q11",
@@ -178,7 +185,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "타이밍벨트 위상 변화와 독립 계통 변수 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q12",
@@ -269,7 +283,7 @@
     "question_id": "auto-made-r07-s01-q17",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "열림 고착으로 냉각수가 계속 큰 회로를 순환",
+    "correct_choice": "열림 고착으로 큰 냉각회로가 일찍 열려 난기가 지연된다",
     "reason": "서모스탯 열림 고착은 난기 지연과 냉각수 저온 유지로 이어질 수 있다. 닫힘 고착은 반대로 과열 가능성이 있으므로 현상을 구분한다.",
     "key_point": "서모스탯 열림 고착 → 예열 지연·저온 운전.",
     "source_question_id": "auto-r07-s01-q17",
@@ -279,7 +293,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "서모스탯 열림/닫힘 고장 징후 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q18",
@@ -302,7 +323,7 @@
     "question_id": "auto-made-r07-s01-q19",
     "subject": "engine",
     "correct_answer": 3,
-    "correct_choice": "헤드가스켓 등으로 인한 냉각수의 연소실 유입",
+    "correct_choice": "헤드가스켓 등의 문제로 냉각수가 연소실에 유입되는 경로",
     "reason": "냉각수가 연소실에 유입되면 흰 수증기와 냉각수 감소가 나타날 수 있다. 흰 배기는 저온 미연소 연료로도 생기므로 냉각계 압력시험과 유체 상태를 확인한다.",
     "key_point": "지속적 흰 배기·냉각수 감소 → 연소실 누수 가능.",
     "source_question_id": "auto-r07-s01-q19",
@@ -311,14 +332,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "흰 배출 증기+냉각수 손실에 대응하는 내부유입 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q20",
     "question_id": "auto-made-r07-s01-q20",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "실린더 압축압력 게이지 및 지정 크랭킹 절차",
+    "correct_choice": "압축압력 게이지와 규정된 크랭킹 절차",
     "reason": "압축압력 검사는 엔진 크랭킹 동안 실린더 내 압력 변화를 계측한다. 배터리 상태·스로틀 개도·점화 차단 등은 해당 엔진 정비 절차를 따른다.",
     "key_point": "압축압력 시험 = 실린더 압력 게이지와 지정 조건.",
     "source_question_id": "auto-r07-s01-q20",
@@ -328,6 +356,13 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "압축압력계/진공계/연료압력계 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

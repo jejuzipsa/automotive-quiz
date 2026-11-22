@@ -120,16 +120,23 @@
     "question_number": 6,
     "question": "에어 현가장치 차량이 한쪽만 처지고 차고 센서 값도 불규칙하다. 적절한 진단 조합은?",
     "choices": [
-      "운전석 시트 메모리만 초기화한다",
-      "엔진 점화플러그 열가만 바꾼다",
-      "차고 센서 하나만 무조건 교환한다",
-      "해당 에어 스프링 누설·차고 센서·밸브 동작을 확인한다"
+      "타이어 공기압만 정상화하고 에어스프링 누설은 무시한다",
+      "해당 차고 센서만 교환하고 링크의 체결 상태를 무시한다",
+      "압축기 압력은 정상이라고 가정하고 공기배관을 검사하지 않는다",
+      "에어스프링 누설·차고 센서 링크와 제어밸브 작동을 구별한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r05-s02-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "편측 처짐과 차고 신호 불안정의 복합 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s02-q07",
@@ -186,16 +193,23 @@
     "question_number": 9,
     "question": "에어 서스펜션 차고 제어가 정상적으로 작동하지 않는다. 센서가 잘못된 높이를 보고할 때 가능한 증상은?",
     "choices": [
-      "무조건 냉각수 온도가 상승한다",
-      "오디오 채널 수가 줄어든다",
-      "차체의 목표 높이 유지가 실패할 수 있다",
-      "엔진 연소실 압축비가 달라진다"
+      "목표 차고가 바뀌면 엔진 배기량이 달라진다",
+      "차고 센서가 틀려도 차고 제어에는 영향이 없다",
+      "차량이 목표 높이를 유지하지 못할 수 있다",
+      "차고센서 값만 다르다면 에어밸브 동작은 항상 정상이다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r05-s02-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차고 입력 오류가 실제 차고 제어에 미치는 영향",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s02-q10",
@@ -355,7 +369,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 웨이스트게이트/과급은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -384,7 +402,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 액추에이터 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -413,7 +435,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보차저 교환 후 초기 윤활",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -442,7 +468,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "엔진 진단스캐너 취급",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -471,7 +501,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "TPS와 스로틀 제어는 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

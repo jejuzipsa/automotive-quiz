@@ -258,7 +258,7 @@
     "question_id": "auto-made-r06-s01-q16",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "각 캡의 고유 위치·방향과 지정 체결 순서",
+    "correct_choice": "캡별 위치·방향·지정 체결순서를 유지한다",
     "reason": "메인 베어링 캡은 블록과 함께 정렬·가공되는 경우가 많아 방향과 위치가 중요하다. 지정 토크·각도·부품 재사용 조건을 확인해 조립한다.",
     "key_point": "베어링 캡은 위치/방향/체결절차를 보존한다.",
     "source_question_id": "auto-r06-s01-q16",
@@ -267,14 +267,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "엔진 메인베어링 캡 고유 위치와 제조사 규격",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s01-q17",
     "question_id": "auto-made-r06-s01-q17",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "오일 레벨·점도·압력계 측정 후 펌프·베어링 간극 진단",
+    "correct_choice": "오일 레벨·점도·실측 압력 후 펌프·베어링 간극을 확인한다",
     "reason": "저압 원인은 오일량 부족, 흡입측 누설, 펌프 손상 또는 베어링 간극 증가 등 복수다. 규정 온도에서 기계식 압력계로 재확인한 뒤 원인별로 점검한다.",
     "key_point": "오일 저압은 계측 재확인 및 공급/누설/간극 구분.",
     "source_question_id": "auto-r06-s01-q17",
@@ -284,7 +291,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "측정 검증 후 원인 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s01-q18",

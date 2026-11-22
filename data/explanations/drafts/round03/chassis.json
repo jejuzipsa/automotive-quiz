@@ -4,21 +4,28 @@
     "question_id": "auto-made-r03-s02-q01",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "차종별 변속기 규격·운전조건·제조사 교환 지침",
+    "correct_choice": "변속기의 제작사 지정 ATF 규격과 운행조건·교환기준",
     "reason": "ATF 수명과 점검 주기는 변속기 형식, 온도와 운행환경에 좌우된다. 엔진오일 교환주기와 일률적으로 연계하지 말고 지정 규격을 따른다.",
     "key_point": "ATF 교환은 제조사 지정 조건과 유체 규격이 우선이다.",
     "source_question_id": "auto-r03-s02-q01",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ATF 교체·규격은 변속기별 상이",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q02",
     "question_id": "auto-made-r03-s02-q02",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "냉각호스·라디에이터 연결부의 누설 흔적",
+    "correct_choice": "냉각호스·라디에이터 연결부의 냉각수 누설 흔적",
     "reason": "냉각수 감소는 호스나 연결부 누수, 라디에이터·워터펌프 및 내부 누설 등 여러 원인으로 생긴다. 압력 안전을 확보한 뒤 외부 누설과 압력 유지를 확인한다.",
     "key_point": "냉각수 감소는 외부 누설 여부와 압력 유지부터 확인한다.",
     "source_question_id": "auto-r03-s02-q02",
@@ -31,7 +38,18 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "엔진 냉각수 소모·냉각계 진단은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉각수 외부누설 흔적과 간접 운전조건 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -53,7 +71,7 @@
     "question_id": "auto-made-r03-s02-q04",
     "subject": "chassis",
     "correct_answer": 4,
-    "correct_choice": "해당 휠 속도센서·톤링·배선과 신호 파형",
+    "correct_choice": "해당 바퀴의 센서·톤링·배선과 실제 신호 파형",
     "reason": "휠 속도센서 회로는 센서 자체뿐 아니라 회전자·톤링·간극·커넥터 등에 영향받는다. 기록된 DTC와 파형으로 원인을 구분한다.",
     "key_point": "ABS 휠 신호 오류는 센서·톤링·배선을 함께 본다.",
     "source_question_id": "auto-r03-s02-q04",
@@ -62,28 +80,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "휠별 속도 신호 DTC에 직접 연관된 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q05",
     "question_id": "auto-made-r03-s02-q05",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "ATF 압력과 유온, 솔레노이드 제어 상태",
+    "correct_choice": "ATF 압력·유온과 솔레노이드 제어 신호",
     "reason": "자동변속기 내부 유압 문제는 압력, ATF 온도와 유체 상태, 관련 솔레노이드 제어 데이터를 기반으로 진단한다. 공조계 냉매량은 직접 근거가 아니다.",
     "key_point": "유압변속기는 실제 오일 압력·온도·제어 입력을 확인한다.",
     "source_question_id": "auto-r03-s02-q05",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속기 유압제어 진단의 직접 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q06",
     "question_id": "auto-made-r03-s02-q06",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "유압유 상태·압력·축압기·댐퍼 제어",
+    "correct_choice": "작동유 상태·압력·축압기와 댐퍼 제어 상태",
     "reason": "유압 현가의 거친 승차감은 유체 상태와 압력, 축압기, 밸브 및 감쇠부의 문제에서 생길 수 있다. 오일 점도 하나로 원인을 단정하면 안 된다.",
     "key_point": "유압 현가 진단은 유체·압력·축압기와 밸브를 함께 점검한다.",
     "source_question_id": "auto-r03-s02-q06",
@@ -92,14 +124,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압식 현가의 진단 범위",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q07",
     "question_id": "auto-made-r03-s02-q07",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "유체 수위와 호스·실린더 누설",
+    "correct_choice": "유체 레벨·배관 및 실린더 누설 상태",
     "reason": "유체 손실이나 누설은 현가 계통의 압력 유지 장애를 만들 수 있다. 계통을 안전하게 감압하고 정비자료에 따라 액면·누설을 검사한다.",
     "key_point": "현가 유압 저하는 유체 부족·누설을 확인한다.",
     "source_question_id": "auto-r03-s02-q07",
@@ -108,7 +147,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압 유실 시 직접 누설 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q08",
@@ -140,7 +186,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "현가 가속도·차고 계통 검출 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q10",
@@ -163,7 +216,7 @@
     "question_id": "auto-made-r03-s02-q11",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "전원·접지·명령 회로와 액추에이터 자체 상태",
+    "correct_choice": "명령 신호·전원·접지 및 액추에이터의 상태",
     "reason": "액추에이터의 미작동은 전원 문제, 회로 단선, 제어 명령, 구동부 고장에서 발생한다. 처음부터 모터만 교환하면 원인을 놓칠 수 있다.",
     "key_point": "액추에이터 불량은 회로와 구동부를 분리해 진단한다.",
     "source_question_id": "auto-r03-s02-q11",
@@ -172,14 +225,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "액추에이터 명령 존재·미작동의 전기/기계 원인 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q12",
     "question_id": "auto-made-r03-s02-q12",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "배선·장착 위치·보정 절차와 출력 변화를 확인",
+    "correct_choice": "배선·장착 위치·링크와 보정 절차 및 출력 변화를 확인한다",
     "reason": "차고 센서 교체 후에는 기계적 링크 체결, 센서 신호, 전원·접지와 높이 초기화를 확인해야 할 수 있다. 절연만 점검하고 완료할 수는 없다.",
     "key_point": "현가 센서 교환 후 장착·출력·보정을 함께 확인한다.",
     "source_question_id": "auto-r03-s02-q12",
@@ -188,7 +248,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "센서 기계결합/전원/학습 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q13",
@@ -239,7 +306,7 @@
     "question_id": "auto-made-r03-s02-q16",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "배터리 전압·모터 명령·배선 및 기계 저항",
+    "correct_choice": "배터리 전압·모터 명령·배선과 조향 기계저항을 점검한다",
     "reason": "EPS 보조력 이상은 공급전압, 토크센서, 모터, 제어기 및 조향 기계저항에서 생길 수 있다. 명령·전류·작동 조건을 비교해 원인을 분리해야 한다.",
     "key_point": "EPS 보조력 이상은 전기와 기계 원인을 함께 구분한다.",
     "source_question_id": "auto-r03-s02-q16",
@@ -248,14 +315,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 저전압·구동 명령·기계저항 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q17",
     "question_id": "auto-made-r03-s02-q17",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "ABS/차체자세제어 관련 경고가 점등될 수 있다",
+    "correct_choice": "ABS/ESC 관련 경고등이 점등될 수 있다",
     "reason": "휠 센서 오류는 ABS·ESC 등 공유되는 안전장치에 영향을 주어 관련 경고가 켜질 수 있다. 엔진경고등 점등 여부는 차종과 제어로직에 따라 달라진다.",
     "key_point": "ABS 휠 센서 이상은 관련 제동·차체제어 경고로 나타날 수 있다.",
     "source_question_id": "auto-r03-s02-q17",
@@ -264,7 +338,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "휠속도 신호 이상시 ABS/ESC 경고",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q18",

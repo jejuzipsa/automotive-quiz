@@ -76,16 +76,23 @@
     "question_number": 4,
     "question": "인젝터 시험기에서 분사 분무가 한쪽으로 치우친다. 직접 점검할 가능성이 큰 항목은?",
     "choices": [
-      "노즐 구멍 막힘이나 분사기 내부 손상",
-      "에어컨 컴프레서 벨트의 장력",
-      "리어 와이퍼 와셔 호스",
-      "운전석 시트 슬라이드 저항"
+      "분사노즐 분무구 막힘·니들 고착 등 노즐 상태",
+      "흡기 매니폴드 압력센서만",
+      "EGR 밸브 재순환 비율만",
+      "실린더 압축압력만"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r07-s01-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인젝터 벤치 시험 분무 형상과 노즐 직접 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q05",
@@ -230,16 +237,23 @@
     "question_number": 11,
     "question": "타이밍 벨트가 한 톱니 어긋났을 때 직접 변하는 것은?",
     "choices": [
-      "크랭크축과 캠축 사이의 회전 위상 관계",
-      "오디오 신호의 위상",
-      "연료탱크 외부 도장",
-      "타이어 고무 재질"
+      "크랭크축과 캠축 사이의 상대 회전 위상",
+      "기계식 밸브 스프링의 자유장 길이",
+      "크랭크축 베어링의 오일 간극",
+      "연료레일 내부의 펌프 공급 압력"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r07-s01-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "타이밍벨트 위상 변화와 독립 계통 변수 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q12",
@@ -362,16 +376,23 @@
     "question_number": 17,
     "question": "엔진이 정상 온도에 잘 오르지 않고 히터도 약하다. 서모스탯 고장 양상으로 타당한 것은?",
     "choices": [
-      "점화코일 불량으로 냉각수 통로가 열림",
-      "열림 고착으로 냉각수가 계속 큰 회로를 순환",
-      "닫힘 고착으로 냉각이 무조건 과도해짐",
-      "차체 안테나 불량으로 라디에이터 팬이 고착"
+      "닫힘 고착으로 냉각수가 정상보다 더 빨리 식는다",
+      "열림 고착으로 큰 냉각회로가 일찍 열려 난기가 지연된다",
+      "온도센서 단선으로 서모스탯 밸브 자체가 물리적으로 열린다",
+      "서모스탯 고장이면 히터코어 유량은 항상 0이 된다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r07-s01-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "서모스탯 열림/닫힘 고장 징후 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q18",
@@ -406,16 +427,23 @@
     "question_number": 19,
     "question": "디젤 배기관에서 냉각수 냄새가 나고 흰 증기가 지속된다. 우선 의심할 경로는?",
     "choices": [
-      "실내 공기정화 필터만",
-      "오디오 안테나 지지대",
-      "헤드가스켓 등으로 인한 냉각수의 연소실 유입",
-      "타이어 접지면의 돌기"
+      "연료분사량 과다만으로 냉각수 감소를 설명한다",
+      "배기관 응축수만으로 냉각수 지속 감소를 설명한다",
+      "헤드가스켓 등의 문제로 냉각수가 연소실에 유입되는 경로",
+      "연료필터 막힘만으로 냉각수 감소를 설명한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r07-s01-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "흰 배출 증기+냉각수 손실에 대응하는 내부유입 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s01-q20",
@@ -426,17 +454,24 @@
     "source_question_id": "auto-r07-s01-q20",
     "round": 7,
     "question_number": 20,
-    "question": "가솔린 엔진의 압축압력을 측정하려 한다. 검사에 직접 필요한 장비는?",
+    "question": "가솔린 엔진 실린더의 크랭킹 압축압력을 측정할 때 직접 필요한 계측 장비는?",
     "choices": [
-      "오디오 전원 테스트 스피커",
-      "실린더 압축압력 게이지 및 지정 크랭킹 절차",
-      "냉각수의 색상 비교표",
-      "타이어 공기압 시험기만"
+      "흡기 매니폴드 진공 게이지만",
+      "압축압력 게이지와 규정된 크랭킹 절차",
+      "연료레일 압력 테스터만",
+      "점화 2차 파형용 고전압 픽업만"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r07-s01-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "압축압력계/진공계/연료압력계 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

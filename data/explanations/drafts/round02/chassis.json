@@ -4,14 +4,21 @@
     "question_id": "auto-made-r02-s02-q01",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "변속기 오일 상태와 주행·변속 조건별 소음 변화",
+    "correct_choice": "ATF 상태와 변속단·차속·온도별 소음 변화를 비교한다",
     "reason": "소음이 발생하는 기어·부하·속도와 ATF 상태를 함께 확인해야 원인을 좁힐 수 있다. 타이어 공기압 부족은 승차감에 영향을 줄 수 있지만 변속기 내부 기계음의 직접 원인이라고 단정하기 어렵다.",
     "key_point": "소음 진단은 발생 위치·조건·관련 유체를 대조한다.",
     "source_question_id": "auto-r02-s02-q01",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속기 내부 소음의 재현조건 비교",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q02",
@@ -31,7 +38,11 @@
       "current_subject": "chassis",
       "suggested_subject": "electrical",
       "reason": "실내 송풍기 소음의 구동계 구별/공조 전장",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -69,7 +80,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "OBD P0300은 엔진 실화 진단코드",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -77,28 +92,42 @@
     "question_id": "auto-made-r02-s02-q05",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "솔레노이드 명령·입출력축 회전속도·ATF 온도",
+    "correct_choice": "솔레노이드 지령·입출력 회전수와 ATF 온도를 확인한다",
     "reason": "변속기 전자제어 진단에는 변속 상태, 솔레노이드 지령, 입출력 회전속도, 온도, 고장코드가 직접적인 단서가 된다. 관련 없는 편의장치 상태는 우선 검사항목이 아니다.",
     "key_point": "변속기 진단에는 변속 제어·속도·유체 온도 정보가 중요하다.",
     "source_question_id": "auto-r02-s02-q05",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속기 TCM의 진단 데이터 구성",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q06",
     "question_id": "auto-made-r02-s02-q06",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "유압 펌프·배관·누유·압력센서",
+    "correct_choice": "유압펌프·배관 누유·압력제어와 계측경로",
     "reason": "유압 현가의 압력 저하는 펌프 작동, 유체 부족, 배관 누설, 센서 오류 등으로 발생할 수 있다. 적절한 감압·안전 확보 후 시스템 전용 정비 절차를 따른다.",
     "key_point": "현가 유압 저하는 유체 공급·누설·센서 상태를 확인한다.",
     "source_question_id": "auto-r02-s02-q06",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압 실제 저하의 펌프/누유/계측 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q07",
@@ -152,14 +181,21 @@
     "question_id": "auto-made-r02-s02-q10",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "차고·차체 가속도 등 현가 제어 센서 정보",
+    "correct_choice": "차고·차체 가속도 등 현가 제어용 센서 정보",
     "reason": "전자제어 현가는 차체 운동과 속도 등을 바탕으로 댐퍼 감쇠를 조절한다. 온도·압력 센서가 있어도 엔진 냉각계를 직접 제어하는 것으로 혼동하지 않는다.",
     "key_point": "현가 제어 입력은 차체 운동·차고와 관련된 센서다.",
     "source_question_id": "auto-r02-s02-q10",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "감쇠력 가변제어의 차체 거동 센서",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q11",
@@ -256,7 +292,7 @@
     "question_id": "auto-made-r02-s02-q17",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "바퀴 잠김 방지 제어 기능",
+    "correct_choice": "바퀴 잠김을 줄이는 ABS 제어 기능",
     "reason": "ABS 고장 시 차량에 따라 기본 유압제동은 남을 수 있지만 잠김 방지 제어에 문제가 생길 수 있다. 실제 적용 상태와 경고등 조합을 확인해야 한다.",
     "key_point": "ABS 경고는 바퀴 잠김 방지 기능 점검 대상이다.",
     "source_question_id": "auto-r02-s02-q17",
@@ -265,21 +301,35 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ABS 결함 경고의 직접 영향 기능 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q18",
     "question_id": "auto-made-r02-s02-q18",
     "subject": "chassis",
     "correct_answer": 2,
-    "correct_choice": "차속·조향 토크·조향각 등 제어 입력",
+    "correct_choice": "차속·조향토크·조향각 등 관련 입력",
     "reason": "EPS 보조력은 운전자의 조향 토크와 차속 등의 신호를 기반으로 조절될 수 있다. 연료레일 압력은 기본 조향 입력이 아니다.",
     "key_point": "EPS 제어에는 차속과 조향 입력 신호가 사용된다.",
     "source_question_id": "auto-r02-s02-q18",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 속도연동 보조력 제어센서",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s02-q19",

@@ -31,7 +31,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "연료레일 압력 및 시동정지 진단은 엔진 연료계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -53,7 +57,7 @@
     "question_id": "auto-made-r01-s02-q04",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "배터리 전압 및 전원·접지 상태",
+    "correct_choice": "배터리 전압과 각 제어기의 전원·접지를 우선 점검한다",
     "reason": "전원 및 접지의 불안정은 여러 제어기의 동작과 통신에 동시에 영향을 줄 수 있다. 진단기나 제어기를 교환하기 전 기본 전원 조건을 점검한다.",
     "key_point": "제어기 진단의 첫 단계는 안정적인 전원 확인이다.",
     "source_question_id": "auto-r01-s02-q04",
@@ -66,7 +70,18 @@
       "current_subject": "chassis",
       "suggested_subject": "electrical",
       "reason": "차량 네트워크 통신/전원접지 진단은 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "다수 ECU 통신간헐 불량시 기본 전원 검토",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -163,14 +178,21 @@
     "question_id": "auto-made-r01-s02-q11",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "퓨즈·릴레이 및 전원 배선",
+    "correct_choice": "퓨즈·릴레이와 해당 액추에이터 전원 배선을 점검한다",
     "reason": "제어 모듈과 액추에이터가 작동하지 않으면 퓨즈, 릴레이, 배선의 전원 공급부터 확인한다. 센서·액추에이터 교체는 전기 공급 조건을 확인한 다음에 판단한다.",
     "key_point": "전원 불능 진단에서는 퓨즈·릴레이·배선을 확인한다.",
     "source_question_id": "auto-r01-s02-q11",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전원 없음이 확인된 장치에서는 전원 경로를 우선 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s02-q12",
@@ -306,6 +328,13 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "페달 위치·작동량 신호와 브레이크 계통 다른 센서",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

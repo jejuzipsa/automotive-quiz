@@ -76,16 +76,23 @@
     "question_number": 4,
     "question": "연료압이 제조사 규정 범위보다 낮다. 확인 대상으로 가장 적절한 조합은?",
     "choices": [
-      "시트 커버와 오디오 음량",
-      "라디에이터 전조등과 배기팁",
-      "타이어 브랜드와 휠 색상",
-      "연료펌프 공급·필터 막힘·레귤레이터 및 누설"
+      "냉각수 수온·연료 품질검사만 수행한다",
+      "배기 산소센서 반응만으로 공급압력을 확정한다",
+      "시동모터 전류만으로 연료레귤레이터 불량을 확정한다",
+      "연료펌프 공급·필터 막힘·레귤레이터 및 누설을 확인한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r03-s01-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "공급연료압 저하 원인분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q05",
@@ -98,16 +105,23 @@
     "question_number": 5,
     "question": "전자식 스로틀이 적용된 엔진의 높은 공회전 상태를 진단한다. 우선 비교할 값은?",
     "choices": [
-      "오디오 현재 주파수",
-      "목표/실제 스로틀 개도와 흡기 누설·제어 지령",
-      "시트 레일의 길이",
-      "타이어 접지면적"
+      "실제 스로틀 각도와 무관하게 목표 공회전만 고정한다",
+      "목표·실제 스로틀 개도, 공회전 명령과 흡기 누설을 비교한다",
+      "전자스로틀이므로 기계적인 흡기 누설은 배제한다",
+      "공회전 제어는 페달 위치 센서 데이터만으로 진단한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s01-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자 스로틀/실제 공기유입을 함께 비교하는 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q06",
@@ -186,16 +200,23 @@
     "question_number": 9,
     "question": "특정 ECU 센서 신호 오류 DTC가 저장되었다. 센서 교환 전에 시행할 검사로 알맞은 것은?",
     "choices": [
-      "라디오 리셋만 시행",
-      "센서 전원·접지·배선/커넥터와 실측 신호 확인",
-      "타이어 브랜드 교환",
-      "엔진오일 색상만 확인"
+      "센서 관련 DTC가 있으면 센서를 먼저 교환하고 배선은 생략한다",
+      "센서 전원·접지·커넥터/하네스 및 실측 신호를 확인한다",
+      "배선 불량이더라도 센서 자체 정격만으로 고장확정",
+      "고장코드 삭제 후 재발하지 않으면 원인분석을 생략한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s01-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "센서 불량과 하네스·전원 문제의 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q10",
@@ -208,16 +229,23 @@
     "question_number": 10,
     "question": "노크 센서와 관련된 전자제어 진단에서 그 신호의 주된 목적은?",
     "choices": [
-      "흡기온도 직접 제어",
-      "와이퍼 자동속도 제어",
-      "엔진 노킹에 따른 진동 정보를 ECU에 제공",
-      "타이어 압력 자동 보충"
+      "크랭크축 위치의 기준 각도 신호",
+      "흡기관 절대압력 정보를 전송하는 신호",
+      "엔진 노크 진동의 특정 주파수 성분을 검출하는 신호",
+      "배기 산소 농도에 따른 람다 보정 신호"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s01-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "노크센서의 관측 물리량",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q11",
@@ -294,18 +322,25 @@
     "source_question_id": "auto-r03-s01-q14",
     "round": 3,
     "question_number": 14,
-    "question": "엔진 상단의 젖은 오일 흔적을 보았다. 누유 점검 위치를 좁히는 데 유용한 것은?",
+    "question": "엔진 상단에 오일 누출 흔적이 있을 때 실제 누유 시작점을 추적하는 적절한 방법은?",
     "choices": [
-      "스피커 임피던스 검사",
-      "헤드램프 조사각 조정",
-      "밸브커버 가스킷·캠축 씰·관련 배관의 누유 시작점 확인",
-      "타이어 회전방향 변경"
+      "로커암 커버를 즉시 교환하고 누유 위치 확인을 생략한다",
+      "엔진 하부 오일팬만 교환한다",
+      "상부를 청소한 뒤 밸브커버·캠축 씰·배관의 유출 경로를 확인한다",
+      "누유 부위를 확인하지 않고 실링제를 외부에 도포한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s01-q14",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "누유 시작점 추적과 무근거 부품교체 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q15",
@@ -340,16 +375,23 @@
     "question_number": 16,
     "question": "엔진에서 회전속도에 따라 커지는 기계음을 국소적으로 찾아야 한다. 유용한 진단 도구는?",
     "choices": [
-      "타이어 공기 주입기",
-      "수분 함량계",
-      "와이퍼 교환 도구",
+      "디지털 타이어 공기압 게이지",
+      "실린더 압축압력 테스트 게이지",
+      "배기가스 분석용 람다계",
       "정비용 청진기(스테토스코프)"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r03-s01-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "기계적 소음의 국소 청취 도구",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s01-q17",

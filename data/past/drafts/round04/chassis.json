@@ -32,16 +32,23 @@
     "question_number": 2,
     "question": "ATF 종류·레벨이 규정에 맞는데 라인압이 전 구간에서 지나치게 낮다. 원인 추적 대상으로 적절한 것은?",
     "choices": [
-      "앞유리 와이퍼 암",
-      "오일펌프·압력조절밸브와 내부 누설",
-      "스티어링 열선 스위치",
-      "도어 미러 메모리 모터"
+      "변속기 기어비 학습값만 초기화한다",
+      "유압펌프·레귤레이터·유압회로 내부 누설을 점검한다",
+      "브레이크 유압모듈이 정상이라면 ATF 라인압도 정상이 된다",
+      "휠속도센서 영점보정만 수행한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r04-s02-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ATF 라인압 저하의 주요 직접 계통",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s02-q03",
@@ -187,15 +194,22 @@
     "question": "센서 정보를 받아 주행 상황에 따라 쇼크업소버 감쇠력을 바꾸는 시스템을 고르면?",
     "choices": [
       "전자제어 현가장치(ECS)",
-      "고정형 차동기어",
-      "수동 조절식 와이퍼",
-      "기계식 주차 브레이크"
+      "안티록 브레이크시스템(ABS)",
+      "변속기 토크컨버터 잠금제어(TCC)",
+      "차체 주차 잠금장치(EPB)"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r04-s02-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "댐퍼 감쇠력 변화 ECS와 다른 차체·동력장치 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s02-q10",
@@ -252,16 +266,23 @@
     "question_number": 12,
     "question": "EPS의 모터 보조가 운전자의 조향 요구에 맞게 변하려면 무엇을 읽어야 하는가?",
     "choices": [
-      "에어컨 배관 내 냉매 색깔",
-      "조향축에 걸리는 운전자 토크의 크기·방향",
-      "연료탱크 내 수증기 농도",
-      "시트벨트 버클 무게"
+      "공조용 블로워 회전수 정보",
+      "운전자가 가한 조향 토크 크기·방향",
+      "오디오 스티어링 리모컨 명령",
+      "냉매압력 센서의 압력 값"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r04-s02-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 보조 요구에 직접 입력되는 조향토크",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s02-q13",
@@ -274,16 +295,23 @@
     "question_number": 13,
     "question": "EPS 토크 신호 이상과 저전압 관련 DTC가 함께 저장됐다. 부품 교환 전에 우선 확인할 것은?",
     "choices": [
-      "배터리·충전전압과 센서 전원·접지",
-      "워셔액 혼합비",
-      "엔진 필터 색깔",
-      "시트 조절 모터 회전수"
+      "배터리·충전전압 및 센서전원·접지 상태",
+      "조향각 영점만 반복보정하고 저전압코드는 무시한다",
+      "EPS ECU 프로그램을 바로 재설치하고 전원측정은 생략한다",
+      "타이어 얼라인먼트만 조정한 뒤 전원 DTC를 삭제한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r04-s02-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 저전압 코드와 실제 공급/접지 직접 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s02-q14",
@@ -355,7 +383,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보차저 컴프레서 파손 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -384,7 +416,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "부스트 압력 부족 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -413,7 +449,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 흡입측 누유 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -442,7 +482,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 출력저하·소음 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -471,7 +515,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "엔진 진단스캐너 데이터",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

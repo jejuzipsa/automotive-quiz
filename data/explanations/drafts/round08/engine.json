@@ -67,14 +67,21 @@
     "question_id": "auto-made-r08-s01-q05",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "분사기 구동파형·누설·연료압 및 실화 데이터",
+    "correct_choice": "인젝터 구동파형·누설·연료압과 실화 관련 데이터",
     "reason": "인젝터 작동 불량은 구동 신호 문제나 분무·누설 문제로 나타날 수 있다. 실화와 분사량 불균형을 유발하므로 계측으로 원인을 구분한다.",
     "key_point": "인젝터 진단 = 전기구동·분사압·누설/분무상태.",
     "source_question_id": "auto-r08-s01-q05",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "분사 불량시 구동/누설/연료압의 직접 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s01-q06",
@@ -164,14 +171,21 @@
     "question_id": "auto-made-r08-s01-q11",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "노킹 센서가 검출한 특정 엔진 진동 대역",
+    "correct_choice": "노킹센서가 검출하는 엔진의 특정 진동 주파수",
     "reason": "노킹 센서는 압전소자 등으로 블록 진동을 감지하고 ECU는 연소 시점과 신호 특성을 분석해 노킹 여부를 판정한다.",
     "key_point": "노킹 센서 = 엔진 블록 진동 감지.",
     "source_question_id": "auto-r08-s01-q11",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "노킹 감지의 진동대역 입력",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s01-q12",
@@ -206,7 +220,7 @@
     "question_id": "auto-made-r08-s01-q14",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "시트 압입간섭·밸브 접촉폭·동심도 및 소재별 규정",
+    "correct_choice": "시트 압입간섭·접촉폭·동심도 및 소재별 치수 규정",
     "reason": "밸브 시트 작업은 열팽창과 압입 치수, 시트면 동심도와 접촉폭이 기밀과 내구성에 영향을 준다. 제작사 치수와 작업 절차가 기준이다.",
     "key_point": "밸브 시트는 압입·접촉폭·동심도 관리가 중요하다.",
     "source_question_id": "auto-r08-s01-q14",
@@ -216,7 +230,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "밸브시트 압입과 밀봉 접촉면 공차",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s01-q15",

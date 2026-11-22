@@ -4,7 +4,7 @@
     "question_id": "auto-made-r05-s01-q01",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "차지에어 호스 누설과 터보 액추에이터 작동",
+    "correct_choice": "차지에어 호스 누설과 터보 액추에이터 동작을 점검한다",
     "reason": "과급압력 미달은 흡기 파이프 손상, 웨이스트게이트 개방, 배기 누설 등으로 나타날 수 있다. 엔진 오일 과다 여부만으로 터보 압력 불량을 판정하면 안 된다.",
     "key_point": "과급압력 미달 → 공기 누설·액추에이터·회로 점검.",
     "source_question_id": "auto-r05-s01-q01",
@@ -13,7 +13,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "목표부스트 대비 저과급 원인 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s01-q02",

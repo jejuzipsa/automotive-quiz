@@ -47,7 +47,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "연료레일 압력 및 시동정지 진단은 엔진 연료계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -83,10 +87,10 @@
     "question_number": 4,
     "question": "차량 진단기 통신이 간헐적으로 끊기고 제어기 오류가 여러 개 발생한다. 가장 기본적인 전기 점검은?",
     "choices": [
-      "배터리 전압 및 전원·접지 상태",
-      "도어 트림 색상",
-      "시트 가죽 두께",
-      "라디에이터 핀 모양"
+      "배터리 전압과 각 제어기의 전원·접지를 우선 점검한다",
+      "CAN 종단저항만 읽고 전원 불량 가능성을 배제한다",
+      "진단기 케이블이 새것이면 제어기 전원을 점검하지 않는다",
+      "통신 오류가 나면 제어기 펌웨어를 전부 재설치한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s02-q04",
@@ -98,7 +102,18 @@
       "current_subject": "chassis",
       "suggested_subject": "electrical",
       "reason": "차량 네트워크 통신/전원접지 진단은 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "다수 ECU 통신간헐 불량시 기본 전원 검토",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -247,16 +262,23 @@
     "question_number": 11,
     "question": "전자제어 댐퍼가 전혀 반응하지 않고 해당 장치에 전원도 없다. 먼저 확인할 회로 부품은?",
     "choices": [
-      "시트벨트 버클",
-      "연료압력 조절기",
-      "퓨즈·릴레이 및 전원 배선",
-      "엔진 헤드가스켓"
+      "댐퍼 내부 밸브의 기계적 고착만 확인한다",
+      "차체 가속도 센서의 캘리브레이션부터 시행한다",
+      "퓨즈·릴레이와 해당 액추에이터 전원 배선을 점검한다",
+      "차고 링크 로드의 조절길이부터 변경한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r01-s02-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전원 없음이 확인된 장치에서는 전원 경로를 우선 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s02-q12",
@@ -449,14 +471,21 @@
     "question": "전자제어 브레이크에서 페달 조작량을 전기적 신호로 변환하는 센서는?",
     "choices": [
       "브레이크 페달 위치 센서",
-      "선루프 위치 센서",
-      "흡기유량 센서",
-      "좌석 온도 센서"
+      "브레이크액 탱크 수위 감지 스위치",
+      "ABS 휠속도 감지 센서",
+      "제동 유압라인의 압력 센서"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s02-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "페달 위치·작동량 신호와 브레이크 계통 다른 센서",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

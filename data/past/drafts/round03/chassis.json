@@ -10,16 +10,23 @@
     "question_number": 1,
     "question": "자동변속기 ATF 교환 계획을 세운다. 기준이 되는 정보는?",
     "choices": [
-      "차종별 변속기 규격·운전조건·제조사 교환 지침",
-      "운전석 시트 재질",
-      "엔진오일 교환마다 무조건 교환",
-      "라디오 모델 번호"
+      "변속기의 제작사 지정 ATF 규격과 운행조건·교환기준",
+      "엔진오일 주기와 변속기유 주기는 모든 차종에서 같다",
+      "ATF 색상만 진하면 변속기를 분해해야 한다",
+      "차종이 달라도 ATF 등급은 항상 동일하다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s02-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ATF 교체·규격은 변속기별 상이",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q02",
@@ -30,12 +37,12 @@
     "source_question_id": "auto-r03-s02-q02",
     "round": 3,
     "question_number": 2,
-    "question": "엔진 온도가 정상이지만 냉각수가 계속 줄어든다. 먼저 확인할 흔적으로 적합한 것은?",
+    "question": "엔진 냉각수가 서서히 줄지만 과열은 없다. 외부 누수 여부를 먼저 확인할 때 적합한 증거는?",
     "choices": [
-      "대시보드 시계 오차",
-      "라디오 안테나 길이",
-      "냉각호스·라디에이터 연결부의 누설 흔적",
-      "차량 번호판 색상"
+      "수온센서의 전기저항 정상 여부만",
+      "수온 계기판 표시가 정상이라는 사실만",
+      "냉각호스·라디에이터 연결부의 냉각수 누설 흔적",
+      "연료분사 보정량의 변화만"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s02-q02",
@@ -47,7 +54,18 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "엔진 냉각수 소모·냉각계 진단은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉각수 외부누설 흔적과 간접 운전조건 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -83,16 +101,23 @@
     "question_number": 4,
     "question": "ABS 경고등과 특정 휠 속도 신호 이상이 함께 기록된다. 점검 대상을 좁히는 단서는?",
     "choices": [
-      "연료탱크 주입구 위치",
-      "시트벨트 경고음의 크기",
-      "엔진오일 점도",
-      "해당 휠 속도센서·톤링·배선과 신호 파형"
+      "브레이크 마스터실린더의 저장액 용량만",
+      "조향각 센서 영점값만",
+      "휠 얼라인먼트 토각과 캠버각만",
+      "해당 바퀴의 센서·톤링·배선과 실제 신호 파형"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r03-s02-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "휠별 속도 신호 DTC에 직접 연관된 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q05",
@@ -105,16 +130,23 @@
     "question_number": 5,
     "question": "변속기 유압계통의 이상이 의심된다. 진단 자료로 가장 직접적인 조합은?",
     "choices": [
-      "ATF 압력과 유온, 솔레노이드 제어 상태",
-      "에어컨 냉매 충전량만",
-      "내비게이션 지도의 경도",
-      "와이퍼 작동 횟수"
+      "ATF 압력·유온과 솔레노이드 제어 신호",
+      "엔진 냉각수 압력만",
+      "흡기 매니폴드의 공기유량값만",
+      "조향 모터의 명령 토크만"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s02-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속기 유압제어 진단의 직접 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q06",
@@ -127,16 +159,23 @@
     "question_number": 6,
     "question": "유압식 높이조절 현가가 충격을 제대로 흡수하지 못한다. 정비 대상 범위를 고르면?",
     "choices": [
-      "라디오 주파수·스피커",
-      "유압유 상태·압력·축압기·댐퍼 제어",
-      "타이어 로고 인쇄 품질",
-      "실내등 스위치만"
+      "댐퍼 전기 배선의 절연상태만",
+      "작동유 상태·압력·축압기와 댐퍼 제어 상태",
+      "차고 센서 보정값만",
+      "타이어 정렬각 값만"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s02-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압식 현가의 진단 범위",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q07",
@@ -149,16 +188,23 @@
     "question_number": 7,
     "question": "차고가 내려가고 유압 압력이 유지되지 않는 차량이다. 우선 확인할 사항은?",
     "choices": [
-      "운전자의 라디오 취향",
-      "세차 빈도",
-      "유체 수위와 호스·실린더 누설",
-      "시트헤드레스트 높이"
+      "차고 센서 커넥터 고장코드만",
+      "현가 ECU 초기화 성공 여부만",
+      "유체 레벨·배관 및 실린더 누설 상태",
+      "휠 얼라인먼트 캠버각 변화만"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s02-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압 유실 시 직접 누설 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q08",
@@ -193,16 +239,23 @@
     "question_number": 9,
     "question": "전자제어 현가가 차체 피칭과 롤링을 감지한다. 동작 상태를 파악할 수 있는 센서 조합은?",
     "choices": [
-      "연료필터 수분센서만",
+      "휠속도센서 데이터만",
       "차체 가속도·차고 등 자세 관련 센서",
-      "실내등 밝기센서만",
-      "배기 O2센서만"
+      "배기가스 온도 센서만",
+      "엔진 흡기압 센서만"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s02-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "현가 가속도·차고 계통 검출 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q10",
@@ -237,16 +290,23 @@
     "question_number": 11,
     "question": "현가 액추에이터 명령은 발생하지만 움직이지 않는다. 우선 구분할 원인은?",
     "choices": [
-      "전원·접지·명령 회로와 액추에이터 자체 상태",
-      "리모컨 키 색상",
-      "시트 열선 봉제 품질",
-      "연료탱크의 페인트"
+      "명령 신호·전원·접지 및 액추에이터의 상태",
+      "차고의 목표 설정값만 읽고 출력 회로는 무시한다",
+      "댐퍼 오일 등급만 검사하고 구동 명령은 무시한다",
+      "휠 얼라인먼트만 측정해 모터 고장을 확정한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s02-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "액추에이터 명령 존재·미작동의 전기/기계 원인 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q12",
@@ -259,16 +319,23 @@
     "question_number": 12,
     "question": "차고 센서를 교체하고 출력이 규정 범위를 벗어난다. 확인 절차로 알맞은 것은?",
     "choices": [
-      "센서 위치와 관계없이 강제 초기화",
-      "센서를 분리한 채 시운전",
-      "배선·장착 위치·보정 절차와 출력 변화를 확인",
-      "차량 오디오를 재설치"
+      "기준 높이와 관계없이 제어기만 초기화한다",
+      "센서 링크가 틀어진 상태에서 전기 출력만 조정한다",
+      "배선·장착 위치·링크와 보정 절차 및 출력 변화를 확인한다",
+      "높이 검증 없이 서스펜션 액추에이터부터 교환한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s02-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "센서 기계결합/전원/학습 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q13",
@@ -347,16 +414,23 @@
     "question_number": 16,
     "question": "EPS가 간헐적으로 무거워진다. 모터 고장으로 확정하기 전 확인할 사항은?",
     "choices": [
-      "와이퍼 고무 재질",
-      "시트버클 마모",
-      "배터리 전압·모터 명령·배선 및 기계 저항",
-      "타이어 브랜드만"
+      "보조력이 낮아졌다면 타이어만 교환한다",
+      "토크센서 코드를 확인하지 않고 모터만 교환한다",
+      "배터리 전압·모터 명령·배선과 조향 기계저항을 점검한다",
+      "기계 저항 측정 없이 조향각 영점만 반복 보정한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s02-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 저전압·구동 명령·기계저항 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q17",
@@ -369,16 +443,23 @@
     "question_number": 17,
     "question": "ABS 휠 속도 센서가 불량일 때 가능한 일반적인 경고 상황은?",
     "choices": [
-      "타이어가 자동으로 재생된다",
-      "ABS/차체자세제어 관련 경고가 점등될 수 있다",
-      "트렁크가 반드시 열린다",
-      "라디오만 소리가 안 난다"
+      "ABS 제동 압력이 모든 바퀴에서 일정하게 증가한다",
+      "ABS/ESC 관련 경고등이 점등될 수 있다",
+      "ABS 기능과 무관하게 조향각 센서만 점검한다",
+      "고장코드가 있어도 바퀴속도 값은 항상 정상이다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s02-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "휠속도 신호 이상시 ABS/ESC 경고",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s02-q18",

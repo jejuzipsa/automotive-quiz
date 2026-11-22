@@ -10,16 +10,23 @@
     "question_number": 1,
     "question": "디젤 터보 차량이 언덕에서 가속되지 않고 요구 과급압력보다 실압력이 낮다. 우선 점검할 계통은?",
     "choices": [
-      "타이어 트레드 홈 깊이",
-      "차지에어 호스 누설과 터보 액추에이터 작동",
-      "실내 조명 모듈 설정",
-      "뒤좌석 열선 스위치"
+      "연료분사 코딩값만 먼저 삭제한다",
+      "차지에어 호스 누설과 터보 액추에이터 동작을 점검한다",
+      "부스트 센서의 배선은 정상이라 가정하고 ECU만 교환한다",
+      "실측 부스트가 낮더라도 터보회전이나 흡기 누설은 배제한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r05-s01-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "목표부스트 대비 저과급 원인 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s01-q02",

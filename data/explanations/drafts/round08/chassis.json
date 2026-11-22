@@ -226,14 +226,21 @@
     "question_id": "auto-made-r08-s02-q15",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "스티어링 휠에 가해지는 운전자 조향 토크",
+    "correct_choice": "스티어링 휠에 가해진 조향 토크의 크기와 방향",
     "reason": "EPS는 운전자의 조향 토크와 차량속도 등을 바탕으로 보조 전류를 계산한다. 토크센서의 실제 입력 신호가 중요하다.",
     "key_point": "조향 보조량은 조향 토크·속도·제어상태에 좌우된다.",
     "source_question_id": "auto-r08-s02-q15",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EPS 운전자 토크 센서와 다른 신호 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s02-q16",
@@ -256,14 +263,21 @@
     "question_id": "auto-made-r08-s02-q17",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "로드 표면과 맞닿는 오일 씰의 밀봉 상태",
+    "correct_choice": "로드 표면 상처와 그에 접촉하는 오일씰의 밀봉성",
     "reason": "로드 표면의 손상은 씰 접촉부를 훼손해 오일 누유로 이어질 수 있다. 로드와 씰, 장착부의 상태를 함께 확인해야 한다.",
     "key_point": "로드 손상은 댐퍼 오일 씰 누유로 연결 가능.",
     "source_question_id": "auto-r08-s02-q17",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "쇼크업소버 로드씰 누유 원인 검사",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s02-q18",

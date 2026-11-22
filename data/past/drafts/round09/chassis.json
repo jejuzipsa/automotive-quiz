@@ -54,16 +54,23 @@
     "question_number": 3,
     "question": "쇽업소버 외부의 로드 씰에 젖은 오일 자국이 반복된다. 확인할 사항은?",
     "choices": [
-      "스마트키 버튼 배열만",
-      "로드 손상·오일 씰과 실제 누유량",
-      "점화플러그 전극 상태만",
-      "와이퍼 작동 릴레이만"
+      "상부 마운트에서 나는 소음만 확인한다",
+      "로드 표면의 흠집·오일씰 손상과 실제 누유 상태",
+      "차고 센서 제어값만 초기화하고 유막은 무시한다",
+      "쇼크업소버의 하부 볼트 토크만 맞추고 로드씰은 확인하지 않는다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r09-s02-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "로드 씰 유막/누유 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q04",
@@ -120,16 +127,23 @@
     "question_number": 6,
     "question": "전자제어 댐퍼가 응답하지 않는다. 회로 점검에서 무시하면 안 되는 것은?",
     "choices": [
-      "배선저항은 모든 차종에서 0으로만 고정",
-      "액추에이터 코일 저항·전원·접지·배선 상태",
-      "실내 도장 색상만",
-      "센서 출력과 무관한 타이어 제조국"
+      "차체 높이 센서 신호만 확인하고 전원공급은 생략한다",
+      "액추에이터 저항·전원·접지·배선의 상태",
+      "타이어 공기압만 확인하고 댐퍼 출력은 생략한다",
+      "댐퍼의 기계적 마모만으로 전기회로를 판정한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r09-s02-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자댐퍼 전원·코일의 기본 측정",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q07",
@@ -164,16 +178,23 @@
     "question_number": 8,
     "question": "고속 주행 중 EPS가 갑자기 무거워지고 전원 저전압 DTC가 뜬다. 직접 점검할 부분은?",
     "choices": [
-      "EPS 전원 공급·접지·릴레이와 배선 접촉",
-      "후방 유리 열선 온도만",
-      "타이어 고무의 염료만",
-      "오디오 EQ 설정만"
+      "EPS 전원·접지·릴레이·전원배선 접촉상태",
+      "조향각 센서 영점만 정상인지 확인하고 전원점검 생략",
+      "조향 컬럼 기계적 유격만 측정해 저전압코드를 설명",
+      "차량 배터리와 상관없는 타이어 접지력만 확인"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r09-s02-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "저전압 DTC와 일치하는 EPS 공급 경로",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q09",
@@ -296,16 +317,23 @@
     "question_number": 14,
     "question": "TCC 클러치가 결합 명령을 받았는데 실제 슬립이 크다. 스캔툴에서 비교할 값은?",
     "choices": [
-      "타이어의 제조월과 도장색",
-      "실내 조명 전구 소비전력만",
-      "엔진 RPM과 변속기 입력축 RPM 및 TCC 제어 상태",
-      "에어컨 냉매 온도만"
+      "정속 주행 중 타이어 전후륜 회전수 비율만",
+      "선택 변속단의 기어비 명령값만",
+      "엔진 RPM·변속기 입력 회전수와 TCC 제어 상태",
+      "변속기 오일레벨 센서의 경고등 점등 여부만"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r09-s02-q14",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCC 슬립 검증 데이터/간접 항목 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q15",
@@ -384,16 +412,31 @@
     "question_number": 18,
     "question": "ESC가 언더스티어 상황을 판단했다. 이를 위해 비교하는 정보는?",
     "choices": [
-      "차체 도장 두께와 광도",
-      "운전석 열선 온도만",
-      "연료탱크의 마개 재질",
-      "운전자 조향 명령과 센서로 본 실제 요거동"
+      "타이어 공기압만으로 목표 요거동을 계산한다",
+      "제동 마스터실린더 압력만으로 언더스티어를 판정한다",
+      "운전자 요구토크가 0이면 실제 요거동 비교는 불필요하다",
+      "조향각에 따른 목표 요거동과 실제 요레이트를 비교한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r09-s02-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ESC 목표·실제 요거동 비교",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "review_note": "Bosch ESC 설명상 조향각은 운전자 목표 거동, 요레이트는 실제 회전거동을 감지하며 차이를 비교해 제어할 수 있다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r09-s02-q19",

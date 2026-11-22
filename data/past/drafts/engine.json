@@ -257,16 +257,23 @@
     "question_number": 12,
     "question": "커먼레일 디젤 인젝터의 누설 또는 분사 상태를 점검하려 한다. 가장 관련성이 높은 장비는?",
     "choices": [
-      "휠 얼라인먼트 측정기",
-      "페인트 두께 측정기",
-      "배기가스 소음계",
-      "커먼레일 인젝터 전용 시험장비"
+      "엔진 압축압력 게이지만",
+      "공회전 진공 게이지만",
+      "연료펌프 토출압력 게이지만",
+      "제조사 절차에 맞는 커먼레일 인젝터 전용 시험장비"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r01-s01-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인젝터 분사량·누설 직접 측정장비",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s01-q13",

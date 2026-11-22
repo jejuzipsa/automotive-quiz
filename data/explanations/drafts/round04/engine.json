@@ -44,7 +44,7 @@
     "question_id": "auto-made-r04-s01-q03",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "터보차저로 가는 윤활유 공급·회수 경로",
+    "correct_choice": "오일 공급·회수라인의 막힘과 초기 윤활 조건을 점검한다",
     "reason": "윤활유 공급 부족이나 회수 불량은 베어링에 손상을 줄 수 있다. 교환 전 오일 공급라인의 막힘·오염과 배유 상태 및 제조사 설치 절차를 확인한다.",
     "key_point": "터보 재손상 예방에는 오일라인 원인 확인이 중요하다.",
     "source_question_id": "auto-r04-s01-q03",
@@ -53,7 +53,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "교환 직후 터보 베어링의 윤활 보호",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s01-q04",
@@ -94,7 +101,7 @@
     "question_id": "auto-made-r04-s01-q06",
     "subject": "engine",
     "correct_answer": 3,
-    "correct_choice": "크랭크축 위치 센서 신호",
+    "correct_choice": "크랭크축 위치·회전각 센서 신호",
     "reason": "크랭크축 위치 센서는 각 위치와 회전 속도 판단의 핵심 입력이다. 차량에 따라 캠축 위치 센서와 함께 동기화 및 분사·점화 타이밍을 결정한다.",
     "key_point": "크랭크각 입력은 엔진 제어의 기초.",
     "source_question_id": "auto-r04-s01-q06",
@@ -103,7 +110,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "분사시기와 회전수 직접 산출의 CKP 입력",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s01-q07",
@@ -129,7 +143,7 @@
     "question_id": "auto-made-r04-s01-q08",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "현재·과거 DTC와 프리즈프레임 운전 조건",
+    "correct_choice": "현재·이력 DTC 및 프리즈프레임의 운전조건을 보존한다",
     "reason": "스캔툴로 DTC와 프리즈프레임을 먼저 수집하면 고장 당시 부하·회전수·온도 조건을 보존해 다음 측정의 방향을 정할 수 있다. 코드만 보고 부품 교체를 확정하면 안 된다.",
     "key_point": "진단 첫 단계: DTC와 고장 당시 데이터 확보.",
     "source_question_id": "auto-r04-s01-q08",
@@ -138,14 +152,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "재현 전 진단 증거 확보",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s01-q09",
     "question_id": "auto-made-r04-s01-q09",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "배기가스 온도와 DPF 전후 차압",
+    "correct_choice": "DPF 전후 차압과 재생 중 배기온도 변화",
     "reason": "DPF 재생은 매연 산화에 필요한 열 관리와 축적량 판단이 중요하다. 배기가스 온도와 차압 데이터를 추적하되 재생 중단 조건은 제작사 규정을 적용한다.",
     "key_point": "DPF 재생 핵심 데이터: 온도·차압.",
     "source_question_id": "auto-r04-s01-q09",
@@ -154,7 +175,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "DPF 재생 상태를 직접 보여주는 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s01-q10",
@@ -194,7 +222,7 @@
     "question_id": "auto-made-r04-s01-q12",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "리턴 유량과 압축 상태 등을 함께 비교한다",
+    "correct_choice": "리턴 유량·레일압력 및 실린더 압축 등 다른 원인을 함께 비교한다",
     "reason": "인젝터 보정량은 실린더 출력 균형을 맞추는 ECU 계산 결과다. 인젝터 외에도 압축압력·공기 유입·연료압력 문제가 영향을 줄 수 있어 제조사 절차에 따라 교차 검증한다.",
     "key_point": "인젝터 보정량 하나만으로 결함 확정 금지.",
     "source_question_id": "auto-r04-s01-q12",
@@ -204,7 +232,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "보정량 하나로 인젝터 불량을 확정하지 않는 검사",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s01-q13",
@@ -327,7 +362,7 @@
     "question_id": "auto-made-r04-s01-q20",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "연료 보정값과 전단 산소센서의 반응",
+    "correct_choice": "연료 보정값과 촉매 전단 산소센서 반응을 비교한다",
     "reason": "높은 CO는 불완전 연소나 혼합비 과농 및 촉매 문제와 관련될 수 있다. 연료 보정·산소센서·연료압력과 촉매 효율을 함께 검사해야 하며 EGR만으로 원인을 배제하지 않는다.",
     "key_point": "CO 증가 진단: 연소 상태·혼합비·촉매를 함께 본다.",
     "source_question_id": "auto-r04-s01-q20",
@@ -336,6 +371,13 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "농후 혼합기 검증과 람다·연료트림",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

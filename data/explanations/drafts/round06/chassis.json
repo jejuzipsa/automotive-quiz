@@ -21,7 +21,7 @@
     "question_id": "auto-made-r06-s02-q02",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "해당 변속 단의 축압기·유압 제어계통",
+    "correct_choice": "해당 변속단의 축압기·유압 제어계통",
     "reason": "변속 축압기는 클러치 작동압력의 상승 속도를 완충한다. 축압기 스프링·피스톤·유압 회로에 문제가 생기면 특정 단에서 충격이 증가할 수 있다.",
     "key_point": "특정 변속 충격 → 해당 단 유압 완충계통 확인.",
     "source_question_id": "auto-r06-s02-q02",
@@ -31,7 +31,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속단에 대응한 축압기 기능과 다른 유압계통 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s02-q03",
@@ -70,7 +77,7 @@
     "question_id": "auto-made-r06-s02-q05",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "페달·스로틀 개도 입력과 변속기 제어 데이터",
+    "correct_choice": "가속페달·스로틀 개도 입력과 TCM 실시간 데이터를 비교한다",
     "reason": "변속 제어기는 운전자 가속 요구와 차량 속도·엔진 부하·온도 등의 신호를 사용한다. 스로틀/페달 입력이 부정확하면 변속 패턴이 달라질 수 있다.",
     "key_point": "변속 시점 불량은 가속 요구 신호·속도·온도 데이터 비교.",
     "source_question_id": "auto-r06-s02-q05",
@@ -81,7 +88,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "가속요구에 직접 관련된 입력 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s02-q06",
@@ -124,7 +138,7 @@
     "question_id": "auto-made-r06-s02-q08",
     "subject": "chassis",
     "correct_answer": 3,
-    "correct_choice": "작동유 누설·유압·차고 및 시운전 점검",
+    "correct_choice": "작동유 누유·규정압력·차고 제어와 시험 운전을 확인한다",
     "reason": "서스펜션 수리 후에는 연결부 누유 여부와 높이 제어 작동, 누설이 없는지 확인해야 한다. 정비 절차에 따라 에어 제거·보정이 추가될 수 있다.",
     "key_point": "현가 수리 뒤 유압 누설과 차고 기능을 검사한다.",
     "source_question_id": "auto-r06-s02-q08",
@@ -133,7 +147,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "수리 후 누유·유압·작동 확인의 결합",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s02-q09",
@@ -271,7 +292,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 윤활 배출은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -279,7 +304,7 @@
     "question_id": "auto-made-r06-s02-q17",
     "subject": "chassis",
     "correct_answer": 1,
-    "correct_choice": "정비지침에서 재사용을 금지한 가스켓·실링 부품",
+    "correct_choice": "정비지침에서 재사용을 금지한 플랜지 가스켓·오일라인 실링 와셔",
     "reason": "터보차저 연결부 밀봉재는 열과 압력에 노출된다. 분해 후 교환 대상으로 지정된 가스켓·실링을 재사용하면 누유·배기가스 누설 우려가 있다.",
     "key_point": "터보 분해 후 지정된 일회용 가스켓·실링 교환.",
     "source_question_id": "auto-r06-s02-q17",
@@ -295,7 +320,26 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "터보 부품 재조립은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "밀봉재와 조정·회전 부품 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-1-garrett-turbocharger-installation-guide/"
+      ],
+      "review_note": "Garrett의 신품 가스켓/오일 통로 설치 지침과 밀봉재 항목을 비교했다. 나머지 보기(액추에이터 로드·임펠러·스터드)는 소모성 밀봉재가 아니다.",
+      "reviewed_alternatives": 4
     }
   },
   {
@@ -319,7 +363,18 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "과급 부족 진단은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "누설/제어/구동 점검과 근거 없는 부품 교체를 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -342,7 +397,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "연료 분사 ECU는 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -366,7 +425,11 @@
       "current_subject": "chassis",
       "suggested_subject": "engine",
       "reason": "산소센서 공연비 신호는 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

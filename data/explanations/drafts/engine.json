@@ -175,14 +175,21 @@
     "question_id": "auto-made-r01-s01-q12",
     "subject": "engine",
     "correct_answer": 4,
-    "correct_choice": "커먼레일 인젝터 전용 시험장비",
+    "correct_choice": "제조사 절차에 맞는 커먼레일 인젝터 전용 시험장비",
     "reason": "인젝터 전용 시험장비는 장비 사양에 따라 리턴량이나 분사량 등을 평가할 수 있다. 가능한 시험 항목과 판정 기준은 인젝터 형식 및 장비 제조사 규격에 따라 다르다.",
     "key_point": "정밀 인젝터 시험은 전용 장비와 규정값을 사용한다.",
     "source_question_id": "auto-r01-s01-q12",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인젝터 분사량·누설 직접 측정장비",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s01-q13",

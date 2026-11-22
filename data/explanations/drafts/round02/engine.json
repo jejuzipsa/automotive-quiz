@@ -32,14 +32,30 @@
     "question_id": "auto-made-r02-s01-q03",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "오일 공급·리턴 배관의 연결 및 초기 윤활 절차",
+    "correct_choice": "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
     "reason": "터보 축 베어링은 고속으로 회전한다. 오일 공급이 부족하면 초기 시동 시 손상이 생길 수 있으므로 지정된 프라이밍과 공급·리턴 배관 연결 상태를 확인한다.",
     "key_point": "터보 교환 직후에는 초기 윤활·오일 배관이 핵심이다.",
     "source_question_id": "auto-r02-s01-q03",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "터보 교환 직후 윤활 부족 위험",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-1-garrett-turbocharger-installation-guide/",
+        "https://www.garrettmotion.com/de/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+      ],
+      "review_note": "Garrett 설치 지침의 오일 공급·회수 통로와 초기 윤활 절차를 비교했다. 재시동 전 윤활상태 확인이 핵심이다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r02-s01-q04",
@@ -194,7 +210,7 @@
     "question_id": "auto-made-r02-s01-q14",
     "subject": "engine",
     "correct_answer": 3,
-    "correct_choice": "밸브 간극 및 밸브 구동계 상태",
+    "correct_choice": "밸브 간극·로커암·캠 등 밸브구동계 상태를 확인한다",
     "reason": "밸브 구동계에서 간극 과다나 부품 마모가 발생하면 태핏 소음이 생길 수 있다. 다만 소음 위치·발생 시점·윤활 상태 등 다른 원인도 확인해 판정한다.",
     "key_point": "규칙적인 상부 기계음은 밸브 구동계 점검 단서다.",
     "source_question_id": "auto-r02-s01-q14",
@@ -203,7 +219,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "실린더헤드 상단 태핏 소음의 점검 대상",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s01-q15",
