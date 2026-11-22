@@ -1,0 +1,342 @@
+[
+  {
+    "id": "original-chassis-01",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "유압식 브레이크에서 운전자가 페달에 가한 힘을 유압으로 바꾸는 부품은?",
+    "choices": [
+      "휠 베어링",
+      "마스터 실린더",
+      "토크 컨버터",
+      "타이로드 엔드"
+    ],
+    "answer": 2,
+    "explanation": "마스터 실린더는 페달 입력을 브레이크액의 압력으로 변환한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-02",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "진공식 브레이크 부스터의 주된 기능은?",
+    "choices": [
+      "제동 페달 조작력을 보조한다",
+      "타이어 편마모를 막는다",
+      "냉각수 펌프를 구동한다",
+      "변속기 기어비를 바꾼다"
+    ],
+    "answer": 1,
+    "explanation": "브레이크 부스터는 페달 입력을 증폭해 필요한 제동력을 더 쉽게 확보하도록 돕는다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-03",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "ABS의 기본 제어 목적에 해당하는 것은?",
+    "choices": [
+      "전조등 밝기를 조절한다",
+      "배터리 충전 전류를 고정한다",
+      "제동 중 바퀴 잠김을 억제한다",
+      "기관의 분사압을 높인다"
+    ],
+    "answer": 3,
+    "explanation": "ABS는 휠 속도 등을 이용해 제동압을 조절하여 바퀴 잠김을 줄인다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-04",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "차량자세제어장치(ESC)가 주로 돕는 상황은?",
+    "choices": [
+      "엔진오일 점도 검사",
+      "와이퍼 속도 설정",
+      "냉각 팬 작동",
+      "차량이 운전자 의도와 다르게 회전할 때 자세 보정"
+    ],
+    "answer": 4,
+    "explanation": "ESC는 조향 의도와 차량 거동을 비교해 필요한 바퀴의 제동력과 구동력을 조절할 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-05",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "디스크 브레이크에서 패드를 회전 원판에 밀착시키는 부품은?",
+    "choices": [
+      "캘리퍼",
+      "라디에이터",
+      "스티어링 랙",
+      "연료 인젝터"
+    ],
+    "answer": 1,
+    "explanation": "디스크 브레이크의 캘리퍼는 패드를 디스크에 눌러 마찰 제동력을 만든다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-06",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "드럼식 브레이크에서 마찰을 발생시키는 주요 조합은?",
+    "choices": [
+      "디스크와 패드",
+      "드럼과 브레이크 슈",
+      "벨트와 풀리",
+      "기어와 체인"
+    ],
+    "answer": 2,
+    "explanation": "드럼 브레이크는 브레이크 슈가 드럼 내면을 밀어 마찰력을 만든다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-07",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "주차 브레이크에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "엔진의 압축비를 높인다",
+      "차량의 경적을 켠다",
+      "주차 중 차량의 움직임을 억제한다",
+      "엔진 냉각수를 순환시킨다"
+    ],
+    "answer": 3,
+    "explanation": "주차 브레이크는 정차·주차된 차량이 의도치 않게 움직이는 것을 막도록 설계됐다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-08",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "차량 전면에서 보았을 때 바퀴 상단이 바깥쪽으로 기울어진 상태는?",
+    "choices": [
+      "토아웃",
+      "네거티브 캐스터",
+      "토인",
+      "포지티브 캠버"
+    ],
+    "answer": 4,
+    "explanation": "포지티브 캠버는 앞이나 뒤에서 보았을 때 타이어 윗부분이 차체 바깥쪽으로 기울어진 상태다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-09",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "타이어 앞쪽 간격이 뒤쪽 간격보다 좁은 상태를 의미하는 용어는?",
+    "choices": [
+      "토인",
+      "토아웃",
+      "캐스터",
+      "스러스트각"
+    ],
+    "answer": 1,
+    "explanation": "토인은 차량 진행 방향을 기준으로 양쪽 바퀴의 앞쪽이 서로 가까운 정렬을 말한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-10",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "조향축의 캐스터 각이 주행 특성에 주로 영향을 주는 것은?",
+    "choices": [
+      "연료 분사 압력",
+      "핸들의 직진 복원 성향",
+      "배터리 내부 저항",
+      "배기 산소 농도"
+    ],
+    "answer": 2,
+    "explanation": "캐스터는 조향 시 직진 안정성과 자기복원 성향에 영향을 준다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-11",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "현가장치의 쇼크 업소버가 주로 억제하는 것은?",
+    "choices": [
+      "냉각수 압력",
+      "연료 분사 펄스",
+      "스프링의 과도한 진동",
+      "점화플러그 온도"
+    ],
+    "answer": 3,
+    "explanation": "댐퍼는 스프링이 반복적으로 흔들리는 운동 에너지를 소산하여 차체 거동을 안정시킨다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-12",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "현가장치 스프링의 주된 역할에 가장 가까운 것은?",
+    "choices": [
+      "차체 하중을 지지하고 충격을 완화한다",
+      "엔진 연료를 가압한다",
+      "점화코일을 냉각한다",
+      "ABS 고장코드를 읽는다"
+    ],
+    "answer": 1,
+    "explanation": "스프링은 차체 무게를 지지하고 노면 입력으로 생기는 진동을 탄성 변형으로 흡수한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-13",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "좌우 현가장치를 연결하는 스태빌라이저 바의 일반적인 목적은?",
+    "choices": [
+      "배기가스 온도 증가",
+      "윤활유 압력 유지",
+      "엔진 실화 감지",
+      "선회 시 차체 롤을 줄이는 것"
+    ],
+    "answer": 4,
+    "explanation": "스태빌라이저 바는 좌우 서스펜션의 상대 운동에 저항하여 차체 롤을 억제한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-14",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "특정 속도에서 핸들 떨림이 커질 때 점검할 항목으로 적절한 것은?",
+    "choices": [
+      "점화플러그 간극만",
+      "휠·타이어의 동적 밸런스",
+      "연료필터 수분량만",
+      "냉각수 색상만"
+    ],
+    "answer": 2,
+    "explanation": "회전 질량의 불균형은 속도와 함께 진동을 유발할 수 있어 휠 밸런스가 주요 점검 항목이 된다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-15",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "운행 전 권장 타이어 공기압을 확인하는 가장 적절한 기준은?",
+    "choices": [
+      "운전자가 임의로 정한 값",
+      "타이어 옆면의 최대압력만",
+      "차량 제조사의 냉간 권장 공기압 표기",
+      "지난 주에 다른 차가 사용한 값"
+    ],
+    "answer": 3,
+    "explanation": "차량의 문틀 표기나 사용설명서에 제시된 냉간 권장 공기압을 기준으로 확인한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-16",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "빗길에서 타이어 배수 성능이 떨어지면 커질 수 있는 위험은?",
+    "choices": [
+      "수막현상",
+      "점화시기 지연",
+      "배기가스 역류",
+      "냉각수 비등"
+    ],
+    "answer": 1,
+    "explanation": "트레드가 물을 충분히 배출하지 못하면 노면과의 접촉이 줄어 수막현상 위험이 커진다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-17",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "타이어의 공기압이 지나치게 낮을 때 일반적으로 나타나기 쉬운 현상은?",
+    "choices": [
+      "고속에서 구름저항이 항상 0이 됨",
+      "엔진오일 압력이 즉시 증가",
+      "핸들 회전각이 자동으로 고정",
+      "타이어 굴곡과 발열 증가"
+    ],
+    "answer": 4,
+    "explanation": "공기압이 부족하면 타이어가 반복적으로 더 크게 변형되어 발열 및 손상 위험이 커질 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-18",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "수동변속기 자동차에서 클러치를 분리하는 주된 이유는?",
+    "choices": [
+      "배터리 충전을 중지하려고",
+      "엔진과 변속기 사이 동력 전달을 일시적으로 끊으려고",
+      "냉각수 순환을 차단하려고",
+      "ABS 센서를 초기화하려고"
+    ],
+    "answer": 2,
+    "explanation": "클러치 분리는 엔진에서 변속기로 전달되는 토크를 끊어 변속이나 정차를 돕는다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-19",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "차동장치(디퍼렌셜)가 특히 필요한 이유는?",
+    "choices": [
+      "좌우 구동 바퀴의 회전수 차이를 허용하기 위해",
+      "모든 바퀴를 항상 같은 속도로 고정하기 위해",
+      "배터리 출력 전압을 교류로 바꾸기 위해",
+      "제동액 비등점을 높이기 위해"
+    ],
+    "answer": 1,
+    "explanation": "선회 시 안쪽과 바깥쪽 바퀴가 이동하는 거리가 다르므로 차동장치가 회전 차이를 허용한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-chassis-20",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "구동축의 등속 조인트(CV 조인트)가 수행하는 역할은?",
+    "choices": [
+      "냉매를 압축한다",
+      "주행속도를 표시한다",
+      "축이 꺾여도 구동력을 전달한다",
+      "엔진오일 압력을 유지한다"
+    ],
+    "answer": 3,
+    "explanation": "등속 조인트는 조향이나 현가장치 움직임으로 구동축 각도가 달라져도 동력을 전달한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  }
+]
