@@ -41,7 +41,14 @@
     "explanation_id": "auto-made-r01-s02-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "연료레일 압력 및 시동정지 진단은 엔진 연료계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r01-s02-q03",
@@ -85,7 +92,14 @@
     "explanation_id": "auto-made-r01-s02-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "electrical",
+      "reason": "차량 네트워크 통신/전원접지 진단은 전기전자",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r01-s02-q05",

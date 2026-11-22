@@ -41,7 +41,14 @@
     "explanation_id": "auto-made-r02-s02-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "electrical",
+      "reason": "실내 송풍기 소음의 구동계 구별/공조 전장",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r02-s02-q03",
@@ -85,7 +92,14 @@
     "explanation_id": "auto-made-r02-s02-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "OBD P0300은 엔진 실화 진단코드",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r02-s02-q05",

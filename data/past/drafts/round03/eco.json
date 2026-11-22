@@ -393,7 +393,14 @@
     "explanation_id": "auto-made-r03-s04-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "electrical",
+      "reason": "카메라 기반 LKA는 ADAS 전기전자",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r03-s04-q19",

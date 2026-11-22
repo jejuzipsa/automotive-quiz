@@ -281,7 +281,14 @@
     "reference_urls": [],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "editorial_revision": "technical_qa1_reviewed"
+    "editorial_revision": "technical_qa1_reviewed",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "electrical",
+      "reason": "AEB 센서·자동제동/ADAS은 전기전자 장치",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r01-s04-q19",
@@ -295,7 +302,14 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "electrical",
+      "reason": "차체 제어 모듈 BCM 기능은 전기전자",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r01-s04-q20",
