@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23: 720/720 reconstructed original exam OCR questions+4 choices+explanations manually image-compared; 0 pending. Four private JSON arrays (180 each) plus combined master. Technical answer/content approval 0/720; public reconstructed question approval 0/720.",
+  "source_of_truth": "QA23 private OCR JSON 720 verified; separately authored quiz bank v1 has 80 editorial drafts and 80 separated explanation drafts. Remaining 640 pending. Public site still uses the independent 80 expected questions.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -24,7 +24,8 @@
       "eco": 20
     },
     "current_original_practice_count": 80,
-    "public_exam_reconstruction_count": 0
+    "public_exam_reconstruction_count": 0,
+    "current_unpublished_reauthored_question_drafts": 80
   },
   "source_captures": {
     "original": 57,
@@ -511,5 +512,29 @@
     "all_subject_json_count": 4,
     "next_work": "technical correctness and unique answer review, independent question/choice/explanation drafting, publish-approved quiz bank JSON, mock exam wiring, explanation-based fill-in quiz",
     "note": "Source OCR image-to-text verification complete; technical correctness and website bank construction still pending. Original JSON stays private; no ZIP created."
+  },
+  "our_question_bank_v1": {
+    "phase": "editorial_draft",
+    "based_on": "QA23-JSON 720 OCR source-verified reconstructions",
+    "question_bank_path_pattern": "data/past/drafts/{engine,chassis,electrical,eco}.json",
+    "explanation_bank_path_pattern": "data/explanations/drafts/{engine,chassis,electrical,eco}.json",
+    "manifest_path": "data/past/drafts/manifest.json",
+    "source_reference_items": 720,
+    "reauthored_question_drafts": 80,
+    "separate_explanations_written": 80,
+    "counts_per_subject": {
+      "engine": 20,
+      "chassis": 20,
+      "electrical": 20,
+      "eco": 20
+    },
+    "pending_rewrites": 640,
+    "technical_answer_approved": 0,
+    "publishable_drafts": 0,
+    "live_site_drafts_enabled": 0,
+    "qa_status": "all 80 questions and explanations join on ID, answers 1-4, four distinct choices, duplicate IDs absent; no copied original question string or full choice arrays",
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_v1/",
+    "next_step": "review technical correctness/uniqueness of the 80 drafts, then write the remaining 640, connect approved questions and separate explanations to mock exam, create explanation-based fill-in quizzes",
+    "no_zip": true
   }
 }
