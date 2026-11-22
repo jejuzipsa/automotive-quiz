@@ -1,0 +1,171 @@
+/* Independently authored demonstration content. No publisher scans or OCR text. */
+window.AUTO_QUIZ_DATA = [
+  {
+    "id": "demo-engine-01",
+    "track": "demo",
+    "subject": "engine",
+    "question": "가솔린 엔진에서 점화 플러그의 주된 역할은 무엇인가?",
+    "choices": [
+      "연료를 분사한다",
+      "압축된 혼합기에 불꽃을 발생시킨다",
+      "냉각수를 순환시킨다",
+      "윤활유의 압력을 조절한다"
+    ],
+    "answer": 2,
+    "explanation": "가솔린 엔진의 점화 플러그는 압축된 혼합기에 전기 불꽃을 발생시켜 연소를 시작하도록 해."
+  },
+  {
+    "id": "demo-engine-02",
+    "track": "demo",
+    "subject": "engine",
+    "question": "엔진 냉각계통에서 워터펌프의 주된 역할은 무엇인가?",
+    "choices": [
+      "냉각수를 순환시킨다",
+      "배기가스를 정화한다",
+      "연료를 고압 분사한다",
+      "점화 시기를 제어한다"
+    ],
+    "answer": 1,
+    "explanation": "워터펌프는 냉각수를 엔진과 라디에이터 등의 냉각 회로를 따라 순환시켜 열을 전달하도록 해."
+  },
+  {
+    "id": "demo-chassis-01",
+    "track": "demo",
+    "subject": "chassis",
+    "question": "유압식 브레이크 장치에서 운전자의 제동 힘을 휠 쪽으로 전달하는 매체는 무엇인가?",
+    "choices": [
+      "엔진 오일",
+      "브레이크액",
+      "냉각수",
+      "연료"
+    ],
+    "answer": 2,
+    "explanation": "유압식 제동장치는 마스터 실린더에서 발생한 유압을 브레이크액을 통해 캘리퍼나 휠 실린더에 전달해."
+  },
+  {
+    "id": "demo-chassis-02",
+    "track": "demo",
+    "subject": "chassis",
+    "question": "타이어 공기압이 제조사 권장값보다 지나치게 낮은 상태로 주행하면 일반적으로 나타날 수 있는 현상은?",
+    "choices": [
+      "타이어의 굴림저항이 감소한다",
+      "타이어 변형과 발열이 증가한다",
+      "제동계통의 유압이 자동으로 상승한다",
+      "타이어 접지 면적이 항상 0이 된다"
+    ],
+    "answer": 2,
+    "explanation": "공기압이 지나치게 낮으면 타이어가 반복적으로 크게 변형되면서 발열과 마모 위험이 증가할 수 있어."
+  },
+  {
+    "id": "demo-electrical-01",
+    "track": "demo",
+    "subject": "electrical",
+    "question": "자동차 전기회로에서 퓨즈의 주된 역할은 무엇인가?",
+    "choices": [
+      "배터리 전압을 무조건 높인다",
+      "회로에 과전류가 흐를 때 회로를 보호한다",
+      "직류를 교류로 바꾼다",
+      "엔진 회전수를 측정한다"
+    ],
+    "answer": 2,
+    "explanation": "퓨즈는 정해진 조건 이상의 전류가 흐르면 끊어지도록 설계되어 배선과 전기 장치를 보호해."
+  },
+  {
+    "id": "demo-electrical-02",
+    "track": "demo",
+    "subject": "electrical",
+    "question": "직류 회로의 두 지점 사이 전압을 멀티미터로 측정할 때 일반적인 연결 방식은?",
+    "choices": [
+      "측정 대상 양단에 병렬로 연결한다",
+      "회로의 배선을 끊고 직렬로만 연결한다",
+      "접지선을 반드시 제거한다",
+      "배터리를 분리한 상태에서만 전압을 측정한다"
+    ],
+    "answer": 1,
+    "explanation": "전압은 두 지점 간 전위차이므로 전압계는 측정 대상의 양단에 병렬로 연결해."
+  },
+  {
+    "id": "demo-eco-01",
+    "track": "demo",
+    "subject": "eco",
+    "question": "배터리 전기자동차(BEV)의 구동용 고전압 배터리에 저장되는 에너지의 형태는?",
+    "choices": [
+      "압축공기의 기계 에너지",
+      "화학 에너지",
+      "차량 운동에너지 자체",
+      "핵 에너지"
+    ],
+    "answer": 2,
+    "explanation": "리튬이온 배터리 같은 충전식 배터리는 에너지를 화학적 형태로 저장하고, 방전할 때 전기에너지로 변환해."
+  },
+  {
+    "id": "demo-eco-02",
+    "track": "demo",
+    "subject": "eco",
+    "question": "전기자동차의 회생제동에 대한 설명으로 옳은 것은?",
+    "choices": [
+      "구동 전동기를 발전기로 활용해 차량 운동에너지 일부를 회수한다",
+      "마찰 브레이크를 모든 상황에서 완전히 제거한다",
+      "항상 엔진의 연료 소모량을 늘린다",
+      "배터리를 기계식 플라이휠로 바꾼다"
+    ],
+    "answer": 1,
+    "explanation": "회생제동은 감속 중 구동 모터를 발전기처럼 작동시켜 운동에너지의 일부를 전기에너지로 회수해."
+  },
+  {
+    "id": "concept-engine-01",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가솔린 엔진의 점화 플러그는 전기적인 (    )을 발생시켜 연소를 시작한다.",
+    "choices": [
+      "불꽃",
+      "유압",
+      "냉각수",
+      "배기가스"
+    ],
+    "answer": 1,
+    "explanation": "가솔린 엔진은 점화 플러그의 전기 불꽃을 사용해 혼합기를 점화해."
+  },
+  {
+    "id": "concept-chassis-01",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압식 제동장치에서 압력을 전달하는 유체는 (    )이다.",
+    "choices": [
+      "워셔액",
+      "브레이크액",
+      "엔진오일",
+      "휘발유"
+    ],
+    "answer": 2,
+    "explanation": "유압식 브레이크는 브레이크액을 통해 유압을 전달해."
+  },
+  {
+    "id": "concept-electrical-01",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "회로의 과전류 보호를 위해 사용하는 부품은 (    )이다.",
+    "choices": [
+      "퓨즈",
+      "헤드램프",
+      "혼",
+      "스피커"
+    ],
+    "answer": 1,
+    "explanation": "퓨즈는 정해진 전류 조건에서 회로를 차단해 과전류로 인한 손상을 줄여."
+  },
+  {
+    "id": "concept-eco-01",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기자동차가 감속하면서 운동에너지 일부를 전기로 회수하는 제동 방식은 (    )이다.",
+    "choices": [
+      "엔진 브레이크",
+      "주차 브레이크",
+      "회생제동",
+      "공기압 제동"
+    ],
+    "answer": 3,
+    "explanation": "회생제동은 감속 시 모터를 발전기로 작동시켜 전기에너지를 회수하는 방식이야."
+  }
+];
