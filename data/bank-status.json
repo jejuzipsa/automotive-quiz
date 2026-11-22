@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA20 OCR source is four UTF-8 per-subject JSON files in personal Library, classified as reconstructed_past_exam. 581 source-compared/139 pending. No ZIP workflow.",
+  "source_of_truth": "QA21: four private per-subject JSON files, 720 reconstructed past-exam OCR source records; 601/720 source-image-checked and 119 OCR unverified; no ZIP. Only independently authored 80 expected questions are public.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -48,9 +48,9 @@
     "duplicate_candidates_qa6": 2,
     "duplicate_candidates_prior_references": 16
   },
-  "next_text_review": "auto-r08-s02-q01",
+  "next_text_review": "auto-r08-s03-q01",
   "publication_gate": "Personal OCR study bank in local IndexedDB only. All source-text/technical/rights approval gates separately required for publishing textbook content.",
-  "current_private_source": "QA20-JSON",
+  "current_private_source": "QA21-JSON",
   "private_source_sha256": "36cd569b94ea48c13bb259025b2a11fbfed85a76fcc8a0475bc18ce84fd85fe7",
   "qa7": {
     "total_questions": 720,
@@ -423,11 +423,43 @@
     "rewrite_and_verification_completed": 0,
     "future_backup_format": "JSON only, never ZIP"
   },
-  "current_private_format": "4 UTF-8 JSON arrays, 180 problems per subject, no ZIP",
+  "current_private_format": "four UTF-8 per-subject JSON arrays (each 180) plus combined 720-record master; private Library",
   "private_source_files": [
-    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_engine_180문항.json",
-    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_chassis_180문항.json",
-    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_electrical_180문항.json",
-    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA20_eco_180문항.json"
-  ]
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_engine_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_chassis_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_electrical_180문항.json",
+    "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_eco_180문항.json"
+  ],
+  "private_source_master": "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_기출복원_OCR원본_720문항.json",
+  "qa21": {
+    "total": 720,
+    "source_image_question_choices_explanation_compared": 601,
+    "source_ocr_unverified": 119,
+    "new_source_compared_this_batch": 20,
+    "batch_range": "auto-r08-s02-q01..q20",
+    "modified_questions": 11,
+    "modified_choices": 20,
+    "modified_explanations": 19,
+    "changed_unique_questions": 20,
+    "source_answer_number_changes": 0,
+    "technical_answer_approvals": 0,
+    "public_quiz_rewrites_approved": 0,
+    "technical_verification_pending": [
+      "auto-r08-s02-q02",
+      "auto-r08-s02-q03",
+      "auto-r08-s02-q04",
+      "auto-r08-s02-q05",
+      "auto-r08-s02-q09",
+      "auto-r08-s02-q10",
+      "auto-r08-s02-q12",
+      "auto-r08-s02-q13",
+      "auto-r08-s02-q14",
+      "auto-r08-s02-q19",
+      "auto-r08-s02-q20"
+    ],
+    "next_review": "auto-r08-s03-q01",
+    "private_json_master": "/기출문제_자동차정비산업기사/JSON문제은행/자동차정비산업기사_QA21_기출복원_OCR원본_720문항.json",
+    "sha256": "5daac437d8698e20902c148f5ff968b44332cb4d3c5a4beae77371c46fcb8530",
+    "note": "All 20 question+explanation images manually compared. OCR transcription corrections only. Per-subject JSON saved in private Library. No ZIP created."
+  }
 }
