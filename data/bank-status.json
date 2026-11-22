@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 original OCR JSON 720/720 checked (private), plus 240 separately reauthored quiz and explanation editorial drafts from rounds 1-3. Remaining 480 to rewrite, technical approvals 0, live new reconstructed questions 0.",
+  "source_of_truth": "QA23 original OCR JSON 720/720 source-compared (private). Our independent reconstructed multiple-choice drafts 400/720 and separate explanations 400/720 from rounds 1-5; 320 pending. Technical answer approvals 0/400; site live past exam drafts 0.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -25,7 +25,7 @@
     },
     "current_original_practice_count": 80,
     "public_exam_reconstruction_count": 0,
-    "current_unpublished_reauthored_question_drafts": 240
+    "current_unpublished_reauthored_question_drafts": 400
   },
   "source_captures": {
     "original": 57,
@@ -538,7 +538,7 @@
     "no_zip": true
   },
   "our_question_bank_v3": {
-    "phase": "editorial_draft",
+    "phase": "superseded_by_v5_400_drafts",
     "based_on": "QA23-JSON 720 verified source transcripts",
     "newly_created_rounds": [
       2,
@@ -578,5 +578,52 @@
     "no_zip": true,
     "next_batch": "round04 engine,chassis,electrical,eco; 80 each batch",
     "next_steps": "complete 480 question/explanation rewrites; independent subject matter and unique answer audit; then publish-approved mock exam integration and explanation-based fill-in bank"
+  },
+  "our_question_bank_v5": {
+    "phase": "editorial_draft",
+    "source": "QA23 private OCR reference 720 source-compared",
+    "rounds_reauthored": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "new_rounds_in_this_turn": [
+      4,
+      5
+    ],
+    "new_questions": 160,
+    "new_explanations": 160,
+    "draft_questions_total": 400,
+    "draft_explanations_total": 400,
+    "remaining_to_rewrite": 320,
+    "per_subject_drafted": {
+      "engine": 100,
+      "chassis": 100,
+      "electrical": 100,
+      "eco": 100
+    },
+    "technical_answer_approved": 0,
+    "publication_approved": 0,
+    "live_site_connected": 0,
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_v5/",
+    "private_question_master": "questions_all_400.json",
+    "private_explanation_master": "explanations_all_400.json",
+    "draft_questions_paths": "data/past/drafts/{subject}.json for round 1, data/past/drafts/roundXX/{subject}.json for rounds 2-5",
+    "draft_explanations_paths": "data/explanations/drafts/{subject}.json for round 1, data/explanations/drafts/roundXX/{subject}.json for rounds 2-5",
+    "status_json": "data/past/drafts/progress.json",
+    "quality_checks": "400 unique IDs/4 unique choices/answer index+separate explanation ID 1:1/zero exact original question/choice-array copies",
+    "known_source_key_errors_rewritten": [
+      "auto-r04-s01-q02",
+      "auto-r05-s04-q12"
+    ],
+    "topic_misclassification_pending": [
+      "auto-r05-s02-q16",
+      "auto-r05-s02-q20"
+    ],
+    "review_status": "editorial_draft",
+    "next_batch": "round06 80 questions+explanations",
+    "no_zip": true
   }
 }
