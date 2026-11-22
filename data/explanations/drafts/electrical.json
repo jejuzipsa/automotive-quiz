@@ -1,0 +1,300 @@
+[
+  {
+    "id": "auto-made-r01-s03-q01",
+    "question_id": "auto-made-r01-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "CAN",
+    "reason": "CAN은 ECU 사이에서 식별자 기반 메시지를 교환하는 차량용 통신 방식이다. 제어 데이터 교환에 적합하며, 오디오·영상 연결 규격과 용도를 구분한다.",
+    "key_point": "CAN은 차량 제어기 간 메시지 통신에 널리 쓰인다.",
+    "source_question_id": "auto-r01-s03-q01",
+    "original_issue_flags": [
+      "technical_review_USB_possible_vehicle_exception"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q02",
+    "question_id": "auto-made-r01-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "트위스트 페어 이더넷 케이블",
+    "reason": "RJ45로 통칭하는 8P8C 커넥터는 일반적인 유선 이더넷 케이블에 사용된다. 자동차 이더넷은 단일 페어 등 별도 배선·커넥터를 쓰는 경우가 있으므로 자동차 모든 네트워크에 RJ45가 쓰인다고 일반화하지 않는다.",
+    "key_point": "RJ45는 일반적인 유선 이더넷 연결에서 볼 수 있다.",
+    "source_question_id": "auto-r01-s03-q02",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q03",
+    "question_id": "auto-made-r01-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "엔진 오일필터 여과지",
+    "reason": "네트워크 결함은 배선 단선·단락, 커넥터 접촉, 전원·접지, 통신 장치 오류 등을 확인해야 한다. 오일필터는 전기통신 부품이 아니다.",
+    "key_point": "통신 고장은 전기적 신호 경로를 먼저 살핀다.",
+    "source_question_id": "auto-r01-s03-q03",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q04",
+    "question_id": "auto-made-r01-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "메시지 식별자 기반의 비파괴 중재",
+    "reason": "CAN은 메시지 식별자 비트에 따른 중재를 사용한다. 우선순위가 높은 프레임이 버스를 계속 사용하고 다른 노드는 재시도할 수 있다. TCP 혼잡 제어와는 다른 개념이다.",
+    "key_point": "CAN의 버스 중재는 메시지 식별자로 이루어진다.",
+    "source_question_id": "auto-r01-s03-q04",
+    "original_issue_flags": [
+      "technical_review_TCP_congestion_is_not_vehicle_CAN"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q05",
+    "question_id": "auto-made-r01-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "회로에 흐르는 전류를 제한한다",
+    "reason": "저항은 전류를 제한하거나 전압을 분배하는 데 사용된다. 전압과 저항의 관계는 옴의 법칙으로 설명할 수 있다.",
+    "key_point": "저항은 전류 제한 및 분압에 사용된다.",
+    "source_question_id": "auto-r01-s03-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q06",
+    "question_id": "auto-made-r01-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "타이어 트레드 깊이 점검",
+    "reason": "단선과 접촉 불량의 진단에는 전원·접지·전압강하·도통 검사가 유용하다. 타이어 트레드 깊이는 전기회로의 단선 여부를 알려주지 않는다.",
+    "key_point": "전기회로 결함은 측정값과 배선 경로로 찾는다.",
+    "source_question_id": "auto-r01-s03-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q07",
+    "question_id": "auto-made-r01-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "정전기 방지 작업대와 적절하게 접지된 ESD 보호구 사용",
+    "reason": "정전기 방전(ESD)은 민감한 반도체 부품을 손상할 수 있어 적절한 ESD 장비를 쓴다. 단, 정전기 방지 손목밴드는 고전압 감전 보호장비가 아니므로 전기차 고전압 작업에 적용해서는 안 된다.",
+    "key_point": "ESD 보호구와 고전압 절연 보호구는 용도가 다르다.",
+    "source_question_id": "auto-r01-s03-q07",
+    "original_issue_flags": [
+      "technical_review_ESD_wristband_not_high_voltage_PPE"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q08",
+    "question_id": "auto-made-r01-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "정비용 OBD 진단기",
+    "reason": "OBD 진단기는 차량 진단 커넥터를 통해 고장코드와 지원되는 실시간 데이터를 읽는다. 고장코드만으로 부품 교환을 확정하지 말고 추가 점검을 해야 한다.",
+    "key_point": "OBD는 진단 정보를 읽는 도구이지 고장 원인의 최종 판정 자체는 아니다.",
+    "source_question_id": "auto-r01-s03-q08",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q09",
+    "question_id": "auto-made-r01-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "휠 속도 센서",
+    "reason": "ABS(Anti-lock Braking System)는 각 바퀴 속도 신호를 사용해 잠김 위험을 판단하고 제동압을 조절한다. 바퀴 속도 신호가 없으면 ABS 제어에 문제가 생길 수 있다.",
+    "key_point": "ABS는 잠김 방지 제동장치이며 휠 속도 신호가 중요하다.",
+    "source_question_id": "auto-r01-s03-q09",
+    "original_issue_flags": [
+      "technical_review_source_mislabels_ABS_expansion"
+    ],
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q10",
+    "question_id": "auto-made-r01-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "일반적인 엔진오일·오일필터 교환",
+    "reason": "엔진오일 교환은 보통 조향각이나 차체자세 센서의 기준점에 변화를 주지 않는다. 반면 조향계 부품 수리 후에는 차종별 보정 절차가 필요할 수 있다.",
+    "key_point": "센서 보정은 관련 부품·기하 상태의 변경과 연계된다.",
+    "source_question_id": "auto-r01-s03-q10",
+    "original_issue_flags": [
+      "technical_review_zero_point_maintenance_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q11",
+    "question_id": "auto-made-r01-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "휠 속도의 변화",
+    "reason": "ABS 모듈은 휠 속도 센서 신호에서 바퀴 회전과 감속 상태를 분석해 잠김 위험을 감지한다. 제동압 조절을 통해 조향 가능성과 안정성 유지에 기여한다.",
+    "key_point": "ABS 핵심 입력은 바퀴 속도 변화다.",
+    "source_question_id": "auto-r01-s03-q11",
+    "original_issue_flags": [
+      "technical_review_source_mislabels_ABS_expansion"
+    ],
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q12",
+    "question_id": "auto-made-r01-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "제조사 SRS 안전절차와 진단 조건을 확인하고 자격을 갖춘 사람이 작업한다",
+    "reason": "SRS는 화약식 전개 장치를 포함할 수 있어 부적절한 측정이나 전원 처리가 위험하다. 제조사가 지정한 전원 차단·대기 시간·진단 방법을 준수해야 한다.",
+    "key_point": "SRS 회로는 일반 회로처럼 임의 측정하지 않는다.",
+    "source_question_id": "auto-r01-s03-q12",
+    "original_issue_flags": [
+      "technical_review_safety_diagnostics_guidance_may_be_unsafe"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q13",
+    "question_id": "auto-made-r01-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "자외선 조사로 형광제 흔적을 확인한다",
+    "reason": "승인된 형광제가 냉매와 함께 순환하다 누출 부위에 남으면 적절한 UV 광원으로 확인할 수 있다. 냉매별 적합성·안전 절차를 지켜야 하며 모든 누설이 이 방식 하나로 발견되지는 않는다.",
+    "key_point": "형광제 기반 냉매 누설 검사는 UV 광원을 사용한다.",
+    "source_question_id": "auto-r01-s03-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q14",
+    "question_id": "auto-made-r01-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "연료 분사 제어·인젝터 계통",
+    "reason": "연료 분사 이상은 연료 소모와 엔진 성능에 영향을 줄 수 있다. 분사 보정량, 연료압, 인젝터 상태 등을 규격에 맞춰 점검한다.",
+    "key_point": "분사량·연료압 이상은 연비와 관련이 있다.",
+    "source_question_id": "auto-r01-s03-q14",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q15",
+    "question_id": "auto-made-r01-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "배기 매니폴드",
+    "reason": "히터 코어는 냉각수를 이용해 실내 공기를 가열하고, 응축기·증발기는 에어컨 냉매 회로의 열교환기다. 배기 매니폴드는 배기가스 유로에 속한다.",
+    "key_point": "공조 열교환기와 배기 계통 부품을 구분한다.",
+    "source_question_id": "auto-r01-s03-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q16",
+    "question_id": "auto-made-r01-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "냉매 압력·컴프레서 구동 상태·팬 작동과 공기 흐름을 점검한다",
+    "reason": "냉방 성능 저하는 냉매량·압축기·응축기 냉각·캐빈 필터 등 다양한 원인으로 발생한다. 안전 규정을 준수하면서 압력과 작동 조건을 비교해 고장을 좁힌다.",
+    "key_point": "냉방 불량은 단일 부품 고장이 아닌 계통 진단이 필요하다.",
+    "source_question_id": "auto-r01-s03-q16",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q17",
+    "question_id": "auto-made-r01-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "파워윈도우 회로 퓨즈",
+    "reason": "퓨즈가 끊어지면 회로에 전원이 전달되지 않을 수 있다. 단, 퓨즈가 끊어졌다면 원인 단락이 있는지도 점검해야 하며 무조건 높은 용량으로 교체하지 않는다.",
+    "key_point": "전원 불능 회로의 퓨즈·공급전압 확인은 기본이다.",
+    "source_question_id": "auto-r01-s03-q17",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q18",
+    "question_id": "auto-made-r01-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "엔진에 들어 있는 오일의 실제 잔량",
+    "reason": "전기 회로도는 연결·단자·전원 경로를 나타낸다. 엔진오일 잔량은 배선도 자체에서 직접 측정할 수 없는 물리적 상태다.",
+    "key_point": "배선도는 회로 연결을 보여 주며 실제 액면을 측정하지 않는다.",
+    "source_question_id": "auto-r01-s03-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q19",
+    "question_id": "auto-made-r01-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+    "reason": "퓨즈가 정상이면 스위치·배선·모터로 이어지는 전원·접지 경로를 점검할 수 있다. 해당 회로 전압과 접지 상태를 측정하면 모터 자체 불량과 공급 문제를 구별할 단서를 얻는다.",
+    "key_point": "전원·접지를 측정해 모터 자체 고장과 공급 문제를 구분한다.",
+    "source_question_id": "auto-r01-s03-q19",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r01-s03-q20",
+    "question_id": "auto-made-r01-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "히터 코어 내부 흐름과 냉각수 순환",
+    "reason": "냉각수 순환이 원활하지 않거나 히터 코어가 막히면 열 전달이 부족할 수 있다. 냉각수량·서모스탯·블렌드 도어도 함께 진단해야 한다.",
+    "key_point": "난방 불량은 히터 코어와 냉각수 순환 상태를 확인한다.",
+    "source_question_id": "auto-r01-s03-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
