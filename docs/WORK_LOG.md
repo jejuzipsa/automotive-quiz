@@ -78,3 +78,5 @@
 - GitHub Actions 실행 성공: https://github.com/jejuzipsa/automotive-quiz/actions/runs/44987407820.
 - QA7 실제 ZIP(49MB)은 비공개 개인 파일 라이브러리에 백업 성공. 공개 저장소에는 저작권 원문/이미지 없음.
 - 개인 풀이 화면은 원본 전사 확인 상태와 기술적 재검토 후보 경고를 표시하므로, 교재 답안 번호만으로 기술적 정답이라고 오인하지 않도록 설계.
+
+- 마지막 UI 정리: 홈페이지 **'내 문제은행' 카드의 이동 경로**를 레거시 QA7 이미지 화면 `private.html`에서 **QA8 텍스트 파일 불러오기 영역 `#personalTextBankBox`**으로 변경. 이미지 출제는 기본 사용자 경로에서 제외.
