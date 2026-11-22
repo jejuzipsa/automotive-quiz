@@ -2,6 +2,18 @@
 
 > 작업 추가 시 항상 **날짜 / 사용자 요청 / 수행 내용 / 검증한 수치 / 변경 파일·커밋 / 미완료 항목**을 남길 것. '완료'와 '초안'을 혼용하지 않는다.
 
+## 2026-11-22 — 개발지침 고정 및 QA8 텍스트 문제은행 연결
+
+- 사용자 확정: 이미지는 OCR·원본대조 끝나면 출제에 불필요, **실제 사이트는 공인중개사 기출문제와 똑같은 텍스트 + 보기 셔플**이어야 함.
+- 저장소 루트 `AGENTS.md` **신설**. 후속 채팅/에이전트가 먼저 읽을 공통 지침: 원본 이미지 검수용, 텍스트 4지선다 JSON, 원본 보기 ID 보존, 출제시 매번 섞기, 정답 새 위치 재계산, 답안별 색상, 해설/복습, 원문 검수와 기술 검증/저작권 분리.
+- 사용자 QA7을 기준으로 새 **QA8 텍스트 은행 720문항** 생성 (서버 공개 파일에 직접 넣지 않음). 구조: question/choices[4]/answer/explanation/subject/round/transcription_status.
+- 실제 QA8 ZIP 검사: 720 IDs, 4×180, 누락/잘못된 정답 번호 0, ZIP CRC 정상, **25문항 원본 문자 대조**, 695 OCR 미검수, 정답 기술적 승인 0/720. SHA-256=`04a565eb86b0054db14531615188d5c10fe0bff453d954d6816807056c24bf3c`. ChatGPT 개인 파일 라이브러리 업로드 완료.
+- 신규 `quiz-utils.js`, `personal-text-bank.js`: 원본 선택지 위치 보존·Fisher-Yates 보기 셔플/정답 위치 재계산 + QA8 ZIP/JSON 검사·IndexedDB 로컬 지속 저장.
+- `index.html`에 QA8 불러오기/로컬 삭제 UI, `app.js`의 개인 예상문제 720문항(과목별 180) 표시 및 텍스트 출제·해설·오답 재풀이 연결, `styles.css` 반응형 패널.
+- `tests/qa8-text-bank.test.cjs` 추가. CI 처음 실행은 테스트 fixture 괄호 문법 오류로 실패하여 즉시 수정; 이후 **GitHub Actions 성공**: https://github.com/jejuzipsa/automotive-quiz/actions/runs/44996253593.
+- 주의: 실물 QA8 ZIP을 아이폰 Safari에서 가져오는 수동 검사는 아직 완료하지 않았음. CI는 합성 문항으로 실행했으므로 교재 OCR·정답의 실제 내용까지 인증한 것은 아님.
+- 다음: 1회 섀시정비 1~20번부터 원문 전사 검수, 기술적 복수정답/안전 문제 검증, QA 버전/개인 ZIP 갱신 후 `data/bank-status.json`, 인계, 추적 Issue #1 업데이트.
+
 ## 2026-11-22 — 신규 저장소와 GitHub Pages
 - 사용자가 https://github.com/jejuzipsa/automotive-quiz 공개 저장소를 만듦.
 - `main` 첫 커밋 생성, 기존 `gichul-quiz`의 CSS를 바탕으로 반응형 자동차정비 UI 구현.
