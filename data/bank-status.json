@@ -12,7 +12,16 @@
     "demo_concepts": 4,
     "personal_zip_import_available": true,
     "personal_zip_import_url": "https://jejuzipsa.github.io/automotive-quiz/private.html",
-    "personal_imported_content_uploaded_to_host": false
+    "personal_imported_content_uploaded_to_host": false,
+    "text_bank_import_available": true,
+    "text_bank_import_mode": "user-selected QA8 JSON/ZIP, browser-local IndexedDB; no hosted publisher text",
+    "text_bank_imported_into_public_github": false,
+    "live_subject_cards_after_local_import": {
+      "engine": 180,
+      "chassis": 180,
+      "electrical": 180,
+      "eco": 180
+    }
   },
   "source_captures": {
     "original": 57,
@@ -37,9 +46,9 @@
     "duplicate_candidates_prior_references": 16
   },
   "next_text_review": "auto-r01-s02-q01",
-  "publication_gate": "public hosted publisher texts/images: forbidden; local device ZIP can be privately imported; final technical and rights approvals separately pending",
-  "current_private_source": "QA7",
-  "private_source_sha256": "136b5c74ec147d9a3ea410911025572d19344ed64371fd0cc150ee50fc6f50fe",
+  "publication_gate": "Personal OCR study bank in local IndexedDB only. All source-text/technical/rights approval gates separately required for publishing textbook content.",
+  "current_private_source": "QA8-TEXT-DRAFT",
+  "private_source_sha256": "04a565eb86b0054db14531615188d5c10fe0bff453d954d6816807056c24bf3c",
   "qa7": {
     "total_questions": 720,
     "subject_count": 4,
@@ -53,5 +62,21 @@
     "reviewed_range": "auto-r01-s01-q11 through auto-r01-s01-q20",
     "next_text_review": "auto-r01-s02-q01",
     "private_zip_in_library": "/기출문제_자동차정비산업기사/자동차정비산업기사_QA7_원본20문항대조_개인용_20261122.zip"
+  },
+  "qa8": {
+    "total": 720,
+    "format": "text question + four text choices + original answer index + text explanation",
+    "image_assets_in_qa8_zip": 0,
+    "text_source_compared": 25,
+    "text_ocr_unverified": 695,
+    "answer_key_numbers_checked_in_qa7": 720,
+    "technical_answers_approved": 0,
+    "public_release_approved": 0,
+    "imported_only_locally": true,
+    "session_choice_shuffle": true,
+    "answer_location_recalculated": true,
+    "personal_zip_path": "/기출문제_자동차정비산업기사/자동차정비산업기사_QA8_텍스트문제은행_720문항_검수전_20261122.zip",
+    "sha256": "04a565eb86b0054db14531615188d5c10fe0bff453d954d6816807056c24bf3c",
+    "next_source_review": "auto-r01-s02-q01"
   }
 }
