@@ -1,0 +1,61 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+// This independent check can be relocated to repository/tests/draft-bank.test.cjs.
+const cwd=process.env.AUTO_QUIZ_REPO||root;
+const read=x=>JSON.parse(fs.readFileSync(path.join(cwd,x),'utf8'));
+const manifest=read('data/past/drafts/manifest.json');
+const live=read('data/manifest.json');
+assert.equal(manifest.schema_version,'our-bank-v1');
+assert.equal(manifest.draft_questions_created,80);
+assert.equal(manifest.pending_question_rewrites,640);
+assert.equal(manifest.technical_answer_verified,0);
+assert.equal(manifest.publishable,false);
+const allIds=new Set(),allSources=new Set();
+let totalQ=0,totalE=0;
+for(const item of manifest.subjects){
+  const {subject,question_file,explanation_file,draft_count}=item;
+  assert.equal(draft_count,20);
+  const questions=read('data/past/drafts/'+subject+'.json');
+  const explanations=read('data/explanations/drafts/'+subject+'.json');
+  assert.equal(questions.length,20);
+  assert.equal(explanations.length,20);
+  const explanationMap=new Map(explanations.map(e=>[e.id,e]));
+  assert.equal(explanationMap.size,20);
+  for(let i=0;i<questions.length;i++){
+    const q=questions[i];
+    assert.equal(q.subject,subject);
+    assert.equal(q.round,1);
+    assert.equal(q.question_number,i+1);
+    assert.equal(q.track,'past');
+    assert.equal(q.origin,'independently_reconstructed_from_exam_concepts');
+    assert.equal(q.publishable,false);
+    assert.equal(q.review_status,'editorial_draft');
+    assert.equal(q.technical_answer_status,'pending_independent_review');
+    assert.ok(q.question.length>20);
+    assert.equal(q.choices.length,4);
+    assert.equal(new Set(q.choices).size,4);
+    assert.ok(q.answer>=1&&q.answer<=4);
+    assert.ok(!allIds.has(q.id));allIds.add(q.id);
+    assert.ok(!allSources.has(q.source_question_id));allSources.add(q.source_question_id);
+    assert.equal(q.explanation_id,q.id);
+    assert.ok(!Object.hasOwn(q,'explanation'),'explanation must stay in its separate bank');
+    const e=explanationMap.get(q.id);
+    assert.ok(e,'No explanation for '+q.id);
+    assert.equal(e.subject,subject);
+    assert.equal(e.question_id,q.id);
+    assert.equal(e.source_question_id,q.source_question_id);
+    assert.equal(e.correct_answer,q.answer);
+    assert.equal(e.correct_choice,q.choices[q.answer-1]);
+    assert.ok(e.reason.length>=55);
+    assert.ok(e.key_point.length>12);
+    assert.equal(e.technical_answer_status,'pending_independent_review');
+    assert.ok(e.reference_urls.every(u=>u.startsWith('https://')));
+  }
+  totalQ+=questions.length;totalE+=explanations.length;
+}
+assert.equal(totalQ,80);assert.equal(totalE,80);
+assert.ok(live.banks.every(b=>!b.file.includes('/drafts/')),'Drafts must not be linked on live site');
+console.log('PASS: 80 independent draft questions + 80 separate explanations, 1:1 ID/answer match; none live; 640 pending.');
