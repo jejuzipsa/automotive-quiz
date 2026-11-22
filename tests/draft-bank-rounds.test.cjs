@@ -2,7 +2,7 @@
 const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
-const root=process.env.AUTO_QUIZ_REPO || path.resolve(__dirname,'local_repo_test');
+const root=process.env.AUTO_QUIZ_REPO || path.resolve(__dirname,'..');
 const read=x=>JSON.parse(fs.readFileSync(path.join(root,x),'utf8'));
 const subjects=['engine','chassis','electrical','eco'];
 const ids=new Set(),sources=new Set();
