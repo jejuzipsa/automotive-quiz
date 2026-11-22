@@ -1,35 +1,36 @@
 {
-  "version": "our-bank-v3",
+  "version": "our-bank-v5",
   "base_source": "QA23 720 source-OCR-verified question records",
   "total_source_questions": 720,
-  "draft_questions_created": 240,
-  "separate_explanations_created": 240,
-  "pending_question_rewrites": 480,
+  "draft_questions_created": 400,
+  "separate_explanations_created": 400,
+  "pending_question_rewrites": 320,
   "rounds_completed_as_drafts": [
     1,
     2,
-    3
+    3,
+    4,
+    5
   ],
   "rounds_remaining": [
-    4,
-    5,
     6,
     7,
     8,
     9
   ],
   "counts_per_subject": {
-    "engine": 60,
-    "chassis": 60,
-    "electrical": 60,
-    "eco": 60
+    "engine": 100,
+    "chassis": 100,
+    "electrical": 100,
+    "eco": 100
   },
   "technical_answer_verified": 0,
   "site_connected": 0,
   "review_status": "editorial_draft",
   "publishable": false,
-  "draft_question_path_pattern": "data/past/drafts/roundXX/{subject}.json for rounds 2 and 3; data/past/drafts/{subject}.json for round 1",
-  "draft_explanation_path_pattern": "data/explanations/drafts/roundXX/{subject}.json for rounds 2 and 3; data/explanations/drafts/{subject}.json for round 1",
-  "next_batch": "round 4, engine to eco each 20; confirm correct and unique technical answer before promoting to live site",
-  "note": "Drafts and their explanation records remain separate and are deliberately not referenced by the live manifest until reviewed."
+  "draft_question_path_pattern": "data/past/drafts/{subject}.json for round 1; data/past/drafts/roundXX/{subject}.json for rounds 2-5",
+  "draft_explanation_path_pattern": "data/explanations/drafts/{subject}.json for round 1; data/explanations/drafts/roundXX/{subject}.json for rounds 2-5",
+  "next_batch": "round 6 (4 subjects each 20), followed by rounds 7-9; all drafts require independent technical validation before live publication",
+  "note": "QA23 source OCR 720 verified. Reauthored rounds 1-5 = 400 draft question and separate explanation pairs; remaining 320. Not live.",
+  "no_zip": true
 }
