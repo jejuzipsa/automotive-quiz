@@ -1,36 +1,32 @@
 {
-  "version": "our-bank-v5",
-  "base_source": "QA23 720 source-OCR-verified question records",
+  "version": "our-bank-v9",
+  "base_source": "QA23 source-image/OCR verified reference 720",
   "total_source_questions": 720,
-  "draft_questions_created": 400,
-  "separate_explanations_created": 400,
-  "pending_question_rewrites": 320,
+  "draft_questions_created": 720,
+  "separate_explanations_created": 720,
+  "pending_question_rewrites": 0,
   "rounds_completed_as_drafts": [
     1,
     2,
     3,
     4,
-    5
-  ],
-  "rounds_remaining": [
+    5,
     6,
     7,
     8,
     9
   ],
+  "rounds_remaining": [],
   "counts_per_subject": {
-    "engine": 100,
-    "chassis": 100,
-    "electrical": 100,
-    "eco": 100
+    "engine": 180,
+    "chassis": 180,
+    "electrical": 180,
+    "eco": 180
   },
   "technical_answer_verified": 0,
   "site_connected": 0,
   "review_status": "editorial_draft",
   "publishable": false,
-  "draft_question_path_pattern": "data/past/drafts/{subject}.json for round 1; data/past/drafts/roundXX/{subject}.json for rounds 2-5",
-  "draft_explanation_path_pattern": "data/explanations/drafts/{subject}.json for round 1; data/explanations/drafts/roundXX/{subject}.json for rounds 2-5",
-  "next_batch": "round 6 (4 subjects each 20), followed by rounds 7-9; all drafts require independent technical validation before live publication",
-  "note": "QA23 source OCR 720 verified. Reauthored rounds 1-5 = 400 draft question and separate explanation pairs; remaining 320. Not live.",
+  "next_batch": "technical independent cross-check and site integration",
   "no_zip": true
 }
