@@ -11,3 +11,22 @@
 Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
 주의: GitHub Pages 웹사이트는 인터넷에 공개된다. GitHub 저장소를 Private으로 변경한다고 기존 Pages에 올린 콘텐츠가 자동으로 비공개가 되는 것은 아니다.
+
+## 작업 재개 — 다음 채팅에서 반드시 읽을 것
+
+**[인계 문서](docs/HANDOFF.md)** → [진행 기록](docs/WORK_LOG.md) → [문제은행 상태](docs/DATA_BANK.md) → [검수 기준](docs/REVIEW_PROTOCOL.md)
+
+- 기계적으로 처리된 전체 데이터 상태: [data/bank-status.json](data/bank-status.json)
+- 원본 교재 문제 720문항: QA6 개인 백업에만 보관, **공개 Pages에는 0문항**
+- 다음 검수 시작점: `auto-r01-s01-q11` (1회 엔진정비 11번부터 20문항 단위)
+- 새 채팅 지시문: `automotive-quiz 저장소의 docs/HANDOFF.md부터 읽고 QA6 문제 검수 이어서 진행해줘.`
+
+## 아이콘 / 공통 디자인
+
+2026-11-22에 `gichul-quiz/assets`의 기존 섹션 아이콘 PNG 6개를 `assets/`로 그대로 복사했어. 섹션·시험·개념·복습 등에 사용하고, **자동차정비의 메인 톱니바퀴 아이콘은 유지**해. 원본 아이콘 재동기화는 `.github/workflows/sync-reference-icons.yml`에서 담당해.
+
+## 현재 테스트
+
+`node tests/validate.cjs`
+
+샘플 문제 데이터와 UI 코드의 구조를 검사한다. 실제 사용자의 모든 기기에서의 브라우저 동작이나 QA6의 기술적 정답을 검증하는 테스트는 아니다.
