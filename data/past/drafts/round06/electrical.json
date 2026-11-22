@@ -164,16 +164,23 @@
     "question_number": 8,
     "question": "컴프레서 클러치가 짧은 간격으로 반복 작동한다. 우선 진단해야 할 자료는?",
     "choices": [
-      "차량 색상과 타이어 표시문자",
-      "고·저압 냉매 압력과 압력센서·보호제어 상태",
-      "오디오 안테나 길이만",
-      "계기판 스피커 음량"
+      "고장코드만 삭제해 냉매 압력 계측을 대신한다",
+      "고·저압 냉매 압력과 압력센서·보호제어 상태를 확인한다",
+      "압축기 클러치를 고정 접속해 보호제어 개입을 차단한다",
+      "냉방성능과 무관하게 무조건 냉매를 추가 충전한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r06-s03-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "압력·보호제어 자료 확인 및 위험한 강제조작 배제",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s03-q09",
@@ -289,7 +296,11 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "가솔린 엔진 공회전 높음 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -347,16 +358,23 @@
     "question_number": 16,
     "question": "선루프 교환 후 틸트만 되고 슬라이딩 기능이 작동하지 않는다. 우선 검사할 내용은?",
     "choices": [
-      "전방 산소센서 히터전압만",
-      "모든 선루프에서 학습 기능은 존재하지 않는다",
-      "슬라이드 레일 기계 저항과 위치 학습 상태",
-      "타이어 트레드 깊이만"
+      "스위치 교환만으로 슬라이드 레일 상태를 판정한다",
+      "모든 차종에서 위치 학습이 불필요하다고 판단한다",
+      "슬라이드 레일 기계저항과 위치 학습 상태를 확인한다",
+      "틸트 모터가 정상이라면 슬라이드 기계간섭을 배제한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r06-s03-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "선루프 슬라이드 기계·학습 검토",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s03-q17",

@@ -277,18 +277,25 @@
     "source_question_id": "auto-r01-s03-q13",
     "round": 1,
     "question_number": 13,
-    "question": "차량 냉매 누설점을 육안으로 찾아야 한다. 제조사가 허용한 형광제를 사용했다면 유용한 확인 방법은?",
+    "question": "자동차 냉매회로에 허용된 형광 추적제를 주입한 후 누설 위치를 확인하려 한다. 유용한 관찰법은?",
     "choices": [
-      "압축공기를 냉매로 충전한다",
-      "자외선 조사로 형광제 흔적을 확인한다",
-      "열선 시트 온도만 측정한다",
-      "팬벨트 장력만 본다"
+      "냉매회로에 일반 공기를 압축해 주입한다",
+      "정비용 자외선 광원으로 형광제 흔적을 관찰한다",
+      "전자식 냉매 누설검지기로 추적제 자체의 색을 측정한다",
+      "냉매압력이 정상이라면 누설점 탐색을 종료한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r01-s03-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "형광 추적제와 자외선 관찰의 대응",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q14",
@@ -301,10 +308,10 @@
     "question_number": 14,
     "question": "연비가 급격히 악화됐고 분사 보정량이 비정상으로 나타난 엔진이다. 조사 대상과 가장 밀접한 계통은?",
     "choices": [
-      "라디오 튜너",
-      "선루프 배수관",
-      "윈드실드 와이퍼",
-      "연료 분사 제어·인젝터 계통"
+      "촉매 전단 산소 센서의 히터 전류만",
+      "연료탱크 증발가스 퍼지 명령만",
+      "엔진 냉각팬의 온도 제어 지령만",
+      "연료분사 보정량·레일 압력과 인젝터 제어계통"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r01-s03-q14",
@@ -316,7 +323,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "연료분사 인젝터·분사 보정은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "연비 악화·분사 보정량의 직접 원인자료",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -352,16 +370,23 @@
     "question_number": 16,
     "question": "에어컨 냉방이 약하다. 압축기 불량으로 단정하기 전에 적절한 진단은?",
     "choices": [
-      "즉시 모든 냉매를 외부로 방출한다",
-      "압축기를 무조건 교체한다",
-      "냉매 압력·컴프레서 구동 상태·팬 작동과 공기 흐름을 점검한다",
-      "실내등 전구만 교체한다"
+      "냉매를 무전원 상태로 대기로 배출한다",
+      "냉매량에 관계없이 컴프레서를 즉시 교환한다",
+      "냉매 압력·압축기 구동 및 응축기 팬/풍량을 확인한다",
+      "컴프레서가 회전하면 냉매 충전량은 확인할 필요가 없다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r01-s03-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉방 약화와 압축기 교체 전 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q17",
@@ -374,16 +399,23 @@
     "question_number": 17,
     "question": "파워윈도우가 전혀 움직이지 않는다. 회로가 작동하지 않는 상황에서 기본적으로 확인할 보호 부품은?",
     "choices": [
-      "와이퍼 블레이드",
-      "파워윈도우 회로 퓨즈",
-      "연료 인젝터",
-      "냉각수 서모스탯"
+      "파워윈도우 구동모터의 회전자 코일",
+      "파워윈도우 회로의 지정 퓨즈",
+      "파워윈도우 유리의 기계식 가이드 레일",
+      "파워윈도우 유리 높이 조절용 레귤레이터"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r01-s03-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "회로 보호부품과 구동/기계부품 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q18",
@@ -439,17 +471,24 @@
     "source_question_id": "auto-r01-s03-q20",
     "round": 1,
     "question_number": 20,
-    "question": "히터 송풍은 정상인데 난방이 약하고 히터 호스 두 개의 온도차가 매우 크다. 점검 대상은?",
+    "question": "히터 블로워는 정상이고 히터코어 입구가 뜨거운데 출구 호스가 크게 식는다. 냉각수량이 정상일 때 우선 확인할 대상은?",
     "choices": [
-      "스피커 코일",
-      "브레이크 라이닝",
-      "히터 코어 내부 흐름과 냉각수 순환",
-      "안테나 케이블"
+      "실내 공기분배용 도어 위치만",
+      "에어컨 냉매 압축기의 작동전류만",
+      "히터코어의 냉각수 흐름·막힘과 유량",
+      "블로워 모터의 저항값만"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r01-s03-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "히터코어 입출구 온도차의 원인 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

@@ -157,7 +157,7 @@
     "question_id": "auto-made-r07-s04-q10",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "배터리 온도·충전속도·충전 상태 운용",
+    "correct_choice": "배터리 온도·SOC 범위와 충전전류 운용 조건",
     "reason": "배터리 노화는 온도·충방전 전류·SOC 범위와 시간의 영향을 받는다. 소프트웨어 개선은 보호제어를 바꿀 수 있지만 그 자체가 주요 화학 열화 원인이라는 뜻은 아니다.",
     "key_point": "배터리 수명은 열·전류·SOC 운용조건에 영향.",
     "source_question_id": "auto-r07-s04-q10",
@@ -166,7 +166,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "열화 촉진/억제 운용 조건 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q11",
@@ -207,7 +214,7 @@
     "question_id": "auto-made-r07-s04-q13",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "배터리 SOC·온도와 차량 및 충전기 제한 명령",
+    "correct_choice": "배터리 SOC·셀 온도와 차량·충전기 제한 명령을 비교한다",
     "reason": "급속 충전 속도는 배터리 충전량·온도·충전기 출력을 비롯한 요소에 따라 달라진다. 에어컨을 항상 켜야 충전된다는 규칙은 없다.",
     "key_point": "충전 전류 제한은 SOC·온도·충전기 협상 결과.",
     "source_question_id": "auto-r07-s04-q13",
@@ -218,14 +225,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "급속충전 제한의 직접 관련된 명령·SOC·온도 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q14",
     "question_id": "auto-made-r07-s04-q14",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "고전압 전용 퓨즈·퓨저블 링크",
+    "correct_choice": "고전압용 퓨즈·퓨저블 링크",
     "reason": "고전압 퓨즈는 지나친 전류가 흐를 때 용단돼 배선을 보호한다. 메인 접촉기와는 전류 차단 방식과 목적이 다르다.",
     "key_point": "HV 퓨즈 = 과전류 발생 시 회로 보호.",
     "source_question_id": "auto-r07-s04-q14",
@@ -234,7 +248,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "퓨즈의 일회성 용단과 제어회로 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q15",
@@ -313,7 +334,7 @@
     "question_id": "auto-made-r07-s04-q19",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "공기 공급량·수소압력·막 수분과 스택 온도",
+    "correct_choice": "수소/공기 공급량·막 수분과 스택 온도",
     "reason": "연료전지는 전극 반응에 필요한 가스 공급과 수분·열관리 상태에 민감하다. 진단에는 전지전압 편차와 온도 및 유량을 함께 확인해야 한다.",
     "key_point": "스택 출력은 수소·산소 공급·수분·열관리에 영향.",
     "source_question_id": "auto-r07-s04-q19",
@@ -322,7 +343,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "연료전지 스택 반응가스·수분·온도 직접 요인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q20",

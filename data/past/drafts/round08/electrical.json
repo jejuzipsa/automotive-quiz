@@ -231,16 +231,31 @@
     "question_number": 11,
     "question": "앞차가 감속하자 자동차가 스스로 속도를 줄이면서 차간거리를 유지한다. 어떤 기능인가?",
     "choices": [
-      "기본 정속장치만으로 모든 앞차 거리 자동 측정",
-      "적응형 크루즈 컨트롤(ACC)의 거리 추종 제어",
-      "블로워 모터 저항 제어",
-      "와이퍼 레인센서 제어"
+      "운전자가 지정한 일정 속도만 유지하는 일반 정속장치",
+      "전방 차량을 따라 속도와 차간거리를 조정하는 ACC",
+      "긴급 충돌회피에서 순간 제동을 시행하는 AEB",
+      "차선을 벗어날 때 조향을 보조하는 LKA"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r08-s03-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ACC와 CC/AEB/LKA 기능 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/assistance-systems/adaptive-cruise-control/"
+      ],
+      "review_note": "Bosch ACC는 전방차와 간격을 유지하는 속도 제어로, 일반 정속주행·AEB·LKA와 기능이 다름을 확인했다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r08-s03-q12",
@@ -295,18 +310,25 @@
     "source_question_id": "auto-r08-s03-q14",
     "round": 8,
     "question_number": 14,
-    "question": "자동차 시동용 배터리에서 충전과 방전이 일어나는 물리 원리를 고른다면?",
+    "question": "차량용 충전식 납산배터리에서 충전과 방전이 반복되는 기본 원리는?",
     "choices": [
-      "배터리 내부에 기계식 변속기 설치",
-      "실내등을 켜면 배터리 질량이 즉시 두 배로 증가",
-      "전기 에너지와 화학 에너지의 가역적 변환",
-      "전기 에너지를 타이어 압력으로 무조건 전환"
+      "회전자와 고정자의 기계적 결합으로 전기가 생산된다",
+      "내부 전극은 전기화학 반응 없이 전압만 저장한다",
+      "전기 에너지와 화학 에너지 사이의 가역적인 전환",
+      "12V 자동차 배터리는 충전 시 기계적 회전 에너지를 직접 저장한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r08-s03-q14",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "충방전 전기화학 반응과 기계 에너지 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s03-q15",

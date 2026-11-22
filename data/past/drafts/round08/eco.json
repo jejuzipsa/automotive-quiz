@@ -406,16 +406,23 @@
     "question_number": 19,
     "question": "하이브리드 ECU가 엔진과 모터 동력을 배분한다. 주로 참고하는 변수는?",
     "choices": [
-      "스피커 볼륨과 차량 문짝 개수만",
-      "운전자 스마트폰 브랜드만",
-      "차량 유리 색상과 시트 패턴만",
-      "운전자 요구토크·배터리 SOC·차량 주행 조건"
+      "구동모터의 정격출력만 고정값으로 읽는다",
+      "12V 보조배터리 충전상태만 확인한다",
+      "연료잔량만 기준으로 엔진·모터의 출력을 고정한다",
+      "운전자 요구토크·배터리 SOC와 주행 상황을 종합한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r08-s04-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "HEV 에너지관리 입력 정보",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s04-q20",
@@ -443,7 +450,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "전자식 주차브레이크 EPB는 섀시 제동",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

@@ -120,16 +120,23 @@
     "question_number": 6,
     "question": "계기판 회로의 전원 공급 불량이 의심된다. 가장 관련 있는 전기 부품 점검 항목은?",
     "choices": [
-      "연료필터 교환일",
-      "타이어 트레드 깊이",
-      "시트 열선 봉제 상태",
-      "퓨즈·전원선·접지 연결"
+      "계기판 내부 표시용 LCD 밝기 설정값",
+      "계기판과 무관한 휠속도 센서의 진동주파수",
+      "파워시트 조절모터의 전류 소모량",
+      "계기판 회로의 퓨즈·전원선·접지 연결"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r02-s03-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전원 공급 이상 시 퓨즈·접지 직접 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q07",
@@ -186,16 +193,31 @@
     "question_number": 9,
     "question": "차량이 실제 진행 방향과 달리 회전하려는 상태를 ESC가 감지할 때 직접 활용하는 센서는?",
     "choices": [
-      "외기온도 센서",
-      "시트 위치 센서",
-      "요 레이트 센서",
-      "연료 압력센서"
+      "운전자 조향각 측정 센서",
+      "차체의 횡가속도 측정 센서",
+      "차량의 회전 각속도를 측정하는 요레이트 센서",
+      "바퀴 회전속도 센서"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r02-s03-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차체 회전 각속도와 조향각·횡가속도 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "review_note": "Bosch의 ESC 설명에서 요레이트는 차체 수직축 회전속도이며 조향각·횡가속도·휠속도와 구분됨을 대조했다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q10",
@@ -206,18 +228,25 @@
     "source_question_id": "auto-r02-s03-q10",
     "round": 2,
     "question_number": 10,
-    "question": "일반적인 타이어 공기압만 보충한 작업이다. 조향각 센서 영점보정 필요성을 판단할 기준은?",
+    "question": "타이어 공기압 보충만 시행한 차량에서 조향각 센서(SAS) 영점학습 여부를 판단하는 근거는?",
     "choices": [
-      "항상 보정이 필수",
-      "공기압 보충만으로 모든 센서를 교환한다",
-      "보정 여부는 라디오 수신강도로 결정한다",
-      "차량의 정비 절차와 실제 교정 대상 센서 작업 여부를 확인한다"
+      "공기압을 보충했다면 SAS를 무조건 다시 학습한다",
+      "SAS와 관계없는 타이어 공기압 입력만 확인한다",
+      "시동 OFF 후 5초 경과하면 모든 차종이 동일하게 학습된다",
+      "차량 정비 절차와 SAS 관련 작업·고장코드 이력을 확인한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r02-s03-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "타이어 공기압과 SAS 영점 학습을 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q11",
@@ -230,16 +259,23 @@
     "question_number": 11,
     "question": "ESC ECU가 운전자 의도와 실제 차체 운동을 비교할 때 함께 활용하는 신호 조합은?",
     "choices": [
-      "차량 도장 두께·내비게이션 음량",
+      "운전석 헤드램프 조사각과 차량 속도",
       "조향각·차속·요레이트·횡가속도",
-      "와이퍼 노즐 간격·점화플러그 갭",
-      "배기관 끝의 색깔만"
+      "차량 타이어 제작연월과 배기가스 온도",
+      "와이퍼 작동주기와 스티어링휠 버튼 상태"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r02-s03-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ESC 목표·실제 차량운동 관련 신호",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q12",
@@ -296,16 +332,23 @@
     "question_number": 14,
     "question": "12V 시동용 배터리의 전압을 측정했다. 배터리의 실제 시동성능을 더 정확히 판단하려면?",
     "choices": [
-      "전압값만으로 내부저항·용량을 확정한다",
-      "배터리 규격에 맞는 부하·전도도 등 추가 시험을 시행한다",
-      "와이퍼 고무 마모량을 측정한다",
-      "연료필터 교환주기를 확인한다"
+      "개방회로 전압 측정값만으로 CCA를 확정한다",
+      "규정된 부하/전도도 시험으로 시동출력 성능을 평가한다",
+      "시동모터를 새것으로 교환하면 배터리 성능시험은 불필요하다",
+      "배터리의 외관 크기만 비교해 충전상태를 판정한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r02-s03-q14",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "개방전압과 실제 시동능력의 차이",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q15",
@@ -340,16 +383,23 @@
     "question_number": 16,
     "question": "엔진 냉각수 온도가 낮고 히터가 충분히 따뜻해지지 않는다. 관련된 점검 방향은?",
     "choices": [
-      "서모스탯이 열림 고착인지 포함해 실제 수온·냉각수 순환을 살핀다",
-      "오디오 스피커를 교체한다",
-      "히터 상태와 상관없이 라디에이터를 즉시 폐기한다",
-      "차고 센서의 전압만 측정한다"
+      "서모스탯 열림 고착 및 냉각수 실제 온도·순환을 확인한다",
+      "공조 블로워가 정상이라면 냉각수 문제는 배제한다",
+      "수온이 낮더라도 온도센서나 서모스탯은 점검하지 않는다",
+      "히터 코어의 온도에 관계없이 컴프레서만 교환한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r02-s03-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "난기 지연과 냉각회로 열림고착 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q17",
@@ -393,7 +443,13 @@
     "explanation_id": "auto-made-r02-s03-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "distractor_review": {
+      "review_status": "editorial_false_positive_no_edit",
+      "change_note": "부정형(속하지 않는 것) 객관식 문항으로서 다른 계통의 센서가 정답인 설계다. 보기들은 동일한 차량 편의장치 항목 3개와 분류상 예외 1개로 타당하며 자동 오탐 후보. 최종 기술검증 승인은 별개.",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s03-q19",

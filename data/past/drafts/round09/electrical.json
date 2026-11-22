@@ -120,10 +120,10 @@
     "question_number": 6,
     "question": "젖은 노면에서 가속 중 구동륜이 심하게 헛돈다. TCS가 개입해 조절하는 대상은?",
     "choices": [
-      "에어컨 냉매 온도만 변경",
-      "냉각팬 회전수를 무조건 0으로 제한",
-      "구동륜 미끄러짐을 줄이기 위한 제동·구동토크",
-      "와이퍼 속도를 최대로 올리는 동작만"
+      "ABS가 제동 중 바퀴잠김을 방지하는 제어만",
+      "조향각센서 영점값의 장기 학습만",
+      "구동륜 슬립에 따른 구동토크 또는 제동력 제어",
+      "ESC의 차체 요레이트 목표만 조정하고 구동륜은 제어하지 않는다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r09-s03-q06",
@@ -135,7 +135,18 @@
       "current_subject": "electrical",
       "suggested_subject": "chassis",
       "reason": "TCS는 구동력 제어·차체자세 제어(섀시) 영역",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCS와 ABS/ESC 역할 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -429,7 +440,11 @@
       "current_subject": "electrical",
       "suggested_subject": "chassis",
       "reason": "EPB 주차 브레이크 기능은 섀시/제동",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {

@@ -54,16 +54,23 @@
     "question_number": 3,
     "question": "ABS 휠 속도 센서 코드가 발생했지만 센서 자체 검사값은 규정 범위다. 다음 점검은?",
     "choices": [
-      "즉시 ABS ECU만 새것으로 교환",
-      "와이퍼 모터만 분해",
-      "엔진오일 교환 주기를 변경",
-      "센서 커넥터와 하네스 연속성·신호 경로"
+      "센서 자체 저항이 정상이라면 ECU를 무조건 교환한다",
+      "차량 배터리 단자 전압만으로 톤링 상태를 확정한다",
+      "조향각 센서 학습만으로 속도 신호 케이블을 대체한다",
+      "해당 센서 커넥터·배선 연속성과 센서 신호 경로"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r04-s03-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ABS 휠속도 DTC의 배선/신호 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q04",
@@ -98,16 +105,23 @@
     "question_number": 5,
     "question": "진단기를 차량에 연결하기 전에 작업자가 확인할 기본 조건은?",
     "choices": [
-      "차량 색상코드만 기록",
-      "진단 커넥터 상태와 차량 전원·안전 상태",
-      "에어컨 냉방온도만 최저로 설정",
-      "라디오 음량을 최대로 조정"
+      "진단기 기종만 보고 해당 차량의 DLC 손상을 무시한다",
+      "진단 커넥터·전원·접지와 정비상 안전조건을 확인한다",
+      "DLC 핀 상태를 확인하지 않고 통신오류 시 ECU부터 교환한다",
+      "배터리 저전압이 표시돼도 전원계통 확인을 생략한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r04-s03-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "스캔툴 접속 전 커넥터와 전원 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q06",
@@ -206,18 +220,25 @@
     "source_question_id": "auto-r04-s03-q10",
     "round": 4,
     "question_number": 10,
-    "question": "에어컨 고압이 높을 때 원인을 좁히려면 확인해야 할 항목의 조합은?",
+    "question": "에어컨 냉매 고압이 높고 응축기 냉각팬이 제대로 작동하지 않는다. 우선 확인할 항목은?",
     "choices": [
-      "시트 높이와 라디오 주파수",
-      "응축기 풍량과 냉매 충전 상태",
-      "유리창 틴팅 농도와 와이퍼",
-      "도어 잠금 버튼 조작감"
+      "증발기 온도센서의 표면 결빙만",
+      "응축기 통풍 상태와 냉매 충전량",
+      "공조 모드도어의 개방각만",
+      "블로워 팬 전기저항만"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r04-s03-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매 고압과 응축기 열교환능력 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q11",
@@ -252,16 +273,23 @@
     "question_number": 12,
     "question": "에어컨 고압이 높고 저압이 낮으며 냉방 성능이 떨어진다. 냉매 공급 제한 가능성을 확인할 부품은?",
     "choices": [
-      "팽창장치와 필터·배관 막힘 부위",
-      "실내 퓨즈박스 커버 색상",
-      "뒷좌석 시트 힌지",
-      "경적 릴레이"
+      "팽창밸브·리시버드라이어·냉매배관의 제한 가능성",
+      "응축기 팬풍량 과다만으로 회로의 압력 강하를 설명",
+      "냉매회로가 정상으로 순환하므로 팽창장치는 검사하지 않는다",
+      "컴프레서 압축이 전혀 없는 상태와 동일한 고·저압 형태로 해석"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r04-s03-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고압 상승·저압 하강 패턴의 냉매 공급 제한 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q13",
@@ -274,16 +302,23 @@
     "question_number": 13,
     "question": "공회전에서만 RPM이 요동치는 차량이다. 전자스로틀 제어 차량에서 우선 살펴볼 정보는?",
     "choices": [
-      "반드시 별도의 IAC 밸브가 존재한다는 전제",
-      "와이퍼 동작 시간을 측정",
-      "스로틀 개도·공회전 목표값과 흡기 누설 데이터",
-      "도어 미러 위치만 확인"
+      "모든 전자 스로틀 차량에서 별도 IAC 밸브가 필수라고 가정한다",
+      "목표 공회전/실제 RPM 비교 없이 스로틀 바디만 교환한다",
+      "스로틀 개도·공회전 목표값 및 실제 흡기유입 상태",
+      "흡기 누설 DTC가 없으면 흡기 누설은 없다고 확정한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r04-s03-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자 스로틀 공회전 문제의 복합 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q14",
@@ -406,16 +441,23 @@
     "question_number": 19,
     "question": "전동시트가 앞뒤로 움직이지 않는다. 부품 교환을 결정하기 전 적절한 검사는?",
     "choices": [
-      "시트 트랙만 일괄 교환한다",
-      "헤드레스트 높이로 고장 원인을 판정한다",
-      "모터 구동 명령·전압과 시트 트랙·케이블의 걸림 검사",
-      "모터가 정상이어도 항상 배선을 제거한다"
+      "모터 전원 확인 없이 시트 레일만 교환한다",
+      "시트 위치센서 값만으로 기계 걸림을 확정한다",
+      "모터 전원·명령과 시트 트랙·케이블의 저항·걸림",
+      "모터가 움직이지 않으면 배선을 임의로 절단해 분리한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r04-s03-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "파워시트 진단의 전기와 기계 결합",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q20",
@@ -428,15 +470,22 @@
     "question_number": 20,
     "question": "파워 시트의 전동 기능이 모두 작동하지 않을 때 초동 검사로 적합한 것은?",
     "choices": [
-      "모든 시트 모터에 직결 전원을 임의 인가",
-      "해당 퓨즈와 전원·접지 공급 상태 확인",
-      "시트 레일을 윤활하기 전에 ECU 무조건 교환",
-      "시트 쿠션 스펀지 교환"
+      "시트의 앞뒤 이동모터 하나만 교환한다",
+      "파워시트 전원퓨즈·공통 전원·접지부터 확인한다",
+      "레일 구동 케이블만 윤활하고 전원점검을 끝낸다",
+      "시트 위치센서의 캘리브레이션만 수행한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r04-s03-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전동시트 전체 불량 시 공통 전원 우선",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

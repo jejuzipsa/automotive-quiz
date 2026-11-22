@@ -89,7 +89,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "EPB 브레이크 캘리퍼 패드 정비는 섀시 제동계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -149,7 +153,7 @@
     "question_id": "auto-made-r04-s04-q09",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "제조사 기준에 따른 모듈 상태·전압 균형 및 조립 검증",
+    "correct_choice": "규정 절차에 따른 모듈 전압 균형·상태와 조립 확인",
     "reason": "모듈의 전압과 상태 편차가 크면 팩 내부 불균형과 제어 불량이 생길 수 있다. 단순 단자 전압만이 아니라 매뉴얼의 조립·절연·BMS 진단을 수행한다.",
     "key_point": "배터리 모듈 교체 후 균형·BMS·절연 확인.",
     "source_question_id": "auto-r04-s04-q09",
@@ -158,7 +162,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "구동배터리 모듈 균형과 다른 전원회로 점검 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s04-q10",
@@ -182,7 +193,7 @@
     "question_id": "auto-made-r04-s04-q11",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "해당 차종의 코딩·학습·냉각계 점검 등 교환 절차",
+    "correct_choice": "제작사 규정의 코딩·학습 및 관련 냉각계/회로 점검",
     "reason": "차량 통합제어기 교체는 부품 번호·차종에 따라 코딩, 냉각 회로, 학습 절차가 다르다. 하나의 보정작업이 모든 차종에 의무라고 단정하지 않는다.",
     "key_point": "제어기 교체 후 필요한 학습은 차종별로 확인.",
     "source_question_id": "auto-r04-s04-q11",
@@ -192,7 +203,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "제어기 교환 후 차종별 절차",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s04-q12",
@@ -215,7 +233,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "토크컨버터 스톨 상태 정의는 변속계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -238,7 +260,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "ATF 레벨 점검은 변속계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -262,7 +288,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "SRS 에어백 작동·교체 기준은 안전 전장",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -286,7 +316,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "SRS 점화회로 DTC와 안전 진단은 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -294,7 +328,7 @@
     "question_id": "auto-made-r04-s04-q16",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "수소 탱크 온도와 충전소 공급 압력",
+    "correct_choice": "수소탱크 온도와 충전소 공급압력·충전 프로토콜",
     "reason": "수소 충전은 탱크 온도 상승, 압력과 충전 프로토콜에 따라 속도가 조절된다. 타이어 공기압은 충전 흐름을 직접 제어하는 요소가 아니다.",
     "key_point": "수소 충전: 탱크 온도와 공급 압력.",
     "source_question_id": "auto-r04-s04-q16",
@@ -303,7 +337,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "수소 충전 온도·압력·프로토콜 적용",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s04-q17",

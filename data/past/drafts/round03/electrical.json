@@ -162,18 +162,25 @@
     "source_question_id": "auto-r03-s03-q08",
     "round": 3,
     "question_number": 8,
-    "question": "브레이크 제어부품을 교환해 ABS 계통을 열었다. 수리 후 점검해야 할 항목은?",
+    "question": "ABS 유압 조절기 교환으로 브레이크 유압회로를 개방했다. 수리 완료를 위해 적절한 검사는?",
     "choices": [
-      "실내등 밝기만",
-      "정비 절차에 따른 제동 유압·에어 제거 및 경고·기능 검사",
-      "타이어 브랜드만",
-      "배기관 직경만"
+      "경고 코드만 삭제하고 공기빼기는 생략한다",
+      "지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다",
+      "브레이크액 레벨이 정상이라면 회로 공기 여부는 확인하지 않는다",
+      "ABS 전원만 차단한 채 유압기능 검사는 생략한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s03-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압회로 개방 후 에어빼기와 기능 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q09",
@@ -186,16 +193,23 @@
     "question_number": 9,
     "question": "TCS 작동으로 바퀴의 과도한 헛돎이 줄었다. 가능한 제어 방식은?",
     "choices": [
-      "타이어 재질을 순간적으로 변화",
-      "차량 와이퍼를 고속 구동",
-      "엔진 냉각수를 배기구로 분사",
-      "엔진 또는 모터 구동토크를 줄이거나 제동을 개별 제어"
+      "차동기어의 고정 종감속비를 주행 중 변경한다",
+      "차체 조향각 센서 영점만 변경한다",
+      "구동륜 슬립과 무관하게 냉각팬을 최대 회전시킨다",
+      "구동토크를 줄이거나 해당 바퀴 제동력을 조절한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r03-s03-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCS 실제 제어 수단과 unrelated electrical controls 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q10",
@@ -208,16 +222,23 @@
     "question_number": 10,
     "question": "ECU 리셋 직후 특정 센서의 영점보정이 필요한지 판단하는 방법은?",
     "choices": [
-      "모든 센서를 항상 삭제한다",
-      "전원만 켜면 언제나 자동으로 완성된다",
-      "차량별 작업 절차에서 필요한 보정·초기화 항목을 확인한다",
-      "라디오 수신 주파수로 센서를 보정한다"
+      "ECU 리셋 뒤 모든 센서의 학습정보를 수동으로 지운다",
+      "전원 복원만 되면 모든 차량의 센서 캘리브레이션이 동일하게 끝난다",
+      "제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인",
+      "작업 내용과 무관하게 모든 ECU 소프트웨어를 다시 기록한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s03-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차량별 보정·학습 필요성 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q11",
@@ -294,12 +315,12 @@
     "source_question_id": "auto-r03-s03-q14",
     "round": 3,
     "question_number": 14,
-    "question": "사용한 엔진오일의 마모 금속 성분을 정량적으로 확인하려 한다. 적절한 분석 방법은?",
+    "question": "사용 엔진오일에서 철·구리 등 마모 금속 원소의 농도를 정량 분석하려 한다. 가장 적합한 방법은?",
     "choices": [
-      "유리창 두께 측정",
-      "타이어 온도 측정",
-      "시료 채취 후 적합한 실험실 오일 분석",
-      "라디오 음량 측정"
+      "동점도 측정만으로 철·구리 농도를 계산한다",
+      "FTIR 스펙트럼으로 금속 원소 농도만 직접 측정한다",
+      "시료를 실험실에서 ICP 계열 원소분석법으로 분석한다",
+      "입자계수만으로 개별 금속의 원소 농도를 확정한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s03-q14",
@@ -311,7 +332,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "사용 엔진오일 마모분석은 엔진 윤활계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "금속 원소 농도와 점도·FTIR·입자수 측정을 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -323,18 +355,25 @@
     "source_question_id": "auto-r03-s03-q15",
     "round": 3,
     "question_number": 15,
-    "question": "공조 모터의 PWM 제어회로를 진단한다. 측정할 핵심 전기적 특성은?",
+    "question": "공조 블로워 PWM 제어 회로에서 오실로스코프로 확인할 주요 신호 특성은?",
     "choices": [
-      "신호 주파수·듀티비·전원전압",
-      "스피커 재생 음역대만",
-      "배기관 배압만",
-      "타이어 지름만"
+      "PWM 주파수·듀티비 및 신호 전압 레벨",
+      "모터 코일의 DC 저항값만",
+      "부하 전류 평균값만 측정하고 파형은 무시",
+      "센서 커넥터의 물리적 단자수만"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s03-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "PWM 파형 속성인 주파수·듀티와 다른 계측치 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q16",
@@ -347,16 +386,23 @@
     "question_number": 16,
     "question": "냉매 충전량은 적정하지만 에어컨 냉방이 약하다. 추가 진단으로 적절한 것은?",
     "choices": [
-      "냉매가 맞으면 무조건 정상",
-      "압축기 작동·냉매 압력/온도·콘덴서 냉각 및 풍량을 확인",
-      "타이어 위치만 교환",
-      "오디오 스피커를 교체"
+      "냉매량만 맞으면 컴프레서 성능은 정상이다",
+      "압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다",
+      "냉매량이 맞으므로 팽창밸브는 점검하지 않는다",
+      "냉방 저하 시 압력 측정 없이 냉매를 추가한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s03-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매량과 열교환·압축·송풍 점검 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q17",
@@ -413,16 +459,23 @@
     "question_number": 19,
     "question": "정속주행 제어가 설정되지 않고 계기판 차속도 불안정하다. 연관 점검 대상으로 적합한 것은?",
     "choices": [
-      "차량 속도 신호 및 관련 DTC·배선",
-      "냉각수 색깔만",
-      "와이퍼 고무만",
-      "오일 필터 교체일만"
+      "차속 입력과 관련 DTC·배선·제어 신호를 확인한다",
+      "차속 계기판이 흔들리면 크루즈 모듈을 무조건 교환한다",
+      "브레이크 스위치가 정상이라면 차속 값은 확인할 필요가 없다",
+      "ACC 감지 센서만 교환하고 휠속도 신호는 생략한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s03-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차속 불안정 증상과 직접 관련된 입력",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q20",

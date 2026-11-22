@@ -80,7 +80,7 @@
     "question_id": "auto-made-r02-s04-q06",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "해당 측정 지점이 규정 무전압 조건을 충족하는지",
+    "correct_choice": "지정 측정 지점이 규정 무전압 조건인지 적합한 계측 절차로 확인한다",
     "reason": "고전압 차단만으로 커패시터 등에 에너지가 없다고 확정할 수 없다. 적정 계측기·PPE·작업자 자격 하에서 지정 절차로 회로 무전압을 확인한다.",
     "key_point": "차단 후에는 무전압 확인으로 안전을 검증한다.",
     "source_question_id": "auto-r02-s04-q06",
@@ -89,42 +89,63 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고전압 분리 후 무전압 확인 의무를 식별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q07",
     "question_id": "auto-made-r02-s04-q07",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "셀 전압·온도·전류 등을 감시하고 충·방전 한계를 관리",
+    "correct_choice": "셀 전압·온도·전류를 감시하고 충전·방전 한계를 관리한다",
     "reason": "BMS는 셀 상태를 감시하고 SOC·SOH 추정, 보호 기능, 밸런싱 등 배터리의 안전과 성능을 관리한다. 내연기관의 배기가스 제어장치와는 다르다.",
     "key_point": "BMS는 배터리 상태 감시·보호·균형제어를 담당한다.",
     "source_question_id": "auto-r02-s04-q07",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "BMS 셀 안전감시/충방전 제한과 타 제어기 기능 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q08",
     "question_id": "auto-made-r02-s04-q08",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "배터리 열관리 시스템(TMS)",
+    "correct_choice": "구동배터리 열관리 시스템(TMS)",
     "reason": "배터리 TMS는 냉각수 루프·냉매 등 차량 구조에 맞는 방법으로 팩 온도를 관리한다. 과열 시 출력제한이 걸릴 수 있으므로 냉각 경로와 센서값을 확인한다.",
     "key_point": "TMS는 배터리 열을 관리하여 성능과 안전을 지킨다.",
     "source_question_id": "auto-r02-s04-q08",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "배터리 열제어 장치와 보조 차량제어 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q09",
     "question_id": "auto-made-r02-s04-q09",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "규정 조건에서 작동하는 압력·온도 방출 안전장치",
+    "correct_choice": "설정 조건에서 방출되는 압력·온도 안전장치",
     "reason": "고압 수소용기는 규격에 맞는 안전방출장치(PRD/TPRD 등)를 사용한다. 충전 압력 조절과 안전 방출은 서로 다른 목적이며 장치가 임의로 열리도록 조작해서는 안 된다.",
     "key_point": "수소 저장계 안전 방출장치와 충전압 제어는 구분한다.",
     "source_question_id": "auto-r02-s04-q09",
@@ -133,7 +154,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "가스센서/변환기와 PRD·TPRD 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q10",
@@ -200,7 +228,7 @@
     "question_id": "auto-made-r02-s04-q14",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "BMS 데이터·전압/전류/온도 이력과 규정된 성능시험",
+    "correct_choice": "BMS 데이터와 규정된 충방전 용량 시험 결과",
     "reason": "배터리의 용량과 건전성은 SOC·SOH 관련 데이터와 정비 규격을 종합해야 한다. 타이어 공기압은 차량 효율에는 영향을 줄 수 있으나 팩 성능 검사 자체는 아니다.",
     "key_point": "배터리 성능은 전기·열적 상태와 정해진 시험으로 평가한다.",
     "source_question_id": "auto-r02-s04-q14",
@@ -209,7 +237,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "용량 평가 자료와 전압·절연·퓨즈 등 한계 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q15",
@@ -248,14 +283,21 @@
     "question_id": "auto-made-r02-s04-q17",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "모터 토크와 회전속도를 위한 전기 구동",
+    "correct_choice": "구동모터의 요구 토크·회전속도에 맞게 전력 구동",
     "reason": "인버터/모터 제어기는 전기 입력의 크기와 위상 등을 관리해 토크를 발생시키고 회전 상태를 제어한다. 타이어 공기압은 TPMS나 정비 장비 영역이다.",
     "key_point": "모터 제어는 토크·속도에 대응하는 전기구동 제어다.",
     "source_question_id": "auto-r02-s04-q17",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "구동모터 제어기와 주변 보조시스템 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r02-s04-q18",

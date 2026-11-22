@@ -122,7 +122,7 @@
     "question_id": "auto-made-r06-s03-q08",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "고·저압 냉매 압력과 압력센서·보호제어 상태",
+    "correct_choice": "고·저압 냉매 압력과 압력센서·보호제어 상태를 확인한다",
     "reason": "컴프레서는 냉매 압력과 증발기 온도·요청 신호에 의해 제어될 수 있다. 압력이 낮거나 높으면 보호제어로 반복 ON/OFF가 발생할 수 있다.",
     "key_point": "컴프레서 단속 → 냉매 압력·센서·제어 명령.",
     "source_question_id": "auto-r06-s03-q08",
@@ -132,7 +132,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "압력·보호제어 자료 확인 및 위험한 강제조작 배제",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s03-q09",
@@ -224,7 +231,11 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "가솔린 엔진 공회전 높음 진단",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -271,7 +282,7 @@
     "question_id": "auto-made-r06-s03-q16",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "슬라이드 레일 기계 저항과 위치 학습 상태",
+    "correct_choice": "슬라이드 레일 기계저항과 위치 학습 상태를 확인한다",
     "reason": "선루프 기능 일부만 불량일 때는 기계적 간섭과 제한 위치 학습/구동 회로를 구별해야 한다. 제조사 초기화가 필요할 수 있다.",
     "key_point": "선루프 일부 기능 불량 → 레일·스위치·초기화 점검.",
     "source_question_id": "auto-r06-s03-q16",
@@ -281,7 +292,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "선루프 슬라이드 기계·학습 검토",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s03-q17",

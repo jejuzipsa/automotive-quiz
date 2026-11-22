@@ -142,16 +142,23 @@
     "question_number": 7,
     "question": "구동 배터리 냉각수 온도가 높고 펌프 운전 명령은 정상이다. 직접 점검할 항목은?",
     "choices": [
-      "스티어링 휠 가죽 품질",
-      "냉각수 흐름·펌프 실제 유량과 공기 포집",
-      "엔진오일 점도만",
-      "리어 와이퍼 속도만"
+      "충전커넥터 잠금만 반복 조작해 냉각수 순환을 확인한다",
+      "냉각수 흐름·펌프 실제 유량과 에어 포집을 점검한다",
+      "BMS에 펌프 명령이 보이면 실제 유량 검사는 불필요하다",
+      "냉각수 온도가 높으면 펌프 구동회로를 무조건 교환한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r09-s04-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "펌프 명령/실제 유량 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q08",
@@ -208,16 +215,23 @@
     "question_number": 10,
     "question": "하이브리드차 전기 구동이 중단되고 인버터 고장 코드가 있다. 우선 확인할 것들은?",
     "choices": [
-      "오디오 볼륨 단계만",
-      "차량 타이어 제조국만",
-      "DC 링크 전압·인버터 온도·게이트 제어 상태",
-      "엔진 배기관 도색만"
+      "구동 배터리 SOC 표시만으로 인버터 전력반도체 상태를 확정한다",
+      "전동 구동모터의 명판 정격만 읽고 고장코드를 무시한다",
+      "DC 링크 전압·인버터 온도·게이트 제어와 관련 DTC",
+      "12V 배터리 충전전압만 정상인지 확인하고 검사를 끝낸다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r09-s04-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인버터 DTC와 전력단 상태를 직접 비교",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q11",
@@ -362,16 +376,23 @@
     "question_number": 17,
     "question": "충전 커넥터가 연결됐는데 충전 시작 통신이 성립하지 않는다. 확인할 신호는?",
     "choices": [
-      "차체 라디오 주파수만",
-      "엔진오일의 동점도만",
-      "차량과 충전기 사이 제어 파일럿·통신과 잠금 상태",
-      "타이어 너트 체결 토크만"
+      "충전포트가 꽂혔다는 사실만으로 통신을 정상 판정한다",
+      "충전기 출력 정격만 비교하고 차량 메시지는 무시한다",
+      "제어 파일럿·통신 교환·커넥터 잠금 상태를 확인한다",
+      "고전압 배터리의 SOC 표시만으로 제어파일럿을 대체한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r09-s04-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EVSE와 차량 사이 핸드셰이크 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q18",
@@ -443,7 +464,11 @@
       "current_subject": "eco",
       "suggested_subject": "engine",
       "reason": "디젤 SCR 요소수 후처리",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

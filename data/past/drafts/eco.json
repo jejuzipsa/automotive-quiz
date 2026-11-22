@@ -166,16 +166,23 @@
     "question_number": 8,
     "question": "전기차에서 구동계통 이상이 발생했다. 차량 제어 정보를 확인하기 위해 사용하는 진단 방법은?",
     "choices": [
-      "차량에 맞는 진단기로 관련 ECU의 DTC 및 데이터 확인",
-      "엔진오일 색만 확인",
-      "카펫 마모도 측정",
-      "번호판의 반사도 측정"
+      "차량 전용 진단기로 구동 ECU의 DTC와 실시간 데이터를 확인",
+      "차종별 고전압 전기배선 색상만 확인해 고장부품을 결정",
+      "충전 완료시점의 주행가능 거리만으로 구동 ECU 오류를 확정",
+      "구동모터의 외관 상태만 보고 인버터 상태를 정상으로 판정"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r01-s04-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전동구동 ECU DTC와 데이터 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s04-q09",
@@ -277,16 +284,23 @@
     "question_number": 13,
     "question": "고전압 배터리의 충전 제한이 발생했다. 원인으로 직접 검토할 수 있는 항목은?",
     "choices": [
-      "엔진오일 레벨만 확인",
-      "BMS 고장코드와 셀 온도·전압 상태",
-      "도어 손잡이 도장 상태",
-      "와이퍼 고무 상태"
+      "배터리 케이스 외관색과 충전포트 재질",
+      "BMS 고장코드·셀 전압과 온도 편차·충전제한 명령",
+      "실내 공조 블로워의 전력소비량만",
+      "타이어 공기압 경고센서의 통신코드만"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r01-s04-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "배터리 팩 충전제한 판단 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s04-q14",
@@ -404,7 +418,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "AEB 센서·자동제동/ADAS은 전기전자 장치",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -433,7 +451,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "차체 제어 모듈 BCM 기능은 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {

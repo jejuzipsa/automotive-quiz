@@ -54,16 +54,23 @@
     "question_number": 3,
     "question": "하이브리드 구동모터 교환 시 안전 절차에 직접 포함될 가능성이 가장 큰 것은?",
     "choices": [
-      "에어컨 필터 향 교환",
-      "고전압 회로 분리·무전압 확인과 냉각·기계연결 해체",
-      "스피커 재생대역 측정",
-      "브레이크 패드 두께를 무조건 0으로 조정"
+      "구동모터 기계결합만 풀고 전원확인은 생략한다",
+      "고전압 회로 차단·무전압 확인과 냉각/기계 분리 절차",
+      "인버터 모듈 온도가 낮으면 고전압 차단을 생략한다",
+      "서비스 플러그 제거만으로 모든 회로가 즉시 0V임을 가정한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s04-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고전압 정비단계 및 위험한 무전압 추정 배제",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q04",
@@ -98,16 +105,23 @@
     "question_number": 5,
     "question": "배터리 전기차의 구동 총괄 ECU가 담당할 수 있는 기능은?",
     "choices": [
-      "엔진 EGR 밸브의 기계적 교환",
-      "실내 오디오 음원 추천만",
-      "구동모터 요구토크·인버터·배터리 상태 협조 제어",
-      "타이어 공기압 직접 생산"
+      "12V 보조배터리 충전 제한만 제어한다",
+      "전용 냉각펌프의 기계식 베어링만 제어한다",
+      "운전자 요구토크·인버터·구동배터리 상태의 협조제어",
+      "공조 장치의 자동 풍향 제어만 수행한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r03-s04-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "상위 EV 구동 제어기 EVCU 역할 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q06",
@@ -186,16 +200,23 @@
     "question_number": 9,
     "question": "수소연료전지차의 누설 감시 시스템에 사용되는 센서 유형은?",
     "choices": [
-      "수소에 반응하도록 설계된 가스 검지 센서",
-      "타이어 마모 센서",
-      "냉각팬 속도 센서만",
-      "오디오 볼륨 센서"
+      "수소 가스의 존재를 감지하도록 설계된 전용 가스센서",
+      "연료전지 냉각수의 전도도 센서",
+      "수소탱크 압력만 측정하는 압력센서",
+      "흡입 공기유량만 측정하는 MAF 센서"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r03-s04-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "수소 누설 농도 검출과 압력·유량 검출 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q10",
@@ -399,7 +420,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "카메라 기반 LKA는 ADAS 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -413,16 +438,23 @@
     "question_number": 19,
     "question": "EVCU와 인버터 간 제어 신호가 끊기면 나타날 수 있는 결과는?",
     "choices": [
-      "차량 유리 색상이 변경된다",
-      "모터 구동토크 지령이 정상 수행되지 않아 출력 제한이 발생할 수 있다",
-      "오디오가 반드시 고장난다",
-      "타이어 공기압이 항상 2배가 된다"
+      "구동모터 토크명령과 관계없이 충전포트 잠금만 해제",
+      "구동토크 지령 전달이 차단돼 구동출력이 제한될 수 있다",
+      "모터 제어통신이 끊겨도 인버터는 항상 동일한 토크를 발생",
+      "제어신호가 없어도 구동계 오류코드는 저장되지 않는다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r03-s04-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EVCU와 인버터 지령단절 영향",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q20",

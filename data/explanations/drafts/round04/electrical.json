@@ -36,7 +36,7 @@
     "question_id": "auto-made-r04-s03-q03",
     "subject": "electrical",
     "correct_answer": 4,
-    "correct_choice": "센서 커넥터와 하네스 연속성·신호 경로",
+    "correct_choice": "해당 센서 커넥터·배선 연속성과 센서 신호 경로",
     "reason": "센서 자체가 정상이어도 연결 배선·톤휠·전원·접지 불량이면 ECU에는 신호가 전달되지 않는다. 센서 방식에 맞는 검사법을 적용한다.",
     "key_point": "센서 정상 ≠ 하네스와 신호경로 정상.",
     "source_question_id": "auto-r04-s03-q03",
@@ -46,7 +46,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ABS 휠속도 DTC의 배선/신호 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q04",
@@ -70,7 +77,7 @@
     "question_id": "auto-made-r04-s03-q05",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "진단 커넥터 상태와 차량 전원·안전 상태",
+    "correct_choice": "진단 커넥터·전원·접지와 정비상 안전조건을 확인한다",
     "reason": "진단 장비를 연결하기 전 배터리 전압과 진단 커넥터 손상, 차량이 안전하게 고정됐는지 등을 확인하면 잘못된 통신 오류와 사고를 줄일 수 있다.",
     "key_point": "스캔 연결 전: 전원·커넥터·차량 안전.",
     "source_question_id": "auto-r04-s03-q05",
@@ -79,7 +86,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "스캔툴 접속 전 커넥터와 전원 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q06",
@@ -153,7 +167,7 @@
     "question_id": "auto-made-r04-s03-q10",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "응축기 풍량과 냉매 충전 상태",
+    "correct_choice": "응축기 통풍 상태와 냉매 충전량",
     "reason": "응축기 냉각 부족은 고압 상승을 만들 수 있고 과충전·비응축가스도 영향을 준다. 컴프레서 성능 저하일 때는 압력차가 줄 수도 있다.",
     "key_point": "고압 상승 진단은 열교환·냉매량·운전 조건.",
     "source_question_id": "auto-r04-s03-q10",
@@ -163,7 +177,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매 고압과 응축기 열교환능력 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q11",
@@ -187,21 +208,28 @@
     "question_id": "auto-made-r04-s03-q12",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "팽창장치와 필터·배관 막힘 부위",
+    "correct_choice": "팽창밸브·리시버드라이어·냉매배관의 제한 가능성",
     "reason": "팽창밸브 또는 유로 막힘은 저압측으로 공급되는 냉매를 제한한다. 단, 압력 조합은 차종·온도·운전 조건을 함께 고려해 진단한다.",
     "key_point": "고압상승+저압저하 조건에서 유로 제한 확인.",
     "source_question_id": "auto-r04-s03-q12",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고압 상승·저압 하강 패턴의 냉매 공급 제한 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q13",
     "question_id": "auto-made-r04-s03-q13",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "스로틀 개도·공회전 목표값과 흡기 누설 데이터",
+    "correct_choice": "스로틀 개도·공회전 목표값 및 실제 흡기유입 상태",
     "reason": "전자스로틀 차량은 ECU가 스로틀 개도를 제어해 공회전을 유지할 수 있다. 모든 차종에 별도 공회전 제어밸브가 있는 것은 아니다.",
     "key_point": "공회전 불량 진단은 스로틀 제어 방식 확인.",
     "source_question_id": "auto-r04-s03-q13",
@@ -211,7 +239,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자 스로틀 공회전 문제의 복합 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q14",
@@ -299,7 +334,7 @@
     "question_id": "auto-made-r04-s03-q19",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "모터 구동 명령·전압과 시트 트랙·케이블의 걸림 검사",
+    "correct_choice": "모터 전원·명령과 시트 트랙·케이블의 저항·걸림",
     "reason": "전동시트 슬라이드 장애는 전원·스위치·모터·트랙·케이블 등 여러 요소에서 생긴다. 각 부분을 확인한 뒤 실제 결함 부품을 선택한다.",
     "key_point": "전동시트는 전기·기계 구동계 모두 진단.",
     "source_question_id": "auto-r04-s03-q19",
@@ -309,14 +344,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "파워시트 진단의 전기와 기계 결합",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r04-s03-q20",
     "question_id": "auto-made-r04-s03-q20",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "해당 퓨즈와 전원·접지 공급 상태 확인",
+    "correct_choice": "파워시트 전원퓨즈·공통 전원·접지부터 확인한다",
     "reason": "여러 기능이 동시에 멈추면 공통 전원 경로를 먼저 확인하는 것이 효율적이다. 퓨즈가 정상이라도 릴레이·스위치·접지와 제어기의 상태를 검사한다.",
     "key_point": "공통 전기 기능 고장 → 퓨즈·전원·접지 우선.",
     "source_question_id": "auto-r04-s03-q20",
@@ -325,6 +367,13 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전동시트 전체 불량 시 공통 전원 우선",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

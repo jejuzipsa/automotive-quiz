@@ -207,7 +207,7 @@
     "question_id": "auto-made-r05-s03-q13",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "MAF 측정값과 목표 공기량·과급압력",
+    "correct_choice": "MAF 실측값과 목표 공기량·과급압력",
     "reason": "흡기량 부족과 센서 오차는 공기-연료비를 악화해 매연과 출력 부족을 일으킬 수 있다. MAF 값은 EGR·과급·배선과 함께 검증한다.",
     "key_point": "디젤 매연/출력 저하 → MAF·부스트·흡기 검사.",
     "source_question_id": "auto-r05-s03-q13",
@@ -223,7 +223,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "디젤 매연·흡기량 제어는 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "공기량/과급 데이터와 다른 진단 데이터를 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -296,7 +307,7 @@
     "question_id": "auto-made-r05-s03-q18",
     "subject": "electrical",
     "correct_answer": 4,
-    "correct_choice": "공통 잠금 명령·배선 분기와 다른 도어 구동전원 확인",
+    "correct_choice": "공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다",
     "reason": "여러 도어가 동시에 반응하지 않으면 제어기 출력과 공통 회로가 원인일 수 있다. 각 도어별 액추에이터도 확인해 범위를 좁혀야 한다.",
     "key_point": "여러 도어 불량 → 공통 제어·전원 경로 점검.",
     "source_question_id": "auto-r05-s03-q18",
@@ -306,14 +317,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "다수 도어 동시불량의 공통회로 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s03-q19",
     "question_id": "auto-made-r05-s03-q19",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "가이드 레일과 구동 케이블 오염·변형",
+    "correct_choice": "가이드 레일·구동 케이블의 오염·손상과 마찰",
     "reason": "선루프 레일에 이물이나 윤활 불량, 케이블 손상이 있으면 저항과 소음이 증가한다. 장애물을 제거하고 지정 윤활·조정 절차를 따른다.",
     "key_point": "선루프 거친 움직임 → 레일·케이블·윤활.",
     "source_question_id": "auto-r05-s03-q19",
@@ -322,7 +340,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "선루프 개폐 기계소음의 직접 요소",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s03-q20",

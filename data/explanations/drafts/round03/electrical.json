@@ -110,7 +110,7 @@
     "question_id": "auto-made-r03-s03-q08",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "정비 절차에 따른 제동 유압·에어 제거 및 경고·기능 검사",
+    "correct_choice": "지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다",
     "reason": "유압계통을 열었다면 공기빼기와 누설 검사가 중요하다. 차종에 따라 진단기로 ABS 모듈을 작동시키는 절차가 필요할 수 있다.",
     "key_point": "브레이크 정비 후 유압·누설·기능을 확인한다.",
     "source_question_id": "auto-r03-s03-q08",
@@ -119,14 +119,21 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압회로 개방 후 에어빼기와 기능 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q09",
     "question_id": "auto-made-r03-s03-q09",
     "subject": "electrical",
     "correct_answer": 4,
-    "correct_choice": "엔진 또는 모터 구동토크를 줄이거나 제동을 개별 제어",
+    "correct_choice": "구동토크를 줄이거나 해당 바퀴 제동력을 조절한다",
     "reason": "TCS는 구동 바퀴의 슬립을 억제하기 위해 엔진·모터 토크와 제동을 활용할 수 있다. 모든 차량에서 연료분사만 줄이는 것으로 설명하면 부족하다.",
     "key_point": "TCS는 구동토크·제동 제어로 헛돎을 억제한다.",
     "source_question_id": "auto-r03-s03-q09",
@@ -135,21 +142,35 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCS 실제 제어 수단과 unrelated electrical controls 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q10",
     "question_id": "auto-made-r03-s03-q10",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "차량별 작업 절차에서 필요한 보정·초기화 항목을 확인한다",
+    "correct_choice": "제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인",
     "reason": "ECU 리셋 후 스로틀·조향각 등 학습 또는 보정 절차가 요구될 수 있다. 차종과 교체 작업 여부에 따라 다르므로 제조사 기준을 확인한다.",
     "key_point": "ECU 초기화 이후 학습·보정은 차량별로 다르다.",
     "source_question_id": "auto-r03-s03-q10",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차량별 보정·학습 필요성 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q11",
@@ -200,7 +221,7 @@
     "question_id": "auto-made-r03-s03-q14",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "시료 채취 후 적합한 실험실 오일 분석",
+    "correct_choice": "시료를 실험실에서 ICP 계열 원소분석법으로 분석한다",
     "reason": "오일 분석은 오염·마모 금속·점도 등 상태를 파악하는 데 도움을 준다. 일반적인 주유소 시각검사만으로 모든 물성이나 마모 정도를 판단할 수는 없다.",
     "key_point": "정밀 오일 상태 확인에는 시료 분석이 유용하다.",
     "source_question_id": "auto-r03-s03-q14",
@@ -213,7 +234,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "사용 엔진오일 마모분석은 엔진 윤활계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "금속 원소 농도와 점도·FTIR·입자수 측정을 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -221,21 +253,28 @@
     "question_id": "auto-made-r03-s03-q15",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "신호 주파수·듀티비·전원전압",
+    "correct_choice": "PWM 주파수·듀티비 및 신호 전압 레벨",
     "reason": "PWM 제어는 펄스의 주파수와 듀티비에 따라 모터 구동을 조절할 수 있다. 공조 제어회로에서는 해당 전기 신호를 기준 파형과 비교한다.",
     "key_point": "PWM 공조 제어 진단은 주파수·듀티비를 본다.",
     "source_question_id": "auto-r03-s03-q15",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "PWM 파형 속성인 주파수·듀티와 다른 계측치 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q16",
     "question_id": "auto-made-r03-s03-q16",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "압축기 작동·냉매 압력/온도·콘덴서 냉각 및 풍량을 확인",
+    "correct_choice": "압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다",
     "reason": "냉방 성능은 압축기, 열교환기, 팽창장치, 송풍과 공조 제어에 영향을 받는다. 냉매량이 적정하다는 이유만으로 다른 이상을 배제할 수 없다.",
     "key_point": "에어컨 성능은 압축·열교환·송풍을 종합 점검한다.",
     "source_question_id": "auto-r03-s03-q16",
@@ -244,7 +283,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매량과 열교환·압축·송풍 점검 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q17",
@@ -279,7 +325,7 @@
     "question_id": "auto-made-r03-s03-q19",
     "subject": "electrical",
     "correct_answer": 1,
-    "correct_choice": "차량 속도 신호 및 관련 DTC·배선",
+    "correct_choice": "차속 입력과 관련 DTC·배선·제어 신호를 확인한다",
     "reason": "크루즈 컨트롤은 차속 정보가 필요하지만 작동 조건에는 브레이크 스위치 등 여러 요소도 관계한다. 차속 데이터 불량이 확인된다면 해당 센서와 회로를 점검한다.",
     "key_point": "정속제어는 정상적인 차량속도 신호를 필요로 한다.",
     "source_question_id": "auto-r03-s03-q19",
@@ -288,7 +334,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차속 불안정 증상과 직접 관련된 입력",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s03-q20",

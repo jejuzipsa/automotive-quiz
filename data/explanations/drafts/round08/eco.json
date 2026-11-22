@@ -290,14 +290,21 @@
     "question_id": "auto-made-r08-s04-q19",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "운전자 요구토크·배터리 SOC·차량 주행 조건",
+    "correct_choice": "운전자 요구토크·배터리 SOC와 주행 상황을 종합한다",
     "reason": "하이브리드 파워매니지먼트는 차량 속도·운전자 요구, 배터리 충전 상태와 엔진 효율을 고려해 출력을 배분한다.",
     "key_point": "하이브리드 전력 분배 = 요구토크·SOC·주행조건.",
     "source_question_id": "auto-r08-s04-q19",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "HEV 에너지관리 입력 정보",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s04-q20",
@@ -320,7 +327,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "전자식 주차브레이크 EPB는 섀시 제동",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

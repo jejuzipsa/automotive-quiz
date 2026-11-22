@@ -199,21 +199,28 @@
     "question_id": "auto-made-r01-s03-q13",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "자외선 조사로 형광제 흔적을 확인한다",
+    "correct_choice": "정비용 자외선 광원으로 형광제 흔적을 관찰한다",
     "reason": "승인된 형광제가 냉매와 함께 순환하다 누출 부위에 남으면 적절한 UV 광원으로 확인할 수 있다. 냉매별 적합성·안전 절차를 지켜야 하며 모든 누설이 이 방식 하나로 발견되지는 않는다.",
     "key_point": "형광제 기반 냉매 누설 검사는 UV 광원을 사용한다.",
     "source_question_id": "auto-r01-s03-q13",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "형광 추적제와 자외선 관찰의 대응",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q14",
     "question_id": "auto-made-r01-s03-q14",
     "subject": "electrical",
     "correct_answer": 4,
-    "correct_choice": "연료 분사 제어·인젝터 계통",
+    "correct_choice": "연료분사 보정량·레일 압력과 인젝터 제어계통",
     "reason": "연료 분사 이상은 연료 소모와 엔진 성능에 영향을 줄 수 있다. 분사 보정량, 연료압, 인젝터 상태 등을 규격에 맞춰 점검한다.",
     "key_point": "분사량·연료압 이상은 연비와 관련이 있다.",
     "source_question_id": "auto-r01-s03-q14",
@@ -226,7 +233,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "연료분사 인젝터·분사 보정은 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "연비 악화·분사 보정량의 직접 원인자료",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -248,28 +266,42 @@
     "question_id": "auto-made-r01-s03-q16",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "냉매 압력·컴프레서 구동 상태·팬 작동과 공기 흐름을 점검한다",
+    "correct_choice": "냉매 압력·압축기 구동 및 응축기 팬/풍량을 확인한다",
     "reason": "냉방 성능 저하는 냉매량·압축기·응축기 냉각·캐빈 필터 등 다양한 원인으로 발생한다. 안전 규정을 준수하면서 압력과 작동 조건을 비교해 고장을 좁힌다.",
     "key_point": "냉방 불량은 단일 부품 고장이 아닌 계통 진단이 필요하다.",
     "source_question_id": "auto-r01-s03-q16",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉방 약화와 압축기 교체 전 검증",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q17",
     "question_id": "auto-made-r01-s03-q17",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "파워윈도우 회로 퓨즈",
+    "correct_choice": "파워윈도우 회로의 지정 퓨즈",
     "reason": "퓨즈가 끊어지면 회로에 전원이 전달되지 않을 수 있다. 단, 퓨즈가 끊어졌다면 원인 단락이 있는지도 점검해야 하며 무조건 높은 용량으로 교체하지 않는다.",
     "key_point": "전원 불능 회로의 퓨즈·공급전압 확인은 기본이다.",
     "source_question_id": "auto-r01-s03-q17",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "회로 보호부품과 구동/기계부품 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s03-q18",
@@ -305,13 +337,20 @@
     "question_id": "auto-made-r01-s03-q20",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "히터 코어 내부 흐름과 냉각수 순환",
+    "correct_choice": "히터코어의 냉각수 흐름·막힘과 유량",
     "reason": "냉각수 순환이 원활하지 않거나 히터 코어가 막히면 열 전달이 부족할 수 있다. 냉각수량·서모스탯·블렌드 도어도 함께 진단해야 한다.",
     "key_point": "난방 불량은 히터 코어와 냉각수 순환 상태를 확인한다.",
     "source_question_id": "auto-r01-s03-q20",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "히터코어 입출구 온도차의 원인 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   }
 ]

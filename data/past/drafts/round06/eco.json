@@ -113,7 +113,11 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "클러치 디스크는 섀시·동력전달 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -147,18 +151,25 @@
     "source_question_id": "auto-r06-s04-q07",
     "round": 6,
     "question_number": 7,
-    "question": "구동배터리에서 대전류 단락이 발생했다. 전류가 지나치게 증가할 때 회로를 차단하는 것은?",
+    "question": "고전압 배터리 내부에서 지정값을 넘는 과전류가 흐르면 자체가 녹아서 회로를 끊는 보호부품은?",
     "choices": [
-      "엔진 연료레일 압력 센서",
-      "차량의 와이퍼 고무 날",
-      "실내 온도 조절 블렌드도어",
-      "전류 한계에서 용단되도록 설계된 퓨즈·퓨저블 링크"
+      "프리차지 저항기",
+      "고전압 인터록(HVIL) 감시 회로",
+      "구동 인버터의 전력반도체",
+      "정격에 맞게 설계된 고전압 퓨즈"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r06-s04-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "퓨즈의 용단 기능과 인터록·접촉기 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r06-s04-q08",
@@ -257,12 +268,12 @@
     "source_question_id": "auto-r06-s04-q12",
     "round": 6,
     "question_number": 12,
-    "question": "변속 중 충격이 커졌는데 정지 상태의 타이어 압력이 정상이다. 직접 원인을 찾을 때 우선 볼 것은?",
+    "question": "자동변속기가 특정 변속단에서 충격을 일으키고 변속 압력 응답도 지연된다. 우선 비교할 데이터는?",
     "choices": [
-      "타이어 공기압 하나만",
-      "ATF·변속 유압·TCM 학습 상태",
-      "라디오 안테나 수신 감도",
-      "차체 색상과 마감재"
+      "휠 얼라인먼트와 조향각 보정 데이터",
+      "ATF 유온·목표/실제 유압·TCM 솔레노이드 명령",
+      "브레이크 페달 유압과 ABS 펌프 작동시간",
+      "디퍼렌셜 백래시와 종감속기 오일 온도"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r06-s04-q12",
@@ -274,7 +285,18 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "변속 충격/ATF/TCM은 동력전달 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속 충격을 직접 반영하는 유압/솔레노이드 데이터로 한정",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -286,12 +308,12 @@
     "source_question_id": "auto-r06-s04-q13",
     "round": 6,
     "question_number": 13,
-    "question": "디퍼렌셜 내부 작업을 마친 뒤 도로 시험을 계획한다. 우선 확인할 항목은?",
+    "question": "디퍼렌셜을 분해한 뒤 규정 기어오일을 배출한 상태로 재조립을 완료했다. 도로시험 전에 먼저 해야 할 것은?",
     "choices": [
-      "기어오일은 누유해도 확인할 필요가 없다",
-      "실내 시트 쿠션 강도만",
-      "오일 보충·씰 누유·베어링 소음과 규정 조립 상태",
-      "후방 유리 전동 열선만"
+      "종감속기 기어의 백래시를 무조건 0으로 조정한다",
+      "입력축 베어링 프리로드를 임의로 최대값까지 올린다",
+      "규정 오일 주입량·누유·조립 상태를 확인한다",
+      "오일을 넣지 않고 짧게 시운전해 기어음을 듣는다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r06-s04-q13",
@@ -303,7 +325,18 @@
       "current_subject": "eco",
       "suggested_subject": "chassis",
       "reason": "디퍼렌셜 내부 정비는 동력전달 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "오일 보충과 조립 검사 우선순위를 명시",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -332,7 +365,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "스마트키/차량 RF는 전기전자 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -361,7 +398,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "후방카메라/영상 신호는 전기전자 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -461,12 +502,12 @@
     "source_question_id": "auto-r06-s04-q20",
     "round": 6,
     "question_number": 20,
-    "question": "태양광 패널의 직류 전력을 가정용 교류 부하에 공급하려 한다. 필요 장치는?",
+    "question": "배터리 전기차의 구동배터리 직류전력을 3상 교류 구동모터에 공급하려 한다. 이때 사용하는 전력변환장치는?",
     "choices": [
-      "기계식 클러치 디스크",
-      "자동차 ABS 휠속도 센서",
-      "태양광 직류를 교류로 변환하는 인버터",
-      "수소 감압용 레귤레이터"
+      "고전압 배터리에서 12V로 낮추는 DC/DC 컨버터",
+      "교류 완속충전 전원을 직류로 만드는 온보드 충전기(OBC)",
+      "구동배터리 DC를 모터 구동용 3상 AC로 변환하는 인버터",
+      "모터와 차축 사이에서 회전수를 감속하는 종감속기"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r06-s04-q20",
@@ -478,7 +519,33 @@
       "current_subject": "eco",
       "suggested_subject": "out_of_scope",
       "reason": "가정용 태양광 인버터는 자동차정비산업기사 친환경 차량 맥락에서 이탈",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "plausible_fit_with_eco_subject_pending_final_scope_signoff",
+      "qa2_disposition": "reframed_into_current_eco_subject_EV_traction_inverter",
+      "reference_urls": [
+        "https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html",
+        "https://www.bosch-mobility.com/en/solutions/power-electronics/",
+        "https://www.energy.gov/cmei/vehicles/power-electronics-research-and-development"
+      ],
+      "qa2_manual_screening": "rewritten_into_EV_traction_inverter",
+      "qa2_proposed_action": "reframed_eco_as_EV_traction_power_electronics",
+      "qa2_confidence": "concept_matched_to_eco_vehicle_but_needs_exam_scope_signoff",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_out_of_domain_refocused_to_EV",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "가정용 태양광 인버터(시험영역 이탈) → 전기차 구동 인버터 DC/AC 문제로 재작성",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/power-electronics/",
+        "https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html"
+      ],
+      "review_note": "보쉬·기아 자료에서 구동 인버터 DC→모터 AC, OBC 외부 AC→충전 DC, DC/DC 직류전압 변환을 구별했다. 원래 가정용 태양광 인버터 문항은 구동 인버터로 고쳤다.",
+      "reviewed_alternatives": 4
     }
   }
 ]

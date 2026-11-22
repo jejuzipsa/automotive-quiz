@@ -117,14 +117,21 @@
     "question_id": "auto-made-r01-s04-q08",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "차량에 맞는 진단기로 관련 ECU의 DTC 및 데이터 확인",
+    "correct_choice": "차량 전용 진단기로 구동 ECU의 DTC와 실시간 데이터를 확인",
     "reason": "전기차도 여러 제어기에서 고장코드와 실시간 상태값을 기록한다. 구동·충전·배터리 관련 제어기를 구분해 점검해야 하며 고장코드만으로 부품 교환을 확정하지 않는다.",
     "key_point": "전기차 구동 이상은 관련 ECU DTC·상태 데이터를 이용한다.",
     "source_question_id": "auto-r01-s04-q08",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전동구동 ECU DTC와 데이터 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s04-q09",
@@ -194,14 +201,21 @@
     "question_id": "auto-made-r01-s04-q13",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "BMS 고장코드와 셀 온도·전압 상태",
+    "correct_choice": "BMS 고장코드·셀 전압과 온도 편차·충전제한 명령",
     "reason": "충전 제한은 셀 전압 불균형, 온도 관리, BMS 판단 등 여러 원인으로 생길 수 있다. 실제 차량 진단 데이터로 제약 조건과 오류를 확인한다.",
     "key_point": "충전 이상은 BMS·셀·온도 상태를 함께 점검한다.",
     "source_question_id": "auto-r01-s04-q13",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "배터리 팩 충전제한 판단 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r01-s04-q14",
@@ -287,7 +301,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "AEB 센서·자동제동/ADAS은 전기전자 장치",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -308,7 +326,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "차체 제어 모듈 BCM 기능은 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {

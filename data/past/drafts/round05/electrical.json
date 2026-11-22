@@ -272,12 +272,12 @@
     "source_question_id": "auto-r05-s03-q13",
     "round": 5,
     "question_number": 13,
-    "question": "가속 시 디젤 매연이 늘고 엔진 출력이 부족하다. 흡입 공기량 제어 문제를 의심할 때 유용한 데이터는?",
+    "question": "디젤 엔진에서 실측 흡입 공기량이 목표보다 부족하고 가속 매연이 증가했다. 직접 비교할 계측값은?",
     "choices": [
-      "MAF 측정값과 목표 공기량·과급압력",
-      "좌석 메모리 번호",
-      "도어 손잡이 마찰계수",
-      "주차등 전구 색상"
+      "MAF 실측값과 목표 공기량·과급압력",
+      "엔진오일 잔존 수명과 수온 표시",
+      "인젝터 코딩값과 주차브레이크 작동기록",
+      "휠속도센서 주파수와 조향각 영점"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r05-s03-q13",
@@ -289,7 +289,18 @@
       "current_subject": "electrical",
       "suggested_subject": "engine",
       "reason": "디젤 매연·흡기량 제어는 엔진 계통",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "공기량/과급 데이터와 다른 진단 데이터를 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
     }
   },
   {
@@ -391,16 +402,23 @@
     "question_number": 18,
     "question": "중앙잠금 버튼에서 운전석만 작동하고 나머지 도어가 반응하지 않는다. 진단 방법으로 적절한 것은?",
     "choices": [
-      "모든 차종에서 도어 스위치 배선으로만 확정",
-      "운전석 도어만 새것으로 교환",
-      "뒤좌석 시트 히터만 확인",
-      "공통 잠금 명령·배선 분기와 다른 도어 구동전원 확인"
+      "운전석 스위치만 교환하고 공통 신호를 확인하지 않는다",
+      "반응 없는 다른 도어 구동모터를 모두 동시에 교환한다",
+      "운전석 도어의 기계식 잠금 키만 조정한다",
+      "공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r05-s03-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "다수 도어 동시불량의 공통회로 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s03-q19",
@@ -413,16 +431,23 @@
     "question_number": 19,
     "question": "선루프 개폐 중 거친 소리가 나고 움직임이 뻑뻑하다. 점검해야 할 기계요소는?",
     "choices": [
-      "가이드 레일과 구동 케이블 오염·변형",
-      "스파크플러그 전극간극",
-      "산소센서 히터 전압만",
-      "브레이크 캘리퍼 도장"
+      "가이드 레일·구동 케이블의 오염·손상과 마찰",
+      "열선 시트의 온도센서 출력",
+      "선루프의 도장색만 보고 레일 마모를 판정",
+      "ABS 휠속도센서의 신호위상만"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r05-s03-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "선루프 개폐 기계소음의 직접 요소",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r05-s03-q20",

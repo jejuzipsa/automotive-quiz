@@ -208,16 +208,23 @@
     "question_number": 10,
     "question": "전기차 배터리가 고온에 장기간 노출되고 급속충전을 반복한다. 열화 관리에 직접 중요한 것은?",
     "choices": [
-      "배터리 온도·충전속도·충전 상태 운용",
-      "정비용 소프트웨어 업데이트 자체가 화학 열화의 유일 원인",
-      "라디오 채널 설정만",
-      "실내등 색온도만"
+      "배터리 온도·SOC 범위와 충전전류 운용 조건",
+      "12V 시동 전지의 CCA 수치만",
+      "배터리 셀의 화학적 열화와 무관한 타이어 회전수만",
+      "배터리 냉각펌프가 작동하면 SOC 범위를 무시한다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r07-s04-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "열화 촉진/억제 운용 조건 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q11",
@@ -274,16 +281,23 @@
     "question_number": 13,
     "question": "급속충전 중 차량이 갑자기 충전전류를 줄였다. 먼저 검토해야 할 요인은?",
     "choices": [
-      "운전석 시트 재질의 마찰계수",
-      "배터리 SOC·온도와 차량 및 충전기 제한 명령",
-      "충전 중 에어컨은 반드시 켜야만 한다는 규칙",
-      "헤드램프 렌즈의 표면 색상"
+      "공용 충전 케이블 표면온도만 확인한다",
+      "배터리 SOC·셀 온도와 차량·충전기 제한 명령을 비교한다",
+      "차량 완속 충전기의 정격출력만 확인한다",
+      "주행 중 회생제동 토크 요청값만 확인한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r07-s04-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "급속충전 제한의 직접 관련된 명령·SOC·온도 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q14",
@@ -294,18 +308,25 @@
     "source_question_id": "auto-r07-s04-q14",
     "round": 7,
     "question_number": 14,
-    "question": "배터리 팩의 과전류 사고 시 일회성으로 회로를 끊도록 설계된 부품은?",
+    "question": "배터리 팩에 큰 과전류가 흘렀을 때 설계된 용단 특성으로 한 번 작동하면 교체해야 하는 보호부품은?",
     "choices": [
-      "차체 도장 두께 센서",
-      "실내 에어컨 블렌드 도어",
-      "인포테인먼트 스피커",
-      "고전압 전용 퓨즈·퓨저블 링크"
+      "프리차지 저항기",
+      "BMS 전압 감시 입력",
+      "고전압 시스템 인터록 스위치",
+      "고전압용 퓨즈·퓨저블 링크"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r07-s04-q14",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "퓨즈의 일회성 용단과 제어회로 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q15",
@@ -407,16 +428,23 @@
     "question_number": 19,
     "question": "연료전지 스택의 출력이 낮아졌다. 직접 관련된 운전 요인으로 알맞은 것은?",
     "choices": [
-      "공기 공급량·수소압력·막 수분과 스택 온도",
-      "엔진오일 점도만",
-      "타이어 공기압 하나만",
-      "차체 색상과 실내등 높이"
+      "수소/공기 공급량·막 수분과 스택 온도",
+      "차량 구동축 감속기의 백래시만",
+      "DC/DC 출력전압만 정상이라면 스택 자체는 정상으로 판단",
+      "배터리 충전포트 접촉상태만 확인"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r07-s04-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "연료전지 스택 반응가스·수분·온도 직접 요인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r07-s04-q20",

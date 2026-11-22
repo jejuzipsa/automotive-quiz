@@ -98,7 +98,7 @@
     "question_id": "auto-made-r09-s04-q07",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "냉각수 흐름·펌프 실제 유량과 공기 포집",
+    "correct_choice": "냉각수 흐름·펌프 실제 유량과 에어 포집을 점검한다",
     "reason": "고전압 배터리 열관리에서는 냉각팬·액체 냉각계·열교환기의 성능이 중요하다. 펌프 명령과 실제 순환 상태를 구별해야 한다.",
     "key_point": "배터리 냉각 → 냉각회로·펌프·공기제거 확인.",
     "source_question_id": "auto-r09-s04-q07",
@@ -107,7 +107,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "펌프 명령/실제 유량 분리",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q08",
@@ -146,14 +153,21 @@
     "question_id": "auto-made-r09-s04-q10",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "DC 링크 전압·인버터 온도·게이트 제어 상태",
+    "correct_choice": "DC 링크 전압·인버터 온도·게이트 제어와 관련 DTC",
     "reason": "인버터 전력변환이나 보호제어 이상은 전동모터 구동을 제한할 수 있다. 구체적인 원인은 전압·전류·절연·온도 DTC로 좁힌다.",
     "key_point": "인버터 이상 → 전력변환/보호제어로 전기구동 제한.",
     "source_question_id": "auto-r09-s04-q10",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "인버터 DTC와 전력단 상태를 직접 비교",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q11",
@@ -250,7 +264,7 @@
     "question_id": "auto-made-r09-s04-q17",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "차량과 충전기 사이 제어 파일럿·통신과 잠금 상태",
+    "correct_choice": "제어 파일럿·통신 교환·커넥터 잠금 상태를 확인한다",
     "reason": "EV 충전에서는 차량과 충전기 간 제어 신호를 통해 연결·허용 전류·충전 상태를 협상한다. 프로토콜과 장치에 따라 통신 방식이 다르다.",
     "key_point": "충전 중 통신은 연결·제어·안전 협상을 담당.",
     "source_question_id": "auto-r09-s04-q17",
@@ -259,7 +273,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EVSE와 차량 사이 핸드셰이크 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r09-s04-q18",
@@ -315,7 +336,11 @@
       "current_subject": "eco",
       "suggested_subject": "engine",
       "reason": "디젤 SCR 요소수 후처리",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   }
 ]

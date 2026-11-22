@@ -160,14 +160,29 @@
     "question_id": "auto-made-r08-s03-q11",
     "subject": "electrical",
     "correct_answer": 2,
-    "correct_choice": "적응형 크루즈 컨트롤(ACC)의 거리 추종 제어",
+    "correct_choice": "전방 차량을 따라 속도와 차간거리를 조정하는 ACC",
     "reason": "ACC는 레이더·카메라 등으로 앞차를 인지하고 설정속도 범위에서 거리유지를 위해 구동력과 제동을 조절한다.",
     "key_point": "ACC = 설정 속도 + 앞차 거리 추종.",
     "source_question_id": "auto-r08-s03-q11",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ACC와 CC/AEB/LKA 기능 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/assistance-systems/adaptive-cruise-control/"
+      ],
+      "review_note": "Bosch ACC는 전방차와 간격을 유지하는 속도 제어로, 일반 정속주행·AEB·LKA와 기능이 다름을 확인했다.",
+      "reviewed_alternatives": 4
+    }
   },
   {
     "id": "auto-made-r08-s03-q12",
@@ -204,14 +219,21 @@
     "question_id": "auto-made-r08-s03-q14",
     "subject": "electrical",
     "correct_answer": 3,
-    "correct_choice": "전기 에너지와 화학 에너지의 가역적 변환",
+    "correct_choice": "전기 에너지와 화학 에너지 사이의 가역적인 전환",
     "reason": "축전지는 충전 시 전기에너지를 화학적 형태로 저장하고 방전 시 전력을 공급한다. 실제 반응은 납산·리튬이온 등 화학계마다 다르다.",
     "key_point": "배터리는 전기↔화학 에너지 저장 장치.",
     "source_question_id": "auto-r08-s03-q14",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "충방전 전기화학 반응과 기계 에너지 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r08-s03-q15",

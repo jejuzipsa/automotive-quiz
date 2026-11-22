@@ -36,14 +36,21 @@
     "question_id": "auto-made-r03-s04-q03",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "고전압 회로 분리·무전압 확인과 냉각·기계연결 해체",
+    "correct_choice": "고전압 회로 차단·무전압 확인과 냉각/기계 분리 절차",
     "reason": "구동모터는 고전압 회로와 냉각·기계 장착부에 연결된다. 해당 차량의 절차를 따르고 필요한 장비로 안전을 확보한다. 관련 없는 소모품 교환은 기본 필수 단계가 아니다.",
     "key_point": "모터 교환은 고전압·냉각·기계 장착을 종합한다.",
     "source_question_id": "auto-r03-s04-q03",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고전압 정비단계 및 위험한 무전압 추정 배제",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q04",
@@ -66,7 +73,7 @@
     "question_id": "auto-made-r03-s04-q05",
     "subject": "eco",
     "correct_answer": 3,
-    "correct_choice": "구동모터 요구토크·인버터·배터리 상태 협조 제어",
+    "correct_choice": "운전자 요구토크·인버터·구동배터리 상태의 협조제어",
     "reason": "EVCU는 구동 요청과 차량속도, 배터리 보호 정보를 이용해 전동 구동계를 협조 제어한다. 실제 제어 범위는 차량 구조에 따라 다르다.",
     "key_point": "EVCU는 전기구동 제어를 조정하는 장치다.",
     "source_question_id": "auto-r03-s04-q05",
@@ -75,7 +82,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "상위 EV 구동 제어기 EVCU 역할 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q06",
@@ -126,14 +140,21 @@
     "question_id": "auto-made-r03-s04-q09",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "수소에 반응하도록 설계된 가스 검지 센서",
+    "correct_choice": "수소 가스의 존재를 감지하도록 설계된 전용 가스센서",
     "reason": "수소 누출은 전용 가스검지 센서 등으로 감시한다. 고압 수소계 작업은 누설·점화원·환기 관리가 필요하며 일반 냄새로 안전을 판단할 수 없다.",
     "key_point": "수소누설 감지는 수소 전용 가스센서가 사용된다.",
     "source_question_id": "auto-r03-s04-q09",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "수소 누설 농도 검출과 압력·유량 검출 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q10",
@@ -275,7 +296,11 @@
       "current_subject": "eco",
       "suggested_subject": "electrical",
       "reason": "카메라 기반 LKA는 ADAS 전기전자",
-      "classification_verdict": "pending_curriculum_specific_manual_review"
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
     }
   },
   {
@@ -283,14 +308,21 @@
     "question_id": "auto-made-r03-s04-q19",
     "subject": "eco",
     "correct_answer": 2,
-    "correct_choice": "모터 구동토크 지령이 정상 수행되지 않아 출력 제한이 발생할 수 있다",
+    "correct_choice": "구동토크 지령 전달이 차단돼 구동출력이 제한될 수 있다",
     "reason": "전기구동 제어장치 간 통신 이상은 토크 명령 제한이나 보호모드, 경고등 점등 등을 야기할 수 있다. 구체적인 증상은 시스템 설계에 좌우된다.",
     "key_point": "구동제어 통신 실패는 출력 제한이나 경고로 이어질 수 있다.",
     "source_question_id": "auto-r03-s04-q19",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "EVCU와 인버터 지령단절 영향",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    }
   },
   {
     "id": "auto-made-r03-s04-q20",
