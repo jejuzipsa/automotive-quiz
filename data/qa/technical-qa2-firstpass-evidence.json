@@ -1,0 +1,110 @@
+[
+  {
+    "id": "auto-made-r06-s02-q17",
+    "source_question_id": "auto-r06-s02-q17",
+    "question": "터보차저를 분해했다가 재조립한다. 교환 여부를 반드시 확인해야 할 소모성 밀봉부품은?",
+    "answer": 1,
+    "correct_choice": "정비지침에서 재사용을 금지한 플랜지 가스켓·오일라인 실링 와셔",
+    "reasoning": "Garrett의 신품 가스켓/오일 통로 설치 지침과 밀봉재 항목을 비교했다. 나머지 보기(액추에이터 로드·임펠러·스터드)는 소모성 밀봉재가 아니다.",
+    "reference_urls": [
+      "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-1-garrett-turbocharger-installation-guide/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": true
+  },
+  {
+    "id": "auto-made-r06-s04-q20",
+    "source_question_id": "auto-r06-s04-q20",
+    "question": "배터리 전기차의 구동배터리 직류전력을 3상 교류 구동모터에 공급하려 한다. 이때 사용하는 전력변환장치는?",
+    "answer": 3,
+    "correct_choice": "구동배터리 DC를 모터 구동용 3상 AC로 변환하는 인버터",
+    "reasoning": "보쉬·기아 자료에서 구동 인버터 DC→모터 AC, OBC 외부 AC→충전 DC, DC/DC 직류전압 변환을 구별했다. 원래 가정용 태양광 인버터 문항은 구동 인버터로 고쳤다.",
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/power-electronics/",
+      "https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": true
+  },
+  {
+    "id": "auto-made-r02-s03-q09",
+    "source_question_id": "auto-r02-s03-q09",
+    "question": "차량이 실제 진행 방향과 달리 회전하려는 상태를 ESC가 감지할 때 직접 활용하는 센서는?",
+    "answer": 3,
+    "correct_choice": "차량의 회전 각속도를 측정하는 요레이트 센서",
+    "reasoning": "Bosch의 ESC 설명에서 요레이트는 차체 수직축 회전속도이며 조향각·횡가속도·휠속도와 구분됨을 대조했다.",
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": false
+  },
+  {
+    "id": "auto-made-r08-s03-q11",
+    "source_question_id": "auto-r08-s03-q11",
+    "question": "앞차가 감속하자 자동차가 스스로 속도를 줄이면서 차간거리를 유지한다. 어떤 기능인가?",
+    "answer": 2,
+    "correct_choice": "전방 차량을 따라 속도와 차간거리를 조정하는 ACC",
+    "reasoning": "Bosch ACC는 전방차와 간격을 유지하는 속도 제어로, 일반 정속주행·AEB·LKA와 기능이 다름을 확인했다.",
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/assistance-systems/adaptive-cruise-control/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": false
+  },
+  {
+    "id": "auto-made-r09-s01-q12",
+    "source_question_id": "auto-r09-s01-q12",
+    "question": "점화코일의 2차 고전압 파형을 일반 오실로스코프로 안전하게 관찰할 때 사용할 부속장비는?",
+    "answer": 4,
+    "correct_choice": "점화 2차 파형용 절연/정격 측정 픽업",
+    "reasoning": "Fluke와 Pico 자동차 오실로스코프 지침에서 점화 2차 고전압을 전용 픽업으로 결합한다는 점을 확인했다. 일반 저전압 프로브 직접 연결은 안전하지 않다.",
+    "reference_urls": [
+      "https://www.fluke.com/en-us/product/accessories/test-leads/fluke-pm9096-201",
+      "https://www.picoauto.com/library/automotive-guided-tests/ignition/distributor-/AGT-389-primary-voltage-vs-secondary-king-lead/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": false
+  },
+  {
+    "id": "auto-made-r09-s02-q18",
+    "source_question_id": "auto-r09-s02-q18",
+    "question": "ESC가 언더스티어 상황을 판단했다. 이를 위해 비교하는 정보는?",
+    "answer": 4,
+    "correct_choice": "조향각에 따른 목표 요거동과 실제 요레이트를 비교한다",
+    "reasoning": "Bosch ESC 설명상 조향각은 운전자 목표 거동, 요레이트는 실제 회전거동을 감지하며 차이를 비교해 제어할 수 있다.",
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": false
+  },
+  {
+    "id": "auto-made-r02-s01-q03",
+    "source_question_id": "auto-r02-s01-q03",
+    "question": "윤활식 터보차저를 교환한 직후 재시동 전 확인할 사항으로 우선순위가 높은 것은?",
+    "answer": 2,
+    "correct_choice": "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
+    "reasoning": "Garrett 설치 지침의 오일 공급·회수 통로와 초기 윤활 절차를 비교했다. 재시동 전 윤활상태 확인이 핵심이다.",
+    "reference_urls": [
+      "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-1-garrett-turbocharger-installation-guide/",
+      "https://www.garrettmotion.com/de/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+    ],
+    "all_four_choices_screened": true,
+    "first_pass_subject_matter_check": "supported_by_primary_technical_reference",
+    "approval": "NOT_FINAL_TECHNICAL_APPROVAL",
+    "hold_if_classification_pending": false
+  }
+]

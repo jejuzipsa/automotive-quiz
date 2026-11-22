@@ -1,0 +1,8 @@
+[
+  {
+    "id": "auto-made-r02-s03-q18",
+    "reason": "부정형(속하지 않는 것) 객관식 문항으로서 다른 계통의 센서가 정답인 설계다. 보기들은 동일한 차량 편의장치 항목 3개와 분류상 예외 1개로 타당하며 자동 오탐 후보. 최종 기술검증 승인은 별개.",
+    "disposition": "editorial_no_change_heuristic_false_positive",
+    "technical_final_approved": false
+  }
+]

@@ -1,0 +1,26 @@
+{
+  "reviewed_total_pairs_schema": 720,
+  "distractor_heuristic_candidates_in_QA1": 129,
+  "distractor_heuristic_candidates_editorially_rewritten": 128,
+  "distractor_heuristic_false_positive_no_change": 1,
+  "distractor_heuristic_candidates_remaining_to_screen": 0,
+  "additional_out_of_domain_EV_inverter_rewrite": 1,
+  "total_unique_content_revised": 129,
+  "content_revised_by_subject": {
+    "chassis": 42,
+    "eco": 27,
+    "electrical": 33,
+    "engine": 27
+  },
+  "technical_reference_first_pass_not_final": 7,
+  "classification_holds_pending": 47,
+  "classification_high_confidence_provisional": 39,
+  "classification_shared_cross_discipline": 7,
+  "classification_reframed_EV_inverter_but_held": 1,
+  "technical_final_approved": 0,
+  "published_to_live_bank": 0,
+  "QA23_OCR_source_changed": false,
+  "qa1_history_intact": true,
+  "questions_all_720.json_sha256": "df4c70e888b7a55a7fcf8e4d1f1910f3ceae4abc5f16cd2f1ac1ab7480f6506f",
+  "explanations_all_720.json_sha256": "7bb88989bea3e46106e9a5dca4b084c5f140ea43947c0b7164cbf5d15556cfad"
+}
