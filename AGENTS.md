@@ -20,6 +20,16 @@
 - 정답 위치를 무작위로 이동시키되 문제의 의미/보기 텍스트는 변형하지 않는다.
 - **테스트 필수:** 정답 원래 위치 1,2,3,4 모두에서 모든 순열 혹은 충분한 샘플로 정답 재매핑 검증, 오답 재풀이 시 다시 섞임 확인.
 
+## 2026-11-23 — 우리 문제·해설 초안 1~3회차 누적 240/720
+
+- QA23 전수 OCR 대조 720/720 원본 JSON을 참조해 **2회차 4과목×20=80**, **3회차 4과목×20=80**을 새 질문·4지선다·독립 해설로 작성. 기존 1회차 80을 합쳐 **240문항 / 별도 해설 240개**. **남은 480문항은 미작성**.
+- 공개 저장소의 신규 파일: `data/past/drafts/round02/{engine,chassis,electrical,eco}.json`, `data/past/drafts/round03/{...}.json`, 별도 해설 `data/explanations/drafts/round02/{...}.json`, `data/explanations/drafts/round03/{...}.json`.
+- **문제·정답·해설 240/240 연결 검사, 3회차×4과목×20개 수량, ID 중복0, 정답 인덱스 범위, 원문 질문 문자열/전체 보기 배열 완전 동일0**. `tests/draft-bank-rounds.test.cjs`에서 자동 검사.
+- 240개 전부 **`review_status=editorial_draft` · `technical_answer_status=pending_independent_review` · `publishable=false`**. **기술적 정답 승인0, 공개 사이트 자동 출제 연결0**. 기출 복원 원본의 문제·설명을 그대로 게시하지 않음.
+- 개인 라이브러리 `/기출문제_자동차정비산업기사/우리문제은행_v3/`에 최종 합본 `questions_all_240.json`, `explanations_all_240.json`, 과목별 새 파일, `rewrite_tracking_720.json`, `validation_report.json` 보관. ZIP 없이 JSON만.
+- 확인한 일부 핵심 원리 참고: <https://www.analog.com/en/resources/app-notes/an-1123.html> (CAN 중재), <https://afdc.energy.gov/vehicles/electric-maintenance> (EV 안전), <https://afdc.energy.gov/fuels/biodiesel-production> (바이오디젤). 이러한 참고 대조는 전체 240문항 기술승인을 의미하지 않음.
+- **다음 작업**: QA23 4회차부터 남은 480문항 재작성, 독립 정답의 유일성·기술 정확성 검수 및 승인 → 모의고사 연결 → 해설 기반 괄호형 개념문제 제작. **drafts를 본 사이트 출제 매니페스트에 바로 연결하지 말 것**.
+
 ## 3. 우리 사이트용 문제은행·해설은행 (2026-11-22 시작)
 
 - QA23 OCR 원본 **720문항** 검수 완료를 기준으로 1회차의 4과목 각20, **80문항을 다시 작성한 첫 편집 초안**을 GitHub `data/past/drafts/*.json`에 저장. 각 문제 `explanation_id`에 대응하는 **별도 해설**을 `data/explanations/drafts/*.json`에 80개 작성.
