@@ -1,29 +1,45 @@
+"use strict";
+const assert=require("node:assert/strict");
 const fs=require("node:fs");
 const path=require("node:path");
 const vm=require("node:vm");
-const assert=require("node:assert/strict");
 const root=path.resolve(__dirname,"..");
-const html=fs.readFileSync(path.join(root,"index.html"),"utf8");
-const app=fs.readFileSync(path.join(root,"app.js"),"utf8");
-const seed=fs.readFileSync(path.join(root,"data/questions.js"),"utf8");
+const read=p=>fs.readFileSync(path.join(root,p),"utf8");
+const html=read("index.html"),app=read("app.js");
 new vm.Script(app,{filename:"app.js"});
-const sandbox={window:{}};vm.runInNewContext(seed,sandbox,{filename:"data/questions.js"});
-const items=Array.from(sandbox.window.AUTO_QUIZ_DATA||[]);
-assert.equal(items.length,12,"8 demo + 4 concept samples expected");
-assert.equal(items.filter(q=>q.track==="demo").length,8);
-assert.equal(items.filter(q=>q.track==="concept").length,4);
-const ids=new Set();
-for(const q of items){
- assert.ok(q.id&&!ids.has(q.id),`duplicate/missing id: ${q.id}`);
- ids.add(q.id);
- assert.ok(["engine","chassis","electrical","eco"].includes(q.subject));
- assert.ok(Array.isArray(q.choices)&&q.choices.length===4&&q.choices.every(Boolean));
- assert.ok(q.question&&q.explanation);
- assert.ok(Number.isInteger(q.answer)&&q.answer>=1&&q.answer<=4);
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
+assert.equal(new Set(ids).size,ids.length,"duplicate element IDs");
+for(const match of app.matchAll(/\$\("([^"]+)"\)/g))
+  assert(ids.includes(match[1]),"missing HTML id "+match[1]);
+for(const forbidden of ['type="file"',"personalTextBankInput","vendor/jszip.min.js","personal-text-bank.js"]){
+  assert(!html.includes(forbidden),"ZIP/file picker must not be public: "+forbidden);
 }
-const htmlIds=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]));
-const requested=[...app.matchAll(/\$\("([^"]+)"\)/g)].map(x=>x[1]);
-for(const id of requested)assert.ok(htmlIds.has(id),`missing element id: ${id}`);
-for(const asset of ["styles.css","app.js","data/questions.js"])assert.ok(fs.existsSync(path.join(root,asset)),`missing asset: ${asset}`);
-assert.ok(!/출판사.{0,20}문제 본문/.test(seed));
-console.log("PASS: JS syntax, 12 sample records, all required DOM IDs and asset paths.");
+const manifest=JSON.parse(read("data/manifest.json"));
+assert.equal(manifest.version,1);
+assert.equal(manifest.banks.length,6);
+const idsSeen=new Set(),counts={};
+for(const entry of manifest.banks){
+  assert.match(entry.file,/^data\/(?:expected\/(?:engine|chassis|electrical|eco)|demo|concept)\.json$/);
+  const arr=JSON.parse(read(entry.file));
+  assert.equal(arr.length,entry.count);
+  for(const q of arr){
+    assert.ok(q.id&&!idsSeen.has(q.id),"duplicate/missing id: "+q.id);
+    idsSeen.add(q.id);
+    assert.equal(q.track,entry.track);
+    if(entry.subject)assert.equal(q.subject,entry.subject);
+    assert.ok(["engine","chassis","electrical","eco"].includes(q.subject));
+    assert.ok(q.question&&q.explanation);
+    assert.ok(Array.isArray(q.choices)&&q.choices.length===4&&q.choices.every(Boolean));
+    assert.ok(Number.isInteger(q.answer)&&q.answer>=1&&q.answer<=4);
+    if(q.track==="expected"){
+      assert.equal(q.origin,"original_practice");
+      assert.equal(q.publishable,true);
+      assert.equal(q.review_status,"editorial_draft");
+    }
+    counts[q.track]=(counts[q.track]||0)+1;
+  }
+}
+assert.deepEqual(counts,{expected:80,demo:8,concept:4});
+for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
+  assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
+console.log("PASS: static JSON manifest, 92 question records, source types, no ZIP picker, DOM references.");
