@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "format": "automotive-static-text-bank",
+  "description": "Public independently authored practice and demonstration questions. No scanned publisher text.",
+  "banks": [
+    {
+      "file": "data/expected/engine.json",
+      "track": "expected",
+      "subject": "engine",
+      "count": 20
+    },
+    {
+      "file": "data/expected/chassis.json",
+      "track": "expected",
+      "subject": "chassis",
+      "count": 20
+    },
+    {
+      "file": "data/expected/electrical.json",
+      "track": "expected",
+      "subject": "electrical",
+      "count": 20
+    },
+    {
+      "file": "data/expected/eco.json",
+      "track": "expected",
+      "subject": "eco",
+      "count": 20
+    },
+    {
+      "file": "data/demo.json",
+      "track": "demo",
+      "count": 8
+    },
+    {
+      "file": "data/concept.json",
+      "track": "concept",
+      "count": 4
+    }
+  ]
+}
