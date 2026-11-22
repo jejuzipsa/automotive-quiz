@@ -13,7 +13,8 @@
     Array.isArray(q.choices) && q.choices.length===4 &&
     q.choices.every(x=>typeof x==="string"&&x.trim()) && [1,2,3,4].includes(q.answer) &&
     typeof q.question==="string" && typeof q.explanation==="string" &&
-    (q.track==="demo" || q.track==="concept")
+    (q.track==="demo" || q.track==="concept" ||
+      ((q.track==="past" || q.track==="expected") && q.review_status==="approved" && q.publishable===true))
   );
   // Publisher scans and unreviewed OCR are intentionally not loaded into the public site.
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
