@@ -1,0 +1,39 @@
+name: Copy shared quiz icons into automotive site
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/sync-reference-icons.yml
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout automotive site
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Download exact public icons from original quiz repository
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets
+          for icon in gichul-icon exam-icon concept-quiz-icon core-card-icon hand-note-icon law-search-icon; do
+            curl --fail --location --retry 3 --silent --show-error \
+              "https://raw.githubusercontent.com/jejuzipsa/gichul-quiz/main/assets/${icon}.png" \
+              --output "assets/${icon}.png"
+            file "assets/${icon}.png" | grep -q 'PNG image data'
+          done
+          # Main site icon is intentionally NOT imported.
+          git add assets/
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" \
+                -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+                commit -m "assets: copy original quiz section icons (not main site icon)"
+            git push origin HEAD:main
+          fi
