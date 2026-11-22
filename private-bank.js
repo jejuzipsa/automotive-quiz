@@ -151,6 +151,19 @@
       q.text_transcription==="question_and_choices_source_compared_only"?"지문·보기 대조 완료 · 해설 미검수":
       "원본 이미지 제공 · OCR 문자 대조 미완료"
     );
+    const flags=Array.isArray(q.qa7_technical_review_flags)?q.qa7_technical_review_flags:[];
+    const technicalWarning=$("privateTechWarning");
+    technicalWarning.classList.toggle("hidden",flags.length===0);
+    if(flags.length){
+      const hasCompression=flags.some(x=>x.includes("compression")||x.includes("cylinder")||x.includes("low_"));
+      const hasSensor=flags.some(x=>x.includes("oxygen_sensor"));
+      const hasDup=flags.some(x=>x.includes("duplicate"));
+      text(technicalWarning,hasCompression
+        ?"기술 재검토 필요: 압축압력 저하 원인을 하나로 단정할 수 있는지 확인 중이야."
+        :hasSensor?"기술 재검토 필요: 산소 센서의 위치·기능 설명에 오류가 의심돼."
+        :hasDup?"중복 검토 대상: 같은 개념의 유사 문제가 존재해."
+        :"기술 재검토 대상: 교재 설명이나 조건의 정확성을 아직 확인하지 않았어.");
+    }
     $("privateProgressFill").style.width=`${Math.round((run.index+1)*100/run.items.length)}%`;
     const token=imageToken;
     renderImage(q.question_image,$("privateQuestionImageBox"),token);
