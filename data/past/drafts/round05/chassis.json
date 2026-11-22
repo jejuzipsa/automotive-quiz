@@ -349,7 +349,14 @@
     "explanation_id": "auto-made-r05-s02-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 웨이스트게이트/과급은 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q17",
@@ -371,7 +378,14 @@
     "explanation_id": "auto-made-r05-s02-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 액추에이터 진단",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q18",
@@ -393,7 +407,14 @@
     "explanation_id": "auto-made-r05-s02-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보차저 교환 후 초기 윤활",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q19",
@@ -415,7 +436,14 @@
     "explanation_id": "auto-made-r05-s02-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "엔진 진단스캐너 취급",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q20",
@@ -437,6 +465,13 @@
     "explanation_id": "auto-made-r05-s02-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "TPS와 스로틀 제어는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   }
 ]

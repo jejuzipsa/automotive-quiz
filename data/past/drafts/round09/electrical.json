@@ -129,7 +129,14 @@
     "explanation_id": "auto-made-r09-s03-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "chassis",
+      "reason": "TCS는 구동력 제어·차체자세 제어(섀시) 영역",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r09-s03-q07",
@@ -416,7 +423,14 @@
     "explanation_id": "auto-made-r09-s03-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "chassis",
+      "reason": "EPB 주차 브레이크 기능은 섀시/제동",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r09-s03-q20",

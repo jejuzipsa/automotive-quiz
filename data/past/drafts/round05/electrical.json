@@ -283,7 +283,14 @@
     "explanation_id": "auto-made-r05-s03-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "engine",
+      "reason": "디젤 매연·흡기량 제어는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s03-q14",

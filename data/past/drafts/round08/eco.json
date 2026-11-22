@@ -437,6 +437,13 @@
     "explanation_id": "auto-made-r08-s04-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "전자식 주차브레이크 EPB는 섀시 제동",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   }
 ]

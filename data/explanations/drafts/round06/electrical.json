@@ -218,7 +218,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "engine",
+      "reason": "가솔린 엔진 공회전 높음 진단",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r06-s03-q14",

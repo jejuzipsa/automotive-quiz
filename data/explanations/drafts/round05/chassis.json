@@ -273,7 +273,14 @@
     "reference_urls": [],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "category_review_note": "원본 교재에서 섀시로 분류됐으나 터보/엔진제어 과목 적합성을 별도 재검토할 것."
+    "category_review_note": "원본 교재에서 섀시로 분류됐으나 터보/엔진제어 과목 적합성을 별도 재검토할 것.",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 웨이스트게이트/과급은 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q17",
@@ -290,7 +297,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 액추에이터 진단",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q18",
@@ -307,7 +321,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보차저 교환 후 초기 윤활",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q19",
@@ -324,7 +345,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "엔진 진단스캐너 취급",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r05-s02-q20",
@@ -344,6 +372,13 @@
     "reference_urls": [],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "category_review_note": "원본 교재에서 섀시로 분류됐으나 터보/엔진제어 과목 적합성을 별도 재검토할 것."
+    "category_review_note": "원본 교재에서 섀시로 분류됐으나 터보/엔진제어 과목 적합성을 별도 재검토할 것.",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "TPS와 스로틀 제어는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   }
 ]

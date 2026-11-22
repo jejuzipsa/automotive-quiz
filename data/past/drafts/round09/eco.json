@@ -437,6 +437,13 @@
     "explanation_id": "auto-made-r09-s04-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "engine",
+      "reason": "디젤 SCR 요소수 후처리",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   }
 ]

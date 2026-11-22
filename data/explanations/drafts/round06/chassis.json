@@ -265,7 +265,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 윤활 배출은 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r06-s02-q17",
@@ -282,7 +289,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "터보 부품 재조립은 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r06-s02-q18",
@@ -299,7 +313,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "과급 부족 진단은 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r06-s02-q19",
@@ -315,7 +336,14 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "연료 분사 ECU는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   },
   {
     "id": "auto-made-r06-s02-q20",
@@ -332,6 +360,13 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "chassis",
+      "suggested_subject": "engine",
+      "reason": "산소센서 공연비 신호는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review"
+    }
   }
 ]
