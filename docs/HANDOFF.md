@@ -6,6 +6,7 @@
 ## 1. 저장소와 배포
 - 자동차정비산업기사 소스: https://github.com/jejuzipsa/automotive-quiz
 - 현재 운영 브랜치: `main`
+- 추적 이슈: https://github.com/jejuzipsa/automotive-quiz/issues/1 (QA6 720문항 검수·배포 작업 체크리스트)
 - GitHub Pages: https://jejuzipsa.github.io/automotive-quiz/
 - 참고 디자인/원본 아이콘: https://github.com/jejuzipsa/gichul-quiz
 - 공인중개사 사이트: https://jejuzipsa.github.io/gichul-quiz/
