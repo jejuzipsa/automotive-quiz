@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA18 personal text bank, source image manually compared for 481/720 using QA7 original question and explanation PNGs; 239 OCR drafts pending",
+  "source_of_truth": "QA19 personal OCR-corrected bank with 561/720 source-image text compared; QA7 original source images remain comparison basis, 159 unchecked",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -45,10 +45,10 @@
     "duplicate_candidates_qa6": 2,
     "duplicate_candidates_prior_references": 16
   },
-  "next_text_review": "auto-r07-s01-q01",
+  "next_text_review": "auto-r08-s01-q01",
   "publication_gate": "Personal OCR study bank in local IndexedDB only. All source-text/technical/rights approval gates separately required for publishing textbook content.",
-  "current_private_source": "QA18-TEXT-DRAFT",
-  "private_source_sha256": "c438600b1e1bd5298d1761bab00f7097e57298f871f887c7999cdd380d74de3e",
+  "current_private_source": "QA19-TEXT-DRAFT",
+  "private_source_sha256": "678d5346b34c24a8cd88ab656d51f3757d6511a6578c64ccb1e7c40c94f7fd1e",
   "qa7": {
     "total_questions": 720,
     "subject_count": 4,
@@ -329,5 +329,48 @@
     "private_zip_library": "/기출문제_자동차정비산업기사/자동차정비산업기사_QA18_텍스트문제은행_481문항원문대조_20261122.zip",
     "next_review": "auto-r07-s01-q01",
     "note": "Full sixth round visually compared against original QA7 images, 78 new and 2 prior rechecks. OCR fidelity is not technical approval."
+  },
+  "qa19": {
+    "total": 720,
+    "validated_structure_and_source_answer_indices": 720,
+    "source_image_question_choices_explanation_compared": 561,
+    "source_ocr_unverified": 159,
+    "seventh_round_all_subjects_source_checked": 80,
+    "new_unique_source_checked": 80,
+    "previously_reviewed_rechecked": 0,
+    "source_compared_complete_rounds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "corrected_question_fields": 59,
+    "corrected_choice_arrays": 73,
+    "corrected_explanation_fields": 77,
+    "modified_unique_questions": 80,
+    "source_original_key_unchanged": 720,
+    "technical_answer_approvals": 0,
+    "public_release_approved": 0,
+    "exact_duplicate_question_groups": [
+      [
+        "auto-r05-s02-q12",
+        "auto-r06-s02-q11"
+      ]
+    ],
+    "important_technical_flags": [
+      "auto-r07-s01-q06",
+      "auto-r07-s02-q11",
+      "auto-r07-s02-q19",
+      "auto-r07-s03-q01",
+      "auto-r07-s04-q11",
+      "auto-r07-s04-q18"
+    ],
+    "sha256": "678d5346b34c24a8cd88ab656d51f3757d6511a6578c64ccb1e7c40c94f7fd1e",
+    "private_zip_library": "/기출문제_자동차정비산업기사/자동차정비산업기사_QA19_텍스트문제은행_561문항원문대조_20261122.zip",
+    "next_review": "auto-r08-s01-q01",
+    "note": "All 80 seventh-round items source question and explanation PNG compared, 80 new; answer key same as source but technical correctness not approved."
   }
 }
