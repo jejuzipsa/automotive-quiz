@@ -12,6 +12,18 @@ Settings → Pages → Deploy from a branch → main → /(root) → Save.
 
 주의: GitHub Pages 웹사이트는 인터넷에 공개된다. GitHub 저장소를 Private으로 변경한다고 기존 Pages에 올린 콘텐츠가 자동으로 비공개가 되는 것은 아니다.
 
+## **현재 기본 방식: QA8 텍스트 문제은행**
+
+**공인중개사 사이트 `gichul-quiz`와 같은 텍스트 객관식 출제 방식이 공식 개발 원칙이다.** 사진/스캔은 OCR과 원본 대조에만 쓰고, 실제 출제는 문제 텍스트 + 선택지 4개 + 정답 + 텍스트 해설로 한다.
+
+- 개인용 `QA8-TEXT-DRAFT` ZIP / JSON **720문항**(4과목 각 180) → 홈페이지 **QA8 파일 불러오기** → 브라우저 IndexedDB 로컬 저장 → **예상문제** 과목 카드에서 10/20문제 풀기 또는 전체 보기.
+- 매회 새 문제풀이/오답 복습을 시작할 때 보기 4개를 섞고 원본 보기 ID로 **정답 새 위치를 자동 재계산**한다.
+- **25문항만 원문 대조 완료, 695문항은 OCR 미검수 초안, 기술적 답안 인증 0문항**. 사용자 화면에 검수 상태를 표시한다.
+- 구매한 교재의 텍스트는 공개 GitHub/Pages에 게시하지 않는다. 파일을 **개인 기기에서** 선택해서 로컬에만 저장한다. PC와 아이폰은 각각 가져와야 한다.
+- 개인 QA8 ZIP: `/기출문제_자동차정비산업기사/자동차정비산업기사_QA8_텍스트문제은행_720문항_검수전_20261122.zip`; SHA256 `04a565eb86b0054db14531615188d5c10fe0bff453d954d6816807056c24bf3c`.
+- CI: [QA8 텍스트 문제은행 테스트 성공](https://github.com/jejuzipsa/automotive-quiz/actions/runs/44996253593). 실제 iPhone Safari에서의 수동 가져오기 시험은 남음.
+- **개발·인계 지침:** [AGENTS.md](AGENTS.md) → [docs/HANDOFF.md](docs/HANDOFF.md). 기존 QA7 이미지 문제풀이(`private.html`)는 과도기 검수용이며 **최종 출제 방식이 아니다**.
+
 ## 작업 재개 — 다음 채팅에서 반드시 읽을 것
 
 **[인계 문서](docs/HANDOFF.md)** → [진행 기록](docs/WORK_LOG.md) → [문제은행 상태](docs/DATA_BANK.md) → [검수 기준](docs/REVIEW_PROTOCOL.md)
