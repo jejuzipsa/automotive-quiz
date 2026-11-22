@@ -1,0 +1,75 @@
+{
+  "schema_version": "our-bank-v1",
+  "origin_reference": "QA23 source OCR JSON (720/720 transcriptions checked)",
+  "date": "2026-11-22",
+  "status": "editorial_draft_not_connected_to_site",
+  "total_reference_items": 720,
+  "draft_questions_created": 80,
+  "pending_question_rewrites": 640,
+  "technical_answer_verified": 0,
+  "publishable": false,
+  "bank_format": "separate questions and explanations, joined on id",
+  "question_record_fields": [
+    "id",
+    "subject",
+    "track",
+    "round",
+    "question_number",
+    "question",
+    "choices",
+    "answer",
+    "explanation_id",
+    "source_question_id",
+    "review_status",
+    "technical_answer_status",
+    "publishable"
+  ],
+  "explanation_record_fields": [
+    "id",
+    "question_id",
+    "correct_answer",
+    "correct_choice",
+    "reason",
+    "key_point",
+    "source_question_id",
+    "original_issue_flags",
+    "reference_urls",
+    "review_status",
+    "technical_answer_status"
+  ],
+  "subjects": [
+    {
+      "subject": "engine",
+      "question_file": "questions_engine.json",
+      "explanation_file": "explanations_engine.json",
+      "draft_count": 20
+    },
+    {
+      "subject": "chassis",
+      "question_file": "questions_chassis.json",
+      "explanation_file": "explanations_chassis.json",
+      "draft_count": 20
+    },
+    {
+      "subject": "electrical",
+      "question_file": "questions_electrical.json",
+      "explanation_file": "explanations_electrical.json",
+      "draft_count": 20
+    },
+    {
+      "subject": "eco",
+      "question_file": "questions_eco.json",
+      "explanation_file": "explanations_eco.json",
+      "draft_count": 20
+    }
+  ],
+  "all_questions": "questions_all_80.json",
+  "all_explanations": "explanations_all_80.json",
+  "tracking_file": "rewrite_tracking_720.json",
+  "validation_report": "validation_report.json",
+  "warnings": [
+    "QA23 text accuracy does not imply technical correctness. All 80 are new editorial drafts until independent subject-matter review.",
+    "Remaining 640 source concepts have not yet been rewritten.",
+    "Do not treat tracking index as a question bank or silently publish draft content."
+  ]
+}
