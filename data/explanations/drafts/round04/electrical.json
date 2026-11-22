@@ -1,0 +1,330 @@
+[
+  {
+    "id": "auto-made-r04-s03-q01",
+    "question_id": "auto-made-r04-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "전원선의 접지 단락과 과전류 원인을 찾는다",
+    "reason": "퓨즈 단선은 과전류의 결과일 수 있다. 용량을 임의로 높이면 배선을 보호하지 못한다. 회로도에 따라 단락·부하 이상을 점검한다.",
+    "key_point": "퓨즈 반복 단선 = 회로 과전류 원인 추적.",
+    "source_question_id": "auto-r04-s03-q01",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q02",
+    "question_id": "auto-made-r04-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "요레이트 센서의 차체 회전율",
+    "reason": "요레이트 센서는 차체가 수직축 주위로 회전하는 각속도를 측정한다. 조향각·횡가속도·차속 등과 비교해 자세제어가 작동한다.",
+    "key_point": "ESC의 요레이트 = 차체 선회 각속도.",
+    "source_question_id": "auto-r04-s03-q02",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q03",
+    "question_id": "auto-made-r04-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "센서 커넥터와 하네스 연속성·신호 경로",
+    "reason": "센서 자체가 정상이어도 연결 배선·톤휠·전원·접지 불량이면 ECU에는 신호가 전달되지 않는다. 센서 방식에 맞는 검사법을 적용한다.",
+    "key_point": "센서 정상 ≠ 하네스와 신호경로 정상.",
+    "source_question_id": "auto-r04-s03-q03",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_sensor_resistance_normal_does_not_exclude_tone_ring_fault"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q04",
+    "question_id": "auto-made-r04-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "해당 측정 구간에 개방회로 가능성이 있다",
+    "reason": "무한대 저항은 측정한 회로 구간이 열려 있을 때 관찰될 수 있다. 다만 능동형 전자식 센서는 단순 저항 측정이 적합하지 않으므로 종류와 측정 방법을 먼저 구분한다.",
+    "key_point": "수동 코일 센서 저항 무한대 → 단선 의심.",
+    "source_question_id": "auto-r04-s03-q04",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_passive_vs_active_wheel_speed_sensor_resistance_test_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q05",
+    "question_id": "auto-made-r04-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "진단 커넥터 상태와 차량 전원·안전 상태",
+    "reason": "진단 장비를 연결하기 전 배터리 전압과 진단 커넥터 손상, 차량이 안전하게 고정됐는지 등을 확인하면 잘못된 통신 오류와 사고를 줄일 수 있다.",
+    "key_point": "스캔 연결 전: 전원·커넥터·차량 안전.",
+    "source_question_id": "auto-r04-s03-q05",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q06",
+    "question_id": "auto-made-r04-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "해당 절차대로 코딩·보정하고 DTC와 작동을 검증한다",
+    "reason": "ABS/ESC 제어기는 차량 옵션·센서 영점·제동 특성과 연동될 수 있다. 해당 차종의 코딩·학습·시험절차를 적용한다.",
+    "key_point": "ABS 모듈 교체 후 작업은 제조사 보정 지침 준수.",
+    "source_question_id": "auto-r04-s03-q06",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_ABS_module_replacement_always_requires_coding_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q07",
+    "question_id": "auto-made-r04-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "차종·제작연도·적용 유예 및 현행 법규를 함께 확인한다",
+    "reason": "법정 장착의무는 시행시점·차종·차량 분류에 따라 달라진다. 수험용 문항에 숫자나 연도를 쓰려면 해당 시점 공식 기준을 명시해야 한다.",
+    "key_point": "자동차 안전 규정은 적용 연도와 차종을 한정.",
+    "source_question_id": "auto-r04-s03-q07",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_regulation_ESC_mandatory_10_passenger_definition_and_date_require_law_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q08",
+    "question_id": "auto-made-r04-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "증발기 응축수 배수 경로와 실내 필터",
+    "reason": "증발기 주변에 응축수가 고이면 악취·곰팡이 문제가 생길 수 있다. 배수 호스 막힘과 필터·증발기 오염을 함께 확인한다.",
+    "key_point": "공조 악취·습기: 응축수 배수·필터 점검.",
+    "source_question_id": "auto-r04-s03-q08",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q09",
+    "question_id": "auto-made-r04-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "외기온·팬·냉매 충전량을 확인해 원인을 구분한다",
+    "reason": "고압·저압 데이터는 주변 온도·회전수·송풍 조건에 영향을 받는다. 과충전 외에도 응축 효율 저하 등이 가능하므로 전체 조건과 비교한다.",
+    "key_point": "에어컨 압력은 양쪽 게이지만으로 고장 확정 금지.",
+    "source_question_id": "auto-r04-s03-q09",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_ac_both_pressure_high_not_always_refrigerant_overcharge"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q10",
+    "question_id": "auto-made-r04-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "응축기 풍량과 냉매 충전 상태",
+    "reason": "응축기 냉각 부족은 고압 상승을 만들 수 있고 과충전·비응축가스도 영향을 준다. 컴프레서 성능 저하일 때는 압력차가 줄 수도 있다.",
+    "key_point": "고압 상승 진단은 열교환·냉매량·운전 조건.",
+    "source_question_id": "auto-r04-s03-q10",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_expansion_valve_excessive_opening_claim_requires_physics_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q11",
+    "question_id": "auto-made-r04-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "응축기의 열 방출이 부족해 냉매 고압이 높아질 수 있다",
+    "reason": "응축기 팬은 냉매의 열을 외기로 방출하도록 공기 흐름을 만든다. 냉각이 불량하면 응축 압력이 상승할 수 있다.",
+    "key_point": "응축 팬 고장 → 응축 효율 저하 가능.",
+    "source_question_id": "auto-r04-s03-q11",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_ac_fan_failure_high_low_both_rise_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q12",
+    "question_id": "auto-made-r04-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "팽창장치와 필터·배관 막힘 부위",
+    "reason": "팽창밸브 또는 유로 막힘은 저압측으로 공급되는 냉매를 제한한다. 단, 압력 조합은 차종·온도·운전 조건을 함께 고려해 진단한다.",
+    "key_point": "고압상승+저압저하 조건에서 유로 제한 확인.",
+    "source_question_id": "auto-r04-s03-q12",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q13",
+    "question_id": "auto-made-r04-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "스로틀 개도·공회전 목표값과 흡기 누설 데이터",
+    "reason": "전자스로틀 차량은 ECU가 스로틀 개도를 제어해 공회전을 유지할 수 있다. 모든 차종에 별도 공회전 제어밸브가 있는 것은 아니다.",
+    "key_point": "공회전 불량 진단은 스로틀 제어 방식 확인.",
+    "source_question_id": "auto-r04-s03-q13",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_idle_air_control_valve_not_on_all_modern_throttle_systems"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q14",
+    "question_id": "auto-made-r04-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "레귤레이터의 와이어·기어·레일 파손",
+    "reason": "모터 회전이 확인되는데 유리가 움직이지 않으면 레귤레이터·케이블 등 동력 전달부를 점검한다. 유리 걸림과 가이드 손상도 확인한다.",
+    "key_point": "모터 작동 + 유리 정지 → 구동 전달부 점검.",
+    "source_question_id": "auto-r04-s03-q14",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q15",
+    "question_id": "auto-made-r04-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "관련 퓨즈·전원 확인 후 스위치·배선·모터 검사",
+    "reason": "전원 공급 계통의 확인부터 시작해 단계별로 전압과 연속성을 검사한다. 개별 회로 구성에 따라 순서가 달라질 수 있어 회로도를 사용해야 한다.",
+    "key_point": "전동창 진단: 전원·명령·배선·모터 순차 확인.",
+    "source_question_id": "auto-r04-s03-q15",
+    "original_issue_flags": [
+      "source_text_corrected"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q16",
+    "question_id": "auto-made-r04-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "차종별 키 등록·동기화·코딩 절차",
+    "reason": "이모빌라이저·스마트키 계통은 모듈과 키의 보안 동기화가 필요할 수 있다. 필요 절차는 차량별 매뉴얼에서 확인한다.",
+    "key_point": "스마트키 모듈 교환 → 차량별 등록·코딩 검토.",
+    "source_question_id": "auto-r04-s03-q16",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_smart_key_module_mandatory_registration_depends_vehicle"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q17",
+    "question_id": "auto-made-r04-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "저장 스위치 입력과 메모리 제어 데이터 확인",
+    "reason": "미러 모터가 정상이라면 위치 기억 기능의 입력·피드백·제어 계통을 구별해 점검한다. 스위치 접점과 설정 조건을 확인한다.",
+    "key_point": "미러 메모리 불량: 저장 명령·제어·위치 피드백.",
+    "source_question_id": "auto-r04-s03-q17",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q18",
+    "question_id": "auto-made-r04-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "레일·레귤레이터 마찰과 유리 정렬을 점검한다",
+    "reason": "유리 안내 레일 변형과 오염, 레귤레이터 마찰 증가는 부하를 증가시킨다. 끼임방지 기능이 작동할 수 있어 정렬·윤활·기구손상을 확인한다.",
+    "key_point": "전압 정상 + 작동 저항 증가 → 기구부 점검.",
+    "source_question_id": "auto-r04-s03-q18",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q19",
+    "question_id": "auto-made-r04-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "모터 구동 명령·전압과 시트 트랙·케이블의 걸림 검사",
+    "reason": "전동시트 슬라이드 장애는 전원·스위치·모터·트랙·케이블 등 여러 요소에서 생긴다. 각 부분을 확인한 뒤 실제 결함 부품을 선택한다.",
+    "key_point": "전동시트는 전기·기계 구동계 모두 진단.",
+    "source_question_id": "auto-r04-s03-q19",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images",
+      "source_seat_no_sliding_motor_and_wiring_should_be_tested_before_replacement"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r04-s03-q20",
+    "question_id": "auto-made-r04-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "해당 퓨즈와 전원·접지 공급 상태 확인",
+    "reason": "여러 기능이 동시에 멈추면 공통 전원 경로를 먼저 확인하는 것이 효율적이다. 퓨즈가 정상이라도 릴레이·스위치·접지와 제어기의 상태를 검사한다.",
+    "key_point": "공통 전기 기능 고장 → 퓨즈·전원·접지 우선.",
+    "source_question_id": "auto-r04-s03-q20",
+    "original_issue_flags": [
+      "qa16_ocr_corrected_against_original_images"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
