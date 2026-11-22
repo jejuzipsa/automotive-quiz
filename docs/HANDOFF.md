@@ -10,7 +10,7 @@
 - QA7 720문항: 원문 전사 대조 완료 20, 지문/선택지만 대조 3, 전사 미착수 697. 기술 정답 승인 0, 공개 게시 승인 0.
 - 1회 엔진정비 11~20번 원문 이미지로 재대조. 기술적 문제 후보는 docs/QA7_REVIEW.md 참조.
 - 사이트 홈 '내 문제은행' 및 https://jejuzipsa.github.io/automotive-quiz/private.html 에 로컬 ZIP을 기기에서 불러와 720문항 원본 이미지/해설 채점·오답 복습 추가. 데이터는 서버에 업로드하지 않음.
-- 실제 49MB ZIP과 iPhone 13 Pro 수동 브라우저 테스트 미실시. Mock ZIP 가상 DOM 테스트에서 문항 인식→풀이→채점→오답 통과.
+- 실제 49MB ZIP과 iPhone 13 Pro 수동 브라우저 테스트 미실시. Mock ZIP 가상 DOM 검사 + 실제 JSZip 라이브러리 기반 720문항 ZIP 생성/읽기·20문항 풀이/채점/오답 재풀이 GitHub Actions CI 성공 (https://github.com/jejuzipsa/automotive-quiz/actions/runs/44987407820).
 - 설명: docs/PRIVATE_BANK_IMPORT.md, docs/QA7_REVIEW.md, data/bank-status.json.
 - 다음 전사 시작점: auto-r01-s02-q01 (1회 섀시정비 1번).
 
