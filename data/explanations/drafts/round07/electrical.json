@@ -1,0 +1,337 @@
+[
+  {
+    "id": "auto-made-r07-s03-q01",
+    "question_id": "auto-made-r07-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "식별자 비트를 이용한 비파괴 중재 방식",
+    "reason": "CAN은 버스의 우성·열성 비트를 이용해 식별자에 따라 우선권을 결정한다. 일반적인 Ethernet CSMA/CD와 같다고 가르치면 부정확하다.",
+    "key_point": "CAN = 식별자 우선권의 비파괴 중재.",
+    "source_question_id": "auto-r07-s03-q01",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared",
+      "source_can_csma_ca_protocol_description_suspect"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q02",
+    "question_id": "auto-made-r07-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "제작사 규정·배선 허용전류·기동전류와 회로보호 요구",
+    "reason": "퓨즈는 부하 및 배선을 과전류에서 보호하도록 정격과 시간-전류 특성을 선정한다. 단순한 일률적 배수는 차량마다 다른 기동전류와 배선 사양을 반영하지 못한다.",
+    "key_point": "퓨즈 정격은 배선과 부하, 제작사 규격을 따른다.",
+    "source_question_id": "auto-r07-s03-q02",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_fuse_plus_20percent_rule_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q03",
+    "question_id": "auto-made-r07-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "코일 신호로 별도 접점을 구동하는 릴레이",
+    "reason": "릴레이는 코일에 흐르는 비교적 작은 전류로 접점을 작동시켜 큰 전류가 흐르는 부하 회로를 개폐할 수 있다.",
+    "key_point": "릴레이 = 작은 제어전류로 큰 부하 전류를 제어.",
+    "source_question_id": "auto-r07-s03-q03",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q04",
+    "question_id": "auto-made-r07-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "산소센서는 배출가스 제어용이며 ABS의 직접 센서가 아니다",
+    "reason": "ABS의 주요 입력은 휠속도 등 제동 상태 자료다. 산소센서는 엔진 배기가스의 산소 상태를 감지하는 별도 계통이다.",
+    "key_point": "ABS 센서와 엔진 배출가스 산소센서는 서로 다르다.",
+    "source_question_id": "auto-r07-s03-q04",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q05",
+    "question_id": "auto-made-r07-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "부하가 흐르는 상태에서 접점 양단을 전압 모드로 계측",
+    "reason": "전압강하는 저항이 있는 접점에 전류가 흐를 때 나타난다. 부하를 걸고 계측기 전압 모드를 양단에 연결해야 실동작 상태의 문제를 찾을 수 있다.",
+    "key_point": "전압강하 측정 = 부하 통전 상태 + 대상 양단 병렬.",
+    "source_question_id": "auto-r07-s03-q05",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q06",
+    "question_id": "auto-made-r07-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "브레이크 압력을 조절해 바퀴 회전을 유지하도록 돕는다",
+    "reason": "ABS는 바퀴속도 변화로 잠김 경향을 추정하고 압력 유지·감압·증압을 반복해 조향 안정성과 제동 제어를 돕는다.",
+    "key_point": "ABS는 제동 중 휠 잠김을 억제한다.",
+    "source_question_id": "auto-r07-s03-q06",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared",
+      "source_abs_shorter_stopping_distance_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q07",
+    "question_id": "auto-made-r07-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "요레이트·횡가속도 센서의 기준 오프셋",
+    "reason": "ESC는 요율·횡가속도 신호를 참조한다. 센서나 제어기 교환 후 차종에 따라 규정된 정지·평탄 조건에서 영점 학습을 수행할 수 있다.",
+    "key_point": "ESC 센서 학습은 차량별 요레이트/횡가속도 오프셋 규정 확인.",
+    "source_question_id": "auto-r07-s03-q07",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared",
+      "source_yaw_rate_sensor_calibration_oem_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q08",
+    "question_id": "auto-made-r07-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "실내 공기에서 열을 흡수하며 냉매가 증발했다",
+    "reason": "증발기에서는 상대적으로 낮은 압력의 냉매가 증발하면서 주변 공기로부터 잠열을 흡수한다. 이를 통해 실내 공기가 냉각된다.",
+    "key_point": "증발기 = 냉매 증발·실내 공기 열흡수.",
+    "source_question_id": "auto-r07-s03-q08",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q09",
+    "question_id": "auto-made-r07-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "실내 공기를 열교환기와 송풍구로 보내는 것",
+    "reason": "블로워 팬은 실내 공기를 증발기·히터코어 등 열교환기를 지나게 해 공조 덕트로 보낸다. 냉매 압축 기능은 컴프레서가 맡는다.",
+    "key_point": "블로워 모터 = 공조 풍량과 공기 순환.",
+    "source_question_id": "auto-r07-s03-q09",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q10",
+    "question_id": "auto-made-r07-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "운전자 설정 속도에 가깝도록 구동 토크를 조절한다",
+    "reason": "기본 크루즈 컨트롤은 엔진·모터 구동 출력을 조절해 운전자가 설정한 주행 속도를 유지하려 한다. 앞차 거리 추종은 적응형 ACC의 기능이다.",
+    "key_point": "기본 크루즈 = 설정 속도 유지, ACC = 차간거리 추종.",
+    "source_question_id": "auto-r07-s03-q10",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q11",
+    "question_id": "auto-made-r07-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "차량 주변의 조도를 감지하는 센서 신호",
+    "reason": "오토라이트는 외부 밝기를 감지해 점등 여부를 판단한다. 와이퍼 연동 등 부가 조건은 차종별로 포함될 수 있다.",
+    "key_point": "오토라이트는 외부 조도 입력으로 점등을 제어한다.",
+    "source_question_id": "auto-r07-s03-q11",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q12",
+    "question_id": "auto-made-r07-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "전하의 흐름률을 나타내는 암페어",
+    "reason": "전류는 단위 시간당 흐르는 전하량으로 SI 단위가 암페어(A)다. 전압은 V, 저항은 Ω, 전력은 W로 구분한다.",
+    "key_point": "A=전류, V=전압, Ω=저항, W=전력.",
+    "source_question_id": "auto-r07-s03-q12",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q13",
+    "question_id": "auto-made-r07-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "두 소자에 같은 전류가 흐른다",
+    "reason": "직렬 회로는 전류가 지나는 경로가 하나이므로 모든 소자에 같은 전류가 흐른다. 전압강하는 저항값에 비례하고 합성 저항은 30Ω이다.",
+    "key_point": "직렬 회로 → 전류 동일, 저항 합산.",
+    "source_question_id": "auto-r07-s03-q13",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q14",
+    "question_id": "auto-made-r07-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "전력(W)으로서 전압×전류",
+    "reason": "전력은 단위 시간에 전달되거나 소비되는 에너지로, 직류 회로에서 P=VI로 계산할 수 있다. 예를 들어 12V·2A면 24W이다.",
+    "key_point": "전력 P=VI, 단위 W.",
+    "source_question_id": "auto-r07-s03-q14",
+    "original_issue_flags": [
+      "short_or_missing_choice",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q15",
+    "question_id": "auto-made-r07-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "전방 카메라 영상·유리 오염·보정 상태",
+    "reason": "차선 인지 시스템은 카메라를 통해 차선·도로 경계를 분석하는 경우가 많다. 카메라 오염, 날씨, 광학 보정 상태가 인식 성능에 영향을 줄 수 있다.",
+    "key_point": "차선 이탈 경고 → 전방 카메라/보정/시야 확인.",
+    "source_question_id": "auto-r07-s03-q15",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q16",
+    "question_id": "auto-made-r07-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "충돌 위험을 감지해 자동 제동을 수행하거나 보조한다",
+    "reason": "자동 긴급제동 시스템은 센서가 충돌 위험을 판단하면 경고·제동을 수행할 수 있다. 적용 속도와 한계는 시스템별로 다르다.",
+    "key_point": "AEB = 위험 판단 후 제동 보조·자동 개입.",
+    "source_question_id": "auto-r07-s03-q16",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "explanation_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q17",
+    "question_id": "auto-made-r07-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "개별 휠 제동 압력 및 필요 시 엔진 구동토크",
+    "reason": "ESC는 조향각과 차량 요율·횡가속도 등을 비교해 개별 휠 제동 및 구동력 제어로 자세를 안정시키려 한다.",
+    "key_point": "ESC = 조향 의도 vs 실제 거동 비교·개별 제동.",
+    "source_question_id": "auto-r07-s03-q17",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q18",
+    "question_id": "auto-made-r07-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "냉매의 압력을 낮추며 유량을 조절한다",
+    "reason": "팽창 밸브는 고압측 냉매를 저압측으로 감압하고 증발기 공급량을 제어한다. 압축 기능은 컴프레서가 맡는다.",
+    "key_point": "팽창밸브 = 냉매 감압·공급량 제어.",
+    "source_question_id": "auto-r07-s03-q18",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_expansion_valve_description_may_be_oversimplified"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q19",
+    "question_id": "auto-made-r07-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "후방 카메라 영상센서와 영상처리 계통",
+    "reason": "후방카메라는 영상센서가 촬영한 정보를 차량 제어기나 디스플레이에 전달한다. 감지 보조 기능은 운전자의 주변 확인을 대체하지 않는다.",
+    "key_point": "후방카메라 = 촬영 영상의 전송·표시.",
+    "source_question_id": "auto-r07-s03-q19",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s03-q20",
+    "question_id": "auto-made-r07-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "엔진 배기가스 산소센서의 혼합비 신호",
+    "reason": "주차 보조는 초음파·카메라·레이더 등으로 주변 물체를 인지할 수 있다. 산소센서는 엔진 배기가스 제어 용도다.",
+    "key_point": "주차센서 ≠ 산소센서, 초음파·카메라·레이더 등 활용.",
+    "source_question_id": "auto-r07-s03-q20",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

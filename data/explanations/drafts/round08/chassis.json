@@ -1,0 +1,314 @@
+[
+  {
+    "id": "auto-made-r08-s02-q01",
+    "question_id": "auto-made-r08-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "클러치 마찰재 과열·슬립으로 인한 오염",
+    "reason": "ATF 내 검은 입자·탄 냄새는 내부 마찰재와 오일 열화의 단서가 된다. 온도·유압·슬립 데이터를 확인해야 한다.",
+    "key_point": "탄 냄새와 마찰재 → 내부 클러치 과열 가능.",
+    "source_question_id": "auto-r08-s02-q01",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q02",
+    "question_id": "auto-made-r08-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "변속 레버 위치를 감지하는 인히비터·레인지 스위치",
+    "reason": "레인지 센서는 변속 위치를 제어기에 알려 시동허용과 변속 제어에 사용될 수 있다. 시프트록은 P 위치에서 레버 이동을 제한하는 다른 기능이다.",
+    "key_point": "인히비터 = P/N 시동 허용과 레인지 정보.",
+    "source_question_id": "auto-r08-s02-q02",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: 원본이 인히비터 스위치와 시프트 록 제어 스위치를 동의어로 취급함. 실제 기능 구분 및 차종 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q03",
+    "question_id": "auto-made-r08-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "짧은 지정 시험시간과 제조사 기준 RPM 비교",
+    "reason": "스톨시험은 토크컨버터와 엔진·변속기 상태를 제한된 조건에서 평가한다. 과열과 차량 움직임 위험이 있어 지정 시간·브레이크·오일온도 조건을 지켜야 한다.",
+    "key_point": "스톨시험은 안전한 제한시간과 차종 기준 필수.",
+    "source_question_id": "auto-r08-s02-q03",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: 스톨 테스트 실차 안전 절차·시험 조건 및 원웨이 클러치 진단 해석 제조사별 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q04",
+    "question_id": "auto-made-r08-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "적합한 스프링 컴프레서로 규정 위치에서 스프링 장력을 지지",
+    "reason": "코일 스프링은 큰 탄성 에너지를 저장한다. 분해 전 적합한 압축공구로 지지하고 압축 부하를 확인하지 않으면 분리 중 부품이 튀어나와 위험하다.",
+    "key_point": "스트럿 분해 전 스프링 압축·고정 확인.",
+    "source_question_id": "auto-r08-s02-q04",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "TECHNICAL_REVIEW_PENDING: 유압식 현가장치와 코일 스프링 컴프레서 사용 문맥, 분리 절차의 안전성 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q05",
+    "question_id": "auto-made-r08-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "댐퍼 제어기·센서 및 전기식 감쇠력 조절 장치",
+    "reason": "맥퍼슨 스트럿은 기계적 현가 형식이므로 전자제어 댐퍼와 조합될 수도 있다. 전자제어 여부는 제어기·센서·액추에이터 구성으로 판단한다.",
+    "key_point": "현가 구조 형식과 감쇠 전자제어는 별개.",
+    "source_question_id": "auto-r08-s02-q05",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "TECHNICAL_REVIEW_PENDING: 맥퍼슨 스트럿 구조에서도 전자제어 장치 결합 가능: 보기의 구분 기준 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q06",
+    "question_id": "auto-made-r08-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "평탄한 지면과 지정 적재·타이어 공기압 상태",
+    "reason": "높이 보정값은 차체의 실제 위치와 연관되므로 평탄한 노면과 정해진 적재·공기압·정렬 조건이 필요할 수 있다.",
+    "key_point": "높이 센서 보정은 평탄·규정하중·타이어 조건 확인.",
+    "source_question_id": "auto-r08-s02-q06",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q07",
+    "question_id": "auto-made-r08-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "엔진 연료 분사 시기",
+    "reason": "전자 현가는 차고·댐퍼 신호와 제어기의 진단정보를 주로 사용한다. 엔진 분사시기는 현가 제어의 직접 지표가 아니다.",
+    "key_point": "전자 현가 검사 → 차고·댐퍼·구동명령 비교.",
+    "source_question_id": "auto-r08-s02-q07",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q08",
+    "question_id": "auto-made-r08-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "운전자가 가한 조향 입력의 크기·방향 파악",
+    "reason": "조향 토크 센서는 운전자의 조작힘을 전기 신호로 변환해 EPS 제어기가 모터 보조력을 계산하도록 돕는다.",
+    "key_point": "조향 토크 센서 = 운전자 입력력 감지.",
+    "source_question_id": "auto-r08-s02-q08",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q09",
+    "question_id": "auto-made-r08-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "차종별 아날로그·디지털·이중화 신호 구조 확인",
+    "reason": "EPS 센서는 안전성을 위해 중복 신호 또는 디지털 출력도 사용한다. 전압 범위를 모든 차량에 고정하는 대신 센서 사양과 진단 절차를 따라야 한다.",
+    "key_point": "EPS 토크센서 출력은 차종·설계마다 달라질 수 있다.",
+    "source_question_id": "auto-r08-s02-q09",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: EPS 토크 센서 출력 형태는 장치별 아날로그/디지털/통신형 다양할 수 있어 일반화 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q10",
+    "question_id": "auto-made-r08-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "ABS 경고등과 잠김 방지 제어 중지",
+    "reason": "ABS 이상 시 제어기는 경고등을 표시하고 해당 기능을 제한할 수 있다. 일반적인 유압 제동은 남아 있을 수 있으므로 차종별 안전 조치를 확인해야 한다.",
+    "key_point": "ABS 기능 제한은 경고등·제어 비활성화로 나타날 수 있다.",
+    "source_question_id": "auto-r08-s02-q10",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "TECHNICAL_REVIEW_PENDING: ABS/ESC 고장시 나타나는 페달 진동 등 문항 표현이 실제 진단과 일치하는지 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q11",
+    "question_id": "auto-made-r08-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "진단기 고장코드와 프리즈프레임 데이터를 기록",
+    "reason": "DTC와 발생 당시 조건은 간헐 고장 진단의 핵심 자료다. 수리 전 삭제하면 기록이 사라질 수 있으므로 기록한 뒤 재현 시험을 준비한다.",
+    "key_point": "진단 시작은 DTC·발생 조건 보존.",
+    "source_question_id": "auto-r08-s02-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q12",
+    "question_id": "auto-made-r08-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "차종에 적용된 CAN 등 차내 네트워크",
+    "reason": "ABS와 다른 ECU는 CAN 등의 버스를 사용해 속도·상태 데이터를 공유할 수 있다. 정확한 네트워크 토폴로지는 차량별 회로도를 확인한다.",
+    "key_point": "ABS ECU 정보교환은 CAN 등 통신망 이용.",
+    "source_question_id": "auto-r08-s02-q12",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "explanation_needs_review",
+      "TECHNICAL_REVIEW_PENDING: 휠 속도 센서 신호 형식, ECU 통신 및 ABS 경고등 연결 방식의 차량별 차이 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q13",
+    "question_id": "auto-made-r08-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "차종 지정 오일 규격·교환 조건과 제조사 서비스 일정",
+    "reason": "변속기 오일의 교환 시점과 종류는 유종·설계·가혹조건에 따라 달라진다. 원본의 단일 거리 범위를 보편 규정으로 사용하면 안 된다.",
+    "key_point": "ATF 주기·유종은 제작사별 서비스 정보 기준.",
+    "source_question_id": "auto-r08-s02-q13",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "TECHNICAL_REVIEW_PENDING: ATF 40,000~60,000km 일반화는 차량·변속기·유지보수조건에 따라 다르므로 보편적 정답 여부 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q14",
+    "question_id": "auto-made-r08-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "연료의 옥탄가를 계측하는 센서",
+    "reason": "ESC는 조향 의도와 실제 차량 운동을 비교한다. 옥탄가는 연료 특성으로 일반적인 ESC 차체 자세제어의 직접 감지 대상이 아니다.",
+    "key_point": "ESC 주요 입력 = 조향각·요율·휠속도.",
+    "source_question_id": "auto-r08-s02-q14",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: 옥탄가 센서를 엔진 관리 시스템의 일반적인 실차 센서로 단정하는 해설 타당성 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q15",
+    "question_id": "auto-made-r08-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "스티어링 휠에 가해지는 운전자 조향 토크",
+    "reason": "EPS는 운전자의 조향 토크와 차량속도 등을 바탕으로 보조 전류를 계산한다. 토크센서의 실제 입력 신호가 중요하다.",
+    "key_point": "조향 보조량은 조향 토크·속도·제어상태에 좌우된다.",
+    "source_question_id": "auto-r08-s02-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q16",
+    "question_id": "auto-made-r08-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차체와 차축 사이의 상대 높이 변화",
+    "reason": "차고 센서는 링크나 전자식 변위를 통해 차체와 차축 사이의 상대 위치를 측정해 높이 조절과 연동 제어에 활용한다.",
+    "key_point": "차고 센서 = 차체/차축 간 높이 정보.",
+    "source_question_id": "auto-r08-s02-q16",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q17",
+    "question_id": "auto-made-r08-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "로드 표면과 맞닿는 오일 씰의 밀봉 상태",
+    "reason": "로드 표면의 손상은 씰 접촉부를 훼손해 오일 누유로 이어질 수 있다. 로드와 씰, 장착부의 상태를 함께 확인해야 한다.",
+    "key_point": "로드 손상은 댐퍼 오일 씰 누유로 연결 가능.",
+    "source_question_id": "auto-r08-s02-q17",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q18",
+    "question_id": "auto-made-r08-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "핸들 조작 저항과 조향 보조가 불규칙하게 변함",
+    "reason": "토크 신호가 불안정하면 EPS 제어기가 운전자 입력을 잘못 해석하거나 안전모드로 제한할 수 있다. 운전자는 조향감 변화와 경고등을 느낄 수 있다.",
+    "key_point": "토크센서 불안정 → EPS 보조력 이상.",
+    "source_question_id": "auto-r08-s02-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q19",
+    "question_id": "auto-made-r08-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "내부 유압 댐퍼의 점도만 측정하면 모든 감쇠력 특성을 완전히 알 수 있다",
+    "reason": "댐퍼는 내부 밸브와 오일 흐름, 속도·온도에 따라 감쇠력이 달라진다. 오일 점도 하나만으로 실제 감쇠 특성을 완전히 판정할 수 없다.",
+    "key_point": "쇼크업소버 감쇠력은 밸브·속도·온도에 영향받는다.",
+    "source_question_id": "auto-r08-s02-q19",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: 속업소버 바운스 테스트로 감쇠력 정량 확인 가능하다는 표현의 적절성 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s02-q20",
+    "question_id": "auto-made-r08-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "컨버터 내부손상·변속기 오염범위와 세척/교환 규정 검토",
+    "reason": "토크컨버터 내부 베어링·클러치 손상으로 금속입자가 발생할 수 있다. 오일라인과 변속기 내부 오염이 퍼졌는지도 확인해야 한다.",
+    "key_point": "금속입자 발견 → 컨버터·오일라인·변속기 오염 함께 평가.",
+    "source_question_id": "auto-r08-s02-q20",
+    "original_issue_flags": [
+      "TECHNICAL_REVIEW_PENDING: 토크 컨버터 내부 금속 마모 입자의 확인 방법과 교환 판단 기준 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

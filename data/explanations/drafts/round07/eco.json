@@ -1,0 +1,342 @@
+[
+  {
+    "id": "auto-made-r07-s04-q01",
+    "question_id": "auto-made-r07-s04-q01",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "내연기관의 연료분사 시기와 양을 직접 구동",
+    "reason": "BMS는 배터리의 안전과 상태를 관리하며 연료분사는 엔진 ECU가 담당한다. 시스템은 정보를 교환할 수 있지만 관리 대상이 다르다.",
+    "key_point": "BMS = 배터리 계통, ECU = 연료·엔진 제어.",
+    "source_question_id": "auto-r07-s04-q01",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q02",
+    "question_id": "auto-made-r07-s04-q02",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "배터리 출력을 제한하고 냉각 기능을 강화한다",
+    "reason": "배터리 온도가 허용 범위를 벗어나면 BMS가 충·방전 전류를 제한하고 냉각 계통을 제어할 수 있다. 보호전략은 제조사별로 다르다.",
+    "key_point": "배터리 과열 → 출력 제한·냉각 등 보호제어.",
+    "source_question_id": "auto-r07-s04-q02",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_ev_battery_temperature_15_to_35_range_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q03",
+    "question_id": "auto-made-r07-s04-q03",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "셀 간 충전 상태와 전압 편차를 줄인다",
+    "reason": "직렬 구성에서는 일부 셀이 먼저 충전 상한에 도달하면 전체 팩 충전이 제한된다. 밸런싱은 셀별 편차를 관리해 사용 가능한 용량을 확보한다.",
+    "key_point": "셀 밸런싱 → 셀간 SOC·전압 편차 관리.",
+    "source_question_id": "auto-r07-s04-q03",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_cell_balance_voltage_vs_soc_nuance"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q04",
+    "question_id": "auto-made-r07-s04-q04",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "추가 셀·하우징 때문에 차체 질량이 늘어날 수 있다",
+    "reason": "배터리 팩 용량과 무게는 셀 에너지밀도·하우징·열관리 설계에 따라 달라진다. 동일 조건에서 단순 셀 증설은 대개 질량을 늘린다.",
+    "key_point": "배터리 용량 증가가 무게 감소를 보장하지 않는다.",
+    "source_question_id": "auto-r07-s04-q04",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q05",
+    "question_id": "auto-made-r07-s04-q05",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "수소 전용 검지기 사용과 점화원 통제·환기",
+    "reason": "수소는 무색·무취이며 적합한 검지기로 감지해야 한다. 누출 시 점화원 통제와 환기·안전거리 확보를 병행한다.",
+    "key_point": "수소 누출 검출은 적합한 전용 장비로 수행한다.",
+    "source_question_id": "auto-r07-s04-q05",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q06",
+    "question_id": "auto-made-r07-s04-q06",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "전동식 에어컨 압축기와 전력제어",
+    "reason": "전동식 압축기 구동 시스템은 엔진 크랭크축과 별개로 배터리의 전력을 공급받아 냉매를 순환시킬 수 있다.",
+    "key_point": "전동 압축기 → 엔진 정지 중에도 냉방 가능.",
+    "source_question_id": "auto-r07-s04-q06",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared",
+      "source_all_hybrids_electric_compressor_overgeneralized"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q07",
+    "question_id": "auto-made-r07-s04-q07",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "냉각수 펌프·순환로·온도 센서를 점검한다",
+    "reason": "전동모터의 열관리는 공냉·수냉 또는 오일냉각 등 차량 설계에 따라 다르다. 실제 장착된 냉각 회로의 순환 상태를 확인한다.",
+    "key_point": "구동 모터 냉각 방식은 차종 설계마다 다르다.",
+    "source_question_id": "auto-r07-s04-q07",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q08",
+    "question_id": "auto-made-r07-s04-q08",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "차량·충전기 표준과 호환성을 먼저 확인해야 한다",
+    "reason": "충전 커넥터는 지역·모델·충전 방식에 따라 다르다. 호환되지 않는 단자를 강제로 결합하거나 승인되지 않은 어댑터를 사용하지 말아야 한다.",
+    "key_point": "충전 규격: 지역·AC/DC·차량별 호환성 확인.",
+    "source_question_id": "auto-r07-s04-q08",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared",
+      "source_tesla_connector_global_standards_changed"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q09",
+    "question_id": "auto-made-r07-s04-q09",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "가솔린 엔진 점화시기 계산",
+    "reason": "BMS는 배터리 상태 감시와 보호를 수행한다. 순수 전기차에는 내연기관 점화 제어가 필요하지 않다.",
+    "key_point": "EV BMS 기능과 가솔린 엔진 점화 제어 구별.",
+    "source_question_id": "auto-r07-s04-q09",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q10",
+    "question_id": "auto-made-r07-s04-q10",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "배터리 온도·충전속도·충전 상태 운용",
+    "reason": "배터리 노화는 온도·충방전 전류·SOC 범위와 시간의 영향을 받는다. 소프트웨어 개선은 보호제어를 바꿀 수 있지만 그 자체가 주요 화학 열화 원인이라는 뜻은 아니다.",
+    "key_point": "배터리 수명은 열·전류·SOC 운용조건에 영향.",
+    "source_question_id": "auto-r07-s04-q10",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q11",
+    "question_id": "auto-made-r07-s04-q11",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "즉시 대피하고 긴급 신고 후 구조대 지시에 따른다",
+    "reason": "리튬이온 배터리 열폭주는 재점화와 유해가스 위험이 있다. 일반인은 안전거리 확보와 신고가 우선이며 냉각·진압 방법은 전문대응팀과 제조사 지침을 따른다.",
+    "key_point": "EV 화재 일반인 대응: 대피·신고·접근금지.",
+    "source_question_id": "auto-r07-s04-q11",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_ev_battery_fire_safety_professional_response_only"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q12",
+    "question_id": "auto-made-r07-s04-q12",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "DC를 교류로 바꾸고 전류·주파수를 제어하는 인버터",
+    "reason": "인버터는 배터리 DC를 모터가 요구하는 AC로 변환하고 구동 출력과 토크를 제어한다. 구성에 따라 회생제동 때 전력 흐름이 역전될 수 있다.",
+    "key_point": "인버터 = DC↔AC 변환·모터 토크 제어.",
+    "source_question_id": "auto-r07-s04-q12",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q13",
+    "question_id": "auto-made-r07-s04-q13",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "배터리 SOC·온도와 차량 및 충전기 제한 명령",
+    "reason": "급속 충전 속도는 배터리 충전량·온도·충전기 출력을 비롯한 요소에 따라 달라진다. 에어컨을 항상 켜야 충전된다는 규칙은 없다.",
+    "key_point": "충전 전류 제한은 SOC·온도·충전기 협상 결과.",
+    "source_question_id": "auto-r07-s04-q13",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa19_ocr_source_compared",
+      "source_ev_charging_ac_use_and_ignition_oem_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q14",
+    "question_id": "auto-made-r07-s04-q14",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "고전압 전용 퓨즈·퓨저블 링크",
+    "reason": "고전압 퓨즈는 지나친 전류가 흐를 때 용단돼 배선을 보호한다. 메인 접촉기와는 전류 차단 방식과 목적이 다르다.",
+    "key_point": "HV 퓨즈 = 과전류 발생 시 회로 보호.",
+    "source_question_id": "auto-r07-s04-q14",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q15",
+    "question_id": "auto-made-r07-s04-q15",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "전기모터가 구동력을 만들고 전자제어로 토크를 조절한다",
+    "reason": "일반적인 FCEV는 수소와 산소의 전기화학 반응으로 전기를 만들고 인버터·모터로 구동한다. 일부 구조는 보조배터리도 함께 사용한다.",
+    "key_point": "수소연료전지차 = 전력 생산 + 전동모터 구동.",
+    "source_question_id": "auto-r07-s04-q15",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q16",
+    "question_id": "auto-made-r07-s04-q16",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "차량과 충전소가 승인한 35MPa·70MPa 등 설계 등급",
+    "reason": "수소 충전 압력 등급은 차종 및 저장용기 설계에 따라 다르다. 35MPa와 70MPa 수준의 차량이 존재하며 안전 인증과 충전 프로토콜을 따라야 한다.",
+    "key_point": "수소 충전 압력은 탱크·충전기 설계 등급에 맞춘다.",
+    "source_question_id": "auto-r07-s04-q16",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_hydrogen_pressure_dispensing_temperature_pressure_rating_technical_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q17",
+    "question_id": "auto-made-r07-s04-q17",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "점화 불꽃을 만드는 스파크 플러그",
+    "reason": "연료전지는 전극의 전기화학 반응으로 전기를 생산한다. 점화플러그로 수소를 폭발시켜 출력을 만드는 내연기관이 아니다.",
+    "key_point": "연료전지 스택에는 MEA·분리판 등이 있고 점화플러그는 없다.",
+    "source_question_id": "auto-r07-s04-q17",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q18",
+    "question_id": "auto-made-r07-s04-q18",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "위험 조건에서 압력을 안전한 지정 경로로 방출하도록 한다",
+    "reason": "수소용기에는 온도 또는 압력 조건에 반응하는 안전밸브가 사용될 수 있다. TPRD는 보통 온도 반응형 압력 해제장치로, 작동조건은 제품별로 확인한다.",
+    "key_point": "수소탱크 방출장치는 과열·과압 보호 목적.",
+    "source_question_id": "auto-r07-s04-q18",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "explanation_needs_review",
+      "qa19_ocr_source_compared",
+      "source_tprd_is_thermal_trigger_not_generic_pressure_relief"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q19",
+    "question_id": "auto-made-r07-s04-q19",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "공기 공급량·수소압력·막 수분과 스택 온도",
+    "reason": "연료전지는 전극 반응에 필요한 가스 공급과 수분·열관리 상태에 민감하다. 진단에는 전지전압 편차와 온도 및 유량을 함께 확인해야 한다.",
+    "key_point": "스택 출력은 수소·산소 공급·수분·열관리에 영향.",
+    "source_question_id": "auto-r07-s04-q19",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s04-q20",
+    "question_id": "auto-made-r07-s04-q20",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "연료 규격과 엔진 제작사의 사용 허용·혼합비를 확인한다",
+    "reason": "바이오디젤은 재생 가능한 기름 등을 전환한 디젤계 대체연료다. 사용 가능 혼합비와 고무·연료장치 호환성은 제조사 지침과 연료 규격을 확인해야 한다.",
+    "key_point": "바이오디젤은 디젤 엔진용 대체연료, 제조사 허용 확인.",
+    "source_question_id": "auto-r07-s04-q20",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared",
+      "source_biodiesel_co2_lifecycle_and_blend_technical_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

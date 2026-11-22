@@ -1,0 +1,333 @@
+[
+  {
+    "id": "auto-made-r07-s01-q01",
+    "question_id": "auto-made-r07-s01-q01",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "압축기 출구와 흡기 사이에 놓인 인터쿨러",
+    "reason": "인터쿨러는 터보차저의 압축기 뒤쪽에서 과급 공기를 냉각하는 별도 열교환기다. 압축기·터빈·베어링으로 이뤄진 터보 본체와 구분한다.",
+    "key_point": "터보 본체와 흡기 냉각용 인터쿨러는 역할·배치가 다르다.",
+    "source_question_id": "auto-r07-s01-q01",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q02",
+    "question_id": "auto-made-r07-s01-q02",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "시험용 점도계로 측정해야 하는 변속기 오일의 실제 점도",
+    "reason": "전자제어기의 데이터는 센서값과 연산 결과를 보여줄 수 있지만, 점도 자체가 센서로 계측되지 않으면 스캔툴만으로 직접 측정할 수 없다.",
+    "key_point": "스캔툴 실측값과 물리 점도 시험값은 구별한다.",
+    "source_question_id": "auto-r07-s01-q02",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q03",
+    "question_id": "auto-made-r07-s01-q03",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "연료 레일압 제어 밸브와 고압펌프 공급량 제어계통",
+    "reason": "커먼레일 연료 압력은 펌프 공급량과 압력조절·배출 회로로 제어한다. 제어 위치와 방식은 엔진에 따라 다르므로 공통 부품명 하나로 단정하지 않는다.",
+    "key_point": "레일압은 공급제어와 압력제어 방식에 따라 달라진다.",
+    "source_question_id": "auto-r07-s01-q03",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa19_ocr_source_compared",
+      "source_pressure_valve_only_control_strategy_varies_by_system"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q04",
+    "question_id": "auto-made-r07-s01-q04",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "노즐 구멍 막힘이나 분사기 내부 손상",
+    "reason": "노즐 내부 오염과 마모는 연료 분사 방향·형상·미립화에 영향을 준다. 분사패턴 불량은 인젝터 자체의 분무 조건과 시험압력부터 점검한다.",
+    "key_point": "불균일 분사 분무 → 노즐 막힘·마모·분사압 검사.",
+    "source_question_id": "auto-r07-s01-q04",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q05",
+    "question_id": "auto-made-r07-s01-q05",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "높은 압축온도와 부적절하게 앞선 점화시기",
+    "reason": "엔드가스가 과열·자기착화하면 노킹이 발생할 수 있다. 연료 옥탄가, 흡기온도, 점화시기와 냉각 상태를 함께 확인한다.",
+    "key_point": "노킹은 온도·압력·옥탄가·점화시기와 관련된다.",
+    "source_question_id": "auto-r07-s01-q05",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q06",
+    "question_id": "auto-made-r07-s01-q06",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "해당 차량 제작연도·검사 시점·검사방식의 적용 법규를 함께 명시",
+    "reason": "매연 허용기준은 적용 법령·제작연도·검사 유형에 따라 변경된다. 기출 원문의 특정 수치를 모든 차종에 적용하면 오류가 발생할 수 있다.",
+    "key_point": "배출 규정 문제는 기준일·차량유형·측정방법을 명시한다.",
+    "source_question_id": "auto-r07-s01-q06",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_2023_emission_regulations_not_currently_verified"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q07",
+    "question_id": "auto-made-r07-s01-q07",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "운전 조건에 따른 흡·배기 밸브 개폐 위상",
+    "reason": "가변밸브타이밍 장치는 캠축 위상을 제어해 밸브의 개폐 타이밍을 운전 영역에 맞춘다. 구조에 따라 흡기 또는 배기 계통에 적용된다.",
+    "key_point": "CVVT는 캠 위상 변화로 밸브 타이밍을 조절한다.",
+    "source_question_id": "auto-r07-s01-q07",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q08",
+    "question_id": "auto-made-r07-s01-q08",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "흡기 매니폴드 내부의 절대 압력",
+    "reason": "MAP는 매니폴드 절대압 센서다. 매니폴드 압력을 측정하여 엔진 부하와 흡입 공기량 추정 등의 제어에 사용한다.",
+    "key_point": "MAP = Manifold Absolute Pressure.",
+    "source_question_id": "auto-r07-s01-q08",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q09",
+    "question_id": "auto-made-r07-s01-q09",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "활성탄을 사용해 증발가스를 흡착하는 캐니스터",
+    "reason": "증발가스 제어계통의 캐니스터는 연료 증발가스를 포집했다가 퍼지 제어에 따라 엔진 흡기로 보내 연소시키도록 한다.",
+    "key_point": "캐니스터는 연료 증발가스 저장·퍼지에 쓰인다.",
+    "source_question_id": "auto-r07-s01-q09",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q10",
+    "question_id": "auto-made-r07-s01-q10",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "ECU가 계산하는 연료 분사 시기 결정",
+    "reason": "피스톤 링은 연소실 기밀, 오일 제어, 열 전달에 기계적으로 기여한다. 연료 분사 시기는 제어기와 분사계통이 맡는다.",
+    "key_point": "피스톤 링 = 기밀·오일 조절·열전달.",
+    "source_question_id": "auto-r07-s01-q10",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q11",
+    "question_id": "auto-made-r07-s01-q11",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "크랭크축과 캠축 사이의 회전 위상 관계",
+    "reason": "타이밍 벨트는 크랭크축 회전을 캠축에 정해진 위상으로 전달한다. 치형이 어긋나면 밸브 개폐시기가 변하며 엔진 손상 가능성도 있다.",
+    "key_point": "타이밍 벨트는 캠-크랭크 동기를 유지한다.",
+    "source_question_id": "auto-r07-s01-q11",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_diesel_injector_tester_equipment_depends_on_type"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q12",
+    "question_id": "auto-made-r07-s01-q12",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "해당 분사방식에 맞는 인젝터 시험기와 시험절차",
+    "reason": "분사압력·누설·분무량과 분사형상을 평가하려면 시스템에 적합한 인젝터 시험기가 필요하다. 고압 커먼레일은 안전·오염 관리가 중요하다.",
+    "key_point": "인젝터 상태는 지정 시험기로 분무·누설·분사량을 평가한다.",
+    "source_question_id": "auto-r07-s01-q12",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q13",
+    "question_id": "auto-made-r07-s01-q13",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "요소가 녹아 있는 규정 농도의 수용액",
+    "reason": "차량용 요소수는 고순도 요소와 물을 배합한 용액으로 분사 뒤 암모니아를 생성한다. SCR 촉매는 암모니아를 이용해 NOx를 저감한다.",
+    "key_point": "SCR 요소수는 요소(Urea) 수용액이다.",
+    "source_question_id": "auto-r07-s01-q13",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_scr_urea_function_mechanism_technical_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q14",
+    "question_id": "auto-made-r07-s01-q14",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "실린더벽의 윤활유 긁어내기 기능 저하",
+    "reason": "오일 링은 실린더 벽에 남는 윤활유막의 양을 조절한다. 마모·고착은 연소실로 유입되는 오일을 늘려 오일 소비를 증가시킬 수 있다.",
+    "key_point": "오일링은 실린더벽 오일막 양을 관리한다.",
+    "source_question_id": "auto-r07-s01-q14",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q15",
+    "question_id": "auto-made-r07-s01-q15",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "SCR 촉매에 요소수를 분사하는 NOx 환원 제어",
+    "reason": "DPF는 PM을 포집하고 산화시켜 제거한다. 요소수 분사는 별도 SCR의 NOx 환원에 이용하므로 DPF 재생의 직접적인 재료가 아니다.",
+    "key_point": "DPF 재생과 SCR 요소수 NOx 저감을 구별한다.",
+    "source_question_id": "auto-r07-s01-q15",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa19_ocr_source_compared",
+      "source_dpf_regen_mechanism_exhaust_brake_may_be_indirect"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q16",
+    "question_id": "auto-made-r07-s01-q16",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+    "reason": "실린더 누설시험에서 압축공기가 흡기로 새면 흡기밸브 기밀을 의심한다. 배기는 배기밸브, 크랭크케이스는 링/실린더 부위를 시사한다.",
+    "key_point": "실린더 누설시험은 누설음 위치로 원인을 좁힌다.",
+    "source_question_id": "auto-r07-s01-q16",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q17",
+    "question_id": "auto-made-r07-s01-q17",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "열림 고착으로 냉각수가 계속 큰 회로를 순환",
+    "reason": "서모스탯 열림 고착은 난기 지연과 냉각수 저온 유지로 이어질 수 있다. 닫힘 고착은 반대로 과열 가능성이 있으므로 현상을 구분한다.",
+    "key_point": "서모스탯 열림 고착 → 예열 지연·저온 운전.",
+    "source_question_id": "auto-r07-s01-q17",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_thermostat_consequences_multiple_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q18",
+    "question_id": "auto-made-r07-s01-q18",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "안전한 곳에 정차하고 오일량·누유·압력 등을 점검한다",
+    "reason": "엔진 오일압력 저하는 베어링 손상으로 이어질 수 있어 주행을 계속하지 않는 것이 중요하다. 레벨·센서·압력계를 이용해 실압력을 확인해야 한다.",
+    "key_point": "오일압력 경고 → 안전 정차·윤활 계통 점검.",
+    "source_question_id": "auto-r07-s01-q18",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q19",
+    "question_id": "auto-made-r07-s01-q19",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "헤드가스켓 등으로 인한 냉각수의 연소실 유입",
+    "reason": "냉각수가 연소실에 유입되면 흰 수증기와 냉각수 감소가 나타날 수 있다. 흰 배기는 저온 미연소 연료로도 생기므로 냉각계 압력시험과 유체 상태를 확인한다.",
+    "key_point": "지속적 흰 배기·냉각수 감소 → 연소실 누수 가능.",
+    "source_question_id": "auto-r07-s01-q19",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s01-q20",
+    "question_id": "auto-made-r07-s01-q20",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "실린더 압축압력 게이지 및 지정 크랭킹 절차",
+    "reason": "압축압력 검사는 엔진 크랭킹 동안 실린더 내 압력 변화를 계측한다. 배터리 상태·스로틀 개도·점화 차단 등은 해당 엔진 정비 절차를 따른다.",
+    "key_point": "압축압력 시험 = 실린더 압력 게이지와 지정 조건.",
+    "source_question_id": "auto-r07-s01-q20",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_compression_test_coolant_temperature_oem_guidance"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

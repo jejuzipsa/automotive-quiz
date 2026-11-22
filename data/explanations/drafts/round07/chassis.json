@@ -1,0 +1,335 @@
+[
+  {
+    "id": "auto-made-r07-s02-q01",
+    "question_id": "auto-made-r07-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "규정 온도·절차에서 ATF 레벨과 누유를 측정",
+    "reason": "ATF가 부족하면 유압 형성과 클러치 작동에 이상이 생길 수 있다. 과충전 역시 문제가 되므로 차종의 정확한 온도·레벨 절차를 따라야 한다.",
+    "key_point": "변속 충격 → ATF 레벨·누유를 지정 조건에서 확인.",
+    "source_question_id": "auto-r07-s02-q01",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q02",
+    "question_id": "auto-made-r07-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "오일펌프·필터·압력조절 밸브 및 누설",
+    "reason": "라인압 저하는 펌프 마모·흡입 불량·내부 누설 및 압력조절 이상으로 생길 수 있다. 고압·저압 판정은 차종 지정 기어 위치와 조건을 따른다.",
+    "key_point": "자동변속기 저라인압 → 펌프·조절밸브·누설 점검.",
+    "source_question_id": "auto-r07-s02-q02",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q03",
+    "question_id": "auto-made-r07-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "오일펌프 구동부 손상과 변속기 체결 불량",
+    "reason": "토크컨버터는 지정된 단계로 입력축·펌프 구동부에 완전히 장착돼야 한다. 불완전 삽입 후 강제 체결하면 오일펌프 및 결합부를 손상시킬 수 있다.",
+    "key_point": "토크컨버터 결합 전 완전 삽입 상태 확인.",
+    "source_question_id": "auto-r07-s02-q03",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_torque_converter_clockwise_assembly_direction_oem_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q04",
+    "question_id": "auto-made-r07-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "좌우 공기압·차고·얼라인먼트와 부싱 상태",
+    "reason": "쏠림은 타이어, 제동 끌림, 정렬, 현가부품 등 여러 원인으로 발생한다. 좌우 조건과 주행 방향을 비교해 진단해야 한다.",
+    "key_point": "편향 주행은 타이어·정렬·제동·현가를 구분한다.",
+    "source_question_id": "auto-r07-s02-q04",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q05",
+    "question_id": "auto-made-r07-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "제작사 규격의 댐퍼 성능시험 또는 누유·마운트 검사",
+    "reason": "쇽업소버 성능은 감쇠력 특성과 마찰·누유·온도에 영향을 받는다. 내부 오일 점도만 재는 것은 현장 성능의 직접 평가로 부적절하다.",
+    "key_point": "댐퍼 성능은 감쇠력·누유·장착부를 검사한다.",
+    "source_question_id": "auto-r07-s02-q05",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_shock_absorber_terminology_unclear"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q06",
+    "question_id": "auto-made-r07-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "관련 DTC 기록과 차고·댐퍼 센서 실측값을 확인",
+    "reason": "전자제어 현가는 입력 신호·구동기·전원 문제를 진단 코드로 알린다. 저장 코드와 현상, 실측데이터를 함께 비교해 원인을 좁힌다.",
+    "key_point": "전자 현가 고장은 DTC·실측 데이터부터 확인.",
+    "source_question_id": "auto-r07-s02-q06",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_dtc_first_priority_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q07",
+    "question_id": "auto-made-r07-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "해당 차종의 설정·코딩·차고 영점 학습 절차",
+    "reason": "제어기 교환 후 일부 차량은 코딩·센서 기준점 보정이 필요하다. 작업 범위는 차종별로 다르므로 지정 지침과 진단값을 확인해야 한다.",
+    "key_point": "전자 현가 ECU 교환 → 차종별 코딩·보정 확인.",
+    "source_question_id": "auto-r07-s02-q07",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_ecu_programming_requirements_oem_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q08",
+    "question_id": "auto-made-r07-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "조향 토크·모터전류와 보조 명령을 비교하는 것",
+    "reason": "타이어 공기압은 조향감에 영향을 주지만 EPS 모터의 토크 신호와 전류 응답을 직접 보여주지 않는다. 요구 토크와 제어기 출력을 확인해야 한다.",
+    "key_point": "EPS 진단은 토크 신호·모터 구동 데이터를 확인.",
+    "source_question_id": "auto-r07-s02-q08",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q09",
+    "question_id": "auto-made-r07-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "라디오 방송 주파수 설정",
+    "reason": "조향각 보정은 차륜의 직진 상태와 기계적 정렬이 중요하다. 공조·오디오 설정은 조향 영점 조정의 직접 기준이 아니다.",
+    "key_point": "조향각 영점과 휠 얼라인먼트는 같은 직진 기준을 사용.",
+    "source_question_id": "auto-r07-s02-q09",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q10",
+    "question_id": "auto-made-r07-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "차종별 조향각 영점 보정 조건을 확인한다",
+    "reason": "휠 정렬 후 조향각 센서 영점이 어긋나면 차종에 따라 별도 보정이 필요하다. 자동학습 가능 여부는 차량에 따라 달라진다.",
+    "key_point": "얼라인먼트 후 조향각 영점은 자동 보정 단정 금지.",
+    "source_question_id": "auto-r07-s02-q10",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_steering_angle_sensor_recalibration_oem_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q11",
+    "question_id": "auto-made-r07-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "액티브·패시브 방식의 전원과 파형이 다를 수 있다",
+    "reason": "휠속도 센서는 유도식 패시브와 홀·자기저항식 액티브로 나뉜다. 종류에 따라 전원·전류변조와 파형이 달라지므로 매뉴얼을 확인한다.",
+    "key_point": "ABS 휠속도 센서: 타입별 신호형태 차이.",
+    "source_question_id": "auto-r07-s02-q11",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_wheel_speed_passive_active_electrical_mechanism_inversion_possible"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q12",
+    "question_id": "auto-made-r07-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "센서 장착간극·톤휠·배선 및 타이어 규격",
+    "reason": "휠속도 신호는 실제 휠 회전에 따라 결정된다. 신호 주파수 자체를 수동으로 조정하는 것이 아니라 센서·자기링·기계 조건을 점검한다.",
+    "key_point": "ABS 센서 주파수는 휠 회전의 결과값이다.",
+    "source_question_id": "auto-r07-s02-q12",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared",
+      "source_wheel_speed_sensor_repair_not_necessarily_always_replace"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q13",
+    "question_id": "auto-made-r07-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "각 바퀴 속도를 동시에 모니터링해 신호를 비교",
+    "reason": "ABS ECU가 제공하는 휠속도 실시간 값은 주행 상태에서 정상 바퀴와 비교해 센서 단속·신호 손실 여부를 찾는 데 쓸 수 있다.",
+    "key_point": "휠속도 데이터는 바퀴별 실시간 비교가 유효하다.",
+    "source_question_id": "auto-r07-s02-q13",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q14",
+    "question_id": "auto-made-r07-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "조향 보조량이 불규칙하게 변하거나 제한된다",
+    "reason": "조향 토크 센서는 운전자 입력을 판단하는 핵심 정보다. 신호가 불안정하면 제어기가 보조력을 잘못 계산하거나 안전 보호제어를 적용할 수 있다.",
+    "key_point": "EPS 토크 센서 이상 → 보조력 불안정·제한 가능.",
+    "source_question_id": "auto-r07-s02-q14",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q15",
+    "question_id": "auto-made-r07-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "스프링 진동을 유압 저항으로 감쇠해 움직임을 안정화",
+    "reason": "쇼크업소버는 현가 스프링의 진동 에너지를 유체 저항 등을 통해 열로 소산시키며 차체의 지속적인 흔들림을 줄인다.",
+    "key_point": "쇽업소버 = 현가 스프링 진동 감쇠.",
+    "source_question_id": "auto-r07-s02-q15",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q16",
+    "question_id": "auto-made-r07-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "유압 공급·압력 조절과 클러치 작동 조건의 이상",
+    "reason": "변속기 라인압은 펌프와 레귤레이터·유압 회로 상태를 반영한다. 규정 위치·온도·회전수에서 목표값과 비교해야 한다.",
+    "key_point": "라인압 진단은 지정 운전조건에서 유압계통 평가.",
+    "source_question_id": "auto-r07-s02-q16",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q17",
+    "question_id": "auto-made-r07-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "오일펌프 마모 또는 흡입 측 제한",
+    "reason": "펌프 성능 저하나 흡입부 막힘은 유량과 압력을 떨어뜨린다. 동시에 내부 누유·조절 밸브 문제도 구분해야 한다.",
+    "key_point": "저라인압 원인: 펌프·흡입·내부 누유·조절 계통.",
+    "source_question_id": "auto-r07-s02-q17",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q18",
+    "question_id": "auto-made-r07-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "일반 코일 스프링과 유지비 우열은 차종·부품에 따라 달라진다",
+    "reason": "에어 서스펜션은 차고 가변과 승차감 제어 장점이 있지만 에어백·컴프레서·밸브 등의 수리비가 추가될 수 있다. 비용을 공통적으로 단정할 수 없다.",
+    "key_point": "에어 서스펜션 유지비는 차량 구성과 부품 상태에 의존.",
+    "source_question_id": "auto-r07-s02-q18",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q19",
+    "question_id": "auto-made-r07-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "클러치 슬립·토크컨버터·엔진 출력 등 여러 원인을 구분",
+    "reason": "스톨 RPM은 엔진 출력과 토크컨버터·변속기 클러치 상태 등에 영향을 받는다. 고온·위험을 줄이기 위해 지정 시간과 절차를 준수해야 한다.",
+    "key_point": "스톨 테스트는 회전수 하나로 고장 부품을 단정하지 않는다.",
+    "source_question_id": "auto-r07-s02-q19",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared",
+      "source_stall_test_abnormal_high_low_rpm_fault_diagnosis_suspect"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r07-s02-q20",
+    "question_id": "auto-made-r07-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "센서 구조에 따라 아날로그 교류 또는 디지털/전류변조 신호를 낼 수 있다",
+    "reason": "패시브 유도식은 속도에 따른 교류 전압이 생성될 수 있고 액티브 센서는 전원 공급 및 펄스/전류변조를 사용한다. 사양별 신호를 대조해야 한다.",
+    "key_point": "ABS 휠속도 센서의 신호 형식은 종류별로 다르다.",
+    "source_question_id": "auto-r07-s02-q20",
+    "original_issue_flags": [
+      "qa19_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

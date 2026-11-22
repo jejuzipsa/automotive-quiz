@@ -1,0 +1,317 @@
+[
+  {
+    "id": "auto-made-r09-s02-q01",
+    "question_id": "auto-made-r09-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "ATF의 실제 점도 시험",
+    "reason": "ECU 데이터는 센서 값과 연산값을 출력한다. 실제 오일 점도를 재는 전용 점도센서가 없으면 스캔툴 항목만으로 물성 측정이 불가능하다.",
+    "key_point": "ATF 점도는 별도 물성시험 대상.",
+    "source_question_id": "auto-r09-s02-q01",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "technical_review: 점도 직접 측정과 간접 추정 구분"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q02",
+    "question_id": "auto-made-r09-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차량 고정·동력 차단·제작사 분해순서 확인",
+    "reason": "변속기 탈거는 무거운 부품과 유체·전기 연결을 다루는 작업이다. 차량 지지와 전원/하네스 차단, 변속기 잭 및 절차 확인이 필요하다.",
+    "key_point": "변속기 작업은 차량 지지·동력차단·분해순서가 핵심.",
+    "source_question_id": "auto-r09-s02-q02",
+    "original_issue_flags": [
+      "technical_review: 차종별 정비 절차의 배터리 분리 순서/안전작업 범위 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q03",
+    "question_id": "auto-made-r09-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "로드 손상·오일 씰과 실제 누유량",
+    "reason": "쇼크업소버에서 오일이 새면 감쇠 성능이 저하될 수 있다. 단순 오염인지 실제 오일 누유인지 구분하고 부품 상태를 점검해야 한다.",
+    "key_point": "쇽업소버 오일 누유 → 실링·로드·감쇠 확인.",
+    "source_question_id": "auto-r09-s02-q03",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q04",
+    "question_id": "auto-made-r09-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "가스 충전은 오일 발포 억제에 도움이 될 수 있다",
+    "reason": "질소 등 가스는 내부 압력을 유지해 오일의 기포 발생을 억제하는 데 기여한다. 감쇠력의 온도 의존도는 밸브와 오일 설계도 고려해야 한다.",
+    "key_point": "가스식 댐퍼 = 오일 발포 억제 등 도움.",
+    "source_question_id": "auto-r09-s02-q04",
+    "original_issue_flags": [
+      "technical_review: 3번/4번이 모두 틀릴 수 있는 복수 정답 위험: 싱글/더블 튜브 열방출 성능 검증 필수"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q05",
+    "question_id": "auto-made-r09-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "차체 거동과 주행 상황에 맞는 감쇠력",
+    "reason": "전자제어 현가는 센서 입력을 바탕으로 밸브나 구동기 제어를 바꿔 감쇠 특성을 조절할 수 있다.",
+    "key_point": "전자제어 현가 = 주행상황 기반 감쇠력 조절.",
+    "source_question_id": "auto-r09-s02-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q06",
+    "question_id": "auto-made-r09-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "액추에이터 코일 저항·전원·접지·배선 상태",
+    "reason": "댐퍼 제어회로의 저항 이상은 단선·접촉 불량·코일 문제를 시사할 수 있다. 차종별 회로 및 기준 저항을 확인한다.",
+    "key_point": "전자 댐퍼 회로 = 코일·하네스·전원 점검.",
+    "source_question_id": "auto-r09-s02-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q07",
+    "question_id": "auto-made-r09-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "엔진 구동 유압 펌프",
+    "reason": "순수 전동식 EPS는 전기모터로 보조력을 만들며 일반적으로 엔진 구동 유압 펌프가 없다. 일부 전동유압 방식과 구조가 다르다.",
+    "key_point": "EPS는 엔진 구동 유압펌프 없이 조향 보조 가능.",
+    "source_question_id": "auto-r09-s02-q07",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: EPS/유압식 유형과 EHPS의 구분 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q08",
+    "question_id": "auto-made-r09-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "EPS 전원 공급·접지·릴레이와 배선 접촉",
+    "reason": "EPS 모터는 큰 전류를 필요로 한다. 전원릴레이 접촉불량이나 접지 저항이 커지면 보조가 제한될 수 있다.",
+    "key_point": "EPS 보조 상실 → 전원·접지·릴레이 확인.",
+    "source_question_id": "auto-r09-s02-q08",
+    "original_issue_flags": [
+      "technical_review: 조향 ECU 과열 보호도 동일 증상을 일으킬 수 있어 문항 단서 부족"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q09",
+    "question_id": "auto-made-r09-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "관련 초기화·각도 또는 토크센서 학습 수행",
+    "reason": "EPS 정비 후에는 차종에 따라 센서 영점 학습·제어기 코딩이 필요하다. 스캔툴 절차와 정렬 상태를 확인해야 한다.",
+    "key_point": "EPS 부품 교환 후 차종별 보정 절차 검토.",
+    "source_question_id": "auto-r09-s02-q09",
+    "original_issue_flags": [
+      "technical_review: 차종별 초기화/학습 수행 조건 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q10",
+    "question_id": "auto-made-r09-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "바퀴별 제동압력의 감소·유지·증가 제어",
+    "reason": "ABS는 바퀴속도 정보를 통해 잠김 위험을 인식하고 밸브와 펌프로 제동압력을 제어한다. 동작은 노면·차량상태에 따라 달라진다.",
+    "key_point": "ABS = 바퀴잠김 억제 위한 유압 조절.",
+    "source_question_id": "auto-r09-s02-q10",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: ABS의 제동거리와 최대 제동력 설명은 노면 조건에 따른 예외"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q11",
+    "question_id": "auto-made-r09-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "ABS ECU가 언제 밸브를 개폐했는지의 통신 명령",
+    "reason": "제동력 테스터는 차륜의 제동력 크기와 균형을 측정한다. ABS 내부의 전자제어와 밸브 작동 명령은 진단기 등 별도 장비가 필요하다.",
+    "key_point": "롤러 제동력 시험과 ABS 전자제어 데이터는 다르다.",
+    "source_question_id": "auto-r09-s02-q11",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 좌우 제동력 30% 합격 기준은 관할 국가/검사규정/차종 기준 검증"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q12",
+    "question_id": "auto-made-r09-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "베어링·센서링 결합구조에 관한 차종별 정비정보",
+    "reason": "ABS 센서용 톤링 또는 자기 엔코더는 허브나 베어링에 일체화된 차종이 있고 별도 장착형도 있다. 수리 단위는 구조마다 다르다.",
+    "key_point": "ABS 톤링 교환 단위는 센서·베어링 구성별로 다름.",
+    "source_question_id": "auto-r09-s02-q12",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 센서링 일체형 베어링도 많아 문항의 일반화 적절성 의심; ABS ECU 교체와 블리딩 관계"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q13",
+    "question_id": "auto-made-r09-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "해당 차종의 현가 설계와 지정 장착 위치",
+    "reason": "쇼크업소버는 현가 지오메트리와 하중 조건에 맞는 위치·각도로 장착해야 한다. 수평만이 최적이라는 공통 규칙은 없다.",
+    "key_point": "댐퍼 장착 방향은 차량 설계·정비 지침 기준.",
+    "source_question_id": "auto-r09-s02-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q14",
+    "question_id": "auto-made-r09-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "엔진 RPM과 변속기 입력축 RPM 및 TCC 제어 상태",
+    "reason": "토크컨버터 클러치가 완전히 결합되면 엔진과 변속기 입력축의 회전 차가 작아진다. 실제 슬립은 제어명령과 부하 상태를 함께 봐야 한다.",
+    "key_point": "TCC 슬립 = 엔진 회전수와 입력축 회전수 차.",
+    "source_question_id": "auto-r09-s02-q14",
+    "original_issue_flags": [
+      "technical_review: 엔진속도/터빈속도 슬립량은 TCC 작동상태·변속기별 신호 정의 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q15",
+    "question_id": "auto-made-r09-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "제동 중 바퀴별 브레이크 압력 조절",
+    "reason": "모듈레이터는 ECU의 명령에 따라 바퀴 제동 회로의 압력을 유지·증가·감소시킨다. 고장은 잠김 방지 기능을 제한할 수 있다.",
+    "key_point": "ABS 모듈레이터 = 휠별 압력 제어.",
+    "source_question_id": "auto-r09-s02-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q16",
+    "question_id": "auto-made-r09-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차륜 직진 기준과 조향각 영점학습 필요성",
+    "reason": "차륜 정렬 후 ESC 센서의 영점이 맞지 않으면 차량의 자세제어 판단이 부정확해질 수 있다. 차종별 보정 절차로 영점을 확인한다.",
+    "key_point": "얼라인먼트 후 조향각 영점·직진 기준 함께 확인.",
+    "source_question_id": "auto-r09-s02-q16",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 자동 센서 캘리브레이션 여부/차종별 서비스 절차 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q17",
+    "question_id": "auto-made-r09-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "유압 밸브와 펌프 작동으로 생기는 제동압력 변동",
+    "reason": "ABS는 밸브·펌프 작동으로 제동압력을 빠르게 조절하므로 페달에 맥동이나 소음이 전달될 수 있다.",
+    "key_point": "ABS 제동 중 페달 진동은 유압 변조와 관련된다.",
+    "source_question_id": "auto-r09-s02-q17",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q18",
+    "question_id": "auto-made-r09-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "운전자 조향 명령과 센서로 본 실제 요거동",
+    "reason": "ESC는 조향각·요레이트·휠속도·횡가속도 등을 비교해 회전 방향 안정성을 판단하고 필요 시 제동 개입을 수행한다.",
+    "key_point": "ESC = 조향 의도 대비 실제 주행 거동 비교.",
+    "source_question_id": "auto-r09-s02-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q19",
+    "question_id": "auto-made-r09-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "조향각·조향 방향·조향 속도 데이터",
+    "reason": "조향각센서는 핸들 회전의 위치와 변화를 전기 신호로 내보낸다. ESC·EPS·ADAS 등 관련 제어기가 이를 이용할 수 있다.",
+    "key_point": "조향각센서 = 핸들 회전 정보 제공.",
+    "source_question_id": "auto-r09-s02-q19",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s02-q20",
+    "question_id": "auto-made-r09-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "규정 압력 배출·받침 지지 후 정해진 설치 상태에서 조립",
+    "reason": "에어 서스펜션은 압축공기를 저장하므로 분해 전 감압·차량 지지가 중요하다. 설치 높이와 누설점검은 차종 지침을 따른다.",
+    "key_point": "에어스프링 교환 = 감압·차량 지지·누설 확인.",
+    "source_question_id": "auto-r09-s02-q20",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 교체 후 시스템 초기화 필요 여부는 차량별로 달라질 수 있음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

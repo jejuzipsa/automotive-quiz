@@ -1,0 +1,312 @@
+[
+  {
+    "id": "auto-made-r09-s01-q01",
+    "question_id": "auto-made-r09-s01-q01",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "터빈을 통과하는 배기가스량을 조절해 과급압력을 관리한다",
+    "reason": "웨이스트게이트는 터빈을 우회하는 배기가스 흐름을 조절해 터빈 구동력과 과급압을 제어한다. 고착 등 이상은 과급 부족 또는 과급 과다로 이어질 수 있다.",
+    "key_point": "웨이스트게이트 = 터빈 우회 배기가스량·부스트 제어.",
+    "source_question_id": "auto-r09-s01-q01",
+    "original_issue_flags": [
+      "question_number_needs_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q02",
+    "question_id": "auto-made-r09-s01-q02",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "배기관 산소센서 또는 공연비센서",
+    "reason": "산소센서·공연비센서는 배기 속 산소 잔량을 측정해 혼합비가 농후한지 희박한지 추정하도록 한다. ECU는 이를 이용해 연료분사를 보정한다.",
+    "key_point": "O2/AF 센서 = 배기 산소로 공연비 피드백.",
+    "source_question_id": "auto-r09-s01-q02",
+    "original_issue_flags": [
+      "technical_review: 산소센서로 공연비를 간접 추정하며 센서 원리/광대역 여부를 확인할 것"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q03",
+    "question_id": "auto-made-r09-s01-q03",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "배기 필터의 다공성 매체를 사용하는 DPF",
+    "reason": "DPF는 디젤 배기 중 입자상물질(PM)을 필터 내부에 포집한다. 일정 조건에서 재생을 통해 축적된 그을음을 산화한다.",
+    "key_point": "DPF = 디젤 PM 포집·재생.",
+    "source_question_id": "auto-r09-s01-q03",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q04",
+    "question_id": "auto-made-r09-s01-q04",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "피스톤 링·밸브 스템 씰과 외부 누유 상태",
+    "reason": "오일 소모는 실린더 내 연소, PCV 이상, 터보차저 누유나 외부 누설 등으로 발생할 수 있다. 냉각수온 센서만을 고장으로 단정할 수 없다.",
+    "key_point": "과다 오일소모 → 내부 연소·PCV·터보·외부 누유 구분.",
+    "source_question_id": "auto-r09-s01-q04",
+    "original_issue_flags": [
+      "technical_review: 센서 고장에 의한 간접 연비 및 열관리 영향 여부 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q05",
+    "question_id": "auto-made-r09-s01-q05",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "산소 대비 연료가 많은 농후한 연소 상태",
+    "reason": "CO는 산소가 부족한 불완전 연소에서 증가하기 쉽다. 농후 혼합비, 점화불량과 촉매 효율 저하 등을 함께 점검해야 한다.",
+    "key_point": "CO 증가 → 농후·불완전 연소·촉매 상태 확인.",
+    "source_question_id": "auto-r09-s01-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q06",
+    "question_id": "auto-made-r09-s01-q06",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "필터의 그을음 산화를 돕는 배기 온도 상승",
+    "reason": "DPF 재생은 포집된 그을음을 산화시키기 위해 배기 온도를 올리는 전략을 사용할 수 있다. 재생 조건과 제어방식은 시스템별로 다르다.",
+    "key_point": "DPF 재생 → 그을음 산화를 위한 고온 환경.",
+    "source_question_id": "auto-r09-s01-q06",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "technical_review: DPF 재생온도와 후분사/히터 적용은 차종별 다름"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q07",
+    "question_id": "auto-made-r09-s01-q07",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "실제 압력·오일량·센서 및 윤활 회로를 검사한다",
+    "reason": "저압 경고는 실제 오일압력 부족뿐 아니라 센서·배선 이상으로도 발생한다. 엔진 손상을 피하기 위해 안전 정차 후 실압을 확인해야 한다.",
+    "key_point": "오일압 경고 원인은 센서와 실압 부족을 구분.",
+    "source_question_id": "auto-r09-s01-q07",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "technical_review: 과열이 오일 점도/유압에 간접 영향 줄 수 있어 단정적 표현 재검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q08",
+    "question_id": "auto-made-r09-s01-q08",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "압력차에 반응해 우회 통로를 여는 바이패스 밸브",
+    "reason": "오일필터 바이패스밸브는 여과지의 압력차가 과도할 때 우회 유로를 열어 오일 공급 중단을 줄인다. 우회 시 여과되지 않은 오일이 흐를 수 있다.",
+    "key_point": "오일필터 바이패스 = 막힘 시 공급 유량 유지.",
+    "source_question_id": "auto-r09-s01-q08",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q09",
+    "question_id": "auto-made-r09-s01-q09",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "터빈 유로 단면을 조절해 운전 영역에 맞는 과급 특성 확보",
+    "reason": "VGT는 가변 베인 각도로 터빈에 유입되는 배기가스 유속과 방향을 바꿔 저속 응답과 높은 회전 영역의 과급 제어를 돕는다.",
+    "key_point": "VGT = 가변 베인으로 과급 특성을 조절.",
+    "source_question_id": "auto-r09-s01-q09",
+    "original_issue_flags": [
+      "technical_review: 고속에서의 부스트와 베인 전략은 설계/부하별 조건 있음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q10",
+    "question_id": "auto-made-r09-s01-q10",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "밸브를 시트에 닫고 캠의 운동을 안정적으로 따라가게 한다",
+    "reason": "밸브 스프링은 개방된 밸브를 닫고 밸브 트레인이 캠 프로파일을 따라가게 하며 고회전에서 플로트를 막도록 설계된다.",
+    "key_point": "밸브 스프링 = 복귀력·시트 밀봉·밸브 추종.",
+    "source_question_id": "auto-r09-s01-q10",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q11",
+    "question_id": "auto-made-r09-s01-q11",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "인젝터 분사량·분무형상·연료레일 압력",
+    "reason": "인젝터 세척 뒤에도 분사 패턴과 누설·연료압을 검사해야 한다. 코일저항·배선·실화 원인도 함께 살펴야 한다.",
+    "key_point": "인젝터 세척 후 분사량·누설·실화 확인.",
+    "source_question_id": "auto-r09-s01-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q12",
+    "question_id": "auto-made-r09-s01-q12",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "절연 정격에 맞는 오실로스코프용 점화 픽업",
+    "reason": "점화 2차파형의 상승전압·스파크 시간 등은 전용 프로브를 연결한 오실로스코프로 측정한다. 고전압에 일반 프로브를 직접 접촉하면 위험하다.",
+    "key_point": "점화 2차파형 → 전용 프로브+오실로스코프.",
+    "source_question_id": "auto-r09-s01-q12",
+    "original_issue_flags": [
+      "technical_review: 고전압 점화 2차 파형 측정에는 전용 프로브 및 안전조치 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q13",
+    "question_id": "auto-made-r09-s01-q13",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "연소실 압력과 냉각수·윤활유 통로를 밀봉한다",
+    "reason": "헤드가스켓은 블록과 실린더 헤드 사이의 압력·유체 통로를 기밀하게 만든다. 손상되면 압축 누설이나 오일·냉각수 혼입이 일어날 수 있다.",
+    "key_point": "헤드가스켓 = 연소실·오일·냉각수 통로 기밀.",
+    "source_question_id": "auto-r09-s01-q13",
+    "original_issue_flags": [
+      "question_number_needs_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q14",
+    "question_id": "auto-made-r09-s01-q14",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "기존 캡 위치·방향과 지정 체결 토크·순서",
+    "reason": "베어링 캡은 블록에 맞춰 가공되므로 위치·방향이 중요하다. 정비 매뉴얼에 따른 조임과 오일 간극을 확인해야 한다.",
+    "key_point": "크랭크 베어링 캡은 지정 위치·방향·체결조건 준수.",
+    "source_question_id": "auto-r09-s01-q14",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q15",
+    "question_id": "auto-made-r09-s01-q15",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "재순환량 부족으로 연소 온도가 상승할 수 있다",
+    "reason": "고온 연소에서 열적 NOx 생성이 증가한다. EGR이 적절히 작동하지 않으면 일부 운전영역에서 NOx가 증가할 수 있으나 혼합비·점화시기 등도 함께 확인해야 한다.",
+    "key_point": "NOx 증가 → 고온 연소·EGR·혼합비 등 구분.",
+    "source_question_id": "auto-r09-s01-q15",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "mixed_script_review",
+      "technical_review: 점화시기 과진각도 NOx 증가 원인이 되어 복수 정답 위험"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q16",
+    "question_id": "auto-made-r09-s01-q16",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "분사량·누설·분무 형상과 압력 특성",
+    "reason": "디젤 인젝터는 연료를 미세하게 분무해야 한다. 전용 시험에서는 누설·분사량과 분무 패턴을 점검하며 가솔린 점화시스템의 점화에너지는 직접 시험대상이 아니다.",
+    "key_point": "인젝터 시험은 분무·누설·분사량 중심.",
+    "source_question_id": "auto-r09-s01-q16",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q17",
+    "question_id": "auto-made-r09-s01-q17",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "혼합과 연소 불완전으로 인한 그을음 증가",
+    "reason": "노즐 마모와 홀 크기 변화는 분무 형상 및 연료량에 영향을 줘 불완전 연소와 PM 증가를 유발할 수 있다. 실제 결과는 분사압력·분사시간·공기량에도 좌우된다.",
+    "key_point": "노즐 분무 불량 → 불완전 연소·PM 증가 가능.",
+    "source_question_id": "auto-r09-s01-q17",
+    "original_issue_flags": [
+      "technical_review: 노즐 홀/분사 압력/제어 방식에 따른 실제 연소 결과는 조건별 상이"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q18",
+    "question_id": "auto-made-r09-s01-q18",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "오일·냉각수 간 혼입 경로와 헤드가스켓·냉각기",
+    "reason": "냉각수가 오일에 섞이면 윤활 기능이 저하되고 엔진 손상이 발생할 수 있다. 점도가 어떻게 변하는지는 오염 상태에 따라 달라 압력 방향만 단정할 수 없다.",
+    "key_point": "오일 유화 → 냉각수 혼입 경로·윤활 손상 확인.",
+    "source_question_id": "auto-r09-s01-q18",
+    "original_issue_flags": [
+      "technical_review: 냉각수 혼입 시 에멀전/온도 등 조건에 따라 점도·유압 변화는 달라질 수 있음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q19",
+    "question_id": "auto-made-r09-s01-q19",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "제작사 주행거리·시간·벨트 상태와 운행 조건",
+    "reason": "타이밍벨트는 재료 열화와 운전조건, 엔진별 설계에 따라 서비스 주기가 정해진다. 벨트 주변 오일 누유도 손상 원인이 될 수 있어 엔진오일 점도만으로 결정하지 않는다.",
+    "key_point": "타이밍벨트 교환은 차량별 주행거리·시간 기준.",
+    "source_question_id": "auto-r09-s01-q19",
+    "original_issue_flags": [
+      "technical_review: 일부 엔진의 오일 침지형 타이밍 벨트(Wet Belt)에는 원문 일반화 부적절"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s01-q20",
+    "question_id": "auto-made-r09-s01-q20",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "각 실린더의 토크 기여 차이를 비교한다",
+    "reason": "실린더 밸런스 시험은 분사·점화 제어를 일시적으로 조절하고 회전수·토크 반응을 관찰해 특정 실린더의 성능 저하를 찾아낸다.",
+    "key_point": "실린더 밸런스 = 실린더별 출력 기여도 비교.",
+    "source_question_id": "auto-r09-s01-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

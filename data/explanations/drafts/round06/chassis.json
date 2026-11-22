@@ -1,0 +1,337 @@
+[
+  {
+    "id": "auto-made-r06-s02-q01",
+    "question_id": "auto-made-r06-s02-q01",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "오일 열화와 내부 클러치 과열 가능성을 함께 확인한다",
+    "reason": "ATF 색상은 제조사에 따라 달라질 수 있어 붉은색만 정상 기준으로 고정할 수 없다. 다만 탄 냄새와 심한 변색은 열화 또는 클러치 슬립의 단서가 된다.",
+    "key_point": "ATF 평가는 차종 지정 유종·냄새·이물·상태를 함께 본다.",
+    "source_question_id": "auto-r06-s02-q01",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_atf_color_not_universal_in_all_fluids"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q02",
+    "question_id": "auto-made-r06-s02-q02",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "해당 변속 단의 축압기·유압 제어계통",
+    "reason": "변속 축압기는 클러치 작동압력의 상승 속도를 완충한다. 축압기 스프링·피스톤·유압 회로에 문제가 생기면 특정 단에서 충격이 증가할 수 있다.",
+    "key_point": "특정 변속 충격 → 해당 단 유압 완충계통 확인.",
+    "source_question_id": "auto-r06-s02-q02",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_3rd_gear_shock_component_diagnosis_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q03",
+    "question_id": "auto-made-r06-s02-q03",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "규정에 맞게 냉각하고 화상 방지 보호구를 착용한다",
+    "reason": "ATF는 운행 직후 고온으로 화상을 일으킬 수 있다. 차량 안전 고정과 적절한 냉각·보호구 사용을 확인한 뒤 제조사 배출 절차를 따라야 한다.",
+    "key_point": "ATF 배출 전 열상 방지와 차량 고정 상태 확인.",
+    "source_question_id": "auto-r06-s02-q03",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q04",
+    "question_id": "auto-made-r06-s02-q04",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "제작사 탈거 절차와 주변 작업 공간·간섭 상태",
+    "reason": "변속기 탈거를 위해 축과 지지대, 냉각 배관 및 하네스를 분리할 수 있다. 공조 압축기 등은 차종 배치에 따라 분리 여부가 달라지므로 정비 지침을 우선한다.",
+    "key_point": "변속기 탈거 부품은 공통 단정 대신 차량 구조를 확인한다.",
+    "source_question_id": "auto-r06-s02-q04",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q05",
+    "question_id": "auto-made-r06-s02-q05",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "페달·스로틀 개도 입력과 변속기 제어 데이터",
+    "reason": "변속 제어기는 운전자 가속 요구와 차량 속도·엔진 부하·온도 등의 신호를 사용한다. 스로틀/페달 입력이 부정확하면 변속 패턴이 달라질 수 있다.",
+    "key_point": "변속 시점 불량은 가속 요구 신호·속도·온도 데이터 비교.",
+    "source_question_id": "auto-r06-s02-q05",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa18_ocr_source_compared",
+      "source_first_check_tps_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q06",
+    "question_id": "auto-made-r06-s02-q06",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "차고 센서·유압 누설·서스펜션 높이 비교",
+    "reason": "한쪽 차체 높이가 낮으면 레벨 제어 계통의 압력 부족, 누설 또는 위치센서 신호를 점검할 수 있다. 타이어 크기·공기압도 확인하되 직접 원인은 따로 좁힌다.",
+    "key_point": "차고 불균형 → 높이·누설·레벨 제어 확인.",
+    "source_question_id": "auto-r06-s02-q06",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa18_ocr_source_compared",
+      "source_tyre_rotation_direction_vs_vehicle_lean_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q07",
+    "question_id": "auto-made-r06-s02-q07",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "제어기가 차고 데이터를 신뢰하지 못해 기능을 제한할 수 있다",
+    "reason": "차고 센서 신호는 높이 제어 및 일부 감쇠력 전략에서 사용된다. 입력 이상이 발생하면 ECU는 DTC를 기록하거나 기본 모드로 전환할 수 있다.",
+    "key_point": "서스펜션 센서 오류 시 제어 제한과 DTC 가능.",
+    "source_question_id": "auto-r06-s02-q07",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa18_ocr_source_compared",
+      "source_height_sensor_not_universal_damper_control"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q08",
+    "question_id": "auto-made-r06-s02-q08",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "작동유 누설·유압·차고 및 시운전 점검",
+    "reason": "서스펜션 수리 후에는 연결부 누유 여부와 높이 제어 작동, 누설이 없는지 확인해야 한다. 정비 절차에 따라 에어 제거·보정이 추가될 수 있다.",
+    "key_point": "현가 수리 뒤 유압 누설과 차고 기능을 검사한다.",
+    "source_question_id": "auto-r06-s02-q08",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q09",
+    "question_id": "auto-made-r06-s02-q09",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "에어 스프링·배관·밸브 블록의 공기 누설",
+    "reason": "에어 서스펜션은 공기압이 유지돼야 차고를 지지한다. 공기 누설은 일정 시간 뒤 차고가 낮아지는 현상으로 이어질 수 있다.",
+    "key_point": "주차 뒤 한쪽 차고 하강 → 공기 누설 확인.",
+    "source_question_id": "auto-r06-s02-q09",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q10",
+    "question_id": "auto-made-r06-s02-q10",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "커넥터·하네스와 코일의 단선/접촉불량을 구분한다",
+    "reason": "과대 저항은 코일 단선뿐 아니라 커넥터 접촉불량으로 나타날 수 있다. 절연 상태를 확보한 뒤 규정 조건에서 각 구간을 나눠 측정해야 한다.",
+    "key_point": "솔레노이드 고저항 → 배선/단자/코일 분리 진단.",
+    "source_question_id": "auto-r06-s02-q10",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_high_solenoid_resistance_can_be_harness_connection_not_only_coil"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q11",
+    "question_id": "auto-made-r06-s02-q11",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "조향 랙 기어의 실제 마모 치수",
+    "reason": "스캐너는 전자제어기가 수집한 신호와 상태를 보여준다. 기어 마모량과 기계적 유격은 별도 물리적 계측과 육안 검사가 필요하다.",
+    "key_point": "스캐너 데이터와 기계 마모 측정의 한계를 구별한다.",
+    "source_question_id": "auto-r06-s02-q11",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q12",
+    "question_id": "auto-made-r06-s02-q12",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "모터 베어링·감속기·장착부와 전원 상태",
+    "reason": "EPS 소음은 모터·감속기 또는 장착부의 이상과 관련될 수 있다. 구동 상태와 소음 발생 조건을 비교하고 기계 및 전기 원인을 구분한다.",
+    "key_point": "EPS 작동 소음 → 모터·감속기·장착부 진단.",
+    "source_question_id": "auto-r06-s02-q12",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q13",
+    "question_id": "auto-made-r06-s02-q13",
+    "subject": "chassis",
+    "correct_answer": 3,
+    "correct_choice": "휠 정렬·조향각 기준을 맞추고 지정 학습 절차를 수행한다",
+    "reason": "조향각 센서가 잘못된 기준을 사용하면 ESC 등 연동 제어에 영향을 줄 수 있다. 차량 정렬과 제조사 캘리브레이션 조건을 확인해 보정한다.",
+    "key_point": "EPS·ESC 조향각 학습은 차종별 지침에 따른다.",
+    "source_question_id": "auto-r06-s02-q13",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_eps_steering_angle_zero_relearn_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q14",
+    "question_id": "auto-made-r06-s02-q14",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "휠 속도 센서의 전기 파형 및 ABS 제어 로직",
+    "reason": "제동력 시험기는 바퀴의 제동력을 측정하지만 ABS 센서 파형·모듈레이터 제어 상태는 진단기와 관련 시험이 필요하다. 서로 다른 측정 대상을 구분해야 한다.",
+    "key_point": "제동력 테스터와 ABS 제어 신호 점검은 별도다.",
+    "source_question_id": "auto-r06-s02-q14",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q15",
+    "question_id": "auto-made-r06-s02-q15",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "제조사 센서 방식에 맞는 전원/전류 신호를 확인한다",
+    "reason": "패시브 유도센서는 속도에 따라 교류 전압을 만들 수 있지만 액티브 센서는 내부 전자회로로 디지털 또는 변조 전류 신호를 출력할 수 있다. 센서별 측정 방법이 다르다.",
+    "key_point": "액티브·패시브 휠속도 센서의 출력·전원 방식을 구분한다.",
+    "source_question_id": "auto-r06-s02-q15",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_wheel_speed_sensor_ac_versus_digital_type_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q16",
+    "question_id": "auto-made-r06-s02-q16",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "오일 배출이 방해돼 센터 하우징 누유가 증가한다",
+    "reason": "터보차저에 공급된 오일은 배출 경로가 확보돼야 한다. 드레인 막힘으로 크랭크케이스 환류가 제한되면 하우징 내 압력과 누유 문제가 생길 수 있다.",
+    "key_point": "터보 누유 진단은 오일 드레인 막힘도 점검한다.",
+    "source_question_id": "auto-r06-s02-q16",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_turbo_drain_flow_inference_needs_diagnostic_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q17",
+    "question_id": "auto-made-r06-s02-q17",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "정비지침에서 재사용을 금지한 가스켓·실링 부품",
+    "reason": "터보차저 연결부 밀봉재는 열과 압력에 노출된다. 분해 후 교환 대상으로 지정된 가스켓·실링을 재사용하면 누유·배기가스 누설 우려가 있다.",
+    "key_point": "터보 분해 후 지정된 일회용 가스켓·실링 교환.",
+    "source_question_id": "auto-r06-s02-q17",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_turbo_oil_seal_replacement_context_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q18",
+    "question_id": "auto-made-r06-s02-q18",
+    "subject": "chassis",
+    "correct_answer": 2,
+    "correct_choice": "흡기 누설·과급 제어밸브·공기필터 제한을 분리 점검한다",
+    "reason": "과급 부족은 공기 필터 막힘, 흡기 호스 누설, 액추에이터·터보 손상 등으로 발생할 수 있다. 목표/실제 압력과 작동 조건을 비교해야 한다.",
+    "key_point": "부스트 미달 → 흡기·액추에이터·필터 상태 비교.",
+    "source_question_id": "auto-r06-s02-q18",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_low_boost_first_inspection_depends_on_symptoms"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q19",
+    "question_id": "auto-made-r06-s02-q19",
+    "subject": "chassis",
+    "correct_answer": 1,
+    "correct_choice": "센서 입력을 처리하여 분사기 구동 명령을 계산한다",
+    "reason": "엔진 ECU는 각 센서로부터 입력받은 회전수·공기량·온도 등을 계산해 인젝터와 점화 장치 등의 구동을 조절한다.",
+    "key_point": "ECU = 센서 입력을 바탕으로 작동기 제어 신호 생성.",
+    "source_question_id": "auto-r06-s02-q19",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s02-q20",
+    "question_id": "auto-made-r06-s02-q20",
+    "subject": "chassis",
+    "correct_answer": 4,
+    "correct_choice": "농후 연소일 때 높은 전압, 희박 연소일 때 낮은 전압 경향",
+    "reason": "전형적인 지르코니아 협대역 센서는 농후한 조건에서 전압이 높고 희박한 조건에서 낮아지는 경향이 있다. 광대역 센서는 측정 원리와 출력이 다르다.",
+    "key_point": "협대역 산소센서 전압: 농후 높음·희박 낮음.",
+    "source_question_id": "auto-r06-s02-q20",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_narrowband_o2_sensor_voltage_only"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

@@ -1,0 +1,305 @@
+[
+  {
+    "id": "auto-made-r08-s03-q01",
+    "question_id": "auto-made-r08-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "코디네이터 노드가 통신 일정을 관리하는 구조",
+    "reason": "LIN은 일반적으로 한 코디네이터 노드가 프레임 헤더와 일정을 주도하고 종속 노드들이 응답하는 비용효율적인 차량 네트워크다.",
+    "key_point": "LIN = 코디네이터 중심의 저속 차량 통신.",
+    "source_question_id": "auto-r08-s03-q01",
+    "original_issue_flags": [
+      "technical_review: LIN 버전별 특성과 통신방식 기술 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q02",
+    "question_id": "auto-made-r08-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "바이어스 방향에 따라 전류 흐름을 제어한다",
+    "reason": "다이오드는 정·역방향 바이어스에 따라 전류 흐름이 크게 다르다. 능동 증폭은 일반 다이오드의 기본 기능이 아니고 트랜지스터 등 다른 회로가 필요하다.",
+    "key_point": "다이오드 = 방향성 있는 전류 제어.",
+    "source_question_id": "auto-r08-s03-q02",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 4번 선택지는 특정 보호용 다이오드 종류의 기능이므로 범위 명확화 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q03",
+    "question_id": "auto-made-r08-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "차동 전압으로 디지털 프레임 데이터를 송수신한다",
+    "reason": "CAN은 프레임 형태의 디지털 메시지를 전송한다. 아날로그 센서값은 ECU가 변환해 데이터로 실어 보낼 수 있지만 물리 전압을 직접 전달하는 것은 아니다.",
+    "key_point": "CAN = 디지털 프레임 기반 차량 통신.",
+    "source_question_id": "auto-r08-s03-q03",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q04",
+    "question_id": "auto-made-r08-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "엔진 배기가스 산소 센서",
+    "reason": "ESC는 차량의 실제 거동과 운전자 의도를 비교해 제동을 제어한다. 배기가스 산소 센서는 공연비 제어용 센서로 ESC의 핵심 자세 센서가 아니다.",
+    "key_point": "ESC 입력 = 조향각·요율·가속도 등.",
+    "source_question_id": "auto-r08-s03-q04",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q05",
+    "question_id": "auto-made-r08-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "저항이 낮은 단락 경로로 과전류가 흐르기 때문",
+    "reason": "단락은 전류가 의도하지 않은 낮은 저항 경로로 흘러 회로 보호장치가 동작할 수 있는 상황을 만든다. 전원 차단과 원인 수리가 우선이다.",
+    "key_point": "단락 = 낮은 저항 경로·과전류·퓨즈 보호.",
+    "source_question_id": "auto-r08-s03-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q06",
+    "question_id": "auto-made-r08-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "개별 휠 제동과 구동토크 제어로 차량 자세를 보정한다",
+    "reason": "ESC는 조향각과 요레이트 등으로 차량의 방향 안정성을 평가하고 필요할 때 특정 바퀴에 제동력 등을 가해 미끄러짐을 완화한다.",
+    "key_point": "ESC = 차량 방향 안정화 제어.",
+    "source_question_id": "auto-r08-s03-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q07",
+    "question_id": "auto-made-r08-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "두 냉매의 지구온난화지수와 가연성 등급이 다르다",
+    "reason": "R-134a는 비교적 높은 GWP를 갖고 R-1234yf는 매우 낮은 GWP를 갖지만 약한 가연성 등급을 가진다. 냉매 교체는 전용 장비와 차량 승인 규격을 따라야 한다.",
+    "key_point": "R-134a 고GWP, R-1234yf 저GWP·A2L.",
+    "source_question_id": "auto-r08-s03-q07",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "technical_review: R-134a GWP 수치와 냉매 가연성 분류의 기준·개정 연도 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q08",
+    "question_id": "auto-made-r08-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "엔진 회전 동력을 압축기 축에 전달할지 여부",
+    "reason": "전자클러치가 있는 컴프레서는 클러치를 접속·해제해 구동 동력의 전달을 제어한다. 전동식이나 가변용량형은 구조가 다를 수 있다.",
+    "key_point": "전자클러치 = 컴프레서 구동 동력 연결/차단.",
+    "source_question_id": "auto-r08-s03-q08",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q09",
+    "question_id": "auto-made-r08-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "냉매 고·저압, 컴프레서 동작과 진동 위치를 함께 측정한다",
+    "reason": "냉방 불량과 진동은 냉매 순환·컴프레서 베어링·마운트 등 여러 원인이 있다. 압력과 온도, 필요 시 진동을 계측해 원인을 구분한다.",
+    "key_point": "냉방 진단은 압력·온도·소음·진동을 조합.",
+    "source_question_id": "auto-r08-s03-q09",
+    "original_issue_flags": [
+      "technical_review: 에어컨 컴프레서 진동 진단도 존재하므로 보기 4와 해설 일반화의 타당성 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q10",
+    "question_id": "auto-made-r08-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "차종에 따라 비상 인식 위치·백업 인증 방법을 쓸 수 있다",
+    "reason": "스마트키는 원격 RF와 저주파 유도·비상 트랜스폰더 등 여러 인증 경로를 사용할 수 있다. 방전 시 절차는 제조사 안내를 따른다.",
+    "key_point": "스마트키 원격기능 불량과 비상시동 가능성을 구별.",
+    "source_question_id": "auto-r08-s03-q10",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 배터리란 스마트 키 배터리인지 차량 12V 배터리인지 구분 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q11",
+    "question_id": "auto-made-r08-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "적응형 크루즈 컨트롤(ACC)의 거리 추종 제어",
+    "reason": "ACC는 레이더·카메라 등으로 앞차를 인지하고 설정속도 범위에서 거리유지를 위해 구동력과 제동을 조절한다.",
+    "key_point": "ACC = 설정 속도 + 앞차 거리 추종.",
+    "source_question_id": "auto-r08-s03-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q12",
+    "question_id": "auto-made-r08-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "차량 정격에 맞게 선정된 퓨즈",
+    "reason": "퓨즈는 회로에 과전류가 흐를 때 용단되어 배선과 부품을 보호한다. 반복 용단 원인을 제거하지 않고 큰 용량으로 바꾸면 화재 위험이 커진다.",
+    "key_point": "퓨즈 = 과전류 보호, 임의 증용량 금지.",
+    "source_question_id": "auto-r08-s03-q12",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q13",
+    "question_id": "auto-made-r08-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "공통 전원 두 노드의 전압",
+    "reason": "병렬 회로의 각 가지는 동일한 두 노드에 연결돼 같은 전압이 걸린다. 전류는 저항값에 따라 달라지며 합성저항은 가장 작은 저항보다 작다.",
+    "key_point": "병렬 회로 → 양단 전압 동일.",
+    "source_question_id": "auto-r08-s03-q13",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q14",
+    "question_id": "auto-made-r08-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "전기 에너지와 화학 에너지의 가역적 변환",
+    "reason": "축전지는 충전 시 전기에너지를 화학적 형태로 저장하고 방전 시 전력을 공급한다. 실제 반응은 납산·리튬이온 등 화학계마다 다르다.",
+    "key_point": "배터리는 전기↔화학 에너지 저장 장치.",
+    "source_question_id": "auto-r08-s03-q14",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q15",
+    "question_id": "auto-made-r08-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "충돌 위험을 운전자에게 경고하는 것",
+    "reason": "FCW는 전방 위험을 감지해 경고하지만 제동 개입은 AEB의 기능이다. 두 시스템이 결합된 차량도 있으므로 기능을 구분해야 한다.",
+    "key_point": "FCW는 경고, AEB는 자동 제동 개입 가능.",
+    "source_question_id": "auto-r08-s03-q15",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q16",
+    "question_id": "auto-made-r08-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "진단시스템이 기록한 결함 관련 코드",
+    "reason": "DTC는 ECU가 감지한 이상 조건을 표준 또는 제작사 코드로 표현한다. 코드가 원인 부품을 단정하는 것은 아니므로 실측 데이터와 회로 검사가 필요하다.",
+    "key_point": "DTC = 이상 감지 정보, 고장부품 확정 아님.",
+    "source_question_id": "auto-r08-s03-q16",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q17",
+    "question_id": "auto-made-r08-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "저압측 냉매가 액체를 포함한 상태에서 증발해 기상으로 변한다",
+    "reason": "증발기는 낮은 압력의 냉매가 주변 열을 흡수하여 증발하는 열교환기다. 실제 입·출구의 기상·액상 상태는 운전 조건과 과열도에 따라 달라진다.",
+    "key_point": "증발기 = 냉매 증발·열흡수.",
+    "source_question_id": "auto-r08-s03-q17",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q18",
+    "question_id": "auto-made-r08-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "내부 마찰부의 윤활 부족과 과열·마모",
+    "reason": "압축기 윤활유는 기계적 마찰을 줄이고 부품을 보호하며 냉매와 함께 순환할 수 있다. 지정 규격과 주입량을 확인해야 한다.",
+    "key_point": "컴프레서 오일 = 윤활·열관리.",
+    "source_question_id": "auto-r08-s03-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q19",
+    "question_id": "auto-made-r08-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "적절한 무선 통신과 인증 정보 교환",
+    "reason": "스마트키는 RF와 LF 등 차종별 통신 경로로 키를 인식하고 인증한다. 단일 RF 방식으로 모든 시스템을 일반화하지 않는다.",
+    "key_point": "스마트키 = 무선 신호와 인증제어.",
+    "source_question_id": "auto-r08-s03-q19",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "mixed_script_review",
+      "technical_review: 차량별 LF/RF/블루투스 통신 적용이 달라 보기의 유일성 검증 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s03-q20",
+    "question_id": "auto-made-r08-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "인터넷 프로토콜(IP)의 목적지 주소",
+    "reason": "일반적인 CAN 프레임은 식별자·제어·데이터·CRC·ACK 등을 포함한다. IP 주소는 별도의 네트워크 계층 기술이며 CAN 기본 프레임의 필드가 아니다.",
+    "key_point": "CAN 프레임에는 기본적으로 IP 주소 필드가 없다.",
+    "source_question_id": "auto-r08-s03-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "id": "auto-made-r08-s01-q01",
+    "question_id": "auto-made-r08-s01-q01",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "에어필터 막힘·흡기 누설·과급제어 상태 확인",
+    "reason": "디젤의 검은 매연은 공기 부족이나 연료 분사 이상으로 증가할 수 있다. 과급계통과 흡기 제한·인젝터를 함께 검사해야 하며 한 가지 원인으로 단정하면 안 된다.",
+    "key_point": "디젤 블랙스모크 → 흡기량·과급·분사상태 구분.",
+    "source_question_id": "auto-r08-s01-q01",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "TECH_REVIEW_BLACK_SMOKE_MULTIPLE_AIR_RESTRICTION_CAUSES"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q02",
+    "question_id": "auto-made-r08-s01-q02",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "노킹을 억제하기 위한 점화시기 지각",
+    "reason": "점화시기를 뒤로 늦추면 연소 최고압력·온도 조건을 완화하여 노킹을 줄일 수 있다. 장기 원인은 옥탄가·냉각·혼합비 등을 함께 검토해야 한다.",
+    "key_point": "노킹 제어: ECU 점화시기 지각 가능.",
+    "source_question_id": "auto-r08-s01-q02",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q03",
+    "question_id": "auto-made-r08-s01-q03",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "질소산화물(NOx) 생성 억제",
+    "reason": "EGR은 배기가스 일부를 흡입공기에 섞어 산소농도와 연소 최고온도를 낮춤으로써 열적 NOx 생성 경향을 완화한다.",
+    "key_point": "EGR은 연소온도를 낮춰 NOx를 줄인다.",
+    "source_question_id": "auto-r08-s01-q03",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q04",
+    "question_id": "auto-made-r08-s01-q04",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "시험 조건과 밸브 타이밍·게이지 오차 등 공통 원인을 먼저 구분한다",
+    "reason": "모든 실린더의 압축저하는 낮은 크랭킹 RPM·스로틀 조건·밸브 위상·엔진 마모 등 여러 공통 원인으로 생길 수 있다. 원인확정 전 누설시험과 조건을 재확인한다.",
+    "key_point": "전실린더 저압축은 측정 조건과 공통 기계원인을 확인.",
+    "source_question_id": "auto-r08-s01-q04",
+    "original_issue_flags": [
+      "TECH_REVIEW_ALL_CYLINDERS_LOW_COMPRESSION_OTHER_POSSIBLE_CAUSES"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q05",
+    "question_id": "auto-made-r08-s01-q05",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "분사기 구동파형·누설·연료압 및 실화 데이터",
+    "reason": "인젝터 작동 불량은 구동 신호 문제나 분무·누설 문제로 나타날 수 있다. 실화와 분사량 불균형을 유발하므로 계측으로 원인을 구분한다.",
+    "key_point": "인젝터 진단 = 전기구동·분사압·누설/분무상태.",
+    "source_question_id": "auto-r08-s01-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q06",
+    "question_id": "auto-made-r08-s01-q06",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "일산화탄소·탄화수소·질소산화물",
+    "reason": "삼원촉매는 CO와 HC를 산화시키고 NOx를 환원시킨다. 효과적인 작동에는 충분한 온도와 공연비 제어가 필요하다.",
+    "key_point": "삼원촉매는 CO/HC/NOx를 동시에 처리한다.",
+    "source_question_id": "auto-r08-s01-q06",
+    "original_issue_flags": [
+      "explanation_needs_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q07",
+    "question_id": "auto-made-r08-s01-q07",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "연소실 주변을 예열하여 냉간 압축착화를 돕는다",
+    "reason": "글로우플러그는 디젤 압축착화 엔진에서 저온 시 공기를 가열해 착화가 잘 일어나도록 돕는다. 가솔린 점화코일·스파크플러그와 원리가 다르다.",
+    "key_point": "디젤 예열 플러그 = 냉간 시동 보조.",
+    "source_question_id": "auto-r08-s01-q07",
+    "original_issue_flags": [
+      "question_number_needs_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q08",
+    "question_id": "auto-made-r08-s01-q08",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "열림 상태에서 고착된 서모스탯",
+    "reason": "서모스탯 열림 고착 시 충분히 데워지기 전에 라디에이터로 물이 순환하여 엔진 예열이 늦고 히터 성능이 떨어질 수 있다.",
+    "key_point": "서모스탯 열림 고착 → 냉각수 저온·예열 지연.",
+    "source_question_id": "auto-r08-s01-q08",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "TECH_REVIEW_THERMOSTAT_TEMPERATURE_RANGE_VEHICLE_SPECIFIC"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q09",
+    "question_id": "auto-made-r08-s01-q09",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "레일 압력센서 실측값과 고압펌프 공급·제어 상태",
+    "reason": "공통 레일은 고압 연료를 축적하고 인젝터에 공급한다. 실측 레일압을 목표와 비교하고 펌프 및 제어밸브·누설 여부를 살펴야 한다.",
+    "key_point": "커먼레일 분사압력은 레일압과 인젝터 구동조건에 연관.",
+    "source_question_id": "auto-r08-s01-q09",
+    "original_issue_flags": [
+      "TECH_REVIEW_RAIL_PRESSURE_VS_INJECTOR_PRESSURE_OPERATION"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q10",
+    "question_id": "auto-made-r08-s01-q10",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "배합 합금과 다층 코팅 등 엔진 설계에 따라 소재가 다양하다",
+    "reason": "평베어링에는 알루미늄계·구리계·바비트계 등의 합금 및 다층 구조가 사용된다. 특정 재질을 모든 엔진의 단일 정답으로 고르면 부정확하다.",
+    "key_point": "크랭크 베어링 재료는 단일 금속으로 일반화 금지.",
+    "source_question_id": "auto-r08-s01-q10",
+    "original_issue_flags": [
+      "short_or_missing_choice",
+      "choice_ocr_low_confidence",
+      "TECH_REVIEW_BEARING_MODERN_ALUMINUM_ALLOYS_MULTIPLE_VALID_CHOICES"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q11",
+    "question_id": "auto-made-r08-s01-q11",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "노킹 센서가 검출한 특정 엔진 진동 대역",
+    "reason": "노킹 센서는 압전소자 등으로 블록 진동을 감지하고 ECU는 연소 시점과 신호 특성을 분석해 노킹 여부를 판정한다.",
+    "key_point": "노킹 센서 = 엔진 블록 진동 감지.",
+    "source_question_id": "auto-r08-s01-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q12",
+    "question_id": "auto-made-r08-s01-q12",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "엔진 규정 위치에 연결하는 오일 압력 시험 게이지",
+    "reason": "오일압력 센서가 이상인지 실제 윤활압력 부족인지 구분하려면 적절한 압력계로 규정 온도와 RPM에서 실압을 비교한다.",
+    "key_point": "오일 압력 수치는 압력 게이지로 확인한다.",
+    "source_question_id": "auto-r08-s01-q12",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q13",
+    "question_id": "auto-made-r08-s01-q13",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "재순환 배기가스의 냉각 능력",
+    "reason": "EGR 쿨러는 엔진 냉각수 등을 이용해 흡기로 재순환하는 배기가스의 열을 낮춘다. 냉각 부족은 흡기와 연소 특성에 영향을 줄 수 있다.",
+    "key_point": "EGR 쿨러 = 재순환 배기가스 냉각.",
+    "source_question_id": "auto-r08-s01-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q14",
+    "question_id": "auto-made-r08-s01-q14",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "시트 압입간섭·밸브 접촉폭·동심도 및 소재별 규정",
+    "reason": "밸브 시트 작업은 열팽창과 압입 치수, 시트면 동심도와 접촉폭이 기밀과 내구성에 영향을 준다. 제작사 치수와 작업 절차가 기준이다.",
+    "key_point": "밸브 시트는 압입·접촉폭·동심도 관리가 중요하다.",
+    "source_question_id": "auto-r08-s01-q14",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "TECH_REVIEW_VALVE_SEAT_TEMPERATURE_INSTALLATION_CONDITIONS"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q15",
+    "question_id": "auto-made-r08-s01-q15",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "실화·과열·촉매 오염과 공연비 제어 이상",
+    "reason": "미연소 연료가 촉매에서 연소하거나 과열·오염이 발생하면 촉매 기질이 손상될 수 있다. 원본의 과열을 효율저하와 무관하다고 단정하는 설명은 옳지 않을 수 있다.",
+    "key_point": "촉매 효율저하는 과열·실화·오염·공연비 문제와 관련된다.",
+    "source_question_id": "auto-r08-s01-q15",
+    "original_issue_flags": [
+      "TECH_REVIEW_CATALYST_OVERHEAT_CAUSES_AND_INDIRECT_LINK"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q16",
+    "question_id": "auto-made-r08-s01-q16",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "제작사 지정 거리·시간과 가혹 운행 조건",
+    "reason": "엔진오일 교환 간격은 오일 규격과 운전 조건, 운행거리·경과시간 등에 따라 달라진다. 차종별 정비표를 우선해야 한다.",
+    "key_point": "오일 교환주기는 차량 정비 지침과 가혹 조건 기준.",
+    "source_question_id": "auto-r08-s01-q16",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q17",
+    "question_id": "auto-made-r08-s01-q17",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "공기 약 14.7 대 휘발유 1",
+    "reason": "일반 가솔린은 화학양론상 질량 기준으로 공기 약 14.7kg 당 연료 1kg에 해당한다. 에탄올 혼합비나 연료 성분이 바뀌면 정확한 이론비는 달라질 수 있다.",
+    "key_point": "휘발유 이론공연비 약 14.7:1(질량비, 연료별 차이).",
+    "source_question_id": "auto-r08-s01-q17",
+    "original_issue_flags": [
+      "TECH_REVIEW_STOICHIOMETRIC_RATIO_FUEL_DEPENDENCE"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q18",
+    "question_id": "auto-made-r08-s01-q18",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "냉각수 압력 가압 시험기와 지정 압력 캡 어댑터",
+    "reason": "냉각계에 제조사가 지정한 시험압력을 걸어 호스·라디에이터·워터펌프 연결부의 누설을 찾을 수 있다. 과압을 걸면 부품 손상 우려가 있다.",
+    "key_point": "냉각계 누설 점검은 규정 압력의 가압 시험.",
+    "source_question_id": "auto-r08-s01-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q19",
+    "question_id": "auto-made-r08-s01-q19",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "지나치게 농후한 혼합비와 불완전 연소 가능성",
+    "reason": "검은 건식 탄소는 농후 혼합기·저온 반복 운전·점화 불량 등으로 생길 수 있다. 플러그 상태만으로 원인을 단정하지 않고 연료보정과 점화계를 진단한다.",
+    "key_point": "검은 그을음 → 농후·점화불량 등 복수 원인.",
+    "source_question_id": "auto-r08-s01-q19",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s01-q20",
+    "question_id": "auto-made-r08-s01-q20",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "가솔린 불꽃 점화를 만드는 점화코일",
+    "reason": "디젤의 예열 시스템은 글로우플러그와 제어회로를 사용한다. 일반 가솔린 점화코일의 고전압 방전계와 역할이 다르다.",
+    "key_point": "디젤 예열 점검과 가솔린 점화코일 점검을 구별한다.",
+    "source_question_id": "auto-r08-s01-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

@@ -1,0 +1,319 @@
+[
+  {
+    "id": "auto-made-r08-s04-q01",
+    "question_id": "auto-made-r08-s04-q01",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "차종 지정 방전 대기와 적합한 계측기의 무전압 확인을 마친다",
+    "reason": "고전압 회로의 잔류전압 방전시간은 차량 설계에 따라 다르며 플러그 분리만으로 무전압이 보장되지 않는다. 제조사 절차·보호구·지정 지점 확인이 필요하다.",
+    "key_point": "HV 차단 → 대기 → 지정 지점 무전압 확인.",
+    "source_question_id": "auto-r08-s04-q01",
+    "original_issue_flags": [
+      "technical_review: 잔류전압 방전시간은 제조사 차종별 정비지침 확인 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q02",
+    "question_id": "auto-made-r08-s04-q02",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "충전소 커넥터와 차량 표준·AC/DC 지원 방식",
+    "reason": "전기차 충전 규격은 지역과 차량, 충전 전력방식에 따라 다양하다. 정식으로 승인된 설비와 호환 규격을 확인해야 한다.",
+    "key_point": "EV 충전 단자 = 표준과 차량 호환성 확인.",
+    "source_question_id": "auto-r08-s04-q02",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: V2G의 구체적 범위, 테슬라 슈퍼차저와 표준 커넥터 분류 보완 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q03",
+    "question_id": "auto-made-r08-s04-q03",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "수소는 무취이므로 수소 검지기를 사용해야 한다",
+    "reason": "차량용 수소는 일반적으로 무색·무취이며 고압 누출이 위험할 수 있다. 냄새 의존 대신 적합한 수소 검출기와 안전 절차를 사용한다.",
+    "key_point": "수소 누출은 냄새보다 전용 센서로 확인.",
+    "source_question_id": "auto-r08-s04-q03",
+    "original_issue_flags": [
+      "short_question",
+      "source_text_corrected"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q04",
+    "question_id": "auto-made-r08-s04-q04",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "엔진과 모터를 함께 구동원으로 쓰는 병렬형",
+    "reason": "병렬형 HEV는 엔진의 기계동력과 모터의 동력이 모두 차륜 구동에 활용될 수 있다. 구동계 설계에 따라 작동조건은 달라진다.",
+    "key_point": "병렬형 HEV = 엔진+모터 모두 구동에 참여 가능.",
+    "source_question_id": "auto-r08-s04-q04",
+    "original_issue_flags": [
+      "mixed_script_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q05",
+    "question_id": "auto-made-r08-s04-q05",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "고전압 회로 가능성이 있으므로 무전압 확인 전 접촉 금지",
+    "reason": "차량의 고전압 케이블은 보통 주황색 표기를 사용한다. 색상은 식별 정보이지 차단이나 안전 확인을 대신하지 않는다.",
+    "key_point": "주황색 케이블 = 고전압 주의 표지.",
+    "source_question_id": "auto-r08-s04-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q06",
+    "question_id": "auto-made-r08-s04-q06",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "내연기관 연료 분사량을 계산하는 엔진 ECM 기능",
+    "reason": "전기차 전력변환장치는 인버터·DC/DC 등으로 전력을 관리한다. 순수 전기차에는 연료를 분사하는 내연기관 ECU 기능이 필요하지 않다.",
+    "key_point": "EV PCU와 엔진용 ECM 기능은 구별한다.",
+    "source_question_id": "auto-r08-s04-q06",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: PCU와 OBC 분리 배치 등 제조사 구성에 따라 3번 보기의 명확성 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q07",
+    "question_id": "auto-made-r08-s04-q07",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "해당 제조사의 순서대로 차단·대기 후 전압을 계측해 확인한다",
+    "reason": "차량마다 12V 분리·고전압 접촉기·서비스 플러그의 순서가 다르다. 원본의 한 가지 고정 순서를 모든 차에 적용하는 대신 제작사 안전 지침과 무전압 확인을 따른다.",
+    "key_point": "고전압 작업 순서는 차종 제조사 기준, 끝에는 무전압 확인.",
+    "source_question_id": "auto-r08-s04-q07",
+    "original_issue_flags": [
+      "technical_review: 전원 차단 순서, PPE/무전압 확인 절차는 제조사 정비지침을 우선해야 함"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q08",
+    "question_id": "auto-made-r08-s04-q08",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "차종·용기 인증 등급에 맞는 압력으로 충전한다",
+    "reason": "수소차는 35MPa나 70MPa 등 다양한 저장 등급이 있다. 안전밸브와 충전 프로토콜까지 해당 시스템의 승인을 확인해야 한다.",
+    "key_point": "수소 용기 압력은 설계·인증 등급 기준.",
+    "source_question_id": "auto-r08-s04-q08",
+    "original_issue_flags": [
+      "technical_review: 700bar는 공칭 충전압력, 탱크 설계/시험 압력은 별도이므로 단정 표현 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q09",
+    "question_id": "auto-made-r08-s04-q09",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "물과 열, 그리고 외부 회로로 공급되는 전기",
+    "reason": "연료전지는 수소 산화·산소 환원 반응을 이용해 전기와 물을 만든다. 운전 과정에서 열도 발생해 냉각이 필요하다.",
+    "key_point": "연료전지 반응 산물 = 전기·물·열.",
+    "source_question_id": "auto-r08-s04-q09",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "technical_review: 물 외에 열을 방출하므로 \"유일한 부산물\"의 범위(화학적 생성물) 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q10",
+    "question_id": "auto-made-r08-s04-q10",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "수소 압력조절기(감압 레귤레이터)",
+    "reason": "연료전지 스택에는 고압용기 저장압을 그대로 공급하지 않고 감압·유량 제어를 거친 수소를 공급한다. 감압기가 압력 단계를 조절한다.",
+    "key_point": "수소 공급계 감압기 = 고압을 작동압력으로 낮춤.",
+    "source_question_id": "auto-r08-s04-q10",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "technical_review: 약 10bar 이하 등 구체적 스택 공급 압력은 차량 설계별로 상이"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q11",
+    "question_id": "auto-made-r08-s04-q11",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "공기압축기·가습기·가스 공급과 막 수분 상태",
+    "reason": "스택의 반응은 수소·산소 공급과 막의 수분 상태에 좌우된다. 공기공급 장애는 농도 손실과 전압 저하를 일으킬 수 있다.",
+    "key_point": "스택 성능 저하 → 가스유량·막 수분·냉각 확인.",
+    "source_question_id": "auto-r08-s04-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q12",
+    "question_id": "auto-made-r08-s04-q12",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "차량을 제조사 지침에 반해 시동 상태로 두고 작업",
+    "reason": "수소 충전은 고압가스 설비 작업이므로 시동과 점화원 관리 등 충전소 안전 절차를 따라야 한다. 차량이나 설비의 지침을 임의로 무시하면 위험하다.",
+    "key_point": "수소 충전은 정지·점화원 통제·설비 안내 준수.",
+    "source_question_id": "auto-r08-s04-q12",
+    "original_issue_flags": [
+      "technical_review: 접지 금속 접촉 및 충전소 안전 절차의 정확한 의무 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q13",
+    "question_id": "auto-made-r08-s04-q13",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "수소와 산소의 전기화학 반응",
+    "reason": "연료전지는 촉매와 전해질막을 이용해 전기화학 반응에서 전자를 외부회로로 흐르게 한다. 내연기관의 연소 피스톤과는 원리가 다르다.",
+    "key_point": "연료전지 = 수소·산소 전기화학 발전.",
+    "source_question_id": "auto-r08-s04-q13",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 화학 부산물 물 외에 폐열이 나오는 점 문항 작성시 표현 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q14",
+    "question_id": "auto-made-r08-s04-q14",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "해당 용기 시스템의 명목 작동 압력 등급과 관련된 표기",
+    "reason": "70MPa는 700bar에 해당하며 수소차 저장압력 등급으로 사용된다. 충전 시 온도에 따른 압력 관리 등 규정은 인증된 충전 절차를 따른다.",
+    "key_point": "70MPa ≈ 700bar, 수소 저장 압력 등급.",
+    "source_question_id": "auto-r08-s04-q14",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q15",
+    "question_id": "auto-made-r08-s04-q15",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "전기모터는 낮은 회전수에서도 큰 토크를 낼 수 있다",
+    "reason": "전기모터는 제어를 통해 정지에 가까운 낮은 RPM부터 큰 토크를 발생시킬 수 있다. 실제 한계는 인버터 전류와 모터·배터리 상태가 정한다.",
+    "key_point": "전동모터 = 저속 큰 토크 활용 가능.",
+    "source_question_id": "auto-r08-s04-q15",
+    "original_issue_flags": [
+      "technical_review: 모터의 토크-회전수 특성은 모터 형식·제어별로 차이"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q16",
+    "question_id": "auto-made-r08-s04-q16",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "냉매를 압축하는 전동식 에어컨 컴프레서 본체",
+    "reason": "전력제어장치는 인버터·컨버터 등을 포함할 수 있으나 에어컨 컴프레서 자체는 공조 구동기다. 일부 시스템에 구동 회로가 통합될 수 있으므로 기능과 위치를 구분한다.",
+    "key_point": "PCU 전력변환장치와 공조 압축기 본체는 다르다.",
+    "source_question_id": "auto-r08-s04-q16",
+    "original_issue_flags": [
+      "technical_review: PCU의 제조사별 구성요소 및 전력 분배 장치 표현 확인"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q17",
+    "question_id": "auto-made-r08-s04-q17",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "라디오 수신 주파수와 방송 편성표",
+    "reason": "구동배터리의 열화는 온도·충방전 조건·SOC 편차 등에 영향을 받는다. 라디오 수신감도는 화학적 수명과 직접 연결되지 않는다.",
+    "key_point": "배터리 수명은 온도·사이클·SOC 관리와 관련된다.",
+    "source_question_id": "auto-r08-s04-q17",
+    "original_issue_flags": [
+      "technical_review: 일반 하이브리드의 외부 급속충전 빈도는 모델에 따라 해당 없음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q18",
+    "question_id": "auto-made-r08-s04-q18",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "해당 전압에 적합한 절연장갑과 절연 측정장비",
+    "reason": "고전압 정비는 정격 절연장갑·보호구·계측기와 제조사 차단 절차가 중요하다. 차광마스크 단독은 감전 보호를 대신하지 못한다.",
+    "key_point": "HV 보호는 절연 정격의 PPE·계측기 사용.",
+    "source_question_id": "auto-r08-s04-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q19",
+    "question_id": "auto-made-r08-s04-q19",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "운전자 요구토크·배터리 SOC·차량 주행 조건",
+    "reason": "하이브리드 파워매니지먼트는 차량 속도·운전자 요구, 배터리 충전 상태와 엔진 효율을 고려해 출력을 배분한다.",
+    "key_point": "하이브리드 전력 분배 = 요구토크·SOC·주행조건.",
+    "source_question_id": "auto-r08-s04-q19",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r08-s04-q20",
+    "question_id": "auto-made-r08-s04-q20",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "차종에 따라 주행 중 비상 제동 요청 기능을 지원할 수 있다",
+    "reason": "전자식 주차브레이크는 정차 시 주차 유지뿐 아니라 일부 차량에서 운전자가 스위치를 길게 조작하면 비상 제동을 지원한다. 작동방식과 제약은 제작사 기준을 따라야 한다.",
+    "key_point": "EPB는 주차 기능 외 비상 제동 보조도 가능하다.",
+    "source_question_id": "auto-r08-s04-q20",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "technical_review: 배터리 방전 시 수동 해제 가능 여부는 차종별 편차 크므로 원문 3번도 검토 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "auto-made-r06-s04-q01",
+    "question_id": "auto-made-r06-s04-q01",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "12V 보조전원 전압과 진단 포트 전원·접지 확인",
+    "reason": "진단 장비는 저전압 배터리와 ECU 전원 상태에 영향을 받는다. 통신 단절 시 배터리 전압·퓨즈·접지·진단 포트 연결을 우선 확인한다.",
+    "key_point": "통신 불량 기본 확인: 12V·진단 포트·접지.",
+    "source_question_id": "auto-r06-s04-q01",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q02",
+    "question_id": "auto-made-r06-s04-q02",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "회전자 편심으로 로터·고정자 간극이 불균일해짐",
+    "reason": "로터 편심은 자속 분포와 공극을 불균일하게 해 토크 리플과 진동을 높일 수 있다. 제어기 전류 불균형도 원인이므로 기계·전기 진단을 구분한다.",
+    "key_point": "구동모터 토크 맥동 → 공극 편심 등 원인 분리.",
+    "source_question_id": "auto-r06-s04-q02",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa18_ocr_source_compared",
+      "source_torque_ripple_causes_not_unique_to_rotor_eccentricity"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q03",
+    "question_id": "auto-made-r06-s04-q03",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "제조사 지정 절연 진단과 고전압 인터록 상태 확인",
+    "reason": "고전압 배터리 재조립 후에는 차종에 맞는 절연저항과 인터록·누설 상태를 확인해야 한다. 지정 절연계와 보호구·작업허가 절차가 필요하다.",
+    "key_point": "HV 교환 후 절연·인터록 검증은 제조사 절차를 따른다.",
+    "source_question_id": "auto-r06-s04-q03",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_high_voltage_battery_post_replace_requires_oem_hv_safe_procedure"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q04",
+    "question_id": "auto-made-r06-s04-q04",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "회로의 측정 전압과 측정 범주에 적합한 정격 장비 선택",
+    "reason": "고전압 계측은 적절한 CAT 등급·전압 정격·보호구와 측정 절차가 중요하다. 단순히 고전압이라는 이름의 계측기를 쓰는 것만으로 안전이 확보되지 않는다.",
+    "key_point": "고전압 계측 장비는 측정 정격·절차·보호구가 우선.",
+    "source_question_id": "auto-r06-s04-q04",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_high_voltage_tester_insulation_procedure_requires_oem_qualified_personnel"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q05",
+    "question_id": "auto-made-r06-s04-q05",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "플라이휠 접촉면·디스크 중심·스플라인 상태 확인",
+    "reason": "클러치 디스크의 교환에는 정렬 공구, 마찰면 상태, 릴리스 베어링과 결합부 점검이 관련된다. 원본의 엔진 회전수 조정은 해당 작업 자체의 직접 필수 항목이 아니다.",
+    "key_point": "클러치 작업은 디스크 중심·마찰면·베어링 점검.",
+    "source_question_id": "auto-r06-s04-q05",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q06",
+    "question_id": "auto-made-r06-s04-q06",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "규격에 맞는 절연된 비접촉 DC 전류클램프를 활용한다",
+    "reason": "HV 전류를 위해 회로를 직접 끊어 전류계를 직렬 삽입하는 방식은 위험할 수 있다. 차종·작업허가에 맞춰 절연 정격을 갖춘 DC 전류클램프 등 규정된 방법을 따른다.",
+    "key_point": "HV 전류 측정은 정격 DC 클램프 등 안전한 절차 사용.",
+    "source_question_id": "auto-r06-s04-q06",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa18_ocr_source_compared",
+      "source_high_voltage_current_testing_must_use_rated_instrument_and_procedures"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q07",
+    "question_id": "auto-made-r06-s04-q07",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "전류 한계에서 용단되도록 설계된 퓨즈·퓨저블 링크",
+    "reason": "고전압 퓨즈는 과전류 조건에서 회로를 끊어 손상을 줄인다. 접촉기·프리차지 회로도 별도로 보호 작용을 할 수 있지만 원리가 서로 다르다.",
+    "key_point": "고전압 퓨저블 링크 = 과전류 보호.",
+    "source_question_id": "auto-r06-s04-q07",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_fusible_link_description_check"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q08",
+    "question_id": "auto-made-r06-s04-q08",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "셀 전압 편차와 온도·SOC·부하 조건",
+    "reason": "셀 전압 편차는 배터리 균형과 성능 상태의 중요한 단서다. 판단 기준은 배터리의 부하·충전 상태 및 제조사 지정 한계에 따라 달라진다.",
+    "key_point": "셀 불균형 판정은 SOC·온도·부하 조건과 함께.",
+    "source_question_id": "auto-r06-s04-q08",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_cell_voltage_deviation_threshold_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q09",
+    "question_id": "auto-made-r06-s04-q09",
+    "subject": "eco",
+    "correct_answer": 4,
+    "correct_choice": "충전 설비에 적합한 차단기·접지·누설전류 보호",
+    "reason": "EV 충전설비는 부하전류·배선 허용치와 RCD 등 보호장치·접지가 중요하다. 실제 설치는 전기설비 규정과 충전기 지침을 지켜야 한다.",
+    "key_point": "충전기 설치는 차단용량·접지·누전 보호 적합성 확인.",
+    "source_question_id": "auto-r06-s04-q09",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_evse_rcd_type_rating_installation_code_locality_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q10",
+    "question_id": "auto-made-r06-s04-q10",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "인버터 전력변환이 제한되어 전동 구동력이 낮아짐",
+    "reason": "PCU나 인버터 계통의 보호제어가 개입되면 구동 토크가 제한될 수 있다. 관련 DTC와 전압·전류·온도 값을 확인해야 한다.",
+    "key_point": "PCU 고장·보호제어 → 구동 토크 제한 가능.",
+    "source_question_id": "auto-r06-s04-q10",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q11",
+    "question_id": "auto-made-r06-s04-q11",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "회로의 전원 차단·분리 및 잔류전압 여부",
+    "reason": "저항·연속성 측정은 계기가 자체 시험전류를 흘린다. 따라서 통전 회로나 고전압 잔류 회로에서 측정하면 계기 손상과 감전 위험이 생길 수 있다.",
+    "key_point": "연속성 측정은 무전원·차단 상태 확인 후.",
+    "source_question_id": "auto-r06-s04-q11",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_hv_circuit_continuity_safety_isolation_required_before_testing"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q12",
+    "question_id": "auto-made-r06-s04-q12",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "ATF·변속 유압·TCM 학습 상태",
+    "reason": "변속 충격은 클러치 압력 제어·마찰계 부품·변속 제어 신호와 연관된다. 타이어 압력은 승차감에는 영향을 줄 수 있으나 변속기 내부 충격의 직접 원인인지는 별개다.",
+    "key_point": "변속 충격 → ATF·유압·제어 데이터 진단.",
+    "source_question_id": "auto-r06-s04-q12",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_transmission_question_misclassified_in_eco"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q13",
+    "question_id": "auto-made-r06-s04-q13",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "오일 보충·씰 누유·베어링 소음과 규정 조립 상태",
+    "reason": "차동기어 분해 후에는 지정 오일 레벨과 누유 여부 및 베어링·백래시 관련 조립 상태를 확인해야 한다.",
+    "key_point": "디퍼렌셜 조립 후 오일·누설·기어 소음 점검.",
+    "source_question_id": "auto-r06-s04-q13",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_differential_replacement_oem_checks_additional"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q14",
+    "question_id": "auto-made-r06-s04-q14",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "규정 배터리를 교환한 뒤 통신·인식거리를 재확인한다",
+    "reason": "스마트키 배터리는 RF 출력과 인증 기능에 영향을 준다. 저전압이 확인되면 지정 전지를 교체하고 기능을 점검해야 한다.",
+    "key_point": "스마트키 인식거리 저하 → 키 배터리 확인.",
+    "source_question_id": "auto-r06-s04-q14",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_smart_key_question_misclassified_in_eco"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q15",
+    "question_id": "auto-made-r06-s04-q15",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "화면 지연·화각·가이드라인 및 안전경고 확인",
+    "reason": "후방카메라는 화면의 시야·왜곡·가이드라인 위치와 기능 연동을 확인해야 한다. 화면은 운전 보조이며 실제 주변 안전 확인을 대체하지 않는다.",
+    "key_point": "후방카메라 수리 → 화면·각도·가이드라인 점검.",
+    "source_question_id": "auto-r06-s04-q15",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q16",
+    "question_id": "auto-made-r06-s04-q16",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "차량 오디오 스피커의 주파수 응답만 측정한다",
+    "reason": "수소 감압기 점검은 가스 압력 제어와 누출·제어 신호를 대상으로 한다. 오디오 주파수 특성은 감압 조절 성능과 직접 관련이 없다.",
+    "key_point": "수소 레귤레이터 진단 = 압력·누설·밸브 제어.",
+    "source_question_id": "auto-r06-s04-q16",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa18_ocr_source_compared",
+      "source_hydrogen_pressure_regulator_voltage_relevance_for_electronic_control"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q17",
+    "question_id": "auto-made-r06-s04-q17",
+    "subject": "eco",
+    "correct_answer": 2,
+    "correct_choice": "제조사 지정 누설시험과 공급 압력·안전 기능 확인",
+    "reason": "가스 압력을 낮추는 장치를 교환하면 연결부 밀봉과 출구압력 조절 상태, 차단기능을 확인해야 한다. 고압 수소 작업은 통제·감압·누출검사를 지정 절차로 수행한다.",
+    "key_point": "감압기 교환 후 누설·압력·안전장치 검증.",
+    "source_question_id": "auto-r06-s04-q17",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_hydrogen_leak_test_qualified_procedure_required"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q18",
+    "question_id": "auto-made-r06-s04-q18",
+    "subject": "eco",
+    "correct_answer": 1,
+    "correct_choice": "수소·공기 공급유량과 냉각·막 수분 및 셀 전압편차",
+    "reason": "연료전지 스택 출력은 반응 가스 공급, 온도와 수분 상태 및 셀 열화에 영향을 받는다. DTC와 셀별 전압, 압축기·펌프를 함께 확인해야 한다.",
+    "key_point": "스택 저전압 → 가스 공급·수분·온도·셀 편차 확인.",
+    "source_question_id": "auto-r06-s04-q18",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_fuel_cell_voltage_drop_not_exclusive_to_water_management"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q19",
+    "question_id": "auto-made-r06-s04-q19",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "구동 배터리 SOC·온도와 인버터 회생제어 제한",
+    "reason": "회생제동은 발전 전류를 구동 배터리가 받아야 가능하다. SOC가 높거나 온도 제한·전력변환 이상이 생기면 회수 제동력을 줄일 수 있다.",
+    "key_point": "회생제동 저하 → 배터리 충전허용·인버터·제어조건.",
+    "source_question_id": "auto-r06-s04-q19",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_recuperation_vs_brake_pad_mechanical_braking_interaction"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s04-q20",
+    "question_id": "auto-made-r06-s04-q20",
+    "subject": "eco",
+    "correct_answer": 3,
+    "correct_choice": "태양광 직류를 교류로 변환하는 인버터",
+    "reason": "태양광 패널은 직류를 생산한다. 계통 연계 또는 교류 부하에 공급하려면 규정 전압과 주파수의 교류로 전환하는 인버터가 필요하다.",
+    "key_point": "태양광 인버터 = DC→AC 변환.",
+    "source_question_id": "auto-r06-s04-q20",
+    "original_issue_flags": [
+      "short_question",
+      "source_text_corrected",
+      "qa18_ocr_source_compared",
+      "source_solar_inverter_original_question_previously_checked"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

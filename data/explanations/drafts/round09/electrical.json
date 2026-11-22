@@ -1,0 +1,302 @@
+[
+  {
+    "id": "auto-made-r09-s03-q01",
+    "question_id": "auto-made-r09-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "인포테인먼트 영상·오디오 전송에 사용되는 MOST",
+    "reason": "MOST는 주로 차량 미디어 관련 고속 통신을 위해 설계되었다. OBD-II 진단에서 흔히 쓰이는 ISO 15765-4 CAN과 역할·표준 계층이 다르다.",
+    "key_point": "MOST = 인포테인먼트 네트워크, OBD 진단과 구분.",
+    "source_question_id": "auto-r09-s03-q01",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q02",
+    "question_id": "auto-made-r09-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "점화코일을 구동하는 출력 명령",
+    "reason": "ECU는 입력 센서 데이터를 계산해 점화코일 등의 작동기에 신호를 출력한다. 출력 명령과 입력 신호를 회로도에서 구별해야 한다.",
+    "key_point": "ECU 입력센서 신호 vs 점화 구동 출력 신호.",
+    "source_question_id": "auto-r09-s03-q02",
+    "original_issue_flags": [
+      "technical_review: 점화 코일이 스파크 플러그에 고전압을 공급하며 ECU가 직접 플러그 신호를 보내지 않음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q03",
+    "question_id": "auto-made-r09-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "5Ω",
+    "reason": "동일한 두 저항 R을 병렬 연결하면 1/R합성=1/R+1/R이므로 합성값은 R/2다. 10Ω 두 개의 합성저항은 5Ω이다.",
+    "key_point": "동일저항 두 개 병렬 → R/2.",
+    "source_question_id": "auto-r09-s03-q03",
+    "original_issue_flags": [
+      "technical_review: 4번 KCL에 따른 합계도 옳아 복수 정답 위험"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q04",
+    "question_id": "auto-made-r09-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "연료 인젝터라는 전기식 작동기",
+    "reason": "인젝터는 ECU로부터 구동 펄스 또는 전류 명령을 받아 밸브를 개폐해 연료를 분사한다. 센서는 상태를 측정해 입력값을 제공한다.",
+    "key_point": "인젝터는 ECU의 출력 명령을 실행하는 액추에이터.",
+    "source_question_id": "auto-r09-s03-q04",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q05",
+    "question_id": "auto-made-r09-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "토크렌치 또는 토크 계측장비",
+    "reason": "토크는 회전력의 모멘트로 전기적 전압·저항을 재는 멀티미터의 직접 측정 대상이 아니다. 지정 토크렌치 등으로 확인한다.",
+    "key_point": "기계적 체결 토크는 토크렌치로 확인.",
+    "source_question_id": "auto-r09-s03-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q06",
+    "question_id": "auto-made-r09-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "구동륜 미끄러짐을 줄이기 위한 제동·구동토크",
+    "reason": "TCS는 가속 때 구동륜 슬립을 감지해 해당 바퀴 제동 또는 구동토크 제한으로 접지력을 확보하려 한다.",
+    "key_point": "TCS = 가속 시 구동력 슬립 제어.",
+    "source_question_id": "auto-r09-s03-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q07",
+    "question_id": "auto-made-r09-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "고압 액체 냉매 또는 액체가 많은 상태",
+    "reason": "응축기는 고압 냉매가 열을 잃어 응축되는 열교환기다. 응축 과정에서 압력이 크게 떨어지는 것이 기본 목적이 아니며 감압은 팽창장치가 수행한다.",
+    "key_point": "응축기 = 고압 기체의 열방출·고압 액화.",
+    "source_question_id": "auto-r09-s03-q07",
+    "original_issue_flags": [
+      "technical_review: 원본 질문 고압 기체→저압 액체와 정답 콘덴서/해설 고압 액체가 충돌: 기술 검증 필수"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q08",
+    "question_id": "auto-made-r09-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "뜨거운 냉각수의 열을 공조 공기로 전달한다",
+    "reason": "히터코어는 엔진 냉각수의 열을 실내 공기로 전달하는 열교환기다. 전기차는 PTC나 히트펌프 등 다른 난방열원을 사용할 수 있다.",
+    "key_point": "내연기관 히터코어 = 냉각수 열을 실내 공기에 전달.",
+    "source_question_id": "auto-r09-s03-q08",
+    "original_issue_flags": [
+      "short_or_missing_choice",
+      "technical_review: 순수 전기차 히트펌프/PTC 방식도 존재하므로 차량 범위 한정 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q09",
+    "question_id": "auto-made-r09-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "충전 방식·전용장비와 차량 제조사 정비 절차",
+    "reason": "냉매 충전은 회수·진공·정량 주입을 전용 회수장비로 수행하며 특정 단계에서 시동 여부는 장비와 차량 지침에 따라 달라진다.",
+    "key_point": "냉매 충전 시 엔진 상태는 공통 단정 금지, 지정 절차를 따른다.",
+    "source_question_id": "auto-r09-s03-q09",
+    "original_issue_flags": [
+      "technical_review: 충전 방식은 차종/냉매 충전장비별 차이로 엔진 필수 구동은 안전상 부정확할 수 있음"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q10",
+    "question_id": "auto-made-r09-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "앞유리 부착 광학식 레인센서",
+    "reason": "광학식 레인센서는 유리 표면의 물방울에 따른 반사광 변화를 이용해 강수 상태를 추정하고 와이퍼 작동을 조절한다.",
+    "key_point": "레인센서 = 빗물 감지 → 와이퍼 제어.",
+    "source_question_id": "auto-r09-s03-q10",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q11",
+    "question_id": "auto-made-r09-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "채널당 최대 약 10Mbps와 시간 분할 스케줄 지원",
+    "reason": "FlexRay는 시간 트리거 통신을 포함해 높은 신뢰성이 요구되는 분산 제어용으로 설계되었으며 채널당 약 10Mbps 전송이 가능하다.",
+    "key_point": "FlexRay = 시간결정형 통신·최대 약 10Mbps/채널.",
+    "source_question_id": "auto-r09-s03-q11",
+    "original_issue_flags": [
+      "technical_review: 채널별 전송률 10Mbit/s와 듀얼채널 총량 구분 필요"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q12",
+    "question_id": "auto-made-r09-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "2A",
+    "reason": "옴의 법칙 V=IR이므로 전류 I=V/R이다. 12V를 6Ω에 걸면 전류는 2A가 된다.",
+    "key_point": "옴의 법칙: 전류 I=전압 V/저항 R로 계산한다.",
+    "source_question_id": "auto-r09-s03-q12",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "technical_review: 원본 2·3·4 보기 모두 옴의 법칙이므로 복수 정답 확정적"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q13",
+    "question_id": "auto-made-r09-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "0.6V",
+    "reason": "옴의 법칙에 따라 접점 전압강하는 V=IR=3A×0.2Ω=0.6V이다. 저항은 부하 전류가 흐르는 상태에서 측정값을 비교해야 한다.",
+    "key_point": "전압강하 계산 V=IR.",
+    "source_question_id": "auto-r09-s03-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q14",
+    "question_id": "auto-made-r09-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "TPMS의 압력 감시 및 경고",
+    "reason": "TPMS는 타이어 내부 압력을 직접 측정하거나 ABS 휠속도 변화를 이용해 저압 상태를 추정해 운전자에게 경고한다.",
+    "key_point": "TPMS = 타이어 저압 감시·경고.",
+    "source_question_id": "auto-r09-s03-q14",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q15",
+    "question_id": "auto-made-r09-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "후측방 탐지용 레이더 센서",
+    "reason": "사각지대 감지 시스템은 주로 후측방 레이더와 제어기를 사용하여 접근 차량을 감지한다. 장착 방식과 카메라 병용 여부는 차량별로 다르다.",
+    "key_point": "후측방 사각지대 감지에 레이더 활용.",
+    "source_question_id": "auto-r09-s03-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q16",
+    "question_id": "auto-made-r09-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "운전석 하부 대시보드 주변의 진단 커넥터",
+    "reason": "표준 16핀 진단 커넥터는 일반적으로 운전자가 접근하기 쉬운 운전석 하부에 배치된다. 정확한 위치는 해당 차량 정비정보로 확인한다.",
+    "key_point": "OBD-II 진단 커넥터는 흔히 운전석 하부에 위치.",
+    "source_question_id": "auto-r09-s03-q16",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q17",
+    "question_id": "auto-made-r09-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "리시버드라이어의 건조제·필터 요소",
+    "reason": "리시버드라이어는 냉매 중 수분과 이물을 제거하고 일부 구성에서 액상 냉매를 저장한다. 열을 압축하는 기능은 컴프레서가 담당한다.",
+    "key_point": "리시버드라이어 = 냉매 수분·이물 관리.",
+    "source_question_id": "auto-r09-s03-q17",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q18",
+    "question_id": "auto-made-r09-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "R-1234yf의 지구온난화지수(GWP)가 훨씬 낮기 때문",
+    "reason": "R-1234yf는 R-134a보다 낮은 GWP를 가진다. 다만 가연성·윤활유 호환성과 전용 충전설비 요구를 별도로 확인해야 한다.",
+    "key_point": "냉매 전환 배경 = 저GWP, 차량 호환성은 별도.",
+    "source_question_id": "auto-r09-s03-q18",
+    "original_issue_flags": [
+      "technical_review: R-134a에서 R-1234yf로 단순 혼용·무개조 교체 불가 및 안전성/규정 검토"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q19",
+    "question_id": "auto-made-r09-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "전자식이면 반드시 제동력이 더 약하다는 단정",
+    "reason": "EPB는 전동모터·기계식 클램핑 장치로 주차력을 만든다. 구조와 성능이 달라 기계식보다 항상 약하다고 일반화할 수 없다.",
+    "key_point": "EPB의 제동 성능은 구조·차량별로 달라진다.",
+    "source_question_id": "auto-r09-s03-q19",
+    "original_issue_flags": [
+      "technical_review: EPB 제동력은 차량 설계/작동 조건별로 상이"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r09-s03-q20",
+    "question_id": "auto-made-r09-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "운전자에게 그림을 표시하는 별도의 인포테인먼트 모니터",
+    "reason": "ECU 기본 구성은 연산처리기·메모리·입출력·전원 회로다. 디스플레이는 ECU와 통신할 수 있으나 일반적으로 독립된 화면장치다.",
+    "key_point": "ECU 내부 = CPU·메모리·I/O·전원 회로.",
+    "source_question_id": "auto-r09-s03-q20",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]

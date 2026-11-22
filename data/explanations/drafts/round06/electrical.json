@@ -1,0 +1,346 @@
+[
+  {
+    "id": "auto-made-r06-s03-q01",
+    "question_id": "auto-made-r06-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "규정된 전류 측정단자를 사용해 회로 경로에 직렬로 연결한다",
+    "reason": "전류계는 회로를 통과하는 전류를 직접 측정하므로 직렬 연결하는 방식이 일반적이다. 계기의 허용전류·퓨즈·전원 상태를 확인해 감전·단락을 피한다.",
+    "key_point": "전류 측정은 정격 확인 후 회로에 직렬 연결.",
+    "source_question_id": "auto-r06-s03-q01",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q02",
+    "question_id": "auto-made-r06-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "미끄러지는 구동륜을 제동하거나 엔진·모터 토크를 줄인다",
+    "reason": "TCS는 휠 속도 차이 등으로 구동 슬립을 감지하고 구동 토크를 제한하거나 휠 제동을 가한다. 차종별 제어 방식은 다르다.",
+    "key_point": "TCS = 구동 슬립 억제(제동·출력제어).",
+    "source_question_id": "auto-r06-s03-q02",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q03",
+    "question_id": "auto-made-r06-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "휠 정렬 상태와 조향각 영점 보정값을 먼저 확인한다",
+    "reason": "조향각 센서 값과 실제 휠 위치가 어긋나면 ESP/ESC 제어기의 의도 궤적 판단에 문제가 생길 수 있다. 지정 정렬과 영점 학습을 검토한다.",
+    "key_point": "조향각 불일치 → 정렬/영점/센서 신호 진단.",
+    "source_question_id": "auto-r06-s03-q03",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa18_ocr_source_compared",
+      "source_esp_steering_angle_calibration_vs_sensor_fault_requires_diagnosis"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q04",
+    "question_id": "auto-made-r06-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "전용 표적과 지정 조건으로 카메라 보정을 실시한다",
+    "reason": "전방 인지 시스템은 카메라 장착 각도 및 차체 높이 등에 민감하다. 제조사에서 요구하는 정적·동적 보정 방식과 표적 위치를 따라야 한다.",
+    "key_point": "ADAS 카메라 교환 후 제조사 지정 보정 확인.",
+    "source_question_id": "auto-r06-s03-q04",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_adas_calibration_oem_procedure_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q05",
+    "question_id": "auto-made-r06-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "관련 DTC·경고등·배선·기능 시험을 지정 절차에 따라 점검한다",
+    "reason": "SRS·차체 안전 시스템 작업 뒤에는 관련 고장코드와 경고등 및 시스템 자체 점검을 확인해야 한다. 에어백 점화회로 직접 측정은 정비규정과 안전 절차에 제한된다.",
+    "key_point": "안전장치 정비 후 DTC·경고등·기능 확인.",
+    "source_question_id": "auto-r06-s03-q05",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_scanner_communication_after_safety_inspection_may_still_be_relevant"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q06",
+    "question_id": "auto-made-r06-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "해당 차량의 SRS 모듈 등록·설정과 저장된 고장코드",
+    "reason": "SRS 제어기 교환 후 차종에 따라 옵션 설정·코딩·충돌 데이터 처리 절차가 다르다. 제조사 진단기와 안전수칙을 따르고 실제 DTC 원인을 확인한다.",
+    "key_point": "SRS 교환 후 설정·DTC 점검, 임의 전원 인가 금지.",
+    "source_question_id": "auto-r06-s03-q06",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_airbag_coding_vehicle_specific_requires_safety_procedure"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q07",
+    "question_id": "auto-made-r06-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "검사 당시 적용되는 공식 자동차검사 규정과 차량 요건",
+    "reason": "ABS 경고는 안전 기능 이상을 뜻할 수 있다. 검사 합격 여부와 결함 처리 기준은 시행 당시 법령·고시·검사 항목별 규정을 정확히 확인해야 한다.",
+    "key_point": "ABS 검사 판정은 기준일·차종·적용 규정으로 확인.",
+    "source_question_id": "auto-r06-s03-q07",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_abs_warning_inspection_legal_criteria_date_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q08",
+    "question_id": "auto-made-r06-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "고·저압 냉매 압력과 압력센서·보호제어 상태",
+    "reason": "컴프레서는 냉매 압력과 증발기 온도·요청 신호에 의해 제어될 수 있다. 압력이 낮거나 높으면 보호제어로 반복 ON/OFF가 발생할 수 있다.",
+    "key_point": "컴프레서 단속 → 냉매 압력·센서·제어 명령.",
+    "source_question_id": "auto-r06-s03-q08",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_compressor_cycling_diagnosis_multiple_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q09",
+    "question_id": "auto-made-r06-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "증발기 온도센서 신호와 결빙 방지 제어",
+    "reason": "증발기 표면 온도가 결빙점 아래로 계속 내려가면 수분이 얼어 통풍을 방해한다. 센서·써모스탯·컴프레서 용량 제어가 적절한지 점검한다.",
+    "key_point": "증발기 결빙 → 온도감지·압축기 제어 확인.",
+    "source_question_id": "auto-r06-s03-q09",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "qa18_ocr_source_compared",
+      "source_evaporator_thermostat_type_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q10",
+    "question_id": "auto-made-r06-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "블로워 퓨즈·제어모듈·전원 및 모터 구동",
+    "reason": "블로워 모터는 전기적으로 송풍을 발생시키는 장치다. 송풍이 전혀 없는 경우 전원·모터·저항 또는 전자 제어 회로를 먼저 확인한다.",
+    "key_point": "송풍 불량 → 블로워 전원·제어회로 우선.",
+    "source_question_id": "auto-r06-s03-q10",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q11",
+    "question_id": "auto-made-r06-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "해당 냉매·시스템의 지정 정량충전과 압력·온도 조건 확인",
+    "reason": "사이트 글라스 관찰은 시스템과 운전 조건에 따라 해석이 달라진다. 기포만으로 충전량을 단정하지 않고 지정 냉매 중량과 진단 조건을 확인한다.",
+    "key_point": "사이트 글라스 기포만으로 냉매량을 확정하지 않는다.",
+    "source_question_id": "auto-r06-s03-q11",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_sight_glass_bubbles_diagnostic_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q12",
+    "question_id": "auto-made-r06-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "누설 확인 뒤 제조사가 지정한 냉매량을 계량 충전",
+    "reason": "냉매 부족의 원인을 누설 검사로 확인하고 진공 배기 및 지정 정량 충전 절차를 따라야 한다. 과충전도 성능 저하와 손상을 일으킬 수 있다.",
+    "key_point": "냉매량 판단은 누설 진단과 정량 충전이 기본이다.",
+    "source_question_id": "auto-r06-s03-q12",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_sight_glass_bubbles_not_unique_to_low_refrigerant"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q13",
+    "question_id": "auto-made-r06-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "스로틀 닫힘 상태·흡기 누설·공회전 요청값",
+    "reason": "고공회전 원인은 스로틀 밸브의 기계적 걸림뿐 아니라 흡기 누설·학습값·온도센서 신호도 있다. 진단기 목표 공회전과 실제 RPM을 비교한다.",
+    "key_point": "고공회전 → 스로틀/흡기누설/학습 데이터 함께 점검.",
+    "source_question_id": "auto-r06-s03-q13",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa18_ocr_source_compared",
+      "source_high_idle_stuck_throttle_cable_only_for_cable_vehicles"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q14",
+    "question_id": "auto-made-r06-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "리모컨 배터리 상태와 RF 송신·수신 환경",
+    "reason": "리모컨 배터리 저전압은 송신 출력 및 인식 거리에 영향을 줄 수 있다. 간섭·수신 안테나 문제도 있으므로 배터리부터 간단히 확인한다.",
+    "key_point": "리모컨 인식거리 감소 → 배터리 및 RF 환경.",
+    "source_question_id": "auto-r06-s03-q14",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_smart_key_distance_battery_or_antenna_multiple_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q15",
+    "question_id": "auto-made-r06-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "제작사의 회로도 범례와 퓨즈 번호·정격 확인",
+    "reason": "퓨즈 도식 기호는 표준과 제조사 표현이 다양하다. 위치 번호·정격과 도면 범례를 같이 보면 다른 회로 소자와 구분할 수 있다.",
+    "key_point": "퓨즈 기호는 범례·정격·회로 위치를 함께 확인.",
+    "source_question_id": "auto-r06-s03-q15",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "short_or_missing_choice",
+      "choice_ocr_low_confidence",
+      "source_text_corrected",
+      "diagram_to_unicode_approximation",
+      "source_answer_key_technical_error_suspected",
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q16",
+    "question_id": "auto-made-r06-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "슬라이드 레일 기계 저항과 위치 학습 상태",
+    "reason": "선루프 기능 일부만 불량일 때는 기계적 간섭과 제한 위치 학습/구동 회로를 구별해야 한다. 제조사 초기화가 필요할 수 있다.",
+    "key_point": "선루프 일부 기능 불량 → 레일·스위치·초기화 점검.",
+    "source_question_id": "auto-r06-s03-q16",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_sunroof_initialization_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q17",
+    "question_id": "auto-made-r06-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "도어 잠금용 RF 신호·수신 안테나·도어 제어기",
+    "reason": "스마트키는 도어 작동과 시동 인증에 서로 다른 안테나·통신 모드를 쓸 수 있다. 어느 기능이 동작하는지 분리해 안테나와 BCM 등을 검사한다.",
+    "key_point": "스마트키 도어/시동 기능은 구분 진단.",
+    "source_question_id": "auto-r06-s03-q17",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_door_antenna_fault_unproven_without_testing"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q18",
+    "question_id": "auto-made-r06-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "끼임 방지 상태와 레일 걸림·위치 학습 확인",
+    "reason": "선루프 닫힘은 끼임 방지와 위치학습 또는 기계적 걸림으로 차단될 수 있다. 리셋만 하기보다 작동 조건과 장애물 유무를 함께 검사한다.",
+    "key_point": "선루프 닫힘 불량 → 안전제어·기계 상태·영점학습 확인.",
+    "source_question_id": "auto-r06-s03-q18",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_sunroof_initialization_vehicle_specific"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q19",
+    "question_id": "auto-made-r06-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "도어 체커의 롤러·링크·체결부",
+    "reason": "도어 체커는 문을 일정 각도에서 유지하도록 저항을 제공한다. 마모·체결 불량 시 개폐 위치에 따라 소음과 고정력 감소가 나타날 수 있다.",
+    "key_point": "도어 개방각 소음 → 도어 체커 점검.",
+    "source_question_id": "auto-r06-s03-q19",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared",
+      "source_door_trim_noise_not_exclusively_door_check"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r06-s03-q20",
+    "question_id": "auto-made-r06-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "접힘 기어·힌지의 걸림과 구동모터 상태",
+    "reason": "접힘 모터가 회전하는데 미러가 움직이지 않으면 구동 기어 손상이나 기계적 간섭을 의심할 수 있다. 하우징과 전원 상태를 함께 확인한다.",
+    "key_point": "미러 접힘 모터만 작동 → 기어·힌지 점검.",
+    "source_question_id": "auto-r06-s03-q20",
+    "original_issue_flags": [
+      "qa18_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
