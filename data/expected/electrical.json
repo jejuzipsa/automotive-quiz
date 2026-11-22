@@ -1,0 +1,342 @@
+[
+  {
+    "id": "original-electrical-01",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "퓨즈가 회로에서 담당하는 기본적인 보호 기능은?",
+    "choices": [
+      "전압을 무조건 증폭한다",
+      "교류 주파수를 고정한다",
+      "과전류 발생 시 회로를 차단한다",
+      "자동차 속도를 측정한다"
+    ],
+    "answer": 3,
+    "explanation": "퓨즈는 과전류로 인해 회로와 배선이 손상되지 않도록 일정 조건에서 단선된다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-02",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "자동차 릴레이의 일반적인 사용 목적은?",
+    "choices": [
+      "작은 제어 전류로 상대적으로 큰 부하 회로를 개폐한다",
+      "브레이크액을 저장한다",
+      "엔진 압축비를 바꾼다",
+      "발전기의 자속을 0으로 만든다"
+    ],
+    "answer": 1,
+    "explanation": "릴레이를 이용하면 제어 스위치에 큰 부하 전류를 직접 흘리지 않고 전기 부하를 제어할 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-03",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "시동용으로 쓰이는 일반적인 승용차 납축전지의 공칭전압은?",
+    "choices": [
+      "3V",
+      "6V",
+      "24V",
+      "12V"
+    ],
+    "answer": 4,
+    "explanation": "일반적인 승용차 시동용 납축전지는 직렬 연결된 6개 셀로 구성된 12V 계통을 사용한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-04",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "자동차 발전기(알터네이터)가 주로 수행하는 일은?",
+    "choices": [
+      "냉각수의 온도를 측정한다",
+      "엔진 운전 중 전기 부하에 전력을 공급하고 배터리 충전을 돕는다",
+      "변속 기어를 기계적으로 선택한다",
+      "제동압을 직접 높인다"
+    ],
+    "answer": 2,
+    "explanation": "알터네이터는 엔진의 기계적 동력을 전력으로 변환해 차량 전기장치와 충전 계통에 공급한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-05",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "일반적인 다이오드의 기본 동작 특성으로 알맞은 것은?",
+    "choices": [
+      "양방향 전류를 항상 똑같이 통과시킨다",
+      "전류 흐름을 일정 방향으로 주로 허용한다",
+      "항상 축전지 역할을 한다",
+      "전압과 저항의 차원을 같게 만든다"
+    ],
+    "answer": 2,
+    "explanation": "다이오드는 정방향에서 전류를 통과시키고 역방향에서는 흐름을 제한하는 반도체 소자다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-06",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "전기저항을 나타내는 SI 유도단위는?",
+    "choices": [
+      "옴(Ω)",
+      "와트(W)",
+      "헤르츠(Hz)",
+      "쿨롬(C)"
+    ],
+    "answer": 1,
+    "explanation": "전기저항은 옴으로 표현하며, 기본 관계는 R=V/I다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-07",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "직렬 연결된 저항 요소들의 전류에 대한 설명으로 맞는 것은?",
+    "choices": [
+      "모든 저항에 걸리는 전압이 항상 같다",
+      "전류는 저항마다 각각 다른 방향으로만 흐른다",
+      "동일한 직렬 경로에서는 전류가 같다",
+      "저항을 하나 추가하면 항상 전류가 0이 된다"
+    ],
+    "answer": 3,
+    "explanation": "분기가 없는 직렬 회로에서는 동일한 전류가 각 소자를 통과한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-08",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "병렬 연결된 두 저항의 양단 전압 관계는?",
+    "choices": [
+      "저항이 큰 쪽 전압이 언제나 0이다",
+      "전압은 저항값의 제곱에 비례한다",
+      "병렬에서는 전압 측정이 불가능하다",
+      "두 저항의 양단 전압이 같다"
+    ],
+    "answer": 4,
+    "explanation": "같은 두 노드에 연결된 병렬 소자에는 동일한 전위차가 걸린다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-09",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "멀티미터로 저항이 아닌 직류 전압을 측정할 때 기본 연결 방법은?",
+    "choices": [
+      "측정 대상 두 지점에 병렬로 연결한다",
+      "항상 전원선을 절단해 직렬로 연결한다",
+      "측정 단자를 반드시 단락한다",
+      "테스터를 접지와 절연 없이 고전압 단자에 무조건 연결한다"
+    ],
+    "answer": 1,
+    "explanation": "전압 측정은 두 점 간 전위차를 확인하므로 전압계 입력을 해당 두 지점에 연결한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-10",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "일반적인 전류계 연결 방법으로 가장 적절한 것은?",
+    "choices": [
+      "측정할 소자 양단에 단락시킨다",
+      "측정 경로에 직렬로 삽입한다",
+      "고저항 범위로만 측정한다",
+      "회로를 열고 센서를 연결하지 않는다"
+    ],
+    "answer": 2,
+    "explanation": "일반 전류계는 측정할 전류가 통과하도록 회로에 직렬로 연결한다. 차량 고전압계통은 별도 안전 절차가 필요하다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-11",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "끊어진 전선 때문에 개방된 단일 회로에서 부하 전류는 일반적으로 어떻게 되는가?",
+    "choices": [
+      "무한대로 증가한다",
+      "저항이 0으로 변한다",
+      "흐르지 않는다",
+      "AC로만 변한다"
+    ],
+    "answer": 3,
+    "explanation": "개방 회로는 전류가 통과하는 폐경로가 없어 부하 전류가 흐르지 않는다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-12",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "전원 양단이 거의 저항 없이 연결되는 단락의 일반적인 위험은?",
+    "choices": [
+      "회로 전류의 과도한 증가",
+      "연료 분사의 자연 종료",
+      "타이어 공기압 감소",
+      "엔진 압축비의 자동 상승"
+    ],
+    "answer": 1,
+    "explanation": "단락은 낮은 저항 경로로 큰 전류가 흐를 수 있어 배선 과열과 보호장치 작동을 유발한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-13",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "차량 전기회로에서 차체 접지가 자주 이용되는 이유는?",
+    "choices": [
+      "엔진 실린더 압력을 높이기 위해",
+      "모든 센서를 교류로 바꾸기 위해",
+      "냉매를 공급하기 위해",
+      "여러 전기장치가 공통 귀환 경로를 이용하도록 하기 위해"
+    ],
+    "answer": 4,
+    "explanation": "금속 차체를 공통 전기 귀환 경로로 사용하면 배선 구성과 관리가 단순해질 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-14",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "CAN 통신에서 두 신호선(CAN-H와 CAN-L)을 사용하는 이유와 가장 관련 있는 것은?",
+    "choices": [
+      "냉각수 압력 보정",
+      "차동 신호를 이용한 통신의 내잡음성",
+      "엔진오일 여과",
+      "제동액 공급"
+    ],
+    "answer": 2,
+    "explanation": "고속 CAN은 차동 신호를 사용해 여러 제어장치 사이 데이터 통신의 잡음 영향을 줄인다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-15",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "ECU와 센서·액추에이터 관계에 대한 설명으로 맞는 것은?",
+    "choices": [
+      "센서는 출력 신호를 주고 ECU는 이를 이용해 액추에이터를 제어할 수 있다",
+      "ECU는 기계적 배기밸브로만 구성된다",
+      "센서는 항상 바퀴에만 설치된다",
+      "액추에이터는 측정 전용이라 작동을 일으키지 않는다"
+    ],
+    "answer": 1,
+    "explanation": "센서는 운전 상태를 감지하고 제어장치는 해당 정보를 처리해 인젝터나 모터 같은 작동기를 제어한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-16",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "회전 위치 검출에 사용하는 홀 효과 센서의 원리와 가장 관련된 것은?",
+    "choices": [
+      "냉각수 비등점 변화",
+      "유압의 점성 변화",
+      "자기장 변화에 따른 전기적 신호",
+      "배기압만의 기계적 변화"
+    ],
+    "answer": 3,
+    "explanation": "홀 센서는 반도체에서 자기장이 전하 이동에 미치는 효과를 이용해 위치·속도 등 정보를 얻는다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-17",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "자동차 전조등 회로의 접촉 불량이 있을 때 점검할 항목으로 가장 적절한 것은?",
+    "choices": [
+      "바퀴 정렬만 점검한다",
+      "연료 분사량만 증가시킨다",
+      "에어컨 냉매만 충전한다",
+      "전원·접지 경로의 전압 강하와 커넥터 상태를 확인한다"
+    ],
+    "answer": 4,
+    "explanation": "접촉 저항 증가는 부하가 작동하는 중 비정상적인 전압 강하를 유발할 수 있으므로 해당 구간을 점검한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-18",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "차량 배터리의 충전 상태를 평가할 때 단자 전압 측정에 관한 설명으로 맞는 것은?",
+    "choices": [
+      "주행 중의 전압은 항상 0V다",
+      "충전 상태 판단은 측정 조건과 배터리 종류를 함께 고려해야 한다",
+      "어느 조건에서도 12.0V가 완전충전을 의미한다",
+      "전압을 측정하면 내부저항은 자동으로 정확히 결정된다"
+    ],
+    "answer": 2,
+    "explanation": "배터리의 전압만으로 모든 상태를 확정할 수 없으며 휴지시간, 온도, 종류, 부하 조건을 고려해야 한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-19",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "배터리 충전계통에 이상이 의심될 때 우선 비교할 수 있는 값은?",
+    "choices": [
+      "엔진 정지·운전 상태의 배터리 단자 전압",
+      "타이어의 트레드 깊이만",
+      "브레이크 드럼의 내경만",
+      "점화코일 외관 색상만"
+    ],
+    "answer": 1,
+    "explanation": "발전기가 정상 작동하면 차량 조건에 따라 충전 중 단자 전압이 달라지므로 정지·작동 전압을 비교해 진단할 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  },
+  {
+    "id": "original-electrical-20",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "전자제어장치의 센서 고장코드(DTC)를 발견했을 때 바람직한 조치는?",
+    "choices": [
+      "코드에 언급된 센서를 무조건 바꾸기",
+      "배선을 점검하지 않기",
+      "스캔 데이터와 배선·전원·접지 등을 추가 확인하기",
+      "모든 퓨즈를 규격보다 큰 것으로 바꾸기"
+    ],
+    "answer": 3,
+    "explanation": "고장코드는 진단의 출발점이며 센서 자체뿐 아니라 배선과 전원·접지의 영향을 점검해야 한다.",
+    "review_status": "editorial_draft",
+    "publishable": true
+  }
+]
