@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-22",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private OCR JSON 720 verified; separately authored quiz bank v1 has 80 editorial drafts and 80 separated explanation drafts. Remaining 640 pending. Public site still uses the independent 80 expected questions.",
+  "source_of_truth": "QA23 original OCR JSON 720/720 checked (private), plus 240 separately reauthored quiz and explanation editorial drafts from rounds 1-3. Remaining 480 to rewrite, technical approvals 0, live new reconstructed questions 0.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -25,7 +25,7 @@
     },
     "current_original_practice_count": 80,
     "public_exam_reconstruction_count": 0,
-    "current_unpublished_reauthored_question_drafts": 80
+    "current_unpublished_reauthored_question_drafts": 240
   },
   "source_captures": {
     "original": 57,
@@ -514,7 +514,7 @@
     "note": "Source OCR image-to-text verification complete; technical correctness and website bank construction still pending. Original JSON stays private; no ZIP created."
   },
   "our_question_bank_v1": {
-    "phase": "editorial_draft",
+    "phase": "superseded_by_v3_240_drafts",
     "based_on": "QA23-JSON 720 OCR source-verified reconstructions",
     "question_bank_path_pattern": "data/past/drafts/{engine,chassis,electrical,eco}.json",
     "explanation_bank_path_pattern": "data/explanations/drafts/{engine,chassis,electrical,eco}.json",
@@ -536,5 +536,47 @@
     "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_v1/",
     "next_step": "review technical correctness/uniqueness of the 80 drafts, then write the remaining 640, connect approved questions and separate explanations to mock exam, create explanation-based fill-in quizzes",
     "no_zip": true
+  },
+  "our_question_bank_v3": {
+    "phase": "editorial_draft",
+    "based_on": "QA23-JSON 720 verified source transcripts",
+    "newly_created_rounds": [
+      2,
+      3
+    ],
+    "newly_created_question_drafts": 160,
+    "newly_created_separate_explanations": 160,
+    "total_draft_questions": 240,
+    "total_separate_explanations": 240,
+    "source_rewrite_coverage": "240/720",
+    "pending_rewrites": 480,
+    "per_subject_drafted": {
+      "engine": 60,
+      "chassis": 60,
+      "electrical": 60,
+      "eco": 60
+    },
+    "technical_answer_approved": 0,
+    "final_publication_approved": 0,
+    "live_site_included": 0,
+    "json_question_paths": [
+      "data/past/drafts/{subject}.json",
+      "data/past/drafts/round02/{subject}.json",
+      "data/past/drafts/round03/{subject}.json"
+    ],
+    "json_explanation_paths": [
+      "data/explanations/drafts/{subject}.json",
+      "data/explanations/drafts/round02/{subject}.json",
+      "data/explanations/drafts/round03/{subject}.json"
+    ],
+    "manifest": "data/past/drafts/progress.json",
+    "private_library_folder": "/기출문제_자동차정비산업기사/우리문제은행_v3/",
+    "private_question_master": "questions_all_240.json",
+    "private_explanation_master": "explanations_all_240.json",
+    "technical_validation_status": "pending_independent_review",
+    "source_text_original_unchanged": true,
+    "no_zip": true,
+    "next_batch": "round04 engine,chassis,electrical,eco; 80 each batch",
+    "next_steps": "complete 480 question/explanation rewrites; independent subject matter and unique answer audit; then publish-approved mock exam integration and explanation-based fill-in bank"
   }
 }
