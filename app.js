@@ -8,13 +8,15 @@
     {id:"eco",name:"친환경 자동차정비"}
   ];
   const TRACKS = {past:"기존 기출문제",expected:"예상문제",demo:"시연용 문제",concept:"핵심 개념 퀴즈"};
-  const ITEMS = (Array.isArray(window.AUTO_QUIZ_DATA) ? window.AUTO_QUIZ_DATA : []).filter(q =>
+  const ITEMS = [...(Array.isArray(window.AUTO_QUIZ_DATA) ? window.AUTO_QUIZ_DATA : []),
+    ...(Array.isArray(window.AUTO_ORIGINAL_QUESTION_BANK) ? window.AUTO_ORIGINAL_QUESTION_BANK : [])].filter(q =>
     q && typeof q.id === "string" && SUBJECTS.some(s=>s.id===q.subject) &&
     Array.isArray(q.choices) && q.choices.length===4 &&
     q.choices.every(x=>typeof x==="string"&&x.trim()) && [1,2,3,4].includes(q.answer) &&
     typeof q.question==="string" && typeof q.explanation==="string" &&
     (q.track==="demo" || q.track==="concept" ||
-      ((q.track==="past" || q.track==="expected") && q.review_status==="approved" && q.publishable===true))
+      ((q.track==="past" || q.track==="expected") && q.publishable===true &&
+        (q.review_status==="approved" || (q.origin==="original_practice" && q.review_status==="editorial_draft"))))
   );
   // Unverified publisher text never ships with the public bundle.
   // QA8 is loaded only from the user's own local IndexedDB store.
@@ -151,7 +153,7 @@
     const total=poolFor(activeTrack).length;
     $("trackSummary").textContent=activeTrack==="expected" && localItems.length
       ? `예상문제 · 개인 QA8 텍스트 문제은행 ${total}문항 · 검수 전 OCR 초안 포함 · 기술적 정답 미승인`
-      : `${TRACKS[activeTrack]} · 총 ${total}문항 · 공개 검수 데이터는 아직 준비 중이야. QA8은 위에서 개인 파일을 불러와 사용할 수 있어.`;
+      : `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" (독립 제작 연습문제)":" · 기존 기출 수록 전"} · QA8 OCR 문제 720개는 별도로 파일 불러오기로 사용할 수 있어.`;
     for(const subject of SUBJECTS){
       const count=poolFor(activeTrack,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
