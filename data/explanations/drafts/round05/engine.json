@@ -1,0 +1,338 @@
+[
+  {
+    "id": "auto-made-r05-s01-q01",
+    "question_id": "auto-made-r05-s01-q01",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "차지에어 호스 누설과 터보 액추에이터 작동",
+    "reason": "과급압력 미달은 흡기 파이프 손상, 웨이스트게이트 개방, 배기 누설 등으로 나타날 수 있다. 엔진 오일 과다 여부만으로 터보 압력 불량을 판정하면 안 된다.",
+    "key_point": "과급압력 미달 → 공기 누설·액추에이터·회로 점검.",
+    "source_question_id": "auto-r05-s01-q01",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q02",
+    "question_id": "auto-made-r05-s01-q02",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "수리 가능 연마 치수와 교환 기준을 매뉴얼에서 검토한다",
+    "reason": "크랭크축 저널은 허용 연삭·수리 치수와 베어링 조합이 차종별로 정해져 있다. 한계 초과를 확인한 다음 수리 가능 여부를 보고 연마 또는 교환을 결정해야 한다.",
+    "key_point": "크랭크축 마모 판정 후 수리 치수·교환규정 확인.",
+    "source_question_id": "auto-r05-s01-q02",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_fixed_crankshaft_replacement_decision_requires_repair_spec_and_grinding_options"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q03",
+    "question_id": "auto-made-r05-s01-q03",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "목표·실측 압력과 엔진 부하·회전수를 함께 기록한다",
+    "reason": "과급압력 데이터는 회전수와 스로틀·부하, 대기압 등에 따라 달라진다. 고정된 하나의 공회전 수치만으로 고장 여부를 판단하지 않는다.",
+    "key_point": "부스트 진단: 목표/실제·RPM·부하·대기압.",
+    "source_question_id": "auto-r05-s01-q03",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q04",
+    "question_id": "auto-made-r05-s01-q04",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "센서 신호에 맞춰 연료분사·점화 등 엔진 작동을 제어한다",
+    "reason": "ECU는 온도·회전·공기량 등의 입력을 이용해 분사량, 점화 시기 등 구동 명령을 산출한다. 각종 정비 알림은 다른 모듈이나 통합 시스템이 담당할 수 있다.",
+    "key_point": "ECU: 센서 입력 → 엔진 작동 명령.",
+    "source_question_id": "auto-r05-s01-q04",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q05",
+    "question_id": "auto-made-r05-s01-q05",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "온도가 올라가면 저항이 작아진다",
+    "reason": "NTC는 음의 온도계수를 가진 서미스터다. 온도가 증가할수록 저항이 감소하며, 측정은 정해진 온도-저항표와 비교해야 한다.",
+    "key_point": "NTC: 온도 상승 → 저항 감소.",
+    "source_question_id": "auto-r05-s01-q05",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "explanation_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q06",
+    "question_id": "auto-made-r05-s01-q06",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "표시 항목은 연결 ECU와 장비 기능에 따라 달라진다",
+    "reason": "TPMS나 엔진 데이터는 장치별·프로토콜별로 지원되는 항목이 다르다. 일반 OBD의 항목에 없다고 제조사 진단기에서도 볼 수 없다는 뜻은 아니다.",
+    "key_point": "스캔 데이터의 가용성은 ECU와 진단기 지원 범위.",
+    "source_question_id": "auto-r05-s01-q06",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_tpms_availability_in_scanner_varies_by_scan_tool_module"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q07",
+    "question_id": "auto-made-r05-s01-q07",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "회로의 하이사이드·로우사이드 구동 방식과 실제 제어 신호",
+    "reason": "인젝터는 전압 구동·전류 구동·피에조 방식 등이 있어 파형이 다르다. 센서·배선·접지 및 구동 회로 유형을 확인하고 정격 계측기로 비교해야 한다.",
+    "key_point": "인젝터 파형은 구동회로 종류를 먼저 구별.",
+    "source_question_id": "auto-r05-s01-q07",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_injector_driver_voltage_waveform_depends_on_circuit_configuration"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q08",
+    "question_id": "auto-made-r05-s01-q08",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "회로 조건에 맞춰 전압·저항·연속성 등을 검사한다",
+    "reason": "멀티미터는 전압, 저항, 연속성과 장비에 따라 온도도 측정할 수 있다. 저항 측정은 전원 차단 등 정해진 조건을 따르는 것이 중요하다.",
+    "key_point": "멀티미터 기능·측정 범위·통전 조건을 구분.",
+    "source_question_id": "auto-r05-s01-q08",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_unsupported_claim_standard_multimeters_cannot_measure_temperature"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q09",
+    "question_id": "auto-made-r05-s01-q09",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "렌터카는 사용 사업 형태이며 차량 구조 분류와 별개다",
+    "reason": "자동차는 구조·용도·형식에 따라 승용, 승합, 화물, 특수 등으로 구분한다. 임대사업용이라는 사실 자체가 특수자동차 구조 분류를 의미하지 않는다.",
+    "key_point": "사용사업과 차량 구조 분류는 다른 기준.",
+    "source_question_id": "auto-r05-s01-q09",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_vehicle_legal_classification_requires_current_law_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q10",
+    "question_id": "auto-made-r05-s01-q10",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "차종별 보정량 부호 정의와 목표 분사량을 확인한다",
+    "reason": "분사량 보정값의 부호는 제조사 소프트웨어 정의에 따라 다를 수 있다. 공회전 조건·실린더 평형값·연료압력과 함께 해석해야 한다.",
+    "key_point": "보정량 부호는 진단기·차종 기준을 먼저 확인.",
+    "source_question_id": "auto-r05-s01-q10",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_injector_compensation_negative_sign_not_universal_across_manufacturers"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q11",
+    "question_id": "auto-made-r05-s01-q11",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "차종 지침에 따라 ECU 코딩·학습과 분사 보정을 확인한다",
+    "reason": "제어기 교환 후 차량 옵션 설정, 보안 등록, 인젝터 코드 및 적응값 학습이 필요할 수 있다. 구체적인 항목은 제조사 진단 절차를 확인한다.",
+    "key_point": "ECU 교환 작업은 코딩·학습·등록이 차종별로 다름.",
+    "source_question_id": "auto-r05-s01-q11",
+    "original_issue_flags": [
+      "choice_ocr_low_confidence",
+      "qa17_ocr_source_compared",
+      "source_claim_mandatory_ecu_relearn_items_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q12",
+    "question_id": "auto-made-r05-s01-q12",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "흡입 공기량 부족으로 불완전 연소가 커질 수 있다",
+    "reason": "공기 유입 제한은 연소에 사용할 산소를 줄여 매연을 증가시킬 수 있다. 필터 외 인젝터·과급·EGR·DPF도 함께 진단해야 한다.",
+    "key_point": "디젤 매연 증가 원인: 흡기 부족·분사·후처리.",
+    "source_question_id": "auto-r05-s01-q12",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q13",
+    "question_id": "auto-made-r05-s01-q13",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "일반적으로 알루미늄 합금의 열전도율이 주철보다 높다",
+    "reason": "알루미늄 합금은 보통 주철보다 열전도율이 높고 무게도 가볍다. 구조 강도와 마모 특성은 설계·보강·라이너 유무에 따라 다르다.",
+    "key_point": "블록 재질 특성: 알루미늄 경량·상대적으로 높은 열전도.",
+    "source_question_id": "auto-r05-s01-q13",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_engine_block_open_deck_cooling_generalization"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q14",
+    "question_id": "auto-made-r05-s01-q14",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "전압 측정 모드에서 측정점 양단에 병렬 연결",
+    "reason": "전압은 두 점 사이 전위차이므로 계기를 양단에 병렬 연결한다. 전류 레인지로 전압원 양단을 직접 연결하면 단락 위험이 있다.",
+    "key_point": "전압계는 측정 대상 양단에 병렬.",
+    "source_question_id": "auto-r05-s01-q14",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q15",
+    "question_id": "auto-made-r05-s01-q15",
+    "subject": "engine",
+    "correct_answer": 4,
+    "correct_choice": "해당 엔진의 링 끝간극 서비스 한계를 적용한다",
+    "reason": "링 끝간극은 링을 실린더 안에 맞춰 끼우고 지정 깊이에서 측정한다. 교환 한계는 보어·재질·설계에 따라 다르므로 정비 규정으로 판단한다.",
+    "key_point": "링 끝간극 판정은 차종별 기준.",
+    "source_question_id": "auto-r05-s01-q15",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_0_8mm_piston_ring_gap_not_universal_service_limit"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q16",
+    "question_id": "auto-made-r05-s01-q16",
+    "subject": "engine",
+    "correct_answer": 2,
+    "correct_choice": "지정 토크 단계 후 각도를 추가해 체결한다",
+    "reason": "토크-각도 체결은 초기 토크와 추가 회전각을 구분한다. 일회용 신장볼트 여부와 볼트 재사용 가능 여부는 매뉴얼로 확인한다.",
+    "key_point": "토크-각도 체결 = 토크 단계 + 지정 각도.",
+    "source_question_id": "auto-r05-s01-q16",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_torque_angle_fastening_requires_vehicle_bolt_spec"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q17",
+    "question_id": "auto-made-r05-s01-q17",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "엔진이 충분히 냉각된 뒤 규정 위치에서 측정한다",
+    "reason": "엔진 부품은 열팽창하므로 냉간 기준 규정이라면 냉각 상태에서 측정해야 한다. 고온 측정 규격을 제시한 엔진에는 다른 조건을 적용한다.",
+    "key_point": "밸브 간극 측정 온도는 제조사 기준.",
+    "source_question_id": "auto-r05-s01-q17",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_cold_valve_clearance_measurement_not_universal"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q18",
+    "question_id": "auto-made-r05-s01-q18",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "질소산화물(NOx)",
+    "reason": "열적 NOx는 높은 연소 온도에서 생성이 촉진되며 산소와 연소 조건이 영향을 준다. EGR은 연소 최고온도를 낮춰 NOx를 억제하는 데 사용한다.",
+    "key_point": "NOx는 고온 연소에서 증가하기 쉬움.",
+    "source_question_id": "auto-r05-s01-q18",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q19",
+    "question_id": "auto-made-r05-s01-q19",
+    "subject": "engine",
+    "correct_answer": 1,
+    "correct_choice": "검사 시점·연료·제작연도·차종별 최신 고시를 명시한다",
+    "reason": "CO 허용기준은 연료·차종·제작연도·검사 방식 등 법령과 적용 조건의 영향을 받는다. 숫자가 있는 문제는 기준 시점을 꼭 명시해야 한다.",
+    "key_point": "배출가스 규정은 시점·검사방법·차량분류 지정.",
+    "source_question_id": "auto-r05-s01-q19",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_2006_vehicle_co_emissions_threshold_1_percent_requires_current_legal_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  },
+  {
+    "id": "auto-made-r05-s01-q20",
+    "question_id": "auto-made-r05-s01-q20",
+    "subject": "engine",
+    "correct_answer": 3,
+    "correct_choice": "점화계통과 실화 원인을 우선 확인한다",
+    "reason": "실화하면 연소되지 않은 연료가 배기로 유입되어 HC가 증가할 수 있다. 점화코일·플러그·압축·인젝터를 함께 진단한다.",
+    "key_point": "미연소 HC 증가 ↔ 실화 가능성.",
+    "source_question_id": "auto-r05-s01-q20",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review"
+  }
+]
