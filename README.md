@@ -2,15 +2,15 @@
 
 [공인중개사 문제은행 사이트](https://github.com/jejuzipsa/gichul-quiz)의 과목별 JSON 관리 방식을 참고한 모바일·PC 반응형 자동차정비산업기사 필기 문제풀이 사이트.
 
-## **우리 문제은행 / 별도 해설은행 (누적 240문항 편집 초안 · 480 미작성)**
+## **우리 문제은행 / 별도 해설은행 (누적 400문항 편집 초안 · 320 미작성)**
 
-QA23 원문 대조 완료 720문항을 바탕으로 1~3회차 4과목 각20씩 **우리 문제 240개와 별도 해설 240개**를 새로 작성했어. 기존 원본 OCR JSON은 참고자료로 따로 유지해.
+QA23 원문 대조 완료 720문항을 바탕으로 1~5회차 4과목 각20씩 **우리 문제 400개와 별도 해설 400개**를 새로 작성했어. 기존 원본 OCR JSON은 참고자료로 따로 유지해.
 
 - **문제**: `data/past/drafts/{engine,chassis,electrical,eco}.json`. 질문·보기4·정답·`explanation_id` 포함.
 - **해설**: `data/explanations/drafts/{engine,chassis,electrical,eco}.json`. 같은 `id`에 정답 이유·핵심 개념·검토 참고링크 포함.
-- **상태**: 240문항은 `editorial_draft` / 기술 검증 대기 / `publishable:false`이고, **미작성 480문항**은 작업 목록으로 추적해. 기출 복원 신규 240문항은 아직 사이트에서 출제되지 않아. 사이트의 기존 독립 예상문제 80개와 별개야. 2·3회차 신규 파일은 문제 `data/past/drafts/round02/*.json`, `round03/*.json`, 해설 `data/explanations/drafts/round02/*.json`, `round03/*.json`에 별도 저장돼.
-- **검증**: `node tests/draft-bank.test.cjs`(1회차), `node tests/draft-bank-rounds.test.cjs`(1~3회차)로 파일 수, 중복 ID, 4지선다, 정답-해설 1:1 연결, 출제 미연결 상태를 확인해. 기술 내용 및 복수 정답 여부는 별도로 검수해야 해.
-- 개인 Library `/기출문제_자동차정비산업기사/우리문제은행_v1/`에서 과목별 최신 작업본은 `/기출문제_자동차정비산업기사/우리문제은행_v3/`의 합본 `questions_all_240.json`과 `explanations_all_240.json`, `rewrite_tracking_720.json`에 반영했어. ZIP 생성·파일 업로드 UI 없음.
+- **상태**: 400문항은 `editorial_draft` / 기술 검증 대기 / `publishable:false`이고, **미작성 320문항**은 작업 목록으로 추적해. 기출 복원 신규 400문항은 아직 사이트에서 출제되지 않아. 사이트의 기존 독립 예상문제 80개와 별개야. 2~5회차 신규 파일은 문제 `data/past/drafts/round02/*.json`, `round03/*.json`, `round04/*.json`, `round05/*.json`, 해설 `data/explanations/drafts/round02/*.json`, `round03/*.json`에 별도 저장돼.
+- **검증**: `node tests/draft-bank.test.cjs`(1회차), `node tests/draft-bank-rounds.test.cjs`(1~5회차)로 파일 수, 중복 ID, 4지선다, 정답-해설 1:1 연결, 출제 미연결 상태를 확인해. 기술 내용 및 복수 정답 여부는 별도로 검수해야 해.
+- 개인 Library `/기출문제_자동차정비산업기사/우리문제은행_v1/`에서 과목별 최신 작업본은 `/기출문제_자동차정비산업기사/우리문제은행_v5/`의 합본 `questions_all_400.json`과 `explanations_all_400.json`, `rewrite_tracking_720.json`에 반영했어. ZIP 생성·파일 업로드 UI 없음.
 
 ## 데이터 저장 및 출제
 
