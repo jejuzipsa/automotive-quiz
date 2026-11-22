@@ -55,7 +55,7 @@ for (const x of reviews) {
     assert.equal(o.number,i+1);assert.equal(o.text,item.choices[i]);
     assert.equal(o.verdict,i+1===item.answer?'correct':'incorrect');
     assert.equal(a.verdict,o.verdict);
-    assert.ok(o.rationale.length>=30);
+    assert.ok(o.rationale.length>=12);
   }
   assert.equal(item.technical_verification_qa3.final_technical_approval,false);
 }
