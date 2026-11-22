@@ -1,0 +1,25 @@
+{
+  "review_stage": "techqa1_manual_editorial_improvement",
+  "total_question_drafts": 720,
+  "total_explanations": 720,
+  "manually_changed_questions": 28,
+  "manually_changed_by_subject": {
+    "engine": 8,
+    "chassis": 6,
+    "electrical": 8,
+    "eco": 6
+  },
+  "manually_changed_by_round": {
+    "1": 25,
+    "7": 1,
+    "8": 1,
+    "9": 1
+  },
+  "technical_final_approved": 0,
+  "published_question_count": 0,
+  "original_QA23_changed": false,
+  "answer_number_changed": 0,
+  "editorial_quality_revision_count": 28,
+  "pending_full_question_technical_review": 720,
+  "notes": "문제의 보기·조건·정답 근거를 직접 재작성하여 오류 가능성을 줄인 배치다. 외부 자료를 일부 대조했지만 전체 문항/보기의 독립 기술 승인은 아직 아니다."
+}

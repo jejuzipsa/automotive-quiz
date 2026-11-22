@@ -1,0 +1,54 @@
+# 자동차정비산업기사 문제은행 기술·편집 검수 1차
+
+작성 기준: QA23 개인 OCR 원본 720문항(질문·선택지·원문 해설) + 우리 문제은행 v9 720문항과 별도 해설 720개. 2026-11-23.
+
+## 검수 범위와 완료의 뜻
+
+- **720문항 전부 구조/참조/위험 신호를 자동 검사**했음. 9회차 × 4과목 × 각20문항, 문제·해설 ID 및 정답 번호/정답 지문은 720:720 일치. 출처 문항 ID도 720개 중복 없음.
+- **1회차 네 과목 80문항의 질문·보기·해설을 직접 읽고**, 특히 엉뚱한 오답 보기와 질문 범위를 중심으로 검수했음. 이 가운데 **25문항의 질문/보기/해설을 직접 편집**했음.
+- **추가로 7회 친환경 18번(TPRD), 8회 전기 7번(냉매), 9회 전기 7번(응축기)** 3문항을 직접 교정. **이번 총 수정 28문항**(엔진8, 섀시6, 전기8, 친환경6). 원래 정답번호는 한 건도 변경하지 않았으며, 일부 질문 조건·전체 보기·이유 설명을 새로 작성.
+- 별도의 **14문항은 원본의 과목 분류가 잘못됐거나 해당 시험범위를 벗어난 것으로 의심**되어 `subject_classification_review.status=hold_do_not_publish` 표시함. 원본 내용은 수정하지 않고 우리 초안에만 보류 표시함.
+- **기술 최종 승인 0/720, 공개 출제 연결 0/720**. 이번 편집과 자료 대조를 720문항의 독립적인 전문 정답 검증 완료로 표현하지 않음.
+
+## 중요 발견
+
+1. 오답 보기의 질이 실제 시험 수준에 미치지 못하는 문제가 있음. 예: 엔진 정비 문제에 도장색·시트·오디오 등의 엉뚱한 선택지. 이번 28문항은 관련 계통에서 헷갈릴 만한 선택지로 교체.
+2. 유효성 검사(스키마/정답 인덱스/해설 연결)가 통과해도 **복수 정답·기술적 오류·과목 분류·낮은 난이도**는 해결되지 않음. 해당 항목을 별도 검토.
+3. 특히 **TPRD는 온도에 반응하는 압력방출장치**이며 일반적인 압력만으로 작동한다고 가르치면 안 됨. 7회 친환경 18번의 문항과 해설을 교정. 8회 전기 7번은 R-134a 대비 R-1234yf의 낮은 GWP와 A2L 가연성 구분을 재작성. 9회 전기 7번은 응축기 출구가 정상적으로 고압 액체라는 조건을 명시.
+4. 과목 분류 보류 14건: 5회 섀시 16·20, 5회 친환경 12, 6회 섀시 16~20, 6회 친환경 5·12~15·20. 가정용 태양광 인버터처럼 자동차 자체와 무관한 항목도 존재. 출처 ID 추적과 과목 수량(과목당180)에 영향을 주므로 무단 자동 이동하지 않고 공개 출제에서 보류.
+
+## 720문항 위험 신호 자동 선별 (확정 오류 아님)
+
+- 해설 80자 미만 **431문항**: 반드시 틀린 것은 아니지만 학습용 설명의 충분성을 재검토할 후보.
+- 동떨어진 오답 보기 **129문항 후보**: 기계적 키워드 탐지 결과로 정밀 검수 필요. 키워드 탐지가 모두를 잡는 것은 아님.
+- 안전 위험 기술검토 **112문항**, 법령·기준일 **48문항**, 계산·규격 **24문항**.
+- 정답 보기 길이 단서 가능성 **18문항**, 과목 분류 **14문항**.
+- 문자 n-gram TF-IDF 유사도 ≥ 0.72 기준 중복 후보 **0쌍**; 동일 개념의 중복이 없다는 보증은 아님.
+- 모든 위험 신호는 서로 중복될 수 있음. 숫자를 합하면 720을 초과할 수 있음.
+
+## 출제 승인 조건
+
+각 문항은 (1) 기술 사실과 적용 조건 확인, (2) 보기 4개 중 유일한 정답 검증, (3) 오답 보기가 실제 기술 범위 안에서 그럴듯하지만 틀리다는 점 확인, (4) 해설이 정답의 이유를 설명하는지 확인, (5) 과목·회차·원본 ID 연결 확인을 통과한 뒤에만 **별도 승인**해야 함. 현재 어떤 초안도 승인/사이트 등록하지 않았음.
+
+## 사용한 주요 외부 사실 검증 자료
+
+- Garrett Motion — 터보 구조·배기 터빈/압축기 관계: https://www.garrettmotion.com/turbo-replacement/turbo-diagnosis/knowledge-base/
+- Bosch CAN User Guide — 식별자 기반 비파괴 중재: https://www.keil.com/dd/docs/datashts/silabs/boschcan_ug.pdf
+- Bosch Mobility — ABS/바퀴 속도 검출: https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/
+- U.S. EPA — 냉매 R-134a/R-1234yf 차이: https://www.epa.gov/mvac/acceptable-refrigerants-and-their-impacts
+- 미국 Federal Register — TPRD 온도작동 정의: https://www.govinfo.gov/content/pkg/FR-2025-01-17/pdf/2024-31367.pdf
+- DOE — 연료전지/전기차 장치: https://www.energy.gov/cmei/fuels/fuel-cells ; https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work.html
+- Bosch/HELLA — 조향 토크 센서·댐퍼: https://www.hella.com/microsite-electronics/Steering-torque-sensors-513.html ; https://www.bosch-mobility.com/en/solutions/braking-systems/semi-active-damping-control-system-2w/
+
+## 파일 구성
+
+- `questions_all_720.json` — QA1 보완된 전체 초안(사이트 자동출제 미연결)
+- `explanations_all_720.json` — 별도 해설 720개(문항 ID로 연결)
+- `changes.json` — 정확히 어떤 질문·보기·해설을 어떻게 바꿨는지 이전/이후 기록 28건
+- `triage_report.json` — 구조/위험 탐지 집계
+- `review_queue_720.json` — 전 720문항의 후속 검토 우선순위·보류 이유
+- `subject_classification_review_14.json` — 과목 오분류 의심 14문항
+- `near_duplicate_candidates.json` — 자동 근사 중복 후보(현재 0)
+- `patch.py`, `audit.py`, `validate.py` — 재현 가능한 생성·검사 코드
+
+QA23 원본과 기존 v9은 그대로 둔 상태로 새로운 기술 QA1 버전을 만들었음. ZIP 파일은 만들지 않음.
