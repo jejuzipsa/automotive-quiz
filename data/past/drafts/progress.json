@@ -1,0 +1,35 @@
+{
+  "version": "our-bank-v3",
+  "base_source": "QA23 720 source-OCR-verified question records",
+  "total_source_questions": 720,
+  "draft_questions_created": 240,
+  "separate_explanations_created": 240,
+  "pending_question_rewrites": 480,
+  "rounds_completed_as_drafts": [
+    1,
+    2,
+    3
+  ],
+  "rounds_remaining": [
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "counts_per_subject": {
+    "engine": 60,
+    "chassis": 60,
+    "electrical": 60,
+    "eco": 60
+  },
+  "technical_answer_verified": 0,
+  "site_connected": 0,
+  "review_status": "editorial_draft",
+  "publishable": false,
+  "draft_question_path_pattern": "data/past/drafts/roundXX/{subject}.json for rounds 2 and 3; data/past/drafts/{subject}.json for round 1",
+  "draft_explanation_path_pattern": "data/explanations/drafts/roundXX/{subject}.json for rounds 2 and 3; data/explanations/drafts/{subject}.json for round 1",
+  "next_batch": "round 4, engine to eco each 20; confirm correct and unique technical answer before promoting to live site",
+  "note": "Drafts and their explanation records remain separate and are deliberately not referenced by the live manifest until reviewed."
+}
