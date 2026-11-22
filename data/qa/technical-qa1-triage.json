@@ -13,10 +13,10 @@
     "short_explanation_candidate": 431,
     "prior_distractor_issue": 102,
     "potentially_off_topic_distractor": 129,
+    "subject_classification_review": 47,
     "safety_crosscheck": 112,
     "numeric_or_formula_check": 24,
     "answer_length_cue_candidate": 18,
-    "subject_classification_review": 14,
     "known_source_error": 27
   },
   "review_queue_count": 720,
