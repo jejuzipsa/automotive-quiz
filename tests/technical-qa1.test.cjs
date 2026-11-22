@@ -9,10 +9,13 @@ const updated=read('data/qa/technical-qa1-summary.json');
 const changes=read('data/qa/technical-qa1-changes.json');
 const holds=read('data/qa/technical-qa1-subject-holds.json');
 const triage=read('data/qa/technical-qa1-triage.json');
+const expanded=read('data/qa/technical-qa1-subject-holds-expanded.json');
 assert.equal(updated.manually_changed_questions,28);
 assert.equal(changes.length,28);
 assert.equal(new Set(changes.map(x=>x.id)).size,28);
 assert.equal(holds.length,14);
+assert.equal(expanded.length,47);
+assert.equal(new Set(expanded.map(x=>x.id)).size,47);
 assert.equal(triage.total_items_scanned_by_machine,720);
 assert.equal(triage.items_independently_technically_approved,0);
 const qmap=new Map(),emap=new Map();
@@ -42,7 +45,7 @@ for(const q of qmap.values()){
  if(q.editorial_revision==='technical_qa1_reviewed'){edited++;assert.equal(e.editorial_revision,'technical_qa1_reviewed');}
  if(q.subject_classification_review){held++;assert.equal(q.subject_classification_review.status,'hold_do_not_publish');}
 }
-assert.equal(edited,28);assert.equal(held,14);
+assert.equal(edited,28);assert.equal(held,47);
 for(const change of changes){
  const q=qmap.get(change.id),e=emap.get(change.id);
  assert.ok(q&&e);
@@ -51,10 +54,10 @@ for(const change of changes){
  assert.equal(e.reason,change.after.reason);
  assert.equal(q.answer,change.answer_unchanged);
 }
-for(const hold of holds){
+for(const hold of expanded){
  const q=qmap.get(hold.id);
  assert.equal(q.subject_classification_review.suggested_subject,hold.suggested_subject);
 }
 const manifest=read('data/manifest.json');
 assert.ok(manifest.banks.every(b=>!b.file.includes('/drafts/')),'drafts may not appear in live bank');
-console.log('PASS: 720/720 draft schema and separate explanations; 28 editorial edits; 14 classification holds; 0 publication approvals.');
+console.log('PASS: 720/720 draft schema and separate explanations; 28 editorial edits; 47 classification holds; 0 publication approvals.');
