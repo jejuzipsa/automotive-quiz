@@ -2251,3 +2251,11 @@ body.reading-large .choice{font-size:19px}
   .section-heading-icon {width:36px;height:36px;margin-right:7px}
   .feature-card img.feature-icon {width:45px;height:45px;min-width:45px}
 }
+
+/* QA7 locally selected ZIP reader shortcut */
+.feature-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+.feature-card.private-link-card{text-decoration:none}
+.feature-card.private-link-card:hover{text-decoration:none}
+.feature-card strong{font-size:15px}
+@media(max-width:1020px){.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:640px){.feature-grid{grid-template-columns:1fr}}
