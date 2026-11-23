@@ -1619,5 +1619,41 @@
     "edit_and_holds_ledger": "data/qa/technical-qa23-r06-engine-edits-and-holds.json",
     "report": "docs/TECHNICAL_QA23.md",
     "next": "round06 chassis 20, electrical20, eco20; rounds07-09 each 80; specialist approval/release rights only"
+  },
+  "technical_qa24": {
+    "date": "2026-11-23",
+    "batch": "round06_chassis_01_to_20",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 6,
+    "pending_oem_safety_or_subject_review": 14,
+    "source_supported_question_numbers": [
+      5,
+      7,
+      9,
+      11,
+      14,
+      15
+    ],
+    "existing_subject_hold_numbers": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "new_subject_holds": 0,
+    "current_subject_holds": 55,
+    "cumulative_historical_firstpass_reviewed_questions": 440,
+    "cumulative_firstpass_options": 1760,
+    "remaining_unreviewed_questions": 280,
+    "remaining_unreviewed_options": 1120,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "live_manifest_unchanged": true,
+    "private_QA23_unchanged": true,
+    "audit": "data/qa/technical-qa24-r06-chassis-option-audit.json",
+    "report": "docs/TECHNICAL_QA24.md",
+    "next": "r06 electrical20, eco20, r07-r09 all subjects"
   }
 }
