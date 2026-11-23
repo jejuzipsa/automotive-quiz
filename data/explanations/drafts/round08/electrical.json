@@ -606,7 +606,7 @@
         "number": 1,
         "text": "도어잠금 모터의 기계적 작동음만 비교",
         "verdict": "incorrect",
-        "rationale": "도어 액추에이터의 잠금기능은 릴레이 출력 접점 전압확인이 아니야"
+        "rationale": "도어잠금 액추에이터의 기계적 동작음은 릴레이 부하단의 전압 이상 원인을 구분하기 어려워."
       },
       {
         "number": 2,
@@ -618,13 +618,13 @@
         "number": 3,
         "text": "타이어 주입 밸브의 밀봉력만 검사",
         "verdict": "incorrect",
-        "rationale": "흡기 압력센서로 릴레이 접점·제어 전압을 직접 재지 못해"
+        "rationale": "타이어 밸브의 밀봉력을 측정해도 릴레이 출력 측 전압 강하를 알 수 없어."
       },
       {
         "number": 4,
         "text": "엔진 매니폴드 공기압만 측정",
         "verdict": "incorrect",
-        "rationale": "타이어 밸브는 릴레이 출력회로를 계측하는 장비가 아니야"
+        "rationale": "흡기 매니폴드 압력만 측정해도 릴레이 접점·코일의 전압 상태를 알 수 없어."
       }
     ]
   },
@@ -1025,19 +1025,19 @@
         "number": 2,
         "text": "ACK 및 프레임 경계 비트",
         "verdict": "incorrect",
-        "rationale": "IP 목적지 주소는 CAN 기본 데이터프레임 필드가 아니야"
+        "rationale": "ACK 및 프레임 경계는 CAN 데이터프레임의 구성 비트이므로 다른 네트워크 계층이 아니야."
       },
       {
         "number": 3,
         "text": "CAN 식별자와 제어 필드",
         "verdict": "incorrect",
-        "rationale": "ACK/프레임 경계는 CAN 프레임 구성요소야"
+        "rationale": "CAN 식별자와 제어 필드는 CAN 프레임에서 직접 사용하는 정보야."
       },
       {
         "number": 4,
         "text": "데이터 영역과 CRC",
         "verdict": "incorrect",
-        "rationale": "식별자/제어필드는 CAN 기본 프레임 필드야"
+        "rationale": "데이터 영역과 CRC는 CAN 데이터프레임 내부에서 사용되므로 IP 주소와 달라."
       }
     ]
   }

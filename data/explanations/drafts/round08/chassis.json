@@ -760,13 +760,13 @@
         "number": 1,
         "text": "전류제한 없이 보조력을 영구히 최대 출력 유지",
         "verdict": "incorrect",
-        "rationale": "브레이크 누적 페달시간은 EPS 보조토크 주입력이 아니야"
+        "rationale": "전류를 전혀 제한하지 않으면 EPS 모터와 전원회로의 과열을 방지하지 못해."
       },
       {
         "number": 2,
         "text": "조향각 센서만 제거하면 고전류 위험이 사라진다",
         "verdict": "incorrect",
-        "rationale": "온도만이 운전자 조향의도 입력을 대신하지는 못해"
+        "rationale": "조향각 센서를 제거해도 모터의 과전류를 안전하게 제어하는 기능을 대체하지 못해."
       },
       {
         "number": 3,
@@ -778,7 +778,7 @@
         "number": 4,
         "text": "전조등 밝기만 낮추면 EPS 모터 전류가 반드시 정상화된다",
         "verdict": "incorrect",
-        "rationale": "전조등 밝기 명령은 EPS 토크 센서 대체가 아니야"
+        "rationale": "전조등 밝기를 낮추는 것만으로 EPS 모터 전류가 반드시 정상화되는 것은 아니야."
       }
     ]
   },
