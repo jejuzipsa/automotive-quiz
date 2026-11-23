@@ -6,6 +6,7 @@ const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,'..');
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const subjects=['engine','chassis','electrical','eco'];
 const changes=read('data/qa/technical-qa2-changes.json');
+const qa15ById=new Map(read('data/qa/technical-qa15-r03-engine-edits.json').edits.map(x=>[x.id,x]));
 const falsePositive=read('data/qa/technical-qa2-false-positive.json');
 const classifications=read('data/qa/technical-qa2-classifications.json');
 const firstPass=read('data/qa/technical-qa2-firstpass-evidence.json');
@@ -49,9 +50,19 @@ assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(hold
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
- assert.equal(q.question,change.after.question);
- assert.deepEqual(q.choices,change.after.choices);
- assert.equal(e.reason,change.after.reason);
+ const later=qa15ById.get(change.id);
+ if(later){
+  assert.equal(later.before.question,change.after.question,"QA15 must supersede exact QA2 question");
+  assert.deepEqual(later.before.choices,change.after.choices);
+  assert.equal(later.before.reason,change.after.reason);
+  assert.equal(q.question,later.after.question);
+  assert.deepEqual(q.choices,later.after.choices);
+  assert.equal(e.reason,later.after.reason);
+ }else{
+  assert.equal(q.question,change.after.question);
+  assert.deepEqual(q.choices,change.after.choices);
+  assert.equal(e.reason,change.after.reason);
+ }
  assert.equal(q.answer,change.answer);
 }
 for(const classification of classifications){
