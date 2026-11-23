@@ -46,6 +46,7 @@ jobs:
           node tests/technical-qa14.test.cjs
           node tests/technical-qa15.test.cjs
           node tests/technical-qa16.test.cjs
+          node tests/technical-qa17.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs
           node tests/release-gate.test.cjs
       - name: Upload QA5 720-question machine audit (review only)
