@@ -1847,10 +1847,10 @@
     "rewritten_question_numbers": [
       20
     ],
-    "independent_final_technical_approvals": 0,
     "public_reconstructed_past_count": 0,
     "audit": "data/qa/technical-qa30-r08-engine-option-audit.json",
-    "report": "docs/TECHNICAL_QA30.md"
+    "report": "docs/TECHNICAL_QA30.md",
+    "final_independent_technical_approvals": 0
   },
   "technical_qa31": {
     "date": "2026-11-23",
@@ -1862,10 +1862,10 @@
     "rewritten_question_numbers": [
       15
     ],
-    "independent_final_technical_approvals": 0,
     "public_reconstructed_past_count": 0,
     "audit": "data/qa/technical-qa31-r08-chassis-option-audit.json",
-    "report": "docs/TECHNICAL_QA31.md"
+    "report": "docs/TECHNICAL_QA31.md",
+    "final_independent_technical_approvals": 0
   },
   "technical_qa32": {
     "date": "2026-11-23",
@@ -1877,10 +1877,10 @@
     "rewritten_question_numbers": [
       12
     ],
-    "independent_final_technical_approvals": 0,
     "public_reconstructed_past_count": 0,
     "audit": "data/qa/technical-qa32-r08-electrical-option-audit.json",
-    "report": "docs/TECHNICAL_QA32.md"
+    "report": "docs/TECHNICAL_QA32.md",
+    "final_independent_technical_approvals": 0
   },
   "technical_qa33": {
     "date": "2026-11-23",
@@ -1892,7 +1892,6 @@
     "rewritten_question_numbers": [
       7
     ],
-    "independent_final_technical_approvals": 0,
     "public_reconstructed_past_count": 0,
     "audit": "data/qa/technical-qa33-r08-eco-option-audit.json",
     "report": "docs/TECHNICAL_QA33.md",
@@ -1901,6 +1900,7 @@
     "remaining_no_firstpass_questions": 80,
     "remaining_no_firstpass_options": 320,
     "current_subject_holds": 55,
-    "next": "round09 engine/chassis/electrical/eco 20 each; then independent final review, rights, retirement"
+    "next": "round09 engine/chassis/electrical/eco 20 each; then independent final review, rights, retirement",
+    "final_independent_technical_approvals": 0
   }
 }
