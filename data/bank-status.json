@@ -1401,5 +1401,50 @@
     ],
     "report": "docs/TECHNICAL_QA18.md",
     "next": "round05 all four subjects 80 questions 320 choices"
+  },
+  "technical_qa19": {
+    "date": "2026-11-23",
+    "scope": "5회 엔진20문항 80선지 1차 자료대조 + 5~9회차 400문항/400해설 기술후보 자동 스캔",
+    "fifth_round_engine": {
+      "option_reviewed_questions": 20,
+      "reviewed_options": 80,
+      "first_pass_source_supported": 10,
+      "needs_model_or_legal_or_scope_review": 10
+    },
+    "fifth_round_other_subjects": {
+      "automated_structural_and_risk_screened": 60,
+      "individual_four_option_technical_source_review_complete": 0
+    },
+    "sixth_through_ninth_round": {
+      "automated_structural_and_risk_screened": 320,
+      "individual_four_option_technical_source_review_complete": 0
+    },
+    "fifth_through_ninth_automatic_scanned_questions": 400,
+    "individual_technical_firstpass_pending_questions": 380,
+    "individual_technical_firstpass_pending_options": 1520,
+    "total_questions_with_current_version_choice_firstpass_rationales": 340,
+    "total_choices_with_current_version_firstpass_rationales": 1360,
+    "actually_edited_draft_questions": 3,
+    "edited_ids": [
+      "auto-made-r05-s03-q11",
+      "auto-made-r05-s04-q17",
+      "auto-made-r05-s04-q18"
+    ],
+    "new_subject_classification_holds": 1,
+    "new_subject_hold_id": "auto-made-r05-s01-q09",
+    "current_total_subject_holds": 53,
+    "prior_QA1_QA2_historical_holds_untouched": 47,
+    "independent_final_technical_approvals": 0,
+    "published_reconstructed_past_questions": 0,
+    "original_private_purchased_exam_OCR_QA23_unchanged": true,
+    "public_expected_exam_80_unchanged": true,
+    "public_manifest_unchanged": true,
+    "technical_audit": "data/qa/technical-qa19-r05-engine-option-audit.json",
+    "revisions_ledger": "data/qa/technical-qa19-r05-edits-and-holds.json",
+    "risk_queue_script": "tests/qa19-round05-09-risk-queue.test.cjs",
+    "risk_queue_ci_artifact": "qa19-r05-r09-review-queue",
+    "report": "docs/TECHNICAL_QA19.md",
+    "important_limit": "Automatic risk triage of 400 questions does not establish technical validity or sole correct answer; 380 lack manual per-option source checks.",
+    "next": "round05 chassis20, electrical20, eco20, round06-09 320; independent final signoff and publication rights remain undone"
   }
 }
