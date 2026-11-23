@@ -1,0 +1,870 @@
+[
+  {
+    "id": "auto-made-r06-s01-q01",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 1,
+    "question_at_review": "장거리 고부하 운행을 마친 터보 엔진을 정차했다. 엔진 정지 시 터보 보호를 고려한 판단으로 알맞은 것은?",
+    "correct_number": 3,
+    "correct_choice": "해당 차종의 냉각 지침에 따라 필요하면 안정 운전 후 시동을 끈다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "모든 터보차에서 정확히 60초만 공회전해야 한다",
+        "verdict": "incorrect",
+        "rationale": "터보차저가 장착됐다는 이유로 모든 차종이 정확히 60초 공회전을 의무로 하지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "터보차저는 냉각과 윤활의 영향을 받지 않는다",
+        "verdict": "incorrect",
+        "rationale": "터보 베어링과 하우징은 냉각·윤활 상태에 영향을 받는다."
+      },
+      {
+        "number": 3,
+        "text": "해당 차종의 냉각 지침에 따라 필요하면 안정 운전 후 시동을 끈다",
+        "verdict": "correct",
+        "rationale": "고부하 직후에는 해당 차종의 냉각/윤활·정지 지침에 따라 필요하면 안정 운전 후 정지한다."
+      },
+      {
+        "number": 4,
+        "text": "고부하 직후 엔진 회전수를 계속 최고로 유지한다",
+        "verdict": "incorrect",
+        "rationale": "고부하 직후 최고 회전수 유지가 터보 냉각 보호의 정상 원칙은 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.garrettmotion.com/tr/racing-and-performance/choosing-a-turbocharger/water-cooling-for-your-turbo/"
+    ],
+    "hold_reasons": [
+      "수냉/오일냉각, 오토스톱, 전동냉각펌프 및 차종별 시동정지 절차 상이"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q02",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 2,
+    "question_at_review": "터보 축방향 유격을 측정했더니 제작사 허용치를 초과했다. 가장 직접적으로 확인해야 할 사항은?",
+    "correct_number": 1,
+    "correct_choice": "샤프트·스러스트 베어링의 마모와 휠 간섭 흔적",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "샤프트·스러스트 베어링의 마모와 휠 간섭 흔적",
+        "verdict": "correct",
+        "rationale": "축방향 유격 증가 때 샤프트·스러스트 베어링 마모/휠 접촉 흔적이 직접 점검 대상이다."
+      },
+      {
+        "number": 2,
+        "text": "변속레버의 주차 위치만 점검",
+        "verdict": "incorrect",
+        "rationale": "변속레버 P 위치만 점검해도 터보 축 유격 측정을 대신할 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "실내 에어컨 블로워 전원 퓨즈",
+        "verdict": "incorrect",
+        "rationale": "에어컨 블로워 퓨즈 불량은 터보 스러스트 베어링 마모의 직접 원인이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "브레이크 패드의 재질과 마모 한계",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 재질은 터보 축방향 유격을 직접 측정하는 항목이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.garrettmotion.com/news/newsroom/article/turbo-damage-oil-leakage-and-external-influences-from-installer-connect-experts/"
+    ],
+    "hold_reasons": [
+      "허용 축유격·휠 간섭, 터보 오일·냉각 조건은 부품별 서비스 규격 대조 필요"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q03",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 3,
+    "question_at_review": "터보차저의 압축기 휠이 하우징 안쪽과 접촉하고 축의 반경방향 유격이 규정값보다 크다. 가장 직접적인 내부 점검 부위는?",
+    "correct_number": 1,
+    "correct_choice": "축의 반경방향을 지지하는 저널 베어링과 샤프트 마모 부위",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "축의 반경방향을 지지하는 저널 베어링과 샤프트 마모 부위",
+        "verdict": "correct",
+        "rationale": "비정상 반경방향 축 유격과 휠 하우징 접촉이면 저널 베어링·샤프트 마모 등을 조사한다."
+      },
+      {
+        "number": 2,
+        "text": "연료탱크 증발가스 캐니스터의 활성탄",
+        "verdict": "incorrect",
+        "rationale": "증발가스 캐니스터 활성탄은 터보 샤프트의 반경방향 지지 부품이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "흡기온도센서의 외관 플라스틱 색상",
+        "verdict": "incorrect",
+        "rationale": "흡기온도센서 하우징 색상만으로 저널 베어링 유격을 판정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "서스펜션 댐퍼의 바운드 스토퍼",
+        "verdict": "incorrect",
+        "rationale": "서스펜션 댐퍼 바운드 스토퍼는 터보 축 지지 구조와 무관하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.garrettmotion.com/news/newsroom/article/turbo-damage-oil-leakage-and-external-influences-from-installer-connect-experts/",
+      "https://www.garrettmotion.com/tr/racing-and-performance/choosing-a-turbocharger/water-cooling-for-your-turbo/"
+    ],
+    "hold_reasons": [
+      "QA23 새 재작성 선지 첫 대조; 모델/터보 형식별 방사 유격 기준과 휠 접촉 판단 조건 전문 검토 대기"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q04",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 4,
+    "question_at_review": "진단 커넥터가 SAE J1962 형식이고 ISO 15765-4 CAN 통신을 사용한다. CAN High를 연결하는 표준 단자는?",
+    "correct_number": 2,
+    "correct_choice": "6번 단자",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "14번 단자",
+        "verdict": "incorrect",
+        "rationale": "ISO 15765-4 CAN-H 신호가 있는 일반 J1962의 14번 단자는 CAN-L이다."
+      },
+      {
+        "number": 2,
+        "text": "6번 단자",
+        "verdict": "correct",
+        "rationale": "J1962의 해당 CAN-H 배정은 6번 단자다."
+      },
+      {
+        "number": 3,
+        "text": "4번 단자",
+        "verdict": "incorrect",
+        "rationale": "4번 단자는 일반적으로 차체 접지로 CAN-H 신호와 다르다."
+      },
+      {
+        "number": 4,
+        "text": "16번 단자",
+        "verdict": "incorrect",
+        "rationale": "16번 단자는 주로 배터리 전원으로 CAN-H 신호와 다르다."
+      }
+    ],
+    "source_urls": [
+      "https://www.ni.com/en/support/documentation/supplemental/18/specifications-for-the-can-obd-ii-cable.html"
+    ],
+    "hold_reasons": [
+      "subject_classification_hold",
+      "기존 엔진→전기전자 출제범위 신규 과목 보류, J1962/ISO15765-4 규격의 일반 핀아웃과 모델별 진단 연결 구별"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q05",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 5,
+    "question_at_review": "가속페달을 밟을 때 스로틀 개도율 데이터가 도중에 갑자기 끊긴다. 먼저 비교할 자료는?",
+    "correct_number": 1,
+    "correct_choice": "스로틀 위치 센서의 출력 변화와 회로 연결 상태",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "스로틀 위치 센서의 출력 변화와 회로 연결 상태",
+        "verdict": "correct",
+        "rationale": "TPS 출력 연속성과 전원·접지·연결 상태를 요청/실제 스로틀개도와 대조해야 간헐 신호 이상을 분석할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "엔진오일 교환 주기의 남은 일수",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 교환 예정일은 TPS 신호 단절 지점의 직접 전기적 원인이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "타이어 압력 경고등의 색상만",
+        "verdict": "incorrect",
+        "rationale": "타이어 압력 경고등 색만으로 TPS 신호 단절 여부를 확인할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "냉각팬 블레이드 수량만",
+        "verdict": "incorrect",
+        "rationale": "냉각팬 날개 수량은 TPS 출력 신호의 연속성을 직접 계측하지 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/throttle-potentiometer/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q06",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 6,
+    "question_at_review": "엔진 ECU를 교체했고 시동은 가능하지만 공회전 제어가 불안정하다. 우선 수행할 일은?",
+    "correct_number": 1,
+    "correct_choice": "차종별 ECU 설정·이모빌라이저·적응값 학습 여부 확인",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "차종별 ECU 설정·이모빌라이저·적응값 학습 여부 확인",
+        "verdict": "correct",
+        "rationale": "ECU 교환 후 차종별 코딩/설정과 이모빌라이저, 스로틀/공회전 학습을 확인하는 것이 적절하다."
+      },
+      {
+        "number": 2,
+        "text": "해당 ECU의 고장 이력을 무시하고 출고",
+        "verdict": "incorrect",
+        "rationale": "기존 ECU의 고장코드·설정 기록을 무시하고 곧바로 출고하면 원인을 놓칠 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 패드를 무조건 전량 교환",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 일괄 교환은 ECU 교환 후 공회전 불안정의 직접 조치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "연료 압력을 임의로 최고로 올리기",
+        "verdict": "incorrect",
+        "rationale": "연료 압력을 임의 최고치로 올려 공회전 불안정을 해결하는 것은 위험하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.boschdiagnostics.com/products/bosch-obd-1150"
+    ],
+    "hold_reasons": [
+      "진단기 제품 설명만으로 OEM ECU 보안/적응값·이모빌라이저 설정 조건 직접 승인 불가"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q07",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 7,
+    "question_at_review": "공회전과 가속에서 MAF 데이터가 전혀 변하지 않는다. 센서 불량을 판단하기 전에 확인할 것은?",
+    "correct_number": 1,
+    "correct_choice": "흡기량 변화와 센서 전원·접지·출력 파형",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "흡기량 변화와 센서 전원·접지·출력 파형",
+        "verdict": "correct",
+        "rationale": "MAF가 공회전·가속 중 일정값에 고착되면 실제 공기유량과 센서 전원/접지·출력변화를 비교해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "차량 등록증의 차체색상만",
+        "verdict": "incorrect",
+        "rationale": "차체 색상 정보만으로 MAF 실시간 신호의 정상 여부는 판단할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "스페어타이어의 제조 일자만",
+        "verdict": "incorrect",
+        "rationale": "스페어타이어 제조일은 엔진 흡기공기량 측정 신호와 무관하다."
+      },
+      {
+        "number": 4,
+        "text": "히터 코어의 외부 마감 색상만",
+        "verdict": "incorrect",
+        "rationale": "히터 코어 색상만으로 MAF 회로 신호가 정상인지는 알 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/air-mass-sensor/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q08",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 8,
+    "question_at_review": "디젤 ECU 데이터를 비교할 때 냉간 시동 직후 값과 완전 예열 상태 값이 달랐다. 합리적인 해석은?",
+    "correct_number": 4,
+    "correct_choice": "엔진 온도와 운전 조건이 같을 때 데이터를 비교한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "차가워도 모든 센서 데이터는 동일해야 한다",
+        "verdict": "incorrect",
+        "rationale": "온도가 달라지면 센서 출력/분사보정도 달라질 수 있으므로 항상 같은 값을 기대하지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "공회전 속도와 관계없이 한 번만 측정한다",
+        "verdict": "incorrect",
+        "rationale": "공회전·부하·온도조건이 다른 데이터를 한 번만 측정해 고장 판정하면 재현성이 낮다."
+      },
+      {
+        "number": 3,
+        "text": "현재 엔진이 예열 중인지 기록하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "현재 엔진 예열상태를 기록하지 않고 데이터만 비교하면 조건차이를 놓칠 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "엔진 온도와 운전 조건이 같을 때 데이터를 비교한다",
+        "verdict": "correct",
+        "rationale": "냉간/완전예열 데이터를 비교할 때에는 엔진 온도와 운전조건을 가능한 한 맞춰 판단한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q09",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 9,
+    "question_at_review": "커먼레일 인젝터 한 개를 신품으로 교체했다. 차종에 보정 코드 등록 기능이 있다면 무엇을 확인해야 할까?",
+    "correct_number": 4,
+    "correct_choice": "교체 인젝터의 보정코드를 해당 실린더에 맞게 등록한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진 회전수를 고정한 채 ECU 배선을 분리한다",
+        "verdict": "incorrect",
+        "rationale": "ECU 배선을 엔진 가동 중 임의 분리하는 것은 인젝터 보정코드 등록 절차가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "모든 인젝터에 기존 동일 코드를 복사한다",
+        "verdict": "incorrect",
+        "rationale": "모든 인젝터의 보정코드가 동일하다고 가정하고 복사하면 개별 편차 보정이 틀릴 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "캘리브레이션 코드 없이 분사압을 무조건 올린다",
+        "verdict": "incorrect",
+        "rationale": "캘리브레이션 입력 생략을 연료레일압 상승으로 대신하는 것은 부적절하다."
+      },
+      {
+        "number": 4,
+        "text": "교체 인젝터의 보정코드를 해당 실린더에 맞게 등록한다",
+        "verdict": "correct",
+        "rationale": "차종이 지원하면 교환 인젝터의 보정코드를 해당 실린더에 맞춰 등록해야 한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-code-a-diesel-injector"
+    ],
+    "hold_reasons": [
+      "보정코드 형식·진단권한·실린더 번호매핑은 OEM/인젝터 제조사 기준별로 다름"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q10",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 10,
+    "question_at_review": "SCV 솔레노이드 코일의 저항을 측정하려 한다. 정상품 판정에 필요한 기준은?",
+    "correct_number": 1,
+    "correct_choice": "해당 펌프·밸브 부품번호에 맞는 제조사 저항 규격",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "해당 펌프·밸브 부품번호에 맞는 제조사 저항 규격",
+        "verdict": "correct",
+        "rationale": "SCV 저항 판정은 실제 펌프·밸브 부품번호와 측정 온도의 제조사 규격을 따라야 한다."
+      },
+      {
+        "number": 2,
+        "text": "모든 승용차에 공통인 2.5~3.5Ω만 적용",
+        "verdict": "incorrect",
+        "rationale": "모든 승용차 SCV가 2.5~3.5Ω 규격이라는 주장은 일반화할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "제조사 지침 없이 무조건 0Ω을 정상으로 판정",
+        "verdict": "incorrect",
+        "rationale": "SCV 코일을 무조건 0Ω이면 정상이라고 판정하면 단락 가능성을 놓칠 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "문제 원인과 관계없는 점화플러그 규격",
+        "verdict": "incorrect",
+        "rationale": "점화플러그 치수는 SCV 코일의 정상 저항 판단 기준이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.delphiautoparts.com/en-gb/mom/how-to/article/diagnosing-common-rail-diesel-fuel-systems"
+    ],
+    "hold_reasons": [
+      "SCV 부품별 권선 저항·온도·진단 허용 범위 OEM 직접 수치 기준 필요"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q11",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 11,
+    "question_at_review": "기계식 분사펌프 분사시기를 다이얼 게이지로 설정한다. 백래시 오차를 줄이기 위한 기본 원칙은?",
+    "correct_number": 2,
+    "correct_choice": "정비지침의 기준 방향으로 크랭크축을 돌려 측정한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "냉각수 통로의 압력으로 분사시기를 읽는다",
+        "verdict": "incorrect",
+        "rationale": "냉각수 유로 압력으로 기계식 분사펌프의 설정 위치를 직접 읽을 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "정비지침의 기준 방향으로 크랭크축을 돌려 측정한다",
+        "verdict": "correct",
+        "rationale": "기계식 분사펌프 시기 측정은 백래시 오차를 고려해 제조사 규정 방향으로 접근해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "각도 눈금을 무시하고 역회전만 반복한다",
+        "verdict": "incorrect",
+        "rationale": "타이밍 눈금을 무시하고 임의 역회전만 반복하면 백래시 편차가 생길 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "분사펌프 결합부를 임의로 망치질한다",
+        "verdict": "incorrect",
+        "rationale": "분사펌프 결합부를 망치로 임의 충격해 조정하면 부품손상 위험이 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.boschautoparts.com/g/diesel-fuel-injection"
+    ],
+    "hold_reasons": [
+      "분사펌프 다이얼게이지 설치·크랭크 회전방향/시기값은 OEM 기계식 펌프 매뉴얼 필요"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q12",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 12,
+    "question_at_review": "커먼레일 실제 압력이 목표값보다 계속 낮고 시동이 오래 걸린다. 관련성이 높은 진단 항목은?",
+    "correct_number": 3,
+    "correct_choice": "저압 공급·고압 펌프·레일압 센서와 누설",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "타이어 측면의 문자 높이",
+        "verdict": "incorrect",
+        "rationale": "타이어 측면 문자 높이는 고압 연료레일 실측압 저하의 직접 원인이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "후방 카메라의 영상 해상도",
+        "verdict": "incorrect",
+        "rationale": "후방카메라 해상도는 커먼레일 저압 공급·누설과 관계 없다."
+      },
+      {
+        "number": 3,
+        "text": "저압 공급·고압 펌프·레일압 센서와 누설",
+        "verdict": "correct",
+        "rationale": "저압 공급, 고압펌프, 압력센서, 인젝터 리턴 누설 등이 목표-실압 차이의 진단 대상이다."
+      },
+      {
+        "number": 4,
+        "text": "실내 조명 스위치 개수",
+        "verdict": "incorrect",
+        "rationale": "실내 조명 스위치 개수는 시동지연·레일압 저하 원인과 직접 관련 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/"
+    ],
+    "hold_reasons": [
+      "커먼레일 고압 연료 분사/잔압 작업은 인체 주입 손상 위험; OEM 압력 해제·측정 절차 필요"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q13",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 13,
+    "question_at_review": "엔진 오일압력 스위치가 주는 디지털 ON/OFF 신호를 스코프로 살핀다. 실제 오일압력 수치도 알 수 있을까?",
+    "correct_number": 4,
+    "correct_choice": "신호 관찰만으로 실제 압력을 확정하지 못하므로 압력계로 확인한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "오일압력 스위치 파형 하나로 항상 kPa를 정확히 계산한다",
+        "verdict": "incorrect",
+        "rationale": "오일압력 경고스위치의 ON/OFF 상태만으로 실제 압력 kPa를 항상 직접 계산할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "오실로스코프가 기계식 압력을 직접 계량한다",
+        "verdict": "incorrect",
+        "rationale": "오실로스코프가 압력센서 없이 기계식 오일압력을 직접 계량하는 장치는 아니다."
+      },
+      {
+        "number": 3,
+        "text": "배터리 시동전압만으로 오일압력이 계산된다",
+        "verdict": "incorrect",
+        "rationale": "배터리 시동전압만으로 실제 윤활유 압력이 결정되는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "신호 관찰만으로 실제 압력을 확정하지 못하므로 압력계로 확인한다",
+        "verdict": "correct",
+        "rationale": "오일압력 스위치 상태와 별개로 규정 위치의 압력계 실측으로 낮은 압력 여부를 확인해야 한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/automotive/how-to-test-automotive-sensors-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q14",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 14,
+    "question_at_review": "전원이 연결된 배전반에서 화재 징후가 발견됐다. 초기 대응 원칙으로 가장 적절한 것은?",
+    "correct_number": 3,
+    "correct_choice": "안전 확보·전원 차단 여부 확인 후 적합한 소화기 사용",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "화염이 확대될 때까지 환기 장비만 작동한다",
+        "verdict": "incorrect",
+        "rationale": "화재가 커질 때까지 환기 장비만 가동하는 것은 안전한 초기 대응이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "장비 가동을 유지한 채 맨손으로 금속 외함을 연다",
+        "verdict": "incorrect",
+        "rationale": "전원이 인가된 배전반의 금속 외함을 맨손으로 열면 감전 위험이 있다."
+      },
+      {
+        "number": 3,
+        "text": "안전 확보·전원 차단 여부 확인 후 적합한 소화기 사용",
+        "verdict": "correct",
+        "rationale": "인명 안전·신고를 우선하고 안전한 경우에만 전원 차단/적합한 소화기 사용을 고려해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "감전 위험을 무시하고 물을 바로 뿌린다",
+        "verdict": "incorrect",
+        "rationale": "활선 전기설비에 감전 위험을 무시하고 물을 직접 뿌리는 행동은 위험하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.osha.gov/electrical/standards"
+    ],
+    "hold_reasons": [
+      "subject_classification_hold",
+      "새 엔진→전기시설/안전 과목 분류 보류; 일반 전기화재 대응은 자동차 엔진정비 범위와 직접 관련 낮음; 실제 진압은 전문 소방 절차"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q15",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 15,
+    "question_at_review": "밸브 가이드가 마모되어 스템과 가이드 간극이 과대하다. 흔히 예상되는 증상은?",
+    "correct_number": 3,
+    "correct_choice": "오일이 연소실에 유입되어 오일 소모가 증가할 수 있다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "점화 시기가 기계적으로 고정된다",
+        "verdict": "incorrect",
+        "rationale": "밸브가이드 과대 간극이 점화시기 기계적 고정을 직접 보장하지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "실린더 라이너가 자동 복원된다",
+        "verdict": "incorrect",
+        "rationale": "가이드 마모로 실린더 라이너가 자동으로 재생되는 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "오일이 연소실에 유입되어 오일 소모가 증가할 수 있다",
+        "verdict": "correct",
+        "rationale": "가이드/스템 간극 과대와 씰 불량은 오일 유입·연소·소모 증가를 일으킬 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "연료 소비가 반드시 0이 된다",
+        "verdict": "incorrect",
+        "rationale": "밸브가이드 마모 때문에 연료소모량이 반드시 0이 되는 현상은 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.felpro.com/technical/tecblogs/valve-stem-seals.html"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q16",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 16,
+    "question_at_review": "크랭크축 메인 베어링 캡을 분리했다가 조립한다. 조립 전 확인할 사항은?",
+    "correct_number": 2,
+    "correct_choice": "캡별 위치·방향·지정 체결순서를 유지한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "메인 베어링 캡을 크랭크축 방향과 무관하게 교환한다",
+        "verdict": "incorrect",
+        "rationale": "메인 베어링 캡은 위치/방향이 정해지는 경우가 많아 서로 임의 교체하면 안 된다."
+      },
+      {
+        "number": 2,
+        "text": "캡별 위치·방향·지정 체결순서를 유지한다",
+        "verdict": "correct",
+        "rationale": "캡 위치·방향·규정 체결 순서를 유지하는 것이 조립의 기본이다."
+      },
+      {
+        "number": 3,
+        "text": "체결볼트 토크는 윤활 상태와 무관하게 임의 설정한다",
+        "verdict": "incorrect",
+        "rationale": "메인 캡의 볼트 체결조건은 윤활상태·토크+각도·재사용 정책 등이 있어 임의설정이 부적절하다."
+      },
+      {
+        "number": 4,
+        "text": "오일간극은 해당 엔진 규격과 무관하게 동일한 값으로 맞춘다",
+        "verdict": "incorrect",
+        "rationale": "메인 베어링 오일간극은 엔진별 허용 규격이 달라 일괄 수치 고정이 어렵다."
+      }
+    ],
+    "source_urls": [
+      "https://www.felpro.com/technical/tecblogs/crankshaft-bearing-installation.html"
+    ],
+    "hold_reasons": [
+      "정확한 메인캡 체결토크/볼트 재사용/오일간극은 OEM 서비스기준 필수"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q17",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 17,
+    "question_at_review": "엔진 회전수에 관계없이 오일압력이 규정 이하로 측정된다. 합리적인 점검 순서는?",
+    "correct_number": 2,
+    "correct_choice": "오일 레벨·점도·실측 압력 후 펌프·베어링 간극을 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "오일압력 경고 스위치를 먼저 교환하고 기계적 측정을 생략한다",
+        "verdict": "incorrect",
+        "rationale": "실제 저유압이면 스위치만 교환하고 기계압 실측을 생략해 원인을 확정하면 안 된다."
+      },
+      {
+        "number": 2,
+        "text": "오일 레벨·점도·실측 압력 후 펌프·베어링 간극을 확인한다",
+        "verdict": "correct",
+        "rationale": "오일레벨·점도·온도조건의 규정 압력을 실측한 후 펌프·베어링 간극 등을 조사한다."
+      },
+      {
+        "number": 3,
+        "text": "압력이 낮더라도 유량은 항상 정상이라고 판단한다",
+        "verdict": "incorrect",
+        "rationale": "오일압이 낮더라도 모든 엔진에서 유량이 반드시 정상이라고 주장할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "압력계 수치와 관계없이 오일펌프만 확정적으로 교환한다",
+        "verdict": "incorrect",
+        "rationale": "실측 압력저하가 있어도 펌프 하나만 고장이라고 단정할 수는 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.felpro.com/technical/tecblogs/crankshaft-bearing-installation.html"
+    ],
+    "hold_reasons": [
+      "실제 오일압 규정 온도/회전수/압력 측정 위치 및 안전조치는 엔진별 매뉴얼 확인"
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q18",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 18,
+    "question_at_review": "디젤 DPF를 사용하는 차량에서 황 함량이 높은 연료 사용을 피하는 주된 이유는?",
+    "correct_number": 4,
+    "correct_choice": "후처리 촉매 성능과 입자상물질 관리에 악영향을 줄 수 있기 때문",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "황은 산소량을 정확히 두 배로 늘리기 때문",
+        "verdict": "incorrect",
+        "rationale": "연료 황 함량 증가가 실린더 산소량을 정확히 두 배로 만든다는 화학적 원리는 없다."
+      },
+      {
+        "number": 2,
+        "text": "황이 많을수록 DPF 여과망을 자동으로 세척하기 때문",
+        "verdict": "incorrect",
+        "rationale": "고황 연료를 쓰면 DPF가 자동으로 더 잘 청소된다는 보편 원리는 없다."
+      },
+      {
+        "number": 3,
+        "text": "황이 엔진오일의 열화만 멈추게 하기 때문",
+        "verdict": "incorrect",
+        "rationale": "황 함량 증가로 윤활유 열화가 언제나 정지하는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "후처리 촉매 성능과 입자상물질 관리에 악영향을 줄 수 있기 때문",
+        "verdict": "correct",
+        "rationale": "황 화합물은 배출가스 촉매 활성/입자상물질 제어 성능에 악영향을 줄 수 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.epa.gov/diesel-fuel-standards",
+      "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q19",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 19,
+    "question_at_review": "EGR 밸브가 닫히지 않아 공회전에서 재순환 배기가스가 과도하게 들어온다. 나타날 수 있는 현상은?",
+    "correct_number": 4,
+    "correct_choice": "실화에 가까운 불안정한 연소와 공회전 진동",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진 정지 상태에서 점화플러그가 회전한다",
+        "verdict": "incorrect",
+        "rationale": "EGR 밸브가 닫히지 않는다고 정지한 점화플러그가 회전하는 기구가 생기지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "타이어의 회전 방향이 자동 반전된다",
+        "verdict": "incorrect",
+        "rationale": "EGR 과다 열림이 타이어 회전 방향을 자동으로 역전시키지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "엔진의 기계적 압축비가 즉시 두 배가 된다",
+        "verdict": "incorrect",
+        "rationale": "EGR 고착으로 엔진 기계 압축비가 즉시 두 배가 되지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "실화에 가까운 불안정한 연소와 공회전 진동",
+        "verdict": "correct",
+        "rationale": "공회전에서 과도한 배기가스 재순환이 연소를 불안정하게 만들고 진동/실화성 증상을 낼 수 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/exhaust-gas-recirculation/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s01-q20",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 20,
+    "question_at_review": "압축착화 디젤 승용차의 매연 원인을 검사한다. 일반적인 가솔린 점화플러그 간극 검사가 우선이 아닌 이유는?",
+    "correct_number": 1,
+    "correct_choice": "디젤은 공기 압축으로 착화하므로 일반 점화플러그가 없기 때문",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "디젤은 공기 압축으로 착화하므로 일반 점화플러그가 없기 때문",
+        "verdict": "correct",
+        "rationale": "일반 압축착화 디젤 엔진은 고온 압축 공기에 분사된 연료로 착화하므로 스파크 점화플러그 간극 검사는 통상 우선이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "터보 엔진에서는 배출가스 검사가 불가능하기 때문",
+        "verdict": "incorrect",
+        "rationale": "터보를 쓴 디젤이라도 배출가스 검사는 가능하고 관련 검사 규정이 존재한다."
+      },
+      {
+        "number": 3,
+        "text": "디젤이 연료를 전혀 분사하지 않기 때문",
+        "verdict": "incorrect",
+        "rationale": "디젤 엔진이 연료를 전혀 분사하지 않는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "점화플러그를 보유하지 않으면 연료탱크가 비어 있기 때문",
+        "verdict": "incorrect",
+        "rationale": "점화플러그가 없는 디젤 엔진이라고 해서 연료탱크가 반드시 비어 있는 것은 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.energy.gov/eere/vehicles/articles/diesel-engines-and-natural-gas-engines"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  }
+]

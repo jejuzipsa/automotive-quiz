@@ -113,7 +113,7 @@ const summary={date:"2026-11-23",task:"QA19 round05-09 all-400 mechanical editor
  rounds:Object.fromEntries([5,6,7,8,9].map(r=>["round"+String(r).padStart(2,"0"),{scanned:round05to09.filter(x=>x.round===r).length,pending_firstpass:pending.filter(x=>x.round===r).length}])),
  flagged_counts:tally,current_subject_hold_count_across_720:full.filter(x=>x.source_hold).length,
  manual_technical_final_approvals_generated:0,public_new_reconstructed_past_questions:0};
-assert.equal(summary.current_subject_hold_count_across_720,53,"QA19 adds 1 classification hold to prior 52");
+assert.equal(summary.current_subject_hold_count_across_720,55,"QA19 adds 1 classification hold to prior 52");
 const manifest=read("data/manifest.json");
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")));
 const report={summary,method:"Rule-based editorial-risk triage only; no independent fact checking of correct answer or options. Similarity 3gram Jaccard >=0.55. Cross-domain terms are crude heuristics and produce false positives and negatives.",limitations:["This script cannot prove any answer true or false.","Lack of a flagged duplicate does not prove unique concept.","No OCR or purchased book publication, no draft manifest change."],ranked,remaining_pending_ids:pending.map(x=>x.id)};

@@ -1573,5 +1573,51 @@
     "audit": "data/qa/technical-qa22-r05-eco-option-audit.json",
     "report": "docs/TECHNICAL_QA22.md",
     "next": "r06 engine20, chassis20, electrical20, eco20 then r07-r09"
+  },
+  "technical_qa23": {
+    "date": "2026-11-23",
+    "batch": "round06_engine_01_to_20",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 8,
+    "pending_additional_oem_or_subject_review": 12,
+    "pending_question_numbers": [
+      1,
+      2,
+      3,
+      4,
+      6,
+      9,
+      10,
+      11,
+      12,
+      14,
+      16,
+      17
+    ],
+    "editorial_question_fixes": 1,
+    "changed_ids": [
+      "auto-made-r06-s01-q03"
+    ],
+    "new_subject_holds": 2,
+    "new_hold_ids": [
+      "auto-made-r06-s01-q04",
+      "auto-made-r06-s01-q14"
+    ],
+    "current_subject_holds": 55,
+    "previous_hold_count": 53,
+    "original_qa1_historical_holds_unchanged": 47,
+    "cumulative_historical_firstpass_reviewed_questions": 420,
+    "cumulative_firstpass_options": 1680,
+    "never_option_reviewed_remaining_questions": 300,
+    "never_option_reviewed_remaining_options": 1200,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "source_qa23_private_original_untouched": true,
+    "public_manifest_and_expected_80_exam_unchanged": true,
+    "audit": "data/qa/technical-qa23-r06-engine-option-audit.json",
+    "edit_and_holds_ledger": "data/qa/technical-qa23-r06-engine-edits-and-holds.json",
+    "report": "docs/TECHNICAL_QA23.md",
+    "next": "round06 chassis 20, electrical20, eco20; rounds07-09 each 80; specialist approval/release rights only"
   }
 }
