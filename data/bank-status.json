@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "Independent-study draft bank 720/2880: QA40 reauthored 3 off-topic engine questions, QA41 reauthored 15 engine-topic chassis questions as new chassis questions (NOT verbatim past-exam reproductions). Old audit snapshots and answer IDs/indices preserved. Historical QA38 first-pass 351 supported vs 369 pending; independent technical approvals 0/720, published reconstructed past 0, published self-authored expected questions 80.",
+  "source_of_truth": "Independent-study unpublished 720 question/2880 option draft bank. QA40-42 separately reauthored 33 prior off-topic questions (3 engine+15 chassis+15 eco); those current items are original study questions, NOT verbatim past examinations. QA18/22/25 audit snapshots retained. Historical firstpass 351 supported/369 needing review, none independently finally approved, zero reconstructed questions in public site; 80 original practice questions unchanged.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA41_fifteen_chassis_engine_misplacements_reauthored_held_pending_independent_approval",
+  "latest_qa_stage": "QA42_eco_r04_to_r06_15_scope_replacements_pending_detailed_syllabus_and_independent_technical_rights_review",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2112,5 +2112,65 @@
     "report": "docs/TECHNICAL_QA41.md",
     "remaining_legacy_cross_subject_overlap_candidates": 4,
     "remaining_legacy_false_positive_candidates": 1
+  },
+  "technical_qa42": {
+    "date": "2026-11-23",
+    "subject": "eco",
+    "rounds": [
+      4,
+      5,
+      6
+    ],
+    "reauthored_eco_items": 15,
+    "new_option_rationales": 60,
+    "replaced_question_numbers": {
+      "round04": [
+        5,
+        12,
+        13,
+        14,
+        15
+      ],
+      "round05": [
+        5,
+        12,
+        13,
+        14,
+        15
+      ],
+      "round06": [
+        5,
+        12,
+        13,
+        14,
+        15
+      ]
+    },
+    "original_answer_indices_changed": 0,
+    "historical_QA18_QA22_QA25_audits_preserved": true,
+    "qa40_qa41_prior_reauthored": 18,
+    "cumulative_QA40_to_QA42_reauthored": 33,
+    "historical_subject_holds_retained": 55,
+    "holds_released": 0,
+    "current_provisional_legacy_hold_categories": {
+      "in_scope_reauthored_but_held": 33,
+      "probable_cross_subject_rewrite_candidate": 18,
+      "cross_subject_overlap_candidate": 3,
+      "legacy_false_positive_candidate": 1
+    },
+    "remaining_provisional_cross_subject_candidates": 18,
+    "remaining_overlap_candidates": 3,
+    "legacy_false_positive_candidates": 1,
+    "historical_firstpass_supported_count": 351,
+    "historical_firstpass_needs_review_count": 369,
+    "independent_final_technical_approvals": 0,
+    "published_past_reconstructed_items": 0,
+    "public_original_practice_questions": 80,
+    "official_detailed_qnet_hwp_verified": false,
+    "reference_scope": "US DOE AFDC and DOE hydrogen, Infineon motor-control and TI BMS general descriptions; not OEM-specific approval",
+    "ledger": "data/qa/technical-qa42-eco-scope-replacements.json",
+    "report": "docs/TECHNICAL_QA42.md",
+    "regression_test": "tests/technical-qa42.test.cjs",
+    "next": "18 remaining cross-subject scope holds, 3 cross-boundary holds, 1 stale-hold candidate; independent OEM/safety/legal/rights review and protected archive before public draft retirement"
   }
 }
