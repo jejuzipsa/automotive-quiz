@@ -1,0 +1,938 @@
+[
+  {
+    "id": "auto-made-r04-s02-q16",
+    "round": 4,
+    "subject": "chassis",
+    "question_number": 16,
+    "before": {
+      "question": "흡기측 터보 컴프레서 날개에 찍힘과 결손 흔적이 있다. 우선 확인해야 할 원인은?",
+      "choices": [
+        "휠에 직접 납추를 붙여 주행",
+        "정상적인 휠 밸런싱 흔적이라고 방치",
+        "흡입 경로 이물 유입과 필터·덕트 손상",
+        "냉각수 라디에이터 용량만 증대"
+      ],
+      "answer": 3,
+      "reason": "이물질로 인한 블레이드 손상은 회전 불균형과 2차 파손 위험이 있다. 이물 유입 경로를 제거하고 샤프트·하우징 손상도 확인해야 한다.",
+      "key_point": "터보 날개 결손 → 이물 유입 원인 제거.",
+      "correct_choice": "흡입 경로 이물 유입과 필터·덕트 손상",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "휠에 직접 납추를 붙여 주행",
+          "verdict": "incorrect",
+          "rationale": "터보 컴프레서 블레이드에 납추를 임의 부착하는 것은 안전한 균형복구 방법이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "정상적인 휠 밸런싱 흔적이라고 방치",
+          "verdict": "incorrect",
+          "rationale": "날개 찍힘·결손이 있는데 정상 밸런싱 흔적이라고 방치하면 2차 파손 위험이 있다."
+        },
+        {
+          "number": 3,
+          "text": "흡입 경로 이물 유입과 필터·덕트 손상",
+          "verdict": "correct",
+          "rationale": "흡기 필터·덕트·이물 유입 경로를 확인하는 것이 컴프레서 이물 충돌 손상 재발 방지에 중요하다."
+        },
+        {
+          "number": 4,
+          "text": "냉각수 라디에이터 용량만 증대",
+          "verdict": "incorrect",
+          "rationale": "냉각수 라디에이터만 증대시켜도 컴프레서 물리 블레이드 손상이 수리되지 않는다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/ko/turbocharger-technology/how-a-turbo-works/basic/",
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+      ]
+    },
+    "after": {
+      "question": "쇽업소버 피스톤 로드 표면에 깊은 흠집과 뚜렷한 누유가 발견됐다. 적절한 점검 판단은?",
+      "choices": [
+        "휠 얼라인먼트만 맞추면 손상된 로드 씰이 자동 복구된다",
+        "정상 작동 흔적이므로 아무 점검 없이 계속 사용한다",
+        "로드 표면과 씰 손상을 확인하고 규정에 따라 해당 댐퍼 교체 여부를 판단한다",
+        "스프링의 자유장만 측정하면 오일 누출 원인을 확정할 수 있다"
+      ],
+      "answer": 3,
+      "reason": "쇽업소버의 로드 표면이 손상되면 씰이 손상되어 누유와 감쇠 성능 저하로 이어질 수 있다. 로드 흠집, 누출량, 장착부 손상을 함께 검사하고 해당 차량의 교환 기준에 따른다.",
+      "key_point": "피스톤로드 손상·누유 → 로드·씰 상태와 교체 기준 확인.",
+      "correct_choice": "로드 표면과 씰 손상을 확인하고 규정에 따라 해당 댐퍼 교체 여부를 판단한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "휠 얼라인먼트만 맞추면 손상된 로드 씰이 자동 복구된다",
+          "verdict": "incorrect",
+          "rationale": "휠 얼라인먼트 조정은 로드·씰의 기계적 흠집을 수리하지 못해."
+        },
+        {
+          "number": 2,
+          "text": "정상 작동 흔적이므로 아무 점검 없이 계속 사용한다",
+          "verdict": "incorrect",
+          "rationale": "로드 흠집과 뚜렷한 유압유 누출은 정상 상태로 볼 수 없어."
+        },
+        {
+          "number": 3,
+          "text": "로드 표면과 씰 손상을 확인하고 규정에 따라 해당 댐퍼 교체 여부를 판단한다",
+          "verdict": "correct",
+          "rationale": "로드 표면 손상과 누유는 감쇠 성능·안전에 영향을 줄 수 있어 제조사 기준의 교환 판정이 필요해."
+        },
+        {
+          "number": 4,
+          "text": "스프링의 자유장만 측정하면 오일 누출 원인을 확정할 수 있다",
+          "verdict": "incorrect",
+          "rationale": "코일 스프링 길이만으로 로드 씰의 누출 상태를 직접 파악하기 어려워."
+        }
+      ],
+      "reference_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/for-diyers/diagnose-your-shocks/"
+      ]
+    },
+    "topic": "현가장치 댐퍼 상태 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r04-s02-q17",
+    "round": 4,
+    "subject": "chassis",
+    "question_number": 17,
+    "before": {
+      "question": "실제 과급압력이 목표보다 낮다. 진단에서 직접적인 확인 대상의 조합은?",
+      "choices": [
+        "흡기 누설·웨이스트게이트·터보 구동 상태",
+        "실내 조도와 선바이저 각도",
+        "브레이크등 색과 트렁크 센서",
+        "타이어 패턴과 미러 각도"
+      ],
+      "answer": 1,
+      "reason": "낮은 과급압은 흡기 누설, 배기 누설, 웨이스트게이트·액추에이터 및 터보 상태 등 여러 원인으로 생긴다. 연료분사만으로 터보 고장을 단정하지 않는다.",
+      "key_point": "저과급압: 누설·액추에이터·터보 점검.",
+      "correct_choice": "흡기 누설·웨이스트게이트·터보 구동 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "흡기 누설·웨이스트게이트·터보 구동 상태",
+          "verdict": "correct",
+          "rationale": "흡기 누설·웨이스트게이트·터보 상태는 저과급압 진단에 직접 관련된 구성이다."
+        },
+        {
+          "number": 2,
+          "text": "실내 조도와 선바이저 각도",
+          "verdict": "incorrect",
+          "rationale": "실내 조도·선바이저 각도는 터보차저 흡기부스트 부족의 계측 인자가 아니다."
+        },
+        {
+          "number": 3,
+          "text": "브레이크등 색과 트렁크 센서",
+          "verdict": "incorrect",
+          "rationale": "브레이크등 색과 트렁크 센서는 부스트압 생성장치의 고장 원인이 아니다."
+        },
+        {
+          "number": 4,
+          "text": "타이어 패턴과 미러 각도",
+          "verdict": "incorrect",
+          "rationale": "타이어 패턴과 사이드미러 각도만 점검해도 터보 저부스트 원인을 직접 진단할 수 없다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/ko/turbocharger-technology/how-a-turbo-works/basic/"
+      ]
+    },
+    "after": {
+      "question": "저속 제동 중 ABS가 불필요하게 개입하고 한 바퀴의 휠속도 데이터가 순간적으로 끊긴다. 먼저 비교할 점검 자료는?",
+      "choices": [
+        "해당 바퀴와 다른 바퀴의 휠속도 파형, 센서 간극·엔코더 링 상태",
+        "엔진 점화플러그의 열가만 비교한 결과",
+        "주차 상태의 타이어 외관 색상 차이",
+        "실내 공조 송풍기 풍량 변화만 기록한 자료"
+      ],
+      "answer": 1,
+      "reason": "ABS의 휠속도 신호가 특정 바퀴에서 끊기면 해당 센서의 전원·배선, 센서 설치상태, 자성 엔코더 또는 톤링 손상과 다른 바퀴의 신호를 비교한다. 부품 교환 전에 차량별 검사 조건을 확인한다.",
+      "key_point": "ABS 불필요 개입 → 차륜별 휠속도 신호·엔코더·배선 비교.",
+      "correct_choice": "해당 바퀴와 다른 바퀴의 휠속도 파형, 센서 간극·엔코더 링 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "해당 바퀴와 다른 바퀴의 휠속도 파형, 센서 간극·엔코더 링 상태",
+          "verdict": "correct",
+          "rationale": "휠속도 신호 불연속은 센서·배선·엔코더 상태의 비교 진단 근거가 돼."
+        },
+        {
+          "number": 2,
+          "text": "엔진 점화플러그의 열가만 비교한 결과",
+          "verdict": "incorrect",
+          "rationale": "점화플러그 열가만으로 ABS 휠속도 신호 이상을 특정할 수 없어."
+        },
+        {
+          "number": 3,
+          "text": "주차 상태의 타이어 외관 색상 차이",
+          "verdict": "incorrect",
+          "rationale": "타이어 색상은 회전센서의 출력 파형 오류를 직접 판정하지 못해."
+        },
+        {
+          "number": 4,
+          "text": "실내 공조 송풍기 풍량 변화만 기록한 자료",
+          "verdict": "incorrect",
+          "rationale": "송풍기 풍량은 ABS 센서의 순간적인 신호 끊김과 다른 계통이야."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ]
+    },
+    "topic": "전자제어 제동장치 휠속도 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r04-s02-q18",
+    "round": 4,
+    "subject": "chassis",
+    "question_number": 18,
+    "before": {
+      "question": "터보 흡입측에서 오일 흔적이 발견됐다. 정확한 판단으로 적절한 것은?",
+      "choices": [
+        "오일 흔적만 있으면 베어링 파손 확정이다",
+        "오일이 보이면 냉각팬이 고장난 것이다",
+        "모든 엔진에서 완전히 건조하지 않으면 교환해야 한다",
+        "베어링·오일 회수·크랭크케이스 환기 상태를 구별해 검사한다"
+      ],
+      "answer": 4,
+      "reason": "흡기 오일 흔적은 터보 밀봉부 문제 외에도 PCV와 배유 라인 압력 이상 등으로 나타날 수 있다. 축 유격과 압력 조건을 확인한다.",
+      "key_point": "터보 오일 흔적은 원인 구분이 필요.",
+      "correct_choice": "베어링·오일 회수·크랭크케이스 환기 상태를 구별해 검사한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "오일 흔적만 있으면 베어링 파손 확정이다",
+          "verdict": "incorrect",
+          "rationale": "터보 흡입구 오일 흔적 하나만으로 베어링 파손이 확정되지는 않는다."
+        },
+        {
+          "number": 2,
+          "text": "오일이 보이면 냉각팬이 고장난 것이다",
+          "verdict": "incorrect",
+          "rationale": "오일흔적이 있으면 냉각팬이 반드시 고장이라는 인과관계는 없다."
+        },
+        {
+          "number": 3,
+          "text": "모든 엔진에서 완전히 건조하지 않으면 교환해야 한다",
+          "verdict": "incorrect",
+          "rationale": "모든 엔진의 터보 흡입측을 완전 건조 상태로 유지해야 정상이라는 규칙은 없다."
+        },
+        {
+          "number": 4,
+          "text": "베어링·오일 회수·크랭크케이스 환기 상태를 구별해 검사한다",
+          "verdict": "correct",
+          "rationale": "터보 베어링·배유라인·PCV·압력 조건을 비교하면 오일 유입 원인을 구분할 수 있다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/ko/turbocharger-technology/how-a-turbo-works/basic/",
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+      ]
+    },
+    "after": {
+      "question": "EPS 조향 토크센서의 좌·우 방향 신호가 스캔 데이터에서 서로 모순되고 경고등이 켜졌다. 적절한 선행 진단은?",
+      "choices": [
+        "신호가 다르면 무조건 조향기어 전체부터 교환한다",
+        "동일한 차종의 기준을 확인하지 않고 센서 출력만 임의 보정한다",
+        "조향각 센서를 제거하면 토크센서 신호 불일치가 사라진다",
+        "센서 전원·접지, 이중 신호의 상관관계와 관련 DTC를 회로도 기준으로 확인한다"
+      ],
+      "answer": 4,
+      "reason": "EPS 제어기는 조향 토크 입력을 기반으로 전동 모터 보조토크를 계산한다. 이중 출력의 불일치가 의심될 때는 전원·접지·배선과 DTC 및 차종별 센서 기준을 우선 검토하고 안전 관련 부품을 무조건 보정하거나 교체하지 않는다.",
+      "key_point": "EPS 토크센서 불일치 → 이중신호·전원접지·DTC 비교.",
+      "correct_choice": "센서 전원·접지, 이중 신호의 상관관계와 관련 DTC를 회로도 기준으로 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "신호가 다르면 무조건 조향기어 전체부터 교환한다",
+          "verdict": "incorrect",
+          "rationale": "신호 불일치 원인에는 전원·배선·센서 등이 있으므로 조향기어 즉시 교환은 성급해."
+        },
+        {
+          "number": 2,
+          "text": "동일한 차종의 기준을 확인하지 않고 센서 출력만 임의 보정한다",
+          "verdict": "incorrect",
+          "rationale": "제조사 기준을 모른 채 보정값을 임의 변경하면 EPS 안전상 문제가 커질 수 있어."
+        },
+        {
+          "number": 3,
+          "text": "조향각 센서를 제거하면 토크센서 신호 불일치가 사라진다",
+          "verdict": "incorrect",
+          "rationale": "조향각 센서 제거가 EPS 토크센서 전기적 신호 이상을 해결하진 못해."
+        },
+        {
+          "number": 4,
+          "text": "센서 전원·접지, 이중 신호의 상관관계와 관련 DTC를 회로도 기준으로 확인한다",
+          "verdict": "correct",
+          "rationale": "토크센서의 상호 검증 신호·공급전원·접지와 저장 코드를 같이 분석해야 고장범위를 좁힐 수 있어."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/",
+        "https://www.hella.com/techworld/uk/lounge/sensors-actuators/"
+      ]
+    },
+    "topic": "전자제어 조향장치 센서 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r04-s02-q19",
+    "round": 4,
+    "subject": "chassis",
+    "question_number": 19,
+    "before": {
+      "question": "터보차저 차량이 출력이 떨어지고 고주파 소음이 생겼다. 분해 전에 수행할 점검으로 알맞은 것은?",
+      "choices": [
+        "헤드램프 전구 색상 확인만 수행",
+        "배선 상태 없이 곧바로 새 터보 장착",
+        "터보 샤프트를 강제로 회전시켜 시험",
+        "흡기·배기 덕트 누설과 외관 누유, 연결 상태 점검"
+      ],
+      "answer": 4,
+      "reason": "외관과 연결부 점검은 빠르고 위험이 적다. 누설·부품 손상 흔적과 오일 상태를 확인한 뒤 계측과 분해 여부를 결정한다.",
+      "key_point": "터보 진단 첫 단계는 육안·연결부 확인.",
+      "correct_choice": "흡기·배기 덕트 누설과 외관 누유, 연결 상태 점검",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "헤드램프 전구 색상 확인만 수행",
+          "verdict": "incorrect",
+          "rationale": "헤드램프 색상만으로 터보 고주파음과 출력저하 원인을 진단할 수 없다."
+        },
+        {
+          "number": 2,
+          "text": "배선 상태 없이 곧바로 새 터보 장착",
+          "verdict": "incorrect",
+          "rationale": "덕트 연결·배선·오일 확인 없이 새 터보를 바로 장착해도 실제 문제를 해결하지 못할 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "터보 샤프트를 강제로 회전시켜 시험",
+          "verdict": "incorrect",
+          "rationale": "손상/불균형 가능성 있는 터보축을 강제로 돌려 시험하는 것은 허용된 진단 방법이 아니다."
+        },
+        {
+          "number": 4,
+          "text": "흡기·배기 덕트 누설과 외관 누유, 연결 상태 점검",
+          "verdict": "correct",
+          "rationale": "흡배기 덕트 누설과 터보 연결부·윤활 흔적을 우선 점검해 원인을 좁힐 수 있다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/ko/turbocharger-technology/how-a-turbo-works/basic/",
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+      ]
+    },
+    "after": {
+      "question": "에어 서스펜션 차량의 뒤쪽 차고가 밤새 낮아졌다가 시동 후 다시 회복된다. 원인 분리를 위한 올바른 초기 점검은?",
+      "choices": [
+        "압축기를 새 제품으로 교체하면 누설 검사를 할 필요가 없다",
+        "차고 센서만 제거하면 공기 누설이 자동으로 차단된다",
+        "시동 후 차고가 올라가므로 에어스프링의 밀폐는 반드시 정상이다",
+        "공기스프링·배관·연결부·밸브블록의 누설과 압축기 과다 작동을 점검한다"
+      ],
+      "answer": 4,
+      "reason": "주차 후 차고가 내려가고 시동 후 압축기로 복구되는 증상은 에어스프링, 배관 피팅, 밸브블록 등의 공기 누설을 시사할 수 있다. 차량을 안전 지지하고 압력 해제 등 제조사 절차를 따라 누설과 컴프레서 과다 작동의 원인을 검사한다.",
+      "key_point": "주차 중 에어 서스펜션 처짐 → 에어라인·벨로스·밸브 누설부터 확인.",
+      "correct_choice": "공기스프링·배관·연결부·밸브블록의 누설과 압축기 과다 작동을 점검한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "압축기를 새 제품으로 교체하면 누설 검사를 할 필요가 없다",
+          "verdict": "incorrect",
+          "rationale": "압축기 과다 작동은 누설의 결과일 수 있어, 압축기만 교체하면 재고장 가능성이 있어."
+        },
+        {
+          "number": 2,
+          "text": "차고 센서만 제거하면 공기 누설이 자동으로 차단된다",
+          "verdict": "incorrect",
+          "rationale": "차고센서 제거로 공기스프링의 물리적인 공기 누설이 수리되지는 않아."
+        },
+        {
+          "number": 3,
+          "text": "시동 후 차고가 올라가므로 에어스프링의 밀폐는 반드시 정상이다",
+          "verdict": "incorrect",
+          "rationale": "시동 후 압축기가 공기를 채워 차고가 회복돼도 주차 중 누설은 남을 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "공기스프링·배관·연결부·밸브블록의 누설과 압축기 과다 작동을 점검한다",
+          "verdict": "correct",
+          "rationale": "에어스프링·배관·밸브블록의 누설과 압축기 동작을 함께 살펴야 원인을 구분할 수 있어."
+        }
+      ],
+      "reference_urls": [
+        "https://www.arnottsuspension.com/en-nz/blogs/news-events/maintaining-repairing-air-suspension-systems"
+      ]
+    },
+    "topic": "전자제어 현가장치 공기 누설 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r04-s02-q20",
+    "round": 4,
+    "subject": "chassis",
+    "question_number": 20,
+    "before": {
+      "question": "엔진 스캐너 데이터 항목에 관한 올바른 설명은?",
+      "choices": [
+        "연료탱크 레벨을 ECU가 전송하는지는 차량 구성에 따라 다르다",
+        "모든 스캐너는 엔진오일의 점도를 직접 측정한다",
+        "모든 차량에서 연료탱크 잔량은 절대 읽을 수 없다",
+        "배터리 단자가 분리돼도 스캔 데이터는 실시간으로 수신된다"
+      ],
+      "answer": 1,
+      "reason": "연료 레벨은 차종·프로토콜에 따라 계기판 모듈 또는 진단 데이터로 읽힐 수 있다. 일부 스캐너에서 보이지 않는다고 원천적으로 측정 불가능한 데이터로 분류하면 안 된다.",
+      "key_point": "스캔 데이터 항목은 ECU·통신규격에 종속된다.",
+      "correct_choice": "연료탱크 레벨을 ECU가 전송하는지는 차량 구성에 따라 다르다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "연료탱크 레벨을 ECU가 전송하는지는 차량 구성에 따라 다르다",
+          "verdict": "correct",
+          "rationale": "연료탱크 레벨이 ECU/진단기로 제공되는지 여부는 차량 프로토콜·모듈 구성에 따라 달라진다."
+        },
+        {
+          "number": 2,
+          "text": "모든 스캐너는 엔진오일의 점도를 직접 측정한다",
+          "verdict": "incorrect",
+          "rationale": "스캔툴은 ECU가 제공하는 데이터를 읽는 것으로 엔진오일 점도를 무조건 직접 분석하지 않는다."
+        },
+        {
+          "number": 3,
+          "text": "모든 차량에서 연료탱크 잔량은 절대 읽을 수 없다",
+          "verdict": "incorrect",
+          "rationale": "모든 차량에서 연료레벨을 스캔으로 읽을 수 없다는 절대적 부정도 사실과 다를 수 있다."
+        },
+        {
+          "number": 4,
+          "text": "배터리 단자가 분리돼도 스캔 데이터는 실시간으로 수신된다",
+          "verdict": "incorrect",
+          "rationale": "차량 전원/통신이 차단된 상태에서 실시간 ECU 센서값이 계속 수신된다는 설명은 일반적이지 않다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.fordservicecontent.com/Ford_Content/catalog/motorcraft/OBDSM2400OUTPUT_16Jul2024_WSM_final_V2_MCS7001.pdf"
+      ]
+    },
+    "after": {
+      "question": "ATF 딥스틱이 없는 자동변속기의 오일 교환 뒤 레벨을 확인한다. 가장 먼저 따라야 할 기준은?",
+      "choices": [
+        "제조사의 지정 ATF 종류와 규정 오일 온도·기어선택·레벨 확인 절차",
+        "냉간·고온에 관계없이 임의의 동일 체적을 무조건 주입한다",
+        "엔진오일 딥스틱을 사용해 변속기 레벨을 확정한다",
+        "규정 레벨보다 높게 넣으면 누유 없이 자동으로 초과분이 배출된다"
+      ],
+      "answer": 1,
+      "reason": "일부 자동변속기는 딥스틱 대신 점검구와 지정 오일온도, 변속레버 조작·엔진상태 등의 절차로 레벨을 맞춘다. 다른 변속기 ATF 규격이나 온도 기준을 그대로 적용하지 않아야 한다.",
+      "key_point": "자동변속기 레벨 확인 → OEM ATF·온도·레버 조건과 점검구 절차.",
+      "correct_choice": "제조사의 지정 ATF 종류와 규정 오일 온도·기어선택·레벨 확인 절차",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "제조사의 지정 ATF 종류와 규정 오일 온도·기어선택·레벨 확인 절차",
+          "verdict": "correct",
+          "rationale": "ATF 규격과 측정 온도·변속기 상태·점검구 조건을 맞춰야 실제 레벨을 정확히 확인할 수 있어."
+        },
+        {
+          "number": 2,
+          "text": "냉간·고온에 관계없이 임의의 동일 체적을 무조건 주입한다",
+          "verdict": "incorrect",
+          "rationale": "자동변속기는 온도에 따라 유체가 팽창하므로 지정 절차를 무시한 임의량 주입은 부정확해."
+        },
+        {
+          "number": 3,
+          "text": "엔진오일 딥스틱을 사용해 변속기 레벨을 확정한다",
+          "verdict": "incorrect",
+          "rationale": "엔진오일 딥스틱은 자동변속기 ATF 검사 장비가 아니야."
+        },
+        {
+          "number": 4,
+          "text": "규정 레벨보다 높게 넣으면 누유 없이 자동으로 초과분이 배출된다",
+          "verdict": "incorrect",
+          "rationale": "ATF 과다 주입은 거품·유압 제어 문제를 유발할 수 있고 자동으로 안전하게 배출되는 것도 아니야."
+        }
+      ],
+      "reference_urls": [
+        "https://aftermarket.zf.com/sg/aftermarket-portal/for-workshops/useful-tips/transmission-oil-change-pc/"
+      ]
+    },
+    "topic": "자동변속기 ATF 레벨 절차",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s02-q16",
+    "round": 5,
+    "subject": "chassis",
+    "question_number": 16,
+    "before": {
+      "question": "터보의 웨이스트게이트가 완전히 열린 상태에서 닫히지 않는다. 예상되는 엔진 반응은?",
+      "choices": [
+        "자동으로 점화플러그 간극이 넓어진다",
+        "항상 목표 과급이 초과되어 출력이 증가한다",
+        "변속기 오일 온도가 즉시 0℃가 된다",
+        "터빈으로 들어가는 배기 에너지 감소로 과급이 약해질 수 있다"
+      ],
+      "answer": 4,
+      "reason": "웨이스트게이트는 터빈을 우회하는 배기 흐름을 제어한다. 열린 채 고착되면 터빈 구동 에너지가 줄어 저과급이 생길 수 있다. 이 항목은 원본에서 섀시 과목에 배정돼 있어 과목 재분류가 필요하다.",
+      "key_point": "웨이스트게이트 열림 고착 → 저과급 가능.",
+      "correct_choice": "터빈으로 들어가는 배기 에너지 감소로 과급이 약해질 수 있다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "자동으로 점화플러그 간극이 넓어진다",
+          "verdict": "incorrect",
+          "rationale": "점화플러그 간극은 웨이스트게이트 고착의 직접 원인이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "항상 목표 과급이 초과되어 출력이 증가한다",
+          "verdict": "incorrect",
+          "rationale": "열린 웨이스트게이트는 터빈 에너지를 줄여 일반적으로 목표 과급 초과보다 저과급을 일으킬 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "변속기 오일 온도가 즉시 0℃가 된다",
+          "verdict": "incorrect",
+          "rationale": "웨이스트게이트 고착만으로 변속기 오일 온도가 0℃가 되는 것은 아니다."
+        },
+        {
+          "number": 4,
+          "text": "터빈으로 들어가는 배기 에너지 감소로 과급이 약해질 수 있다",
+          "verdict": "correct",
+          "rationale": "웨이스트게이트가 계속 열리면 터빈에 공급되는 배기 에너지가 줄어 저부스트가 나타날 수 있다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/knowledge-center-category/racing-and-performance/how-turbocharger-wastegates-work-internal-vs-external/"
+      ]
+    },
+    "after": {
+      "question": "자동변속기 토크컨버터 록업(TCC) 결합 명령이 들어왔는데 주행 중 실제 슬립회전수가 크게 유지된다. 확인할 자료는?",
+      "choices": [
+        "실내 미러 각도만 기록하면 TCC 슬립원인이 확정된다",
+        "엔진 공회전 목표값 하나로 TCC 실제 클러치 결합을 확인한다",
+        "타이어 공기압을 바꾸면 TCC 클러치 마찰면의 실제 슬립값을 직접 검증할 수 있다",
+        "엔진 회전수·변속기 입력회전수와 록업 명령/유압 제어 상태를 비교한다"
+      ],
+      "answer": 4,
+      "reason": "TCC 록업이 지시됐더라도 토크컨버터 엔진측과 변속기 입력측의 회전수 차이가 큰 상태가 계속되면 실제 슬립, 클러치 유압·솔레노이드 명령, ATF 상태 등을 제조사 진단값으로 비교한다. 입력회전수 센서 위치와 정의는 변속기별로 다르다.",
+      "key_point": "TCC 지령과 실제 슬립 → 엔진·입력회전수 및 유압제어 비교.",
+      "correct_choice": "엔진 회전수·변속기 입력회전수와 록업 명령/유압 제어 상태를 비교한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "실내 미러 각도만 기록하면 TCC 슬립원인이 확정된다",
+          "verdict": "incorrect",
+          "rationale": "실내 미러 각도는 TCC의 전달 토크와 슬립을 분석하는 자료가 아니야."
+        },
+        {
+          "number": 2,
+          "text": "엔진 공회전 목표값 하나로 TCC 실제 클러치 결합을 확인한다",
+          "verdict": "incorrect",
+          "rationale": "엔진 목표 공회전만으로 실제 TCC 결합상태나 회전차를 판정할 수 없어."
+        },
+        {
+          "number": 3,
+          "text": "타이어 공기압을 바꾸면 TCC 클러치 마찰면의 실제 슬립값을 직접 검증할 수 있다",
+          "verdict": "incorrect",
+          "rationale": "타이어 공기압 조절로 변속기 내부의 클러치 명령·슬립 값을 직접 측정하지 않아."
+        },
+        {
+          "number": 4,
+          "text": "엔진 회전수·변속기 입력회전수와 록업 명령/유압 제어 상태를 비교한다",
+          "verdict": "correct",
+          "rationale": "TCC 결합 명령과 엔진/입력축 회전차, 변속기 유압 제어 상태를 함께 보면 미끄럼 원인을 좁힐 수 있어."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/transmission-technology/variable-force-transmission-solenoid/",
+        "https://www.bosch-mobility.com/en/solutions/transmission-technology/transmission-sensors/"
+      ]
+    },
+    "topic": "자동변속기 토크컨버터 록업 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s02-q17",
+    "round": 5,
+    "subject": "chassis",
+    "question_number": 17,
+    "before": {
+      "question": "터보 액추에이터 동작을 확인하려 한다. 적용할 시험 장비를 결정하기 위한 선행 확인은?",
+      "choices": [
+        "해당 액추에이터가 진공식·압력식·전자식인지 확인한다",
+        "전기식 액추에이터에 무조건 직접 압축공기 인가",
+        "모든 웨이스트게이트는 진공펌프로만 시험한다",
+        "압력식과 진공식은 신호 방향이 항상 동일하다"
+      ],
+      "answer": 1,
+      "reason": "웨이스트게이트 액추에이터는 제어 방식이 다양하므로 테스트 장비와 점검 방법도 다르다. 제조사 지정 스트로크·압력·전기신호 기준을 확인한다.",
+      "key_point": "액추에이터 시험은 제어 방식별로 선택.",
+      "correct_choice": "해당 액추에이터가 진공식·압력식·전자식인지 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "해당 액추에이터가 진공식·압력식·전자식인지 확인한다",
+          "verdict": "correct",
+          "rationale": "액추에이터가 진공식·압력식·전자식인지 먼저 확인해야 올바른 시험 장비를 선택할 수 있다."
+        },
+        {
+          "number": 2,
+          "text": "전기식 액추에이터에 무조건 직접 압축공기 인가",
+          "verdict": "incorrect",
+          "rationale": "전기식 액추에이터에 압축공기를 임의로 직접 인가하면 장치 손상 위험이 있다."
+        },
+        {
+          "number": 3,
+          "text": "모든 웨이스트게이트는 진공펌프로만 시험한다",
+          "verdict": "incorrect",
+          "rationale": "웨이스트게이트가 모두 진공식일 수는 없으며 압력·전자식도 있다."
+        },
+        {
+          "number": 4,
+          "text": "압력식과 진공식은 신호 방향이 항상 동일하다",
+          "verdict": "incorrect",
+          "rationale": "액추에이터 작동 신호의 방향은 구성·차종에 따라 다르므로 동일하다고 단정할 수 없다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/knowledge-center-category/racing-and-performance/how-turbocharger-wastegates-work-internal-vs-external/"
+      ]
+    },
+    "after": {
+      "question": "전자제어 댐퍼의 감쇠 조절 회로에서 단선 DTC가 기록됐다. 부품 교환 전 우선할 진단은?",
+      "choices": [
+        "해당 댐퍼 액추에이터의 전원·배선·커넥터와 제어 신호를 회로도 기준으로 점검한다",
+        "DTC가 있다는 이유로 감쇠 조절을 모두 무시하고 영구 최고출력을 고정한다",
+        "차고 센서가 있다면 댐퍼 제어선 단선은 확인할 필요가 없다",
+        "제어기 출력과 무관하게 스프링 자유장만 재면 전기 단선 위치가 판정된다"
+      ],
+      "answer": 1,
+      "reason": "전자제어 현가장치에서 감쇠 액추에이터 회로 단선이 의심되면 관련 DTC, 전원·접지, 구동신호와 커넥터/하네스를 차종별 회로도로 검사한다. 액추에이터 자체 불량과 배선 불량을 구분한 뒤 수리한다.",
+      "key_point": "전자댐퍼 회로 단선 → DTC·배선·커넥터·제어신호 검사.",
+      "correct_choice": "해당 댐퍼 액추에이터의 전원·배선·커넥터와 제어 신호를 회로도 기준으로 점검한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "해당 댐퍼 액추에이터의 전원·배선·커넥터와 제어 신호를 회로도 기준으로 점검한다",
+          "verdict": "correct",
+          "rationale": "단선 DTC가 있으면 회로도와 부하 조건을 이용해 배선·커넥터·제어 출력의 실제 연속성을 검사해야 해."
+        },
+        {
+          "number": 2,
+          "text": "DTC가 있다는 이유로 감쇠 조절을 모두 무시하고 영구 최고출력을 고정한다",
+          "verdict": "incorrect",
+          "rationale": "제어 고장 시 무조건 최고출력을 고정하는 방식은 차종별 보호전략을 무시해."
+        },
+        {
+          "number": 3,
+          "text": "차고 센서가 있다면 댐퍼 제어선 단선은 확인할 필요가 없다",
+          "verdict": "incorrect",
+          "rationale": "차고 센서 존재만으로 댐퍼 구동회로가 정상이라는 근거는 없어."
+        },
+        {
+          "number": 4,
+          "text": "제어기 출력과 무관하게 스프링 자유장만 재면 전기 단선 위치가 판정된다",
+          "verdict": "incorrect",
+          "rationale": "스프링 길이 측정은 전자식 감쇠 액추에이터의 배선 단선을 측정하지 못해."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/uk/lounge/sensors-actuators/"
+      ]
+    },
+    "topic": "전자제어 현가장치 회로 진단",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s02-q18",
+    "round": 5,
+    "subject": "chassis",
+    "question_number": 18,
+    "before": {
+      "question": "터보차저 교환을 마친 뒤 조기 파손을 예방하기 위한 조치는?",
+      "choices": [
+        "모든 차종에서 오일만 새로 넣으면 다른 점검 불필요",
+        "기존 고장 원인과 윤활유 공급·배출 상태 확인",
+        "흡기 필터 손상을 그대로 방치",
+        "터보 윤활을 막은 채 시동을 건다"
+      ],
+      "answer": 2,
+      "reason": "터보 교환 시 윤활라인 오염·오일 상태·이물 유입을 먼저 확인해야 재손상을 줄일 수 있다. 오일·필터 교환 필요성은 제조사 지침에 따른다.",
+      "key_point": "터보 교환 후 윤활원인 제거·프라이밍 확인.",
+      "correct_choice": "기존 고장 원인과 윤활유 공급·배출 상태 확인",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "모든 차종에서 오일만 새로 넣으면 다른 점검 불필요",
+          "verdict": "incorrect",
+          "rationale": "모든 차종에서 오일만 교체하면 터보 교환 후 원인 점검을 생략해도 되는 것은 아니다."
+        },
+        {
+          "number": 2,
+          "text": "기존 고장 원인과 윤활유 공급·배출 상태 확인",
+          "verdict": "correct",
+          "rationale": "기존 터보 고장 원인과 오일 공급·회수 및 이물 유입을 확인해야 조기 재손상을 막는다."
+        },
+        {
+          "number": 3,
+          "text": "흡기 필터 손상을 그대로 방치",
+          "verdict": "incorrect",
+          "rationale": "흡기필터 손상을 그대로 두면 터보 흡기 이물 위험이 남는다."
+        },
+        {
+          "number": 4,
+          "text": "터보 윤활을 막은 채 시동을 건다",
+          "verdict": "incorrect",
+          "rationale": "초기 윤활 없이 오일 공급을 막고 시동하면 터보 베어링 손상 위험이 있다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/"
+      ]
+    },
+    "after": {
+      "question": "타이로드 엔드 교체 후 스티어링 휠 중앙이 틀어진 차량이다. 올바른 후속 점검은?",
+      "choices": [
+        "타이로드 길이만 눈대중으로 맞추면 차륜 토각 계측이 필요 없다",
+        "지정 휠 얼라인먼트로 토값과 직진위치를 점검하고 필요 시 조향각 센서를 보정한다",
+        "경고등이 없으면 바퀴의 얼라인먼트 오차는 자동으로 0이 된다",
+        "조향각 센서만 초기화하면 기계적인 토값도 항상 정상으로 돌아온다"
+      ],
+      "answer": 2,
+      "reason": "타이로드 엔드 교환 후에는 토 및 스티어링 휠 직진 상태를 규정 얼라인먼트로 검사하고, 적용 차종에서 조향각 센서(SAS) 기준점 보정이 필요한지 정비정보로 판단한다. 모든 차량에서 SAS 보정이 필수인 것은 아니다.",
+      "key_point": "타이로드 교환 → 기계적 토·직진위치 점검, 해당차종 SAS 필요 시 보정.",
+      "correct_choice": "지정 휠 얼라인먼트로 토값과 직진위치를 점검하고 필요 시 조향각 센서를 보정한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "타이로드 길이만 눈대중으로 맞추면 차륜 토각 계측이 필요 없다",
+          "verdict": "incorrect",
+          "rationale": "타이로드 교환은 토값에 직접 영향을 줄 수 있으므로 눈대중만으로 조절하면 부정확해."
+        },
+        {
+          "number": 2,
+          "text": "지정 휠 얼라인먼트로 토값과 직진위치를 점검하고 필요 시 조향각 센서를 보정한다",
+          "verdict": "correct",
+          "rationale": "기계적 휠 얼라인먼트와 전자식 조향각 기준을 차량 절차에 따라 확인해야 해."
+        },
+        {
+          "number": 3,
+          "text": "경고등이 없으면 바퀴의 얼라인먼트 오차는 자동으로 0이 된다",
+          "verdict": "incorrect",
+          "rationale": "경고등이 없더라도 직진상태와 차륜 정렬이 규정과 다를 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "조향각 센서만 초기화하면 기계적인 토값도 항상 정상으로 돌아온다",
+          "verdict": "incorrect",
+          "rationale": "SAS 영점 보정은 기계적인 토값을 직접 재조정하지 않아."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hunter.com/en-int/media-center/industry-insights/steering-angle-sensor-reset/"
+      ]
+    },
+    "topic": "조향·얼라인먼트 정비",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s02-q19",
+    "round": 5,
+    "subject": "chassis",
+    "question_number": 19,
+    "before": {
+      "question": "엔진 진단 스캐너를 차량에 연결할 때 지켜야 할 기본 원칙은?",
+      "choices": [
+        "진단장비와 차량의 지정 통신 연결·전원 절차 준수",
+        "배터리를 거꾸로 연결해 통신 시험",
+        "모든 차량에서 시동이 걸린 채 무조건 커넥터를 제거",
+        "DLC 핀을 서로 임의 단락"
+      ],
+      "answer": 1,
+      "reason": "안전한 연결·해제 방법은 스캐너와 차량 제작사 절차를 따른다. 먼저 배터리 상태와 DLC 단자 오염 등을 확인할 수 있다.",
+      "key_point": "스캔툴 연결은 정해진 점화·전원 순서 준수.",
+      "correct_choice": "진단장비와 차량의 지정 통신 연결·전원 절차 준수",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "진단장비와 차량의 지정 통신 연결·전원 절차 준수",
+          "verdict": "correct",
+          "rationale": "스캐너와 차량에 규정된 통신/전원/커넥터 체결 조건을 따르는 것이 올바르다."
+        },
+        {
+          "number": 2,
+          "text": "배터리를 거꾸로 연결해 통신 시험",
+          "verdict": "incorrect",
+          "rationale": "배터리 역극성 연결은 장비와 전기 회로에 손상을 줄 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "모든 차량에서 시동이 걸린 채 무조건 커넥터를 제거",
+          "verdict": "incorrect",
+          "rationale": "주행 중/시동 중 임의 DLC 제거가 언제나 안전한 절차는 아니다."
+        },
+        {
+          "number": 4,
+          "text": "DLC 핀을 서로 임의 단락",
+          "verdict": "incorrect",
+          "rationale": "DLC 핀 임의 단락은 통신 점검법이 아니라 회로 손상 위험이 있다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.boschdiagnostics.com/products/bosch-obd-1150"
+      ]
+    },
+    "after": {
+      "question": "전자식 주차브레이크(EPB)를 장착한 차량에서 후륜 브레이크 패드를 교환하려 한다. 안전한 절차는?",
+      "choices": [
+        "차량을 안전히 고정하고 제조사가 지정한 EPB 정비모드·액추에이터 후퇴 절차를 따른다",
+        "캘리퍼 피스톤을 모터 구동 상태에서 무리하게 눌러 넣는다",
+        "모든 EPB는 일반 기계식 레버와 교환 절차가 완전히 같다고 가정한다",
+        "정비모드 없이 EPB 모터 배선을 임의 단락해 피스톤을 후퇴시킨다"
+      ],
+      "answer": 1,
+      "reason": "전자식 주차브레이크의 후륜 패드 교환은 차량 지지, 제조사 지정 정비모드 진입, EPB 모터/피스톤 위치 제어 및 작업 후 작동 확인 등의 절차를 따른다. 절차는 차종과 EPB 구조에 따라 달라지므로 단자 직결 조작을 피한다.",
+      "key_point": "EPB 패드 교환 → 차량 고정·OEM 정비모드·작동 확인.",
+      "correct_choice": "차량을 안전히 고정하고 제조사가 지정한 EPB 정비모드·액추에이터 후퇴 절차를 따른다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "차량을 안전히 고정하고 제조사가 지정한 EPB 정비모드·액추에이터 후퇴 절차를 따른다",
+          "verdict": "correct",
+          "rationale": "EPB 구동기와 캘리퍼 보호를 위해 차량 고정 및 제조사 정비모드/해제 절차를 확인해야 해."
+        },
+        {
+          "number": 2,
+          "text": "캘리퍼 피스톤을 모터 구동 상태에서 무리하게 눌러 넣는다",
+          "verdict": "incorrect",
+          "rationale": "전동식 피스톤을 무리하게 밀면 기어·모터 및 캘리퍼가 손상될 수 있어."
+        },
+        {
+          "number": 3,
+          "text": "모든 EPB는 일반 기계식 레버와 교환 절차가 완전히 같다고 가정한다",
+          "verdict": "incorrect",
+          "rationale": "차량별 EPB 구조와 점검 모드가 달라 일반 기계식과 동일하다고 볼 수 없어."
+        },
+        {
+          "number": 4,
+          "text": "정비모드 없이 EPB 모터 배선을 임의 단락해 피스톤을 후퇴시킨다",
+          "verdict": "incorrect",
+          "rationale": "모터 배선을 임의 단락하면 전장과 구동부 안전에 위험해."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+      ]
+    },
+    "topic": "전자제어 제동장치 EPB 서비스 절차",
+    "held": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s02-q20",
+    "round": 5,
+    "subject": "chassis",
+    "question_number": 20,
+    "before": {
+      "question": "차종이 TPS 초기 위치를 조정하는 구조라고 명시돼 있다. 설정 전 확인할 조건은?",
+      "choices": [
+        "가속페달 스위치의 색상을 맞춤",
+        "모든 차량에서 TPS 조정나사는 반드시 존재",
+        "스로틀 닫힘 기준 위치와 제작사 규정 전압",
+        "차량이 고부하 가속 중이어야만 조정 가능"
+      ],
+      "answer": 3,
+      "reason": "일부 기계식 스로틀 TPS는 닫힘 위치에서 기준 출력을 조정하지만 전자스로틀은 보정·학습으로 처리한다. 과목 분류도 엔진 영역으로 재검토가 필요하다.",
+      "key_point": "TPS 조정 여부·규격은 스로틀 구조별로 달라진다.",
+      "correct_choice": "스로틀 닫힘 기준 위치와 제작사 규정 전압",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "가속페달 스위치의 색상을 맞춤",
+          "verdict": "incorrect",
+          "rationale": "가속페달 스위치 색상은 TPS 초기 위치 보정의 직접 기준값이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "모든 차량에서 TPS 조정나사는 반드시 존재",
+          "verdict": "incorrect",
+          "rationale": "모든 TPS에 조정나사가 존재한다고 일반화할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "스로틀 닫힘 기준 위치와 제작사 규정 전압",
+          "verdict": "correct",
+          "rationale": "기계식 TPS가 조정 가능한 구조일 때는 닫힘 기준 위치·서비스 규정 전압을 확인해야 한다."
+        },
+        {
+          "number": 4,
+          "text": "차량이 고부하 가속 중이어야만 조정 가능",
+          "verdict": "incorrect",
+          "rationale": "고부하 가속 중에만 TPS 보정할 수 있다는 보편 절차는 없다."
+        }
+      ],
+      "technical_source_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/throttle-potentiometer/"
+      ]
+    },
+    "after": {
+      "question": "ESC 차체자세제어에서 운전자가 요구하는 회전과 실제 차량 회전을 비교할 때 중요한 센서 조합은?",
+      "choices": [
+        "연료탱크 수위와 냉각수 온도 센서만 비교한다",
+        "엔진 배기가스 산소센서와 실내 조도 센서만 확인한다",
+        "조향각 센서와 요레이트 센서, 차륜속도 등 차량 거동 신호를 대조한다",
+        "타이어 트레드 제조일과 실내 에어컨 송풍량만 대조한다"
+      ],
+      "answer": 3,
+      "reason": "ESC는 조향각 등 운전자 의도와 요레이트, 횡가속도, 휠속도 등 실제 차량 운동 정보를 대조해 차륜별 제동력을 조절할 수 있다. 해당 시스템의 세부 센서 구성은 차량별로 다르다.",
+      "key_point": "ESC 제어 → 조향각 의도 vs 요레이트·차륜속도 실제거동.",
+      "correct_choice": "조향각 센서와 요레이트 센서, 차륜속도 등 차량 거동 신호를 대조한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "연료탱크 수위와 냉각수 온도 센서만 비교한다",
+          "verdict": "incorrect",
+          "rationale": "연료량과 냉각수 온도만으로 운전자의 방향 요구와 요거동 차이를 판정하지 않아."
+        },
+        {
+          "number": 2,
+          "text": "엔진 배기가스 산소센서와 실내 조도 센서만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "배기가스 산소농도·실내 조도는 ESC의 핵심 조향·회전동역학 입력이 아니야."
+        },
+        {
+          "number": 3,
+          "text": "조향각 센서와 요레이트 센서, 차륜속도 등 차량 거동 신호를 대조한다",
+          "verdict": "correct",
+          "rationale": "조향각은 의도 방향, 요레이트와 차륜속도는 실제 차량 거동을 파악하는 주요 신호야."
+        },
+        {
+          "number": 4,
+          "text": "타이어 트레드 제조일과 실내 에어컨 송풍량만 대조한다",
+          "verdict": "incorrect",
+          "rationale": "타이어 제조일과 송풍량만으로 ESC 제어가 요구하는 회전 안정성을 판단하지 않아."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ]
+    },
+    "topic": "전자제어 제동장치 ESC 동역학",
+    "held": true,
+    "independent_technical_approved": false
+  }
+]
