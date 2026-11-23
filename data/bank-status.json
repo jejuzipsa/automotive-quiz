@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private OCR source 720/720 source-compared; independently reauthored draft bank 720/720. Historical first-pass technical-option evidence through QA27: 520/720 questions, 2080/2880 options; 200 questions pending. Final independent technical approvals 0/720; past reconstructed questions promoted to public quiz 0/720.",
+  "source_of_truth": "QA23 private OCR source 720/720 source-compared; independent reauthored draft bank 720/720. Historical technical option first-pass evidence through QA28 covers 540/720 questions, 2160/2880 options; 180 questions/720 options still pending. Final independent technical approvals 0/720; past reconstructed questions published to public quiz 0/720.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa27_chassis_round07_option_by_option_first_pass",
+  "latest_qa_stage": "technical-qa28_electrical_round07_option_by_option_first_pass",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -1750,5 +1750,47 @@
     "changes": "data/qa/technical-qa27-r07-chassis-edits.json",
     "report": "docs/TECHNICAL_QA27.md",
     "next": "r07 electrical20, eco20, r08-r09 160"
+  },
+  "technical_qa28": {
+    "date": "2026-11-23",
+    "batch": "round07_electrical",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 11,
+    "pending_oem_or_subject_review": 9,
+    "pending_question_numbers": [
+      4,
+      6,
+      7,
+      8,
+      15,
+      16,
+      17,
+      18,
+      20
+    ],
+    "wording_corrections": 3,
+    "new_subject_holds": 0,
+    "subject_scope_candidates": [
+      4,
+      6,
+      7,
+      8,
+      17,
+      18
+    ],
+    "current_subject_holds": 55,
+    "cumulative_historical_firstpass_questions": 540,
+    "cumulative_historical_firstpass_options": 2160,
+    "remaining_no_firstpass_questions": 180,
+    "remaining_no_firstpass_options": 720,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "live_manifest_expected_80_exam_unchanged": true,
+    "private_QA23_unchanged": true,
+    "audit": "data/qa/technical-qa28-r07-electrical-option-audit.json",
+    "changes": "data/qa/technical-qa28-r07-electrical-edits.json",
+    "report": "docs/TECHNICAL_QA28.md",
+    "next": "r07 eco20, then r08-r09 all160"
   }
 }

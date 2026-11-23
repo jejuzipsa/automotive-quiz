@@ -1,0 +1,867 @@
+[
+  {
+    "id": "auto-made-r07-s03-q01",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 1,
+    "question_at_review": "CAN 버스에서 여러 ECU가 동시에 송신을 시도한다. 프레임 우선권을 처리하는 기본 방식은?",
+    "correct_number": 1,
+    "correct_choice": "식별자 비트를 이용한 비파괴 중재 방식",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "식별자 비트를 이용한 비파괴 중재 방식",
+        "verdict": "correct",
+        "rationale": "식별자 필드의 우성·열성 비트를 비교해 낮은 우선순위 송신자가 양보하며, 승자 프레임은 파괴되지 않아."
+      },
+      {
+        "number": 2,
+        "text": "이더넷 충돌을 감지한 뒤 무조건 프레임 폐기",
+        "verdict": "incorrect",
+        "rationale": "CAN의 중재를 이더넷 충돌 뒤 모든 프레임 폐기 방식과 동일시할 수 없어."
+      },
+      {
+        "number": 3,
+        "text": "IP 주소의 크기로 모든 센서의 우선권 결정",
+        "verdict": "incorrect",
+        "rationale": "CAN 프레임 우선순위는 IP 주소의 크기로 정하는 방식이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "변속기 라인압을 통해 송신 순서 결정",
+        "verdict": "incorrect",
+        "rationale": "변속기 라인압은 CAN 버스의 비트 중재를 제어하지 않아."
+      }
+    ],
+    "source_urls": [
+      "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q02",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 2,
+    "question_at_review": "전장 회로에 퓨즈를 선정하려 한다. 정격을 결정할 때 고려할 기준은?",
+    "correct_number": 3,
+    "correct_choice": "제작사 규정·배선 허용전류·기동전류와 회로보호 요구",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "퓨즈가 자주 끊어지면 도체를 직접 연결",
+        "verdict": "incorrect",
+        "rationale": "퓨즈 자리에 배선을 직접 연결하면 과전류 보호 기능을 상실해."
+      },
+      {
+        "number": 2,
+        "text": "부하 정격의 정확히 120%를 모든 차에 동일 적용",
+        "verdict": "incorrect",
+        "rationale": "모든 차량에 부하전류의 120%를 일률 적용하면 돌입전류와 배선허용전류를 반영하지 못해."
+      },
+      {
+        "number": 3,
+        "text": "제작사 규정·배선 허용전류·기동전류와 회로보호 요구",
+        "verdict": "correct",
+        "rationale": "배선 보호·부하·돌입전류·제조사 지정 규격과 시간-전류 특성을 함께 고려해야 해."
+      },
+      {
+        "number": 4,
+        "text": "장착 가능한 가장 큰 용량을 우선 장착",
+        "verdict": "incorrect",
+        "rationale": "장착 가능한 최대 용량 퓨즈는 배선 과열·과전류 보호 목적에 어긋날 수 있어."
+      }
+    ],
+    "source_urls": [
+      "https://www.littelfuse.com/en/products/fuses-overcurrent-protection/fuses"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q03",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 3,
+    "question_at_review": "소전류 스위치로 헤드램프 등의 큰 부하를 켜고 끄려 한다. 사용할 전기부품은?",
+    "correct_number": 2,
+    "correct_choice": "코일 신호로 별도 접점을 구동하는 릴레이",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "기계식 타이어 공기 주입밸브",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기 주입 밸브는 고전류 램프의 전기 스위칭 기능이 없어."
+      },
+      {
+        "number": 2,
+        "text": "코일 신호로 별도 접점을 구동하는 릴레이",
+        "verdict": "correct",
+        "rationale": "릴레이는 코일에 비교적 적은 제어전류를 흘려 별도 부하 접점을 개폐해."
+      },
+      {
+        "number": 3,
+        "text": "직렬로 연결한 센서 기준저항 하나",
+        "verdict": "incorrect",
+        "rationale": "센서 저항 하나만으로 별도 큰 부하 접점을 개폐하는 릴레이 역할을 못 해."
+      },
+      {
+        "number": 4,
+        "text": "브레이크 디스크의 마찰 패드",
+        "verdict": "incorrect",
+        "rationale": "마찰패드는 자동차 제동 부품으로 전기 접점 제어 부품이 아니야."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/soe/en/Products/Product-detail-4957/?pid=6478"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q04",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 4,
+    "question_at_review": "ABS와 엔진 배출가스 제어 계통에 쓰이는 센서를 구분한 설명으로 적절한 것은?",
+    "correct_number": 2,
+    "correct_choice": "산소센서는 배출가스 제어용이며 ABS의 직접 센서가 아니다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "산소센서는 브레이크 오일 압력을 직접 변환",
+        "verdict": "incorrect",
+        "rationale": "엔진 배기가스 산소센서는 브레이크액 유압을 직접 측정하지 않아."
+      },
+      {
+        "number": 2,
+        "text": "산소센서는 배출가스 제어용이며 ABS의 직접 센서가 아니다",
+        "verdict": "correct",
+        "rationale": "산소센서는 배출가스와 공연비 제어에 관련되며 ABS의 직접 휠속도 센서는 아니야."
+      },
+      {
+        "number": 3,
+        "text": "산소센서는 바퀴속도 변화를 직접 계측한다",
+        "verdict": "incorrect",
+        "rationale": "바퀴 회전속도 신호는 ABS 휠속도 센서가 담당하며 산소센서 기능이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "모든 ABS 펌프는 산소센서가 없이 작동 불가",
+        "verdict": "incorrect",
+        "rationale": "ABS 펌프 작동에 배기 산소센서가 직접 필수 구성품이라는 설명은 근거가 없어."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/",
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/common-automotive-testing-with-a-multimeter"
+    ],
+    "hold_reasons": [
+      "기존 'ABS 회로도에서 엔진 배기관 산소센서를 발견'이라는 모순된 상황 수정. ABS/엔진 계통 혼합 과목 적합성·오답 변별력 추가 검토"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q05",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 5,
+    "question_at_review": "시동 회로의 접점 양단에서 전압강하를 재려 한다. 올바른 시험 조건은?",
+    "correct_number": 4,
+    "correct_choice": "부하가 흐르는 상태에서 접점 양단을 전압 모드로 계측",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "전압계를 회로에 직렬로만 연결",
+        "verdict": "incorrect",
+        "rationale": "전압계를 접점에 직렬로만 넣으면 접점 전압강하를 올바르게 재기 어려워."
+      },
+      {
+        "number": 2,
+        "text": "접점에 전류 측정 단자를 직접 단락",
+        "verdict": "incorrect",
+        "rationale": "전류측정 단자로 접점을 단락시키면 측정기·배선 손상 위험이 있어."
+      },
+      {
+        "number": 3,
+        "text": "전원 차단 상태에서 모든 전압강하를 측정",
+        "verdict": "incorrect",
+        "rationale": "전원이 완전히 꺼진 회로에서는 부하가 흐를 때의 실전압강하를 확인할 수 없어."
+      },
+      {
+        "number": 4,
+        "text": "부하가 흐르는 상태에서 접점 양단을 전압 모드로 계측",
+        "verdict": "correct",
+        "rationale": "부하가 흐르는 상태에서 전압 측정 모드로 대상 접점 양단을 계측하는 방식이 적절해."
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q06",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 6,
+    "question_at_review": "급제동 시 바퀴 잠김이 감지됐다. ABS가 개입해 하려는 제어는?",
+    "correct_number": 2,
+    "correct_choice": "브레이크 압력을 조절해 바퀴 회전을 유지하도록 돕는다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진의 기계 압축비를 즉시 바꾼다",
+        "verdict": "incorrect",
+        "rationale": "ABS 유압제어가 엔진의 실린더 기계 압축비를 바꾸지는 않아."
+      },
+      {
+        "number": 2,
+        "text": "브레이크 압력을 조절해 바퀴 회전을 유지하도록 돕는다",
+        "verdict": "correct",
+        "rationale": "잠김 징후가 있을 때 바퀴 제동압을 조절해 회전과 조향 제어를 유지하도록 도와."
+      },
+      {
+        "number": 3,
+        "text": "차량의 후방 조명 밝기를 낮춘다",
+        "verdict": "incorrect",
+        "rationale": "후방 조명 밝기를 낮추는 기능은 ABS의 직접 제동 압력제어가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "바퀴가 잠기도록 유압을 무한히 올린다",
+        "verdict": "incorrect",
+        "rationale": "휠 잠김을 억제해야 하므로 바퀴를 완전히 잠그도록 무한 증압하는 설명은 틀려."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+    ],
+    "hold_reasons": [
+      "ABS 제동압과 차량동역학은 섀시정비 과목과 중첩; 전기·전자 과목 분류를 출제기준으로 확인해야 함"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q07",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 7,
+    "question_at_review": "ESC 센서를 교환하고 지면이 평탄한 곳에서 학습 절차를 준비한다. 영점 보정 대상이 될 수 있는 것은?",
+    "correct_number": 1,
+    "correct_choice": "요레이트·횡가속도 센서의 기준 오프셋",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "요레이트·횡가속도 센서의 기준 오프셋",
+        "verdict": "correct",
+        "rationale": "요레이트·횡가속도 센서 기준 오프셋은 차종에 따라 ESC 보정 대상이 될 수 있어."
+      },
+      {
+        "number": 2,
+        "text": "타이어의 트레드 마모량 자체",
+        "verdict": "incorrect",
+        "rationale": "타이어 트레드 마모는 센서 영점 재설정으로 직접 바뀌지 않아."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크의 금속 두께",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 금속 두께는 ESC 기준 오프셋 학습 대상이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "엔진 배기량을 표기한 각인",
+        "verdict": "incorrect",
+        "rationale": "엔진 배기량 각인은 ESC 센서 영점 보정과 무관해."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "hold_reasons": [
+      "ESC 센서 종류·학습 절차·지면/정지 조건은 OEM별로 상이하고 섀시정비 과목 경계 추가 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q08",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 8,
+    "question_at_review": "에어컨 증발기 통과 뒤 냉매는 어떤 열적 일을 수행했는가?",
+    "correct_number": 4,
+    "correct_choice": "실내 공기에서 열을 흡수하며 냉매가 증발했다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "고압 액체가 응축기에서 증발기와 무관하게 얼었다",
+        "verdict": "incorrect",
+        "rationale": "증발기는 냉매가 열을 흡수하며 기화하는 구간이므로 고압액이 임의로 얼어붙는 설명은 틀려."
+      },
+      {
+        "number": 2,
+        "text": "압축기로 돌아가면서 압력을 무조건 두 배로 높인다",
+        "verdict": "incorrect",
+        "rationale": "압축기의 승압은 별도 압축단에서 이루어지며 증발기 통과가 압력을 무조건 두 배로 만들진 않아."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 디스크에 직접 열을 전달해 제동력을 높인다",
+        "verdict": "incorrect",
+        "rationale": "냉매 증발기의 열교환은 차량 브레이크 디스크 가열과 무관해."
+      },
+      {
+        "number": 4,
+        "text": "실내 공기에서 열을 흡수하며 냉매가 증발했다",
+        "verdict": "correct",
+        "rationale": "냉매가 실내 열을 흡수하며 증발하는 잠열 과정이 실내 냉방의 핵심이야."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "냉매 상변화/열역학 자체는 공조계통이고 전기·전자장치정비 시험범위에 속하는지 공식 출제기준 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q09",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 9,
+    "question_at_review": "에어컨 블로워가 정상 회전 중이다. 이 부품이 실내 냉방 성능에 기여하는 역할은?",
+    "correct_number": 2,
+    "correct_choice": "실내 공기를 열교환기와 송풍구로 보내는 것",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "냉매를 고압으로 직접 압축하는 것",
+        "verdict": "incorrect",
+        "rationale": "냉매 압축은 압축기 기능이지 실내 송풍 모터의 역할이 아니야."
+      },
+      {
+        "number": 2,
+        "text": "실내 공기를 열교환기와 송풍구로 보내는 것",
+        "verdict": "correct",
+        "rationale": "블로워는 실내 공기를 HVAC 열교환기와 송풍구로 순환시켜."
+      },
+      {
+        "number": 3,
+        "text": "차량 타이어에 압축공기를 주입하는 것",
+        "verdict": "incorrect",
+        "rationale": "차량 타이어 공기 주입장치와 실내 공조 팬은 별개야."
+      },
+      {
+        "number": 4,
+        "text": "엔진 연료를 탱크에서 직접 분사하는 것",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 연료 분사는 엔진 연료계 기능으로 블로워와 무관해."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/car-parts/thermal-management/a-c-interior-blowers/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q10",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 10,
+    "question_at_review": "기본형(비적응식) 크루즈 컨트롤의 주된 제어 목표에 대한 설명으로 옳은 것은?",
+    "correct_number": 2,
+    "correct_choice": "운전자 설정 속도에 가깝도록 구동 토크를 조절한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "제어속도를 타이어 공기압과 항상 동일하게 만든다",
+        "verdict": "incorrect",
+        "rationale": "제어 속도를 타이어 공기압과 같은 물리량으로 맞추는 것은 성립하지 않아."
+      },
+      {
+        "number": 2,
+        "text": "운전자 설정 속도에 가깝도록 구동 토크를 조절한다",
+        "verdict": "correct",
+        "rationale": "기본 크루즈 제어는 엔진/모터 출력을 조절해 운전자 설정 주행속도를 유지하도록 해."
+      },
+      {
+        "number": 3,
+        "text": "기어를 항상 1단으로 고정한다",
+        "verdict": "incorrect",
+        "rationale": "모든 상황에서 변속기를 1단에 고정하는 것은 크루즈 제어 목표가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "앞차 거리와 상관없이 타이어를 자동 교환한다",
+        "verdict": "incorrect",
+        "rationale": "차간거리와 관계없이 타이어를 자동교환하는 기능은 크루즈와 무관해."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/air-management/electronic-throttle-valve/",
+      "https://www.bosch-mobility.com/en/solutions/assistance-systems/adaptive-cruise-control/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q11",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 11,
+    "question_at_review": "해 질 무렵 전조등이 자동으로 켜진다. 자동등화 장치의 직접 입력으로 쓰일 수 있는 것은?",
+    "correct_number": 2,
+    "correct_choice": "차량 주변의 조도를 감지하는 센서 신호",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "변속기 주차기어의 치수",
+        "verdict": "incorrect",
+        "rationale": "주차기어 치수는 주변 밝기 감지용 입력이 아니야."
+      },
+      {
+        "number": 2,
+        "text": "차량 주변의 조도를 감지하는 센서 신호",
+        "verdict": "correct",
+        "rationale": "외부 밝기 감지 센서나 카메라의 조도정보를 사용해 점등을 제어할 수 있어."
+      },
+      {
+        "number": 3,
+        "text": "타이어 고무의 경도값",
+        "verdict": "incorrect",
+        "rationale": "타이어 경도는 오토라이트의 직접 밝기정보가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "엔진오일 필터의 압력차",
+        "verdict": "incorrect",
+        "rationale": "오일필터 압력차는 차량 외부 조도를 나타내지 않아."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/assistance-systems/intelligent-headlight-control/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q12",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 12,
+    "question_at_review": "자동차 전기 회로에서 전류계가 2.5를 가리키고 단위가 A다. A의 뜻은?",
+    "correct_number": 3,
+    "correct_choice": "전하의 흐름률을 나타내는 암페어",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "전력을 나타내는 와트",
+        "verdict": "incorrect",
+        "rationale": "와트(W)는 전력 단위이지 전류 단위 A가 아니야."
+      },
+      {
+        "number": 2,
+        "text": "전기저항을 나타내는 옴",
+        "verdict": "incorrect",
+        "rationale": "옴(Ω)은 저항의 단위이며 A와 구분해야 해."
+      },
+      {
+        "number": 3,
+        "text": "전하의 흐름률을 나타내는 암페어",
+        "verdict": "correct",
+        "rationale": "암페어(A)는 단위시간당 전하 이동과 관련된 전류의 SI 단위야."
+      },
+      {
+        "number": 4,
+        "text": "전압을 나타내는 볼트",
+        "verdict": "incorrect",
+        "rationale": "볼트(V)는 전위차 단위이지 A와 같지 않아."
+      }
+    ],
+    "source_urls": [
+      "https://www.bipm.org/en/si-base-units/ampere"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q13",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 13,
+    "question_at_review": "10Ω 저항과 20Ω 저항을 직렬로 연결했다. 두 저항에 공통으로 적용되는 것은?",
+    "correct_number": 1,
+    "correct_choice": "두 소자에 같은 전류가 흐른다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "두 소자에 같은 전류가 흐른다",
+        "verdict": "correct",
+        "rationale": "직렬 회로에는 공통 전류경로가 하나라 두 저항에 같은 전류가 흘러."
+      },
+      {
+        "number": 2,
+        "text": "양단 전압이 반드시 서로 같다",
+        "verdict": "incorrect",
+        "rationale": "직렬 10Ω과 20Ω의 전압강하는 값이 다를 수 있어 반드시 같지 않아."
+      },
+      {
+        "number": 3,
+        "text": "합성 저항은 5Ω이다",
+        "verdict": "incorrect",
+        "rationale": "직렬합성저항은 10+20=30Ω이므로 5Ω이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "각 저항에 전류가 반으로 나뉜다",
+        "verdict": "incorrect",
+        "rationale": "직렬에서는 전류가 분기하지 않아서 저항마다 반으로 나뉘지 않아."
+      }
+    ],
+    "source_urls": [
+      "https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q14",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 14,
+    "question_at_review": "12V 배터리의 전압과 부하 전류를 알고 있다. 단위 시간의 에너지 사용량을 나타내는 물리량은?",
+    "correct_number": 4,
+    "correct_choice": "전력(W)으로서 전압×전류",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "토크 단위인 N·m만",
+        "verdict": "incorrect",
+        "rationale": "N·m는 토크/에너지 관련 단위지만 전기 전력의 표기만은 아니야."
+      },
+      {
+        "number": 2,
+        "text": "전하량만을 표시한 옴(Ω)",
+        "verdict": "incorrect",
+        "rationale": "옴(Ω)은 저항 단위이며 전하량 단위도 아니야."
+      },
+      {
+        "number": 3,
+        "text": "속도 단위인 km/h",
+        "verdict": "incorrect",
+        "rationale": "km/h는 속도 단위로 단위시간 에너지 소비율이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "전력(W)으로서 전압×전류",
+        "verdict": "correct",
+        "rationale": "직류 부하의 전력은 전압×전류로 계산하며 W 단위를 사용해."
+      }
+    ],
+    "source_urls": [
+      "https://www.allaboutcircuits.com/textbook/direct-current/chpt-5/simple-series-circuits/",
+      "https://www.bipm.org/en/si-base-units/ampere"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q15",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 15,
+    "question_at_review": "차선 이탈 경고 기능이 차선을 인지하지 못한다. 관련성이 높은 센서와 진단은?",
+    "correct_number": 2,
+    "correct_choice": "전방 카메라 영상·유리 오염·보정 상태",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "브레이크액 저장통만 확인",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 저장통 점검만으로 차선 인식용 카메라 상태를 진단하지 못해."
+      },
+      {
+        "number": 2,
+        "text": "전방 카메라 영상·유리 오염·보정 상태",
+        "verdict": "correct",
+        "rationale": "전방 카메라 시야·유리오염·차종별 보정상태는 차선 검출 성능에 직접 관련돼."
+      },
+      {
+        "number": 3,
+        "text": "타이어 측면 표시만",
+        "verdict": "incorrect",
+        "rationale": "타이어 측면 표시는 카메라의 차선 인식 여부를 직접 알려주지 않아."
+      },
+      {
+        "number": 4,
+        "text": "변속기 ATF의 점도만 측정",
+        "verdict": "incorrect",
+        "rationale": "변속기 ATF 점도만으로 카메라 인식불량 원인을 알 수 없어."
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [
+      "ADAS 카메라 재보정·유리 교환·차선 인식 환경은 OEM 절차와 안전 제한 확인 필요; 영상 인식방식이 차종별로 다름"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q16",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 16,
+    "question_at_review": "운전자가 전방 장애물을 늦게 인식하는 상황에서 AEB가 작동했다. 일반적인 기능은?",
+    "correct_number": 2,
+    "correct_choice": "충돌 위험을 감지해 자동 제동을 수행하거나 보조한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "모든 상황에서 충돌을 100% 예방한다",
+        "verdict": "incorrect",
+        "rationale": "AEB는 카메라·레이더·환경 한계가 있어 충돌을 모든 경우에 100% 막지는 못해."
+      },
+      {
+        "number": 2,
+        "text": "충돌 위험을 감지해 자동 제동을 수행하거나 보조한다",
+        "verdict": "correct",
+        "rationale": "위험을 인식한 자동 긴급제동 시스템이 제동을 수행·보조할 수 있다는 설명은 맞아."
+      },
+      {
+        "number": 3,
+        "text": "운전자의 핸들을 항상 강제로 좌회전시킨다",
+        "verdict": "incorrect",
+        "rationale": "AEB가 모든 경우 운전자 조향을 강제 좌회전시키는 것은 일반 기능이 아니야."
+      },
+      {
+        "number": 4,
+        "text": "차량의 연료탱크를 비운다",
+        "verdict": "incorrect",
+        "rationale": "AEB 작동으로 차량 연료탱크를 비우는 기능은 없어."
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies",
+      "https://www.bosch-mobility.com/en/solutions/assistance-systems/automatic-emergency-braking-on-vulnerable-road-users/"
+    ],
+    "hold_reasons": [
+      "AEB 시스템별 감지범위·작동속도·기상 및 운전자 책임 경고 등 안전 조건을 공식 OEM·국내 시험범위로 재확인"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q17",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 17,
+    "question_at_review": "차량의 요거동이 운전자 조향의도와 달라졌다. ESC가 조절할 수 있는 것은?",
+    "correct_number": 2,
+    "correct_choice": "개별 휠 제동 압력 및 필요 시 엔진 구동토크",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "전조등 유리의 굴절률을 수정",
+        "verdict": "incorrect",
+        "rationale": "전조등 유리의 굴절률을 바꾸는 기능은 ESC 제동 제어와 달라."
+      },
+      {
+        "number": 2,
+        "text": "개별 휠 제동 압력 및 필요 시 엔진 구동토크",
+        "verdict": "correct",
+        "rationale": "ESC는 운전자 조향 의도와 실제 차량 거동을 비교해 개별휠 제동과 구동토크를 조절할 수 있어."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 내 연료 종류를 자동 전환",
+        "verdict": "incorrect",
+        "rationale": "주행중 연료 종류 자동변환은 ESC의 동작 원리가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "타이어의 고무 성분을 주행 중 변경",
+        "verdict": "incorrect",
+        "rationale": "타이어 고무 성분 변경은 전자식 자세 안정제어 기능과 무관해."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "hold_reasons": [
+      "제동압·차량동역학 중심의 ESC 문항은 섀시정비 과목과 중첩; 공식 과목분류 검토 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q18",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 18,
+    "question_at_review": "팽창장치를 지나간 냉매가 증발기로 들어간다. 팽창밸브가 수행하는 과정은?",
+    "correct_number": 4,
+    "correct_choice": "냉매의 압력을 낮추며 유량을 조절한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "압축기 모터 회전수를 직접 0으로 만든다",
+        "verdict": "incorrect",
+        "rationale": "팽창밸브는 압축기의 회전수를 직접 0으로 만드는 장치가 아니야."
+      },
+      {
+        "number": 2,
+        "text": "브레이크액을 냉매로 변환한다",
+        "verdict": "incorrect",
+        "rationale": "브레이크액을 냉매로 변환하는 화학 장치는 아니야."
+      },
+      {
+        "number": 3,
+        "text": "냉매 기체를 압축해 고압으로 만든다",
+        "verdict": "incorrect",
+        "rationale": "냉매 가스의 고압 압축은 압축기 역할이며 팽창밸브와 반대 과정이야."
+      },
+      {
+        "number": 4,
+        "text": "냉매의 압력을 낮추며 유량을 조절한다",
+        "verdict": "correct",
+        "rationale": "팽창밸브는 냉매 흐름을 제한·조절하면서 증발기 측 압력을 낮추어."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/car-parts/thermal-management/ac-expansion-valve/",
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "기계식 냉매 팽창장치의 원리만 설명해 전기·전자정비 과목 적합성 검토 필요; 고압 냉매 작업은 별도 안전 절차"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q19",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 19,
+    "question_at_review": "후진을 넣었을 때 차량 뒤쪽 영상이 실내 화면에 표시된다. 직접적인 영상 생성 장치는?",
+    "correct_number": 3,
+    "correct_choice": "후방 카메라 영상센서와 영상처리 계통",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료분사 압력조절기",
+        "verdict": "incorrect",
+        "rationale": "연료 분사 압력조절기는 후방 영상 데이터를 생성하지 않아."
+      },
+      {
+        "number": 2,
+        "text": "엔진 오일 압력 게이지",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 압력 게이지는 후방 화상을 촬영하지 않아."
+      },
+      {
+        "number": 3,
+        "text": "후방 카메라 영상센서와 영상처리 계통",
+        "verdict": "correct",
+        "rationale": "후방 카메라 영상 센서와 영상 신호처리 계통이 화면용 영상을 생성·전송해."
+      },
+      {
+        "number": 4,
+        "text": "공기식 서스펜션 컴프레서",
+        "verdict": "incorrect",
+        "rationale": "서스펜션 공압컴프레서는 후방 영상 생성에 관여하지 않아."
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s03-q20",
+    "subject": "electrical",
+    "round": 7,
+    "question_number": 20,
+    "question_at_review": "주차 보조 시스템이 주변 장애물을 탐지하거나 운전자에게 보여주는 데 관련성이 낮은 정보는?",
+    "correct_number": 2,
+    "correct_choice": "엔진 배기가스 산소센서의 혼합비 신호",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "주변 탐지용 단거리 레이더",
+        "verdict": "incorrect",
+        "rationale": "주변 장애물 탐지에 단거리 레이더를 활용하는 차량이 있어."
+      },
+      {
+        "number": 2,
+        "text": "엔진 배기가스 산소센서의 혼합비 신호",
+        "verdict": "correct",
+        "rationale": "배기 산소센서의 혼합비 신호는 주차장애물 탐지/주변표시용 입력과 직접 관련성이 낮아."
+      },
+      {
+        "number": 3,
+        "text": "차량 주변 카메라 영상",
+        "verdict": "incorrect",
+        "rationale": "카메라 영상은 주차 주변 시야와 영상 융합에 활용될 수 있어."
+      },
+      {
+        "number": 4,
+        "text": "범퍼의 초음파 거리 센서",
+        "verdict": "incorrect",
+        "rationale": "범퍼 장착 초음파 센서는 장애물 거리감지에 사용될 수 있어."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/parking/home-zone-park-assist/",
+      "https://www.bosch-mobility.com/en/solutions/sensors/sensor-data-fusion/",
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/common-automotive-testing-with-a-multimeter"
+    ],
+    "hold_reasons": [
+      "원문 '직접 주차거리 측정'은 카메라의 영상 표시·거리 산출을 혼동하게 해 수정; 차종별 실제 센서 구성과 평가범위 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  }
+]
