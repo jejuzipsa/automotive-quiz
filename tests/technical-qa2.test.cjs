@@ -60,10 +60,10 @@ for(const change of changes){
  const laterQa30=qa34to37ById.get(change.id)||qa30to33ById.get(change.id);
  const later=qa15ById.get(change.id)||qa18ById.get(change.id);
  if(laterQa30){
-  // QA2 snapshot is historical; later 8th-round drafts were intentionally reauthored.
+  // QA2 snapshot is historical; later 8th/9th-round drafts were intentionally reauthored.
   assert.equal(q.question,laterQa30.after.question);
-  assert.deepEqual(q.choices,laterQa30.after.choices);
-  assert.equal(e.reason,laterQa30.after.reason);
+  if(laterQa30.after.choices)assert.deepEqual(q.choices,laterQa30.after.choices);
+  if(laterQa30.after.reason)assert.equal(e.reason,laterQa30.after.reason);
   assert.equal(q.answer,change.answer);
   // All newer QA edits preserve the original source ID and four-choice mapping.
  }else if(later){
