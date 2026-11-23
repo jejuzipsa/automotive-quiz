@@ -1,0 +1,468 @@
+[
+  {
+    "id": "auto-made-r04-s04-q05",
+    "round": 4,
+    "subject": "eco",
+    "question_number": 5,
+    "before": {
+      "question": "전자식 주차브레이크(EPB)가 있는 후륜 패드 교환 차량이다. 캘리퍼를 수리하기 전 적절한 조치는?",
+      "choices": [
+        "무조건 주차브레이크를 계속 당긴 채 피스톤을 밀어 넣는다",
+        "휠이 공중에 뜬 상태에서 기어만 중립으로 둔다",
+        "EPB 모터 커넥터를 임의로 단락한다",
+        "제조사 정비모드와 차량 고정 지침을 확인한다"
+      ],
+      "answer": 4,
+      "reason": "EPB 장착 차량은 캘리퍼 피스톤 후퇴에 정비모드가 필요한 경우가 있다. 차량은 별도로 안전하게 고정하고 제조사 절차대로 작업해야 한다.",
+      "key_point": "EPB 브레이크 패드 작업: 정비모드·차량 고정.",
+      "correct_choice": "제조사 정비모드와 차량 고정 지침을 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "무조건 주차브레이크를 계속 당긴 채 피스톤을 밀어 넣는다",
+          "verdict": "incorrect",
+          "rationale": "EPB 모터를 작동/해제해야 하는 후륜 캘리퍼에 브레이크를 강하게 작동시킨 채 피스톤을 밀면 손상 위험이 있다."
+        },
+        {
+          "number": 2,
+          "text": "휠이 공중에 뜬 상태에서 기어만 중립으로 둔다",
+          "verdict": "incorrect",
+          "rationale": "차륜을 들고 변속기만 중립으로 둔다고 작업 차량이 안전하게 고정되지는 않는다."
+        },
+        {
+          "number": 3,
+          "text": "EPB 모터 커넥터를 임의로 단락한다",
+          "verdict": "incorrect",
+          "rationale": "EPB 모터 커넥터를 임의 단락시키는 행위는 정상 서비스모드 동작을 대신하지 못한다."
+        },
+        {
+          "number": 4,
+          "text": "제조사 정비모드와 차량 고정 지침을 확인한다",
+          "verdict": "correct",
+          "rationale": "해당 차종의 EPB 정비모드와 차량 고정·브레이크 피스톤 복귀 절차를 확인해야 한다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/en/technical/brakes/changing-the-brake-fluid/",
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/brake-by-wire/"
+      ]
+    },
+    "after": {
+      "question": "전기차가 AC 완속충전기를 정상 연결한 것으로 인식하지만 구동배터리 충전전류가 흐르지 않는다. 차량 내 AC를 DC로 변환하는 장치의 상태를 우선 확인할 대상은?",
+      "choices": [
+        "구동 인버터의 3상 모터 출력만 확인한다",
+        "고전압 DC/DC의 저전압 보조전원만 정상인지 확인한다",
+        "외부 급속충전기의 DC 출력만 확인한다",
+        "온보드 충전기(OBC)의 입력 AC·충전 허가·DC 출력 상태를 비교한다"
+      ],
+      "answer": 4,
+      "reason": "AC 충전 중 차량 측 OBC는 교류를 고전압 배터리 충전에 맞는 직류로 변환한다. 충전 요청이 성립했는데 전류가 흐르지 않으면 외부 공급 상태, OBC 입력·충전제어 허가·배터리 제한 조건을 차종별 진단정보로 비교해야 한다.",
+      "key_point": "AC 완속충전 문제 → OBC 입력·허가·출력 및 배터리 충전제한 비교.",
+      "correct_choice": "온보드 충전기(OBC)의 입력 AC·충전 허가·DC 출력 상태를 비교한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "구동 인버터의 3상 모터 출력만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "구동 인버터는 주로 모터 구동 전력을 제어하며 AC 완속충전의 정류 장치는 아니야."
+        },
+        {
+          "number": 2,
+          "text": "고전압 DC/DC의 저전압 보조전원만 정상인지 확인한다",
+          "verdict": "incorrect",
+          "rationale": "저전압 DC/DC 정상 여부만으로 OBC의 고전압 충전 경로가 정상임을 보장하지 않아."
+        },
+        {
+          "number": 3,
+          "text": "외부 급속충전기의 DC 출력만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "문제는 AC 완속충전이므로 외부 DC 급속충전기 출력만으로 차량 측 원인을 파악할 수 없어."
+        },
+        {
+          "number": 4,
+          "text": "온보드 충전기(OBC)의 입력 AC·충전 허가·DC 출력 상태를 비교한다",
+          "verdict": "correct",
+          "rationale": "OBC는 AC 입력을 배터리 충전에 필요한 DC로 변환하므로 충전 허가와 입출력 상태를 비교하는 것이 적절해."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ]
+    },
+    "topic": "AC 완속충전 OBC 입력과 충전제어",
+    "historical_audit_qa": 18
+  },
+  {
+    "id": "auto-made-r04-s04-q12",
+    "round": 4,
+    "subject": "eco",
+    "question_number": 12,
+    "before": {
+      "question": "토크 컨버터의 스톨 상태를 물리적으로 정의하면?",
+      "choices": [
+        "임펠러와 터빈이 같은 속도로 회전",
+        "펌프 임펠러는 도는데 터빈은 정지한 상태",
+        "임펠러가 정지하고 터빈만 회전",
+        "컨버터가 영구적으로 잠겨 직결된 상태"
+      ],
+      "answer": 2,
+      "reason": "토크 컨버터 스톨은 입력측 임펠러가 엔진에 의해 회전하지만 출력측 터빈은 멈춰 있는 경우다. 단순히 회전수 차이가 있다는 사실만으로 스톨이라 부르지 않는다.",
+      "key_point": "스톨: 임펠러 회전, 터빈 0 rpm.",
+      "correct_choice": "펌프 임펠러는 도는데 터빈은 정지한 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "임펠러와 터빈이 같은 속도로 회전",
+          "verdict": "incorrect",
+          "rationale": "토크컨버터 스톨 상태에서는 임펠러와 터빈이 같은 속도로 회전하는 것이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "펌프 임펠러는 도는데 터빈은 정지한 상태",
+          "verdict": "correct",
+          "rationale": "엔진 구동측 임펠러는 회전하지만 출력측 터빈이 정지한 상태가 스톨의 기본 물리상태다."
+        },
+        {
+          "number": 3,
+          "text": "임펠러가 정지하고 터빈만 회전",
+          "verdict": "incorrect",
+          "rationale": "임펠러가 정지하고 터빈만 회전하는 상태는 일반적인 컨버터 스톨 정의와 다르다."
+        },
+        {
+          "number": 4,
+          "text": "컨버터가 영구적으로 잠겨 직결된 상태",
+          "verdict": "incorrect",
+          "rationale": "컨버터가 항상 직결 락업 상태라면 유체토크 증배 스톨 작동과 다르다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.eaton.com/us/en-us/products/differentials-traction-control.html"
+      ]
+    },
+    "after": {
+      "question": "수소연료전지차에서 공기압축기 성능 저하가 의심되고 스택 출력이 떨어진다. 산소 공급 부족 여부를 구분하는 데 유용한 정보는?",
+      "choices": [
+        "수소 저장탱크 충전구 커버의 열림 횟수만 측정한다",
+        "공기압축기 명령·실제 공기유량 또는 압력과 스택 출력 변화를 비교한다",
+        "구동모터 감속기 기어오일 색만 확인한다",
+        "차량 실내 공조 풍량과 연료전지 스택 흡입 공기량을 같은 값으로 간주한다"
+      ],
+      "answer": 2,
+      "reason": "연료전지 스택은 산소가 포함된 공기를 공급받아 전기화학반응을 수행한다. 공기압축기 명령 대비 실제 공기유량·압력이 부족하면 전류·전압 응답에 영향을 줄 수 있으므로 관련 데이터를 종합 비교하며, 수소·고전압 안전절차는 OEM 기준이 우선이다.",
+      "key_point": "FCEV 공기공급 문제 → 압축기 명령·실제 공기유량·압력·스택 응답.",
+      "correct_choice": "공기압축기 명령·실제 공기유량 또는 압력과 스택 출력 변화를 비교한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "수소 저장탱크 충전구 커버의 열림 횟수만 측정한다",
+          "verdict": "incorrect",
+          "rationale": "충전구 커버 작동횟수는 스택 반응 공기의 실제 공급량을 보여주지 못해."
+        },
+        {
+          "number": 2,
+          "text": "공기압축기 명령·실제 공기유량 또는 압력과 스택 출력 변화를 비교한다",
+          "verdict": "correct",
+          "rationale": "공기압축기 명령과 흡입 공기량·압력 및 전압 응답을 비교하면 공기 공급 제한 가능성을 확인하는 데 도움돼."
+        },
+        {
+          "number": 3,
+          "text": "구동모터 감속기 기어오일 색만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "구동 감속기 윤활유 상태만으로 연료전지 캐소드 공기 공급 부족을 판정할 수 없어."
+        },
+        {
+          "number": 4,
+          "text": "차량 실내 공조 풍량과 연료전지 스택 흡입 공기량을 같은 값으로 간주한다",
+          "verdict": "incorrect",
+          "rationale": "실내 공조 송풍량과 스택 캐소드 공기압축기 유량은 서로 다른 공기 계통이야."
+        }
+      ],
+      "reference_urls": [
+        "https://www.energy.gov/cmei/fuels/fuel-cell-systems",
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ]
+    },
+    "topic": "연료전지 스택 캐소드 공기공급",
+    "historical_audit_qa": 18
+  },
+  {
+    "id": "auto-made-r04-s04-q13",
+    "round": 4,
+    "subject": "eco",
+    "question_number": 13,
+    "before": {
+      "question": "자동변속기 오일을 교환한 뒤 정확한 오일량을 확인하려면?",
+      "choices": [
+        "규정한 ATF 온도와 변속 레버 조건에서 레벨을 확인한다",
+        "차량이 어느 각도로 기울어도 똑같이 측정한다",
+        "엔진오일 딥스틱에 닿는지만 확인한다",
+        "오일을 주입하고 점검 없이 즉시 시운전한다"
+      ],
+      "answer": 1,
+      "reason": "ATF 레벨 확인 방법은 변속기마다 다르다. 지정 온도, 공회전 여부, 레인지 전환 등 정비 지침에 따라 점검하지 않으면 과소·과다 주입이 생길 수 있다.",
+      "key_point": "ATF 레벨 점검은 온도·절차가 중요.",
+      "correct_choice": "규정한 ATF 온도와 변속 레버 조건에서 레벨을 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "규정한 ATF 온도와 변속 레버 조건에서 레벨을 확인한다",
+          "verdict": "correct",
+          "rationale": "해당 변속기의 정비정보에 따라 ATF 온도·레버 위치/시동상태에서 레벨을 측정해야 한다."
+        },
+        {
+          "number": 2,
+          "text": "차량이 어느 각도로 기울어도 똑같이 측정한다",
+          "verdict": "incorrect",
+          "rationale": "차량이 어느 각도로 기울어도 ATF 레벨이 동일하게 측정된다는 설명은 부정확하다."
+        },
+        {
+          "number": 3,
+          "text": "엔진오일 딥스틱에 닿는지만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "엔진오일 딥스틱에 닿는 정도로 변속기 ATF 레벨을 판정하지는 않는다."
+        },
+        {
+          "number": 4,
+          "text": "오일을 주입하고 점검 없이 즉시 시운전한다",
+          "verdict": "incorrect",
+          "rationale": "ATF 주입 후 확인을 생략하면 과충전·저충전으로 변속기 손상/작동불량이 발생할 수 있다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.eaton.com/us/en-us/products/differentials-traction-control.html"
+      ]
+    },
+    "after": {
+      "question": "전기차 배터리의 SOC 표시는 충전 직후 높지만 새 배터리 시절보다 실제 사용 가능한 총에너지가 크게 줄었다. 이 현상을 표현하는 지표로 적절한 것은?",
+      "choices": [
+        "배터리의 초기 대비 잔존 용량·성능을 나타내는 SOH 저하",
+        "현재 남은 충전비율인 SOC 값이 높으므로 배터리 열화는 절대 없다는 결론",
+        "충전 커넥터의 규격이 같으면 배터리 용량도 항상 동일하다는 판단",
+        "인버터의 3상 출력 주파수만으로 배터리 잔존 용량을 확정하는 방법"
+      ],
+      "answer": 1,
+      "reason": "SOC는 당시 충전상태의 상대적인 비율이고, SOH는 신품 대비 현재 배터리가 제공할 수 있는 용량·출력 등 건강도를 평가하는 개념이다. SOC가 100%여도 SOH가 낮으면 실제 저장할 수 있는 총에너지는 신품보다 줄어들 수 있다.",
+      "key_point": "SOC=현재 충전상태, SOH=초기 대비 배터리 건강도.",
+      "correct_choice": "배터리의 초기 대비 잔존 용량·성능을 나타내는 SOH 저하",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "배터리의 초기 대비 잔존 용량·성능을 나타내는 SOH 저하",
+          "verdict": "correct",
+          "rationale": "SOH는 새 제품 대비 잔존 용량·내부저항 등을 고려한 배터리 건강도 개념으로 열화와 관련돼."
+        },
+        {
+          "number": 2,
+          "text": "현재 남은 충전비율인 SOC 값이 높으므로 배터리 열화는 절대 없다는 결론",
+          "verdict": "incorrect",
+          "rationale": "SOC는 현재 충전상태를 나타내며 SOC가 높다고 잔존 최대용량까지 보장되지는 않아."
+        },
+        {
+          "number": 3,
+          "text": "충전 커넥터의 규격이 같으면 배터리 용량도 항상 동일하다는 판단",
+          "verdict": "incorrect",
+          "rationale": "동일 충전규격이라도 팩의 사용 이력·화학계·열화 상태에 따라 저장 가능한 에너지가 달라져."
+        },
+        {
+          "number": 4,
+          "text": "인버터의 3상 출력 주파수만으로 배터리 잔존 용량을 확정하는 방법",
+          "verdict": "incorrect",
+          "rationale": "모터 구동 주파수만으로 배터리의 잔존 용량과 열화를 직접 확정할 수 없어."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/electric-batteries",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ]
+    },
+    "topic": "SOC와 SOH의 차이",
+    "historical_audit_qa": 18
+  },
+  {
+    "id": "auto-made-r04-s04-q14",
+    "round": 4,
+    "subject": "eco",
+    "question_number": 14,
+    "before": {
+      "question": "충돌 후 에어백이 전개된 차량을 정비한다. 합리적인 부품 교환 기준은?",
+      "choices": [
+        "프리텐셔너·센서 점검을 생략한다",
+        "전개 여부와 상관없이 모든 도어 트림을 무조건 교환한다",
+        "전개 부품과 충돌 관련 구성품을 제조사 지침에 따라 확인한다",
+        "손상된 에어백 모듈을 재포장해 재사용한다"
+      ],
+      "answer": 3,
+      "reason": "에어백과 벨트 프리텐셔너, 충돌 센서, 제어기 등의 처리 범위는 해당 제조사 수리 지침이 기준이다. 손상되지 않은 도어트림까지 일률적으로 교환하는 것은 아니다.",
+      "key_point": "에어백 전개 후 교환 범위는 OEM 충돌 수리 매뉴얼.",
+      "correct_choice": "전개 부품과 충돌 관련 구성품을 제조사 지침에 따라 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "프리텐셔너·센서 점검을 생략한다",
+          "verdict": "incorrect",
+          "rationale": "에어백 전개 후 관련 벨트 프리텐셔너·충돌센서·ECU 조사를 생략하면 위험할 수 있다."
+        },
+        {
+          "number": 2,
+          "text": "전개 여부와 상관없이 모든 도어 트림을 무조건 교환한다",
+          "verdict": "incorrect",
+          "rationale": "에어백이 전개됐다고 모든 도어 트림 부품을 무조건 교환하는 것은 차량별 정비기준과 다를 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "전개 부품과 충돌 관련 구성품을 제조사 지침에 따라 확인한다",
+          "verdict": "correct",
+          "rationale": "전개한 에어백과 관련 SRS 구성품의 교환/점검 범위를 OEM 충돌 수리 매뉴얼로 확인해야 한다."
+        },
+        {
+          "number": 4,
+          "text": "손상된 에어백 모듈을 재포장해 재사용한다",
+          "verdict": "incorrect",
+          "rationale": "손상/전개한 에어백을 단순 재포장해서 재사용하는 행위는 안전하지 않다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/brake-by-wire/"
+      ]
+    },
+    "after": {
+      "question": "전기차 DC 급속충전에서 차량에 전달되는 전력의 흐름에 관한 설명으로 가장 적절한 것은?",
+      "choices": [
+        "모든 급속충전 전력은 차량 OBC에서 AC로 다시 변환된 뒤 모터로 공급된다",
+        "급속충전 시 고전압 배터리가 외부 충전기로 AC 전력을 역송한다",
+        "외부 충전기가 DC를 공급하며 차량은 배터리 충전허가·전압·전류 조건을 제어한다",
+        "차량의 12V 보조 배터리가 DC 급속충전 전력 전부를 직접 저장한다"
+      ],
+      "answer": 3,
+      "reason": "일반적인 DC 급속충전은 외부 충전설비가 직류를 공급하고 차량의 충전 제어 및 BMS가 팩 상태에 맞춰 전압·전류와 충전허가를 조정한다. 반면 차량 탑재 OBC는 주로 AC 완속충전 입력을 DC로 변환한다.",
+      "key_point": "DC 급속충전 → 외부 DC 공급, 차량 BMS 충전조건 제어.",
+      "correct_choice": "외부 충전기가 DC를 공급하며 차량은 배터리 충전허가·전압·전류 조건을 제어한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "모든 급속충전 전력은 차량 OBC에서 AC로 다시 변환된 뒤 모터로 공급된다",
+          "verdict": "incorrect",
+          "rationale": "DC 급속충전은 외부 충전기가 DC를 공급하며 일반적으로 차량 OBC의 AC 정류 기능을 사용하지 않아."
+        },
+        {
+          "number": 2,
+          "text": "급속충전 시 고전압 배터리가 외부 충전기로 AC 전력을 역송한다",
+          "verdict": "incorrect",
+          "rationale": "충전 중 배터리가 외부 충전기로 AC를 역송하는 것이 기본 DC 급속충전 경로는 아니야."
+        },
+        {
+          "number": 3,
+          "text": "외부 충전기가 DC를 공급하며 차량은 배터리 충전허가·전압·전류 조건을 제어한다",
+          "verdict": "correct",
+          "rationale": "외부 DC 공급과 차량 BMS·충전 제어의 허가 및 전류·전압 제한으로 충전이 이뤄져."
+        },
+        {
+          "number": 4,
+          "text": "차량의 12V 보조 배터리가 DC 급속충전 전력 전부를 직접 저장한다",
+          "verdict": "incorrect",
+          "rationale": "구동배터리 고전압 충전 에너지를 12V 보조배터리 한 개가 전부 저장하는 구조는 아니야."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ]
+    },
+    "topic": "급속충전 DC 공급과 차량 BMS",
+    "historical_audit_qa": 18
+  },
+  {
+    "id": "auto-made-r04-s04-q15",
+    "round": 4,
+    "subject": "eco",
+    "question_number": 15,
+    "before": {
+      "question": "에어백 DTC에 점화회로 저항 이상이 표시됐다. 안전한 초기 대응은?",
+      "choices": [
+        "에어백 회로에 시험용 전구를 직접 연결한다",
+        "일반 저항계로 에어백 점화기 단자에 직접 전류를 흘린다",
+        "코드만 보고 모듈을 무조건 교환한다",
+        "회로·커넥터를 정비 매뉴얼의 안전 절차로 진단한다"
+      ],
+      "answer": 4,
+      "reason": "에어백 점화장치에는 임의 계측 전류를 흘려서는 안 된다. 정비 모드, 전원 차단 및 대기·전용 진단절차와 배선 점검 기준을 따른다.",
+      "key_point": "SRS 점화회로는 일반 저항계 직접 측정 금지.",
+      "correct_choice": "회로·커넥터를 정비 매뉴얼의 안전 절차로 진단한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "에어백 회로에 시험용 전구를 직접 연결한다",
+          "verdict": "incorrect",
+          "rationale": "SRS 점화회로에 일반 시험등을 연결하면 의도치 않은 전류·전개 위험이 있어 부적절하다."
+        },
+        {
+          "number": 2,
+          "text": "일반 저항계로 에어백 점화기 단자에 직접 전류를 흘린다",
+          "verdict": "incorrect",
+          "rationale": "에어백 점화기 단자에 일반 저항계를 임의 연결하면 회로 안전 지침을 위반할 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "코드만 보고 모듈을 무조건 교환한다",
+          "verdict": "incorrect",
+          "rationale": "DTC가 기록됐다는 이유만으로 회로 검사 없이 모듈 전체를 교환하면 근본 원인을 놓칠 수 있다."
+        },
+        {
+          "number": 4,
+          "text": "회로·커넥터를 정비 매뉴얼의 안전 절차로 진단한다",
+          "verdict": "correct",
+          "rationale": "제조사가 지정한 SRS 전원차단·대기·전용 진단방법으로 배선·연결부를 확인해야 한다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/brake-by-wire/"
+      ]
+    },
+    "after": {
+      "question": "PEM 연료전지에서 전해질막이 과도하게 건조해져 성능이 저하됐다. 가습·수분관리의 주된 기술적 목적은?",
+      "choices": [
+        "전해질막의 전자전도도를 높여 외부 전기회로를 필요 없게 만든다",
+        "스택으로 공급되는 수소를 엔진의 연소용 휘발유로 바꾼다",
+        "모든 물을 제거해 막을 완전히 건조하게 유지한다",
+        "전해질막의 적정 수분 상태를 유지해 양성자 전도와 반응기체 공급을 돕는다"
+      ],
+      "answer": 4,
+      "reason": "저온 PEM 연료전지는 막의 수분 함량이 낮아지면 양성자 전달 저항이 증가할 수 있으며, 반대로 과도한 수분은 반응가스의 이동을 방해할 수 있다. 가습과 수분관리 장치는 전해질막의 적정 수분과 스택 성능을 유지하는 데 기여한다.",
+      "key_point": "PEM 수분관리 → 적절한 막 가습·양성자 전도 유지, 플러딩 방지.",
+      "correct_choice": "전해질막의 적정 수분 상태를 유지해 양성자 전도와 반응기체 공급을 돕는다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "전해질막의 전자전도도를 높여 외부 전기회로를 필요 없게 만든다",
+          "verdict": "incorrect",
+          "rationale": "PEM 막은 양성자를 전달하도록 설계되며 외부회로에서 흐르는 전자의 이동 경로를 없애지 않아."
+        },
+        {
+          "number": 2,
+          "text": "스택으로 공급되는 수소를 엔진의 연소용 휘발유로 바꾼다",
+          "verdict": "incorrect",
+          "rationale": "가습장치는 수소 연료를 휘발유로 바꾸는 연료변환 장치가 아니야."
+        },
+        {
+          "number": 3,
+          "text": "모든 물을 제거해 막을 완전히 건조하게 유지한다",
+          "verdict": "incorrect",
+          "rationale": "PEM 막을 완전히 건조하게 만들면 이온 전도성이 떨어져 성능이 저하될 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "전해질막의 적정 수분 상태를 유지해 양성자 전도와 반응기체 공급을 돕는다",
+          "verdict": "correct",
+          "rationale": "과건조·과습을 피하고 막의 양성자 전도도와 반응가스 확산을 적정하게 유지하는 게 중요해."
+        }
+      ],
+      "reference_urls": [
+        "https://www.energy.gov/cmei/fuels/parts-fuel-cell",
+        "https://www.energy.gov/cmei/fuels/fuel-cell-systems"
+      ]
+    },
+    "topic": "PEM 연료전지 수분관리",
+    "historical_audit_qa": 18
+  }
+]
