@@ -8,6 +8,9 @@ const subjects=['engine','chassis','electrical','eco'];
 const changes=read('data/qa/technical-qa2-changes.json');
 const qa15ById=new Map(read('data/qa/technical-qa15-r03-engine-edits.json').edits.map(x=>[x.id,x]));
 const qa18ById=new Map([...read('data/qa/technical-qa18-r04-chassis-edits.json').editorial_corrections,...read('data/qa/technical-qa18-r04-electrical-edits-and-holds.json').editorial_edits].map(x=>[x.id,x]));
+const qa30to33Edits=[...read('data/qa/technical-qa30-31-r08-edits.json'),...read('data/qa/technical-qa32-33-r08-edits.json')];
+const qa30to33ById=new Map(qa30to33Edits.map(x=>[x.id,x]));
+assert.equal(qa30to33ById.size,4);
 const falsePositive=read('data/qa/technical-qa2-false-positive.json');
 const classifications=read('data/qa/technical-qa2-classifications.json');
 const firstPass=read('data/qa/technical-qa2-firstpass-evidence.json');
@@ -51,8 +54,16 @@ assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(hold
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
+ const laterQa30=qa30to33ById.get(change.id);
  const later=qa15ById.get(change.id)||qa18ById.get(change.id);
- if(later){
+ if(laterQa30){
+  // QA2 snapshot is historical; later 8th-round drafts were intentionally reauthored.
+  assert.equal(q.question,laterQa30.after.question);
+  assert.deepEqual(q.choices,laterQa30.after.choices);
+  assert.equal(e.reason,laterQa30.after.reason);
+  assert.equal(q.answer,change.answer);
+  // All newer QA edits preserve the original source ID and four-choice mapping.
+ }else if(later){
   assert.equal(later.before.question,change.after.question,"Later QA15/18 must supersede exact QA2 question");
   assert.deepEqual(later.before.choices,change.after.choices);
   assert.equal(later.before.reason,change.after.reason);
