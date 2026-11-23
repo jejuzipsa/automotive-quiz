@@ -25,7 +25,20 @@
     },
     "current_original_practice_count": 80,
     "public_exam_reconstruction_count": 0,
-    "current_unpublished_reauthored_question_drafts": 720
+    "current_unpublished_reauthored_question_drafts": 720,
+    "mock_exam_expected_enabled": true,
+    "mock_exam_expected_question_count": 80,
+    "mock_exam_expected_subject_counts": {
+      "engine": 20,
+      "chassis": 20,
+      "electrical": 20,
+      "eco": 20
+    },
+    "mock_exam_expected_duration_minutes": 120,
+    "mock_exam_expected_review_caveat": "original_practice, editorial_draft: educational mock exam only, not technically approved official past questions",
+    "mock_exam_past_enabled": false,
+    "approved_past_bank_path_pattern": "data/past/approved/{subject}.json",
+    "approved_past_bank_gate": "publishable=true AND review_status=approved AND technical_answer_status=independently_approved AND rights_cleared=true AND no subject hold"
   },
   "source_captures": {
     "original": 57,
@@ -827,5 +840,25 @@
     "next_to_review": "r01-s02-q01 (1회 섀시정비 1번) and 3 engine holds",
     "note": "17 supported are source-backed first pass, NOT final technical answer approval; new drafts remain editorial_draft and publishable=false. Original OCR unchanged.",
     "no_zip": true
+  },
+  "qa4_exam_integration": {
+    "date": "2026-11-23",
+    "expected_subject_balanced_exam": {
+      "engine": 20,
+      "chassis": 20,
+      "electrical": 20,
+      "eco": 20
+    },
+    "minutes": 120,
+    "question_count": 80,
+    "result_subject_minimum_points": 40,
+    "result_overall_average_minimum_points": 60,
+    "original_unpublished_drafts": 720,
+    "technical_final_approvals": 0,
+    "live_reconstructed_past_questions": 0,
+    "qa3_reviewed_options_unchanged": 80,
+    "qa3_firstpass_supported_unchanged": 17,
+    "qa3_pending_unchanged": 3,
+    "notes": "CBT-like practice-mode integration only. No final technical approvals or copyrighted source text promotion."
   }
 }
