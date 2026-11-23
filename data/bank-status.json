@@ -1655,5 +1655,31 @@
     "audit": "data/qa/technical-qa24-r06-chassis-option-audit.json",
     "report": "docs/TECHNICAL_QA24.md",
     "next": "r06 electrical20, eco20, r07-r09 all subjects"
+  },
+  "technical_qa25": {
+    "date": "2026-11-23",
+    "batch": "round06_electrical_and_eco",
+    "reviewed_questions": 40,
+    "reviewed_options": 160,
+    "electrical_source_supported_first_pass": 6,
+    "electrical_pending_review": 14,
+    "eco_source_supported_first_pass": 4,
+    "eco_pending_review": 16,
+    "new_subject_holds": 0,
+    "existing_round6_subject_holds_preserved": 7,
+    "current_subject_hold_count": 55,
+    "rounds_1_through_6_firstpass_complete": true,
+    "cumulative_historical_firstpass_questions": 480,
+    "cumulative_historical_firstpass_options": 1920,
+    "remaining_firstpass_unreviewed_questions": 240,
+    "remaining_firstpass_unreviewed_options": 960,
+    "final_independent_technical_approvals": 0,
+    "public_past_question_approvals": 0,
+    "original_paid_book_qa23_unmodified": true,
+    "public_manifest_and_selfauthored_80_test_unchanged": true,
+    "electrical_audit": "data/qa/technical-qa25-r06-electrical-option-audit.json",
+    "eco_audit": "data/qa/technical-qa25-r06-eco-option-audit.json",
+    "report": "docs/TECHNICAL_QA25.md",
+    "next": "round07 engine/chassis/electrical/eco 20 each; round08 and round09"
   }
 }
