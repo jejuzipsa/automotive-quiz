@@ -51,7 +51,7 @@ for(const q of qmap.values()){
 }
 // A QA1 edit may be superseded by a later QA2 improvement; preserve the QA1
 // change ledger and verify the QA2 "before" snapshot matches the QA1 "after" snapshot.
-assert.ok(edited>=0&&edited<=28);assert.equal(held,49); // 47 historical QA1 + QA10 r02 engine tire + QA12 r02 electrical alignment holds
+assert.ok(edited>=0&&edited<=28);assert.equal(held,51); // 47 QA1 historical + QA10 tire + QA12 alignment + QA17 ABS and relay holds
 for(const change of changes){
  const q=qmap.get(change.id),e=emap.get(change.id);
  assert.ok(q&&e);
