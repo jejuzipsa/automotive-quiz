@@ -47,7 +47,7 @@ for(const q of qMap.values()){
   if(q.subject_classification_review){holds++;assert.equal(q.subject_classification_review.status,'hold_do_not_publish');}
   if(q.technical_reference_first_pass){firstPassed++;assert.equal(q.technical_reference_first_pass.status,'source_supported_needs_final_editor_signoff');}
 }
-assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,52);assert.equal(firstPassed,7); // 47 historical + QA10 + QA12 + QA17 two + QA18 engine-idle hold
+assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,53);assert.equal(firstPassed,7); // 47 historical + QA10 + QA12 + QA17 two + QA18 + QA19 rental car
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
