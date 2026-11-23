@@ -16,10 +16,16 @@ for(const forbidden of ['type="file"',"personalTextBankInput","vendor/jszip.min.
 }
 const manifest=JSON.parse(read("data/manifest.json"));
 assert.equal(manifest.version,1);
-assert.equal(manifest.banks.length,6);
+const baseFiles=new Set(["data/expected/engine.json","data/expected/chassis.json",
+  "data/expected/electrical.json","data/expected/eco.json","data/demo.json","data/concept.json"]);
+assert.ok(manifest.banks.length>=6 && manifest.banks.length<=10);
+assert.equal(new Set(manifest.banks.map(entry=>entry.file)).size,manifest.banks.length,"duplicate manifest files");
+for(const file of baseFiles)assert.ok(manifest.banks.some(entry=>entry.file===file),"missing base "+file);
 const idsSeen=new Set(),counts={};
 for(const entry of manifest.banks){
-  assert.match(entry.file,/^data\/(?:expected\/(?:engine|chassis|electrical|eco)|demo|concept)\.json$/);
+  const approvedMatch=entry.file.match(/^data\/past\/approved\/(engine|chassis|electrical|eco)\.json$/);
+  assert.ok(baseFiles.has(entry.file)||approvedMatch,"unapproved bank path: "+entry.file);
+  if(approvedMatch){assert.equal(entry.track,"past");assert.equal(entry.subject,approvedMatch[1]);}
   const arr=JSON.parse(read(entry.file));
   assert.equal(arr.length,entry.count);
   for(const q of arr){
@@ -36,10 +42,20 @@ for(const entry of manifest.banks){
       assert.equal(q.publishable,true);
       assert.equal(q.review_status,"editorial_draft");
     }
+    if(q.track==="past"){
+      assert.equal(q.publishable,true,"only approved past releases");
+      assert.equal(q.review_status,"approved");
+      assert.equal(q.technical_answer_status,"independently_approved");
+      assert.equal(q.rights_cleared,true);
+      assert.notEqual(q.subject_classification_review?.status,"hold_do_not_publish");
+    }
     counts[q.track]=(counts[q.track]||0)+1;
   }
 }
-assert.deepEqual(counts,{expected:80,demo:8,concept:4});
+assert.equal(counts.expected,80);
+assert.equal(counts.demo,8);
+assert.equal(counts.concept,4);
+assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
-console.log("PASS: static JSON manifest, 92 question records, source types, no ZIP picker, DOM references.");
+console.log("PASS: approved-only public manifest, base 92 records, no ZIP picker, DOM references.");

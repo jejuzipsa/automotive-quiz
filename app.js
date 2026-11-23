@@ -33,6 +33,9 @@
     "data/expected/electrical.json","data/expected/eco.json",
     "data/demo.json","data/concept.json"
   ]);
+  // Only explicitly approved, rights-cleared records may be added later.
+  const APPROVED_PAST_PATH = /^data\/past\/approved\/(engine|chassis|electrical|eco)\.json$/;
+  const isManifestPath = path => PUBLIC_BANK_PATHS.has(path) || APPROVED_PAST_PATH.test(path);
   function validPublicQuestion(q) {
     return q && typeof q.id === "string" && SUBJECTS.some(s=>s.id===q.subject) &&
       Array.isArray(q.choices) && q.choices.length === 4 &&
@@ -41,9 +44,13 @@
       typeof q.question==="string" && !!q.question.trim() &&
       typeof q.explanation==="string" && !!q.explanation.trim() &&
       (q.track==="demo" || q.track==="concept" ||
-        ((q.track==="past" || q.track==="expected") && q.publishable===true &&
-        (q.review_status==="approved" ||
-          (q.origin==="original_practice" && q.review_status==="editorial_draft"))));
+        (q.track==="expected" && q.origin==="original_practice" &&
+          q.publishable===true && q.review_status==="editorial_draft") ||
+        (q.track==="past" && q.publishable===true &&
+          q.review_status==="approved" &&
+          q.technical_answer_status==="independently_approved" &&
+          q.rights_cleared===true &&
+          q.subject_classification_review?.status!=="hold_do_not_publish"));
   }
   async function loadPublicBank() {
     const status=$("bankLoadStatus");
@@ -52,9 +59,13 @@
       if(!manifestResponse.ok)throw new Error("목록 HTTP "+manifestResponse.status);
       const manifest=await manifestResponse.json();
       if(manifest?.version!==1 || !Array.isArray(manifest.banks) ||
-          manifest.banks.length!==PUBLIC_BANK_PATHS.size ||
-          new Set(manifest.banks.map(x=>x.file)).size!==PUBLIC_BANK_PATHS.size ||
-          !manifest.banks.every(x=>PUBLIC_BANK_PATHS.has(x.file)))
+          manifest.banks.length<PUBLIC_BANK_PATHS.size ||
+          manifest.banks.length>PUBLIC_BANK_PATHS.size+SUBJECTS.length ||
+          new Set(manifest.banks.map(x=>x.file)).size!==manifest.banks.length ||
+          ![...PUBLIC_BANK_PATHS].every(path=>manifest.banks.some(x=>x.file===path)) ||
+          !manifest.banks.every(x=>isManifestPath(x.file) &&
+            (!APPROVED_PAST_PATH.test(x.file) ||
+              (x.track==="past" && x.subject===x.file.match(APPROVED_PAST_PATH)[1]))))
         throw new Error("과목별 목록 형식 오류");
       const groups=await Promise.all(manifest.banks.map(async def=>{
         const response=await fetch(def.file,{cache:"no-cache"});
@@ -80,6 +91,7 @@
         (error?.message||"원인 미상")+")";
     }
     renderSubjects();
+    updateExamAvailability();
     if(view==="concept")renderConcepts();
   }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
@@ -223,16 +235,40 @@
     startSession(shuffled(pool),{mode:"concept",title:currentSubjectLabel(subject)+" · 괄호문제",track:"concept",subject});
   }
   function startSampleExam(){
-    startSession(shuffled(poolFor("demo")),{mode:"exam",title:"시연용 실전 시험",track:"demo",subject:null});
+    startSession(shuffled(poolFor("demo")),{mode:"exam",title:"시연용 실전 시험",track:"demo",subject:null,examMinutes:10});
+  }
+  function examPool(track) {
+    const groups=SUBJECTS.map(subject=>poolFor(track,subject.id));
+    if(groups.some(group=>group.length<20))return null;
+    return shuffled(groups.flatMap(group=>shuffled(group).slice(0,20)));
+  }
+  function updateExamAvailability() {
+    $("expectedExamBtn").disabled=!examPool("expected");
+    $("approvedExamBtn").disabled=!examPool("past");
+    $("examStatus").textContent=bankLoadState==="error"
+      ?"문제은행을 불러오지 못했어. 새로고침해 줘."
+      :bankLoadState==="loading"
+        ?"문제은행을 불러오는 중이야."
+        :"자체제작 예상문제 80문항 학습용 모의고사 이용 가능 · 최종 기술검수 전인 복원문제 720개는 출제 제외";
+  }
+  function startFullExam(track) {
+    const items=examPool(track);
+    if(!items){updateExamAvailability();return;}
+    startSession(items,{
+      mode:"exam",title:track==="past"?"승인된 기출 복원 모의고사":"자체제작 예상문제 모의고사 (학습용)",
+      track,subject:null,examMinutes:120
+    });
   }
   function startSession(items,options) {
     if(!items.length){showHome();return;}
     const mode=options.mode||"practice";
+    const examMinutes=mode==="exam" && Number.isInteger(options.examMinutes) && options.examMinutes>0
+      ?options.examMinutes:10;
     current={items:[...items],choices:Array(items.length).fill(0),
       orders:items.map(buildOrder),index:0,
       mode,title:options.title||"문제풀이",track:options.track||"demo",
-      subject:options.subject||null,
-      examDeadline:mode==="exam"?Date.now()+10*60*1000:null};
+      subject:options.subject||null,examMinutes,
+      examDeadline:mode==="exam"?Date.now()+examMinutes*60*1000:null};
     renderQuestion();showView("quiz");
     if(mode==="exam") beginTimer();
   }
@@ -283,6 +319,7 @@
       box.appendChild(button);
     });
     $("feedback").classList.add("hidden");
+    $("previousBtn").classList.toggle("hidden",mode!=="exam" || index===0);
     $("nextBtn").classList.toggle("hidden",!locked && mode!=="exam");
     $("reviewBackBtn").classList.add("hidden");
     if(mode==="exam") {
@@ -313,6 +350,10 @@
     renderQuestion();
     if(current.mode==="exam") $("quizSource").textContent="답안 저장됨 · 변경 가능";
   }
+  function previousQuestion() {
+    if(!current || current.mode!=="exam" || current.index<=0)return;
+    current.index--;renderQuestion();
+  }
   function nextQuestion() {
     if(!current)return;
     if(current.mode!=="exam" && !current.choices[current.index])return;
@@ -326,7 +367,8 @@
     recentResult={
       items:current.items,choices:[...current.choices],
       orders:current.orders.map(o=>[...o]),title:current.title,
-      track:current.track,subject:current.subject,mode:current.mode
+      track:current.track,subject:current.subject,mode:current.mode,
+      examMinutes:current.examMinutes
     };
     lastSaved=recentResult;
     saveStorage("automotiveQuizLastSessionV1",recentResult);
@@ -344,6 +386,24 @@
       make("span","","맞힌 문제 "+score+"개"),
       make("span","","틀리거나 건너뛴 문제 "+wrong+"개")
     );
+    if(s.mode==="exam" && s.items.length===80 && ["past","expected"].includes(s.track)){
+      const perSubject=SUBJECTS.map(subject=>{
+        const indices=s.items.map((q,i)=>q.subject===subject.id?i:-1).filter(i=>i!==-1);
+        const correct=indices.filter(i=>isAnswerCorrect(s,i)).length;
+        return {name:subject.name,total:indices.length,correct,points:indices.length?Math.round(correct*100/indices.length):0};
+      });
+      const valid=perSubject.every(row=>row.total===20);
+      const passed=valid && score>=48 && perSubject.every(row=>row.correct>=8);
+      $("resultStats").append(make("strong","exam-judgement",!valid
+        ?"과목 배분을 확인할 수 없어 합격 여부를 표시하지 않아."
+        :passed?"학습용 합격 기준 충족":"학습용 합격 기준 미달"));
+      for(const row of perSubject){
+        $("resultStats").append(make("span","exam-subject-score",
+          row.name+" · "+row.correct+"/"+row.total+" ("+row.points+"점)"+(row.correct<8?" · 과락":"")));
+      }
+      $("resultStats").append(make("span","exam-criterion",
+        "기준: 과목별 40점 이상, 전체 평균 60점 이상 · 공식 시험 결과가 아닌 학습용 판정"));
+    }
     $("resultHint").textContent="빨간 문제 번호를 누르면 해당 문제를 다시 풀 수 있어.";
     const grid=$("resultGrid");grid.replaceChildren();
     s.items.forEach((q,i)=>{
@@ -376,7 +436,7 @@
   function retryAll(){
     if(!recentResult)return;
     startSession(shuffled(recentResult.items),{mode:recentResult.mode,title:recentResult.title,
-      track:recentResult.track,subject:recentResult.subject});
+      track:recentResult.track,subject:recentResult.subject,examMinutes:recentResult.examMinutes});
   }
   function renderWrong(){
     const container=$("wrongList");container.replaceChildren();
@@ -442,8 +502,11 @@
     $("conceptEntryBtn").addEventListener("click",()=>{renderConcepts();showView("concept");});
     $("wrongEntryBtn").addEventListener("click",()=>{renderWrong();showView("wrong");});
     $("sampleExamBtn").addEventListener("click",startSampleExam);
+    $("expectedExamBtn").addEventListener("click",()=>startFullExam("expected"));
+    $("approvedExamBtn").addEventListener("click",()=>startFullExam("past"));
     $("browseStartBtn").addEventListener("click",()=>startSession(shuffled(browseState.items),
       {mode:"practice",title:browseState.title,track:browseState.track,subject:browseState.subject}));
+    $("previousBtn").addEventListener("click",previousQuestion);
     $("nextBtn").addEventListener("click",nextQuestion);
     $("reviewBackBtn").addEventListener("click",backFromReview);
     $("retryWrongBtn").addEventListener("click",retryWrong);

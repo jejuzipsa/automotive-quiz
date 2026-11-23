@@ -89,5 +89,45 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.bankEntryBtn.click();
   assert.equal(els.browseList.children.length,10,"10 public JSON cards per page");
   assert.equal(els.browseMeta.textContent,"전체 80문항");
-  console.log("PASS: auto-fetch six subject JSON banks, shuffle/answer mapping, 10-item quiz, result and bank browsing.");
+  await els.homeBtn.click();
+  await els.examEntryBtn.click();
+  assert.equal(els.expectedExamBtn.disabled,false,"80-question expected bank should be connected");
+  assert.equal(els.approvedExamBtn.disabled,true,"unapproved past drafts must remain disabled");
+  await els.expectedExamBtn.click();
+  assert.equal(els.quizProgress.textContent,"1 / 80");
+  assert.ok(els.quizSource.textContent.includes("120:00"),"full exam must be 120 minutes");
+  const expected=['engine','chassis','electrical','eco'].flatMap(subject=>
+    JSON.parse(fs.readFileSync(path.join(root,"data/expected",subject+".json"),"utf8")));
+  const questionsByText=new Map(expected.map(q=>[q.question,q]));
+  assert.equal(questionsByText.size,80);
+  const seenSubjects={engine:0,chassis:0,electrical:0,eco:0};
+  for(let i=0;i<80;i++){
+    const q=questionsByText.get(els.questionText.textContent);
+    assert.ok(q,"question selected from the 80-question expected bank");
+    seenSubjects[q.subject]++;
+    const correct=q.choices[q.answer-1];
+    const node=els.answerChoices.children.find(el=>el.children[1].textContent===correct);
+    assert.ok(node,"displayed choice was reshuffled but correct originalIndex retained");
+    await node.click();
+    if(i===0) {
+      await els.nextBtn.click();
+      assert.equal(els.quizProgress.textContent,"2 / 80");
+      await els.previousBtn.click();
+      assert.equal(els.quizProgress.textContent,"1 / 80");
+    }
+    await els.nextBtn.click();
+  }
+  assert.deepEqual(seenSubjects,{engine:20,chassis:20,electrical:20,eco:20});
+  assert.ok(els.resultScore.textContent.includes("80 / 80문제"),"full exam score");
+  assert.ok(els.resultStats.children.some(x=>x.textContent.includes("학습용 합격 기준 충족")),"pass rule");
+  assert.equal(els.resultGrid.children.length,80);
+  assert.equal(els.resultStats.children.filter(x=>x.className==="exam-subject-score").length,4);
+  await els.retryAllBtn.click();
+  assert.ok(els.quizSource.textContent.includes("120:00"),"retry keeps full exam duration");
+  for(let i=0;i<80;i++) await els.nextBtn.click();
+  assert.ok(els.resultScore.textContent.includes("0 / 80문제"),"unanswered counted incorrect");
+  assert.ok(els.resultStats.children.some(x=>x.textContent.includes("학습용 합격 기준 미달")),"fail rule");
+  assert.equal(els.resultGrid.children.length,80);
+  console.log("PASS: JSON auto-fetch, shuffle/remap, 80-question 4-subject exam, 120min timer, back navigation, per-subject pass/fail, unanswered.");
+
 })().catch(error=>{console.error(error);process.exitCode=1;});

@@ -90,6 +90,7 @@
         <div class="choices" id="answerChoices" role="group" aria-label="선택지"></div>
         <div id="feedback" class="feedback hidden" aria-live="polite"></div>
         <div class="quiz-actions">
+          <button id="previousBtn" class="secondary-btn hidden" type="button">이전 문제</button>
           <button id="nextBtn" class="primary-btn hidden" type="button">다음 문제</button>
           <button id="reviewBackBtn" class="secondary-btn hidden" type="button">결과로 돌아가기</button>
         </div>
@@ -114,9 +115,11 @@
     <section id="examView" class="view hidden">
       <div class="section-panel" style="margin-top:0">
         <p class="eyebrow">실전 모의고사</p><h2><img class="section-heading-icon" src="assets/exam-icon.png" alt="" aria-hidden="true" width="42" height="42">시험 방식 선택</h2>
-        <p>정식 문제은행이 준비되면 4과목 합계 80문항의 실전 시험 기능을 제공할 예정이야. 현재는 직접 작성한 시연용 8문항으로 동작만 확인할 수 있어.</p>
-        <div class="exam-banner" style="margin-top:20px"><div><strong>샘플 실전 시험</strong><br><span>8문항 · 제한 시간 10분 · 마지막에 정답 공개</span></div><button id="sampleExamBtn" class="primary-btn" type="button">시험 시작</button></div>
-        <div class="exam-banner" style="margin-top:10px"><div><strong>정식 실전 시험</strong><br><span>80문항 · 기출/예상문제 데이터 검수 후 제공</span></div><button class="secondary-btn" type="button" disabled>준비 중</button></div>
+        <p>4과목 각 20문항, 총 80문항을 제한 시간 120분으로 풀어 봐. 시험 중에는 정답과 해설을 숨기고 종료 후 과목별 점수·과락·평균을 확인해. 검수 전 원본 복원문제는 출제하지 않아.</p>
+        <p id="examStatus" class="helper" role="status">문제은행을 불러오는 중이야.</p>
+        <div class="exam-banner" style="margin-top:20px"><div><strong>자체제작 예상문제 모의고사</strong><br><span>80문항 · 120분 · 4과목 각 20문항 · 편집 검토 중인 학습용 문제</span></div><button id="expectedExamBtn" class="primary-btn" type="button" disabled>80문제 시작</button></div>
+        <div class="exam-banner" style="margin-top:10px"><div><strong>승인된 기출 복원 모의고사</strong><br><span>80문항 · 120분 · 기술·게시 승인된 문제가 과목별 20문항 이상 등록되면 활성화</span></div><button id="approvedExamBtn" class="secondary-btn" type="button" disabled>검수 대기</button></div>
+        <div class="exam-banner" style="margin-top:10px"><div><strong>샘플 실전 시험</strong><br><span>8문항 · 10분 · 마지막에 정답 공개</span></div><button id="sampleExamBtn" class="secondary-btn" type="button">샘플 시작</button></div>
       </div>
     </section>
 
@@ -137,6 +140,6 @@
     </section>
   </main>
   <script src="quiz-utils.js?v=1.0.0" defer></script>
-  <script src="app.js?v=1.3.0" defer></script>
+  <script src="app.js?v=1.4.0" defer></script>
 </body>
 </html>
