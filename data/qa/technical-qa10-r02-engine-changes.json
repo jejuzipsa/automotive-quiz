@@ -1,0 +1,66 @@
+{
+  "batch": "QA10-engine-r02-01-to-20",
+  "date": "2026-11-23",
+  "source_hold_additions": [
+    {
+      "id": "auto-made-r02-s01-q01",
+      "subject": "engine",
+      "suggested_subject": "chassis",
+      "old_subject_review": null,
+      "new_subject_review": {
+        "status": "hold_do_not_publish",
+        "current_subject": "engine",
+        "suggested_subject": "chassis",
+        "reason": "문항은 타이어 냉간 권장 공기압/적재조건에 관한 내용으로 엔진의 점검·정비보다 섀시·타이어 정비의 직접 영역에 해당할 가능성이 높음",
+        "classification_verdict": "pending_curriculum_specific_manual_review",
+        "qa10_manual_screening": "likely_cross_subject_engine_to_chassis",
+        "qa10_proposed_action": "verify Q-net 2025-2027 syllabus, then reclassify or replace within original source constraints; do not publish",
+        "qa10_reference_url": "https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070",
+        "qa10_tire_reference_url": "https://www.nhtsa.gov/vehicle-safety/tires"
+      },
+      "question_unchanged": true,
+      "technical_final_approval": false
+    }
+  ],
+  "editorial_corrections": [
+    {
+      "id": "auto-made-r02-s01-q07",
+      "subject": "engine",
+      "round": 2,
+      "question_number": 7,
+      "before": {
+        "question": "분리한 디젤 인젝터의 분무 형상과 개방압을 시험하려 한다. 적합한 장비는?",
+        "choices": [
+          "분사 방식에 맞는 전용 노즐·인젝터 시험장비",
+          "휠 밸런서",
+          "배터리 충전기",
+          "브레이크 오일 수분계"
+        ],
+        "answer": 1,
+        "reason": "인젝터의 분사압·분사량·분무 패턴은 형식에 맞는 전용 장비로 시험한다. 기계식 노즐과 커먼레일 인젝터는 시험 방법과 안전 규정이 다르다.",
+        "key_point": "인젝터 단품 검사는 종류별 전용 시험장비를 쓴다.",
+        "correct_choice": "분사 방식에 맞는 전용 노즐·인젝터 시험장비"
+      },
+      "after": {
+        "question": "분리한 기계식 디젤 분사노즐의 개방압과 분무 형상을 확인하려 한다. 적합한 시험장비는?",
+        "choices": [
+          "해당 기계식 분사노즐용 개방압·분무시험기",
+          "커먼레일 연료레일 압력 데이터만 읽는 진단기",
+          "분사노즐의 구동 코일 저항만 확인하는 전기 측정기",
+          "실린더 압축압력만 측정하는 압축압력 게이지"
+        ],
+        "answer": 1,
+        "reason": "기계식 디젤 분사노즐은 규격에 맞는 전용 노즐 시험기에서 개방압과 분무 상태를 점검할 수 있다. 반면 전자제어 커먼레일 인젝터는 구조와 작동 방식이 다르므로 동일한 '개방압 시험' 절차를 일반화하지 않고 전용 시험대와 제조사 정비정보를 사용한다. 연료레일 데이터 확인, 코일 저항만 측정, 실린더 압축압력 측정으로는 분리된 기계식 노즐의 개방압과 분무 형상을 함께 검증할 수 없다.",
+        "key_point": "기계식 분사노즐의 개방압·분무시험과 커먼레일 인젝터 시험은 구분해야 한다.",
+        "correct_choice": "해당 기계식 분사노즐용 개방압·분무시험기"
+      },
+      "source_urls": [
+        "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+        "https://ap.boschaftermarket.com/sg/en/equipment/test-equipment/test-benches-and-tools/eps-205"
+      ],
+      "correction_reason": "Differentiate mechanical nozzle opening-pressure/spray inspection from electronic common-rail bench testing; retain correct answer index 1",
+      "technical_final_approval": false,
+      "public_release": false
+    }
+  ]
+}
