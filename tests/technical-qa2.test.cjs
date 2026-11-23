@@ -7,6 +7,7 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const subjects=['engine','chassis','electrical','eco'];
 const changes=read('data/qa/technical-qa2-changes.json');
 const qa15ById=new Map(read('data/qa/technical-qa15-r03-engine-edits.json').edits.map(x=>[x.id,x]));
+const qa18ById=new Map([...read('data/qa/technical-qa18-r04-chassis-edits.json').editorial_corrections,...read('data/qa/technical-qa18-r04-electrical-edits-and-holds.json').editorial_edits].map(x=>[x.id,x]));
 const falsePositive=read('data/qa/technical-qa2-false-positive.json');
 const classifications=read('data/qa/technical-qa2-classifications.json');
 const firstPass=read('data/qa/technical-qa2-firstpass-evidence.json');
@@ -46,13 +47,13 @@ for(const q of qMap.values()){
   if(q.subject_classification_review){holds++;assert.equal(q.subject_classification_review.status,'hold_do_not_publish');}
   if(q.technical_reference_first_pass){firstPassed++;assert.equal(q.technical_reference_first_pass.status,'source_supported_needs_final_editor_signoff');}
 }
-assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,51);assert.equal(firstPassed,7); // 47 historical + QA10 + QA12 + QA17 two holds
+assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,52);assert.equal(firstPassed,7); // 47 historical + QA10 + QA12 + QA17 two + QA18 engine-idle hold
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
- const later=qa15ById.get(change.id);
+ const later=qa15ById.get(change.id)||qa18ById.get(change.id);
  if(later){
-  assert.equal(later.before.question,change.after.question,"QA15 must supersede exact QA2 question");
+  assert.equal(later.before.question,change.after.question,"Later QA15/18 must supersede exact QA2 question");
   assert.deepEqual(later.before.choices,change.after.choices);
   assert.equal(later.before.reason,change.after.reason);
   assert.equal(q.question,later.after.question);
