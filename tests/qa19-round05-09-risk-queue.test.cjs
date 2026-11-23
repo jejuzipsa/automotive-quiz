@@ -74,7 +74,7 @@ for(let i=0;i<full.length;i++){
   if(score>=.55){
    const item={other_id:b.id,jaccard:+score.toFixed(3),same_subject:a.subject===b.subject,same_round:a.round===b.round};
    candidateDuplicates.get(a.id).push(item);
-   candidateDuplicates.get(b.id).push({other_id:a.id,...item});
+   candidateDuplicates.get(b.id).push({...item,other_id:a.id});
   }
  }
 }
