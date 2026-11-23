@@ -1034,5 +1034,31 @@
     "qa8_audit": "data/qa/technical-qa8-eco-r01-option-audit.json",
     "qa8_report": "docs/TECHNICAL_QA8.md",
     "next": "resolve r01 eco q7/q17 duplicate; round02 engine20 option-by-option technical primary-reference screening"
+  },
+  "technical_qa9": {
+    "date": "2026-11-23",
+    "batch": "round01_electrical_2_3_6_and_eco_17",
+    "actually_edited_questions": 4,
+    "changed_question_ids": [
+      "auto-made-r01-s03-q02",
+      "auto-made-r01-s03-q03",
+      "auto-made-r01-s03-q06",
+      "auto-made-r01-s04-q17"
+    ],
+    "historic_qa7_qa8_first_pass_evidence_retained": true,
+    "stale_source_verification_removed_from_current_drafts": true,
+    "revised_questions_pending_new_independent_choice_review": 4,
+    "round1_historical_firstpass_questions": 80,
+    "round1_historical_firstpass_options": 320,
+    "round1_current_latest_version_firstpass_needs_recheck_count": 4,
+    "round02_through_round09_technical_review_pending": 640,
+    "final_independent_technical_approvals": 0,
+    "public_past_exam_questions": 0,
+    "subject_holds_preserved": 47,
+    "qa23_original_unchanged": true,
+    "public_manifest_unchanged": true,
+    "change_ledger": "data/qa/technical-qa9-changes.json",
+    "report": "docs/TECHNICAL_QA9.md",
+    "next": "renew independent option technical reference review for 4 QA9 revised items; audit 2-9 rounds"
   }
 }

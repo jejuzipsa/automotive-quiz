@@ -5,6 +5,7 @@ const path=require("node:path");
 const root=path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const audit=read("data/qa/technical-qa7-electrical-r01-option-audit.json");
+const qa9ById=new Map(read("data/qa/technical-qa9-changes.json").map(x=>[x.id,x]));
 const qs=read("data/past/drafts/electrical.json");
 const es=read("data/explanations/drafts/electrical.json");
 assert.equal(audit.length,20);
@@ -19,18 +20,31 @@ for(let i=0;i<20;i++){
  assert.equal(q.id,row.id);
  assert.equal(q.id,e.id);
  assert.equal(row.question_number,i+1);
- assert.equal(row.question_at_review,q.question);
+ const later=qa9ById.get(q.id);
+ if(later){
+   assert.equal(row.question_at_review,later.before.question);
+   assert.equal(q.question,later.after.question);
+   assert.deepEqual(q.choices,later.after.choices);
+   assert.equal(q.qa9_revision.status,"editorial_revised_pending_new_option_review");
+   assert.equal(q.technical_verification_qa7,undefined);
+   assert.equal(e.technical_verification_qa7,undefined);
+   assert.equal(e.option_analysis_qa7,undefined);
+ }else assert.equal(row.question_at_review,q.question);
  assert.equal(row.correct_number,q.answer);
- assert.equal(row.correct_choice,q.choices[q.answer-1]);
+ assert.equal(row.correct_choice,later?later.before.choices[later.before.answer-1]:q.choices[q.answer-1]);
  assert.equal(e.correct_answer,q.answer);
- assert.equal(e.correct_choice,row.correct_choice);
- assert.equal(q.technical_verification_qa7.status,row.evidence_grade);
- assert.equal(e.technical_verification_qa7.status,row.evidence_grade);
- assert.deepEqual(e.option_analysis_qa7,row.options);
+ assert.equal(e.correct_choice,q.choices[q.answer-1]);
+ if(!later){
+   assert.equal(q.technical_verification_qa7.status,row.evidence_grade);
+   assert.equal(e.technical_verification_qa7.status,row.evidence_grade);
+   assert.deepEqual(e.option_analysis_qa7,row.options);
+ }
  assert.equal(row.options.length,4);
  assert.ok(row.source_urls.length>0);
- assert.equal(q.technical_verification_qa7.final_technical_approval,false);
- assert.equal(e.technical_verification_qa7.final_technical_approval,false);
+ if(!later){
+   assert.equal(q.technical_verification_qa7.final_technical_approval,false);
+   assert.equal(e.technical_verification_qa7.final_technical_approval,false);
+ }
  assert.equal(row.final_technical_approval,false);
  assert.equal(row.web_publication,false);
  assert.equal(q.publishable,false);
@@ -38,7 +52,7 @@ for(let i=0;i<20;i++){
  assert.equal(q.review_status,"editorial_draft");
  for(let j=0;j<4;j++){
    const o=row.options[j];assert.equal(o.number,j+1);
-   assert.equal(o.text,q.choices[j]);
+   assert.equal(o.text,later?later.before.choices[j]:q.choices[j]);
    assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");
    assert.ok(o.rationale.length>=16);
    options++;
