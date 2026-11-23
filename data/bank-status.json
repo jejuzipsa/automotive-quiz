@@ -1103,5 +1103,43 @@
     "corrections_ledger": "data/qa/technical-qa10-r02-engine-changes.json",
     "report": "docs/TECHNICAL_QA10.md",
     "next": "round02 chassis 20 options review; recheck QA9 four revised items; specialist review safety and classification holds"
+  },
+  "technical_qa11": {
+    "date": "2026-11-23",
+    "batch": "round02_chassis_01_to_20",
+    "option_level_firstpass_reviewed_questions": 20,
+    "option_level_firstpass_choice_rationales": 80,
+    "source_supported_first_pass": 11,
+    "pending_additional_model_or_syllabus_review": 9,
+    "pending_question_numbers": [
+      2,
+      4,
+      6,
+      7,
+      9,
+      12,
+      14,
+      15,
+      16
+    ],
+    "existing_subject_classification_holds_preserved": [
+      2,
+      4
+    ],
+    "new_subject_holds": 0,
+    "current_subject_holds_total": 48,
+    "current_final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "cumulative_historical_firstpass_question_count": 120,
+    "cumulative_historical_firstpass_option_count": 480,
+    "not_individually_firstpass_reviewed_question_count": 600,
+    "pending_QA9_updated_question_rereview": 4,
+    "question_text_rewrites_this_batch": 0,
+    "original_QA23_unmodified": true,
+    "public_manifest_unchanged": true,
+    "previous_expected_80_question_exam_unchanged": true,
+    "audit": "data/qa/technical-qa11-chassis-r02-option-audit.json",
+    "report": "docs/TECHNICAL_QA11.md",
+    "next": "round02 electrical 20 questions, then eco 20, and all rounds03-09"
   }
 }
