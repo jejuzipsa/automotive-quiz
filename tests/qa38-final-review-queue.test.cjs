@@ -30,7 +30,7 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    if(x.number!==j+1||x.text!==q.choices[j]||x.verdict!==(j+1===q.answer?"correct":"incorrect")||typeof x.rationale!=="string"||x.rationale.trim().length<10)
     issues.push({id,code:"option_mapping_mismatch",number:j+1});
   }
-  const urls=v.source_urls||e.reference_urls||[];
+  const urls=v.source_urls||v.reference_urls||e.reference_urls||[];
   if(!Array.isArray(urls)||urls.length===0)issues.push({id,code:"missing_reference_url"});
   else for(const url of urls)if(typeof url!=="string"||!/^https:\/\/[^ ]+\.[^ ]+/.test(url))issues.push({id,code:"bad_reference_url"});
   if(v.independent_final_technical_approval===true||v.final_technical_approval===true||v.web_publication===true||v.publishable===true)
@@ -49,7 +49,7 @@ for(let i=0;i<all.length;i++)for(let j=i+1;j<all.length;j++){
  if(Math.abs(normalized[i].length-normalized[j].length)>Math.max(16,.7*Math.min(normalized[i].length,normalized[j].length)))continue;
  let common=0;for(const g of left.size<right.size?left:right)if((left.size<right.size?right:left).has(g))common++;
  const score=common/(left.size+right.size-common||1);
- if(score>=.66)similar.push({a:a.id,b:b.id,score:+score.toFixed(3),type:"near_wording_candidate"});
+ if(score>=.53)similar.push({a:a.id,b:b.id,score:+score.toFixed(3),type:"near_wording_candidate"});
 }
 similar.sort((a,b)=>b.score-a.score||a.a.localeCompare(b.a));
 const answerDistribution=Object.fromEntries(subjects.map(subject=>[subject,[1,2,3,4].map(n=>all.filter(x=>x.subject===subject&&x.answer===n).length)]));
