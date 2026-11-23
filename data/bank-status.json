@@ -1060,5 +1060,48 @@
     "change_ledger": "data/qa/technical-qa9-changes.json",
     "report": "docs/TECHNICAL_QA9.md",
     "next": "renew independent option technical reference review for 4 QA9 revised items; audit 2-9 rounds"
+  },
+  "technical_qa10": {
+    "date": "2026-11-23",
+    "batch": "round02_engine_01_to_20",
+    "option_level_firstpass_reviewed_questions": 20,
+    "option_level_firstpass_choice_rationales": 80,
+    "source_supported_first_pass": 12,
+    "pending_additional_model_or_syllabus_review": 8,
+    "pending_question_numbers": [
+      1,
+      6,
+      7,
+      11,
+      12,
+      13,
+      14,
+      16
+    ],
+    "manual_editorial_fixes": 1,
+    "edited_ids": [
+      "auto-made-r02-s01-q07"
+    ],
+    "new_subject_holds": 1,
+    "new_subject_hold_ids": [
+      "auto-made-r02-s01-q01"
+    ],
+    "historical_qa1_qa2_subject_hold_count": 47,
+    "current_subject_hold_count": 48,
+    "current_subject_moves_finalized": 0,
+    "cumulative_historical_firstpass_reviewed_questions": 100,
+    "cumulative_historical_firstpass_choice_rationales": 400,
+    "current_version_previous_QA9_edits_pending_re_review": 4,
+    "total_never_option_reviewed_questions_remaining": 620,
+    "total_never_option_reviewed_choices_remaining": 2480,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "private_qa23_original_unchanged": true,
+    "public_manifest_unchanged": true,
+    "public_expected_practice_exam_80_unchanged": true,
+    "audit": "data/qa/technical-qa10-engine-r02-option-audit.json",
+    "corrections_ledger": "data/qa/technical-qa10-r02-engine-changes.json",
+    "report": "docs/TECHNICAL_QA10.md",
+    "next": "round02 chassis 20 options review; recheck QA9 four revised items; specialist review safety and classification holds"
   }
 }

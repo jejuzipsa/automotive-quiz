@@ -1,0 +1,873 @@
+[
+  {
+    "id": "auto-made-r02-s01-q01",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 1,
+    "question_at_review": "정비정보에 타이어 냉간 공기압이 지정되어 있다. 타이어에 공기를 주입할 때 기준으로 삼을 자료는?",
+    "correct_number": 3,
+    "correct_choice": "차량과 적재 조건에 맞는 제조사 권장 공기압",
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/tires",
+      "https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "현장에서 가장 단단해 보이는 느낌",
+        "verdict": "incorrect",
+        "rationale": "손의 감각만으로 차량 지정 냉간 공기압을 결정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 측면의 최대 허용압력만",
+        "verdict": "incorrect",
+        "rationale": "타이어 측면의 최대 허용압력은 차량 제조사 권장 주행 공기압과 같다고 단정할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "차량과 적재 조건에 맞는 제조사 권장 공기압",
+        "verdict": "correct",
+        "rationale": "차량의 권장 냉간 공기압 안내와 적재 조건에 맞는 값을 확인하는 것이 적절하다."
+      },
+      {
+        "number": 4,
+        "text": "옆에 주차된 다른 차의 공기압",
+        "verdict": "incorrect",
+        "rationale": "다른 차량의 공기압 설정은 해당 차량의 지정 기준을 대신하지 못한다."
+      }
+    ],
+    "hold_reasons": [
+      "subject_classification_hold",
+      "타이어 공기압 문항이 엔진정비로 잘못 분류되었을 가능성이 높아 새로운 과목 분류 보류를 부여. Q-Net 출제기준 내 타이어·섀시 영역 확인 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q02",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 2,
+    "question_at_review": "웨이스트게이트가 있는 배기터빈 과급 엔진에서 해당 밸브의 주된 제어 목적은?",
+    "correct_number": 1,
+    "correct_choice": "터빈으로 흐르는 배기가스 일부를 우회시켜 과급압 상승을 제어한다",
+    "source_urls": [
+      "https://www.garrettmotion.com/knowledge-center-category/racing-and-performance/how-turbocharger-wastegates-work-internal-vs-external/",
+      "https://www.garrettmotion.com/knowledge-center-category/oem/basic/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "터빈으로 흐르는 배기가스 일부를 우회시켜 과급압 상승을 제어한다",
+        "verdict": "correct",
+        "rationale": "웨이스트게이트는 일부 배기가스를 터빈 밖으로 우회시켜 터보 회전과 과급압을 제어한다."
+      },
+      {
+        "number": 2,
+        "text": "냉각수를 연소실로 분사한다",
+        "verdict": "incorrect",
+        "rationale": "웨이스트게이트는 냉각수를 연소실에 분사하는 밸브가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "점화플러그 간극을 조절한다",
+        "verdict": "incorrect",
+        "rationale": "점화플러그 간극 조정은 웨이스트게이트의 구동 기능이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "인터쿨러를 회전시켜 흡입 공기를 보낸다",
+        "verdict": "incorrect",
+        "rationale": "인터쿨러는 흡기 냉각 장치로 웨이스트게이트가 이를 회전시키지는 않는다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q03",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 3,
+    "question_at_review": "윤활식 터보차저를 교환한 직후 재시동 전 확인할 사항으로 우선순위가 높은 것은?",
+    "correct_number": 2,
+    "correct_choice": "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
+    "source_urls": [
+      "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-2-garrett-turbocharger-installation-guide/",
+      "https://www.garrettmotion.com/knowledge-center-category/turbo-replacement/part-1-garrett-turbocharger-installation-guide/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "터보 오일 배출호스를 분리한 채 시동한다",
+        "verdict": "incorrect",
+        "rationale": "오일 회수라인을 빼고 시동하면 윤활유 누출·오일 부족 위험이 있어 적절하지 않다."
+      },
+      {
+        "number": 2,
+        "text": "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
+        "verdict": "correct",
+        "rationale": "터보 설치 후 공급·회수라인 체결과 초기 윤활·프라이밍 절차를 확인하는 것이 적절하다."
+      },
+      {
+        "number": 3,
+        "text": "연료압력이 정상이면 윤활유 상태는 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "연료압력이 정상이라도 터보 베어링 윤활 부족 가능성을 배제할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "시동 직후 최대 과급으로만 베어링 상태를 확인한다",
+        "verdict": "incorrect",
+        "rationale": "장착 직후 최대 과급 운전만으로 베어링 상태를 점검하는 것은 설치 지침과 맞지 않는다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q04",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 4,
+    "question_at_review": "스캐너에 P계열 고장코드가 저장되어 있다. 부품을 주문하기 전에 코드 의미를 확인하는 올바른 방법은?",
+    "correct_number": 4,
+    "correct_choice": "차량별 진단 절차·코드 정의와 프리즈프레임을 확인한다",
+    "source_urls": [
+      "https://www.boschdiagnostics.com/products/bosch-obd-1150",
+      "https://www.innova.com/blogs/diagnostics-101/freeze-frame-pid-definitions"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "부품 가격만 비교한다",
+        "verdict": "incorrect",
+        "rationale": "부품 가격만 비교해도 P계열 진단코드의 실제 고장 부위를 확인할 수는 없다."
+      },
+      {
+        "number": 2,
+        "text": "모든 P코드는 동일 고장이라고 단정한다",
+        "verdict": "incorrect",
+        "rationale": "P 계열은 구동계 관련 범주이지만 각 코드·차종별 정의가 다르므로 하나의 고장으로 볼 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "코드 숫자가 비슷하면 교환한다",
+        "verdict": "incorrect",
+        "rationale": "번호가 비슷한 코드라도 실제 점검 조건이 같다고 단정해 부품을 교환할 수는 없다."
+      },
+      {
+        "number": 4,
+        "text": "차량별 진단 절차·코드 정의와 프리즈프레임을 확인한다",
+        "verdict": "correct",
+        "rationale": "제조사 코드 정의, 진단 절차, 결함 당시 프리즈프레임 데이터가 적절한 진단 단서다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q05",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 5,
+    "question_at_review": "크랭크샤프트 위치센서(CKP) 신호가 불규칙하다. 점화 시기 제어에 영향을 주는 이유는?",
+    "correct_number": 2,
+    "correct_choice": "ECU가 회전 위치·속도 정보를 기준으로 점화 시점을 계산하기 때문",
+    "source_urls": [
+      "https://www.boschautoparts.com/g/engine-management-sensors"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "CKP가 타이어 속도를 측정하기 때문",
+        "verdict": "incorrect",
+        "rationale": "크랭크샤프트 위치 센서는 타이어 회전속도 측정 장치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "ECU가 회전 위치·속도 정보를 기준으로 점화 시점을 계산하기 때문",
+        "verdict": "correct",
+        "rationale": "ECU는 CKP 회전 위치·속도 정보를 점화시기 및 분사 순서 계산에 활용한다."
+      },
+      {
+        "number": 3,
+        "text": "CKP가 냉각수 압력을 바꾸기 때문",
+        "verdict": "incorrect",
+        "rationale": "CKP 센서는 냉각수 압력을 기계적으로 조절하는 장치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "CKP가 흡기 필터의 입자를 제거하기 때문",
+        "verdict": "incorrect",
+        "rationale": "CKP의 주 기능은 흡기 필터에 쌓인 미세입자를 제거하는 것이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q06",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 6,
+    "question_at_review": "리턴리스 연료 공급계가 적용된 차량의 압력조절기 위치를 확인한다. 합리적인 정비 판단은?",
+    "correct_number": 3,
+    "correct_choice": "차종에 따라 연료펌프 모듈 내부 등에 위치할 수 있어 정비도를 확인한다",
+    "source_urls": [
+      "https://www.delphiautoparts.com/parts-catalog/part/fuel-injection-pressure-regulator-fp10075",
+      "https://www.hella.com/techworld/in/technical/car-electronics-and-electrics/kraftstoffaufbereitung/"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료압력조절기는 반드시 실린더헤드 바깥에 있다",
+        "verdict": "incorrect",
+        "rationale": "리턴리스 압력 조절기가 모든 차량의 실린더헤드 바깥에만 위치하지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "모든 차종에서 스로틀바디에 설치된다",
+        "verdict": "incorrect",
+        "rationale": "리턴리스 시스템의 압력 조절 위치가 모든 차종의 스로틀 바디에 고정되지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "차종에 따라 연료펌프 모듈 내부 등에 위치할 수 있어 정비도를 확인한다",
+        "verdict": "correct",
+        "rationale": "연료펌프 모듈 또는 연료공급계 다른 위치에 통합될 수 있어 해당 차량 배치를 확인해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "연료압력조절기는 항상 존재하지 않는 장치다",
+        "verdict": "incorrect",
+        "rationale": "리턴리스라는 이유만으로 연료 압력 제어 기능 자체가 없어지는 것은 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "압력조절기가 실제로 펌프 모듈에 통합되는 차종·회로 구성에 대한 직접 차량별 OEM 배치도 근거가 더 필요하다."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q07",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 7,
+    "question_at_review": "분리한 기계식 디젤 분사노즐의 개방압과 분무 형상을 확인하려 한다. 적합한 시험장비는?",
+    "correct_number": 1,
+    "correct_choice": "해당 기계식 분사노즐용 개방압·분무시험기",
+    "source_urls": [
+      "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+      "https://ap.boschaftermarket.com/sg/en/equipment/test-equipment/test-benches-and-tools/eps-205"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "해당 기계식 분사노즐용 개방압·분무시험기",
+        "verdict": "correct",
+        "rationale": "기계식 분사노즐의 개방압과 분무 상태는 해당 규격 노즐 전용 시험장비로 점검해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "커먼레일 연료레일 압력 데이터만 읽는 진단기",
+        "verdict": "incorrect",
+        "rationale": "커먼레일의 연료레일 압력값을 읽는 것만으로 분리된 기계식 노즐의 개방압·분무 형상은 판단할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "분사노즐의 구동 코일 저항만 확인하는 전기 측정기",
+        "verdict": "incorrect",
+        "rationale": "전기 코일 저항만으로 기계식 노즐의 개방압·분무 형상을 직접 평가할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "실린더 압축압력만 측정하는 압축압력 게이지",
+        "verdict": "incorrect",
+        "rationale": "실린더 압축압력 측정기는 분사노즐의 연료 분무·개방압 시험장비가 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "원래 문항이 기계식 노즐과 커먼레일 시험을 혼동할 수 있어 QA10에서 기계식으로 명시해 교정함. 바뀐 4선지의 OEM 기준·고압 안전 검증은 아직 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q08",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 8,
+    "question_at_review": "스로틀 밸브가 거의 닫힌 공회전 상태를 나타내는 센서 정보를 골라야 한다. 가장 직접적인 것은?",
+    "correct_number": 4,
+    "correct_choice": "스로틀 개도(TPS) 또는 전자스로틀 위치값",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/throttle-potentiometer/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료탱크의 잔여량",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 잔량은 스로틀 플레이트 개방각도를 직접 나타내지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "냉각수 저장탱크 압력",
+        "verdict": "incorrect",
+        "rationale": "냉각수 저장탱크 압력은 스로틀 위치를 직접 검출하는 값이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "휠 회전속도",
+        "verdict": "incorrect",
+        "rationale": "휠 회전속도는 스로틀 밸브 개방 정도와 다른 계측량이다."
+      },
+      {
+        "number": 4,
+        "text": "스로틀 개도(TPS) 또는 전자스로틀 위치값",
+        "verdict": "correct",
+        "rationale": "TPS 또는 전자스로틀 위치 데이터는 해당 차량의 스로틀 개도와 직접 관련된다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q09",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 9,
+    "question_at_review": "디젤 센서의 펄스 신호가 주행 중 순간적으로 사라진다. 재현 파형 분석에 유용한 장비는?",
+    "correct_number": 3,
+    "correct_choice": "자동차용 오실로스코프",
+    "source_urls": [
+      "https://www.fluke.com/en/learn/blog/predictive-maintenance/beyond-the-multimeter-part-4",
+      "https://www.fluke.com/en-us/learn/blog/oscilloscopes/abcs-of-portable-oscilloscopes-part-5-capturing-intermittent-and-random-events-with-a-portable-oscilloscope"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "제동액 끓는점 시험기",
+        "verdict": "incorrect",
+        "rationale": "브레이크유 끓는점 시험기는 디젤 펄스 센서의 전기 신호 파형 장비가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기주입기",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기주입기만으로 센서 펄스의 순간 소실을 기록할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "자동차용 오실로스코프",
+        "verdict": "correct",
+        "rationale": "자동차용 오실로스코프는 시간에 따른 펄스·진폭·순간 신호 소실 등을 관찰할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "헤드램프 광도계",
+        "verdict": "incorrect",
+        "rationale": "헤드램프 광도계는 전기 센서 펄스파형이 아닌 조명 광도를 측정한다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q10",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 10,
+    "question_at_review": "일반적인 12V 전기계통의 디젤 예열플러그 회로를 설명한 것은?",
+    "correct_number": 2,
+    "correct_choice": "저전압 전원에서 전류를 흘려 발열하며 제어 방식은 차종별로 다르다",
+    "source_urls": [
+      "https://www.ngkntk.com/products/glow-plugs/",
+      "https://www.ngkntk.com/newsroom/feature/emea/2025/ngk-glow-plugs-under-the-spotlight/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "항상 수 kV의 점화전압으로 작동한다",
+        "verdict": "incorrect",
+        "rationale": "일반 디젤 예열플러그는 점화플러그와 같이 수 kV의 스파크를 생성하는 장치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "저전압 전원에서 전류를 흘려 발열하며 제어 방식은 차종별로 다르다",
+        "verdict": "correct",
+        "rationale": "예열플러그는 전류에 의한 발열로 저온 시동·초기 연소를 돕고 작동전압은 설계별로 다르다."
+      },
+      {
+        "number": 3,
+        "text": "휘발유 스파크플러그와 동일하게 연소실에서 불꽃을 만든다",
+        "verdict": "incorrect",
+        "rationale": "디젤 글로우플러그는 가솔린 점화플러그처럼 공극에서 방전 불꽃을 만드는 방식과 다르다."
+      },
+      {
+        "number": 4,
+        "text": "엔진을 식히기 위해 공기를 압축한다",
+        "verdict": "incorrect",
+        "rationale": "디젤 예열플러그는 흡입 공기를 기계적으로 압축해 엔진을 냉각하는 장치가 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q11",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 11,
+    "question_at_review": "수온 경고와 냉각수 부족이 동시에 관찰된다. 우선 취할 조치는?",
+    "correct_number": 1,
+    "correct_choice": "차량을 안전하게 정지·냉각하고 누설·수위를 확인한다",
+    "source_urls": [
+      "https://www.gates.com/us/en/other-products/caps-and-thermostats/radiator-caps.p.7410-000000-000015.html",
+      "https://www.me.ford.com/en/sau/ownersite/driving-tips/"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "차량을 안전하게 정지·냉각하고 누설·수위를 확인한다",
+        "verdict": "correct",
+        "rationale": "냉각수 부족·고온 경고 시 차량을 안전하게 정지·냉각한 뒤 점검하는 방향이 적절하다."
+      },
+      {
+        "number": 2,
+        "text": "뜨거운 라디에이터 캡을 곧바로 열어 증기를 뺀다",
+        "verdict": "incorrect",
+        "rationale": "뜨겁고 가압된 냉각계의 캡을 바로 열면 증기·고온 냉각수 분출로 화상을 입을 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "엔진오일을 냉각수 탱크에 붓는다",
+        "verdict": "incorrect",
+        "rationale": "엔진오일을 냉각수 보조탱크에 붓는 행위는 냉각 부족의 정비 조치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "냉각팬 릴레이를 제거한 채 운행한다",
+        "verdict": "incorrect",
+        "rationale": "냉각팬 릴레이를 제거한 채 계속 운행하면 과열 방지 제어가 저해될 수 있다."
+      }
+    ],
+    "hold_reasons": [
+      "차종별 과열 경고·냉각수 점검·개방 조건을 OEM 매뉴얼로 검증하기 전까지 안전 절차로 승인하지 않음."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q12",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 12,
+    "question_at_review": "부스트 압력센서 실측치가 ECU 표시와 다른지 검증한다. 타당한 비교 절차는?",
+    "correct_number": 4,
+    "correct_choice": "지정된 기준 조건에서 교정된 압력계와 ECU 데이터를 함께 비교한다",
+    "source_urls": [
+      "https://www.fluke.com/en-au/learn/blog/digital-multimeters/how-to-test-map-or-bp-map-sensors-with-a-multimeter",
+      "https://www.garrettmotion.com/ko/news/newsroom/article/how-to-select-a-turbo-part-2-understanding-calculations-to-turbo-any-engine/"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "표시 수치를 임의로 두 배로 환산한다",
+        "verdict": "incorrect",
+        "rationale": "근거 없이 진단 표시값을 두 배로 환산해서는 센서 출력 오류를 검증할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "센서 커넥터를 무조건 단락한다",
+        "verdict": "incorrect",
+        "rationale": "센서 커넥터를 무조건 단락하면 회로 손상 가능성이 있어 적절한 검증 방법이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "타이어 둘레 길이만 비교한다",
+        "verdict": "incorrect",
+        "rationale": "타이어 둘레만 비교해도 흡기 부스트 압력과 ECU 측정치 차이를 확인할 수는 없다."
+      },
+      {
+        "number": 4,
+        "text": "지정된 기준 조건에서 교정된 압력계와 ECU 데이터를 함께 비교한다",
+        "verdict": "correct",
+        "rationale": "동일 조건에서 검증된 압력계 실측치와 ECU의 절대압·게이지압 표현을 구분하여 비교하는 것이 적절하다."
+      }
+    ],
+    "hold_reasons": [
+      "압력 측정 위치·부하·기압·절대압과 게이지압 변환·센서 타입은 OEM 서비스 기준 필요. 오답 3번 이질적."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q13",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 13,
+    "question_at_review": "ECU 탈착을 마치고 차량 전원을 다시 연결한다. 작업 절차로 올바른 것은?",
+    "correct_number": 2,
+    "correct_choice": "정비 절차의 연결 순서와 체결·접지 상태를 확인한 뒤 전원을 복원",
+    "source_urls": [
+      "https://www.boschdiagnostics.com/products/bosch-obd-1150"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "커넥터 체결 확인 없이 곧바로 시동",
+        "verdict": "incorrect",
+        "rationale": "ECU 커넥터 장착 상태를 확인하지 않고 시동하는 것은 적절한 복구 절차가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "정비 절차의 연결 순서와 체결·접지 상태를 확인한 뒤 전원을 복원",
+        "verdict": "correct",
+        "rationale": "차량 지정 절차에 따른 커넥터 체결·접지 확인과 전원 복원이 우선이다."
+      },
+      {
+        "number": 3,
+        "text": "차량을 반드시 시동 상태로 두고 ECU를 연결",
+        "verdict": "incorrect",
+        "rationale": "시동을 걸어 놓은 상태에서 ECU 커넥터를 연결하는 것은 모든 차량의 정상 조립 절차가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "에어백 전원을 강제로 유지하며 ECU 장착",
+        "verdict": "incorrect",
+        "rationale": "에어백 전원 강제 유지가 ECU 재장착에 필요한 보편적 안전 절차는 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "Bosch 진단기 자료는 ECU 전원 재연결의 OEM 안전지침을 직접 증명하지 못함. 해당 차종 정비매뉴얼 확인 전 최종 승인 금지."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q14",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 14,
+    "question_at_review": "엔진 실린더헤드 상부에서 규칙적인 태핏 소음이 들린다. 점검 우선순위를 정할 때 참고할 대상은?",
+    "correct_number": 3,
+    "correct_choice": "밸브 간극·로커암·캠 등 밸브구동계 상태를 확인한다",
+    "source_urls": [
+      "https://us.haynes.com/blogs/tips-tutorials/10-nasty-car-noises-and-what-they-mean",
+      "https://us.haynes.com/blogs/tips-tutorials/troubleshooting-101"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "클러치 릴리스베어링의 소음만 단독 판정한다",
+        "verdict": "incorrect",
+        "rationale": "엔진 헤드 상부 태핏 소음을 클러치 릴리스베어링만의 결함으로 단정할 근거가 없다."
+      },
+      {
+        "number": 2,
+        "text": "차속센서 신호를 먼저 교환한다",
+        "verdict": "incorrect",
+        "rationale": "차속센서를 교환하는 행위는 상부 밸브기구 기계소음 점검을 대체하지 못한다."
+      },
+      {
+        "number": 3,
+        "text": "밸브 간극·로커암·캠 등 밸브구동계 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "밸브 간극·태핏/로커암·캠 등의 밸브구동계는 규칙적인 상부 태핑 소음의 우선 점검 대상이다."
+      },
+      {
+        "number": 4,
+        "text": "차동기어 톱니 접촉무늬부터 확인한다",
+        "verdict": "incorrect",
+        "rationale": "디퍼렌셜 톱니의 접촉 무늬 점검만으로 엔진 실린더헤드 소음을 판정할 수 없다."
+      }
+    ],
+    "hold_reasons": [
+      "밸브기구 외에도 윤활 부족·체인/부속기구·차종별 소음 가능성, 실제 서비스 진단 조건 확인 필요. 오답들이 지나치게 쉬운 편."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q15",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 15,
+    "question_at_review": "배기가스 재순환장치(EGR)가 장착된 가솔린 엔진을 정비한다. 옳은 판단은?",
+    "correct_number": 2,
+    "correct_choice": "가솔린과 디젤 엔진 모두 설계에 따라 EGR을 사용할 수 있다",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/exhaust-gas-recirculation/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "EGR은 디젤 엔진에만 존재한다",
+        "verdict": "incorrect",
+        "rationale": "EGR은 디젤뿐 아니라 설계에 따라 가솔린 엔진에도 적용된다."
+      },
+      {
+        "number": 2,
+        "text": "가솔린과 디젤 엔진 모두 설계에 따라 EGR을 사용할 수 있다",
+        "verdict": "correct",
+        "rationale": "가솔린·디젤 엔진 모두 설계에 따라 EGR을 사용할 수 있다는 진술이 맞다."
+      },
+      {
+        "number": 3,
+        "text": "가솔린 엔진의 EGR은 반드시 점화플러그를 대체한다",
+        "verdict": "incorrect",
+        "rationale": "EGR이 가솔린 엔진의 점화플러그를 필수적으로 대체하는 장치는 아니다."
+      },
+      {
+        "number": 4,
+        "text": "EGR은 모든 차종에서 같은 장착 위치를 가진다",
+        "verdict": "incorrect",
+        "rationale": "EGR은 모든 차량에 같은 위치로 장착되는 단일 부품 규격이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q16",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 16,
+    "question_at_review": "실린더헤드 뒤쪽부터 오일이 내려오는 흔적이 보인다. 처음에 취할 합리적 절차는?",
+    "correct_number": 4,
+    "correct_choice": "세척·관찰 후 밸브커버 가스킷과 주변 상부 밀봉부를 확인한다",
+    "source_urls": [
+      "https://www.felpro.com/gaskets-101/common-oil-gasket-leaks.html",
+      "https://www.felpro.com/technical/tecblogs/leak-inspection-checklist.html"
+    ],
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "오일을 모두 배출하고 누유 상태를 무시한다",
+        "verdict": "incorrect",
+        "rationale": "누유 원인을 확인하지 않고 오일을 배출한 뒤 무시하는 행동은 올바른 진단이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "냉각팬을 강제로 회전시킨다",
+        "verdict": "incorrect",
+        "rationale": "냉각팬을 강제 구동하는 것만으로 누유 발생 위치를 찾을 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "누유 원인을 헤드가스켓 하나로 단정한다",
+        "verdict": "incorrect",
+        "rationale": "흘러내린 오일의 흔적만으로 헤드가스켓 하나를 누유 원인으로 확정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "세척·관찰 후 밸브커버 가스킷과 주변 상부 밀봉부를 확인한다",
+        "verdict": "correct",
+        "rationale": "오일 누유 시작점을 추적하고 밸브커버 가스킷 등 상부 밀봉부를 함께 점검한다."
+      }
+    ],
+    "hold_reasons": [
+      "상부 누유의 실제 시작 위치는 차종·엔진 구성을 따라 달라서 진단절차 근거 보완 필요. 선택지의 관련성이 낮은 부분도 편집 검토."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q17",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 17,
+    "question_at_review": "디젤 SCR 후처리에서 질소산화물 저감 반응에 기여하는 물질은?",
+    "correct_number": 1,
+    "correct_choice": "요소수에서 만들어진 암모니아가 촉매에서 NOx 환원에 관여한다",
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "요소수에서 만들어진 암모니아가 촉매에서 NOx 환원에 관여한다",
+        "verdict": "correct",
+        "rationale": "SCR의 요소수는 암모니아 생성·NOx 환원 반응에 사용된다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기압이 직접 NOx를 산화한다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압 자체가 촉매에서 NOx를 화학적으로 산화·제거하는 환원제는 아니다."
+      },
+      {
+        "number": 3,
+        "text": "인젝터 오일이 대기 중 질소를 흡수한다",
+        "verdict": "incorrect",
+        "rationale": "인젝터 오일이 대기 중 질소를 직접 흡수해 SCR NOx를 제거하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "DPF가 수소를 분해해 엔진 마력을 올린다",
+        "verdict": "incorrect",
+        "rationale": "DPF는 수소 분해로 엔진 마력을 올리는 장치가 아니라 입자상 물질을 처리한다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q18",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 18,
+    "question_at_review": "가솔린 배출가스 검사에서 일산화탄소(CO)의 생성 원인을 설명한 것은?",
+    "correct_number": 3,
+    "correct_choice": "연료의 탄소가 불완전하게 산화될 때 생성되는 가스",
+    "source_urls": [
+      "https://www.epa.gov/indoor-air-quality-iaq/what-carbon-monoxide"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "질소가 고체로 변하는 현상",
+        "verdict": "incorrect",
+        "rationale": "연료 탄소의 불완전 산화와 달리 질소의 고체화는 CO 생성 반응이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "냉각수가 증발해 생긴 가스",
+        "verdict": "incorrect",
+        "rationale": "냉각수 증발은 CO 분자(C와 O로 구성) 생성의 일반적 메커니즘이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "연료의 탄소가 불완전하게 산화될 때 생성되는 가스",
+        "verdict": "correct",
+        "rationale": "탄소를 포함하는 연료가 불완전 연소할 때 일산화탄소가 발생할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "배기관 내부 철이 녹아 나온 분말",
+        "verdict": "incorrect",
+        "rationale": "배기관 철 녹분이 CO 기체의 화학적 생성 원인이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q19",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 19,
+    "question_at_review": "디젤 배출가스 후처리장치 DPF가 주로 다루는 오염물질은?",
+    "correct_number": 2,
+    "correct_choice": "입자상 물질(매연·PM)",
+    "source_urls": [
+      "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P10073LT.TXT",
+      "https://www.boschautoparts.com/en/powertrain"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "일산화탄소의 모든 분자",
+        "verdict": "incorrect",
+        "rationale": "DPF의 핵심 기능은 CO 가스의 모든 분자를 직접 포집하는 것이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "입자상 물질(매연·PM)",
+        "verdict": "correct",
+        "rationale": "디젤 매연·PM과 같은 입자상 물질을 포집하는 것이 DPF의 목적이다."
+      },
+      {
+        "number": 3,
+        "text": "대기 중 산소",
+        "verdict": "incorrect",
+        "rationale": "주변 공기의 산소 전체가 DPF의 주요 제거 대상은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 트레드 고무",
+        "verdict": "incorrect",
+        "rationale": "타이어 트레드 고무는 배기가스 속 입자상 오염물질의 주요 DPF 제거 대상으로 볼 수 없다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s01-q20",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 20,
+    "question_at_review": "EGR 밸브가 열리면 일부 배기가스가 흡기 측으로 유입된다. 기대하는 주된 효과는?",
+    "correct_number": 4,
+    "correct_choice": "연소 최고온도 저하를 통한 NOx 생성 억제",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/exhaust-gas-recirculation/",
+      "https://www.gov.uk/government/publications/vehicle-market-surveillance-unit-emissions-testing-results-2025/vehicle-market-surveillance-unit-results-of-the-2025-emissions-programme"
+    ],
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "전조등 전압 증가",
+        "verdict": "incorrect",
+        "rationale": "EGR 재순환의 목적이 전조등 전압을 직접 증가시키는 것은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "연료탱크 압력 일정 유지",
+        "verdict": "incorrect",
+        "rationale": "EGR은 연료탱크 압력을 일정하게 만드는 압력조절 장치가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "배기 소음만 0으로 감소",
+        "verdict": "incorrect",
+        "rationale": "EGR이 배기 소음을 항상 0으로 만드는 것이 주목적은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "연소 최고온도 저하를 통한 NOx 생성 억제",
+        "verdict": "correct",
+        "rationale": "배기가스 일부를 흡기에 재순환하면 연소 최고온도와 NOx 생성이 낮아질 수 있다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  }
+]
