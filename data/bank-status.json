@@ -1230,5 +1230,46 @@
     "technical_audit": "data/qa/technical-qa14-qa9-four-latest-option-audit.json",
     "report": "docs/TECHNICAL_QA14.md",
     "next": "round03 engine 20 question 80 option manufacturer-source firstpass"
+  },
+  "technical_qa15": {
+    "date": "2026-11-23",
+    "batch": "round03_engine_01_to_20",
+    "reviewed_questions": 20,
+    "choice_level_rationales": 80,
+    "source_supported_first_pass": 12,
+    "pending_additional_model_or_syllabus_review": 8,
+    "pending_question_numbers": [
+      4,
+      5,
+      6,
+      12,
+      13,
+      14,
+      15,
+      18
+    ],
+    "editorial_rewritten_questions": 2,
+    "rewritten_ids": [
+      "auto-made-r03-s01-q03",
+      "auto-made-r03-s01-q14"
+    ],
+    "independent_final_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "latest_version_firstpass_reviewed_cumulative": 180,
+    "latest_version_firstpass_options_cumulative": 720,
+    "remaining_unreviewed_by_options": 540,
+    "remaining_unreviewed_options": 2160,
+    "subject_hold_count": 49,
+    "legal_review_pending_question_numbers": [
+      15,
+      18
+    ],
+    "purchase_source_QA23_untouched": true,
+    "live_manifest_untouched": true,
+    "expected_exam_80_questions_untouched": true,
+    "audit": "data/qa/technical-qa15-engine-r03-option-audit.json",
+    "edits_ledger": "data/qa/technical-qa15-r03-engine-edits.json",
+    "report": "docs/TECHNICAL_QA15.md",
+    "next": "round03 chassis 20 option-level review and remaining 540 unreviewed 3-9 rounds"
   }
 }
