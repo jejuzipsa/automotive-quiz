@@ -9,6 +9,7 @@ const edits=read("data/qa/technical-qa10-r02-engine-changes.json");
 const questions=read("data/past/drafts/round02/engine.json");
 const explanations=read("data/explanations/drafts/round02/engine.json");
 const qa1Holds=read("data/qa/technical-qa1-subject-holds-expanded.json");
+const qa40ById=new Map(read("data/qa/technical-qa40-out-of-scope-replacements.json").map(x=>[x.id,x]));
 assert.equal(audit.length,20);
 assert.equal(questions.length,20);assert.equal(explanations.length,20);
 assert.equal(new Set(audit.map(x=>x.id)).size,20);
@@ -31,19 +32,19 @@ assert.equal(qa1Holds.length,47,"retain unchanged QA1 historical ledger of 47 ho
 assert.ok(!qa1Holds.some(x=>x.id===newHold.id));
 let optionCount=0,qa10Holds=0;
 for(let i=0;i<20;i++){
- const q=questions[i],e=explanations[i],a=audit[i];
+ const q=questions[i],e=explanations[i],a=audit[i],later=qa40ById.get(q.id);
  assert.equal(q.id,e.id);
  assert.equal(q.id,a.id);
  assert.equal(q.track,"past");assert.equal(q.subject,"engine");assert.equal(q.round,2);assert.equal(q.question_number,i+1);
  assert.equal(a.question_number,i+1);
- assert.equal(a.question_at_review,q.question);
+ assert.equal(a.question_at_review,later?later.before.question:q.question);
  assert.equal(a.correct_number,q.answer);
- assert.equal(a.correct_choice,q.choices[q.answer-1]);
+ assert.equal(a.correct_choice,later?later.before.correct_choice:q.choices[q.answer-1]);
  assert.equal(e.correct_answer,q.answer);
  assert.equal(e.correct_choice,q.choices[q.answer-1]);
  assert.equal(q.technical_verification_qa10.status,a.evidence_grade);
  assert.equal(e.technical_verification_qa10.status,a.evidence_grade);
- assert.deepEqual(e.option_analysis_qa10,a.options);
+ assert.deepEqual(e.option_analysis_qa10,later?later.after.option_analysis:a.options);
  assert.equal(a.options.length,4);
  assert.ok(a.source_urls.length>=1);
  assert.equal(q.technical_verification_qa10.independent_final_technical_approval,false);
@@ -56,7 +57,7 @@ for(let i=0;i<20;i++){
  if(a.evidence_grade==="needs_additional_model_or_syllabus_review"){qa10Holds++;assert.ok(a.hold_reasons.length>0);}
  for(let j=0;j<4;j++){
   const o=a.options[j];
-  assert.equal(o.number,j+1);assert.equal(o.text,q.choices[j]);
+  assert.equal(o.number,j+1);assert.equal(o.text,later?later.before.choices[j]:q.choices[j]);
   assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");
   assert.ok(o.rationale.length>=13);
   optionCount++;
