@@ -55,7 +55,7 @@ assert.ok(edited>=0&&edited<=28);assert.equal(held,47);
 for(const change of changes){
  const q=qmap.get(change.id),e=emap.get(change.id);
  assert.ok(q&&e);
- const qa2=qa2ById.get(change.id), qa5=qa5ById.get(change.id);
+ const qa2=qa2ById.get(change.id), qa5=qa5ById.get(change.id), qa9=qa9ById.get(change.id);
  if(qa2){
    assert.equal(qa2.before.question,change.after.question);
    assert.deepEqual(qa2.before.choices,change.after.choices);
