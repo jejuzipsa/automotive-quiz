@@ -1,0 +1,870 @@
+[
+  {
+    "id": "auto-made-r01-s03-q01",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 1,
+    "question_at_review": "차량 ECU 간 2선 차동 통신으로 식별자 우선순위에 따른 비파괴 중재를 사용하는 표준 네트워크는?",
+    "correct_number": 2,
+    "correct_choice": "CAN",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "LIN",
+        "verdict": "incorrect",
+        "rationale": "LIN은 일반적으로 단일선 저속 마스터·슬레이브 구성으로 CAN과 달리 식별자 비트 중재를 쓰지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "CAN",
+        "verdict": "correct",
+        "rationale": "CAN은 CAN_H·CAN_L 차동 신호와 식별자 우선순위 기반 비파괴 중재에 해당한다."
+      },
+      {
+        "number": 3,
+        "text": "FlexRay의 시간 트리거 구간",
+        "verdict": "incorrect",
+        "rationale": "FlexRay는 정적 시간 슬롯·동적 통신을 사용하지만 CAN의 식별자 기반 중재 방식과는 구분된다."
+      },
+      {
+        "number": 4,
+        "text": "자동차 이더넷의 스위치 기반 통신",
+        "verdict": "incorrect",
+        "rationale": "자동차 이더넷 스위치 통신은 이 CAN 중재 방식이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.analog.com/en/resources/app-notes/an-1123.html",
+      "https://community.nxp.com/t5/NXP-Tech-Blog/101-Controller-Area-Network-CAN-standard/ba-p/1217054"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q02",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 2,
+    "question_at_review": "일반적인 컴퓨터 이더넷 시험장비에 RJ45 커넥터가 있다. 이 커넥터가 연결하는 배선 형태로 알맞은 것은?",
+    "correct_number": 3,
+    "correct_choice": "트위스트 페어 이더넷 케이블",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "광섬유만 연결하는 단자",
+        "verdict": "incorrect",
+        "rationale": "일반적인 RJ45 이더넷 구리 배선과 광섬유 전용 단자는 구분해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "고전압 직류 단자",
+        "verdict": "incorrect",
+        "rationale": "RJ45는 일반 저전압 이더넷 연결에 쓰이며 고전압 DC 작업 단자가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "트위스트 페어 이더넷 케이블",
+        "verdict": "correct",
+        "rationale": "문제에서 특정한 일반 RJ45 이더넷 커넥터는 트위스트 페어 케이블에 연결된다."
+      },
+      {
+        "number": 4,
+        "text": "점화플러그 고압선",
+        "verdict": "incorrect",
+        "rationale": "점화플러그 고압선은 RJ45 이더넷 케이블이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.nxp.com/products/TJA1102A",
+      "https://blog.teledynelecroy.com/2017/09/automotive-ethernet-compliance-test.html?m=0"
+    ],
+    "hold_reasons": [
+      "차량용 100BASE-T1은 RJ45의 4페어 이더넷과 달리 단일 트위스트페어를 사용한다. 문제에서 '일반 PC RJ45'라고 했지만 자동차정비 과목 직접 연계성이 부족해 교정 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q03",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 3,
+    "question_at_review": "차량 네트워크의 통신 장애를 진단할 때 직접적인 교환 대상이 아닌 품목은?",
+    "correct_number": 4,
+    "correct_choice": "엔진 오일필터 여과지",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "ECU 통신 배선",
+        "verdict": "incorrect",
+        "rationale": "네트워크 통신 배선 결함은 통신 장애의 실제 진단·수리 대상에 포함된다."
+      },
+      {
+        "number": 2,
+        "text": "통신 단자와 커넥터",
+        "verdict": "incorrect",
+        "rationale": "커넥터 접점·배선 단자 불량은 차량 네트워크 품질에 영향을 준다."
+      },
+      {
+        "number": 3,
+        "text": "네트워크 관련 제어기",
+        "verdict": "incorrect",
+        "rationale": "차량 제어기 자체의 통신 회로 이상도 점검 대상이 될 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "엔진 오일필터 여과지",
+        "verdict": "correct",
+        "rationale": "엔진 오일필터의 여과지는 전기통신 장치가 아니므로 통신 장애의 직접 교환 대상으로 보기 어렵다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/us/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [
+      "자동차 네트워크 진단과 관계없는 오답이 너무 이질적이어서 변별력이 낮은 편집품질 보류."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q04",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 4,
+    "question_at_review": "두 CAN 노드가 동시에 전송을 시작했다. 표준 CAN 버스에서 우선순위가 높은 프레임을 정하는 기준은?",
+    "correct_number": 1,
+    "correct_choice": "식별자의 우성·열성 비트를 비교하는 비파괴 중재",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "식별자의 우성·열성 비트를 비교하는 비파괴 중재",
+        "verdict": "correct",
+        "rationale": "CAN은 식별자 우성·열성 비트 중재로 우선권을 정해 동시 전송이 가능하다."
+      },
+      {
+        "number": 2,
+        "text": "충돌 검출 후 무조건 전 프레임을 버리는 이더넷 CSMA/CD 방식",
+        "verdict": "incorrect",
+        "rationale": "고전적 이더넷 충돌 검출 후 전송 폐기 방식은 CAN의 비파괴 중재와 다르다."
+      },
+      {
+        "number": 3,
+        "text": "제어기 설치 순서에 따라 매번 고정된 송신권을 주는 방식",
+        "verdict": "incorrect",
+        "rationale": "제어기를 물리적으로 설치한 순서만으로 메시지 우선순위를 정하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "모든 메시지에 동일한 우선권을 주고 무작위로 선택하는 방식",
+        "verdict": "incorrect",
+        "rationale": "표준 CAN에서 식별자에 따른 우선순위가 있으므로 모든 프레임 우선순위가 같지는 않다."
+      }
+    ],
+    "source_urls": [
+      "https://www.analog.com/en/resources/app-notes/an-1123.html",
+      "https://community.nxp.com/t5/NXP-Tech-Blog/101-Controller-Area-Network-CAN-standard/ba-p/1217054"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q05",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 5,
+    "question_at_review": "12V 직류 전원과 6Ω 저항이 연결된 회로에 6Ω 저항을 직렬로 추가했다. 이상적인 회로에서 전류는?",
+    "correct_number": 2,
+    "correct_choice": "1A",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "3A",
+        "verdict": "incorrect",
+        "rationale": "두 6Ω 저항 직렬의 합성저항은 12Ω이므로 12V에서 3A가 될 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "1A",
+        "verdict": "correct",
+        "rationale": "직렬 합성저항 12Ω에 12V를 인가하면 I=V/R로 1A가 된다."
+      },
+      {
+        "number": 3,
+        "text": "2A",
+        "verdict": "incorrect",
+        "rationale": "6Ω 하나만 있을 때 2A이며 6Ω을 직렬 추가하면 전류가 절반이다."
+      },
+      {
+        "number": 4,
+        "text": "0.5A",
+        "verdict": "incorrect",
+        "rationale": "0.5A가 되려면 같은 12V에서 합성저항 24Ω이 필요하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.nist.gov/pml/owm/si-units-electric-current"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q06",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 6,
+    "question_at_review": "전자제어 회로의 단선 진단과 무관한 정비 항목은?",
+    "correct_number": 4,
+    "correct_choice": "타이어 트레드 깊이 점검",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "커넥터 부식 여부",
+        "verdict": "incorrect",
+        "rationale": "커넥터 부식은 저항 증가나 회로 단선의 점검 대상이다."
+      },
+      {
+        "number": 2,
+        "text": "해당 퓨즈의 도통 상태",
+        "verdict": "incorrect",
+        "rationale": "퓨즈 도통은 전기회로 전원 경로를 판단하는 기본 검사다."
+      },
+      {
+        "number": 3,
+        "text": "문제 회로의 전압강하 측정",
+        "verdict": "incorrect",
+        "rationale": "회로 양단 전압강하는 부하 중 접촉저항·단선 단서가 될 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 트레드 깊이 점검",
+        "verdict": "correct",
+        "rationale": "타이어 트레드 깊이는 회로 전기적 연속성과 직접 연관이 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/us/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [
+      "타이어 트레드 깊이 오답은 지나치게 무관하여 실전 문제의 선택지 변별력이 낮다. 질문을 전원/접지 진단 판단형으로 개정 권장."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q07",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 7,
+    "question_at_review": "저전압 전자회로 기판을 다루며 정전기 방전을 방지하려 한다. 고전압 작업이 아닌 이 상황에 적합한 것은?",
+    "correct_number": 1,
+    "correct_choice": "적절한 ESD 작업대와 안전하게 접지한 손목 보호구를 사용한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "적절한 ESD 작업대와 안전하게 접지한 손목 보호구를 사용한다",
+        "verdict": "correct",
+        "rationale": "전원이 차단된 저전압 ESD 민감 기판 작업에는 정전기 관리 작업대·접지 손목띠가 정전기 방전 예방에 적절하다."
+      },
+      {
+        "number": 2,
+        "text": "절연 등급이 큰 전기차 고전압 장갑만 끼면 ESD 접지 대책이 필요 없다",
+        "verdict": "incorrect",
+        "rationale": "고전압 절연장갑은 감전 보호용이므로 ESD 접지 통제가 자동으로 달성되는 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "커넥터 핀을 금속 공구로 단락시키면 정전기가 모두 제거된다",
+        "verdict": "incorrect",
+        "rationale": "금속도구로 커넥터 핀을 단락하면 손상 위험이 있으며 정상적인 ESD 제거방법이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "기판에 전원을 인가한 뒤 오실로스코프로 정전기를 제거한다",
+        "verdict": "incorrect",
+        "rationale": "기판에 전원을 인가한 채 오실로스코프로 정전기를 제거하는 절차는 부적절하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.esda.org/esd-overview/esd-fundamentals/part-3-basic-esd-control-procedures-and-materials/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q08",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 8,
+    "question_at_review": "엔진 경고등과 고장코드를 확인하려 한다. 차량에서 진단 정보를 읽는 대표 장치는?",
+    "correct_number": 2,
+    "correct_choice": "정비용 OBD 진단기",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진 압축게이지",
+        "verdict": "incorrect",
+        "rationale": "압축게이지는 실린더 압축압력 측정기이며 OBD DTC 전자정보를 직접 읽지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "정비용 OBD 진단기",
+        "verdict": "correct",
+        "rationale": "OBD 스캔 툴은 지원되는 ECU의 진단 고장코드 및 데이터를 읽는 대표 장치다."
+      },
+      {
+        "number": 3,
+        "text": "토크 렌치",
+        "verdict": "incorrect",
+        "rationale": "토크렌치는 체결력 설정 도구로 ECU 진단코드 읽기 기능이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 공기주입기",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기주입기는 ECU 고장코드와 직접 관련 없는 공압 정비 도구다."
+      }
+    ],
+    "source_urls": [
+      "https://epa.ohio.gov/divisions-and-offices/air-pollution-control/e-check/06-obd",
+      "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1002KRN.TXT"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q09",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 9,
+    "question_at_review": "제동 중 한쪽 바퀴의 회전속도 신호가 끊겼고 ABS 경고등이 켜졌다. 직접 관련된 입력 부품은?",
+    "correct_number": 3,
+    "correct_choice": "휠 속도 센서",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진 오일 온도 센서",
+        "verdict": "incorrect",
+        "rationale": "엔진 오일 온도 센서가 바퀴 회전속도 신호를 검출하지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "연료 레벨 센서",
+        "verdict": "incorrect",
+        "rationale": "연료 레벨 센서로 ABS의 개별 휠속도를 측정할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "휠 속도 센서",
+        "verdict": "correct",
+        "rationale": "ABS 제어는 각 바퀴 휠속도 센서 신호를 사용하므로 단선 상황에 직접 관련된다."
+      },
+      {
+        "number": 4,
+        "text": "실내 조도 센서",
+        "verdict": "incorrect",
+        "rationale": "실내 조도 센서는 조명 제어용이며 제동 휠속도 신호와 무관하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q10",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 10,
+    "question_at_review": "다음 정비 중 일반적으로 조향각·차체자세 센서 영점 보정과 직접 관련이 가장 적은 작업은?",
+    "correct_number": 4,
+    "correct_choice": "일반적인 엔진오일·오일필터 교환",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "조향각 센서 교환",
+        "verdict": "incorrect",
+        "rationale": "조향각 센서 교체 후 차량에 따라 영점 학습이 필요하다."
+      },
+      {
+        "number": 2,
+        "text": "차량 자세제어 관련 부품 교환",
+        "verdict": "incorrect",
+        "rationale": "자세제어 관련 제어 모듈·센서 교체는 차종에 따라 보정 절차가 필요할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "지정된 휠 얼라인먼트 및 보정 작업",
+        "verdict": "incorrect",
+        "rationale": "휠얼라인먼트 이후 조향각 값 보정이 필요한 차량이 있다."
+      },
+      {
+        "number": 4,
+        "text": "일반적인 엔진오일·오일필터 교환",
+        "verdict": "correct",
+        "rationale": "통상 엔진 오일·오일필터 교환 자체는 조향각 센서 영점에 직접 영향을 주지 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [
+      "보정 필수 여부는 차량별 서비스 절차에 따라 달라 안전·시험범위 검토 필요. 정답은 문맥상 적절하나 근거 범위 미확정."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q11",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 11,
+    "question_at_review": "ABS 제어기가 제동 중 바퀴가 급격히 감속해 잠길 위험을 감지할 때 가장 직접적으로 사용하는 입력은?",
+    "correct_number": 1,
+    "correct_choice": "각 바퀴의 휠 속도 센서 신호",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "각 바퀴의 휠 속도 센서 신호",
+        "verdict": "correct",
+        "rationale": "ABS는 각 바퀴 휠속도를 비교해 잠김 위험을 감지하므로 직접적인 입력에 해당한다."
+      },
+      {
+        "number": 2,
+        "text": "운전자 조향각 센서의 중립 위치만",
+        "verdict": "incorrect",
+        "rationale": "조향각 센서는 주행안정화 제어에 유용하지만 잠김 판정이 조향각만으로 이뤄지지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "차량 요레이트 센서의 수평 회전량만",
+        "verdict": "incorrect",
+        "rationale": "요레이트 센서는 차체 회전 운동을 감지하지만 ABS 휠 잠김의 직접 입력은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "브레이크등 스위치의 ON/OFF 값만",
+        "verdict": "incorrect",
+        "rationale": "브레이크 스위치는 페달 조작 여부를 나타내며 개별 바퀴의 속도 변화를 제공하지 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/",
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q12",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 12,
+    "question_at_review": "에어백(SRS) 진단을 시작하기 전 가장 적절한 원칙은?",
+    "correct_number": 3,
+    "correct_choice": "제조사 SRS 안전절차와 진단 조건을 확인하고 자격을 갖춘 사람이 작업한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "진단기만 연결하면 어떤 전원 상태든 안전하다",
+        "verdict": "incorrect",
+        "rationale": "SRS 관련 진단에서 단순히 진단기 연결만으로 어떤 전원상태든 안전한 것은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "모든 에어백 커넥터를 임의로 분리한 상태로 시동한다",
+        "verdict": "incorrect",
+        "rationale": "에어백 커넥터를 임의 분리한 채 시동하는 절차는 일반적 안전 지침과 맞지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "제조사 SRS 안전절차와 진단 조건을 확인하고 자격을 갖춘 사람이 작업한다",
+        "verdict": "correct",
+        "rationale": "제조사 SRS 안전절차·차종별 분리 대기시간을 확인하고 교육받은 인력이 진단해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "에어백 회로에 일반 시험등을 직접 연결한다",
+        "verdict": "incorrect",
+        "rationale": "에어백 점화 회로에 범용 시험등을 연결하는 행위는 안전상 부적절할 수 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+    ],
+    "hold_reasons": [
+      "SRS 점화장치의 측정·전원분리 안전절차는 제조사 매뉴얼과 정비자격 근거가 필요. 일반 ABS 문서는 해당 SRS 지침의 대체자료가 아님."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q13",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 13,
+    "question_at_review": "자동차 냉매회로에 허용된 형광 추적제를 주입한 후 누설 위치를 확인하려 한다. 유용한 관찰법은?",
+    "correct_number": 2,
+    "correct_choice": "정비용 자외선 광원으로 형광제 흔적을 관찰한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "냉매회로에 일반 공기를 압축해 주입한다",
+        "verdict": "incorrect",
+        "rationale": "냉매회로에 일반 압축공기를 넣는 것은 안전하고 승인된 누설 점검방법이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "정비용 자외선 광원으로 형광제 흔적을 관찰한다",
+        "verdict": "correct",
+        "rationale": "냉매와 호환되는 UV 형광 추적제는 누설점에서 자외선 광원으로 확인할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "전자식 냉매 누설검지기로 추적제 자체의 색을 측정한다",
+        "verdict": "incorrect",
+        "rationale": "전자식 냉매 탐지기는 가스 감지용이며 형광 추적제의 색을 직접 측정하는 장치는 아니다."
+      },
+      {
+        "number": 4,
+        "text": "냉매압력이 정상이라면 누설점 탐색을 종료한다",
+        "verdict": "incorrect",
+        "rationale": "정상 범위 압력만으로 미세 누설 여부를 완전히 배제할 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning-leak-detection/"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q14",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 14,
+    "question_at_review": "연비가 급격히 악화됐고 분사 보정량이 비정상으로 나타난 엔진이다. 조사 대상과 가장 밀접한 계통은?",
+    "correct_number": 4,
+    "correct_choice": "연료분사 보정량·레일 압력과 인젝터 제어계통",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "촉매 전단 산소 센서의 히터 전류만",
+        "verdict": "incorrect",
+        "rationale": "산소센서 히터 전류 한 항목만으로 전체 분사보정과 연료 레일압 이상을 확정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "연료탱크 증발가스 퍼지 명령만",
+        "verdict": "incorrect",
+        "rationale": "퍼지 명령만으로 비정상 분사보정 및 레일압을 모두 설명할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "엔진 냉각팬의 온도 제어 지령만",
+        "verdict": "incorrect",
+        "rationale": "냉각팬 온도 제어 지령은 연료 분사계통의 직접 진단 지표가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "연료분사 보정량·레일 압력과 인젝터 제어계통",
+        "verdict": "correct",
+        "rationale": "연료 압력과 분사 보정량 이상은 인젝터·공급압력·제어계통 확인으로 범위를 좁힐 수 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/"
+    ],
+    "hold_reasons": [
+      "subject_classification_existing_hold",
+      "엔진정비 연료분사 진단 개념으로 전기·전자 과목 출제범위 이탈 가능성이 커 기존 hold_do_not_publish 유지."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q15",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 15,
+    "question_at_review": "자동차 공조장치 회로에서 사용하는 열교환기와 무관한 엔진 부품은?",
+    "correct_number": 1,
+    "correct_choice": "배기 매니폴드",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "배기 매니폴드",
+        "verdict": "correct",
+        "rationale": "배기 매니폴드는 배기가스 유로에 속하며 일반 실내 HVAC 냉난방 열교환기가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "히터 코어",
+        "verdict": "incorrect",
+        "rationale": "히터 코어는 냉각수와 실내 공기의 열교환기로 사용된다."
+      },
+      {
+        "number": 3,
+        "text": "에어컨 응축기",
+        "verdict": "incorrect",
+        "rationale": "에어컨 응축기는 냉매가 외기 쪽으로 열을 방출하는 열교환기다."
+      },
+      {
+        "number": 4,
+        "text": "에어컨 증발기",
+        "verdict": "incorrect",
+        "rationale": "에어컨 증발기는 냉매가 실내 공기에서 열을 흡수하는 열교환기다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "정답 자체는 무난하나 '배기 매니폴드' 오답이 이질적이라 편집 품질 및 과목 범위 점검."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q16",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 16,
+    "question_at_review": "에어컨 냉방이 약하다. 압축기 불량으로 단정하기 전에 적절한 진단은?",
+    "correct_number": 3,
+    "correct_choice": "냉매 압력·압축기 구동 및 응축기 팬/풍량을 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "냉매를 무전원 상태로 대기로 배출한다",
+        "verdict": "incorrect",
+        "rationale": "냉매를 대기로 배출하는 행위는 적절한 냉매 회수·안전 작업 절차가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "냉매량에 관계없이 컴프레서를 즉시 교환한다",
+        "verdict": "incorrect",
+        "rationale": "증상만으로 냉매량 확인 없이 압축기를 즉시 교환하는 것은 진단 생략이다."
+      },
+      {
+        "number": 3,
+        "text": "냉매 압력·압축기 구동 및 응축기 팬/풍량을 확인한다",
+        "verdict": "correct",
+        "rationale": "냉매 압력, 압축기 구동, 팬 풍량을 규정 조건에서 비교하여 냉방 성능 원인을 좁혀야 한다."
+      },
+      {
+        "number": 4,
+        "text": "컴프레서가 회전하면 냉매 충전량은 확인할 필요가 없다",
+        "verdict": "incorrect",
+        "rationale": "압축기가 회전한다는 사실만으로 냉매 충전량이 정상이라고 단정할 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "냉매 종류별 회수·취급 안전/장비/법규 최신 기준 확인 전 최종 승인 금지."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q17",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 17,
+    "question_at_review": "파워윈도우가 전혀 움직이지 않는다. 회로가 작동하지 않는 상황에서 기본적으로 확인할 보호 부품은?",
+    "correct_number": 2,
+    "correct_choice": "파워윈도우 회로의 지정 퓨즈",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "파워윈도우 구동모터의 회전자 코일",
+        "verdict": "incorrect",
+        "rationale": "파워윈도우 모터 코일은 구동부로서 퓨즈 같은 회로 보호장치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "파워윈도우 회로의 지정 퓨즈",
+        "verdict": "correct",
+        "rationale": "지정 퓨즈는 단락·과전류로부터 파워윈도우 전원회로를 보호한다."
+      },
+      {
+        "number": 3,
+        "text": "파워윈도우 유리의 기계식 가이드 레일",
+        "verdict": "incorrect",
+        "rationale": "유리의 기계식 가이드 레일은 전기 퓨즈와 달리 기계적 안내부다."
+      },
+      {
+        "number": 4,
+        "text": "파워윈도우 유리 높이 조절용 레귤레이터",
+        "verdict": "incorrect",
+        "rationale": "윈도우 레귤레이터는 유리 승강기구이지 전원회로 보호장치가 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+    ],
+    "hold_reasons": [
+      "모든 차량에 단일 퓨즈 구조가 같지 않고 일부에서는 전자식 보호를 사용한다. 관련 참고자료가 일반 ABS 센서 자료라 직접 증빙 보강 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q18",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 18,
+    "question_at_review": "도어 파워윈도우의 직류 모터를 정방향·역방향으로 구동하는 회로에서 회전 방향을 바꾸는 기본 원리는?",
+    "correct_number": 4,
+    "correct_choice": "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "모터 공급전압의 주파수만 두 배로 한다",
+        "verdict": "incorrect",
+        "rationale": "일반 브러시형 DC 모터는 주파수 조절만으로 회전 방향을 결정하지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "전류 방향은 그대로 두고 퓨즈 정격만 높인다",
+        "verdict": "incorrect",
+        "rationale": "퓨즈 정격만 높이는 것은 역회전 전기적 구동 원리가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "전원 극성은 유지한 채 모터 코일 저항만 높인다",
+        "verdict": "incorrect",
+        "rationale": "모터 양단 전원의 극성을 그대로 둔 채 저항만 조정해서 정상 역회전을 만들지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다",
+        "verdict": "correct",
+        "rationale": "2선 DC 파워윈도우 모터는 인가 극성 반전으로 정·역방향을 전환한다."
+      }
+    ],
+    "source_urls": [
+      "https://cecas.clemson.edu/cvel/auto/ECE470_Projects_2015/Haley_Jones_project.html",
+      "https://www.agcoauto.com/content/news/p2_articleid/153"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q19",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 19,
+    "question_at_review": "파워윈도우 퓨즈는 정상인데 모터가 움직이지 않는다. 다음 진단으로 가장 적절한 것은?",
+    "correct_number": 1,
+    "correct_choice": "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "퓨즈 정상일 때 스위치 작동 중 모터 공급전압과 접지/극성 확인이 다음 전기 진단에 적절하다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기압만 높인다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압 조정은 전기 모터 전원불량의 진단 방법이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크를 세척한다",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 세척은 파워윈도우 구동 모터와 무관하다."
+      },
+      {
+        "number": 4,
+        "text": "배기 센서를 임의로 제거한다",
+        "verdict": "incorrect",
+        "rationale": "배기센서 제거는 파워윈도우 전원·접지 진단이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.agcoauto.com/content/news/p2_articleid/153"
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q20",
+    "subject": "electrical",
+    "round": 1,
+    "question_number": 20,
+    "question_at_review": "히터 블로워는 정상이고 히터코어 입구가 뜨거운데 출구 호스가 크게 식는다. 냉각수량이 정상일 때 우선 확인할 대상은?",
+    "correct_number": 3,
+    "correct_choice": "히터코어의 냉각수 흐름·막힘과 유량",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "실내 공기분배용 도어 위치만",
+        "verdict": "incorrect",
+        "rationale": "공기분배 도어 위치는 냉난방 온도 문제의 원인이지만 입·출구 냉각수 큰 온도차만으로 단독 원인이라고 할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "에어컨 냉매 압축기의 작동전류만",
+        "verdict": "incorrect",
+        "rationale": "냉매 압축기 전류는 히터코어의 냉각수 유량 문제와 직접 연관성이 낮다."
+      },
+      {
+        "number": 3,
+        "text": "히터코어의 냉각수 흐름·막힘과 유량",
+        "verdict": "correct",
+        "rationale": "히터코어 냉각수 입구·출구 온도차가 크면 막힘·저유량 가능성을 점검해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "블로워 모터의 저항값만",
+        "verdict": "incorrect",
+        "rationale": "블로워 저항은 송풍량 문제로 보통 히터코어 냉각수 유량을 직접 나타내지 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.alldata.com/ca/en/BLG/lack-of-cabin-heat",
+      "https://www.hella.com/techworld/en/car-parts/thermal-management/ac-car-interior-heat-exchanger/"
+    ],
+    "hold_reasons": [
+      "운전·열부하 조건과 냉각수 순환 시스템 구성에 따라 온도차 해석이 달라 모델·증상 특정 후 독립 기술확인."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  }
+]
