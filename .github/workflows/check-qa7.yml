@@ -3,6 +3,8 @@ name: Validate automotive quiz JSON bank
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
     paths:
       - "index.html"
       - "app.js"
