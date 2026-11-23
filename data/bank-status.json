@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private original OCR 720/720 source compared; 720 independently reauthored draft items. Historical 1st-pass option-by-option rationales through QA33: 640/720 questions, 2560/2880 options; 80/320 remain (round09). No independent final technical approvals (0/720). Published reconstructed past questions 0/720; public 80-question practice bank unchanged.",
+  "source_of_truth": "Private QA23 OCR master: 720/720 source fields compared (not uploaded to public repository). Independently reauthored 720/720 editorial drafts. Historical 1st-pass question-and-option rationale ledger through QA37: 720/720 questions, 2880/2880 choices; review stage is NOT independent final technical approval. Final approvals 0/720, past reconstructions published 0/720, public self-authored practice questions 80 unchanged.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa33_round08_all_80_option_by_option_first_pass",
+  "latest_qa_stage": "technical-qa37_rounds01-09_all720_first_pass_records_complete_final_independent_approval_pending",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -1902,5 +1902,91 @@
     "current_subject_holds": 55,
     "next": "round09 engine/chassis/electrical/eco 20 each; then independent final review, rights, retirement",
     "final_independent_technical_approvals": 0
+  },
+  "technical_qa34": {
+    "date": "2026-11-23",
+    "batch": "round09_engine",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 12,
+    "pending_oem_safety_editorial_review": 8,
+    "edited_question_numbers": [
+      7
+    ],
+    "new_subject_holds_confirmed": 0,
+    "current_subject_holds": 55,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "audit": "data/qa/technical-qa34-r09-engine-option-audit.json",
+    "report": "docs/TECHNICAL_QA34.md"
+  },
+  "technical_qa35": {
+    "date": "2026-11-23",
+    "batch": "round09_chassis",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 14,
+    "pending_oem_safety_editorial_review": 6,
+    "edited_question_numbers": [
+      8
+    ],
+    "new_subject_holds_confirmed": 0,
+    "current_subject_holds": 55,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "audit": "data/qa/technical-qa35-r09-chassis-option-audit.json",
+    "report": "docs/TECHNICAL_QA35.md"
+  },
+  "technical_qa36": {
+    "date": "2026-11-23",
+    "batch": "round09_electrical",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 12,
+    "pending_oem_safety_editorial_review": 8,
+    "edited_question_numbers": [
+      5
+    ],
+    "new_subject_holds_confirmed": 0,
+    "current_subject_holds": 55,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "audit": "data/qa/technical-qa36-r09-electrical-option-audit.json",
+    "report": "docs/TECHNICAL_QA36.md"
+  },
+  "technical_qa37": {
+    "date": "2026-11-23",
+    "batch": "round09_eco",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 10,
+    "pending_oem_safety_editorial_review": 10,
+    "edited_question_numbers": [
+      4,
+      15,
+      19
+    ],
+    "new_subject_holds_confirmed": 0,
+    "current_subject_holds": 55,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "audit": "data/qa/technical-qa37-r09-eco-option-audit.json",
+    "report": "docs/TECHNICAL_QA37.md",
+    "cumulative_historical_firstpass_questions": 720,
+    "cumulative_historical_firstpass_options": 2880,
+    "remaining_no_firstpass_questions": 0,
+    "remaining_no_firstpass_options": 0,
+    "next": "independent specialist verification, OEM/law/safety/rights review, difficulty and duplicate refinement, then privatize/remove public unused drafts per docs/DRAFT_RETIREMENT.md",
+    "summary_round08_round09": {
+      "questions": 160,
+      "options": 640,
+      "firstpass_source_supported": 92,
+      "additional_review_held": 68,
+      "editorial_edits": 10,
+      "round08_edits": 4,
+      "round09_edits": 6,
+      "independent_final_approvals": 0,
+      "publications": 0
+    }
   }
 }

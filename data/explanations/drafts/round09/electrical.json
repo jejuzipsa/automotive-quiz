@@ -11,7 +11,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "배출가스 진단용 ISO 15765 CAN",
+        "verdict": "incorrect",
+        "rationale": "ISO15765 CAN은 OBD 통신이며 MOST 멀티미디어용과 달라"
+      },
+      {
+        "number": 2,
+        "text": "SAE J1850 관련 진단 통신",
+        "verdict": "incorrect",
+        "rationale": "SAE J1850은 진단 규격으로 미디어 통신망 자체가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "엔진진단용 ISO 9141 K-line",
+        "verdict": "incorrect",
+        "rationale": "ISO9141 K-line은 엔진 진단으로 MOST와 용도가 달라"
+      },
+      {
+        "number": 4,
+        "text": "인포테인먼트 영상·오디오 전송에 사용되는 MOST",
+        "verdict": "correct",
+        "rationale": "MOST는 주로 차량 미디어 관련 고속 통신을 위해 설계되었다. OBD-II 진단에서 흔히 쓰이는 ISO 15765-4 CAN과 역할·표준 계층이 다르다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q02",
@@ -27,7 +62,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "흡기온도 센서 신호",
+        "verdict": "incorrect",
+        "rationale": "흡기온도는 ECU 연산에 활용하는 입력센서야"
+      },
+      {
+        "number": 2,
+        "text": "크랭크축 위치센서 신호",
+        "verdict": "incorrect",
+        "rationale": "크랭크축 위치는 점화 시기 결정에 관련된 입력이야"
+      },
+      {
+        "number": 3,
+        "text": "노킹센서 진동 신호",
+        "verdict": "incorrect",
+        "rationale": "노킹 감지 신호도 ECU 입력자료에 해당해"
+      },
+      {
+        "number": 4,
+        "text": "점화코일을 구동하는 출력 명령",
+        "verdict": "correct",
+        "rationale": "ECU는 입력 센서 데이터를 계산해 점화코일 등의 작동기에 신호를 출력한다. 출력 명령과 입력 신호를 회로도에서 구별해야 한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q03",
@@ -43,7 +113,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "10Ω",
+        "verdict": "incorrect",
+        "rationale": "10Ω 두 개 병렬이 10Ω로 유지되는 것은 아니야"
+      },
+      {
+        "number": 2,
+        "text": "5Ω",
+        "verdict": "correct",
+        "rationale": "동일한 두 저항 R을 병렬 연결하면 1/R합성=1/R+1/R이므로 합성값은 R/2다. 10Ω 두 개의 합성저항은 5Ω이다."
+      },
+      {
+        "number": 3,
+        "text": "0Ω",
+        "verdict": "incorrect",
+        "rationale": "이상적 저항 두 개가 병렬이어도 0Ω로 되진 않아"
+      },
+      {
+        "number": 4,
+        "text": "20Ω",
+        "verdict": "incorrect",
+        "rationale": "병렬 합성은 20Ω가 아닌 5Ω야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q04",
@@ -57,7 +162,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "연료 인젝터라는 전기식 작동기",
+        "verdict": "correct",
+        "rationale": "인젝터는 ECU로부터 구동 펄스 또는 전류 명령을 받아 밸브를 개폐해 연료를 분사한다. 센서는 상태를 측정해 입력값을 제공한다."
+      },
+      {
+        "number": 2,
+        "text": "냉각수 온도 감지 센서",
+        "verdict": "incorrect",
+        "rationale": "냉각수 온도센서는 입력부품이지 연료를 분사하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "스티어링 휠 각도 센서",
+        "verdict": "incorrect",
+        "rationale": "조향각 센서는 차체제어 입력이지 분사작동기가 아니야"
+      },
+      {
+        "number": 4,
+        "text": "배기가스 산소농도 감지 센서",
+        "verdict": "incorrect",
+        "rationale": "배기 산소센서도 엔진 연료제어 피드백이지 분사 노즐은 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q05",
@@ -65,13 +205,51 @@
     "subject": "electrical",
     "correct_answer": 1,
     "correct_choice": "토크렌치 또는 토크 계측장비",
-    "reason": "토크는 회전력의 모멘트로 전기적 전압·저항을 재는 멀티미터의 직접 측정 대상이 아니다. 지정 토크렌치 등으로 확인한다.",
-    "key_point": "기계적 체결 토크는 토크렌치로 확인.",
+    "reason": "배터리 전원 단자는 접촉 저항과 기계적 체결력이 중요하며, 지정된 체결 토크는 멀티미터가 아닌 적정 범위의 토크렌치로 확인한다. 제조사의 체결/안전 지침을 따른다.",
+    "key_point": "전장 전원단자 토크 체결 → OEM 지정 토크렌치 사용.",
     "source_question_id": "auto-r09-s03-q05",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa36_electrical_terminal_torque_scope",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": [
+        "전장 배터리 전원단자의 기계적 체결 토크는 OEM 규격·정비안전 기준에 의존. 전장 과목 관련성 보완"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "토크렌치 또는 토크 계측장비",
+        "verdict": "correct",
+        "rationale": "배터리 전원 단자는 접촉 저항과 기계적 체결력이 중요하며, 지정된 체결 토크는 멀티미터가 아닌 적정 범위의 토크렌치로 확인한다. 제조사의 체결/안전 지침을 따른다."
+      },
+      {
+        "number": 2,
+        "text": "냉매 압력 게이지만",
+        "verdict": "incorrect",
+        "rationale": "냉매 압력 게이지는 배터리 단자 볼트의 체결토크를 재지 못해"
+      },
+      {
+        "number": 3,
+        "text": "배터리 충전기의 전압 표시",
+        "verdict": "incorrect",
+        "rationale": "충전기 전압표시로 기계적 체결토크를 직접 계측하지 못해"
+      },
+      {
+        "number": 4,
+        "text": "저항·전압 측정 멀티미터만",
+        "verdict": "incorrect",
+        "rationale": "멀티미터의 전압·저항 범위는 볼트 토크 측정 기능과 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q06",
@@ -103,7 +281,44 @@
       "change_note": "TCS와 ABS/ESC 역할 구별",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": [
+        "TCS의 구동륜 미끄럼 제어는 섀시 과목과 경계. 기존 hold_do_not_publish 분류보류 유지"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "ABS가 제동 중 바퀴잠김을 방지하는 제어만",
+        "verdict": "incorrect",
+        "rationale": "ABS의 제동 중 잠김제어만이 가속 중 TCS 슬립제어 전부는 아니야"
+      },
+      {
+        "number": 2,
+        "text": "조향각센서 영점값의 장기 학습만",
+        "verdict": "incorrect",
+        "rationale": "센서 영점학습만으로 구동륜 슬립을 즉시 제어하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "구동륜 슬립에 따른 구동토크 또는 제동력 제어",
+        "verdict": "correct",
+        "rationale": "TCS는 가속 때 구동륜 슬립을 감지해 해당 바퀴 제동 또는 구동토크 제한으로 접지력을 확보하려 한다."
+      },
+      {
+        "number": 4,
+        "text": "ESC의 차체 요레이트 목표만 조정하고 구동륜은 제어하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "요레이트 목표만 보정하고 구동륜을 전혀 제어하지 않는 건 TCS 기능과 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q07",
@@ -120,7 +335,44 @@
     "reference_urls": [],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "editorial_revision": "technical_qa1_reviewed"
+    "editorial_revision": "technical_qa1_reviewed",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "냉매 응축 출구의 상·압력 상태는 실제 운전조건, 냉매별 상태와 충전량에 좌우. 공조 과목 경계 검토"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "팽창밸브를 지난 뒤와 같은 저압의 액·증기 혼합상태",
+        "verdict": "incorrect",
+        "rationale": "팽창장치를 지난 저압 액·증기 혼합물은 응축기 출구 상태와 달라"
+      },
+      {
+        "number": 2,
+        "text": "압축기로 들어가기 직전의 저압 과열증기 상태",
+        "verdict": "incorrect",
+        "rationale": "압축기 흡입측 저압 과열증기는 응축기 출구의 정상 대표값이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "고압의 액상 냉매(또는 과냉각 액체)",
+        "verdict": "correct",
+        "rationale": "압축기에서 나온 고온 고압 증기는 응축기에서 외부에 열을 방출하며 보통 고압 액체로 응축된다. 고압 액체가 저압 액·증기 혼합상태로 바뀌는 주된 감압은 팽창밸브 또는 오리피스에서 발생한다. 냉매 충전량이나 운전조건 이상 시 상태는 달라질 수 있어 정상 작동 조건을 명시했다."
+      },
+      {
+        "number": 4,
+        "text": "증발기를 통과한 뒤의 저압 기체 냉매",
+        "verdict": "incorrect",
+        "rationale": "증발기를 지난 저압 기체는 응축기 출구 고압 액체와 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q08",
@@ -137,7 +389,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "엔진 냉각수로 가열하는 히터코어는 공조계 정비로, 전기전자 시험 범위 검토 필요"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "냉각수 속 이물질을 대기 중으로 버린다",
+        "verdict": "incorrect",
+        "rationale": "히터코어는 냉각수 이물 배출 장치가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "연료를 고압으로 압축해 분사한다",
+        "verdict": "incorrect",
+        "rationale": "연료 고압분사는 히터코어 열교환 기능과 달라"
+      },
+      {
+        "number": 3,
+        "text": "뜨거운 냉각수의 열을 공조 공기로 전달한다",
+        "verdict": "correct",
+        "rationale": "히터코어는 엔진 냉각수의 열을 실내 공기로 전달하는 열교환기다. 전기차는 PTC나 히트펌프 등 다른 난방열원을 사용할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "컴프레서 오일의 점도를 변화시킨다",
+        "verdict": "incorrect",
+        "rationale": "압축기 오일 점도 조절은 히터코어의 직접 기능이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q09",
@@ -153,7 +442,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "냉매 회수·충전 작업의 시동/정량 조건은 냉매·장비·차종별 안전/법령 확인 필수"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "충전 방식·전용장비와 차량 제조사 정비 절차",
+        "verdict": "correct",
+        "rationale": "냉매 충전은 회수·진공·정량 주입을 전용 회수장비로 수행하며 특정 단계에서 시동 여부는 장비와 차량 지침에 따라 달라진다."
+      },
+      {
+        "number": 2,
+        "text": "모든 충전은 엔진을 반드시 멈춘 상태에서만",
+        "verdict": "incorrect",
+        "rationale": "모든 충전에서 엔진 정지를 절대 조건으로 일반화할 수 없어"
+      },
+      {
+        "number": 3,
+        "text": "모든 차량에서 엔진을 가동하지 않으면 충전 불가능",
+        "verdict": "incorrect",
+        "rationale": "모든 충전에서 엔진이 돌아야 한다는 주장은 틀려"
+      },
+      {
+        "number": 4,
+        "text": "충전량은 계기판 연료량과 동일",
+        "verdict": "incorrect",
+        "rationale": "냉매 정량 충전은 계기판 연료량으로 결정하지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q10",
@@ -167,7 +493,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "변속기 라인압 센서",
+        "verdict": "incorrect",
+        "rationale": "변속기 라인압은 앞유리 강수 상태 입력과 무관해"
+      },
+      {
+        "number": 2,
+        "text": "앞유리 부착 광학식 레인센서",
+        "verdict": "correct",
+        "rationale": "광학식 레인센서는 유리 표면의 물방울에 따른 반사광 변화를 이용해 강수 상태를 추정하고 와이퍼 작동을 조절한다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크액 저장통 캡",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 캡은 레인센서 역할을 하지 않아"
+      },
+      {
+        "number": 4,
+        "text": "연료레일 압력조절 밸브",
+        "verdict": "incorrect",
+        "rationale": "연료레일 밸브는 와이퍼의 광학 감지센서가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q11",
@@ -183,7 +544,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nxp.com/products/interfaces/flexray-transceivers/flexray-node-transceiver-clamp-15%3ATJA1083G"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "채널당 최대 약 10Mbps와 시간 분할 스케줄 지원",
+        "verdict": "correct",
+        "rationale": "FlexRay는 시간 트리거 통신을 포함해 높은 신뢰성이 요구되는 분산 제어용으로 설계되었으며 채널당 약 10Mbps 전송이 가능하다."
+      },
+      {
+        "number": 2,
+        "text": "오직 아날로그 음성만 전송",
+        "verdict": "incorrect",
+        "rationale": "FlexRay가 아날로그 음성 전용 통신이라는 건 틀려"
+      },
+      {
+        "number": 3,
+        "text": "물리적으로 유압 배관을 통해 전송",
+        "verdict": "incorrect",
+        "rationale": "FlexRay가 유압 배관으로 전송된다는 설명은 틀려"
+      },
+      {
+        "number": 4,
+        "text": "전송속도가 항상 정확히 1kbps",
+        "verdict": "incorrect",
+        "rationale": "전송속도가 정확히 1kbps 고정이라는 건 실제 규격과 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q12",
@@ -200,7 +596,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "72A",
+        "verdict": "incorrect",
+        "rationale": "72A는 옴의 법칙 I=12/6에 부합하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "0.5A",
+        "verdict": "incorrect",
+        "rationale": "0.5A는 12V와 6Ω 조합의 계산결과가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "6A",
+        "verdict": "incorrect",
+        "rationale": "6A는 실제 2A와 다르지"
+      },
+      {
+        "number": 4,
+        "text": "2A",
+        "verdict": "correct",
+        "rationale": "옴의 법칙 V=IR이므로 전류 I=V/R이다. 12V를 6Ω에 걸면 전류는 2A가 된다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q13",
@@ -214,7 +645,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "0V",
+        "verdict": "incorrect",
+        "rationale": "0V면 부하 전류 3A·접촉 저항 0.2Ω의 전압강하를 설명 못 해"
+      },
+      {
+        "number": 2,
+        "text": "3.2V",
+        "verdict": "incorrect",
+        "rationale": "3.2V는 계산값 I×R과 맞지 않아"
+      },
+      {
+        "number": 3,
+        "text": "0.6V",
+        "verdict": "correct",
+        "rationale": "옴의 법칙에 따라 접점 전압강하는 V=IR=3A×0.2Ω=0.6V이다. 저항은 부하 전류가 흐르는 상태에서 측정값을 비교해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "15V",
+        "verdict": "incorrect",
+        "rationale": "15V도 3×0.2=0.6V와 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q14",
@@ -228,7 +694,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "타이밍벨트 위상 보정",
+        "verdict": "incorrect",
+        "rationale": "타이밍벨트 조정은 TPMS 경고기능이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "연료탱크 EVAP 퍼지",
+        "verdict": "incorrect",
+        "rationale": "EVAP 퍼지는 증발연료 계통 제어야"
+      },
+      {
+        "number": 3,
+        "text": "공조 증발기 결빙 방지",
+        "verdict": "incorrect",
+        "rationale": "증발기 결빙방지와 타이어압력 감시는 별개야"
+      },
+      {
+        "number": 4,
+        "text": "TPMS의 압력 감시 및 경고",
+        "verdict": "correct",
+        "rationale": "TPMS는 타이어 내부 압력을 직접 측정하거나 ABS 휠속도 변화를 이용해 저압 상태를 추정해 운전자에게 경고한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q15",
@@ -242,7 +743,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "연료탱크 잔량 센서",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 잔량센서는 후측방 장애물 탐지를 못해"
+      },
+      {
+        "number": 2,
+        "text": "냉각수 수온 감지 센서",
+        "verdict": "incorrect",
+        "rationale": "냉각수 센서는 후방 접근 물체의 거리를 측정하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "후측방 탐지용 레이더 센서",
+        "verdict": "correct",
+        "rationale": "사각지대 감지 시스템은 주로 후측방 레이더와 제어기를 사용하여 접근 차량을 감지한다. 장착 방식과 카메라 병용 여부는 차량별로 다르다."
+      },
+      {
+        "number": 4,
+        "text": "실내 팬 회전수 센서만",
+        "verdict": "incorrect",
+        "rationale": "실내 팬 센서도 후측방 교통 감시센서가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q16",
@@ -256,7 +792,44 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": [
+        "OBD-II 16핀 진단커넥터 위치는 규격·국가/제조사/차종에 따라 다르며 안전한 접근 위치 확인"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "연료탱크 내부 고압 연료실",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 내부는 OBD DLC의 일반적인 위치가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "엔진 흡기 밸브 헤드 부분",
+        "verdict": "incorrect",
+        "rationale": "흡기 밸브 헤드에도 진단 커넥터를 설치하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "운전석 하부 대시보드 주변의 진단 커넥터",
+        "verdict": "correct",
+        "rationale": "표준 16핀 진단 커넥터는 일반적으로 운전자가 접근하기 쉬운 운전석 하부에 배치된다. 정확한 위치는 해당 차량 정비정보로 확인한다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 내부 밸브 코어",
+        "verdict": "incorrect",
+        "rationale": "타이어 밸브 코어는 엔진 OBD 16핀 단자와 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q17",
@@ -270,7 +843,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "브레이크 압력 레귤레이터",
+        "verdict": "incorrect",
+        "rationale": "브레이크 압력레귤레이터는 냉매 수분 제거부품이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "스티어링 토크 센서",
+        "verdict": "incorrect",
+        "rationale": "조향토크 센서는 냉매 건조필터가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "리시버드라이어의 건조제·필터 요소",
+        "verdict": "correct",
+        "rationale": "리시버드라이어는 냉매 중 수분과 이물을 제거하고 일부 구성에서 액상 냉매를 저장한다. 열을 압축하는 기능은 컴프레서가 담당한다."
+      },
+      {
+        "number": 4,
+        "text": "배기관 삼원촉매",
+        "verdict": "incorrect",
+        "rationale": "삼원촉매도 공조 냉매 제습 목적이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q18",
@@ -286,7 +894,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.epa.gov/snap/substitutes-mvac-passenger-air-conditioning-light-duty-medium-duty-heavy-duty-and-road"
+      ],
+      "hold_reasons": [
+        "냉매 GWP는 EPA 근거가 있으나 R1234yf A2L 가연성·기기/오일·국내 규정과 전기정비 과목경계 검토"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "R-1234yf에는 안전관리 규격이 전혀 불필요",
+        "verdict": "incorrect",
+        "rationale": "R1234yf에도 가연성·냉매기기·표시 등의 안전관리가 필요해"
+      },
+      {
+        "number": 2,
+        "text": "R-1234yf가 모든 차량과 무조건 하드웨어 호환",
+        "verdict": "incorrect",
+        "rationale": "R1234yf를 모든 차량에 무개조 혼용할 수 없어"
+      },
+      {
+        "number": 3,
+        "text": "R-134a의 GWP가 정확히 0이기 때문",
+        "verdict": "incorrect",
+        "rationale": "R134a의 GWP가 0이라는 주장은 EPA 자료와 달라"
+      },
+      {
+        "number": 4,
+        "text": "R-1234yf의 지구온난화지수(GWP)가 훨씬 낮기 때문",
+        "verdict": "correct",
+        "rationale": "R-1234yf는 R-134a보다 낮은 GWP를 가진다. 다만 가연성·윤활유 호환성과 전용 충전설비 요구를 별도로 확인해야 한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q19",
@@ -313,7 +958,44 @@
       "qa2_proposed_action": "consider_reclassifying_to_chassis",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
       "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
-    }
+    },
+    "technical_verification_qa36": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": [
+        "EPB는 제동장치·섀시정비 범위와 경계. 기존 hold_do_not_publish 유지 및 비상제동 OEM 조건 필요"
+      ]
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "전자식이면 반드시 제동력이 더 약하다는 단정",
+        "verdict": "correct",
+        "rationale": "EPB는 전동모터·기계식 클램핑 장치로 주차력을 만든다. 구조와 성능이 달라 기계식보다 항상 약하다고 일반화할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "정비 시 서비스 모드가 필요할 수 있음",
+        "verdict": "incorrect",
+        "rationale": "정비시 전자식 주차브레이크 서비스모드가 필요할 수 있어"
+      },
+      {
+        "number": 3,
+        "text": "일부 차량은 자동 해제 기능을 제공",
+        "verdict": "incorrect",
+        "rationale": "일부 EPB에는 자동 해제 기능이 있어"
+      },
+      {
+        "number": 4,
+        "text": "제어기가 주차브레이크 작동 상태를 감시",
+        "verdict": "incorrect",
+        "rationale": "EPB 제어기가 실제 작동 상태를 모니터링할 수 있어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s03-q20",
@@ -327,6 +1009,41 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa36": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa36": [
+      {
+        "number": 1,
+        "text": "CPU와 메모리",
+        "verdict": "incorrect",
+        "rationale": "CPU와 메모리는 ECU의 필수 연산/상태처리 장치야"
+      },
+      {
+        "number": 2,
+        "text": "운전자에게 그림을 표시하는 별도의 인포테인먼트 모니터",
+        "verdict": "correct",
+        "rationale": "ECU 기본 구성은 연산처리기·메모리·입출력·전원 회로다. 디스플레이는 ECU와 통신할 수 있으나 일반적으로 독립된 화면장치다."
+      },
+      {
+        "number": 3,
+        "text": "센서 입력·출력 회로",
+        "verdict": "incorrect",
+        "rationale": "센서 입출력 회로는 ECU 기능에 필요해"
+      },
+      {
+        "number": 4,
+        "text": "전원 조정회로",
+        "verdict": "incorrect",
+        "rationale": "전원 조정회로도 ECU 안정적 전기제어에 필요해"
+      }
+    ]
   }
 ]
