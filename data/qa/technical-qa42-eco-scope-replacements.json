@@ -464,5 +464,467 @@
     },
     "topic": "PEM 연료전지 수분관리",
     "historical_audit_qa": 18
+  },
+  {
+    "id": "auto-made-r05-s04-q05",
+    "round": 5,
+    "subject": "eco",
+    "question_number": 5,
+    "before": {
+      "question": "타이밍벨트 교환 후 엔진 조립 전 반드시 대조할 항목은?",
+      "choices": [
+        "퓨즈박스 커버 색상",
+        "실내 온도센서의 설정값",
+        "크랭크·캠축 타이밍 마크와 정비 기준 위치",
+        "도어 잠금 속도"
+      ],
+      "answer": 3,
+      "reason": "타이밍벨트 장착은 캠과 크랭크의 상대 위상이 맞아야 한다. 지정 장력과 규정 회전 후 타이밍 마크 재확인을 실시한다.",
+      "key_point": "타이밍벨트 교환: 캠·크랭크 위상 맞춤.",
+      "correct_choice": "크랭크·캠축 타이밍 마크와 정비 기준 위치",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "퓨즈박스 커버 색상",
+          "verdict": "incorrect",
+          "rationale": "퓨즈박스 커버 색상은 캠/크랭크 타이밍 정렬의 직접 점검항목이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "실내 온도센서의 설정값",
+          "verdict": "incorrect",
+          "rationale": "실내 온도센서 설정은 엔진 타이밍 벨트 조립 기준이 아니다."
+        },
+        {
+          "number": 3,
+          "text": "크랭크·캠축 타이밍 마크와 정비 기준 위치",
+          "verdict": "correct",
+          "rationale": "크랭크/캠축 타이밍 마크 및 정렬 상태는 벨트 조립에 직접 관계된다."
+        },
+        {
+          "number": 4,
+          "text": "도어 잠금 속도",
+          "verdict": "incorrect",
+          "rationale": "도어 잠금 속도는 엔진 밸브 타이밍 정렬을 확인하는 데이터가 아니다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ]
+    },
+    "after": {
+      "question": "일반 하이브리드차가 가속할 때 내연기관 외에 구동모터가 추가 구동토크를 제공한다. 이때 모터에 전기를 공급하는 주된 에너지원은?",
+      "choices": [
+        "제동 직후 타이어의 열에너지를 실시간으로 변환한 전력만",
+        "차량 냉각수 펌프의 압력으로 직접 생성한 전력",
+        "하이브리드 구동배터리에 저장된 전기에너지",
+        "스마트키 코인전지에 저장된 저전압 전기에너지"
+      ],
+      "answer": 3,
+      "reason": "HEV는 주행 조건에 따라 내연기관과 전기 구동모터의 토크를 함께 사용한다. 보조 구동모터의 전력은 주로 고전압 구동배터리에서 공급되고, 감속 시 모터를 발전기로 이용한 회생전력 등으로 다시 저장할 수 있다.",
+      "key_point": "HEV 가속 보조 → 구동배터리 전력으로 모터 토크 추가.",
+      "correct_choice": "하이브리드 구동배터리에 저장된 전기에너지",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "제동 직후 타이어의 열에너지를 실시간으로 변환한 전력만",
+          "verdict": "incorrect",
+          "rationale": "회생제동으로 저장된 전력도 배터리를 통해 사용되며 타이어 마찰열을 직접 모터 구동전력으로 공급하는 건 아니야."
+        },
+        {
+          "number": 2,
+          "text": "차량 냉각수 펌프의 압력으로 직접 생성한 전력",
+          "verdict": "incorrect",
+          "rationale": "냉각수 펌프의 유압은 고전압 구동모터의 주 전력공급원이 아니야."
+        },
+        {
+          "number": 3,
+          "text": "하이브리드 구동배터리에 저장된 전기에너지",
+          "verdict": "correct",
+          "rationale": "구동배터리의 전기에너지가 전력변환장치를 거쳐 모터를 구동하고 엔진토크를 보조할 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "스마트키 코인전지에 저장된 저전압 전기에너지",
+          "verdict": "incorrect",
+          "rationale": "스마트키 저전압 코인전지는 자동차 구동모터에 필요한 에너지와 전류를 공급할 수 없어."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
+      ]
+    },
+    "topic": "하이브리드 구동모터 토크 보조",
+    "historical_audit_qa": 22
+  },
+  {
+    "id": "auto-made-r05-s04-q12",
+    "round": 5,
+    "subject": "eco",
+    "question_number": 12,
+    "before": {
+      "question": "단순 유성기어 장치에서 선기어는 고정, 캐리어는 정방향으로 회전한다. 링기어의 회전 방향은?",
+      "choices": [
+        "스테이터와 함께 역회전",
+        "캐리어와 항상 반대 방향",
+        "캐리어와 같은 정방향",
+        "회전수와 무관하게 반드시 정지"
+      ],
+      "answer": 3,
+      "reason": "유성기어 관계식 (Ns+Nr)ωc=Nsωs+Nrωr에서 선기어 각속도 ωs=0이면 ωr=(Ns+Nr)/Nr·ωc이다. 따라서 링기어는 캐리어와 같은 방향으로 회전한다.",
+      "key_point": "선기어 고정·캐리어 입력 → 링기어 같은 방향.",
+      "correct_choice": "캐리어와 같은 정방향",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "스테이터와 함께 역회전",
+          "verdict": "incorrect",
+          "rationale": "선기어가 고정된 유성기어 회전 관계는 스테이터 역회전으로 정의되는 것이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "캐리어와 항상 반대 방향",
+          "verdict": "incorrect",
+          "rationale": "선기어 고정·캐리어 정회전 조건에서는 단순 유성기어 링기어가 같은 방향으로 회전한다."
+        },
+        {
+          "number": 3,
+          "text": "캐리어와 같은 정방향",
+          "verdict": "correct",
+          "rationale": "링기어는 캐리어와 같은 방향으로 회전하므로 진술 3이 해당한다."
+        },
+        {
+          "number": 4,
+          "text": "회전수와 무관하게 반드시 정지",
+          "verdict": "incorrect",
+          "rationale": "링기어는 고정된 선기어와 달리 캐리어가 회전하면 비영 회전할 수 있다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.agcoauto.com/content/news/p2_articleid/153"
+      ]
+    },
+    "after": {
+      "question": "일부 파워스플릿 하이브리드 차량은 유성기어장치를 엔진·발전기·구동계와 연결한다. 이 구조의 주된 목적은?",
+      "choices": [
+        "모든 구동 조건에서 세 회전요소를 서로 영구 고정해 같은 속도로 만든다",
+        "엔진 출력을 항상 전기 발전에만 사용하고 차륜에는 기계적으로 전달하지 않는다",
+        "엔진의 기계적 동력과 전기기계의 회전속도·토크 관계를 조합해 주행과 발전을 배분한다",
+        "유성기어의 각 기어를 모두 고정시켜 엔진과 모터가 전혀 회전하지 못하게 한다"
+      ],
+      "answer": 3,
+      "reason": "파워스플릿 방식의 하이브리드 시스템은 유성기어 등 동력분기 기구를 활용해 엔진 회전과 모터/발전기의 동작을 결합하고, 차량 주행에 필요한 기계동력 전달 및 전기발전 비율을 조절한다. 모든 HEV가 동일한 파워스플릿 구조를 사용하는 것은 아니다.",
+      "key_point": "파워스플릿 HEV → 엔진·발전기·구동계를 동력분기 장치로 연계.",
+      "correct_choice": "엔진의 기계적 동력과 전기기계의 회전속도·토크 관계를 조합해 주행과 발전을 배분한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "모든 구동 조건에서 세 회전요소를 서로 영구 고정해 같은 속도로 만든다",
+          "verdict": "incorrect",
+          "rationale": "유성기어의 세 요소는 차종별 기구학 관계를 따라 다른 속도로 회전할 수 있어 모두 영구 동속은 아니야."
+        },
+        {
+          "number": 2,
+          "text": "엔진 출력을 항상 전기 발전에만 사용하고 차륜에는 기계적으로 전달하지 않는다",
+          "verdict": "incorrect",
+          "rationale": "파워스플릿 구조는 발전뿐 아니라 엔진동력의 기계적 전달도 분기할 수 있어."
+        },
+        {
+          "number": 3,
+          "text": "엔진의 기계적 동력과 전기기계의 회전속도·토크 관계를 조합해 주행과 발전을 배분한다",
+          "verdict": "correct",
+          "rationale": "엔진·모터/발전기와 차륜 구동경로를 기계적·전기적으로 조합하는 것이 파워스플릿의 핵심이야."
+        },
+        {
+          "number": 4,
+          "text": "유성기어의 각 기어를 모두 고정시켜 엔진과 모터가 전혀 회전하지 못하게 한다",
+          "verdict": "incorrect",
+          "rationale": "세 유성기어 요소를 모두 잠그면 정상적인 파워스플릿 구동이 되지 않아."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ]
+    },
+    "topic": "파워스플릿 하이브리드 동력분기",
+    "historical_audit_qa": 22
+  },
+  {
+    "id": "auto-made-r05-s04-q13",
+    "round": 5,
+    "subject": "eco",
+    "question_number": 13,
+    "before": {
+      "question": "CVT 벨트 교환 후 시험 운전에서 확인할 항목으로 적절한 것은?",
+      "choices": [
+        "모든 CVT는 4단 기어 변속을 반복",
+        "단수별 변속 충격만 필수 합격기준으로 고정",
+        "엔진오일 교환 알림 시간만 확인",
+        "차종별 학습·변속비 변화·이상 소음 및 벨트 슬립"
+      ],
+      "answer": 4,
+      "reason": "CVT는 풀리 반경을 바꿔 연속적으로 변속비를 조정한다. 벨트·풀리 슬립, 소음, 변속비 제어와 학습 절차를 점검해야 한다.",
+      "key_point": "CVT 벨트 정비 후 변속비·슬립·학습 확인.",
+      "correct_choice": "차종별 학습·변속비 변화·이상 소음 및 벨트 슬립",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "모든 CVT는 4단 기어 변속을 반복",
+          "verdict": "incorrect",
+          "rationale": "일반 벨트식 CVT는 고정 4단 기어변속만 반복하는 구조가 아니다."
+        },
+        {
+          "number": 2,
+          "text": "단수별 변속 충격만 필수 합격기준으로 고정",
+          "verdict": "incorrect",
+          "rationale": "변속 충격만 고정 합격기준으로 하고 실제 벨트/풀리 슬립과 변속비를 생략할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "엔진오일 교환 알림 시간만 확인",
+          "verdict": "incorrect",
+          "rationale": "엔진오일 알림만으로 CVT 벨트 교환 후 변속 상태를 확인할 수 없다."
+        },
+        {
+          "number": 4,
+          "text": "차종별 학습·변속비 변화·이상 소음 및 벨트 슬립",
+          "verdict": "correct",
+          "rationale": "제조사 지정 학습, 변속비 변화, 소음과 벨트/체인 슬립 검사가 진단 항목이다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/transmission-technology/continuously-variable-transmission/"
+      ]
+    },
+    "after": {
+      "question": "전기차 구동모터 리졸버 센서의 사인·코사인 신호가 제어기에서 서로 일관되지 않게 판정된다. 모터 제어 관점에서 확인하려는 주된 정보는?",
+      "choices": [
+        "모터 베어링의 윤활유 산가와 점도만 확인한다",
+        "배터리 충전구 잠금장치의 기계적 유격만 측정한다",
+        "구동 인버터의 냉각수 레벨만을 위치각으로 직접 사용한다",
+        "모터 회전자의 위치각·속도 피드백과 센서 신호·배선 상태"
+      ],
+      "answer": 4,
+      "reason": "모터 리졸버는 회전자 위치각을 측정하는 센서로 구동 인버터가 모터 자속과 전류의 위상을 제어하는 데 사용된다. 신호가 불일치하면 구동 토크 제어를 제한할 수 있으므로 차량 안전확보 후 OEM 진단기로 각도 추정값·센서 신호와 배선을 점검한다.",
+      "key_point": "EV 리졸버 → 모터 회전자 위치·속도 추정용 사인/코사인 피드백.",
+      "correct_choice": "모터 회전자의 위치각·속도 피드백과 센서 신호·배선 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "모터 베어링의 윤활유 산가와 점도만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "베어링 윤활 상태는 중요하지만 리졸버 사인·코사인 전기신호의 본래 측정대상은 아니야."
+        },
+        {
+          "number": 2,
+          "text": "배터리 충전구 잠금장치의 기계적 유격만 측정한다",
+          "verdict": "incorrect",
+          "rationale": "충전구 잠금 유격은 모터 회전자 위치각 신호와 다른 구성요소야."
+        },
+        {
+          "number": 3,
+          "text": "구동 인버터의 냉각수 레벨만을 위치각으로 직접 사용한다",
+          "verdict": "incorrect",
+          "rationale": "인버터 냉각수 레벨은 중요하지만 그 값을 리졸버가 직접 출력하는 것은 아니야."
+        },
+        {
+          "number": 4,
+          "text": "모터 회전자의 위치각·속도 피드백과 센서 신호·배선 상태",
+          "verdict": "correct",
+          "rationale": "리졸버는 회전자의 각도 관련 피드백을 제공하며 사인·코사인 채널의 일관성과 배선 진단이 필요해."
+        }
+      ],
+      "reference_urls": [
+        "https://documentation.infineon.com/aurixtc3xx/docs/nnc1745576047829"
+      ]
+    },
+    "topic": "EV 구동모터 리졸버 회전자 센서",
+    "historical_audit_qa": 22
+  },
+  {
+    "id": "auto-made-r05-s04-q14",
+    "round": 5,
+    "subject": "eco",
+    "question_number": 14,
+    "before": {
+      "question": "TPMS 경고등이 켜진 차량이다. 먼저 확인할 기본 항목은?",
+      "choices": [
+        "엔진오일 압력만",
+        "혼합비 보정값만",
+        "발전기 내부 회전자 저항만",
+        "각 타이어의 실제 냉간 공기압과 경고 상태"
+      ],
+      "answer": 4,
+      "reason": "TPMS는 직접식 압력센서 또는 간접식 휠속도 신호를 이용한다. 경고등의 직접적인 출발점은 타이어 압력 상태를 확인하는 것이다.",
+      "key_point": "TPMS 경고 → 타이어 실제 공기압 우선.",
+      "correct_choice": "각 타이어의 실제 냉간 공기압과 경고 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "엔진오일 압력만",
+          "verdict": "incorrect",
+          "rationale": "TPMS 경고 원인을 엔진오일 압력만으로 확인할 수 없다."
+        },
+        {
+          "number": 2,
+          "text": "혼합비 보정값만",
+          "verdict": "incorrect",
+          "rationale": "연료혼합비 보정값만으로 실제 타이어 공기압을 판정할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "발전기 내부 회전자 저항만",
+          "verdict": "incorrect",
+          "rationale": "발전기 회전자 저항만으로 TPMS 경고 원인이 확정되지 않는다."
+        },
+        {
+          "number": 4,
+          "text": "각 타이어의 실제 냉간 공기압과 경고 상태",
+          "verdict": "correct",
+          "rationale": "차륜별 실제 냉간 공기압과 경고 정보를 확인하는 것이 진단 출발점이다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.nhtsa.gov/equipment/tires"
+      ]
+    },
+    "after": {
+      "question": "배터리 온도가 매우 낮은 전기차가 급속충전을 시도했는데 충전기 정격보다 낮은 충전전류만 허용된다. 우선 해석할 정보는?",
+      "choices": [
+        "충전기 정격이 높으면 배터리 온도와 무관하게 최대전류가 항상 흐른다",
+        "SOC가 낮으면 BMS는 온도와 관계없이 충전 전류 제한을 해제한다",
+        "충전구를 반복 탈착하면 배터리 내부온도 제한이 자동으로 사라진다",
+        "배터리 온도와 SOC에 따른 BMS 충전전류 제한 및 열관리 상태를 함께 확인한다"
+      ],
+      "answer": 4,
+      "reason": "전기차의 급속충전 전류는 충전기 정격 외에도 배터리 셀온도·SOC·충전 전압과 BMS 보호제어에 의해 제한될 수 있다. 저온에서는 충전 속도가 감소할 수 있으므로 차종별 배터리 온도관리·충전전류 요청값을 종합 비교한다.",
+      "key_point": "저온 EV 충전 저하 → BMS 온도·SOC·허용전류와 열관리 확인.",
+      "correct_choice": "배터리 온도와 SOC에 따른 BMS 충전전류 제한 및 열관리 상태를 함께 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "충전기 정격이 높으면 배터리 온도와 무관하게 최대전류가 항상 흐른다",
+          "verdict": "incorrect",
+          "rationale": "급속충전기의 최대출력은 차량이 언제나 그 전류를 받아들일 수 있다는 뜻이 아니야."
+        },
+        {
+          "number": 2,
+          "text": "SOC가 낮으면 BMS는 온도와 관계없이 충전 전류 제한을 해제한다",
+          "verdict": "incorrect",
+          "rationale": "BMS는 온도·셀전압·SOC 등에 따라 전류를 제한할 수 있어 낮은 SOC가 곧 무제한 충전을 뜻하지 않아."
+        },
+        {
+          "number": 3,
+          "text": "충전구를 반복 탈착하면 배터리 내부온도 제한이 자동으로 사라진다",
+          "verdict": "incorrect",
+          "rationale": "커넥터 재접속으로 실제 배터리 셀의 낮은 온도와 충전제한 원인이 즉시 해소되지는 않아."
+        },
+        {
+          "number": 4,
+          "text": "배터리 온도와 SOC에 따른 BMS 충전전류 제한 및 열관리 상태를 함께 확인한다",
+          "verdict": "correct",
+          "rationale": "충전 허용전류는 배터리 온도·SOC·상태에 의존하므로 차량 BMS와 열관리 조건을 확인해야 해."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/electric-batteries",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ]
+    },
+    "topic": "저온 배터리 급속충전 출력제한",
+    "historical_audit_qa": 22
+  },
+  {
+    "id": "auto-made-r05-s04-q15",
+    "round": 5,
+    "subject": "eco",
+    "question_number": 15,
+    "before": {
+      "question": "EPS 정비 뒤 스티어링 휠이 중앙인데 조향각 값이 어긋난다. 합리적인 조치는?",
+      "choices": [
+        "센서 값을 확인하지 않고 모터만 교환한다",
+        "휠 정렬 상태와 차종별 조향각 영점 학습 조건을 확인한다",
+        "브레이크 패드만 바꾼다",
+        "모든 EPS에 무조건 동일한 학습값을 입력한다"
+      ],
+      "answer": 2,
+      "reason": "EPS/ESC 제어기는 조향각 영점과 휠 정렬 상태를 참조할 수 있다. 차량에 따라 스캔툴 학습이 필요하므로 매뉴얼의 조건을 확인한다.",
+      "key_point": "EPS·ESC 영점 학습은 해당 차종 절차에 따름.",
+      "correct_choice": "휠 정렬 상태와 차종별 조향각 영점 학습 조건을 확인한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "센서 값을 확인하지 않고 모터만 교환한다",
+          "verdict": "incorrect",
+          "rationale": "SAS 데이터 이상을 무시하고 EPS 모터만 무조건 교환하는 것은 원인 진단을 생략한 처치다."
+        },
+        {
+          "number": 2,
+          "text": "휠 정렬 상태와 차종별 조향각 영점 학습 조건을 확인한다",
+          "verdict": "correct",
+          "rationale": "휠 정렬과 차량별 조향각 센서 영점 학습 조건을 검토하는 것이 합리적이다."
+        },
+        {
+          "number": 3,
+          "text": "브레이크 패드만 바꾼다",
+          "verdict": "incorrect",
+          "rationale": "브레이크 패드만 교환해도 조향각 제어 신호가 정상화되는 것은 아니다."
+        },
+        {
+          "number": 4,
+          "text": "모든 EPS에 무조건 동일한 학습값을 입력한다",
+          "verdict": "incorrect",
+          "rationale": "모든 차종에 하나의 영점 설정값을 일괄 입력해서는 안 된다."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"
+      ]
+    },
+    "after": {
+      "question": "수소연료전지차가 짧은 고부하 가속을 할 때 연료전지 출력만으로 즉각적 요구토크를 충족하기 어렵다. 차량 보조 구동배터리의 역할은?",
+      "choices": [
+        "수소탱크의 가스압력을 바꾸는 기계식 레귤레이터 기능만 수행한다",
+        "필요 시 모터에 보조 전력을 공급하고 회생제동 에너지 등을 저장한다",
+        "주행 중 연료전지 스택을 영구 단락해 전력을 강제로 최대화한다",
+        "스택에서 생산한 수소를 외부 공기로 방출하도록 제어하는 기능만 한다"
+      ],
+      "answer": 2,
+      "reason": "많은 FCEV는 연료전지 스택과 배터리를 조합해 구동전력을 제공한다. 보조 고전압 배터리는 급가속 등 순간 전력수요를 지원하고 감속 시 회생에너지를 저장할 수 있으며, 상세 전력 분담은 차종별 에너지관리 제어에 따른다.",
+      "key_point": "FCEV 보조 배터리 → 순간 구동전력 보조·회생제동 에너지 저장.",
+      "correct_choice": "필요 시 모터에 보조 전력을 공급하고 회생제동 에너지 등을 저장한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "수소탱크의 가스압력을 바꾸는 기계식 레귤레이터 기능만 수행한다",
+          "verdict": "incorrect",
+          "rationale": "배터리는 전기 에너지 저장장치이며 수소탱크 가스압력의 기계식 레귤레이터 역할이 아니야."
+        },
+        {
+          "number": 2,
+          "text": "필요 시 모터에 보조 전력을 공급하고 회생제동 에너지 등을 저장한다",
+          "verdict": "correct",
+          "rationale": "구동배터리는 가속 시 추가 전력을 공급하고 회생제동 에너지 저장에도 기여할 수 있어."
+        },
+        {
+          "number": 3,
+          "text": "주행 중 연료전지 스택을 영구 단락해 전력을 강제로 최대화한다",
+          "verdict": "incorrect",
+          "rationale": "연료전지 스택을 단락하면 출력이 최적화되는 게 아니라 안전성과 내구를 위협할 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "스택에서 생산한 수소를 외부 공기로 방출하도록 제어하는 기능만 한다",
+          "verdict": "incorrect",
+          "rationale": "배터리 보조동력 기능은 스택 수소를 외부로 배출하는 퍼지밸브 기능과 별개야."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ]
+    },
+    "topic": "FCEV 보조배터리와 스택 출력분담",
+    "historical_audit_qa": 22
   }
 ]
