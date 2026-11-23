@@ -14,7 +14,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://aftermarket.zf.com/sg/aftermarket-portal/faq/faq-oils/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "ATF의 실제 점도 시험",
+        "verdict": "correct",
+        "rationale": "ECU 데이터는 센서 값과 연산값을 출력한다. 실제 오일 점도를 재는 전용 점도센서가 없으면 스캔툴 항목만으로 물성 측정이 불가능하다."
+      },
+      {
+        "number": 2,
+        "text": "자동변속기 고장코드 목록",
+        "verdict": "incorrect",
+        "rationale": "DTC/TCM 데이터는 스캔툴로 읽을 수 있어"
+      },
+      {
+        "number": 3,
+        "text": "변속기 오일 온도센서 값",
+        "verdict": "incorrect",
+        "rationale": "ATF 온도센서의 전기적 측정값은 스캔툴로 조회 가능해"
+      },
+      {
+        "number": 4,
+        "text": "TCM이 측정한 회전수 신호",
+        "verdict": "incorrect",
+        "rationale": "TCM의 입력 회전수 신호도 진단 데이터로 확인 가능해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q02",
@@ -30,7 +65,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://press.zf.com/press/en/releases/release_3748.html"
+      ],
+      "hold_reasons": [
+        "변속기 탈거 시 하중 지지/차량 리프트/배터리·고전압 격리 등 안전작업은 차량별 OEM 절차 필요"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "모든 자동변속기에서 배터리만 분리하면 모든 위험 소멸",
+        "verdict": "incorrect",
+        "rationale": "배터리만 분리한다고 변속기 무게·유압 잔압 위험이 사라지진 않아"
+      },
+      {
+        "number": 2,
+        "text": "차량이 리프트에 있으면 변속기는 스스로 지지",
+        "verdict": "incorrect",
+        "rationale": "리프트에 올려도 무거운 변속기를 별도 지지해야 해"
+      },
+      {
+        "number": 3,
+        "text": "유압라인을 통전 상태에서 무조건 절단",
+        "verdict": "incorrect",
+        "rationale": "통전 상태의 유압라인 절단은 위험하고 정비절차 위반이야"
+      },
+      {
+        "number": 4,
+        "text": "차량 고정·동력 차단·제작사 분해순서 확인",
+        "verdict": "correct",
+        "rationale": "변속기 탈거는 무거운 부품과 유체·전기 연결을 다루는 작업이다. 차량 지지와 전원/하네스 차단, 변속기 잭 및 절차 확인이 필요하다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q03",
@@ -51,7 +123,42 @@
       "change_note": "로드 씰 유막/누유 검증",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "상부 마운트에서 나는 소음만 확인한다",
+        "verdict": "incorrect",
+        "rationale": "어퍼마운트 소음만으로 로드씰 누유 원인을 놓칠 수 있어"
+      },
+      {
+        "number": 2,
+        "text": "로드 표면의 흠집·오일씰 손상과 실제 누유 상태",
+        "verdict": "correct",
+        "rationale": "쇼크업소버에서 오일이 새면 감쇠 성능이 저하될 수 있다. 단순 오염인지 실제 오일 누유인지 구분하고 부품 상태를 점검해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "차고 센서 제어값만 초기화하고 유막은 무시한다",
+        "verdict": "incorrect",
+        "rationale": "차고센서 영점만 반복해도 로드씰 물리 손상이 고쳐지지 않아"
+      },
+      {
+        "number": 4,
+        "text": "쇼크업소버의 하부 볼트 토크만 맞추고 로드씰은 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "하부 볼트토크만 맞춰도 씰의 파손을 해결할 수 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q04",
@@ -67,7 +174,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "가스 충전식은 모든 조건에서 반드시 온도에 더 민감하다",
+        "verdict": "incorrect",
+        "rationale": "가스식 댐퍼가 모든 조건에서 더 온도민감하다는 단정은 근거 없어"
+      },
+      {
+        "number": 2,
+        "text": "가스 충전은 오일 발포 억제에 도움이 될 수 있다",
+        "verdict": "correct",
+        "rationale": "질소 등 가스는 내부 압력을 유지해 오일의 기포 발생을 억제하는 데 기여한다. 감쇠력의 온도 의존도는 밸브와 오일 설계도 고려해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "가스가 있으면 오일은 항상 필요 없다",
+        "verdict": "incorrect",
+        "rationale": "가스 충전식에도 유압오일을 사용하는 형식이 있어"
+      },
+      {
+        "number": 4,
+        "text": "가스식 댐퍼는 유압 감쇠를 전혀 사용하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "가스식 댐퍼가 유압 감쇠를 사용하지 않는 건 틀려"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q05",
@@ -81,7 +223,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "운전대 지름의 기계적 변경",
+        "verdict": "incorrect",
+        "rationale": "전자댐퍼가 운전대 지름을 기계적으로 바꾸지 않아"
+      },
+      {
+        "number": 2,
+        "text": "차체 거동과 주행 상황에 맞는 감쇠력",
+        "verdict": "correct",
+        "rationale": "전자제어 현가는 센서 입력을 바탕으로 밸브나 구동기 제어를 바꿔 감쇠 특성을 조절할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 모양의 실시간 변형",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 형상은 감쇠제어의 대상이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "타이어 고무의 화학 조성",
+        "verdict": "incorrect",
+        "rationale": "타이어 고무의 화학성분도 전자댐퍼가 바꾸지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q06",
@@ -102,7 +279,42 @@
       "change_note": "전자댐퍼 전원·코일의 기본 측정",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "차체 높이 센서 신호만 확인하고 전원공급은 생략한다",
+        "verdict": "incorrect",
+        "rationale": "높이센서만 확인하고 전원 문제를 무시하면 회로불량을 놓칠 수 있어"
+      },
+      {
+        "number": 2,
+        "text": "액추에이터 저항·전원·접지·배선의 상태",
+        "verdict": "correct",
+        "rationale": "댐퍼 제어회로의 저항 이상은 단선·접촉 불량·코일 문제를 시사할 수 있다. 차종별 회로 및 기준 저항을 확인한다."
+      },
+      {
+        "number": 3,
+        "text": "타이어 공기압만 확인하고 댐퍼 출력은 생략한다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압만으로 댐퍼 출력 회로를 판단하지 못해"
+      },
+      {
+        "number": 4,
+        "text": "댐퍼의 기계적 마모만으로 전기회로를 판정한다",
+        "verdict": "incorrect",
+        "rationale": "기계마모만으로 전자식 액추에이터의 전기불량을 판정하지 못해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q07",
@@ -119,7 +331,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "전동 보조 모터",
+        "verdict": "incorrect",
+        "rationale": "전동 보조 모터는 일반 EPS 보조력의 주요 구성요소야"
+      },
+      {
+        "number": 2,
+        "text": "엔진 구동 유압 펌프",
+        "verdict": "correct",
+        "rationale": "순수 전동식 EPS는 전기모터로 보조력을 만들며 일반적으로 엔진 구동 유압 펌프가 없다. 일부 전동유압 방식과 구조가 다르다."
+      },
+      {
+        "number": 3,
+        "text": "조향 토크센서 또는 입력판단 신호",
+        "verdict": "incorrect",
+        "rationale": "조향 토크센서는 EPS 제어 입력에 중요해"
+      },
+      {
+        "number": 4,
+        "text": "모터 제어 전자장치",
+        "verdict": "incorrect",
+        "rationale": "EPS 제어 전자장치는 모터전류를 제어해야 해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q08",
@@ -136,13 +383,50 @@
     "reference_urls": [],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "editorial_revision": "technical_qa2_distractor_repair",
+    "editorial_revision": "technical_qa35_safety_context",
     "distractor_review": {
       "review_status": "editorially_rewritten_not_technically_approved",
       "change_note": "저전압 DTC와 일치하는 EPS 공급 경로",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": [
+        "고속 주행 EPS 저전압은 조향 보조 상실의 위험으로 안전정차 우선, 전원·접지 회로는 OEM 확인"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "EPS 전원·접지·릴레이·전원배선 접촉상태",
+        "verdict": "correct",
+        "rationale": "EPS 모터는 큰 전류를 필요로 한다. 전원릴레이 접촉불량이나 접지 저항이 커지면 보조가 제한될 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "조향각 센서 영점만 정상인지 확인하고 전원점검 생략",
+        "verdict": "incorrect",
+        "rationale": "조향각 영점만 측정해선 저전압 DTC의 전원 문제를 배제하지 못해"
+      },
+      {
+        "number": 3,
+        "text": "조향 컬럼 기계적 유격만 측정해 저전압코드를 설명",
+        "verdict": "incorrect",
+        "rationale": "기계적 유격만으로 전원저전압 고장코드 원인을 설명할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "차량 배터리와 상관없는 타이어 접지력만 확인",
+        "verdict": "incorrect",
+        "rationale": "타이어 접지력만 확인해 EPS 전원 배선불량을 판단하지 못해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q09",
@@ -158,7 +442,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": [
+        "조향기어 교환 후 코딩·영점학습은 전 차량 필수 절차가 아니고 OEM/정렬 조건 필요"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "타이어 밸브캡만 교환",
+        "verdict": "incorrect",
+        "rationale": "타이어 밸브캡 교환은 ECU 조향 학습과 무관해"
+      },
+      {
+        "number": 2,
+        "text": "모든 차량은 교환 후 코딩·학습이 절대 불필요",
+        "verdict": "incorrect",
+        "rationale": "교환 후 모든 차에서 학습이 불필요하다는 단정은 틀려"
+      },
+      {
+        "number": 3,
+        "text": "차륜 정렬과 무관하므로 확인 금지",
+        "verdict": "incorrect",
+        "rationale": "조향기어 교체 뒤 정렬 상태를 무조건 배제하면 안 돼"
+      },
+      {
+        "number": 4,
+        "text": "관련 초기화·각도 또는 토크센서 학습 수행",
+        "verdict": "correct",
+        "rationale": "EPS 정비 후에는 차종에 따라 센서 영점 학습·제어기 코딩이 필요하다. 스캔툴 절차와 정렬 상태를 확인해야 한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q10",
@@ -175,7 +496,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "브레이크액을 연료로 바꾸는 반응",
+        "verdict": "incorrect",
+        "rationale": "ABS 유압모듈레이터는 브레이크액을 연료로 변환하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "스마트키 송신 주파수 변경",
+        "verdict": "incorrect",
+        "rationale": "스마트키 RF는 브레이크 유압제어 대상이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "타이어를 즉시 교체하는 작업",
+        "verdict": "incorrect",
+        "rationale": "타이어를 즉시 교환하는 기능도 ABS 모듈레이터에는 없어"
+      },
+      {
+        "number": 4,
+        "text": "바퀴별 제동압력의 감소·유지·증가 제어",
+        "verdict": "correct",
+        "rationale": "ABS는 바퀴속도 정보를 통해 잠김 위험을 인식하고 밸브와 펌프로 제동압력을 제어한다. 동작은 노면·차량상태에 따라 달라진다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q11",
@@ -192,7 +548,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "좌우 제동력 차이",
+        "verdict": "incorrect",
+        "rationale": "좌우 제동력 차이는 제동력 롤러기로 평가 가능해"
+      },
+      {
+        "number": 2,
+        "text": "차륜에 가해지는 제동력",
+        "verdict": "incorrect",
+        "rationale": "차륜 제동력 자체가 롤러 시험기의 직접 계측량이야"
+      },
+      {
+        "number": 3,
+        "text": "제동력 불균형 값",
+        "verdict": "incorrect",
+        "rationale": "제동력 불균형도 시험기로 비교 가능한 값이야"
+      },
+      {
+        "number": 4,
+        "text": "ABS ECU가 언제 밸브를 개폐했는지의 통신 명령",
+        "verdict": "correct",
+        "rationale": "제동력 테스터는 차륜의 제동력 크기와 균형을 측정한다. ABS 내부의 전자제어와 밸브 작동 명령은 진단기 등 별도 장비가 필요하다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q12",
@@ -209,7 +600,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "베어링·센서링 결합구조에 관한 차종별 정비정보",
+        "verdict": "correct",
+        "rationale": "ABS 센서용 톤링 또는 자기 엔코더는 허브나 베어링에 일체화된 차종이 있고 별도 장착형도 있다. 수리 단위는 구조마다 다르다."
+      },
+      {
+        "number": 2,
+        "text": "ABS 센서링은 어떤 구동계에도 존재하지 않음",
+        "verdict": "incorrect",
+        "rationale": "ABS 톤링은 허브·베어링 일체형도 실제 존재해"
+      },
+      {
+        "number": 3,
+        "text": "모든 차종에서 톤링은 무조건 분리 가능",
+        "verdict": "incorrect",
+        "rationale": "모든 톤링이 무조건 분리 가능하다는 건 틀려"
+      },
+      {
+        "number": 4,
+        "text": "모든 차량의 베어링을 언제나 함께 교환",
+        "verdict": "incorrect",
+        "rationale": "모든 차의 베어링을 언제나 함께 교환해야 하는 건 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q13",
@@ -223,7 +649,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "장착 볼트 없이 간단히 얹어 놓기",
+        "verdict": "incorrect",
+        "rationale": "볼트 없이 쇼크업소버를 얹는 조립은 안전하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "해당 차종의 현가 설계와 지정 장착 위치",
+        "verdict": "correct",
+        "rationale": "쇼크업소버는 현가 지오메트리와 하중 조건에 맞는 위치·각도로 장착해야 한다. 수평만이 최적이라는 공통 규칙은 없다."
+      },
+      {
+        "number": 3,
+        "text": "기존 부품의 설치 방향을 완전히 무시",
+        "verdict": "incorrect",
+        "rationale": "기존 장착 방향을 무시하면 댐퍼 손상 위험이 있어"
+      },
+      {
+        "number": 4,
+        "text": "모든 쇼크업소버를 지면과 평행하게 수평 고정",
+        "verdict": "incorrect",
+        "rationale": "모든 댐퍼를 지면과 평행하게 수평 설치하는 규칙은 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q14",
@@ -246,7 +707,44 @@
       "change_note": "TCC 슬립 검증 데이터/간접 항목 구분",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://press.zf.com/press/en/releases/release_3748.html"
+      ],
+      "hold_reasons": [
+        "TCC 슬립량을 엔진 RPM과 터빈/입력축 회전수로 계산하는 방식은 센서 정의·차종별 제어 다름"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "정속 주행 중 타이어 전후륜 회전수 비율만",
+        "verdict": "incorrect",
+        "rationale": "타이어 전후륜 회전비만으로 TCC 클러치 슬립을 판단하지 못해"
+      },
+      {
+        "number": 2,
+        "text": "선택 변속단의 기어비 명령값만",
+        "verdict": "incorrect",
+        "rationale": "변속단 기어비 명령만으로 실제 TCC 슬립은 확인하지 못해"
+      },
+      {
+        "number": 3,
+        "text": "엔진 RPM·변속기 입력 회전수와 TCC 제어 상태",
+        "verdict": "correct",
+        "rationale": "토크컨버터 클러치가 완전히 결합되면 엔진과 변속기 입력축의 회전 차가 작아진다. 실제 슬립은 제어명령과 부하 상태를 함께 봐야 한다."
+      },
+      {
+        "number": 4,
+        "text": "변속기 오일레벨 센서의 경고등 점등 여부만",
+        "verdict": "incorrect",
+        "rationale": "오일레벨 경고등만으로 클러치 결합 상태를 파악하지 못해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q15",
@@ -260,7 +758,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "연료 분사 시점 조절",
+        "verdict": "incorrect",
+        "rationale": "연료분사 시기는 엔진 ECU 기능이며 ABS 유압밸브와 별개야"
+      },
+      {
+        "number": 2,
+        "text": "제동 중 바퀴별 브레이크 압력 조절",
+        "verdict": "correct",
+        "rationale": "모듈레이터는 ECU의 명령에 따라 바퀴 제동 회로의 압력을 유지·증가·감소시킨다. 고장은 잠김 방지 기능을 제한할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "도어 잠금 상태 저장",
+        "verdict": "incorrect",
+        "rationale": "도어 잠금저장은 차체 ECU 기능으로 ABS와 달라"
+      },
+      {
+        "number": 4,
+        "text": "배터리 열관리용 펌프 작동",
+        "verdict": "incorrect",
+        "rationale": "배터리 열관리 펌프는 브레이크 유압제어에 쓰이지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q16",
@@ -277,7 +810,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hunter.com/en-int/media-center/industry-insights/performing-a-steering-angle-sensor-reset/"
+      ],
+      "hold_reasons": [
+        "휠 얼라인먼트 후 SAS 자동 보정 여부와 장착 차종별 영점 조건이 다름"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "브레이크액을 전량 바꾸면 자동 영점",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 전체교환만으로 SAS 영점이 맞아지지는 않아"
+      },
+      {
+        "number": 2,
+        "text": "조향각과 실제 차륜 방향은 항상 독립이라 무시",
+        "verdict": "incorrect",
+        "rationale": "조향각과 실제 직진방향은 ESC 판단에 연관돼"
+      },
+      {
+        "number": 3,
+        "text": "타이어색을 바꾸면 센서 영점이 수정",
+        "verdict": "incorrect",
+        "rationale": "타이어 색으로 조향각 영점을 변경할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "차륜 직진 기준과 조향각 영점학습 필요성",
+        "verdict": "correct",
+        "rationale": "차륜 정렬 후 ESC 센서의 영점이 맞지 않으면 차량의 자세제어 판단이 부정확해질 수 있다. 차종별 보정 절차로 영점을 확인한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q17",
@@ -293,7 +863,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "엔진 연료분사량이 무조건 두 배",
+        "verdict": "incorrect",
+        "rationale": "연료분사량을 두 배로 하는 것이 ABS 페달 맥동의 원인이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "에어컨 컴프레서 클러치의 한 방향 회전",
+        "verdict": "incorrect",
+        "rationale": "에어컨 클러치 회전은 브레이크 페달 진동의 직접 원인이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "타이어 내부 압력 자동 충전",
+        "verdict": "incorrect",
+        "rationale": "타이어 자동 공기 주입이 맥동을 만드는 것도 아니야"
+      },
+      {
+        "number": 4,
+        "text": "유압 밸브와 펌프 작동으로 생기는 제동압력 변동",
+        "verdict": "correct",
+        "rationale": "ABS는 밸브·펌프 작동으로 제동압력을 빠르게 조절하므로 페달에 맥동이나 소음이 전달될 수 있다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q18",
@@ -322,7 +927,42 @@
       ],
       "review_note": "Bosch ESC 설명상 조향각은 운전자 목표 거동, 요레이트는 실제 회전거동을 감지하며 차이를 비교해 제어할 수 있다.",
       "reviewed_alternatives": 4
-    }
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "타이어 공기압만으로 목표 요거동을 계산한다",
+        "verdict": "incorrect",
+        "rationale": "공기압만으로 운전자 목표 요레이트를 결정하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "제동 마스터실린더 압력만으로 언더스티어를 판정한다",
+        "verdict": "incorrect",
+        "rationale": "마스터 실린더 압력만으로 언더스티어를 진단할 수 없어"
+      },
+      {
+        "number": 3,
+        "text": "운전자 요구토크가 0이면 실제 요거동 비교는 불필요하다",
+        "verdict": "incorrect",
+        "rationale": "운전자 요구토크가 0이어도 조향/요거동 비교는 의미가 있어"
+      },
+      {
+        "number": 4,
+        "text": "조향각에 따른 목표 요거동과 실제 요레이트를 비교한다",
+        "verdict": "correct",
+        "rationale": "ESC는 조향각·요레이트·휠속도·횡가속도 등을 비교해 회전 방향 안정성을 판단하고 필요 시 제동 개입을 수행한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q19",
@@ -338,7 +978,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "연료 인젝터의 실제 분사압만",
+        "verdict": "incorrect",
+        "rationale": "연료 인젝터 압력은 조향각 센서 측정항목이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "냉각수의 화학성분만",
+        "verdict": "incorrect",
+        "rationale": "냉각수 화학성분도 조향각 데이터가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "타이어 고무의 원료 종류",
+        "verdict": "incorrect",
+        "rationale": "타이어 고무 원료는 운전대 회전센서 직접값이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "조향각·조향 방향·조향 속도 데이터",
+        "verdict": "correct",
+        "rationale": "조향각센서는 핸들 회전의 위치와 변화를 전기 신호로 내보낸다. ESC·EPS·ADAS 등 관련 제어기가 이를 이용할 수 있다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s02-q20",
@@ -355,6 +1030,43 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": [
+        "에어스프링 잔압·차량 지지·설치압력은 고압 현가 부품 안전/OEM 필요"
+      ]
+    },
+    "option_analysis_qa35": [
+      {
+        "number": 1,
+        "text": "공기라인 연결 상태를 확인하지 않고 출고",
+        "verdict": "incorrect",
+        "rationale": "공기라인 연결검사를 생략하면 누설 위험이 있어"
+      },
+      {
+        "number": 2,
+        "text": "차량 지지 없이 에어스프링을 강제로 분리",
+        "verdict": "incorrect",
+        "rationale": "차량 받침이 없으면 감압/벨로스 탈거 중 차체 움직임 위험이 있어"
+      },
+      {
+        "number": 3,
+        "text": "항상 팽창을 최대치로 유지한 채 무조건 설치",
+        "verdict": "incorrect",
+        "rationale": "에어스프링을 항상 최대 팽창한 채 설치하면 부품손상 위험이 있어"
+      },
+      {
+        "number": 4,
+        "text": "규정 압력 배출·받침 지지 후 정해진 설치 상태에서 조립",
+        "verdict": "correct",
+        "rationale": "에어 서스펜션은 압축공기를 저장하므로 분해 전 감압·차량 지지가 중요하다. 설치 높이와 누설점검은 차종 지침을 따른다."
+      }
+    ]
   }
 ]

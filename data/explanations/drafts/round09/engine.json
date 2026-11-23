@@ -13,7 +13,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "연료탱크 압력을 기계적으로 높인다",
+        "verdict": "incorrect",
+        "rationale": "웨이스트게이트는 연료탱크 압력을 올리는 장치가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "터빈을 통과하는 배기가스량을 조절해 과급압력을 관리한다",
+        "verdict": "correct",
+        "rationale": "웨이스트게이트는 터빈을 우회하는 배기가스 흐름을 조절해 터빈 구동력과 과급압을 제어한다. 고착 등 이상은 과급 부족 또는 과급 과다로 이어질 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "냉각팬만 정지시켜 엔진출력을 제한한다",
+        "verdict": "incorrect",
+        "rationale": "냉각팬 정지만으로 터빈 과급압을 직접 조절하지 않아"
+      },
+      {
+        "number": 4,
+        "text": "브레이크 패드 마찰력을 전자적으로 변경한다",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 마찰계수는 웨이스트게이트 기능이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q02",
@@ -29,7 +64,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "파워윈도 위치 센서",
+        "verdict": "incorrect",
+        "rationale": "파워윈도 센서는 배기가스 산소농도를 측정하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "배기관 산소센서 또는 공연비센서",
+        "verdict": "correct",
+        "rationale": "산소센서·공연비센서는 배기 속 산소 잔량을 측정해 혼합비가 농후한지 희박한지 추정하도록 한다. ECU는 이를 이용해 연료분사를 보정한다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 레벨센서만",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 레벨은 배기가스 공연비 제어 피드백이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "스티어링 샤프트 토크센서",
+        "verdict": "incorrect",
+        "rationale": "조향 토크센서는 엔진 폐루프 연료 센서가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q03",
@@ -45,7 +115,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/particulate-matter-sensor/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "배기 필터의 다공성 매체를 사용하는 DPF",
+        "verdict": "correct",
+        "rationale": "DPF는 디젤 배기 중 입자상물질(PM)을 필터 내부에 포집한다. 일정 조건에서 재생을 통해 축적된 그을음을 산화한다."
+      },
+      {
+        "number": 2,
+        "text": "가솔린 증발가스 캐니스터",
+        "verdict": "incorrect",
+        "rationale": "EVAP 캐니스터는 배기 입자 필터와 달라"
+      },
+      {
+        "number": 3,
+        "text": "에어컨 리시버드라이어",
+        "verdict": "incorrect",
+        "rationale": "리시버드라이어는 냉매 수분을 처리하는 부품이야"
+      },
+      {
+        "number": 4,
+        "text": "엔진오일 오일필터 바이패스밸브만",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 필터 바이패스는 매연 포집 기능이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q04",
@@ -61,7 +166,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "피스톤 링·밸브 스템 씰과 외부 누유 상태",
+        "verdict": "correct",
+        "rationale": "오일 소모는 실린더 내 연소, PCV 이상, 터보차저 누유나 외부 누설 등으로 발생할 수 있다. 냉각수온 센서만을 고장으로 단정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "트렁크 램프의 전구색상만",
+        "verdict": "incorrect",
+        "rationale": "트렁크 램프 색상은 엔진오일 소비량 원인과 무관해"
+      },
+      {
+        "number": 3,
+        "text": "사이드미러 접힘 속도만",
+        "verdict": "incorrect",
+        "rationale": "사이드미러 접힘속도로 링·씰 누유를 판단할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "인포테인먼트 저장공간만",
+        "verdict": "incorrect",
+        "rationale": "인포테인먼트 저장용량은 윤활유 소비진단 지표가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q05",
@@ -75,7 +215,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "산소 대비 연료가 많은 농후한 연소 상태",
+        "verdict": "correct",
+        "rationale": "CO는 산소가 부족한 불완전 연소에서 증가하기 쉽다. 농후 혼합비, 점화불량과 촉매 효율 저하 등을 함께 점검해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "혼합비가 항상 이론공연비로 정확히 유지",
+        "verdict": "incorrect",
+        "rationale": "CO가 높은 상황을 완전 이론공연비라고 단정하지 못해"
+      },
+      {
+        "number": 3,
+        "text": "연료가 전혀 없는 완전 연료차단 상태만",
+        "verdict": "incorrect",
+        "rationale": "연료공급 완전 차단만으로 높은 CO 배출을 설명하기 어려워"
+      },
+      {
+        "number": 4,
+        "text": "연료 분사가 중단된 가스 분석장치만",
+        "verdict": "incorrect",
+        "rationale": "연료분사가 중단된 분석장비는 가솔린 연소 상태 진단과 달라"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q06",
@@ -92,7 +267,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/particulate-matter-sensor/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "엔진 내부의 기계 압축비가 즉시 변화",
+        "verdict": "incorrect",
+        "rationale": "DPF 재생으로 실린더 압축비가 기계적으로 바뀌지 않아"
+      },
+      {
+        "number": 2,
+        "text": "요소수가 자동으로 필터의 모든 PM을 포집",
+        "verdict": "incorrect",
+        "rationale": "요소수는 SCR NOx 환원에 관련되고 PM 여과 기능과 달라"
+      },
+      {
+        "number": 3,
+        "text": "필터의 그을음 산화를 돕는 배기 온도 상승",
+        "verdict": "correct",
+        "rationale": "DPF 재생은 포집된 그을음을 산화시키기 위해 배기 온도를 올리는 전략을 사용할 수 있다. 재생 조건과 제어방식은 시스템별로 다르다."
+      },
+      {
+        "number": 4,
+        "text": "배기관 온도가 어떤 상황에서도 정확히 0℃ 유지",
+        "verdict": "incorrect",
+        "rationale": "DPF 재생시 배기 온도가 반드시 0℃가 되는 건 불가능해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q07",
@@ -109,7 +319,45 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa34_safety_context",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "엔진오일 압력 경고는 심각한 손상 위험으로 안전 정차·엔진정지를 우선, 재시동/실측·견인은 OEM 안전 권고에 따름"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "냉각수 과열이 유일한 원인임을 바로 확정한다",
+        "verdict": "incorrect",
+        "rationale": "저유압을 과열 하나의 원인으로 바로 확정할 수 없어"
+      },
+      {
+        "number": 2,
+        "text": "오일을 전혀 확인하지 않고 계속 고속 운행",
+        "verdict": "incorrect",
+        "rationale": "압력경고를 무시한 고속주행은 엔진 손상 위험이 커"
+      },
+      {
+        "number": 3,
+        "text": "실제 압력·오일량·센서 및 윤활 회로를 검사한다",
+        "verdict": "correct",
+        "rationale": "저압 경고는 실제 오일압력 부족뿐 아니라 센서·배선 이상으로도 발생한다. 엔진 손상을 피하기 위해 안전 정차 후 실압을 확인해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "경고등 퓨즈만 분리하면 오일압력이 정상",
+        "verdict": "incorrect",
+        "rationale": "경고등 전기퓨즈만 빼도 실제 윤활유압이 복원되지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q08",
@@ -123,7 +371,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "흡기 EGR 쿨러",
+        "verdict": "incorrect",
+        "rationale": "EGR 쿨러는 오일필터 바이패스와 무관해"
+      },
+      {
+        "number": 2,
+        "text": "연료탱크 캐니스터만",
+        "verdict": "incorrect",
+        "rationale": "증발가스 캐니스터는 윤활유 여과유로를 열지 않아"
+      },
+      {
+        "number": 3,
+        "text": "압력차에 반응해 우회 통로를 여는 바이패스 밸브",
+        "verdict": "correct",
+        "rationale": "오일필터 바이패스밸브는 여과지의 압력차가 과도할 때 우회 유로를 열어 오일 공급 중단을 줄인다. 우회 시 여과되지 않은 오일이 흐를 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "차체 자세제어 ESC 모듈",
+        "verdict": "incorrect",
+        "rationale": "ESC는 차량 자세제어이며 윤활유 우회밸브가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q09",
@@ -139,7 +422,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "배기가스 흐름을 무조건 0으로 만든다",
+        "verdict": "incorrect",
+        "rationale": "VGT는 배기가스 흐름을 0으로만 만드는 제어가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "터빈 유로 단면을 조절해 운전 영역에 맞는 과급 특성 확보",
+        "verdict": "correct",
+        "rationale": "VGT는 가변 베인 각도로 터빈에 유입되는 배기가스 유속과 방향을 바꿔 저속 응답과 높은 회전 영역의 과급 제어를 돕는다."
+      },
+      {
+        "number": 3,
+        "text": "터빈 날개가 없어서 배기가스를 전혀 쓰지 않는다",
+        "verdict": "incorrect",
+        "rationale": "터보가 배기터빈 없이 작동한다는 설명은 틀려"
+      },
+      {
+        "number": 4,
+        "text": "압축 공기 온도가 항상 대기보다 낮다",
+        "verdict": "incorrect",
+        "rationale": "압축된 공기가 항상 대기보다 차가운 것은 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q10",
@@ -153,7 +471,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "연료를 인젝터 내부에서 무조건 분사",
+        "verdict": "incorrect",
+        "rationale": "밸브 스프링은 연료 분사기 자체가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "피스톤을 크랭크축과 단단히 용접",
+        "verdict": "incorrect",
+        "rationale": "피스톤을 크랭크와 용접하는 역할이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "밸브를 시트에 닫고 캠의 운동을 안정적으로 따라가게 한다",
+        "verdict": "correct",
+        "rationale": "밸브 스프링은 개방된 밸브를 닫고 밸브 트레인이 캠 프로파일을 따라가게 하며 고회전에서 플로트를 막도록 설계된다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 접지면적을 자동 확대",
+        "verdict": "incorrect",
+        "rationale": "타이어 접지면적을 조절하는 현가 부품도 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q11",
@@ -167,7 +520,44 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": [
+        "인젝터 세척 후 실화는 점화·압축·연료 등 다중 원인; 분사기 재시험과 연료 고압 안전절차 OEM 확인"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "실내 조명 개수 변경",
+        "verdict": "incorrect",
+        "rationale": "실내 조명 변경은 실화 원인 진단에 부합하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "워셔액 보충만으로 실화 복구",
+        "verdict": "incorrect",
+        "rationale": "워셔액 보충만으로 실화가 정상화되지 않아"
+      },
+      {
+        "number": 3,
+        "text": "인젝터 분사량·분무형상·연료레일 압력",
+        "verdict": "correct",
+        "rationale": "인젝터 세척 뒤에도 분사 패턴과 누설·연료압을 검사해야 한다. 코일저항·배선·실화 원인도 함께 살펴야 한다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 공기압 확인만으로 분사 품질 보장",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압만으로 인젝터 분사품질을 확인하지 못해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q12",
@@ -199,7 +589,44 @@
       ],
       "review_note": "Fluke와 Pico 자동차 오실로스코프 지침에서 점화 2차 고전압을 전용 픽업으로 결합한다는 점을 확인했다. 일반 저전압 프로브 직접 연결은 안전하지 않다.",
       "reviewed_alternatives": 4
-    }
+    },
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "점화 2차 측정은 위험한 고전압이며 프로브 정격·절연 및 작업자 안전절차 필요"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "시동 배터리 CCA 시험기",
+        "verdict": "incorrect",
+        "rationale": "CCA 시험기는 점화 2차 고전압 파형 측정용이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "전원 공급용 일반 12V 패치코드",
+        "verdict": "incorrect",
+        "rationale": "일반 12V 패치코드로 2차 고전압을 직접 계측하면 위험해"
+      },
+      {
+        "number": 3,
+        "text": "일반 저전압 수동 프로브의 직접 연결",
+        "verdict": "incorrect",
+        "rationale": "일반 저전압 프로브를 점화 2차 회로에 직접 연결하면 기기·작업자 안전 위험이 있어"
+      },
+      {
+        "number": 4,
+        "text": "점화 2차 파형용 절연/정격 측정 픽업",
+        "verdict": "correct",
+        "rationale": "점화 2차파형의 상승전압·스파크 시간 등은 전용 프로브를 연결한 오실로스코프로 측정한다. 고전압에 일반 프로브를 직접 접촉하면 위험하다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q13",
@@ -215,7 +642,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "연소실 압력과 냉각수·윤활유 통로를 밀봉한다",
+        "verdict": "correct",
+        "rationale": "헤드가스켓은 블록과 실린더 헤드 사이의 압력·유체 통로를 기밀하게 만든다. 손상되면 압축 누설이나 오일·냉각수 혼입이 일어날 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "바퀴 회전속도를 계측한다",
+        "verdict": "incorrect",
+        "rationale": "휠속도 센서는 헤드가스켓의 연소기밀 측정장치가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "연료 분사시기를 전자적으로 계산한다",
+        "verdict": "incorrect",
+        "rationale": "분사시기 ECU 연산은 가스켓의 씰링기능과 달라"
+      },
+      {
+        "number": 4,
+        "text": "자동변속기 TCC를 결합한다",
+        "verdict": "incorrect",
+        "rationale": "TCC 결합은 자동변속기 기능으로 가스켓 기능이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q14",
@@ -229,7 +691,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "모든 캡을 순서 없이 임의로 교환",
+        "verdict": "incorrect",
+        "rationale": "캡을 임의 교환하면 가공된 베어링 정렬이 어긋날 수 있어"
+      },
+      {
+        "number": 2,
+        "text": "일회용 신장볼트를 무조건 계속 재사용",
+        "verdict": "incorrect",
+        "rationale": "일회용 체결볼트를 무조건 재사용하면 파손 위험이 있어"
+      },
+      {
+        "number": 3,
+        "text": "베어링 간극을 확인할 필요가 없다고 판정",
+        "verdict": "incorrect",
+        "rationale": "베어링 간극은 윤활과 내구에 중요한 검사값이야"
+      },
+      {
+        "number": 4,
+        "text": "기존 캡 위치·방향과 지정 체결 토크·순서",
+        "verdict": "correct",
+        "rationale": "베어링 캡은 블록에 맞춰 가공되므로 위치·방향이 중요하다. 정비 매뉴얼에 따른 조임과 오일 간극을 확인해야 한다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q15",
@@ -247,7 +744,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "가솔린 EGR 적용 유무와 NOx 연소온도·공연비·점화시기 다중 원인은 차종별로 상이"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "NOx 생성은 연소 온도와 전혀 관련없다",
+        "verdict": "incorrect",
+        "rationale": "NOx는 연소온도와 관련돼 무관하다는 오답이야"
+      },
+      {
+        "number": 2,
+        "text": "EGR이 없으면 연료의 옥탄가가 자동으로 감소",
+        "verdict": "incorrect",
+        "rationale": "EGR 부재가 옥탄가를 자동 낮춘다는 것은 부정확해"
+      },
+      {
+        "number": 3,
+        "text": "재순환량 부족으로 연소 온도가 상승할 수 있다",
+        "verdict": "correct",
+        "rationale": "고온 연소에서 열적 NOx 생성이 증가한다. EGR이 적절히 작동하지 않으면 일부 운전영역에서 NOx가 증가할 수 있으나 혼합비·점화시기 등도 함께 확인해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "휘발유의 화학식이 타이어 압력으로 바뀐다",
+        "verdict": "incorrect",
+        "rationale": "휘발유 화학식은 타이어 공기압에 의해 변하지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q16",
@@ -261,7 +795,44 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": [
+        "디젤 고압 인젝터 분무시험의 전용계측·피부 주입·고압 유압 안전은 OEM 확인 필요"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "분사량·누설·분무 형상과 압력 특성",
+        "verdict": "correct",
+        "rationale": "디젤 인젝터는 연료를 미세하게 분무해야 한다. 전용 시험에서는 누설·분사량과 분무 패턴을 점검하며 가솔린 점화시스템의 점화에너지는 직접 시험대상이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "점화코일의 스파크 화염 온도",
+        "verdict": "incorrect",
+        "rationale": "디젤 점화코일 스파크는 분무량/누설 시험 대상이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "기어오일의 점도만",
+        "verdict": "incorrect",
+        "rationale": "기어오일 점도만으로 분무패턴을 파악할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "브레이크 패드 표면 코팅색",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 코팅색은 인젝터 분무특성과 무관해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q17",
@@ -277,7 +848,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": [
+        "분무입자 증가가 매연을 늘릴 수 있지만 노즐 형상·분사압·EGR 운전조건에 좌우됨"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "매연이 어떤 운전 조건에서도 반드시 0",
+        "verdict": "incorrect",
+        "rationale": "매연이 항상 0이 된다는 단정은 분무 악화와 반대야"
+      },
+      {
+        "number": 2,
+        "text": "혼합과 연소 불완전으로 인한 그을음 증가",
+        "verdict": "correct",
+        "rationale": "노즐 마모와 홀 크기 변화는 분무 형상 및 연료량에 영향을 줘 불완전 연소와 PM 증가를 유발할 수 있다. 실제 결과는 분사압력·분사시간·공기량에도 좌우된다."
+      },
+      {
+        "number": 3,
+        "text": "차체 무게가 연료분사량만큼 감소",
+        "verdict": "incorrect",
+        "rationale": "노즐 마모로 차량질량이 분사량만큼 줄지 않아"
+      },
+      {
+        "number": 4,
+        "text": "산소가 항상 100%로 유지",
+        "verdict": "incorrect",
+        "rationale": "배기관 산소농도가 항상 100%로 유지되는 것은 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q18",
@@ -293,7 +901,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "유화오일은 냉각수 혼입 가능성 외 결로·오일냉각기·헤드가스켓 등 여러 원인을 감별해야 함"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "오일·냉각수 간 혼입 경로와 헤드가스켓·냉각기",
+        "verdict": "correct",
+        "rationale": "냉각수가 오일에 섞이면 윤활 기능이 저하되고 엔진 손상이 발생할 수 있다. 점도가 어떻게 변하는지는 오염 상태에 따라 달라 압력 방향만 단정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "오일압력이 무조건 높아졌으므로 오일펌프 교환만",
+        "verdict": "incorrect",
+        "rationale": "오일압이 항상 높아졌다고 단정해 펌프만 교환할 수 없어"
+      },
+      {
+        "number": 3,
+        "text": "연료 분사시기 보정값만",
+        "verdict": "incorrect",
+        "rationale": "분사시기 하나만으로 오일 유화와 냉각수 소모를 설명하기 어려워"
+      },
+      {
+        "number": 4,
+        "text": "오염돼도 윤활 성능은 항상 향상",
+        "verdict": "incorrect",
+        "rationale": "냉각수 혼입 유화오일은 윤활성능을 악화시킬 수 있어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q19",
@@ -309,7 +954,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": [
+        "타이밍벨트 교체 조건과 오일 침지형(Wet Belt)·OEM 정기교환주기 적용은 차종별 점검 필요"
+      ]
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "모든 엔진에서 엔진오일 점도만으로 주기를 결정",
+        "verdict": "incorrect",
+        "rationale": "모든 엔진이 오일 점도 하나만으로 벨트 주기를 정하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "도어 잠금 횟수만으로 교환 시점 산출",
+        "verdict": "incorrect",
+        "rationale": "도어잠금 횟수는 벨트 마모의 제조사 기준이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "타이어 교체일만 사용",
+        "verdict": "incorrect",
+        "rationale": "타이어 교체일은 타이밍벨트 서비스주기와 달라"
+      },
+      {
+        "number": 4,
+        "text": "제작사 주행거리·시간·벨트 상태와 운행 조건",
+        "verdict": "correct",
+        "rationale": "타이밍벨트는 재료 열화와 운전조건, 엔진별 설계에 따라 서비스 주기가 정해진다. 벨트 주변 오일 누유도 손상 원인이 될 수 있어 엔진오일 점도만으로 결정하지 않는다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s01-q20",
@@ -323,6 +1005,41 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa34": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa34": [
+      {
+        "number": 1,
+        "text": "각 실린더의 토크 기여 차이를 비교한다",
+        "verdict": "correct",
+        "rationale": "실린더 밸런스 시험은 분사·점화 제어를 일시적으로 조절하고 회전수·토크 반응을 관찰해 특정 실린더의 성능 저하를 찾아낸다."
+      },
+      {
+        "number": 2,
+        "text": "에어컨 냉매를 회수한다",
+        "verdict": "incorrect",
+        "rationale": "실린더 밸런스시험은 냉매 회수 절차와 달라"
+      },
+      {
+        "number": 3,
+        "text": "모든 실린더의 물리 배기량을 바꾼다",
+        "verdict": "incorrect",
+        "rationale": "실린더마다 실제 기하학적 배기량을 바꾸는 시험이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "타이어 공기압을 동일하게 만든다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압을 동일하게 만드는 검사도 아니야"
+      }
+    ]
   }
 ]

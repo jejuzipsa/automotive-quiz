@@ -19,7 +19,16 @@
     "explanation_id": "auto-made-r09-s02-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://aftermarket.zf.com/sg/aftermarket-portal/faq/faq-oils/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q02",
@@ -41,7 +50,18 @@
     "explanation_id": "auto-made-r09-s02-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://press.zf.com/press/en/releases/release_3748.html"
+      ],
+      "hold_reasons": [
+        "변속기 탈거 시 하중 지지/차량 리프트/배터리·고전압 격리 등 안전작업은 차량별 OEM 절차 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r09-s02-q03",
@@ -70,6 +90,15 @@
       "change_note": "로드 씰 유막/누유 검증",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -92,7 +121,16 @@
     "explanation_id": "auto-made-r09-s02-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q05",
@@ -114,7 +152,16 @@
     "explanation_id": "auto-made-r09-s02-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q06",
@@ -143,6 +190,15 @@
       "change_note": "전자댐퍼 전원·코일의 기본 측정",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -165,7 +221,16 @@
     "explanation_id": "auto-made-r09-s02-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q08",
@@ -176,7 +241,7 @@
     "source_question_id": "auto-r09-s02-q08",
     "round": 9,
     "question_number": 8,
-    "question": "고속 주행 중 EPS가 갑자기 무거워지고 전원 저전압 DTC가 뜬다. 직접 점검할 부분은?",
+    "question": "고속 주행 중 EPS 보조가 무거워지고 저전압 DTC가 떠 안전 정차했다. 직접 점검할 부분은?",
     "choices": [
       "EPS 전원·접지·릴레이·전원배선 접촉상태",
       "조향각 센서 영점만 정상인지 확인하고 전원점검 생략",
@@ -188,12 +253,23 @@
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
     "publishable": false,
-    "editorial_revision": "technical_qa2_distractor_repair",
+    "editorial_revision": "technical_qa35_safety_context",
     "distractor_review": {
       "review_status": "editorially_rewritten_not_technically_approved",
       "change_note": "저전압 DTC와 일치하는 EPS 공급 경로",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": [
+        "고속 주행 EPS 저전압은 조향 보조 상실의 위험으로 안전정차 우선, 전원·접지 회로는 OEM 확인"
+      ]
     }
   },
   {
@@ -216,7 +292,18 @@
     "explanation_id": "auto-made-r09-s02-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": [
+        "조향기어 교환 후 코딩·영점학습은 전 차량 필수 절차가 아니고 OEM/정렬 조건 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r09-s02-q10",
@@ -238,7 +325,16 @@
     "explanation_id": "auto-made-r09-s02-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q11",
@@ -260,7 +356,16 @@
     "explanation_id": "auto-made-r09-s02-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q12",
@@ -282,7 +387,16 @@
     "explanation_id": "auto-made-r09-s02-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q13",
@@ -304,7 +418,16 @@
     "explanation_id": "auto-made-r09-s02-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q14",
@@ -333,6 +456,17 @@
       "change_note": "TCC 슬립 검증 데이터/간접 항목 구분",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://press.zf.com/press/en/releases/release_3748.html"
+      ],
+      "hold_reasons": [
+        "TCC 슬립량을 엔진 RPM과 터빈/입력축 회전수로 계산하는 방식은 센서 정의·차종별 제어 다름"
+      ]
     }
   },
   {
@@ -355,7 +489,16 @@
     "explanation_id": "auto-made-r09-s02-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q16",
@@ -377,7 +520,18 @@
     "explanation_id": "auto-made-r09-s02-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hunter.com/en-int/media-center/industry-insights/performing-a-steering-angle-sensor-reset/"
+      ],
+      "hold_reasons": [
+        "휠 얼라인먼트 후 SAS 자동 보정 여부와 장착 차종별 영점 조건이 다름"
+      ]
+    }
   },
   {
     "id": "auto-made-r09-s02-q17",
@@ -399,7 +553,16 @@
     "explanation_id": "auto-made-r09-s02-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/antilock-braking-system/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q18",
@@ -436,6 +599,15 @@
       ],
       "review_note": "Bosch ESC 설명상 조향각은 운전자 목표 거동, 요레이트는 실제 회전거동을 감지하며 차이를 비교해 제어할 수 있다.",
       "reviewed_alternatives": 4
+    },
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -458,7 +630,16 @@
     "explanation_id": "auto-made-r09-s02-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r09-s02-q20",
@@ -480,6 +661,17 @@
     "explanation_id": "auto-made-r09-s02-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa35": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.kyb.com/resources/shocks-struts-101/how-shocks-work/"
+      ],
+      "hold_reasons": [
+        "에어스프링 잔압·차량 지지·설치압력은 고압 현가 부품 안전/OEM 필요"
+      ]
+    }
   }
 ]
