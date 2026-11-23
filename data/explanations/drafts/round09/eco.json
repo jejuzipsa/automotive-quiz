@@ -11,7 +11,43 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "인버터 주파수·전류 제어와 모터 제약이 함께 작용하기 때문",
+        "verdict": "correct",
+        "rationale": "전기차 구동모터는 인버터의 PWM·주파수 및 전류 제어로 토크와 속도를 조절한다. 단자 전압만으로 회전수를 결정한다고 단정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기압이 직접 인버터 주파수를 생성",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압이 인버터 PWM 주파수를 직접 생성하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "모터에는 전류가 흐르지 않아도 토크가 무한히 발생",
+        "verdict": "incorrect",
+        "rationale": "전류 없이 모터토크가 무한히 발생하는 건 아니야"
+      },
+      {
+        "number": 4,
+        "text": "모든 모터 회전수는 배터리 전압과 완전히 동일한 숫자",
+        "verdict": "incorrect",
+        "rationale": "모터 회전수를 배터리 전압 숫자와 같게 정하지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q02",
@@ -25,7 +61,42 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "엔진 윤활유를 전기에너지로 직접 변환",
+        "verdict": "incorrect",
+        "rationale": "윤활유가 운동에너지를 전기로 직접 변환하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "차량 운동에너지 일부를 전기에너지로 전환",
+        "verdict": "correct",
+        "rationale": "회생제동은 바퀴의 운동 에너지 일부를 전기 발전으로 회수해 배터리에 저장한다. 마찰제동과 손실이 있어 모든 에너지를 회수하지는 못한다."
+      },
+      {
+        "number": 3,
+        "text": "제동 마찰열을 모두 100% 재충전",
+        "verdict": "incorrect",
+        "rationale": "회생제동이 모든 마찰열을 100% 회수하는 건 아니야"
+      },
+      {
+        "number": 4,
+        "text": "타이어 내부 공기량을 배터리에 저장",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기 자체를 배터리에 저장하는 방식이 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q03",
@@ -41,23 +112,95 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "각 셀을 점화플러그로 연소시키는 방법",
+        "verdict": "incorrect",
+        "rationale": "연료전지는 스파크 플러그 연소로 전압을 높이지 않아"
+      },
+      {
+        "number": 2,
+        "text": "단위 셀 여러 개를 직렬로 연결해 전압을 높인다",
+        "verdict": "correct",
+        "rationale": "연료전지 스택은 MEA와 분리판 등으로 된 단위 전지를 반복 연결해 요구 전압과 출력을 확보한다. 일반적인 셀 전압은 낮으므로 다수 직렬 구성한다."
+      },
+      {
+        "number": 3,
+        "text": "전압과 무관하게 셀 두께만 무한히 늘림",
+        "verdict": "incorrect",
+        "rationale": "셀 두께를 무한히 늘려 스택전압을 확보하지 않아"
+      },
+      {
+        "number": 4,
+        "text": "수소를 유압식 브레이크로 전환",
+        "verdict": "incorrect",
+        "rationale": "유압 브레이크는 연료전지 셀 직렬연결 목적과 무관해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q04",
     "question_id": "auto-made-r09-s04-q04",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "직류를 제어된 교류로 변환하는 인버터",
-    "reason": "인버터는 배터리 DC를 모터에 적합한 AC로 바꾸고 전류·주파수를 제어해 구동 토크를 조정한다.",
-    "key_point": "구동 인버터 = DC → 3상 AC 전력 변환.",
+    "correct_choice": "모터에서 생성한 교류전력을 배터리 충전에 맞는 직류로 변환·제어",
+    "reason": "회생제동 중 모터가 발전기로 작동하면 생성된 AC 전력을 인버터의 스위칭 제어로 DC 링크/배터리 충전에 적합하게 전달한다. 실제 한계는 배터리 SOC·온도·인버터 설계에 좌우된다.",
+    "key_point": "회생제동 인버터 = 모터 발전 AC → 배터리 충전용 DC 전력 변환·제어.",
     "source_question_id": "auto-r09-s04-q04",
     "original_issue_flags": [
       "mixed_script_review"
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa37_redundancy_and_safety_scope",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://ownersmanual.hyundai.com/full_webhelp/MEa/2026/en_US/idd5f33d25f0b.html"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "타이어 공기압으로 발전전류의 주파수를 직접 생성",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기주입기는 발전전력의 AC/DC 변환 장치가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "기계식 연료 인젝터를 움직여 회생전기를 생산",
+        "verdict": "incorrect",
+        "rationale": "기계식 인젝터는 전기 모터의 회생전력변환과 달라"
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 압력조절기만으로 회생토크 제어",
+        "verdict": "incorrect",
+        "rationale": "연료압 레귤레이터는 발전전류의 배터리 충전 제어 장치가 아니야"
+      },
+      {
+        "number": 4,
+        "text": "모터에서 생성한 교류전력을 배터리 충전에 맞는 직류로 변환·제어",
+        "verdict": "correct",
+        "rationale": "회생제동 중 모터가 발전기로 작동하면 생성된 AC 전력을 인버터의 스위칭 제어로 DC 링크/배터리 충전에 적합하게 전달한다. 실제 한계는 배터리 SOC·온도·인버터 설계에 좌우된다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q05",
@@ -74,7 +217,44 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles"
+      ],
+      "hold_reasons": [
+        "12V 외부충전이 물리적으로 가능해도 고전압 고장차의 외부충전, 전압·접지 연결은 차량별 안전절차 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "안전 규정에 맞는 외부 12V 충전기를 이용하는 것",
+        "verdict": "correct",
+        "rationale": "12V 보조배터리는 적절한 외부 충전기로 충전할 수 있다. 구동 배터리와 DC-DC 문제가 있더라도 12V 충전이 물리적으로 불가능한 것은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "12V 배터리는 어떤 상황에서도 외부충전 불가",
+        "verdict": "incorrect",
+        "rationale": "12V 배터리 외부충전이 모든 상황에서 불가능한 건 아니야"
+      },
+      {
+        "number": 3,
+        "text": "고전압 배터리를 절연 확인 없이 직접 연결",
+        "verdict": "incorrect",
+        "rationale": "절연 검증 없이 HV 배터리를 12V 단자에 직접 연결하면 위험해"
+      },
+      {
+        "number": 4,
+        "text": "12V 배터리가 반드시 영구 손상됐다는 단정",
+        "verdict": "incorrect",
+        "rationale": "DC/DC 이상만으로 12V 전지가 영구손상됐다고 확정할 수 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q06",
@@ -91,7 +271,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "공기 압축기·필터와 필요한 경우 가습기",
+        "verdict": "correct",
+        "rationale": "연료전지의 공기공급계는 스택에서 산소 환원이 일어나도록 공기를 제공한다. 압축기와 유량관리 및 막 수분 유지장치가 활용된다."
+      },
+      {
+        "number": 2,
+        "text": "가솔린 연료분사 노즐",
+        "verdict": "incorrect",
+        "rationale": "가솔린 연료분사 노즐은 연료전지 공기공급 구성품이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "타이어 밸브 코어",
+        "verdict": "incorrect",
+        "rationale": "타이어 밸브는 스택 공기압축기·가습장치와 무관해"
+      },
+      {
+        "number": 4,
+        "text": "자동변속기 TCC만",
+        "verdict": "incorrect",
+        "rationale": "TCC 클러치는 변속기 부품으로 연료전지 공기공급계가 아니야"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q07",
@@ -114,7 +329,44 @@
       "change_note": "펌프 명령/실제 유량 분리",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "구동 배터리 냉각 실제 순환/펌프/에어포집의 OEM 계측 절차와 HV 근접 작업안전 확인 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "충전커넥터 잠금만 반복 조작해 냉각수 순환을 확인한다",
+        "verdict": "incorrect",
+        "rationale": "충전커넥터 반복 조작만으로 냉각수 유량을 검사할 수 없어"
+      },
+      {
+        "number": 2,
+        "text": "냉각수 흐름·펌프 실제 유량과 에어 포집을 점검한다",
+        "verdict": "correct",
+        "rationale": "고전압 배터리 열관리에서는 냉각팬·액체 냉각계·열교환기의 성능이 중요하다. 펌프 명령과 실제 순환 상태를 구별해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "BMS에 펌프 명령이 보이면 실제 유량 검사는 불필요하다",
+        "verdict": "incorrect",
+        "rationale": "펌프 운전 명령만 보이고 실제 유량이 없을 수 있어"
+      },
+      {
+        "number": 4,
+        "text": "냉각수 온도가 높으면 펌프 구동회로를 무조건 교환한다",
+        "verdict": "incorrect",
+        "rationale": "과열만으로 펌프 회로를 단독불량이라고 확정할 수 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q08",
@@ -130,7 +382,45 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles",
+        "https://saemobilus.sae.org/standards/j2344_202010-guidelines-electric-vehicle-safety"
+      ],
+      "hold_reasons": [
+        "BMS 셀·모듈 전압 스캔과 직접 HV 계측은 구별 필요; 절연/무전압·PPE OEM 규정 필수"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "일반 타이어 공기압계만",
+        "verdict": "incorrect",
+        "rationale": "타이어 압력계로 고전압 셀 전압을 재지 못해"
+      },
+      {
+        "number": 2,
+        "text": "엔진 타이밍 라이트만",
+        "verdict": "incorrect",
+        "rationale": "타이밍 라이트는 모듈전압 편차 진단장비가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "제작사 진단기로 셀·모듈 전압을 읽고 안전 계측을 보완",
+        "verdict": "correct",
+        "rationale": "고전압 배터리 상태 평가는 BMS 데이터와 안전 정격 계측기를 사용한다. 공기압계나 점도계는 모듈 전압편차를 직접 측정하지 못한다."
+      },
+      {
+        "number": 4,
+        "text": "브레이크 디스크 마이크로미터만",
+        "verdict": "incorrect",
+        "rationale": "디스크 마이크로미터는 배터리 절연/전압 진단에 쓰이지 않아"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q09",
@@ -146,7 +436,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "모든 구동모터는 냉매 증발식만 사용한다",
+        "verdict": "incorrect",
+        "rationale": "모터 냉각이 모든 차에서 냉매 증발식만인 건 아니야"
+      },
+      {
+        "number": 2,
+        "text": "모터의 냉각 방식은 차종을 불문하고 동일하다",
+        "verdict": "incorrect",
+        "rationale": "공냉/수냉/오일냉 등 차종별 구조차가 있어"
+      },
+      {
+        "number": 3,
+        "text": "공냉·액냉·오일 냉각 등 설계에 따라 달라진다",
+        "verdict": "correct",
+        "rationale": "전동기 열관리는 모터 냉각재킷, 오일 스프레이, 공랭 등을 사용한다. 냉매 냉각과 결합할 수도 있어 특정 방식만 유일하게 가능하다고 단정하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "모든 모터는 열을 발생하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "모터는 전기적 손실과 기계적 마찰로 열을 발생시켜"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q10",
@@ -167,7 +492,45 @@
       "change_note": "인버터 DTC와 전력단 상태를 직접 비교",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://saemobilus.sae.org/standards/j2344_202010-guidelines-electric-vehicle-safety"
+      ],
+      "hold_reasons": [
+        "인버터 DC링크/게이트 점검은 고전압 작업으로 실제 차량 회로도·장비·전압격리 전문가 확인 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "구동 배터리 SOC 표시만으로 인버터 전력반도체 상태를 확정한다",
+        "verdict": "incorrect",
+        "rationale": "SOC 표시만으로 인버터 스위칭·구동기 고장을 확정할 수 없어"
+      },
+      {
+        "number": 2,
+        "text": "전동 구동모터의 명판 정격만 읽고 고장코드를 무시한다",
+        "verdict": "incorrect",
+        "rationale": "모터 명판정격만으로 실고장 코드를 해석하지 못해"
+      },
+      {
+        "number": 3,
+        "text": "DC 링크 전압·인버터 온도·게이트 제어와 관련 DTC",
+        "verdict": "correct",
+        "rationale": "인버터 전력변환이나 보호제어 이상은 전동모터 구동을 제한할 수 있다. 구체적인 원인은 전압·전류·절연·온도 DTC로 좁힌다."
+      },
+      {
+        "number": 4,
+        "text": "12V 배터리 충전전압만 정상인지 확인하고 검사를 끝낸다",
+        "verdict": "incorrect",
+        "rationale": "12V 전압만 정상이면 인버터 HV/온도 이상이 없다고 볼 수 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q11",
@@ -183,7 +546,45 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles",
+        "https://saemobilus.sae.org/standards/j2344_202010-guidelines-electric-vehicle-safety"
+      ],
+      "hold_reasons": [
+        "배터리 교체 후 BMS 등록·SOC 학습 방식은 차량별 OEM 조건·고전압 안전 확인"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "모든 차에서 동일한 리셋 버튼을 무조건 사용",
+        "verdict": "incorrect",
+        "rationale": "모든 차가 같은 BMS 리셋버튼을 쓰는 건 아니야"
+      },
+      {
+        "number": 2,
+        "text": "차종별 배터리 교환 등록·학습·진단 절차 여부 확인",
+        "verdict": "correct",
+        "rationale": "일부 차량은 배터리 등록과 SOC 학습·교환 초기화를 요구한다. 방식이 차량마다 다르므로 정비 절차를 확인하고 고전압 보호 조치를 유지한다."
+      },
+      {
+        "number": 3,
+        "text": "배터리 교환 후 BMS 확인은 항상 금지",
+        "verdict": "incorrect",
+        "rationale": "배터리 교체 후 BMS 확인이 항상 금지되는 건 아니야"
+      },
+      {
+        "number": 4,
+        "text": "안전검사 없이 즉시 고전압 단자를 접촉",
+        "verdict": "incorrect",
+        "rationale": "안전검사 없는 HV 단자 접촉은 위험해"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q12",
@@ -197,7 +598,43 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles",
+        "https://saemobilus.sae.org/standards/j2344_202010-guidelines-electric-vehicle-safety"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "배터리 온도와 열관리 데이터 검토",
+        "verdict": "incorrect",
+        "rationale": "온도와 냉각 데이터는 배터리 열화/출력 판단과 직접 관련돼"
+      },
+      {
+        "number": 2,
+        "text": "셀 전압 편차를 측정",
+        "verdict": "incorrect",
+        "rationale": "셀 전압 편차는 배터리 상태의 주요 진단값이야"
+      },
+      {
+        "number": 3,
+        "text": "절연저항과 누설 오류 확인",
+        "verdict": "incorrect",
+        "rationale": "절연오류는 배터리 팩 안전과 관련돼"
+      },
+      {
+        "number": 4,
+        "text": "내연기관 실린더의 압축압력만 측정하는 작업",
+        "verdict": "correct",
+        "rationale": "배터리 고장 진단은 전압·온도·절연·SOC 등 전기화학 상태를 확인한다. 엔진 압축압력은 별도 내연기관 기계 계통의 지표다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q13",
@@ -213,7 +650,42 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "배터리 보호를 위해 회수 전력을 제한할 수 있다",
+        "verdict": "correct",
+        "rationale": "배터리 SOC가 높거나 온도가 부적절하면 충전 허용전류가 줄어 회생제동이 제한될 수 있다. 마찰제동이 부족분을 보완할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "회생제동이 제한되면 기계식 제동도 즉시 불가능",
+        "verdict": "incorrect",
+        "rationale": "회생제동 제한과 기계식 제동 불능은 같은 현상이 아니야"
+      },
+      {
+        "number": 3,
+        "text": "완전 충전 상태에서도 회생전력이 항상 최대",
+        "verdict": "incorrect",
+        "rationale": "SOC 100%에서도 항상 최대 회생전력이 가능한 건 아니야"
+      },
+      {
+        "number": 4,
+        "text": "배터리 전압은 회생제동과 전혀 무관",
+        "verdict": "incorrect",
+        "rationale": "배터리전압·충전제한이 회생제동과 무관하다는 건 틀려"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q14",
@@ -229,21 +701,94 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://ownersmanual.hyundai.com/full_webhelp/MEa/2026/en_US/idd5f33d25f0b.html"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "온보드 충전기(OBC)",
+        "verdict": "correct",
+        "rationale": "OBC는 외부에서 공급받은 교류전력을 차량 구동배터리에 맞는 직류로 변환한다. 외부 DC 급속충전은 별도의 충전 경로를 이용한다."
+      },
+      {
+        "number": 2,
+        "text": "차체 자세제어 ESP 모듈",
+        "verdict": "incorrect",
+        "rationale": "ESP 제어 모듈은 OBC의 AC/DC 충전 기능과 달라"
+      },
+      {
+        "number": 3,
+        "text": "변속기 오일 압력 조절기",
+        "verdict": "incorrect",
+        "rationale": "변속기 유압제어기는 전력 정류장치가 아니야"
+      },
+      {
+        "number": 4,
+        "text": "기계식 브레이크 부스터",
+        "verdict": "incorrect",
+        "rationale": "기계식 브레이크 부스터도 충전기능이 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q15",
     "question_id": "auto-made-r09-s04-q15",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "가솔린 엔진 점화시기 제어",
-    "reason": "BMS는 구동배터리 상태를 관리한다. 순수 전기차에는 가솔린 내연기관 점화 장치가 없어 ECU 점화시기 제어 기능과 구분된다.",
-    "key_point": "BMS = 배터리 관리, 가솔린 점화제어와 구별.",
+    "correct_choice": "팩 충전전류를 제한하거나 정지하고 셀 상태를 보호",
+    "reason": "일부 셀이 허용 상한전압에 먼저 도달하면 배터리 BMS가 충전전류를 줄이거나 차단해 셀 과충전을 막을 수 있다. 밸런싱과 보호 임계값은 차종·셀 화학계별로 다르다.",
+    "key_point": "BMS 셀 전압상한 도달 → 충전전류 제한·차단·보호.",
     "source_question_id": "auto-r09-s04-q15",
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa37_redundancy_and_safety_scope",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles"
+      ],
+      "hold_reasons": [
+        "셀 과충전/상한 도달 시 BMS 보호 로직·충전전류 제한·밸런싱 제어는 팩 구성별 달라 OEM 확인 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "안전 전류한계를 무시하고 무조건 최대전류 충전",
+        "verdict": "incorrect",
+        "rationale": "충전전류를 무조건 최대로 유지하면 셀 과전압 위험이 있어"
+      },
+      {
+        "number": 2,
+        "text": "셀 과전압 경고를 삭제하고 모든 진단 기능 중지",
+        "verdict": "incorrect",
+        "rationale": "배터리 셀 전압 경고를 무시하면 안전상 부적절해"
+      },
+      {
+        "number": 3,
+        "text": "셀 상한 전압을 초과하도록 강제 충전",
+        "verdict": "incorrect",
+        "rationale": "BMS 상한전압을 초과해 충전하라는 지침은 위험해"
+      },
+      {
+        "number": 4,
+        "text": "팩 충전전류를 제한하거나 정지하고 셀 상태를 보호",
+        "verdict": "correct",
+        "rationale": "일부 셀이 허용 상한전압에 먼저 도달하면 배터리 BMS가 충전전류를 줄이거나 차단해 셀 과충전을 막을 수 있다. 밸런싱과 보호 임계값은 차종·셀 화학계별로 다르다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q16",
@@ -257,7 +802,44 @@
     "original_issue_flags": [],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "공냉·수냉과 히트펌프는 냉각 매체/차량 전체 열관리 장치 개념이 섞여 있으므로 정밀 구분 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "모든 전기차는 하나의 표준 냉각 시스템만 사용",
+        "verdict": "incorrect",
+        "rationale": "모든 EV가 단일 표준 열관리 구조라는 일반화는 틀려"
+      },
+      {
+        "number": 2,
+        "text": "배터리는 온도에 관계없이 항상 같은 출력",
+        "verdict": "incorrect",
+        "rationale": "배터리 출력이 온도와 무관하다는 건 틀려"
+      },
+      {
+        "number": 3,
+        "text": "공냉·수냉·히트펌프 등 모델에 따라 열관리 방식이 달라진다",
+        "verdict": "correct",
+        "rationale": "구동배터리 열관리 구조는 차량 성능과 배터리 설계에 따라 다양하다. 해당 모델의 냉각매체·펌프·밸브 및 소프트웨어 제어를 확인해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "냉각계가 없을수록 배터리 수명은 무조건 증가",
+        "verdict": "incorrect",
+        "rationale": "냉각시스템이 없으면 수명이 무조건 증가한다는 건 틀려"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q17",
@@ -280,7 +862,43 @@
       "change_note": "EVSE와 차량 사이 핸드셰이크 진단",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
-    }
+    },
+    "technical_verification_qa37": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://ownersmanual.hyundai.com/full_webhelp/MEa/2026/en_US/idd5f33d25f0b.html"
+      ],
+      "hold_reasons": []
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "충전포트가 꽂혔다는 사실만으로 통신을 정상 판정한다",
+        "verdict": "incorrect",
+        "rationale": "연결만 됐다고 차량-충전기 프로토콜 협상이 성립하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "충전기 출력 정격만 비교하고 차량 메시지는 무시한다",
+        "verdict": "incorrect",
+        "rationale": "충전기 정격만으로 차량측 오류 메시지를 대체하지 못해"
+      },
+      {
+        "number": 3,
+        "text": "제어 파일럿·통신 교환·커넥터 잠금 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "EV 충전에서는 차량과 충전기 간 제어 신호를 통해 연결·허용 전류·충전 상태를 협상한다. 프로토콜과 장치에 따라 통신 방식이 다르다."
+      },
+      {
+        "number": 4,
+        "text": "고전압 배터리의 SOC 표시만으로 제어파일럿을 대체한다",
+        "verdict": "incorrect",
+        "rationale": "SOC 값만으로 제어파일럿/잠금정보를 확인할 수 없어"
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q18",
@@ -297,16 +915,53 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/electric-and-hybrid-vehicles"
+      ],
+      "hold_reasons": [
+        "급속충전 열화는 충전 전류, SOC, 온도, C-rate와 화학계/시간 등 복합 요인이므로 수명 단정 금지"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "급속충전은 배터리 수명에 어떤 영향도 없다",
+        "verdict": "incorrect",
+        "rationale": "급속충전이 전지 수명에 아무 영향도 없다는 단정은 틀려"
+      },
+      {
+        "number": 2,
+        "text": "충전 전류가 높을수록 열 발생은 항상 0",
+        "verdict": "incorrect",
+        "rationale": "전류 증가해도 발열이 항상 0인 건 아니야"
+      },
+      {
+        "number": 3,
+        "text": "충전 중 셀 전압은 항상 일정",
+        "verdict": "incorrect",
+        "rationale": "충전 중 셀 전압이 항상 일정한 것도 아니야"
+      },
+      {
+        "number": 4,
+        "text": "셀온도·전류 C-rate·충전 SOC 범위",
+        "verdict": "correct",
+        "rationale": "높은 충전율은 온도 상승과 전지 열화에 영향을 줄 수 있다. 실제 노화는 배터리 화학계·열관리와 충전 패턴에 따라 다르다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q19",
     "question_id": "auto-made-r09-s04-q19",
     "subject": "eco",
     "correct_answer": 4,
-    "correct_choice": "안전거리 확보·즉시 대피와 신고",
-    "reason": "리튬이온 배터리 열폭주는 재점화와 가스 위험이 있다. 전문대응팀과 제조사 지침에 따른 냉각·진압이 필요하며 일반인은 대피·신고가 우선이다.",
-    "key_point": "배터리 화재 → 일반인 대피·신고·접근제한.",
+    "correct_choice": "접촉을 피하고 안전거리를 확보해 신고한 후 전문대응 지침에 따른다",
+    "reason": "침수 후 고전압 배터리는 절연 손상·지연 화재 위험이 있으므로 운전자 스스로 케이블 또는 배터리를 조작해서는 안 된다. 안전거리 확보와 구조대·전문정비 지침 준수가 우선이다.",
+    "key_point": "침수 EV 고전압 이상 → 접근·조작 회피, 대피·신고, 전문인력 판단.",
     "source_question_id": "auto-r09-s04-q19",
     "original_issue_flags": [
       "mixed_script_review",
@@ -314,7 +969,45 @@
     ],
     "reference_urls": [],
     "review_status": "editorial_draft",
-    "technical_answer_status": "pending_independent_review"
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa37_redundancy_and_safety_scope",
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/emergency-response-guides"
+      ],
+      "hold_reasons": [
+        "침수된 EV는 잠재적 고전압·지연 화재 위험, 일반인 접근금지·전문 긴급 가이드 확인 필요"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "차량에 다시 들어가 충전케이블을 즉시 강제로 분리",
+        "verdict": "incorrect",
+        "rationale": "잠재 HV 위험이 있는 침수차에 혼자 들어가 케이블을 빼면 위험해"
+      },
+      {
+        "number": 2,
+        "text": "고전압 배터리 팩을 직접 절단해 물을 뺀다",
+        "verdict": "incorrect",
+        "rationale": "배터리 팩을 직접 절단하면 전기·화재 사고 위험이 있어"
+      },
+      {
+        "number": 3,
+        "text": "일반 물병만으로 침수 고전압 배터리 고장을 직접 해결",
+        "verdict": "incorrect",
+        "rationale": "소형 물병으로 침수 고전압 배터리 이상을 혼자 해결할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "접촉을 피하고 안전거리를 확보해 신고한 후 전문대응 지침에 따른다",
+        "verdict": "correct",
+        "rationale": "침수 후 고전압 배터리는 절연 손상·지연 화재 위험이 있으므로 운전자 스스로 케이블 또는 배터리를 조작해서는 안 된다. 안전거리 확보와 구조대·전문정비 지침 준수가 우선이다."
+      }
+    ]
   },
   {
     "id": "auto-made-r09-s04-q20",
@@ -341,6 +1034,43 @@
       "qa2_proposed_action": "consider_reclassifying_to_engine",
       "qa2_confidence": "cross_disciplinary_not_confirmed",
       "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
-    }
+    },
+    "technical_verification_qa37": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.api.org/products-and-services/diesel-exhaust-fluid"
+      ],
+      "hold_reasons": [
+        "디젤 SCR 요소수 NOx 환원은 엔진/배출가스 과목과 경계; 기존 hold_do_not_publish 보존"
+      ]
+    },
+    "option_analysis_qa37": [
+      {
+        "number": 1,
+        "text": "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
+        "verdict": "correct",
+        "rationale": "요소수는 열분해·가수분해로 암모니아를 공급하고 SCR 촉매에서 NOx를 질소와 물로 환원하도록 돕는다. DPF의 PM 포집 기능과 분리해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "DPF에 쌓인 PM을 직접 물리적으로 여과",
+        "verdict": "incorrect",
+        "rationale": "DPF는 PM 입자 포집이고 요소수 SCR NOx환원과 기능이 달라"
+      },
+      {
+        "number": 3,
+        "text": "가솔린 점화플러그를 냉각",
+        "verdict": "incorrect",
+        "rationale": "점화플러그 냉각은 요소수 SCR 제어목적이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "타이어 공기압을 낮춤",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압 제어도 SCR의 기능과 무관해"
+      }
+    ]
   }
 ]
