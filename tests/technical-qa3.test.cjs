@@ -8,6 +8,7 @@ const reviews = read('data/qa/technical-qa3-engine-r01-option-audit.json');
 const changes = read('data/qa/technical-qa3-engine-r01-changes.json');
 const summary = read('data/qa/technical-qa3-summary.json');
 const qa5ById = new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
+const qa39ById = new Map(read('data/qa/technical-qa39-editorial-edits.json').map(x=>[x.id,x]));
 const q = read('data/past/drafts/engine.json');
 const e = read('data/explanations/drafts/engine.json');
 const qmap = new Map(q.map(x=>[x.id,x]));
@@ -28,16 +29,30 @@ for (const change of changes) {
   assert.ok(!history2.has(change.id),`QA2 historical draft overwritten ${change.id}`);
   const item=qmap.get(change.id),exp=emap.get(change.id);
   assert.ok(item&&exp);
-  assert.equal(item.question,change.after.question);
-  assert.deepEqual(item.choices,change.after.choices);
-  assert.equal(exp.reason,change.after.reason);
+  const newer=qa39ById.get(change.id);
+  if(newer){
+    assert.equal(newer.before.question,change.after.question);
+    assert.deepEqual(newer.before.choices,change.after.choices);
+    assert.equal(newer.before.reason,change.after.reason);
+    assert.equal(item.question,newer.after.question);
+    assert.deepEqual(item.choices,newer.after.choices);
+  }else{
+    assert.equal(item.question,change.after.question);
+    assert.deepEqual(item.choices,change.after.choices);
+    assert.equal(exp.reason,change.after.reason);
+  }
   assert.equal(item.answer,change.answer_number_unchanged);
 }
 for (const x of reviews) {
   const item=qmap.get(x.id), exp=emap.get(x.id);
   assert.ok(item&&exp,`missing ${x.id}`);
-  const later=qa5ById.get(x.id);
-  if(later){
+  const later=qa5ById.get(x.id), newer=qa39ById.get(x.id);
+  if(newer){
+    assert.equal(newer.before.question,x.question_after);
+    assert.deepEqual(newer.before.choices,x.options.map(o=>o.text));
+    assert.equal(item.question,newer.after.question);
+    assert.deepEqual(item.choices,newer.after.choices);
+  }else if(later){
     assert.equal(later.before.question,x.question_after,'QA3 historical question snapshot');
     assert.equal(later.before.choices[later.before.answer-1],x.correct_choice_after);
     assert.deepEqual(later.before.choices,x.options.map(o=>o.text));
@@ -63,7 +78,7 @@ for (const x of reviews) {
   for(let i=0;i<4;i++){
     const o=x.options[i],a=exp.option_analysis[i];
     assert.equal(o.number,i+1);
-    assert.equal(o.text,later?later.before.choices[i]:item.choices[i]);
+    assert.equal(o.text,later?later.before.choices[i]:newer?newer.before.choices[i]:item.choices[i]);
     assert.equal(o.verdict,i+1===item.answer?'correct':'incorrect');
     if(!later){assert.equal(a.verdict,o.verdict);}
     else{

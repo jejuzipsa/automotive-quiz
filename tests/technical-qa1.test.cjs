@@ -11,6 +11,7 @@ const qa2Changes=read('data/qa/technical-qa2-changes.json');
 const qa2ById=new Map(qa2Changes.map(x=>[x.id,x]));
 const qa5ById=new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
 const qa9ById=new Map(read('data/qa/technical-qa9-changes.json').map(x=>[x.id,x]));
+const qa39ById=new Map(read('data/qa/technical-qa39-editorial-edits.json').map(x=>[x.id,x]));
 const holds=read('data/qa/technical-qa1-subject-holds.json');
 const triage=read('data/qa/technical-qa1-triage.json');
 const expanded=read('data/qa/technical-qa1-subject-holds-expanded.json');
@@ -62,7 +63,15 @@ for(const change of changes){
    assert.equal(qa2.before.reason,change.after.reason);
  }
  const previous=qa2?qa2.after:change.after;
- if(qa9){
+ const newer=qa39ById.get(change.id);
+ if(newer){
+   assert.equal(newer.before.question,previous.question);
+   assert.deepEqual(newer.before.choices,previous.choices);
+   assert.equal(newer.before.reason,previous.reason);
+   assert.equal(q.question,newer.after.question);
+   assert.deepEqual(q.choices,newer.after.choices);
+   assert.equal(e.reason,newer.after.reason);
+ }else if(qa9){
    assert.equal(qa9.before.question,previous.question,'QA9 must preserve QA1/QA2 superseded question');
    assert.deepEqual(qa9.before.choices,previous.choices);
    assert.equal(qa9.before.reason,previous.reason);

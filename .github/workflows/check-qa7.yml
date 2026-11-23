@@ -62,9 +62,19 @@ jobs:
           node tests/technical-qa30-33.test.cjs
           node tests/technical-qa34-37.test.cjs
           QA38_REPORT_OUT=qa38-review-queue.json node tests/qa38-final-review-queue.test.cjs
+          node tests/technical-qa39.test.cjs
+          QA39_SUBJECT_REPORT_OUT=qa39-subject-review.json node tests/qa39-subject-triage.test.cjs
           QA19_REPORT_OUT=qa19-review-queue.json node tests/qa19-round05-09-risk-queue.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs
           node tests/release-gate.test.cjs
+      - name: Upload QA39 55 hold provisional subject scope queue
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa39-subject-review-55
+          path: qa39-subject-review.json
+          if-no-files-found: warn
+          retention-days: 30
       - name: Upload QA38 720-question final-review risk candidates
         if: always()
         uses: actions/upload-artifact@v4
