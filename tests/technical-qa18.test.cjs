@@ -13,6 +13,7 @@ const knownEdits=[
 assert.equal(knownEdits.length,3);
 assert.deepEqual(knownEdits.map(x=>x.id).sort(),["auto-made-r04-s02-q08","auto-made-r04-s02-q12","auto-made-r04-s03-q10"].sort());
 const qa2=read("data/qa/technical-qa2-changes.json");
+const qa41ById=new Map(read("data/qa/technical-qa41-chassis-scope-replacements.json").map(x=>[x.id,x]));
 let totalQuestions=0,totalOptions=0,sourceSupported=0,held=0;
 for(const subject of subjects){
  const qs=read("data/past/drafts/round04/"+subject+".json");
@@ -25,17 +26,17 @@ for(const subject of subjects){
  assert.equal(s,counts[subject][0]);assert.equal(h,counts[subject][1]);
  sourceSupported+=s;held+=h;
  for(let i=0;i<20;i++){
-  const q=qs[i],e=es[i],a=audit[i];
+  const q=qs[i],e=es[i],a=audit[i],latest=qa41ById.get(q.id);
   assert.equal(q.id,e.id);assert.equal(q.id,a.id);
   assert.equal(q.round,4);assert.equal(q.subject,subject);assert.equal(q.question_number,i+1);
-  assert.equal(a.question_at_review,q.question);
+  assert.equal(a.question_at_review,latest?latest.before.question:q.question);
   assert.equal(a.correct_number,q.answer);
-  assert.equal(a.correct_choice,q.choices[q.answer-1]);
+  assert.equal(a.correct_choice,latest?latest.before.correct_choice:q.choices[q.answer-1]);
   assert.equal(e.correct_answer,q.answer);
-  assert.equal(e.correct_choice,a.correct_choice);
+  assert.equal(e.correct_choice,q.choices[q.answer-1]);
   assert.equal(q.technical_verification_qa18.status,a.evidence_grade);
   assert.equal(e.technical_verification_qa18.status,a.evidence_grade);
-  assert.deepEqual(e.option_analysis_qa18,a.options);
+  assert.deepEqual(e.option_analysis_qa18,latest?latest.after.option_analysis:a.options);
   assert.equal(a.independent_final_technical_approval,false);
   assert.equal(a.web_publication,false);
   assert.equal(q.publishable,false);
@@ -46,7 +47,7 @@ for(const subject of subjects){
   assert.equal(a.options.length,4);
   for(let j=0;j<4;j++){
    const o=a.options[j];assert.equal(o.number,j+1);
-   assert.equal(o.text,q.choices[j]);
+   assert.equal(o.text,latest?latest.before.choices[j]:q.choices[j]);
    assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");
    assert.ok(o.rationale.length>=16);totalOptions++;
   }

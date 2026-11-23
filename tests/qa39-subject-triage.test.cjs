@@ -15,6 +15,11 @@ const overrides={
  "auto-made-r05-s02-q19":{category:"cross_subject_overlap_candidate",priority:"P2",target_subject:"engine",note:"스캐너 연결안전은 엔진 진단과 전기/네트워크 기초에 걸칠 수 있어 세부항목 확인 필요."},
  "auto-made-r05-s04-q14":{category:"cross_subject_overlap_candidate",priority:"P2",target_subject:"electrical",note:"TPMS의 타이어압 자체는 섀시, 신호·경고등·통신은 주행안전 전장. 과목에 따라 지문 초점 조정 필요."}
 };
+// QA41 rewrote ten former engine-topic prompts as current chassis study topics.
+// Historical subject flags remain held until detailed syllabus and independent review.
+for(const id of ["auto-made-r04-s02-q16","auto-made-r04-s02-q17","auto-made-r04-s02-q18","auto-made-r04-s02-q19","auto-made-r04-s02-q20",
+ "auto-made-r05-s02-q16","auto-made-r05-s02-q17","auto-made-r05-s02-q18","auto-made-r05-s02-q19","auto-made-r05-s02-q20"])
+ overrides[id]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"chassis",note:"QA41에서 섀시 관련 자체 학습문제로 교체됨. 출제 범위·차량별 안전·권리 검증 전 기존 보류 유지."};
 const majors={
  engine:["과급장치","가솔린 전자제어장치","디젤 전자제어장치","엔진 본체","배출가스장치"],
  chassis:["자동변속기","유압식 현가장치","전자제어 현가장치","전자제어 조향장치","전자제어 제동장치"],
