@@ -1207,5 +1207,28 @@
     "expected_exam_80_questions_unchanged": true,
     "new_source_classification_hold_total": 49,
     "disclaimer": "1차 제조사 기술자료와 원리 부합 여부 != 독립 최종 시험 정답 정확성·저작권·차종별 고전압 안전 절차 승인"
+  },
+  "technical_qa14": {
+    "date": "2026-11-23",
+    "scope": "QA9 four revised r01 electrical/eco question variants reevaluated after editorial changes",
+    "rechecked_questions": 4,
+    "rechecked_latest_options": 16,
+    "source_supported_first_pass": 4,
+    "independent_technical_final_approvals": 0,
+    "new_published_past_questions": 0,
+    "historical_qa7_qa8_reviews_unchanged": true,
+    "qa9_edit_time_status_preserved": true,
+    "current_qa9_revised_question_firstpass_gap_remaining": 0,
+    "cumulative_latest_current_version_firstpass_reviewed_questions": 160,
+    "cumulative_latest_current_version_firstpass_reviewed_choices": 640,
+    "never_individually_firstpass_reviewed_questions_remaining": 560,
+    "never_reviewed_options_remaining": 2240,
+    "current_classification_holds_total": 49,
+    "public_expected_80_question_exam_unchanged": true,
+    "original_private_qa23_unchanged": true,
+    "live_manifest_unchanged": true,
+    "technical_audit": "data/qa/technical-qa14-qa9-four-latest-option-audit.json",
+    "report": "docs/TECHNICAL_QA14.md",
+    "next": "round03 engine 20 question 80 option manufacturer-source firstpass"
   }
 }
