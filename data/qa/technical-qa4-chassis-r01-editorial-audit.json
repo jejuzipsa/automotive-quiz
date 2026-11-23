@@ -1,0 +1,374 @@
+{
+  "audit": "QA4-chassis-r01-editorial-triage",
+  "date": "2026-11-23",
+  "scope": "round 1 chassis 20 existing independently-authored draft questions",
+  "review_type": "editorial_and_duplication_screening_not_full_option_by_option_technical_verification",
+  "source_original_qa23_unchanged": true,
+  "technical_answer_final_approvals": 0,
+  "published_reconstructed_questions": 0,
+  "first_pass_option_by_option_verified_in_this_batch": 0,
+  "question_edits_in_this_batch": 0,
+  "explanation_edits_in_this_batch": 0,
+  "notes": "All 20 items were read for scope, editorial risk and duplicates; this does not establish correct/incorrect technical verdicts for all four choices.",
+  "provisional_findings": {
+    "existing_subject_hold_question_numbers": [
+      2,
+      4
+    ],
+    "near_duplicate_pairs": [
+      [
+        13,
+        19
+      ]
+    ],
+    "concept_overlap_pairs": [
+      [
+        11,
+        16
+      ],
+      [
+        14,
+        18
+      ]
+    ],
+    "explanation_alignment_questions": [
+      10
+    ],
+    "safety_reference_needed_question_numbers": [
+      6,
+      8,
+      12
+    ]
+  },
+  "records": [
+    {
+      "id": "auto-made-r01-s02-q01",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 1,
+      "recorded_answer_number": 4,
+      "question_at_review": "자동변속기 차량에서 변속 충격이 반복된다. 변속기 자체 상태를 알아보는 자료로 가장 관련성이 낮은 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "distractor_quality"
+      ],
+      "review_note": "간단한 소거형 선지(매연 색) 난도 점검",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q02",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 2,
+      "recorded_answer_number": 2,
+      "question_at_review": "엔진이 잠깐 걸렸다가 정지하며 연료레일 압력이 규정값보다 낮게 측정된다. 관련 계통으로 먼저 좁힐 곳은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "existing_subject_hold"
+      ],
+      "review_note": "연료레일 압력·연료펌프 원인은 엔진정비 영역 가능성이 크므로 기존 과목 분류 보류를 유지",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q03",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 3,
+      "recorded_answer_number": 3,
+      "question_at_review": "자동변속기 솔레노이드의 코일 저항을 측정했다. 판정 기준으로 가장 적절한 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "distractor_quality"
+      ],
+      "review_note": "정답은 차량·부품별 저항 규격 비교 구조이나 명백히 무관한 타이어 외경 오답은 문항 변별력 저하 후보",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q04",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 4,
+      "recorded_answer_number": 1,
+      "question_at_review": "차량 진단기 통신이 간헐적으로 끊기고 제어기 오류가 여러 개 발생한다. 가장 기본적인 전기 점검은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "existing_subject_hold"
+      ],
+      "review_note": "제어기 전원·접지·CAN 오류는 전기·전자장치정비와 경계가 있으므로 기존 분류 보류 유지",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q05",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 5,
+      "recorded_answer_number": 4,
+      "question_at_review": "일반적인 차량용 스캔 툴의 실시간 데이터만으로 직접 측정하기 어려운 항목은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [],
+      "review_note": "진단기 실시간 데이터와 물리적 마찰재 두께의 차이를 묻는 선지; 전형적 문제 구조로 편집 검토",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q06",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 6,
+      "recorded_answer_number": 2,
+      "question_at_review": "유압식 현가장치 주변에 작동유가 묻어 있다. 점검 절차에 맞는 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "safety_reference_needed"
+      ],
+      "review_note": "작동유 압력 잔존·감압이 중요한 안전주제이므로 정비절차 자료 확인 필요",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q07",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 7,
+      "recorded_answer_number": 1,
+      "question_at_review": "공기식 차고제어 현가장치가 장착된 차량이 평지에 주차됐다. 한쪽 차고가 시간이 지나며 계속 낮아지면 우선 관련성을 확인할 계통은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "model_specific_caveat"
+      ],
+      "review_note": "편측 에어스프링 처짐과 공기 누출의 연관성을 묻는 문제; 차종별 밸브 구성 주의",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q08",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 8,
+      "recorded_answer_number": 3,
+      "question_at_review": "브레이크를 일정한 힘으로 밟은 채 유지할 때 페달이 서서히 내려간다. 유압 계통 점검에서 우선 고려할 이상은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "safety_reference_needed"
+      ],
+      "review_note": "브레이크 페달 하강은 내부 바이패스·외부 누설 양쪽 검토라는 조건이 중요",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q09",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 9,
+      "recorded_answer_number": 2,
+      "question_at_review": "전자제어 현가 높이 센서의 출력전압을 측정했다. 정상 여부를 판단할 올바른 방법은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "model_specific_caveat"
+      ],
+      "review_note": "차고 센서 출력전압의 차종별 차이를 명시한 구조; 보편 전압값 단정 피해야 함",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q10",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 10,
+      "recorded_answer_number": 4,
+      "question_at_review": "가변 댐퍼 방식 전자제어 현가장치의 주된 제어 목적은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "explanation_alignment"
+      ],
+      "review_note": "감쇠력 제어가 질문 핵심인데 기존 해설 마지막 문장 '엔진 연료분사장치'는 선지에 없는 대조로 편집상 불일치",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q11",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 11,
+      "recorded_answer_number": 3,
+      "question_at_review": "전자제어 댐퍼가 전혀 반응하지 않고 해당 장치에 전원도 없다. 먼저 확인할 회로 부품은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "concept_overlap"
+      ],
+      "review_note": "모듈 전원/퓨즈 우선점검은 16번 EPS 진단과 출제 학습목표가 일부 겹침",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q12",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 12,
+      "recorded_answer_number": 1,
+      "question_at_review": "전자제어 현가 모듈을 교환하기 전에 적절한 정비 준비는?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "safety_reference_needed",
+        "model_specific_caveat"
+      ],
+      "review_note": "전자제어 현가 모듈 작업 안전 절차는 차종별 지침 의존; 일률적 전원차단 방식으로 일반화하지 말 것",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q13",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 13,
+      "recorded_answer_number": 2,
+      "question_at_review": "전동식 파워스티어링(EPS)의 조향 토크 센서가 수행하는 역할은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "near_duplicate",
+        "source_supported_editorial_only"
+      ],
+      "review_note": "운전자 조향 토크를 토크 센서로 감지하는 원리가 19번과 거의 동일; 두 문제 함께 출제 시 중복 학습목표",
+      "source_links": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q14",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 14,
+      "recorded_answer_number": 4,
+      "question_at_review": "EPS 수리 후 조향각 센서 값을 판단하는 방법으로 올바른 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "concept_overlap",
+        "model_specific_caveat"
+      ],
+      "review_note": "EPS 수리 후 센서 영점 보정은 18번과 학습목표가 일부 중복",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q15",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 15,
+      "recorded_answer_number": 3,
+      "question_at_review": "쇼크업소버 자체의 감쇠 기능을 평가하는 검사와 직접 관련이 가장 낮은 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "distractor_quality"
+      ],
+      "review_note": "댐퍼 감쇠 특성과 휠 얼라인먼트 토인을 구별하는 질문; 선택지가 쉬운 편인지 편집 검토",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q16",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 16,
+      "recorded_answer_number": 1,
+      "question_at_review": "EPS 경고등이 켜지고 조향 보조가 사라졌다. 제어장치 교환 전 기본 점검으로 적절한 것은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "concept_overlap"
+      ],
+      "review_note": "EPS 전원·퓨즈/통신 진단은 11번 전자제어 댐퍼 전원 점검과 진단절차 유사",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q17",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 17,
+      "recorded_answer_number": 4,
+      "question_at_review": "ABS 고장 표시등이 점등된 상황에서 직접적으로 기대되는 현상은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "source_supported_editorial_only"
+      ],
+      "review_note": "ABS 경고등은 잠김방지 제어 고장과 연관 가능성이 있으나 정확한 고장 상태는 진단 후 판단",
+      "source_links": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+      ],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q18",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 18,
+      "recorded_answer_number": 3,
+      "question_at_review": "EPS 관련 부품 교환 후 서비스 매뉴얼에서 요구할 수 있는 후속 작업은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "concept_overlap",
+        "model_specific_caveat"
+      ],
+      "review_note": "EPS 교환 후 영점 보정 요구는 14번과 관련 개념 반복",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q19",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 19,
+      "recorded_answer_number": 2,
+      "question_at_review": "EPS 제어기가 운전자가 핸들에 가한 조향 힘을 직접 판단하는 데 이용하는 입력은?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "near_duplicate",
+        "source_supported_editorial_only"
+      ],
+      "review_note": "13번의 조향 토크 센서 역할과 의미상 정답 동일, 질문 표현만 변경된 유사문항",
+      "source_links": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q20",
+      "subject": "chassis",
+      "round": 1,
+      "question_number": 20,
+      "recorded_answer_number": 1,
+      "question_at_review": "전자제어 브레이크에서 페달 조작량을 전기적 신호로 변환하는 센서는?",
+      "editorial_status": "screened_review_required",
+      "risk_flags": [
+        "model_specific_caveat"
+      ],
+      "review_note": "제동 요구 입력은 구성에 따라 페달 위치·행정·압력 센서 등이 함께 사용될 수 있으므로 센서 구성 일반화 점검",
+      "source_links": [],
+      "technical_answer_final_approval": false,
+      "publishable": false
+    }
+  ]
+}
