@@ -144,12 +144,12 @@
     "source_question_id": "auto-r06-s04-q05",
     "round": 6,
     "question_number": 5,
-    "question": "클러치 디스크 교환 작업 지침에 포함될 내용을 고를 때 직접적인 작업은?",
+    "question": "플러그인 하이브리드차(PHEV)가 EV 주행모드에서 구동배터리 전력으로 움직이다가 엔진을 가동해 병행 주행한다. 시스템 제어의 기본 원리는?",
     "choices": [
-      "플라이휠 접촉면·디스크 중심·스플라인 상태 확인",
-      "하이브리드 배터리를 임의로 방전",
-      "냉각수에 윤활유를 희석해 넣기",
-      "공회전 회전수를 임의로 최대 설정"
+      "배터리 SOC·요구토크·운전조건에 따라 엔진과 전기모터의 동력분담을 조절한다",
+      "외부 충전기를 연결하지 않으면 PHEV 구동모터는 어떤 상황에도 움직일 수 없다",
+      "엔진이 켜지면 전기모터가 항상 차륜과 기계적으로 영구 분리되어야 한다",
+      "엔진이 가동된 동안에는 하이브리드 구동배터리의 전압 측정이 전혀 필요 없다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r06-s04-q05",
@@ -165,7 +165,8 @@
       "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
       "qa2_proposed_action": "consider_reclassifying_to_chassis",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
     },
     "technical_verification_qa25": {
       "batch": "QA25-r06-eco",
@@ -173,11 +174,25 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
       ],
       "independent_final_technical_approval": false,
       "web_publication": false,
       "notes": "기존 친환경→섀시/동력전달 과목 분류 보류 유지, 차량별 클러치 체결·정렬 OEM 지침 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "PHEV 전기주행과 엔진·모터 구동전환",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
     }
   },
   {
@@ -400,12 +415,12 @@
     "source_question_id": "auto-r06-s04-q12",
     "round": 6,
     "question_number": 12,
-    "question": "자동변속기가 특정 변속단에서 충격을 일으키고 변속 압력 응답도 지연된다. 우선 비교할 데이터는?",
+    "question": "배터리 전기차에서 차속에 따라 고주파 구동 소음이 변하고 감속기·모터 계통 DTC가 기록됐다. 원인 구분에 적절한 첫 비교는?",
     "choices": [
-      "휠 얼라인먼트와 조향각 보정 데이터",
-      "ATF 유온·목표/실제 유압·TCM 솔레노이드 명령",
-      "브레이크 페달 유압과 ABS 펌프 작동시간",
-      "디퍼렌셜 백래시와 종감속기 오일 온도"
+      "오디오 볼륨만 줄인 뒤 DTC 분석 없이 정상 판정을 한다",
+      "모터 회전수·차속·토크명령과 감속기 베어링·기어 소음 특성을 비교한다",
+      "엔진 점화플러그를 조정해 전기모터 회전음이 사라졌는지 확인한다",
+      "모터와 감속기 회전속도는 모든 전기차에서 항상 같은 수치라고 가정한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r06-s04-q12",
@@ -421,7 +436,8 @@
       "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
       "qa2_proposed_action": "consider_reclassifying_to_chassis",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
     },
     "editorial_revision": "technical_qa2_distractor_repair",
     "distractor_review": {
@@ -436,11 +452,25 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.bosch-mobility.com/en/solutions/transmission-technology/electronic-modules/"
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
       ],
       "independent_final_technical_approval": false,
       "web_publication": false,
       "notes": "기존 친환경→섀시 동력전달 출제범위 보류 유지; 변속 압력 센서 미장착 차종 데이터 표현 검토"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "EV 감속기 소음과 구동모터 원인 구분",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
     }
   },
   {
@@ -452,12 +482,12 @@
     "source_question_id": "auto-r06-s04-q13",
     "round": 6,
     "question_number": 13,
-    "question": "디퍼렌셜을 분해한 뒤 규정 기어오일을 배출한 상태로 재조립을 완료했다. 도로시험 전에 먼저 해야 할 것은?",
+    "question": "PEM 연료전지차의 수소 애노드 순환계통에서 비반응 기체·수분이 누적되어 스택 성능이 저하될 수 있다. 퍼지(Purge) 제어 목적은?",
     "choices": [
-      "종감속기 기어의 백래시를 무조건 0으로 조정한다",
-      "입력축 베어링 프리로드를 임의로 최대값까지 올린다",
-      "규정 오일 주입량·누유·조립 상태를 확인한다",
-      "오일을 넣지 않고 짧게 시운전해 기어음을 듣는다"
+      "구동 인버터의 스위칭 주파수를 항상 0Hz로 낮추기 위해 사용한다",
+      "고전압 구동배터리를 즉시 방전시키는 주된 보호장치로 사용한다",
+      "애노드 측 비반응 성분과 축적물을 관리해 수소 공급·반응 조건을 유지하도록 돕는다",
+      "수소 누출 경보 발생 시 누구나 외부 배출밸브를 직접 강제로 개방하도록 지시한다"
     ],
     "answer": 3,
     "explanation_id": "auto-made-r06-s04-q13",
@@ -473,7 +503,8 @@
       "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
       "qa2_proposed_action": "consider_reclassifying_to_chassis",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
     },
     "editorial_revision": "technical_qa2_distractor_repair",
     "distractor_review": {
@@ -488,11 +519,27 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"
+        "https://www.energy.gov/cmei/fuels/fuel-cell-systems",
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
       ],
       "independent_final_technical_approval": false,
       "web_publication": false,
       "notes": "기존 친환경→섀시 분류 보류 유지; 디퍼렌셜 오일 규격·프리로드 OEM 자료 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "FCEV 수소 재순환·퍼지 기능",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://www.energy.gov/cmei/fuels/fuel-cell-systems",
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
     }
   },
   {
@@ -504,12 +551,12 @@
     "source_question_id": "auto-r06-s04-q14",
     "round": 6,
     "question_number": 14,
-    "question": "스마트키 원격 조작 거리가 짧고 코인전지 전압이 낮게 측정됐다. 적절한 조치는?",
+    "question": "전기차 BMS에 특정 배터리 모듈 온도센서 신호 단선 DTC가 기록됐다. 충전 가능전류 판단에서 먼저 확인할 내용은?",
     "choices": [
-      "규정 배터리를 교환한 뒤 통신·인식거리를 재확인한다",
-      "전기차 고전압 릴레이를 임의로 연결한다",
-      "알터네이터 전압을 무조건 올린다",
-      "시동 모터를 우선 분해한다"
+      "진단기로 온도 측정값·회로 이상을 확인하고 OEM 보호제어 및 충전 제한 상태를 살핀다",
+      "센서값이 없을 때 배터리 셀이 항상 상온이라고 가정해 최대 충전을 강제한다",
+      "실내 에어컨 설정온도만 바꾸면 실제 모듈 열상태까지 안전하게 확정할 수 있다",
+      "고전압 배터리 케이스를 무방비로 개방해 손가락으로 셀 온도를 직접 재면 된다"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r06-s04-q14",
@@ -525,7 +572,8 @@
       "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
       "qa2_proposed_action": "consider_reclassifying_to_electrical",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
     },
     "technical_verification_qa25": {
       "batch": "QA25-r06-eco",
@@ -533,11 +581,25 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+        "https://www.ti.com/product/ADS131B24-Q1"
       ],
       "independent_final_technical_approval": false,
       "web_publication": false,
       "notes": "기존 친환경→일반 전기전자 과목 분류 보류 유지; 스마트키 RF/LF 동작은 차종별 지원방식 검증"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "BMS 배터리 온도센서 오류",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://www.ti.com/product/ADS131B24-Q1"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
     }
   },
   {
@@ -549,12 +611,12 @@
     "source_question_id": "auto-r06-s04-q15",
     "round": 6,
     "question_number": 15,
-    "question": "후방 카메라 수리 후 실제 후진 보조 기능을 확인한다. 적절한 항목은?",
+    "question": "전기차 AC 충전 포트에 커넥터가 결합됐지만 차량이 충전 허가를 내리지 않는다. 일반적 제어파일럿(CP) 진단의 의미는?",
     "choices": [
-      "카메라 화면은 켜지면 거리 감지 정확도를 확인할 필요가 없다",
-      "화면 지연·화각·가이드라인 및 안전경고 확인",
-      "엔진오일 점도와 연료 소비만 비교",
-      "주행 중 후진 기어로 장시간 테스트"
+      "고전압 배터리 셀의 실제 내부저항 값을 충전 플러그만으로 바로 측정한다",
+      "충전기와 차량의 연결·준비 상태 및 허용전류 관련 신호를 판단하는 데 사용한다",
+      "구동모터의 회전자 위치를 인버터보다 먼저 직접 계산해 제공한다",
+      "수소연료전지 스택의 공기압축기 유량을 차량 충전포트에서 제어한다"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r06-s04-q15",
@@ -570,7 +632,8 @@
       "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
       "qa2_proposed_action": "consider_reclassifying_to_electrical",
       "qa2_confidence": "likely_subject_change_not_officially_certified",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
     },
     "technical_verification_qa25": {
       "batch": "QA25-r06-eco",
@@ -578,11 +641,25 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.hella.com/techworld/us/technical/adas/"
+        "https://docs.chargepoint.com/cpdocs-sec/content/2-ac/cp6000/cpim1000/cpim-guide-can-intrfc.htm"
       ],
       "independent_final_technical_approval": false,
       "web_publication": false,
       "notes": "기존 친환경→전기전자·ADAS 과목 분류 보류 유지, 차량별 후방카메라 보정/안전 조건 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "EV AC 충전 제어파일럿·충전허가",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://docs.chargepoint.com/cpdocs-sec/content/2-ac/cp6000/cpim1000/cpim-guide-can-intrfc.htm"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
     }
   },
   {

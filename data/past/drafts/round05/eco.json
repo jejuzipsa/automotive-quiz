@@ -1,1 +1,834 @@
-[{"id":"auto-made-r05-s04-q01","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q01","round":5,"question_number":1,"question":"하이브리드 차량의 구동 배터리 SOC가 낮아졌다. 일반적인 보호제어 설명으로 알맞은 것은?","choices":["구동모터 출력이 제한되거나 엔진 개입이 늘 수 있다","SOC가 낮으면 배터리 방전 허용량이 무한해진다","공조 팬 회전수만으로 SOC를 판단한다","모든 차종에서 엔진은 반드시 즉시 시동 불가"],"answer":1,"explanation_id":"auto-made-r05-s04-q01","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"],"final_technical_approval":false,"web_publication":false,"notes":"기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."}},{"id":"auto-made-r05-s04-q02","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q02","round":5,"question_number":2,"question":"전동식 에어컨 압축기를 사용하는 하이브리드 차량의 특징은?","choices":["엔진 크랭크축 회전과 독립적으로 압축기를 구동할 수 있다","전동식이면 냉매의 물성이 자동 변화한다","전동식 압축기는 냉방 부하를 조절할 수 없다","엔진 벨트가 없으면 압축을 하지 못한다"],"answer":1,"explanation_id":"auto-made-r05-s04-q02","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"],"final_technical_approval":false,"web_publication":false,"notes":"기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."}},{"id":"auto-made-r05-s04-q03","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q03","round":5,"question_number":3,"question":"전기차·하이브리드차에 주황색 고전압 케이블을 사용하는 주요 목적은?","choices":["충전이 완료된 상태만 표시한다","고전압 회로를 시각적으로 식별하게 한다","내부에 12V만 흐르도록 보증한다","자동차의 통신선만 뜻한다"],"answer":2,"explanation_id":"auto-made-r05-s04-q03","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"final_technical_approval":false,"web_publication":false,"notes":"주황색은 위험 식별용이지 반드시 활선/무전압 판정 수단은 아니다. 차량별 고전압 PPE/검전 절차는 OEM 전문가 확인"}},{"id":"auto-made-r05-s04-q04","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q04","round":5,"question_number":4,"question":"인버터 냉각수 회로의 정비가 끝났다. 냉각수 순환불량을 막기 위한 절차는?","choices":["시동 중 냉각호스를 임의 절단해 공기 배출","모든 차에 동일한 특수공구 하나가 필수","인버터 냉각은 정비 후 확인할 필요가 없다","해당 차종의 냉각회로 에어빼기·누설점검·펌프 진단 수행"],"answer":4,"explanation_id":"auto-made-r05-s04-q04","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work","https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"final_technical_approval":false,"web_publication":false,"notes":"인버터 냉각계 구조·냉각액 종류·에어빼기 펌프 구동 방식 OEM 매뉴얼 확인 필요"}},{"id":"auto-made-r05-s04-q05","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q05","round":5,"question_number":5,"question":"타이밍벨트 교환 후 엔진 조립 전 반드시 대조할 항목은?","choices":["퓨즈박스 커버 색상","실내 온도센서의 설정값","크랭크·캠축 타이밍 마크와 정비 기준 위치","도어 잠금 속도"],"answer":3,"explanation_id":"auto-made-r05-s04-q05","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"engine","reason":"타이밍벨트 교환·엔진 위상","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_engine","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"],"final_technical_approval":false,"web_publication":false,"notes":"기존 과목 분류 hold_do_not_publish: 내연기관 타이밍벨트는 친환경보다 엔진 정비의 직접 영역"}},{"id":"auto-made-r05-s04-q06","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q06","round":5,"question_number":6,"question":"배터리 모듈을 교체한 뒤 셀 상태 검사를 계획 중이다. 모듈 상태 판정에 직접적인 값은?","choices":["엔진오일 제조사","각 모듈의 전압과 내부저항·온도 등의 차이","실내 송풍구 풍향만","타이어 회전저항과 얼라인먼트만"],"answer":2,"explanation_id":"auto-made-r05-s04-q06","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/electric-maintenance"],"final_technical_approval":false,"web_publication":false,"notes":"고전압 팩 개봉·직접 계측은 OEM 배터리 안전절차와 제조사별 BMS 데이터 기준 필요"}},{"id":"auto-made-r05-s04-q07","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q07","round":5,"question_number":7,"question":"고전압 서비스 플러그를 분리하는 작업을 교육받았다. 올바른 안전 인식은?","choices":["시동 ON 상태에서 임의로 제거한다","제조사 차단 절차·대기·무전압 검증을 모두 거친다","절연보호구는 장식에 불과하다","플러그만 빼면 즉시 어떤 부분도 만져도 된다"],"answer":2,"explanation_id":"auto-made-r05-s04-q07","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"final_technical_approval":false,"web_publication":false,"notes":"고전압 차단 뒤 인버터 잔류전압 등 실제 모델별 검증 위치/대기시간은 별도 OEM 안전지침 필요"}},{"id":"auto-made-r05-s04-q08","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q08","round":5,"question_number":8,"question":"직렬 연결된 배터리 셀의 SOC가 서로 달라진 경우 밸런싱을 수행하는 주된 이유는?","choices":["배터리 팩을 엔진오일로 냉각한다","셀 간 전기적 직렬 연결을 끊어버린다","셀의 충전 상태 편차를 줄여 가용 용량과 안전을 확보한다","차체 무게를 물리적으로 줄인다"],"answer":3,"explanation_id":"auto-made-r05-s04-q08","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.analog.com/en/resources/technical-articles/battery-cell-balancing-what-to-balance-and-how.html"],"final_technical_approval":false,"web_publication":false,"notes":"기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."}},{"id":"auto-made-r05-s04-q09","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q09","round":5,"question_number":9,"question":"급속충전 도중 충전이 멈추고 커넥터 잠금 오류가 표시됐다. 적절한 첫 대응은?","choices":["충전 중 고전압 접점을 직접 만져본다","차량·충전기 안내에 따라 중지 후 커넥터 체결 상태 확인","충전 케이블을 잡아당겨 강제로 분리한다","오류 문구는 무시하고 계속 충전한다"],"answer":2,"explanation_id":"auto-made-r05-s04-q09","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/electric-maintenance"],"final_technical_approval":false,"web_publication":false,"notes":"충전기/차량 인터록·사용자 vs 정비사용 안전조치 단계 구분 및 OEM/충전규격 필요"}},{"id":"auto-made-r05-s04-q10","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q10","round":5,"question_number":10,"question":"전기차의 고전압 배터리에서 12V 보조 배터리를 충전할 때 사용되는 장치는?","choices":["기계식 클러치 페달","배기 매니폴드","저전압 DC-DC 컨버터(LDC)","고전압 시동모터"],"answer":3,"explanation_id":"auto-made-r05-s04-q10","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work","https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"final_technical_approval":false,"web_publication":false,"notes":"기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."}},{"id":"auto-made-r05-s04-q11","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q11","round":5,"question_number":11,"question":"전기 회로도에 점선 화살표가 표시됐다. 옳은 해석 원칙은?","choices":["도면의 선 모양은 기능과 무관하다","점선은 항상 접지선을 뜻한다","점선 화살표는 세계 모든 차량에서 데이터 통신만 뜻한다","도면 범례와 제작사 표시 규칙을 확인한다"],"answer":4,"explanation_id":"auto-made-r05-s04-q11","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electrical-wiring-diagrams/"],"final_technical_approval":false,"web_publication":false,"notes":"해당 특정 차량/도면의 범례가 제공되지 않아 점선의 실질 의미를 단일정답으로 일반화하기 어려움"}},{"id":"auto-made-r05-s04-q12","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q12","round":5,"question_number":12,"question":"단순 유성기어 장치에서 선기어는 고정, 캐리어는 정방향으로 회전한다. 링기어의 회전 방향은?","choices":["스테이터와 함께 역회전","캐리어와 항상 반대 방향","캐리어와 같은 정방향","회전수와 무관하게 반드시 정지"],"answer":3,"explanation_id":"auto-made-r05-s04-q12","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"일반 유성기어 운동학/변속기는 섀시·동력전달 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.agcoauto.com/content/news/p2_articleid/153"],"final_technical_approval":false,"web_publication":false,"notes":"기존 친환경/섀시 과목 분류 보류 유지. 선기어/링기어 관계는 단순 유성기어 기본 구조 제한; 유성기어식 HEV 구동축 맥락 필요"}},{"id":"auto-made-r05-s04-q13","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q13","round":5,"question_number":13,"question":"CVT 벨트 교환 후 시험 운전에서 확인할 항목으로 적절한 것은?","choices":["모든 CVT는 4단 기어 변속을 반복","단수별 변속 충격만 필수 합격기준으로 고정","엔진오일 교환 알림 시간만 확인","차종별 학습·변속비 변화·이상 소음 및 벨트 슬립"],"answer":4,"explanation_id":"auto-made-r05-s04-q13","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"CVT 벨트 교환은 동력전달","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/transmission-technology/continuously-variable-transmission/"],"final_technical_approval":false,"web_publication":false,"notes":"기존 친환경 과목 이탈 hold 유지. CVT 벨트/풀리 형식별 시운전·오일온도 OEM 기준 필요"}},{"id":"auto-made-r05-s04-q14","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q14","round":5,"question_number":14,"question":"TPMS 경고등이 켜진 차량이다. 먼저 확인할 기본 항목은?","choices":["엔진오일 압력만","혼합비 보정값만","발전기 내부 회전자 저항만","각 타이어의 실제 냉간 공기압과 경고 상태"],"answer":4,"explanation_id":"auto-made-r05-s04-q14","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"TPMS는 타이어/주행안전 관리 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"needs_official_detailed_curriculum_mapping","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"cross_disciplinary_not_confirmed","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.nhtsa.gov/equipment/tires"],"final_technical_approval":false,"web_publication":false,"notes":"기존 친환경 과목 범위 이탈 hold 유지, 직접식/간접식 TPMS 구분 및 제조사 초기화 조건 확인"}},{"id":"auto-made-r05-s04-q15","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q15","round":5,"question_number":15,"question":"EPS 정비 뒤 스티어링 휠이 중앙인데 조향각 값이 어긋난다. 합리적인 조치는?","choices":["센서 값을 확인하지 않고 모터만 교환한다","휠 정렬 상태와 차종별 조향각 영점 학습 조건을 확인한다","브레이크 패드만 바꾼다","모든 EPS에 무조건 동일한 학습값을 입력한다"],"answer":2,"explanation_id":"auto-made-r05-s04-q15","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"EPS 조향각 센서 정렬은 조향계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"needs_official_detailed_curriculum_mapping","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"cross_disciplinary_not_confirmed","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"],"final_technical_approval":false,"web_publication":false,"notes":"기존 친환경 과목 이탈 hold 유지, SAS/휠 정렬 차종별 OEM 보정 절차 필요"}},{"id":"auto-made-r05-s04-q16","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q16","round":5,"question_number":16,"question":"수소 탱크 주변에서 가스 누출이 의심된다. 누출 탐지 작업 전에 필요한 조치는?","choices":["고압배관을 우선 임의로 분리한다","작업구역 통제·점화원 제거·지정된 수소 검지기를 준비한다","누출부에 불꽃을 가까이 댄다","환기 없는 밀폐 공간에 차량을 옮긴다"],"answer":2,"explanation_id":"auto-made-r05-s04-q16","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.energy.gov/cmei/fuels/hydrogen-safe","https://www.energy.gov/cmei/fuels/doe-safety-codes-and-standards-activities"],"final_technical_approval":false,"web_publication":false,"notes":"고압 수소 저장장치 누출의 실제 차단·격리·검지는 해당 차량 OEM/법령 전문 안전매뉴얼 확인 전 승인 금지"}},{"id":"auto-made-r05-s04-q17","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q17","round":5,"question_number":17,"question":"수소 누출 감지기가 설치된 수소차에서 누출 경고가 발생했다. 안전 확보 후 원인 구분에 적절한 진단 항목은?","choices":["실내 오디오의 최대 출력과 서라운드 모드","연료탱크의 가솔린 분사기와 배기온도만 확인한다","타이어 위치교환 기록과 창문 틴팅 농도","실제 수소 누출 여부·감지기 상태 및 관련 제어기 고장코드"],"answer":4,"explanation_id":"auto-made-r05-s04-q17","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"qa19_revision":{"date":"2026-11-23","status":"editorial_rewritten_pending_independent_technical_final_review","final_approved":false,"publishable":false},"editorial_revision":"qa19_content_repair","technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.energy.gov/cmei/fuels/how-advanced-hydrogen-leak-detection-are-technologies-used-sufficiently-accurate-and","https://www.energy.gov/cmei/fuels/doe-safety-codes-and-standards-activities"],"final_technical_approval":false,"web_publication":false,"notes":"QA19 재작성 최신 4선지 검수, 실제 수소 누출 확인은 전문인력/OEM 지정 장비와 고압작업 절차 필요"}},{"id":"auto-made-r05-s04-q18","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q18","round":5,"question_number":18,"question":"연료전지차의 고전압 전력계통에서 12V 보조전원의 충전이 불안정할 때, 점검에 유용한 조합은?","choices":["기계식 스티어링 캐스터와 타이어 외경","냉각수 리저버 색상과 실내 방향제 농도","연료탱크의 가솔린 분사기 작동주기","DC-DC 출력전압·전류와 저전압 배터리·관련 DTC"],"answer":4,"explanation_id":"auto-made-r05-s04-q18","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"qa19_revision":{"date":"2026-11-23","status":"editorial_rewritten_pending_independent_technical_final_review","final_approved":false,"publishable":false},"editorial_revision":"qa19_content_repair","technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"final_technical_approval":false,"web_publication":false,"notes":"QA19 재작성 최신 4선지 검수, DC-DC 출력 정격과 저전압 배터리 BMS/부하 계통별 OEM 확인 필요"}},{"id":"auto-made-r05-s04-q19","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q19","round":5,"question_number":19,"question":"EV의 DC-DC 컨버터가 충전전압을 내지 못한다. 우선 나타날 수 있는 결과는?","choices":["구동 배터리 셀 전압이 즉시 모두 0이 된다","연료탱크의 수소 농도가 증가","타이어 공기압이 자동으로 감소","12V 보조 배터리 방전과 저전압 전장품 이상"],"answer":4,"explanation_id":"auto-made-r05-s04-q19","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"final_technical_approval":false,"web_publication":false,"notes":"기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."}},{"id":"auto-made-r05-s04-q20","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r05-s04-q20","round":5,"question_number":20,"question":"수소연료전지차의 경제성을 평가할 때 올바른 설명은?","choices":["수소연료전지는 반드시 배기가스로 CO를 배출한다","수소 가격·효율·운행 지역·정비 비용에 따라 달라진다","수소 가격은 모든 지역에서 항상 가장 낮다","충전 인프라는 어느 지역이든 동일하다"],"answer":2,"explanation_id":"auto-made-r05-s04-q20","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa22":{"date":"2026-11-23","batch":"QA22-r05-eco","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/fuels/hydrogen-basics"],"final_technical_approval":false,"web_publication":false,"notes":"2026 한국 수소차 경제성은 연료가격·충전소 운영여건 등 최신 지역정보가 가변적이므로 수치·결론 승인 보류"}}]
+[
+  {
+    "id": "auto-made-r05-s04-q01",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q01",
+    "round": 5,
+    "question_number": 1,
+    "question": "하이브리드 차량의 구동 배터리 SOC가 낮아졌다. 일반적인 보호제어 설명으로 알맞은 것은?",
+    "choices": [
+      "구동모터 출력이 제한되거나 엔진 개입이 늘 수 있다",
+      "SOC가 낮으면 배터리 방전 허용량이 무한해진다",
+      "공조 팬 회전수만으로 SOC를 판단한다",
+      "모든 차종에서 엔진은 반드시 즉시 시동 불가"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r05-s04-q01",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q02",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q02",
+    "round": 5,
+    "question_number": 2,
+    "question": "전동식 에어컨 압축기를 사용하는 하이브리드 차량의 특징은?",
+    "choices": [
+      "엔진 크랭크축 회전과 독립적으로 압축기를 구동할 수 있다",
+      "전동식이면 냉매의 물성이 자동 변화한다",
+      "전동식 압축기는 냉방 부하를 조절할 수 없다",
+      "엔진 벨트가 없으면 압축을 하지 못한다"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r05-s04-q02",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q03",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q03",
+    "round": 5,
+    "question_number": 3,
+    "question": "전기차·하이브리드차에 주황색 고전압 케이블을 사용하는 주요 목적은?",
+    "choices": [
+      "충전이 완료된 상태만 표시한다",
+      "고전압 회로를 시각적으로 식별하게 한다",
+      "내부에 12V만 흐르도록 보증한다",
+      "자동차의 통신선만 뜻한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q03",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "주황색은 위험 식별용이지 반드시 활선/무전압 판정 수단은 아니다. 차량별 고전압 PPE/검전 절차는 OEM 전문가 확인"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q04",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q04",
+    "round": 5,
+    "question_number": 4,
+    "question": "인버터 냉각수 회로의 정비가 끝났다. 냉각수 순환불량을 막기 위한 절차는?",
+    "choices": [
+      "시동 중 냉각호스를 임의 절단해 공기 배출",
+      "모든 차에 동일한 특수공구 하나가 필수",
+      "인버터 냉각은 정비 후 확인할 필요가 없다",
+      "해당 차종의 냉각회로 에어빼기·누설점검·펌프 진단 수행"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q04",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "인버터 냉각계 구조·냉각액 종류·에어빼기 펌프 구동 방식 OEM 매뉴얼 확인 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q05",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q05",
+    "round": 5,
+    "question_number": 5,
+    "question": "일반 하이브리드차가 가속할 때 내연기관 외에 구동모터가 추가 구동토크를 제공한다. 이때 모터에 전기를 공급하는 주된 에너지원은?",
+    "choices": [
+      "제동 직후 타이어의 열에너지를 실시간으로 변환한 전력만",
+      "차량 냉각수 펌프의 압력으로 직접 생성한 전력",
+      "하이브리드 구동배터리에 저장된 전기에너지",
+      "스마트키 코인전지에 저장된 저전압 전기에너지"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r05-s04-q05",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "engine",
+      "reason": "타이밍벨트 교환·엔진 위상",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
+    },
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 과목 분류 hold_do_not_publish: 내연기관 타이밍벨트는 친환경보다 엔진 정비의 직접 영역"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "하이브리드 구동모터 토크 보조",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/how-do-plug-in-hybrid-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q06",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q06",
+    "round": 5,
+    "question_number": 6,
+    "question": "배터리 모듈을 교체한 뒤 셀 상태 검사를 계획 중이다. 모듈 상태 판정에 직접적인 값은?",
+    "choices": [
+      "엔진오일 제조사",
+      "각 모듈의 전압과 내부저항·온도 등의 차이",
+      "실내 송풍구 풍향만",
+      "타이어 회전저항과 얼라인먼트만"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q06",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "고전압 팩 개봉·직접 계측은 OEM 배터리 안전절차와 제조사별 BMS 데이터 기준 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q07",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q07",
+    "round": 5,
+    "question_number": 7,
+    "question": "고전압 서비스 플러그를 분리하는 작업을 교육받았다. 올바른 안전 인식은?",
+    "choices": [
+      "시동 ON 상태에서 임의로 제거한다",
+      "제조사 차단 절차·대기·무전압 검증을 모두 거친다",
+      "절연보호구는 장식에 불과하다",
+      "플러그만 빼면 즉시 어떤 부분도 만져도 된다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q07",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "고전압 차단 뒤 인버터 잔류전압 등 실제 모델별 검증 위치/대기시간은 별도 OEM 안전지침 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q08",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q08",
+    "round": 5,
+    "question_number": 8,
+    "question": "직렬 연결된 배터리 셀의 SOC가 서로 달라진 경우 밸런싱을 수행하는 주된 이유는?",
+    "choices": [
+      "배터리 팩을 엔진오일로 냉각한다",
+      "셀 간 전기적 직렬 연결을 끊어버린다",
+      "셀의 충전 상태 편차를 줄여 가용 용량과 안전을 확보한다",
+      "차체 무게를 물리적으로 줄인다"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r05-s04-q08",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.analog.com/en/resources/technical-articles/battery-cell-balancing-what-to-balance-and-how.html"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q09",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q09",
+    "round": 5,
+    "question_number": 9,
+    "question": "급속충전 도중 충전이 멈추고 커넥터 잠금 오류가 표시됐다. 적절한 첫 대응은?",
+    "choices": [
+      "충전 중 고전압 접점을 직접 만져본다",
+      "차량·충전기 안내에 따라 중지 후 커넥터 체결 상태 확인",
+      "충전 케이블을 잡아당겨 강제로 분리한다",
+      "오류 문구는 무시하고 계속 충전한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q09",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "충전기/차량 인터록·사용자 vs 정비사용 안전조치 단계 구분 및 OEM/충전규격 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q10",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q10",
+    "round": 5,
+    "question_number": 10,
+    "question": "전기차의 고전압 배터리에서 12V 보조 배터리를 충전할 때 사용되는 장치는?",
+    "choices": [
+      "기계식 클러치 페달",
+      "배기 매니폴드",
+      "저전압 DC-DC 컨버터(LDC)",
+      "고전압 시동모터"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r05-s04-q10",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q11",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q11",
+    "round": 5,
+    "question_number": 11,
+    "question": "전기 회로도에 점선 화살표가 표시됐다. 옳은 해석 원칙은?",
+    "choices": [
+      "도면의 선 모양은 기능과 무관하다",
+      "점선은 항상 접지선을 뜻한다",
+      "점선 화살표는 세계 모든 차량에서 데이터 통신만 뜻한다",
+      "도면 범례와 제작사 표시 규칙을 확인한다"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q11",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electrical-wiring-diagrams/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "해당 특정 차량/도면의 범례가 제공되지 않아 점선의 실질 의미를 단일정답으로 일반화하기 어려움"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q12",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q12",
+    "round": 5,
+    "question_number": 12,
+    "question": "일부 파워스플릿 하이브리드 차량은 유성기어장치를 엔진·발전기·구동계와 연결한다. 이 구조의 주된 목적은?",
+    "choices": [
+      "모든 구동 조건에서 세 회전요소를 서로 영구 고정해 같은 속도로 만든다",
+      "엔진 출력을 항상 전기 발전에만 사용하고 차륜에는 기계적으로 전달하지 않는다",
+      "엔진의 기계적 동력과 전기기계의 회전속도·토크 관계를 조합해 주행과 발전을 배분한다",
+      "유성기어의 각 기어를 모두 고정시켜 엔진과 모터가 전혀 회전하지 못하게 한다"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r05-s04-q12",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "일반 유성기어 운동학/변속기는 섀시·동력전달 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
+    },
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경/섀시 과목 분류 보류 유지. 선기어/링기어 관계는 단순 유성기어 기본 구조 제한; 유성기어식 HEV 구동축 맥락 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "파워스플릿 하이브리드 동력분기",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q13",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q13",
+    "round": 5,
+    "question_number": 13,
+    "question": "전기차 구동모터 리졸버 센서의 사인·코사인 신호가 제어기에서 서로 일관되지 않게 판정된다. 모터 제어 관점에서 확인하려는 주된 정보는?",
+    "choices": [
+      "모터 베어링의 윤활유 산가와 점도만 확인한다",
+      "배터리 충전구 잠금장치의 기계적 유격만 측정한다",
+      "구동 인버터의 냉각수 레벨만을 위치각으로 직접 사용한다",
+      "모터 회전자의 위치각·속도 피드백과 센서 신호·배선 상태"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q13",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "CVT 벨트 교환은 동력전달",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
+    },
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://documentation.infineon.com/aurixtc3xx/docs/nnc1745576047829"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경 과목 이탈 hold 유지. CVT 벨트/풀리 형식별 시운전·오일온도 OEM 기준 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "EV 구동모터 리졸버 회전자 센서",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://documentation.infineon.com/aurixtc3xx/docs/nnc1745576047829"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q14",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q14",
+    "round": 5,
+    "question_number": 14,
+    "question": "배터리 온도가 매우 낮은 전기차가 급속충전을 시도했는데 충전기 정격보다 낮은 충전전류만 허용된다. 우선 해석할 정보는?",
+    "choices": [
+      "충전기 정격이 높으면 배터리 온도와 무관하게 최대전류가 항상 흐른다",
+      "SOC가 낮으면 BMS는 온도와 관계없이 충전 전류 제한을 해제한다",
+      "충전구를 반복 탈착하면 배터리 내부온도 제한이 자동으로 사라진다",
+      "배터리 온도와 SOC에 따른 BMS 충전전류 제한 및 열관리 상태를 함께 확인한다"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q14",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "TPMS는 타이어/주행안전 관리 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
+    },
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-batteries",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경 과목 범위 이탈 hold 유지, 직접식/간접식 TPMS 구분 및 제조사 초기화 조건 확인"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "저온 배터리 급속충전 출력제한",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/electric-batteries",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q15",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q15",
+    "round": 5,
+    "question_number": 15,
+    "question": "수소연료전지차가 짧은 고부하 가속을 할 때 연료전지 출력만으로 즉각적 요구토크를 충족하기 어렵다. 차량 보조 구동배터리의 역할은?",
+    "choices": [
+      "수소탱크의 가스압력을 바꾸는 기계식 레귤레이터 기능만 수행한다",
+      "필요 시 모터에 보조 전력을 공급하고 회생제동 에너지 등을 저장한다",
+      "주행 중 연료전지 스택을 영구 단락해 전력을 강제로 최대화한다",
+      "스택에서 생산한 수소를 외부 공기로 방출하도록 제어하는 기능만 한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q15",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "EPS 조향각 센서 정렬은 조향계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "cross_disciplinary_not_confirmed",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa42_current_question_may_now_fit_eco": true
+    },
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경 과목 이탈 hold 유지, SAS/휠 정렬 차종별 OEM 보정 절차 필요"
+    },
+    "qa42_editorial_replacement": {
+      "date": "2026-11-23",
+      "topic": "FCEV 보조배터리와 스택 출력분담",
+      "new_independently_authored_eco_study_question_not_exam_original": true,
+      "legacy_audit_snapshot_preserved": true,
+      "current_reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work"
+      ],
+      "official_detailed_qnet_hwp_verified": false,
+      "subject_hold_retained": true,
+      "technical_final_approval": false,
+      "rights_cleared": false,
+      "web_publication": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q16",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q16",
+    "round": 5,
+    "question_number": 16,
+    "question": "수소 탱크 주변에서 가스 누출이 의심된다. 누출 탐지 작업 전에 필요한 조치는?",
+    "choices": [
+      "고압배관을 우선 임의로 분리한다",
+      "작업구역 통제·점화원 제거·지정된 수소 검지기를 준비한다",
+      "누출부에 불꽃을 가까이 댄다",
+      "환기 없는 밀폐 공간에 차량을 옮긴다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q16",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/hydrogen-safe",
+        "https://www.energy.gov/cmei/fuels/doe-safety-codes-and-standards-activities"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "고압 수소 저장장치 누출의 실제 차단·격리·검지는 해당 차량 OEM/법령 전문 안전매뉴얼 확인 전 승인 금지"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q17",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q17",
+    "round": 5,
+    "question_number": 17,
+    "question": "수소 누출 감지기가 설치된 수소차에서 누출 경고가 발생했다. 안전 확보 후 원인 구분에 적절한 진단 항목은?",
+    "choices": [
+      "실내 오디오의 최대 출력과 서라운드 모드",
+      "연료탱크의 가솔린 분사기와 배기온도만 확인한다",
+      "타이어 위치교환 기록과 창문 틴팅 농도",
+      "실제 수소 누출 여부·감지기 상태 및 관련 제어기 고장코드"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q17",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "qa19_revision": {
+      "date": "2026-11-23",
+      "status": "editorial_rewritten_pending_independent_technical_final_review",
+      "final_approved": false,
+      "publishable": false
+    },
+    "editorial_revision": "qa19_content_repair",
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/how-advanced-hydrogen-leak-detection-are-technologies-used-sufficiently-accurate-and",
+        "https://www.energy.gov/cmei/fuels/doe-safety-codes-and-standards-activities"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "QA19 재작성 최신 4선지 검수, 실제 수소 누출 확인은 전문인력/OEM 지정 장비와 고압작업 절차 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q18",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q18",
+    "round": 5,
+    "question_number": 18,
+    "question": "연료전지차의 고전압 전력계통에서 12V 보조전원의 충전이 불안정할 때, 점검에 유용한 조합은?",
+    "choices": [
+      "기계식 스티어링 캐스터와 타이어 외경",
+      "냉각수 리저버 색상과 실내 방향제 농도",
+      "연료탱크의 가솔린 분사기 작동주기",
+      "DC-DC 출력전압·전류와 저전압 배터리·관련 DTC"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q18",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "qa19_revision": {
+      "date": "2026-11-23",
+      "status": "editorial_rewritten_pending_independent_technical_final_review",
+      "final_approved": false,
+      "publishable": false
+    },
+    "editorial_revision": "qa19_content_repair",
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "QA19 재작성 최신 4선지 검수, DC-DC 출력 정격과 저전압 배터리 BMS/부하 계통별 OEM 확인 필요"
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q19",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q19",
+    "round": 5,
+    "question_number": 19,
+    "question": "EV의 DC-DC 컨버터가 충전전압을 내지 못한다. 우선 나타날 수 있는 결과는?",
+    "choices": [
+      "구동 배터리 셀 전압이 즉시 모두 0이 된다",
+      "연료탱크의 수소 농도가 증가",
+      "타이어 공기압이 자동으로 감소",
+      "12V 보조 배터리 방전과 저전압 전장품 이상"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r05-s04-q19",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기술자료를 참고한 일반 원리 1차 검토이며 독립 기술 최종승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r05-s04-q20",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r05-s04-q20",
+    "round": 5,
+    "question_number": 20,
+    "question": "수소연료전지차의 경제성을 평가할 때 올바른 설명은?",
+    "choices": [
+      "수소연료전지는 반드시 배기가스로 CO를 배출한다",
+      "수소 가격·효율·운행 지역·정비 비용에 따라 달라진다",
+      "수소 가격은 모든 지역에서 항상 가장 낮다",
+      "충전 인프라는 어느 지역이든 동일하다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r05-s04-q20",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa22": {
+      "date": "2026-11-23",
+      "batch": "QA22-r05-eco",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/fuels/hydrogen-basics"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "2026 한국 수소차 경제성은 연료가격·충전소 운영여건 등 최신 지역정보가 가변적이므로 수치·결론 승인 보류"
+    }
+  }
+]

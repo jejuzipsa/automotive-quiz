@@ -65,8 +65,17 @@ assert.match(sourceShim.choices[sourceShim.answer-1], /두꺼운/);
 assert.match(shimExplanation.reason, /0\\.10 mm|두껍/);
 const planet=read('data/past/drafts/round05/eco.json')[11];
 const planetExplanation=read('data/explanations/drafts/round05/eco.json')[11];
-assert.match(planet.choices[planet.answer-1], /같은 정방향/);
-assert.match(planetExplanation.reason, /캐리어와 같은 방향/);
+// The prior planetary-gear interpretation remains in the QA22 time-stamped audit,
+ // but QA42 independently replaced the off-scope item with a hybrid power-split question.
+const historicalPlanet=read('data/qa/technical-qa22-r05-eco-option-audit.json')[11];
+const qa42Ledger=read('data/qa/technical-qa42-eco-scope-replacements.json').find(x=>x.id===planet.id);
+assert.ok(qa42Ledger);
+assert.match(historicalPlanet.correct_choice, /같은 정방향/);
+assert.equal(historicalPlanet.question_at_review,qa42Ledger.before.question);
+assert.match(planet.question, /파워스플릿/);
+assert.match(planet.choices[planet.answer-1], /주행과 발전을 배분/);
+assert.match(planetExplanation.reason, /동력분기/);
+assert.equal(planet.answer,qa42Ledger.before.answer);
 const live=read('data/manifest.json');
 assert.ok(live.banks.every(b=>!b.file.includes('/drafts/')), 'drafts must stay off live quiz');
 console.log('PASS: 720 authored draft questions, 720 separate explanations, 720 1:1 ID/answer mappings; no live publication; 0 pending.');
