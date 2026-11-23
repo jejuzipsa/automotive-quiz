@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "Private QA23 OCR master: 720/720 source fields compared (not uploaded to public repository). Independently reauthored 720/720 editorial drafts. Historical 1st-pass question-and-option rationale ledger through QA37: 720/720 questions, 2880/2880 choices; review stage is NOT independent final technical approval. Final approvals 0/720, past reconstructions published 0/720, public self-authored practice questions 80 unchanged.",
+  "source_of_truth": "QA23 private source-compared OCR 720/720 (not public); 720 separately reauthored draft questions. QA3-QA37 have 1st-pass per-option rationales for 720/2880; QA38 confirmed structural integrity after normalizing 20 QA26 URL fields. Firstpass source-supported 351 / independent expert final technical approval 0/720. Public reconstructed past 0/720, self-authored practice 80 unchanged.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa37_rounds01-09_all720_first_pass_records_complete_final_independent_approval_pending",
+  "latest_qa_stage": "qa38_full_bank_structural_integrity_passed_source_relevance_and_independent_review_pending",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -1988,5 +1988,61 @@
       "independent_final_approvals": 0,
       "publications": 0
     }
+  },
+  "technical_qa38": {
+    "date": "2026-11-23",
+    "kind": "machine_integrity_and_candidate_triage_not_independent_technical_approval",
+    "question_count": 720,
+    "options_checked": 2880,
+    "per_item_firstpass_source_supported": 351,
+    "per_item_additional_review_pending": 369,
+    "additional_review_syllabus_or_model": 366,
+    "additional_review_quality": 3,
+    "structural_integrity_failures_after_fix": 0,
+    "qa26_source_urls_string_to_array_repairs": 20,
+    "historical_reference_url_alias_supported": true,
+    "subject_holds_carried": 55,
+    "near_wording_candidate_pairs_at_jaccard_0_53": 0,
+    "exact_question_duplicates": 0,
+    "answer_index_distribution": {
+      "engine": [
+        53,
+        45,
+        39,
+        43
+      ],
+      "chassis": [
+        48,
+        38,
+        42,
+        52
+      ],
+      "electrical": [
+        49,
+        48,
+        41,
+        42
+      ],
+      "eco": [
+        45,
+        45,
+        41,
+        49
+      ]
+    },
+    "suspected_stale_subject_hold_reason": [
+      "auto-made-r06-s04-q20"
+    ],
+    "official_criteria_period": "2025-01-01 to 2027-12-31",
+    "official_criteria_url": "https://www.q-net.or.kr/cst006.do?artlSeq=5213442&brdId=Q006&code=1202&gId=&gSite=Q&id=cst00602",
+    "official_criteria_detailed_hwp_read": false,
+    "reference_url_validation_scope": "syntax only, not source reachability or relevance",
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "public_practice_expected_count": 80,
+    "audit_test": "tests/qa38-final-review-queue.test.cjs",
+    "audit_artifact": "qa38-final-review-queue",
+    "report": "docs/QA38_FINAL_RISK_TRIAGE.md",
+    "next": "inspect Q-net detailed HWP, verify subject holds and safety/OEM/current law sources, fix meaning-level duplicate and implausible distractors, independent specialist approval; after protected backup decide public draft retirement"
   }
 }

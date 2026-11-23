@@ -1,1 +1,795 @@
-[{"id":"auto-made-r06-s04-q01","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q01","round":6,"question_number":1,"question":"OBD 진단기에 통신 오류가 표시되고 저전압 경고가 있다. 하이브리드 차량의 기본 점검은?","choices":["모터 권선의 회전 방향을 임의로 변경","고전압 배터리 단자를 무전압 검증 없이 분해","12V 보조전원 전압과 진단 포트 전원·접지 확인","ECU를 시험 없이 즉시 교환"],"answer":3,"explanation_id":"auto-made-r06-s04-q01","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"],"independent_final_technical_approval":false,"web_publication":false,"notes":"일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."}},{"id":"auto-made-r06-s04-q02","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q02","round":6,"question_number":2,"question":"전동기 회전 시 토크 맥동과 진동이 커졌다. 공극 불균일을 일으키는 기계적 원인은?","choices":["실내 무선충전 패드가 정렬된 상태","회전자 편심으로 로터·고정자 간극이 불균일해짐","타이어 바람이 충분한 상태","주행등 전구의 색온도가 낮음"],"answer":2,"explanation_id":"auto-made-r06-s04-q02","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.nidec.com/en/technology/casestudy/motor/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"로터 편심과 토크 리플의 인과는 모터 형상·고정자/베어링 구조·진단조건 확인 필요"}},{"id":"auto-made-r06-s04-q03","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q03","round":6,"question_number":3,"question":"구동 배터리 교환을 마쳤다. 고전압 계통 안전상 반드시 검토할 절차는?","choices":["고전압 절연 점검을 타이어 공기압 검사로 대체","제조사 지정 절연 진단과 고전압 인터록 상태 확인","차량 전원이 꺼졌으면 모든 부품을 맨손으로 접촉","절연 수치가 낮아도 주행이 가능하면 출고"],"answer":2,"explanation_id":"auto-made-r06-s04-q03","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"independent_final_technical_approval":false,"web_publication":false,"notes":"HV 배터리 탈부착 후 절연·HVIL 진단은 차량/장비별 전문자격 및 OEM 고전압 작업 절차 필요"}},{"id":"auto-made-r06-s04-q04","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q04","round":6,"question_number":4,"question":"주황색 고전압 배선을 계측한다. 사용 장비 선택의 원칙은?","choices":["절연장갑 없이 차체를 손으로 잡고 측정","아무 저가형 멀티미터면 전기차 HV측정이 모두 가능","전류 측정 단자를 고전압 양단에 직접 접속","회로의 측정 전압과 측정 범주에 적합한 정격 장비 선택"],"answer":4,"explanation_id":"auto-made-r06-s04-q04","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"independent_final_technical_approval":false,"web_publication":false,"notes":"계측기 CAT·전압 등급 및 검전 사전/사후 기능 확인은 해당 작업 OEM/전기안전 전문 절차 필요"}},{"id":"auto-made-r06-s04-q05","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q05","round":6,"question_number":5,"question":"클러치 디스크 교환 작업 지침에 포함될 내용을 고를 때 직접적인 작업은?","choices":["플라이휠 접촉면·디스크 중심·스플라인 상태 확인","하이브리드 배터리를 임의로 방전","냉각수에 윤활유를 희석해 넣기","공회전 회전수를 임의로 최대 설정"],"answer":1,"explanation_id":"auto-made-r06-s04-q05","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"클러치 디스크는 섀시·동력전달 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"기존 친환경→섀시/동력전달 과목 분류 보류 유지, 차량별 클러치 체결·정렬 OEM 지침 필요"}},{"id":"auto-made-r06-s04-q06","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q06","round":6,"question_number":6,"question":"고전압 DC 계통 전류를 계측할 때 감전 위험을 줄이는 접근법은?","choices":["고전압 계측은 12V 계기면 모두 안전하다","절연 등급을 확인하지 않고 리드선을 임의 연결한다","멀티미터 전류 단자를 HV 양단에 단락 연결한다","규격에 맞는 절연된 비접촉 DC 전류클램프를 활용한다"],"answer":4,"explanation_id":"auto-made-r06-s04-q06","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"independent_final_technical_approval":false,"web_publication":false,"notes":"HV 직류 계측장비의 측정범위·안전등급/접근 거리/자격은 전문 OEM 지침 필수"}},{"id":"auto-made-r06-s04-q07","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q07","round":6,"question_number":7,"question":"고전압 배터리 내부에서 지정값을 넘는 과전류가 흐르면 자체가 녹아서 회로를 끊는 보호부품은?","choices":["프리차지 저항기","고전압 인터록(HVIL) 감시 회로","구동 인버터의 전력반도체","정격에 맞게 설계된 고전압 퓨즈"],"answer":4,"explanation_id":"auto-made-r06-s04-q07","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"퓨즈의 용단 기능과 인터록·접촉기 구별","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"independent_final_technical_approval":false,"web_publication":false,"notes":"일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."}},{"id":"auto-made-r06-s04-q08","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q08","round":6,"question_number":8,"question":"배터리 셀별 전압을 진단기로 읽었더니 특정 셀이 유독 낮다. 직접 확인할 핵심 자료는?","choices":["변속레버의 가죽 색상만","연료탱크 수위를 임의로 0으로 설정","도어 래치의 작동음만","셀 전압 편차와 온도·SOC·부하 조건"],"answer":4,"explanation_id":"auto-made-r06-s04-q08","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/electric-maintenance"],"independent_final_technical_approval":false,"web_publication":false,"notes":"BMS 셀별 채널/기준전압과 고전압 팩 접근 조건은 차종별 매뉴얼/전문자격 필요"}},{"id":"auto-made-r06-s04-q09","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q09","round":6,"question_number":9,"question":"가정용 EV 완속충전 회로를 설치한다. 누전 안전을 위한 필수 검토사항은?","choices":["보호접지 없이 플러그가 맞으면 바로 충전","전기배선의 차단기 용량을 임의로 무제한 확대","임시 멀티탭을 장기간 상시 고전류로 사용","충전 설비에 적합한 차단기·접지·누설전류 보호"],"answer":4,"explanation_id":"auto-made-r06-s04-q09","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/electric-maintenance"],"independent_final_technical_approval":false,"web_publication":false,"notes":"2026 한국 주택 EV 충전설비 전기설비기술기준/KEC·자격/시공·누전차단 특성 전문확인 필요"}},{"id":"auto-made-r06-s04-q10","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q10","round":6,"question_number":10,"question":"전력통합 제어장치(PCU)의 고장코드가 있고 모터 토크가 제한됐다. 예상 가능한 연관은?","choices":["인버터 전력변환이 제한되어 전동 구동력이 낮아짐","고장과 무관하게 항상 모터 출력이 증가","타이어 고무가 자동으로 연화","엔진 배기량이 물리적으로 줄어듦"],"answer":1,"explanation_id":"auto-made-r06-s04-q10","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"independent_final_technical_approval":false,"web_publication":false,"notes":"일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."}},{"id":"auto-made-r06-s04-q11","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q11","round":6,"question_number":11,"question":"배선 연속성 시험 전에 꼭 확인할 안전 조건은?","choices":["고전압 배터리를 손으로 단락시켜 방전하기","회로의 전원 차단·분리 및 잔류전압 여부","통전된 채 저항 측정단자를 연결하기","센서의 접지를 임의로 다른 회로에 연결하기"],"answer":2,"explanation_id":"auto-made-r06-s04-q11","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"],"independent_final_technical_approval":false,"web_publication":false,"notes":"HV 연속성 검사시 검전/격리·리드/계측기 등급은 OEM 전기안전 절차 검증 필요"}},{"id":"auto-made-r06-s04-q12","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q12","round":6,"question_number":12,"question":"자동변속기가 특정 변속단에서 충격을 일으키고 변속 압력 응답도 지연된다. 우선 비교할 데이터는?","choices":["휠 얼라인먼트와 조향각 보정 데이터","ATF 유온·목표/실제 유압·TCM 솔레노이드 명령","브레이크 페달 유압과 ABS 펌프 작동시간","디퍼렌셜 백래시와 종감속기 오일 온도"],"answer":2,"explanation_id":"auto-made-r06-s04-q12","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"변속 충격/ATF/TCM은 동력전달 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"변속 충격을 직접 반영하는 유압/솔레노이드 데이터로 한정","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/transmission-technology/electronic-modules/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"기존 친환경→섀시 동력전달 출제범위 보류 유지; 변속 압력 센서 미장착 차종 데이터 표현 검토"}},{"id":"auto-made-r06-s04-q13","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q13","round":6,"question_number":13,"question":"디퍼렌셜을 분해한 뒤 규정 기어오일을 배출한 상태로 재조립을 완료했다. 도로시험 전에 먼저 해야 할 것은?","choices":["종감속기 기어의 백래시를 무조건 0으로 조정한다","입력축 베어링 프리로드를 임의로 최대값까지 올린다","규정 오일 주입량·누유·조립 상태를 확인한다","오일을 넣지 않고 짧게 시운전해 기어음을 듣는다"],"answer":3,"explanation_id":"auto-made-r06-s04-q13","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"chassis","reason":"디퍼렌셜 내부 정비는 동력전달 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_chassis","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"오일 보충과 조립 검사 우선순위를 명시","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"기존 친환경→섀시 분류 보류 유지; 디퍼렌셜 오일 규격·프리로드 OEM 자료 필요"}},{"id":"auto-made-r06-s04-q14","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q14","round":6,"question_number":14,"question":"스마트키 원격 조작 거리가 짧고 코인전지 전압이 낮게 측정됐다. 적절한 조치는?","choices":["규정 배터리를 교환한 뒤 통신·인식거리를 재확인한다","전기차 고전압 릴레이를 임의로 연결한다","알터네이터 전압을 무조건 올린다","시동 모터를 우선 분해한다"],"answer":1,"explanation_id":"auto-made-r06-s04-q14","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"electrical","reason":"스마트키/차량 RF는 전기전자 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_electrical","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"기존 친환경→일반 전기전자 과목 분류 보류 유지; 스마트키 RF/LF 동작은 차종별 지원방식 검증"}},{"id":"auto-made-r06-s04-q15","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q15","round":6,"question_number":15,"question":"후방 카메라 수리 후 실제 후진 보조 기능을 확인한다. 적절한 항목은?","choices":["카메라 화면은 켜지면 거리 감지 정확도를 확인할 필요가 없다","화면 지연·화각·가이드라인 및 안전경고 확인","엔진오일 점도와 연료 소비만 비교","주행 중 후진 기어로 장시간 테스트"],"answer":2,"explanation_id":"auto-made-r06-s04-q15","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"electrical","reason":"후방카메라/영상 신호는 전기전자 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_electrical","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/us/technical/adas/"],"independent_final_technical_approval":false,"web_publication":false,"notes":"기존 친환경→전기전자·ADAS 과목 분류 보류 유지, 차량별 후방카메라 보정/안전 조건 필요"}},{"id":"auto-made-r06-s04-q16","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q16","round":6,"question_number":16,"question":"연료전지차 수소 감압 레귤레이터를 점검한다. 이 장치 고장과 직접 관련이 적은 검사는?","choices":["차량 오디오 스피커의 주파수 응답만 측정한다","조절밸브 작동과 고압 누출 검사","압력 센서값과 제어 명령 비교","레귤레이터 입출구 수소 압력 확인"],"answer":1,"explanation_id":"auto-made-r06-s04-q16","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.energy.gov/cmei/fuels/hydrogen-safe"],"independent_final_technical_approval":false,"web_publication":false,"notes":"문제의 '직접 관련 적은 검사'는 타당하나, 고압 수소 압력계/배관 접근의 OEM 전문안전 승인 필수"}},{"id":"auto-made-r06-s04-q17","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q17","round":6,"question_number":17,"question":"수소 중간압 레귤레이터를 신품으로 교체했다. 시운전 전 반드시 확인할 것은?","choices":["연료전지 스택을 과압으로 장시간 구동한다","제조사 지정 누설시험과 공급 압력·안전 기능 확인","충전 중 압력조절 밸브를 무조건 열어 둔다","레귤레이터를 교체하면 누설 검사는 생략"],"answer":2,"explanation_id":"auto-made-r06-s04-q17","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.energy.gov/cmei/fuels/hydrogen-safe"],"independent_final_technical_approval":false,"web_publication":false,"notes":"수소 고압·중간압 계통 조립은 누설 시험/감압/보호구·자격 등 차종별 전문 OEM 근거 없이는 최종승인 불가"}},{"id":"auto-made-r06-s04-q18","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q18","round":6,"question_number":18,"question":"연료전지 스택의 출력전압이 평상시보다 빠르게 떨어진다. 관련성이 높은 점검은?","choices":["수소·공기 공급유량과 냉각·막 수분 및 셀 전압편차","타이어 장식 휠캡 재질만","스마트폰 무선충전 출력만","가솔린 점화플러그 열가만"],"answer":1,"explanation_id":"auto-made-r06-s04-q18","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.energy.gov/cmei/fuels/fuel-cell-basics"],"independent_final_technical_approval":false,"web_publication":false,"notes":"스택 전압 고장 조건·가스 압력/유량·막수분은 수소 OEM 진단절차/안전 자료 필요"}},{"id":"auto-made-r06-s04-q19","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q19","round":6,"question_number":19,"question":"전기차에서 회생제동량이 크게 줄었다. 우선 살펴봐야 할 직접 요인은?","choices":["후방 카메라 렌즈의 스크래치만","도어 잠금 소리만","구동 배터리 SOC·온도와 인버터 회생제어 제한","엔진오일 점도만"],"answer":3,"explanation_id":"auto-made-r06-s04-q19","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"independent_final_technical_approval":false,"web_publication":false,"notes":"일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."}},{"id":"auto-made-r06-s04-q20","subject":"eco","subject_name":"친환경 자동차정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r06-s04-q20","round":6,"question_number":20,"question":"배터리 전기차의 구동배터리 직류전력을 3상 교류 구동모터에 공급하려 한다. 이때 사용하는 전력변환장치는?","choices":["고전압 배터리에서 12V로 낮추는 DC/DC 컨버터","교류 완속충전 전원을 직류로 만드는 온보드 충전기(OBC)","구동배터리 DC를 모터 구동용 3상 AC로 변환하는 인버터","모터와 차축 사이에서 회전수를 감속하는 종감속기"],"answer":3,"explanation_id":"auto-made-r06-s04-q20","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"eco","suggested_subject":"out_of_scope","reason":"가정용 태양광 인버터는 자동차정비산업기사 친환경 차량 맥락에서 이탈","classification_verdict":"plausible_fit_with_eco_subject_pending_final_scope_signoff","qa2_disposition":"reframed_into_current_eco_subject_EV_traction_inverter","reference_urls":["https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html","https://www.bosch-mobility.com/en/solutions/power-electronics/","https://www.energy.gov/cmei/vehicles/power-electronics-research-and-development"],"qa2_manual_screening":"rewritten_into_EV_traction_inverter","qa2_proposed_action":"reframed_eco_as_EV_traction_power_electronics","qa2_confidence":"concept_matched_to_eco_vehicle_but_needs_exam_scope_signoff","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"editorial_revision":"technical_qa2_out_of_domain_refocused_to_EV","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"가정용 태양광 인버터(시험영역 이탈) → 전기차 구동 인버터 DC/AC 문제로 재작성","review_batch":"QA2","reviewed_choice_count":4},"technical_reference_first_pass":{"status":"source_supported_needs_final_editor_signoff","reference_urls":["https://www.bosch-mobility.com/en/solutions/power-electronics/","https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html"],"review_note":"보쉬·기아 자료에서 구동 인버터 DC→모터 AC, OBC 외부 AC→충전 DC, DC/DC 직류전압 변환을 구별했다. 원래 가정용 태양광 인버터 문항은 구동 인버터로 고쳤다.","reviewed_alternatives":4},"technical_verification_qa25":{"batch":"QA25-r06-eco","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"],"independent_final_technical_approval":false,"web_publication":false,"notes":"과거 태양광 인버터 주제를 차량용으로 고쳤으나 기존 친환경 범위 분류 hold_do_not_publish는 별도 전문 출제기준 판정 전 유지"}}]
+[
+  {
+    "id": "auto-made-r06-s04-q01",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q01",
+    "round": 6,
+    "question_number": 1,
+    "question": "OBD 진단기에 통신 오류가 표시되고 저전압 경고가 있다. 하이브리드 차량의 기본 점검은?",
+    "choices": [
+      "모터 권선의 회전 방향을 임의로 변경",
+      "고전압 배터리 단자를 무전압 검증 없이 분해",
+      "12V 보조전원 전압과 진단 포트 전원·접지 확인",
+      "ECU를 시험 없이 즉시 교환"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r06-s04-q01",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q02",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q02",
+    "round": 6,
+    "question_number": 2,
+    "question": "전동기 회전 시 토크 맥동과 진동이 커졌다. 공극 불균일을 일으키는 기계적 원인은?",
+    "choices": [
+      "실내 무선충전 패드가 정렬된 상태",
+      "회전자 편심으로 로터·고정자 간극이 불균일해짐",
+      "타이어 바람이 충분한 상태",
+      "주행등 전구의 색온도가 낮음"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q02",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.nidec.com/en/technology/casestudy/motor/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "로터 편심과 토크 리플의 인과는 모터 형상·고정자/베어링 구조·진단조건 확인 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q03",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q03",
+    "round": 6,
+    "question_number": 3,
+    "question": "구동 배터리 교환을 마쳤다. 고전압 계통 안전상 반드시 검토할 절차는?",
+    "choices": [
+      "고전압 절연 점검을 타이어 공기압 검사로 대체",
+      "제조사 지정 절연 진단과 고전압 인터록 상태 확인",
+      "차량 전원이 꺼졌으면 모든 부품을 맨손으로 접촉",
+      "절연 수치가 낮아도 주행이 가능하면 출고"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q03",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "HV 배터리 탈부착 후 절연·HVIL 진단은 차량/장비별 전문자격 및 OEM 고전압 작업 절차 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q04",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q04",
+    "round": 6,
+    "question_number": 4,
+    "question": "주황색 고전압 배선을 계측한다. 사용 장비 선택의 원칙은?",
+    "choices": [
+      "절연장갑 없이 차체를 손으로 잡고 측정",
+      "아무 저가형 멀티미터면 전기차 HV측정이 모두 가능",
+      "전류 측정 단자를 고전압 양단에 직접 접속",
+      "회로의 측정 전압과 측정 범주에 적합한 정격 장비 선택"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r06-s04-q04",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "계측기 CAT·전압 등급 및 검전 사전/사후 기능 확인은 해당 작업 OEM/전기안전 전문 절차 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q05",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q05",
+    "round": 6,
+    "question_number": 5,
+    "question": "클러치 디스크 교환 작업 지침에 포함될 내용을 고를 때 직접적인 작업은?",
+    "choices": [
+      "플라이휠 접촉면·디스크 중심·스플라인 상태 확인",
+      "하이브리드 배터리를 임의로 방전",
+      "냉각수에 윤활유를 희석해 넣기",
+      "공회전 회전수를 임의로 최대 설정"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r06-s04-q05",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "클러치 디스크는 섀시·동력전달 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경→섀시/동력전달 과목 분류 보류 유지, 차량별 클러치 체결·정렬 OEM 지침 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q06",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q06",
+    "round": 6,
+    "question_number": 6,
+    "question": "고전압 DC 계통 전류를 계측할 때 감전 위험을 줄이는 접근법은?",
+    "choices": [
+      "고전압 계측은 12V 계기면 모두 안전하다",
+      "절연 등급을 확인하지 않고 리드선을 임의 연결한다",
+      "멀티미터 전류 단자를 HV 양단에 단락 연결한다",
+      "규격에 맞는 절연된 비접촉 DC 전류클램프를 활용한다"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r06-s04-q06",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "HV 직류 계측장비의 측정범위·안전등급/접근 거리/자격은 전문 OEM 지침 필수"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q07",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q07",
+    "round": 6,
+    "question_number": 7,
+    "question": "고전압 배터리 내부에서 지정값을 넘는 과전류가 흐르면 자체가 녹아서 회로를 끊는 보호부품은?",
+    "choices": [
+      "프리차지 저항기",
+      "고전압 인터록(HVIL) 감시 회로",
+      "구동 인버터의 전력반도체",
+      "정격에 맞게 설계된 고전압 퓨즈"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r06-s04-q07",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "퓨즈의 용단 기능과 인터록·접촉기 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q08",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q08",
+    "round": 6,
+    "question_number": 8,
+    "question": "배터리 셀별 전압을 진단기로 읽었더니 특정 셀이 유독 낮다. 직접 확인할 핵심 자료는?",
+    "choices": [
+      "변속레버의 가죽 색상만",
+      "연료탱크 수위를 임의로 0으로 설정",
+      "도어 래치의 작동음만",
+      "셀 전압 편차와 온도·SOC·부하 조건"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r06-s04-q08",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "BMS 셀별 채널/기준전압과 고전압 팩 접근 조건은 차종별 매뉴얼/전문자격 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q09",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q09",
+    "round": 6,
+    "question_number": 9,
+    "question": "가정용 EV 완속충전 회로를 설치한다. 누전 안전을 위한 필수 검토사항은?",
+    "choices": [
+      "보호접지 없이 플러그가 맞으면 바로 충전",
+      "전기배선의 차단기 용량을 임의로 무제한 확대",
+      "임시 멀티탭을 장기간 상시 고전류로 사용",
+      "충전 설비에 적합한 차단기·접지·누설전류 보호"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r06-s04-q09",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "2026 한국 주택 EV 충전설비 전기설비기술기준/KEC·자격/시공·누전차단 특성 전문확인 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q10",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q10",
+    "round": 6,
+    "question_number": 10,
+    "question": "전력통합 제어장치(PCU)의 고장코드가 있고 모터 토크가 제한됐다. 예상 가능한 연관은?",
+    "choices": [
+      "인버터 전력변환이 제한되어 전동 구동력이 낮아짐",
+      "고장과 무관하게 항상 모터 출력이 증가",
+      "타이어 고무가 자동으로 연화",
+      "엔진 배기량이 물리적으로 줄어듦"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r06-s04-q10",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q11",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q11",
+    "round": 6,
+    "question_number": 11,
+    "question": "배선 연속성 시험 전에 꼭 확인할 안전 조건은?",
+    "choices": [
+      "고전압 배터리를 손으로 단락시켜 방전하기",
+      "회로의 전원 차단·분리 및 잔류전압 여부",
+      "통전된 채 저항 측정단자를 연결하기",
+      "센서의 접지를 임의로 다른 회로에 연결하기"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q11",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "HV 연속성 검사시 검전/격리·리드/계측기 등급은 OEM 전기안전 절차 검증 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q12",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q12",
+    "round": 6,
+    "question_number": 12,
+    "question": "자동변속기가 특정 변속단에서 충격을 일으키고 변속 압력 응답도 지연된다. 우선 비교할 데이터는?",
+    "choices": [
+      "휠 얼라인먼트와 조향각 보정 데이터",
+      "ATF 유온·목표/실제 유압·TCM 솔레노이드 명령",
+      "브레이크 페달 유압과 ABS 펌프 작동시간",
+      "디퍼렌셜 백래시와 종감속기 오일 온도"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q12",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "변속 충격/ATF/TCM은 동력전달 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "변속 충격을 직접 반영하는 유압/솔레노이드 데이터로 한정",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/transmission-technology/electronic-modules/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경→섀시 동력전달 출제범위 보류 유지; 변속 압력 센서 미장착 차종 데이터 표현 검토"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q13",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q13",
+    "round": 6,
+    "question_number": 13,
+    "question": "디퍼렌셜을 분해한 뒤 규정 기어오일을 배출한 상태로 재조립을 완료했다. 도로시험 전에 먼저 해야 할 것은?",
+    "choices": [
+      "종감속기 기어의 백래시를 무조건 0으로 조정한다",
+      "입력축 베어링 프리로드를 임의로 최대값까지 올린다",
+      "규정 오일 주입량·누유·조립 상태를 확인한다",
+      "오일을 넣지 않고 짧게 시운전해 기어음을 듣는다"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r06-s04-q13",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "chassis",
+      "reason": "디퍼렌셜 내부 정비는 동력전달 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_chassis",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "오일 보충과 조립 검사 우선순위를 명시",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.schaeffler.com/en/products-and-solutions/automotive-aftermarket/repair-solutions/transmission/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경→섀시 분류 보류 유지; 디퍼렌셜 오일 규격·프리로드 OEM 자료 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q14",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q14",
+    "round": 6,
+    "question_number": 14,
+    "question": "스마트키 원격 조작 거리가 짧고 코인전지 전압이 낮게 측정됐다. 적절한 조치는?",
+    "choices": [
+      "규정 배터리를 교환한 뒤 통신·인식거리를 재확인한다",
+      "전기차 고전압 릴레이를 임의로 연결한다",
+      "알터네이터 전압을 무조건 올린다",
+      "시동 모터를 우선 분해한다"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r06-s04-q14",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "electrical",
+      "reason": "스마트키/차량 RF는 전기전자 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경→일반 전기전자 과목 분류 보류 유지; 스마트키 RF/LF 동작은 차종별 지원방식 검증"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q15",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q15",
+    "round": 6,
+    "question_number": 15,
+    "question": "후방 카메라 수리 후 실제 후진 보조 기능을 확인한다. 적절한 항목은?",
+    "choices": [
+      "카메라 화면은 켜지면 거리 감지 정확도를 확인할 필요가 없다",
+      "화면 지연·화각·가이드라인 및 안전경고 확인",
+      "엔진오일 점도와 연료 소비만 비교",
+      "주행 중 후진 기어로 장시간 테스트"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q15",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "electrical",
+      "reason": "후방카메라/영상 신호는 전기전자 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_electrical",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/us/technical/adas/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 친환경→전기전자·ADAS 과목 분류 보류 유지, 차량별 후방카메라 보정/안전 조건 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q16",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q16",
+    "round": 6,
+    "question_number": 16,
+    "question": "연료전지차 수소 감압 레귤레이터를 점검한다. 이 장치 고장과 직접 관련이 적은 검사는?",
+    "choices": [
+      "차량 오디오 스피커의 주파수 응답만 측정한다",
+      "조절밸브 작동과 고압 누출 검사",
+      "압력 센서값과 제어 명령 비교",
+      "레귤레이터 입출구 수소 압력 확인"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r06-s04-q16",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/hydrogen-safe"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "문제의 '직접 관련 적은 검사'는 타당하나, 고압 수소 압력계/배관 접근의 OEM 전문안전 승인 필수"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q17",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q17",
+    "round": 6,
+    "question_number": 17,
+    "question": "수소 중간압 레귤레이터를 신품으로 교체했다. 시운전 전 반드시 확인할 것은?",
+    "choices": [
+      "연료전지 스택을 과압으로 장시간 구동한다",
+      "제조사 지정 누설시험과 공급 압력·안전 기능 확인",
+      "충전 중 압력조절 밸브를 무조건 열어 둔다",
+      "레귤레이터를 교체하면 누설 검사는 생략"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r06-s04-q17",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/hydrogen-safe"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "수소 고압·중간압 계통 조립은 누설 시험/감압/보호구·자격 등 차종별 전문 OEM 근거 없이는 최종승인 불가"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q18",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q18",
+    "round": 6,
+    "question_number": 18,
+    "question": "연료전지 스택의 출력전압이 평상시보다 빠르게 떨어진다. 관련성이 높은 점검은?",
+    "choices": [
+      "수소·공기 공급유량과 냉각·막 수분 및 셀 전압편차",
+      "타이어 장식 휠캡 재질만",
+      "스마트폰 무선충전 출력만",
+      "가솔린 점화플러그 열가만"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r06-s04-q18",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/fuel-cell-basics"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "스택 전압 고장 조건·가스 압력/유량·막수분은 수소 OEM 진단절차/안전 자료 필요"
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q19",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q19",
+    "round": 6,
+    "question_number": 19,
+    "question": "전기차에서 회생제동량이 크게 줄었다. 우선 살펴봐야 할 직접 요인은?",
+    "choices": [
+      "후방 카메라 렌즈의 스크래치만",
+      "도어 잠금 소리만",
+      "구동 배터리 SOC·온도와 인버터 회생제어 제한",
+      "엔진오일 점도만"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r06-s04-q19",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "일반원리 1차 자료대조일 뿐 독립 전문가 최종 기술검수·게시 승인 아님."
+    }
+  },
+  {
+    "id": "auto-made-r06-s04-q20",
+    "subject": "eco",
+    "subject_name": "친환경 자동차정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r06-s04-q20",
+    "round": 6,
+    "question_number": 20,
+    "question": "배터리 전기차의 구동배터리 직류전력을 3상 교류 구동모터에 공급하려 한다. 이때 사용하는 전력변환장치는?",
+    "choices": [
+      "고전압 배터리에서 12V로 낮추는 DC/DC 컨버터",
+      "교류 완속충전 전원을 직류로 만드는 온보드 충전기(OBC)",
+      "구동배터리 DC를 모터 구동용 3상 AC로 변환하는 인버터",
+      "모터와 차축 사이에서 회전수를 감속하는 종감속기"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r06-s04-q20",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "eco",
+      "suggested_subject": "out_of_scope",
+      "reason": "가정용 태양광 인버터는 자동차정비산업기사 친환경 차량 맥락에서 이탈",
+      "classification_verdict": "plausible_fit_with_eco_subject_pending_final_scope_signoff",
+      "qa2_disposition": "reframed_into_current_eco_subject_EV_traction_inverter",
+      "reference_urls": [
+        "https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html",
+        "https://www.bosch-mobility.com/en/solutions/power-electronics/",
+        "https://www.energy.gov/cmei/vehicles/power-electronics-research-and-development"
+      ],
+      "qa2_manual_screening": "rewritten_into_EV_traction_inverter",
+      "qa2_proposed_action": "reframed_eco_as_EV_traction_power_electronics",
+      "qa2_confidence": "concept_matched_to_eco_vehicle_but_needs_exam_scope_signoff",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa38_original_reason": "가정용 태양광 인버터는 자동차정비산업기사 친환경 차량 맥락에서 이탈",
+      "qa38_recheck_status": "stale_reason_after_current_question_rewrite_pending_detailed_qnet_review",
+      "qa38_recheck_date": "2026-11-23",
+      "qa38_current_question_review_note": "과거 가정용 태양광 인버터 문제를 EV 구동배터리 DC→3상 AC 인버터 문제로 재작성한 뒤에도 예전 과목 이탈 사유가 남아 있었음. 현재 문항에는 기존 보류 이유가 직접 적용되지 않으므로 공식 세부 출제기준 및 기존 QA 이력 대조 전까지 보류를 유지하고 오탐 가능성 재심사 필요."
+    },
+    "editorial_revision": "technical_qa2_out_of_domain_refocused_to_EV",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "가정용 태양광 인버터(시험영역 이탈) → 전기차 구동 인버터 DC/AC 문제로 재작성",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_reference_first_pass": {
+      "status": "source_supported_needs_final_editor_signoff",
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/power-electronics/",
+        "https://ownersmanual.kia.com/docview/webhelp/doc/591d735b-2911-4035-9f13-f14b76381417/topics/chapter1_2.html"
+      ],
+      "review_note": "보쉬·기아 자료에서 구동 인버터 DC→모터 AC, OBC 외부 AC→충전 DC, DC/DC 직류전압 변환을 구별했다. 원래 가정용 태양광 인버터 문항은 구동 인버터로 고쳤다.",
+      "reviewed_alternatives": 4
+    },
+    "technical_verification_qa25": {
+      "batch": "QA25-r06-eco",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "notes": "과거 태양광 인버터 주제를 차량용으로 고쳤으나 기존 친환경 범위 분류 hold_do_not_publish는 별도 전문 출제기준 판정 전 유지"
+    }
+  }
+]
