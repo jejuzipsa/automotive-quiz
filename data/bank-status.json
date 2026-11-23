@@ -1271,5 +1271,39 @@
     "edits_ledger": "data/qa/technical-qa15-r03-engine-edits.json",
     "report": "docs/TECHNICAL_QA15.md",
     "next": "round03 chassis 20 option-level review and remaining 540 unreviewed 3-9 rounds"
+  },
+  "technical_qa16": {
+    "date": "2026-11-23",
+    "batch": "round03_chassis_01_to_20",
+    "first_pass_questions": 20,
+    "first_pass_option_rationales": 80,
+    "source_supported_first_pass": 11,
+    "additional_OEM_safety_or_syllabus_holds": 9,
+    "hold_question_numbers": [
+      2,
+      3,
+      6,
+      7,
+      8,
+      12,
+      14,
+      16,
+      20
+    ],
+    "classification_holds_new": 0,
+    "classification_holds_current": 49,
+    "actual_question_edits": 0,
+    "latest_version_first_pass_total": 200,
+    "latest_version_first_pass_options": 800,
+    "questions_not_option_level_technical_firstpass_reviewed": 520,
+    "choices_not_individually_reviewed": 2080,
+    "independent_technical_final_approved": 0,
+    "newly_public_reconstructed_questions": 0,
+    "source_original_QA23_untouched": true,
+    "manifest_untouched": true,
+    "public_expected_80_exam_untouched": true,
+    "audit": "data/qa/technical-qa16-chassis-r03-option-audit.json",
+    "report": "docs/TECHNICAL_QA16.md",
+    "next": "round03 electrical 20 + eco 20 then round04-09 480"
   }
 }
