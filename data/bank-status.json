@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "qa38_full_bank_structural_integrity_passed_source_relevance_and_independent_review_pending",
+  "latest_qa_stage": "QA39_editorial_quality_secondpass_two_edits_and_55_subject_hold_provisional_triage_pending_expert_approval",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2044,5 +2044,27 @@
     "audit_artifact": "qa38-final-review-queue",
     "report": "docs/QA38_FINAL_RISK_TRIAGE.md",
     "next": "inspect Q-net detailed HWP, verify subject holds and safety/OEM/current law sources, fix meaning-level duplicate and implausible distractors, independent specialist approval; after protected backup decide public draft retirement"
+  },
+  "technical_qa39": {
+    "date": "2026-11-23",
+    "edited_question_ids": [
+      "auto-made-r01-s01-q13",
+      "auto-made-r01-s01-q16"
+    ],
+    "prior_oxygen_sensor_QA5_quality_repair_confirmed": "auto-made-r01-s01-q20",
+    "remaining_legacy_quality_review_labels": 3,
+    "current_three_quality_items_separately_checked": 3,
+    "subject_holds_triaged": 55,
+    "subject_holds_cleared": 0,
+    "official_2025_2027_detailed_hwp_inspected": false,
+    "secondary_18_major_headings_candidate": true,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "public_expected_questions": 80,
+    "report": "docs/TECHNICAL_QA39.md",
+    "edited_ledger": "data/qa/technical-qa39-editorial-edits.json",
+    "scope_ci": "tests/qa39-subject-triage.test.cjs",
+    "scope_artifact": "qa39-subject-review-55",
+    "next": "official detailed subject HWP, independently verify 369 technical holds, quality and rights, protected backup before draft withdrawal"
   }
 }
