@@ -19,7 +19,19 @@
     "explanation_id": "auto-made-r08-s01-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/",
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/map-sensor/"
+      ],
+      "hold_reasons": [
+        "검은 매연과 흡기량 부족은 센서 편차·터보·필터·누설 등 복수 원인 가능. 차종별 진단자료 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q02",
@@ -41,7 +53,16 @@
     "explanation_id": "auto-made-r08-s01-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q03",
@@ -63,7 +84,16 @@
     "explanation_id": "auto-made-r08-s01-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q04",
@@ -85,7 +115,19 @@
     "explanation_id": "auto-made-r08-s01-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/",
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": [
+        "압축압 시험 시 크랭킹속도·스로틀·연료 및 점화 차단 안전 조건은 OEM별로 다름"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q05",
@@ -114,6 +156,17 @@
       "change_note": "분사 불량시 구동/누설/연료압의 직접 진단",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": [
+        "인젝터 분사 데이터는 가솔린/디젤과 고압 시스템에 따라 시험장비와 안전절차 다름"
+      ]
     }
   },
   {
@@ -136,7 +189,16 @@
     "explanation_id": "auto-made-r08-s01-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q07",
@@ -158,7 +220,16 @@
     "explanation_id": "auto-made-r08-s01-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.ngkntk.com/products/glow-plugs/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q08",
@@ -180,7 +251,18 @@
     "explanation_id": "auto-made-r08-s01-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": [
+        "서모스탯 개방온도·전기식 제어 여부와 유로는 차종별로 상이"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q09",
@@ -202,7 +284,18 @@
     "explanation_id": "auto-made-r08-s01-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": [
+        "커먼레일 고압 분사/레일압 계측과 누설 진단은 전용 장비·피부주입 위험을 검증해야 함"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q10",
@@ -224,7 +317,16 @@
     "explanation_id": "auto-made-r08-s01-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://press.zf.com/press/en/releases/release_3748.html"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q11",
@@ -253,6 +355,15 @@
       "change_note": "노킹 감지의 진동대역 입력",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -275,7 +386,18 @@
     "explanation_id": "auto-made-r08-s01-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "오일압력 경고 시 엔진 정지·재시동 여부 등은 OEM 안전 우선; 일반 진단교육과 실습구분"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q13",
@@ -297,7 +419,16 @@
     "explanation_id": "auto-made-r08-s01-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q14",
@@ -326,6 +457,17 @@
       "change_note": "밸브시트 압입과 밀봉 접촉면 공차",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": [
+        "밸브 시트 압입 간섭·열팽창·가공 치수는 특정 엔진 매뉴얼 확인 필요"
+      ]
     }
   },
   {
@@ -348,7 +490,18 @@
     "explanation_id": "auto-made-r08-s01-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "촉매 이상은 복합 원인, 공연비/실화·촉매 온도 등 OEM 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q16",
@@ -370,7 +523,16 @@
     "explanation_id": "auto-made-r08-s01-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q17",
@@ -392,7 +554,18 @@
     "explanation_id": "auto-made-r08-s01-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": [
+        "14.7:1은 일반적 순수 휘발유 근사; 에탄올 혼합율·연료조성에 따라 수치 변동"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q18",
@@ -414,7 +587,18 @@
     "explanation_id": "auto-made-r08-s01-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+      ],
+      "hold_reasons": [
+        "냉각계 압력시험의 기준 압력과 냉간/고온 상태 및 캡 어댑터는 차량마다 다름"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s01-q19",
@@ -436,7 +620,16 @@
     "explanation_id": "auto-made-r08-s01-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa30": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s01-q20",
@@ -447,17 +640,29 @@
     "source_question_id": "auto-r08-s01-q20",
     "round": 8,
     "question_number": 20,
-    "question": "디젤 예열 시스템이 불량해 냉간 시동이 어렵다. 이 시스템 점검과 관계없는 부품은?",
+    "question": "디젤 예열 명령은 정상인데 글로우플러그 단자에 공급전압이 없다. 우선 점검할 회로는?",
     "choices": [
-      "가솔린 불꽃 점화를 만드는 점화코일",
-      "글로우플러그 전원 회로",
-      "예열 릴레이 또는 제어 모듈",
-      "글로우플러그 자체 저항·전류 특성"
+      "예열 릴레이·제어모듈의 출력 전원과 플러그까지의 배선",
+      "가솔린 점화코일의 2차 스파크 간극",
+      "타이어 공기압계의 측정회로",
+      "에어컨 냉매 고압측 압력 조절장치"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r08-s01-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa30_glow_circuit_diagnosis",
+    "technical_verification_qa30": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.ngkntk.com/products/glow-plugs/"
+      ],
+      "hold_reasons": [
+        "예열회로 전원과 릴레이/제어기 작동은 차량/디젤 시스템별 설계 차이 있어 OEM 진단 필요"
+      ]
+    }
   }
 ]
