@@ -1,0 +1,84 @@
+{
+  "date": "2026-11-23",
+  "batch": "QA18-r04-chassis",
+  "editorial_corrections": [
+    {
+      "id": "auto-made-r04-s02-q08",
+      "subject": "chassis",
+      "question_number": 8,
+      "before": {
+        "question": "현가장치 바운스 테스트 결과를 보고 기술자가 정상 여부를 판단하려 한다. 올바른 설명은?",
+        "choices": [
+          "반동 양상은 참고하고 누유·타이어·정량 시험을 함께 고려한다",
+          "모든 차종은 2회 반동하면 불합격으로 확정한다",
+          "모든 차종은 정확히 1회 반동하면 정상으로 확정한다",
+          "스프링이 있으면 댐퍼 시험은 불필요하다"
+        ],
+        "answer": 1,
+        "reason": "차체 형상과 서스펜션 특성에 따라 반동 횟수가 다르다. 바운스 테스트는 과도한 진동의 간이 관찰이지 단독 합격선이 아니다.",
+        "key_point": "바운스 횟수의 보편적 합격 기준은 없다.",
+        "correct_choice": "반동 양상은 참고하고 누유·타이어·정량 시험을 함께 고려한다"
+      },
+      "after": {
+        "question": "코일스프링과 유압 쇼크업소버를 사용하는 일반 현가장치에서 두 부품의 역할을 올바르게 구별한 것은?",
+        "choices": [
+          "코일스프링은 차량 하중·변위를 지지하고 쇼크업소버는 반복 진동의 감쇠를 돕는다",
+          "쇼크업소버는 엔진 연료의 옥탄가를 높이고 스프링은 배기가스 정화를 담당한다",
+          "코일스프링은 변속기 ATF를 냉각하고 댐퍼는 배터리 전압을 정류한다",
+          "쇼크업소버가 모든 차량 하중을 독립적으로 지지하며 스프링은 조향 토크만 검출한다"
+        ],
+        "answer": 1,
+        "reason": "코일스프링은 차체 하중과 현가 변위를 지지하며 탄성에너지를 저장한다. 쇼크업소버(댐퍼)는 스프링과 차체의 반복 진동 에너지를 감쇠시켜 차체 거동을 안정시키는 역할을 한다. 구체적인 차체 하중 전달 경로와 댐퍼 구조는 현가 방식에 따라 달라지지만, 양자의 주요 기능 구분은 유지된다.",
+        "key_point": "스프링은 탄성 하중을 지지하고 댐퍼는 진동을 감쇠한다.",
+        "correct_choice": "코일스프링은 차량 하중·변위를 지지하고 쇼크업소버는 반복 진동의 감쇠를 돕는다"
+      },
+      "reason": "replace nearly duplicate q06/q08 bounce-test acceptance question with spring-vs-damper function",
+      "source_urls": [
+        "https://www.zf.com/products/en/cars/stories/systematic_damping.html"
+      ],
+      "independent_final_approval": false,
+      "public_release": false
+    },
+    {
+      "id": "auto-made-r04-s02-q12",
+      "subject": "chassis",
+      "question_number": 12,
+      "before": {
+        "question": "EPS의 모터 보조가 운전자의 조향 요구에 맞게 변하려면 무엇을 읽어야 하는가?",
+        "choices": [
+          "공조용 블로워 회전수 정보",
+          "운전자가 가한 조향 토크 크기·방향",
+          "오디오 스티어링 리모컨 명령",
+          "냉매압력 센서의 압력 값"
+        ],
+        "answer": 2,
+        "reason": "조향 토크 센서는 운전자가 어느 방향으로 얼마나 힘을 가하는지 감지한다. EPS ECU는 차량 속도 등 다른 정보와 함께 모터 보조력을 계산한다.",
+        "key_point": "EPS 토크 센서 = 힘 크기와 방향 감지.",
+        "correct_choice": "운전자가 가한 조향 토크 크기·방향"
+      },
+      "after": {
+        "question": "EPS 조향 토크 센서 신호가 비정상으로 기록됐다. 센서 부품 교환에 앞서 적절한 진단은?",
+        "choices": [
+          "모든 차종에서 토크센서 신호의 정상값은 항상 0V라고 단정한다",
+          "차종별 신호·전원·접지 및 관련 DTC를 실제 조향 입력과 함께 비교한다",
+          "조향 토크 센서 대신 연료레일 압력 데이터만 확인한다",
+          "센서 결함 여부와 상관없이 EPS 모터를 먼저 교환하고 검사를 끝낸다"
+        ],
+        "answer": 2,
+        "reason": "EPS의 조향 토크 센서가 이상을 보일 때에는 제조사 진단정보에 따라 관련 DTC와 실제 조향 입력의 방향·크기에 대응하는 센서 신호, 전원·접지 및 배선 연결을 함께 검토해야 한다. 센서 신호 규격은 제품·제어 방식에 따라 다르며 하나의 범용 전압/저항값으로 정상 여부를 확정할 수 없다.",
+        "key_point": "EPS 토크 센서는 실제 조향입력과 DTC·전원·접지·차종별 출력 신호를 비교해 진단한다.",
+        "correct_choice": "차종별 신호·전원·접지 및 관련 DTC를 실제 조향 입력과 함께 비교한다"
+      },
+      "reason": "replace duplicate torque-sensor role from q11 with diagnosis under actual steering input; QA2 prior record immutable",
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/",
+        "https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"
+      ],
+      "independent_final_approval": false,
+      "public_release": false
+    }
+  ],
+  "qa1_qa2_history_unmodified": true,
+  "independent_final_approval_count": 0,
+  "public_reconstructed_past_count": 0
+}
