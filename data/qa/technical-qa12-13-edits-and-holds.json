@@ -1,0 +1,111 @@
+{
+  "batch": "QA12_13_round02_electrical_eco",
+  "date": "2026-11-23",
+  "edits": [
+    {
+      "id": "auto-made-r02-s03-q03",
+      "subject": "electrical",
+      "round": 2,
+      "question_number": 3,
+      "before": {
+        "question": "CAN 통신 장애가 여러 제어기에서 발생했다. 우선 연관성이 높은 점검 대상은?",
+        "choices": [
+          "엔진 오일의 색상",
+          "버스 배선·종단저항·전원 및 접지",
+          "스파크플러그 전극 색상만",
+          "타이어 밸브 캡의 종류"
+        ],
+        "answer": 2,
+        "reason": "CAN 통신 오류는 전송선 단선·단락·종단저항·제어기 전원 문제에서 발생할 수 있다. 장착 네트워크 구조와 규정 안전 절차에 따라 측정한다.",
+        "key_point": "차량 통신 고장은 배선·종단·전원/접지 확인이 중요하다.",
+        "correct_choice": "버스 배선·종단저항·전원 및 접지"
+      },
+      "after": {
+        "question": "고속 CAN 네트워크에서 여러 ECU가 동시에 통신 불능 상태라면, 제조사 정비정보에 따라 우선 확인할 진단 방향은?",
+        "choices": [
+          "통신 불량이 발생한 모든 ECU를 원인 확인 없이 즉시 교환한다",
+          "CAN 배선·종단 구성과 각 제어기의 전원·접지 상태를 함께 점검한다",
+          "CAN-H와 CAN-L을 단락시키고 통신이 복구되면 정상이라고 판정한다",
+          "한 ECU의 통신 응답만 있으면 나머지 네트워크 물리층은 정상으로 확정한다"
+        ],
+        "answer": 2,
+        "reason": "여러 ECU에서 동시에 CAN 통신 이상이 발생하면 공통 배선의 단선·단락, 종단저항의 구성, 제어기 전원과 접지 등 공통 원인을 제조사 통신망 회로도와 진단 절차에 따라 확인해야 한다. 일부 전형적인 고속 CAN 구성에서는 양끝 120Ω 종단저항을 병렬로 약 60Ω으로 측정할 수 있지만 실제 구조와 측정 조건에 따라 다르다. CAN-H/L 단락은 진단 방법이 아니며 무조건 ECU 교환으로 결론내리지 않는다.",
+        "key_point": "복수 ECU 통신 불능에서는 CAN 배선·종단·전원·접지의 공통 원인부터 확인한다.",
+        "correct_choice": "CAN 배선·종단 구성과 각 제어기의 전원·접지 상태를 함께 점검한다"
+      },
+      "why": "Replace distractors about engine oil and tire caps with realistic vehicle network diagnostic mistakes",
+      "refs": [
+        "https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/",
+        "https://community.nxp.com/pwmxy87654/attachments/pwmxy87654/ivn/63/1/TR1135_v1.0%20rules%20and%20recommendations%20for%20In-vehicle%20CAN%20Networks.pdf"
+      ],
+      "final_approval": false,
+      "public_release": false
+    },
+    {
+      "id": "auto-made-r02-s04-q15",
+      "subject": "eco",
+      "round": 2,
+      "question_number": 15,
+      "before": {
+        "question": "서비스 플러그를 분리한 다음 즉시 인버터 단자를 만지려 한다. 올바른 판단은?",
+        "choices": [
+          "플러그 분리와 동시에 모든 고전압이 즉시 방전된다",
+          "제조사 대기시간과 무전압 측정이 끝나기 전에는 작업하지 않는다",
+          "절연 공구 없이도 젖은 장갑이면 된다",
+          "방전은 타이어 공기압으로 확인한다"
+        ],
+        "answer": 2,
+        "reason": "인버터의 커패시터에는 고전압이 남을 수 있다. 교육받은 정비사가 적절한 보호구를 착용하고 지정 대기·검전 절차를 완료해야 한다.",
+        "key_point": "서비스 플러그 탈거만으로 잔류 전압 위험이 없어지지 않는다.",
+        "correct_choice": "제조사 대기시간과 무전압 측정이 끝나기 전에는 작업하지 않는다"
+      },
+      "after": {
+        "question": "고전압 인터록(HVIL) 회로가 적용된 전기차에서 고전압 커넥터의 체결 상태를 감시하는 주된 목적은?",
+        "choices": [
+          "배터리 셀의 SOC 값을 인터록 루프 하나로 직접 측정한다",
+          "커넥터·커버 열림을 저전압 루프로 감지해 고전압 보호제어에 활용한다",
+          "구동모터의 감속기 기어비를 HVIL 신호로 변경한다",
+          "커넥터가 열리면 잔류 전압이 즉시 0V가 되므로 무전압 검사를 생략한다"
+        ],
+        "answer": 2,
+        "reason": "고전압 인터록 루프(HVIL)는 저전압 감시 회로를 통해 고전압 커넥터나 커버의 이탈·미체결 등 연결 무결성을 감지하고 차량의 보호 제어에 정보를 제공한다. 이는 셀 잔량 계측이나 기어비 조정 기능이 아니다. 인터록이 동작하거나 접촉기가 차단되더라도 에너지 저장 소자의 잔류 전압이 자동으로 즉시 0V가 된다고 볼 수 없으며, 고전압 작업에는 해당 차량 제조사의 차단·대기·검전 절차가 별도로 필요하다.",
+        "key_point": "HVIL은 고전압 연결부의 무결성을 저전압 루프로 감시하며 무전압 검증을 대체하지 않는다.",
+        "correct_choice": "커넥터·커버 열림을 저전압 루프로 감지해 고전압 보호제어에 활용한다"
+      },
+      "why": "Replace repeated service-disconnect/voltage-absence question with distinct HVIL monitoring concept, keep correct index 2",
+      "refs": [
+        "https://www.te.com/en/products/connectors/automotive-connectors/intersection/hva-hd-accessories.html",
+        "https://www.aptiv.com/en/insights/article/what-is-hvil",
+        "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "final_approval": false,
+      "public_release": false
+    }
+  ],
+  "new_classification_holds": [
+    {
+      "id": "auto-made-r02-s03-q08",
+      "subject": "electrical",
+      "question": "현가 부품 교환으로 캠버 또는 토 설정값이 달라질 가능성이 있다. 후속 점검으로 알맞은 것은?",
+      "previous_hold": null,
+      "added_hold": {
+        "status": "hold_do_not_publish",
+        "current_subject": "electrical",
+        "suggested_subject": "chassis",
+        "reason": "캠버·토 조정과 휠 얼라인먼트는 전기전자장치정비보다 섀시·현가·조향 정비에 직접 해당할 가능성이 큼",
+        "classification_verdict": "pending_qnet_syllabus_manual_check",
+        "qa12_technical_screen": "explicit_chassis_wheel_alignment_in_electrical",
+        "qa12_proposed_action": "consider reclassify or replace after official subject exam criteria review",
+        "qa12_reference_urls": [
+          "https://www.moogparts.com/parts-matter/vehicle-alignment.html"
+        ]
+      },
+      "question_and_choices_unchanged": true,
+      "publishable": false
+    }
+  ],
+  "classification_holds_before": 48,
+  "classification_holds_after": 49,
+  "independent_final_approvals": 0,
+  "new_live_past_questions": 0
+}

@@ -1141,5 +1141,71 @@
     "audit": "data/qa/technical-qa11-chassis-r02-option-audit.json",
     "report": "docs/TECHNICAL_QA11.md",
     "next": "round02 electrical 20 questions, then eco 20, and all rounds03-09"
+  },
+  "technical_qa12": {
+    "date": "2026-11-23",
+    "round": 2,
+    "subject": "electrical",
+    "questions_with_4_option_first_pass_review": 20,
+    "individual_choice_rationales": 80,
+    "source_supported_first_pass": 12,
+    "pending_model_or_syllabus_review": 8,
+    "pending_question_numbers": [
+      2,
+      7,
+      8,
+      10,
+      13,
+      16,
+      18,
+      19
+    ],
+    "editorial_corrections": 1,
+    "corrected_ids": [
+      "auto-made-r02-s03-q03"
+    ],
+    "new_subject_holds": 1,
+    "new_hold_ids": [
+      "auto-made-r02-s03-q08"
+    ],
+    "current_subject_holds_total": 49,
+    "audit": "data/qa/technical-qa12-r02-electrical-option-audit.json"
+  },
+  "technical_qa13": {
+    "date": "2026-11-23",
+    "round": 2,
+    "subject": "eco",
+    "questions_with_4_option_first_pass_review": 20,
+    "individual_choice_rationales": 80,
+    "source_supported_first_pass": 11,
+    "pending_model_or_syllabus_review": 9,
+    "pending_question_numbers": [
+      1,
+      2,
+      3,
+      6,
+      9,
+      12,
+      13,
+      16,
+      20
+    ],
+    "editorial_corrections": 1,
+    "corrected_ids": [
+      "auto-made-r02-s04-q15"
+    ],
+    "live_reconstructed_past_questions": 0,
+    "independently_final_technically_approved": 0,
+    "technical_qa12_13_report": "docs/TECHNICAL_QA12_13.md",
+    "cumulative_historical_firstpass_reviewed_questions": 160,
+    "cumulative_historical_firstpass_reviewed_options": 640,
+    "remaining_without_any_per_option_review": 560,
+    "remaining_choice_options": 2240,
+    "qa9_rewritten_questions_awaiting_new_option_review": 4,
+    "original_source_OCR_unchanged": true,
+    "public_manifest_unchanged": true,
+    "expected_exam_80_questions_unchanged": true,
+    "new_source_classification_hold_total": 49,
+    "disclaimer": "1차 제조사 기술자료와 원리 부합 여부 != 독립 최종 시험 정답 정확성·저작권·차종별 고전압 안전 절차 승인"
   }
 }
