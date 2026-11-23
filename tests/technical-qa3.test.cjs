@@ -7,6 +7,7 @@ const read = p => JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
 const reviews = read('data/qa/technical-qa3-engine-r01-option-audit.json');
 const changes = read('data/qa/technical-qa3-engine-r01-changes.json');
 const summary = read('data/qa/technical-qa3-summary.json');
+const qa5ById = new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
 const q = read('data/past/drafts/engine.json');
 const e = read('data/explanations/drafts/engine.json');
 const qmap = new Map(q.map(x=>[x.id,x]));
@@ -35,8 +36,17 @@ for (const change of changes) {
 for (const x of reviews) {
   const item=qmap.get(x.id), exp=emap.get(x.id);
   assert.ok(item&&exp,`missing ${x.id}`);
-  assert.equal(item.question,x.question_after);
-  assert.equal(item.choices[item.answer-1],x.correct_choice_after);
+  const later=qa5ById.get(x.id);
+  if(later){
+    assert.equal(later.before.question,x.question_after,'QA3 historical question snapshot');
+    assert.equal(later.before.choices[later.before.answer-1],x.correct_choice_after);
+    assert.deepEqual(later.before.choices,x.options.map(o=>o.text));
+    assert.equal(item.question,later.after.question);
+    assert.deepEqual(item.choices,later.after.choices);
+  }else{
+    assert.equal(item.question,x.question_after);
+    assert.equal(item.choices[item.answer-1],x.correct_choice_after);
+  }
   assert.equal(item.answer,x.correct_number);
   assert.equal(exp.correct_choice,item.choices[item.answer-1]);
   assert.equal(item.explanation_id,exp.id);
@@ -52,9 +62,14 @@ for (const x of reviews) {
   assert.ok(x.references.length>0);
   for(let i=0;i<4;i++){
     const o=x.options[i],a=exp.option_analysis[i];
-    assert.equal(o.number,i+1);assert.equal(o.text,item.choices[i]);
+    assert.equal(o.number,i+1);
+    assert.equal(o.text,later?later.before.choices[i]:item.choices[i]);
     assert.equal(o.verdict,i+1===item.answer?'correct':'incorrect');
-    assert.equal(a.verdict,o.verdict);
+    if(!later){assert.equal(a.verdict,o.verdict);}
+    else{
+      assert.equal(a.text,item.choices[i]);
+      assert.equal(a.verdict,i+1===item.answer?'correct':'incorrect');
+    }
     assert.ok(o.rationale.length>=12);
   }
   assert.equal(item.technical_verification_qa3.final_technical_approval,false);
