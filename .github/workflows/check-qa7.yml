@@ -32,3 +32,4 @@ jobs:
           node tests/technical-qa1.test.cjs
           node tests/technical-qa2.test.cjs
           node tests/technical-qa3.test.cjs
+          node tests/release-gate.test.cjs
