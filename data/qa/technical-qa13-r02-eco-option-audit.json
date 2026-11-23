@@ -1,0 +1,868 @@
+[
+  {
+    "id": "auto-made-r02-s04-q01",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 1,
+    "question_at_review": "하이브리드차의 고전압 장치를 점검하려 한다. 작업 전 전압 제거 절차에 대한 설명으로 옳은 것은?",
+    "correct_number": 1,
+    "correct_choice": "차량별 전원 차단·잔류전압 방전 대기·무전압 확인을 모두 수행한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "차량별 전원 차단·잔류전압 방전 대기·무전압 확인을 모두 수행한다",
+        "verdict": "correct",
+        "rationale": "지정 고전압 차단 후 잔류전압의 방전 대기·무전압 확인과 필요한 PPE를 수행해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "퓨즈 하나만 빼면 모든 부분의 전압이 즉시 0V다",
+        "verdict": "incorrect",
+        "rationale": "일부 퓨즈 하나를 제거했다고 차량 모든 고전압 부분이 즉시 0V라는 단정은 틀리다."
+      },
+      {
+        "number": 3,
+        "text": "시동 버튼을 끄면 절연 보호구가 필요 없다",
+        "verdict": "incorrect",
+        "rationale": "시동 버튼을 껐어도 고전압 보호구·차량 안전격리 절차가 생략되지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "적색 배선은 고전압과 무관하다",
+        "verdict": "incorrect",
+        "rationale": "적색 배선의 색상만으로 고전압 안전여부를 단정할 수 없고 고전압 하네스는 일반적으로 다른 색상 표기가 있다."
+      }
+    ],
+    "hold_reasons": [
+      "차종별 고전압 작업/잔류전압 안전절차는 공식 OEM 매뉴얼과 자격·장비 확인 전 승인 불가."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q02",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 2,
+    "question_at_review": "고전압 배선에 접근하는 전문 정비사가 적절한 개인 보호 장비를 고르려 한다. 핵심 장비는?",
+    "correct_number": 2,
+    "correct_choice": "절연 등급과 사용 상태를 점검한 고전압용 절연장갑",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "일반 면장갑만",
+        "verdict": "incorrect",
+        "rationale": "일반 면장갑만으로 고전압 감전보호 등급이 확보되지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "절연 등급과 사용 상태를 점검한 고전압용 절연장갑",
+        "verdict": "correct",
+        "rationale": "작업전압과 정비절차에 맞는 정격 절연장갑, 손상·시험 상태 확인 등이 필요하다."
+      },
+      {
+        "number": 3,
+        "text": "보안경 대신 선글라스",
+        "verdict": "incorrect",
+        "rationale": "일반 선글라스는 고전압 작업 보안경·안면보호구 기준을 대체하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "젖은 면장갑",
+        "verdict": "incorrect",
+        "rationale": "젖은 면장갑은 고전압 절연 보호구가 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "장갑 정격/사용전 점검·보안면 등 상세 PPE 조건은 해당 OEM·국내 안전규격 전문검증 대상."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q03",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 3,
+    "question_at_review": "인버터를 교환하기 직전 작업 순서를 계획했다. 가장 중요한 안전상 기본은?",
+    "correct_number": 3,
+    "correct_choice": "차량별 고전압 차단과 무전압 확인 후 회로 작업을 진행한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "타이어 공기압을 임의로 올린다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압 변경은 고전압 인버터 교환 전 전기격리 절차가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "정비 중 배터리 전원을 계속 유지한다",
+        "verdict": "incorrect",
+        "rationale": "인버터 교환 중 고전압 전원을 계속 유지하는 것은 노출 위험이 있다."
+      },
+      {
+        "number": 3,
+        "text": "차량별 고전압 차단과 무전압 확인 후 회로 작업을 진행한다",
+        "verdict": "correct",
+        "rationale": "제조사 차단·대기·무전압 확인 완료 후 지정된 작업을 진행해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "고전압 케이블을 색상과 무관하게 손으로 잡는다",
+        "verdict": "incorrect",
+        "rationale": "고전압 커넥터의 케이블 색을 무시하고 임의 접촉하는 것은 안전 진단이 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "인버터 에너지저장 소자·제조사별 안전격리 절차 차이, 정격 PPE 검증 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q04",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 4,
+    "question_at_review": "전기구동 모터 출력이 부족하다는 민원이 있다. 회전수 기록만으로 고장 여부를 단정할 수 없는 이유는?",
+    "correct_number": 4,
+    "correct_choice": "요구 토크·전류·전압·온도·제어 제한 상태도 함께 봐야 해서",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-basics-ev",
+      "https://www.energy.gov/sites/prod/files/2025-01/Vehicle_Grid_Integration_Asseessment_Report_01162025.pdf"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "모터 속도는 차량과 무관해서",
+        "verdict": "incorrect",
+        "rationale": "모터 회전수는 구동성능을 판단하는 데 중요한 측정값이므로 차량과 무관하다는 설명은 틀리다."
+      },
+      {
+        "number": 2,
+        "text": "속도가 0이면 항상 고장이라서",
+        "verdict": "incorrect",
+        "rationale": "모터 회전수가 0이어도 정지한 차량이면 정상일 수 있으므로 고장으로 단정할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "회전수가 곧 배터리 잔량이라서",
+        "verdict": "incorrect",
+        "rationale": "모터 회전속도가 곧 배터리의 남은 충전량을 표시하는 값은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "요구 토크·전류·전압·온도·제어 제한 상태도 함께 봐야 해서",
+        "verdict": "correct",
+        "rationale": "토크 명령·배터리 전력제한·전류·온도·전압에 따라 성능이 달라지므로 이를 함께 점검한다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q05",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 5,
+    "question_at_review": "순수 배터리 전기차(BEV)의 구동제어장치를 조사한다. 내연기관에만 필요한 기능은?",
+    "correct_number": 3,
+    "correct_choice": "배기가스 재순환(EGR) 밸브 제어",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/exhaust-gas-recirculation/"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "전기 모터 토크 지령",
+        "verdict": "incorrect",
+        "rationale": "구동 전기모터 토크 명령은 BEV 전동화 구동 제어의 핵심 항목이다."
+      },
+      {
+        "number": 2,
+        "text": "회생제동 에너지 관리",
+        "verdict": "incorrect",
+        "rationale": "회생제동 에너지 관리도 BEV 구동제어와 직접 관련된다."
+      },
+      {
+        "number": 3,
+        "text": "배기가스 재순환(EGR) 밸브 제어",
+        "verdict": "correct",
+        "rationale": "순수 BEV는 연소 엔진이 없어 내연기관의 배기가스 재순환 밸브 제어가 필요하지 않다."
+      },
+      {
+        "number": 4,
+        "text": "배터리 SOC 관련 통신",
+        "verdict": "incorrect",
+        "rationale": "배터리 SOC 정보 통신은 BEV 에너지 관리와 관련된다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q06",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 6,
+    "question_at_review": "전기차 고전압 회로를 서비스 절차에 따라 분리했다. 작업에 앞서 반드시 확인할 사항은?",
+    "correct_number": 1,
+    "correct_choice": "지정 측정 지점이 규정 무전압 조건인지 적합한 계측 절차로 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "지정 측정 지점이 규정 무전압 조건인지 적합한 계측 절차로 확인한다",
+        "verdict": "correct",
+        "rationale": "차량 지정 측정 지점에서 적절한 계측기로 잔류전압·무전압 조건을 검증해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "서비스 플러그를 제거했으면 무전압을 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "서비스 플러그 분리만으로 인버터 등 모든 회로의 잔류전압 측정을 생략할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "고전압 경고등이 꺼지면 잔류전압은 항상 0이다",
+        "verdict": "incorrect",
+        "rationale": "고전압 경고등 소등이 회로 전위가 즉시 0이라는 보증은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "절연장갑을 착용했다면 전압 측정은 생략해도 된다",
+        "verdict": "incorrect",
+        "rationale": "절연장갑을 착용해도 실제 전압 제거·검증 절차가 필요하다."
+      }
+    ],
+    "hold_reasons": [
+      "원칙은 맞아도 1/3번과 유사한 고전압 차단 질문이 같은 회차에 중복. 다른 학습목표로 재작성 후보 및 OEM 조건 재검증."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q07",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 7,
+    "question_at_review": "전기차 배터리관리시스템(BMS)의 주요 역할은?",
+    "correct_number": 2,
+    "correct_choice": "셀 전압·온도·전류를 감시하고 충전·방전 한계를 관리한다",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-basics-ev",
+      "https://www.energy.gov/sites/prod/files/2025-01/Vehicle_Grid_Integration_Asseessment_Report_01162025.pdf"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "차량 오디오 ECU의 소비전력만 감시한다",
+        "verdict": "incorrect",
+        "rationale": "BMS는 오디오 ECU 소비전력만 관리하는 장치가 아니라 구동용 배터리 상태를 감시한다."
+      },
+      {
+        "number": 2,
+        "text": "셀 전압·온도·전류를 감시하고 충전·방전 한계를 관리한다",
+        "verdict": "correct",
+        "rationale": "BMS는 셀전압·온도·전류 등과 충방전 한계를 관리하는 역할을 한다."
+      },
+      {
+        "number": 3,
+        "text": "구동모터 회전자 위치를 직접 측정하는 센서만 관리한다",
+        "verdict": "incorrect",
+        "rationale": "구동모터 회전 위치센서만을 관리하는 장치는 BMS 전체 기능과 다르다."
+      },
+      {
+        "number": 4,
+        "text": "DC/DC 컨버터의 12V 출력전압만 일정하게 조절한다",
+        "verdict": "incorrect",
+        "rationale": "DC/DC 12V 출력 조절은 주로 DC/DC 컨버터 기능이며 BMS의 유일 기능이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q08",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 8,
+    "question_at_review": "배터리 팩 온도가 상승해 출력제한이 발생한다. 가장 직접 관련된 장치는?",
+    "correct_number": 4,
+    "correct_choice": "구동배터리 열관리 시스템(TMS)",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.energy.gov/sites/prod/files/2025-01/Vehicle_Grid_Integration_Asseessment_Report_01162025.pdf"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "고전압 배터리 모듈과 무관한 창문제어 모듈",
+        "verdict": "incorrect",
+        "rationale": "창문제어 모듈은 고전압 구동배터리 온도 제어에 직접 관여하는 대표 장치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "연료분사 ECU의 점화코일 드라이버",
+        "verdict": "incorrect",
+        "rationale": "연료분사 ECU 점화코일 드라이버는 고전압 배터리 냉각제어 장치가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "12V 워셔액 펌프 제어기",
+        "verdict": "incorrect",
+        "rationale": "12V 워셔 펌프는 구동배터리 열관리의 대표 장치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "구동배터리 열관리 시스템(TMS)",
+        "verdict": "correct",
+        "rationale": "배터리 열관리(TMS)는 팩 온도와 성능 제한 상태를 관리하는 직접 관련 계통이다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q09",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 9,
+    "question_at_review": "고압 수소 저장 계통에서 압력이나 온도가 비정상적으로 상승할 때 안전을 위한 장치로 가장 적합한 것은?",
+    "correct_number": 3,
+    "correct_choice": "설정 조건에서 방출되는 압력·온도 안전장치",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.energy.gov/cmei/fuels/high-pressure-hydrogen-tank-testing",
+      "https://www.energy.gov/cmei/fuels/articles/pressure-relief-devices-compressed-hydrogen-vehicle-fuel-containers"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "수소저장탱크의 안전 밸브 작동압력을 임의로 높이는 제어기",
+        "verdict": "incorrect",
+        "rationale": "저장용기 안전장치의 작동압력을 임의로 높여 사용하는 것은 승인된 고압 안전 대책이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "수소 누출을 감지하는 가스센서 자체만",
+        "verdict": "incorrect",
+        "rationale": "수소가스 누출 감지 센서만으로 저장용기 압력·온도 방출 안전 기능이 모두 대체되지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "설정 조건에서 방출되는 압력·온도 안전장치",
+        "verdict": "correct",
+        "rationale": "저장용기 안전방출장치(PRD/TPRD 등)는 특정 조건에서 수소를 방출해 용기를 보호하도록 설계될 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "연료전지 스택 전압을 낮추는 DC/DC 컨버터",
+        "verdict": "incorrect",
+        "rationale": "연료전지 스택 전압을 낮추는 DC/DC가 고압 저장용기의 직접적인 안전 방출장치는 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "TPRD는 통상 온도 반응형 장치이며 일반 압력 상승에 반응하는 PRD와 구분 필요. 현재 질문 '압력이나 온도'가 모든 장치에 공통으로 적용된다는 인상을 주므로 정식감수 전 교정."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q10",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 10,
+    "question_at_review": "PEM 수소연료전지의 애노드 촉매에서 이루어지는 주된 반응은?",
+    "correct_number": 1,
+    "correct_choice": "수소 분자가 양성자와 전자로 산화되는 과정",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.energy.gov/cmei/fuels/fuel-cell-basics"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "수소 분자가 양성자와 전자로 산화되는 과정",
+        "verdict": "correct",
+        "rationale": "PEM 연료전지 애노드에서는 수소 분자의 전기화학적 산화가 일어난다."
+      },
+      {
+        "number": 2,
+        "text": "산소가 연료탱크에서 액화되는 과정",
+        "verdict": "incorrect",
+        "rationale": "연료전지 산소가 탱크 내부에서 액체 연료로 변환되는 반응은 애노드 주반응이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "수소가 디젤연료로 변하는 과정",
+        "verdict": "incorrect",
+        "rationale": "수소가 디젤 연료로 전환되는 반응은 PEM 연료전지의 작동 원리가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "바퀴의 회전 운동을 기어로 전달하는 과정",
+        "verdict": "incorrect",
+        "rationale": "바퀴의 기계적 동력 전달은 연료전지 애노드 전기화학 반응이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q11",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 11,
+    "question_at_review": "식물성 기름의 지방산 에스터를 만들 때 전이에스터화 공정에서 함께 나오는 부산물은?",
+    "correct_number": 2,
+    "correct_choice": "글리세롤(글리세린)",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/fuels/biodiesel-production"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "오존",
+        "verdict": "incorrect",
+        "rationale": "전이에스터화 공정의 대표 부산물은 오존이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "글리세롤(글리세린)",
+        "verdict": "correct",
+        "rationale": "식물성 기름의 중성지방을 전이에스터화하면 지방산 알킬에스터와 글리세롤이 생성된다."
+      },
+      {
+        "number": 3,
+        "text": "질소산화물",
+        "verdict": "incorrect",
+        "rationale": "NOx는 바이오디젤 합성의 대표 부산물로 생성되는 물질이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "일산화탄소",
+        "verdict": "incorrect",
+        "rationale": "일산화탄소는 바이오디젤 전이에스터화의 대표 분리 부산물이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q12",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 12,
+    "question_at_review": "하이브리드차가 가속할 때 HV 시스템 경고등과 출력 제한이 발생했다. 가장 적절한 초동 조치는?",
+    "correct_number": 4,
+    "correct_choice": "차량을 안전하게 정지하고 경고·고장코드를 확인한 뒤 정비 절차를 따른다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-maintenance",
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "운전자가 보호구 없이 고전압 커넥터를 분리한다",
+        "verdict": "incorrect",
+        "rationale": "비전문 운전자가 고전압 커넥터를 분리하는 것은 감전 위험이 있어 초동 조치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "모든 경고등을 소프트웨어에서 숨긴다",
+        "verdict": "incorrect",
+        "rationale": "경고등을 숨기는 소프트웨어 조작은 경고의 실제 원인 해결이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "전기차가 아니므로 경고를 무시한다",
+        "verdict": "incorrect",
+        "rationale": "하이브리드에도 고전압 계통이 있어 경고를 무시해서는 안 된다."
+      },
+      {
+        "number": 4,
+        "text": "차량을 안전하게 정지하고 경고·고장코드를 확인한 뒤 정비 절차를 따른다",
+        "verdict": "correct",
+        "rationale": "안전한 정지와 고장상태 기록 후 제조사 적절한 정비 절차에 따라 점검한다."
+      }
+    ],
+    "hold_reasons": [
+      "경고 시 제한운행·정지·견인 여부는 차종·고장정도별 운전자 매뉴얼과 안전정보 확인 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q13",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 13,
+    "question_at_review": "전기구동 모터의 절연 저하가 의심된다. 직접 점검할 대상으로 적합한 것은?",
+    "correct_number": 3,
+    "correct_choice": "모터 권선·케이블 절연 및 해당 회로 규정 검사",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-maintenance"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "타이어 무늬의 크기",
+        "verdict": "incorrect",
+        "rationale": "타이어 무늬의 크기는 고전압 모터 절연저항 판정 대상이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "실내 송풍구의 향기",
+        "verdict": "incorrect",
+        "rationale": "실내 송풍구 향기만으로 모터 권선 절연저하를 진단할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "모터 권선·케이블 절연 및 해당 회로 규정 검사",
+        "verdict": "correct",
+        "rationale": "권선·케이블 전기절연 상태를 규정된 OEM 방법으로 평가해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "배기관 배출 색깔",
+        "verdict": "incorrect",
+        "rationale": "배기관 배출 색깔은 모터 권선 절연상태의 직접적인 지표가 아니다."
+      }
+    ],
+    "hold_reasons": [
+      "인버터 전력반도체 손상 방지용 분리 절차·규정 절연저항/시험전압은 차량별 서비스매뉴얼 확인 전 확정할 수 없음."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q14",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 14,
+    "question_at_review": "배터리 팩의 충전가능 용량을 평가하려고 한다. 직접적인 판단 자료는?",
+    "correct_number": 1,
+    "correct_choice": "BMS 데이터와 규정된 충방전 용량 시험 결과",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-basics-ev"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "BMS 데이터와 규정된 충방전 용량 시험 결과",
+        "verdict": "correct",
+        "rationale": "BMS 데이터와 규정 조건에 따른 충방전 용량 시험은 팩의 실제 가용용량 평가에 도움이 된다."
+      },
+      {
+        "number": 2,
+        "text": "개방회로 전압 한 번의 측정값만",
+        "verdict": "incorrect",
+        "rationale": "개방회로전압 단일값은 충전상태 단서이지만 배터리 용량을 직접 완전히 측정하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "절연저항 측정 한 번의 결과만",
+        "verdict": "incorrect",
+        "rationale": "절연저항 측정만으로 충전가능 용량을 확인할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "고전압 퓨즈 정격 전류만",
+        "verdict": "incorrect",
+        "rationale": "고전압 퓨즈 정격전류만으로 배터리의 가용 에너지 용량을 산출할 수 없다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q15",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 15,
+    "question_at_review": "고전압 인터록(HVIL) 회로가 적용된 전기차에서 고전압 커넥터의 체결 상태를 감시하는 주된 목적은?",
+    "correct_number": 2,
+    "correct_choice": "커넥터·커버 열림을 저전압 루프로 감지해 고전압 보호제어에 활용한다",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.te.com/en/products/connectors/automotive-connectors/intersection/hva-hd-accessories.html",
+      "https://www.aptiv.com/en/insights/article/what-is-hvil"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "배터리 셀의 SOC 값을 인터록 루프 하나로 직접 측정한다",
+        "verdict": "incorrect",
+        "rationale": "HVIL 저전압 인터록 루프는 배터리 셀 SOC 값을 직접 측정하는 센서가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "커넥터·커버 열림을 저전압 루프로 감지해 고전압 보호제어에 활용한다",
+        "verdict": "correct",
+        "rationale": "HVIL은 커넥터·커버 이탈 등 연결 무결성을 감지하여 고전압 보호제어에 활용된다."
+      },
+      {
+        "number": 3,
+        "text": "구동모터의 감속기 기어비를 HVIL 신호로 변경한다",
+        "verdict": "incorrect",
+        "rationale": "기계식 구동 감속비를 변경하는 기능은 고전압 인터록 회로와 관계없다."
+      },
+      {
+        "number": 4,
+        "text": "커넥터가 열리면 잔류 전압이 즉시 0V가 되므로 무전압 검사를 생략한다",
+        "verdict": "incorrect",
+        "rationale": "인터록이 열려도 커패시터 잔류 전압이 즉시 사라진다는 보증은 아니므로 검전 생략은 틀리다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q16",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 16,
+    "question_at_review": "고전압 정비 작업구역에 음료수와 일반 금속 공구가 방치돼 있다. 안전 관리로 옳은 것은?",
+    "correct_number": 4,
+    "correct_choice": "작업구역을 정리하고 승인된 절연 공구·보호구를 사용한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "액체 용기는 회로 냉각에 좋으니 둔다",
+        "verdict": "incorrect",
+        "rationale": "음료수·액체 용기를 위험한 고전압 작업구역에 방치하는 것은 안전관리 원칙에 반한다."
+      },
+      {
+        "number": 2,
+        "text": "모든 금속을 무조건 폐기한다",
+        "verdict": "incorrect",
+        "rationale": "모든 금속을 폐기해야 한다는 보편 규칙은 없고 작업별 승인된 절연 도구를 사용해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "고전압 경고표지를 떼어 시야를 확보한다",
+        "verdict": "incorrect",
+        "rationale": "고전압 경고표지를 제거하면 접근위험 인지가 저해된다."
+      },
+      {
+        "number": 4,
+        "text": "작업구역을 정리하고 승인된 절연 공구·보호구를 사용한다",
+        "verdict": "correct",
+        "rationale": "작업구역을 정돈하고 규격에 맞는 절연 공구와 보호구를 사용해야 한다."
+      }
+    ],
+    "hold_reasons": [
+      "고전압 정비 작업구역 PPE·도구·접근통제의 세부 기준은 지역 규정 및 사업장 절차 확인 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q17",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 17,
+    "question_at_review": "전기차 모터 제어기가 직접 제어하는 물리량의 대표 조합은?",
+    "correct_number": 3,
+    "correct_choice": "구동모터의 요구 토크·회전속도에 맞게 전력 구동",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+      "https://www.energy.gov/sites/prod/files/2025-01/Vehicle_Grid_Integration_Asseessment_Report_01162025.pdf"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "브레이크 마스터실린더의 유압만",
+        "verdict": "incorrect",
+        "rationale": "브레이크 마스터실린더 유압만 제어하는 장치는 구동 모터 인버터 제어기로 보기 어렵다."
+      },
+      {
+        "number": 2,
+        "text": "시동 배터리 충전전류만",
+        "verdict": "incorrect",
+        "rationale": "시동용 12V 배터리 전류만 관리하는 장치는 구동 모터 전력 제어기와 다르다."
+      },
+      {
+        "number": 3,
+        "text": "구동모터의 요구 토크·회전속도에 맞게 전력 구동",
+        "verdict": "correct",
+        "rationale": "모터 제어기는 요구 토크·회전상태에 맞게 인버터 구동 전력을 제어하는 장치다."
+      },
+      {
+        "number": 4,
+        "text": "냉각수 펌프 모터의 기계적 진동만",
+        "verdict": "incorrect",
+        "rationale": "냉각수 펌프의 기계적 진동만 제어하는 기능은 전동 구동 토크 제어와 다르다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q18",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 18,
+    "question_at_review": "전기차가 감속하면서 구동모터가 발전기 역할을 한다. 에너지 흐름으로 올바른 것은?",
+    "correct_number": 1,
+    "correct_choice": "차량의 운동에너지 일부 → 전기에너지 → 배터리 저장",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/electric-basics-hev",
+      "https://afdc.energy.gov/fuels/electricity-basics"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "차량의 운동에너지 일부 → 전기에너지 → 배터리 저장",
+        "verdict": "correct",
+        "rationale": "감속 중 차량의 운동에너지가 모터 발전을 거쳐 전기에너지로 전환돼 배터리에 저장될 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "브레이크 마찰열 전부 → 전기에너지로 직접 회수",
+        "verdict": "incorrect",
+        "rationale": "회생제동이 마찰 브레이크 열을 직접 전기화하는 것은 아니며 기계적 운동에너지를 회수한다."
+      },
+      {
+        "number": 3,
+        "text": "배터리 전기에너지 → 브레이크 마찰열로만 전환",
+        "verdict": "incorrect",
+        "rationale": "감속 시 회생제동은 배터리 에너지를 단순히 마찰열로 모두 소모하는 작동과 구분된다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 압축공기 → 배터리의 화학에너지",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기 압축만으로 직접 충전용 전기에너지를 만들어내는 원리가 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q19",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 19,
+    "question_at_review": "EVCU가 운전자 요구에 맞춰 구동모터 출력을 조절한다. 직접 참조할 수 있는 운전 정보는?",
+    "correct_number": 2,
+    "correct_choice": "가속페달 요구·차속·배터리 상태",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "공조 필터의 색상",
+        "verdict": "incorrect",
+        "rationale": "공조 필터 색상은 운전자가 요구한 모터 구동 토크의 직접 정보가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "가속페달 요구·차속·배터리 상태",
+        "verdict": "correct",
+        "rationale": "가속페달 요구·차속·배터리 제한값은 전동구동 ECU가 참고할 수 있는 입력 조합이다."
+      },
+      {
+        "number": 3,
+        "text": "운전석 가죽의 두께",
+        "verdict": "incorrect",
+        "rationale": "시트 가죽의 두께가 EVCU 구동출력의 직접 센서 정보는 아니다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 사이드월 브랜드",
+        "verdict": "incorrect",
+        "rationale": "타이어 사이드월 브랜드 자체는 모터 출력 요구의 직접 제어 입력이 아니다."
+      }
+    ],
+    "hold_reasons": [],
+    "final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r02-s04-q20",
+    "subject": "eco",
+    "round": 2,
+    "question_number": 20,
+    "question_at_review": "수소연료전지차의 고압 저장용기 압력을 측정하려 한다. 안전한 원칙은?",
+    "correct_number": 3,
+    "correct_choice": "전용 자격·장비·규정에 따라 누설 위험과 압력계 상태를 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "source_urls": [
+      "https://www.energy.gov/cmei/fuels/high-pressure-hydrogen-tank-testing"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "압력계가 맞아 보이면 즉시 배관을 해체한다",
+        "verdict": "incorrect",
+        "rationale": "수소 저장용기의 압력계 상태만 보고 배관을 즉시 분리하는 것은 안전하지 않다."
+      },
+      {
+        "number": 2,
+        "text": "용기 방출장치를 임의로 막아 누출을 방지한다",
+        "verdict": "incorrect",
+        "rationale": "용기 압력안전방출장치 작동을 임의 차단하는 것은 위험하다."
+      },
+      {
+        "number": 3,
+        "text": "전용 자격·장비·규정에 따라 누설 위험과 압력계 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "고압 수소의 점화·누설·압력 위험을 고려해 지정 자격·도구·정비 절차로 점검한다."
+      },
+      {
+        "number": 4,
+        "text": "수소 충전구에 일반 공기압계를 직접 연결한다",
+        "verdict": "incorrect",
+        "rationale": "일반 공기압계는 수소 고압 저장용기 측정 규격에 맞지 않을 수 있어 직접 임의 연결하면 안 된다."
+      }
+    ],
+    "hold_reasons": [
+      "수소 고압 설비 정비는 용기·밸브·검지·환기/방출장치 안전규정과 차량별 승인 작업절차 확인 필요."
+    ],
+    "final_technical_approval": false,
+    "web_publication": false
+  }
+]
