@@ -1,0 +1,181 @@
+[
+  {
+    "id": "auto-made-r01-s03-q02",
+    "round": 1,
+    "subject": "electrical",
+    "question_number": 2,
+    "question_at_review": "차량용 100BASE-T1 자동차 이더넷 통신에 사용되는 물리 계층 배선의 특징으로 적절한 것은?",
+    "correct_number": 3,
+    "correct_choice": "단일 트위스트페어 케이블을 통해 전이중 데이터 통신을 지원한다",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.nxp.com/products/TJA1102A",
+      "https://www.onsemi.com/pub/Collateral/TND6015-D.PDF"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "기존 100BASE-TX와 같이 두 쌍의 트위스트페어를 반드시 사용한다",
+        "verdict": "incorrect",
+        "rationale": "일반 100BASE-TX는 두 트위스트페어에 송·수신을 구분하지만 100BASE-T1과 규격이 다르다."
+      },
+      {
+        "number": 2,
+        "text": "차량 구동용 고전압 배터리 케이블을 데이터 전송선으로 공용한다",
+        "verdict": "incorrect",
+        "rationale": "100BASE-T1은 고전압 구동 케이블을 Ethernet 물리 전송선으로 공용하는 방식이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "단일 트위스트페어 케이블을 통해 전이중 데이터 통신을 지원한다",
+        "verdict": "correct",
+        "rationale": "100BASE-T1은 구리 단일 트위스트페어를 통해 100Mbps 전이중 통신을 지원한다."
+      },
+      {
+        "number": 4,
+        "text": "광섬유만 사용할 수 있어 구리선을 통한 전송은 불가능하다",
+        "verdict": "incorrect",
+        "rationale": "차량용 100BASE-T1은 구리 트위스트페어를 사용하므로 광섬유만 사용한다는 설명이 틀리다."
+      }
+    ],
+    "previous_edit_ledger": "data/qa/technical-qa9-changes.json",
+    "prior_qa7_or_qa8_audit_historical_only": true,
+    "latest_review_meta": "technical_verification_qa14",
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q03",
+    "round": 1,
+    "subject": "electrical",
+    "question_number": 3,
+    "question_at_review": "종단저항 120Ω 두 개가 양 끝에 연결된 표준 고속 CAN 버스에서 두 종단저항을 병렬로 본 이론적인 합성저항은?",
+    "correct_number": 4,
+    "correct_choice": "60Ω",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "120Ω",
+        "verdict": "incorrect",
+        "rationale": "120Ω 두 개를 병렬 연결하면 전체저항은 하나의 120Ω보다 작아져야 한다."
+      },
+      {
+        "number": 2,
+        "text": "240Ω",
+        "verdict": "incorrect",
+        "rationale": "240Ω은 직렬 연결을 가정한 합산이며 문제의 병렬 조건에 맞지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "30Ω",
+        "verdict": "incorrect",
+        "rationale": "30Ω은 120Ω 4개 병렬과 같은 값으로, 여기서 주어진 두 개 병렬에는 맞지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "60Ω",
+        "verdict": "correct",
+        "rationale": "120Ω 두 개가 병렬이면 (120×120)/(120+120)=60Ω이다."
+      }
+    ],
+    "previous_edit_ledger": "data/qa/technical-qa9-changes.json",
+    "prior_qa7_or_qa8_audit_historical_only": true,
+    "latest_review_meta": "technical_verification_qa14",
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s03-q06",
+    "round": 1,
+    "subject": "electrical",
+    "question_number": 6,
+    "question_at_review": "자동차 저전압 전원회로의 접촉저항 증가가 의심된다. 부하를 작동시킨 상태에서 연결부의 저항성 불량을 찾는 적절한 방법은?",
+    "correct_number": 4,
+    "correct_choice": "의심 연결부 양단의 전압강하를 측정해 차종별 기준과 비교한다",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.fluke.com/en/learn/blog/automotive/electrical-automotive-troubleshooting",
+      "https://www.fluke.com/en/learn/blog/digital-multimeters/common-automotive-testing-with-a-multimeter"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "관련 퓨즈의 정격을 임의로 더 크게 교체한다",
+        "verdict": "incorrect",
+        "rationale": "퓨즈 정격을 임의로 올리는 것은 전원선 저항성 접촉 불량의 정비·진단방법이 아니며 과전류 보호를 해칠 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "무부하 배터리 전압이 정상이면 회로의 모든 접속 상태를 정상으로 확정한다",
+        "verdict": "incorrect",
+        "rationale": "무부하 배터리 전압이 정상이어도 부하가 흐를 때 접촉부 전압손실이 발생할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "고장코드를 삭제하는 작업만으로 접촉저항 값을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "DTC 삭제만으로 특정 연결부의 실제 접촉저항·전압손실을 측정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "의심 연결부 양단의 전압강하를 측정해 차종별 기준과 비교한다",
+        "verdict": "correct",
+        "rationale": "부하 동작 중 의심 접속부 양단의 전압강하를 측정하면 과도한 저항성 손실을 확인할 수 있다."
+      }
+    ],
+    "previous_edit_ledger": "data/qa/technical-qa9-changes.json",
+    "prior_qa7_or_qa8_audit_historical_only": true,
+    "latest_review_meta": "technical_verification_qa14",
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r01-s04-q17",
+    "round": 1,
+    "subject": "eco",
+    "question_number": 17,
+    "question_at_review": "단일 구동모터와 기계식 차동장치를 사용한 전기차가 선회할 때 차동장치가 수행하는 기본 기능은?",
+    "correct_number": 1,
+    "correct_choice": "좌우 구동바퀴가 서로 다른 회전속도로 회전하도록 허용한다",
+    "evidence_grade": "source_supported_first_pass",
+    "source_urls": [
+      "https://www.eaton.com/us/en-us/products/differentials-traction-control.html",
+      "https://www.eaton.com/content/dam/eaton/products/differentials-traction-control/eaton-ebook-5-things-differentials-epdl200-0617.pdf"
+    ],
+    "options": [
+      {
+        "number": 1,
+        "text": "좌우 구동바퀴가 서로 다른 회전속도로 회전하도록 허용한다",
+        "verdict": "correct",
+        "rationale": "단일모터에 일반적인 기계식 차동장치를 사용하는 경우 선회 시 좌우 바퀴가 서로 다른 속도로 회전할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "고전압 배터리 셀 사이의 전압 편차를 직접 조절한다",
+        "verdict": "incorrect",
+        "rationale": "고전압 배터리 셀 균등화는 BMS와 배터리 회로의 문제로 차동기어 기본 기능이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "전기 모터의 구동용 인버터 스위칭을 제어한다",
+        "verdict": "incorrect",
+        "rationale": "인버터 반도체 스위칭은 전력전자장치 기능으로 기계식 차동장치가 직접 제어하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "외부 교류 전원을 배터리 충전용 직류로 변환한다",
+        "verdict": "incorrect",
+        "rationale": "OBC의 교류→직류 변환과 차동장치의 좌우 구동축 회전속도 배분은 다른 기능이다."
+      }
+    ],
+    "previous_edit_ledger": "data/qa/technical-qa9-changes.json",
+    "prior_qa7_or_qa8_audit_historical_only": true,
+    "latest_review_meta": "technical_verification_qa14",
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  }
+]
