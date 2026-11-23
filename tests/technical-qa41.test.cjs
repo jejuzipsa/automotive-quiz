@@ -39,6 +39,6 @@ const m=read("data/manifest.json");assert.equal(m.banks.filter(b=>b.track==="exp
 assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));
 const st=read("data/bank-status.json").technical_qa41;
 assert.equal(st.reauthored_chassis_items,15);assert.equal(st.historical_holds_retained,55);
-assert.equal(st.remaining_legacy_provisional_cross_subject_candidates,30);
+assert.equal(st.remaining_legacy_provisional_cross_subject_candidates,32);
 assert.equal(st.independent_final_technical_approvals,0);assert.equal(st.published_past_reconstructed_items,0);
 console.log("PASS QA41: 15 chassis edits/60 mapped options and historical QA18/20/24 snapshots; 55 holds intact.");

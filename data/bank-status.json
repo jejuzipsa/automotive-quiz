@@ -2101,7 +2101,7 @@
     "subject_holds_released": 0,
     "qa40_engine_replacements": 3,
     "total_QA40_41_in_scope_rewrites": 18,
-    "remaining_legacy_provisional_cross_subject_candidates": 30,
+    "remaining_legacy_provisional_cross_subject_candidates": 32,
     "independent_final_technical_approvals": 0,
     "published_past_reconstructed_items": 0,
     "public_original_practice_questions": 80,
@@ -2109,6 +2109,8 @@
     "reference_validation": "public Bosch, ZF, HELLA, KYB, Arnott general-technical sources; no OEM-specific expert signoff",
     "ledger": "data/qa/technical-qa41-chassis-scope-replacements.json",
     "test": "tests/technical-qa41.test.cjs",
-    "report": "docs/TECHNICAL_QA41.md"
+    "report": "docs/TECHNICAL_QA41.md",
+    "remaining_legacy_cross_subject_overlap_candidates": 4,
+    "remaining_legacy_false_positive_candidates": 1
   }
 }
