@@ -1,0 +1,52 @@
+"use strict";
+const assert=require("node:assert/strict");
+const fs=require("node:fs");
+const path=require("node:path");
+const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,"..");
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+const audits=read("data/qa/technical-qa14-qa9-four-latest-option-audit.json");
+const history=read("data/qa/technical-qa9-changes.json");
+const qa7=read("data/qa/technical-qa7-electrical-r01-option-audit.json");
+const qa8=read("data/qa/technical-qa8-eco-r01-option-audit.json");
+const q={electrical:read("data/past/drafts/electrical.json"),eco:read("data/past/drafts/eco.json")};
+const e={electrical:read("data/explanations/drafts/electrical.json"),eco:read("data/explanations/drafts/eco.json")};
+assert.equal(audits.length,4);
+assert.equal(new Set(audits.map(x=>x.id)).size,4);
+assert.deepEqual(audits.map(x=>x.id).sort(),history.map(x=>x.id).sort());
+let count=0;
+for(const row of audits){
+ const old=history.find(x=>x.id===row.id),qRow=q[row.subject][row.question_number-1],eRow=e[row.subject][row.question_number-1];
+ const oldAud=(row.subject==="electrical"?qa7:qa8).find(x=>x.id===row.id);
+ assert.ok(old&&oldAud&&qRow&&eRow);
+ assert.equal(oldAud.question_at_review,old.before.question);
+ assert.equal(old.after.question,qRow.question);
+ assert.deepEqual(old.after.choices,qRow.choices);
+ assert.equal(row.question_at_review,qRow.question);
+ assert.equal(row.correct_number,qRow.answer);
+ assert.equal(row.correct_choice,qRow.choices[qRow.answer-1]);
+ assert.equal(eRow.correct_answer,qRow.answer);assert.equal(eRow.correct_choice,row.correct_choice);
+ assert.deepEqual(eRow.option_analysis_qa14,row.options);
+ assert.equal(row.evidence_grade,"source_supported_first_pass");
+ assert.equal(qRow.technical_verification_qa14.status,row.evidence_grade);
+ assert.equal(eRow.technical_verification_qa14.status,row.evidence_grade);
+ assert.ok(row.source_urls.length>=1);
+ assert.equal(row.independent_final_technical_approval,false);
+ assert.equal(row.web_publication,false);
+ assert.equal(qRow.publishable,false);
+ assert.equal(qRow.technical_answer_status,"pending_independent_review");
+ assert.equal(qRow.review_status,"editorial_draft");
+ assert.equal(qRow.qa9_revision.qa14_latest_recheck_status,"new_options_source_supported_first_pass_pending_independent_final_approval");
+ assert.equal(eRow.qa9_revision.qa14_latest_recheck_status,"new_options_source_supported_first_pass_pending_independent_final_approval");
+ assert.equal(qRow.qa9_revision.status,"editorial_revised_pending_new_option_review","historical edit-time state remains");
+ assert.ok(!qRow.technical_verification_qa7&&!qRow.technical_verification_qa8);
+ assert.ok(!eRow.option_analysis_qa7&&!eRow.option_analysis_qa8);
+ assert.equal(row.options.length,4);
+ for(let i=0;i<4;i++){
+  const o=row.options[i];assert.equal(o.number,i+1);assert.equal(o.text,qRow.choices[i]);
+  assert.equal(o.verdict,i+1===qRow.answer?"correct":"incorrect");
+  assert.ok(o.rationale.length>=18);count++;
+ }
+}
+assert.equal(count,16);
+const manifest=read("data/manifest.json");assert.ok(manifest.banks.every(x=>!x.file.includes("/drafts/")));
+console.log("PASS QA14: all four QA9 revised questions re-reviewed with 16 current-version option reasons, original QA7/8 history unchanged, no final technical approvals or public reconstructed questions.");
