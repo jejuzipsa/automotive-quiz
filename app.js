@@ -63,7 +63,9 @@
           manifest.banks.length>PUBLIC_BANK_PATHS.size+SUBJECTS.length ||
           new Set(manifest.banks.map(x=>x.file)).size!==manifest.banks.length ||
           ![...PUBLIC_BANK_PATHS].every(path=>manifest.banks.some(x=>x.file===path)) ||
-          !manifest.banks.every(x=>isManifestPath(x.file)))
+          !manifest.banks.every(x=>isManifestPath(x.file) &&
+            (!APPROVED_PAST_PATH.test(x.file) ||
+              (x.track==="past" && x.subject===x.file.match(APPROVED_PAST_PATH)[1]))))
         throw new Error("과목별 목록 형식 오류");
       const groups=await Promise.all(manifest.banks.map(async def=>{
         const response=await fetch(def.file,{cache:"no-cache"});
