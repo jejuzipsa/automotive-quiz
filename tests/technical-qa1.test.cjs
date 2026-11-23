@@ -10,6 +10,7 @@ const changes=read('data/qa/technical-qa1-changes.json');
 const qa2Changes=read('data/qa/technical-qa2-changes.json');
 const qa2ById=new Map(qa2Changes.map(x=>[x.id,x]));
 const qa5ById=new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
+const qa9ById=new Map(read('data/qa/technical-qa9-changes.json').map(x=>[x.id,x]));
 const holds=read('data/qa/technical-qa1-subject-holds.json');
 const triage=read('data/qa/technical-qa1-triage.json');
 const expanded=read('data/qa/technical-qa1-subject-holds-expanded.json');
@@ -61,7 +62,14 @@ for(const change of changes){
    assert.equal(qa2.before.reason,change.after.reason);
  }
  const previous=qa2?qa2.after:change.after;
- if(qa5){
+ if(qa9){
+   assert.equal(qa9.before.question,previous.question,'QA9 must preserve QA1/QA2 superseded question');
+   assert.deepEqual(qa9.before.choices,previous.choices);
+   assert.equal(qa9.before.reason,previous.reason);
+   assert.equal(q.question,qa9.after.question);
+   assert.deepEqual(q.choices,qa9.after.choices);
+   assert.equal(e.reason,qa9.after.reason);
+ }else if(qa5){
    assert.equal(qa5.before.question,previous.question,'QA5 must start from previous review snapshot');
    assert.deepEqual(qa5.before.choices,previous.choices);
    assert.equal(qa5.before.reason,previous.reason);
