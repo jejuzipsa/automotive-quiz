@@ -1347,5 +1347,59 @@
     "edits_and_hold_audit": "data/qa/technical-qa17-edits-and-holds.json",
     "report": "docs/TECHNICAL_QA17.md",
     "next": "round04 engine 20 and rounds04-09 remaining 480 option-by-option source checks"
+  },
+  "technical_qa18": {
+    "date": "2026-11-23",
+    "batch": "round04_all_subjects",
+    "subjects": {
+      "engine": {
+        "firstpass_source_supported": 8,
+        "additional_review": 12
+      },
+      "chassis": {
+        "firstpass_source_supported": 10,
+        "additional_review": 10
+      },
+      "electrical": {
+        "firstpass_source_supported": 12,
+        "additional_review": 8
+      },
+      "eco": {
+        "firstpass_source_supported": 5,
+        "additional_review": 15
+      }
+    },
+    "questions_with_choice_level_firstpass": 80,
+    "individual_option_reasons": 320,
+    "firstpass_supported": 35,
+    "additional_review": 45,
+    "real_editorial_corrections": 3,
+    "edited_question_ids": [
+      "auto-made-r04-s02-q08",
+      "auto-made-r04-s02-q12",
+      "auto-made-r04-s03-q10"
+    ],
+    "subject_holds_added": 1,
+    "subject_hold_ids_added": [
+      "auto-made-r04-s03-q13"
+    ],
+    "current_subject_holds": 52,
+    "cumulative_current_version_question_choice_firstpass": 320,
+    "cumulative_current_version_option_count": 1280,
+    "question_count_not_individually_option_firstpass_reviewed": 400,
+    "remaining_option_count": 1600,
+    "independent_technical_final_approvals": 0,
+    "published_reconstructed_past_count": 0,
+    "original_QA23_purchased_source_unchanged": true,
+    "published_manifest_unchanged": true,
+    "expected_study_exam_80_unchanged": true,
+    "audit_files": [
+      "data/qa/technical-qa18-r04-engine-option-audit.json",
+      "data/qa/technical-qa18-r04-chassis-option-audit.json",
+      "data/qa/technical-qa18-r04-electrical-option-audit.json",
+      "data/qa/technical-qa18-r04-eco-option-audit.json"
+    ],
+    "report": "docs/TECHNICAL_QA18.md",
+    "next": "round05 all four subjects 80 questions 320 choices"
   }
 }
