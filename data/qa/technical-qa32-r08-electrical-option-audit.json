@@ -1,0 +1,855 @@
+[
+  {
+    "id": "auto-made-r08-s03-q01",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 1,
+    "question_at_review": "자동차 도어 통신 모듈과 스위치가 저속 버스로 연결됐다. LIN 통신의 일반적인 특징은?",
+    "correct_number": 3,
+    "correct_choice": "코디네이터 노드가 통신 일정을 관리하는 구조",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "각 ECU가 아무 조정 없이 동시에 버스를 항상 점유",
+        "verdict": "incorrect",
+        "rationale": "LIN은 일정 조정 없이 임의의 ECU가 버스를 점유하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "고속 이더넷의 IP 주소 중재와 동일",
+        "verdict": "incorrect",
+        "rationale": "LIN 코디네이터 방식은 Ethernet IP 중재와 달라"
+      },
+      {
+        "number": 3,
+        "text": "코디네이터 노드가 통신 일정을 관리하는 구조",
+        "verdict": "correct",
+        "rationale": "LIN은 일반적으로 한 코디네이터 노드가 프레임 헤더와 일정을 주도하고 종속 노드들이 응답하는 비용효율적인 차량 네트워크다."
+      },
+      {
+        "number": 4,
+        "text": "유압으로 디지털 프레임을 전달",
+        "verdict": "incorrect",
+        "rationale": "유압배관으로 LIN 디지털 프레임을 전달하지 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.lin-cia.org/en/technology/",
+      "https://www.nxp.com/products/TJA1421"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q02",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 2,
+    "question_at_review": "역전압 보호용 다이오드가 회로에 있다. 가장 기본적인 다이오드 기능은?",
+    "correct_number": 1,
+    "correct_choice": "바이어스 방향에 따라 전류 흐름을 제어한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "바이어스 방향에 따라 전류 흐름을 제어한다",
+        "verdict": "correct",
+        "rationale": "다이오드는 정·역방향 바이어스에 따라 전류 흐름이 크게 다르다. 능동 증폭은 일반 다이오드의 기본 기능이 아니고 트랜지스터 등 다른 회로가 필요하다."
+      },
+      {
+        "number": 2,
+        "text": "입력 전압을 항상 수십 배 증폭한다",
+        "verdict": "incorrect",
+        "rationale": "다이오드는 일반적으로 전압을 수십 배 증폭하는 증폭기가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "연료의 옥탄가를 변경한다",
+        "verdict": "incorrect",
+        "rationale": "옥탄가는 반도체 다이오드가 조절하지 않아"
+      },
+      {
+        "number": 4,
+        "text": "교류 모터의 토크를 기계적으로 높인다",
+        "verdict": "incorrect",
+        "rationale": "기계 토크 증가는 전기 회로 다이오드의 직접 기능이 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q03",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 3,
+    "question_at_review": "차량 CAN 네트워크에 센서값을 보내려 한다. 일반적인 CAN 신호 형태와 관련된 설명은?",
+    "correct_number": 1,
+    "correct_choice": "차동 전압으로 디지털 프레임 데이터를 송수신한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "차동 전압으로 디지털 프레임 데이터를 송수신한다",
+        "verdict": "correct",
+        "rationale": "CAN은 프레임 형태의 디지털 메시지를 전송한다. 아날로그 센서값은 ECU가 변환해 데이터로 실어 보낼 수 있지만 물리 전압을 직접 전달하는 것은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "반드시 IP 주소를 CAN 식별자 대신 사용한다",
+        "verdict": "incorrect",
+        "rationale": "CAN 식별자는 IP 주소를 대체한 전용 CAN 프레임 필드야"
+      },
+      {
+        "number": 3,
+        "text": "아날로그 센서 전압을 버스에 아무 인코딩 없이 그대로 보낸다",
+        "verdict": "incorrect",
+        "rationale": "센서 아날로그 전압을 무부호화로 CAN 버스에 싣지는 않아"
+      },
+      {
+        "number": 4,
+        "text": "연료 압력배관을 통해 이진 데이터를 이동시킨다",
+        "verdict": "incorrect",
+        "rationale": "연료 압력배관은 CAN 비트의 전송 매체가 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q04",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 4,
+    "question_at_review": "ESC 차량자세 제어 센서 입력에서 직접 관계가 낮은 것은?",
+    "correct_number": 4,
+    "correct_choice": "엔진 배기가스 산소 센서",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "횡가속도 신호",
+        "verdict": "incorrect",
+        "rationale": "횡가속도는 ESC 실제 차량거동 입력값이야"
+      },
+      {
+        "number": 2,
+        "text": "스티어링 휠 조향각",
+        "verdict": "incorrect",
+        "rationale": "조향각은 운전자 조향의도의 입력이야"
+      },
+      {
+        "number": 3,
+        "text": "요레이트 신호",
+        "verdict": "incorrect",
+        "rationale": "요레이트는 ESC 자세변화 감지에 쓰여"
+      },
+      {
+        "number": 4,
+        "text": "엔진 배기가스 산소 센서",
+        "verdict": "correct",
+        "rationale": "ESC는 차량의 실제 거동과 운전자 의도를 비교해 제동을 제어한다. 배기가스 산소 센서는 공연비 제어용 센서로 ESC의 핵심 자세 센서가 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "hold_reasons": [
+      "ESC 동역학/조향입력은 섀시 과목과 경계. 산소센서의 무관성은 맞아도 과목 재분류 검토"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q05",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 5,
+    "question_at_review": "전원선 피복이 벗겨져 차체와 접촉했다. 보호퓨즈가 끊어질 수 있는 이유는?",
+    "correct_number": 2,
+    "correct_choice": "저항이 낮은 단락 경로로 과전류가 흐르기 때문",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "전선의 물리 길이가 갑자기 무한대가 되기 때문",
+        "verdict": "incorrect",
+        "rationale": "단락이 전선의 물리적 길이를 무한대로 만들지 않아"
+      },
+      {
+        "number": 2,
+        "text": "저항이 낮은 단락 경로로 과전류가 흐르기 때문",
+        "verdict": "correct",
+        "rationale": "단락은 전류가 의도하지 않은 낮은 저항 경로로 흘러 회로 보호장치가 동작할 수 있는 상황을 만든다. 전원 차단과 원인 수리가 우선이다."
+      },
+      {
+        "number": 3,
+        "text": "접촉만으로 배터리 전압이 영구히 0이 되기 때문",
+        "verdict": "incorrect",
+        "rationale": "차체 단락이 배터리 전압을 항상 영구히 0으로 만들지는 않아"
+      },
+      {
+        "number": 4,
+        "text": "단락이 항상 정상 부하를 감소시키지 않기 때문",
+        "verdict": "incorrect",
+        "rationale": "단락은 저저항 경로가 생겨 보호퓨즈 용단을 일으킬 수 있어"
+      }
+    ],
+    "source_urls": [
+      "https://www.littelfuse.com/en/products/fuses-overcurrent-protection/fuses"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q06",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 6,
+    "question_at_review": "급회전 중 차량이 운전자의 조향 의도와 다른 방향으로 미끄러진다. ESC의 주요 대응은?",
+    "correct_number": 3,
+    "correct_choice": "개별 휠 제동과 구동토크 제어로 차량 자세를 보정한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "타이어를 실제로 교환해 접지력 확보",
+        "verdict": "incorrect",
+        "rationale": "ESC는 타이어를 직접 새 부품으로 교환하지 않아"
+      },
+      {
+        "number": 2,
+        "text": "냉매를 압축해 브레이크액으로 전환",
+        "verdict": "incorrect",
+        "rationale": "냉매를 브레이크액으로 변환하는 제어가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "개별 휠 제동과 구동토크 제어로 차량 자세를 보정한다",
+        "verdict": "correct",
+        "rationale": "ESC는 조향각과 요레이트 등으로 차량의 방향 안정성을 평가하고 필요할 때 특정 바퀴에 제동력 등을 가해 미끄러짐을 완화한다."
+      },
+      {
+        "number": 4,
+        "text": "운전대가 움직이지 못하게 영구 잠금",
+        "verdict": "incorrect",
+        "rationale": "운전대를 영구히 잠그는 방식이 ESC 안정제어는 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+    ],
+    "hold_reasons": [
+      "ESC 개별 제동은 섀시 과목과 범위가 중복. 공식 직무·출제기준 대조 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q07",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 7,
+    "question_at_review": "R-134a와 R-1234yf 냉매를 비교해 환경규제를 설명한다. 더 주의할 특성은?",
+    "correct_number": 1,
+    "correct_choice": "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+        "verdict": "correct",
+        "rationale": "EPA 자료 기준 R-134a는 GWP가 큰 냉매이며 R-1234yf는 상대적으로 훨씬 낮은 GWP를 갖는다. R-1234yf는 약한 가연성을 가진 A2L로 분류되며 차량별 장비·충전 포트·오일 규격을 확인해야 한다. GWP 수치는 적용한 평가 기준에 따라 달라질 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+        "verdict": "incorrect",
+        "rationale": "R134a의 A1 분류와 R1234yf A2L 분류를 뒤집었어"
+      },
+      {
+        "number": 3,
+        "text": "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+        "verdict": "incorrect",
+        "rationale": "냉매 회수 포트와 전용 윤활유를 무조건 혼용하면 안 돼"
+      },
+      {
+        "number": 4,
+        "text": "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다",
+        "verdict": "incorrect",
+        "rationale": "R1234yf GWP가 훨씬 크다는 것은 EPA 자료와 반대야"
+      }
+    ],
+    "source_urls": [
+      "https://www.epa.gov/mvac/acceptable-refrigerants-and-their-impacts"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q08",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 8,
+    "question_at_review": "벨트 구동 컴프레서에서 전자클러치가 붙지 않는다. 클러치가 실제로 제어하는 것은?",
+    "correct_number": 1,
+    "correct_choice": "엔진 회전 동력을 압축기 축에 전달할지 여부",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진 회전 동력을 압축기 축에 전달할지 여부",
+        "verdict": "correct",
+        "rationale": "전자클러치가 있는 컴프레서는 클러치를 접속·해제해 구동 동력의 전달을 제어한다. 전동식이나 가변용량형은 구조가 다를 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "배터리 셀 밸런싱",
+        "verdict": "incorrect",
+        "rationale": "전동압축기 클러치가 배터리 셀 밸런싱을 수행하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "증발기 냉매의 화학식을 바꾸는 기능",
+        "verdict": "incorrect",
+        "rationale": "클러치는 냉매의 화학식을 변환하지 않아"
+      },
+      {
+        "number": 4,
+        "text": "타이어 표면의 마찰계수",
+        "verdict": "incorrect",
+        "rationale": "클러치 접속이 타이어 마찰계수를 직접 바꾸지 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q09",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 9,
+    "question_at_review": "냉방 시 진동과 소음이 커졌다. 고장 진단 도구를 고르는 적절한 접근법은?",
+    "correct_number": 4,
+    "correct_choice": "냉매 고·저압, 컴프레서 동작과 진동 위치를 함께 측정한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "고압측 압력과 냉방 상태는 완전히 무관하다",
+        "verdict": "incorrect",
+        "rationale": "고압측 압력은 냉매상태 및 고장진단과 관련돼"
+      },
+      {
+        "number": 2,
+        "text": "진동 계측은 어떤 에어컨 진단에도 사용 불가",
+        "verdict": "incorrect",
+        "rationale": "진동계측이 모든 공조진단에 불가능하다는 건 틀려"
+      },
+      {
+        "number": 3,
+        "text": "소음만으로 냉매량을 정확히 계산할 수 있다",
+        "verdict": "incorrect",
+        "rationale": "소음 하나만으로 냉매 충전량을 정밀 산정할 수 없어"
+      },
+      {
+        "number": 4,
+        "text": "냉매 고·저압, 컴프레서 동작과 진동 위치를 함께 측정한다",
+        "verdict": "correct",
+        "rationale": "냉방 불량과 진동은 냉매 순환·컴프레서 베어링·마운트 등 여러 원인이 있다. 압력과 온도, 필요 시 진동을 계측해 원인을 구분한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "냉매 고저압/컴프레서 진동은 차종별 계측 및 고압 냉매 작업 안전 검증 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q10",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 10,
+    "question_at_review": "스마트키 배터리가 약해 원격 잠금이 안 된다. 자동차 시동 인증에 관한 설명으로 알맞은 것은?",
+    "correct_number": 1,
+    "correct_choice": "차종에 따라 비상 인식 위치·백업 인증 방법을 쓸 수 있다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "차종에 따라 비상 인식 위치·백업 인증 방법을 쓸 수 있다",
+        "verdict": "correct",
+        "rationale": "스마트키는 원격 RF와 저주파 유도·비상 트랜스폰더 등 여러 인증 경로를 사용할 수 있다. 방전 시 절차는 제조사 안내를 따른다."
+      },
+      {
+        "number": 2,
+        "text": "RF 수신과 시동 인증은 구조상 항상 완전히 동일",
+        "verdict": "incorrect",
+        "rationale": "RF 수신/시동 인증은 차종별 복수 채널이 있어 반드시 같진 않아"
+      },
+      {
+        "number": 3,
+        "text": "코인전지가 없으면 모든 차량에서 차량용 12V가 꺼짐",
+        "verdict": "incorrect",
+        "rationale": "코인전지와 차량 12V 배터리는 독립된 시스템이야"
+      },
+      {
+        "number": 4,
+        "text": "키 배터리가 약하면 모든 차량에서 어떤 시동도 불가",
+        "verdict": "incorrect",
+        "rationale": "스마트키 코인전지 방전이 전 차종 시동절대불가를 뜻하지 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [
+      "스마트키 백업 인식은 차량·제조사별 비상시동 절차가 달라 OEM 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q11",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 11,
+    "question_at_review": "앞차가 감속하자 자동차가 스스로 속도를 줄이면서 차간거리를 유지한다. 어떤 기능인가?",
+    "correct_number": 2,
+    "correct_choice": "전방 차량을 따라 속도와 차간거리를 조정하는 ACC",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "운전자가 지정한 일정 속도만 유지하는 일반 정속장치",
+        "verdict": "incorrect",
+        "rationale": "일반 정속장치는 앞차 차간거리 대응과 구별돼"
+      },
+      {
+        "number": 2,
+        "text": "전방 차량을 따라 속도와 차간거리를 조정하는 ACC",
+        "verdict": "correct",
+        "rationale": "ACC는 레이더·카메라 등으로 앞차를 인지하고 설정속도 범위에서 거리유지를 위해 구동력과 제동을 조절한다."
+      },
+      {
+        "number": 3,
+        "text": "긴급 충돌회피에서 순간 제동을 시행하는 AEB",
+        "verdict": "incorrect",
+        "rationale": "AEB는 주로 충돌 긴급제동이고 지속 차간거리유지와 달라"
+      },
+      {
+        "number": 4,
+        "text": "차선을 벗어날 때 조향을 보조하는 LKA",
+        "verdict": "incorrect",
+        "rationale": "LKA는 차선 보조로 전방속도추종의 직접 기능이 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q12",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 12,
+    "question_at_review": "퓨즈가 끊어지지 않았는데 릴레이 부하 출력 측 전압이 없다. 우선 확인할 전기 진단은?",
+    "correct_number": 2,
+    "correct_choice": "릴레이 입력·출력 및 코일 제어전원의 부하 전압강하 점검",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "도어잠금 모터의 기계적 작동음만 비교",
+        "verdict": "incorrect",
+        "rationale": "도어 액추에이터의 잠금기능은 릴레이 출력 접점 전압확인이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "릴레이 입력·출력 및 코일 제어전원의 부하 전압강하 점검",
+        "verdict": "correct",
+        "rationale": "릴레이 입력·코일 제어와 접점의 출력전압을 부하 통전 조건에서 비교해야 전원누락·접촉불량·배선 문제를 구분할 수 있다. 차량 회로도와 안전 절차를 기준으로 계측한다."
+      },
+      {
+        "number": 3,
+        "text": "타이어 주입 밸브의 밀봉력만 검사",
+        "verdict": "incorrect",
+        "rationale": "흡기 압력센서로 릴레이 접점·제어 전압을 직접 재지 못해"
+      },
+      {
+        "number": 4,
+        "text": "엔진 매니폴드 공기압만 측정",
+        "verdict": "incorrect",
+        "rationale": "타이어 밸브는 릴레이 출력회로를 계측하는 장비가 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q13",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 13,
+    "question_at_review": "두 저항을 병렬 연결하고 전원을 가했다. 각 저항의 양단에 공통으로 유지되는 전기량은?",
+    "correct_number": 1,
+    "correct_choice": "공통 전원 두 노드의 전압",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "공통 전원 두 노드의 전압",
+        "verdict": "correct",
+        "rationale": "병렬 회로의 각 가지는 동일한 두 노드에 연결돼 같은 전압이 걸린다. 전류는 저항값에 따라 달라지며 합성저항은 가장 작은 저항보다 작다."
+      },
+      {
+        "number": 2,
+        "text": "각 부품에서 소비하는 전력",
+        "verdict": "incorrect",
+        "rationale": "전력은 저항과 전압에 따라 각 가지마다 달라질 수 있어"
+      },
+      {
+        "number": 3,
+        "text": "각 부품의 물리 저항값",
+        "verdict": "incorrect",
+        "rationale": "병렬 구성이라고 각 저항 자체의 저항값이 같아지진 않아"
+      },
+      {
+        "number": 4,
+        "text": "모든 저항에 흐르는 전류의 크기",
+        "verdict": "incorrect",
+        "rationale": "저항값이 다르면 각 가지 전류 크기도 달라져"
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q14",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 14,
+    "question_at_review": "차량용 충전식 납산배터리에서 충전과 방전이 반복되는 기본 원리는?",
+    "correct_number": 3,
+    "correct_choice": "전기 에너지와 화학 에너지 사이의 가역적인 전환",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "회전자와 고정자의 기계적 결합으로 전기가 생산된다",
+        "verdict": "incorrect",
+        "rationale": "회전자/고정자 기계발전은 배터리 내부 화학 반응이 아니야"
+      },
+      {
+        "number": 2,
+        "text": "내부 전극은 전기화학 반응 없이 전압만 저장한다",
+        "verdict": "incorrect",
+        "rationale": "전극이 화학 변화 없이 전압만 저장하는 건 납산 축전지 원리와 달라"
+      },
+      {
+        "number": 3,
+        "text": "전기 에너지와 화학 에너지 사이의 가역적인 전환",
+        "verdict": "correct",
+        "rationale": "축전지는 충전 시 전기에너지를 화학적 형태로 저장하고 방전 시 전력을 공급한다. 실제 반응은 납산·리튬이온 등 화학계마다 다르다."
+      },
+      {
+        "number": 4,
+        "text": "12V 자동차 배터리는 충전 시 기계적 회전 에너지를 직접 저장한다",
+        "verdict": "incorrect",
+        "rationale": "12V 배터리에 기계적 회전운동이 직접 저장되지는 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q15",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 15,
+    "question_at_review": "전방충돌 경고장치가 장애물과 거리를 계산해 경고한다. AEB와 구분되는 기본 목적은?",
+    "correct_number": 3,
+    "correct_choice": "충돌 위험을 운전자에게 경고하는 것",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "주유구 압력을 제어하는 것",
+        "verdict": "incorrect",
+        "rationale": "주유구 압력 제어는 전방충돌 경고와 달라"
+      },
+      {
+        "number": 2,
+        "text": "항상 차를 자동으로 완전 정지시키는 것",
+        "verdict": "incorrect",
+        "rationale": "FCW는 일반적으로 경고기능이며 자동 완전정지 보장은 AEB도 못해"
+      },
+      {
+        "number": 3,
+        "text": "충돌 위험을 운전자에게 경고하는 것",
+        "verdict": "correct",
+        "rationale": "FCW는 전방 위험을 감지해 경고하지만 제동 개입은 AEB의 기능이다. 두 시스템이 결합된 차량도 있으므로 기능을 구분해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "연료의 옥탄가를 감시하는 것",
+        "verdict": "incorrect",
+        "rationale": "연료 옥탄가 감지는 FCW 경고조건이 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q16",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 16,
+    "question_at_review": "스캔툴에서 P 코드가 하나 나타났다. DTC가 의미하는 것은?",
+    "correct_number": 3,
+    "correct_choice": "진단시스템이 기록한 결함 관련 코드",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "모든 차에 동일한 구동 배터리 수명",
+        "verdict": "incorrect",
+        "rationale": "DTC는 구동배터리 수명 자체를 나타내는 코드가 아니야"
+      },
+      {
+        "number": 2,
+        "text": "정비사가 수동으로 입력한 고정 가격",
+        "verdict": "incorrect",
+        "rationale": "정비 가격이 아닌 고장진단 정보야"
+      },
+      {
+        "number": 3,
+        "text": "진단시스템이 기록한 결함 관련 코드",
+        "verdict": "correct",
+        "rationale": "DTC는 ECU가 감지한 이상 조건을 표준 또는 제작사 코드로 표현한다. 코드가 원인 부품을 단정하는 것은 아니므로 실측 데이터와 회로 검사가 필요하다."
+      },
+      {
+        "number": 4,
+        "text": "실제 고장 부품을 100% 확정한 결과",
+        "verdict": "incorrect",
+        "rationale": "DTC 한 개가 불량 부품을 100% 확정하진 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q17",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 17,
+    "question_at_review": "냉매가 증발기를 흐르면서 주변 공기의 열을 흡수한다. 이때 일어나는 상태 변화는?",
+    "correct_number": 1,
+    "correct_choice": "저압측 냉매가 액체를 포함한 상태에서 증발해 기상으로 변한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "저압측 냉매가 액체를 포함한 상태에서 증발해 기상으로 변한다",
+        "verdict": "correct",
+        "rationale": "증발기는 낮은 압력의 냉매가 주변 열을 흡수하여 증발하는 열교환기다. 실제 입·출구의 기상·액상 상태는 운전 조건과 과열도에 따라 달라진다."
+      },
+      {
+        "number": 2,
+        "text": "냉매가 브레이크액으로 바뀐다",
+        "verdict": "incorrect",
+        "rationale": "증발기가 브레이크액을 냉매로 화학 변환하지 않아"
+      },
+      {
+        "number": 3,
+        "text": "냉매가 바로 압축돼 고압 액체로만 변한다",
+        "verdict": "incorrect",
+        "rationale": "증발기에서 압축돼 고압액체로 변하는 건 일반 냉동사이클과 달라"
+      },
+      {
+        "number": 4,
+        "text": "공기 중 산소가 냉매로 화학 반응한다",
+        "verdict": "incorrect",
+        "rationale": "대기 산소가 냉매로 화학반응하는 과정이 아니야"
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "증발기 내 냉매 상태는 냉방 열역학/과열도·차종별 설계에 좌우되고 전기전자 과목범위 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q18",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 18,
+    "question_at_review": "컴프레서 오일이 부족할 때 냉방 압축기에서 우려할 현상은?",
+    "correct_number": 4,
+    "correct_choice": "내부 마찰부의 윤활 부족과 과열·마모",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "냉매 순환과 아무 관련 없는 타이어 펑크",
+        "verdict": "incorrect",
+        "rationale": "윤활유 부족이 타이어 펑크를 직접 일으키지 않아"
+      },
+      {
+        "number": 2,
+        "text": "엔진의 연료분사가 무조건 중지",
+        "verdict": "incorrect",
+        "rationale": "압축기 윤활 부족이 연료 분사를 반드시 중단시키진 않아"
+      },
+      {
+        "number": 3,
+        "text": "외부 브레이크캘리퍼만 과열",
+        "verdict": "incorrect",
+        "rationale": "제동 캘리퍼 과열만을 초래한다는 설명은 부정확해"
+      },
+      {
+        "number": 4,
+        "text": "내부 마찰부의 윤활 부족과 과열·마모",
+        "verdict": "correct",
+        "rationale": "압축기 윤활유는 기계적 마찰을 줄이고 부품을 보호하며 냉매와 함께 순환할 수 있다. 지정 규격과 주입량을 확인해야 한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "컴프레서 윤활유는 냉매별 규격과 오일량/압력 안전; OEM 냉매 회수장비와 정비절차 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q19",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 19,
+    "question_at_review": "스마트키로 원격 잠금을 해제할 때 차량과 키 사이에서 일어나는 과정은?",
+    "correct_number": 2,
+    "correct_choice": "적절한 무선 통신과 인증 정보 교환",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "외부 기어를 물리적으로 회전시켜 인증",
+        "verdict": "incorrect",
+        "rationale": "키 인증에서 외부 기어를 기계적으로 직접 돌리지 않아"
+      },
+      {
+        "number": 2,
+        "text": "적절한 무선 통신과 인증 정보 교환",
+        "verdict": "correct",
+        "rationale": "스마트키는 RF와 LF 등 차종별 통신 경로로 키를 인식하고 인증한다. 단일 RF 방식으로 모든 시스템을 일반화하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "차량 배기압력으로 암호를 생성",
+        "verdict": "incorrect",
+        "rationale": "배기 압력은 키-차량의 인증정보 생성수단이 아니야"
+      },
+      {
+        "number": 4,
+        "text": "유압 배관에서 디지털 비트를 전달",
+        "verdict": "incorrect",
+        "rationale": "유압 배관으로 무선 암호 인증비트를 전달하지 않아"
+      }
+    ],
+    "source_urls": [
+      "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r08-s03-q20",
+    "subject": "electrical",
+    "round": 8,
+    "question_number": 20,
+    "question_at_review": "차량 CAN 프레임을 분석하고 있다. CAN 데이터 프레임과 계층이 다른 항목은?",
+    "correct_number": 1,
+    "correct_choice": "인터넷 프로토콜(IP)의 목적지 주소",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "인터넷 프로토콜(IP)의 목적지 주소",
+        "verdict": "correct",
+        "rationale": "일반적인 CAN 프레임은 식별자·제어·데이터·CRC·ACK 등을 포함한다. IP 주소는 별도의 네트워크 계층 기술이며 CAN 기본 프레임의 필드가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "ACK 및 프레임 경계 비트",
+        "verdict": "incorrect",
+        "rationale": "IP 목적지 주소는 CAN 기본 데이터프레임 필드가 아니야"
+      },
+      {
+        "number": 3,
+        "text": "CAN 식별자와 제어 필드",
+        "verdict": "incorrect",
+        "rationale": "ACK/프레임 경계는 CAN 프레임 구성요소야"
+      },
+      {
+        "number": 4,
+        "text": "데이터 영역과 CRC",
+        "verdict": "incorrect",
+        "rationale": "식별자/제어필드는 CAN 기본 프레임 필드야"
+      }
+    ],
+    "source_urls": [
+      "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  }
+]

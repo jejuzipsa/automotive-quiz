@@ -19,7 +19,17 @@
     "explanation_id": "auto-made-r08-s03-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.lin-cia.org/en/technology/",
+        "https://www.nxp.com/products/TJA1421"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q02",
@@ -41,7 +51,16 @@
     "explanation_id": "auto-made-r08-s03-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q03",
@@ -63,7 +82,16 @@
     "explanation_id": "auto-made-r08-s03-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q04",
@@ -85,7 +113,18 @@
     "explanation_id": "auto-made-r08-s03-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": [
+        "ESC 동역학/조향입력은 섀시 과목과 경계. 산소센서의 무관성은 맞아도 과목 재분류 검토"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q05",
@@ -107,7 +146,16 @@
     "explanation_id": "auto-made-r08-s03-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.littelfuse.com/en/products/fuses-overcurrent-protection/fuses"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q06",
@@ -129,7 +177,18 @@
     "explanation_id": "auto-made-r08-s03-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "hold_reasons": [
+        "ESC 개별 제동은 섀시 과목과 범위가 중복. 공식 직무·출제기준 대조 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q07",
@@ -152,7 +211,16 @@
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
     "publishable": false,
-    "editorial_revision": "technical_qa1_reviewed"
+    "editorial_revision": "technical_qa1_reviewed",
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.epa.gov/mvac/acceptable-refrigerants-and-their-impacts"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q08",
@@ -174,7 +242,16 @@
     "explanation_id": "auto-made-r08-s03-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q09",
@@ -196,7 +273,18 @@
     "explanation_id": "auto-made-r08-s03-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "냉매 고저압/컴프레서 진동은 차종별 계측 및 고압 냉매 작업 안전 검증 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q10",
@@ -218,7 +306,18 @@
     "explanation_id": "auto-made-r08-s03-q10",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": [
+        "스마트키 백업 인식은 차량·제조사별 비상시동 절차가 달라 OEM 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q11",
@@ -255,6 +354,15 @@
       ],
       "review_note": "Bosch ACC는 전방차와 간격을 유지하는 속도 제어로, 일반 정속주행·AEB·LKA와 기능이 다름을 확인했다.",
       "reviewed_alternatives": 4
+    },
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -266,18 +374,28 @@
     "source_question_id": "auto-r08-s03-q12",
     "round": 8,
     "question_number": 12,
-    "question": "하네스 단락으로 전류가 과다하게 흐른다. 해당 회로의 과전류 보호 부품은?",
+    "question": "퓨즈가 끊어지지 않았는데 릴레이 부하 출력 측 전압이 없다. 우선 확인할 전기 진단은?",
     "choices": [
-      "중앙잠금 도어 액추에이터",
-      "차량 정격에 맞게 선정된 퓨즈",
-      "타이어 공기주입용 밸브",
-      "흡기 매니폴드 압력센서"
+      "도어잠금 모터의 기계적 작동음만 비교",
+      "릴레이 입력·출력 및 코일 제어전원의 부하 전압강하 점검",
+      "타이어 주입 밸브의 밀봉력만 검사",
+      "엔진 매니폴드 공기압만 측정"
     ],
     "answer": 2,
     "explanation_id": "auto-made-r08-s03-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa32_relay_output_voltage_diagnosis",
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q13",
@@ -299,7 +417,16 @@
     "explanation_id": "auto-made-r08-s03-q13",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q14",
@@ -328,6 +455,15 @@
       "change_note": "충방전 전기화학 반응과 기계 에너지 구별",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
     }
   },
   {
@@ -350,7 +486,16 @@
     "explanation_id": "auto-made-r08-s03-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q16",
@@ -372,7 +517,16 @@
     "explanation_id": "auto-made-r08-s03-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.fluke.com/en-us/learn/blog/digital-multimeters/how-to-check-starter-circuit-voltage-drop-with-a-multimeter"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q17",
@@ -394,7 +548,18 @@
     "explanation_id": "auto-made-r08-s03-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "증발기 내 냉매 상태는 냉방 열역학/과열도·차종별 설계에 좌우되고 전기전자 과목범위 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q18",
@@ -416,7 +581,18 @@
     "explanation_id": "auto-made-r08-s03-q18",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "hold_reasons": [
+        "컴프레서 윤활유는 냉매별 규격과 오일량/압력 안전; OEM 냉매 회수장비와 정비절차 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r08-s03-q19",
@@ -438,7 +614,16 @@
     "explanation_id": "auto-made-r08-s03-q19",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r08-s03-q20",
@@ -460,6 +645,15 @@
     "explanation_id": "auto-made-r08-s03-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa32": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://kvaser.com/lesson/addressing-arbitration-identification-message-reaches-controller/"
+      ],
+      "hold_reasons": []
+    }
   }
 ]
