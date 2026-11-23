@@ -993,5 +993,46 @@
     "audit": "data/qa/technical-qa7-electrical-r01-option-audit.json",
     "report": "docs/TECHNICAL_QA7.md",
     "next": "round01 eco 20 question 80 option audit"
+  },
+  "technical_qa8": {
+    "date": "2026-11-23",
+    "batch": "round01_eco_01_to_20",
+    "questions_firstpass_reviewed": 20,
+    "options_with_rationales": 80,
+    "source_supported_first_pass": 7,
+    "pending_additional_safety_or_syllabus_review": 13,
+    "pending_question_numbers": [
+      1,
+      2,
+      3,
+      6,
+      8,
+      9,
+      13,
+      14,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "existing_subject_holds_preserved": [
+      18,
+      19
+    ],
+    "round01_four_subjects_first_pass_question_count": 80,
+    "round01_first_pass_options": 320,
+    "round01_first_pass_reference_supported_total": 44,
+    "round01_pending_additional_review_total": 36,
+    "round02_through_round09_option_review_remaining_questions": 640,
+    "remaining_choice_options": 2560,
+    "firstpass_reviewed_is_not_independent_final_approval": true,
+    "technical_answer_final_approved": 0,
+    "public_reconstructed_past_count": 0,
+    "classification_holds_total": 47,
+    "question_or_explanation_changes_this_batch": 0,
+    "qa8_audit": "data/qa/technical-qa8-eco-r01-option-audit.json",
+    "qa8_report": "docs/TECHNICAL_QA8.md",
+    "next": "resolve r01 eco q7/q17 duplicate; round02 engine20 option-by-option technical primary-reference screening"
   }
 }
