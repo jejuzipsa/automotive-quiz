@@ -1,0 +1,818 @@
+[
+  {
+    "id": "auto-made-r07-s01-q01",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 1,
+    "question_at_review": "터보차저와 차지 에어 쿨러의 위치를 설명한다. 터보 본체 외부에서 압축공기를 식히는 부품은?",
+    "correct_number": 3,
+    "correct_choice": "압축기 출구와 흡기 사이에 놓인 인터쿨러",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "배기가스로 터빈을 회전시키는 터빈 휠",
+        "verdict": "incorrect",
+        "rationale": "터빈 휠은 배기가스 에너지를 회전력으로 전달하지만 압축공기를 식히는 외부 열교환기가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "윤활축을 지지하는 센터 하우징",
+        "verdict": "incorrect",
+        "rationale": "센터 하우징은 회전축/베어링을 지지하는 부분으로 인터쿨러 기능과 다르다."
+      },
+      {
+        "number": 3,
+        "text": "압축기 출구와 흡기 사이에 놓인 인터쿨러",
+        "verdict": "correct",
+        "rationale": "인터쿨러는 터보 압축기와 엔진 흡기 사이의 압축공기를 냉각하는 열교환기다."
+      },
+      {
+        "number": 4,
+        "text": "배기 유량을 조절하는 웨이스트게이트",
+        "verdict": "incorrect",
+        "rationale": "웨이스트게이트는 터빈 우회 배기가스를 제어하며 공기 냉각용 열교환기가 아니다."
+      }
+    ],
+    "source_urls": "https://www.garrettmotion.com/knowledge-center-category/oem/basic/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q02",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 2,
+    "question_at_review": "엔진 ECU 실시간 데이터를 확인할 때 스캔툴로 직접 측정할 수 없는 물리적 성질은?",
+    "correct_number": 2,
+    "correct_choice": "시험용 점도계로 측정해야 하는 변속기 오일의 실제 점도",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "ECU가 계산한 연료 분사 보정값",
+        "verdict": "incorrect",
+        "rationale": "ECU의 연료 분사 보정값은 연산/진단값으로 제공될 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "시험용 점도계로 측정해야 하는 변속기 오일의 실제 점도",
+        "verdict": "correct",
+        "rationale": "ATF의 실제 점도는 전용 측정이 필요해 일반 스캔툴 센서 데이터만으로 직접 실측할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "ECU가 읽은 크랭크축 회전수",
+        "verdict": "incorrect",
+        "rationale": "CKP 센서에서 읽힌 회전수는 지원되는 엔진 실시간 진단값이다."
+      },
+      {
+        "number": 4,
+        "text": "ECU가 수신한 엔진 냉각수 온도",
+        "verdict": "incorrect",
+        "rationale": "엔진 냉각수 온도 센서 데이터는 ECU가 지원하는 진단 정보다."
+      }
+    ],
+    "source_urls": "https://www.boschdiagnostics.com/products/bosch-obd-1150",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q03",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 3,
+    "question_at_review": "디젤 커먼레일 목표압력이 낮아지는 제어 명령이 내려졌다. 압력 조절에 직접 관여하는 것은?",
+    "correct_number": 1,
+    "correct_choice": "연료 레일압 제어 밸브와 고압펌프 공급량 제어계통",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료 레일압 제어 밸브와 고압펌프 공급량 제어계통",
+        "verdict": "correct",
+        "rationale": "커먼레일 압력제어 밸브와 고압펌프 공급량 제어계통은 레일 압력 조절에 직접 관여한다."
+      },
+      {
+        "number": 2,
+        "text": "냉방 증발기 온도 스위치만",
+        "verdict": "incorrect",
+        "rationale": "냉방 증발기 온도스위치만으로 고압 연료 레일 목표압을 제어하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "타이어 회전 속도 센서만",
+        "verdict": "incorrect",
+        "rationale": "타이어 회전속도센서만으로 레일압 제어를 수행하는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "도어 잠금 구동기만",
+        "verdict": "incorrect",
+        "rationale": "도어록 액추에이터만으로 디젤 레일압 목표값을 조절할 수는 없다."
+      }
+    ],
+    "source_urls": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/",
+    "hold_reasons": [
+      "레일압 제어 방식은 SCV/DRV/펌프 공급 제어 등 차종별로 다르고 고압연료 접근 위험이 있어 OEM 정비자료 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q04",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 4,
+    "question_at_review": "인젝터 시험기에서 분사 분무가 한쪽으로 치우친다. 직접 점검할 가능성이 큰 항목은?",
+    "correct_number": 1,
+    "correct_choice": "분사노즐 분무구 막힘·니들 고착 등 노즐 상태",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "분사노즐 분무구 막힘·니들 고착 등 노즐 상태",
+        "verdict": "correct",
+        "rationale": "분사 패턴이 치우치면 분무구 막힘, 니들 고착·마모 등 노즐 상태를 의심할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "흡기 매니폴드 압력센서만",
+        "verdict": "incorrect",
+        "rationale": "흡기 매니폴드 압력값만으로 시험기에서 관찰한 분사노즐 패턴을 설명하지 못한다."
+      },
+      {
+        "number": 3,
+        "text": "EGR 밸브 재순환 비율만",
+        "verdict": "incorrect",
+        "rationale": "EGR 재순환 명령만으로 분리 노즐의 분무 편향 원인을 확정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "실린더 압축압력만",
+        "verdict": "incorrect",
+        "rationale": "실린더 압축압력만으로 인젝터 분무구의 막힘 여부는 확인하기 어렵다."
+      }
+    ],
+    "source_urls": "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+    "hold_reasons": [
+      "기계식/커먼레일 분사방식과 시험압력·연료 분사/피부주입 안전에 따른 전용장비 기준 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q05",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 5,
+    "question_at_review": "가솔린 엔진에서 가속할 때 금속성 노킹이 증가했다. 노킹을 유발할 수 있는 조건은?",
+    "correct_number": 2,
+    "correct_choice": "높은 압축온도와 부적절하게 앞선 점화시기",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "적정 옥탄가 연료와 정상 냉각",
+        "verdict": "incorrect",
+        "rationale": "정상 옥탄가와 적절한 냉각이 노킹 증가의 직접적인 유발조건이라는 설명은 부적절하다."
+      },
+      {
+        "number": 2,
+        "text": "높은 압축온도와 부적절하게 앞선 점화시기",
+        "verdict": "correct",
+        "rationale": "고온·높은 압축압과 과도하게 앞선 점화 시기는 엔드가스의 자기착화/노킹 위험을 높인다."
+      },
+      {
+        "number": 3,
+        "text": "연료 분사가 완전히 중단된 정지 상태",
+        "verdict": "incorrect",
+        "rationale": "연료분사가 끊긴 정지 엔진은 가속 중 노킹 발생 상황과 다르다."
+      },
+      {
+        "number": 4,
+        "text": "냉각수가 정해진 온도에서 순환하는 것 자체",
+        "verdict": "incorrect",
+        "rationale": "적정 냉각수 온도 유지 그 자체가 이상 노킹의 주요 유발조건은 아니다."
+      }
+    ],
+    "source_urls": "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q06",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 6,
+    "question_at_review": "경유차 매연 검사 허용치를 문제로 만들 때 법적 오답을 막기 위한 조건은?",
+    "correct_number": 1,
+    "correct_choice": "해당 차량 제작연도·검사 시점·검사방식의 적용 법규를 함께 명시",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "해당 차량 제작연도·검사 시점·검사방식의 적용 법규를 함께 명시",
+        "verdict": "correct",
+        "rationale": "검사 허용값을 정하려면 제작연도·검사일·검사 방식과 해당 법규를 지정해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "배출가스 검사 규정을 연료 종류와 무관하게 사용",
+        "verdict": "incorrect",
+        "rationale": "연료·동력장치별로 배출 기준이 다르므로 구분없이 적용하기 어렵다."
+      },
+      {
+        "number": 3,
+        "text": "국가가 달라도 수치를 그대로 적용",
+        "verdict": "incorrect",
+        "rationale": "다른 나라의 배출 허용 수치를 국내 규정에 그대로 대입할 수는 없다."
+      },
+      {
+        "number": 4,
+        "text": "연도와 차량 조건을 지우고 무조건 20%라고 표기",
+        "verdict": "incorrect",
+        "rationale": "제작연도·검사방식을 빼고 매연허용률을 무조건 20%로 단정할 수 없다."
+      }
+    ],
+    "source_urls": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290737",
+    "hold_reasons": [
+      "2026 국내 자동차 배출가스검사·제작연도별 기준과 시험 출제 법령기준일을 공식자료로 확정하기 전까지 수치/법령 최종승인 보류"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q07",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 7,
+    "question_at_review": "가솔린 CVVT 액추에이터가 작동한다. 이 시스템이 직접 변화시키는 대상은?",
+    "correct_number": 4,
+    "correct_choice": "운전 조건에 따른 흡·배기 밸브 개폐 위상",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "휠 허브 베어링의 압입 깊이",
+        "verdict": "incorrect",
+        "rationale": "차륜 허브 베어링 압입 깊이는 CVVT의 제어 대상이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "도어 체커의 개방각 위치",
+        "verdict": "incorrect",
+        "rationale": "도어 체커의 개방각도는 가변밸브타이밍의 목적과 무관하다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 주입구의 구경",
+        "verdict": "incorrect",
+        "rationale": "연료 주입구 구경이 CVVT 제어로 변경되지는 않는다."
+      },
+      {
+        "number": 4,
+        "text": "운전 조건에 따른 흡·배기 밸브 개폐 위상",
+        "verdict": "correct",
+        "rationale": "CVVT는 운전조건에 맞게 캠 위상을 조절해 흡기/배기 밸브 개폐 타이밍을 바꾼다."
+      }
+    ],
+    "source_urls": "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/camshaft-adjustment/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q08",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 8,
+    "question_at_review": "MAP 센서의 단위가 kPa로 표시된다. 이 값이 의미하는 물리량은?",
+    "correct_number": 3,
+    "correct_choice": "흡기 매니폴드 내부의 절대 압력",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료탱크의 액체 부피",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 액체 부피는 MAP의 압력 측정량과 다르다."
+      },
+      {
+        "number": 2,
+        "text": "배터리 단자 간 저항값",
+        "verdict": "incorrect",
+        "rationale": "전기 저항의 단위는 Ω이며 MAP 센서 kPa와 다르다."
+      },
+      {
+        "number": 3,
+        "text": "흡기 매니폴드 내부의 절대 압력",
+        "verdict": "correct",
+        "rationale": "MAP는 흡기매니폴드의 절대압력에 대한 정보를 제공한다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 트레드 깊이",
+        "verdict": "incorrect",
+        "rationale": "타이어 트레드 깊이는 길이 단위이므로 MAP kPa 측정 대상이 아니다."
+      }
+    ],
+    "source_urls": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/map-sensor/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q09",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 9,
+    "question_at_review": "엔진 정지 후 연료탱크에서 나온 증발연료를 모아 둔다. 관련 부품은?",
+    "correct_number": 2,
+    "correct_choice": "활성탄을 사용해 증발가스를 흡착하는 캐니스터",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "유성기어의 캐리어",
+        "verdict": "incorrect",
+        "rationale": "유성기어 캐리어는 증발연료 흡착 저장용 부품이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "활성탄을 사용해 증발가스를 흡착하는 캐니스터",
+        "verdict": "correct",
+        "rationale": "활성탄 캐니스터는 탱크 증발가스를 포집하고 제어에 따라 흡기로 배출한다."
+      },
+      {
+        "number": 3,
+        "text": "타이로드 엔드 조인트",
+        "verdict": "incorrect",
+        "rationale": "타이로드 엔드는 조향 연결부로 증발가스 흡착용 부품이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "엔진 냉각수 서모스탯",
+        "verdict": "incorrect",
+        "rationale": "냉각수 서모스탯은 냉각수 흐름/온도를 조절할 뿐 증발연료를 흡착하지 않는다."
+      }
+    ],
+    "source_urls": "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/activated-carbon-canister/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q10",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 10,
+    "question_at_review": "피스톤 링 세트의 기능을 평가한다. 직접적인 역할과 거리가 먼 기능은?",
+    "correct_number": 2,
+    "correct_choice": "ECU가 계산하는 연료 분사 시기 결정",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "피스톤 열의 실린더벽 전달 보조",
+        "verdict": "incorrect",
+        "rationale": "피스톤링은 연소실 열을 피스톤에서 실린더 벽으로 전달하는 데 기여한다."
+      },
+      {
+        "number": 2,
+        "text": "ECU가 계산하는 연료 분사 시기 결정",
+        "verdict": "correct",
+        "rationale": "연료 분사시기를 계산하는 기능은 ECU/분사계통이 담당하며 피스톤링의 직접 역할이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "피스톤과 실린더 사이 오일량 조절",
+        "verdict": "incorrect",
+        "rationale": "오일컨트롤링은 실린더 벽에 남는 윤활유량을 조절한다."
+      },
+      {
+        "number": 4,
+        "text": "실린더 연소가스의 기밀 유지",
+        "verdict": "incorrect",
+        "rationale": "압축링은 연소가스가 크랭크케이스로 새지 않도록 기밀 유지에 기여한다."
+      }
+    ],
+    "source_urls": "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q11",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 11,
+    "question_at_review": "타이밍 벨트가 한 톱니 어긋났을 때 직접 변하는 것은?",
+    "correct_number": 1,
+    "correct_choice": "크랭크축과 캠축 사이의 상대 회전 위상",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "크랭크축과 캠축 사이의 상대 회전 위상",
+        "verdict": "correct",
+        "rationale": "타이밍 벨트가 한 톱니 어긋나면 크랭크축과 캠축의 상대 위상이 변한다."
+      },
+      {
+        "number": 2,
+        "text": "기계식 밸브 스프링의 자유장 길이",
+        "verdict": "incorrect",
+        "rationale": "벨트 치형 이탈이 밸브스프링 자유장 자체를 직접 변경하지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "크랭크축 베어링의 오일 간극",
+        "verdict": "incorrect",
+        "rationale": "벨트 타이밍 오차만으로 메인베어링 오일간극을 직접 바꾸지는 않는다."
+      },
+      {
+        "number": 4,
+        "text": "연료레일 내부의 펌프 공급 압력",
+        "verdict": "incorrect",
+        "rationale": "캠위상 오차가 곧바로 연료레일 펌프 공급압을 직접 정하는 것은 아니다."
+      }
+    ],
+    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q12",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 12,
+    "question_at_review": "디젤 인젝터의 분무 품질을 실제 작동조건에 맞춰 평가하려 한다. 필요한 장비는?",
+    "correct_number": 1,
+    "correct_choice": "해당 분사방식에 맞는 인젝터 시험기와 시험절차",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "해당 분사방식에 맞는 인젝터 시험기와 시험절차",
+        "verdict": "correct",
+        "rationale": "분사방식에 맞는 노즐/인젝터 전용 시험대와 지정 조건이 분무 품질 평가에 필요하다."
+      },
+      {
+        "number": 2,
+        "text": "브레이크액 수분 측정기만",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 수분측정기는 디젤 노즐 분무/분사압력 시험 장비가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "연료캡의 치수 측정자만",
+        "verdict": "incorrect",
+        "rationale": "연료캡 치수만 재도 인젝터 분무 패턴을 확인할 수 있는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "일반 실내 소음계 하나",
+        "verdict": "incorrect",
+        "rationale": "실내 소음계만으로 인젝터 분무량과 미립화 상태를 판정할 수는 없다."
+      }
+    ],
+    "source_urls": "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+    "hold_reasons": [
+      "디젤 고압 인젝터 시험은 고압 분사·피부 주입·장비 오염 위험으로 전문장비/OEM 검사 기준 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q13",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 13,
+    "question_at_review": "SCR 요소수 용액의 주성분을 고르는 문제다. 환원제로 암모니아를 공급하는 원료는?",
+    "correct_number": 4,
+    "correct_choice": "요소가 녹아 있는 규정 농도의 수용액",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "가솔린용 점화 첨가제",
+        "verdict": "incorrect",
+        "rationale": "가솔린 점화 첨가제는 SCR의 요소수·암모니아 공급원과 다르다."
+      },
+      {
+        "number": 2,
+        "text": "바이오디젤 혼합 휘발유",
+        "verdict": "incorrect",
+        "rationale": "바이오디젤/휘발유 혼합물이 SCR용 요소수의 주성분이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "고농도 엔진 윤활유",
+        "verdict": "incorrect",
+        "rationale": "고농도 엔진 윤활유는 SCR 암모니아 발생 원료가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "요소가 녹아 있는 규정 농도의 수용액",
+        "verdict": "correct",
+        "rationale": "규정 요소 농도 수용액의 요소가 분해되어 촉매 NOx 환원용 암모니아를 제공한다."
+      }
+    ],
+    "source_urls": "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q14",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 14,
+    "question_at_review": "피스톤에 장착된 오일 컨트롤 링이 마모됐다. 직접적인 결과로 가능성이 높은 것은?",
+    "correct_number": 3,
+    "correct_choice": "실린더벽의 윤활유 긁어내기 기능 저하",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료분사 명령 통신속도 증가",
+        "verdict": "incorrect",
+        "rationale": "오일컨트롤링 마모는 연료분사 명령의 통신속도를 직접 올리지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "점화 플러그 불꽃 에너지 증가",
+        "verdict": "incorrect",
+        "rationale": "오일링 마모만으로 점화플러그의 불꽃 에너지가 자동 증가하는 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "실린더벽의 윤활유 긁어내기 기능 저하",
+        "verdict": "correct",
+        "rationale": "오일링의 실린더벽 오일 긁어내기가 저하되면 오일이 연소실로 더 유입될 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "차륜 제동력 자동 보정",
+        "verdict": "incorrect",
+        "rationale": "오일링 마모가 차륜 제동력 제어를 직접 보정하지는 않는다."
+      }
+    ],
+    "source_urls": "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q15",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 15,
+    "question_at_review": "DPF가 포집한 그을음을 제거하는 재생 방법을 설명한다. DPF 재생과 직접 관계없는 작동은?",
+    "correct_number": 4,
+    "correct_choice": "SCR 촉매에 요소수를 분사하는 NOx 환원 제어",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "배기 온도를 높여 포집 그을음을 산화",
+        "verdict": "incorrect",
+        "rationale": "배기온도 제어와 그을음 산화는 DPF 재생과 직접 관계된다."
+      },
+      {
+        "number": 2,
+        "text": "필터의 차압·온도를 감시해 재생 여부 판단",
+        "verdict": "incorrect",
+        "rationale": "DPF 차압·온도신호는 그을음 축적/재생 상태 판단에 이용될 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "재생을 위해 연료 후분사를 제어",
+        "verdict": "incorrect",
+        "rationale": "일부 차량에서 연료 후분사가 배기온도를 높여 DPF 재생을 돕는다."
+      },
+      {
+        "number": 4,
+        "text": "SCR 촉매에 요소수를 분사하는 NOx 환원 제어",
+        "verdict": "correct",
+        "rationale": "요소수 SCR 분사는 주로 NOx 환원용이며 DPF 그을음의 직접 산화 재생 작동과 구분한다."
+      }
+    ],
+    "source_urls": "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q16",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 16,
+    "question_at_review": "실린더에 압축공기를 넣었더니 흡기 매니폴드에서 공기가 샌다. 누설시험으로 추정할 위치는?",
+    "correct_number": 1,
+    "correct_choice": "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+        "verdict": "correct",
+        "rationale": "실린더 누설시험 중 흡기 쪽으로 공기가 빠져나오면 흡기밸브/시트 밀봉 불량을 의심한다."
+      },
+      {
+        "number": 2,
+        "text": "변속기 ATF 쿨러 내부",
+        "verdict": "incorrect",
+        "rationale": "변속기 ATF 쿨러 내부는 실린더 흡기밸브 누설의 직접 경로가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 캘리퍼 피스톤 씰",
+        "verdict": "incorrect",
+        "rationale": "브레이크 캘리퍼 피스톤씰은 실린더 누설시험 공기의 흡기관 배출과 무관하다."
+      },
+      {
+        "number": 4,
+        "text": "차체 사이드미러 장착부",
+        "verdict": "incorrect",
+        "rationale": "사이드미러 체결부는 실린더 압축 기밀 경로가 아니다."
+      }
+    ],
+    "source_urls": "https://www.felpro.com/technical/tecblogs/valve-stem-seals.html",
+    "hold_reasons": [
+      "실린더 TDC, 압축공기 공급, 냉각/회전부 고정 등의 누설시험 안전/OEM 절차 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q17",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 17,
+    "question_at_review": "엔진이 정상 온도에 잘 오르지 않고 히터도 약하다. 서모스탯 고장 양상으로 타당한 것은?",
+    "correct_number": 2,
+    "correct_choice": "열림 고착으로 큰 냉각회로가 일찍 열려 난기가 지연된다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "닫힘 고착으로 냉각수가 정상보다 더 빨리 식는다",
+        "verdict": "incorrect",
+        "rationale": "서모스탯 닫힘 고착은 일반적으로 냉각수 순환 제한·과열 방향이므로 빠른 냉각 설명과 다르다."
+      },
+      {
+        "number": 2,
+        "text": "열림 고착으로 큰 냉각회로가 일찍 열려 난기가 지연된다",
+        "verdict": "correct",
+        "rationale": "열림 고착은 냉각수가 계속 큰 루프를 순환해 엔진 난기와 히터 가열이 지연될 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "온도센서 단선으로 서모스탯 밸브 자체가 물리적으로 열린다",
+        "verdict": "incorrect",
+        "rationale": "수온센서 단선만으로 기계식 서모스탯이 물리적으로 열렸다고 단정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "서모스탯 고장이면 히터코어 유량은 항상 0이 된다",
+        "verdict": "incorrect",
+        "rationale": "서모스탯 고장만으로 히터코어 유량이 모든 경우 반드시 0이 되는 것은 아니다."
+      }
+    ],
+    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/thermostats.html",
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q18",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 18,
+    "question_at_review": "회전 중 저유압 경고등이 간헐적으로 켜진다. 안전한 첫 대응은?",
+    "correct_number": 1,
+    "correct_choice": "안전한 곳에 정차하고 오일량·누유·압력 등을 점검한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "안전한 곳에 정차하고 오일량·누유·압력 등을 점검한다",
+        "verdict": "correct",
+        "rationale": "윤활유 저압경고가 반복되면 안전정지 후 오일량·누설·실압력 확인이 필요하다."
+      },
+      {
+        "number": 2,
+        "text": "경고등을 가리면 오일압력 문제가 해결된다",
+        "verdict": "incorrect",
+        "rationale": "저유압 경고등을 가리는 행위는 실제 윤활불량을 해소하지 못한다."
+      },
+      {
+        "number": 3,
+        "text": "윤활 상태 확인 없이 DPF 재생만 한다",
+        "verdict": "incorrect",
+        "rationale": "저유압 원인을 확인하지 않고 DPF 재생만 시행해도 해결된다고 볼 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "고회전으로 계속 주행해 경고를 무시한다",
+        "verdict": "incorrect",
+        "rationale": "윤활 고장 경고를 무시하고 고회전을 계속하면 엔진 손상 위험이 커진다."
+      }
+    ],
+    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/engine-oil-leaks.html",
+    "hold_reasons": [
+      "실제 주행 중 오일압력 경고의 즉시 정지/재시동과 검사 순서는 제조사 안전 지침 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q19",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 19,
+    "question_at_review": "디젤 배기관에서 냉각수 냄새가 나고 흰 증기가 지속된다. 우선 의심할 경로는?",
+    "correct_number": 3,
+    "correct_choice": "헤드가스켓 등의 문제로 냉각수가 연소실에 유입되는 경로",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료분사량 과다만으로 냉각수 감소를 설명한다",
+        "verdict": "incorrect",
+        "rationale": "연료분사량 과다만으로 배기가스 냉각수 냄새와 실제 냉각수 감소를 확정 설명하지 못한다."
+      },
+      {
+        "number": 2,
+        "text": "배기관 응축수만으로 냉각수 지속 감소를 설명한다",
+        "verdict": "incorrect",
+        "rationale": "배기관 단순 응축수는 지속적인 냉각수 손실을 설명하기 어렵다."
+      },
+      {
+        "number": 3,
+        "text": "헤드가스켓 등의 문제로 냉각수가 연소실에 유입되는 경로",
+        "verdict": "correct",
+        "rationale": "헤드가스켓 등 누설로 냉각수가 연소실에 유입되면 흰 수증기·냉각수 감소가 나타날 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "연료필터 막힘만으로 냉각수 감소를 설명한다",
+        "verdict": "incorrect",
+        "rationale": "연료필터 막힘만으로 냉각수의 지속 손실을 설명하기 어렵다."
+      }
+    ],
+    "source_urls": "https://www.felpro.com/gaskets-101/common-oil-gasket-leaks.html",
+    "hold_reasons": [
+      "흰 연기/증기는 연료 미연소·저온 결로도 가능, 엔진별 냉각계 압력 및 가스 분석 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r07-s01-q20",
+    "subject": "engine",
+    "round": 7,
+    "question_number": 20,
+    "question_at_review": "가솔린 엔진 실린더의 크랭킹 압축압력을 측정할 때 직접 필요한 계측 장비는?",
+    "correct_number": 2,
+    "correct_choice": "압축압력 게이지와 규정된 크랭킹 절차",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "흡기 매니폴드 진공 게이지만",
+        "verdict": "incorrect",
+        "rationale": "흡기진공 게이지 하나는 크랭킹 실린더 압축압력을 직접 계측하지 못한다."
+      },
+      {
+        "number": 2,
+        "text": "압축압력 게이지와 규정된 크랭킹 절차",
+        "verdict": "correct",
+        "rationale": "규정 크랭킹 절차와 압축압력 게이지가 실린더 압축압 측정에 필요하다."
+      },
+      {
+        "number": 3,
+        "text": "연료레일 압력 테스터만",
+        "verdict": "incorrect",
+        "rationale": "연료레일 압력 테스터는 고압 연료계용으로 실린더 압축공기압 직접측정과 다르다."
+      },
+      {
+        "number": 4,
+        "text": "점화 2차 파형용 고전압 픽업만",
+        "verdict": "incorrect",
+        "rationale": "점화파형 고전압 픽업만으로 실린더 압축압력을 직접 실측할 수 없다."
+      }
+    ],
+    "source_urls": "https://www.boschautoparts.com/g/diagnostics",
+    "hold_reasons": [
+      "압축압 검사 중 점화/연료 차단·고온부·배터리 상태 등 OEM 정비안전 조건 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  }
+]
