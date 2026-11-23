@@ -1,0 +1,77 @@
+{
+  "date": "2026-11-23",
+  "batch": "QA23-r06-engine",
+  "previous_current_subject_holds": 53,
+  "current_subject_holds_after": 55,
+  "new_subject_holds": [
+    {
+      "id": "auto-made-r06-s01-q04",
+      "question_number": 4,
+      "old_classification_review": null,
+      "new_classification_review": {
+        "status": "hold_do_not_publish",
+        "current_subject": "engine",
+        "suggested_subject": "electrical",
+        "reason": "SAE J1962 OBD CAN-H 물리 배선 핀번호는 일반 엔진정비보다 자동차 전기전자 네트워크 진단 과목 직접 범위 가능성",
+        "classification_verdict": "pending_curriculum_specific_manual_review",
+        "qa23_proposed_action": "Check Q-Net automotive industrial mechanic curriculum and consider replacement/reclassification; do not publish",
+        "qa23_reference_url": "https://www.ni.com/en/support/documentation/supplemental/18/specifications-for-the-can-obd-ii-cable.html"
+      },
+      "technical_final_approval": false
+    },
+    {
+      "id": "auto-made-r06-s01-q14",
+      "question_number": 14,
+      "old_classification_review": null,
+      "new_classification_review": {
+        "status": "hold_do_not_publish",
+        "current_subject": "engine",
+        "suggested_subject": "electrical",
+        "reason": "일반 전원연결 배전반의 화재 초기대응 문항은 자동차 엔진정비의 기술 요소와 직접 관련 부족, 시설 전기안전 범위 가능성",
+        "classification_verdict": "pending_curriculum_specific_manual_review",
+        "qa23_proposed_action": "Check Q-Net automotive industrial mechanic curriculum and consider replacement/reclassification; do not publish",
+        "qa23_reference_url": "https://www.osha.gov/electrical/standards"
+      },
+      "technical_final_approval": false
+    }
+  ],
+  "editorial_revisions": [
+    {
+      "id": "auto-made-r06-s01-q03",
+      "question_number": 3,
+      "before": {
+        "question": "터보차저의 축 유격이 커지고 베어링 부위에서 금속성 소음이 난다. 유격 증가와 구조적으로 연결되는 부품은?",
+        "choices": [
+          "축방향 하중을 지지하는 스러스트 베어링",
+          "연료 분사 시기를 계산하는 ECU 메모리",
+          "연료탱크 증발가스의 캐니스터",
+          "서스펜션 댐퍼의 리바운드 밸브"
+        ],
+        "answer": 1,
+        "reason": "터보차저 축에는 축방향 하중이 걸리며 스러스트 베어링이 이를 지지한다. 마모로 지지 간극이 증가하면 축의 전후 유격과 접촉 위험이 커진다.",
+        "key_point": "터보차저 스러스트 베어링은 축방향 하중을 지지한다.",
+        "correct_choice": "축방향 하중을 지지하는 스러스트 베어링"
+      },
+      "after": {
+        "question": "터보차저의 압축기 휠이 하우징 안쪽과 접촉하고 축의 반경방향 유격이 규정값보다 크다. 가장 직접적인 내부 점검 부위는?",
+        "choices": [
+          "축의 반경방향을 지지하는 저널 베어링과 샤프트 마모 부위",
+          "연료탱크 증발가스 캐니스터의 활성탄",
+          "흡기온도센서의 외관 플라스틱 색상",
+          "서스펜션 댐퍼의 바운드 스토퍼"
+        ],
+        "answer": 1,
+        "reason": "터보차저의 회전축은 베어링에 의해 지지되며, 반경방향 유격 증가와 휠의 하우징 접촉은 저널 베어링·샤프트 마모 또는 윤활 문제 등을 의심할 단서가 된다. 축방향 유격과 스러스트 베어링의 관계를 묻는 바로 앞 2번과 구별해, 이 문항은 **반경방향 지지 및 하우징 접촉**을 학습목표로 한다. 해당 터보 제조사 허용 유격 및 냉각·윤활 조건을 기준으로 검증해야 한다.",
+        "key_point": "반경방향 축 유격은 저널 베어링·샤프트 지지 상태와 관련된다.",
+        "correct_choice": "축의 반경방향을 지지하는 저널 베어링과 샤프트 마모 부위"
+      },
+      "reference_urls": [
+        "https://www.garrettmotion.com/news/newsroom/article/turbo-damage-oil-leakage-and-external-influences-from-installer-connect-experts/",
+        "https://www.garrettmotion.com/tr/racing-and-performance/choosing-a-turbocharger/water-cooling-for-your-turbo/"
+      ],
+      "reason_for_revision": "Earlier Q2 and Q3 both assessed axial shaft play and thrust bearing; QA23 Q3 tests radial journal bearing wear",
+      "final_technical_approval": false,
+      "web_publication": false
+    }
+  ]
+}
