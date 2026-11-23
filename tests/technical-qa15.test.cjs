@@ -16,7 +16,15 @@ assert.equal(ledger.edits.length,2);
 assert.deepEqual(ledger.edits.map(x=>x.id).sort(),["auto-made-r03-s01-q03","auto-made-r03-s01-q14"].sort());
 assert.ok(ledger.edits.every(x=>x.before.answer===x.after.answer));
 assert.ok(ledger.edits.every(x=>x.after.correct_choice===x.after.choices[x.after.answer-1]));
-assert.ok(ledger.edits.every(x=>!qa1.some(y=>y.id===x.id)&&!qa2.some(y=>y.id===x.id)),"historical QA1/QA2 repairs must be preserved without silent supersession");
+assert.ok(ledger.edits.every(x=>!qa1.some(y=>y.id===x.id)),"no QA1 edit may be silently overwritten");
+for(const edit of ledger.edits){
+ const old=qa2.find(x=>x.id===edit.id);
+ if(old){
+  assert.equal(edit.before.question,old.after.question,"QA2->QA15 question chain");
+  assert.deepEqual(edit.before.choices,old.after.choices,"QA2->QA15 option chain");
+  assert.equal(edit.before.reason,old.after.reason,"QA2->QA15 rationale chain");
+ }
+}
 assert.equal(audit.filter(x=>x.evidence_grade==="source_supported_first_pass").length,12);
 assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,8);
 assert.deepEqual(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").map(x=>x.question_number),[4,5,6,12,13,14,15,18]);
