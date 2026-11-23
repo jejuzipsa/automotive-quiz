@@ -20,6 +20,8 @@ const overrides={
 for(const id of ["auto-made-r04-s02-q16","auto-made-r04-s02-q17","auto-made-r04-s02-q18","auto-made-r04-s02-q19","auto-made-r04-s02-q20",
  "auto-made-r05-s02-q16","auto-made-r05-s02-q17","auto-made-r05-s02-q18","auto-made-r05-s02-q19","auto-made-r05-s02-q20"])
  overrides[id]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"chassis",note:"QA41에서 섀시 관련 자체 학습문제로 교체됨. 출제 범위·차량별 안전·권리 검증 전 기존 보류 유지."};
+for(const id of ["auto-made-r06-s02-q16","auto-made-r06-s02-q17","auto-made-r06-s02-q18","auto-made-r06-s02-q19","auto-made-r06-s02-q20"])
+ overrides[id]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"chassis",note:"QA41에서 섀시 자체작성 학습문제로 교체. 상세 출제기준/안전/권리 전문가 승인 전 보류 유지."};
 const majors={
  engine:["과급장치","가솔린 전자제어장치","디젤 전자제어장치","엔진 본체","배출가스장치"],
  chassis:["자동변속기","유압식 현가장치","전자제어 현가장치","전자제어 조향장치","전자제어 제동장치"],
