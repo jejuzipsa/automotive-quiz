@@ -50,7 +50,7 @@
           q.review_status==="approved" &&
           q.technical_answer_status==="independently_approved" &&
           q.rights_cleared===true &&
-          q.subject_classification_review?.status!=="hold_do_not_publish")));
+          q.subject_classification_review?.status!=="hold_do_not_publish"));
   }
   async function loadPublicBank() {
     const status=$("bankLoadStatus");
