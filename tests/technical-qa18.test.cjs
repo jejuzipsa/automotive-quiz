@@ -14,6 +14,7 @@ assert.equal(knownEdits.length,3);
 assert.deepEqual(knownEdits.map(x=>x.id).sort(),["auto-made-r04-s02-q08","auto-made-r04-s02-q12","auto-made-r04-s03-q10"].sort());
 const qa2=read("data/qa/technical-qa2-changes.json");
 const qa41ById=new Map(read("data/qa/technical-qa41-chassis-scope-replacements.json").map(x=>[x.id,x]));
+const qa42ById=new Map(read("data/qa/technical-qa42-eco-scope-replacements.json").map(x=>[x.id,x]));
 let totalQuestions=0,totalOptions=0,sourceSupported=0,held=0;
 for(const subject of subjects){
  const qs=read("data/past/drafts/round04/"+subject+".json");
@@ -26,7 +27,7 @@ for(const subject of subjects){
  assert.equal(s,counts[subject][0]);assert.equal(h,counts[subject][1]);
  sourceSupported+=s;held+=h;
  for(let i=0;i<20;i++){
-  const q=qs[i],e=es[i],a=audit[i],latest=qa41ById.get(q.id);
+  const q=qs[i],e=es[i],a=audit[i],latest=qa42ById.get(q.id)||qa41ById.get(q.id);
   assert.equal(q.id,e.id);assert.equal(q.id,a.id);
   assert.equal(q.round,4);assert.equal(q.subject,subject);assert.equal(q.question_number,i+1);
   assert.equal(a.question_at_review,latest?latest.before.question:q.question);
