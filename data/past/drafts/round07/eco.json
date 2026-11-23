@@ -19,7 +19,17 @@
     "explanation_id": "auto-made-r07-s04-q01",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q02",
@@ -41,7 +51,19 @@
     "explanation_id": "auto-made-r07-s04-q02",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "실제 냉각팬/펌프 동작과 토크 제한은 BMS와 열관리 제어의 협업 및 차종별 안전 로직에 좌우됨; 높은 온도에서 일률적 운전지침으로 사용할 수 없음"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q03",
@@ -63,7 +85,17 @@
     "explanation_id": "auto-made-r07-s04-q03",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://www.nature.com/articles/s41560-026-02131-5"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q04",
@@ -85,7 +117,19 @@
     "explanation_id": "auto-made-r07-s04-q04",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "'단순 배터리 팩 추가'는 실제 차량에서 고전압·질량·인증·BMS 호환성 문제를 동반함. 본 선택지는 질량 증가 가능성이라는 개념만 성립하며 실제 개조 가능성을 승인하지 않음"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q05",
@@ -107,7 +151,19 @@
     "explanation_id": "auto-made-r07-s04-q05",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/safe-use-hydrogen",
+        "https://www.nhtsa.gov/emergency-response-guides"
+      ],
+      "hold_reasons": [
+        "수소 누출은 고압·인화 안전사고로 이어질 수 있어 일반인의 직접 누설탐지를 권장하지 않음. 전문안전요원·차량별 폐쇄/환기/대피 절차 필수"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q06",
@@ -129,7 +185,19 @@
     "explanation_id": "auto-made-r07-s04-q06",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work",
+        "https://www.energy.gov/cmei/vehicles/articles/integrated-vehicle-thermal-management-combining-fluid-loops-electric-drive-3"
+      ],
+      "hold_reasons": [
+        "엔진 정지 냉방은 전동 압축기 장착 차종에 해당하며 전용 고전압 압축기/냉매 작업 안전·윤활유 규격을 OEM에서 검증해야 함"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q07",
@@ -151,7 +219,19 @@
     "explanation_id": "auto-made-r07-s04-q07",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.energy.gov/cmei/vehicles/thermal-control-system-integration",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "수냉식 구동모터라도 냉각수 누출·전기 절연·고전압 안전과 펌프/센서 위치는 차종별로 다름; OEM 절차 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q08",
@@ -173,7 +253,18 @@
     "explanation_id": "auto-made-r07-s04-q08",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ],
+      "hold_reasons": [
+        "차량·지역·충전기 DC/AC 표준 및 승인된 어댑터 정책이 달라 공식 차량/충전사업자 호환표를 확인해야 함"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q09",
@@ -184,18 +275,29 @@
     "source_question_id": "auto-r07-s04-q09",
     "round": 7,
     "question_number": 9,
-    "question": "순수 전기차 구동 배터리의 BMS 역할이 아닌 제어는?",
+    "question": "전기차 BMS에서 배터리의 노화 상태(SOH)를 추정할 때 참고하는 기준으로 가장 적절한 것은?",
     "choices": [
-      "셀 온도·전압 확인",
-      "이상 전류에 대한 보호 명령",
-      "팩 충전상태 추정",
-      "가솔린 엔진 점화시기 계산"
+      "배터리의 현재 잔존 충전율(SOC)을 수명 상태와 같은 지표로 간주",
+      "고전압 퓨즈의 정격값만으로 배터리 건강 상태를 확정",
+      "외부 급속충전기 최대 출력(kW)만으로 배터리 노화 판단",
+      "초기 상태 대비 사용 가능 용량·내부저항 변화를 바탕으로 SOH 추정"
     ],
     "answer": 4,
     "explanation_id": "auto-made-r07-s04-q09",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "editorial_revision": "technical_qa29_distinguish_soh_from_bms_function",
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://www.nature.com/articles/s41560-026-02131-5"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q10",
@@ -224,6 +326,18 @@
       "change_note": "열화 촉진/억제 운용 조건 확인",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nationalacademies.org/read/26092/chapter/7",
+        "https://www.nature.com/articles/s41560-026-02131-5"
+      ],
+      "hold_reasons": [
+        "열화에는 화학계·SOC 체류시간·온도와 실제 C-rate가 복합 작용함. 단순히 급속충전 횟수만으로 진단하거나 특정 수명 보증 불가"
+      ]
     }
   },
   {
@@ -246,7 +360,19 @@
     "explanation_id": "auto-made-r07-s04-q11",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.nhtsa.gov/emergency-response-guides",
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "hold_reasons": [
+        "실제 화재·열폭주 상황의 대응은 차량별 긴급대응 지침, 소방대 접근통제 및 재발화/유해가스 위험에 좌우됨. 일반인은 대피·신고가 우선"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q12",
@@ -268,7 +394,16 @@
     "explanation_id": "auto-made-r07-s04-q12",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q13",
@@ -297,6 +432,18 @@
       "change_note": "급속충전 제한의 직접 관련된 명령·SOC·온도 분리",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2023/MC-10244504-0001.pdf",
+        "https://afdc.energy.gov/fuels/electricity-stations"
+      ],
+      "hold_reasons": [
+        "급속충전 전류 제한은 BMS/충전기 통신·SOC·온도·셀 전압 등 복합 원인. 차종별 실측·안전진단 없이 결함 단정 금지"
+      ]
     }
   },
   {
@@ -326,6 +473,18 @@
       "change_note": "퓨즈의 일회성 용단과 제어회로 구분",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.littelfuse.com/products/fuses-overcurrent-protection/fuses/automotive-fuses/high-voltage-fuses/20ev",
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ],
+      "hold_reasons": [
+        "실제 HV 퓨즈의 전압/전류·차단용량·용단특성은 지정 부품과 고전압 차단·무전압 검증 후 전문작업 필수"
+      ]
     }
   },
   {
@@ -348,7 +507,17 @@
     "explanation_id": "auto-made-r07-s04-q15",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work",
+        "https://www.energy.gov/cmei/fuels/parts-fuel-cell"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q16",
@@ -370,7 +539,18 @@
     "explanation_id": "auto-made-r07-s04-q16",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://saemobilus.sae.org/standards/j2601_201612-fueling-protocols-light-duty-gaseous-hydrogen-surface-vehicles"
+      ],
+      "hold_reasons": [
+        "H35/H70 등급은 규격상 존재하나 해당 승용차와 충전설비의 실제 승인 압력·온도·통신·안전 인터록은 SAE 및 국내 규정 별도 확인 필요"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q17",
@@ -392,7 +572,16 @@
     "explanation_id": "auto-made-r07-s04-q17",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "source_supported_first_pass",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/parts-fuel-cell"
+      ],
+      "hold_reasons": []
+    }
   },
   {
     "id": "auto-made-r07-s04-q18",
@@ -415,7 +604,18 @@
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
     "publishable": false,
-    "editorial_revision": "technical_qa1_reviewed"
+    "editorial_revision": "technical_qa1_reviewed",
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://uscar.org/download/53/hydrogen-fuel-cell/11771/uscar-tank-valve-requirement-version-3-2.pdf"
+      ],
+      "hold_reasons": [
+        "TPRD는 열로 작동하며 고압 수소의 안전 방출은 장치별 온도·배출 방향·검지·격리 절차가 필수. 임의 시험·분해 지침으로 사용 금지"
+      ]
+    }
   },
   {
     "id": "auto-made-r07-s04-q19",
@@ -444,6 +644,17 @@
       "change_note": "연료전지 스택 반응가스·수분·온도 직접 요인",
       "review_batch": "QA2",
       "reviewed_choice_count": 4
+    },
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://www.energy.gov/cmei/fuels/fuel-cell-systems"
+      ],
+      "hold_reasons": [
+        "연료전지 스택 출력 저하는 수소·공기 공급, 수분, 냉각, 압력뿐 아니라 셀 전압·막 건조/플러딩 등 복합 원인이므로 OEM 진단값 필요"
+      ]
     }
   },
   {
@@ -466,6 +677,18 @@
     "explanation_id": "auto-made-r07-s04-q20",
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
-    "publishable": false
+    "publishable": false,
+    "technical_verification_qa29": {
+      "status": "needs_additional_model_or_syllabus_review",
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "source_urls": [
+        "https://afdc.energy.gov/fuels/biodiesel-blends",
+        "https://afdc.energy.gov/fuels/biodiesel-specifications"
+      ],
+      "hold_reasons": [
+        "B100 사용승인·혼합비·연료품질 ASTM 등 규격과 한국 적용법/차종 OEM·연료계 호환성 확인 필요. 친환경 vs 엔진정비 과목경계도 검토"
+      ]
+    }
   }
 ]

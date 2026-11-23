@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private OCR source 720/720 source-compared; independent reauthored draft bank 720/720. Historical technical option first-pass evidence through QA28 covers 540/720 questions, 2160/2880 options; 180 questions/720 options still pending. Final independent technical approvals 0/720; past reconstructed questions published to public quiz 0/720.",
+  "source_of_truth": "QA23 private OCR source compared 720/720, independent reauthored draft bank 720/720. QA29 first-pass evidence covers 560/720 reauthored questions and 2240/2880 options; remaining 160/640. Final independent technical approvals 0/720; reconstructed past questions published 0/720. Public practice bank 80 unchanged.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa28_electrical_round07_option_by_option_first_pass",
+  "latest_qa_stage": "technical-qa29_eco_round07_option_by_option_first_pass",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -1792,5 +1792,49 @@
     "changes": "data/qa/technical-qa28-r07-electrical-edits.json",
     "report": "docs/TECHNICAL_QA28.md",
     "next": "r07 eco20, then r08-r09 all160"
+  },
+  "technical_qa29": {
+    "date": "2026-11-23",
+    "batch": "round07_eco",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 6,
+    "pending_oem_safety_review": 14,
+    "pending_question_numbers": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      13,
+      14,
+      16,
+      18,
+      19,
+      20
+    ],
+    "actual_question_rewrites": 1,
+    "rewritten_question_number": 9,
+    "correct_answer_number_changes": 0,
+    "new_subject_holds": 0,
+    "subject_scope_review_candidate_numbers": [
+      20
+    ],
+    "current_subject_holds": 55,
+    "cumulative_historical_firstpass_questions": 560,
+    "cumulative_historical_firstpass_options": 2240,
+    "remaining_no_firstpass_questions": 160,
+    "remaining_no_firstpass_options": 640,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "live_manifest_expected_80_exam_unchanged": true,
+    "private_QA23_unchanged": true,
+    "audit": "data/qa/technical-qa29-r07-eco-option-audit.json",
+    "changes": "data/qa/technical-qa29-r07-eco-edits.json",
+    "report": "docs/TECHNICAL_QA29.md",
+    "next": "round08 engine/chassis/electrical/eco each20, round09 all80"
   }
 }

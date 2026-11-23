@@ -1,0 +1,27 @@
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,"..");
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+const q=read("data/past/drafts/round07/eco.json"),e=read("data/explanations/drafts/round07/eco.json"),audit=read("data/qa/technical-qa29-r07-eco-option-audit.json"),edits=read("data/qa/technical-qa29-r07-eco-edits.json");
+assert.equal(q.length,20);assert.equal(e.length,20);assert.equal(audit.length,20);assert.equal(edits.length,1);assert.equal(edits[0].number,9);
+const supported=[1,3,9,12,15,17];const held=[2,4,5,6,7,8,10,11,13,14,16,18,19,20];
+assert.deepEqual(audit.filter(a=>a.evidence_grade==="source_supported_first_pass").map(a=>a.question_number),supported);
+assert.deepEqual(audit.filter(a=>a.evidence_grade==="needs_additional_model_or_syllabus_review").map(a=>a.question_number),held);
+assert.equal(new Set(audit.map(a=>a.id)).size,20);assert.equal(q[8].answer,4);assert.ok(q[8].question.includes("SOH"));
+assert.equal(q[8].choices[3],e[8].correct_choice);assert.equal(edits[0].before.correct_answer,edits[0].after.correct_answer);
+let count=0;
+for(let i=0;i<20;i++){const x=q[i],y=e[i],a=audit[i];
+ assert.equal(x.id,y.id);assert.equal(x.id,a.id);assert.equal(x.round,7);assert.equal(x.subject,"eco");assert.equal(x.question_number,i+1);
+ assert.equal(x.question,a.question_at_review);assert.equal(x.answer,a.correct_number);assert.equal(x.choices[x.answer-1],a.correct_choice);
+ assert.equal(y.correct_answer,x.answer);assert.equal(y.correct_choice,a.correct_choice);
+ assert.equal(x.technical_verification_qa29.status,a.evidence_grade);assert.equal(y.technical_verification_qa29.status,a.evidence_grade);
+ assert.deepEqual(y.option_analysis_qa29,a.options);assert.equal(a.options.length,4);assert.ok(a.source_urls.length>=1);
+ assert.equal(a.web_publication,false);assert.equal(a.independent_final_technical_approval,false);
+ assert.equal(x.publishable,false);assert.equal(x.review_status,"editorial_draft");assert.equal(x.technical_answer_status,"pending_independent_review");
+ assert.equal(y.technical_answer_status,"pending_independent_review");
+ a.options.forEach((o,j)=>{assert.equal(o.number,j+1);assert.equal(o.text,x.choices[j]);assert.equal(o.verdict,j+1===x.answer?"correct":"incorrect");assert.ok(o.rationale.length>=20);count++;});
+}
+assert.equal(count,80);const st=read("data/bank-status.json").technical_qa29;
+assert.equal(st.cumulative_historical_firstpass_questions,560);assert.equal(st.remaining_no_firstpass_questions,160);assert.equal(st.final_independent_technical_approvals,0);assert.equal(st.current_subject_holds,55);
+assert.ok(read("data/manifest.json").banks.every(x=>!x.file.includes("/drafts/")));
+console.log("PASS QA29: r07 eco 20 questions / 80 choices, first-pass 6, held 14, rewrite1 q09 SOH, final approval/publication 0");
