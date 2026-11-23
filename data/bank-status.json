@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "Public editor-authored historical mock draft bank: 720 reconstructed-from-concepts questions, 2880 audited options. QA40 independently reauthored 3 of the 720 out-of-subject questions (r02 engine 1, r05 engine 9, r06 engine 14) to new engine concepts with explicit provenance; these are NOT faithful past exam reconstructions. Historical 1st-pass source-supported 351 / additional review 369 (QA38 baseline); independent final technical approvals 0/720, public reconstructed past 0, expected practice80. Private QA23 OCR master remains separate.",
+  "source_of_truth": "Independent-study draft bank 720/2880: QA40 reauthored 3 off-topic engine questions, QA41 reauthored 15 engine-topic chassis questions as new chassis questions (NOT verbatim past-exam reproductions). Old audit snapshots and answer IDs/indices preserved. Historical QA38 first-pass 351 supported vs 369 pending; independent technical approvals 0/720, published reconstructed past 0, published self-authored expected questions 80.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA40_three_high_priority_out_of_scope_engine_rewrites_pending_independent_OEM_syllabus_rights_verification",
+  "latest_qa_stage": "QA41_fifteen_chassis_engine_misplacements_reauthored_held_pending_independent_approval",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2089,5 +2089,28 @@
     "report": "docs/TECHNICAL_QA40.md",
     "test": "tests/technical-qa40.test.cjs",
     "next": "official detailed syllabus HWP and OEM independent technical checks for remaining holds, final rights and private draft retention before removal"
+  },
+  "technical_qa41": {
+    "date": "2026-11-23",
+    "review_batch": "round04_05_06_chassis",
+    "reauthored_chassis_items": 15,
+    "new_option_rationales": 60,
+    "original_correct_answer_indices_changed": 0,
+    "legacy_qa18_qa20_qa24_snapshots_preserved": true,
+    "historical_holds_retained": 55,
+    "subject_holds_released": 0,
+    "qa40_engine_replacements": 3,
+    "total_QA40_41_in_scope_rewrites": 18,
+    "remaining_legacy_provisional_cross_subject_candidates": 32,
+    "independent_final_technical_approvals": 0,
+    "published_past_reconstructed_items": 0,
+    "public_original_practice_questions": 80,
+    "official_detailed_qnet_hwp_verified": false,
+    "reference_validation": "public Bosch, ZF, HELLA, KYB, Arnott general-technical sources; no OEM-specific expert signoff",
+    "ledger": "data/qa/technical-qa41-chassis-scope-replacements.json",
+    "test": "tests/technical-qa41.test.cjs",
+    "report": "docs/TECHNICAL_QA41.md",
+    "remaining_legacy_cross_subject_overlap_candidates": 4,
+    "remaining_legacy_false_positive_candidates": 1
   }
 }

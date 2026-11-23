@@ -1,0 +1,44 @@
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,".."),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+const ledger=read("data/qa/technical-qa41-chassis-scope-replacements.json");
+assert.equal(ledger.length,15);assert.equal(new Set(ledger.map(x=>x.id)).size,15);
+assert.deepEqual([4,5,6].map(r=>ledger.filter(x=>x.round===r).length),[5,5,5]);
+let count=0;
+for(const row of ledger){
+ const prefix="round"+String(row.round).padStart(2,"0");
+ const q=read("data/past/drafts/"+prefix+"/chassis.json")[row.question_number-1];
+ const e=read("data/explanations/drafts/"+prefix+"/chassis.json")[row.question_number-1];
+ const qa={4:18,5:20,6:24}[row.round],audit=read("data/qa/technical-qa"+qa+"-r"+String(row.round).padStart(2,"0")+"-chassis-option-audit.json")[row.question_number-1];
+ const key="option_analysis_qa"+qa;
+ assert.equal(q.id,row.id);assert.equal(e.id,row.id);assert.equal(q.subject,"chassis");assert.equal(q.round,row.round);
+ assert.equal(q.question,row.after.question);assert.notEqual(q.question,row.before.question);
+ assert.deepEqual(q.choices,row.after.choices);assert.equal(q.answer,row.before.answer);assert.equal(q.answer,row.after.answer);
+ assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,q.choices[q.answer-1]);
+ assert.equal(e.reason,row.after.reason);assert.equal(e.key_point,row.after.key_point);
+ assert.deepEqual(e[key],row.after.option_analysis);assert.deepEqual(e.option_analysis_qa41,row.after.option_analysis);
+ assert.equal(audit.question_at_review,row.before.question);assert.deepEqual(audit.options.map(o=>o.text),row.before.choices);
+ assert.equal(audit.correct_choice,row.before.correct_choice);
+ assert.deepEqual(q["technical_verification_qa"+qa].source_urls,row.after.reference_urls);
+ assert.deepEqual(e["technical_verification_qa"+qa].source_urls,row.after.reference_urls);
+ assert.deepEqual(e.reference_urls,row.after.reference_urls);
+ assert.equal(q.qa41_editorial_replacement.new_own_authored_study_question_not_exam_original,true);
+ assert.equal(e.qa41_editorial_replacement.independent_final_technical_approval,false);
+ assert.equal(q.qa41_editorial_replacement.web_publication,false);
+ assert.equal(q.subject_classification_review.status,"hold_do_not_publish");
+ assert.equal(e.subject_classification_review.status,"hold_do_not_publish");
+ assert.equal(q.subject_classification_review.qa41_current_question_may_now_fit_chassis,true);
+ assert.equal(q.publishable,false);assert.equal(q.review_status,"editorial_draft");
+ assert.equal(q.technical_answer_status,"pending_independent_review");assert.equal(e.technical_answer_status,"pending_independent_review");
+ assert.ok(row.after.reference_urls.length>0);
+ for(let i=0;i<4;i++){const opt=e[key][i];assert.equal(opt.number,i+1);assert.equal(opt.text,q.choices[i]);
+  assert.equal(opt.verdict,i+1===q.answer?"correct":"incorrect");assert.ok(opt.rationale.length>=20);count++;}
+}
+assert.equal(count,60);
+const m=read("data/manifest.json");assert.equal(m.banks.filter(b=>b.track==="expected").reduce((s,b)=>s+b.count,0),80);
+assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));
+const st=read("data/bank-status.json").technical_qa41;
+assert.equal(st.reauthored_chassis_items,15);assert.equal(st.historical_holds_retained,55);
+assert.equal(st.remaining_legacy_provisional_cross_subject_candidates,32);
+assert.equal(st.independent_final_technical_approvals,0);assert.equal(st.published_past_reconstructed_items,0);
+console.log("PASS QA41: 15 chassis edits/60 mapped options and historical QA18/20/24 snapshots; 55 holds intact.");
