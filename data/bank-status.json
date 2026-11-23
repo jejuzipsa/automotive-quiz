@@ -888,5 +888,38 @@
     "audit": "data/qa/technical-qa4-chassis-r01-editorial-audit.json",
     "report": "docs/TECHNICAL_QA4.md",
     "next": "verify each of four choices per chassis question with primary technical references; resolve duplicate and subject holds without changing historical QA1/QA2 audits"
+  },
+  "technical_qa5": {
+    "date": "2026-11-23",
+    "qa_type": "720-entry machine structural audit + 3 expert-source-referenced editorial corrections",
+    "scanned_questions_by_machine": 720,
+    "scanned_explanations_by_machine": 720,
+    "actually_rewritten_questions_or_explanations": 3,
+    "changed_ids": [
+      "auto-made-r01-s02-q10",
+      "auto-made-r01-s02-q13",
+      "auto-made-r01-s01-q20"
+    ],
+    "manufacturer_or_supplier_reference_domains": [
+      "zf.com",
+      "kyb.com",
+      "hella.com",
+      "bosch-mobility.com"
+    ],
+    "novel_independent_4_choice_technical_approvals": 0,
+    "independent_final_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "qa23_private_original_untouched": true,
+    "unchanged_subject_classification_holds": 47,
+    "engine_qa3_final_holds_remaining": [
+      "auto-made-r01-s01-q13",
+      "auto-made-r01-s01-q16",
+      "auto-made-r01-s01-q20"
+    ],
+    "automated_script": "tests/qa5-bank-integrity.test.cjs",
+    "ci_report_artifact": "qa5-720-integrity-audit",
+    "revision_history": "data/qa/technical-qa5-changes.json",
+    "report": "docs/TECHNICAL_QA5.md",
+    "disclaimer": "A mechanical QA pass does not establish technical unique-answer correctness, vehicle safety, model service procedure, or publication rights"
   }
 }

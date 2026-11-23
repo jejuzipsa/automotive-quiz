@@ -9,6 +9,7 @@ const updated=read('data/qa/technical-qa1-summary.json');
 const changes=read('data/qa/technical-qa1-changes.json');
 const qa2Changes=read('data/qa/technical-qa2-changes.json');
 const qa2ById=new Map(qa2Changes.map(x=>[x.id,x]));
+const qa5ById=new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
 const holds=read('data/qa/technical-qa1-subject-holds.json');
 const triage=read('data/qa/technical-qa1-triage.json');
 const expanded=read('data/qa/technical-qa1-subject-holds-expanded.json');
@@ -53,17 +54,24 @@ assert.ok(edited>=0&&edited<=28);assert.equal(held,47);
 for(const change of changes){
  const q=qmap.get(change.id),e=emap.get(change.id);
  assert.ok(q&&e);
- const qa2=qa2ById.get(change.id);
+ const qa2=qa2ById.get(change.id), qa5=qa5ById.get(change.id);
  if(qa2){
    assert.equal(qa2.before.question,change.after.question);
    assert.deepEqual(qa2.before.choices,change.after.choices);
    assert.equal(qa2.before.reason,change.after.reason);
-   assert.equal(q.question,qa2.after.question);
-   assert.deepEqual(q.choices,qa2.after.choices);
- } else {
-   assert.equal(q.question,change.after.question);
-   assert.deepEqual(q.choices,change.after.choices);
-   assert.equal(e.reason,change.after.reason);
+ }
+ const previous=qa2?qa2.after:change.after;
+ if(qa5){
+   assert.equal(qa5.before.question,previous.question,'QA5 must start from previous review snapshot');
+   assert.deepEqual(qa5.before.choices,previous.choices);
+   assert.equal(qa5.before.reason,previous.reason);
+   assert.equal(q.question,qa5.after.question);
+   assert.deepEqual(q.choices,qa5.after.choices);
+   assert.equal(e.reason,qa5.after.reason);
+ }else{
+   assert.equal(q.question,previous.question);
+   assert.deepEqual(q.choices,previous.choices);
+   assert.equal(e.reason,previous.reason);
  }
  assert.equal(q.answer,change.answer_unchanged);
 }
