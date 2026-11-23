@@ -30,7 +30,7 @@ for(let i=0;i<20;i++){
  assert.equal(row.correct_number,q.answer);
  assert.equal(row.correct_choice,later?later.before.choices[later.before.answer-1]:q.choices[q.answer-1]);
  assert.equal(e.correct_answer,q.answer);
- assert.equal(e.correct_choice,row.correct_choice);
+ assert.equal(e.correct_choice,q.choices[q.answer-1]);
  if(!later){
    assert.equal(q.technical_verification_qa8.status,row.evidence_grade);
    assert.equal(e.technical_verification_qa8.status,row.evidence_grade);
