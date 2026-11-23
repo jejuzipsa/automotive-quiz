@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private OCR original 720/720 source compared. Our own question and separate answer rationale drafts 720/720. QA1+QA2 editorial corrections retained. QA3 first-pass technical option-by-option audit covers round-1 engine 20 questions/80 choices: 17 source-supported, 3 pending. 10 QA3 wording/explanation improvements. Final independent technical approvals 0/720; published 0/720.",
+  "source_of_truth": "QA23 private OCR source 720/720 source-compared; independently reauthored draft bank 720/720. Historical first-pass technical-option evidence through QA27: 520/720 questions, 2080/2880 options; 200 questions pending. Final independent technical approvals 0/720; past reconstructed questions promoted to public quiz 0/720.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -38,7 +38,9 @@
     "mock_exam_expected_review_caveat": "original_practice, editorial_draft: educational mock exam only, not technically approved official past questions",
     "mock_exam_past_enabled": false,
     "approved_past_bank_path_pattern": "data/past/approved/{subject}.json",
-    "approved_past_bank_gate": "publishable=true AND review_status=approved AND technical_answer_status=independently_approved AND rights_cleared=true AND no subject hold"
+    "approved_past_bank_gate": "publishable=true AND review_status=approved AND technical_answer_status=independently_approved AND rights_cleared=true AND no subject hold",
+    "draft_files_publicly_retrievable_from_public_repository": true,
+    "draft_access_note": "Although omitted from public data/manifest.json and not available in the quiz UI, reauthored draft JSON checked into a public repository can be fetched directly. This is not access control; move unpublished draft assets to a private repository when confidentiality is required. Private publisher source/OCR was not uploaded."
   },
   "source_captures": {
     "original": 57,
@@ -688,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "technical-qa3_engine_round01_option_by_option_first_pass",
+  "latest_qa_stage": "technical-qa27_chassis_round07_option_by_option_first_pass",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
