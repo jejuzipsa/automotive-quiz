@@ -860,5 +860,33 @@
     "qa3_firstpass_supported_unchanged": 17,
     "qa3_pending_unchanged": 3,
     "notes": "CBT-like practice-mode integration only. No final technical approvals or copyrighted source text promotion."
+  },
+  "technical_qa4": {
+    "batch": "round01_chassis_01_to_20",
+    "date": "2026-11-23",
+    "scope": "editorial_and_duplication_screening",
+    "question_and_explanation_records_screened": 20,
+    "technical_choice_verdicts_completed": 0,
+    "independent_final_technical_approvals": 0,
+    "questions_revised": 0,
+    "question_ids_with_existing_subject_holds": [
+      "auto-made-r01-s02-q02",
+      "auto-made-r01-s02-q04"
+    ],
+    "near_duplicate_pair": [
+      [
+        "auto-made-r01-s02-q13",
+        "auto-made-r01-s02-q19"
+      ]
+    ],
+    "explanation_alignment_pending": [
+      "auto-made-r01-s02-q10"
+    ],
+    "unpublished_reconstructed_drafts": 720,
+    "explanation_records": 720,
+    "new_public_reconstructed_questions": 0,
+    "audit": "data/qa/technical-qa4-chassis-r01-editorial-audit.json",
+    "report": "docs/TECHNICAL_QA4.md",
+    "next": "verify each of four choices per chassis question with primary technical references; resolve duplicate and subject holds without changing historical QA1/QA2 audits"
   }
 }
