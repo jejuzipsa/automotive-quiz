@@ -43,22 +43,23 @@ assert.equal(heldQ.subject_classification_review.status,"hold_do_not_publish");
 assert.equal(heldE.subject_classification_review.status,"hold_do_not_publish");
 assert.equal(heldQ.subject_classification_review.suggested_subject,"chassis");
 const audit=read("data/qa/technical-qa19-r05-engine-option-audit.json");
+const qa40ById=new Map(read("data/qa/technical-qa40-out-of-scope-replacements.json").map(x=>[x.id,x]));
 assert.equal(audit.length,20);
 assert.equal(new Set(audit.map(x=>x.id)).size,20);
 assert.equal(audit.filter(x=>x.evidence_grade==="source_supported_first_pass").length,10);
 assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,10);
 let count=0;
 for(let i=0;i<20;i++){
- const q=r5q.engine[i],e=r5e.engine[i],a=audit[i];
+ const q=r5q.engine[i],e=r5e.engine[i],a=audit[i],later=qa40ById.get(q.id);
  assert.equal(q.id,e.id);assert.equal(q.id,a.id);
  assert.equal(q.round,5);assert.equal(q.subject,"engine");assert.equal(q.question_number,i+1);
- assert.equal(q.question,a.question_at_review);
+ assert.equal(later?later.before.question:q.question,a.question_at_review);
  assert.equal(a.correct_number,q.answer);
- assert.equal(a.correct_choice,q.choices[q.answer-1]);
- assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,a.correct_choice);
+ assert.equal(a.correct_choice,later?later.before.correct_choice:q.choices[q.answer-1]);
+ assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,q.choices[q.answer-1]);
  assert.equal(q.technical_verification_qa19.status,a.evidence_grade);
  assert.equal(e.technical_verification_qa19.status,a.evidence_grade);
- assert.deepEqual(e.option_analysis_qa19,a.options);
+ assert.deepEqual(e.option_analysis_qa19,later?later.after.option_analysis:a.options);
  assert.equal(a.options.length,4);
  assert.equal(a.independent_final_technical_approval,false);
  assert.equal(a.web_publication,false);
@@ -68,7 +69,7 @@ for(let i=0;i<20;i++){
  assert.equal(q.technical_answer_status,"pending_independent_review");
  for(let j=0;j<4;j++){
   const o=a.options[j];assert.equal(o.number,j+1);
-  assert.equal(o.text,q.choices[j]);
+  assert.equal(o.text,later?later.before.choices[j]:q.choices[j]);
   assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");
   assert.ok(o.rationale.length>=16);count++;
  }

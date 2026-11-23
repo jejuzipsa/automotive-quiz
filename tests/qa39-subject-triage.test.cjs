@@ -5,9 +5,9 @@ const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,".."),read=p=>JSON
 const subjects=["engine","chassis","electrical","eco"],holds=[];
 const overrides={
  "auto-made-r06-s04-q20":{category:"legacy_false_positive_candidate",priority:"P1",target_subject:"eco",note:"현행 문항은 전기차 구동 인버터를 물음. 예전 태양광 가정용 인버터 사유가 더는 현행 문항에 맞지 않음. 보류는 해제하지 않음."},
- "auto-made-r05-s01-q09":{category:"outside_four_exam_topic_candidate",priority:"P1",target_subject:null,note:"렌터카 법적 영업분류는 필기 18개 주요장치정비 항목에 직접 대입하기 어려움. 승인 전에 엔진 분야 정비개념으로 재작성 필요."},
- "auto-made-r06-s01-q14":{category:"outside_four_exam_topic_candidate",priority:"P1",target_subject:null,note:"일반 배전반 화재는 차량 전기장치·엔진 정비의 문맥 없이 구성됨. 차량 관련 안전절차로 출제기준 검토 후 대체 필요."},
- "auto-made-r02-s01-q01":{category:"outside_four_exam_topic_candidate",priority:"P1",target_subject:"chassis",note:"승용차 타이어 공기압은 기존 엔진 과목 이탈이고, 산업기사 섀시의 5개 주요항목에도 휠·타이어 단독항목은 보이지 않음. 임의 자동이동보다 재작성 우선."},
+ "auto-made-r05-s01-q09":{category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"engine",note:"렌터카 분류 문제를 디젤 EGR 진단으로 교정. 보류 및 전문가 확인은 유지"},
+ "auto-made-r06-s01-q14":{category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"engine",note:"시설 배전반 화재 문제를 가솔린 연료 누출 초기대응으로 교정. 보류 및 전문가 확인은 유지"},
+ "auto-made-r02-s01-q01":{category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"engine",note:"타이어 공기압 문제를 엔진 과급제어 진단으로 교정. 보류 및 전문가 확인은 유지"},
  "auto-made-r09-s03-q06":{category:"cross_subject_overlap_candidate",priority:"P2",target_subject:"chassis",note:"TCS 구동륜 제동제어는 전자제어제동(섀시)과 주행안전장치(전기) 경계이므로 오분류를 기계적으로 확정하지 않음."},
  "auto-made-r09-s03-q19":{category:"cross_subject_overlap_candidate",priority:"P2",target_subject:"chassis",note:"EPB는 전자제어 제동장치와 주행안전 전장의 과목 경계로 출제기준 세세항목 확인 필요."},
  "auto-made-r03-s03-q08":{category:"cross_subject_overlap_candidate",priority:"P2",target_subject:"chassis",note:"ABS 유압회로 개방·에어빼기는 섀시 정비에 가깝지만 주행안전장치 전장 범위와의 겹침 여부 확인 필요."},

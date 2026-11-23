@@ -1,0 +1,42 @@
+"use strict";
+const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
+const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,".."),read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+const edits=read("data/qa/technical-qa40-out-of-scope-replacements.json");
+assert.deepEqual(edits.map(x=>x.id),["auto-made-r02-s01-q01","auto-made-r05-s01-q09","auto-made-r06-s01-q14"]);
+assert.equal(edits.length,3);
+const previousTopic=["타이어","렌터카","배전반"],currentTopic=["과급압","EGR","가솔린 엔진 연료라인"];
+for(let i=0;i<edits.length;i++){
+ const row=edits[i],r=String(row.round).padStart(2,"0"),questions=read("data/past/drafts/round"+r+"/engine.json"),explanations=read("data/explanations/drafts/round"+r+"/engine.json");
+ const q=questions[row.question_number-1],e=explanations[row.question_number-1];
+ assert.equal(q.id,row.id);assert.equal(e.id,row.id);assert.equal(q.subject,"engine");
+ assert.ok(row.before.question.includes(previousTopic[i]));assert.ok(q.question.includes(currentTopic[i]));
+ assert.equal(q.question,row.after.question);assert.deepEqual(q.choices,row.after.choices);
+ assert.equal(e.reason,row.after.reason);assert.equal(e.key_point,row.after.key_point);
+ assert.equal(q.answer,row.before.correct_number);assert.equal(q.answer,row.after.correct_number);
+ assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,q.choices[q.answer-1]);
+ assert.equal(e.correct_choice,row.after.correct_choice);
+ const oldKey="option_analysis_qa"+({2:10,5:19,6:23}[row.round]);
+ assert.deepEqual(e[oldKey],row.after.option_analysis);
+ assert.equal(q.qa40_editorial_replacement.origin_is_not_original_exam_wording,true);
+ assert.equal(q.qa40_editorial_replacement.final_technical_approval,false);
+ assert.equal(e.qa40_editorial_replacement.web_publication,false);
+ assert.ok(row.technical_reference_urls.length>=1);
+ assert.equal(q.subject_classification_review.status,"hold_do_not_publish");
+ assert.equal(e.subject_classification_review.status,"hold_do_not_publish");
+ assert.equal(q.subject_classification_review.qa40_current_question_may_now_fit_engine,true);
+ assert.equal(q.publishable,false);
+ assert.equal(q.review_status,"editorial_draft");
+ assert.equal(q.technical_answer_status,"pending_independent_review");
+ assert.equal(e.technical_answer_status,"pending_independent_review");
+ for(let j=0;j<4;j++){const x=e[oldKey][j];assert.equal(x.number,j+1);assert.equal(x.text,q.choices[j]);
+ assert.equal(x.verdict,j+1===q.answer?"correct":"incorrect");assert.ok(x.rationale.length>=20);}
+}
+const expected=read("data/manifest.json");
+assert.equal(expected.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),80);
+assert.ok(expected.banks.every(x=>!x.file.includes("/drafts/")));
+const st=read("data/bank-status.json").technical_qa40;
+assert.equal(st.out_of_scope_engine_items_reauthored,3);
+assert.equal(st.subject_classification_holds_retained,55);
+assert.equal(st.public_reconstructed_past_questions,0);
+assert.equal(st.independent_final_technical_approvals,0);
+console.log("PASS QA40: 3 out-of-scope engine items reauthored, all four choices mapped, 55 subject holds retained, no technical approval or publication.");

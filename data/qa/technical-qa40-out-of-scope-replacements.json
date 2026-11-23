@@ -1,0 +1,278 @@
+[
+  {
+    "id": "auto-made-r02-s01-q01",
+    "subject": "engine",
+    "round": 2,
+    "question_number": 1,
+    "before": {
+      "question": "정비정보에 타이어 냉간 공기압이 지정되어 있다. 타이어에 공기를 주입할 때 기준으로 삼을 자료는?",
+      "choices": [
+        "현장에서 가장 단단해 보이는 느낌",
+        "타이어 측면의 최대 허용압력만",
+        "차량과 적재 조건에 맞는 제조사 권장 공기압",
+        "옆에 주차된 다른 차의 공기압"
+      ],
+      "reason": "타이어의 최대 허용압력은 그 차량에 권장되는 일상 주행 압력과 같지 않다. 차량의 공기압 표기와 적재 조건을 확인하고 냉간 상태에서 지정값에 맞춘다.",
+      "key_point": "냉간 권장 공기압은 차량·하중 조건 기준이다.",
+      "correct_choice": "차량과 적재 조건에 맞는 제조사 권장 공기압",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "현장에서 가장 단단해 보이는 느낌",
+          "verdict": "incorrect",
+          "rationale": "손의 감각만으로 차량 지정 냉간 공기압을 결정할 수 없다."
+        },
+        {
+          "number": 2,
+          "text": "타이어 측면의 최대 허용압력만",
+          "verdict": "incorrect",
+          "rationale": "타이어 측면의 최대 허용압력은 차량 제조사 권장 주행 공기압과 같다고 단정할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "차량과 적재 조건에 맞는 제조사 권장 공기압",
+          "verdict": "correct",
+          "rationale": "차량의 권장 냉간 공기압 안내와 적재 조건에 맞는 값을 확인하는 것이 적절하다."
+        },
+        {
+          "number": 4,
+          "text": "옆에 주차된 다른 차의 공기압",
+          "verdict": "incorrect",
+          "rationale": "다른 차량의 공기압 설정은 해당 차량의 지정 기준을 대신하지 못한다."
+        }
+      ],
+      "correct_number": 3
+    },
+    "after": {
+      "question": "전자식 과급제어 엔진에서 동일한 주행조건의 목표 과급압보다 실측 압력이 낮다. 진단기로 우선 비교할 자료는?",
+      "choices": [
+        "터보 고장코드가 없으면 압력센서와 액추에이터 신호는 확인하지 않는다",
+        "엔진 부하가 달라져도 MAP 센서 단독값을 목표 과급압으로 간주한다",
+        "목표 과급압·실측 흡기압·웨이스트게이트 제어 명령을 조건별로 비교한다",
+        "차량별 센서 자료를 확인하지 않고 터보차저를 바로 교환한다"
+      ],
+      "reason": "터보차저 과급 제어의 목표와 실제 흡기 압력, 웨이스트게이트 또는 제어밸브의 명령·피드백을 같은 운전조건에서 비교해야 저과급의 공기누설·센서·구동기·제어 원인을 구별할 수 있다. 차종별 구동기 종류와 기준값은 제조사 정비자료를 따라야 한다.",
+      "key_point": "목표 과급압·실측 흡기압·과급제어 명령의 동조건 비교.",
+      "correct_choice": "목표 과급압·실측 흡기압·웨이스트게이트 제어 명령을 조건별로 비교한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "터보 고장코드가 없으면 압력센서와 액추에이터 신호는 확인하지 않는다",
+          "verdict": "incorrect",
+          "rationale": "DTC가 없는 상황에서도 센서·제어계통의 실제 저과급 상태를 배제할 수 없어."
+        },
+        {
+          "number": 2,
+          "text": "엔진 부하가 달라져도 MAP 센서 단독값을 목표 과급압으로 간주한다",
+          "verdict": "incorrect",
+          "rationale": "운전조건이 다른 MAP 단독값을 목표 과급압과 같다고 볼 수 없어."
+        },
+        {
+          "number": 3,
+          "text": "목표 과급압·실측 흡기압·웨이스트게이트 제어 명령을 조건별로 비교한다",
+          "verdict": "correct",
+          "rationale": "동일 조건의 목표/실측 압력과 제어 명령은 저과급 진단의 직접 자료야."
+        },
+        {
+          "number": 4,
+          "text": "차량별 센서 자료를 확인하지 않고 터보차저를 바로 교환한다",
+          "verdict": "incorrect",
+          "rationale": "원인 확인 없이 터보를 바로 교체하면 흡기 누설·센서 또는 제어 불량을 놓칠 수 있어."
+        }
+      ],
+      "correct_number": 3
+    },
+    "new_topic": "과급장치 정비",
+    "technical_reference_urls": [
+      "https://static.nhtsa.gov/odi/tsbs/2019/MC-10167436-9999.pdf",
+      "https://www.fordservicecontent.com/ford_content/catalog/motorcraft/OBDSM1704.pdf"
+    ],
+    "history_preserved": true,
+    "subject_hold_kept": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r05-s01-q09",
+    "subject": "engine",
+    "round": 5,
+    "question_number": 9,
+    "before": {
+      "question": "승용 렌터카를 자동차 종류로 분류할 때 가장 정확한 설명은?",
+      "choices": [
+        "렌터카는 사용 사업 형태이며 차량 구조 분류와 별개다",
+        "렌터카라면 구조상 무조건 특수자동차다",
+        "운전자가 바뀌면 차종 분류도 자동 변경",
+        "검사증 색상만으로 특수자동차라고 확정"
+      ],
+      "reason": "자동차는 구조·용도·형식에 따라 승용, 승합, 화물, 특수 등으로 구분한다. 임대사업용이라는 사실 자체가 특수자동차 구조 분류를 의미하지 않는다.",
+      "key_point": "사용사업과 차량 구조 분류는 다른 기준.",
+      "correct_choice": "렌터카는 사용 사업 형태이며 차량 구조 분류와 별개다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "렌터카는 사용 사업 형태이며 차량 구조 분류와 별개다",
+          "verdict": "correct",
+          "rationale": "렌터카는 사용·사업형태이고 구조별 차량 구분과 별개일 수 있다는 설명이 타당하다."
+        },
+        {
+          "number": 2,
+          "text": "렌터카라면 구조상 무조건 특수자동차다",
+          "verdict": "incorrect",
+          "rationale": "차량의 임대사업 여부만으로 구조가 항상 특수자동차가 되는 것은 아니다."
+        },
+        {
+          "number": 3,
+          "text": "운전자가 바뀌면 차종 분류도 자동 변경",
+          "verdict": "incorrect",
+          "rationale": "운전자만 교체돼도 자동차의 구조상 등록 차종이 자동 변경되지는 않는다."
+        },
+        {
+          "number": 4,
+          "text": "검사증 색상만으로 특수자동차라고 확정",
+          "verdict": "incorrect",
+          "rationale": "검사증 색상 하나만으로 차량의 법정 구조분류를 단정할 수 없다."
+        }
+      ],
+      "correct_number": 1
+    },
+    "after": {
+      "question": "디젤 엔진의 EGR 제어 명령과 실제 배기가스 재순환 상태가 일치하지 않는 것으로 의심된다. 진단 우선항목은?",
+      "choices": [
+        "EGR 제어 명령·밸브 위치 피드백·흡기 유량 변화를 운전조건별로 대조한다",
+        "EGR 제어 명령만 있으면 실제 밸브 개도와 유량도 정상이라고 확정한다",
+        "엔진 온도 한 가지가 정상이면 EGR 고착·누설 가능성을 배제한다",
+        "실제 측정값을 확인하지 않고 DTC를 지우면 EGR 수리가 완료된다"
+      ],
+      "reason": "EGR 이상을 진단할 때는 요구 개도 또는 명령, 밸브 위치의 피드백 및 흡기 질량유량·차압 등의 관련 신호를 차량별 운전조건에 맞춰 대조한다. 명령 존재만으로 밸브 작동과 배기가스 재순환이 정상인지 확정할 수 없다.",
+      "key_point": "EGR 명령·실제 밸브 반응·흡기유량 등 관련 데이터 비교.",
+      "correct_choice": "EGR 제어 명령·밸브 위치 피드백·흡기 유량 변화를 운전조건별로 대조한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "EGR 제어 명령·밸브 위치 피드백·흡기 유량 변화를 운전조건별로 대조한다",
+          "verdict": "correct",
+          "rationale": "명령값과 실제 밸브반응·공기유량의 교차 대조는 EGR 진단에 유용해."
+        },
+        {
+          "number": 2,
+          "text": "EGR 제어 명령만 있으면 실제 밸브 개도와 유량도 정상이라고 확정한다",
+          "verdict": "incorrect",
+          "rationale": "밸브를 지령한 사실이 실제 구동·유량 정상 상태를 증명하지는 않아."
+        },
+        {
+          "number": 3,
+          "text": "엔진 온도 한 가지가 정상이면 EGR 고착·누설 가능성을 배제한다",
+          "verdict": "incorrect",
+          "rationale": "엔진온도 정상 여부만으로 고착·누설 등 EGR 계통 불량을 배제하지 못해."
+        },
+        {
+          "number": 4,
+          "text": "실제 측정값을 확인하지 않고 DTC를 지우면 EGR 수리가 완료된다",
+          "verdict": "incorrect",
+          "rationale": "DTC 삭제는 진단자료를 지울 수 있어 실제 고장을 수리한 증거가 아니야."
+        }
+      ],
+      "correct_number": 1
+    },
+    "new_topic": "디젤 전자제어장치 정비",
+    "technical_reference_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/exhaust-gas-recirculation/",
+      "https://www.bosch-mobility.com/en/solutions/sensors/differential-pressure-sensor/"
+    ],
+    "history_preserved": true,
+    "subject_hold_kept": true,
+    "independent_technical_approved": false
+  },
+  {
+    "id": "auto-made-r06-s01-q14",
+    "subject": "engine",
+    "round": 6,
+    "question_number": 14,
+    "before": {
+      "question": "전원이 연결된 배전반에서 화재 징후가 발견됐다. 초기 대응 원칙으로 가장 적절한 것은?",
+      "choices": [
+        "화염이 확대될 때까지 환기 장비만 작동한다",
+        "장비 가동을 유지한 채 맨손으로 금속 외함을 연다",
+        "안전 확보·전원 차단 여부 확인 후 적합한 소화기 사용",
+        "감전 위험을 무시하고 물을 바로 뿌린다"
+      ],
+      "reason": "전기설비 화재는 전원과 감전 위험이 중요한 변수다. 인명 대피·신고가 우선이며, 초기 소화가 안전한 경우에만 전기설비에 적합한 소화기를 사용한다.",
+      "key_point": "전기화재: 인명·전원·안전 확인 후 초기 진압.",
+      "correct_choice": "안전 확보·전원 차단 여부 확인 후 적합한 소화기 사용",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "화염이 확대될 때까지 환기 장비만 작동한다",
+          "verdict": "incorrect",
+          "rationale": "화재가 커질 때까지 환기 장비만 가동하는 것은 안전한 초기 대응이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "장비 가동을 유지한 채 맨손으로 금속 외함을 연다",
+          "verdict": "incorrect",
+          "rationale": "전원이 인가된 배전반의 금속 외함을 맨손으로 열면 감전 위험이 있다."
+        },
+        {
+          "number": 3,
+          "text": "안전 확보·전원 차단 여부 확인 후 적합한 소화기 사용",
+          "verdict": "correct",
+          "rationale": "인명 안전·신고를 우선하고 안전한 경우에만 전원 차단/적합한 소화기 사용을 고려해야 한다."
+        },
+        {
+          "number": 4,
+          "text": "감전 위험을 무시하고 물을 바로 뿌린다",
+          "verdict": "incorrect",
+          "rationale": "활선 전기설비에 감전 위험을 무시하고 물을 직접 뿌리는 행동은 위험하다."
+        }
+      ],
+      "correct_number": 3
+    },
+    "after": {
+      "question": "가솔린 엔진 연료라인 정비 중 누출과 휘발유 냄새가 확인됐다. 안전한 초기 대응으로 가장 적절한 것은?",
+      "choices": [
+        "누출이 줄어들 때까지 엔진을 공회전 상태로 유지한다",
+        "점화원 유무를 확인하지 않고 불꽃이 발생하는 시험을 계속한다",
+        "작업을 중단하고 인명 안전·점화원 통제·신고를 우선하며 차량별 대응절차에 따른다",
+        "연료 누설 위치를 확인하기 위해 노출된 불꽃을 가까이 가져간다"
+      ],
+      "reason": "휘발유는 가연성 증기가 누설 위치에서 떨어진 점화원으로 확산될 수 있다. 누출 시에는 작업을 중지하고 주변 인원을 대피·보호하며 점화원을 통제하고, 적절한 비상 연락과 차량별 안전절차를 따라야 한다. 누출 확인을 위해 화염을 이용하거나 엔진을 계속 가동해서는 안 된다.",
+      "key_point": "연료 누출 인지 시 작업중단·인명안전·점화원 통제·신고가 우선.",
+      "correct_choice": "작업을 중단하고 인명 안전·점화원 통제·신고를 우선하며 차량별 대응절차에 따른다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "누출이 줄어들 때까지 엔진을 공회전 상태로 유지한다",
+          "verdict": "incorrect",
+          "rationale": "연료가 누설되는 상태에서 엔진을 계속 작동시키면 점화·화재 위험이 있어."
+        },
+        {
+          "number": 2,
+          "text": "점화원 유무를 확인하지 않고 불꽃이 발생하는 시험을 계속한다",
+          "verdict": "incorrect",
+          "rationale": "휘발유 증기 환경에서 스파크 시험은 점화 위험을 높여."
+        },
+        {
+          "number": 3,
+          "text": "작업을 중단하고 인명 안전·점화원 통제·신고를 우선하며 차량별 대응절차에 따른다",
+          "verdict": "correct",
+          "rationale": "인명 보호와 점화원 통제, 전문 비상대응은 연료계 정비의 안전한 초기 원칙이야."
+        },
+        {
+          "number": 4,
+          "text": "연료 누설 위치를 확인하기 위해 노출된 불꽃을 가까이 가져간다",
+          "verdict": "incorrect",
+          "rationale": "노출된 불꽃으로 휘발유 누설 위치를 탐색하면 폭발·화상 위험이 커져."
+        }
+      ],
+      "correct_number": 3
+    },
+    "new_topic": "엔진 본체·연료계 안전",
+    "technical_reference_urls": [
+      "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.106",
+      "https://static.nhtsa.gov/odi/rcl/2020/RCRIT-20V700-3257.pdf"
+    ],
+    "history_preserved": true,
+    "subject_hold_kept": true,
+    "independent_technical_approved": false
+  }
+]
