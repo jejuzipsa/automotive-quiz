@@ -1,0 +1,871 @@
+[
+  {
+    "id": "auto-made-r06-s03-q01",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 1,
+    "question_at_review": "배터리 회로에서 정격 10A인 전류 레인지로 5A를 측정하려 한다. 올바른 계기 연결은?",
+    "correct_number": 1,
+    "correct_choice": "규정된 전류 측정단자를 사용해 회로 경로에 직렬로 연결한다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "규정된 전류 측정단자를 사용해 회로 경로에 직렬로 연결한다",
+        "verdict": "correct",
+        "rationale": "허용범위 내 직류전류 측정 시 지정 전류 단자와 회로 직렬 연결이 원칙이다."
+      },
+      {
+        "number": 2,
+        "text": "전류 단자로 배터리 양극과 음극을 직접 단락한다",
+        "verdict": "incorrect",
+        "rationale": "전류 단자로 배터리 양극과 음극을 직접 연결하면 단락·퓨즈 손상 위험이 있다."
+      },
+      {
+        "number": 3,
+        "text": "저항 측정 중 전원을 인가해 둔다",
+        "verdict": "incorrect",
+        "rationale": "저항 모드에서 전압을 인가한 회로를 측정하면 계기를 손상시킬 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "전류 단자 없이 전압모드로 무조건 직렬 연결한다",
+        "verdict": "incorrect",
+        "rationale": "전압 입력단자로 직렬 연결하는 방식은 전류 측정 원리가 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.fluke.com/en/learn/blog/electrical/how-to-measure-current-with-a-digital-multimeter"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q02",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 2,
+    "question_at_review": "비 오는 도로에서 구동륜이 공회전한다. TCS의 제어 방법과 가장 잘 맞는 것은?",
+    "correct_number": 2,
+    "correct_choice": "미끄러지는 구동륜을 제동하거나 엔진·모터 토크를 줄인다",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "승차감 향상을 위해 모든 브레이크를 해제한다",
+        "verdict": "incorrect",
+        "rationale": "구동륜 미끄럼을 억제할 때 모든 브레이크를 해제하는 것이 기본 TCS 제어는 아니다."
+      },
+      {
+        "number": 2,
+        "text": "미끄러지는 구동륜을 제동하거나 엔진·모터 토크를 줄인다",
+        "verdict": "correct",
+        "rationale": "미끄러지는 구동륜을 개별 제동하거나 엔진·모터 토크를 감소시킬 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "헤드램프 광축을 낮춰 접지력을 회복한다",
+        "verdict": "incorrect",
+        "rationale": "전조등 조사각을 바꾸어 타이어의 마찰력을 회복하는 장치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "구동 토크를 무조건 최대로 올린다",
+        "verdict": "incorrect",
+        "rationale": "슬립 중 무조건 토크를 최대로 올리면 접지 회복을 보장할 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q03",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 3,
+    "question_at_review": "차량은 직진 중인데 ESC 진단기의 조향각이 크게 표시된다. 원인을 좁히는 합리적인 작업은?",
+    "correct_number": 2,
+    "correct_choice": "휠 정렬 상태와 조향각 영점 보정값을 먼저 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "요율 센서가 있으면 조향각 센서는 항상 무시한다",
+        "verdict": "incorrect",
+        "rationale": "요레이트 센서가 있다고 조향각 센서의 기준 위치를 무시할 수는 없다."
+      },
+      {
+        "number": 2,
+        "text": "휠 정렬 상태와 조향각 영점 보정값을 먼저 확인한다",
+        "verdict": "correct",
+        "rationale": "실제 휠 정렬과 조향각 신호·필요한 영점 보정 상태를 차종별로 비교한다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 유압을 최고로 올려 보정한다",
+        "verdict": "incorrect",
+        "rationale": "브레이크 유압을 최대로 올리는 방식으로 SAS 영점을 보정하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "타이어를 교환하면 센서값이 자동 수정된다",
+        "verdict": "incorrect",
+        "rationale": "타이어 교환만으로 모든 조향각 센서가 자동 보정된다는 보장은 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"
+    ],
+    "hold_reasons": [
+      "SAS 재학습/얼라인먼트의 필수 조건과 허용 신호값은 차종·부품별 매뉴얼 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q04",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 4,
+    "question_at_review": "ADAS 전방카메라를 새 모듈로 교환한 차량이다. 차종 지침이 캘리브레이션을 요구한다면?",
+    "correct_number": 1,
+    "correct_choice": "전용 표적과 지정 조건으로 카메라 보정을 실시한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "전용 표적과 지정 조건으로 카메라 보정을 실시한다",
+        "verdict": "correct",
+        "rationale": "교체 카메라는 차량이 요구하는 표적·장비·위치와 정적/동적 보정 조건을 따라야 한다."
+      },
+      {
+        "number": 2,
+        "text": "카메라 모듈은 교환 후 항상 캘리브레이션 금지",
+        "verdict": "incorrect",
+        "rationale": "전방 카메라는 모든 차종에서 교환 후 보정이 금지된다는 규칙이 없다."
+      },
+      {
+        "number": 3,
+        "text": "차종 불문 같은 위치에 눈대중으로 표적을 둔다",
+        "verdict": "incorrect",
+        "rationale": "표적 위치를 눈대중으로 정하면 차량의 인식 좌표가 부정확해질 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "전방유리 얼룩은 보정값과 관계없으니 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "카메라 앞 유리 오염·장착상태는 보정과 인식 품질에 영향을 줄 수 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/us/technical/adas/"
+    ],
+    "hold_reasons": [
+      "ADAS 보정은 전용 표적/거리/차고·노면·조도·유리조건에 따른 OEM 절차와 안전기준 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q05",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 5,
+    "question_at_review": "운전자 안전장치 수리를 마친 뒤 최종 검사를 계획한다. 확인 범위로 가장 적절한 것은?",
+    "correct_number": 3,
+    "correct_choice": "관련 DTC·경고등·배선·기능 시험을 지정 절차에 따라 점검한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "경고등이 꺼지지 않아도 무조건 출고한다",
+        "verdict": "incorrect",
+        "rationale": "SRS 경고등이 계속 켜져도 무조건 출고하는 것은 안전성 확인과 다르다."
+      },
+      {
+        "number": 2,
+        "text": "에어백 회로에 임의 저항을 연결해 발화한다",
+        "verdict": "incorrect",
+        "rationale": "에어백 점화회로에 임의 저항이나 외부 전원을 넣는 것은 위험한 검사다."
+      },
+      {
+        "number": 3,
+        "text": "관련 DTC·경고등·배선·기능 시험을 지정 절차에 따라 점검한다",
+        "verdict": "correct",
+        "rationale": "제조사 안전절차에 따라 경고등·DTC·배선과 허용된 기능 검사를 확인한다."
+      },
+      {
+        "number": 4,
+        "text": "장비와의 통신은 어떤 정비에도 확인할 필요가 없다",
+        "verdict": "incorrect",
+        "rationale": "정비 후 SRS 제어기와 진단장비 통신 여부가 무관하다고 단정할 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/ae/technical/car-electronics-and-electrics/car-airbag-system/"
+    ],
+    "hold_reasons": [
+      "SRS 화약식 점화장치와 커넥터/저항 검사 등 구체적 실무 안전은 OEM 정비지침 필수"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q06",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 6,
+    "question_at_review": "에어백 제어 모듈을 교환한 뒤 경고등이 꺼지지 않는다. 우선 확인할 내용은?",
+    "correct_number": 2,
+    "correct_choice": "해당 차량의 SRS 모듈 등록·설정과 저장된 고장코드",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "에어백 커넥터에 시험용 전원을 임의 공급",
+        "verdict": "incorrect",
+        "rationale": "에어백 커넥터에 임의 외부 전원을 넣는 것은 점화 위험이 있다."
+      },
+      {
+        "number": 2,
+        "text": "해당 차량의 SRS 모듈 등록·설정과 저장된 고장코드",
+        "verdict": "correct",
+        "rationale": "차량 지정 SRS 모듈 코딩/등록과 저장된 고장코드를 먼저 확인한다."
+      },
+      {
+        "number": 3,
+        "text": "일단 경고등을 가리는 것만으로 수리 종료",
+        "verdict": "incorrect",
+        "rationale": "경고등을 가리는 것만으로 SRS 불량이 수리되는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "다른 차종의 안전장치 모듈을 무조건 호환 사용",
+        "verdict": "incorrect",
+        "rationale": "타 차량의 SRS 제어기를 확인 없이 호환 사용하는 것은 부적절하다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/ae/technical/car-electronics-and-electrics/car-airbag-system/"
+    ],
+    "hold_reasons": [
+      "SRS 모듈 교환·충돌기록·코딩은 제조사 권한/매뉴얼 안전 절차 검증 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q07",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 7,
+    "question_at_review": "ABS 경고등이 계속 점등되는 차량이 들어왔다. 관련 검사 판정을 결정할 때 필요한 기준은?",
+    "correct_number": 4,
+    "correct_choice": "검사 당시 적용되는 공식 자동차검사 규정과 차량 요건",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "운전자의 취향만으로 적합 판정",
+        "verdict": "incorrect",
+        "rationale": "운전자의 주관적 취향만으로 검사 적합 판정을 내릴 수는 없다."
+      },
+      {
+        "number": 2,
+        "text": "오래된 교재 한 문장만으로 모든 시기에 동일 판정",
+        "verdict": "incorrect",
+        "rationale": "옛 교재의 문장 하나가 모든 검사 연도에 일괄 적용되는 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "경고등을 테이프로 가린 뒤 바로 적합 처리",
+        "verdict": "incorrect",
+        "rationale": "경고등을 가리는 행위는 결함이나 검사 기준을 해소하지 못한다."
+      },
+      {
+        "number": 4,
+        "text": "검사 당시 적용되는 공식 자동차검사 규정과 차량 요건",
+        "verdict": "correct",
+        "rationale": "차량의 제작·검사 시점과 적용되는 공인 자동차검사 규정이 판단 기준이다."
+      }
+    ],
+    "source_urls": [
+      "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290737"
+    ],
+    "hold_reasons": [
+      "ABS 경고등 적부판정 세부기준은 2026 시행 국내 자동차검사 규정과 차종/검사일자 법령을 직접 조회해야 최종판정 가능"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q08",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 8,
+    "question_at_review": "컴프레서 클러치가 짧은 간격으로 반복 작동한다. 우선 진단해야 할 자료는?",
+    "correct_number": 2,
+    "correct_choice": "고·저압 냉매 압력과 압력센서·보호제어 상태를 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "고장코드만 삭제해 냉매 압력 계측을 대신한다",
+        "verdict": "incorrect",
+        "rationale": "DTC 삭제만으로 냉매 압력/보호제어의 실제 값을 알 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "고·저압 냉매 압력과 압력센서·보호제어 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "컴프레서 사이클이 짧으면 고저압·센서 및 보호제어 신호를 비교한다."
+      },
+      {
+        "number": 3,
+        "text": "압축기 클러치를 고정 접속해 보호제어 개입을 차단한다",
+        "verdict": "incorrect",
+        "rationale": "압축기 보호제어를 임의 우회하면 장치 손상·안전 위험이 생길 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "냉방성능과 무관하게 무조건 냉매를 추가 충전한다",
+        "verdict": "incorrect",
+        "rationale": "원인 검증 없이 냉매를 무조건 추가하면 과충전 위험이 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "냉매 종류, 압력 측정 조건, 회수장비·법규 및 컴프레서 제어형식별 매뉴얼 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q09",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 9,
+    "question_at_review": "에어컨 증발기에 성에가 과도하게 생기고 풍량이 줄었다. 점검할 제어항목은?",
+    "correct_number": 1,
+    "correct_choice": "증발기 온도센서 신호와 결빙 방지 제어",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "증발기 온도센서 신호와 결빙 방지 제어",
+        "verdict": "correct",
+        "rationale": "증발기 온도센서와 결빙 방지 컴프레서 제어는 과도한 성에의 진단 대상이다."
+      },
+      {
+        "number": 2,
+        "text": "도어 미러의 자동 접힘 시간",
+        "verdict": "incorrect",
+        "rationale": "도어미러 자동 접힘시간은 증발기 표면온도를 직접 제어하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크의 유효 용량",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 용량은 증발기 성에 제어의 측정값이 아니다."
+      },
+      {
+        "number": 4,
+        "text": "변속기 라인압만",
+        "verdict": "incorrect",
+        "rationale": "변속기 라인압은 증발기 냉각핀 결빙을 직접 나타내지 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q10",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 10,
+    "question_at_review": "실내 송풍팬이 작동하지 않는다. 냉매 계통을 분해하기 전에 볼 항목은?",
+    "correct_number": 3,
+    "correct_choice": "블로워 퓨즈·제어모듈·전원 및 모터 구동",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "배기 가스 재순환 밸브를 먼저 분리",
+        "verdict": "incorrect",
+        "rationale": "EGR 밸브 분리 작업은 실내 송풍팬 전원불량의 우선 진단이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "냉매 규격을 변경하면 팬이 자동 회복",
+        "verdict": "incorrect",
+        "rationale": "냉매 종류만 바꾼다고 송풍기 모터의 전기 회로가 복구되지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "블로워 퓨즈·제어모듈·전원 및 모터 구동",
+        "verdict": "correct",
+        "rationale": "블로워 퓨즈·모듈·모터 전원과 접지·명령을 확인하는 것이 적절하다."
+      },
+      {
+        "number": 4,
+        "text": "타이어의 접지면적만 측정",
+        "verdict": "incorrect",
+        "rationale": "타이어 접지면적만으로 실내 블로워 작동불능을 판정할 수 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q11",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 11,
+    "question_at_review": "에어컨의 사이트 글라스에 기포가 보인다. 정확한 냉매량 판단을 위해 먼저 필요한 것은?",
+    "correct_number": 4,
+    "correct_choice": "해당 냉매·시스템의 지정 정량충전과 압력·온도 조건 확인",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "기포가 조금 있으면 무조건 냉매 1kg 추가",
+        "verdict": "incorrect",
+        "rationale": "사이트글라스 기포가 있더라도 무조건 냉매 1kg 추가하는 것은 과충전 위험이다."
+      },
+      {
+        "number": 2,
+        "text": "차종에 상관없이 모든 시스템에서 기포는 불량",
+        "verdict": "incorrect",
+        "rationale": "차종·시스템마다 사이트글라스 기포의 의미가 같지는 않다."
+      },
+      {
+        "number": 3,
+        "text": "엔진오일 점도만 측정해 냉매량 결정",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 점도만으로 에어컨 냉매 충전량을 정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "해당 냉매·시스템의 지정 정량충전과 압력·온도 조건 확인",
+        "verdict": "correct",
+        "rationale": "정해진 냉매 종류·시스템 조건·정량충전 및 압력·온도를 함께 확인한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "사이트글라스 없는 시스템과 냉매상 변화, 온도·압력 영향 등 제조사별 정량충전 기준 필수"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q12",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 12,
+    "question_at_review": "냉매 부족이 의심되어 계통을 점검한다. 가장 신뢰할 수 있는 절차는?",
+    "correct_number": 3,
+    "correct_choice": "누설 확인 뒤 제조사가 지정한 냉매량을 계량 충전",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "보이는 기포가 사라질 때까지 무제한 충전",
+        "verdict": "incorrect",
+        "rationale": "기포가 사라질 때까지 제한 없이 충전하면 규정량을 초과할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "압력 게이지 한쪽 값만으로 충전 완료 선언",
+        "verdict": "incorrect",
+        "rationale": "한쪽 압력 수치만으로 전 시스템의 정확한 충전량을 판단하기 어렵다."
+      },
+      {
+        "number": 3,
+        "text": "누설 확인 뒤 제조사가 지정한 냉매량을 계량 충전",
+        "verdict": "correct",
+        "rationale": "누설을 확인하고 지정 냉매를 회수/진공 배기 후 정량 충전하는 절차가 기본이다."
+      },
+      {
+        "number": 4,
+        "text": "냉매 종류를 혼합해 모자란 양을 채운다",
+        "verdict": "incorrect",
+        "rationale": "호환이 확인되지 않은 서로 다른 냉매 혼합은 위험하고 규정 위반 가능성이 있다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "hold_reasons": [
+      "회수·진공·정량충전 과정은 냉매 종류, 안전/환경 규정, OEM·전문장비 요구사항 따라야 함"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q13",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 13,
+    "question_at_review": "가솔린 엔진이 충분히 예열됐는데 공회전이 계속 과도하게 높다. 직접 점검할 항목은?",
+    "correct_number": 1,
+    "correct_choice": "스로틀 닫힘 상태·흡기 누설·공회전 요청값",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "스로틀 닫힘 상태·흡기 누설·공회전 요청값",
+        "verdict": "correct",
+        "rationale": "과도한 고공회전에는 스로틀 닫힘/공기 누설/ECU 목표 공회전값이 직접 관련된다."
+      },
+      {
+        "number": 2,
+        "text": "전조등 렌즈 표면만",
+        "verdict": "incorrect",
+        "rationale": "전조등 렌즈 표면은 공회전 제어의 직접 측정항목이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "스티어링 휠의 직경만",
+        "verdict": "incorrect",
+        "rationale": "스티어링 휠 직경만으로 고공회전 원인을 진단하지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "워셔액 잔량만",
+        "verdict": "incorrect",
+        "rationale": "워셔액 잔량은 고공회전의 직접 진단 단서가 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/throttle-potentiometer/"
+    ],
+    "hold_reasons": [
+      "existing_subject_classification_hold",
+      "이미 엔진정비에서 전기전자 과목으로 배치되어 출제범위 보류, ECU 공회전·흡기 누설 진단은 차종별 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q14",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 14,
+    "question_at_review": "리모컨 도어 잠금 거리가 이전보다 현저히 짧아졌다. 점검 우선 항목은?",
+    "correct_number": 1,
+    "correct_choice": "리모컨 배터리 상태와 RF 송신·수신 환경",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "리모컨 배터리 상태와 RF 송신·수신 환경",
+        "verdict": "correct",
+        "rationale": "리모컨 코인전지 출력과 송수신 환경은 원격 인식거리와 관련된다."
+      },
+      {
+        "number": 2,
+        "text": "엔진오일 압력 스위치",
+        "verdict": "incorrect",
+        "rationale": "엔진오일압 스위치는 리모컨 RF 거리의 직접 원인이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "타이어의 회전 방향 표기",
+        "verdict": "incorrect",
+        "rationale": "타이어 회전방향 표기는 리모컨 무선통신 거리와 관계가 없다."
+      },
+      {
+        "number": 4,
+        "text": "브레이크 디스크 두께만",
+        "verdict": "incorrect",
+        "rationale": "브레이크 디스크 두께는 스마트키 리모컨 RF 출력 측정값이 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q15",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 15,
+    "question_at_review": "자동차 회로도에 사각형 안에 선이 그려진 퓨즈 기호가 있다. 기능 판별의 기본 기준은?",
+    "correct_number": 3,
+    "correct_choice": "제작사의 회로도 범례와 퓨즈 번호·정격 확인",
+    "evidence_grade": "source_supported_first_pass",
+    "options": [
+      {
+        "number": 1,
+        "text": "퓨즈는 정격전류 없이 케이블 색으로만 식별",
+        "verdict": "incorrect",
+        "rationale": "퓨즈를 케이블 색만으로 정격확인 없이 판단하면 회로 보호사양을 놓친다."
+      },
+      {
+        "number": 2,
+        "text": "모든 국가의 퓨즈 기호가 반드시 ─||─ 하나로 통일",
+        "verdict": "incorrect",
+        "rationale": "모든 제조사가 퓨즈 기호를 한 가지 도형만 쓴다는 설명은 부정확하다."
+      },
+      {
+        "number": 3,
+        "text": "제작사의 회로도 범례와 퓨즈 번호·정격 확인",
+        "verdict": "correct",
+        "rationale": "차량 도면 범례와 퓨즈 번호·정격을 대조하는 것이 적절하다."
+      },
+      {
+        "number": 4,
+        "text": "회로도의 모든 두 선 표시는 콘덴서",
+        "verdict": "incorrect",
+        "rationale": "도면의 두 줄 기호를 모두 콘덴서라고 확정할 수는 없다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electrical-wiring-diagrams/"
+    ],
+    "hold_reasons": [],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q16",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 16,
+    "question_at_review": "선루프 교환 후 틸트만 되고 슬라이딩 기능이 작동하지 않는다. 우선 검사할 내용은?",
+    "correct_number": 3,
+    "correct_choice": "슬라이드 레일 기계저항과 위치 학습 상태를 확인한다",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "스위치 교환만으로 슬라이드 레일 상태를 판정한다",
+        "verdict": "incorrect",
+        "rationale": "틸트 작동만으로 선루프의 슬라이딩 레일 상태를 판단할 수는 없다."
+      },
+      {
+        "number": 2,
+        "text": "모든 차종에서 위치 학습이 불필요하다고 판단한다",
+        "verdict": "incorrect",
+        "rationale": "일부 선루프는 분해·교환 후 위치 학습이 필요하므로 일괄 불필요 판정은 틀리다."
+      },
+      {
+        "number": 3,
+        "text": "슬라이드 레일 기계저항과 위치 학습 상태를 확인한다",
+        "verdict": "correct",
+        "rationale": "슬라이드 레일 저항·기계 간섭과 포지션 학습 상태를 함께 확인한다."
+      },
+      {
+        "number": 4,
+        "text": "틸트 모터가 정상이라면 슬라이드 기계간섭을 배제한다",
+        "verdict": "incorrect",
+        "rationale": "틸트 모터 작동이 슬라이딩 레일의 기계적인 문제를 자동으로 배제하지는 않는다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+    ],
+    "hold_reasons": [
+      "선루프 전용 OEM 자료를 추가해야 하며 파워윈도 일반 설명만으로 위치학습/끼임방지 절차 확정 불가"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q17",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 17,
+    "question_at_review": "스마트키로 도어 잠금만 되지 않고 시동 인식은 정상이다. 다음 진단 항목은?",
+    "correct_number": 1,
+    "correct_choice": "도어 잠금용 RF 신호·수신 안테나·도어 제어기",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "도어 잠금용 RF 신호·수신 안테나·도어 제어기",
+        "verdict": "correct",
+        "rationale": "시동 인증과 도어 잠금 제어가 별도이므로 도어 RF/수신기·제어기 신호를 점검한다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 충전 압력만",
+        "verdict": "incorrect",
+        "rationale": "타이어 압력만으로 스마트키 도어 RF 동작을 판정할 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "주행용 엔진오일의 점도만",
+        "verdict": "incorrect",
+        "rationale": "엔진 윤활유 점도만으로 원격 도어 잠금 신호 불량을 판단하기 어렵다."
+      },
+      {
+        "number": 4,
+        "text": "시동이 되면 도어 잠금 고장은 불가능하다",
+        "verdict": "incorrect",
+        "rationale": "시동이 된다고 도어 잠금 기능에 결함이 불가능한 것은 아니다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+    ],
+    "hold_reasons": [
+      "OEM 스마트키는 LF/RF/BLE/UWB 사용·도어 ECU 구조가 달라 수신기·안테나 범위 직접 자료 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q18",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 18,
+    "question_at_review": "선루프가 열리지만 닫히지 않을 때 진단 우선순위에 맞는 것은?",
+    "correct_number": 4,
+    "correct_choice": "끼임 방지 상태와 레일 걸림·위치 학습 확인",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "엔진의 분사시기를 무조건 앞당긴다",
+        "verdict": "incorrect",
+        "rationale": "엔진 분사시기 조정은 선루프 닫힘 불능의 직접 고장 진단방법이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "닫힘이 안 되면 모든 차에서 모터를 즉시 교환",
+        "verdict": "incorrect",
+        "rationale": "닫히지 않는 선루프를 무조건 모터불량으로 확정하면 기구부 고장을 놓친다."
+      },
+      {
+        "number": 3,
+        "text": "단락을 만들어 모터를 강제 회전시킨다",
+        "verdict": "incorrect",
+        "rationale": "모터 회로를 단락시켜 강제구동하면 끼임·과전류·기구 손상 위험이 있다."
+      },
+      {
+        "number": 4,
+        "text": "끼임 방지 상태와 레일 걸림·위치 학습 확인",
+        "verdict": "correct",
+        "rationale": "끼임방지·레일 걸림·포지션 학습 상태를 OEM 규격에 따라 확인한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+    ],
+    "hold_reasons": [
+      "선루프 끼임방지/안전 초기화는 차종별 제조사 절차 및 센서 구성 확인 필요"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q19",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 19,
+    "question_at_review": "도어를 특정 각도로 열 때 딸깍 소리가 반복되고 도어 고정이 약하다. 관련 부품은?",
+    "correct_number": 1,
+    "correct_choice": "도어 체커의 롤러·링크·체결부",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "도어 체커의 롤러·링크·체결부",
+        "verdict": "correct",
+        "rationale": "도어 체커 링크·롤러/체결부의 마모·이탈은 특정 문각도 소음·고정력 저하 원인이 된다."
+      },
+      {
+        "number": 2,
+        "text": "연료 레일 압력센서",
+        "verdict": "incorrect",
+        "rationale": "연료 레일압 센서는 도어 체커의 기계 마찰 부품이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "엔진 크랭크축 풀리",
+        "verdict": "incorrect",
+        "rationale": "크랭크축 풀리는 도어 개방 각도 고정용 장치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "변속기 TCC 솔레노이드",
+        "verdict": "incorrect",
+        "rationale": "TCC 솔레노이드는 자동변속기 토크컨버터 제어계통 부품이다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+    ],
+    "hold_reasons": [
+      "도어 체커만의 차종별 OEM 조정·진단 근거가 부족, 오답 2~4가 과도하게 무관해 편집품질 재검토"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  },
+  {
+    "id": "auto-made-r06-s03-q20",
+    "subject": "electrical",
+    "round": 6,
+    "question_number": 20,
+    "question_at_review": "전동 사이드미러가 접히지 않고 모터 소리만 난다. 가장 관련 깊은 점검은?",
+    "correct_number": 4,
+    "correct_choice": "접힘 기어·힌지의 걸림과 구동모터 상태",
+    "evidence_grade": "needs_additional_model_or_syllabus_review",
+    "options": [
+      {
+        "number": 1,
+        "text": "연료탱크 주입구 캡에 바람을 넣기",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 캡에 공기를 넣는 방식으로 미러 접힘 기어걸림을 진단하지 않는다."
+      },
+      {
+        "number": 2,
+        "text": "엔진오일 교환 주기를 먼저 조정",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 교환주기 조정으로 전동미러 기계적 접힘 불량이 복구되지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크액에 윤활유를 넣기",
+        "verdict": "incorrect",
+        "rationale": "브레이크액에 윤활유를 넣으면 브레이크 안전 문제가 생긴다."
+      },
+      {
+        "number": 4,
+        "text": "접힘 기어·힌지의 걸림과 구동모터 상태",
+        "verdict": "correct",
+        "rationale": "모터소음이 있는데 접히지 않는다면 기어·힌지 걸림/모터 전달부를 점검한다."
+      }
+    ],
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+    ],
+    "hold_reasons": [
+      "미러 접힘 전용 OEM 근거보강 필요, 선택지 1~3이 과도하게 이질적이라 변별력이 떨어질 수 있음"
+    ],
+    "independent_final_technical_approval": false,
+    "web_publication": false
+  }
+]
