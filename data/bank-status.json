@@ -1525,5 +1525,53 @@
     "audit": "data/qa/technical-qa21-r05-electrical-option-audit.json",
     "report": "docs/TECHNICAL_QA21.md",
     "next": "r05 eco 20; rounds06-09"
+  },
+  "technical_qa22": {
+    "date": "2026-11-23",
+    "batch": "round05_eco_01_to_20",
+    "questions_reviewed": 20,
+    "options_reviewed": 80,
+    "source_supported_first_pass": 5,
+    "pending_additional_oem_safety_or_syllabus_review": 15,
+    "pending_question_numbers": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      9,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      20
+    ],
+    "existing_subject_hold_numbers": [
+      5,
+      12,
+      13,
+      14,
+      15
+    ],
+    "new_subject_holds": 0,
+    "current_subject_holds": 53,
+    "cumulative_historical_firstpass_questions": 400,
+    "cumulative_historical_firstpass_options": 1600,
+    "remaining_no_firstpass_questions": 320,
+    "remaining_no_firstpass_options": 1280,
+    "firstfive_rounds_80_questions_each_firstpass_complete": true,
+    "qa19_updated_eco_q17_q18_current_version_reviewed": true,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "original_private_qa23_unchanged": true,
+    "live_manifest_unchanged": true,
+    "expected_practice_exam_80_unchanged": true,
+    "audit": "data/qa/technical-qa22-r05-eco-option-audit.json",
+    "report": "docs/TECHNICAL_QA22.md",
+    "next": "r06 engine20, chassis20, electrical20, eco20 then r07-r09"
   }
 }
