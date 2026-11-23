@@ -45,7 +45,7 @@ for(const q of qMap.values()){
   if(q.subject_classification_review){holds++;assert.equal(q.subject_classification_review.status,'hold_do_not_publish');}
   if(q.technical_reference_first_pass){firstPassed++;assert.equal(q.technical_reference_first_pass.status,'source_supported_needs_final_editor_signoff');}
 }
-assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,47);assert.equal(firstPassed,7);
+assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(holds,48);assert.equal(firstPassed,7); // 47 QA2 historical holds + QA10 current hold
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
