@@ -1305,5 +1305,47 @@
     "audit": "data/qa/technical-qa16-chassis-r03-option-audit.json",
     "report": "docs/TECHNICAL_QA16.md",
     "next": "round03 electrical 20 + eco 20 then round04-09 480"
+  },
+  "technical_qa17": {
+    "date": "2026-11-23",
+    "scope": "round03 electrical and eco 20+20 questions 160 options with references",
+    "electrical": {
+      "question_count": 20,
+      "option_count": 80,
+      "source_supported_first_pass": 8,
+      "pending_additional_review": 12
+    },
+    "eco": {
+      "question_count": 20,
+      "option_count": 80,
+      "source_supported_first_pass": 5,
+      "pending_additional_review": 15
+    },
+    "editorial_fixes": 2,
+    "edited_ids": [
+      "auto-made-r03-s04-q16",
+      "auto-made-r03-s04-q17"
+    ],
+    "new_subject_classification_holds": 2,
+    "new_hold_ids": [
+      "auto-made-r03-s03-q08",
+      "auto-made-r03-s04-q15"
+    ],
+    "historical_subject_holds_from_qa1_qa2": 47,
+    "current_subject_hold_count": 51,
+    "firstpass_current_version_question_count": 240,
+    "firstpass_current_version_option_count": 960,
+    "questions_still_missing_individual_choice_firstpass": 480,
+    "options_still_missing_individual_firstpass": 1920,
+    "independent_final_technical_approvals": 0,
+    "published_reconstructed_past_questions": 0,
+    "original_purchased_ocr_unchanged": true,
+    "live_public_manifest_unchanged": true,
+    "predicted_question_exam_80_unchanged": true,
+    "audit_electrical": "data/qa/technical-qa17-r03-electrical-option-audit.json",
+    "audit_eco": "data/qa/technical-qa17-r03-eco-option-audit.json",
+    "edits_and_hold_audit": "data/qa/technical-qa17-edits-and-holds.json",
+    "report": "docs/TECHNICAL_QA17.md",
+    "next": "round04 engine 20 and rounds04-09 remaining 480 option-by-option source checks"
   }
 }

@@ -1,0 +1,124 @@
+{
+  "date": "2026-11-23",
+  "batch": "QA17_r03_electrical_eco",
+  "modifications": [
+    {
+      "id": "auto-made-r03-s04-q16",
+      "subject": "eco",
+      "question_number": 16,
+      "before": {
+        "question": "고전압 배터리 팩 정비 준비 중이다. 작업구역 안전 관리로 옳은 것은?",
+        "choices": [
+          "반지·목걸이를 착용한 채 작업",
+          "절연보호구 없이 맨손 작업",
+          "전원 차단 여부를 확인하지 않고 커넥터 분리",
+          "금속 장신구를 제거하고 구역 통제·PPE·검전 절차를 지킨다"
+        ],
+        "answer": 4,
+        "reason": "고전압 작업장에서는 우발적인 단락과 전기접촉을 예방해야 한다. 보호구 및 지정 차단 절차, 검전, 비상대응 계획 등을 작업 전에 확인한다.",
+        "key_point": "작업구역 통제와 금속장신구 제거는 기본 안전 관리다.",
+        "correct_choice": "금속 장신구를 제거하고 구역 통제·PPE·검전 절차를 지킨다"
+      },
+      "after": {
+        "question": "전기차 고전압 전력 변환장치를 정비하다 절연 이상을 감지했다. 원인 규명 전 적절한 보호 원칙은?",
+        "choices": [
+          "HVIL·절연 감시의 이상을 확인하지 않고 접촉기만 강제로 폐쇄한다",
+          "제어기의 절연 고장코드를 삭제하면 실제 절연상태가 자동 복구된다",
+          "고전압 절연 이상이 있더라도 보호 제어를 무시하고 시험운전한다",
+          "안전 정지 후 제조사 절연 고장 진단 절차를 따르고 정격 보호구·검전을 수행한다"
+        ],
+        "answer": 4,
+        "reason": "차량에서 고전압 계통의 절연 이상이 감지되면 사람과 부품에 전기적 위험이 있을 수 있다. 이상을 무시해 접촉기를 강제로 닫거나 경고만 삭제하면 실제 절연 결함이 사라지지 않는다. 운행을 안전하게 중지한 뒤 해당 차량의 절연 감시·전원 차단·무전압 확인 및 진단 위치에 관한 제조사 절차를 자격을 갖춘 작업자가 수행해야 한다.",
+        "key_point": "고전압 절연 이상은 경고 삭제나 접촉기 강제작동 대신 OEM 안전격리 및 원인진단이 우선이다.",
+        "correct_choice": "안전 정지 후 제조사 절연 고장 진단 절차를 따르고 정격 보호구·검전을 수행한다"
+      },
+      "why": "replace redundant jewelry/PPE question q16 duplicating q6 with distinct insulation fault and fail-safe diagnosis",
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance",
+        "https://www.fluke.com/en-vn/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings"
+      ],
+      "independent_final_technical_approval": false,
+      "public_release": false
+    },
+    {
+      "id": "auto-made-r03-s04-q17",
+      "subject": "eco",
+      "question_number": 17,
+      "before": {
+        "question": "배터리 전기차(BEV)의 주행 중 에너지 회수에 직접 기여하는 기능은?",
+        "choices": [
+          "회생제동과 구동제어 최적화",
+          "내연기관의 배기 밸브 리프트 증가",
+          "배기관 EGR 재순환",
+          "가솔린 옥탄가 향상"
+        ],
+        "answer": 1,
+        "reason": "전기차는 전동기 효율·회생제동·열관리를 최적화해 에너지 소비를 줄일 수 있다. 내연기관 특유의 장치는 BEV 구동 효율 개선수단이 아니다.",
+        "key_point": "BEV 효율에는 회생제동 등 전동 구동 기술이 핵심이다.",
+        "correct_choice": "회생제동과 구동제어 최적화"
+      },
+      "after": {
+        "question": "전기차에서 구동 배터리 SOC가 높거나 온도가 낮을 때 회생제동력이 줄어들 수 있는 이유는?",
+        "choices": [
+          "BMS가 배터리 충전 수용전력을 제한해 발전토크가 감소할 수 있기 때문이다",
+          "회생제동 모터가 언제나 내연기관 연료를 먼저 소비하기 때문이다",
+          "배터리 SOC가 높아지면 모터의 회전자가 반드시 기계적으로 고정되기 때문이다",
+          "저온에서 배터리가 항상 무제한 충전전력을 수용하기 때문이다"
+        ],
+        "answer": 1,
+        "reason": "회생제동은 구동모터의 발전 기능으로 차량의 운동에너지 일부를 배터리로 되돌린다. 그러나 SOC가 높아 충전 여유가 적거나 배터리 온도가 낮아 충전 수용전력이 제한되면 BMS와 구동제어기가 회생 토크를 줄일 수 있다. 일부 차량은 부족한 제동력을 마찰제동으로 보완하므로 실제 제동 감각과 회생 전류는 차종·환경에 따라 달라진다.",
+        "key_point": "회생제동은 SOC·배터리 온도·충전 허용전력에 따라 제한될 수 있다.",
+        "correct_choice": "BMS가 배터리 충전 수용전력을 제한해 발전토크가 감소할 수 있기 때문이다"
+      },
+      "why": "replace redundant general energy-recovery q17 overlapping q7 with BMS charging acceptance and regenerative brake limitations",
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/electric-basics-ev",
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/brake-by-wire/"
+      ],
+      "independent_final_technical_approval": false,
+      "public_release": false
+    }
+  ],
+  "new_classification_holds": [
+    {
+      "id": "auto-made-r03-s03-q08",
+      "question": "ABS 유압 조절기 교환으로 브레이크 유압회로를 개방했다. 수리 완료를 위해 적절한 검사는?",
+      "subject": "electrical",
+      "suggested_subject": "chassis",
+      "hold": {
+        "status": "hold_do_not_publish",
+        "current_subject": "electrical",
+        "suggested_subject": "chassis",
+        "reason": "브레이크 ABS 유압모듈 교환·유압 에어빼기·제동 기능점검은 전기전자장치보다 섀시/제동 정비 범위일 가능성이 높음",
+        "classification_verdict": "pending_curriculum_specific_manual_review",
+        "qa17_manual_screening": "cross_subject_topic_probable",
+        "qa17_reference_urls": [
+          "https://www.hella.com/techworld/en/technical/brakes/changing-the-brake-fluid/"
+        ]
+      },
+      "technical_final_approval": false
+    },
+    {
+      "id": "auto-made-r03-s04-q15",
+      "question": "퓨즈와 릴레이가 하나의 회로에 사용된다. 두 부품의 역할을 구별한 설명은?",
+      "subject": "eco",
+      "suggested_subject": "electrical",
+      "hold": {
+        "status": "hold_do_not_publish",
+        "current_subject": "eco",
+        "suggested_subject": "electrical",
+        "reason": "퓨즈와 릴레이의 일반 전기회로 기능 구분은 친환경 차량 전용 구동/고전압 개념이 아니므로 전기전자 과목 가능성 검토",
+        "classification_verdict": "pending_curriculum_specific_manual_review",
+        "qa17_manual_screening": "cross_subject_topic_probable",
+        "qa17_reference_urls": [
+          "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+        ]
+      },
+      "technical_final_approval": false
+    }
+  ],
+  "historical_subject_holds_before": 49,
+  "current_subject_holds_after": 51,
+  "independent_final_technical_approvals": 0,
+  "published_past_questions": 0
+}
