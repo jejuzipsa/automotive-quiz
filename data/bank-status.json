@@ -921,5 +921,43 @@
     "revision_history": "data/qa/technical-qa5-changes.json",
     "report": "docs/TECHNICAL_QA5.md",
     "disclaimer": "A mechanical QA pass does not establish technical unique-answer correctness, vehicle safety, model service procedure, or publication rights"
+  },
+  "technical_qa6": {
+    "date": "2026-11-23",
+    "scope": "1회차 섀시정비 20문항 80보기의 부품사/제조사 기술자료 1차 정합성 검토",
+    "reviewed_question_count": 20,
+    "reviewed_option_count": 80,
+    "source_supported_first_pass": 10,
+    "pending_additional_model_or_syllabus_review": 10,
+    "pending_question_numbers": [
+      2,
+      3,
+      4,
+      6,
+      8,
+      9,
+      12,
+      14,
+      18,
+      20
+    ],
+    "original_subject_holds_preserved": [
+      2,
+      4
+    ],
+    "question_rewrites_this_batch": 0,
+    "independent_final_technical_approvals": 0,
+    "new_live_past_questions": 0,
+    "previous_qa3_engine_firstpass_questions": 20,
+    "cumulative_separate_qa3_and_qa6_firstpass_question_count": 40,
+    "cumulative_qa3_and_qa6_firstpass_option_count": 160,
+    "cumulative_firstpass_supported_question_count": 27,
+    "cumulative_hold_for_additional_review": 13,
+    "original_private_qa23_unchanged": true,
+    "public_manifest_unchanged": true,
+    "audit": "data/qa/technical-qa6-chassis-r01-option-audit.json",
+    "report": "docs/TECHNICAL_QA6.md",
+    "qa6_test": "tests/technical-qa6.test.cjs",
+    "next": "r01 electrical 20 and eco 20 option-level independent manufacturer-reference screening"
   }
 }
