@@ -31,6 +31,7 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
     issues.push({id,code:"option_mapping_mismatch",number:j+1});
   }
   const urls=v.source_urls||v.reference_urls||e.reference_urls||[];
+  if(v.source_urls!==undefined && !Array.isArray(v.source_urls))issues.push({id,code:"non_array_source_urls"});
   if(!Array.isArray(urls)||urls.length===0)issues.push({id,code:"missing_reference_url"});
   else for(const url of urls)if(typeof url!=="string"||!/^https:\/\/[^ ]+\.[^ ]+/.test(url))issues.push({id,code:"bad_reference_url"});
   if(v.independent_final_technical_approval===true||v.final_technical_approval===true||v.web_publication===true||v.publishable===true)

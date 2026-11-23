@@ -34,7 +34,9 @@
         "rationale": "웨이스트게이트는 터빈 우회 배기가스를 제어하며 공기 냉각용 열교환기가 아니다."
       }
     ],
-    "source_urls": "https://www.garrettmotion.com/knowledge-center-category/oem/basic/",
+    "source_urls": [
+      "https://www.garrettmotion.com/knowledge-center-category/oem/basic/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -74,7 +76,9 @@
         "rationale": "엔진 냉각수 온도 센서 데이터는 ECU가 지원하는 진단 정보다."
       }
     ],
-    "source_urls": "https://www.boschdiagnostics.com/products/bosch-obd-1150",
+    "source_urls": [
+      "https://www.boschdiagnostics.com/products/bosch-obd-1150"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -114,7 +118,9 @@
         "rationale": "도어록 액추에이터만으로 디젤 레일압 목표값을 조절할 수는 없다."
       }
     ],
-    "source_urls": "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/",
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/"
+    ],
     "hold_reasons": [
       "레일압 제어 방식은 SCV/DRV/펌프 공급 제어 등 차종별로 다르고 고압연료 접근 위험이 있어 OEM 정비자료 필요"
     ],
@@ -156,7 +162,9 @@
         "rationale": "실린더 압축압력만으로 인젝터 분무구의 막힘 여부는 확인하기 어렵다."
       }
     ],
-    "source_urls": "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+    "source_urls": [
+      "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern"
+    ],
     "hold_reasons": [
       "기계식/커먼레일 분사방식과 시험압력·연료 분사/피부주입 안전에 따른 전용장비 기준 필요"
     ],
@@ -198,7 +206,9 @@
         "rationale": "적정 냉각수 온도 유지 그 자체가 이상 노킹의 주요 유발조건은 아니다."
       }
     ],
-    "source_urls": "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/",
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/engine-management/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -238,7 +248,9 @@
         "rationale": "제작연도·검사방식을 빼고 매연허용률을 무조건 20%로 단정할 수 없다."
       }
     ],
-    "source_urls": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290737",
+    "source_urls": [
+      "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=290737"
+    ],
     "hold_reasons": [
       "2026 국내 자동차 배출가스검사·제작연도별 기준과 시험 출제 법령기준일을 공식자료로 확정하기 전까지 수치/법령 최종승인 보류"
     ],
@@ -280,7 +292,9 @@
         "rationale": "CVVT는 운전조건에 맞게 캠 위상을 조절해 흡기/배기 밸브 개폐 타이밍을 바꾼다."
       }
     ],
-    "source_urls": "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/camshaft-adjustment/",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/camshaft-adjustment/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -320,7 +334,9 @@
         "rationale": "타이어 트레드 깊이는 길이 단위이므로 MAP kPa 측정 대상이 아니다."
       }
     ],
-    "source_urls": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/map-sensor/",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/sensors-and-actuators/map-sensor/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -360,7 +376,9 @@
         "rationale": "냉각수 서모스탯은 냉각수 흐름/온도를 조절할 뿐 증발연료를 흡착하지 않는다."
       }
     ],
-    "source_urls": "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/activated-carbon-canister/",
+    "source_urls": [
+      "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/activated-carbon-canister/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -400,7 +418,9 @@
         "rationale": "압축링은 연소가스가 크랭크케이스로 새지 않도록 기밀 유지에 기여한다."
       }
     ],
-    "source_urls": "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/",
+    "source_urls": [
+      "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -440,7 +460,9 @@
         "rationale": "캠위상 오차가 곧바로 연료레일 펌프 공급압을 직접 정하는 것은 아니다."
       }
     ],
-    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html",
+    "source_urls": [
+      "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/timing-system-installation.html"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -480,7 +502,9 @@
         "rationale": "실내 소음계만으로 인젝터 분무량과 미립화 상태를 판정할 수는 없다."
       }
     ],
-    "source_urls": "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern",
+    "source_urls": [
+      "https://www.delphiautoparts.com/en-gb/mom/how-to/article/how-to-check-diesel-injector-spray-pattern"
+    ],
     "hold_reasons": [
       "디젤 고압 인젝터 시험은 고압 분사·피부 주입·장비 오염 위험으로 전문장비/OEM 검사 기준 필요"
     ],
@@ -522,7 +546,9 @@
         "rationale": "규정 요소 농도 수용액의 요소가 분해되어 촉매 NOx 환원용 암모니아를 제공한다."
       }
     ],
-    "source_urls": "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/",
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -562,7 +588,9 @@
         "rationale": "오일링 마모가 차륜 제동력 제어를 직접 보정하지는 않는다."
       }
     ],
-    "source_urls": "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/",
+    "source_urls": [
+      "https://www.mahle-aftermarket.com/eu/en/products-and-services/engine-components/piston-rings/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -602,7 +630,9 @@
         "rationale": "요소수 SCR 분사는 주로 NOx 환원용이며 DPF 그을음의 직접 산화 재생 작동과 구분한다."
       }
     ],
-    "source_urls": "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/",
+    "source_urls": [
+      "https://www.bosch-mobility.com/en/solutions/exhaust-gas-treatment/denoxtronic-exhaust-gas-treatment-system/"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -642,7 +672,9 @@
         "rationale": "사이드미러 체결부는 실린더 압축 기밀 경로가 아니다."
       }
     ],
-    "source_urls": "https://www.felpro.com/technical/tecblogs/valve-stem-seals.html",
+    "source_urls": [
+      "https://www.felpro.com/technical/tecblogs/valve-stem-seals.html"
+    ],
     "hold_reasons": [
       "실린더 TDC, 압축공기 공급, 냉각/회전부 고정 등의 누설시험 안전/OEM 절차 필요"
     ],
@@ -684,7 +716,9 @@
         "rationale": "서모스탯 고장만으로 히터코어 유량이 모든 경우 반드시 0이 되는 것은 아니다."
       }
     ],
-    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/thermostats.html",
+    "source_urls": [
+      "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/thermostats.html"
+    ],
     "hold_reasons": [],
     "independent_final_technical_approval": false,
     "web_publication": false
@@ -724,7 +758,9 @@
         "rationale": "윤활 고장 경고를 무시하고 고회전을 계속하면 엔진 손상 위험이 커진다."
       }
     ],
-    "source_urls": "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/engine-oil-leaks.html",
+    "source_urls": [
+      "https://www.gates.com/us/en/knowledge-center/automotive/automotive-tips-and-techs/engine-oil-leaks.html"
+    ],
     "hold_reasons": [
       "실제 주행 중 오일압력 경고의 즉시 정지/재시동과 검사 순서는 제조사 안전 지침 필요"
     ],
@@ -766,7 +802,9 @@
         "rationale": "연료필터 막힘만으로 냉각수의 지속 손실을 설명하기 어렵다."
       }
     ],
-    "source_urls": "https://www.felpro.com/gaskets-101/common-oil-gasket-leaks.html",
+    "source_urls": [
+      "https://www.felpro.com/gaskets-101/common-oil-gasket-leaks.html"
+    ],
     "hold_reasons": [
       "흰 연기/증기는 연료 미연소·저온 결로도 가능, 엔진별 냉각계 압력 및 가스 분석 필요"
     ],
@@ -808,7 +846,9 @@
         "rationale": "점화파형 고전압 픽업만으로 실린더 압축압력을 직접 실측할 수 없다."
       }
     ],
-    "source_urls": "https://www.boschautoparts.com/g/diagnostics",
+    "source_urls": [
+      "https://www.boschautoparts.com/g/diagnostics"
+    ],
     "hold_reasons": [
       "압축압 검사 중 점화/연료 차단·고온부·배터리 상태 등 OEM 정비안전 조건 확인 필요"
     ],

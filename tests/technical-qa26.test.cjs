@@ -21,7 +21,9 @@ for(let i=0;i<20;i++){
  assert.equal(q.technical_verification_qa26.status,a.evidence_grade);
  assert.equal(e.technical_verification_qa26.status,a.evidence_grade);
  assert.deepEqual(e.option_analysis_qa26,a.options);
- assert.equal(a.options.length,4);assert.ok(a.source_urls.length>0);
+ assert.equal(a.options.length,4);assert.equal(Array.isArray(a.source_urls),true);assert.equal(a.source_urls.length,1);
+ assert.deepEqual(q.technical_verification_qa26.source_urls,a.source_urls);
+ assert.deepEqual(e.technical_verification_qa26.source_urls,a.source_urls);
  assert.equal(a.independent_final_technical_approval,false);assert.equal(a.web_publication,false);
  assert.equal(q.technical_verification_qa26.independent_final_technical_approval,false);
  assert.equal(e.technical_verification_qa26.independent_final_technical_approval,false);
