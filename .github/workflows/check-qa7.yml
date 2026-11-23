@@ -52,6 +52,7 @@ jobs:
           node tests/technical-qa20.test.cjs
           node tests/technical-qa21.test.cjs
           node tests/technical-qa22.test.cjs
+          node tests/technical-qa23.test.cjs
           QA19_REPORT_OUT=qa19-review-queue.json node tests/qa19-round05-09-risk-queue.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs
           node tests/release-gate.test.cjs
