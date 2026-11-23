@@ -1446,5 +1446,47 @@
     "report": "docs/TECHNICAL_QA19.md",
     "important_limit": "Automatic risk triage of 400 questions does not establish technical validity or sole correct answer; 380 lack manual per-option source checks.",
     "next": "round05 chassis20, electrical20, eco20, round06-09 320; independent final signoff and publication rights remain undone"
+  },
+  "technical_qa20": {
+    "date": "2026-11-23",
+    "batch": "round05_chassis_01_to_20",
+    "options_reviewed": 80,
+    "questions_reviewed": 20,
+    "source_supported_first_pass": 8,
+    "pending_additional_oem_or_syllabus_review": 12,
+    "pending_question_numbers": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      13,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "legacy_held_questions_preserved": [
+      16,
+      17,
+      18,
+      19,
+      20
+    ],
+    "new_subject_holds": 0,
+    "current_subject_holds": 53,
+    "cumulative_historical_firstpass_questions": 360,
+    "cumulative_firstpass_options": 1440,
+    "remaining_never_option_reviewed_questions": 360,
+    "remaining_never_option_reviewed_options": 1440,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "live_manifest_unchanged": true,
+    "private_qa23_unchanged": true,
+    "report": "docs/TECHNICAL_QA20.md",
+    "audit": "data/qa/technical-qa20-r05-chassis-option-audit.json",
+    "next": "r05 electrical then eco, 6-9 all subjects"
   }
 }
