@@ -1,7 +1,7 @@
 {
   "updated_at": "2026-11-23",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "QA23 private source-compared OCR 720/720 (not public); 720 separately reauthored draft questions. QA3-QA37 have 1st-pass per-option rationales for 720/2880; QA38 confirmed structural integrity after normalizing 20 QA26 URL fields. Firstpass source-supported 351 / independent expert final technical approval 0/720. Public reconstructed past 0/720, self-authored practice 80 unchanged.",
+  "source_of_truth": "Public editor-authored historical mock draft bank: 720 reconstructed-from-concepts questions, 2880 audited options. QA40 independently reauthored 3 of the 720 out-of-subject questions (r02 engine 1, r05 engine 9, r06 engine 14) to new engine concepts with explicit provenance; these are NOT faithful past exam reconstructions. Historical 1st-pass source-supported 351 / additional review 369 (QA38 baseline); independent final technical approvals 0/720, public reconstructed past 0, expected practice80. Private QA23 OCR master remains separate.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA39_editorial_quality_secondpass_two_edits_and_55_subject_hold_provisional_triage_pending_expert_approval",
+  "latest_qa_stage": "QA40_three_high_priority_out_of_scope_engine_rewrites_pending_independent_OEM_syllabus_rights_verification",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2066,5 +2066,28 @@
     "scope_ci": "tests/qa39-subject-triage.test.cjs",
     "scope_artifact": "qa39-subject-review-55",
     "next": "official detailed subject HWP, independently verify 369 technical holds, quality and rights, protected backup before draft withdrawal"
+  },
+  "technical_qa40": {
+    "date": "2026-11-23",
+    "out_of_scope_engine_items_reauthored": 3,
+    "revised_question_ids": [
+      "auto-made-r02-s01-q01",
+      "auto-made-r05-s01-q09",
+      "auto-made-r06-s01-q14"
+    ],
+    "legacy_audit_entries_preserved": true,
+    "new_current_option_analyses": 12,
+    "original_answer_index_changes": 0,
+    "subject_classification_holds_retained": 55,
+    "subject_holds_released": 0,
+    "remaining_legacy_firstpass_additional_review": 369,
+    "independent_final_technical_approvals": 0,
+    "public_reconstructed_past_questions": 0,
+    "original_expected_live_questions": 80,
+    "official_detailed_hwp_verified": false,
+    "ledger": "data/qa/technical-qa40-out-of-scope-replacements.json",
+    "report": "docs/TECHNICAL_QA40.md",
+    "test": "tests/technical-qa40.test.cjs",
+    "next": "official detailed syllabus HWP and OEM independent technical checks for remaining holds, final rights and private draft retention before removal"
   }
 }
