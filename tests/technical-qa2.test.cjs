@@ -92,7 +92,9 @@ for(const classification of classifications){
 for(const row of firstPass){
  const q=qMap.get(row.id);assert.ok(q);
  assert.equal(row.answer,q.answer);
- assert.equal(row.correct_choice,q.choices[q.answer-1]);
+ const newer=qa41ById.get(q.id);
+  assert.equal(row.correct_choice,newer?newer.before.correct_choice:q.choices[q.answer-1]);
+  if(newer)assert.equal(q.choices[q.answer-1],newer.after.correct_choice);
  assert.ok(row.reference_urls.length>0);
  assert.equal(row.approval,'NOT_FINAL_TECHNICAL_APPROVAL');
 }
