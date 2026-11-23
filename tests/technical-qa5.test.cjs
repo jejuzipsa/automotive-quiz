@@ -1,0 +1,45 @@
+'use strict';
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const path=require('node:path');
+const root=path.resolve(__dirname,'..');
+const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),'utf8'));
+const changes=read('data/qa/technical-qa5-changes.json');
+assert.deepEqual(changes.map(x=>x.id).sort(),[
+ 'auto-made-r01-s01-q20','auto-made-r01-s02-q10','auto-made-r01-s02-q13'].sort());
+const qFiles={engine:read('data/past/drafts/engine.json'),chassis:read('data/past/drafts/chassis.json')};
+const eFiles={engine:read('data/explanations/drafts/engine.json'),chassis:read('data/explanations/drafts/chassis.json')};
+const qa3=read('data/qa/technical-qa3-engine-r01-option-audit.json');
+const qa4=read('data/qa/technical-qa4-chassis-r01-editorial-audit.json');
+for(const c of changes){
+ const q=qFiles[c.subject].find(x=>x.id===c.id);
+ const e=eFiles[c.subject].find(x=>x.id===c.id);
+ assert.ok(q&&e);
+ assert.equal(q.question,c.after.question);
+ assert.deepEqual(q.choices,c.after.choices);
+ assert.equal(q.answer,c.after.answer);
+ assert.equal(e.correct_answer,c.after.answer);
+ assert.equal(e.correct_choice,q.choices[q.answer-1]);
+ assert.equal(e.reason,c.after.reason);
+ assert.equal(e.key_point,c.after.key_point);
+ assert.equal(q.publishable,false);
+ assert.equal(q.technical_answer_status,'pending_independent_review');
+ assert.equal(q.qa5_revision.final_technical_approval,false);
+ assert.equal(q.qa5_revision.public_release_approved,false);
+ assert.equal(e.qa5_revision.public_release_approved,false);
+ assert.ok(c.references.length>=1);
+}
+const oxygen=changes.find(x=>x.id.endsWith('s01-q20'));
+assert.equal(oxygen.before.answer,oxygen.after.answer);
+assert.equal(oxygen.before.question,qa3[19].question_after);
+assert.deepEqual(oxygen.before.choices,qa3[19].options.map(x=>x.text));
+const eps=changes.find(x=>x.id.endsWith('s02-q13'));
+assert.equal(eps.before.question,qa4.records[12].question_at_review);
+assert.equal(eps.before.answer,eps.after.answer);
+assert.ok(eps.after.question.includes('진단 방법'));
+const damper=changes.find(x=>x.id.endsWith('s02-q10'));
+assert.equal(damper.before.question,qa4.records[9].question_at_review);
+assert.equal(damper.before.question,damper.after.question);
+assert.ok(!damper.after.reason.includes('연료분사장치'));
+assert.ok(damper.after.reason.includes('감쇠력'));
+console.log('PASS QA5: three real editorial corrections, before-after snapshots, preserved QA1/QA3/QA4 historical source, no new technical or publication approvals.');
