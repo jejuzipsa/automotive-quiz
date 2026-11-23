@@ -125,7 +125,7 @@ const report={summary,method:{
 const output=process.env.QA5_REPORT_OUT||path.join(root,'qa5-report.json');
 fs.writeFileSync(output,JSON.stringify(report,null,2)+'\n','utf8');
 assert.equal(Object.values(countBySubject).reduce((a,b)=>a+b,0),720);
-assert.equal(subjectHolds.length,51,'47 legacy + 1 QA10 tire + 1 QA12 alignment + 2 QA17 new subject holds must remain');
+assert.equal(subjectHolds.length,52,'47 legacy + 1 QA10 tire + 1 QA12 alignment + 2 QA17 + 1 QA18 idle hold must remain');
 console.log('QA5_BANK_SUMMARY '+JSON.stringify(summary));
 console.log('QA5_TOP_SIMILAR '+JSON.stringify(nearQuestionPairs.slice(0,18)));
 console.log('QA5_REPORT '+output);
