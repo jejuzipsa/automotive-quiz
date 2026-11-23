@@ -1712,5 +1712,41 @@
     "audit": "data/qa/technical-qa26-r07-engine-option-audit.json",
     "report": "docs/TECHNICAL_QA26.md",
     "next": "r07 chassis/electrical/eco, then r08-r09 160 questions"
+  },
+  "technical_qa27": {
+    "date": "2026-11-23",
+    "batch": "round07_chassis",
+    "reviewed_questions": 20,
+    "reviewed_options": 80,
+    "source_supported_first_pass": 9,
+    "pending_oem_or_editorial_review": 11,
+    "pending_question_numbers": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      9,
+      12,
+      16,
+      17,
+      18,
+      19
+    ],
+    "wording_corrections": 4,
+    "new_subject_holds": 0,
+    "current_subject_holds": 55,
+    "cumulative_historical_firstpass_questions": 520,
+    "cumulative_historical_firstpass_options": 2080,
+    "remaining_no_firstpass_questions": 200,
+    "remaining_no_firstpass_options": 800,
+    "final_independent_technical_approvals": 0,
+    "public_reconstructed_past_count": 0,
+    "live_manifest_expected_80_exam_unchanged": true,
+    "private_QA23_unchanged": true,
+    "audit": "data/qa/technical-qa27-r07-chassis-option-audit.json",
+    "changes": "data/qa/technical-qa27-r07-chassis-edits.json",
+    "report": "docs/TECHNICAL_QA27.md",
+    "next": "r07 electrical20, eco20, r08-r09 160"
   }
 }
