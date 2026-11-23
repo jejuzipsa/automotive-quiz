@@ -10,6 +10,9 @@ const qa15ById=new Map(read('data/qa/technical-qa15-r03-engine-edits.json').edit
 const qa18ById=new Map([...read('data/qa/technical-qa18-r04-chassis-edits.json').editorial_corrections,...read('data/qa/technical-qa18-r04-electrical-edits-and-holds.json').editorial_edits].map(x=>[x.id,x]));
 const qa30to33Edits=[...read('data/qa/technical-qa30-31-r08-edits.json'),...read('data/qa/technical-qa32-33-r08-edits.json')];
 const qa30to33ById=new Map(qa30to33Edits.map(x=>[x.id,x]));
+const qa34to37Edits=[...read('data/qa/technical-qa34-35-r09-edits.json'),...read('data/qa/technical-qa36-37-r09-edits.json')];
+const qa34to37ById=new Map(qa34to37Edits.map(x=>[x.id,x]));
+assert.equal(qa34to37ById.size,6);
 assert.equal(qa30to33ById.size,4);
 const falsePositive=read('data/qa/technical-qa2-false-positive.json');
 const classifications=read('data/qa/technical-qa2-classifications.json');
@@ -54,7 +57,7 @@ assert.equal(revisions,129);assert.equal(falsePositiveFound,1);assert.equal(hold
 for(const change of changes){
  const q=qMap.get(change.id),e=eMap.get(change.id);
  assert.ok(q&&e,change.id);
- const laterQa30=qa30to33ById.get(change.id);
+ const laterQa30=qa34to37ById.get(change.id)||qa30to33ById.get(change.id);
  const later=qa15ById.get(change.id)||qa18ById.get(change.id);
  if(laterQa30){
   // QA2 snapshot is historical; later 8th-round drafts were intentionally reauthored.
