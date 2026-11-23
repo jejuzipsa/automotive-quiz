@@ -959,5 +959,39 @@
     "report": "docs/TECHNICAL_QA6.md",
     "qa6_test": "tests/technical-qa6.test.cjs",
     "next": "r01 electrical 20 and eco 20 option-level independent manufacturer-reference screening"
+  },
+  "technical_qa7": {
+    "date": "2026-11-23",
+    "batch": "round01_electrical_01_to_20",
+    "option_level_first_pass_question_count": 20,
+    "individual_choice_rationales": 80,
+    "source_supported_first_pass": 10,
+    "pending_additional_model_or_syllabus_review": 10,
+    "pending_question_numbers": [
+      2,
+      3,
+      6,
+      10,
+      12,
+      14,
+      15,
+      16,
+      17,
+      20
+    ],
+    "existing_subject_hold_preserved": [
+      14
+    ],
+    "cumulative_qa3_qa6_qa7_reviewed_questions": 60,
+    "cumulative_first_pass_options": 240,
+    "remaining_not_individually_reviewed": 660,
+    "final_independent_technical_approvals": 0,
+    "new_live_reconstructed_questions": 0,
+    "original_private_qa23_unchanged": true,
+    "question_text_changed_in_this_batch": 0,
+    "technical_basis_is_not_final_approval": true,
+    "audit": "data/qa/technical-qa7-electrical-r01-option-audit.json",
+    "report": "docs/TECHNICAL_QA7.md",
+    "next": "round01 eco 20 question 80 option audit"
   }
 }
