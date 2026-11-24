@@ -54,7 +54,7 @@
           <img class="feature-icon" src="assets/concept-quiz-icon.png" alt="" aria-hidden="true" width="48" height="48"><span><strong>핵심 개념 퀴즈</strong><small>괄호문제 · 반복 암기</small></span>
         </button>
         <button id="wrongEntryBtn" class="feature-card" type="button">
-          <img class="feature-icon" src="assets/hand-note-icon.png" alt="" aria-hidden="true" width="48" height="48"><span><strong>오답 다시 풀기</strong><small>최근 풀이 결과 기반 복습</small></span>
+          <img class="feature-icon" src="assets/hand-note-icon.png" alt="" aria-hidden="true" width="48" height="48"><span><strong>오답 다시 풀기</strong><small>누적 오답률 · 과목별 복습</small></span>
         </button>
         <button id="bankEntryBtn" class="feature-card private-link-card" type="button">
           <img class="feature-icon" src="assets/core-card-icon.png" alt="" aria-hidden="true" width="48" height="48"><span><strong>문제은행 전체 보기</strong><small>과목별 JSON 문제 바로 확인</small></span>
@@ -135,12 +135,15 @@
     <section id="wrongView" class="view hidden">
       <div class="section-panel" style="margin-top:0">
         <p class="eyebrow">오답 노트</p><h2><img class="section-heading-icon" src="assets/hand-note-icon.png" alt="" aria-hidden="true" width="42" height="42">틀린 문제 다시 풀기</h2>
-        <p>이 기기에서 마지막으로 푼 문제를 기준으로 오답을 복습해.</p>
+        <p>이 브라우저에서 누적한 오답을 과목별로 복습해. 다시 맞히면 복습 완료로 이동하지만 이력은 남아.</p>
+        <p id="wrongSummary" class="helper" role="status"></p>
+        <div id="wrongFilters" class="home-actions" aria-label="과목별 오답 필터"></div>
+        <div id="wrongScopes" class="home-actions" aria-label="복습 상태 필터"></div>
         <div class="list-questions" id="wrongList"></div>
       </div>
     </section>
   </main>
   <script src="quiz-utils.js?v=1.0.0" defer></script>
-  <script src="app.js?v=1.4.1" defer></script>
+  <script src="app.js?v=1.4.2" defer></script>
 </body>
 </html>

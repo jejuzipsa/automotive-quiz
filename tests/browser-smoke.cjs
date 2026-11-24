@@ -98,12 +98,21 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(await el("resultGrid").locator(".wrong").count(),1);
     await el("resultGrid").locator(".wrong").click();
     const review=await currentQuestion();assert.equal(review.id,firstWrong);
-    await choose(review,true);await visible("reviewBackBtn");assert.ok(!(await el("nextBtn").isVisible()));
+    await choose(review,false);await visible("reviewBackBtn");assert.ok(!(await el("nextBtn").isVisible()));
     await el("reviewBackBtn").click();await visible("resultView");
     await el("resultHomeBtn").click();await page.reload();
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await el("wrongEntryBtn").click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
+    assert.match(await text("wrongSummary"),/누적 11회 풀이/);
+    assert.match(await text("wrongList"),/오답 2회/);
+    await el("wrongList").locator(".bank-question-card").click();
+    assert.equal((await currentQuestion()).id,firstWrong);
+    await choose(await currentQuestion(),true);await el("reviewBackBtn").click();
+    assert.equal(await el("wrongList").locator(".bank-question-card").count(),0);
+    await el("wrongScopes").getByRole("button",{name:"복습 완료",exact:true}).click();
+    assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
+    assert.match(await text("wrongSummary"),/누적 12회 풀이/);
     await el("homeBtn").click();await el("bankEntryBtn").click();
     assert.equal(await text("browseMeta"),"전체 "+expected.length+"문항");
     await el("homeBtn").click();await el("examEntryBtn").click();
@@ -136,6 +145,11 @@ async function testDevice(browser,name,viewport,mobile){
     await visible("resultView");assert.match(await text("resultScore"),/80 \/ 80문제/);
     assert.match(await text("resultStats"),/학습용 합격 기준 충족/);
     await layout();await page.screenshot({path:path.join(out,name+"-exam-result.png"),fullPage:true});
+    await el("resultHomeBtn").click();await el("wrongEntryBtn").click();
+    assert.match(await text("wrongSummary"),/누적 92회 풀이/);
+    await el("wrongScopes").getByRole("button",{name:"전체 오답 이력",exact:true}).click();
+    assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
+    await layout();await page.screenshot({path:path.join(out,name+"-wrong-history.png"),fullPage:true});
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}

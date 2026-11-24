@@ -94,6 +94,8 @@
     updateExamAvailability();
     if(view==="concept")renderConcepts();
     renderResumeExam();
+    if(bankLoadState==="ready")loadHistory();
+    if(view==="wrong")renderWrong();
   }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
   let activeTrack = "past";
@@ -102,6 +104,8 @@
   let lastSaved = null;
   let timerId = null;
   const ACTIVE_EXAM_KEY="automotiveQuizActiveExamV1";
+  const HISTORY_KEY="automotiveQuizHistoryV1";
+  let wrongSubject="all",wrongScope="pending";
   let returnSession = null;
   let returnView = "result";
   let browseState = {items:[],page:1,title:"",track:"demo",subject:null};
@@ -114,6 +118,49 @@
   function saveStorage(key,value) { try { localStorage.setItem(key,JSON.stringify(value)); } catch {} }
   // Restore only unchanged, currently public questions with their original order.
   function questionSignature(q) {return JSON.stringify([q.question,q.choices,q.answer,q.explanation]);}
+  // Per-question history keeps only metadata, not old question bodies.
+  // A content change starts a new learning record; never review withdrawn material.
+  function loadHistory() {
+    const raw=readStorage(HISTORY_KEY,null);
+    if(raw?.version===1&&Array.isArray(raw.records))return raw;
+    const history={version:1,records:[]};
+    if(bankLoadState!=="ready")return history;
+    // Import only the last session, which is all that older releases stored.
+    const s=readStorage("automotiveQuizLastSessionV1",null);
+    if(Array.isArray(s?.items)&&Array.isArray(s.choices)&&Array.isArray(s.orders)){
+      const map=new Map(ITEMS.map(q=>[q.id,q])),seen=new Set();
+      s.items.forEach((old,i)=>{
+        const q=map.get(old?.id),o=s.orders[i],a=s.choices[i];
+        if(!q||seen.has(q.id)||questionSignature(old)!==questionSignature(q)||
+          !Array.isArray(o)||o.length!==4||new Set(o).size!==4||!o.every(x=>[1,2,3,4].includes(x))||
+          !Number.isInteger(a)||a<0||a>4||(!a&&s.mode!=="exam"))return;
+        seen.add(q.id);applyHistory(history,q,a===0?"unanswered":QUIZ_UTILS.isCorrect(o,a,q.answer)?"correct":"wrong");
+      });
+    }
+    saveStorage(HISTORY_KEY,history);return history;
+  }
+  function applyHistory(history,q,outcome) {
+    const sig=questionSignature(q);
+    let row=history.records.find(x=>x?.id===q.id&&x.signature===sig);
+    if(!row){
+      history.records=history.records.filter(x=>x?.id!==q.id);
+      row={id:q.id,signature:sig,correct:0,wrong:0,unanswered:0,last:"",updatedAt:0};
+      history.records.push(row);
+    }
+    row[outcome]++;row.last=outcome;row.updatedAt=Date.now();
+  }
+  function recordAttempts(session,indices) {
+    if(bankLoadState!=="ready")return;
+    const history=loadHistory(),map=new Map(ITEMS.map(q=>[q.id,q]));
+    for(const i of indices){
+      const old=session.items[i],q=map.get(old.id);
+      if(!q||questionSignature(old)!==questionSignature(q))continue;
+      const a=session.choices[i];
+      if(!a&&session.mode!=="exam")continue;
+      applyHistory(history,q,!a?"unanswered":isAnswerCorrect(session,i)?"correct":"wrong");
+    }
+    saveStorage(HISTORY_KEY,history);
+  }
   function persistExam() {
     if(current?.mode!=="exam"||view!=="quiz")return;
     saveStorage(ACTIVE_EXAM_KEY,{version:1,ids:current.items.map(q=>q.id),signatures:current.items.map(questionSignature),
@@ -395,6 +442,7 @@
     if(!current||!examStillOpen())return;
     if(current.mode!=="exam" && current.choices[current.index]!==0)return;
     current.choices[current.index]=number;
+    if(current.mode!=="exam")recordAttempts(current,[current.index]);
     renderQuestion();
     if(current.mode==="exam"){persistExam();refreshTimer();}
   }
@@ -418,6 +466,7 @@
       track:current.track,subject:current.subject,mode:current.mode,
       examMinutes:current.examMinutes
     };
+    if(current.mode==="exam")recordAttempts(current,current.items.map((_,i)=>i));
     lastSaved=recentResult;
     saveStorage("automotiveQuizLastSessionV1",recentResult);
     if(current.mode==="exam")saveStorage(ACTIVE_EXAM_KEY,null);
@@ -466,7 +515,7 @@
     returnSession=recentResult;
     returnView=goBack;
     current={items:[s.items[index]],choices:[0],orders:[buildOrder(s.items[index])],index:0,mode:"review",
-      title:`오답 다시 풀기 · 원래 ${index+1}번`,
+      title:goBack==="wrong"?"누적 오답 다시 풀기":`오답 다시 풀기 · 원래 ${index+1}번`,
       track:s.items[index].track,subject:s.items[index].subject};
     renderQuestion();showView("quiz");
   }
@@ -489,21 +538,43 @@
   }
   function renderWrong(){
     const container=$("wrongList");container.replaceChildren();
-    const s=readStorage("automotiveQuizLastSessionV1",null);
-    if(!s||!Array.isArray(s.items)||!Array.isArray(s.choices)){
-      container.append(make("p","helper","아직 저장된 풀이 결과가 없어. 먼저 샘플 문제를 풀어봐."));
-      appendButton(container,"샘플 문제 풀기","primary-btn",startDemo);
-      return;
+    if(bankLoadState!=="ready"){
+      $("wrongSummary").textContent="문제은행을 불러온 뒤 오답을 확인할 수 있어.";return;
     }
-    const wrong=wrongIndices(s);
-    if(!wrong.length){container.append(make("p","helper","마지막 풀이에서는 틀린 문제가 없어."));return;}
-    wrong.forEach(i=>{
+    const map=new Map(ITEMS.map(q=>[q.id,q]));
+    const rows=loadHistory().records.flatMap(row=>{
+      const q=map.get(row?.id);
+      if(!q||row.signature!==questionSignature(q)||
+        !["correct","wrong","unanswered"].includes(row.last)||
+        ![row.correct,row.wrong,row.unanswered].every(x=>Number.isSafeInteger(x)&&x>=0))return [];
+      return [{q,row}];
+    });
+    const errors=rows.filter(({row})=>row.wrong+row.unanswered>0);
+    const pending=errors.filter(({row})=>row.last!=="correct");
+    const total=rows.reduce((sum,{row})=>sum+row.correct+row.wrong+row.unanswered,0);
+    const misses=rows.reduce((sum,{row})=>sum+row.wrong+row.unanswered,0);
+    $("wrongSummary").textContent="누적 "+total+"회 풀이 · 오답률 "+(total?Math.round(misses*100/total):0)+"% · 복습 필요 "+pending.length+"문항 · 복습 완료 "+(errors.length-pending.length)+"문항";
+    const filters=$("wrongFilters");filters.replaceChildren();
+    for(const [id,label] of [["all","전체 과목"],...SUBJECTS.map(s=>[s.id,s.name])]){
+      const button=appendButton(filters,label,"secondary-btn",()=>{wrongSubject=id;renderWrong();});
+      button.setAttribute("aria-pressed",String(wrongSubject===id));button.disabled=wrongSubject===id;
+    }
+    const scopes=$("wrongScopes");scopes.replaceChildren();
+    for(const [id,label] of [["pending","복습 필요"],["resolved","복습 완료"],["all","전체 오답 이력"]]){
+      const button=appendButton(scopes,label,"secondary-btn",()=>{wrongScope=id;renderWrong();});
+      button.setAttribute("aria-pressed",String(wrongScope===id));button.disabled=wrongScope===id;
+    }
+    const shown=errors.filter(({q,row})=>(wrongSubject==="all"||q.subject===wrongSubject)&&
+      (wrongScope==="all"||(wrongScope==="resolved"?row.last==="correct":row.last!=="correct")))
+      .sort((a,b)=>b.row.updatedAt-a.row.updatedAt||a.q.id.localeCompare(b.q.id));
+    if(!shown.length){container.append(make("p","helper","해당 조건의 오답이 없어."));return;}
+    shown.forEach(({q,row})=>{
       const button=make("button","bank-question-card");
       button.type="button";button.style.textAlign="left";
-      button.append(make("p","bank-question-meta",`${i+1}번 · ${currentSubjectLabel(s.items[i].subject)}`),
-        make("h3","bank-question-title",s.items[i].question),
-        make("p","helper","눌러서 다시 풀기"));
-      button.addEventListener("click",()=>openReview(s,i,"wrong"));
+      button.append(make("p","bank-question-meta",currentSubjectLabel(q.subject)+" · "+TRACKS[q.track]),
+        make("h3","bank-question-title",q.question),
+        make("p","helper","오답 "+row.wrong+"회 · 미응답 "+row.unanswered+"회 · 정답 "+row.correct+"회 · "+(row.last==="correct"?"복습 완료":"복습 필요")));
+      button.addEventListener("click",()=>openReview({items:[q]},0,"wrong"));
       container.appendChild(button);
     });
   }
@@ -549,7 +620,7 @@
     $("bankEntryBtn").addEventListener("click",()=>openBrowse("expected"));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
     $("conceptEntryBtn").addEventListener("click",()=>{renderConcepts();showView("concept");});
-    $("wrongEntryBtn").addEventListener("click",()=>{renderWrong();showView("wrong");});
+    $("wrongEntryBtn").addEventListener("click",()=>{wrongSubject="all";wrongScope="pending";renderWrong();showView("wrong");});
     $("sampleExamBtn").addEventListener("click",startSampleExam);
     $("expectedExamBtn").addEventListener("click",()=>startFullExam("expected"));
     $("approvedExamBtn").addEventListener("click",()=>startFullExam("past"));
