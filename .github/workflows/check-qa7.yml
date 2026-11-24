@@ -74,11 +74,11 @@ jobs:
           QA19_REPORT_OUT=qa19-review-queue.json node tests/qa19-round05-09-risk-queue.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs
           node tests/release-gate.test.cjs
-      - name: Upload QA59 versioned working bank and 16 pending batches (not approved)
+      - name: Upload QA60 versioned working bank and 12 pending batches (not approved)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qa59-working-bank-and-remaining-320
+          name: qa60-working-bank-and-remaining-240
           path: qa52-working-bank/
           if-no-files-found: warn
           retention-days: 30
