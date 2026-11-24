@@ -1,0 +1,595 @@
+{
+  "kind": "QA50_MODEL_OPTION_LOGIC_REVIEW_NOT_EXPERT_APPROVAL",
+  "date": "2026-11-24",
+  "source": "current main question and explanation JSON; external source URLs not independently reopened in this batch",
+  "items": [
+    {
+      "id": "auto-made-r01-s01-q01",
+      "answer": 1,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 냉간 조건과 캠 위치가 기준이다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "열간 조건은 냉간 규격과 다르다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "밸브 열린 상태는 지정 측정 위치가 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "임의 환산 규격은 제조사 기준이 아니다."
+        }
+      ],
+      "note": "정답이 지문에 직접 드러남; 조건 적용형 개선 후보",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q02",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "벨트 직결은 기계식 과급기 설명이다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "배기 터빈과 동축 압축기가 흡기를 압축한다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "배기와 흡기의 정상 유로는 분리된다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "흡기 부압만으로 배기 터빈을 구동하지 않는다."
+        }
+      ],
+      "note": "해설 마지막 촉매 언급은 현행 보기와 무관",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q04",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "RPM은 표준 실시간 PID 대상이다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "냉각수 온도는 표준 PID 대상이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "MAF는 지원 시 표준 PID 대상이다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "오일 시료의 동점도 실측은 별도 물성 시험이다."
+        }
+      ],
+      "note": "지원 PID라는 조건 적절",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q05",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "MAP은 절대압 측정이다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "MAF는 흡기 질량유량 측정이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "IAT는 온도 측정이다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "TPS는 스로틀 위치 측정이다."
+        }
+      ],
+      "note": "1회 엔진8과 동일 학습목표 중복 후보",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q07",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "필러 게이지는 간극 측정용이다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "타이밍 라이트는 점화 시기 관찰용이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "1차 저항만으로 실제 방전 여부를 확정할 수 없다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "규정 방식 스파크 테스터가 직접 방전 확인에 적합하다."
+        }
+      ],
+      "note": "차종별 안전·전용 시험기 조건 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q01",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "ATF 오염은 변속기 상태와 관련된다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "입력축과 엔진 회전 변화는 변속 진단에 관련된다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "TCM DTC는 직접 진단 자료다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "매연 색만으로 변속기 자체 상태를 판단하기 어렵다."
+        }
+      ],
+      "note": "오답과 정답 구별이 쉬움",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q03",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "15Ω은 보편 규격이 아니다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "허용오차가 존재할 수 있다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "부품 및 온도별 OEM 규격을 적용해야 한다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "타이어 외경은 코일 저항 판정 기준이 아니다."
+        }
+      ],
+      "note": "타이어 외경 보기 변별력 낮음",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q05",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "ATF 온도는 지원되는 센서 데이터로 조회 가능하다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "입력축 속도는 지원 시 조회 가능하다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "선택 기어는 제어기 지원 시 조회 가능하다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "마찰재 실제 두께는 일반 스캔 데이터로 직접 실측하기 어렵다."
+        }
+      ],
+      "note": "지원 PID 조건을 명시하면 더 명확",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q07",
+      "answer": 1,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "공기 누설과 높이 제어가 직접 관련된다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "휠속도 주파수만으로 주차 중 처짐을 설명하기 어렵다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "조향각 영점만으로 공기 누설을 설명할 수 없다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "패드 경고선 접지는 차고 유지의 직접 원인이 아니다."
+        }
+      ],
+      "note": "안전 조건 및 차종별 자기수평 제어 확인 필요",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q09",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "전압 범위는 센서마다 다르다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "규격과 높이 변화에 따른 출력 비교가 적절하다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "0V가 항상 정상인 것은 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "타이어 회전은 차고센서 출력 검증을 대체하지 않는다."
+        }
+      ],
+      "note": "전압형 센서라는 지문 조건은 적절",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q01",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "LIN은 일반적으로 단선 스케줄 통신이다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "고속 CAN의 차동 신호 및 비트 중재가 해당한다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "FlexRay 시간 트리거 구간은 시간 슬롯을 이용한다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "스위치형 이더넷은 CAN 식별자 비트 중재를 쓰지 않는다."
+        }
+      ],
+      "note": "같은 회차 전기4와 CAN 중재 학습목표 중복 후보",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q02",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "100BASE-TX의 두 쌍과 다르다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "구동 고전압 케이블을 통신선으로 공용하지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "100BASE-T1은 단일 페어 전이중 통신이다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "구리 단일 페어를 지원하므로 광섬유 전용이 아니다."
+        }
+      ],
+      "note": "정답 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q03",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "120Ω은 종단저항 하나의 값이다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "240Ω은 직렬 합산이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "30Ω은 두 120Ω 병렬의 값이 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "120Ω 두 개 병렬은 60Ω이다."
+        }
+      ],
+      "note": "이론 조건 명확",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q04",
+      "answer": 1,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "우성·열성 식별자 비트 중재가 정답이다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "CAN은 충돌 시 무조건 전체 프레임을 버리지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "설치 순서 고정 송신권 방식이 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "임의 선택 대신 식별자 기반 중재를 한다."
+        }
+      ],
+      "note": "전기1과 중복 후보; 해설 TCP 언급은 보기와 무관",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q05",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "3A는 12V/12Ω과 불일치한다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "직렬 합성 12Ω이므로 1A이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "2A는 추가 전 6Ω의 값이다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "0.5A는 24Ω일 때의 값이다."
+        }
+      ],
+      "note": "정답 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q04",
+      "answer": 1,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "규정 조건 가용 용량과 SOH가 열화 평가에 적합하다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "SOC 한 번의 값은 노화 정도가 아니다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "보조배터리 전압은 구동 배터리 열화 직접 지표가 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "팩 전압 한 번만으로 용량 열화를 확정하기 어렵다."
+        }
+      ],
+      "note": "SOH는 정의 및 산출 방식 제조사별 차이",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q05",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "인버터는 전기 구동 계통에 쓰인다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "감속기는 일반적 전기 구동 계통에 쓰인다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "가솔린 분사기는 내연기관 전용이다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "구동 모터는 전기차 구동 부품이다."
+        }
+      ],
+      "note": "정답 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q06",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "습기 있는 장갑을 즉시 사용하는 것은 적절하지 않다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "정격·손상·점검 상태를 확인해야 한다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "테이프는 손상된 절연장갑의 적합성 회복을 보장하지 않는다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "정전기 팔찌는 절연 보호구가 아니다."
+        }
+      ],
+      "note": "QA49 친환경1과 관련되지만 보호구 종류와 사전검사 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q07",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "OBC 및 DC/DC는 전력 변환 장치다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "인버터 및 BMS는 기계적 동력 전달 장치가 아니다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "냉각펌프 및 차체 모듈은 토크 전달 장치가 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "일반적인 단일 모터 기계식 구동계는 감속기·차동장치·구동축을 사용한다."
+        }
+      ],
+      "note": "직접구동·휠별 모터 등 예외 있으므로 일반적 단일 모터 조건 권장",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q08",
+      "answer": 1,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지원 진단기로 DTC와 실시간 데이터를 확인하는 것이 적절하다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "배선 색상만으로 고장 부품을 확정할 수 없다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "주행가능 거리만으로 ECU 이상을 확정할 수 없다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "외관만으로 인버터 정상 여부를 판단할 수 없다."
+        }
+      ],
+      "note": "DTC 단독 확정 금지 유지",
+      "expert_approved": false,
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "questions": 20,
+    "options": 80,
+    "answer_changes": 0,
+    "expert_approvals": 0,
+    "cumulative_model_review_questions": 40,
+    "cumulative_model_review_options": 160
+  }
+}
