@@ -108,7 +108,7 @@ async function testDevice(browser,name,viewport,mobile){
     assert.match(await text("wrongList"),/오답 2회/);
     await el("wrongList").locator(".bank-question-card").click();
     assert.equal((await currentQuestion()).id,firstWrong);
-    await choose(await currentQuestion(),true);await el("reviewBackBtn").click();
+    await choose(await currentQuestion(),true);assert.equal(await text("reviewBackBtn"),"오답 목록으로 돌아가기");await el("reviewBackBtn").click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),0);
     await el("wrongScopes").getByRole("button",{name:"복습 완료",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
