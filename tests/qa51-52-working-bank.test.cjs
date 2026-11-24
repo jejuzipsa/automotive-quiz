@@ -13,19 +13,21 @@ const qa52=read("data/qa/technical-qa52-round01-remaining40-option-review.json")
 const qa53=read("data/qa/technical-qa53-round02-first40-option-review.json");
 const qa55=read("data/qa/technical-qa55-round02-last40-option-review.json");
 const qa55Edits=read("data/qa/technical-qa55-editorial-corrections.json");
+const qa56=read("data/qa/technical-qa56-round03-first20-option-review.json");
+assert.equal(qa56.items.length,20);
 assert.equal(qa55.items.length,40);
 assert.equal(qa55Edits.items.length,6);
 assert.equal(qa53.items.length,40);
 assert.equal(qa53.items.filter(x=>x.editorial_hold).length,2);
 assert.equal(qa51.items.length,15);
 const coverage=new Map(),newReviews=new Map();
-for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40],["QA55",qa55,40]]){
+for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40],["QA55",qa55,40],["QA56",qa56,20]]){
  assert.equal(ledger.items.length,count);
  for(const item of ledger.items){assert.ok(!coverage.has(item.id),"duplicate coverage "+item.id);coverage.set(item.id,stage);}
 }
 for(const item of qa49.items){assert.equal(coverage.get(item.id),"QA47-49");newReviews.set(item.id,item);}
-for(const ledger of [qa50,qa52,qa53,qa55])for(const item of ledger.items)newReviews.set(item.id,item);
-assert.equal(coverage.size,160);
+for(const ledger of [qa50,qa52,qa53,qa55,qa56])for(const item of ledger.items)newReviews.set(item.id,item);
+assert.equal(coverage.size,180);
 const qa54=read("data/qa/technical-qa54-technical-corrections.json");
 assert.equal(qa54.items.length,2);
 const corrected=new Set(qa54.items.map(x=>x.id));
@@ -101,7 +103,7 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    }
    if(coverage.get(id)==="QA52")assert.equal(review.version,patch?"qa51_revised":"baseline_current",id);
   }
-  assert.equal(coverage.has(id),round<=2,id+" coverage mismatch");
+  assert.equal(coverage.has(id),round<=2||(round===3&&i<5),id+" coverage mismatch");
   const hold=q.subject_classification_review?.status==="hold_do_not_publish";
   if(hold)holds.push(id);
   const extra=patch?.additional_reference?.url;
@@ -121,23 +123,23 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
  }
 }
 assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,23);
-assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,160);
+assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,180);
 assert.equal(all.filter(x=>x.editorial_hold).length,0);
-const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,560);
+const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,540);
 for(let round=2;round<=9;round++)for(let offset=0;offset<20;offset+=5){
  const items=subjects.flatMap(subject=>remaining.filter(x=>x.round===round&&x.subject===subject&&x.number>offset&&x.number<=offset+5));
  if(items.length===0)continue;
  assert.equal(items.length,20);
  batchQueue.push({batch:batchQueue.length+1,round,question_range:[offset+1,offset+5],status:"pending_model_logic_review",items});
 }
-assert.equal(batchQueue.length,28);
-assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,560);
+assert.equal(batchQueue.length,27);
+assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,540);
 const exactCandidates=[...exactStems.entries()].filter(([,ids])=>ids.length>1).map(([stem,ids])=>({stem,ids}));
 const sharedAnswerCandidates=[...answerTextGroups.entries()].filter(([,ids])=>ids.length>1).map(([key,ids])=>({key,ids}));
 const manifest=read("data/manifest.json");
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")&&!b.file.includes("qa51")&&!b.file.includes("qa52")));
 assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);
-const summary={kind:"QA55_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:23,model_logic_reviewed_questions:160,model_logic_reviewed_options:640,pending_model_questions:560,pending_model_options:2240,pending_batches:28,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 160 model-reviewed questions are not independently approved.","The QA55 working view supersedes old draft text for the 23 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
+const summary={kind:"QA56_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:23,model_logic_reviewed_questions:180,model_logic_reviewed_options:720,pending_model_questions:540,pending_model_options:2160,pending_batches:27,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 180 model-reviewed questions are not independently approved.","The QA55 working view supersedes old draft text for the 23 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
 if(process.env.QA52_OUT_DIR){
  const out=path.resolve(root,process.env.QA52_OUT_DIR);
  const write=(p,x)=>{const dest=path.join(out,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify(x,null,2)+"\n");};
@@ -150,4 +152,4 @@ if(process.env.QA52_OUT_DIR){
  write("remaining-batches.json",batchQueue.map(({items,...b})=>({...b,ids:items.map(x=>x.id)})));
  for(const b of batchQueue)write("batches/batch-"+String(b.batch).padStart(2,"0")+".json",b);
 }
-console.log("PASS QA55 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
+console.log("PASS QA56 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
