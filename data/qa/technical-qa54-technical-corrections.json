@@ -1,0 +1,178 @@
+{
+  "kind": "QA54_VERSIONED_TECHNICAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r02-s03-q09",
+      "kind": "technical_ambiguity",
+      "before": {
+        "question": "차량이 실제 진행 방향과 달리 회전하려는 상태를 ESC가 감지할 때 직접 활용하는 센서는?",
+        "choices": [
+          "운전자 조향각 측정 센서",
+          "차체의 횡가속도 측정 센서",
+          "차량의 회전 각속도를 측정하는 요레이트 센서",
+          "바퀴 회전속도 센서"
+        ],
+        "answer": 3,
+        "reason": "요레이트 센서는 차체가 수직축을 중심으로 회전하는 속도를 검출한다. ESC는 이 값과 조향각·차속 등 복수 신호를 비교해 차량 거동을 판단한다.",
+        "key_point": "요레이트는 차량의 회전 운동을 나타내는 ESC 입력이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "운전자 조향각 측정 센서",
+            "verdict": "incorrect",
+            "rationale": "운전자 조향각은 의도 방향 판단에 필요하지만 차량의 실제 회전 각속도를 직접 측정하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "차체의 횡가속도 측정 센서",
+            "verdict": "incorrect",
+            "rationale": "횡가속도는 측방 가속도 측정으로 요레이트 자체를 검출하는 값과 다르다."
+          },
+          {
+            "number": 3,
+            "text": "차량의 회전 각속도를 측정하는 요레이트 센서",
+            "verdict": "correct",
+            "rationale": "요레이트 센서는 차체 수직축 회전 각속도를 직접 측정하므로 실제 선회 동작 확인에 적합하다."
+          },
+          {
+            "number": 4,
+            "text": "바퀴 회전속도 센서",
+            "verdict": "incorrect",
+            "rationale": "휠속도 센서는 각 바퀴 회전을 측정하며 차체 요레이트를 직접 측정하지 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "ESC에서 차체의 수직축을 중심으로 한 회전 각속도를 직접 측정하는 센서는?",
+        "choices": [
+          "조향각 센서",
+          "횡가속도 센서",
+          "요레이트 센서",
+          "휠속도 센서"
+        ],
+        "answer": 3,
+        "reason": "요레이트는 차체 수직축을 중심으로 하는 회전 각속도이다. ESC는 이 신호와 조향각, 횡가속도 및 휠속도 등을 종합하여 차량 거동을 판단한다.",
+        "key_point": "요레이트는 수직축 회전 각속도이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "조향각 센서",
+            "verdict": "incorrect",
+            "rationale": "조향각은 운전자 조향 입력을 나타낸다."
+          },
+          {
+            "number": 2,
+            "text": "횡가속도 센서",
+            "verdict": "incorrect",
+            "rationale": "횡가속도는 측방 가속도를 측정한다."
+          },
+          {
+            "number": 3,
+            "text": "요레이트 센서",
+            "verdict": "correct",
+            "rationale": "요레이트 센서는 수직축 회전 각속도를 측정한다."
+          },
+          {
+            "number": 4,
+            "text": "휠속도 센서",
+            "verdict": "incorrect",
+            "rationale": "휠속도는 각 차륜의 회전속도를 측정한다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s04-q09",
+      "kind": "technical_ambiguity",
+      "before": {
+        "question": "고압 수소 저장 계통에서 압력이나 온도가 비정상적으로 상승할 때 안전을 위한 장치로 가장 적합한 것은?",
+        "choices": [
+          "수소저장탱크의 안전 밸브 작동압력을 임의로 높이는 제어기",
+          "수소 누출을 감지하는 가스센서 자체만",
+          "설정 조건에서 방출되는 압력·온도 안전장치",
+          "연료전지 스택 전압을 낮추는 DC/DC 컨버터"
+        ],
+        "answer": 3,
+        "reason": "고압 수소용기는 규격에 맞는 안전방출장치(PRD/TPRD 등)를 사용한다. 충전 압력 조절과 안전 방출은 서로 다른 목적이며 장치가 임의로 열리도록 조작해서는 안 된다.",
+        "key_point": "수소 저장계 안전 방출장치와 충전압 제어는 구분한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "수소저장탱크의 안전 밸브 작동압력을 임의로 높이는 제어기",
+            "verdict": "incorrect",
+            "rationale": "저장용기 안전장치의 작동압력을 임의로 높여 사용하는 것은 승인된 고압 안전 대책이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "수소 누출을 감지하는 가스센서 자체만",
+            "verdict": "incorrect",
+            "rationale": "수소가스 누출 감지 센서만으로 저장용기 압력·온도 방출 안전 기능이 모두 대체되지는 않는다."
+          },
+          {
+            "number": 3,
+            "text": "설정 조건에서 방출되는 압력·온도 안전장치",
+            "verdict": "correct",
+            "rationale": "저장용기 안전방출장치(PRD/TPRD 등)는 특정 조건에서 수소를 방출해 용기를 보호하도록 설계될 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "연료전지 스택 전압을 낮추는 DC/DC 컨버터",
+            "verdict": "incorrect",
+            "rationale": "연료전지 스택 전압을 낮추는 DC/DC가 고압 저장용기의 직접적인 안전 방출장치는 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "수소연료전지차의 고압 수소 저장용기에 설치된 온도감응식 안전방출장치(TPRD)의 기본 작동 원리는?",
+        "choices": [
+          "충전 압력에 비례하여 정상 충전 중 유량을 조절한다",
+          "수소 누출 농도만 측정하여 경고 신호를 출력한다",
+          "설정된 온도 조건에 도달하면 개방되어 수소를 방출한다",
+          "연료전지 스택의 직류 전압을 변환한다"
+        ],
+        "answer": 3,
+        "reason": "TPRD는 화재 등 열에 노출될 때 정해진 온도 조건에서 개방되어 저장 수소를 방출하도록 설계된 안전장치이다. 압력만으로 작동하는 장치나 정상 충전 압력 조절기와 구별한다. 구체적인 규격 및 정비 조건은 제조사와 적용 안전기준을 따른다.",
+        "key_point": "TPRD는 온도에 의해 작동하는 안전방출장치이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "충전 압력에 비례하여 정상 충전 중 유량을 조절한다",
+            "verdict": "incorrect",
+            "rationale": "정상 충전 유량 조절은 TPRD의 기능이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "수소 누출 농도만 측정하여 경고 신호를 출력한다",
+            "verdict": "incorrect",
+            "rationale": "누출 검지 센서는 TPRD의 방출 기능과 다르다."
+          },
+          {
+            "number": 3,
+            "text": "설정된 온도 조건에 도달하면 개방되어 수소를 방출한다",
+            "verdict": "correct",
+            "rationale": "정해진 온도에 의해 개방되는 것이 TPRD의 기본 원리이다."
+          },
+          {
+            "number": 4,
+            "text": "연료전지 스택의 직류 전압을 변환한다",
+            "verdict": "incorrect",
+            "rationale": "직류 전압 변환은 DC/DC 컨버터의 역할이다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/2024-04/FMVSS-307-and-308-NPRM-Web-Version.pdf",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ]
+}
