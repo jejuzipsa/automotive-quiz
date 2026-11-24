@@ -180,15 +180,17 @@
     "question_id": "auto-made-r06-s01-q04",
     "subject": "engine",
     "correct_answer": 2,
-    "correct_choice": "6번 단자",
-    "reason": "J1962의 CAN-H는 6번, CAN-L은 14번에 배정된다. 16번은 배터리 전원, 4번은 차체 접지 계통으로 사용된다.",
-    "key_point": "OBD CAN-H 6번, CAN-L 14번. ",
+    "correct_choice": "목표/실제 레일압·압력제어 명령과 연료공급 상태",
+    "reason": "커먼레일 시스템은 고압펌프, 압력센서 및 압력·유량 제어장치로 분사압을 형성한다. 부하가 변할 때 목표값과 실제값이 달라지면 연료 공급과 센서·압력제어 명령의 반응을 함께 확인해야 한다. 고압연료 계통은 제조사 지정 압력해제·안전절차를 따라야 한다.",
+    "key_point": "커먼레일 압력편차 → 목표·실측 압력/제어명령 및 공급조건 확인.",
     "source_question_id": "auto-r06-s01-q04",
     "original_issue_flags": [
       "explanation_needs_review",
       "qa18_ocr_source_compared"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+    ],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
     "subject_classification_review": {
@@ -198,7 +200,8 @@
       "reason": "SAE J1962 OBD CAN-H 물리 배선 핀번호는 일반 엔진정비보다 자동차 전기전자 네트워크 진단 과목 직접 범위 가능성",
       "classification_verdict": "pending_curriculum_specific_manual_review",
       "qa23_proposed_action": "Check Q-Net automotive industrial mechanic curriculum and consider replacement/reclassification; do not publish",
-      "qa23_reference_url": "https://www.ni.com/en/support/documentation/supplemental/18/specifications-for-the-can-obd-ii-cable.html"
+      "qa23_reference_url": "https://www.ni.com/en/support/documentation/supplemental/18/specifications-for-the-can-obd-ii-cable.html",
+      "qa44_current_question_may_fit_subject": true
     },
     "technical_verification_qa23": {
       "batch": "QA23-engine-r06",
@@ -206,7 +209,7 @@
       "status": "needs_additional_model_or_syllabus_review",
       "reviewed_options": 4,
       "source_urls": [
-        "https://www.ni.com/en/support/documentation/supplemental/18/specifications-for-the-can-obd-ii-cable.html"
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
       ],
       "final_technical_approval": false,
       "web_publication": false,
@@ -215,29 +218,67 @@
     "option_analysis_qa23": [
       {
         "number": 1,
-        "text": "14번 단자",
+        "text": "차량의 실내 송풍기 풍량만 읽어 연료압 불량을 확정한다",
         "verdict": "incorrect",
-        "rationale": "ISO 15765-4 CAN-H 신호가 있는 일반 J1962의 14번 단자는 CAN-L이다."
+        "rationale": "공조 송풍기 풍량은 고압 연료레일의 직접 압력 측정값이 아니야."
       },
       {
         "number": 2,
-        "text": "6번 단자",
+        "text": "목표/실제 레일압·압력제어 명령과 연료공급 상태",
         "verdict": "correct",
-        "rationale": "J1962의 해당 CAN-H 배정은 6번 단자다."
+        "rationale": "실제 연료압과 제어기 요구압을 비교하면 연료공급·제어 불량을 구분할 수 있어."
       },
       {
         "number": 3,
-        "text": "4번 단자",
+        "text": "타이어 트레드 색상과 휠 얼라인먼트만 비교한다",
         "verdict": "incorrect",
-        "rationale": "4번 단자는 일반적으로 차체 접지로 CAN-H 신호와 다르다."
+        "rationale": "타이어 색상이나 정렬값은 연료압 센서 신호의 정상성 판단자료가 아니야."
       },
       {
         "number": 4,
-        "text": "16번 단자",
+        "text": "ABS 휠속도 신호만으로 레일압 센서의 동작을 확정한다",
         "verdict": "incorrect",
-        "rationale": "16번 단자는 주로 배터리 전원으로 CAN-H 신호와 다르다."
+        "rationale": "휠속도센서 신호만으로 디젤 레일압 제어를 진단할 수 없어."
       }
-    ]
+    ],
+    "option_analysis_qa44": [
+      {
+        "number": 1,
+        "text": "차량의 실내 송풍기 풍량만 읽어 연료압 불량을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "공조 송풍기 풍량은 고압 연료레일의 직접 압력 측정값이 아니야."
+      },
+      {
+        "number": 2,
+        "text": "목표/실제 레일압·압력제어 명령과 연료공급 상태",
+        "verdict": "correct",
+        "rationale": "실제 연료압과 제어기 요구압을 비교하면 연료공급·제어 불량을 구분할 수 있어."
+      },
+      {
+        "number": 3,
+        "text": "타이어 트레드 색상과 휠 얼라인먼트만 비교한다",
+        "verdict": "incorrect",
+        "rationale": "타이어 색상이나 정렬값은 연료압 센서 신호의 정상성 판단자료가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "ABS 휠속도 신호만으로 레일압 센서의 동작을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "휠속도센서 신호만으로 디젤 레일압 제어를 진단할 수 없어."
+      }
+    ],
+    "qa44_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "self_authored_subject_replacement",
+      "original_past_exam_wording": false,
+      "historical_audit_preserved": true,
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-solenoid/"
+      ],
+      "final_independent_technical_approval": false,
+      "rights_cleared": false,
+      "publishable": false
+    }
   },
   {
     "id": "auto-made-r06-s01-q05",
