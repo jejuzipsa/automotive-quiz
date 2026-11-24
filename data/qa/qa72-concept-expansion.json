@@ -1,0 +1,328 @@
+{
+  "stage": "QA72",
+  "basis": "QA67 public expected bank; new recall prompts, not official questions; internal logical/editorial review only",
+  "preserved_demo_ids": [
+    "concept-engine-01",
+    "concept-chassis-01",
+    "concept-electrical-01",
+    "concept-eco-01"
+  ],
+  "added": [
+    {
+      "id": "concept-engine-02",
+      "source_expected_id": "original-engine-01",
+      "source_correct_choice": "상사점에서 하사점으로 이동한다",
+      "correct_choice": "하사점",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-03",
+      "source_expected_id": "original-engine-03",
+      "source_correct_choice": "연소가스의 크랭크실 누설을 줄인다",
+      "correct_choice": "압축 링",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-04",
+      "source_expected_id": "original-engine-05",
+      "source_correct_choice": "라디에이터 방향 흐름을 제한해 예열을 돕는다",
+      "correct_choice": "서모스탯",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-05",
+      "source_expected_id": "original-engine-08",
+      "source_correct_choice": "캠축이 크랭크축의 절반 속도로 회전한다",
+      "correct_choice": "1회전",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-06",
+      "source_expected_id": "original-engine-09",
+      "source_correct_choice": "회전 위치와 속도 정보를 제공하기 위해",
+      "correct_choice": "CKP 센서",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-07",
+      "source_expected_id": "original-engine-11",
+      "source_correct_choice": "엔진으로 흡입되는 공기의 질량 유량",
+      "correct_choice": "MAF 센서",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-08",
+      "source_expected_id": "original-engine-12",
+      "source_correct_choice": "흡기 매니폴드 절대압력 측정",
+      "correct_choice": "MAP 센서",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-09",
+      "source_expected_id": "original-engine-13",
+      "source_correct_choice": "CO·HC·NOx",
+      "correct_choice": "NOx",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-10",
+      "source_expected_id": "original-engine-15",
+      "source_correct_choice": "고압 연료를 축적·분배한다",
+      "correct_choice": "커먼레일",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-11",
+      "source_expected_id": "original-engine-16",
+      "source_correct_choice": "연소 온도 조건을 조절해 NOx 배출을 줄이기 위해",
+      "correct_choice": "EGR",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-12",
+      "source_expected_id": "original-engine-18",
+      "source_correct_choice": "압축공기 온도를 낮춰 밀도를 높일 수 있다",
+      "correct_choice": "인터쿨러",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-02",
+      "source_expected_id": "original-chassis-01",
+      "source_correct_choice": "마스터 실린더",
+      "correct_choice": "마스터 실린더",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-03",
+      "source_expected_id": "original-chassis-03",
+      "source_correct_choice": "제동 중 바퀴 잠김을 억제한다",
+      "correct_choice": "ABS",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-04",
+      "source_expected_id": "original-chassis-04",
+      "source_correct_choice": "차량이 운전자 의도와 다르게 회전할 때 자세 보정",
+      "correct_choice": "ESC",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-05",
+      "source_expected_id": "original-chassis-05",
+      "source_correct_choice": "캘리퍼",
+      "correct_choice": "캘리퍼",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-06",
+      "source_expected_id": "original-chassis-08",
+      "source_correct_choice": "포지티브 캠버",
+      "correct_choice": "포지티브 캠버",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-07",
+      "source_expected_id": "original-chassis-09",
+      "source_correct_choice": "토인",
+      "correct_choice": "토인",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-08",
+      "source_expected_id": "original-chassis-11",
+      "source_correct_choice": "스프링의 과도한 진동",
+      "correct_choice": "쇼크 업소버",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-09",
+      "source_expected_id": "original-chassis-13",
+      "source_correct_choice": "선회 시 차체 롤을 줄이는 것",
+      "correct_choice": "스태빌라이저 바",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-10",
+      "source_expected_id": "original-chassis-16",
+      "source_correct_choice": "수막현상",
+      "correct_choice": "수막현상",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-11",
+      "source_expected_id": "original-chassis-19",
+      "source_correct_choice": "좌우 구동 바퀴의 회전수 차이를 허용하기 위해",
+      "correct_choice": "차동장치",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-12",
+      "source_expected_id": "original-chassis-20",
+      "source_correct_choice": "축이 꺾여도 순간 각속도 차이 없이 회전력을 전달한다",
+      "correct_choice": "등속 조인트",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-02",
+      "source_expected_id": "original-electrical-02",
+      "source_correct_choice": "작은 제어 전류로 상대적으로 큰 부하 회로를 개폐한다",
+      "correct_choice": "릴레이",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-03",
+      "source_expected_id": "original-electrical-03",
+      "source_correct_choice": "12V",
+      "correct_choice": "12 V",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-04",
+      "source_expected_id": "original-electrical-04",
+      "source_correct_choice": "엔진 운전 중 전기 부하에 전력을 공급하고 배터리 충전을 돕는다",
+      "correct_choice": "알터네이터",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-05",
+      "source_expected_id": "original-electrical-05",
+      "source_correct_choice": "정방향으로 전류를 주로 통과시키고 역방향 전류를 제한한다",
+      "correct_choice": "다이오드",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-06",
+      "source_expected_id": "original-electrical-06",
+      "source_correct_choice": "옴(Ω)",
+      "correct_choice": "옴(Ω)",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-07",
+      "source_expected_id": "original-electrical-07",
+      "source_correct_choice": "동일한 직렬 경로에서는 전류가 같다",
+      "correct_choice": "같다",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-08",
+      "source_expected_id": "original-electrical-08",
+      "source_correct_choice": "두 저항의 양단 전압이 같다",
+      "correct_choice": "같다",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-09",
+      "source_expected_id": "original-electrical-09",
+      "source_correct_choice": "측정 대상 두 지점에 병렬로 연결한다",
+      "correct_choice": "병렬",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-10",
+      "source_expected_id": "original-electrical-11",
+      "source_correct_choice": "흐르지 않는다",
+      "correct_choice": "개방",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-11",
+      "source_expected_id": "original-electrical-14",
+      "source_correct_choice": "차동 신호를 이용한 통신의 내잡음성",
+      "correct_choice": "차동 신호",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-12",
+      "source_expected_id": "original-electrical-16",
+      "source_correct_choice": "자기장 변화에 따른 전기적 신호",
+      "correct_choice": "홀 센서",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-02",
+      "source_expected_id": "original-eco-03",
+      "source_correct_choice": "셀 전압과 온도",
+      "correct_choice": "BMS",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-03",
+      "source_expected_id": "original-eco-04",
+      "source_correct_choice": "고전압 배터리의 직류를 모터 구동용 교류로 변환·제어한다",
+      "correct_choice": "인버터",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-04",
+      "source_expected_id": "original-eco-05",
+      "source_correct_choice": "고전압 DC를 저전압 전원계통에 맞게 변환한다",
+      "correct_choice": "DC-DC 컨버터",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-05",
+      "source_expected_id": "original-eco-06",
+      "source_correct_choice": "외부 AC 전원을 배터리 충전에 필요한 DC 전력으로 바꾼다",
+      "correct_choice": "OBC",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-06",
+      "source_expected_id": "original-eco-09",
+      "source_correct_choice": "충전 상태의 비율",
+      "correct_choice": "SOC",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-07",
+      "source_expected_id": "original-eco-10",
+      "source_correct_choice": "신품 대비 배터리 성능·건전성의 상태",
+      "correct_choice": "SOH",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-08",
+      "source_expected_id": "original-eco-11",
+      "source_correct_choice": "배터리가 적절한 온도 범위에서 작동하도록 돕는다",
+      "correct_choice": "배터리 열관리계통",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-09",
+      "source_expected_id": "original-eco-12",
+      "source_correct_choice": "발열 반응이 연쇄적으로 진행하며 위험이 커질 수 있다",
+      "correct_choice": "열폭주",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-10",
+      "source_expected_id": "original-eco-15",
+      "source_correct_choice": "배터리 팩과 고전압 회로 사이 전기적 접속",
+      "correct_choice": "메인 컨택터",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-11",
+      "source_expected_id": "original-eco-18",
+      "source_correct_choice": "외부 전원으로 구동 배터리를 충전할 수 있다",
+      "correct_choice": "PHEV",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-12",
+      "source_expected_id": "original-eco-19",
+      "source_correct_choice": "수소와 산소의 전기화학 반응으로 전기를 만드는 것",
+      "correct_choice": "연료전지 스택",
+      "independent_expert_approved": false
+    }
+  ],
+  "counts": {
+    "engine": 12,
+    "chassis": 12,
+    "electrical": 12,
+    "eco": 12
+  },
+  "total": 48,
+  "independent_expert_approved": false
+}
