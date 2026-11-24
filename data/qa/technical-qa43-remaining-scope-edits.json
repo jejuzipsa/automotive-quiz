@@ -1,0 +1,447 @@
+[
+  {
+    "id": "auto-made-r01-s02-q02",
+    "round": 1,
+    "subject": "chassis",
+    "number": 2,
+    "stage": "6",
+    "before": {
+      "question": "엔진이 잠깐 걸렸다가 정지하며 연료레일 압력이 규정값보다 낮게 측정된다. 관련 계통으로 먼저 좁힐 곳은?",
+      "choices": [
+        "스티어링 휠 센터",
+        "연료 공급펌프와 공급압력 계통",
+        "타이어 위치 교환 이력",
+        "워셔액 분사 노즐"
+      ],
+      "answer": 2,
+      "reason": "시동 직후 멈춤의 원인은 다양하지만 연료압이 실제로 낮다면 펌프 전원·공급량·압력 조절 계통을 점검할 근거가 있다. 단순 증상만 보고 펌프 고장으로 확정할 수는 없다.",
+      "key_point": "진단 수치가 있을 때는 해당 계통부터 원인을 좁힌다.",
+      "correct_choice": "연료 공급펌프와 공급압력 계통",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "스티어링 휠 센터",
+          "verdict": "incorrect",
+          "rationale": "조향 센터는 연료레일 저압의 직접 원인이 아니다."
+        },
+        {
+          "number": 2,
+          "text": "연료 공급펌프와 공급압력 계통",
+          "verdict": "correct",
+          "rationale": "연료공급 펌프·조절·공급압력 계통은 저압 측정 원인을 점검할 영역이다."
+        },
+        {
+          "number": 3,
+          "text": "타이어 위치 교환 이력",
+          "verdict": "incorrect",
+          "rationale": "타이어 위치 교환 이력은 측정된 연료레일 압력 저하와 직접 관련이 없다."
+        },
+        {
+          "number": 4,
+          "text": "워셔액 분사 노즐",
+          "verdict": "incorrect",
+          "rationale": "워셔액 노즐은 엔진 연료 압력 계통 부품이 아니다."
+        }
+      ]
+    },
+    "after": {
+      "question": "ABS 제동 중 한 바퀴의 휠속도 데이터가 간헐적으로 사라진다. 부품 교환 전에 우선 비교할 것은?",
+      "choices": [
+        "엔진 오일의 점도 변화만 측정한 기록",
+        "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+        "타이어 외관 색상과 운전자 좌석 높이",
+        "공조 송풍기 모터의 최대 회전속도"
+      ],
+      "answer": 2,
+      "reason": "휠속도 신호가 간헐적으로 끊기는 경우에는 다른 바퀴와 신호를 비교하고 센서 전원·배선·엔코더 또는 톤링 손상을 확인한다. ABS 관련 안전 진단은 차종별 지정 절차로 시행한다.",
+      "key_point": "ABS 신호 이상 → 차륜별 신호·센서·엔코더·배선 비교.",
+      "correct_choice": "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "엔진 오일의 점도 변화만 측정한 기록",
+          "verdict": "incorrect",
+          "rationale": "윤활유 점도는 ABS 휠속도 신호의 직접 측정항목이 아니야."
+        },
+        {
+          "number": 2,
+          "text": "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+          "verdict": "correct",
+          "rationale": "한 바퀴만 비정상인 경우 해당 회전 신호의 생성·전달 부품을 비교해야 해."
+        },
+        {
+          "number": 3,
+          "text": "타이어 외관 색상과 운전자 좌석 높이",
+          "verdict": "incorrect",
+          "rationale": "차량 실내 상태나 타이어 색상만으로 센서 출력 결손을 파악하지 못해."
+        },
+        {
+          "number": 4,
+          "text": "공조 송풍기 모터의 최대 회전속도",
+          "verdict": "incorrect",
+          "rationale": "공조 송풍기의 회전수는 바퀴속도 신호 불연속을 설명하지 못해."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/us/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r01-s02-q04",
+    "round": 1,
+    "subject": "chassis",
+    "number": 4,
+    "stage": "6",
+    "before": {
+      "question": "차량 진단기 통신이 간헐적으로 끊기고 제어기 오류가 여러 개 발생한다. 가장 기본적인 전기 점검은?",
+      "choices": [
+        "배터리 전압과 각 제어기의 전원·접지를 우선 점검한다",
+        "CAN 종단저항만 읽고 전원 불량 가능성을 배제한다",
+        "진단기 케이블이 새것이면 제어기 전원을 점검하지 않는다",
+        "통신 오류가 나면 제어기 펌웨어를 전부 재설치한다"
+      ],
+      "answer": 1,
+      "reason": "전원 및 접지의 불안정은 여러 제어기의 동작과 통신에 동시에 영향을 줄 수 있다. 진단기나 제어기를 교환하기 전 기본 전원 조건을 점검한다.",
+      "key_point": "제어기 진단의 첫 단계는 안정적인 전원 확인이다.",
+      "correct_choice": "배터리 전압과 각 제어기의 전원·접지를 우선 점검한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "배터리 전압과 각 제어기의 전원·접지를 우선 점검한다",
+          "verdict": "correct",
+          "rationale": "여러 제어기에 동시에 이상이 생긴 경우 배터리·전원·접지 문제는 점검할 기본 사항이다."
+        },
+        {
+          "number": 2,
+          "text": "CAN 종단저항만 읽고 전원 불량 가능성을 배제한다",
+          "verdict": "incorrect",
+          "rationale": "CAN 종단저항 검사 하나만으로 제어기 전원 이상 가능성을 배제할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "진단기 케이블이 새것이면 제어기 전원을 점검하지 않는다",
+          "verdict": "incorrect",
+          "rationale": "진단기 케이블이 새 제품이라는 이유로 ECU 전원 상태를 생략할 수 없다."
+        },
+        {
+          "number": 4,
+          "text": "통신 오류가 나면 제어기 펌웨어를 전부 재설치한다",
+          "verdict": "incorrect",
+          "rationale": "통신 오류 하나로 모든 ECU 펌웨어 재설치를 우선하는 것은 진단 순서로 부적절하다."
+        }
+      ]
+    },
+    "after": {
+      "question": "EPS 조향 보조가 간헐적으로 약해지며 저전압 관련 경고가 저장됐다. 가장 먼저 확인할 내용은?",
+      "choices": [
+        "EPS 제어기 공급전압·접지와 충전계통 상태를 점검한다",
+        "휠 얼라인먼트 값만 정상이라면 전압 이상을 무시한다",
+        "경고등이 켜져도 EPS 전원을 임의로 단락해 기능을 복구한다",
+        "엔진오일 압력을 올리면 EPS 공급전압이 자동으로 회복된다"
+      ],
+      "answer": 1,
+      "reason": "EPS 보조력은 모터에 공급되는 전원과 제어기 상태의 영향을 받는다. 저전압 경고와 보조력 저하가 동시에 발생하면 안전하게 차량을 정지시키고 전원·접지·충전 상태와 관련 DTC를 차량 정비지침에 따라 비교한다.",
+      "key_point": "EPS 보조력 저하·저전압 → EPS 전원·접지·충전 및 DTC 확인.",
+      "correct_choice": "EPS 제어기 공급전압·접지와 충전계통 상태를 점검한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "EPS 제어기 공급전압·접지와 충전계통 상태를 점검한다",
+          "verdict": "correct",
+          "rationale": "EPS 보조모터의 전원 이상은 토크 보조 제한을 유발할 수 있어."
+        },
+        {
+          "number": 2,
+          "text": "휠 얼라인먼트 값만 정상이라면 전압 이상을 무시한다",
+          "verdict": "incorrect",
+          "rationale": "정렬값이 정상이어도 EPS 제어기 전압 이상은 별도 확인이 필요해."
+        },
+        {
+          "number": 3,
+          "text": "경고등이 켜져도 EPS 전원을 임의로 단락해 기능을 복구한다",
+          "verdict": "incorrect",
+          "rationale": "전원 임의 단락은 전장 손상·조향 안전 위험을 높여."
+        },
+        {
+          "number": 4,
+          "text": "엔진오일 압력을 올리면 EPS 공급전압이 자동으로 회복된다",
+          "verdict": "incorrect",
+          "rationale": "엔진오일압 조절은 전자식 조향 전원회로 수리법이 아니야."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r01-s03-q14",
+    "round": 1,
+    "subject": "electrical",
+    "number": 14,
+    "stage": "7",
+    "before": {
+      "question": "연비가 급격히 악화됐고 분사 보정량이 비정상으로 나타난 엔진이다. 조사 대상과 가장 밀접한 계통은?",
+      "choices": [
+        "촉매 전단 산소 센서의 히터 전류만",
+        "연료탱크 증발가스 퍼지 명령만",
+        "엔진 냉각팬의 온도 제어 지령만",
+        "연료분사 보정량·레일 압력과 인젝터 제어계통"
+      ],
+      "answer": 4,
+      "reason": "연료 분사 이상은 연료 소모와 엔진 성능에 영향을 줄 수 있다. 분사 보정량, 연료압, 인젝터 상태 등을 규격에 맞춰 점검한다.",
+      "key_point": "분사량·연료압 이상은 연비와 관련이 있다.",
+      "correct_choice": "연료분사 보정량·레일 압력과 인젝터 제어계통",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "촉매 전단 산소 센서의 히터 전류만",
+          "verdict": "incorrect",
+          "rationale": "산소센서 히터 전류 한 항목만으로 전체 분사보정과 연료 레일압 이상을 확정할 수 없다."
+        },
+        {
+          "number": 2,
+          "text": "연료탱크 증발가스 퍼지 명령만",
+          "verdict": "incorrect",
+          "rationale": "퍼지 명령만으로 비정상 분사보정 및 레일압을 모두 설명할 수 없다."
+        },
+        {
+          "number": 3,
+          "text": "엔진 냉각팬의 온도 제어 지령만",
+          "verdict": "incorrect",
+          "rationale": "냉각팬 온도 제어 지령은 연료 분사계통의 직접 진단 지표가 아니다."
+        },
+        {
+          "number": 4,
+          "text": "연료분사 보정량·레일 압력과 인젝터 제어계통",
+          "verdict": "correct",
+          "rationale": "연료 압력과 분사 보정량 이상은 인젝터·공급압력·제어계통 확인으로 범위를 좁힐 수 있다."
+        }
+      ]
+    },
+    "after": {
+      "question": "자동차 LIN 통신으로 제어되는 실내 편의장치가 동작하지 않고 통신 DTC가 기록됐다. 우선적인 진단 방향은?",
+      "choices": [
+        "차량 외장 색상만 확인해 LIN 통신정상 여부를 확정한다",
+        "모든 LIN 노드를 각각 CAN 종단저항 120Ω으로 교체한다",
+        "엔진 압축압이 정상이라면 LIN 배선 단선 가능성은 없다고 판단한다",
+        "LIN 마스터 제어명령과 통신선·전원·접지 상태를 회로도에 따라 비교한다"
+      ],
+      "answer": 4,
+      "reason": "LIN은 차량 내 보조 전장부품을 연결하는 통신 방식이다. 통신 DTC가 발생하면 해당 마스터·슬레이브의 전원·접지·LIN 배선과 명령·응답 정보를 비교하며, 네트워크 구조와 값은 차종별 회로도를 우선한다.",
+      "key_point": "LIN 장애 → 마스터 명령·슬레이브 응답과 전원·접지·배선 점검.",
+      "correct_choice": "LIN 마스터 제어명령과 통신선·전원·접지 상태를 회로도에 따라 비교한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "차량 외장 색상만 확인해 LIN 통신정상 여부를 확정한다",
+          "verdict": "incorrect",
+          "rationale": "차체 도장 색상은 차량 네트워크 상태에 관한 전기 측정값이 아니야."
+        },
+        {
+          "number": 2,
+          "text": "모든 LIN 노드를 각각 CAN 종단저항 120Ω으로 교체한다",
+          "verdict": "incorrect",
+          "rationale": "LIN 배선을 고속 CAN과 동일 종단저항 구조로 간주하면 안 돼."
+        },
+        {
+          "number": 3,
+          "text": "엔진 압축압이 정상이라면 LIN 배선 단선 가능성은 없다고 판단한다",
+          "verdict": "incorrect",
+          "rationale": "엔진 압축상태로 LIN 신호선 단선 여부를 판단할 수 없어."
+        },
+        {
+          "number": 4,
+          "text": "LIN 마스터 제어명령과 통신선·전원·접지 상태를 회로도에 따라 비교한다",
+          "verdict": "correct",
+          "rationale": "LIN은 제어기와 슬레이브 간 통신이므로 전원과 신호 경로를 비교해야 해."
+        }
+      ],
+      "reference_urls": [
+        "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r01-s04-q18",
+    "round": 1,
+    "subject": "eco",
+    "number": 18,
+    "stage": "8",
+    "before": {
+      "question": "전방 충돌이 임박했는데 운전자가 충분히 제동하지 않을 때, 충돌 피해를 줄이도록 긴급 자동 제동을 수행하는 기능은?",
+      "choices": [
+        "어댑티브 크루즈컨트롤(ACC)의 주행 간격 제어만",
+        "차로유지보조(LKA)의 조향 보조",
+        "자동긴급제동(AEB)",
+        "사각지대 경고(BSW)의 후측방 경보"
+      ],
+      "answer": 3,
+      "reason": "AEB는 전방 충돌 위험을 판단해 정해진 조건에서 긴급 제동을 지원하거나 자동 수행한다. ACC는 주행속도·간격 유지, LKA는 차로유지 조향, BSW는 사각지대 경보가 주기능이다. 기능의 세부 동작 및 중복 구성은 차종별로 다를 수 있다.",
+      "key_point": "AEB=전방 충돌 위험 시 긴급 자동 제동; ACC·LKA·BSW와 구분.",
+      "correct_choice": "자동긴급제동(AEB)",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "어댑티브 크루즈컨트롤(ACC)의 주행 간격 제어만",
+          "verdict": "incorrect",
+          "rationale": "ACC는 차량 간 거리·주행속도 제어 중심이며 전방 긴급 제동만을 의미하는 명칭은 아니다."
+        },
+        {
+          "number": 2,
+          "text": "차로유지보조(LKA)의 조향 보조",
+          "verdict": "incorrect",
+          "rationale": "차로유지보조는 주로 조향을 이용해 차선 유지 지원한다."
+        },
+        {
+          "number": 3,
+          "text": "자동긴급제동(AEB)",
+          "verdict": "correct",
+          "rationale": "AEB는 전방 충돌 위험 시 정해진 조건에서 제동을 작동시켜 충돌 피해를 줄일 수 있다."
+        },
+        {
+          "number": 4,
+          "text": "사각지대 경고(BSW)의 후측방 경보",
+          "verdict": "incorrect",
+          "rationale": "사각지대 경보는 후측방 접근 위험 안내용으로 전방 긴급 제동 자체와 다르다."
+        }
+      ]
+    },
+    "after": {
+      "question": "하이브리드차가 감속 중 구동모터를 발전기로 사용한다. 회생제동 에너지 흐름에 대한 설명으로 옳은 것은?",
+      "choices": [
+        "감속 시 운동에너지 전부를 바퀴 마찰열로만 소모한다",
+        "회생제동 전력은 연료탱크 안에 화학연료로 즉시 저장된다",
+        "차량의 운동에너지 일부를 발전 전력으로 바꾸어 구동배터리에 저장한다",
+        "회생제동 중 구동모터는 반드시 배터리 전력만 소비한다"
+      ],
+      "answer": 3,
+      "reason": "회생제동에서는 구동모터가 발전기로 작동하며 차량의 운동에너지 일부가 전력으로 변환된다. 회생 가능한 양은 배터리 SOC·온도·접지력·차종 제어조건에 따라 제한되며 기계식 제동과 함께 사용될 수 있다.",
+      "key_point": "하이브리드 회생제동 → 운동에너지 일부를 전력으로 전환·저장.",
+      "correct_choice": "차량의 운동에너지 일부를 발전 전력으로 바꾸어 구동배터리에 저장한다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "감속 시 운동에너지 전부를 바퀴 마찰열로만 소모한다",
+          "verdict": "incorrect",
+          "rationale": "회생제동이 동작하면 운동에너지의 일부는 마찰열 이외의 전기로 회수돼."
+        },
+        {
+          "number": 2,
+          "text": "회생제동 전력은 연료탱크 안에 화학연료로 즉시 저장된다",
+          "verdict": "incorrect",
+          "rationale": "연료탱크는 전기에너지를 연료로 즉시 변환해 저장하지 않아."
+        },
+        {
+          "number": 3,
+          "text": "차량의 운동에너지 일부를 발전 전력으로 바꾸어 구동배터리에 저장한다",
+          "verdict": "correct",
+          "rationale": "모터가 발전기 역할을 하며 회수된 에너지를 배터리에 저장할 수 있어."
+        },
+        {
+          "number": 4,
+          "text": "회생제동 중 구동모터는 반드시 배터리 전력만 소비한다",
+          "verdict": "incorrect",
+          "rationale": "발전 모드에서는 모터가 기계적 운동에너지로부터 전력을 회수할 수 있어."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-hybrid-electric-cars-work"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r01-s04-q19",
+    "round": 1,
+    "subject": "eco",
+    "number": 19,
+    "stage": "8",
+    "before": {
+      "question": "전기차에서 실내 조명과 도어 잠금 같은 차체 편의기능을 주로 담당하는 제어기는?",
+      "choices": [
+        "엔진 연료분사 ECU",
+        "차체제어모듈(BCM)",
+        "ABS 유압모듈",
+        "구동모터 인버터"
+      ],
+      "answer": 2,
+      "reason": "실내등·도어록 등은 일반적으로 BCM이 담당한다. EVCU는 차량 구동과 에너지 흐름의 상위 제어를 담당할 수 있지만, 세부 역할 분담은 차종 설계에 따라 달라진다.",
+      "key_point": "BCM은 차체 편의기능, EVCU는 구동/에너지 제어를 주로 담당한다.",
+      "correct_choice": "차체제어모듈(BCM)",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "엔진 연료분사 ECU",
+          "verdict": "incorrect",
+          "rationale": "BEV의 차체 편의기능은 가솔린 연료분사 ECU가 직접 담당하지 않는다."
+        },
+        {
+          "number": 2,
+          "text": "차체제어모듈(BCM)",
+          "verdict": "correct",
+          "rationale": "차체 제어 모듈(BCM)이 실내등·도어록과 같은 편의장치를 통합 제어할 수 있다."
+        },
+        {
+          "number": 3,
+          "text": "ABS 유압모듈",
+          "verdict": "incorrect",
+          "rationale": "ABS 유압제어 모듈은 제동 안전 기능 중심이다."
+        },
+        {
+          "number": 4,
+          "text": "구동모터 인버터",
+          "verdict": "incorrect",
+          "rationale": "구동 인버터는 모터 전력 변환 장치이며 도어록 편의 기능을 주로 담당하지 않는다."
+        }
+      ]
+    },
+    "after": {
+      "question": "배터리 전기차에서 고전압 구동배터리로 저전압 12V 전장부품을 공급하고 보조배터리를 충전하는 장치는?",
+      "choices": [
+        "구동모터 속도만 감속시키는 기계식 종감속기",
+        "고전압 직류를 저전압 직류로 변환하는 DC/DC 컨버터",
+        "외부 교류를 구동배터리 충전용 직류로 바꾸는 OBC",
+        "구동배터리 직류를 구동모터 3상 교류로 바꾸는 인버터"
+      ],
+      "answer": 2,
+      "reason": "배터리 전기차의 DC/DC 컨버터는 구동배터리에서 공급되는 고전압 DC를 보조배터리와 저전압 차량전장에 필요한 DC로 변환한다. OBC는 주로 외부 AC 충전, 인버터는 모터 구동 전력변환을 담당한다.",
+      "key_point": "EV DC/DC 컨버터 → 고전압 DC에서 12V 등 저전압 DC 생성.",
+      "correct_choice": "고전압 직류를 저전압 직류로 변환하는 DC/DC 컨버터",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "구동모터 속도만 감속시키는 기계식 종감속기",
+          "verdict": "incorrect",
+          "rationale": "종감속기는 기계적 속도와 토크를 변환하지 저전압 전원을 생산하지 않아."
+        },
+        {
+          "number": 2,
+          "text": "고전압 직류를 저전압 직류로 변환하는 DC/DC 컨버터",
+          "verdict": "correct",
+          "rationale": "DC/DC는 서로 다른 전압의 직류 전력을 변환하는 장치야."
+        },
+        {
+          "number": 3,
+          "text": "외부 교류를 구동배터리 충전용 직류로 바꾸는 OBC",
+          "verdict": "incorrect",
+          "rationale": "OBC의 주 기능은 외부 AC를 충전용 DC로 변환하는 것이야."
+        },
+        {
+          "number": 4,
+          "text": "구동배터리 직류를 구동모터 3상 교류로 바꾸는 인버터",
+          "verdict": "incorrect",
+          "rationale": "모터 인버터는 주로 구동모터의 3상 전력변환을 담당해."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work"
+      ]
+    },
+    "subject_hold_retained": true
+  }
+]
