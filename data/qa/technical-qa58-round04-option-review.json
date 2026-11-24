@@ -1,0 +1,2414 @@
+{
+  "kind": "QA58_ROUND04_MODEL_LOGIC_REVIEW",
+  "date": "2026-11-24",
+  "scope": "Round 4 all 80 current questions and explanations; individual model option judgments, not independent approval or fresh source-page verification.",
+  "items": [
+    {
+      "id": "auto-made-r04-s01-q01",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "배기에너지를 터빈축 회전으로 변환한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "인터쿨러는 흡기 냉각용이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "컴프레서는 축 동력으로 흡기를 압축한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "스로틀은 흡기량을 조절한다"
+        }
+      ],
+      "note": "1회 엔진2와 관련; 구성품 역할 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q02",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "점화플러그 간극과 밸브 심은 별개이다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "측정값-목표값=0.10mm이므로 심을 두껍게 한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "심을 얇게 하면 이 구조에서 간극이 증가한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "캠 타이밍 변경은 심 간극 보정법이 아니다"
+        }
+      ],
+      "note": "지문 정의에 따른 산술 정상",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q03",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "액추에이터 조정만으로 윤활 원인을 배제하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "공급·회수 제한과 초기 윤활을 확인한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "최대 회전 시험은 설치 초기 윤활 확인법이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "오일 규격은 윤활에 관련된다"
+        }
+      ],
+      "note": "1회 엔진3 및 2회 엔진3 개정본과 학습목표 반복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q04",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "P0171은 뱅크1 희박 판단이며 양의 보정은 연료 추가 방향이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "농후 보정은 일반적으로 연료 감소 방향이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "점화코일 단선의 정의가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "ATF 온도 코드는 아니다"
+        }
+      ],
+      "note": "실제 희박 원인과 감지 오류 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q05",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "가열된 협대역 센서의 저전압은 일반적으로 희박 방향이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "전압 변화만으로 단락을 확정하지 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "촉매 파손을 단정할 수 없다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "고전압에서 저전압으로 변하면 희박 방향 신호이다"
+        }
+      ],
+      "note": "센서 정상·활성 조건 및 광대역 제외",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q06",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "흡기온은 회전각의 직접 입력이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "후단 산소센서는 크랭크 위치를 측정하지 않는다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "CKP는 회전 위치 및 속도 기준이다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "팬 신호는 분사각 기준이 아니다"
+        }
+      ],
+      "note": "1회 엔진10 및 2회 엔진5와 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q07",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "온도·폐루프·제작사 측정조건을 맞춘다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "타이어 규격은 센서 전환 시험 기준이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "1초를 모든 차종에 적용하지 않는다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "화면 색상은 전환속도 판정 기준이 아니다"
+        }
+      ],
+      "note": "5번과 다른 응답속도 평가",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q08",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "코드를 먼저 지우면 당시 정보가 소실될 수 있다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "점등시간만으로 고장조건을 재현하기 어렵다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "DTC 저장상태를 삭제하는 것은 초기 보존에 반한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지원되는 DTC와 프리즈프레임을 보존한다"
+        }
+      ],
+      "note": "지원 데이터 조건 명시 권장",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q09",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "흡기 필터 압력손실만으로 DPF 재생을 판단하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "구름저항과 차속만으로 재생 상태를 판단하지 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "퍼지밸브 지령은 DPF 직접 감시값이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "DPF 차압과 배기온도 변화가 직접 관련된다"
+        }
+      ],
+      "note": "차압은 유량·온도에도 영향받음",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q10",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "냉각수 보충만으로 레일압 신호 이상을 해결하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "목표·실측 압력 및 센서 회로를 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "차종별 증상이 달라 시동꺼짐을 단정 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "DPF 제거는 레일압 진단이 아니다"
+        }
+      ],
+      "note": "실측은 지정 안전 절차 필수",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q11",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "목표 압력 형성 실패는 시동불량과 출력저하로 이어질 수 있다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "송풍 방향은 직접 증상이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "윈도우 불능은 직접 증상이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "타이어 공기압 감소는 직접 증상이 아니다"
+        }
+      ],
+      "note": "압력 제어 밸브 구조별 열림의 영향은 다름; 지문이 목표 미달 조건을 명시",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q12",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "코딩값만으로 압축 상태를 확정하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "리턴·레일압·압축 등 원인을 교차검증한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "활성 고압 연료계 임의 분해는 위험하다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "보정량 차이가 없다고 연료압 이상을 배제 못한다"
+        }
+      ],
+      "note": "차종별 보정값 단위 및 안전절차",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q13",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "레버 조명색은 노킹 분석 자료가 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "요구 옥탄가와 실제 연료 적합성이 직접 관련된다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "시트 높이는 연소 노킹 지표가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "워셔액 색상은 관련 없다"
+        }
+      ],
+      "note": "점화시기 관련 직접 데이터도 추가 가능; 오답 개선",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q14",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "±10%를 모든 엔진에 일률 적용하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 최소압력과 편차 및 시험조건을 적용한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "한 실린더만으로 전체 판정할 수 없다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "대기압과 같다는 기준은 부적절하다"
+        }
+      ],
+      "note": "OEM 수치 검증 필요",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q15",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "분사·시동 방지 조건을 지켜야 한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 측정 경로 및 어댑터를 사용한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "배터리 분리 상태의 일반 크랭킹은 불가능하다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "모든 인젝터 탈거가 모든 차량의 필수 조건은 아니다"
+        }
+      ],
+      "note": "차량별 안전 및 시험 절차",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q16",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "임의 순서 체결은 지정 체결법이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "규정 순서·토크·각도를 따른다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "볼트 길이만으로 재사용 가능 여부를 보장하지 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "최대 토크 일괄 적용은 지정 단계 체결과 다르다"
+        }
+      ],
+      "note": "토크투일드 볼트 등 OEM 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q17",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "마스터 실린더는 엔진 압축 부품이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "팬 릴레이는 실린더 기밀 부품이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "오일에 의한 링·벽면 일시 밀봉이 상승 원인 후보다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "탱크 환기밸브는 해당 압축 기밀 부위가 아니다"
+        }
+      ],
+      "note": "습식 시험 허용 모델 및 과다 오일 주의",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q18",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "면허 취득일은 검사 기한 산정 기준이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "모든 비사업 승용차에 고정 적용할 수 없다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "모든 차량 6개월 주기는 부정확하다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "최신 공식 기준과 해당 차량 조건을 확인한다"
+        }
+      ],
+      "note": "법령 실수치 검증 안 함; 과목분류 보류 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q19",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "캐니스터는 증발가스 관리장치이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "DPF는 주로 입자 포집용이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "오일 분리기는 환기 계통 부품이다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "삼원촉매는 CO·HC 산화와 NOx 환원을 수행한다"
+        }
+      ],
+      "note": "1회 엔진17·19와 직접 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s01-q20",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "공회전 목표만으로 농후 원인을 판단 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "연료보정과 전단 산소센서 반응을 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "타이어 마모는 혼합비 진단값이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "냉매압력은 공연비 판정값이 아니다"
+        }
+      ],
+      "note": "CO 증가 원인은 농후 이외에도 존재",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q01",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "스톨 속도만으로 ABS 고장을 판정하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "엔진 출력과 컨버터 특성 등 진단표를 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "저속 스톨을 펌프 단독으로 확정하지 않는다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "얼라인먼트는 스톨 원인의 직접 점검이 아니다"
+        }
+      ],
+      "note": "OEM 스톨시험 금지·허용 조건 별도",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q02",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "학습값 초기화만으로 라인압 저하 원인을 찾지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "펌프·조절기·내부 누설이 원인 후보이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "브레이크 유압과 변속기 라인압은 별개 계통이다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "휠속도 영점은 유압 발생 검사를 대신하지 못한다"
+        }
+      ],
+      "note": "레인지·온도·측정 위치 지정",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q03",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "원웨이 클러치가 스테이터의 한 방향 지지를 구현한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "캘리퍼 피스톤은 제동부품이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "조향 컬럼은 조향 전달부품이다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "링기어는 차동장치 부품이다"
+        }
+      ],
+      "note": "오답 변별력 개선",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q04",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "하우징 타격은 지정 인양법이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "낙하 위험을 통제해야 한다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 지지·인양·분리 공구를 사용한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "임의 천공은 정상 정비법이 아니다"
+        }
+      ],
+      "note": "중량물 작업 안전",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q05",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "ABS 릴레이는 컨버터 슬립을 제어하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "패드 마모센서는 잠금장치가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "록업 클러치는 기계적 연결로 슬립을 줄인다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "차동기어는 좌우 회전차를 허용한다"
+        }
+      ],
+      "note": "3회 섀시3과 관련; 기능과 고장 증상 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q06",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "브레이크등 점등시간은 감쇠성능 검사값이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "타이어 브랜드로 댐퍼 고장을 확정 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "창 닫힘 속도는 현가 진단 자료가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "누유·마운트·반복 반동을 점검한다"
+        }
+      ],
+      "note": "반동시험은 정량 판정 아님",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q07",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "커넥터·하네스 및 센서 형식별 신호를 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "펌프 교환부터 하는 것은 신호 오류 원인 검증이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "브레이크액 배출은 신호 진단이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "디스크 일괄 교환은 속도 신호 검사를 대체하지 않는다"
+        }
+      ],
+      "note": "4회 섀시17과 중복; 능동·수동 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q08",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "스프링은 탄성 지지, 댐퍼는 진동 감쇠를 담당한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "옥탄가·배기가스 정화 기능이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "ATF 냉각·정류 기능이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "일반 코일스프링 현가의 역할을 반대로 설명한다"
+        }
+      ],
+      "note": "관련성 높은 오답으로 개선 후보",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q09",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "가변 감쇠 ECS가 센서 기반 감쇠력을 제어한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "ABS는 잠김 방지 제동제어이다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "TCC는 컨버터 잠금제어이다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "EPB는 전동 주차브레이크이다"
+        }
+      ],
+      "note": "EPB 선택지 '차체 주차 잠금장치' 용어 부정확; 1회 섀시10과 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q10",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "엔진오일 등급은 변형 링크의 출력 관계를 설명하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "라이닝 연마는 센서 링크 검사법이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "헤드램프 교체는 해당 신호 문제와 무관하다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "링크와 움직임 대응 출력 검사에 근거가 있다"
+        }
+      ],
+      "note": "3회 섀시12와 관련",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q11",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "MAP은 흡기압을 측정한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "TPMS는 타이어 압력을 측정한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "CKP는 크랭크 위치·회전을 측정한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "조향 토크센서가 운전자 입력을 감지한다"
+        }
+      ],
+      "note": "1회 섀시19 및 2회 섀시13과 직접 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q12",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "일률적 0V 정상 규칙은 근거 없다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "입력·신호·전원·접지·DTC를 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "레일압은 토크센서 진단값이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "모터 교환은 센서 원인 확인을 대체하지 않는다"
+        }
+      ],
+      "note": "1회 섀시13·2회 섀시14 반복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q13",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "저전압 코드가 동반되므로 배터리·충전·센서전원 점검이 우선이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "영점만 조정하면 전원 이상을 놓칠 수 있다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "재프로그램만으로 저전압을 진단 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "얼라인먼트와 DTC 삭제는 전원 검사가 아니다"
+        }
+      ],
+      "note": "전원 동반 DTC 상황 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q14",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "기본 제동이 항상 즉시 중단되는 것은 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "ABS 경고와 기본 제동을 별도로 안전 점검한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "페달이 사라지는 현상은 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "엔진오일량 경고의 의미가 아니다"
+        }
+      ],
+      "note": "1~2회 ABS 경고 문항과 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q15",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "패드 교환만으로 경고 원인 확인을 대신하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "경고 표시 제거는 고장 수리가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "일괄 부품 교환은 진단 절차가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "경고등과 DTC를 확인 후 관련 회로를 검사한다"
+        }
+      ],
+      "note": "2회 전기12와 직접 유사",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q16",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "얼라인먼트 조정으로 씰 손상이 복구되지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "깊은 흠집·뚜렷한 누유는 정상으로 단정할 수 없다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "로드·씰 상태와 교체 기준을 확인한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "스프링 자유장만으로 오일 누유를 확정 못한다"
+        }
+      ],
+      "note": "정상 오일 미스트와 실제 누유 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q17",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "신호 탈락과 저속 개입의 관계를 파형·엔코더로 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "플러그 열가는 휠속도 입력 진단과 무관하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "색상 차이는 센서 간극 검사 자료가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "공조 풍량은 ABS 입력 자료가 아니다"
+        }
+      ],
+      "note": "4회 섀시7 및 1회 섀시2 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q18",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "신호 불일치만으로 조향기어 일괄 교환하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "OEM 기준 없는 임의 보정은 부적절하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "조향각 센서 제거로 이중 토크신호 오류를 해결 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "이중 신호 상관관계 및 전원·DTC를 확인한다"
+        }
+      ],
+      "note": "이중채널 센서 조건에서 차별화됨",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q19",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "압축기 교체만으로 누설을 배제하지 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "센서 제거는 누설 차단법이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "시동 후 복구가 주차 중 밀폐를 보장하지 않는다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "스프링·배관·밸브블록 누설과 압축기 작동을 확인한다"
+        }
+      ],
+      "note": "1회 섀시7과 중복; 안전지지 필수",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s02-q20",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 유종·온도·레인지·레벨 절차를 따른다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "임의 동일 체적은 레벨 확인을 대신하지 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "엔진 딥스틱은 해당 변속기 레벨 기준이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "과충전은 정상 레벨 보장법이 아니다"
+        }
+      ],
+      "note": "차종별 엔진 상태 및 규정 온도",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q01",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "퓨즈 정격을 높이면 회로 보호를 저해한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "도어 각도만으로 반복 과전류를 진단 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "철사 대체는 과전류 보호를 제거한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "접지 단락·부하 과전류 원인을 조사한다"
+        }
+      ],
+      "note": "정답 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q02",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "요레이트는 차체 수직축 회전 각속도이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "실내 습도는 차체 회전율이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "ATF 레벨은 차체 회전율이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "레일압은 실제 회전 움직임의 직접 신호가 아니다"
+        }
+      ],
+      "note": "QA54 2회 전기9와 직접 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q03",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "센서 정상 검사만으로 ECU 교체를 결정하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "배터리 전압만으로 톤링 상태를 판정 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "조향각 학습은 속도 신호 배선을 대체하지 않는다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "커넥터·배선 및 신호 경로를 확인한다"
+        }
+      ],
+      "note": "수동·능동별 검사 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q04",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "코일 단자 저항으로 캘리퍼 고착을 확정 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "무한대 표시는 해당 구간 개방 가능성을 나타낸다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "0Ω 단락 상태와 다르다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "무한대만으로 정상 판정할 수 없다"
+        }
+      ],
+      "note": "측정 리드·범위 확인 및 전원 차단 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q05",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "DLC 손상을 무시하면 통신·장비 이상 위험이 있다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "커넥터·전원·접지·안전 조건을 확인한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "ECU 교환 전에 DLC 경로를 확인해야 한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "저전압은 통신 오류의 원인일 수 있다"
+        }
+      ],
+      "note": "기본 진단 장비 연결 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q06",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 코딩·보정·기능 검사를 실시한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "임의 유종 변경은 코딩 절차가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "지문에서 코딩이 지정되어 있다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "차량별 보정값은 다를 수 있다"
+        }
+      ],
+      "note": "OEM 제동 안전 검사",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q07",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "차종·시기·유예 및 법령을 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "과거 기준 일괄 적용은 부적절하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "승차정원만으로 모든 조건을 판정 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "ABS와 ESC 장착의무는 동일하지 않다"
+        }
+      ],
+      "note": "국내 현행 장착의무 자체 미검증",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q08",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "조향오일은 실내 습기 원인과 직접 관련되지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "디스크 런아웃은 공조 배수검사가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "압축기 오일 색상만으로 악취·습기를 판정 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "응축수 배수와 필터 상태를 확인한다"
+        }
+      ],
+      "note": "다른 누수 원인도 검토",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q09",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "임의 냉매 방출은 부적절하다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "외기온·응축팬·충전량 등 조건을 확인한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "양측 상승을 냉매부족만으로 설명 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "과충전 단독 확정은 곤란하다"
+        }
+      ],
+      "note": "냉매 회수 규정 및 차량별 계측 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q10",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "증발기 결빙만으로 팬 전원 불량을 확정 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지령·전압·접지·보호회로와 배선을 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "모드도어 각도는 팬 단선 검사가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "실내 블로워 저항은 응축기 팬 회로 검사를 대체하지 않는다"
+        }
+      ],
+      "note": "11번은 원리, 10번은 전기 진단",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q11",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "팬 정지가 냉매의 즉시 고화를 뜻하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "팬 풍량은 응축기 열교환에 영향을 준다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "저압만 0으로 만드는 일반 현상이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "방열 부족으로 응축 고압이 증가할 수 있다"
+        }
+      ],
+      "note": "오답 변별력 개선",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q12",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "팽창장치·드라이어·배관 제한 가능성을 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "팬풍량 과다만으로 제한 구간을 확정 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "정상 순환을 먼저 가정할 수 없다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "압축불능과 고압 상승·저압 하락은 같은 전형적 압력 조합이 아니다"
+        }
+      ],
+      "note": "부품 배치 및 측정점에 따른 차이",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q13",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "오일 점도는 양 통신망 진단값이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "도장색에 따라 ID가 자동 변경되지 않는다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "양측 전원·접지·메시지 경로를 확인한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "한 포트 정상으로 다른 포트를 보장 못한다"
+        }
+      ],
+      "note": "게이트웨이 구성 차종별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q14",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "에어백 센서는 유리 전달부품이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "퓨즈 단선은 일반적으로 해당 회로 전력 공급을 차단한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "헤드램프 릴레이는 유리 구동 전달부가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "레귤레이터 와이어·기어·레일이 원인 후보다"
+        }
+      ],
+      "note": "모터음만으로 회전·토크 정상 확정 금지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q15",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "전원 미공급 상황에서 기구부만 분해하면 원인을 놓친다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "모터 선교환은 전원검사를 대체 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "퓨즈·전원 후 제어 및 부하 경로를 진단한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "유리 교환은 회로 진단이 아니다"
+        }
+      ],
+      "note": "1~3회 편의장치 회로 진단 반복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q16",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "등록 필요 여부는 차종별이다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 등록·동기화·코딩을 확인한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "타이어 압력은 키 보안 등록 자료가 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "패드 두께는 키 인식 검사 자료가 아니다"
+        }
+      ],
+      "note": "정당한 권한·OEM 절차 전제",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q17",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "조향 샤프트는 미러 기억 위치 저장부품이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "모터 이동이 정상이어도 메모리 회로 고장 가능하다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "저장 스위치 입력과 메모리 데이터를 확인한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "워셔 탱크는 미러 메모리 회로가 아니다"
+        }
+      ],
+      "note": "피드백 위치 신호도 확인",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q18",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "퓨즈 정격 증가로 마찰을 해소하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "레일·기구 마찰 및 정렬을 점검한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "방향지시 릴레이는 유리 기계부하와 무관하다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "점화시기는 유리 정렬 검사와 무관하다"
+        }
+      ],
+      "note": "끼임방지 작동 가능, 보호기능 우회 금지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q19",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "모터 전원검사 없는 레일 교체는 성급하다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "위치값만으로 기계 걸림을 확정 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "전원·명령과 기구 저항을 함께 검사한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "배선 임의 절단은 진단법이 아니다"
+        }
+      ],
+      "note": "'저항'은 기계적 작동 저항인지 명시 권장",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s03-q20",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "하나의 모터 교환으로 공통 장애를 진단 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "공통 퓨즈·전원·접지를 우선 확인한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "윤활만으로 모든 전동 기능 불능을 구별 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "위치 보정만으로 공통 전원 결함을 확인 못한다"
+        }
+      ],
+      "note": "다수 기능 동시 장애의 공통 경로",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q01",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "정격 절연장갑과 지정 외부 보호구가 적절하다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "조리용 비닐은 정격 PPE가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "일반 가죽장갑만으로 절연 보호를 보장 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "면장갑은 정격 절연장갑이 아니다"
+        }
+      ],
+      "note": "1회 친환경1·2회 친환경2와 반복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q02",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "하이브리드 일반 차량이 연료전지 스택을 가진 것은 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "하한 접근 시 방전 및 보조출력 제한이 가능하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "회생전력은 SOC 외 조건에도 제한된다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "소프트웨어가 실제 배터리 용량을 두 배로 만들지 않는다"
+        }
+      ],
+      "note": "충전제어·엔진 개입은 구조별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q03",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "READY OFF만으로 무전압을 보장 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "PPE 필요성은 READY 표시와 별개이다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 차단·대기·검증을 실시한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "케이블 절단은 정상 격리법이 아니다"
+        }
+      ],
+      "note": "1~3회 안전절차 직접 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q04",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 시험점·전압·분리 조건을 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "일반 저항계와 절연저항계는 시험 특성이 다르다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "연결된 ECU에 임의 시험전압 인가는 위험하다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "최대 시험전압이 모든 회로에 안전하지 않다"
+        }
+      ],
+      "note": "3회 친환경14와 직접 중복",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q05",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "모터 3상 출력만으로 AC 충전 변환 상태를 판단 못한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "DC/DC 저전압 출력만으로 OBC 상태를 판단 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "DC 급속충전 경로는 AC 입력 경로와 구별된다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "OBC 입력·허가·출력 상태 비교가 적절하다"
+        }
+      ],
+      "note": "지문 문장 구조 어색; AC 공급·BMS 조건 포함",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q06",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "공기압은 전기 절연성능 지표가 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "고전압 임의 단락은 위험하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "손으로 돌려 전압 안전을 추측할 수 없다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지정 절연·검전·진단시험을 적용한다"
+        }
+      ],
+      "note": "수리 후 기능검사 강조, OEM 절차 필수",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q07",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "육안 검사와 승인된 공기 누설 검사가 적절하다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "깨끗한 외관만으로 핀홀을 배제 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "핀홀 있는 절연장갑은 사용하면 안 된다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "일반 저항계가 정기 전기시험을 대체하지 못한다"
+        }
+      ],
+      "note": "1회 친환경6과 관련, 검사 방식 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q08",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "SOC는 표면 온도가 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "잔존 사용연수 비율이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "SOC는 정의된 용량 기준 충전상태의 추정 비율이다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "절연저항 값이 아니다"
+        }
+      ],
+      "note": "표시 SOC와 실제 셀 SOC의 범위 차이",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q09",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "모듈 전압·상태 균형과 조립 조건을 확인한다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "냉각수 외관만으로 모듈 편차를 판정 못한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "12V 전류만으로 모듈 균형을 판단 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "충전포트 AC만으로 내부 모듈 상태를 확정 못한다"
+        }
+      ],
+      "note": "배터리 모듈 작업 승인·OEM 절차",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q10",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "TPMS로 회생전력을 저장하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "엔진오일 가열만이 에너지 경로는 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "전력변환 경로를 통해 구동배터리로 회수 가능하다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "회생전력이 모두 마찰열로 소모되는 것은 아니다"
+        }
+      ],
+      "note": "1회 친환경18과 유사; 전력 경로 강조",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q11",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "동일 코딩 파일의 범용 적용은 부적절하다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "모듈 주소 임의 설정은 통신규격을 무시한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "주행 모드만으로 학습 여부를 판정 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "제작사 코딩·학습·필요 회로 점검을 적용한다"
+        }
+      ],
+      "note": "일반 차량 제어기인지 친환경 제어기인지 범위 명확화",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q12",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "충전구 커버 횟수는 산소 공급량 자료가 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "명령과 실제 공기 유량·압력 및 출력 변화를 비교한다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "감속기 오일 색만으로 산소 공급 부족을 판단 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "실내 공조와 스택 공기 공급은 다른 계통이다"
+        }
+      ],
+      "note": "스택 제조사 안전·진단 조건",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q13",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "신품 대비 잔존 용량·출력 성능 저하를 SOH로 표현할 수 있다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "높은 SOC가 열화 부재를 의미하지 않는다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "커넥터 규격으로 팩 용량을 확정 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "인버터 주파수만으로 잔존 용량을 확정 못한다"
+        }
+      ],
+      "note": "1회 친환경4 및 2회 친환경14 반복; 용량 계산형 가능",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q14",
+      "answer": 3,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "일반 DC 충전은 차량 OBC에서 AC로 다시 변환하는 방식이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "일반 충전 중 배터리의 외부 AC 역송을 전제하지 않는다"
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "외부 DC 공급과 차량의 충전 허가·제한 제어가 관련된다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "12V 배터리가 급속 전력 전체를 저장하지 않는다"
+        }
+      ],
+      "note": "차량 전압 변환 구조 예외 유지",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q15",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "PEM은 전자 대신 양성자를 전달하는 막이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "수소를 휘발유로 바꾸지 않는다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "막 건조는 양성자 전도 저하를 유발할 수 있다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "적정 수분은 양성자 전도 및 기체 공급 균형에 기여한다"
+        }
+      ],
+      "note": "과습에 따른 플러딩과 건조 구별",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q16",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "보조 배터리 SOC만으로 충전속도를 결정하지 않는다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "탱크 온도·공급압력·충전 프로토콜이 관련된다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "차체 팬 회전수만으로 충전속도를 판단 못한다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "실내 히터 전압만으로 충전 유량을 설명 못한다"
+        }
+      ],
+      "note": "충전 프로토콜·표준 세부값 별도",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q17",
+      "answer": 2,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "밀폐 공간에서 계속 점검하는 것은 위험하다"
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "안전 정지·전원 종료 및 접근통제가 타당하다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "화염으로 누설을 확인하지 않는다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "경고 중 임의 레귤레이터 분해는 위험하다"
+        }
+      ],
+      "note": "비상시 OEM 및 긴급 대응 지침; 점화원 회피",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q18",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "수소 산화와 산소 환원은 전기화학적 반응이다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "폭발 반복 발전 방식이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "산소 액화 회전력 방식이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "압축 마찰열만으로 전기를 얻는 방식이 아니다"
+        }
+      ],
+      "note": "1~3회 PEM 반응 문제와 반복; 응용형 개선",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q19",
+      "answer": 1,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "과전류 시 토크·출력 제한 또는 차단이 가능하다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "배터리 강제 단락은 보호제어가 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "전류 계속 증가가 과전류 보호는 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "포트 잠금 반복은 모터 과전류 보호의 직접 방식이 아니다"
+        }
+      ],
+      "note": "차종별 보호 로직",
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r04-s04-q20",
+      "answer": 4,
+      "version": "baseline_current",
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "휘발유 방향족 성분이 대표 생성물이 아니다"
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "메탄은 해당 전이에스터화 주생성물이 아니다"
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "요소수는 해당 연료 제조 생성물이 아니다"
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "지방산 알킬에스터가 주생성물이다"
+        }
+      ],
+      "note": "2회 친환경11 개정본과 관련; 메탄올 FAME/에탄올 FAEE 구별",
+      "expert_approved": false,
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "new_questions": 80,
+    "new_options": 320,
+    "cumulative_model_questions": 320,
+    "cumulative_options": 1280,
+    "expert_approvals": 0
+  }
+}
