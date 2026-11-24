@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA50_model_logic_review_40_of_720",
+  "latest_qa_stage": "QA52_round01_complete_versioned_working_bank",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2258,5 +2258,31 @@
     "published_expected": 80,
     "ledger": "data/qa/technical-qa50-next20-option-review.json",
     "next": "QA51 remediate duplicate and editorial candidates, verify regressions, then select next 20"
+  },
+  "technical_qa51": {
+    "date": "2026-11-24",
+    "revised_questions": 15,
+    "answer_index_changes": 0,
+    "revision_ledger": "data/qa/technical-qa51-editorial-revisions.json",
+    "storage": "versioned overlay; original historical drafts unchanged",
+    "materializer": "tests/qa51-52-working-bank.test.cjs",
+    "independent_final_approvals": 0
+  },
+  "technical_qa52": {
+    "date": "2026-11-24",
+    "new_questions": 40,
+    "new_options": 160,
+    "cumulative_model_review_questions": 80,
+    "cumulative_model_review_options": 320,
+    "remaining_questions": 640,
+    "remaining_options": 2560,
+    "remaining_batches": 32,
+    "independent_final_approvals": 0,
+    "subject_holds": 55,
+    "published_past": 0,
+    "published_expected": 80,
+    "ledger": "data/qa/technical-qa52-round01-remaining40-option-review.json",
+    "working_bank_artifact": "qa52-working-bank-and-remaining-640",
+    "next": "QA53 round02 first balanced batch from QA52 working view; continue 32 batches and resolve residual editorial/OEM/source issues"
   }
 }
