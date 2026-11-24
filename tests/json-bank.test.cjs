@@ -160,7 +160,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.answerChoices.children.find(x=>x.children[1].textContent!==target.choices[target.answer-1]).click();
   await els.reviewBackBtn.click();
   assert.equal(history().records.find(x=>x.id===target.id).wrong,rowBefore.wrong+1);
-  await els.wrongList.children[0].click();
+  await els.wrongList.children.find(x=>x.children[1]?.textContent===target.question).click();
   const review=questionsByText.get(els.questionText.textContent);
   assert.equal(review.id,target.id);
   await els.answerChoices.children.find(x=>x.children[1].textContent===target.choices[target.answer-1]).click();
@@ -170,6 +170,19 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.wrongScopes.children[1].click();
   assert.ok(els.wrongList.children.some(x=>x.children[1]?.textContent===target.question));
   assert.equal(count(),252);
+  // Existing releases retained only the last result. Import it exactly once.
+  delete memory[historyKey];
+  const oldResult=JSON.parse(memory.automotiveQuizLastSessionV1);
+  vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.equal(count(),80);
+  const imported=history();
+  assert.equal(imported.records.reduce((n,x)=>n+x.unanswered,0),79);
+  vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.deepEqual(history(),imported,"legacy import must not double count");
+  assert.equal(oldResult.items.length,80);
+
   console.log("PASS: cumulative wrong history, submitted exam blanks, repeat errors, resolved filter");
   console.log("PASS: exam resume, order, answers, deadline, expiry");
   console.log("PASS: JSON auto-fetch, shuffle/remap, 80-question 4-subject exam, 120min timer, back navigation, per-subject pass/fail, unanswered.");

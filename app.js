@@ -515,7 +515,7 @@
     returnSession=recentResult;
     returnView=goBack;
     current={items:[s.items[index]],choices:[0],orders:[buildOrder(s.items[index])],index:0,mode:"review",
-      title:`오답 다시 풀기 · 원래 ${index+1}번`,
+      title:goBack==="wrong"?"누적 오답 다시 풀기":`오답 다시 풀기 · 원래 ${index+1}번`,
       track:s.items[index].track,subject:s.items[index].subject};
     renderQuestion();showView("quiz");
   }
