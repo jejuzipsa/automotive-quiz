@@ -1,0 +1,763 @@
+{
+  "kind": "QA62_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r08-s01-q03",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "디젤 엔진에서 EGR 유량을 늘려 연소 최고온도를 낮추려 한다. 주된 배출가스 목표는?",
+        "choices": [
+          "질소산화물(NOx) 생성 억제",
+          "소음 데시벨을 무조건 0으로 조절",
+          "타이어 탄성력 향상",
+          "휘발유 증발가스 포집"
+        ],
+        "answer": 1,
+        "reason": "EGR은 배기가스 일부를 흡입공기에 섞어 산소농도와 연소 최고온도를 낮춤으로써 열적 NOx 생성 경향을 완화한다.",
+        "key_point": "EGR은 연소온도를 낮춰 NOx를 줄인다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "질소산화물(NOx) 생성 억제",
+            "verdict": "correct",
+            "rationale": "EGR은 배기가스 일부를 흡입공기에 섞어 산소농도와 연소 최고온도를 낮춤으로써 열적 NOx 생성 경향을 완화한다."
+          },
+          {
+            "number": 2,
+            "text": "소음 데시벨을 무조건 0으로 조절",
+            "verdict": "incorrect",
+            "rationale": "소음을 항상 0dB로 낮추는 것이 EGR의 NOx 목적은 아니야"
+          },
+          {
+            "number": 3,
+            "text": "타이어 탄성력 향상",
+            "verdict": "incorrect",
+            "rationale": "타이어 탄성은 배기가스 재순환계와 별개야"
+          },
+          {
+            "number": 4,
+            "text": "휘발유 증발가스 포집",
+            "verdict": "incorrect",
+            "rationale": "가솔린 증발가스 포집은 캐니스터와 다른 기능이야"
+          }
+        ]
+      },
+      "after": {
+        "question": "EGR 냉각기에서 재순환 배기가스가 잃는 열량을 이상적으로 계산한다. 배기가스 질량유량 0.02kg/s, 비열 1,000J/(kg·K), 입출구 온도차 100K일 때 열전달률은?",
+        "choices": [
+          "2kW",
+          "0.2kW",
+          "20kW",
+          "200kW"
+        ],
+        "answer": 1,
+        "reason": "열전달률은 질량유량×비열×온도차이다. 0.02×1,000×100=2,000W=2kW이다. 실제 EGR 냉각기 성능은 유량과 물성 및 열손실 등에 따라 달라진다.",
+        "key_point": "열전달률 Q̇=ṁ×cp×ΔT.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "2kW",
+            "verdict": "correct",
+            "rationale": "2,000W는 2kW이다."
+          },
+          {
+            "number": 2,
+            "text": "0.2kW",
+            "verdict": "incorrect",
+            "rationale": "주어진 값의 곱보다 10배 작다."
+          },
+          {
+            "number": 3,
+            "text": "20kW",
+            "verdict": "incorrect",
+            "rationale": "주어진 값의 곱보다 10배 크다."
+          },
+          {
+            "number": 4,
+            "text": "200kW",
+            "verdict": "incorrect",
+            "rationale": "주어진 값의 곱보다 100배 크다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s01-q09",
+      "kind": "clarify_pressure_measurement",
+      "before": {
+        "question": "커먼레일 디젤의 실제 분사압력이 제어 목표보다 낮다. 분사기에 공급되는 연료 압력의 기초 자료는?",
+        "choices": [
+          "점화코일 2차 전압만",
+          "에어컨 실내 온도센서만",
+          "리어 타이어의 제조사 로고만",
+          "레일 압력센서 실측값과 고압펌프 공급·제어 상태"
+        ],
+        "answer": 4,
+        "reason": "공통 레일은 고압 연료를 축적하고 인젝터에 공급한다. 실측 레일압을 목표와 비교하고 펌프 및 제어밸브·누설 여부를 살펴야 한다.",
+        "key_point": "커먼레일 분사압력은 레일압과 인젝터 구동조건에 연관.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "점화코일 2차 전압만",
+            "verdict": "incorrect",
+            "rationale": "점화 2차 전압만으로 디젤 레일압을 파악할 수 없어"
+          },
+          {
+            "number": 2,
+            "text": "에어컨 실내 온도센서만",
+            "verdict": "incorrect",
+            "rationale": "실내 온도센서는 고압 연료 상태 측정값이 아니야"
+          },
+          {
+            "number": 3,
+            "text": "리어 타이어의 제조사 로고만",
+            "verdict": "incorrect",
+            "rationale": "타이어 로고는 디젤 레일압 정보가 아니야"
+          },
+          {
+            "number": 4,
+            "text": "레일 압력센서 실측값과 고압펌프 공급·제어 상태",
+            "verdict": "correct",
+            "rationale": "공통 레일은 고압 연료를 축적하고 인젝터에 공급한다. 실측 레일압을 목표와 비교하고 펌프 및 제어밸브·누설 여부를 살펴야 한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "커먼레일 디젤 엔진의 목표 레일압력이 100MPa이고 레일압 센서 표시값이 80MPa이다. 목표값 대비 압력 부족률은?",
+        "choices": [
+          "80%",
+          "25%",
+          "10%",
+          "20%"
+        ],
+        "answer": 4,
+        "reason": "목표 대비 부족률은 (100−80)/100×100=20%이다. 레일의 압력 센서 표시값은 인젝터 노즐 내부의 순간 분사압력과 동일하다고 단정할 수 없다. 실제 진단은 센서 신뢰성과 공급·제어·누설 상태를 확인한다.",
+        "key_point": "목표 대비 부족률은 목표값을 분모로 한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "80%",
+            "verdict": "incorrect",
+            "rationale": "80%는 표시값/목표값이다."
+          },
+          {
+            "number": 2,
+            "text": "25%",
+            "verdict": "incorrect",
+            "rationale": "표시값을 분모로 사용한 값이다."
+          },
+          {
+            "number": 3,
+            "text": "10%",
+            "verdict": "incorrect",
+            "rationale": "주어진 압력차의 목표 대비 비율이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "20%",
+            "verdict": "correct",
+            "rationale": "(100−80)/100×100=20%이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s01-q15",
+      "kind": "remove_editorial_residue",
+      "before": {
+        "question": "삼원촉매 효율이 저하됐다. 원인을 찾을 때 함께 확인할 수 있는 조건은?",
+        "choices": [
+          "엔진 과열은 촉매에 어떤 영향도 불가능",
+          "실화가 있으면 촉매 효율이 반드시 증가한다",
+          "촉매는 온도가 아무리 높아도 손상되지 않는다",
+          "실화·과열·촉매 오염과 공연비 제어 이상"
+        ],
+        "answer": 4,
+        "reason": "미연소 연료가 촉매에서 연소하거나 과열·오염이 발생하면 촉매 기질이 손상될 수 있다. 원본의 과열을 효율저하와 무관하다고 단정하는 설명은 옳지 않을 수 있다.",
+        "key_point": "촉매 효율저하는 과열·실화·오염·공연비 문제와 관련된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 과열은 촉매에 어떤 영향도 불가능",
+            "verdict": "incorrect",
+            "rationale": "엔진 과열과 촉매 손상 사이의 관련성을 배제할 수 없어"
+          },
+          {
+            "number": 2,
+            "text": "실화가 있으면 촉매 효율이 반드시 증가한다",
+            "verdict": "incorrect",
+            "rationale": "실화는 미연소 연료 유입으로 촉매 과열을 유발할 수 있어"
+          },
+          {
+            "number": 3,
+            "text": "촉매는 온도가 아무리 높아도 손상되지 않는다",
+            "verdict": "incorrect",
+            "rationale": "촉매 기질이 극한 고온에도 손상되지 않는다는 건 틀려"
+          },
+          {
+            "number": 4,
+            "text": "실화·과열·촉매 오염과 공연비 제어 이상",
+            "verdict": "correct",
+            "rationale": "미연소 연료가 촉매에서 연소하거나 과열·오염이 발생하면 촉매 기질이 손상될 수 있다. 원본의 과열을 효율저하와 무관하다고 단정하는 설명은 옳지 않을 수 있다."
+          }
+        ]
+      },
+      "after": {
+        "question": "삼원촉매 효율이 저하됐다. 원인을 찾을 때 함께 확인할 수 있는 조건은?",
+        "choices": [
+          "엔진 과열은 촉매에 어떤 영향도 불가능",
+          "실화가 있으면 촉매 효율이 반드시 증가한다",
+          "촉매는 온도가 아무리 높아도 손상되지 않는다",
+          "실화·과열·촉매 오염과 공연비 제어 이상"
+        ],
+        "answer": 4,
+        "reason": "미연소 연료가 촉매에서 산화되면서 과열이 발생하거나 촉매가 오염되면 정화 성능이 저하될 수 있다. 실화, 공연비 제어 이상, 열손상 및 오염 상태를 관련 진단자료와 함께 확인한다. 효율 저하 코드만으로 촉매 교환을 확정하지 않는다.",
+        "key_point": "삼원촉매 효율 저하는 공연비·실화·열손상·오염과 함께 진단한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 과열은 촉매에 어떤 영향도 불가능",
+            "verdict": "incorrect",
+            "rationale": "엔진과 배기계의 비정상적인 열 상태는 촉매에 영향을 줄 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "실화가 있으면 촉매 효율이 반드시 증가한다",
+            "verdict": "incorrect",
+            "rationale": "실화는 미연소 연료로 촉매 과열을 유발할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "촉매는 온도가 아무리 높아도 손상되지 않는다",
+            "verdict": "incorrect",
+            "rationale": "촉매는 과도한 온도에서 손상될 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "실화·과열·촉매 오염과 공연비 제어 이상",
+            "verdict": "correct",
+            "rationale": "실화·과열·오염과 공연비 이상을 함께 확인한다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s02-q08",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "EPS의 조향 토크 센서에서 양방향 힘을 계측한다. 이 센서의 목적은?",
+        "choices": [
+          "브레이크액의 실제 비등점 측정",
+          "터보차저 윤활 압력 직접 생성",
+          "운전자가 가한 조향 입력의 크기·방향 파악",
+          "연료탱크 증발가스 저장"
+        ],
+        "answer": 3,
+        "reason": "조향 토크 센서는 운전자의 조작힘을 전기 신호로 변환해 EPS 제어기가 모터 보조력을 계산하도록 돕는다.",
+        "key_point": "조향 토크 센서 = 운전자 입력력 감지.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "브레이크액의 실제 비등점 측정",
+            "verdict": "incorrect",
+            "rationale": "브레이크액 비등점은 EPS 토크 센서 측정 대상이 아니야"
+          },
+          {
+            "number": 2,
+            "text": "터보차저 윤활 압력 직접 생성",
+            "verdict": "incorrect",
+            "rationale": "터보 윤활 압력은 EPS 토크 센서 기능과 달라"
+          },
+          {
+            "number": 3,
+            "text": "운전자가 가한 조향 입력의 크기·방향 파악",
+            "verdict": "correct",
+            "rationale": "조향 토크 센서는 운전자의 조작힘을 전기 신호로 변환해 EPS 제어기가 모터 보조력을 계산하도록 돕는다."
+          },
+          {
+            "number": 4,
+            "text": "연료탱크 증발가스 저장",
+            "verdict": "incorrect",
+            "rationale": "캐니스터는 증발가스 처리부품이지 조향입력 센서가 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 EPS 토크센서가 두 채널의 신호 합계가 5.0V가 되도록 설계됐다. 정상 범위에서 채널 A가 3.2V이면 채널 B의 기대값은?",
+        "choices": [
+          "3.2V",
+          "5.0V",
+          "1.8V",
+          "8.2V"
+        ],
+        "answer": 3,
+        "reason": "지문에서 정한 상보 신호 조건에 따르면 채널 B는 5.0−3.2=1.8V이다. 실제 EPS 토크센서의 전압 범위와 상관관계는 차량별 사양을 확인해야 하며 모든 센서에 이 조건을 적용하지 않는다.",
+        "key_point": "상보형 이중 신호는 지문에서 정의한 합계로 계산한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "3.2V",
+            "verdict": "incorrect",
+            "rationale": "두 채널이 3.2V이면 합계가 6.4V이다."
+          },
+          {
+            "number": 2,
+            "text": "5.0V",
+            "verdict": "incorrect",
+            "rationale": "5.0V는 두 채널의 합이다."
+          },
+          {
+            "number": 3,
+            "text": "1.8V",
+            "verdict": "correct",
+            "rationale": "5.0−3.2=1.8V이다."
+          },
+          {
+            "number": 4,
+            "text": "8.2V",
+            "verdict": "incorrect",
+            "rationale": "합계 조건에 맞지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s02-q17",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "쇼크업소버 로드 표면에 흠집이 난 뒤 오일이 새기 시작했다. 직접 연관된 부위는?",
+        "choices": [
+          "스트럿 어퍼마운트 베어링의 작동음",
+          "쇼크업소버 스프링 자유장 변화",
+          "로드 표면 상처와 그에 접촉하는 오일씰의 밀봉성",
+          "차체 높이 센서의 보정 값"
+        ],
+        "answer": 3,
+        "reason": "로드 표면의 손상은 씰 접촉부를 훼손해 오일 누유로 이어질 수 있다. 로드와 씰, 장착부의 상태를 함께 확인해야 한다.",
+        "key_point": "로드 손상은 댐퍼 오일 씰 누유로 연결 가능.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "스트럿 어퍼마운트 베어링의 작동음",
+            "verdict": "incorrect",
+            "rationale": "어퍼마운트 소음은 로드씰 파손의 직접적인 접촉부가 아니야"
+          },
+          {
+            "number": 2,
+            "text": "쇼크업소버 스프링 자유장 변화",
+            "verdict": "incorrect",
+            "rationale": "스프링 자유장 변화는 씰과 로드 간 누유점과 달라"
+          },
+          {
+            "number": 3,
+            "text": "로드 표면 상처와 그에 접촉하는 오일씰의 밀봉성",
+            "verdict": "correct",
+            "rationale": "로드 표면의 손상은 씰 접촉부를 훼손해 오일 누유로 이어질 수 있다. 로드와 씰, 장착부의 상태를 함께 확인해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "차체 높이 센서의 보정 값",
+            "verdict": "incorrect",
+            "rationale": "차고센서 학습값이 로드 표면 기계 흠집을 제거하지 않아"
+          }
+        ]
+      },
+      "after": {
+        "question": "선형 점성 감쇠 모델에서 댐퍼의 감쇠력이 600N이고 피스톤 상대속도가 0.4m/s일 때 감쇠계수는?",
+        "choices": [
+          "240N·s/m",
+          "600N·s/m",
+          "1,500N·s/m",
+          "2,400N·s/m"
+        ],
+        "answer": 3,
+        "reason": "선형 모델에서 감쇠력의 크기 F=c×v이므로 c=600/0.4=1,500N·s/m이다. 실제 댐퍼는 속도와 온도, 밸브 특성에 따라 비선형성을 보일 수 있다.",
+        "key_point": "선형 모델의 감쇠계수 c=F/v.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "240N·s/m",
+            "verdict": "incorrect",
+            "rationale": "힘과 속도를 곱한 수치이다."
+          },
+          {
+            "number": 2,
+            "text": "600N·s/m",
+            "verdict": "incorrect",
+            "rationale": "힘의 수치를 감쇠계수로 잘못 사용했다."
+          },
+          {
+            "number": 3,
+            "text": "1,500N·s/m",
+            "verdict": "correct",
+            "rationale": "600÷0.4=1,500N·s/m이다."
+          },
+          {
+            "number": 4,
+            "text": "2,400N·s/m",
+            "verdict": "incorrect",
+            "rationale": "주어진 식의 계산 결과가 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s03-q07",
+      "kind": "verify_refrigerant_properties",
+      "before": {
+        "question": "R-134a와 R-1234yf 냉매를 비교해 환경규제를 설명한다. 더 주의할 특성은?",
+        "choices": [
+          "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+          "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+          "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+          "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다"
+        ],
+        "answer": 1,
+        "reason": "EPA 자료 기준 R-134a는 GWP가 큰 냉매이며 R-1234yf는 상대적으로 훨씬 낮은 GWP를 갖는다. R-1234yf는 약한 가연성을 가진 A2L로 분류되며 차량별 장비·충전 포트·오일 규격을 확인해야 한다. GWP 수치는 적용한 평가 기준에 따라 달라질 수 있다.",
+        "key_point": "R-1234yf: R-134a보다 낮은 GWP, A2L 약가연성. 임의 혼용 금지.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+            "verdict": "correct",
+            "rationale": "EPA 자료 기준 R-134a는 GWP가 큰 냉매이며 R-1234yf는 상대적으로 훨씬 낮은 GWP를 갖는다. R-1234yf는 약한 가연성을 가진 A2L로 분류되며 차량별 장비·충전 포트·오일 규격을 확인해야 한다. GWP 수치는 적용한 평가 기준에 따라 달라질 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+            "verdict": "incorrect",
+            "rationale": "R134a의 A1 분류와 R1234yf A2L 분류를 뒤집었어"
+          },
+          {
+            "number": 3,
+            "text": "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+            "verdict": "incorrect",
+            "rationale": "냉매 회수 포트와 전용 윤활유를 무조건 혼용하면 안 돼"
+          },
+          {
+            "number": 4,
+            "text": "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다",
+            "verdict": "incorrect",
+            "rationale": "R1234yf GWP가 훨씬 크다는 것은 EPA 자료와 반대야"
+          }
+        ]
+      },
+      "after": {
+        "question": "자동차 공조 냉매 R-134a와 R-1234yf의 지구온난화지수(GWP)와 안전 분류에 대한 설명으로 옳은 것은?",
+        "choices": [
+          "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+          "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+          "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+          "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다"
+        ],
+        "answer": 1,
+        "reason": "미국 EPA 자동차 공조용 대체냉매 자료에서는 R-134a를 A1, R-1234yf를 A2L로 분류하고 R-1234yf의 GWP가 훨씬 낮다고 제시한다. A2L은 낮은 연소속도를 갖는 가연성 등급이다. GWP 수치는 평가 기준에 따라 달라질 수 있고, 정비에는 차량 및 냉매별 승인 장비·윤활유와 국내 적용 규정을 확인한다.",
+        "key_point": "R-1234yf는 R-134a보다 GWP가 낮으며 A2L 안전 분류에 해당한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "R-134a보다 R-1234yf의 GWP가 크게 낮고, R-1234yf는 A2L로 분류된다",
+            "verdict": "correct",
+            "rationale": "EPA 자료의 GWP 비교 및 A2L 분류와 일치한다."
+          },
+          {
+            "number": 2,
+            "text": "R-134a는 A2L 가연성이고 R-1234yf는 모든 조건에서 A1 비가연성이다",
+            "verdict": "incorrect",
+            "rationale": "두 냉매의 안전 분류를 뒤바꾼 설명이다."
+          },
+          {
+            "number": 3,
+            "text": "두 냉매의 냉매 회수·주입 포트와 윤활유는 아무 확인 없이 혼용할 수 있다",
+            "verdict": "incorrect",
+            "rationale": "차종·냉매별 지정 장비·윤활유를 확인해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "R-1234yf는 R-134a보다 GWP가 훨씬 크므로 환경상 이유로 도입됐다",
+            "verdict": "incorrect",
+            "rationale": "R-1234yf의 상대적인 GWP를 반대로 설명했다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.epa.gov/snap/substitutes-mvac-passenger-air-conditioning-light-duty-medium-duty-heavy-duty-and-road",
+        "access": "search_excerpt_only",
+        "scope": "EPA technical comparison; not Korean legal or OEM approval"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s03-q17",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "냉매가 증발기를 흐르면서 주변 공기의 열을 흡수한다. 이때 일어나는 상태 변화는?",
+        "choices": [
+          "저압측 냉매가 액체를 포함한 상태에서 증발해 기상으로 변한다",
+          "냉매가 브레이크액으로 바뀐다",
+          "냉매가 바로 압축돼 고압 액체로만 변한다",
+          "공기 중 산소가 냉매로 화학 반응한다"
+        ],
+        "answer": 1,
+        "reason": "증발기는 낮은 압력의 냉매가 주변 열을 흡수하여 증발하는 열교환기다. 실제 입·출구의 기상·액상 상태는 운전 조건과 과열도에 따라 달라진다.",
+        "key_point": "증발기 = 냉매 증발·열흡수.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "저압측 냉매가 액체를 포함한 상태에서 증발해 기상으로 변한다",
+            "verdict": "correct",
+            "rationale": "증발기는 낮은 압력의 냉매가 주변 열을 흡수하여 증발하는 열교환기다. 실제 입·출구의 기상·액상 상태는 운전 조건과 과열도에 따라 달라진다."
+          },
+          {
+            "number": 2,
+            "text": "냉매가 브레이크액으로 바뀐다",
+            "verdict": "incorrect",
+            "rationale": "증발기가 브레이크액을 냉매로 화학 변환하지 않아"
+          },
+          {
+            "number": 3,
+            "text": "냉매가 바로 압축돼 고압 액체로만 변한다",
+            "verdict": "incorrect",
+            "rationale": "증발기에서 압축돼 고압액체로 변하는 건 일반 냉동사이클과 달라"
+          },
+          {
+            "number": 4,
+            "text": "공기 중 산소가 냉매로 화학 반응한다",
+            "verdict": "incorrect",
+            "rationale": "대기 산소가 냉매로 화학반응하는 과정이 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "이상적인 증발기에서 냉매 질량유량이 0.03kg/s이고 입출구 비엔탈피 차이가 150kJ/kg이다. 냉매가 흡수하는 열전달률은?",
+        "choices": [
+          "4.5kW",
+          "0.2kW",
+          "45kW",
+          "5,000kW"
+        ],
+        "answer": 1,
+        "reason": "정상상태에서 외부 손실을 무시하면 증발기 열전달률은 냉매 질량유량과 비엔탈피 상승량의 곱이다. 0.03×150=4.5kJ/s=4.5kW이다. 실제 냉방 성능은 송풍 조건과 냉매 순환 상태에도 영향을 받는다.",
+        "key_point": "증발기의 이상화한 열전달률은 질량유량×비엔탈피 상승량이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "4.5kW",
+            "verdict": "correct",
+            "rationale": "0.03×150=4.5kW이다."
+          },
+          {
+            "number": 2,
+            "text": "0.2kW",
+            "verdict": "incorrect",
+            "rationale": "주어진 유량과 엔탈피 차이의 곱이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "45kW",
+            "verdict": "incorrect",
+            "rationale": "계산값보다 10배 크다."
+          },
+          {
+            "number": 4,
+            "text": "5,000kW",
+            "verdict": "incorrect",
+            "rationale": "150을 0.03으로 나눈 값으로 열전달률이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s04-q14",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "승용 연료전지차의 수소용기 부근에서 70MPa 표기가 보인다. 의미로 적절한 것은?",
+        "choices": [
+          "70MPa가 배터리 전압을 뜻한다",
+          "70MPa가 타이어 공기압과 동일하다",
+          "해당 용기 시스템의 명목 작동 압력 등급과 관련된 표기",
+          "모든 용기가 70MPa에서 항상 안전하게 열려야 한다"
+        ],
+        "answer": 3,
+        "reason": "70MPa는 700bar에 해당하며 수소차 저장압력 등급으로 사용된다. 충전 시 온도에 따른 압력 관리 등 규정은 인증된 충전 절차를 따른다.",
+        "key_point": "70MPa ≈ 700bar, 수소 저장 압력 등급.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "70MPa가 배터리 전압을 뜻한다",
+            "verdict": "incorrect",
+            "rationale": "70MPa 표기는 배터리 전압 단위가 아니야"
+          },
+          {
+            "number": 2,
+            "text": "70MPa가 타이어 공기압과 동일하다",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기압과 수소 고압 저장압은 다르지"
+          },
+          {
+            "number": 3,
+            "text": "해당 용기 시스템의 명목 작동 압력 등급과 관련된 표기",
+            "verdict": "correct",
+            "rationale": "70MPa는 700bar에 해당하며 수소차 저장압력 등급으로 사용된다. 충전 시 온도에 따른 압력 관리 등 규정은 인증된 충전 절차를 따른다."
+          },
+          {
+            "number": 4,
+            "text": "모든 용기가 70MPa에서 항상 안전하게 열려야 한다",
+            "verdict": "incorrect",
+            "rationale": "용기가 70MPa에서 반드시 열린다는 제어설계 의미는 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "수소 저장 시스템의 명목 작동 압력 등급이 70MPa로 표시됐다. 압력 단위를 bar로 환산하면?",
+        "choices": [
+          "7bar",
+          "70bar",
+          "700bar",
+          "7,000bar"
+        ],
+        "answer": 3,
+        "reason": "1MPa는 10bar이므로 70MPa는 700bar이다. 이는 명목 작동 압력 등급의 단위 환산이며 실제 충전 목표압력, 허용 최대압력 또는 안전장치 작동값을 뜻하지 않는다. 실제 충전은 승인된 설비와 차량 절차를 따른다.",
+        "key_point": "1MPa=10bar.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "7bar",
+            "verdict": "incorrect",
+            "rationale": "70MPa를 올바르게 환산한 값보다 100배 작다."
+          },
+          {
+            "number": 2,
+            "text": "70bar",
+            "verdict": "incorrect",
+            "rationale": "MPa의 숫자만 그대로 옮긴 값이다."
+          },
+          {
+            "number": 3,
+            "text": "700bar",
+            "verdict": "correct",
+            "rationale": "70×10=700bar이다."
+          },
+          {
+            "number": 4,
+            "text": "7,000bar",
+            "verdict": "incorrect",
+            "rationale": "올바른 환산값보다 10배 크다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r08-s04-q18",
+      "kind": "clarify_ppe_vs_instrument",
+      "before": {
+        "question": "고전압 작업에 필요한 안전장비를 준비한다. 직접적인 감전 보호에 해당하는 것은?",
+        "choices": [
+          "불꽃 용접용 차광마스크 하나면 충분",
+          "면장갑만 착용하고 고전압 단자 접촉",
+          "일반 금속 렌치만으로 모든 절연 작업 완료",
+          "해당 전압에 적합한 절연장갑과 절연 측정장비"
+        ],
+        "answer": 4,
+        "reason": "고전압 정비는 정격 절연장갑·보호구·계측기와 제조사 차단 절차가 중요하다. 차광마스크 단독은 감전 보호를 대신하지 못한다.",
+        "key_point": "HV 보호는 절연 정격의 PPE·계측기 사용.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "불꽃 용접용 차광마스크 하나면 충분",
+            "verdict": "incorrect",
+            "rationale": "용접 차광 마스크만으로 감전 보호가 되지 않아"
+          },
+          {
+            "number": 2,
+            "text": "면장갑만 착용하고 고전압 단자 접촉",
+            "verdict": "incorrect",
+            "rationale": "면장갑은 고전압 절연보호구를 대체하지 못해"
+          },
+          {
+            "number": 3,
+            "text": "일반 금속 렌치만으로 모든 절연 작업 완료",
+            "verdict": "incorrect",
+            "rationale": "금속 렌치만으로 전기절연 작업을 안전하게 수행할 수 없어"
+          },
+          {
+            "number": 4,
+            "text": "해당 전압에 적합한 절연장갑과 절연 측정장비",
+            "verdict": "correct",
+            "rationale": "고전압 정비는 정격 절연장갑·보호구·계측기와 제조사 차단 절차가 중요하다. 차광마스크 단독은 감전 보호를 대신하지 못한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "고전압 자동차 정비를 위한 작업 전 준비에서 개인보호구와 검전 장비의 역할을 올바르게 구분한 것은?",
+        "choices": [
+          "용접 차광마스크 하나가 절연장갑과 검전기를 모두 대체한다",
+          "일반 면장갑을 착용하면 무전압 확인이 필요 없다",
+          "일반 금속 렌치가 고전압 절연 보호구를 대신한다",
+          "정격 절연장갑은 감전 보호구이며, 승인된 검전 장비는 지정 지점의 전압 확인에 사용한다"
+        ],
+        "answer": 4,
+        "reason": "정격 절연장갑 등 개인보호구는 작업자의 위험 노출을 줄이기 위한 장비이고, 승인된 전압 측정 장비는 전압 상태를 확인하기 위한 계측기이다. 두 역할은 서로 대체할 수 없다. 고전압 작업은 자격을 갖춘 작업자가 제조사 지정 차단·검전·보호 절차에 따라 수행한다.",
+        "key_point": "개인보호구와 전압 확인용 계측기는 역할이 다르다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "용접 차광마스크 하나가 절연장갑과 검전기를 모두 대체한다",
+            "verdict": "incorrect",
+            "rationale": "차광마스크는 절연장갑과 검전 장비를 대체하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "일반 면장갑을 착용하면 무전압 확인이 필요 없다",
+            "verdict": "incorrect",
+            "rationale": "면장갑은 정격 절연장갑이 아니며 검전을 대체하지 못한다."
+          },
+          {
+            "number": 3,
+            "text": "일반 금속 렌치가 고전압 절연 보호구를 대신한다",
+            "verdict": "incorrect",
+            "rationale": "금속 렌치는 감전 보호구가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "정격 절연장갑은 감전 보호구이며, 승인된 검전 장비는 지정 지점의 전압 확인에 사용한다",
+            "verdict": "correct",
+            "rationale": "정격 PPE와 검전 장비의 역할을 정확히 구분했다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 9,
+    "answer_index_changes": 0,
+    "source_excerpt_checked": 1,
+    "new_source_page_checks": 0
+  }
+}
