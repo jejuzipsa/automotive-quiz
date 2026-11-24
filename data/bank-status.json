@@ -1,13 +1,13 @@
 {
   "updated_at": "2026-11-24",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "Independently-authored educational draft bank (720 questions/2880 options): QA40-45 replaced 54 historically miscategorized or ambiguous items with new subject-focused study prompts, which are not verbatim original past exams. All legacy audit records preserved. 55 classification holds still held, no expert final approvals (0/720), reconstructed past not live (0/720); original expected practice80 unchanged. QA38 historical firstpass 351 source supported and 369 additional review is not independently approved.",
+  "source_of_truth": "Independently-authored educational draft bank (720 questions/2880 options): QA40-45 replaced 54 historically miscategorized or ambiguous items with new subject-focused study prompts, which are not verbatim original past exams. All legacy audit records preserved. 55 classification holds still held, no expert final approvals (0/720), reconstructed past not live (0/720); original expected practice100 including 20 newly authored calculation items. QA38 historical firstpass 351 source supported and 369 additional review is not independently approved.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
     "publisher_source_uploaded": false,
     "past_exam_published": 0,
-    "expected_exam_published": 80,
+    "expected_exam_published": 100,
     "demo_questions": 8,
     "demo_concepts": 4,
     "personal_zip_import_available": false,
@@ -18,12 +18,12 @@
     "text_bank_imported_into_public_github": false,
     "live_subject_cards_after_local_import": null,
     "current_automatic_json_banks": {
-      "engine": 20,
-      "chassis": 20,
-      "electrical": 20,
-      "eco": 20
+      "engine": 25,
+      "chassis": 25,
+      "electrical": 25,
+      "eco": 25
     },
-    "current_original_practice_count": 80,
+    "current_original_practice_count": 100,
     "public_exam_reconstruction_count": 0,
     "current_unpublished_reauthored_question_drafts": 720,
     "mock_exam_expected_enabled": true,
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA64_current_bank_quality_screening",
+  "latest_qa_stage": "QA65_duplicate_corrections_QA66_partial_original_practice_expansion",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2514,5 +2514,19 @@
     "artifact": "qa64-quality-triage-720",
     "screening_not_approval": true,
     "next": "QA65 prioritized duplicates/distractors; QA66 explanations; select release-eligible original practice only"
+  },
+  "technical_qa65": {
+    "date": "2026-11-24",
+    "revised_questions": 6,
+    "total_versioned_revisions": 82,
+    "model_reviewed_drafts": 720,
+    "subject_holds": 55,
+    "independent_approvals": 0,
+    "published_reconstructed_past": 0,
+    "original_practice_added": 20,
+    "public_expected": 100,
+    "qa66_explanation_review_complete": false,
+    "ledger": "data/qa/technical-qa65-editorial-corrections.json",
+    "next": "Continue QA66 quality and release eligibility review; expand original practice bank"
   }
 }
