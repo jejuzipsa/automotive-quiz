@@ -1,1 +1,1176 @@
-[{"id":"auto-made-r03-s03-q01","question_id":"auto-made-r03-s03-q01","subject":"electrical","correct_answer":2,"correct_choice":"우선순위 식별자에 따른 비파괴적 비트 중재","reason":"일반적인 CAN 통신은 메시지 식별자의 우선순위와 지배·열성 비트 특성을 이용한 비파괴적 중재를 사용한다. 무선 LAN의 CSMA/CA와 혼동하면 안 된다.","key_point":"CAN은 식별자 기반 비파괴적 중재를 한다.","source_question_id":"auto-r03-s03-q01","original_issue_flags":["source_can_arbitration_technique_not_csma_ca_claim_suspect"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"무작위 충돌을 무조건 허용하고 패킷을 폐기","verdict":"incorrect","rationale":"CAN 중재는 프레임의 식별자와 우성·열성 비트 비교를 이용하며 무작위 충돌 후 패킷 폐기가 본질은 아니다."},{"number":2,"text":"우선순위 식별자에 따른 비파괴적 비트 중재","verdict":"correct","rationale":"표준 CAN은 식별자 우선순위에 따른 비파괴 비트 중재를 적용한다."},{"number":3,"text":"CSMA/CA의 무선 RTS/CTS 교환만 사용","verdict":"incorrect","rationale":"무선 LAN의 RTS/CTS 교환은 CAN 식별자 중재 방식과 다르다."},{"number":4,"text":"모든 장치가 같은 식별자를 강제로 사용","verdict":"incorrect","rationale":"모든 장치가 같은 식별자를 강제로 쓰는 방식은 CAN 메시지 우선순위의 설명이 아니다."}]},{"id":"auto-made-r03-s03-q02","question_id":"auto-made-r03-s03-q02","subject":"electrical","correct_answer":3,"correct_choice":"스위치는 MAC 주소 테이블을 활용해 적절한 포트로 프레임을 전달할 수 있다","reason":"스위치는 학습된 MAC 주소에 따라 프레임 전달 포트를 선택하는 데이터링크 장치다. 허브는 수신 신호를 다른 포트로 반복한다. 미학습·브로드캐스트 트래픽은 예외가 있다.","key_point":"스위치는 MAC 기반 포트 전달, 허브는 신호 반복이다.","source_question_id":"auto-r03-s03-q02","original_issue_flags":["source_network_switch_mac_vs_hub_descriptive_context"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.teledynelecroy.com/doc/100base-t1-ethernet-appnote"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 LAN 리피터와 Ethernet 스위치의 개념으로 차량용 네트워크 진단 연계성·출제범위 재평가 필요."},"option_analysis_qa17":[{"number":1,"text":"허브는 MAC 주소를 학습하고 스위치는 모든 포트로만 반복한다","verdict":"incorrect","rationale":"일반 리피터 허브는 MAC 학습표로 목적지 포트를 선택하는 이더넷 스위치와 다르다."},{"number":2,"text":"둘 다 항상 응용계층 주소로 판단","verdict":"incorrect","rationale":"스위치의 일반 프레임 전달은 주로 MAC 주소 등 링크계층을 활용하며 응용계층 주소만으로 처리하지 않는다."},{"number":3,"text":"스위치는 MAC 주소 테이블을 활용해 적절한 포트로 프레임을 전달할 수 있다","verdict":"correct","rationale":"스위치는 학습된 MAC 테이블을 이용해 목적지 포트를 선택해 프레임을 전달할 수 있다."},{"number":4,"text":"허브가 차량 배터리 전압을 조절한다","verdict":"incorrect","rationale":"리피터 허브는 차량 배터리 전압 레귤레이터 기능의 장치가 아니다."}]},{"id":"auto-made-r03-s03-q03","question_id":"auto-made-r03-s03-q03","subject":"electrical","correct_answer":1,"correct_choice":"퓨즈·ECU 전원·통신선 연속성과 DTC","reason":"통신 불능은 모듈 자체 결함 외에도 전원·접지·배선과 종단 문제로 발생한다. 신호와 회로를 먼저 검사하면 부품 오진을 줄일 수 있다.","key_point":"네트워크 고장에는 전원·물리회로 점검이 선행된다.","source_question_id":"auto-r03-s03-q03","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"퓨즈·ECU 전원·통신선 연속성과 DTC","verdict":"correct","rationale":"차량 네트워크 통신 불능 시 퓨즈·ECU 전원·통신선 연결과 DTC는 원인 구분의 직접 검사 자료다."},{"number":2,"text":"타이어 생산연도만","verdict":"incorrect","rationale":"타이어 생산연도만 확인해도 ECU 통신 불능의 전원·배선 원인을 직접 진단할 수 없다."},{"number":3,"text":"브레이크 패드 색상만","verdict":"incorrect","rationale":"브레이크 패드 외관색만으로 CAN 배선 단락을 판정할 수 없다."},{"number":4,"text":"엔진오일량만","verdict":"incorrect","rationale":"엔진오일량만 확인하면 통신선의 물리적 정상상태를 확인할 수 있는 것은 아니다."}]},{"id":"auto-made-r03-s03-q04","question_id":"auto-made-r03-s03-q04","subject":"electrical","correct_answer":4,"correct_choice":"통신 자원을 다수 장치가 필요에 따라 공유할 수 있다","reason":"패킷 교환은 메시지를 나눠 통신 자원을 공유하는 방식이다. 효율은 부하와 망 구조에 따라 달라지며 항상 지연이 낮다고 단정할 수 없다.","key_point":"패킷 교환의 장점은 자원의 유연한 공유다.","source_question_id":"auto-r03-s03-q04","original_issue_flags":["source_packet_switching_latency_claim_overgeneralized"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.teledynelecroy.com/doc/100base-t1-ethernet-appnote"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"패킷 교환의 일반 컴퓨터 네트워크 개념만 묻고 자동차 통신 프레임/실무 상황과 연결되지 않아 검토 보류."},"option_analysis_qa17":[{"number":1,"text":"항상 지연 시간이 0이 된다","verdict":"incorrect","rationale":"패킷 교환은 항상 지연시간이 0으로 고정되는 전송 방식이 아니다."},{"number":2,"text":"모든 ECU가 독점 회선을 영구 사용한다","verdict":"incorrect","rationale":"다수 ECU가 영구적으로 독점 회선만 점유해야 패킷교환이 가능한 것은 아니다."},{"number":3,"text":"데이터 손실을 물리적으로 불가능하게 한다","verdict":"incorrect","rationale":"네트워크가 공유 방식이라고 전송 오류·데이터 손실이 물리적으로 불가능해지지는 않는다."},{"number":4,"text":"통신 자원을 다수 장치가 필요에 따라 공유할 수 있다","verdict":"correct","rationale":"데이터를 메시지 단위로 전송하여 여러 장치가 통신 자원을 공유하는 데 활용할 수 있다."}]},{"id":"auto-made-r03-s03-q05","question_id":"auto-made-r03-s03-q05","subject":"electrical","correct_answer":2,"correct_choice":"전기 신호의 스위칭과 증폭","reason":"트랜지스터는 제어 신호에 따라 전류 흐름을 조절해 스위치 또는 증폭기로 쓰인다. ECU의 구동회로와 센서 신호 처리 등에 활용된다.","key_point":"트랜지스터는 전기 신호 제어용 반도체다.","source_question_id":"auto-r03-s03-q05","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"냉각수의 끓는점만 낮추기","verdict":"incorrect","rationale":"트랜지스터는 냉각수의 비등점 자체를 바꾸기 위한 냉각계 액체 부품이 아니다."},{"number":2,"text":"전기 신호의 스위칭과 증폭","verdict":"correct","rationale":"트랜지스터는 전류제어에 의해 스위칭·전기 신호 증폭 등의 기능을 수행한다."},{"number":3,"text":"배기관 매연을 직접 여과","verdict":"incorrect","rationale":"트랜지스터가 배기매연 입자를 기계적으로 여과하는 DPF는 아니다."},{"number":4,"text":"브레이크액을 가압하는 유압펌프 역할만","verdict":"incorrect","rationale":"유압펌프의 기계압 작용만을 수행하는 부품은 트랜지스터의 일반적 기능과 다르다."}]},{"id":"auto-made-r03-s03-q06","question_id":"auto-made-r03-s03-q06","subject":"electrical","correct_answer":3,"correct_choice":"회로 퓨즈·스위치·전원·접지","reason":"전기회로 불량은 전원 공급, 스위치 입력, 배선과 접지를 따라 원인을 추적한다. 엔진오일이나 연료필터는 실내등 회로의 직접 부품이 아니다.","key_point":"회로 수리는 퓨즈·전원·스위치·접지부터 검사한다.","source_question_id":"auto-r03-s03-q06","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"연료필터 교체 주기만","verdict":"incorrect","rationale":"연료필터 교환주기만 확인해도 실내등 전원불능 원인을 직접 분석할 수 있는 것은 아니다."},{"number":2,"text":"엔진오일 점도만","verdict":"incorrect","rationale":"엔진오일 점도는 실내등 전원·접지 단선에 관한 직접 검사값이 아니다."},{"number":3,"text":"회로 퓨즈·스위치·전원·접지","verdict":"correct","rationale":"실내등 회로의 퓨즈·스위치·전원·접지 상태를 점검하면 원인을 좁힐 수 있다."},{"number":4,"text":"타이어 위치 교환 이력만","verdict":"incorrect","rationale":"타이어 위치 교환 이력은 실내등 회로의 전기적 고장을 검증하지 않는다."}]},{"id":"auto-made-r03-s03-q07","question_id":"auto-made-r03-s03-q07","subject":"electrical","correct_answer":1,"correct_choice":"충전을 중지하고 접근을 통제해 규정된 안전 대응을 시행","reason":"충전식 배터리의 비정상 과열·팽창은 위험 신호다. 배터리 종류에 맞춰 안전거리를 확보하고 제조사·소방 절차에 따라 조치한다.","key_point":"배터리 이상 발열에는 충전 중단과 안전 대응이 우선이다.","source_question_id":"auto-r03-s03-q07","original_issue_flags":["source_rechargeable_battery_safety_requires_specific_type"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://afdc.energy.gov/vehicles/electric-maintenance"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"배터리 화학 종류·차량 고전압 여부에 따라 비상대응·소화·접근 통제 방식이 달라 OEM/소방 안전기준 추가 검토."},"option_analysis_qa17":[{"number":1,"text":"충전을 중지하고 접근을 통제해 규정된 안전 대응을 시행","verdict":"correct","rationale":"충전 배터리의 비정상적인 과열·부풀음은 위험 신호라 충전을 중단하고 안전거리를 확보해야 한다."},{"number":2,"text":"배터리를 찔러 가스를 제거","verdict":"incorrect","rationale":"배터리를 뚫어 가스를 임의 배출하면 내부 단락·화재 등 위험이 발생할 수 있다."},{"number":3,"text":"금속 공구로 양극과 음극을 직접 연결","verdict":"incorrect","rationale":"배터리 극간을 금속 공구로 단락시키는 행위는 심각한 사고 위험이 있다."},{"number":4,"text":"열이 식도록 배터리를 차체 아래에 묻음","verdict":"incorrect","rationale":"발열 배터리를 차체 아래에 묻는 행위는 승인된 안전격리·수리 절차가 아니다."}]},{"id":"auto-made-r03-s03-q08","question_id":"auto-made-r03-s03-q08","subject":"electrical","correct_answer":2,"correct_choice":"지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다","reason":"유압계통을 열었다면 공기빼기와 누설 검사가 중요하다. 차종에 따라 진단기로 ABS 모듈을 작동시키는 절차가 필요할 수 있다.","key_point":"브레이크 정비 후 유압·누설·기능을 확인한다.","source_question_id":"auto-r03-s03-q08","original_issue_flags":["source_all_brake_repairs_abs_function_test_required_overgeneralized"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"유압회로 개방 후 에어빼기와 기능 점검","review_batch":"QA2","reviewed_choice_count":4},"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"electrical","suggested_subject":"chassis","reason":"브레이크 ABS 유압모듈 교환·유압 에어빼기·제동 기능점검은 전기전자장치보다 섀시/제동 정비 범위일 가능성이 높음","classification_verdict":"pending_curriculum_specific_manual_review","qa17_manual_screening":"cross_subject_topic_probable","qa17_reference_urls":["https://www.hella.com/techworld/en/technical/brakes/changing-the-brake-fluid/"]},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기존 전기전자→섀시 과목분류 보류. ABS 유압·진단기 구동/제동안전은 OEM 절차 필요."},"option_analysis_qa17":[{"number":1,"text":"경고 코드만 삭제하고 공기빼기는 생략한다","verdict":"incorrect","rationale":"ABS 유압회로 개방 후 DTC만 지운다고 공기가 제거되거나 안전한 제동 기능이 보장되지는 않는다."},{"number":2,"text":"지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다","verdict":"correct","rationale":"차량 지정 에어빼기와 누설·제동 기능 확인은 유압 회로를 개방한 후 필요한 절차다."},{"number":3,"text":"브레이크액 레벨이 정상이라면 회로 공기 여부는 확인하지 않는다","verdict":"incorrect","rationale":"브레이크액 탱크 레벨이 정상이어도 배관/ABS 모듈에 공기가 남을 수 있다."},{"number":4,"text":"ABS 전원만 차단한 채 유압기능 검사는 생략한다","verdict":"incorrect","rationale":"ABS 전원을 차단한 상태만으로 유압 기능검사를 대체할 수는 없다."}]},{"id":"auto-made-r03-s03-q09","question_id":"auto-made-r03-s03-q09","subject":"electrical","correct_answer":4,"correct_choice":"구동토크를 줄이거나 해당 바퀴 제동력을 조절한다","reason":"TCS는 구동 바퀴의 슬립을 억제하기 위해 엔진·모터 토크와 제동을 활용할 수 있다. 모든 차량에서 연료분사만 줄이는 것으로 설명하면 부족하다.","key_point":"TCS는 구동토크·제동 제어로 헛돎을 억제한다.","source_question_id":"auto-r03-s03-q09","original_issue_flags":["source_tcs_controls_torque_by_various_methods_not_only_fuel"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"TCS 실제 제어 수단과 unrelated electrical controls 구분","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"차동기어의 고정 종감속비를 주행 중 변경한다","verdict":"incorrect","rationale":"TCS 작동 시 기어의 고정 종감속비를 자동 변경하는 것이 기본 제어 방식은 아니다."},{"number":2,"text":"차체 조향각 센서 영점만 변경한다","verdict":"incorrect","rationale":"조향각 영점만 조정하면 구동륜 슬립을 제어하는 TCS 기능을 대신할 수 없다."},{"number":3,"text":"구동륜 슬립과 무관하게 냉각팬을 최대 회전시킨다","verdict":"incorrect","rationale":"구동륜 슬립과 무관한 냉각팬 제어가 구동력 제어를 대신하지는 않는다."},{"number":4,"text":"구동토크를 줄이거나 해당 바퀴 제동력을 조절한다","verdict":"correct","rationale":"TCS는 엔진·모터 구동토크 감소 또는 휠별 제동 제어로 과도한 헛돎을 줄일 수 있다."}]},{"id":"auto-made-r03-s03-q10","question_id":"auto-made-r03-s03-q10","subject":"electrical","correct_answer":3,"correct_choice":"제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인","reason":"ECU 리셋 후 스로틀·조향각 등 학습 또는 보정 절차가 요구될 수 있다. 차종과 교체 작업 여부에 따라 다르므로 제조사 기준을 확인한다.","key_point":"ECU 초기화 이후 학습·보정은 차량별로 다르다.","source_question_id":"auto-r03-s03-q10","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"차량별 보정·학습 필요성 확인","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"영점 보정 대상과 차종별 재학습 조건이 다양해 OEM 서비스 절차 검증 필요."},"option_analysis_qa17":[{"number":1,"text":"ECU 리셋 뒤 모든 센서의 학습정보를 수동으로 지운다","verdict":"incorrect","rationale":"ECU 리셋 이후 모든 센서의 학습정보를 무조건 지우는 것은 OEM 절차가 아니다."},{"number":2,"text":"전원 복원만 되면 모든 차량의 센서 캘리브레이션이 동일하게 끝난다","verdict":"incorrect","rationale":"전원 복원으로 모든 차량의 센서 보정이 자동 완료된다는 일반 규칙은 없다."},{"number":3,"text":"제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인","verdict":"correct","rationale":"제조사 작업지침에서 센서·보정조건·작업 이력을 비교해야 한다."},{"number":4,"text":"작업 내용과 무관하게 모든 ECU 소프트웨어를 다시 기록한다","verdict":"incorrect","rationale":"작업과 무관한 ECU 전체 재기록은 보정 필요성 확인을 대체하지 못한다."}]},{"id":"auto-made-r03-s03-q11","question_id":"auto-made-r03-s03-q11","subject":"electrical","correct_answer":1,"correct_choice":"차도에 표시된 차선과 주변 영상 특징","reason":"카메라 기반 LDW는 차선 표시와 주변 경계 패턴을 영상처리해 차로 이탈 가능성을 판단한다. 작동은 속도, 시야와 장착 조건에 영향을 받는다.","key_point":"카메라식 LDW는 차선 영상 정보를 이용한다.","source_question_id":"auto-r03-s03-q11","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"영상차선/ADAS는 전기전자 vs 섀시 출제범위 경계 및 차종별 카메라 보정·속도 조건 확인."},"option_analysis_qa17":[{"number":1,"text":"차도에 표시된 차선과 주변 영상 특징","verdict":"correct","rationale":"카메라 LDW는 차선과 주변 도로 영상 특징을 인식하여 차선 이탈을 판단한다."},{"number":2,"text":"배터리 전해액 비중만","verdict":"incorrect","rationale":"배터리 전해액 비중만으로 전방 차선 경계를 영상 인식하는 기능은 수행할 수 없다."},{"number":3,"text":"엔진 오일압력만","verdict":"incorrect","rationale":"엔진오일 압력은 차선영상 경계와 무관한 엔진 윤활 계측량이다."},{"number":4,"text":"자동변속기 클러치 두께만","verdict":"incorrect","rationale":"변속기 클러치 두께만으로 카메라 기반 차선 경계를 검출할 수 없다."}]},{"id":"auto-made-r03-s03-q12","question_id":"auto-made-r03-s03-q12","subject":"electrical","correct_answer":2,"correct_choice":"경고등과 DTC를 확인하고 제조사의 SRS 안전 절차를 따른다","reason":"에어백은 의도치 않은 전개 위험이 있으므로 지정된 전원 차단·대기 및 시험 절차를 지켜야 한다. 일반 회로처럼 직접 저항을 측정하면 위험할 수 있다.","key_point":"SRS 진단은 경고코드와 특수 안전지침을 우선한다.","source_question_id":"auto-r03-s03-q12","original_issue_flags":["source_airbag_diagnostics_safety_protocol_required"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/ae/technical/car-electronics-and-electrics/car-airbag-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"에어백(SRS) 작업은 차종별 잔류전압/전원 차단 대기시간·전용 계측기·자격 직접 확인 필수."},"option_analysis_qa17":[{"number":1,"text":"에어백 점화회로에 일반 테스터를 직접 연결","verdict":"incorrect","rationale":"SRS 점화회로에 임의 범용 테스터를 직접 연결하면 우발 전개 위험이 있어 적절하지 않다."},{"number":2,"text":"경고등과 DTC를 확인하고 제조사의 SRS 안전 절차를 따른다","verdict":"correct","rationale":"에어백 경고·DTC를 확인하고 제조사 지정 SRS 안전절차를 따르는 것이 우선이다."},{"number":3,"text":"배터리 전원을 켠 채 무조건 에어백 모듈 분해","verdict":"incorrect","rationale":"전원 인가 중 에어백 모듈을 무조건 분해하면 안전사고 위험이 있다."},{"number":4,"text":"에어백 커넥터를 임의로 단락","verdict":"incorrect","rationale":"점화회로 커넥터 임의 단락은 적절한 SRS 진단 방법이 아니다."}]},{"id":"auto-made-r03-s03-q13","question_id":"auto-made-r03-s03-q13","subject":"electrical","correct_answer":4,"correct_choice":"에어컨용 고압 차단장치 또는 압력안전밸브","reason":"냉방계는 과압을 제어하기 위해 고압센서·차단제어 및 설계에 따른 압력방출장치를 둘 수 있다. 차량별 구성과 설정값을 확인해야 한다.","key_point":"냉매 과압 보호는 압력 감지·차단 또는 안전방출로 구현된다.","source_question_id":"auto-r03-s03-q13","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"냉매 과압보호 구성(스위치·센서제어·안전밸브)이 차종과 냉매형식마다 달라 공식 OEM 기준 확인 필요."},"option_analysis_qa17":[{"number":1,"text":"사이드미러 접힘 모터","verdict":"incorrect","rationale":"사이드미러 구동모터는 A/C 냉매 고압 보호장치가 아니다."},{"number":2,"text":"연료 압력조절 밸브","verdict":"incorrect","rationale":"연료압력 조절밸브는 엔진 연료계통용으로 냉매 고압의 직접 보호장치가 아니다."},{"number":3,"text":"브레이크 페달 센서","verdict":"incorrect","rationale":"브레이크 페달센서는 냉매 압력 방출장치가 아니다."},{"number":4,"text":"에어컨용 고압 차단장치 또는 압력안전밸브","verdict":"correct","rationale":"차량 A/C 설계에 따라 고압 차단 제어 또는 압력안전 장치가 사용될 수 있다."}]},{"id":"auto-made-r03-s03-q14","question_id":"auto-made-r03-s03-q14","subject":"electrical","correct_answer":3,"correct_choice":"시료를 실험실에서 ICP 계열 원소분석법으로 분석한다","reason":"오일 분석은 오염·마모 금속·점도 등 상태를 파악하는 데 도움을 준다. 일반적인 주유소 시각검사만으로 모든 물성이나 마모 정도를 판단할 수는 없다.","key_point":"정밀 오일 상태 확인에는 시료 분석이 유용하다.","source_question_id":"auto-r03-s03-q14","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","subject_classification_review":{"status":"hold_do_not_publish","current_subject":"electrical","suggested_subject":"engine","reason":"사용 엔진오일 마모분석은 엔진 윤활계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_engine","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"금속 원소 농도와 점도·FTIR·입자수 측정을 구분","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.astm.org/d5185-18.html"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기존 전기전자 과목 분류보류. 엔진오일 원소 분석은 엔진정비/화학계측으로 재분류 가능성 및 ICP 원소분석 시료/표준 시험방법 확인."},"option_analysis_qa17":[{"number":1,"text":"동점도 측정만으로 철·구리 농도를 계산한다","verdict":"incorrect","rationale":"동점도 분석은 점성 유동 성질을 측정하며 철·구리 원소농도를 직접 분리 측정하지 않는다."},{"number":2,"text":"FTIR 스펙트럼으로 금속 원소 농도만 직접 측정한다","verdict":"incorrect","rationale":"FTIR은 유기화합물·산화·첨가제 특성 등에 쓰이며 금속 원소의 정량 분석을 단독으로 대체하지 않는다."},{"number":3,"text":"시료를 실험실에서 ICP 계열 원소분석법으로 분석한다","verdict":"correct","rationale":"ICP 계열 원소 분석은 오일 시료의 마모 금속 원소 농도를 평가하는 데 쓰일 수 있다."},{"number":4,"text":"입자계수만으로 개별 금속의 원소 농도를 확정한다","verdict":"incorrect","rationale":"입자 수만 세어도 각 입자의 철·구리 원소 농도가 바로 결정되지는 않는다."}]},{"id":"auto-made-r03-s03-q15","question_id":"auto-made-r03-s03-q15","subject":"electrical","correct_answer":1,"correct_choice":"PWM 주파수·듀티비 및 신호 전압 레벨","reason":"PWM 제어는 펄스의 주파수와 듀티비에 따라 모터 구동을 조절할 수 있다. 공조 제어회로에서는 해당 전기 신호를 기준 파형과 비교한다.","key_point":"PWM 공조 제어 진단은 주파수·듀티비를 본다.","source_question_id":"auto-r03-s03-q15","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"PWM 파형 속성인 주파수·듀티와 다른 계측치 구별","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.fluke.com/en/learn/blog/oscilloscopes/abcs-of-portable-oscilloscopes-part-5-capturing-intermittent-and-random-events-with-a-portable-oscilloscope","https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"PWM 주파수·듀티비 및 신호 전압 레벨","verdict":"correct","rationale":"PWM 주파수·듀티비·전압 레벨은 오실로스코프로 확인할 직접적인 제어신호 특성이다."},{"number":2,"text":"모터 코일의 DC 저항값만","verdict":"incorrect","rationale":"모터의 DC 저항만 확인하면 PWM 전압 구형파의 듀티·주파수를 확인하기 어렵다."},{"number":3,"text":"부하 전류 평균값만 측정하고 파형은 무시","verdict":"incorrect","rationale":"부하 평균전류만 측정하고 파형을 생략하면 PWM 명령의 펄스 형태를 직접 검증하지 못한다."},{"number":4,"text":"센서 커넥터의 물리적 단자수만","verdict":"incorrect","rationale":"커넥터 단자수만 확인하여 PWM 제어 주파수·듀티비가 정상인지 판정할 수 없다."}]},{"id":"auto-made-r03-s03-q16","question_id":"auto-made-r03-s03-q16","subject":"electrical","correct_answer":2,"correct_choice":"압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다","reason":"냉방 성능은 압축기, 열교환기, 팽창장치, 송풍과 공조 제어에 영향을 받는다. 냉매량이 적정하다는 이유만으로 다른 이상을 배제할 수 없다.","key_point":"에어컨 성능은 압축·열교환·송풍을 종합 점검한다.","source_question_id":"auto-r03-s03-q16","original_issue_flags":["source_exhaust_system_never_affects_ac_efficiency_overbroad"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"냉매량과 열교환·압축·송풍 점검 구별","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"냉매 종류·제조사 압력/온도 기준·환경규정, 회수/충전 안전 전문검증 필요."},"option_analysis_qa17":[{"number":1,"text":"냉매량만 맞으면 컴프레서 성능은 정상이다","verdict":"incorrect","rationale":"적정 냉매량만으로 압축기 성능·구동명령·열교환기 상태가 정상이라는 보장은 없다."},{"number":2,"text":"압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다","verdict":"correct","rationale":"압축기·냉매 압력/온도·응축기 팬·송풍 상태를 비교해야 냉방저하 원인을 좁힐 수 있다."},{"number":3,"text":"냉매량이 맞으므로 팽창밸브는 점검하지 않는다","verdict":"incorrect","rationale":"냉매량이 적절해도 팽창밸브/압축기/열교환기 문제는 발생할 수 있다."},{"number":4,"text":"냉방 저하 시 압력 측정 없이 냉매를 추가한다","verdict":"incorrect","rationale":"압력 및 원인 검사 없이 무조건 냉매를 추가하면 과충전·고압 위험이 있다."}]},{"id":"auto-made-r03-s03-q17","question_id":"auto-made-r03-s03-q17","subject":"electrical","correct_answer":4,"correct_choice":"시트 조절 스위치 접점·모터 배선·전원","reason":"전동시트 구동 불량은 스위치, 모터, 전원과 기구부에서 생긴다. 해당 방향만 안 되면 방향 제어 신호와 모터 입력을 비교해 원인을 좁힐 수 있다.","key_point":"전동시트 한 방향 고장은 스위치·모터 회로를 확인한다.","source_question_id":"auto-r03-s03-q17","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"연료탱크 수위","verdict":"incorrect","rationale":"연료탱크 수위만으로 전동시트 한 방향 제어불능의 전기 원인을 특정할 수 없다."},{"number":2,"text":"타이어 공기압만","verdict":"incorrect","rationale":"타이어 공기압만 측정해도 특정 방향의 시트 스위치·모터 신호 고장을 직접 진단할 수는 없다."},{"number":3,"text":"도어 유리의 틴팅 농도","verdict":"incorrect","rationale":"유리 틴팅 농도는 전동시트 스위치·모터 배선의 전기적 성능과 무관하다."},{"number":4,"text":"시트 조절 스위치 접점·모터 배선·전원","verdict":"correct","rationale":"해당 방향 스위치 접점·모터 전원·배선을 비교하면 전기불량을 구분할 수 있다."}]},{"id":"auto-made-r03-s03-q18","question_id":"auto-made-r03-s03-q18","subject":"electrical","correct_answer":3,"correct_choice":"사용자의 조작 접근성·시야·안전성","reason":"편의장치는 사용자가 쉽게 조작하고 안전하게 기능을 활용할 수 있도록 설계한다. 타이어 접지면적은 차량 동역학과 더 직접적으로 관련된다.","key_point":"편의장치 설계는 사용자 조작 편의와 안전이 중요하다.","source_question_id":"auto-r03-s03-q18","original_issue_flags":[],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"편의장치 디자인 일반론이며 전기전자 정비 기술문항으로서 진단·회로 지식을 묻지 않아 편집 품질 보류."},"option_analysis_qa17":[{"number":1,"text":"타이어의 접지 폭만","verdict":"incorrect","rationale":"타이어 접지 폭만 고려해서 운전자 조작 접근성·시야 문제를 직접 해결할 수는 없다."},{"number":2,"text":"배기관 길이만","verdict":"incorrect","rationale":"배기관 길이만 조정하면 실내 편의장치 인체공학 설계가 완성되는 것은 아니다."},{"number":3,"text":"사용자의 조작 접근성·시야·안전성","verdict":"correct","rationale":"편의장치의 조작 접근성·시야·사용 안전성은 인체공학에 직접 관련된다."},{"number":4,"text":"피스톤 링의 마모한계만","verdict":"incorrect","rationale":"피스톤링 마모한계는 엔진 기계 정비 기준이지 조작 인체공학 요소가 아니다."}]},{"id":"auto-made-r03-s03-q19","question_id":"auto-made-r03-s03-q19","subject":"electrical","correct_answer":1,"correct_choice":"차속 입력과 관련 DTC·배선·제어 신호를 확인한다","reason":"크루즈 컨트롤은 차속 정보가 필요하지만 작동 조건에는 브레이크 스위치 등 여러 요소도 관계한다. 차속 데이터 불량이 확인된다면 해당 센서와 회로를 점검한다.","key_point":"정속제어는 정상적인 차량속도 신호를 필요로 한다.","source_question_id":"auto-r03-s03-q19","original_issue_flags":["source_cruise_fault_vss_always_first_ambiguous"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"차속 불안정 증상과 직접 관련된 입력","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"크루즈/ACC 기능 구성과 차속 신호 출처가 차종별로 달라 DTC 및 회로도 직접 확인 필요."},"option_analysis_qa17":[{"number":1,"text":"차속 입력과 관련 DTC·배선·제어 신호를 확인한다","verdict":"correct","rationale":"차속 불안정이 함께 있으면 차속 입력·관련 DTC·배선·제어신호를 점검하는 것이 관련성이 높다."},{"number":2,"text":"차속 계기판이 흔들리면 크루즈 모듈을 무조건 교환한다","verdict":"incorrect","rationale":"속도계 불안정만으로 크루즈 제어 모듈 단독 고장을 확정해 교환할 수는 없다."},{"number":3,"text":"브레이크 스위치가 정상이라면 차속 값은 확인할 필요가 없다","verdict":"incorrect","rationale":"브레이크 스위치가 정상이라고 차속 데이터 검사를 생략할 수 없다."},{"number":4,"text":"ACC 감지 센서만 교환하고 휠속도 신호는 생략한다","verdict":"incorrect","rationale":"ACC 감지센서만 교환하고 속도 입력을 무시하면 연동 원인을 놓칠 수 있다."}]},{"id":"auto-made-r03-s03-q20","question_id":"auto-made-r03-s03-q20","subject":"electrical","correct_answer":2,"correct_choice":"선루프 스위치 입력·퓨즈·모터 전원을 확인한다","reason":"선루프 작동 불량은 스위치·퓨즈·모터·레일이나 끼임방지 기능에서 발생할 수 있다. 모터 전원과 스위치 입력을 확인해 전기·기계 문제를 분리한다.","key_point":"선루프는 스위치·전원·모터·레일 상태를 순차 점검한다.","source_question_id":"auto-r03-s03-q20","original_issue_flags":["source_sunroof_switch_always_first_may_vary"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa17":{"batch":"QA17-r03-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."},"option_analysis_qa17":[{"number":1,"text":"엔진 점화시기 측정","verdict":"incorrect","rationale":"엔진 점화시기 측정은 선루프 전기모터 회로의 직접 진단이 아니다."},{"number":2,"text":"선루프 스위치 입력·퓨즈·모터 전원을 확인한다","verdict":"correct","rationale":"선루프 입력·퓨즈·모터 전원 확인은 전원/스위치 불량을 구분하는 기본 진단이다."},{"number":3,"text":"냉매 오일 점도만","verdict":"incorrect","rationale":"냉매 오일 점도는 선루프 모터 전기회로와 무관한 HVAC 항목이다."},{"number":4,"text":"타이어 교환만","verdict":"incorrect","rationale":"타이어 교환만으로 선루프 스위치 신호와 모터 구동 문제를 확인할 수 없다."}]}]
+[
+  {
+    "id": "auto-made-r03-s03-q01",
+    "question_id": "auto-made-r03-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "우선순위 식별자에 따른 비파괴적 비트 중재",
+    "reason": "일반적인 CAN 통신은 메시지 식별자의 우선순위와 지배·열성 비트 특성을 이용한 비파괴적 중재를 사용한다. 무선 LAN의 CSMA/CA와 혼동하면 안 된다.",
+    "key_point": "CAN은 식별자 기반 비파괴적 중재를 한다.",
+    "source_question_id": "auto-r03-s03-q01",
+    "original_issue_flags": [
+      "source_can_arbitration_technique_not_csma_ca_claim_suspect"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "무작위 충돌을 무조건 허용하고 패킷을 폐기",
+        "verdict": "incorrect",
+        "rationale": "CAN 중재는 프레임의 식별자와 우성·열성 비트 비교를 이용하며 무작위 충돌 후 패킷 폐기가 본질은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "우선순위 식별자에 따른 비파괴적 비트 중재",
+        "verdict": "correct",
+        "rationale": "표준 CAN은 식별자 우선순위에 따른 비파괴 비트 중재를 적용한다."
+      },
+      {
+        "number": 3,
+        "text": "CSMA/CA의 무선 RTS/CTS 교환만 사용",
+        "verdict": "incorrect",
+        "rationale": "무선 LAN의 RTS/CTS 교환은 CAN 식별자 중재 방식과 다르다."
+      },
+      {
+        "number": 4,
+        "text": "모든 장치가 같은 식별자를 강제로 사용",
+        "verdict": "incorrect",
+        "rationale": "모든 장치가 같은 식별자를 강제로 쓰는 방식은 CAN 메시지 우선순위의 설명이 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q02",
+    "question_id": "auto-made-r03-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "스위치는 MAC 주소 테이블을 활용해 적절한 포트로 프레임을 전달할 수 있다",
+    "reason": "스위치는 학습된 MAC 주소에 따라 프레임 전달 포트를 선택하는 데이터링크 장치다. 허브는 수신 신호를 다른 포트로 반복한다. 미학습·브로드캐스트 트래픽은 예외가 있다.",
+    "key_point": "스위치는 MAC 기반 포트 전달, 허브는 신호 반복이다.",
+    "source_question_id": "auto-r03-s03-q02",
+    "original_issue_flags": [
+      "source_network_switch_mac_vs_hub_descriptive_context"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.teledynelecroy.com/doc/100base-t1-ethernet-appnote"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 LAN 리피터와 Ethernet 스위치의 개념으로 차량용 네트워크 진단 연계성·출제범위 재평가 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "허브는 MAC 주소를 학습하고 스위치는 모든 포트로만 반복한다",
+        "verdict": "incorrect",
+        "rationale": "일반 리피터 허브는 MAC 학습표로 목적지 포트를 선택하는 이더넷 스위치와 다르다."
+      },
+      {
+        "number": 2,
+        "text": "둘 다 항상 응용계층 주소로 판단",
+        "verdict": "incorrect",
+        "rationale": "스위치의 일반 프레임 전달은 주로 MAC 주소 등 링크계층을 활용하며 응용계층 주소만으로 처리하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "스위치는 MAC 주소 테이블을 활용해 적절한 포트로 프레임을 전달할 수 있다",
+        "verdict": "correct",
+        "rationale": "스위치는 학습된 MAC 테이블을 이용해 목적지 포트를 선택해 프레임을 전달할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "허브가 차량 배터리 전압을 조절한다",
+        "verdict": "incorrect",
+        "rationale": "리피터 허브는 차량 배터리 전압 레귤레이터 기능의 장치가 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q03",
+    "question_id": "auto-made-r03-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "퓨즈·ECU 전원·통신선 연속성과 DTC",
+    "reason": "통신 불능은 모듈 자체 결함 외에도 전원·접지·배선과 종단 문제로 발생한다. 신호와 회로를 먼저 검사하면 부품 오진을 줄일 수 있다.",
+    "key_point": "네트워크 고장에는 전원·물리회로 점검이 선행된다.",
+    "source_question_id": "auto-r03-s03-q03",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.picoauto.com/library/automotive-guided-tests/communication/can-bus/AGT-126-can-bus-physical-layer/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "퓨즈·ECU 전원·통신선 연속성과 DTC",
+        "verdict": "correct",
+        "rationale": "차량 네트워크 통신 불능 시 퓨즈·ECU 전원·통신선 연결과 DTC는 원인 구분의 직접 검사 자료다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 생산연도만",
+        "verdict": "incorrect",
+        "rationale": "타이어 생산연도만 확인해도 ECU 통신 불능의 전원·배선 원인을 직접 진단할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 패드 색상만",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 외관색만으로 CAN 배선 단락을 판정할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "엔진오일량만",
+        "verdict": "incorrect",
+        "rationale": "엔진오일량만 확인하면 통신선의 물리적 정상상태를 확인할 수 있는 것은 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q04",
+    "question_id": "auto-made-r03-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "통신 자원을 다수 장치가 필요에 따라 공유할 수 있다",
+    "reason": "패킷 교환은 메시지를 나눠 통신 자원을 공유하는 방식이다. 효율은 부하와 망 구조에 따라 달라지며 항상 지연이 낮다고 단정할 수 없다.",
+    "key_point": "패킷 교환의 장점은 자원의 유연한 공유다.",
+    "source_question_id": "auto-r03-s03-q04",
+    "original_issue_flags": [
+      "source_packet_switching_latency_claim_overgeneralized"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.teledynelecroy.com/doc/100base-t1-ethernet-appnote"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "패킷 교환의 일반 컴퓨터 네트워크 개념만 묻고 자동차 통신 프레임/실무 상황과 연결되지 않아 검토 보류."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "항상 지연 시간이 0이 된다",
+        "verdict": "incorrect",
+        "rationale": "패킷 교환은 항상 지연시간이 0으로 고정되는 전송 방식이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "모든 ECU가 독점 회선을 영구 사용한다",
+        "verdict": "incorrect",
+        "rationale": "다수 ECU가 영구적으로 독점 회선만 점유해야 패킷교환이 가능한 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "데이터 손실을 물리적으로 불가능하게 한다",
+        "verdict": "incorrect",
+        "rationale": "네트워크가 공유 방식이라고 전송 오류·데이터 손실이 물리적으로 불가능해지지는 않는다."
+      },
+      {
+        "number": 4,
+        "text": "통신 자원을 다수 장치가 필요에 따라 공유할 수 있다",
+        "verdict": "correct",
+        "rationale": "데이터를 메시지 단위로 전송하여 여러 장치가 통신 자원을 공유하는 데 활용할 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q05",
+    "question_id": "auto-made-r03-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "전기 신호의 스위칭과 증폭",
+    "reason": "트랜지스터는 제어 신호에 따라 전류 흐름을 조절해 스위치 또는 증폭기로 쓰인다. ECU의 구동회로와 센서 신호 처리 등에 활용된다.",
+    "key_point": "트랜지스터는 전기 신호 제어용 반도체다.",
+    "source_question_id": "auto-r03-s03-q05",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "냉각수의 끓는점만 낮추기",
+        "verdict": "incorrect",
+        "rationale": "트랜지스터는 냉각수의 비등점 자체를 바꾸기 위한 냉각계 액체 부품이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "전기 신호의 스위칭과 증폭",
+        "verdict": "correct",
+        "rationale": "트랜지스터는 전류제어에 의해 스위칭·전기 신호 증폭 등의 기능을 수행한다."
+      },
+      {
+        "number": 3,
+        "text": "배기관 매연을 직접 여과",
+        "verdict": "incorrect",
+        "rationale": "트랜지스터가 배기매연 입자를 기계적으로 여과하는 DPF는 아니다."
+      },
+      {
+        "number": 4,
+        "text": "브레이크액을 가압하는 유압펌프 역할만",
+        "verdict": "incorrect",
+        "rationale": "유압펌프의 기계압 작용만을 수행하는 부품은 트랜지스터의 일반적 기능과 다르다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q06",
+    "question_id": "auto-made-r03-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "회로 퓨즈·스위치·전원·접지",
+    "reason": "전기회로 불량은 전원 공급, 스위치 입력, 배선과 접지를 따라 원인을 추적한다. 엔진오일이나 연료필터는 실내등 회로의 직접 부품이 아니다.",
+    "key_point": "회로 수리는 퓨즈·전원·스위치·접지부터 검사한다.",
+    "source_question_id": "auto-r03-s03-q06",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "연료필터 교체 주기만",
+        "verdict": "incorrect",
+        "rationale": "연료필터 교환주기만 확인해도 실내등 전원불능 원인을 직접 분석할 수 있는 것은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "엔진오일 점도만",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 점도는 실내등 전원·접지 단선에 관한 직접 검사값이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "회로 퓨즈·스위치·전원·접지",
+        "verdict": "correct",
+        "rationale": "실내등 회로의 퓨즈·스위치·전원·접지 상태를 점검하면 원인을 좁힐 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 위치 교환 이력만",
+        "verdict": "incorrect",
+        "rationale": "타이어 위치 교환 이력은 실내등 회로의 전기적 고장을 검증하지 않는다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q07",
+    "question_id": "auto-made-r03-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "충전을 중지하고 접근을 통제해 규정된 안전 대응을 시행",
+    "reason": "충전식 배터리의 비정상 과열·팽창은 위험 신호다. 배터리 종류에 맞춰 안전거리를 확보하고 제조사·소방 절차에 따라 조치한다.",
+    "key_point": "배터리 이상 발열에는 충전 중단과 안전 대응이 우선이다.",
+    "source_question_id": "auto-r03-s03-q07",
+    "original_issue_flags": [
+      "source_rechargeable_battery_safety_requires_specific_type"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://afdc.energy.gov/vehicles/electric-maintenance"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "배터리 화학 종류·차량 고전압 여부에 따라 비상대응·소화·접근 통제 방식이 달라 OEM/소방 안전기준 추가 검토."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "충전을 중지하고 접근을 통제해 규정된 안전 대응을 시행",
+        "verdict": "correct",
+        "rationale": "충전 배터리의 비정상적인 과열·부풀음은 위험 신호라 충전을 중단하고 안전거리를 확보해야 한다."
+      },
+      {
+        "number": 2,
+        "text": "배터리를 찔러 가스를 제거",
+        "verdict": "incorrect",
+        "rationale": "배터리를 뚫어 가스를 임의 배출하면 내부 단락·화재 등 위험이 발생할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "금속 공구로 양극과 음극을 직접 연결",
+        "verdict": "incorrect",
+        "rationale": "배터리 극간을 금속 공구로 단락시키는 행위는 심각한 사고 위험이 있다."
+      },
+      {
+        "number": 4,
+        "text": "열이 식도록 배터리를 차체 아래에 묻음",
+        "verdict": "incorrect",
+        "rationale": "발열 배터리를 차체 아래에 묻는 행위는 승인된 안전격리·수리 절차가 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q08",
+    "question_id": "auto-made-r03-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다",
+    "reason": "유압계통을 열었다면 공기빼기와 누설 검사가 중요하다. 차종에 따라 진단기로 ABS 모듈을 작동시키는 절차가 필요할 수 있다.",
+    "key_point": "브레이크 정비 후 유압·누설·기능을 확인한다.",
+    "source_question_id": "auto-r03-s03-q08",
+    "original_issue_flags": [
+      "source_all_brake_repairs_abs_function_test_required_overgeneralized"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "유압회로 개방 후 에어빼기와 기능 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "chassis",
+      "reason": "브레이크 ABS 유압모듈 교환·유압 에어빼기·제동 기능점검은 전기전자장치보다 섀시/제동 정비 범위일 가능성이 높음",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa17_manual_screening": "cross_subject_topic_probable",
+      "qa17_reference_urls": [
+        "https://www.hella.com/techworld/en/technical/brakes/changing-the-brake-fluid/"
+      ]
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기존 전기전자→섀시 과목분류 보류. ABS 유압·진단기 구동/제동안전은 OEM 절차 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "경고 코드만 삭제하고 공기빼기는 생략한다",
+        "verdict": "incorrect",
+        "rationale": "ABS 유압회로 개방 후 DTC만 지운다고 공기가 제거되거나 안전한 제동 기능이 보장되지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "지정 공기빼기 절차와 유압 누설·제동 기능을 확인한다",
+        "verdict": "correct",
+        "rationale": "차량 지정 에어빼기와 누설·제동 기능 확인은 유압 회로를 개방한 후 필요한 절차다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크액 레벨이 정상이라면 회로 공기 여부는 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 탱크 레벨이 정상이어도 배관/ABS 모듈에 공기가 남을 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "ABS 전원만 차단한 채 유압기능 검사는 생략한다",
+        "verdict": "incorrect",
+        "rationale": "ABS 전원을 차단한 상태만으로 유압 기능검사를 대체할 수는 없다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q09",
+    "question_id": "auto-made-r03-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "구동토크를 줄이거나 해당 바퀴 제동력을 조절한다",
+    "reason": "TCS는 구동 바퀴의 슬립을 억제하기 위해 엔진·모터 토크와 제동을 활용할 수 있다. 모든 차량에서 연료분사만 줄이는 것으로 설명하면 부족하다.",
+    "key_point": "TCS는 구동토크·제동 제어로 헛돎을 억제한다.",
+    "source_question_id": "auto-r03-s03-q09",
+    "original_issue_flags": [
+      "source_tcs_controls_torque_by_various_methods_not_only_fuel"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "TCS 실제 제어 수단과 unrelated electrical controls 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "차동기어의 고정 종감속비를 주행 중 변경한다",
+        "verdict": "incorrect",
+        "rationale": "TCS 작동 시 기어의 고정 종감속비를 자동 변경하는 것이 기본 제어 방식은 아니다."
+      },
+      {
+        "number": 2,
+        "text": "차체 조향각 센서 영점만 변경한다",
+        "verdict": "incorrect",
+        "rationale": "조향각 영점만 조정하면 구동륜 슬립을 제어하는 TCS 기능을 대신할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "구동륜 슬립과 무관하게 냉각팬을 최대 회전시킨다",
+        "verdict": "incorrect",
+        "rationale": "구동륜 슬립과 무관한 냉각팬 제어가 구동력 제어를 대신하지는 않는다."
+      },
+      {
+        "number": 4,
+        "text": "구동토크를 줄이거나 해당 바퀴 제동력을 조절한다",
+        "verdict": "correct",
+        "rationale": "TCS는 엔진·모터 구동토크 감소 또는 휠별 제동 제어로 과도한 헛돎을 줄일 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q10",
+    "question_id": "auto-made-r03-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인",
+    "reason": "ECU 리셋 후 스로틀·조향각 등 학습 또는 보정 절차가 요구될 수 있다. 차종과 교체 작업 여부에 따라 다르므로 제조사 기준을 확인한다.",
+    "key_point": "ECU 초기화 이후 학습·보정은 차량별로 다르다.",
+    "source_question_id": "auto-r03-s03-q10",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차량별 보정·학습 필요성 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "영점 보정 대상과 차종별 재학습 조건이 다양해 OEM 서비스 절차 검증 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "ECU 리셋 뒤 모든 센서의 학습정보를 수동으로 지운다",
+        "verdict": "incorrect",
+        "rationale": "ECU 리셋 이후 모든 센서의 학습정보를 무조건 지우는 것은 OEM 절차가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "전원 복원만 되면 모든 차량의 센서 캘리브레이션이 동일하게 끝난다",
+        "verdict": "incorrect",
+        "rationale": "전원 복원으로 모든 차량의 센서 보정이 자동 완료된다는 일반 규칙은 없다."
+      },
+      {
+        "number": 3,
+        "text": "제작사 작업절차의 해당 센서 보정·학습 필요 조건 확인",
+        "verdict": "correct",
+        "rationale": "제조사 작업지침에서 센서·보정조건·작업 이력을 비교해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "작업 내용과 무관하게 모든 ECU 소프트웨어를 다시 기록한다",
+        "verdict": "incorrect",
+        "rationale": "작업과 무관한 ECU 전체 재기록은 보정 필요성 확인을 대체하지 못한다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q11",
+    "question_id": "auto-made-r03-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "차도에 표시된 차선과 주변 영상 특징",
+    "reason": "카메라 기반 LDW는 차선 표시와 주변 경계 패턴을 영상처리해 차로 이탈 가능성을 판단한다. 작동은 속도, 시야와 장착 조건에 영향을 받는다.",
+    "key_point": "카메라식 LDW는 차선 영상 정보를 이용한다.",
+    "source_question_id": "auto-r03-s03-q11",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "영상차선/ADAS는 전기전자 vs 섀시 출제범위 경계 및 차종별 카메라 보정·속도 조건 확인."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "차도에 표시된 차선과 주변 영상 특징",
+        "verdict": "correct",
+        "rationale": "카메라 LDW는 차선과 주변 도로 영상 특징을 인식하여 차선 이탈을 판단한다."
+      },
+      {
+        "number": 2,
+        "text": "배터리 전해액 비중만",
+        "verdict": "incorrect",
+        "rationale": "배터리 전해액 비중만으로 전방 차선 경계를 영상 인식하는 기능은 수행할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "엔진 오일압력만",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 압력은 차선영상 경계와 무관한 엔진 윤활 계측량이다."
+      },
+      {
+        "number": 4,
+        "text": "자동변속기 클러치 두께만",
+        "verdict": "incorrect",
+        "rationale": "변속기 클러치 두께만으로 카메라 기반 차선 경계를 검출할 수 없다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q12",
+    "question_id": "auto-made-r03-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "경고등과 DTC를 확인하고 제조사의 SRS 안전 절차를 따른다",
+    "reason": "에어백은 의도치 않은 전개 위험이 있으므로 지정된 전원 차단·대기 및 시험 절차를 지켜야 한다. 일반 회로처럼 직접 저항을 측정하면 위험할 수 있다.",
+    "key_point": "SRS 진단은 경고코드와 특수 안전지침을 우선한다.",
+    "source_question_id": "auto-r03-s03-q12",
+    "original_issue_flags": [
+      "source_airbag_diagnostics_safety_protocol_required"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/ae/technical/car-electronics-and-electrics/car-airbag-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "에어백(SRS) 작업은 차종별 잔류전압/전원 차단 대기시간·전용 계측기·자격 직접 확인 필수."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "에어백 점화회로에 일반 테스터를 직접 연결",
+        "verdict": "incorrect",
+        "rationale": "SRS 점화회로에 임의 범용 테스터를 직접 연결하면 우발 전개 위험이 있어 적절하지 않다."
+      },
+      {
+        "number": 2,
+        "text": "경고등과 DTC를 확인하고 제조사의 SRS 안전 절차를 따른다",
+        "verdict": "correct",
+        "rationale": "에어백 경고·DTC를 확인하고 제조사 지정 SRS 안전절차를 따르는 것이 우선이다."
+      },
+      {
+        "number": 3,
+        "text": "배터리 전원을 켠 채 무조건 에어백 모듈 분해",
+        "verdict": "incorrect",
+        "rationale": "전원 인가 중 에어백 모듈을 무조건 분해하면 안전사고 위험이 있다."
+      },
+      {
+        "number": 4,
+        "text": "에어백 커넥터를 임의로 단락",
+        "verdict": "incorrect",
+        "rationale": "점화회로 커넥터 임의 단락은 적절한 SRS 진단 방법이 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q13",
+    "question_id": "auto-made-r03-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "에어컨용 고압 차단장치 또는 압력안전밸브",
+    "reason": "냉방계는 과압을 제어하기 위해 고압센서·차단제어 및 설계에 따른 압력방출장치를 둘 수 있다. 차량별 구성과 설정값을 확인해야 한다.",
+    "key_point": "냉매 과압 보호는 압력 감지·차단 또는 안전방출로 구현된다.",
+    "source_question_id": "auto-r03-s03-q13",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "냉매 과압보호 구성(스위치·센서제어·안전밸브)이 차종과 냉매형식마다 달라 공식 OEM 기준 확인 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "사이드미러 접힘 모터",
+        "verdict": "incorrect",
+        "rationale": "사이드미러 구동모터는 A/C 냉매 고압 보호장치가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "연료 압력조절 밸브",
+        "verdict": "incorrect",
+        "rationale": "연료압력 조절밸브는 엔진 연료계통용으로 냉매 고압의 직접 보호장치가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 페달 센서",
+        "verdict": "incorrect",
+        "rationale": "브레이크 페달센서는 냉매 압력 방출장치가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "에어컨용 고압 차단장치 또는 압력안전밸브",
+        "verdict": "correct",
+        "rationale": "차량 A/C 설계에 따라 고압 차단 제어 또는 압력안전 장치가 사용될 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q14",
+    "question_id": "auto-made-r03-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "CAN H·CAN L 배선·종단 및 전원접지와 네트워크 파형",
+    "reason": "CAN 통신 장애는 배선 단선·단락, 종단 구성, 공급전원·접지 및 노드 이상 등으로 발생할 수 있다. 전원 차단 등 차량별 안전 조건과 회로도를 확인하고 버스 파형·전압을 적절한 장비로 진단해야 한다.",
+    "key_point": "CAN 통신 장애 → CAN H/L 배선·종단·노드전원 및 파형.",
+    "source_question_id": "auto-r03-s03-q14",
+    "original_issue_flags": [],
+    "reference_urls": [
+      "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "engine",
+      "reason": "사용 엔진오일 마모분석은 엔진 윤활계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa43_current_question_may_fit_subject": true
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "금속 원소 농도와 점도·FTIR·입자수 측정을 구분",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기존 전기전자 과목 분류보류. 엔진오일 원소 분석은 엔진정비/화학계측으로 재분류 가능성 및 ICP 원소분석 시료/표준 시험방법 확인."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "엔진 오일의 산화도만 실험실에서 측정한다",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 산화도는 CAN 통신선의 전기 신호 특성이 아니야."
+      },
+      {
+        "number": 2,
+        "text": "현가장치 스프링 길이를 재서 CAN 통신을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "차체 스프링 규격만으로 통신버스 단선·단락을 판단할 수 없어."
+      },
+      {
+        "number": 3,
+        "text": "CAN H·CAN L 배선·종단 및 전원접지와 네트워크 파형",
+        "verdict": "correct",
+        "rationale": "네트워크 통신이 간헐적으로 끊긴다면 신호선·종단·노드 전원 상태를 함께 조사해야 해."
+      },
+      {
+        "number": 4,
+        "text": "차량 외장 색상과 도어트림 장착방향만 비교한다",
+        "verdict": "incorrect",
+        "rationale": "차량 외장재 상태는 ECU 데이터 전송 오류의 직접 진단자료가 아니야."
+      }
+    ],
+    "option_analysis_qa43": [
+      {
+        "number": 1,
+        "text": "엔진 오일의 산화도만 실험실에서 측정한다",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 산화도는 CAN 통신선의 전기 신호 특성이 아니야."
+      },
+      {
+        "number": 2,
+        "text": "현가장치 스프링 길이를 재서 CAN 통신을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "차체 스프링 규격만으로 통신버스 단선·단락을 판단할 수 없어."
+      },
+      {
+        "number": 3,
+        "text": "CAN H·CAN L 배선·종단 및 전원접지와 네트워크 파형",
+        "verdict": "correct",
+        "rationale": "네트워크 통신이 간헐적으로 끊긴다면 신호선·종단·노드 전원 상태를 함께 조사해야 해."
+      },
+      {
+        "number": 4,
+        "text": "차량 외장 색상과 도어트림 장착방향만 비교한다",
+        "verdict": "incorrect",
+        "rationale": "차량 외장재 상태는 ECU 데이터 전송 오류의 직접 진단자료가 아니야."
+      }
+    ],
+    "qa43_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "subject_aligned_self_authored_learning_question",
+      "original_past_exam_wording": false,
+      "qa_history_preserved": true,
+      "reference_urls": [
+        "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+      ],
+      "official_detailed_qnet_criteria_inspected": false,
+      "technical_independent_final_approved": false,
+      "rights_cleared": false,
+      "publishable": false
+    }
+  },
+  {
+    "id": "auto-made-r03-s03-q15",
+    "question_id": "auto-made-r03-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "PWM 주파수·듀티비 및 신호 전압 레벨",
+    "reason": "PWM 제어는 펄스의 주파수와 듀티비에 따라 모터 구동을 조절할 수 있다. 공조 제어회로에서는 해당 전기 신호를 기준 파형과 비교한다.",
+    "key_point": "PWM 공조 제어 진단은 주파수·듀티비를 본다.",
+    "source_question_id": "auto-r03-s03-q15",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "PWM 파형 속성인 주파수·듀티와 다른 계측치 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en/learn/blog/oscilloscopes/abcs-of-portable-oscilloscopes-part-5-capturing-intermittent-and-random-events-with-a-portable-oscilloscope",
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "PWM 주파수·듀티비 및 신호 전압 레벨",
+        "verdict": "correct",
+        "rationale": "PWM 주파수·듀티비·전압 레벨은 오실로스코프로 확인할 직접적인 제어신호 특성이다."
+      },
+      {
+        "number": 2,
+        "text": "모터 코일의 DC 저항값만",
+        "verdict": "incorrect",
+        "rationale": "모터의 DC 저항만 확인하면 PWM 전압 구형파의 듀티·주파수를 확인하기 어렵다."
+      },
+      {
+        "number": 3,
+        "text": "부하 전류 평균값만 측정하고 파형은 무시",
+        "verdict": "incorrect",
+        "rationale": "부하 평균전류만 측정하고 파형을 생략하면 PWM 명령의 펄스 형태를 직접 검증하지 못한다."
+      },
+      {
+        "number": 4,
+        "text": "센서 커넥터의 물리적 단자수만",
+        "verdict": "incorrect",
+        "rationale": "커넥터 단자수만 확인하여 PWM 제어 주파수·듀티비가 정상인지 판정할 수 없다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q16",
+    "question_id": "auto-made-r03-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다",
+    "reason": "냉방 성능은 압축기, 열교환기, 팽창장치, 송풍과 공조 제어에 영향을 받는다. 냉매량이 적정하다는 이유만으로 다른 이상을 배제할 수 없다.",
+    "key_point": "에어컨 성능은 압축·열교환·송풍을 종합 점검한다.",
+    "source_question_id": "auto-r03-s03-q16",
+    "original_issue_flags": [
+      "source_exhaust_system_never_affects_ac_efficiency_overbroad"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매량과 열교환·압축·송풍 점검 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "냉매 종류·제조사 압력/온도 기준·환경규정, 회수/충전 안전 전문검증 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "냉매량만 맞으면 컴프레서 성능은 정상이다",
+        "verdict": "incorrect",
+        "rationale": "적정 냉매량만으로 압축기 성능·구동명령·열교환기 상태가 정상이라는 보장은 없다."
+      },
+      {
+        "number": 2,
+        "text": "압축기 작동·냉매 압력/온도·응축기 냉각과 송풍을 확인한다",
+        "verdict": "correct",
+        "rationale": "압축기·냉매 압력/온도·응축기 팬·송풍 상태를 비교해야 냉방저하 원인을 좁힐 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "냉매량이 맞으므로 팽창밸브는 점검하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "냉매량이 적절해도 팽창밸브/압축기/열교환기 문제는 발생할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "냉방 저하 시 압력 측정 없이 냉매를 추가한다",
+        "verdict": "incorrect",
+        "rationale": "압력 및 원인 검사 없이 무조건 냉매를 추가하면 과충전·고압 위험이 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q17",
+    "question_id": "auto-made-r03-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "시트 조절 스위치 접점·모터 배선·전원",
+    "reason": "전동시트 구동 불량은 스위치, 모터, 전원과 기구부에서 생긴다. 해당 방향만 안 되면 방향 제어 신호와 모터 입력을 비교해 원인을 좁힐 수 있다.",
+    "key_point": "전동시트 한 방향 고장은 스위치·모터 회로를 확인한다.",
+    "source_question_id": "auto-r03-s03-q17",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "연료탱크 수위",
+        "verdict": "incorrect",
+        "rationale": "연료탱크 수위만으로 전동시트 한 방향 제어불능의 전기 원인을 특정할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기압만",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압만 측정해도 특정 방향의 시트 스위치·모터 신호 고장을 직접 진단할 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "도어 유리의 틴팅 농도",
+        "verdict": "incorrect",
+        "rationale": "유리 틴팅 농도는 전동시트 스위치·모터 배선의 전기적 성능과 무관하다."
+      },
+      {
+        "number": 4,
+        "text": "시트 조절 스위치 접점·모터 배선·전원",
+        "verdict": "correct",
+        "rationale": "해당 방향 스위치 접점·모터 전원·배선을 비교하면 전기불량을 구분할 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q18",
+    "question_id": "auto-made-r03-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "사용자의 조작 접근성·시야·안전성",
+    "reason": "편의장치는 사용자가 쉽게 조작하고 안전하게 기능을 활용할 수 있도록 설계한다. 타이어 접지면적은 차량 동역학과 더 직접적으로 관련된다.",
+    "key_point": "편의장치 설계는 사용자 조작 편의와 안전이 중요하다.",
+    "source_question_id": "auto-r03-s03-q18",
+    "original_issue_flags": [],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.nhtsa.gov/vehicle-safety/driver-assistance-technologies"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "편의장치 디자인 일반론이며 전기전자 정비 기술문항으로서 진단·회로 지식을 묻지 않아 편집 품질 보류."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "타이어의 접지 폭만",
+        "verdict": "incorrect",
+        "rationale": "타이어 접지 폭만 고려해서 운전자 조작 접근성·시야 문제를 직접 해결할 수는 없다."
+      },
+      {
+        "number": 2,
+        "text": "배기관 길이만",
+        "verdict": "incorrect",
+        "rationale": "배기관 길이만 조정하면 실내 편의장치 인체공학 설계가 완성되는 것은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "사용자의 조작 접근성·시야·안전성",
+        "verdict": "correct",
+        "rationale": "편의장치의 조작 접근성·시야·사용 안전성은 인체공학에 직접 관련된다."
+      },
+      {
+        "number": 4,
+        "text": "피스톤 링의 마모한계만",
+        "verdict": "incorrect",
+        "rationale": "피스톤링 마모한계는 엔진 기계 정비 기준이지 조작 인체공학 요소가 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q19",
+    "question_id": "auto-made-r03-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "차속 입력과 관련 DTC·배선·제어 신호를 확인한다",
+    "reason": "크루즈 컨트롤은 차속 정보가 필요하지만 작동 조건에는 브레이크 스위치 등 여러 요소도 관계한다. 차속 데이터 불량이 확인된다면 해당 센서와 회로를 점검한다.",
+    "key_point": "정속제어는 정상적인 차량속도 신호를 필요로 한다.",
+    "source_question_id": "auto-r03-s03-q19",
+    "original_issue_flags": [
+      "source_cruise_fault_vss_always_first_ambiguous"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "차속 불안정 증상과 직접 관련된 입력",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "크루즈/ACC 기능 구성과 차속 신호 출처가 차종별로 달라 DTC 및 회로도 직접 확인 필요."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "차속 입력과 관련 DTC·배선·제어 신호를 확인한다",
+        "verdict": "correct",
+        "rationale": "차속 불안정이 함께 있으면 차속 입력·관련 DTC·배선·제어신호를 점검하는 것이 관련성이 높다."
+      },
+      {
+        "number": 2,
+        "text": "차속 계기판이 흔들리면 크루즈 모듈을 무조건 교환한다",
+        "verdict": "incorrect",
+        "rationale": "속도계 불안정만으로 크루즈 제어 모듈 단독 고장을 확정해 교환할 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크 스위치가 정상이라면 차속 값은 확인할 필요가 없다",
+        "verdict": "incorrect",
+        "rationale": "브레이크 스위치가 정상이라고 차속 데이터 검사를 생략할 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "ACC 감지 센서만 교환하고 휠속도 신호는 생략한다",
+        "verdict": "incorrect",
+        "rationale": "ACC 감지센서만 교환하고 속도 입력을 무시하면 연동 원인을 놓칠 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r03-s03-q20",
+    "question_id": "auto-made-r03-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "선루프 스위치 입력·퓨즈·모터 전원을 확인한다",
+    "reason": "선루프 작동 불량은 스위치·퓨즈·모터·레일이나 끼임방지 기능에서 발생할 수 있다. 모터 전원과 스위치 입력을 확인해 전기·기계 문제를 분리한다.",
+    "key_point": "선루프는 스위치·전원·모터·레일 상태를 순차 점검한다.",
+    "source_question_id": "auto-r03-s03-q20",
+    "original_issue_flags": [
+      "source_sunroof_switch_always_first_may_vary"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa17": {
+      "batch": "QA17-r03-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "일반 전기·전자 원리 참고 1차 검토로 최종 정답/차종별 작업 승인 아님."
+    },
+    "option_analysis_qa17": [
+      {
+        "number": 1,
+        "text": "엔진 점화시기 측정",
+        "verdict": "incorrect",
+        "rationale": "엔진 점화시기 측정은 선루프 전기모터 회로의 직접 진단이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "선루프 스위치 입력·퓨즈·모터 전원을 확인한다",
+        "verdict": "correct",
+        "rationale": "선루프 입력·퓨즈·모터 전원 확인은 전원/스위치 불량을 구분하는 기본 진단이다."
+      },
+      {
+        "number": 3,
+        "text": "냉매 오일 점도만",
+        "verdict": "incorrect",
+        "rationale": "냉매 오일 점도는 선루프 모터 전기회로와 무관한 HVAC 항목이다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 교환만",
+        "verdict": "incorrect",
+        "rationale": "타이어 교환만으로 선루프 스위치 신호와 모터 구동 문제를 확인할 수 없다."
+      }
+    ]
+  }
+]
