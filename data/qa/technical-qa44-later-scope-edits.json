@@ -354,5 +354,185 @@
       ]
     },
     "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r08-s04-q20",
+    "round": 8,
+    "subject": "eco",
+    "number": 20,
+    "stage": "33",
+    "before": {
+      "question": "전자식 주차 브레이크(EPB)가 장착됐다. EPB 작동 범위에 관한 올바른 설명은?",
+      "choices": [
+        "차종에 따라 주행 중 비상 제동 요청 기능을 지원할 수 있다",
+        "EPB는 모든 차종에서 제동력을 발생시키지 못한다",
+        "주행 중에는 모든 EPB가 전기적으로 완전 비활성화",
+        "EPB는 바퀴속도 센서 없이만 작동 가능하다"
+      ],
+      "answer": 1,
+      "reason": "전자식 주차브레이크는 정차 시 주차 유지뿐 아니라 일부 차량에서 운전자가 스위치를 길게 조작하면 비상 제동을 지원한다. 작동방식과 제약은 제작사 기준을 따라야 한다.",
+      "key_point": "EPB는 주차 기능 외 비상 제동 보조도 가능하다.",
+      "correct_choice": "차종에 따라 주행 중 비상 제동 요청 기능을 지원할 수 있다",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "차종에 따라 주행 중 비상 제동 요청 기능을 지원할 수 있다",
+          "verdict": "correct",
+          "rationale": "전자식 주차브레이크는 정차 시 주차 유지뿐 아니라 일부 차량에서 운전자가 스위치를 길게 조작하면 비상 제동을 지원한다. 작동방식과 제약은 제작사 기준을 따라야 한다."
+        },
+        {
+          "number": 2,
+          "text": "EPB는 모든 차종에서 제동력을 발생시키지 못한다",
+          "verdict": "incorrect",
+          "rationale": "모든 EPB가 제동력을 내지 못한다는 건 틀려"
+        },
+        {
+          "number": 3,
+          "text": "주행 중에는 모든 EPB가 전기적으로 완전 비활성화",
+          "verdict": "incorrect",
+          "rationale": "주행 중 모든 EPB가 완전 비활성화된다는 건 틀려"
+        },
+        {
+          "number": 4,
+          "text": "EPB는 바퀴속도 센서 없이만 작동 가능하다",
+          "verdict": "incorrect",
+          "rationale": "EPB가 휠속도 센서 없이만 작동한다는 일반화는 틀려"
+        }
+      ]
+    },
+    "after": {
+      "question": "전기차 구동배터리의 고속충전 중 온도 상승으로 BMS가 충전전류를 줄인다. 배터리 열관리 진단에 직접적인 데이터는?",
+      "choices": [
+        "팩·모듈 온도와 냉각수 입출구 온도·펌프 동작 및 BMS 충전 제한 명령",
+        "전자식 주차브레이크 케이블 장력만 측정한 자료",
+        "차체 도어 잠금 상태와 후방카메라 주차선 색상",
+        "내연기관 점화플러그 간극의 제조사 허용값"
+      ],
+      "answer": 1,
+      "reason": "고전압 배터리의 충전 허용전류는 셀 온도와 SOC, 열관리 조건에 따라 달라질 수 있다. 충전 중 제한이 발생하면 셀·팩 온도와 냉각펌프·냉각회로, BMS 허용전류 등 관련 제어 데이터를 비교하며 고전압 작업은 지정 교육과 OEM 절차를 따라야 한다.",
+      "key_point": "EV 급속충전 제한 → 팩 온도·냉각계통·BMS 허용전류 점검.",
+      "correct_choice": "팩·모듈 온도와 냉각수 입출구 온도·펌프 동작 및 BMS 충전 제한 명령",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "팩·모듈 온도와 냉각수 입출구 온도·펌프 동작 및 BMS 충전 제한 명령",
+          "verdict": "correct",
+          "rationale": "배터리의 온도·열관리상태가 충전허용전류와 직접 연관돼."
+        },
+        {
+          "number": 2,
+          "text": "전자식 주차브레이크 케이블 장력만 측정한 자료",
+          "verdict": "incorrect",
+          "rationale": "EPB 케이블 장력만으로 EV 구동배터리 온도 제어를 판단할 수 없어."
+        },
+        {
+          "number": 3,
+          "text": "차체 도어 잠금 상태와 후방카메라 주차선 색상",
+          "verdict": "incorrect",
+          "rationale": "도어 잠금·카메라 표시 색상은 BMS 열관리의 직접 제어자료가 아니야."
+        },
+        {
+          "number": 4,
+          "text": "내연기관 점화플러그 간극의 제조사 허용값",
+          "verdict": "incorrect",
+          "rationale": "EV 배터리 열관리를 엔진 점화플러그 규격으로 판정할 수 없어."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/electric-batteries"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r09-s04-q20",
+    "round": 9,
+    "subject": "eco",
+    "number": 20,
+    "stage": "37",
+    "before": {
+      "question": "디젤차의 SCR 후처리장치에서 요소수를 분사하는 이유는?",
+      "choices": [
+        "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
+        "DPF에 쌓인 PM을 직접 물리적으로 여과",
+        "가솔린 점화플러그를 냉각",
+        "타이어 공기압을 낮춤"
+      ],
+      "answer": 1,
+      "reason": "요소수는 열분해·가수분해로 암모니아를 공급하고 SCR 촉매에서 NOx를 질소와 물로 환원하도록 돕는다. DPF의 PM 포집 기능과 분리해야 한다.",
+      "key_point": "SCR+요소수 = NOx 환원, DPF = PM 포집.",
+      "correct_choice": "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
+          "verdict": "correct",
+          "rationale": "요소수는 열분해·가수분해로 암모니아를 공급하고 SCR 촉매에서 NOx를 질소와 물로 환원하도록 돕는다. DPF의 PM 포집 기능과 분리해야 한다."
+        },
+        {
+          "number": 2,
+          "text": "DPF에 쌓인 PM을 직접 물리적으로 여과",
+          "verdict": "incorrect",
+          "rationale": "DPF는 PM 입자 포집이고 요소수 SCR NOx환원과 기능이 달라"
+        },
+        {
+          "number": 3,
+          "text": "가솔린 점화플러그를 냉각",
+          "verdict": "incorrect",
+          "rationale": "점화플러그 냉각은 요소수 SCR 제어목적이 아니야"
+        },
+        {
+          "number": 4,
+          "text": "타이어 공기압을 낮춤",
+          "verdict": "incorrect",
+          "rationale": "타이어 공기압 제어도 SCR의 기능과 무관해"
+        }
+      ]
+    },
+    "after": {
+      "question": "수소연료전지차에서 고압 저장탱크의 수소를 연료전지 공급계통에 맞는 압력으로 낮추는 장치는?",
+      "choices": [
+        "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+        "엔진 SCR 촉매의 요소수 분사장치",
+        "구동모터의 회전자 위치센서 리졸버",
+        "전기차 구동배터리의 셀 밸런싱 회로"
+      ],
+      "answer": 1,
+      "reason": "연료전지차에서는 고압으로 저장된 수소를 연료전지 공급계통에 맞는 압력으로 제어하기 위해 감압 레귤레이터를 사용한다. 저장압·후단 압력 기준과 레귤레이터 구조는 차량 설계별로 다르며 수소 누출·압력 관련 작업은 OEM 전문안전절차가 필수다.",
+      "key_point": "FCEV 수소 감압 레귤레이터 → 저장 고압을 공급계통 요구압으로 낮춤.",
+      "correct_choice": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+          "verdict": "correct",
+          "rationale": "고압 수소를 스택에 적합한 공급압력으로 제어하는 부품이야."
+        },
+        {
+          "number": 2,
+          "text": "엔진 SCR 촉매의 요소수 분사장치",
+          "verdict": "incorrect",
+          "rationale": "SCR 요소수 장치는 디젤 배기가스 질소산화물 저감 계통이야."
+        },
+        {
+          "number": 3,
+          "text": "구동모터의 회전자 위치센서 리졸버",
+          "verdict": "incorrect",
+          "rationale": "리졸버는 모터 회전자 위치를 감지하며 수소 공급압력 감압장치가 아니야."
+        },
+        {
+          "number": 4,
+          "text": "전기차 구동배터리의 셀 밸런싱 회로",
+          "verdict": "incorrect",
+          "rationale": "셀 밸런싱은 배터리 충전상태 편차를 관리하는 기능이야."
+        }
+      ],
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work",
+        "https://www.energy.gov/cmei/fuels/dispensing-hydrogen-fuel-vehicles"
+      ]
+    },
+    "subject_hold_retained": true
   }
 ]
