@@ -2560,5 +2560,17 @@
     "live_browser_verified": false,
     "ledger": "data/qa/technical-qa67-public-practice-review.json",
     "next": "Detailed syllabus and rights gate; 720 draft explanation review; browser integration, cumulative wrong answers and exam resume."
+  },
+  "technical_qa68": {
+    "date": "2026-11-24",
+    "purpose": "actual Chromium desktop/mobile smoke on local checkout and live Pages",
+    "browser_test": "tests/browser-smoke.cjs",
+    "workflow": ".github/workflows/browser-smoke.yml",
+    "live_browser_verified": false,
+    "ci_status": "new workflow added; execution not yet verified",
+    "public_expected": 112,
+    "subject_holds": 55,
+    "independent_expert_approved": 0,
+    "source_draft_promoted": 0
   }
 }
