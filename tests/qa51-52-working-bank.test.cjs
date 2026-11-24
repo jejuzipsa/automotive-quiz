@@ -11,22 +11,27 @@ const qa50=read("data/qa/technical-qa50-next20-option-review.json");
 const qa51=read("data/qa/technical-qa51-editorial-revisions.json");
 const qa52=read("data/qa/technical-qa52-round01-remaining40-option-review.json");
 const qa53=read("data/qa/technical-qa53-round02-first40-option-review.json");
+const qa55=read("data/qa/technical-qa55-round02-last40-option-review.json");
+const qa55Edits=read("data/qa/technical-qa55-editorial-corrections.json");
+assert.equal(qa55.items.length,40);
+assert.equal(qa55Edits.items.length,6);
 assert.equal(qa53.items.length,40);
 assert.equal(qa53.items.filter(x=>x.editorial_hold).length,2);
 assert.equal(qa51.items.length,15);
 const coverage=new Map(),newReviews=new Map();
-for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40]]){
+for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40],["QA55",qa55,40]]){
  assert.equal(ledger.items.length,count);
  for(const item of ledger.items){assert.ok(!coverage.has(item.id),"duplicate coverage "+item.id);coverage.set(item.id,stage);}
 }
 for(const item of qa49.items){assert.equal(coverage.get(item.id),"QA47-49");newReviews.set(item.id,item);}
-for(const ledger of [qa50,qa52,qa53])for(const item of ledger.items)newReviews.set(item.id,item);
-assert.equal(coverage.size,120);
+for(const ledger of [qa50,qa52,qa53,qa55])for(const item of ledger.items)newReviews.set(item.id,item);
+assert.equal(coverage.size,160);
 const qa54=read("data/qa/technical-qa54-technical-corrections.json");
 assert.equal(qa54.items.length,2);
 const corrected=new Set(qa54.items.map(x=>x.id));
-const edits=new Map([...qa51.items,...qa54.items].map(item=>[item.id,item]));
-assert.equal(edits.size,17);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
+const qa55Corrected=new Set(qa55Edits.items.map(x=>x.id));
+const edits=new Map([...qa51.items,...qa54.items,...qa55Edits.items].map(item=>[item.id,item]));
+assert.equal(edits.size,23);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
 const seen=new Set(),applied=new Set(),all=[],bySubject=Object.fromEntries(subjects.map(s=>[s,[]])),holds=[],batchQueue=[];
 const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9가-힣]/g,"");
 const exactStems=new Map(),answerTextGroups=new Map();
@@ -68,6 +73,8 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    currentAnalysis=patch.after.option_analysis;applied.add(id);
    q.qa51_revision={kind:patch.kind,previous_evidence_is_historical:true,expert_approved:false};
    e.qa51_revision=q.qa51_revision;
+   q.current_revision={stage:qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51",kind:patch.kind,previous_evidence_is_historical:true};
+   e.current_revision=q.current_revision;
   }
   assert.ok(typeof q.question==="string"&&q.question.trim().length>5,id);
   assert.equal(q.choices.length,4,id);assert.equal(new Set(q.choices.map(norm)).size,4,id+" duplicate options");
@@ -94,17 +101,17 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    }
    if(coverage.get(id)==="QA52")assert.equal(review.version,patch?"qa51_revised":"baseline_current",id);
   }
-  assert.equal(coverage.has(id),round===1||(round===2&&i<10),id+" coverage mismatch");
+  assert.equal(coverage.has(id),round<=2,id+" coverage mismatch");
   const hold=q.subject_classification_review?.status==="hold_do_not_publish";
   if(hold)holds.push(id);
   const extra=patch?.additional_reference?.url;
   const currentRefs=[...new Set([...refs,...(extra?[extra]:[])])];
-  const currentVersion=patch?(corrected.has(id)?"qa54_revised":"qa51_revised"):"baseline_at_qa50";
+  const currentVersion=patch?(qa55Corrected.has(id)?"qa55_revised":corrected.has(id)?"qa54_revised":"qa51_revised"):"baseline_at_qa50";
   q.current_version=currentVersion;e.current_version=currentVersion;
-  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?(corrected.has(id)?"QA54":"QA51"):null,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
+  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?(qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51"):null,model_review_version:patch?currentVersion:(review?.version||"baseline_current"),prior_review_snapshot_retained:!!patch,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
   e.current_review=q.current_review;
   e.current_option_analysis=currentAnalysis;e.current_reference_urls=currentRefs;
-  e.current_reference_status="Historical links and any QA51 supplemental reference; not fully source-verified";
+  e.current_reference_status="Historical links and supplemental references from QA51/54/55; not fully source-verified";
   const record={id,round,subject,number:i+1,question:q.question,choices:q.choices,answer:q.answer,explanation:e.reason,option_analysis:currentAnalysis,reference_urls:currentRefs,classification_hold:hold,firstpass_historical_grade:q[stage].status,current_version:currentVersion,model_logic_stage:coverage.get(id)||null,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,publishable:false};
   if(patch)record.additional_reference=patch.additional_reference;
   all.push(record);bySubject[subject].push({question:q,explanation:e});
@@ -113,24 +120,24 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
   if(ans.length>=12){const key=subject+":"+ans;if(!answerTextGroups.has(key))answerTextGroups.set(key,[]);answerTextGroups.get(key).push(id);}
  }
 }
-assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,17);
-assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,120);
+assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,23);
+assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,160);
 assert.equal(all.filter(x=>x.editorial_hold).length,0);
-const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,600);
+const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,560);
 for(let round=2;round<=9;round++)for(let offset=0;offset<20;offset+=5){
  const items=subjects.flatMap(subject=>remaining.filter(x=>x.round===round&&x.subject===subject&&x.number>offset&&x.number<=offset+5));
  if(items.length===0)continue;
  assert.equal(items.length,20);
  batchQueue.push({batch:batchQueue.length+1,round,question_range:[offset+1,offset+5],status:"pending_model_logic_review",items});
 }
-assert.equal(batchQueue.length,30);
-assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,600);
+assert.equal(batchQueue.length,28);
+assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,560);
 const exactCandidates=[...exactStems.entries()].filter(([,ids])=>ids.length>1).map(([stem,ids])=>({stem,ids}));
 const sharedAnswerCandidates=[...answerTextGroups.entries()].filter(([,ids])=>ids.length>1).map(([key,ids])=>({key,ids}));
 const manifest=read("data/manifest.json");
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")&&!b.file.includes("qa51")&&!b.file.includes("qa52")));
 assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);
-const summary={kind:"QA52_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:17,model_logic_reviewed_questions:120,model_logic_reviewed_options:480,pending_model_questions:600,pending_model_options:2400,pending_batches:30,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 120 model-reviewed questions are not independently approved.","The QA51/52 working view supersedes old draft text for the 17 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
+const summary={kind:"QA55_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:23,model_logic_reviewed_questions:160,model_logic_reviewed_options:640,pending_model_questions:560,pending_model_options:2240,pending_batches:28,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 160 model-reviewed questions are not independently approved.","The QA55 working view supersedes old draft text for the 23 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
 if(process.env.QA52_OUT_DIR){
  const out=path.resolve(root,process.env.QA52_OUT_DIR);
  const write=(p,x)=>{const dest=path.join(out,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify(x,null,2)+"\n");};
@@ -143,4 +150,4 @@ if(process.env.QA52_OUT_DIR){
  write("remaining-batches.json",batchQueue.map(({items,...b})=>({...b,ids:items.map(x=>x.id)})));
  for(const b of batchQueue)write("batches/batch-"+String(b.batch).padStart(2,"0")+".json",b);
 }
-console.log("PASS QA51-52 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
+console.log("PASS QA55 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");

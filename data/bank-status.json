@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA53_round02_first40_model_review",
+  "latest_qa_stage": "QA55_round02_complete_model_review",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2303,5 +2303,34 @@
     "ledger": "data/qa/technical-qa53-round02-first40-option-review.json",
     "working_bank_artifact": "qa53-working-bank-and-remaining-600",
     "next": "QA54 correct ambiguity and duplicate candidates; review round02 questions 11-20 per subject"
+  },
+  "technical_qa54": {
+    "date": "2026-11-24",
+    "revised_questions": 2,
+    "answer_index_changes": 0,
+    "ledger": "data/qa/technical-qa54-technical-corrections.json",
+    "ci_verified": true,
+    "independent_final_approvals": 0
+  },
+  "technical_qa55": {
+    "date": "2026-11-24",
+    "new_questions": 40,
+    "new_options": 160,
+    "cumulative_model_review_questions": 160,
+    "cumulative_model_review_options": 640,
+    "new_revisions": 6,
+    "total_versioned_revisions": 23,
+    "remaining_questions": 560,
+    "remaining_options": 2240,
+    "remaining_batches": 28,
+    "editorial_holds": 0,
+    "independent_final_approvals": 0,
+    "subject_holds": 55,
+    "published_past": 0,
+    "published_expected": 80,
+    "ledger": "data/qa/technical-qa55-round02-last40-option-review.json",
+    "revision_ledger": "data/qa/technical-qa55-editorial-corrections.json",
+    "working_bank_artifact": "qa55-working-bank-and-remaining-560",
+    "next": "QA56 round03 model review and remaining duplicate candidates"
   }
 }
