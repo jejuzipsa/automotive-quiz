@@ -363,7 +363,7 @@
     "track": "expected",
     "origin": "original_practice",
     "subject": "eco",
-    "question": "가상의 충전 시스템이 배터리에 6kW를 일정하게 저장한다. 3시간 동안 저장되는 에너지는?",
+    "question": "가상 충전 시스템에서 배터리에 실제 저장되는 에너지의 시간당 증가율이 일정하게 6kW이다. 3시간 동안 저장 에너지는 얼마나 증가하는가?",
     "choices": [
       "18kWh",
       "2kWh",
@@ -371,7 +371,7 @@
       "6kWh"
     ],
     "answer": 1,
-    "explanation": "에너지는 전력×시간이다. 6×3=18kWh이다. 실제 충전 전력은 시간에 따라 달라질 수 있다.",
+    "explanation": "에너지 증가량은 저장 에너지의 시간당 증가율(전력)×시간이다. 6kW×3h=18kWh이다. 외부 충전기 입력전력과 실제 저장 에너지 증가율은 충전 손실 때문에 다를 수 있다.",
     "review_status": "editorial_draft",
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",

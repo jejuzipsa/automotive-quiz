@@ -2544,5 +2544,21 @@
     "qnet_hwp_body_opened": false,
     "ledger": "data/qa/technical-qa66-practice-selection.json",
     "next": "QA66 remaining explanation defects and QA67 detailed syllabus/rights gates"
+  },
+  "technical_qa67": {
+    "date": "2026-11-24",
+    "public_expected_model_reviewed": 112,
+    "public_expected_options_model_reviewed": 448,
+    "revised": 8,
+    "answer_index_changes": 0,
+    "qa66_calculation_basis_metadata_corrected": 5,
+    "public_expected": 112,
+    "independent_expert_approved": 0,
+    "source_draft_promoted": 0,
+    "subject_holds": 55,
+    "qnet_hwp_body_opened": false,
+    "live_browser_verified": false,
+    "ledger": "data/qa/technical-qa67-public-practice-review.json",
+    "next": "Detailed syllabus and rights gate; 720 draft explanation review; browser integration, cumulative wrong answers and exam resume."
   }
 }
