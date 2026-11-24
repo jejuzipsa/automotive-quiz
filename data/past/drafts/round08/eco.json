@@ -632,12 +632,12 @@
     "source_question_id": "auto-r08-s04-q20",
     "round": 8,
     "question_number": 20,
-    "question": "전자식 주차 브레이크(EPB)가 장착됐다. EPB 작동 범위에 관한 올바른 설명은?",
+    "question": "전기차 구동배터리의 고속충전 중 온도 상승으로 BMS가 충전전류를 줄인다. 배터리 열관리 진단에 직접적인 데이터는?",
     "choices": [
-      "차종에 따라 주행 중 비상 제동 요청 기능을 지원할 수 있다",
-      "EPB는 모든 차종에서 제동력을 발생시키지 못한다",
-      "주행 중에는 모든 EPB가 전기적으로 완전 비활성화",
-      "EPB는 바퀴속도 센서 없이만 작동 가능하다"
+      "팩·모듈 온도와 냉각수 입출구 온도·펌프 동작 및 BMS 충전 제한 명령",
+      "전자식 주차브레이크 케이블 장력만 측정한 자료",
+      "차체 도어 잠금 상태와 후방카메라 주차선 색상",
+      "내연기관 점화플러그 간극의 제조사 허용값"
     ],
     "answer": 1,
     "explanation_id": "auto-made-r08-s04-q20",
@@ -653,18 +653,33 @@
       "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
       "qa2_proposed_action": "consider_reclassifying_to_chassis",
       "qa2_confidence": "cross_disciplinary_not_confirmed",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa44_current_question_may_fit_subject": true
     },
     "technical_verification_qa33": {
       "status": "needs_additional_model_or_syllabus_review",
       "independent_final_technical_approval": false,
       "web_publication": false,
       "source_urls": [
-        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/electric-batteries"
       ],
       "hold_reasons": [
         "EPB는 제동·섀시/차체 과목과 범위 이탈. 기존 hold_do_not_publish 유지, 실차 비상제동 기능은 차량별 확인"
       ]
+    },
+    "qa44_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "self_authored_eco_subject_replacement",
+      "original_past_exam_wording": false,
+      "historical_audit_preserved": true,
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "https://afdc.energy.gov/vehicles/electric-batteries"
+      ],
+      "final_independent_technical_approval": false,
+      "rights_cleared": false,
+      "publishable": false
     }
   }
 ]

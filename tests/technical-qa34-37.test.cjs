@@ -2,20 +2,21 @@
 const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("node:path");
 const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
+const newerById=new Map([...read("data/qa/technical-qa44-later-scope-edits.json"),...read("data/qa/technical-qa45-overlap-edits.json")].map(x=>[x.id,x]));
 const cases=[{qa:34,s:"engine",ok:12,edit:[7]},{qa:35,s:"chassis",ok:14,edit:[8]},{qa:36,s:"electrical",ok:12,edit:[5]},{qa:37,s:"eco",ok:10,edit:[4,15,19]}];
 const ids=new Set();let count=0,options=0;
 for(const c of cases){
  const q=read(`data/past/drafts/round09/${c.s}.json`),e=read(`data/explanations/drafts/round09/${c.s}.json`),a=read(`data/qa/technical-qa${c.qa}-r09-${c.s}-option-audit.json`);
  assert.equal(q.length,20);assert.equal(e.length,20);assert.equal(a.length,20);
  assert.equal(a.filter(x=>x.evidence_grade==="source_supported_first_pass").length,c.ok);
- for(let i=0;i<20;i++){const x=q[i],y=e[i],z=a[i],k=`technical_verification_qa${c.qa}`,opt=`option_analysis_qa${c.qa}`;
+ for(let i=0;i<20;i++){const x=q[i],y=e[i],z=a[i],newer=newerById.get(x.id),k=`technical_verification_qa${c.qa}`,opt=`option_analysis_qa${c.qa}`;
   assert.equal(x.id,y.id);assert.equal(x.id,z.id);assert.equal(x.subject,c.s);assert.equal(x.round,9);assert.equal(x.question_number,i+1);
-  assert.equal(x.question,z.question_at_review);assert.equal(x.answer,y.correct_answer);assert.equal(x.answer,z.correct_number);assert.equal(x.choices[x.answer-1],y.correct_choice);assert.equal(y.correct_choice,z.correct_choice);
-  assert.equal(x[k].status,z.evidence_grade);assert.equal(y[k].status,z.evidence_grade);assert.deepEqual(y[opt],z.options);
+  assert.equal(newer?newer.before.question:x.question,z.question_at_review);assert.equal(x.answer,y.correct_answer);assert.equal(x.answer,z.correct_number);assert.equal(x.choices[x.answer-1],y.correct_choice);assert.equal(newer?newer.before.correct_choice:z.correct_choice,z.correct_choice);
+  assert.equal(x[k].status,z.evidence_grade);assert.equal(y[k].status,z.evidence_grade);assert.deepEqual(y[opt],newer?newer.after.option_analysis:z.options);
   assert.equal(x.publishable,false);assert.equal(x.review_status,"editorial_draft");assert.equal(x.technical_answer_status,"pending_independent_review");assert.equal(y.technical_answer_status,"pending_independent_review");
   assert.equal(z.independent_final_technical_approval,false);assert.equal(z.web_publication,false);assert.ok(z.source_urls.length>=1);assert.equal(z.options.length,4);
   assert.ok(!ids.has(x.id));ids.add(x.id);
-  z.options.forEach((o,j)=>{assert.equal(o.number,j+1);assert.equal(o.text,x.choices[j]);assert.equal(o.verdict,j+1===x.answer?"correct":"incorrect");assert.ok(o.rationale.length>=12);options++;});count++;
+  z.options.forEach((o,j)=>{assert.equal(o.number,j+1);assert.equal(o.text,newer?newer.before.choices[j]:x.choices[j]);assert.equal(o.verdict,j+1===x.answer?"correct":"incorrect");assert.ok(o.rationale.length>=12);options++;});count++;
  }
 }
 assert.equal(count,80);assert.equal(options,320);

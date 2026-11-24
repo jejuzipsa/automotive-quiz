@@ -1,1 +1,762 @@
-[{"id":"auto-made-r04-s03-q01","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q01","round":4,"question_number":1,"question":"동일 회로의 퓨즈가 규정 용량으로 교환해도 반복 단선된다. 가장 적절한 진단 방향은?","choices":["더 큰 용량의 퓨즈를 계속 장착한다","도어 열림 각도만 조정한다","퓨즈 대신 철사를 넣는다","전원선의 접지 단락과 과전류 원인을 찾는다"],"answer":4,"explanation_id":"auto-made-r04-s03-q01","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q02","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q02","round":4,"question_number":2,"question":"ESC가 차량의 실제 회전 움직임을 감지해 운전자가 원하는 궤적과 비교할 때 사용하는 신호는?","choices":["요레이트 센서의 차체 회전율","실내 온도 센서의 습도","변속기 오일레벨의 높이","연료압력 레일센서의 압력"],"answer":1,"explanation_id":"auto-made-r04-s03-q02","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q03","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q03","round":4,"question_number":3,"question":"ABS 휠 속도 센서 코드가 발생했지만 센서 자체 검사값은 규정 범위다. 다음 점검은?","choices":["센서 자체 저항이 정상이라면 ECU를 무조건 교환한다","차량 배터리 단자 전압만으로 톤링 상태를 확정한다","조향각 센서 학습만으로 속도 신호 케이블을 대체한다","해당 센서 커넥터·배선 연속성과 센서 신호 경로"],"answer":4,"explanation_id":"auto-made-r04-s03-q03","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"ABS 휠속도 DTC의 배선/신호 확인","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q04","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q04","round":4,"question_number":4,"question":"수동식 코일형 센서 회로의 단자 간 저항이 무한대로 측정됐다. 우선 해석은?","choices":["캘리퍼가 완전히 고착됐다","해당 측정 구간에 개방회로 가능성이 있다","회로가 접지로 단락되어 저항이 0이다","센서가 반드시 정상이다"],"answer":2,"explanation_id":"auto-made-r04-s03-q04","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"수동 코일형 센서와 능동형 홀/자기저항 센서는 측정법이 다르므로 신호방식·제조사 회로 확인 필요."}},{"id":"auto-made-r04-s03-q05","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q05","round":4,"question_number":5,"question":"진단기를 차량에 연결하기 전에 작업자가 확인할 기본 조건은?","choices":["진단기 기종만 보고 해당 차량의 DLC 손상을 무시한다","진단 커넥터·전원·접지와 정비상 안전조건을 확인한다","DLC 핀 상태를 확인하지 않고 통신오류 시 ECU부터 교환한다","배터리 저전압이 표시돼도 전원계통 확인을 생략한다"],"answer":2,"explanation_id":"auto-made-r04-s03-q05","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"스캔툴 접속 전 커넥터와 전원 점검","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q06","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q06","round":4,"question_number":6,"question":"ABS ECU를 교체한 차종의 정비 지침에 초기 코딩과 센서 보정이 지정돼 있다. 올바른 후속 작업은?","choices":["해당 절차대로 코딩·보정하고 DTC와 작동을 검증한다","브레이크액 종류를 임의로 변경한다","부품 교환만 하면 절대로 코딩이 필요 없다","모든 차종에서 동일한 보정값을 입력한다"],"answer":1,"explanation_id":"auto-made-r04-s03-q06","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/","https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"ABS ECU와 ESC/조향각센서 초기화의 차종별 정비지침·유압 안전 조건 검토 필요."}},{"id":"auto-made-r04-s03-q07","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q07","round":4,"question_number":7,"question":"자동차 안전 관련 규정의 ESC 의무 장착 여부를 확인해야 한다. 가장 적절한 판단 방법은?","choices":["차종·제작연도·적용 유예 및 현행 법규를 함께 확인한다","현재 판매 차량도 모두 과거 단일 기준만 적용한다","승차 정원만 보고 모든 연도 차량을 판정한다","ABS 장착 여부와 ESC 의무를 동일한 개념으로 본다"],"answer":1,"explanation_id":"auto-made-r04-s03-q07","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070","https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"국내 자동차 안전기준 의무 장착 날짜·형식승인/부칙은 시행시점별 법령 확인 필수."}},{"id":"auto-made-r04-s03-q08","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q08","round":4,"question_number":8,"question":"에어컨 사용 때 퀴퀴한 냄새와 실내 바닥 습기가 함께 나타난다. 우선 확인할 부분은?","choices":["파워스티어링 오일량만 보충","브레이크 디스크 런아웃만 측정","에어컨 압축기 오일 색깔만 확인","증발기 응축수 배수 경로와 실내 필터"],"answer":4,"explanation_id":"auto-made-r04-s03-q08","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"실내 물기 원인은 문 씰·히터코어·배수구 등 다양하므로 냉매/응축수 및 차량별 진단 절차 필요."}},{"id":"auto-made-r04-s03-q09","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q09","round":4,"question_number":9,"question":"자동차 에어컨의 양쪽 게이지가 높게 나왔다. 옳은 진단 태도는?","choices":["계측 조건은 필요 없으니 냉매를 임의 배출한다","외기온·팬·냉매 충전량을 확인해 원인을 구분한다","양쪽 상승이면 냉매 부족으로만 확정한다","양쪽 상승은 냉매 과충전으로만 확정한다"],"answer":2,"explanation_id":"auto-made-r04-s03-q09","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"차량·냉매 종류별 고저압 기준, 회수/충전 장비, 국내 냉매 취급규정 확인 필요."}},{"id":"auto-made-r04-s03-q10","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q10","round":4,"question_number":10,"question":"에어컨 냉매 고압이 높고 응축기 냉각팬이 돌지 않는다. 팬의 전기회로 원인을 구분할 직접적인 진단은?","choices":["증발기 표면의 결빙상태만 관찰해 팬모터 전원회로를 판정한다","팬 작동 지령과 모터 공급전압·접지, 퓨즈·릴레이 및 배선을 비교한다","공조 모드도어 개방각만 측정해 팬 회로의 단선을 확정한다","실내 블로워 모터의 코일저항만으로 응축기 팬 구동회로를 확정한다"],"answer":2,"explanation_id":"auto-made-r04-s03-q10","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"qa18_r04_electrical_fan_circuit_disambiguation","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"냉매 고압과 응축기 열교환능력 관계","review_batch":"QA2","reviewed_choice_count":4},"qa18_revision":{"date":"2026-11-23","status":"edited_for_unique_diagnostic_objective_and_firstpass_checked","independent_final_technical_approval":false,"publishable":false},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/change-air-conditioning-compressor/","https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q11","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q11","round":4,"question_number":11,"question":"에어컨 작동 시 응축기 팬이 돌지 않고 고압이 비정상적으로 높다. 원리상 가장 밀접한 관계는?","choices":["팬이 없으면 냉매가 즉시 모두 기체에서 고체로 변한다","팬 상태와 응축 열교환은 무관하다","팬 정지는 항상 저압만 0으로 만든다","응축기의 열 방출이 부족해 냉매 고압이 높아질 수 있다"],"answer":4,"explanation_id":"auto-made-r04-s03-q11","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q12","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q12","round":4,"question_number":12,"question":"에어컨 고압이 높고 저압이 낮으며 냉방 성능이 떨어진다. 냉매 공급 제한 가능성을 확인할 부품은?","choices":["팽창밸브·리시버드라이어·냉매배관의 제한 가능성","응축기 팬풍량 과다만으로 회로의 압력 강하를 설명","냉매회로가 정상으로 순환하므로 팽창장치는 검사하지 않는다","컴프레서 압축이 전혀 없는 상태와 동일한 고·저압 형태로 해석"],"answer":1,"explanation_id":"auto-made-r04-s03-q12","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"고압 상승·저압 하강 패턴의 냉매 공급 제한 진단","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"고저압 조합은 외기온도·압축기 듀티·팽창밸브 형식·압력 센서 위치별로 달라 OEM 검증 필요."}},{"id":"auto-made-r04-s03-q13","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q13","round":4,"question_number":13,"question":"공회전에서만 RPM이 요동치는 차량이다. 전자스로틀 제어 차량에서 우선 살펴볼 정보는?","choices":["모든 전자 스로틀 차량에서 별도 IAC 밸브가 필수라고 가정한다","목표 공회전/실제 RPM 비교 없이 스로틀 바디만 교환한다","스로틀 개도·공회전 목표값 및 실제 흡기유입 상태","흡기 누설 DTC가 없으면 흡기 누설은 없다고 확정한다"],"answer":3,"explanation_id":"auto-made-r04-s03-q13","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"전자 스로틀 공회전 문제의 복합 데이터","review_batch":"QA2","reviewed_choice_count":4},"subject_classification_review":{"status":"hold_do_not_publish","current_subject":"electrical","suggested_subject":"engine","reason":"전자스로틀 공회전 목표·실제 RPM/흡기 누설 진단은 자동차 엔진정비 과목의 직접적인 연료·흡기 엔진제어 범위일 가능성","classification_verdict":"pending_qnet_official_2025_2027_curriculum_check","qa18_manual_screening":"engine_idle_management_scope","qa18_reference_url":"https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070"},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/","https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"신규 과목분류 보류: 전자스로틀·공회전·흡기 제어는 엔진정비 직접 범위 가능성. 차종별 학습·제어 조건 추가 검토."}},{"id":"auto-made-r04-s03-q14","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q14","round":4,"question_number":14,"question":"파워 윈도우 버튼을 누르면 모터 소리가 나는데 유리는 움직이지 않는다. 기계적 전달계에서 의심할 것은?","choices":["에어백 센서 교환","퓨즈 단선만으로 모터가 계속 회전한다","헤드램프 릴레이 접점","레귤레이터의 와이어·기어·레일 파손"],"answer":4,"explanation_id":"auto-made-r04-s03-q14","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q15","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q15","round":4,"question_number":15,"question":"전동창이 모든 스위치에서 움직이지 않는다. 회로도에 따라 효율적으로 점검할 순서는?","choices":["전류가 흐르지 않아도 레귤레이터만 분해","모터를 무조건 먼저 새 제품으로 교환","관련 퓨즈·전원 확인 후 스위치·배선·모터 검사","유리만 교환하고 회로 점검 생략"],"answer":3,"explanation_id":"auto-made-r04-s03-q15","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q16","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q16","round":4,"question_number":16,"question":"스마트키 수신 모듈을 교환한 뒤 차량이 키를 인식하지 못한다. 우선 확인할 것은?","choices":["모든 차종에서 모듈 교환 후 등록이 절대 불필요","차종별 키 등록·동기화·코딩 절차","타이어 공기압","브레이크 패드 두께"],"answer":2,"explanation_id":"auto-made-r04-s03-q16","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"차량의 immobilizer/스마트키 보안절차·실제 키 재등록 허용 작업자의 권한은 OEM별로 확인해야 함."}},{"id":"auto-made-r04-s03-q17","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q17","round":4,"question_number":17,"question":"사이드미러 움직임은 정상인데 저장 버튼을 눌러도 기억 위치가 바뀌지 않는다. 진단 방향은?","choices":["스티어링 샤프트만 교환","모터 작동이 정상이면 메모리도 반드시 정상","저장 스위치 입력과 메모리 제어 데이터 확인","윈도 워셔 탱크 청소"],"answer":3,"explanation_id":"auto-made-r04-s03-q17","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q18","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q18","round":4,"question_number":18,"question":"파워 윈도우가 올라가다 느려지고 멈춘다. 모터 전압이 정상인데 기계적 저항이 크다면?","choices":["퓨즈 정격을 높인다","레일·레귤레이터 마찰과 유리 정렬을 점검한다","방향지시등 릴레이를 교환한다","점화시기만 변경한다"],"answer":2,"explanation_id":"auto-made-r04-s03-q18","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q19","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q19","round":4,"question_number":19,"question":"전동시트가 앞뒤로 움직이지 않는다. 부품 교환을 결정하기 전 적절한 검사는?","choices":["모터 전원 확인 없이 시트 레일만 교환한다","시트 위치센서 값만으로 기계 걸림을 확정한다","모터 전원·명령과 시트 트랙·케이블의 저항·걸림","모터가 움직이지 않으면 배선을 임의로 절단해 분리한다"],"answer":3,"explanation_id":"auto-made-r04-s03-q19","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"파워시트 진단의 전기와 기계 결합","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}},{"id":"auto-made-r04-s03-q20","subject":"electrical","subject_name":"자동차 전기·전자장치정비","track":"past","origin":"independently_reconstructed_from_exam_concepts","source_question_id":"auto-r04-s03-q20","round":4,"question_number":20,"question":"파워 시트의 전동 기능이 모두 작동하지 않을 때 초동 검사로 적합한 것은?","choices":["시트의 앞뒤 이동모터 하나만 교환한다","파워시트 전원퓨즈·공통 전원·접지부터 확인한다","레일 구동 케이블만 윤활하고 전원점검을 끝낸다","시트 위치센서의 캘리브레이션만 수행한다"],"answer":2,"explanation_id":"auto-made-r04-s03-q20","review_status":"editorial_draft","technical_answer_status":"pending_independent_review","publishable":false,"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"전동시트 전체 불량 시 공통 전원 우선","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa18":{"batch":"QA18-r04-electrical-20","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"],"independent_final_technical_approval":false,"web_publication":false,"caveat":"기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."}}]
+[
+  {
+    "id": "auto-made-r04-s03-q01",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q01",
+    "round": 4,
+    "question_number": 1,
+    "question": "동일 회로의 퓨즈가 규정 용량으로 교환해도 반복 단선된다. 가장 적절한 진단 방향은?",
+    "choices": [
+      "더 큰 용량의 퓨즈를 계속 장착한다",
+      "도어 열림 각도만 조정한다",
+      "퓨즈 대신 철사를 넣는다",
+      "전원선의 접지 단락과 과전류 원인을 찾는다"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r04-s03-q01",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q02",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q02",
+    "round": 4,
+    "question_number": 2,
+    "question": "ESC가 차량의 실제 회전 움직임을 감지해 운전자가 원하는 궤적과 비교할 때 사용하는 신호는?",
+    "choices": [
+      "요레이트 센서의 차체 회전율",
+      "실내 온도 센서의 습도",
+      "변속기 오일레벨의 높이",
+      "연료압력 레일센서의 압력"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r04-s03-q02",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q03",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q03",
+    "round": 4,
+    "question_number": 3,
+    "question": "ABS 휠 속도 센서 코드가 발생했지만 센서 자체 검사값은 규정 범위다. 다음 점검은?",
+    "choices": [
+      "센서 자체 저항이 정상이라면 ECU를 무조건 교환한다",
+      "차량 배터리 단자 전압만으로 톤링 상태를 확정한다",
+      "조향각 센서 학습만으로 속도 신호 케이블을 대체한다",
+      "해당 센서 커넥터·배선 연속성과 센서 신호 경로"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r04-s03-q03",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "ABS 휠속도 DTC의 배선/신호 확인",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q04",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q04",
+    "round": 4,
+    "question_number": 4,
+    "question": "수동식 코일형 센서 회로의 단자 간 저항이 무한대로 측정됐다. 우선 해석은?",
+    "choices": [
+      "캘리퍼가 완전히 고착됐다",
+      "해당 측정 구간에 개방회로 가능성이 있다",
+      "회로가 접지로 단락되어 저항이 0이다",
+      "센서가 반드시 정상이다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q04",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "수동 코일형 센서와 능동형 홀/자기저항 센서는 측정법이 다르므로 신호방식·제조사 회로 확인 필요."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q05",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q05",
+    "round": 4,
+    "question_number": 5,
+    "question": "진단기를 차량에 연결하기 전에 작업자가 확인할 기본 조건은?",
+    "choices": [
+      "진단기 기종만 보고 해당 차량의 DLC 손상을 무시한다",
+      "진단 커넥터·전원·접지와 정비상 안전조건을 확인한다",
+      "DLC 핀 상태를 확인하지 않고 통신오류 시 ECU부터 교환한다",
+      "배터리 저전압이 표시돼도 전원계통 확인을 생략한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q05",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "스캔툴 접속 전 커넥터와 전원 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q06",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q06",
+    "round": 4,
+    "question_number": 6,
+    "question": "ABS ECU를 교체한 차종의 정비 지침에 초기 코딩과 센서 보정이 지정돼 있다. 올바른 후속 작업은?",
+    "choices": [
+      "해당 절차대로 코딩·보정하고 DTC와 작동을 검증한다",
+      "브레이크액 종류를 임의로 변경한다",
+      "부품 교환만 하면 절대로 코딩이 필요 없다",
+      "모든 차종에서 동일한 보정값을 입력한다"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r04-s03-q06",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "ABS ECU와 ESC/조향각센서 초기화의 차종별 정비지침·유압 안전 조건 검토 필요."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q07",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q07",
+    "round": 4,
+    "question_number": 7,
+    "question": "자동차 안전 관련 규정의 ESC 의무 장착 여부를 확인해야 한다. 가장 적절한 판단 방법은?",
+    "choices": [
+      "차종·제작연도·적용 유예 및 현행 법규를 함께 확인한다",
+      "현재 판매 차량도 모두 과거 단일 기준만 적용한다",
+      "승차 정원만 보고 모든 연도 차량을 판정한다",
+      "ABS 장착 여부와 ESC 의무를 동일한 개념으로 본다"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r04-s03-q07",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070",
+        "https://www.bosch-mobility.com/en/solutions/braking-systems/electronic-stability-program/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "국내 자동차 안전기준 의무 장착 날짜·형식승인/부칙은 시행시점별 법령 확인 필수."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q08",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q08",
+    "round": 4,
+    "question_number": 8,
+    "question": "에어컨 사용 때 퀴퀴한 냄새와 실내 바닥 습기가 함께 나타난다. 우선 확인할 부분은?",
+    "choices": [
+      "파워스티어링 오일량만 보충",
+      "브레이크 디스크 런아웃만 측정",
+      "에어컨 압축기 오일 색깔만 확인",
+      "증발기 응축수 배수 경로와 실내 필터"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r04-s03-q08",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "실내 물기 원인은 문 씰·히터코어·배수구 등 다양하므로 냉매/응축수 및 차량별 진단 절차 필요."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q09",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q09",
+    "round": 4,
+    "question_number": 9,
+    "question": "자동차 에어컨의 양쪽 게이지가 높게 나왔다. 옳은 진단 태도는?",
+    "choices": [
+      "계측 조건은 필요 없으니 냉매를 임의 배출한다",
+      "외기온·팬·냉매 충전량을 확인해 원인을 구분한다",
+      "양쪽 상승이면 냉매 부족으로만 확정한다",
+      "양쪽 상승은 냉매 과충전으로만 확정한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q09",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "차량·냉매 종류별 고저압 기준, 회수/충전 장비, 국내 냉매 취급규정 확인 필요."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q10",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q10",
+    "round": 4,
+    "question_number": 10,
+    "question": "에어컨 냉매 고압이 높고 응축기 냉각팬이 돌지 않는다. 팬의 전기회로 원인을 구분할 직접적인 진단은?",
+    "choices": [
+      "증발기 표면의 결빙상태만 관찰해 팬모터 전원회로를 판정한다",
+      "팬 작동 지령과 모터 공급전압·접지, 퓨즈·릴레이 및 배선을 비교한다",
+      "공조 모드도어 개방각만 측정해 팬 회로의 단선을 확정한다",
+      "실내 블로워 모터의 코일저항만으로 응축기 팬 구동회로를 확정한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q10",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "qa18_r04_electrical_fan_circuit_disambiguation",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "냉매 고압과 응축기 열교환능력 관계",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "qa18_revision": {
+      "date": "2026-11-23",
+      "status": "edited_for_unique_diagnostic_objective_and_firstpass_checked",
+      "independent_final_technical_approval": false,
+      "publishable": false
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/change-air-conditioning-compressor/",
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q11",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q11",
+    "round": 4,
+    "question_number": 11,
+    "question": "에어컨 작동 시 응축기 팬이 돌지 않고 고압이 비정상적으로 높다. 원리상 가장 밀접한 관계는?",
+    "choices": [
+      "팬이 없으면 냉매가 즉시 모두 기체에서 고체로 변한다",
+      "팬 상태와 응축 열교환은 무관하다",
+      "팬 정지는 항상 저압만 0으로 만든다",
+      "응축기의 열 방출이 부족해 냉매 고압이 높아질 수 있다"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r04-s03-q11",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q12",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q12",
+    "round": 4,
+    "question_number": 12,
+    "question": "에어컨 고압이 높고 저압이 낮으며 냉방 성능이 떨어진다. 냉매 공급 제한 가능성을 확인할 부품은?",
+    "choices": [
+      "팽창밸브·리시버드라이어·냉매배관의 제한 가능성",
+      "응축기 팬풍량 과다만으로 회로의 압력 강하를 설명",
+      "냉매회로가 정상으로 순환하므로 팽창장치는 검사하지 않는다",
+      "컴프레서 압축이 전혀 없는 상태와 동일한 고·저압 형태로 해석"
+    ],
+    "answer": 1,
+    "explanation_id": "auto-made-r04-s03-q12",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "고압 상승·저압 하강 패턴의 냉매 공급 제한 진단",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "고저압 조합은 외기온도·압축기 듀티·팽창밸브 형식·압력 센서 위치별로 달라 OEM 검증 필요."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q13",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q13",
+    "round": 4,
+    "question_number": 13,
+    "question": "차량 게이트웨이 제어기가 CAN 통신망과 LIN 편의장치 통신망의 정보를 중계한다. 게이트웨이 이상이 의심될 때 적절한 진단은?",
+    "choices": [
+      "엔진 오일점도만 검사하면 두 통신망 상태가 확정된다",
+      "차체 도장색에 따라 CAN 메시지의 ID가 자동 변경된다",
+      "양쪽 통신망의 전원·접지·메시지 수신/전달 상태를 함께 확인한다",
+      "한쪽 네트워크가 정상이라면 중계제어기의 다른 포트는 항상 정상이다"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r04-s03-q13",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전자 스로틀 공회전 문제의 복합 데이터",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "engine",
+      "reason": "전자스로틀 공회전 목표·실제 RPM/흡기 누설 진단은 자동차 엔진정비 과목의 직접적인 연료·흡기 엔진제어 범위일 가능성",
+      "classification_verdict": "pending_qnet_official_2025_2027_curriculum_check",
+      "qa18_manual_screening": "engine_idle_management_scope",
+      "qa18_reference_url": "https://www.q-net.or.kr/crf005.do?id=crf00503s02&jmCd=2070",
+      "qa44_current_question_may_fit_subject": true
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "신규 과목분류 보류: 전자스로틀·공회전·흡기 제어는 엔진정비 직접 범위 가능성. 차종별 학습·제어 조건 추가 검토."
+    },
+    "qa44_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "self_authored_electrical_subject_replacement",
+      "original_past_exam_wording": false,
+      "historical_audit_preserved": true,
+      "reference_urls": [
+        "https://www.vector.com/en/industries/automotive/application-areas/networks/"
+      ],
+      "final_independent_technical_approval": false,
+      "rights_cleared": false,
+      "publishable": false
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q14",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q14",
+    "round": 4,
+    "question_number": 14,
+    "question": "파워 윈도우 버튼을 누르면 모터 소리가 나는데 유리는 움직이지 않는다. 기계적 전달계에서 의심할 것은?",
+    "choices": [
+      "에어백 센서 교환",
+      "퓨즈 단선만으로 모터가 계속 회전한다",
+      "헤드램프 릴레이 접점",
+      "레귤레이터의 와이어·기어·레일 파손"
+    ],
+    "answer": 4,
+    "explanation_id": "auto-made-r04-s03-q14",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q15",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q15",
+    "round": 4,
+    "question_number": 15,
+    "question": "전동창이 모든 스위치에서 움직이지 않는다. 회로도에 따라 효율적으로 점검할 순서는?",
+    "choices": [
+      "전류가 흐르지 않아도 레귤레이터만 분해",
+      "모터를 무조건 먼저 새 제품으로 교환",
+      "관련 퓨즈·전원 확인 후 스위치·배선·모터 검사",
+      "유리만 교환하고 회로 점검 생략"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r04-s03-q15",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q16",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q16",
+    "round": 4,
+    "question_number": 16,
+    "question": "스마트키 수신 모듈을 교환한 뒤 차량이 키를 인식하지 못한다. 우선 확인할 것은?",
+    "choices": [
+      "모든 차종에서 모듈 교환 후 등록이 절대 불필요",
+      "차종별 키 등록·동기화·코딩 절차",
+      "타이어 공기압",
+      "브레이크 패드 두께"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q16",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "차량의 immobilizer/스마트키 보안절차·실제 키 재등록 허용 작업자의 권한은 OEM별로 확인해야 함."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q17",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q17",
+    "round": 4,
+    "question_number": 17,
+    "question": "사이드미러 움직임은 정상인데 저장 버튼을 눌러도 기억 위치가 바뀌지 않는다. 진단 방향은?",
+    "choices": [
+      "스티어링 샤프트만 교환",
+      "모터 작동이 정상이면 메모리도 반드시 정상",
+      "저장 스위치 입력과 메모리 제어 데이터 확인",
+      "윈도 워셔 탱크 청소"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r04-s03-q17",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q18",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q18",
+    "round": 4,
+    "question_number": 18,
+    "question": "파워 윈도우가 올라가다 느려지고 멈춘다. 모터 전압이 정상인데 기계적 저항이 크다면?",
+    "choices": [
+      "퓨즈 정격을 높인다",
+      "레일·레귤레이터 마찰과 유리 정렬을 점검한다",
+      "방향지시등 릴레이를 교환한다",
+      "점화시기만 변경한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q18",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q19",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q19",
+    "round": 4,
+    "question_number": 19,
+    "question": "전동시트가 앞뒤로 움직이지 않는다. 부품 교환을 결정하기 전 적절한 검사는?",
+    "choices": [
+      "모터 전원 확인 없이 시트 레일만 교환한다",
+      "시트 위치센서 값만으로 기계 걸림을 확정한다",
+      "모터 전원·명령과 시트 트랙·케이블의 저항·걸림",
+      "모터가 움직이지 않으면 배선을 임의로 절단해 분리한다"
+    ],
+    "answer": 3,
+    "explanation_id": "auto-made-r04-s03-q19",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "파워시트 진단의 전기와 기계 결합",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  },
+  {
+    "id": "auto-made-r04-s03-q20",
+    "subject": "electrical",
+    "subject_name": "자동차 전기·전자장치정비",
+    "track": "past",
+    "origin": "independently_reconstructed_from_exam_concepts",
+    "source_question_id": "auto-r04-s03-q20",
+    "round": 4,
+    "question_number": 20,
+    "question": "파워 시트의 전동 기능이 모두 작동하지 않을 때 초동 검사로 적합한 것은?",
+    "choices": [
+      "시트의 앞뒤 이동모터 하나만 교환한다",
+      "파워시트 전원퓨즈·공통 전원·접지부터 확인한다",
+      "레일 구동 케이블만 윤활하고 전원점검을 끝낸다",
+      "시트 위치센서의 캘리브레이션만 수행한다"
+    ],
+    "answer": 2,
+    "explanation_id": "auto-made-r04-s03-q20",
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "publishable": false,
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "전동시트 전체 불량 시 공통 전원 우선",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa18": {
+      "batch": "QA18-r04-electrical-20",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/starting-and-charging-system/"
+      ],
+      "independent_final_technical_approval": false,
+      "web_publication": false,
+      "caveat": "기초 전기·전자 참고자료의 1차 비교이며 차량별 기술 최종승인·권리 승인이 아님."
+    }
+  }
+]

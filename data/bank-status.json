@@ -1,7 +1,7 @@
 {
-  "updated_at": "2026-11-23",
+  "updated_at": "2026-11-24",
   "site_repo": "jejuzipsa/automotive-quiz",
-  "source_of_truth": "Independent-study unpublished 720 question/2880 option draft bank. QA40-42 separately reauthored 33 prior off-topic questions (3 engine+15 chassis+15 eco); those current items are original study questions, NOT verbatim past examinations. QA18/22/25 audit snapshots retained. Historical firstpass 351 supported/369 needing review, none independently finally approved, zero reconstructed questions in public site; 80 original practice questions unchanged.",
+  "source_of_truth": "Independently-authored educational draft bank (720 questions/2880 options): QA40-45 replaced 54 historically miscategorized or ambiguous items with new subject-focused study prompts, which are not verbatim original past exams. All legacy audit records preserved. 55 classification holds still held, no expert final approvals (0/720), reconstructed past not live (0/720); original expected practice80 unchanged. QA38 historical firstpass 351 source supported and 369 additional review is not independently approved.",
   "public_site": {
     "visibility": "public",
     "repo_visibility": "public",
@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA42_eco_r04_to_r06_15_scope_replacements_pending_detailed_syllabus_and_independent_technical_rights_review",
+  "latest_qa_stage": "QA46_specialist_review_queue_produced_with_no_independent_final_approvals",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2172,5 +2172,47 @@
     "report": "docs/TECHNICAL_QA42.md",
     "regression_test": "tests/technical-qa42.test.cjs",
     "next": "18 remaining cross-subject scope holds, 3 cross-boundary holds, 1 stale-hold candidate; independent OEM/safety/legal/rights review and protected archive before public draft retirement"
+  },
+  "technical_qa45": {
+    "date": "2026-11-24",
+    "qa43_subject_rewrites": 12,
+    "qa44_subject_rewrites": 6,
+    "qa45_overlap_rewrites": 3,
+    "qa45_legacy_inverter_recheck": 1,
+    "qa43_to_45_edits": 21,
+    "qa40_to_45_total_rewrites": 54,
+    "legacy_holds_retained": 55,
+    "remaining_provisional_misplacements": 0,
+    "remaining_provisional_overlap": 0,
+    "remaining_legacy_stale_holds_unreviewed": 0,
+    "independent_final_technical_approvals": 0,
+    "published_past_reconstructed_items": 0,
+    "live_original_practice": 80,
+    "official_qnet_detailed_hwp_verified": false,
+    "qa43_ledger": "data/qa/technical-qa43-remaining-scope-edits.json",
+    "qa44_ledger": "data/qa/technical-qa44-later-scope-edits.json",
+    "qa45_ledger": "data/qa/technical-qa45-overlap-edits.json",
+    "legacy_hold_record": "data/qa/technical-qa45-stale-hold-review.json",
+    "tests": "tests/technical-qa43-45.test.cjs",
+    "next": "prepare independent technical/OEM/safety/legal and publishing rights review queue for all 720, prioritize historical 369; no automatic publication or deletion."
+  },
+  "technical_qa46": {
+    "date": "2026-11-24",
+    "questions_in_specialist_queue": 720,
+    "option_count": 2880,
+    "firstpass_historical_source_supported": 351,
+    "historical_additional_review": 369,
+    "prior_editorial_rewrites_to_reaudit_current_version": 54,
+    "subject_holds": 55,
+    "independent_final_technical_approvals": 0,
+    "published_reconstructed_past": 0,
+    "published_expected_practice": 80,
+    "official_detailed_qnet_hwp_verified": false,
+    "source_relevance_expert_verified": false,
+    "rights_cleared_for_publication": false,
+    "automation": "tests/qa46-specialist-review-queue.test.cjs",
+    "artifact": "qa46-specialist-review-720",
+    "report": "docs/TECHNICAL_QA43_46.md",
+    "next": "independent source/answer/OEM/rights signoff per current item; official HWP syllabus; protected private backup and draft retirement separately"
   }
 }

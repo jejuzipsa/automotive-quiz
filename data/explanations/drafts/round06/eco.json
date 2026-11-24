@@ -1434,6 +1434,17 @@
         "verdict": "incorrect",
         "rationale": "종감속기는 기계적 회전속도/토크를 변경하는 장치이지 DC→AC 변환기가 아니다."
       }
-    ]
+    ],
+    "qa45_stale_hold_assessment": {
+      "date": "2026-11-24",
+      "stage": "historical_out_of_scope_reason_stale_after_QA2_rewrite",
+      "current_subject": "eco",
+      "current_study_focus": "traction-battery-DC_to_motor-3phase-AC_inverter",
+      "provisional_assessment": "subject_aligned_on_general_EV_drive_concept_but_not_official_syllabus_final",
+      "previous_reason_preserved": true,
+      "independent_final_technical_approval": false,
+      "rights_cleared": false,
+      "subject_hold_status": "hold_do_not_publish"
+    }
   }
 ]

@@ -1,1 +1,1182 @@
-[{"id":"auto-made-r05-s03-q01","question_id":"auto-made-r05-s03-q01","subject":"electrical","correct_answer":2,"correct_choice":"빨강·검정 프로브가 반대 극성에 닿았다","reason":"DC 전압 측정에서 리드의 기준 극성이 반대면 계기에 음수 부호가 표시된다. 값을 절댓값과 부호로 함께 해석한다.","key_point":"DC 전압 음수 표시 = 기준 프로브 극성 반대 가능.","source_question_id":"auto-r05-s03-q01","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.fluke.com/en/learn/blog/electrical/how-to-measure-dc-voltage-with-a-digital-multimeter"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"배터리의 실제 정격전압이 음수로 변했다","verdict":"incorrect","rationale":"실제 축전지 정격전압이 음수가 되는 것이 아니라 기준 극성에 따라 전압 표시 부호가 달라진다."},{"number":2,"text":"빨강·검정 프로브가 반대 극성에 닿았다","verdict":"correct","rationale":"검정/빨강 리드의 접촉 극성을 반대로 하면 정상 12V 전압도 음의 부호로 표시될 수 있다."},{"number":3,"text":"멀티미터는 모든 DC 전압에 음수를 표시한다","verdict":"incorrect","rationale":"디지털 멀티미터가 모든 DC 전압에서 음수만 표시하는 것은 아니다."},{"number":4,"text":"접지선이 없으면 항상 -12.6V가 나온다","verdict":"incorrect","rationale":"접지선 유무만으로 어떤 회로든 정확히 -12.6V를 표시하는 것은 아니다."}]},{"id":"auto-made-r05-s03-q02","question_id":"auto-made-r05-s03-q02","subject":"electrical","correct_answer":1,"correct_choice":"ABS 경고등이 켜지고 제어가 제한된다","reason":"휠 속도 정보가 불명확하면 제어기는 ABS 기능을 제한하고 경고를 표시할 수 있다. 배선·센서·톤휠을 구별해 진단한다.","key_point":"휠속도 신호 상실 → ABS 제한·경고 가능.","source_question_id":"auto-r05-s03-q02","original_issue_flags":["mixed_script_review","qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"ABS 경고등이 켜지고 제어가 제한된다","verdict":"correct","rationale":"휠속도 신호 이상으로 ABS 제어가 제한되고 경고가 발생할 수 있다."},{"number":2,"text":"엔진 실린더의 압축비가 바뀐다","verdict":"incorrect","rationale":"바퀴 속도센서 오류가 엔진 실린더의 기계적 압축비 자체를 바꾸지는 않는다."},{"number":3,"text":"12V 배터리의 실제 용량이 즉시 두 배가 된다","verdict":"incorrect","rationale":"ABS DTC 하나로 시동배터리 용량이 곧바로 두 배가 되지 않는다."},{"number":4,"text":"타이어 트레드 폭이 급감한다","verdict":"incorrect","rationale":"휠속도 신호 소실로 타이어 트레드 폭이 갑자기 줄어들지는 않는다."}]},{"id":"auto-made-r05-s03-q03","question_id":"auto-made-r05-s03-q03","subject":"electrical","correct_answer":1,"correct_choice":"자세제어 기능을 부분 또는 전체 제한한다","reason":"ESC는 차량의 실제 요율 신호가 필요하다. 센서 오류 시 잘못된 제동 개입을 막기 위해 기능을 제한하고 경고등을 켤 수 있다.","key_point":"요레이트 이상 → ESC 기능 제한 가능.","source_question_id":"auto-r05-s03-q03","original_issue_flags":["mixed_script_review","explanation_needs_review","qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"자세제어 기능을 부분 또는 전체 제한한다","verdict":"correct","rationale":"요레이트 값이 유효하지 않으면 ESC가 잘못된 개입을 피하도록 기능을 제한하고 경고할 수 있다."},{"number":2,"text":"브레이크액을 외부로 방출한다","verdict":"incorrect","rationale":"ESC 고장 모드가 브레이크액을 외부로 배출하는 정상 기능은 아니다."},{"number":3,"text":"연료탱크 압력을 항상 최대로 높인다","verdict":"incorrect","rationale":"요레이트 코드가 연료탱크 압력을 항상 최대치로 만드는 것은 아니다."},{"number":4,"text":"조향축의 물리적 길이를 줄인다","verdict":"incorrect","rationale":"센서 이상을 보호하기 위해 조향축의 물리 길이를 줄이는 제어는 없다."}]},{"id":"auto-made-r05-s03-q04","question_id":"auto-made-r05-s03-q04","subject":"electrical","correct_answer":4,"correct_choice":"정비 지침에 영점 보정이 지정됐는지 확인 후 수행","reason":"조향각 센서 교환이나 휠 정렬 작업 후 차종에 따라 영점 학습이 필요할 수 있다. 단순 ESC 수리 모두에 공통 의무는 아니다.","key_point":"조향각 영점학습은 차종·작업 조건 기준.","source_question_id":"auto-r05-s03-q04","original_issue_flags":["qa17_ocr_source_compared","source_esp_repair_steering_angle_calibration_not_always_required"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"],"final_technical_approval":false,"web_publication":false,"notes":"조향각 센서 교환 뒤 영점/학습 시점은 OEM별로 달라 통합 의무로 승인 금지"},"option_analysis_qa21":[{"number":1,"text":"연료 분사량을 최대로 설정","verdict":"incorrect","rationale":"점화·연료 분사량을 최대로 설정해도 조향각 센서 영점 학습을 해결할 수 없다."},{"number":2,"text":"타이어 공기압만 측정하면 보정은 필요 없다","verdict":"incorrect","rationale":"타이어 공기압만 측정하는 작업으로 센서 교체 후 모든 차종의 보정 의무를 배제하기 어렵다."},{"number":3,"text":"모든 ESC 부품을 교환하면 항상 같은 학습 절차","verdict":"incorrect","rationale":"ESC 수리를 한 모든 차량에 하나의 동일 학습 절차가 적용되지는 않는다."},{"number":4,"text":"정비 지침에 영점 보정이 지정됐는지 확인 후 수행","verdict":"correct","rationale":"제조사 해당 차종 정비지침에 지정된 조향각 센서 영점 보정과 확인 절차를 따른다."}]},{"id":"auto-made-r05-s03-q05","question_id":"auto-made-r05-s03-q05","subject":"electrical","correct_answer":2,"correct_choice":"장비와 차량 매뉴얼이 지정한 점화·통신 종료 조건을 따른다","reason":"진단 중 강제 분리는 통신 오류나 데이터 손상 가능성을 높일 수 있다. 연결과 해제는 장비·차량 절차를 기준으로 한다.","key_point":"스캔툴 해제도 장비·차량 지정 절차 준수.","source_question_id":"auto-r05-s03-q05","original_issue_flags":["qa17_ocr_source_compared","source_scan_tool_disconnect_while_ignition_on_requires_manual"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.boschdiagnostics.com/products/bosch-obd-1150"],"final_technical_approval":false,"web_publication":false,"notes":"특정 스캔툴 모델 연결·해제·점화절차 자료가 필요; 일반 OBD 제품 소개로는 완결 불가"},"option_analysis_qa21":[{"number":1,"text":"DLC 금속 핀끼리 단락 후 분리한다","verdict":"incorrect","rationale":"DLC 핀을 단락해 해제하는 방식은 통신·장비 손상 위험이 있다."},{"number":2,"text":"장비와 차량 매뉴얼이 지정한 점화·통신 종료 조건을 따른다","verdict":"correct","rationale":"장비·차종별 지정한 점화상태와 통신 종료 조건에서 진단기를 해제해야 한다."},{"number":3,"text":"어떤 장비든 통신 중 전원을 강제로 끊는다","verdict":"incorrect","rationale":"통신 중 강제 전원 차단이 모든 진단기의 안전한 해제법은 아니다."},{"number":4,"text":"배터리 플러스 단자를 누설 확인용으로 접지한다","verdict":"incorrect","rationale":"배터리 양극을 접지시키는 행동은 전기 회로 단락 위험이 있다."}]},{"id":"auto-made-r05-s03-q06","question_id":"auto-made-r05-s03-q06","subject":"electrical","correct_answer":4,"correct_choice":"요레이트·횡가속도 값과 센서 보정 상태","reason":"스캔툴은 ECU의 디지털 데이터와 보정상태·DTC를 확인한다. 물리적 타이어 마모는 별도의 측정 도구가 필요하다.","key_point":"스캐너: 전자 데이터 / 기계 마모: 별도 계측.","source_question_id":"auto-r05-s03-q06","original_issue_flags":["explanation_needs_review","qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"브레이크 패드 두께의 정밀 접촉측정","verdict":"incorrect","rationale":"브레이크 패드 실제 두께는 스캔툴 데이터만으로 직접 기계계측하기 어렵다."},{"number":2,"text":"타이어의 실제 물리적 마모 깊이 직접계측","verdict":"incorrect","rationale":"타이어 마모 깊이는 타이어 게이지 등 물리적 측정으로 확인해야 한다."},{"number":3,"text":"휠 베어링 유격의 기계적 흔들림 측정","verdict":"incorrect","rationale":"휠 베어링의 실제 기계적 유격은 현장 점검이 필요하다."},{"number":4,"text":"요레이트·횡가속도 값과 센서 보정 상태","verdict":"correct","rationale":"센서 교환 후 요레이트·횡가속도와 지원 학습 상태는 스캔툴에서 조회 가능하다."}]},{"id":"auto-made-r05-s03-q07","question_id":"auto-made-r05-s03-q07","subject":"electrical","correct_answer":2,"correct_choice":"현재 자동차관리법 및 시행규칙의 보고·시정절차","reason":"리콜 보고·시정조치의 시점과 절차는 현행 법령·공식 안내에 따라 확인해야 한다. 법령에 따른 담당기관과 신고 기한을 단정하기 전에 법 조문을 확인한다.","key_point":"리콜 의무는 적용 법령·기준 시점 확인.","source_question_id":"auto-r05-s03-q07","original_issue_flags":["qa17_ocr_source_compared","source_vehicle_recall_reporting_law_currentness_review"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.law.go.kr/LSW/lsInfoP.do?ancNo=21857&ancYd=20260804&efYd=20261002&lsiSeq=290737","https://www.law.go.kr/LSW/lsInfoP.do?ancYnChk=0&chrClsCd=010202&efYd=20260915&lsiSeq=289865&urlMode=lsInfoP"],"final_technical_approval":false,"web_publication":false,"notes":"자동차관리법 제31조·시행규칙 제41조 현행 조문 확인, 그러나 시험 과목/적용 기준일·개정 일정 검토 전 최종 승인 금지"},"option_analysis_qa21":[{"number":1,"text":"해외 법령을 한국 법령으로 그대로 적용","verdict":"incorrect","rationale":"국외 리콜 규정을 한국의 법령으로 직접 적용해서는 국내 신고/시정 절차를 검증할 수 없다."},{"number":2,"text":"현재 자동차관리법 및 시행규칙의 보고·시정절차","verdict":"correct","rationale":"국내 현행 자동차관리법과 시행규칙의 제작결함 공개·시정·보고 규정을 기준일에 맞춰 확인해야 한다."},{"number":3,"text":"출처가 오래된 단일 요약문만 사용","verdict":"incorrect","rationale":"오래된 요약문 하나로 2026년 시행 기준을 확정하는 것은 위험하다."},{"number":4,"text":"리콜 절차를 제조사 광고문구로 대체","verdict":"incorrect","rationale":"광고 문구는 법령상 제작결함 시정 의무와 시행절차를 대신하지 않는다."}]},{"id":"auto-made-r05-s03-q08","question_id":"auto-made-r05-s03-q08","subject":"electrical","correct_answer":4,"correct_choice":"냉각수 양·히터 코어로 가는 유량과 에어 포켓","reason":"히터 코어에 냉각수 흐름이 부족하거나 공기가 갇히면 열교환이 나빠질 수 있다. 블렌드도어와 난방 조절도 구별해 확인한다.","key_point":"히터 불량: 냉각수 유량·에어록·블렌드도어.","source_question_id":"auto-r05-s03-q08","original_issue_flags":["qa17_ocr_source_compared","source_heater_not_warm_first_check_multiple_causes"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"final_technical_approval":false,"web_publication":false,"notes":"공조 난방 유량과 블렌드도어 원인 감별은 차종별 냉각회로·실제 온도 조건 필요; 오답 지나치게 무관"},"option_analysis_qa21":[{"number":1,"text":"타이어 휠캡 지름","verdict":"incorrect","rationale":"타이어 휠캡 지름을 확인하는 것은 히터코어의 냉각수 유량 부족을 직접 진단하지 못한다."},{"number":2,"text":"실내 천장등의 색온도","verdict":"incorrect","rationale":"실내등 색온도는 히터 열교환기의 냉각수 유량과 무관하다."},{"number":3,"text":"후방카메라 화질","verdict":"incorrect","rationale":"후방카메라 해상도는 히터코어 난방 열량을 직접 나타내지 않는다."},{"number":4,"text":"냉각수 양·히터 코어로 가는 유량과 에어 포켓","verdict":"correct","rationale":"히터코어 유량·에어 포켓·냉각수량은 정상 수온에도 난방 부족을 초래할 수 있다."}]},{"id":"auto-made-r05-s03-q09","question_id":"auto-made-r05-s03-q09","subject":"electrical","correct_answer":1,"correct_choice":"냉매 수분과 이물 관리·액상 냉매 저장 역할","reason":"리시버드라이어는 시스템 구성에 따라 액상 냉매를 저장하고 수분·이물질을 제거한다. 압축작업은 컴프레서가 수행한다.","key_point":"리시버드라이어 ≠ 컴프레서.","source_question_id":"auto-r05-s03-q09","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"냉매 수분과 이물 관리·액상 냉매 저장 역할","verdict":"correct","rationale":"리시버드라이어는 냉매 저장·수분·이물 관리를 담당할 수 있다."},{"number":2,"text":"브레이크 압력을 배분","verdict":"incorrect","rationale":"제동압 분배 장치는 A/C 냉매 리시버드라이어의 기능이 아니다."},{"number":3,"text":"냉매를 기계적으로 고압 압축","verdict":"incorrect","rationale":"냉매를 기계적으로 압축하는 역할은 압축기이며 드라이어가 아니다."},{"number":4,"text":"엔진오일 점도를 측정","verdict":"incorrect","rationale":"엔진오일 점도 검사는 리시버드라이어의 냉매 처리 기능이 아니다."}]},{"id":"auto-made-r05-s03-q10","question_id":"auto-made-r05-s03-q10","subject":"electrical","correct_answer":3,"correct_choice":"실내 달콤한 냄새·바닥 습기·냉각수 감소","reason":"히터 코어는 엔진 냉각수를 이용하는 열교환기다. 누수는 실내 습기, 냉각수 손실과 특유 냄새로 나타날 수 있다.","key_point":"히터 코어 누수 → 냉각수 감소·실내 습기.","source_question_id":"auto-r05-s03-q10","original_issue_flags":["qa17_ocr_source_compared","source_similarity_with_r05s03q11_heater_core_leak"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"타이어 마모가 자동 회복","verdict":"incorrect","rationale":"히터코어 누수만으로 타이어 마모가 스스로 회복되지는 않는다."},{"number":2,"text":"연료 소비량이 반드시 감소","verdict":"incorrect","rationale":"실내 난방 냉각수 누수가 연료소비를 반드시 감소시킨다고 할 수 없다."},{"number":3,"text":"실내 달콤한 냄새·바닥 습기·냉각수 감소","verdict":"correct","rationale":"히터코어 누수는 냉각수 냄새·실내 바닥 습기·냉각수 손실과 연관될 수 있다."},{"number":4,"text":"연료 분사압력이 무조건 올라간다","verdict":"incorrect","rationale":"히터코어 누수만으로 연료 분사압이 무조건 상승하는 것은 아니다."}]},{"id":"auto-made-r05-s03-q11","question_id":"auto-made-r05-s03-q11","subject":"electrical","correct_answer":4,"correct_choice":"온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다","reason":"히터코어의 냉각수 열원이 확보돼 있는데 공조 온도설정 변경에 따라 송풍구 온도가 달라지지 않는 경우, 혼합도어(블렌드 도어)가 공기 유로를 적절히 바꾸는지 확인해야 한다. 액추에이터 명령·위치 신호, 링크의 걸림, 전원·접지와 제어기 DTC를 차종별 정비절차에 따라 비교한다. 히터코어 누설 여부를 묻던 같은 회차 10번과 다른 전기제어 진단 목표다.","key_point":"열원은 정상이나 온도조절이 안 되면 공조 혼합도어 액추에이터 명령·위치와 기구 걸림을 확인한다.","source_question_id":"auto-r05-s03-q11","original_issue_flags":["qa17_ocr_source_compared","source_similarity_with_r05s03q10_heater_core_leak"],"reference_urls":["https://static.nhtsa.gov/odi/tsbs/2021/MC-10194024-9999.pdf","https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","qa19_revision":{"date":"2026-11-23","status":"editorial_rewritten_pending_independent_technical_final_review","final_approved":false,"publishable":false},"editorial_revision":"qa19_content_repair","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://static.nhtsa.gov/odi/tsbs/2021/MC-10194024-9999.pdf","https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"final_technical_approval":false,"web_publication":false,"notes":"QA19 문안 재작성본의 신규 4선지 1차 대조; 구체적 액추에이터 구동값/초기화 조건 OEM 필요"},"option_analysis_qa21":[{"number":1,"text":"타이어 공기압과 구동축의 종감속비만 확인한다","verdict":"incorrect","rationale":"타이어 공기압·구동축 감속비는 블렌드도어의 명령/실제 개도 진단과 직접 관련이 적다."},{"number":2,"text":"브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다","verdict":"incorrect","rationale":"브레이크유 수분만으로 공조 온도도어 위치를 판정할 수 없다."},{"number":3,"text":"냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다","verdict":"incorrect","rationale":"히터코어 누수가 없더라도 블렌드도어 구동 이상은 발생할 수 있다."},{"number":4,"text":"온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다","verdict":"correct","rationale":"온도 혼합도어 액추에이터 명령·피드백과 기계적 걸림을 비교해야 한다."}]},{"id":"auto-made-r05-s03-q12","question_id":"auto-made-r05-s03-q12","subject":"electrical","correct_answer":3,"correct_choice":"냉각수 누설·에어빼기·히터 작동 확인","reason":"히터코어는 냉각수 계통과 연결되므로 새 코어와 호스의 누설 및 공기 제거가 중요하다. 공조 케이스 분해 범위에 따라 냉매 회수 필요성은 다를 수 있다.","key_point":"히터 코어 교환 후 냉각계 누설·에어빼기.","source_question_id":"auto-r05-s03-q12","original_issue_flags":["qa17_ocr_source_compared","source_heater_core_service_could_require_hvac_aircon_disconnect_varies"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"],"final_technical_approval":false,"web_publication":false,"notes":"일부 차종에서 냉매 배관 분리·HVAC 케이스 탈거 시 냉매회수 필요; OEM 절차 확인"},"option_analysis_qa21":[{"number":1,"text":"스티어링 각도 센서 영점만 설정","verdict":"incorrect","rationale":"히터코어 교환 후 조향각 센서만 학습해서 냉각수 누설 검증을 생략할 수 없다."},{"number":2,"text":"타이어 측면 마킹 확인만","verdict":"incorrect","rationale":"타이어 마킹 확인만으로 난방 냉각회로 복구를 확인할 수는 없다."},{"number":3,"text":"냉각수 누설·에어빼기·히터 작동 확인","verdict":"correct","rationale":"냉각수 누설/에어빼기 및 히터 기능은 교환 후 확인할 직접 점검 사항이다."},{"number":4,"text":"모든 차종에서 냉매를 반드시 회수해야만 완료","verdict":"incorrect","rationale":"히터코어 교환 시 모든 자동차의 냉매를 반드시 회수해야 하는 것은 아니다."}]},{"id":"auto-made-r05-s03-q13","question_id":"auto-made-r05-s03-q13","subject":"electrical","correct_answer":1,"correct_choice":"MAF 실측값과 목표 공기량·과급압력","reason":"흡기량 부족과 센서 오차는 공기-연료비를 악화해 매연과 출력 부족을 일으킬 수 있다. MAF 값은 EGR·과급·배선과 함께 검증한다.","key_point":"디젤 매연/출력 저하 → MAF·부스트·흡기 검사.","source_question_id":"auto-r05-s03-q13","original_issue_flags":["qa17_ocr_source_compared","source_airflow_sensor_smoke_link_depends_on_fuel_strategy"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","subject_classification_review":{"status":"hold_do_not_publish","current_subject":"electrical","suggested_subject":"engine","reason":"디젤 매연·흡기량 제어는 엔진 계통","classification_verdict":"pending_curriculum_specific_manual_review","qa2_manual_screening":"strong_conceptual_mismatch_pending_curriculum_check","qa2_proposed_action":"consider_reclassifying_to_engine","qa2_confidence":"likely_subject_change_not_officially_certified","qa2_syllabus_reference":"https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"},"editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"공기량/과급 데이터와 다른 진단 데이터를 구별","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.bosch-mobility.com/en/solutions/powertrain/diesel/common-rail-system-piezo/"],"final_technical_approval":false,"web_publication":false,"notes":"기존 과목분류 엔진 이탈 hold_do_not_publish 유지; MAF 목표값·EGR 적용 등 차종별 조건 필요"},"option_analysis_qa21":[{"number":1,"text":"MAF 실측값과 목표 공기량·과급압력","verdict":"correct","rationale":"MAF 실측·목표 공기량과 과급압을 비교하면 디젤의 실제 흡기 부족을 진단할 수 있다."},{"number":2,"text":"엔진오일 잔존 수명과 수온 표시","verdict":"incorrect","rationale":"오일 잔존수명과 수온 표시만으로 목표 흡입 공기량 오차를 구분하기 어렵다."},{"number":3,"text":"인젝터 코딩값과 주차브레이크 작동기록","verdict":"incorrect","rationale":"인젝터 코딩과 주차브레이크 이력만으로 공기량/과급압 차이를 직접 확인하지 못한다."},{"number":4,"text":"휠속도센서 주파수와 조향각 영점","verdict":"incorrect","rationale":"휠속도/조향각 영점으로 엔진 MAF 부족을 직접 판정하지 않는다."}]},{"id":"auto-made-r05-s03-q14","question_id":"auto-made-r05-s03-q14","subject":"electrical","correct_answer":1,"correct_choice":"해당 도어의 액추에이터와 커넥터·배선","reason":"개별 도어만 불량하면 국부적인 구동기, 기구 걸림 또는 연결 회로 문제 가능성이 높다. 구동 명령과 실제 동작을 비교한다.","key_point":"개별 도어 잠금 불량 → 도어별 구동계 점검.","source_question_id":"auto-r05-s03-q14","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"해당 도어의 액추에이터와 커넥터·배선","verdict":"correct","rationale":"한 도어만 고장이라면 해당 도어 액추에이터·커넥터·하네스가 우선 검사 대상이다."},{"number":2,"text":"엔진 크랭크축 센서","verdict":"incorrect","rationale":"CKP 센서는 엔진 회전 위치용이지 도어록을 구동하지 않는다."},{"number":3,"text":"ABS 유압모듈","verdict":"incorrect","rationale":"ABS 유압모듈은 도어 잠금 액추에이터가 아니다."},{"number":4,"text":"모든 도어의 유리 교환","verdict":"incorrect","rationale":"전 도어 유리를 교환하는 것은 개별 잠금 불량의 적절한 진단법이 아니다."}]},{"id":"auto-made-r05-s03-q15","question_id":"auto-made-r05-s03-q15","subject":"electrical","correct_answer":2,"correct_choice":"도어 스위치의 접점 상태 변화","reason":"도어 스위치 또는 래치 내 위치센서가 열림 상태를 감지한다. 제어 모듈은 이를 받아 실내등을 구동한다.","key_point":"도어 스위치 = 문 개폐 신호 입력.","source_question_id":"auto-r05-s03-q15","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"스티어링 휠 캐스터각","verdict":"incorrect","rationale":"캐스터각은 조향축 정렬각이며 도어열림 상태 전기신호가 아니다."},{"number":2,"text":"도어 스위치의 접점 상태 변화","verdict":"correct","rationale":"도어 스위치/래치 접점은 문 개폐를 전기적 상태로 보고할 수 있다."},{"number":3,"text":"배기관 산소 농도","verdict":"incorrect","rationale":"산소센서는 배기가스 성분 정보를 전달하고 도어 열림과 관계 없다."},{"number":4,"text":"엔진 냉각수 압력","verdict":"incorrect","rationale":"냉각수 압력은 실내등 도어 개폐 입력이 아니다."}]},{"id":"auto-made-r05-s03-q16","question_id":"auto-made-r05-s03-q16","subject":"electrical","correct_answer":3,"correct_choice":"윈도 위치 학습과 끼임방지 초기화 수행","reason":"원터치·끼임방지 기능은 기준 상·하단 위치 학습을 필요로 할 수 있다. 차량에 따라 초기화 방법이 다르다.","key_point":"원터치 기능 복구 → 위치 학습·초기화.","source_question_id":"auto-r05-s03-q16","original_issue_flags":["qa17_ocr_source_compared","source_window_auto_reset_which_models"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"],"final_technical_approval":false,"web_publication":false,"notes":"끼임방지 기능은 안전 관련; 학습/자동작동 조건 차종별 OEM 기준 우선"},"option_analysis_qa21":[{"number":1,"text":"퓨즈 정격을 임의 상향","verdict":"incorrect","rationale":"임의로 퓨즈 용량을 올리는 것은 원터치 학습 이상 해결법이 아니며 과전류 보호를 악화한다."},{"number":2,"text":"레귤레이터 케이블을 절단","verdict":"incorrect","rationale":"레귤레이터 케이블 절단은 창문 제어의 정상 복구 절차가 아니다."},{"number":3,"text":"윈도 위치 학습과 끼임방지 초기화 수행","verdict":"correct","rationale":"차종이 요구하면 윈도 위치/끼임방지 초기화 또는 학습을 실시해야 한다."},{"number":4,"text":"전동모터의 전원 극성을 무작위 전환","verdict":"incorrect","rationale":"모터 극성을 무작위로 바꾸는 것은 학습 절차를 대체하지 못한다."}]},{"id":"auto-made-r05-s03-q17","question_id":"auto-made-r05-s03-q17","subject":"electrical","correct_answer":4,"correct_choice":"원터치 설정·학습 상태와 스위치 신호","reason":"수동 움직임이 정상이면 기본 모터·전원은 일단 동작한다. 학습 상태, 도어 ECU의 스위치 신호와 오류코드를 확인한다.","key_point":"수동 정상·원터치 불량 → 학습/제어 입력.","source_question_id":"auto-r05-s03-q17","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"],"final_technical_approval":false,"web_publication":false,"notes":"모터·스위치의 차량별 one-touch 초기화 절차와 진단조건 확인 필요"},"option_analysis_qa21":[{"number":1,"text":"엔진오일 점도","verdict":"incorrect","rationale":"엔진오일 점도는 원터치 하강 학습을 직접 진단하는 항목이 아니다."},{"number":2,"text":"에어컨 고압측 냉매량","verdict":"incorrect","rationale":"A/C 냉매 고압측 압력은 파워윈도 원터치 명령 신호와 관련 없다."},{"number":3,"text":"브레이크액 비등점","verdict":"incorrect","rationale":"브레이크액 비등점은 파워윈도 스위치 입력을 직접 평가하지 못한다."},{"number":4,"text":"원터치 설정·학습 상태와 스위치 신호","verdict":"correct","rationale":"수동 조작 가능하고 원터치만 고장일 때는 해당 기능 학습 및 스위치 신호부터 점검한다."}]},{"id":"auto-made-r05-s03-q18","question_id":"auto-made-r05-s03-q18","subject":"electrical","correct_answer":4,"correct_choice":"공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다","reason":"여러 도어가 동시에 반응하지 않으면 제어기 출력과 공통 회로가 원인일 수 있다. 각 도어별 액추에이터도 확인해 범위를 좁혀야 한다.","key_point":"여러 도어 불량 → 공통 제어·전원 경로 점검.","source_question_id":"auto-r05-s03-q18","original_issue_flags":["qa17_ocr_source_compared","source_central_lock_other_doors_fault_multiple_possible_causes"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"다수 도어 동시불량의 공통회로 점검","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"source_supported_first_pass","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"],"final_technical_approval":false,"web_publication":false,"notes":"외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."},"option_analysis_qa21":[{"number":1,"text":"운전석 스위치만 교환하고 공통 신호를 확인하지 않는다","verdict":"incorrect","rationale":"여러 도어가 불량일 때 운전석 스위치만 무조건 교환하면 공통 문제를 놓칠 수 있다."},{"number":2,"text":"반응 없는 다른 도어 구동모터를 모두 동시에 교환한다","verdict":"incorrect","rationale":"모든 도어 구동기를 진단없이 한꺼번에 교환하는 것은 과잉수리다."},{"number":3,"text":"운전석 도어의 기계식 잠금 키만 조정한다","verdict":"incorrect","rationale":"기계식 키 위치만 조정해도 모든 도어 공통 전기 신호가 복구되는 것은 아니다."},{"number":4,"text":"공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다","verdict":"correct","rationale":"공통 명령·분기 전원/배선·각 도어 구동 상태를 함께 확인한다."}]},{"id":"auto-made-r05-s03-q19","question_id":"auto-made-r05-s03-q19","subject":"electrical","correct_answer":1,"correct_choice":"가이드 레일·구동 케이블의 오염·손상과 마찰","reason":"선루프 레일에 이물이나 윤활 불량, 케이블 손상이 있으면 저항과 소음이 증가한다. 장애물을 제거하고 지정 윤활·조정 절차를 따른다.","key_point":"선루프 거친 움직임 → 레일·케이블·윤활.","source_question_id":"auto-r05-s03-q19","original_issue_flags":["qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","editorial_revision":"technical_qa2_distractor_repair","distractor_review":{"review_status":"editorially_rewritten_not_technically_approved","change_note":"선루프 개폐 기계소음의 직접 요소","review_batch":"QA2","reviewed_choice_count":4},"technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"],"final_technical_approval":false,"web_publication":false,"notes":"참고한 파워윈도 자료는 선루프 레일 전용 OEM 직접 근거 아님; 쉬운 오답 품질 재검토"},"option_analysis_qa21":[{"number":1,"text":"가이드 레일·구동 케이블의 오염·손상과 마찰","verdict":"correct","rationale":"가이드레일·구동케이블 마모/이물은 선루프 구동시 저항·소음을 일으킬 수 있다."},{"number":2,"text":"열선 시트의 온도센서 출력","verdict":"incorrect","rationale":"시트 열선 센서 출력은 선루프 케이블 마찰의 직접 지표가 아니다."},{"number":3,"text":"선루프의 도장색만 보고 레일 마모를 판정","verdict":"incorrect","rationale":"유리 패널의 도장색만으로 슬라이드 레일 실제 마모를 알 수 없다."},{"number":4,"text":"ABS 휠속도센서의 신호위상만","verdict":"incorrect","rationale":"ABS 휠속도 위상은 선루프 기구의 기계적 소음과 직접 관련이 없다."}]},{"id":"auto-made-r05-s03-q20","question_id":"auto-made-r05-s03-q20","subject":"electrical","correct_answer":4,"correct_choice":"배수호스 내부의 물때만 존재하는 상태","reason":"선루프 소음은 기계 구동계와 패널 체결에서 많이 생긴다. 배수 막힘은 주로 누수·실내 젖음으로 나타나므로 별도 증상으로 구분한다.","key_point":"선루프 기계 소음 ↔ 구동/체결, 배수막힘 ↔ 누수.","source_question_id":"auto-r05-s03-q20","original_issue_flags":["question_number_needs_review","qa17_ocr_source_compared"],"reference_urls":[],"review_status":"editorial_draft","technical_answer_status":"pending_independent_review","technical_verification_qa21":{"batch":"QA21-r05-electrical","date":"2026-11-23","status":"needs_additional_model_or_syllabus_review","reviewed_options":4,"source_urls":["https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"],"final_technical_approval":false,"web_publication":false,"notes":"19번과 같은 선루프 기구소음 계열의 유사 학습목표; 독립 문제로 바꾸는 편집 검토와 선루프 OEM 기술자료 필요"},"option_analysis_qa21":[{"number":1,"text":"구동 케이블 이탈","verdict":"incorrect","rationale":"구동 케이블 이탈은 선루프 개폐시 덜컹거림 원인이 될 수 있다."},{"number":2,"text":"가이드 레일의 마모·변형","verdict":"incorrect","rationale":"가이드 레일 마모·변형도 기계적 선루프 소음 가능 원인이다."},{"number":3,"text":"유리 패널의 체결 볼트 풀림","verdict":"incorrect","rationale":"패널 볼트 풀림 역시 진동·덜컹거림의 가능한 직접 원인이다."},{"number":4,"text":"배수호스 내부의 물때만 존재하는 상태","verdict":"correct","rationale":"배수호스 물때만 존재하면 일반적으로 레일/구동계의 기계소음보다 누수 가능성이 우선이다."}]}]
+[
+  {
+    "id": "auto-made-r05-s03-q01",
+    "question_id": "auto-made-r05-s03-q01",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "빨강·검정 프로브가 반대 극성에 닿았다",
+    "reason": "DC 전압 측정에서 리드의 기준 극성이 반대면 계기에 음수 부호가 표시된다. 값을 절댓값과 부호로 함께 해석한다.",
+    "key_point": "DC 전압 음수 표시 = 기준 프로브 극성 반대 가능.",
+    "source_question_id": "auto-r05-s03-q01",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.fluke.com/en/learn/blog/electrical/how-to-measure-dc-voltage-with-a-digital-multimeter"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "배터리의 실제 정격전압이 음수로 변했다",
+        "verdict": "incorrect",
+        "rationale": "실제 축전지 정격전압이 음수가 되는 것이 아니라 기준 극성에 따라 전압 표시 부호가 달라진다."
+      },
+      {
+        "number": 2,
+        "text": "빨강·검정 프로브가 반대 극성에 닿았다",
+        "verdict": "correct",
+        "rationale": "검정/빨강 리드의 접촉 극성을 반대로 하면 정상 12V 전압도 음의 부호로 표시될 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "멀티미터는 모든 DC 전압에 음수를 표시한다",
+        "verdict": "incorrect",
+        "rationale": "디지털 멀티미터가 모든 DC 전압에서 음수만 표시하는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "접지선이 없으면 항상 -12.6V가 나온다",
+        "verdict": "incorrect",
+        "rationale": "접지선 유무만으로 어떤 회로든 정확히 -12.6V를 표시하는 것은 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q02",
+    "question_id": "auto-made-r05-s03-q02",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "ABS 경고등이 켜지고 제어가 제한된다",
+    "reason": "휠 속도 정보가 불명확하면 제어기는 ABS 기능을 제한하고 경고를 표시할 수 있다. 배선·센서·톤휠을 구별해 진단한다.",
+    "key_point": "휠속도 신호 상실 → ABS 제한·경고 가능.",
+    "source_question_id": "auto-r05-s03-q02",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "ABS 경고등이 켜지고 제어가 제한된다",
+        "verdict": "correct",
+        "rationale": "휠속도 신호 이상으로 ABS 제어가 제한되고 경고가 발생할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "엔진 실린더의 압축비가 바뀐다",
+        "verdict": "incorrect",
+        "rationale": "바퀴 속도센서 오류가 엔진 실린더의 기계적 압축비 자체를 바꾸지는 않는다."
+      },
+      {
+        "number": 3,
+        "text": "12V 배터리의 실제 용량이 즉시 두 배가 된다",
+        "verdict": "incorrect",
+        "rationale": "ABS DTC 하나로 시동배터리 용량이 곧바로 두 배가 되지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "타이어 트레드 폭이 급감한다",
+        "verdict": "incorrect",
+        "rationale": "휠속도 신호 소실로 타이어 트레드 폭이 갑자기 줄어들지는 않는다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q03",
+    "question_id": "auto-made-r05-s03-q03",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "자세제어 기능을 부분 또는 전체 제한한다",
+    "reason": "ESC는 차량의 실제 요율 신호가 필요하다. 센서 오류 시 잘못된 제동 개입을 막기 위해 기능을 제한하고 경고등을 켤 수 있다.",
+    "key_point": "요레이트 이상 → ESC 기능 제한 가능.",
+    "source_question_id": "auto-r05-s03-q03",
+    "original_issue_flags": [
+      "mixed_script_review",
+      "explanation_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "자세제어 기능을 부분 또는 전체 제한한다",
+        "verdict": "correct",
+        "rationale": "요레이트 값이 유효하지 않으면 ESC가 잘못된 개입을 피하도록 기능을 제한하고 경고할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "브레이크액을 외부로 방출한다",
+        "verdict": "incorrect",
+        "rationale": "ESC 고장 모드가 브레이크액을 외부로 배출하는 정상 기능은 아니다."
+      },
+      {
+        "number": 3,
+        "text": "연료탱크 압력을 항상 최대로 높인다",
+        "verdict": "incorrect",
+        "rationale": "요레이트 코드가 연료탱크 압력을 항상 최대치로 만드는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "조향축의 물리적 길이를 줄인다",
+        "verdict": "incorrect",
+        "rationale": "센서 이상을 보호하기 위해 조향축의 물리 길이를 줄이는 제어는 없다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q04",
+    "question_id": "auto-made-r05-s03-q04",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "정비 지침에 영점 보정이 지정됐는지 확인 후 수행",
+    "reason": "조향각 센서 교환이나 휠 정렬 작업 후 차종에 따라 영점 학습이 필요할 수 있다. 단순 ESC 수리 모두에 공통 의무는 아니다.",
+    "key_point": "조향각 영점학습은 차종·작업 조건 기준.",
+    "source_question_id": "auto-r05-s03-q04",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_esp_repair_steering_angle_calibration_not_always_required"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/microsite-electronics/en/Products/Steering-Torque-and-Angle-Sensor-4917/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "조향각 센서 교환 뒤 영점/학습 시점은 OEM별로 달라 통합 의무로 승인 금지"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "연료 분사량을 최대로 설정",
+        "verdict": "incorrect",
+        "rationale": "점화·연료 분사량을 최대로 설정해도 조향각 센서 영점 학습을 해결할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 공기압만 측정하면 보정은 필요 없다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압만 측정하는 작업으로 센서 교체 후 모든 차종의 보정 의무를 배제하기 어렵다."
+      },
+      {
+        "number": 3,
+        "text": "모든 ESC 부품을 교환하면 항상 같은 학습 절차",
+        "verdict": "incorrect",
+        "rationale": "ESC 수리를 한 모든 차량에 하나의 동일 학습 절차가 적용되지는 않는다."
+      },
+      {
+        "number": 4,
+        "text": "정비 지침에 영점 보정이 지정됐는지 확인 후 수행",
+        "verdict": "correct",
+        "rationale": "제조사 해당 차종 정비지침에 지정된 조향각 센서 영점 보정과 확인 절차를 따른다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q05",
+    "question_id": "auto-made-r05-s03-q05",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "장비와 차량 매뉴얼이 지정한 점화·통신 종료 조건을 따른다",
+    "reason": "진단 중 강제 분리는 통신 오류나 데이터 손상 가능성을 높일 수 있다. 연결과 해제는 장비·차량 절차를 기준으로 한다.",
+    "key_point": "스캔툴 해제도 장비·차량 지정 절차 준수.",
+    "source_question_id": "auto-r05-s03-q05",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_scan_tool_disconnect_while_ignition_on_requires_manual"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.boschdiagnostics.com/products/bosch-obd-1150"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "특정 스캔툴 모델 연결·해제·점화절차 자료가 필요; 일반 OBD 제품 소개로는 완결 불가"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "DLC 금속 핀끼리 단락 후 분리한다",
+        "verdict": "incorrect",
+        "rationale": "DLC 핀을 단락해 해제하는 방식은 통신·장비 손상 위험이 있다."
+      },
+      {
+        "number": 2,
+        "text": "장비와 차량 매뉴얼이 지정한 점화·통신 종료 조건을 따른다",
+        "verdict": "correct",
+        "rationale": "장비·차종별 지정한 점화상태와 통신 종료 조건에서 진단기를 해제해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "어떤 장비든 통신 중 전원을 강제로 끊는다",
+        "verdict": "incorrect",
+        "rationale": "통신 중 강제 전원 차단이 모든 진단기의 안전한 해제법은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "배터리 플러스 단자를 누설 확인용으로 접지한다",
+        "verdict": "incorrect",
+        "rationale": "배터리 양극을 접지시키는 행동은 전기 회로 단락 위험이 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q06",
+    "question_id": "auto-made-r05-s03-q06",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "요레이트·횡가속도 값과 센서 보정 상태",
+    "reason": "스캔툴은 ECU의 디지털 데이터와 보정상태·DTC를 확인한다. 물리적 타이어 마모는 별도의 측정 도구가 필요하다.",
+    "key_point": "스캐너: 전자 데이터 / 기계 마모: 별도 계측.",
+    "source_question_id": "auto-r05-s03-q06",
+    "original_issue_flags": [
+      "explanation_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/abs-esp-control-units-for-braking-and-driving-dynamics/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "브레이크 패드 두께의 정밀 접촉측정",
+        "verdict": "incorrect",
+        "rationale": "브레이크 패드 실제 두께는 스캔툴 데이터만으로 직접 기계계측하기 어렵다."
+      },
+      {
+        "number": 2,
+        "text": "타이어의 실제 물리적 마모 깊이 직접계측",
+        "verdict": "incorrect",
+        "rationale": "타이어 마모 깊이는 타이어 게이지 등 물리적 측정으로 확인해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "휠 베어링 유격의 기계적 흔들림 측정",
+        "verdict": "incorrect",
+        "rationale": "휠 베어링의 실제 기계적 유격은 현장 점검이 필요하다."
+      },
+      {
+        "number": 4,
+        "text": "요레이트·횡가속도 값과 센서 보정 상태",
+        "verdict": "correct",
+        "rationale": "센서 교환 후 요레이트·횡가속도와 지원 학습 상태는 스캔툴에서 조회 가능하다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q07",
+    "question_id": "auto-made-r05-s03-q07",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "현재 자동차관리법 및 시행규칙의 보고·시정절차",
+    "reason": "리콜 보고·시정조치의 시점과 절차는 현행 법령·공식 안내에 따라 확인해야 한다. 법령에 따른 담당기관과 신고 기한을 단정하기 전에 법 조문을 확인한다.",
+    "key_point": "리콜 의무는 적용 법령·기준 시점 확인.",
+    "source_question_id": "auto-r05-s03-q07",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_vehicle_recall_reporting_law_currentness_review"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.law.go.kr/LSW/lsInfoP.do?ancNo=21857&ancYd=20260804&efYd=20261002&lsiSeq=290737",
+        "https://www.law.go.kr/LSW/lsInfoP.do?ancYnChk=0&chrClsCd=010202&efYd=20260915&lsiSeq=289865&urlMode=lsInfoP"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "자동차관리법 제31조·시행규칙 제41조 현행 조문 확인, 그러나 시험 과목/적용 기준일·개정 일정 검토 전 최종 승인 금지"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "해외 법령을 한국 법령으로 그대로 적용",
+        "verdict": "incorrect",
+        "rationale": "국외 리콜 규정을 한국의 법령으로 직접 적용해서는 국내 신고/시정 절차를 검증할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "현재 자동차관리법 및 시행규칙의 보고·시정절차",
+        "verdict": "correct",
+        "rationale": "국내 현행 자동차관리법과 시행규칙의 제작결함 공개·시정·보고 규정을 기준일에 맞춰 확인해야 한다."
+      },
+      {
+        "number": 3,
+        "text": "출처가 오래된 단일 요약문만 사용",
+        "verdict": "incorrect",
+        "rationale": "오래된 요약문 하나로 2026년 시행 기준을 확정하는 것은 위험하다."
+      },
+      {
+        "number": 4,
+        "text": "리콜 절차를 제조사 광고문구로 대체",
+        "verdict": "incorrect",
+        "rationale": "광고 문구는 법령상 제작결함 시정 의무와 시행절차를 대신하지 않는다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q08",
+    "question_id": "auto-made-r05-s03-q08",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "냉각수 양·히터 코어로 가는 유량과 에어 포켓",
+    "reason": "히터 코어에 냉각수 흐름이 부족하거나 공기가 갇히면 열교환이 나빠질 수 있다. 블렌드도어와 난방 조절도 구별해 확인한다.",
+    "key_point": "히터 불량: 냉각수 유량·에어록·블렌드도어.",
+    "source_question_id": "auto-r05-s03-q08",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_heater_not_warm_first_check_multiple_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "공조 난방 유량과 블렌드도어 원인 감별은 차종별 냉각회로·실제 온도 조건 필요; 오답 지나치게 무관"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "타이어 휠캡 지름",
+        "verdict": "incorrect",
+        "rationale": "타이어 휠캡 지름을 확인하는 것은 히터코어의 냉각수 유량 부족을 직접 진단하지 못한다."
+      },
+      {
+        "number": 2,
+        "text": "실내 천장등의 색온도",
+        "verdict": "incorrect",
+        "rationale": "실내등 색온도는 히터 열교환기의 냉각수 유량과 무관하다."
+      },
+      {
+        "number": 3,
+        "text": "후방카메라 화질",
+        "verdict": "incorrect",
+        "rationale": "후방카메라 해상도는 히터코어 난방 열량을 직접 나타내지 않는다."
+      },
+      {
+        "number": 4,
+        "text": "냉각수 양·히터 코어로 가는 유량과 에어 포켓",
+        "verdict": "correct",
+        "rationale": "히터코어 유량·에어 포켓·냉각수량은 정상 수온에도 난방 부족을 초래할 수 있다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q09",
+    "question_id": "auto-made-r05-s03-q09",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "냉매 수분과 이물 관리·액상 냉매 저장 역할",
+    "reason": "리시버드라이어는 시스템 구성에 따라 액상 냉매를 저장하고 수분·이물질을 제거한다. 압축작업은 컴프레서가 수행한다.",
+    "key_point": "리시버드라이어 ≠ 컴프레서.",
+    "source_question_id": "auto-r05-s03-q09",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "냉매 수분과 이물 관리·액상 냉매 저장 역할",
+        "verdict": "correct",
+        "rationale": "리시버드라이어는 냉매 저장·수분·이물 관리를 담당할 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "브레이크 압력을 배분",
+        "verdict": "incorrect",
+        "rationale": "제동압 분배 장치는 A/C 냉매 리시버드라이어의 기능이 아니다."
+      },
+      {
+        "number": 3,
+        "text": "냉매를 기계적으로 고압 압축",
+        "verdict": "incorrect",
+        "rationale": "냉매를 기계적으로 압축하는 역할은 압축기이며 드라이어가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "엔진오일 점도를 측정",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 점도 검사는 리시버드라이어의 냉매 처리 기능이 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q10",
+    "question_id": "auto-made-r05-s03-q10",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "실내 달콤한 냄새·바닥 습기·냉각수 감소",
+    "reason": "히터 코어는 엔진 냉각수를 이용하는 열교환기다. 누수는 실내 습기, 냉각수 손실과 특유 냄새로 나타날 수 있다.",
+    "key_point": "히터 코어 누수 → 냉각수 감소·실내 습기.",
+    "source_question_id": "auto-r05-s03-q10",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_similarity_with_r05s03q11_heater_core_leak"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "타이어 마모가 자동 회복",
+        "verdict": "incorrect",
+        "rationale": "히터코어 누수만으로 타이어 마모가 스스로 회복되지는 않는다."
+      },
+      {
+        "number": 2,
+        "text": "연료 소비량이 반드시 감소",
+        "verdict": "incorrect",
+        "rationale": "실내 난방 냉각수 누수가 연료소비를 반드시 감소시킨다고 할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "실내 달콤한 냄새·바닥 습기·냉각수 감소",
+        "verdict": "correct",
+        "rationale": "히터코어 누수는 냉각수 냄새·실내 바닥 습기·냉각수 손실과 연관될 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "연료 분사압력이 무조건 올라간다",
+        "verdict": "incorrect",
+        "rationale": "히터코어 누수만으로 연료 분사압이 무조건 상승하는 것은 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q11",
+    "question_id": "auto-made-r05-s03-q11",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다",
+    "reason": "히터코어의 냉각수 열원이 확보돼 있는데 공조 온도설정 변경에 따라 송풍구 온도가 달라지지 않는 경우, 혼합도어(블렌드 도어)가 공기 유로를 적절히 바꾸는지 확인해야 한다. 액추에이터 명령·위치 신호, 링크의 걸림, 전원·접지와 제어기 DTC를 차종별 정비절차에 따라 비교한다. 히터코어 누설 여부를 묻던 같은 회차 10번과 다른 전기제어 진단 목표다.",
+    "key_point": "열원은 정상이나 온도조절이 안 되면 공조 혼합도어 액추에이터 명령·위치와 기구 걸림을 확인한다.",
+    "source_question_id": "auto-r05-s03-q11",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_similarity_with_r05s03q10_heater_core_leak"
+    ],
+    "reference_urls": [
+      "https://static.nhtsa.gov/odi/tsbs/2021/MC-10194024-9999.pdf",
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "qa19_revision": {
+      "date": "2026-11-23",
+      "status": "editorial_rewritten_pending_independent_technical_final_review",
+      "final_approved": false,
+      "publishable": false
+    },
+    "editorial_revision": "qa19_content_repair",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://static.nhtsa.gov/odi/tsbs/2021/MC-10194024-9999.pdf",
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "QA19 문안 재작성본의 신규 4선지 1차 대조; 구체적 액추에이터 구동값/초기화 조건 OEM 필요"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "타이어 공기압과 구동축의 종감속비만 확인한다",
+        "verdict": "incorrect",
+        "rationale": "타이어 공기압·구동축 감속비는 블렌드도어의 명령/실제 개도 진단과 직접 관련이 적다."
+      },
+      {
+        "number": 2,
+        "text": "브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다",
+        "verdict": "incorrect",
+        "rationale": "브레이크유 수분만으로 공조 온도도어 위치를 판정할 수 없다."
+      },
+      {
+        "number": 3,
+        "text": "냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다",
+        "verdict": "incorrect",
+        "rationale": "히터코어 누수가 없더라도 블렌드도어 구동 이상은 발생할 수 있다."
+      },
+      {
+        "number": 4,
+        "text": "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다",
+        "verdict": "correct",
+        "rationale": "온도 혼합도어 액추에이터 명령·피드백과 기계적 걸림을 비교해야 한다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q12",
+    "question_id": "auto-made-r05-s03-q12",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "냉각수 누설·에어빼기·히터 작동 확인",
+    "reason": "히터코어는 냉각수 계통과 연결되므로 새 코어와 호스의 누설 및 공기 제거가 중요하다. 공조 케이스 분해 범위에 따라 냉매 회수 필요성은 다를 수 있다.",
+    "key_point": "히터 코어 교환 후 냉각계 누설·에어빼기.",
+    "source_question_id": "auto-r05-s03-q12",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_heater_core_service_could_require_hvac_aircon_disconnect_varies"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/car-air-conditioning/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "일부 차종에서 냉매 배관 분리·HVAC 케이스 탈거 시 냉매회수 필요; OEM 절차 확인"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "스티어링 각도 센서 영점만 설정",
+        "verdict": "incorrect",
+        "rationale": "히터코어 교환 후 조향각 센서만 학습해서 냉각수 누설 검증을 생략할 수 없다."
+      },
+      {
+        "number": 2,
+        "text": "타이어 측면 마킹 확인만",
+        "verdict": "incorrect",
+        "rationale": "타이어 마킹 확인만으로 난방 냉각회로 복구를 확인할 수는 없다."
+      },
+      {
+        "number": 3,
+        "text": "냉각수 누설·에어빼기·히터 작동 확인",
+        "verdict": "correct",
+        "rationale": "냉각수 누설/에어빼기 및 히터 기능은 교환 후 확인할 직접 점검 사항이다."
+      },
+      {
+        "number": 4,
+        "text": "모든 차종에서 냉매를 반드시 회수해야만 완료",
+        "verdict": "incorrect",
+        "rationale": "히터코어 교환 시 모든 자동차의 냉매를 반드시 회수해야 하는 것은 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q13",
+    "question_id": "auto-made-r05-s03-q13",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "냉매압력 센서 신호와 컴프레서 구동허가·전원 및 관련 DTC를 비교한다",
+    "reason": "자동차 냉방 제어는 냉매 압력·온도·컴프레서 전기구동 허가 등 여러 조건을 고려한다. 냉매압력 관련 코드가 있으면 센서 회로·측정값·컴프레서 제어신호와 차량별 보호조건을 비교해야 하며, 냉매 회로 개방은 자격자와 안전기준에 따라 수행한다.",
+    "key_point": "A/C 작동 불량 → 냉매압력 센서·구동허가·전원 및 DTC 점검.",
+    "source_question_id": "auto-r05-s03-q13",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_airflow_sensor_smoke_link_depends_on_fuel_strategy"
+    ],
+    "reference_urls": [
+      "https://www.hella.com/techworld/en/technical/car-air-conditioning/change-air-conditioning-compressor/"
+    ],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "subject_classification_review": {
+      "status": "hold_do_not_publish",
+      "current_subject": "electrical",
+      "suggested_subject": "engine",
+      "reason": "디젤 매연·흡기량 제어는 엔진 계통",
+      "classification_verdict": "pending_curriculum_specific_manual_review",
+      "qa2_manual_screening": "strong_conceptual_mismatch_pending_curriculum_check",
+      "qa2_proposed_action": "consider_reclassifying_to_engine",
+      "qa2_confidence": "likely_subject_change_not_officially_certified",
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa44_current_question_may_fit_subject": true
+    },
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "공기량/과급 데이터와 다른 진단 데이터를 구별",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/change-air-conditioning-compressor/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "기존 과목분류 엔진 이탈 hold_do_not_publish 유지; MAF 목표값·EGR 적용 등 차종별 조건 필요"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "냉매압력 센서 신호와 컴프레서 구동허가·전원 및 관련 DTC를 비교한다",
+        "verdict": "correct",
+        "rationale": "냉매압력 신호와 구동허가가 맞지 않으면 컴프레서가 보호정지할 수 있어."
+      },
+      {
+        "number": 2,
+        "text": "엔진 연료분사 보정값만 지우면 냉매압력센서가 반드시 수리된다",
+        "verdict": "incorrect",
+        "rationale": "연료 분사 코드 삭제는 냉매압력 센서 신호수리와 다른 작업이야."
+      },
+      {
+        "number": 3,
+        "text": "ABS 유압모듈의 휠속도 파형만 점검해 냉방 불량을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "ABS 휠속도 회로만으로 에어컨 컴프레서 허가 조건을 확인할 수 없어."
+      },
+      {
+        "number": 4,
+        "text": "차체 휠 얼라인먼트 보정만 실시하면 냉매 압력신호 오류가 사라진다",
+        "verdict": "incorrect",
+        "rationale": "휠 정렬 조정은 냉매압력 전기신호의 오류를 수정하지 못해."
+      }
+    ],
+    "option_analysis_qa44": [
+      {
+        "number": 1,
+        "text": "냉매압력 센서 신호와 컴프레서 구동허가·전원 및 관련 DTC를 비교한다",
+        "verdict": "correct",
+        "rationale": "냉매압력 신호와 구동허가가 맞지 않으면 컴프레서가 보호정지할 수 있어."
+      },
+      {
+        "number": 2,
+        "text": "엔진 연료분사 보정값만 지우면 냉매압력센서가 반드시 수리된다",
+        "verdict": "incorrect",
+        "rationale": "연료 분사 코드 삭제는 냉매압력 센서 신호수리와 다른 작업이야."
+      },
+      {
+        "number": 3,
+        "text": "ABS 유압모듈의 휠속도 파형만 점검해 냉방 불량을 확정한다",
+        "verdict": "incorrect",
+        "rationale": "ABS 휠속도 회로만으로 에어컨 컴프레서 허가 조건을 확인할 수 없어."
+      },
+      {
+        "number": 4,
+        "text": "차체 휠 얼라인먼트 보정만 실시하면 냉매 압력신호 오류가 사라진다",
+        "verdict": "incorrect",
+        "rationale": "휠 정렬 조정은 냉매압력 전기신호의 오류를 수정하지 못해."
+      }
+    ],
+    "qa44_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "self_authored_electrical_subject_replacement",
+      "original_past_exam_wording": false,
+      "historical_audit_preserved": true,
+      "reference_urls": [
+        "https://www.hella.com/techworld/en/technical/car-air-conditioning/change-air-conditioning-compressor/"
+      ],
+      "final_independent_technical_approval": false,
+      "rights_cleared": false,
+      "publishable": false
+    }
+  },
+  {
+    "id": "auto-made-r05-s03-q14",
+    "question_id": "auto-made-r05-s03-q14",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "해당 도어의 액추에이터와 커넥터·배선",
+    "reason": "개별 도어만 불량하면 국부적인 구동기, 기구 걸림 또는 연결 회로 문제 가능성이 높다. 구동 명령과 실제 동작을 비교한다.",
+    "key_point": "개별 도어 잠금 불량 → 도어별 구동계 점검.",
+    "source_question_id": "auto-r05-s03-q14",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "해당 도어의 액추에이터와 커넥터·배선",
+        "verdict": "correct",
+        "rationale": "한 도어만 고장이라면 해당 도어 액추에이터·커넥터·하네스가 우선 검사 대상이다."
+      },
+      {
+        "number": 2,
+        "text": "엔진 크랭크축 센서",
+        "verdict": "incorrect",
+        "rationale": "CKP 센서는 엔진 회전 위치용이지 도어록을 구동하지 않는다."
+      },
+      {
+        "number": 3,
+        "text": "ABS 유압모듈",
+        "verdict": "incorrect",
+        "rationale": "ABS 유압모듈은 도어 잠금 액추에이터가 아니다."
+      },
+      {
+        "number": 4,
+        "text": "모든 도어의 유리 교환",
+        "verdict": "incorrect",
+        "rationale": "전 도어 유리를 교환하는 것은 개별 잠금 불량의 적절한 진단법이 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q15",
+    "question_id": "auto-made-r05-s03-q15",
+    "subject": "electrical",
+    "correct_answer": 2,
+    "correct_choice": "도어 스위치의 접점 상태 변화",
+    "reason": "도어 스위치 또는 래치 내 위치센서가 열림 상태를 감지한다. 제어 모듈은 이를 받아 실내등을 구동한다.",
+    "key_point": "도어 스위치 = 문 개폐 신호 입력.",
+    "source_question_id": "auto-r05-s03-q15",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "스티어링 휠 캐스터각",
+        "verdict": "incorrect",
+        "rationale": "캐스터각은 조향축 정렬각이며 도어열림 상태 전기신호가 아니다."
+      },
+      {
+        "number": 2,
+        "text": "도어 스위치의 접점 상태 변화",
+        "verdict": "correct",
+        "rationale": "도어 스위치/래치 접점은 문 개폐를 전기적 상태로 보고할 수 있다."
+      },
+      {
+        "number": 3,
+        "text": "배기관 산소 농도",
+        "verdict": "incorrect",
+        "rationale": "산소센서는 배기가스 성분 정보를 전달하고 도어 열림과 관계 없다."
+      },
+      {
+        "number": 4,
+        "text": "엔진 냉각수 압력",
+        "verdict": "incorrect",
+        "rationale": "냉각수 압력은 실내등 도어 개폐 입력이 아니다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q16",
+    "question_id": "auto-made-r05-s03-q16",
+    "subject": "electrical",
+    "correct_answer": 3,
+    "correct_choice": "윈도 위치 학습과 끼임방지 초기화 수행",
+    "reason": "원터치·끼임방지 기능은 기준 상·하단 위치 학습을 필요로 할 수 있다. 차량에 따라 초기화 방법이 다르다.",
+    "key_point": "원터치 기능 복구 → 위치 학습·초기화.",
+    "source_question_id": "auto-r05-s03-q16",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_window_auto_reset_which_models"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "끼임방지 기능은 안전 관련; 학습/자동작동 조건 차종별 OEM 기준 우선"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "퓨즈 정격을 임의 상향",
+        "verdict": "incorrect",
+        "rationale": "임의로 퓨즈 용량을 올리는 것은 원터치 학습 이상 해결법이 아니며 과전류 보호를 악화한다."
+      },
+      {
+        "number": 2,
+        "text": "레귤레이터 케이블을 절단",
+        "verdict": "incorrect",
+        "rationale": "레귤레이터 케이블 절단은 창문 제어의 정상 복구 절차가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "윈도 위치 학습과 끼임방지 초기화 수행",
+        "verdict": "correct",
+        "rationale": "차종이 요구하면 윈도 위치/끼임방지 초기화 또는 학습을 실시해야 한다."
+      },
+      {
+        "number": 4,
+        "text": "전동모터의 전원 극성을 무작위 전환",
+        "verdict": "incorrect",
+        "rationale": "모터 극성을 무작위로 바꾸는 것은 학습 절차를 대체하지 못한다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q17",
+    "question_id": "auto-made-r05-s03-q17",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "원터치 설정·학습 상태와 스위치 신호",
+    "reason": "수동 움직임이 정상이면 기본 모터·전원은 일단 동작한다. 학습 상태, 도어 ECU의 스위치 신호와 오류코드를 확인한다.",
+    "key_point": "수동 정상·원터치 불량 → 학습/제어 입력.",
+    "source_question_id": "auto-r05-s03-q17",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "모터·스위치의 차량별 one-touch 초기화 절차와 진단조건 확인 필요"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "엔진오일 점도",
+        "verdict": "incorrect",
+        "rationale": "엔진오일 점도는 원터치 하강 학습을 직접 진단하는 항목이 아니다."
+      },
+      {
+        "number": 2,
+        "text": "에어컨 고압측 냉매량",
+        "verdict": "incorrect",
+        "rationale": "A/C 냉매 고압측 압력은 파워윈도 원터치 명령 신호와 관련 없다."
+      },
+      {
+        "number": 3,
+        "text": "브레이크액 비등점",
+        "verdict": "incorrect",
+        "rationale": "브레이크액 비등점은 파워윈도 스위치 입력을 직접 평가하지 못한다."
+      },
+      {
+        "number": 4,
+        "text": "원터치 설정·학습 상태와 스위치 신호",
+        "verdict": "correct",
+        "rationale": "수동 조작 가능하고 원터치만 고장일 때는 해당 기능 학습 및 스위치 신호부터 점검한다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q18",
+    "question_id": "auto-made-r05-s03-q18",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다",
+    "reason": "여러 도어가 동시에 반응하지 않으면 제어기 출력과 공통 회로가 원인일 수 있다. 각 도어별 액추에이터도 확인해 범위를 좁혀야 한다.",
+    "key_point": "여러 도어 불량 → 공통 제어·전원 경로 점검.",
+    "source_question_id": "auto-r05-s03-q18",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared",
+      "source_central_lock_other_doors_fault_multiple_possible_causes"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "다수 도어 동시불량의 공통회로 점검",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "source_supported_first_pass",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/central-locking-system/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "외부 기술자료와 기본원리의 1차 참고 대조; 독립 최종 기술검수 아님."
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "운전석 스위치만 교환하고 공통 신호를 확인하지 않는다",
+        "verdict": "incorrect",
+        "rationale": "여러 도어가 불량일 때 운전석 스위치만 무조건 교환하면 공통 문제를 놓칠 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "반응 없는 다른 도어 구동모터를 모두 동시에 교환한다",
+        "verdict": "incorrect",
+        "rationale": "모든 도어 구동기를 진단없이 한꺼번에 교환하는 것은 과잉수리다."
+      },
+      {
+        "number": 3,
+        "text": "운전석 도어의 기계식 잠금 키만 조정한다",
+        "verdict": "incorrect",
+        "rationale": "기계식 키 위치만 조정해도 모든 도어 공통 전기 신호가 복구되는 것은 아니다."
+      },
+      {
+        "number": 4,
+        "text": "공통 잠금 명령·분기 배선과 다른 도어 구동전원을 확인한다",
+        "verdict": "correct",
+        "rationale": "공통 명령·분기 전원/배선·각 도어 구동 상태를 함께 확인한다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q19",
+    "question_id": "auto-made-r05-s03-q19",
+    "subject": "electrical",
+    "correct_answer": 1,
+    "correct_choice": "가이드 레일·구동 케이블의 오염·손상과 마찰",
+    "reason": "선루프 레일에 이물이나 윤활 불량, 케이블 손상이 있으면 저항과 소음이 증가한다. 장애물을 제거하고 지정 윤활·조정 절차를 따른다.",
+    "key_point": "선루프 거친 움직임 → 레일·케이블·윤활.",
+    "source_question_id": "auto-r05-s03-q19",
+    "original_issue_flags": [
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "editorial_revision": "technical_qa2_distractor_repair",
+    "distractor_review": {
+      "review_status": "editorially_rewritten_not_technically_approved",
+      "change_note": "선루프 개폐 기계소음의 직접 요소",
+      "review_batch": "QA2",
+      "reviewed_choice_count": 4
+    },
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "참고한 파워윈도 자료는 선루프 레일 전용 OEM 직접 근거 아님; 쉬운 오답 품질 재검토"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "가이드 레일·구동 케이블의 오염·손상과 마찰",
+        "verdict": "correct",
+        "rationale": "가이드레일·구동케이블 마모/이물은 선루프 구동시 저항·소음을 일으킬 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "열선 시트의 온도센서 출력",
+        "verdict": "incorrect",
+        "rationale": "시트 열선 센서 출력은 선루프 케이블 마찰의 직접 지표가 아니다."
+      },
+      {
+        "number": 3,
+        "text": "선루프의 도장색만 보고 레일 마모를 판정",
+        "verdict": "incorrect",
+        "rationale": "유리 패널의 도장색만으로 슬라이드 레일 실제 마모를 알 수 없다."
+      },
+      {
+        "number": 4,
+        "text": "ABS 휠속도센서의 신호위상만",
+        "verdict": "incorrect",
+        "rationale": "ABS 휠속도 위상은 선루프 기구의 기계적 소음과 직접 관련이 없다."
+      }
+    ]
+  },
+  {
+    "id": "auto-made-r05-s03-q20",
+    "question_id": "auto-made-r05-s03-q20",
+    "subject": "electrical",
+    "correct_answer": 4,
+    "correct_choice": "배수호스 내부의 물때만 존재하는 상태",
+    "reason": "선루프 소음은 기계 구동계와 패널 체결에서 많이 생긴다. 배수 막힘은 주로 누수·실내 젖음으로 나타나므로 별도 증상으로 구분한다.",
+    "key_point": "선루프 기계 소음 ↔ 구동/체결, 배수막힘 ↔ 누수.",
+    "source_question_id": "auto-r05-s03-q20",
+    "original_issue_flags": [
+      "question_number_needs_review",
+      "qa17_ocr_source_compared"
+    ],
+    "reference_urls": [],
+    "review_status": "editorial_draft",
+    "technical_answer_status": "pending_independent_review",
+    "technical_verification_qa21": {
+      "batch": "QA21-r05-electrical",
+      "date": "2026-11-23",
+      "status": "needs_additional_model_or_syllabus_review",
+      "reviewed_options": 4,
+      "source_urls": [
+        "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/electric-window-regulator/"
+      ],
+      "final_technical_approval": false,
+      "web_publication": false,
+      "notes": "19번과 같은 선루프 기구소음 계열의 유사 학습목표; 독립 문제로 바꾸는 편집 검토와 선루프 OEM 기술자료 필요"
+    },
+    "option_analysis_qa21": [
+      {
+        "number": 1,
+        "text": "구동 케이블 이탈",
+        "verdict": "incorrect",
+        "rationale": "구동 케이블 이탈은 선루프 개폐시 덜컹거림 원인이 될 수 있다."
+      },
+      {
+        "number": 2,
+        "text": "가이드 레일의 마모·변형",
+        "verdict": "incorrect",
+        "rationale": "가이드 레일 마모·변형도 기계적 선루프 소음 가능 원인이다."
+      },
+      {
+        "number": 3,
+        "text": "유리 패널의 체결 볼트 풀림",
+        "verdict": "incorrect",
+        "rationale": "패널 볼트 풀림 역시 진동·덜컹거림의 가능한 직접 원인이다."
+      },
+      {
+        "number": 4,
+        "text": "배수호스 내부의 물때만 존재하는 상태",
+        "verdict": "correct",
+        "rationale": "배수호스 물때만 존재하면 일반적으로 레일/구동계의 기계소음보다 누수 가능성이 우선이다."
+      }
+    ]
+  }
+]

@@ -11,6 +11,7 @@ assert.equal(ledger.historical_subject_holds_before,49);
 assert.equal(ledger.current_subject_holds_after,51);
 assert.deepEqual(ledger.modifications.map(x=>x.id).sort(),["auto-made-r03-s04-q16","auto-made-r03-s04-q17"].sort());
 const priorQA2=read("data/qa/technical-qa2-changes.json");
+const newerById=new Map([...read("data/qa/technical-qa43-remaining-scope-edits.json"),...read("data/qa/technical-qa45-overlap-edits.json")].map(x=>[x.id,x]));
 assert.ok(ledger.modifications.every(x=>!priorQA2.some(z=>z.id===x.id)),"QA2 history never overwritten");
 let total=0,supported=0,held=0;
 for(const [subject,expectedS,expectedH] of [["electrical",8,12],["eco",5,15]]){
@@ -22,21 +23,21 @@ for(const [subject,expectedS,expectedH] of [["electrical",8,12],["eco",5,15]]){
  assert.equal(audit.filter(x=>x.evidence_grade==="source_supported_first_pass").length,expectedS);
  assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,expectedH);
  for(let i=0;i<20;i++){
-  const q=qs[i],e=es[i],row=audit[i];
+  const q=qs[i],e=es[i],row=audit[i],latest=newerById.get(q.id);
   assert.equal(q.id,e.id);assert.equal(q.id,row.id);
   assert.equal(q.subject,subject);assert.equal(q.round,3);assert.equal(q.question_number,i+1);
-  assert.equal(q.track,"past");assert.equal(q.question,row.question_at_review);
-  assert.equal(row.correct_number,q.answer);assert.equal(row.correct_choice,q.choices[q.answer-1]);
-  assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,row.correct_choice);
+  assert.equal(q.track,"past");assert.equal(latest?latest.before.question:q.question,row.question_at_review);
+  assert.equal(row.correct_number,q.answer);assert.equal(row.correct_choice,latest?latest.before.correct_choice:q.choices[q.answer-1]);
+  assert.equal(e.correct_answer,q.answer);assert.equal(e.correct_choice,q.choices[q.answer-1]);
   assert.equal(q.technical_verification_qa17.status,row.evidence_grade);
   assert.equal(e.technical_verification_qa17.status,row.evidence_grade);
-  assert.deepEqual(e.option_analysis_qa17,row.options);
+  assert.deepEqual(e.option_analysis_qa17,latest?latest.after.option_analysis:row.options);
   assert.ok(row.source_urls.length>=1);
   assert.equal(row.options.length,4);assert.equal(row.final_technical_approval,false);
   assert.equal(row.web_publication,false);assert.equal(q.publishable,false);
   assert.equal(q.review_status,"editorial_draft");assert.equal(q.technical_answer_status,"pending_independent_review");
   for(let j=0;j<4;j++){
-   const o=row.options[j];assert.equal(o.number,j+1);assert.equal(o.text,q.choices[j]);
+   const o=row.options[j];assert.equal(o.number,j+1);assert.equal(o.text,latest?latest.before.choices[j]:q.choices[j]);
    assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");assert.ok(o.rationale.length>=14);total++;
   }
   if(row.evidence_grade==="source_supported_first_pass")supported++;else held++;

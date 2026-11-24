@@ -9,6 +9,7 @@ const es=read("data/explanations/drafts/round06/engine.json");
 const audit=read("data/qa/technical-qa23-r06-engine-option-audit.json");
 const ledger=read("data/qa/technical-qa23-r06-engine-edits-and-holds.json");
 const qa40ById=new Map(read("data/qa/technical-qa40-out-of-scope-replacements.json").map(x=>[x.id,x]));
+const qa44ById=new Map(read("data/qa/technical-qa44-later-scope-edits.json").map(x=>[x.id,x]));
 assert.equal(qs.length,20);assert.equal(es.length,20);assert.equal(audit.length,20);
 assert.equal(audit.filter(x=>x.evidence_grade==="source_supported_first_pass").length,8);
 assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,12);
@@ -27,7 +28,7 @@ assert.match(edit.after.question,/반경방향 유격/);
 assert.equal(edit.after.correct_choice,edit.after.choices[edit.after.answer-1]);
 let n=0;
 for(let i=0;i<20;i++){
- const q=qs[i],e=es[i],a=audit[i],later=qa40ById.get(q.id);
+ const q=qs[i],e=es[i],a=audit[i],later=qa44ById.get(q.id)||qa40ById.get(q.id);
  assert.equal(q.id,e.id);assert.equal(q.id,a.id);
  assert.equal(q.round,6);assert.equal(q.subject,"engine");assert.equal(q.question_number,i+1);
  assert.equal(a.question_at_review,later?later.before.question:q.question);assert.equal(a.correct_number,q.answer);

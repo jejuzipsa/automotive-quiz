@@ -1014,14 +1014,17 @@
     "question_id": "auto-made-r09-s04-q20",
     "subject": "eco",
     "correct_answer": 1,
-    "correct_choice": "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
-    "reason": "요소수는 열분해·가수분해로 암모니아를 공급하고 SCR 촉매에서 NOx를 질소와 물로 환원하도록 돕는다. DPF의 PM 포집 기능과 분리해야 한다.",
-    "key_point": "SCR+요소수 = NOx 환원, DPF = PM 포집.",
+    "correct_choice": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+    "reason": "연료전지차에서는 고압으로 저장된 수소를 연료전지 공급계통에 맞는 압력으로 제어하기 위해 감압 레귤레이터를 사용한다. 저장압·후단 압력 기준과 레귤레이터 구조는 차량 설계별로 다르며 수소 누출·압력 관련 작업은 OEM 전문안전절차가 필수다.",
+    "key_point": "FCEV 수소 감압 레귤레이터 → 저장 고압을 공급계통 요구압으로 낮춤.",
     "source_question_id": "auto-r09-s04-q20",
     "original_issue_flags": [
       "mixed_script_review"
     ],
-    "reference_urls": [],
+    "reference_urls": [
+      "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work",
+      "https://www.energy.gov/cmei/fuels/dispensing-hydrogen-fuel-vehicles"
+    ],
     "review_status": "editorial_draft",
     "technical_answer_status": "pending_independent_review",
     "subject_classification_review": {
@@ -1033,14 +1036,16 @@
       "qa2_manual_screening": "needs_official_detailed_curriculum_mapping",
       "qa2_proposed_action": "consider_reclassifying_to_engine",
       "qa2_confidence": "cross_disciplinary_not_confirmed",
-      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0"
+      "qa2_syllabus_reference": "https://www.q-net.or.kr/crf005.do?gId=&gSite=Q&id=crf00503s02&jmCd=2070&jmInfoDivCcd=B0",
+      "qa44_current_question_may_fit_subject": true
     },
     "technical_verification_qa37": {
       "status": "needs_additional_model_or_syllabus_review",
       "independent_final_technical_approval": false,
       "web_publication": false,
       "source_urls": [
-        "https://www.api.org/products-and-services/diesel-exhaust-fluid"
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work",
+        "https://www.energy.gov/cmei/fuels/dispensing-hydrogen-fuel-vehicles"
       ],
       "hold_reasons": [
         "디젤 SCR 요소수 NOx 환원은 엔진/배출가스 과목과 경계; 기존 hold_do_not_publish 보존"
@@ -1049,28 +1054,67 @@
     "option_analysis_qa37": [
       {
         "number": 1,
-        "text": "촉매에서 질소산화물(NOx)을 환원하기 위한 암모니아 생성",
+        "text": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
         "verdict": "correct",
-        "rationale": "요소수는 열분해·가수분해로 암모니아를 공급하고 SCR 촉매에서 NOx를 질소와 물로 환원하도록 돕는다. DPF의 PM 포집 기능과 분리해야 한다."
+        "rationale": "고압 수소를 스택에 적합한 공급압력으로 제어하는 부품이야."
       },
       {
         "number": 2,
-        "text": "DPF에 쌓인 PM을 직접 물리적으로 여과",
+        "text": "엔진 SCR 촉매의 요소수 분사장치",
         "verdict": "incorrect",
-        "rationale": "DPF는 PM 입자 포집이고 요소수 SCR NOx환원과 기능이 달라"
+        "rationale": "SCR 요소수 장치는 디젤 배기가스 질소산화물 저감 계통이야."
       },
       {
         "number": 3,
-        "text": "가솔린 점화플러그를 냉각",
+        "text": "구동모터의 회전자 위치센서 리졸버",
         "verdict": "incorrect",
-        "rationale": "점화플러그 냉각은 요소수 SCR 제어목적이 아니야"
+        "rationale": "리졸버는 모터 회전자 위치를 감지하며 수소 공급압력 감압장치가 아니야."
       },
       {
         "number": 4,
-        "text": "타이어 공기압을 낮춤",
+        "text": "전기차 구동배터리의 셀 밸런싱 회로",
         "verdict": "incorrect",
-        "rationale": "타이어 공기압 제어도 SCR의 기능과 무관해"
+        "rationale": "셀 밸런싱은 배터리 충전상태 편차를 관리하는 기능이야."
       }
-    ]
+    ],
+    "option_analysis_qa44": [
+      {
+        "number": 1,
+        "text": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+        "verdict": "correct",
+        "rationale": "고압 수소를 스택에 적합한 공급압력으로 제어하는 부품이야."
+      },
+      {
+        "number": 2,
+        "text": "엔진 SCR 촉매의 요소수 분사장치",
+        "verdict": "incorrect",
+        "rationale": "SCR 요소수 장치는 디젤 배기가스 질소산화물 저감 계통이야."
+      },
+      {
+        "number": 3,
+        "text": "구동모터의 회전자 위치센서 리졸버",
+        "verdict": "incorrect",
+        "rationale": "리졸버는 모터 회전자 위치를 감지하며 수소 공급압력 감압장치가 아니야."
+      },
+      {
+        "number": 4,
+        "text": "전기차 구동배터리의 셀 밸런싱 회로",
+        "verdict": "incorrect",
+        "rationale": "셀 밸런싱은 배터리 충전상태 편차를 관리하는 기능이야."
+      }
+    ],
+    "qa44_scope_rewrite": {
+      "date": "2026-11-24",
+      "scope": "self_authored_eco_subject_replacement",
+      "original_past_exam_wording": false,
+      "historical_audit_preserved": true,
+      "reference_urls": [
+        "https://afdc.energy.gov/vehicles/how-do-fuel-cell-electric-cars-work",
+        "https://www.energy.gov/cmei/fuels/dispensing-hydrogen-fuel-vehicles"
+      ],
+      "final_independent_technical_approval": false,
+      "rights_cleared": false,
+      "publishable": false
+    }
   }
 ]

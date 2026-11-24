@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const audit=read("data/qa/technical-qa4-chassis-r01-editorial-audit.json");
 const qa5ById=new Map(read("data/qa/technical-qa5-changes.json").map(x=>[x.id,x]));
+const qa43ById=new Map(read("data/qa/technical-qa43-remaining-scope-edits.json").map(x=>[x.id,x]));
 const q=read("data/past/drafts/chassis.json");
 const explanations=read("data/explanations/drafts/chassis.json");
 const ids=new Set(), exp=new Map(explanations.map(x=>[x.id,x]));
@@ -26,7 +27,7 @@ for(let i=0;i<20;i++){
   if(later){
     assert.equal(auditItem.question_at_review,later.before.question);
     assert.equal(item.question,later.after.question);
-  }else assert.equal(auditItem.question_at_review,item.question);
+  }else assert.equal(auditItem.question_at_review,qa43ById.has(item.id)?qa43ById.get(item.id).before.question:item.question);
   assert.equal(auditItem.recorded_answer_number,item.answer);
   assert.ok(!ids.has(item.id));ids.add(item.id);
   assert.equal(item.explanation_id,e.id);

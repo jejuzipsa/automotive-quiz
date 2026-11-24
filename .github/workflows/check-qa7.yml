@@ -66,10 +66,20 @@ jobs:
           node tests/technical-qa40.test.cjs
           node tests/technical-qa41.test.cjs
           node tests/technical-qa42.test.cjs
+          node tests/technical-qa43-45.test.cjs
+          QA46_REVIEW_OUT=qa46-specialist-queue.json node tests/qa46-specialist-review-queue.test.cjs
           QA39_SUBJECT_REPORT_OUT=qa39-subject-review.json node tests/qa39-subject-triage.test.cjs
           QA19_REPORT_OUT=qa19-review-queue.json node tests/qa19-round05-09-risk-queue.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs
           node tests/release-gate.test.cjs
+      - name: Upload QA46 720-question specialist review queue (not approved)
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: qa46-specialist-review-720
+          path: qa46-specialist-queue.json
+          if-no-files-found: warn
+          retention-days: 30
       - name: Upload QA39 55 hold provisional subject scope queue
         if: always()
         uses: actions/upload-artifact@v4

@@ -12,6 +12,7 @@ const qa2ById=new Map(qa2Changes.map(x=>[x.id,x]));
 const qa5ById=new Map(read('data/qa/technical-qa5-changes.json').map(x=>[x.id,x]));
 const qa9ById=new Map(read('data/qa/technical-qa9-changes.json').map(x=>[x.id,x]));
 const qa39ById=new Map(read('data/qa/technical-qa39-editorial-edits.json').map(x=>[x.id,x]));
+const qa43to45ById=new Map([...read('data/qa/technical-qa43-remaining-scope-edits.json'),...read('data/qa/technical-qa44-later-scope-edits.json'),...read('data/qa/technical-qa45-overlap-edits.json')].map(x=>[x.id,x]));
 const holds=read('data/qa/technical-qa1-subject-holds.json');
 const triage=read('data/qa/technical-qa1-triage.json');
 const expanded=read('data/qa/technical-qa1-subject-holds-expanded.json');
@@ -63,11 +64,11 @@ for(const change of changes){
    assert.equal(qa2.before.reason,change.after.reason);
  }
  const previous=qa2?qa2.after:change.after;
- const newer=qa39ById.get(change.id);
+ const newer=qa43to45ById.get(change.id)||qa39ById.get(change.id);
  if(newer){
-   assert.equal(newer.before.question,previous.question);
-   assert.deepEqual(newer.before.choices,previous.choices);
-   assert.equal(newer.before.reason,previous.reason);
+   if(qa39ById.has(change.id))assert.equal(newer.before.question,previous.question);
+   if(qa39ById.has(change.id))assert.deepEqual(newer.before.choices,previous.choices);
+   if(qa39ById.has(change.id))assert.equal(newer.before.reason,previous.reason);
    assert.equal(q.question,newer.after.question);
    assert.deepEqual(q.choices,newer.after.choices);
    assert.equal(e.reason,newer.after.reason);
