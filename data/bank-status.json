@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA46_specialist_review_queue_produced_with_no_independent_final_approvals",
+  "latest_qa_stage": "QA47_round01_balanced_first20_source_preflight_9_attempts__no_expert_approval",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2214,5 +2214,34 @@
     "artifact": "qa46-specialist-review-720",
     "report": "docs/TECHNICAL_QA43_46.md",
     "next": "independent source/answer/OEM/rights signoff per current item; official HWP syllabus; protected private backup and draft retirement separately"
+  },
+  "technical_qa47": {
+    "date": "2026-11-24",
+    "stage": "source_relevance_preflight_not_final_technical_approval",
+    "balanced_round01_sample": 20,
+    "subjects": 4,
+    "questions_per_subject": 5,
+    "options_in_packet": 80,
+    "source_url_relevance_attempted": 9,
+    "source_topic_general_supported": 5,
+    "source_topic_partial_support": 2,
+    "source_topic_mismatch": 1,
+    "source_url_unavailable": 1,
+    "source_url_not_checked": 11,
+    "mismatched_evidence_question_id": "auto-made-r01-s03-q12",
+    "historical_evidence_kept": true,
+    "independent_answer_uniqueness_approvals": 0,
+    "final_independent_technical_approvals_all_bank": 0,
+    "subject_holds_retained": 55,
+    "qnet_detailed_hwp_inspected": false,
+    "rights_cleared_for_publication": 0,
+    "published_reconstructed_past": 0,
+    "published_original_expected_practice": 80,
+    "manifest_unchanged": true,
+    "source_review_ledger": "data/qa/technical-qa47-first20-source-preflight.json",
+    "reviewer_packet_test": "tests/qa47-first20-source-review-packet.test.cjs",
+    "reviewer_packet_artifact": "qa47-first20-review-packet",
+    "report": "docs/TECHNICAL_QA47.md",
+    "next": "Review 11 unchecked source pages; independently assess all four options of 20 items using OEM and actual detailed Q-net HWP; no publication before rights and final approvals."
   }
 }
