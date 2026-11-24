@@ -1,0 +1,767 @@
+{
+  "kind": "QA63_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r09-s01-q03",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "디젤 배기가스 후처리에서 미세한 검댕 입자를 포집하는 장치는?",
+        "choices": [
+          "배기 필터의 다공성 매체를 사용하는 DPF",
+          "가솔린 증발가스 캐니스터",
+          "에어컨 리시버드라이어",
+          "엔진오일 오일필터 바이패스밸브만"
+        ],
+        "answer": 1,
+        "reason": "DPF는 디젤 배기 중 입자상물질(PM)을 필터 내부에 포집한다. 일정 조건에서 재생을 통해 축적된 그을음을 산화한다.",
+        "key_point": "DPF = 디젤 PM 포집·재생.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "배기 필터의 다공성 매체를 사용하는 DPF",
+            "verdict": "correct",
+            "rationale": "DPF는 디젤 배기 중 입자상물질(PM)을 필터 내부에 포집한다. 일정 조건에서 재생을 통해 축적된 그을음을 산화한다."
+          },
+          {
+            "number": 2,
+            "text": "가솔린 증발가스 캐니스터",
+            "verdict": "incorrect",
+            "rationale": "EVAP 캐니스터는 배기 입자 필터와 달라"
+          },
+          {
+            "number": 3,
+            "text": "에어컨 리시버드라이어",
+            "verdict": "incorrect",
+            "rationale": "리시버드라이어는 냉매 수분을 처리하는 부품이야"
+          },
+          {
+            "number": 4,
+            "text": "엔진오일 오일필터 바이패스밸브만",
+            "verdict": "incorrect",
+            "rationale": "엔진오일 필터 바이패스는 매연 포집 기능이 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "DPF에 가연성 그을음과 윤활유 첨가제 등에서 유래한 비가연성 회분이 쌓였다. 정상적인 그을음 재생에 관한 설명으로 옳은 것은?",
+        "choices": [
+          "그을음은 산화로 줄일 수 있으나 비가연성 회분은 남을 수 있다",
+          "그을음과 비가연성 회분은 반드시 모두 완전히 기체로 변한다",
+          "비가연성 회분만 제거되고 그을음은 항상 그대로 남는다",
+          "요소수 분사만으로 필터의 비가연성 회분이 모두 제거된다"
+        ],
+        "answer": 1,
+        "reason": "DPF의 정상적인 재생은 가연성 그을음을 산화해 포집량을 줄인다. 비가연성 회분은 일반 재생으로 제거되지 않을 수 있으며, 축적 상태에 따라 제조사가 지정한 세척·교환 기준을 적용한다.",
+        "key_point": "그을음 재생과 비가연성 회분 관리는 구별한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "그을음은 산화로 줄일 수 있으나 비가연성 회분은 남을 수 있다",
+            "verdict": "correct",
+            "rationale": "가연성 그을음의 산화와 비가연성 회분 잔류를 구분했다."
+          },
+          {
+            "number": 2,
+            "text": "그을음과 비가연성 회분은 반드시 모두 완전히 기체로 변한다",
+            "verdict": "incorrect",
+            "rationale": "비가연성 회분까지 일반 재생으로 완전히 제거된다고 볼 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "비가연성 회분만 제거되고 그을음은 항상 그대로 남는다",
+            "verdict": "incorrect",
+            "rationale": "재생은 주로 가연성 그을음을 산화하는 과정이다."
+          },
+          {
+            "number": 4,
+            "text": "요소수 분사만으로 필터의 비가연성 회분이 모두 제거된다",
+            "verdict": "incorrect",
+            "rationale": "요소수는 SCR에서 NOx 저감에 사용되며 회분 제거를 보장하지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s01-q14",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "크랭크축 메인 베어링을 교환한다. 캡 조립 중 꼭 맞춰야 할 사항은?",
+        "choices": [
+          "모든 캡을 순서 없이 임의로 교환",
+          "일회용 신장볼트를 무조건 계속 재사용",
+          "베어링 간극을 확인할 필요가 없다고 판정",
+          "기존 캡 위치·방향과 지정 체결 토크·순서"
+        ],
+        "answer": 4,
+        "reason": "베어링 캡은 블록에 맞춰 가공되므로 위치·방향이 중요하다. 정비 매뉴얼에 따른 조임과 오일 간극을 확인해야 한다.",
+        "key_point": "크랭크 베어링 캡은 지정 위치·방향·체결조건 준수.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 캡을 순서 없이 임의로 교환",
+            "verdict": "incorrect",
+            "rationale": "캡을 임의 교환하면 가공된 베어링 정렬이 어긋날 수 있어"
+          },
+          {
+            "number": 2,
+            "text": "일회용 신장볼트를 무조건 계속 재사용",
+            "verdict": "incorrect",
+            "rationale": "일회용 체결볼트를 무조건 재사용하면 파손 위험이 있어"
+          },
+          {
+            "number": 3,
+            "text": "베어링 간극을 확인할 필요가 없다고 판정",
+            "verdict": "incorrect",
+            "rationale": "베어링 간극은 윤활과 내구에 중요한 검사값이야"
+          },
+          {
+            "number": 4,
+            "text": "기존 캡 위치·방향과 지정 체결 토크·순서",
+            "verdict": "correct",
+            "rationale": "베어링 캡은 블록에 맞춰 가공되므로 위치·방향이 중요하다. 정비 매뉴얼에 따른 조임과 오일 간극을 확인해야 한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 크랭크축 메인 베어링에서 조립된 베어링 내경이 60.05mm, 저널 외경이 60.00mm이다. 두 지름의 차로 정의한 지름 간극은?",
+        "choices": [
+          "0.025mm",
+          "0.10mm",
+          "0.50mm",
+          "0.05mm"
+        ],
+        "answer": 4,
+        "reason": "지문에서 지름 간극을 베어링 내경과 저널 외경의 차로 정의했다. 60.05−60.00=0.05mm이다. 반경 간극은 별도 개념이며, 실제 판정은 지정 계측조건과 서비스 한계를 따른다.",
+        "key_point": "지름 간극 = 내경 − 외경.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0.025mm",
+            "verdict": "incorrect",
+            "rationale": "지름 간극의 절반인 반경 간극에 해당한다."
+          },
+          {
+            "number": 2,
+            "text": "0.10mm",
+            "verdict": "incorrect",
+            "rationale": "주어진 두 지름의 차보다 두 배 크다."
+          },
+          {
+            "number": 3,
+            "text": "0.50mm",
+            "verdict": "incorrect",
+            "rationale": "계산 결과보다 열 배 크다."
+          },
+          {
+            "number": 4,
+            "text": "0.05mm",
+            "verdict": "correct",
+            "rationale": "60.05−60.00=0.05mm이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s02-q15",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "ABS 유압 모듈레이터의 출력 밸브가 고장났다. 직접 영향받는 기능은?",
+        "choices": [
+          "연료 분사 시점 조절",
+          "제동 중 바퀴별 브레이크 압력 조절",
+          "도어 잠금 상태 저장",
+          "배터리 열관리용 펌프 작동"
+        ],
+        "answer": 2,
+        "reason": "모듈레이터는 ECU의 명령에 따라 바퀴 제동 회로의 압력을 유지·증가·감소시킨다. 고장은 잠김 방지 기능을 제한할 수 있다.",
+        "key_point": "ABS 모듈레이터 = 휠별 압력 제어.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "연료 분사 시점 조절",
+            "verdict": "incorrect",
+            "rationale": "연료분사 시기는 엔진 ECU 기능이며 ABS 유압밸브와 별개야"
+          },
+          {
+            "number": 2,
+            "text": "제동 중 바퀴별 브레이크 압력 조절",
+            "verdict": "correct",
+            "rationale": "모듈레이터는 ECU의 명령에 따라 바퀴 제동 회로의 압력을 유지·증가·감소시킨다. 고장은 잠김 방지 기능을 제한할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "도어 잠금 상태 저장",
+            "verdict": "incorrect",
+            "rationale": "도어 잠금저장은 차체 ECU 기능으로 ABS와 달라"
+          },
+          {
+            "number": 4,
+            "text": "배터리 열관리용 펌프 작동",
+            "verdict": "incorrect",
+            "rationale": "배터리 열관리 펌프는 브레이크 유압제어에 쓰이지 않아"
+          }
+        ]
+      },
+      "after": {
+        "question": "전통적인 유압식 ABS의 한 차륜 회로에서 입구밸브가 닫혀 있고 출구밸브가 열린 감압 단계라고 가정한다. 해당 차륜 실린더의 제동압력은 일반적으로 어떻게 변하는가?",
+        "choices": [
+          "압력이 공급원에 의해 계속 증가한다",
+          "유체가 저압측으로 이동하면서 압력이 감소한다",
+          "두 밸브가 모두 닫힌 유지 단계와 항상 같다",
+          "밸브 작동과 무관하게 항상 공급원 압력과 같다"
+        ],
+        "answer": 2,
+        "reason": "전통적인 유압식 ABS의 지정된 감압 단계에서는 입구밸브가 공급측을 차단하고 출구밸브가 저압측으로의 유로를 열어 차륜 회로 압력이 낮아진다. 실제 모듈레이터 구조와 밸브 작동 방식은 차종마다 다르다.",
+        "key_point": "해당 유압식 ABS 감압 단계는 공급 차단과 저압측 유로 개방으로 압력을 낮춘다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "압력이 공급원에 의해 계속 증가한다",
+            "verdict": "incorrect",
+            "rationale": "입구밸브가 닫힌 조건에서는 공급측 증압 단계가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "유체가 저압측으로 이동하면서 압력이 감소한다",
+            "verdict": "correct",
+            "rationale": "출구 유로가 열리면 차륜 압력이 낮아질 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "두 밸브가 모두 닫힌 유지 단계와 항상 같다",
+            "verdict": "incorrect",
+            "rationale": "두 밸브가 닫힌 압력 유지 단계와 다르다."
+          },
+          {
+            "number": 4,
+            "text": "밸브 작동과 무관하게 항상 공급원 압력과 같다",
+            "verdict": "incorrect",
+            "rationale": "밸브 상태는 차륜 압력에 영향을 준다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s03-q12",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "전압 12V이고 저항이 6Ω인 저항 부하에 흐르는 전류는?",
+        "choices": [
+          "72A",
+          "0.5A",
+          "6A",
+          "2A"
+        ],
+        "answer": 4,
+        "reason": "옴의 법칙 V=IR이므로 전류 I=V/R이다. 12V를 6Ω에 걸면 전류는 2A가 된다.",
+        "key_point": "옴의 법칙: 전류 I=전압 V/저항 R로 계산한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "72A",
+            "verdict": "incorrect",
+            "rationale": "72A는 옴의 법칙 I=12/6에 부합하지 않아"
+          },
+          {
+            "number": 2,
+            "text": "0.5A",
+            "verdict": "incorrect",
+            "rationale": "0.5A는 12V와 6Ω 조합의 계산결과가 아니야"
+          },
+          {
+            "number": 3,
+            "text": "6A",
+            "verdict": "incorrect",
+            "rationale": "6A는 실제 2A와 다르지"
+          },
+          {
+            "number": 4,
+            "text": "2A",
+            "verdict": "correct",
+            "rationale": "옴의 법칙 V=IR이므로 전류 I=V/R이다. 12V를 6Ω에 걸면 전류는 2A가 된다."
+          }
+        ]
+      },
+      "after": {
+        "question": "이상적인 12V 직류 회로에 4Ω과 8Ω의 저항을 직렬 연결했다. 8Ω 저항 양단의 전압은?",
+        "choices": [
+          "2V",
+          "4V",
+          "12V",
+          "8V"
+        ],
+        "answer": 4,
+        "reason": "합성저항은 12Ω이고 회로 전류는 12V÷12Ω=1A이다. 8Ω 저항의 전압강하는 1A×8Ω=8V이다. 배선 및 내부저항은 무시한 이상적인 조건이다.",
+        "key_point": "직렬 회로의 개별 전압강하는 공통 전류×개별 저항이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "2V",
+            "verdict": "incorrect",
+            "rationale": "주어진 직렬 회로에서 계산한 전압강하가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "4V",
+            "verdict": "incorrect",
+            "rationale": "4Ω 저항 양단의 전압강하이다."
+          },
+          {
+            "number": 3,
+            "text": "12V",
+            "verdict": "incorrect",
+            "rationale": "전체 전원 전압이다."
+          },
+          {
+            "number": 4,
+            "text": "8V",
+            "verdict": "correct",
+            "rationale": "1A×8Ω=8V이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s03-q13",
+      "kind": "clarify_measurement_safety",
+      "before": {
+        "question": "회로에 3A가 흐르고 접점 저항이 0.2Ω이다. 접점에 발생하는 전압강하는?",
+        "choices": [
+          "0V",
+          "3.2V",
+          "0.6V",
+          "15V"
+        ],
+        "answer": 3,
+        "reason": "옴의 법칙에 따라 접점 전압강하는 V=IR=3A×0.2Ω=0.6V이다. 저항은 부하 전류가 흐르는 상태에서 측정값을 비교해야 한다.",
+        "key_point": "전압강하 계산 V=IR.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0V",
+            "verdict": "incorrect",
+            "rationale": "0V면 부하 전류 3A·접촉 저항 0.2Ω의 전압강하를 설명 못 해"
+          },
+          {
+            "number": 2,
+            "text": "3.2V",
+            "verdict": "incorrect",
+            "rationale": "3.2V는 계산값 I×R과 맞지 않아"
+          },
+          {
+            "number": 3,
+            "text": "0.6V",
+            "verdict": "correct",
+            "rationale": "옴의 법칙에 따라 접점 전압강하는 V=IR=3A×0.2Ω=0.6V이다. 저항은 부하 전류가 흐르는 상태에서 측정값을 비교해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "15V",
+            "verdict": "incorrect",
+            "rationale": "15V도 3×0.2=0.6V와 달라"
+          }
+        ]
+      },
+      "after": {
+        "question": "회로에 3A가 흐르고 접점 저항이 0.2Ω이다. 접점에 발생하는 전압강하는?",
+        "choices": [
+          "0V",
+          "3.2V",
+          "0.6V",
+          "15V"
+        ],
+        "answer": 3,
+        "reason": "접점에 발생하는 전압강하는 옴의 법칙 V=IR로 계산한다. 3A×0.2Ω=0.6V이다. 실제 전압강하 측정은 지정 부하 작동 조건에서 접점 양단 전압을 확인한다. 저항계를 사용하는 저항 측정은 전원을 차단하고 제조사 지정 분리 조건을 확보한 뒤 수행하며, 통전 상태에서 저항계를 연결하지 않는다.",
+        "key_point": "전압강하 V=IR이며 통전 전압 측정과 무전원 저항 측정을 구분한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0V",
+            "verdict": "incorrect",
+            "rationale": "유한한 저항에 전류가 흐르므로 계산값은 0V가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "3.2V",
+            "verdict": "incorrect",
+            "rationale": "전류와 저항을 단순 합산한 값이다."
+          },
+          {
+            "number": 3,
+            "text": "0.6V",
+            "verdict": "correct",
+            "rationale": "3×0.2=0.6V이다."
+          },
+          {
+            "number": 4,
+            "text": "15V",
+            "verdict": "incorrect",
+            "rationale": "전류를 저항으로 나눈 수치이며 전압강하 식이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s03-q17",
+      "kind": "correct_explanation",
+      "before": {
+        "question": "냉방장치의 냉매 회로에 수분이 섞였다. 제습·이물 제거에 사용되는 부품은?",
+        "choices": [
+          "브레이크 압력 레귤레이터",
+          "스티어링 토크 센서",
+          "리시버드라이어의 건조제·필터 요소",
+          "배기관 삼원촉매"
+        ],
+        "answer": 3,
+        "reason": "리시버드라이어는 냉매 중 수분과 이물을 제거하고 일부 구성에서 액상 냉매를 저장한다. 열을 압축하는 기능은 컴프레서가 담당한다.",
+        "key_point": "리시버드라이어 = 냉매 수분·이물 관리.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "브레이크 압력 레귤레이터",
+            "verdict": "incorrect",
+            "rationale": "브레이크 압력레귤레이터는 냉매 수분 제거부품이 아니야"
+          },
+          {
+            "number": 2,
+            "text": "스티어링 토크 센서",
+            "verdict": "incorrect",
+            "rationale": "조향토크 센서는 냉매 건조필터가 아니야"
+          },
+          {
+            "number": 3,
+            "text": "리시버드라이어의 건조제·필터 요소",
+            "verdict": "correct",
+            "rationale": "리시버드라이어는 냉매 중 수분과 이물을 제거하고 일부 구성에서 액상 냉매를 저장한다. 열을 압축하는 기능은 컴프레서가 담당한다."
+          },
+          {
+            "number": 4,
+            "text": "배기관 삼원촉매",
+            "verdict": "incorrect",
+            "rationale": "삼원촉매도 공조 냉매 제습 목적이 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "냉방장치의 냉매 회로에 수분이 섞였다. 제습·이물 제거에 사용되는 부품은?",
+        "choices": [
+          "브레이크 압력 레귤레이터",
+          "스티어링 토크 센서",
+          "리시버드라이어의 건조제·필터 요소",
+          "배기관 삼원촉매"
+        ],
+        "answer": 3,
+        "reason": "리시버드라이어를 사용하는 냉매 회로에서 건조제와 필터는 수분 및 이물 제거에 기여하고, 리시버는 액상 냉매를 저장하는 기능도 수행한다. 컴프레서는 냉매 증기를 압축해 압력을 높이는 장치이며 열 자체를 압축하는 것은 아니다. 저압측 어큐뮬레이터를 사용하는 회로 등은 구성이 다르다.",
+        "key_point": "리시버드라이어의 건조제와 필터는 냉매 수분·이물 관리에 사용된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "브레이크 압력 레귤레이터",
+            "verdict": "incorrect",
+            "rationale": "브레이크 압력 조절기는 냉매 제습부품이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "스티어링 토크 센서",
+            "verdict": "incorrect",
+            "rationale": "조향 토크 센서는 냉매 건조제 장치가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "리시버드라이어의 건조제·필터 요소",
+            "verdict": "correct",
+            "rationale": "건조제와 필터가 수분 및 이물 제거에 관여한다."
+          },
+          {
+            "number": 4,
+            "text": "배기관 삼원촉매",
+            "verdict": "incorrect",
+            "rationale": "삼원촉매는 배기가스 후처리 장치이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s04-q02",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "하이브리드차가 감속할 때 구동 모터가 발전 모드로 바뀐다. 회수하는 에너지는?",
+        "choices": [
+          "엔진 윤활유를 전기에너지로 직접 변환",
+          "차량 운동에너지 일부를 전기에너지로 전환",
+          "제동 마찰열을 모두 100% 재충전",
+          "타이어 내부 공기량을 배터리에 저장"
+        ],
+        "answer": 2,
+        "reason": "회생제동은 바퀴의 운동 에너지 일부를 전기 발전으로 회수해 배터리에 저장한다. 마찰제동과 손실이 있어 모든 에너지를 회수하지는 못한다.",
+        "key_point": "회생제동 = 운동에너지 → 전기에너지.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 윤활유를 전기에너지로 직접 변환",
+            "verdict": "incorrect",
+            "rationale": "윤활유가 운동에너지를 전기로 직접 변환하지 않아"
+          },
+          {
+            "number": 2,
+            "text": "차량 운동에너지 일부를 전기에너지로 전환",
+            "verdict": "correct",
+            "rationale": "회생제동은 바퀴의 운동 에너지 일부를 전기 발전으로 회수해 배터리에 저장한다. 마찰제동과 손실이 있어 모든 에너지를 회수하지는 못한다."
+          },
+          {
+            "number": 3,
+            "text": "제동 마찰열을 모두 100% 재충전",
+            "verdict": "incorrect",
+            "rationale": "회생제동이 모든 마찰열을 100% 회수하는 건 아니야"
+          },
+          {
+            "number": 4,
+            "text": "타이어 내부 공기량을 배터리에 저장",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기 자체를 배터리에 저장하는 방식이 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "질량 1,500kg의 가상 전기차가 20m/s에서 10m/s로 감속한다. 운동에너지 감소량 중 50%가 배터리에 저장되고 다른 에너지 변화는 무시할 때 저장량은?",
+        "choices": [
+          "225kJ",
+          "112.5kJ",
+          "75kJ",
+          "300kJ"
+        ],
+        "answer": 2,
+        "reason": "운동에너지 감소량은 ½×1,500×(20²−10²)=225,000J=225kJ이다. 이 중 50%가 저장되므로 112.5kJ이다. 실제 회생제동은 배터리 충전 제한과 변환 손실, 제동 배분 등에 영향을 받는다.",
+        "key_point": "운동에너지 감소량은 ½m(v₁²−v₂²)이며 저장량은 주어진 효율을 곱한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "225kJ",
+            "verdict": "incorrect",
+            "rationale": "225kJ는 운동에너지 감소량 전체이다."
+          },
+          {
+            "number": 2,
+            "text": "112.5kJ",
+            "verdict": "correct",
+            "rationale": "225×0.5=112.5kJ이다."
+          },
+          {
+            "number": 3,
+            "text": "75kJ",
+            "verdict": "incorrect",
+            "rationale": "주어진 질량·속도·저장비율의 계산 결과가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "300kJ",
+            "verdict": "incorrect",
+            "rationale": "초기 운동에너지이며 저장량이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s04-q03",
+      "kind": "expand_stack_calculation",
+      "before": {
+        "question": "PEM 연료전지 셀 하나의 전압이 낮다. 스택 설계를 통해 필요한 출력을 확보하는 일반적 방법은?",
+        "choices": [
+          "각 셀을 점화플러그로 연소시키는 방법",
+          "단위 셀 여러 개를 직렬로 연결해 전압을 높인다",
+          "전압과 무관하게 셀 두께만 무한히 늘림",
+          "수소를 유압식 브레이크로 전환"
+        ],
+        "answer": 2,
+        "reason": "연료전지 스택은 MEA와 분리판 등으로 된 단위 전지를 반복 연결해 요구 전압과 출력을 확보한다. 일반적인 셀 전압은 낮으므로 다수 직렬 구성한다.",
+        "key_point": "연료전지 스택 = 다수의 단위 셀 조합.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "각 셀을 점화플러그로 연소시키는 방법",
+            "verdict": "incorrect",
+            "rationale": "연료전지는 스파크 플러그 연소로 전압을 높이지 않아"
+          },
+          {
+            "number": 2,
+            "text": "단위 셀 여러 개를 직렬로 연결해 전압을 높인다",
+            "verdict": "correct",
+            "rationale": "연료전지 스택은 MEA와 분리판 등으로 된 단위 전지를 반복 연결해 요구 전압과 출력을 확보한다. 일반적인 셀 전압은 낮으므로 다수 직렬 구성한다."
+          },
+          {
+            "number": 3,
+            "text": "전압과 무관하게 셀 두께만 무한히 늘림",
+            "verdict": "incorrect",
+            "rationale": "셀 두께를 무한히 늘려 스택전압을 확보하지 않아"
+          },
+          {
+            "number": 4,
+            "text": "수소를 유압식 브레이크로 전환",
+            "verdict": "incorrect",
+            "rationale": "유압 브레이크는 연료전지 셀 직렬연결 목적과 무관해"
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 PEM 연료전지 스택이 300개 단위셀을 직렬 연결하고 있으며 지정 부하 조건에서 모든 셀 전압이 0.7V이다. 스택 전압은?",
+        "choices": [
+          "0.7V",
+          "210V",
+          "300V",
+          "428.6V"
+        ],
+        "answer": 2,
+        "reason": "직렬 연결한 셀의 전압은 합산된다. 300×0.7=210V이다. 실제 운전에서는 개별 셀의 전압 편차와 부하 조건을 고려하며 출력은 전압과 전류를 함께 확인해야 한다.",
+        "key_point": "직렬 스택 전압은 개별 셀 전압의 합이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0.7V",
+            "verdict": "incorrect",
+            "rationale": "단위셀 하나의 전압이다."
+          },
+          {
+            "number": 2,
+            "text": "210V",
+            "verdict": "correct",
+            "rationale": "300×0.7=210V이다."
+          },
+          {
+            "number": 3,
+            "text": "300V",
+            "verdict": "incorrect",
+            "rationale": "단위셀 개수를 전압으로 잘못 사용했다."
+          },
+          {
+            "number": 4,
+            "text": "428.6V",
+            "verdict": "incorrect",
+            "rationale": "셀 개수를 전압으로 나눈 값이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s04-q16",
+      "kind": "clarify_thermal_management",
+      "before": {
+        "question": "두 전기차의 배터리 냉각 구성이 서로 다르다. 일반적으로 옳은 판단은?",
+        "choices": [
+          "모든 전기차는 하나의 표준 냉각 시스템만 사용",
+          "배터리는 온도에 관계없이 항상 같은 출력",
+          "공냉·수냉·히트펌프 등 모델에 따라 열관리 방식이 달라진다",
+          "냉각계가 없을수록 배터리 수명은 무조건 증가"
+        ],
+        "answer": 3,
+        "reason": "구동배터리 열관리 구조는 차량 성능과 배터리 설계에 따라 다양하다. 해당 모델의 냉각매체·펌프·밸브 및 소프트웨어 제어를 확인해야 한다.",
+        "key_point": "EV 배터리 냉각은 모델별로 다르게 설계된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 전기차는 하나의 표준 냉각 시스템만 사용",
+            "verdict": "incorrect",
+            "rationale": "모든 EV가 단일 표준 열관리 구조라는 일반화는 틀려"
+          },
+          {
+            "number": 2,
+            "text": "배터리는 온도에 관계없이 항상 같은 출력",
+            "verdict": "incorrect",
+            "rationale": "배터리 출력이 온도와 무관하다는 건 틀려"
+          },
+          {
+            "number": 3,
+            "text": "공냉·수냉·히트펌프 등 모델에 따라 열관리 방식이 달라진다",
+            "verdict": "correct",
+            "rationale": "구동배터리 열관리 구조는 차량 성능과 배터리 설계에 따라 다양하다. 해당 모델의 냉각매체·펌프·밸브 및 소프트웨어 제어를 확인해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "냉각계가 없을수록 배터리 수명은 무조건 증가",
+            "verdict": "incorrect",
+            "rationale": "냉각시스템이 없으면 수명이 무조건 증가한다는 건 틀려"
+          }
+        ]
+      },
+      "after": {
+        "question": "전기차 배터리 열관리 방식의 분류에 관한 설명으로 옳은 것은?",
+        "choices": [
+          "모든 차량은 동일한 액체 냉각회로만 사용한다",
+          "배터리 온도는 출력 제한과 관련이 없다",
+          "공랭·액랭 등의 배터리 열전달 방식과 냉매회로·히트펌프 연계 구성은 구별한다",
+          "열관리 장치가 없으면 배터리 수명이 반드시 늘어난다"
+        ],
+        "answer": 3,
+        "reason": "배터리의 열을 옮기는 방식에는 공랭, 액체 냉각 등 여러 설계가 있다. 차량에 따라 냉매회로 또는 히트펌프와 열교환기를 통해 연계할 수 있다. 히트펌프를 공기나 냉각수와 같은 냉각매체의 종류로 분류하면 부정확하다.",
+        "key_point": "냉각매체 및 열전달 방식과 차량 열관리 시스템의 연계 구조를 구분한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 차량은 동일한 액체 냉각회로만 사용한다",
+            "verdict": "incorrect",
+            "rationale": "열관리 구성은 차종별로 다르다."
+          },
+          {
+            "number": 2,
+            "text": "배터리 온도는 출력 제한과 관련이 없다",
+            "verdict": "incorrect",
+            "rationale": "온도는 배터리 출력 및 충전 제한에 영향을 줄 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "공랭·액랭 등의 배터리 열전달 방식과 냉매회로·히트펌프 연계 구성은 구별한다",
+            "verdict": "correct",
+            "rationale": "열전달 방식과 시스템 연계 구성의 차이를 설명했다."
+          },
+          {
+            "number": 4,
+            "text": "열관리 장치가 없으면 배터리 수명이 반드시 늘어난다",
+            "verdict": "incorrect",
+            "rationale": "열관리 장치 부재가 수명 개선을 보장하지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Historical references only; new examples and technical reasoning pending independent verification.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 9,
+    "answer_index_changes": 0,
+    "new_source_page_checks": 0
+  }
+}

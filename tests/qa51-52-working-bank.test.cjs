@@ -26,6 +26,10 @@ const qa61=read("data/qa/technical-qa61-round07-option-review.json");
 const qa61Edits=read("data/qa/technical-qa61-editorial-corrections.json");
 const qa62=read("data/qa/technical-qa62-round08-option-review.json");
 const qa62Edits=read("data/qa/technical-qa62-editorial-corrections.json");
+const qa63=read("data/qa/technical-qa63-round09-option-review.json");
+const qa63Edits=read("data/qa/technical-qa63-editorial-corrections.json");
+assert.equal(qa63.items.length,80);
+assert.equal(qa63Edits.items.length,9);
 assert.equal(qa62.items.length,80);
 assert.equal(qa62Edits.items.length,9);
 assert.equal(qa61.items.length,80);
@@ -45,13 +49,13 @@ assert.equal(qa53.items.length,40);
 assert.equal(qa53.items.filter(x=>x.editorial_hold).length,2);
 assert.equal(qa51.items.length,15);
 const coverage=new Map(),newReviews=new Map();
-for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40],["QA55",qa55,40],["QA56",qa56,20],["QA57",qa57,60],["QA58",qa58,80],["QA59",qa59,80],["QA60",qa60,80],["QA61",qa61,80],["QA62",qa62,80]]){
+for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",qa52,40],["QA53",qa53,40],["QA55",qa55,40],["QA56",qa56,20],["QA57",qa57,60],["QA58",qa58,80],["QA59",qa59,80],["QA60",qa60,80],["QA61",qa61,80],["QA62",qa62,80],["QA63",qa63,80]]){
  assert.equal(ledger.items.length,count);
  for(const item of ledger.items){assert.ok(!coverage.has(item.id),"duplicate coverage "+item.id);coverage.set(item.id,stage);}
 }
 for(const item of qa49.items){assert.equal(coverage.get(item.id),"QA47-49");newReviews.set(item.id,item);}
-for(const ledger of [qa50,qa52,qa53,qa55,qa56,qa57,qa58,qa59,qa60,qa61,qa62])for(const item of ledger.items)newReviews.set(item.id,item);
-assert.equal(coverage.size,640);
+for(const ledger of [qa50,qa52,qa53,qa55,qa56,qa57,qa58,qa59,qa60,qa61,qa62,qa63])for(const item of ledger.items)newReviews.set(item.id,item);
+assert.equal(coverage.size,720);
 const qa54=read("data/qa/technical-qa54-technical-corrections.json");
 assert.equal(qa54.items.length,2);
 const corrected=new Set(qa54.items.map(x=>x.id));
@@ -62,8 +66,9 @@ const qa59Corrected=new Set(qa59Edits.items.map(x=>x.id));
 const qa60Corrected=new Set(qa60Edits.items.map(x=>x.id));
 const qa61Corrected=new Set(qa61Edits.items.map(x=>x.id));
 const qa62Corrected=new Set(qa62Edits.items.map(x=>x.id));
-const edits=new Map([...qa51.items,...qa54.items,...qa55Edits.items,...qa57Edits.items,...qa58Edits.items,...qa59Edits.items,...qa60Edits.items,...qa61Edits.items,...qa62Edits.items].map(item=>[item.id,item]));
-assert.equal(edits.size,67);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
+const qa63Corrected=new Set(qa63Edits.items.map(x=>x.id));
+const edits=new Map([...qa51.items,...qa54.items,...qa55Edits.items,...qa57Edits.items,...qa58Edits.items,...qa59Edits.items,...qa60Edits.items,...qa61Edits.items,...qa62Edits.items,...qa63Edits.items].map(item=>[item.id,item]));
+assert.equal(edits.size,76);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
 const seen=new Set(),applied=new Set(),all=[],bySubject=Object.fromEntries(subjects.map(s=>[s,[]])),holds=[],batchQueue=[];
 const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9가-힣]/g,"");
 const exactStems=new Map(),answerTextGroups=new Map();
@@ -105,7 +110,7 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    currentAnalysis=patch.after.option_analysis;applied.add(id);
    q.qa51_revision={kind:patch.kind,previous_evidence_is_historical:true,expert_approved:false};
    e.qa51_revision=q.qa51_revision;
-   q.current_revision={stage:qa62Corrected.has(id)?"QA62":qa61Corrected.has(id)?"QA61":qa60Corrected.has(id)?"QA60":qa59Corrected.has(id)?"QA59":qa58Corrected.has(id)?"QA58":qa57Corrected.has(id)?"QA57":qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51",kind:patch.kind,previous_evidence_is_historical:true};
+   q.current_revision={stage:qa63Corrected.has(id)?"QA63":qa62Corrected.has(id)?"QA62":qa61Corrected.has(id)?"QA61":qa60Corrected.has(id)?"QA60":qa59Corrected.has(id)?"QA59":qa58Corrected.has(id)?"QA58":qa57Corrected.has(id)?"QA57":qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51",kind:patch.kind,previous_evidence_is_historical:true};
    e.current_revision=q.current_revision;
   }
   assert.ok(typeof q.question==="string"&&q.question.trim().length>5,id);
@@ -133,14 +138,14 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
    }
    if(coverage.get(id)==="QA52")assert.equal(review.version,patch?"qa51_revised":"baseline_current",id);
   }
-  assert.equal(coverage.has(id),round<=8,id+" coverage mismatch");
+  assert.equal(coverage.has(id),round<=9,id+" coverage mismatch");
   const hold=q.subject_classification_review?.status==="hold_do_not_publish";
   if(hold)holds.push(id);
   const extra=patch?.additional_reference?.url;
   const currentRefs=[...new Set([...refs,...(extra?[extra]:[])])];
-  const currentVersion=patch?(qa62Corrected.has(id)?"qa62_revised":qa61Corrected.has(id)?"qa61_revised":qa60Corrected.has(id)?"qa60_revised":qa59Corrected.has(id)?"qa59_revised":qa58Corrected.has(id)?"qa58_revised":qa57Corrected.has(id)?"qa57_revised":qa55Corrected.has(id)?"qa55_revised":corrected.has(id)?"qa54_revised":"qa51_revised"):"baseline_at_qa50";
+  const currentVersion=patch?(qa63Corrected.has(id)?"qa63_revised":qa62Corrected.has(id)?"qa62_revised":qa61Corrected.has(id)?"qa61_revised":qa60Corrected.has(id)?"qa60_revised":qa59Corrected.has(id)?"qa59_revised":qa58Corrected.has(id)?"qa58_revised":qa57Corrected.has(id)?"qa57_revised":qa55Corrected.has(id)?"qa55_revised":corrected.has(id)?"qa54_revised":"qa51_revised"):"baseline_at_qa50";
   q.current_version=currentVersion;e.current_version=currentVersion;
-  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?(qa62Corrected.has(id)?"QA62":qa61Corrected.has(id)?"QA61":qa60Corrected.has(id)?"QA60":qa59Corrected.has(id)?"QA59":qa58Corrected.has(id)?"QA58":qa57Corrected.has(id)?"QA57":qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51"):null,model_review_version:review?.version||null,current_option_analysis_version:currentVersion,prior_review_snapshot_retained:!!patch,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
+  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?(qa63Corrected.has(id)?"QA63":qa62Corrected.has(id)?"QA62":qa61Corrected.has(id)?"QA61":qa60Corrected.has(id)?"QA60":qa59Corrected.has(id)?"QA59":qa58Corrected.has(id)?"QA58":qa57Corrected.has(id)?"QA57":qa55Corrected.has(id)?"QA55":corrected.has(id)?"QA54":"QA51"):null,model_review_version:review?.version||null,current_option_analysis_version:currentVersion,prior_review_snapshot_retained:!!patch,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
   e.current_review=q.current_review;
   e.current_option_analysis=currentAnalysis;e.current_reference_urls=currentRefs;
   e.current_reference_status="Historical links and supplemental references from QA51/54/55/57; QA58/59 calculation and wording edits do not imply renewed evidence; QA60 and QA61 each include three supplemental search-excerpt references, QA62 one; not fully source-verified";
@@ -152,24 +157,24 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
   if(ans.length>=12){const key=subject+":"+ans;if(!answerTextGroups.has(key))answerTextGroups.set(key,[]);answerTextGroups.get(key).push(id);}
  }
 }
-assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,67);
-assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,640);
+assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,76);
+assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,720);
 assert.equal(all.filter(x=>x.editorial_hold).length,0);
-const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,80);
+const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,0);
 for(let round=2;round<=9;round++)for(let offset=0;offset<20;offset+=5){
  const items=subjects.flatMap(subject=>remaining.filter(x=>x.round===round&&x.subject===subject&&x.number>offset&&x.number<=offset+5));
  if(items.length===0)continue;
  assert.equal(items.length,20);
  batchQueue.push({batch:batchQueue.length+1,round,question_range:[offset+1,offset+5],status:"pending_model_logic_review",items});
 }
-assert.equal(batchQueue.length,4);
-assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,80);
+assert.equal(batchQueue.length,0);
+assert.equal(new Set(batchQueue.flatMap(b=>b.items.map(x=>x.id))).size,0);
 const exactCandidates=[...exactStems.entries()].filter(([,ids])=>ids.length>1).map(([stem,ids])=>({stem,ids}));
 const sharedAnswerCandidates=[...answerTextGroups.entries()].filter(([,ids])=>ids.length>1).map(([key,ids])=>({key,ids}));
 const manifest=read("data/manifest.json");
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")&&!b.file.includes("qa51")&&!b.file.includes("qa52")));
 assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);
-const summary={kind:"QA62_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:67,model_logic_reviewed_questions:640,model_logic_reviewed_options:2560,pending_model_questions:80,pending_model_options:320,pending_batches:4,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 640 model-reviewed questions are not independently approved.","The QA62 working view supersedes old draft text for the 67 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
+const summary={kind:"QA63_WORKING_BANK_ALL_MODEL_REVIEWED_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:76,model_logic_reviewed_questions:720,model_logic_reviewed_options:2880,pending_model_questions:0,pending_model_options:0,pending_batches:0,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 720 model-reviewed questions are not independently approved.","The QA63 working view supersedes old draft text for the 76 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
 if(process.env.QA52_OUT_DIR){
  const out=path.resolve(root,process.env.QA52_OUT_DIR);
  const write=(p,x)=>{const dest=path.join(out,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify(x,null,2)+"\n");};
@@ -182,4 +187,4 @@ if(process.env.QA52_OUT_DIR){
  write("remaining-batches.json",batchQueue.map(({items,...b})=>({...b,ids:items.map(x=>x.id)})));
  for(const b of batchQueue)write("batches/batch-"+String(b.batch).padStart(2,"0")+".json",b);
 }
-console.log("PASS QA62 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
+console.log("PASS QA63 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
