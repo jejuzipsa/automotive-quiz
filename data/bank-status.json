@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA63_all_720_model_review_complete",
+  "latest_qa_stage": "QA64_current_bank_quality_screening",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2499,5 +2499,20 @@
     "revision_ledger": "data/qa/technical-qa63-editorial-corrections.json",
     "working_bank_artifact": "qa63-working-bank-all-720-model-reviewed",
     "next": "QA64 whole-current-bank semantic duplicate and distractor quality triage; other release gates remain"
+  },
+  "technical_qa64": {
+    "date": "2026-11-24",
+    "questions": 720,
+    "pair_comparisons": 258840,
+    "manual_comparisons": 6,
+    "manual_duplicate_confirmed": 2,
+    "total_versioned_revisions": 76,
+    "subject_holds": 55,
+    "independent_final_approvals": 0,
+    "published_expected": 80,
+    "published_new": 0,
+    "artifact": "qa64-quality-triage-720",
+    "screening_not_approval": true,
+    "next": "QA65 prioritized duplicates/distractors; QA66 explanations; select release-eligible original practice only"
   }
 }
