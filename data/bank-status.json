@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA43_45_remaining18_and3_overlap_rewrites_legacy_inverter_recheck_all_holds_pending_expert",
+  "latest_qa_stage": "QA46_specialist_review_queue_produced_with_no_independent_final_approvals",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2195,5 +2195,24 @@
     "legacy_hold_record": "data/qa/technical-qa45-stale-hold-review.json",
     "tests": "tests/technical-qa43-45.test.cjs",
     "next": "prepare independent technical/OEM/safety/legal and publishing rights review queue for all 720, prioritize historical 369; no automatic publication or deletion."
+  },
+  "technical_qa46": {
+    "date": "2026-11-24",
+    "questions_in_specialist_queue": 720,
+    "option_count": 2880,
+    "firstpass_historical_source_supported": 351,
+    "historical_additional_review": 369,
+    "prior_editorial_rewrites_to_reaudit_current_version": 54,
+    "subject_holds": 55,
+    "independent_final_technical_approvals": 0,
+    "published_reconstructed_past": 0,
+    "published_expected_practice": 80,
+    "official_detailed_qnet_hwp_verified": false,
+    "source_relevance_expert_verified": false,
+    "rights_cleared_for_publication": false,
+    "automation": "tests/qa46-specialist-review-queue.test.cjs",
+    "artifact": "qa46-specialist-review-720",
+    "report": "docs/TECHNICAL_QA43_46.md",
+    "next": "independent source/answer/OEM/rights signoff per current item; official HWP syllabus; protected private backup and draft retirement separately"
   }
 }
