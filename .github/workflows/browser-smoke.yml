@@ -24,7 +24,7 @@ concurrency:
 
 jobs:
   local-browser:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright 1.56.1 supported runner; avoid ubuntu-latest 26.04
     timeout-minutes: 12
     steps:
       - uses: actions/checkout@v4
@@ -55,7 +55,7 @@ jobs:
 
   deployed-browser:
     if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04 # Playwright 1.56.1 supported runner; avoid ubuntu-latest 26.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
