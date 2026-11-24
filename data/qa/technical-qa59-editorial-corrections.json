@@ -1,0 +1,515 @@
+{
+  "kind": "QA59_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r05-s01-q03",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "터보 압력을 스캔툴로 비교할 때 측정 조건의 신뢰성을 높이는 방법은?",
+        "choices": [
+          "대기압 보정값을 항상 0으로 고정한다",
+          "운전 조건을 무시하고 값 하나만 읽는다",
+          "목표·실측 압력과 엔진 부하·회전수를 함께 기록한다",
+          "도어락 작동을 과급압력으로 환산한다"
+        ],
+        "answer": 3,
+        "reason": "과급압력 데이터는 회전수와 스로틀·부하, 대기압 등에 따라 달라진다. 고정된 하나의 공회전 수치만으로 고장 여부를 판단하지 않는다.",
+        "key_point": "부스트 진단: 목표/실제·RPM·부하·대기압.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "대기압 보정값을 항상 0으로 고정한다",
+            "verdict": "incorrect",
+            "rationale": "대기압과 부스트 센서 표현이 다른 차종이 있어 일괄적으로 대기보정값을 0으로 고정할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "운전 조건을 무시하고 값 하나만 읽는다",
+            "verdict": "incorrect",
+            "rationale": "부하·회전수·스로틀 개도에 따라 과급 목표와 실제값이 달라지므로 한 수치만으로 확정하기 어렵다."
+          },
+          {
+            "number": 3,
+            "text": "목표·실측 압력과 엔진 부하·회전수를 함께 기록한다",
+            "verdict": "correct",
+            "rationale": "목표·실제 과급압을 엔진 부하와 RPM 등 동일 조건에서 비교하면 저과급 원인 분석이 가능하다."
+          },
+          {
+            "number": 4,
+            "text": "도어락 작동을 과급압력으로 환산한다",
+            "verdict": "incorrect",
+            "rationale": "도어잠금 동작은 흡기 과급압 측정값이 아니므로 직접 환산할 수 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "대기압이 100kPa이고 스캔툴의 흡기 매니폴드 절대압력이 180kPa이다. 대기압 기준 게이지 과급압력은?",
+        "choices": [
+          "280kPa",
+          "180kPa",
+          "80kPa",
+          "100kPa"
+        ],
+        "answer": 3,
+        "reason": "게이지압력은 절대압력에서 대기압을 뺀 값이다. 180−100=80kPa이다. 실제 진단 시 목표값과 실측값의 압력 기준 및 단위를 일치시켜야 한다.",
+        "key_point": "게이지압력 = 절대압력 − 대기압.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "280kPa",
+            "verdict": "incorrect",
+            "rationale": "절대압력과 대기압을 더한 값이다."
+          },
+          {
+            "number": 2,
+            "text": "180kPa",
+            "verdict": "incorrect",
+            "rationale": "지문에 주어진 절대압력이다."
+          },
+          {
+            "number": 3,
+            "text": "80kPa",
+            "verdict": "correct",
+            "rationale": "180−100=80kPa이다."
+          },
+          {
+            "number": 4,
+            "text": "100kPa",
+            "verdict": "incorrect",
+            "rationale": "지문에 주어진 대기압이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s01-q17",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "밸브 간극 규정에 냉간 측정이라고 명시된 엔진이다. 적절한 측정 조건은?",
+        "choices": [
+          "엔진이 충분히 냉각된 뒤 규정 위치에서 측정한다",
+          "뜨거운 배기매니폴드 상태에서 무조건 측정",
+          "시동이 걸린 채로 필러게이지를 끼운다",
+          "정비사 임의 온도로 규정값을 적용한다"
+        ],
+        "answer": 1,
+        "reason": "엔진 부품은 열팽창하므로 냉간 기준 규정이라면 냉각 상태에서 측정해야 한다. 고온 측정 규격을 제시한 엔진에는 다른 조건을 적용한다.",
+        "key_point": "밸브 간극 측정 온도는 제조사 기준.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진이 충분히 냉각된 뒤 규정 위치에서 측정한다",
+            "verdict": "correct",
+            "rationale": "차량 서비스매뉴얼에서 냉간 밸브 간극으로 정했다면 충분히 식힌 뒤 규정 위치에서 검사한다."
+          },
+          {
+            "number": 2,
+            "text": "뜨거운 배기매니폴드 상태에서 무조건 측정",
+            "verdict": "incorrect",
+            "rationale": "고온 배기매니폴드의 온도에서 모두 측정해야 하는 것은 냉간 지정과 맞지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "시동이 걸린 채로 필러게이지를 끼운다",
+            "verdict": "incorrect",
+            "rationale": "시동 중 필러게이지를 끼우면 회전부 사고 위험이 있어 정상 조정 방법이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "정비사 임의 온도로 규정값을 적용한다",
+            "verdict": "incorrect",
+            "rationale": "제조사 정해진 온도조건을 무시하고 임의 온도로 측정한 값을 냉간 규격에 적용하면 오차가 생긴다."
+          }
+        ]
+      },
+      "after": {
+        "question": "제조사가 지정한 냉간 조건에서 밸브 간극을 0.20~0.30mm로 규정했다. 동일 조건에서 측정한 값이 0.15mm라면 올바른 판정은?",
+        "choices": [
+          "규정 최소값보다 0.05mm 작으므로 간극이 부족하다",
+          "규정 최대값보다 0.05mm 크므로 간극이 과다하다",
+          "규정 범위 안이므로 정상이다",
+          "측정값이 최소값보다 0.15mm 크다"
+        ],
+        "answer": 1,
+        "reason": "0.15mm는 규정 최소값 0.20mm보다 0.05mm 작다. 따라서 간극이 부족하다. 조정 방법과 재측정은 해당 엔진의 구조 및 제조사 절차에 따른다.",
+        "key_point": "지정 조건에서 실제 밸브 간극을 규정 범위와 비교한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "규정 최소값보다 0.05mm 작으므로 간극이 부족하다",
+            "verdict": "correct",
+            "rationale": "0.20−0.15=0.05mm이므로 규정 미달이다."
+          },
+          {
+            "number": 2,
+            "text": "규정 최대값보다 0.05mm 크므로 간극이 과다하다",
+            "verdict": "incorrect",
+            "rationale": "측정값은 최대값보다 작다."
+          },
+          {
+            "number": 3,
+            "text": "규정 범위 안이므로 정상이다",
+            "verdict": "incorrect",
+            "rationale": "0.15mm는 0.20~0.30mm 범위 밖이다."
+          },
+          {
+            "number": 4,
+            "text": "측정값이 최소값보다 0.15mm 크다",
+            "verdict": "incorrect",
+            "rationale": "측정값은 최소값보다 작으며 차이는 0.05mm이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s02-q03",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "변속기 스캐너 화면에는 계산값이 표시되지만 직접 분해 측정 없이 확정하기 어려운 항목은?",
+        "choices": [
+          "마찰 클러치 디스크의 실제 마모 두께",
+          "유압 솔레노이드의 제어 명령",
+          "입력축 회전수",
+          "변속기 오일 온도"
+        ],
+        "answer": 1,
+        "reason": "스캔툴은 센서와 제어기 데이터를 읽는다. 클러치의 물리적 마모 두께는 전용 센서가 없으면 일반 진단 데이터만으로 직접 측정되지 않는다.",
+        "key_point": "스캐너는 물리적 마찰재 두께를 보통 직접 측정하지 못함.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "마찰 클러치 디스크의 실제 마모 두께",
+            "verdict": "correct",
+            "rationale": "클러치 디스크의 물리적 마모 두께는 일반 스캐너의 계산값만으로 실측 확정하기 어렵다."
+          },
+          {
+            "number": 2,
+            "text": "유압 솔레노이드의 제어 명령",
+            "verdict": "incorrect",
+            "rationale": "제어기 지원 시 유압 솔레노이드 제어명령은 스캔툴로 확인할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "입력축 회전수",
+            "verdict": "incorrect",
+            "rationale": "입력축 회전수 센서값은 지원되는 변속기 진단 데이터다."
+          },
+          {
+            "number": 4,
+            "text": "변속기 오일 온도",
+            "verdict": "incorrect",
+            "rationale": "ATF 온도센서 값은 스캐너의 일반적인 변속기 상태 정보다."
+          }
+        ]
+      },
+      "after": {
+        "question": "자동변속기에서 록업 클러치가 완전히 결합하도록 지령된 상태이다. 엔진측 회전수 1,800rpm, 터빈측 회전수 1,650rpm일 때 두 회전수의 차이는?",
+        "choices": [
+          "150rpm",
+          "3,450rpm",
+          "1,650rpm",
+          "1,800rpm"
+        ],
+        "answer": 1,
+        "reason": "두 회전수의 차이는 1,800−1,650=150rpm이다. 이 값만으로 고장을 확정할 수 없으며, 실제 판정은 지정된 록업 제어 상태와 허용 슬립 및 센서 정의를 확인한다.",
+        "key_point": "엔진측과 터빈측 회전수의 차이를 계산한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "150rpm",
+            "verdict": "correct",
+            "rationale": "1,800−1,650=150rpm이다."
+          },
+          {
+            "number": 2,
+            "text": "3,450rpm",
+            "verdict": "incorrect",
+            "rationale": "두 회전수의 합이다."
+          },
+          {
+            "number": 3,
+            "text": "1,650rpm",
+            "verdict": "incorrect",
+            "rationale": "터빈측 회전수 자체이다."
+          },
+          {
+            "number": 4,
+            "text": "1,800rpm",
+            "verdict": "incorrect",
+            "rationale": "엔진측 회전수 자체이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s03-q02",
+      "kind": "clarify_sensor_and_diagnosis",
+      "before": {
+        "question": "차속센서가 주행 중 간헐적으로 신호를 잃고 ABS 관련 코드가 저장됐다. 흔히 나타날 수 있는 반응은?",
+        "choices": [
+          "ABS 경고등이 켜지고 제어가 제한된다",
+          "엔진 실린더의 압축비가 바뀐다",
+          "12V 배터리의 실제 용량이 즉시 두 배가 된다",
+          "타이어 트레드 폭이 급감한다"
+        ],
+        "answer": 1,
+        "reason": "휠 속도 정보가 불명확하면 제어기는 ABS 기능을 제한하고 경고를 표시할 수 있다. 배선·센서·톤휠을 구별해 진단한다.",
+        "key_point": "휠속도 신호 상실 → ABS 제한·경고 가능.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "ABS 경고등이 켜지고 제어가 제한된다",
+            "verdict": "correct",
+            "rationale": "휠속도 신호 이상으로 ABS 제어가 제한되고 경고가 발생할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "엔진 실린더의 압축비가 바뀐다",
+            "verdict": "incorrect",
+            "rationale": "바퀴 속도센서 오류가 엔진 실린더의 기계적 압축비 자체를 바꾸지는 않는다."
+          },
+          {
+            "number": 3,
+            "text": "12V 배터리의 실제 용량이 즉시 두 배가 된다",
+            "verdict": "incorrect",
+            "rationale": "ABS DTC 하나로 시동배터리 용량이 곧바로 두 배가 되지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 트레드 폭이 급감한다",
+            "verdict": "incorrect",
+            "rationale": "휠속도 신호 소실로 타이어 트레드 폭이 갑자기 줄어들지는 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "ABS가 각 바퀴의 속도를 감시하는 차량에서 한 바퀴의 휠속도 센서 신호가 간헐적으로 끊기고 관련 DTC가 저장됐다. 예상할 수 있는 제어기 반응은?",
+        "choices": [
+          "ABS 경고등이 켜지고 제어가 제한된다",
+          "엔진 실린더의 압축비가 바뀐다",
+          "12V 배터리의 실제 용량이 즉시 두 배가 된다",
+          "타이어 트레드 폭이 급감한다"
+        ],
+        "answer": 1,
+        "reason": "개별 휠속도 정보가 불명확하면 ABS 제어기가 해당 신호의 이상을 감지해 경고등을 점등하거나 관련 기능을 제한할 수 있다. 차속센서와 개별 휠속도 센서는 차량 구조에 따라 구분하며, 실제 보호 동작 및 센서·배선·엔코더 진단은 제조사 정보를 따른다.",
+        "key_point": "휠속도 입력 이상은 ABS 기능 제한 및 경고의 원인이 될 수 있다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "ABS 경고등이 켜지고 제어가 제한된다",
+            "verdict": "correct",
+            "rationale": "휠속도 신호 이상에 대해 경고 및 기능 제한이 발생할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "엔진 실린더의 압축비가 바뀐다",
+            "verdict": "incorrect",
+            "rationale": "압축비가 물리적으로 바뀌는 현상은 아니다."
+          },
+          {
+            "number": 3,
+            "text": "12V 배터리의 실제 용량이 즉시 두 배가 된다",
+            "verdict": "incorrect",
+            "rationale": "보조 배터리 용량이 두 배가 되지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 트레드 폭이 급감한다",
+            "verdict": "incorrect",
+            "rationale": "타이어 트레드 폭이 급감하지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s04-q08",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "직렬 연결된 배터리 셀의 SOC가 서로 달라진 경우 밸런싱을 수행하는 주된 이유는?",
+        "choices": [
+          "배터리 팩을 엔진오일로 냉각한다",
+          "셀 간 전기적 직렬 연결을 끊어버린다",
+          "셀의 충전 상태 편차를 줄여 가용 용량과 안전을 확보한다",
+          "차체 무게를 물리적으로 줄인다"
+        ],
+        "answer": 3,
+        "reason": "직렬 셀 중 일부가 먼저 충전 또는 방전 한계에 도달하면 팩 성능이 제한된다. 밸런싱은 셀 간 SOC·전압 불균형을 줄인다.",
+        "key_point": "셀 밸런싱: 전압·SOC 차이 완화.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "배터리 팩을 엔진오일로 냉각한다",
+            "verdict": "incorrect",
+            "rationale": "셀 밸런싱은 배터리 팩을 엔진오일로 냉각하는 절차가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "셀 간 전기적 직렬 연결을 끊어버린다",
+            "verdict": "incorrect",
+            "rationale": "셀 균형 제어는 직렬 연결을 무조건 끊어버리는 것을 목적으로 하지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "셀의 충전 상태 편차를 줄여 가용 용량과 안전을 확보한다",
+            "verdict": "correct",
+            "rationale": "셀 SOC·전압 불균형을 완화하면 일부 셀이 조기 상한/하한에 도달하는 현상을 줄일 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "차체 무게를 물리적으로 줄인다",
+            "verdict": "incorrect",
+            "rationale": "밸런싱은 차체 무게를 기계적으로 줄이는 기능이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "직렬 연결한 가상의 배터리 팩에 50Ah, 45Ah, 50Ah 용량의 셀이 있다. 각 셀이 완충에서 방전을 시작하고 어느 한 셀이 방전 한계에 도달하면 종료한다고 가정할 때, 이상적으로 사용할 수 있는 팩의 전하량은?",
+        "choices": [
+          "145Ah",
+          "50Ah",
+          "45Ah",
+          "15Ah"
+        ],
+        "answer": 3,
+        "reason": "직렬 연결에서는 같은 전류가 각 셀에 흐르므로 가장 먼저 방전 한계에 도달하는 45Ah 셀이 사용 가능한 전하량을 제한한다. 따라서 이 가상 조건의 답은 45Ah이다. 밸런싱은 충전 상태 편차를 줄이는 것이며 열화된 셀의 실제 용량을 복원하지는 않는다.",
+        "key_point": "직렬 팩의 가용 전하량은 주어진 조건에서 최소 용량 셀의 제한을 받는다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "145Ah",
+            "verdict": "incorrect",
+            "rationale": "직렬 셀의 용량을 단순 합산하면 안 된다."
+          },
+          {
+            "number": 2,
+            "text": "50Ah",
+            "verdict": "incorrect",
+            "rationale": "50Ah 셀보다 45Ah 셀이 먼저 한계에 도달한다."
+          },
+          {
+            "number": 3,
+            "text": "45Ah",
+            "verdict": "correct",
+            "rationale": "가장 작은 용량 45Ah 셀이 제한한다."
+          },
+          {
+            "number": 4,
+            "text": "15Ah",
+            "verdict": "incorrect",
+            "rationale": "45Ah를 셀 개수로 나누는 방식이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s04-q10",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "전기차의 고전압 배터리에서 12V 보조 배터리를 충전할 때 사용되는 장치는?",
+        "choices": [
+          "기계식 클러치 페달",
+          "배기 매니폴드",
+          "저전압 DC-DC 컨버터(LDC)",
+          "고전압 시동모터"
+        ],
+        "answer": 3,
+        "reason": "LDC는 높은 직류 전압을 12V 계통에 적합한 낮은 직류 전압으로 변환한다. 일부 차종은 통합 전력변환장치에 포함된다.",
+        "key_point": "LDC: HV DC → 12V 저전압 DC.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "기계식 클러치 페달",
+            "verdict": "incorrect",
+            "rationale": "기계식 클러치 페달은 고전압 DC를 12V로 변환하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "배기 매니폴드",
+            "verdict": "incorrect",
+            "rationale": "배기 매니폴드는 전압변환기 기능이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "저전압 DC-DC 컨버터(LDC)",
+            "verdict": "correct",
+            "rationale": "저전압 DC-DC 변환기는 구동 배터리 고전압 DC를 저전압 보조 계통에 맞게 변환한다."
+          },
+          {
+            "number": 4,
+            "text": "고전압 시동모터",
+            "verdict": "incorrect",
+            "rationale": "일반 고전압 시동모터는 12V 전압변환/충전의 주요 장치가 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "이상화한 DC/DC 컨버터의 입력 전력이 600W이고 변환 효율이 90%라면 출력 전력은?",
+        "choices": [
+          "60W",
+          "600W",
+          "540W",
+          "666.7W"
+        ],
+        "answer": 3,
+        "reason": "출력 전력은 입력 전력에 변환 효율을 곱한 값이다. 600×0.90=540W이고 이 조건에서 손실은 60W이다. 실제 차량의 효율은 입력·출력 전압과 부하, 온도 등에 따라 변한다.",
+        "key_point": "출력 전력 = 입력 전력 × 변환 효율.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "60W",
+            "verdict": "incorrect",
+            "rationale": "60W는 주어진 조건의 손실 전력이다."
+          },
+          {
+            "number": 2,
+            "text": "600W",
+            "verdict": "incorrect",
+            "rationale": "600W는 입력 전력이다."
+          },
+          {
+            "number": 3,
+            "text": "540W",
+            "verdict": "correct",
+            "rationale": "600×0.90=540W이다."
+          },
+          {
+            "number": 4,
+            "text": "666.7W",
+            "verdict": "incorrect",
+            "rationale": "입력 전력을 효율로 나눈 값이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "reference_status": "Existing historical references retained; no new source-page verification; authored calculation conditions explicitly defined.",
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 6,
+    "answer_index_changes": 0,
+    "new_source_page_checks": 0
+  }
+}
