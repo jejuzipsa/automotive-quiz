@@ -22,8 +22,11 @@ for(const [stage,ledger,count] of [["QA47-49",qa47,20],["QA50",qa50,20],["QA52",
 for(const item of qa49.items){assert.equal(coverage.get(item.id),"QA47-49");newReviews.set(item.id,item);}
 for(const ledger of [qa50,qa52,qa53])for(const item of ledger.items)newReviews.set(item.id,item);
 assert.equal(coverage.size,120);
-const edits=new Map(qa51.items.map(item=>[item.id,item]));
-assert.equal(edits.size,15);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
+const qa54=read("data/qa/technical-qa54-technical-corrections.json");
+assert.equal(qa54.items.length,2);
+const corrected=new Set(qa54.items.map(x=>x.id));
+const edits=new Map([...qa51.items,...qa54.items].map(item=>[item.id,item]));
+assert.equal(edits.size,17);assert.ok([...edits.keys()].every(id=>coverage.has(id)));
 const seen=new Set(),applied=new Set(),all=[],bySubject=Object.fromEntries(subjects.map(s=>[s,[]])),holds=[],batchQueue=[];
 const norm=s=>String(s||"").toLowerCase().replace(/[^a-z0-9가-힣]/g,"");
 const exactStems=new Map(),answerTextGroups=new Map();
@@ -96,13 +99,13 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
   if(hold)holds.push(id);
   const extra=patch?.additional_reference?.url;
   const currentRefs=[...new Set([...refs,...(extra?[extra]:[])])];
-  const currentVersion=patch?"qa51_revised":"baseline_at_qa50";
+  const currentVersion=patch?(corrected.has(id)?"qa54_revised":"qa51_revised"):"baseline_at_qa50";
   q.current_version=currentVersion;e.current_version=currentVersion;
-  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?"QA51":null,editorial_hold:review?.editorial_hold===true,independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
+  q.current_review={model_logic_stage:coverage.get(id)||null,revision_stage:patch?(corrected.has(id)?"QA54":"QA51"):null,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,qnet_detail_verified:false,rights_cleared:false};
   e.current_review=q.current_review;
   e.current_option_analysis=currentAnalysis;e.current_reference_urls=currentRefs;
   e.current_reference_status="Historical links and any QA51 supplemental reference; not fully source-verified";
-  const record={id,round,subject,number:i+1,question:q.question,choices:q.choices,answer:q.answer,explanation:e.reason,option_analysis:currentAnalysis,reference_urls:currentRefs,classification_hold:hold,firstpass_historical_grade:q[stage].status,current_version:currentVersion,model_logic_stage:coverage.get(id)||null,editorial_hold:review?.editorial_hold===true,independent_expert_approved:false,publishable:false};
+  const record={id,round,subject,number:i+1,question:q.question,choices:q.choices,answer:q.answer,explanation:e.reason,option_analysis:currentAnalysis,reference_urls:currentRefs,classification_hold:hold,firstpass_historical_grade:q[stage].status,current_version:currentVersion,model_logic_stage:coverage.get(id)||null,editorial_hold:review?.editorial_hold===true&&!corrected.has(id),independent_expert_approved:false,publishable:false};
   if(patch)record.additional_reference=patch.additional_reference;
   all.push(record);bySubject[subject].push({question:q,explanation:e});
   const stem=norm(q.question),ans=norm(q.choices[q.answer-1]);
@@ -110,9 +113,9 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
   if(ans.length>=12){const key=subject+":"+ans;if(!answerTextGroups.has(key))answerTextGroups.set(key,[]);answerTextGroups.get(key).push(id);}
  }
 }
-assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,15);
+assert.equal(all.length,720);assert.equal(seen.size,720);assert.equal(applied.size,17);
 assert.equal(holds.length,55);assert.equal(all.filter(x=>x.model_logic_stage).length,120);
-assert.equal(all.filter(x=>x.editorial_hold).length,2);
+assert.equal(all.filter(x=>x.editorial_hold).length,0);
 const remaining=all.filter(x=>!x.model_logic_stage);assert.equal(remaining.length,600);
 for(let round=2;round<=9;round++)for(let offset=0;offset<20;offset+=5){
  const items=subjects.flatMap(subject=>remaining.filter(x=>x.round===round&&x.subject===subject&&x.number>offset&&x.number<=offset+5));
@@ -127,7 +130,7 @@ const sharedAnswerCandidates=[...answerTextGroups.entries()].filter(([,ids])=>id
 const manifest=read("data/manifest.json");
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")&&!b.file.includes("qa51")&&!b.file.includes("qa52")));
 assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);
-const summary={kind:"QA52_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:15,model_logic_reviewed_questions:120,model_logic_reviewed_options:480,pending_model_questions:600,pending_model_options:2400,pending_batches:30,editorial_holds:2,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 120 model-reviewed questions are not independently approved.","The QA51/52 working view supersedes old draft text for the 15 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
+const summary={kind:"QA52_WORKING_BANK_AND_REMAINING_REVIEW_QUEUE_NOT_APPROVAL",questions:720,options:2880,editorial_revisions_applied:17,model_logic_reviewed_questions:120,model_logic_reviewed_options:480,pending_model_questions:600,pending_model_options:2400,pending_batches:30,editorial_holds:0,classification_holds:55,independent_expert_approved:0,published_reconstructed_past:0,public_expected:80,structural_check:"passed",exact_stem_group_count:exactCandidates.length,shared_correct_text_group_count:sharedAnswerCandidates.length,limitations:["Exact normalized stem and shared correct text are screening candidates, not semantic duplicate verdicts.","The 120 model-reviewed questions are not independently approved.","The QA51/52 working view supersedes old draft text for the 17 changes; old raw banks and first-pass audits remain historical.","No full revalidation of external URLs, Q-net detailed syllabus, OEM procedures or publication rights is claimed."]};
 if(process.env.QA52_OUT_DIR){
  const out=path.resolve(root,process.env.QA52_OUT_DIR);
  const write=(p,x)=>{const dest=path.join(out,p);fs.mkdirSync(path.dirname(dest),{recursive:true});fs.writeFileSync(dest,JSON.stringify(x,null,2)+"\n");};
