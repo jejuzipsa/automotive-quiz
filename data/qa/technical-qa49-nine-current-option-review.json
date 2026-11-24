@@ -1,0 +1,311 @@
+{
+  "kind": "QA49_CURRENT_OPTION_LOGIC_NOT_EXPERT_APPROVAL",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r01-s01-q13",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "통신 정상은 전원 격리 보장이 아니다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "차종별 제조사 절차 확인이 적절하다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "동일 제조사라도 모델별 절차가 다를 수 있다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "메모리 유지 필요성이 잔류전원 확인을 면제하지 않는다."
+        }
+      ],
+      "reference": {
+        "url": "https://charm.li/GMC/2008/Savana%202500%20V8-6.6L%20DSL%20Turbo/Repair%20and%20Diagnosis/Relays%20and%20Modules/Relays%20and%20Modules%20-%20Powertrain%20Management/Relays%20and%20Modules%20-%20Computers%20and%20Control%20Systems/Engine%20Control%20Module/Service%20and%20Repair/",
+        "access": "search_excerpt_only",
+        "limit": "GMC 정비자료 재게시 검색 발췌는 전원 차단 필요성을 지지하나 본문 접근 실패. Toyota 원자료 미확인."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q16",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "균일한 저압도 계측오류를 배제하지 못한다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "밸브 타이밍은 공통 원인 후보이다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "시험조건 확인 없이 마모를 확정할 수 없다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "공통 조건과 원인을 함께 검토하는 것이 타당하다."
+        }
+      ],
+      "reference": {
+        "url": "https://charm.li/Toyota/2007/Camry%20L4-2.4L%20%282AZ-FE%29/Repair%20and%20Diagnosis/Engine%2C%20Cooling%20and%20Exhaust/Engine/Testing%20and%20Inspection/",
+        "access": "search_excerpt_only",
+        "limit": "Toyota 정비자료 재게시 검색 발췌는 압축압 측정 및 저압 원인 구별을 지지하나 본문 접근 실패. 공통 원인 전체 직접 근거 미확보."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q20",
+      "answer": 4,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "정상 폐회로에서 희박 신호에는 일반적으로 연료를 늘린다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "농후 신호에는 일반적으로 연료를 줄인다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "냉각수 온도는 별도 센서의 측정 대상이다."
+        },
+        {
+          "number": 4,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "부정확한 신호는 연료 보정과 배출에 악영향을 줄 수 있다."
+        }
+      ],
+      "reference": {
+        "url": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/test-lambda-sensor/",
+        "access": "page_read",
+        "limit": "공연비 피드백 원리 직접 확인. 고장 형태별 제어 및 증상은 별도."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q02",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "엔진오일 점도만으로 휠속도 신호 단절을 진단할 수 없다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "센서와 신호 경로 비교가 직접 관련된다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "타이어 색상과 좌석 높이는 신호 단절 근거가 아니다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "송풍기 회전수는 해당 회로와 무관하다."
+        }
+      ],
+      "reference": {
+        "url": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+        "access": "page_read",
+        "limit": "능동 센서 및 자기 인코더 설명 확인. 차종별 안전 진단은 미승인. 오답 변별력이 낮아 후속 편집 후보."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q12",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "진단기 연결만으로 안전이 보장되지 않는다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "임의 커넥터 분리는 안전절차가 아니다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "제조사 절차와 작업 자격 확인이 적절하다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "일반 시험등을 전개회로에 임의 연결하는 것은 부적절하다."
+        }
+      ],
+      "reference": {
+        "url": "https://www.hella.com/techworld/en/technical/car-electronics-and-electrics/car-airbag-system/",
+        "access": "search_excerpt_only",
+        "limit": "SRS 전용 자료의 진단 및 임의 어댑터 금지 발췌 확인. 차종별 작업조건 및 시험등 직접 금지 근거 별도 필요."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q18",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "회생제동은 에너지 일부를 전기로 회수한다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "회수 전력은 연료탱크에 저장되지 않는다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "발전 전력을 배터리에 저장하는 원리가 맞다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "발전 상태를 전력 소비만으로 설명할 수 없다."
+        }
+      ],
+      "reference": {
+        "url": "https://afdc.energy.gov/fueleconomy/animations/hybrids/fullhybrid/fullhybridbraking.html",
+        "access": "page_read",
+        "limit": "DOE 감속 에너지 흐름 확인. 실제 회생량과 제동 혼합 조건은 별도."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q19",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "감속기는 기계적 회전 전달 장치다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "DC/DC가 고전압 DC를 저전압 DC로 변환한다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "OBC는 외부 AC 충전용 변환 장치다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "구동 인버터는 모터 전력 변환 장치다."
+        }
+      ],
+      "reference": {
+        "url": "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "access": "page_read",
+        "limit": "DOE 저전압 보조전원과 OBC 기능 확인. 모든 차량의 보조전압이 12V인 것은 아니다."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q01",
+      "answer": 2,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "정전기 손목줄은 고전압 절연 보호구가 아니다."
+        },
+        {
+          "number": 2,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "작업에 적합한 정격 절연장갑과 보호구가 필요하다."
+        },
+        {
+          "number": 3,
+          "verdict": "incorrect",
+          "reason": "면장갑만으로 전기 절연을 보장하지 못한다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "오염된 가죽장갑은 정격 절연장갑의 대체품이 아니다."
+        }
+      ],
+      "reference": {
+        "url": "https://www.fluke.com/en/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings",
+        "access": "page_read",
+        "limit": "절연장갑 정격·사용 전 검사 근거 확인. 국내 자격 및 작업별 보호구 기준 미확정."
+      },
+      "expert_approved": false,
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q02",
+      "answer": 3,
+      "options": [
+        {
+          "number": 1,
+          "verdict": "incorrect",
+          "reason": "서비스 플러그 분리만으로 무전압을 단정할 수 없다."
+        },
+        {
+          "number": 2,
+          "verdict": "incorrect",
+          "reason": "전원 활성 상태의 임의 분리는 안전절차가 아니다."
+        },
+        {
+          "number": 3,
+          "verdict": "correct_under_stated_conditions",
+          "reason": "OEM 지정 절차와 무전압 확인이 필요하다."
+        },
+        {
+          "number": 4,
+          "verdict": "incorrect",
+          "reason": "냉각팬 정지는 전기적 격리의 증거가 아니다."
+        }
+      ],
+      "reference": {
+        "url": "https://www.fluke.com/en/learn/blog/automotive/hybrid-vehicle-measurement-safety-basics-taking-high-voltage-readings",
+        "access": "page_read",
+        "limit": "차단 후 검증 및 배터리 자체 잔류 위험 확인. 차종별 절차·국내 기준 미확정."
+      },
+      "expert_approved": false,
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "questions": 9,
+    "options": 36,
+    "full_page_question_count": 6,
+    "search_excerpt_only_question_count": 3,
+    "answer_changes": 0,
+    "expert_approvals": 0
+  }
+}
