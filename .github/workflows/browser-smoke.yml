@@ -1,0 +1,80 @@
+name: Chromium quiz browser smoke
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "index.html"
+      - "app.js"
+      - "styles.css"
+      - "quiz-utils.js"
+      - "data/**"
+      - "tests/browser-smoke.cjs"
+      - ".github/workflows/browser-smoke.yml"
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: browser-smoke-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  local-browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install pinned Chromium test dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Serve and exercise checked-out site
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 > /tmp/quiz-http.log 2>&1 &
+          server=$!
+          trap 'kill "$server" || true' EXIT
+          for attempt in $(seq 1 30); do
+            if curl -fsS http://127.0.0.1:8765/data/manifest.json > /dev/null; then break; fi
+            sleep 1
+          done
+          QUIZ_URL=http://127.0.0.1:8765/ node tests/browser-smoke.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: local-browser-screenshots
+          path: browser-smoke/
+          if-no-files-found: warn
+          retention-days: 14
+
+  deployed-browser:
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install pinned Chromium test dependency
+        run: |
+          npm install --no-save --package-lock=false playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Check live deployment revision and real browser
+        env:
+          QUIZ_URL: https://jejuzipsa.github.io/automotive-quiz/
+          PAGES_WAIT_MS: "300000"
+        run: node tests/browser-smoke.cjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-browser-screenshots
+          path: browser-smoke/
+          if-no-files-found: warn
+          retention-days: 14
