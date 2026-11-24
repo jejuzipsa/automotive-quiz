@@ -59,7 +59,7 @@ async function fetch(url){
   if(!fs.existsSync(full))return {ok:false,status:404};
   return {ok:true,json:async()=>JSON.parse(fs.readFileSync(full,"utf8"))};
 }
-const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:false}),addEventListener(){}};
+const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:false}),addEventListener(){},confirm:()=>true};
 (async()=>{
   vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
   await new Promise(resolve=>setImmediate(resolve));
@@ -128,6 +128,24 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.ok(els.resultScore.textContent.includes("0 / 80문제"),"unanswered counted incorrect");
   assert.ok(els.resultStats.children.some(x=>x.textContent.includes("학습용 합격 기준 미달")),"fail rule");
   assert.equal(els.resultGrid.children.length,80);
+  await els.resultHomeBtn.click();
+  await els.examEntryBtn.click();await els.expectedExamBtn.click();
+  const first=els.questionText.textContent,firstChoices=els.answerChoices.children.map(x=>x.children[1].textContent);
+  await els.answerChoices.children[2].click();
+  assert.ok(els.quizSource.textContent.includes("남은 시간"));
+  await els.nextBtn.click();
+  const key="automotiveQuizActiveExamV1",snapshot=JSON.parse(memory[key]);
+  assert.equal(snapshot.index,1);assert.equal(snapshot.choices[0],3);
+  await els.homeBtn.click();assert.equal(els.resumeExamBtn.disabled,false);
+  await els.resumeExamBtn.click();assert.equal(els.quizProgress.textContent,"2 / 80");
+  await els.previousBtn.click();assert.equal(els.questionText.textContent,first);
+  assert.deepEqual(els.answerChoices.children.map(x=>x.children[1].textContent),firstChoices);
+  assert.ok(els.answerChoices.children[2].className.includes("selected"));
+  assert.equal(JSON.parse(memory[key]).examDeadline,snapshot.examDeadline);
+  await els.homeBtn.click();snapshot.examDeadline=Date.now()-1000;memory[key]=JSON.stringify(snapshot);
+  await els.resumeExamBtn.click();assert.ok(els.resultScore.textContent.includes("/ 80문제"));
+  assert.equal(JSON.parse(memory[key]),null,"expired exam is graded and cleared");
+  console.log("PASS: exam resume, order, answers, deadline, expiry");
   console.log("PASS: JSON auto-fetch, shuffle/remap, 80-question 4-subject exam, 120min timer, back navigation, per-subject pass/fail, unanswered.");
 
 })().catch(error=>{console.error(error);process.exitCode=1;});
