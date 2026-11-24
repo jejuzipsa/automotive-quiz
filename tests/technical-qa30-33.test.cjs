@@ -26,5 +26,5 @@ assert.ok(read("data/past/drafts/round08/electrical.json")[11].question.includes
 assert.ok(read("data/past/drafts/round08/eco.json")[6].question.includes("HVIL"));
 const edit1=read("data/qa/technical-qa30-31-r08-edits.json"),edit2=read("data/qa/technical-qa32-33-r08-edits.json");assert.equal(edit1.length+edit2.length,4);
 const st=read("data/bank-status.json").technical_qa33;assert.equal(st.cumulative_historical_firstpass_questions,640);assert.equal(st.remaining_no_firstpass_questions,80);assert.equal(st.final_independent_technical_approvals,0);
-const m=read("data/manifest.json");assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));assert.equal(m.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),100);
+const m=read("data/manifest.json");assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));assert.equal(m.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),112);
 console.log("PASS QA30-QA33: round08 80 questions / 320 options, 44 basic-source firstpass and 36 holds, 4 duplicate repairs, no publication");

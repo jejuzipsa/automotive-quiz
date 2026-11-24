@@ -31,5 +31,5 @@ for(const entry of edits){const c=cases.find(x=>x.qa===entry.qa);const q=read(`d
 const st=read("data/bank-status.json").technical_qa37;assert.equal(st.cumulative_historical_firstpass_questions,720);assert.equal(st.cumulative_historical_firstpass_options,2880);
 assert.equal(st.remaining_no_firstpass_questions,0);assert.equal(st.remaining_no_firstpass_options,0);assert.equal(st.final_independent_technical_approvals,0);assert.equal(st.current_subject_holds,55);
 assert.deepEqual(st.summary_round08_round09,{questions:160,options:640,firstpass_source_supported:92,additional_review_held:68,editorial_edits:10,round08_edits:4,round09_edits:6,independent_final_approvals:0,publications:0});
-const m=read("data/manifest.json");assert.equal(m.banks.filter(x=>x.track==="expected").reduce((s,x)=>s+x.count,0),100);assert.ok(m.banks.every(x=>!x.file.includes("/drafts/")));
+const m=read("data/manifest.json");assert.equal(m.banks.filter(x=>x.track==="expected").reduce((s,x)=>s+x.count,0),112);assert.ok(m.banks.every(x=>!x.file.includes("/drafts/")));
 console.log("PASS QA34-37: round09 80/320, 48 firstpass general supported,32 safety/OEM/subject holds, six edits; 720/2880 logged, no final approval/publication");
