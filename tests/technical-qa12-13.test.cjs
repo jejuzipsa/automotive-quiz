@@ -5,6 +5,7 @@ const path=require("node:path");
 const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const ledger=read("data/qa/technical-qa12-13-edits-and-holds.json");
+const newerById=new Map(read("data/qa/technical-qa43-remaining-scope-edits.json").map(x=>[x.id,x]));
 const earlier=read("data/qa/technical-qa2-changes.json");
 const earlierHolds=read("data/qa/technical-qa1-subject-holds-expanded.json");
 assert.equal(ledger.edits.length,2);
@@ -30,15 +31,15 @@ for(const [subject,qa,expectedSupport,expectedHold,heldNumbers] of [
  assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,expectedHold);
  assert.deepEqual(audit.filter(x=>x.evidence_grade!=="source_supported_first_pass").map(x=>x.question_number),heldNumbers);
  for(let i=0;i<20;i++){
-  const x=q[i],y=e[i],row=audit[i];
+  const x=q[i],y=e[i],row=audit[i],latest=newerById.get(x.id);
   assert.equal(x.id,y.id);assert.equal(x.id,row.id);assert.equal(x.subject,subject);assert.equal(x.round,2);
   assert.equal(x.question_number,i+1);assert.equal(x.track,"past");
   assert.equal(y.correct_answer,x.answer);assert.equal(y.correct_choice,x.choices[x.answer-1]);
-  assert.equal(row.correct_number,x.answer);assert.equal(row.correct_choice,x.choices[x.answer-1]);
-  assert.equal(row.question_at_review,x.question);
+  assert.equal(row.correct_number,x.answer);assert.equal(row.correct_choice,latest?latest.before.correct_choice:x.choices[x.answer-1]);
+  assert.equal(row.question_at_review,latest?latest.before.question:x.question);
   assert.equal(x["technical_verification_"+qa].status,row.evidence_grade);
   assert.equal(y["technical_verification_"+qa].status,row.evidence_grade);
-  assert.deepEqual(y["option_analysis_"+qa],row.options);
+  assert.deepEqual(y["option_analysis_"+qa],latest?latest.after.option_analysis:row.options);
   assert.ok(row.source_urls.length>=1);
   assert.equal(row.options.length,4);
   assert.equal(row.final_technical_approval,false);assert.equal(row.web_publication,false);
@@ -49,7 +50,7 @@ for(const [subject,qa,expectedSupport,expectedHold,heldNumbers] of [
   if(x.subject_classification_review?.status==="hold_do_not_publish")classified++;
   for(let j=0;j<4;j++){
    const op=row.options[j];
-   assert.equal(op.number,j+1);assert.equal(op.text,x.choices[j]);
+   assert.equal(op.number,j+1);assert.equal(op.text,latest?latest.before.choices[j]:x.choices[j]);
    assert.equal(op.verdict,j+1===x.answer?"correct":"incorrect");
    assert.ok(op.rationale.length>=15);
    total++;
