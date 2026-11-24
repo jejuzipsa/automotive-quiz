@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA56_round03_first20_model_review",
+  "latest_qa_stage": "QA57_round03_complete_model_review",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2350,5 +2350,25 @@
     "ledger": "data/qa/technical-qa56-round03-first20-option-review.json",
     "working_bank_artifact": "qa56-working-bank-and-remaining-540",
     "next": "Round03 remaining 60 and duplicate corrections"
+  },
+  "technical_qa57": {
+    "date": "2026-11-24",
+    "new_questions": 60,
+    "new_options": 240,
+    "cumulative_model_review_questions": 240,
+    "cumulative_model_review_options": 960,
+    "new_revisions": 6,
+    "total_versioned_revisions": 29,
+    "remaining_questions": 480,
+    "remaining_options": 1920,
+    "remaining_batches": 24,
+    "independent_final_approvals": 0,
+    "subject_holds": 55,
+    "published_past": 0,
+    "published_expected": 80,
+    "ledger": "data/qa/technical-qa57-round03-last60-option-review.json",
+    "revision_ledger": "data/qa/technical-qa57-editorial-corrections.json",
+    "working_bank_artifact": "qa57-working-bank-and-remaining-480",
+    "next": "Round04 review and remaining duplicate corrections"
   }
 }

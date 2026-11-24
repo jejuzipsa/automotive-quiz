@@ -1,0 +1,525 @@
+{
+  "kind": "QA57_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r03-s01-q17",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "EGR 시스템이 정상적으로 작동할 때 기대되는 대기오염 감소 효과는?",
+        "choices": [
+          "질소산화물(NOx) 생성 억제",
+          "타이어 분진의 즉각적인 제로화",
+          "연료탱크 내부 산소 생성",
+          "배기관에 냉매를 주입"
+        ],
+        "answer": 1,
+        "reason": "EGR은 배기가스 일부를 재순환해 연소 최고온도 및 산소 농도에 영향을 주며 NOx 발생을 줄이는 데 도움을 준다.",
+        "key_point": "EGR은 NOx 저감과 연관된 배기가스 재순환 장치다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "질소산화물(NOx) 생성 억제",
+            "verdict": "correct",
+            "rationale": "EGR을 통해 배기가스 일부가 흡기로 재유입되면 연소 온도·산소 농도가 변해 NOx 생성 억제에 도움 된다."
+          },
+          {
+            "number": 2,
+            "text": "타이어 분진의 즉각적인 제로화",
+            "verdict": "incorrect",
+            "rationale": "EGR 기능이 타이어 분진을 즉시 완전히 제거하는 것은 아니다."
+          },
+          {
+            "number": 3,
+            "text": "연료탱크 내부 산소 생성",
+            "verdict": "incorrect",
+            "rationale": "배기 재순환장치가 연료탱크 내에 산소를 새로 생성하는 것은 아니다."
+          },
+          {
+            "number": 4,
+            "text": "배기관에 냉매를 주입",
+            "verdict": "incorrect",
+            "rationale": "EGR은 배기관에 에어컨 냉매를 주입하는 후처리 장치가 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "EGR 유량을 전체 흡입 혼합기 질량유량에 대한 재순환 배기가스 질량유량의 비율로 정의한다. 신선 공기 80g/s와 재순환 배기가스 20g/s가 혼합될 때 EGR 비율은?",
+        "choices": [
+          "20%",
+          "25%",
+          "80%",
+          "100%"
+        ],
+        "answer": 1,
+        "reason": "전체 흡입 혼합기 질량유량은 80+20=100g/s이다. 지문에서 정의한 EGR 비율은 20/100×100=20%이다. 실제 제어기 표시값의 정의와 추정 방식은 차종에 따라 다를 수 있다.",
+        "key_point": "EGR 비율은 지문에서 정의한 전체 혼합기 기준으로 계산한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "20%",
+            "verdict": "correct",
+            "rationale": "전체 100g/s 중 재순환 배기가스 20g/s이므로 20%이다."
+          },
+          {
+            "number": 2,
+            "text": "25%",
+            "verdict": "incorrect",
+            "rationale": "신선 공기만을 분모로 사용한 값이다."
+          },
+          {
+            "number": 3,
+            "text": "80%",
+            "verdict": "incorrect",
+            "rationale": "신선 공기가 전체에서 차지하는 비율이다."
+          },
+          {
+            "number": 4,
+            "text": "100%",
+            "verdict": "incorrect",
+            "rationale": "전체 혼합기 전부가 재순환 가스인 조건이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r03-s01-q19",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "디젤 SCR 후처리에 요소수(DEF)를 공급한다. 촉매에서 일어나는 주요 저감 반응은?",
+        "choices": [
+          "배기가스의 산소를 연료로 전환",
+          "타이어 마모입자를 증발",
+          "암모니아를 이용한 NOx의 질소·물로의 환원",
+          "CO2를 무조건 산소로 환원"
+        ],
+        "answer": 3,
+        "reason": "요소수에서 생성된 암모니아가 촉매의 환원반응에 참여해 NOx를 질소와 물 등으로 바꾼다. 요소수가 배기가스를 직접 냉각하는 것과 혼동하지 않는다.",
+        "key_point": "SCR의 기본은 암모니아를 이용한 NOx 환원이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "배기가스의 산소를 연료로 전환",
+            "verdict": "incorrect",
+            "rationale": "SCR은 배기가스 산소를 차량 연료로 화학전환하는 장치가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "타이어 마모입자를 증발",
+            "verdict": "incorrect",
+            "rationale": "SCR은 타이어 마모입자의 증발을 주요 기능으로 하지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "암모니아를 이용한 NOx의 질소·물로의 환원",
+            "verdict": "correct",
+            "rationale": "요소수 유래 암모니아가 촉매에서 NOx를 질소·물 등으로 환원하는 반응을 돕는다."
+          },
+          {
+            "number": 4,
+            "text": "CO2를 무조건 산소로 환원",
+            "verdict": "incorrect",
+            "rationale": "SCR은 CO2를 무조건 산소로 분해하여 배출하는 장치가 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "SCR 입구의 NOx 질량유량이 100mg/s, 출구의 질량유량이 20mg/s로 측정됐다. 동일 정상상태의 이상적인 비교 조건에서 NOx 저감률은?",
+        "choices": [
+          "20%",
+          "50%",
+          "80%",
+          "120%"
+        ],
+        "answer": 3,
+        "reason": "NOx 저감률은 (입구 질량유량-출구 질량유량)/입구 질량유량×100으로 계산한다. (100-20)/100×100=80%이다. 실제 성능 판정은 센서 정확도, 배기 유량 및 제조사 검사조건을 적용한다.",
+        "key_point": "NOx 저감률은 입구 대비 감소한 질량유량의 비율이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "20%",
+            "verdict": "incorrect",
+            "rationale": "20%는 입구 대비 출구에 남은 비율이다."
+          },
+          {
+            "number": 2,
+            "text": "50%",
+            "verdict": "incorrect",
+            "rationale": "주어진 입출구 질량유량으로 계산하면 50%가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "80%",
+            "verdict": "correct",
+            "rationale": "입구 100에서 출구 20을 빼면 80mg/s가 감소하므로 80%이다."
+          },
+          {
+            "number": 4,
+            "text": "120%",
+            "verdict": "incorrect",
+            "rationale": "정의된 조건에서 120%는 계산 결과가 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://dieselnet.com/tech/cat_scr.php",
+        "access": "search_excerpt_only",
+        "scope": "general concept; authored example independently calculated or reasoned"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r03-s02-q04",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "ABS 경고등과 특정 휠 속도 신호 이상이 함께 기록된다. 점검 대상을 좁히는 단서는?",
+        "choices": [
+          "브레이크 마스터실린더의 저장액 용량만",
+          "조향각 센서 영점값만",
+          "휠 얼라인먼트 토각과 캠버각만",
+          "해당 바퀴의 센서·톤링·배선과 실제 신호 파형"
+        ],
+        "answer": 4,
+        "reason": "휠 속도센서 회로는 센서 자체뿐 아니라 회전자·톤링·간극·커넥터 등에 영향받는다. 기록된 DTC와 파형으로 원인을 구분한다.",
+        "key_point": "ABS 휠 신호 오류는 센서·톤링·배선을 함께 본다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "브레이크 마스터실린더의 저장액 용량만",
+            "verdict": "incorrect",
+            "rationale": "브레이크 마스터실린더의 저장액 용량만으로 특정 차륜 휠속도 신호 문제를 판정하기 어렵다."
+          },
+          {
+            "number": 2,
+            "text": "조향각 센서 영점값만",
+            "verdict": "incorrect",
+            "rationale": "조향각 센서의 영점값은 바퀴별 회전 신호의 고장 부위를 직접 특정하지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "휠 얼라인먼트 토각과 캠버각만",
+            "verdict": "incorrect",
+            "rationale": "토·캠버 정렬각만으로 톤링/휠속도센서의 전기 파형 문제를 검출할 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "해당 바퀴의 센서·톤링·배선과 실제 신호 파형",
+            "verdict": "correct",
+            "rationale": "해당 바퀴의 센서·톤링·간극·커넥터·배선·신호 파형을 비교하는 것이 직접적이다."
+          }
+        ]
+      },
+      "after": {
+        "question": "휠속도 센서의 톤링이 한 바퀴에 48개의 펄스를 발생시키고 차륜이 초당 5회 회전한다. 정상적인 펄스 주파수는?",
+        "choices": [
+          "9.6Hz",
+          "48Hz",
+          "53Hz",
+          "240Hz"
+        ],
+        "answer": 4,
+        "reason": "펄스 주파수는 초당 회전수와 회전당 펄스 수의 곱이다. 5×48=240Hz이다. 실제 센서의 출력 형식과 펄스 수는 차량 및 엔코더 규격을 확인한다.",
+        "key_point": "주파수 = 회전당 펄스 수 × 초당 회전수.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "9.6Hz",
+            "verdict": "incorrect",
+            "rationale": "48을 5로 나눈 값이며 펄스 주파수 계산과 다르다."
+          },
+          {
+            "number": 2,
+            "text": "48Hz",
+            "verdict": "incorrect",
+            "rationale": "차륜이 초당 1회 회전할 때의 주파수이다."
+          },
+          {
+            "number": 3,
+            "text": "53Hz",
+            "verdict": "incorrect",
+            "rationale": "회전당 펄스 수와 회전수를 더하면 안 된다."
+          },
+          {
+            "number": 4,
+            "text": "240Hz",
+            "verdict": "correct",
+            "rationale": "48×5=240Hz이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r03-s03-q01",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "CAN 버스의 두 ECU가 동시에 전송을 시작할 때 우선순위를 조정하는 기법으로 올바른 것은?",
+        "choices": [
+          "무작위 충돌을 무조건 허용하고 패킷을 폐기",
+          "우선순위 식별자에 따른 비파괴적 비트 중재",
+          "CSMA/CA의 무선 RTS/CTS 교환만 사용",
+          "모든 장치가 같은 식별자를 강제로 사용"
+        ],
+        "answer": 2,
+        "reason": "일반적인 CAN 통신은 메시지 식별자의 우선순위와 지배·열성 비트 특성을 이용한 비파괴적 중재를 사용한다. 무선 LAN의 CSMA/CA와 혼동하면 안 된다.",
+        "key_point": "CAN은 식별자 기반 비파괴적 중재를 한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "무작위 충돌을 무조건 허용하고 패킷을 폐기",
+            "verdict": "incorrect",
+            "rationale": "CAN 중재는 프레임의 식별자와 우성·열성 비트 비교를 이용하며 무작위 충돌 후 패킷 폐기가 본질은 아니다."
+          },
+          {
+            "number": 2,
+            "text": "우선순위 식별자에 따른 비파괴적 비트 중재",
+            "verdict": "correct",
+            "rationale": "표준 CAN은 식별자 우선순위에 따른 비파괴 비트 중재를 적용한다."
+          },
+          {
+            "number": 3,
+            "text": "CSMA/CA의 무선 RTS/CTS 교환만 사용",
+            "verdict": "incorrect",
+            "rationale": "무선 LAN의 RTS/CTS 교환은 CAN 식별자 중재 방식과 다르다."
+          },
+          {
+            "number": 4,
+            "text": "모든 장치가 같은 식별자를 강제로 사용",
+            "verdict": "incorrect",
+            "rationale": "모든 장치가 같은 식별자를 강제로 쓰는 방식은 CAN 메시지 우선순위의 설명이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "클래식 CAN의 동일 형식 11비트 데이터 프레임 두 개가 동시에 송신을 시작한다. ID가 각각 0x120과 0x180일 때 정상적인 식별자 중재에서 먼저 송신권을 얻는 프레임은?",
+        "choices": [
+          "ID 0x180 프레임",
+          "ID 0x120 프레임",
+          "두 프레임이 무조건 함께 폐기된다",
+          "ID와 무관하게 송신권을 무작위로 선택한다"
+        ],
+        "answer": 2,
+        "reason": "동일한 표준 CAN 데이터 프레임 형식에서는 식별자의 낮은 숫자값이 더 높은 우선순위를 가진다. 0x120이 0x180보다 작으며 처음 다른 비트에서 우성 비트가 열성 비트를 이긴다. 따라서 0x120이 중재를 이긴다.",
+        "key_point": "동일 표준 CAN 프레임에서는 낮은 ID가 높은 우선순위를 가진다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "ID 0x180 프레임",
+            "verdict": "incorrect",
+            "rationale": "0x180은 0x120보다 높은 숫자값이어서 중재 우선순위가 낮다."
+          },
+          {
+            "number": 2,
+            "text": "ID 0x120 프레임",
+            "verdict": "correct",
+            "rationale": "0x120의 우선순위가 높으므로 정상 중재에서 송신권을 얻는다."
+          },
+          {
+            "number": 3,
+            "text": "두 프레임이 무조건 함께 폐기된다",
+            "verdict": "incorrect",
+            "rationale": "비파괴 중재는 모든 프레임 폐기를 요구하지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "ID와 무관하게 송신권을 무작위로 선택한다",
+            "verdict": "incorrect",
+            "rationale": "송신권은 식별자의 비트 중재로 정해진다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.analog.com/en/resources/app-notes/an-1123.html",
+        "access": "search_excerpt_only",
+        "scope": "general concept; authored example independently calculated or reasoned"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r03-s03-q14",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "고속 CAN 버스 통신이 불안정하고 여러 ECU에 통신 장애 코드가 저장됐다. 우선 전기적 진단 대상으로 적절한 것은?",
+        "choices": [
+          "엔진 오일의 산화도만 실험실에서 측정한다",
+          "현가장치 스프링 길이를 재서 CAN 통신을 확정한다",
+          "CAN H·CAN L 배선·종단 및 전원접지와 네트워크 파형",
+          "차량 외장 색상과 도어트림 장착방향만 비교한다"
+        ],
+        "answer": 3,
+        "reason": "CAN 통신 장애는 배선 단선·단락, 종단 구성, 공급전원·접지 및 노드 이상 등으로 발생할 수 있다. 전원 차단 등 차량별 안전 조건과 회로도를 확인하고 버스 파형·전압을 적절한 장비로 진단해야 한다.",
+        "key_point": "CAN 통신 장애 → CAN H/L 배선·종단·노드전원 및 파형.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 오일의 산화도만 실험실에서 측정한다",
+            "verdict": "incorrect",
+            "rationale": "엔진오일 산화도는 CAN 통신선의 전기 신호 특성이 아니야."
+          },
+          {
+            "number": 2,
+            "text": "현가장치 스프링 길이를 재서 CAN 통신을 확정한다",
+            "verdict": "incorrect",
+            "rationale": "차체 스프링 규격만으로 통신버스 단선·단락을 판단할 수 없어."
+          },
+          {
+            "number": 3,
+            "text": "CAN H·CAN L 배선·종단 및 전원접지와 네트워크 파형",
+            "verdict": "correct",
+            "rationale": "네트워크 통신이 간헐적으로 끊긴다면 신호선·종단·노드 전원 상태를 함께 조사해야 해."
+          },
+          {
+            "number": 4,
+            "text": "차량 외장 색상과 도어트림 장착방향만 비교한다",
+            "verdict": "incorrect",
+            "rationale": "차량 외장재 상태는 ECU 데이터 전송 오류의 직접 진단자료가 아니야."
+          }
+        ]
+      },
+      "after": {
+        "question": "표준 고속 CAN 물리 계층에서 정상적인 우성(dominant) 비트와 열성(recessive) 비트의 차동전압 관계는?",
+        "choices": [
+          "두 비트 모두 CAN-H와 CAN-L의 전압차가 항상 동일하다",
+          "열성 비트의 차동전압이 우성 비트보다 항상 크게 양의 값이다",
+          "우성 비트에서 CAN-H가 CAN-L보다 높아지고 열성 비트에서는 차동전압이 거의 0에 가까워진다",
+          "두 통신선은 모든 비트에서 배터리 전압과 동일하다"
+        ],
+        "answer": 3,
+        "reason": "표준 고속 CAN은 두 선의 차동전압을 이용한다. 정상 우성 상태에서는 CAN-H가 CAN-L보다 높은 전압으로 구동되고 열성 상태에서는 두 선 전압이 비슷해 차동전압이 작다. 실제 허용 전압과 파형은 트랜시버 및 차량 규격으로 확인한다.",
+        "key_point": "고속 CAN의 우성 상태는 양의 차동전압, 열성 상태는 작은 차동전압으로 구별된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "두 비트 모두 CAN-H와 CAN-L의 전압차가 항상 동일하다",
+            "verdict": "incorrect",
+            "rationale": "우성과 열성은 차동전압 상태가 다르다."
+          },
+          {
+            "number": 2,
+            "text": "열성 비트의 차동전압이 우성 비트보다 항상 크게 양의 값이다",
+            "verdict": "incorrect",
+            "rationale": "우성 상태에서 정상적으로 양의 차동전압이 형성된다."
+          },
+          {
+            "number": 3,
+            "text": "우성 비트에서 CAN-H가 CAN-L보다 높아지고 열성 비트에서는 차동전압이 거의 0에 가까워진다",
+            "verdict": "correct",
+            "rationale": "정상 고속 CAN의 두 논리 상태에 해당하는 관계이다."
+          },
+          {
+            "number": 4,
+            "text": "두 통신선은 모든 비트에서 배터리 전압과 동일하다",
+            "verdict": "incorrect",
+            "rationale": "두 선이 항상 배터리 전압인 것은 정상 CAN 파형이 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.analog.com/en/resources/analog-dialogue/articles/configure-can-bit-timing.html",
+        "access": "search_excerpt_only",
+        "scope": "general concept; authored example independently calculated or reasoned"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r03-s04-q07",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "구동 에너지 효율을 높이는 데 직접 활용되는 전기차 기술로 적합한 것은?",
+        "choices": [
+          "엔진 연료 분사량 무조건 증가",
+          "감속 시 운동에너지를 전기로 회수하는 회생제동",
+          "차량 중량을 무조건 늘리는 장식",
+          "공조 필터를 무조건 두껍게 설치"
+        ],
+        "answer": 2,
+        "reason": "회생제동은 감속 운동에너지 일부를 전기에너지로 전환해 배터리에 저장한다. 에너지 절감량은 배터리 수용능력과 주행조건에 따라 달라진다.",
+        "key_point": "회생제동은 감속 운동에너지를 재사용한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 연료 분사량 무조건 증가",
+            "verdict": "incorrect",
+            "rationale": "BEV에 엔진이 없다면 내연기관 연료 분사를 늘리는 행위가 에너지 회수 기술은 아니다."
+          },
+          {
+            "number": 2,
+            "text": "감속 시 운동에너지를 전기로 회수하는 회생제동",
+            "verdict": "correct",
+            "rationale": "회생제동은 차량 운동에너지를 모터 발전으로 전기 회수하여 효율에 도움을 준다."
+          },
+          {
+            "number": 3,
+            "text": "차량 중량을 무조건 늘리는 장식",
+            "verdict": "incorrect",
+            "rationale": "장식 중량 증가 자체는 구동 에너지 효율 향상 기술이라고 볼 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "공조 필터를 무조건 두껍게 설치",
+            "verdict": "incorrect",
+            "rationale": "공조 필터를 무조건 두껍게 만들면 전비가 개선된다는 보편 규칙은 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "전기차가 감속하는 동안 회수 가능한 운동에너지 감소량이 200kJ이다. 그중 60%가 실제 배터리에 저장되는 이상화된 조건에서 저장 에너지는?",
+        "choices": [
+          "80kJ",
+          "120kJ",
+          "200kJ",
+          "333kJ"
+        ],
+        "answer": 2,
+        "reason": "배터리에 저장되는 에너지는 주어진 운동에너지 감소량에 저장 효율을 곱한다. 200×0.60=120kJ이다. 실제 회생량은 제동 배분, 배터리 수용전력 및 손실에 따라 달라진다.",
+        "key_point": "저장 에너지 = 주어진 에너지 × 저장 효율.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "80kJ",
+            "verdict": "incorrect",
+            "rationale": "80kJ는 저장되지 않은 40%에 해당한다."
+          },
+          {
+            "number": 2,
+            "text": "120kJ",
+            "verdict": "correct",
+            "rationale": "200kJ의 60%는 120kJ이다."
+          },
+          {
+            "number": 3,
+            "text": "200kJ",
+            "verdict": "incorrect",
+            "rationale": "200kJ는 손실이 없을 때의 값이다."
+          },
+          {
+            "number": 4,
+            "text": "333kJ",
+            "verdict": "incorrect",
+            "rationale": "주어진 에너지를 효율로 나눈 값이며 이 조건과 다르다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://afdc.energy.gov/vehicles/electric-basics-hev",
+        "access": "search_excerpt_only",
+        "scope": "general concept; authored example independently calculated or reasoned"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 6,
+    "answer_index_changes": 0,
+    "source_excerpt_checked": 4
+  }
+}
