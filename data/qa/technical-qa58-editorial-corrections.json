@@ -136,7 +136,7 @@
           "0.15N"
         ],
         "answer": 1,
-        "reason": "선형 점성 감쇠 모델에서 감쇠력의 크기는 감쇠계수와 상대속도 크기의 곱이다. 2,000×0.3=600N이다. 실제 가변 댐퍼는 비선형 특성과 제어 지령에 따라 감쇠력이 달라진다. 기존 선택지의 EPB는 전자식 주차브레이크(Electric Parking Brake)를 뜻하며 차체 주차 잠금장치라는 표현은 부정확하다.",
+        "reason": "선형 점성 감쇠 모델에서 감쇠력의 크기는 감쇠계수와 상대속도 크기의 곱이다. 2,000×0.3=600N이다. 실제 가변 댐퍼는 비선형 특성과 제어 지령에 따라 감쇠력이 달라진다.",
         "key_point": "이상적인 선형 모델에서 감쇠력의 크기 F=c×v.",
         "option_analysis": [
           {
@@ -168,7 +168,8 @@
       "additional_reference": null,
       "reference_status": "Existing historical references retained; no new external page verification; authored calculation conditions explicitly defined.",
       "approval": "pending_independent_review",
-      "publishable": false
+      "publishable": false,
+      "editorial_note": "기존 EPB 선택지의 용어는 전자식 주차브레이크(Electric Parking Brake)로 바로잡아야 한다. 개정 문제에는 해당 선택지를 사용하지 않는다."
     },
     {
       "id": "auto-made-r04-s02-q11",
