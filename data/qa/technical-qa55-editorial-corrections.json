@@ -1,0 +1,521 @@
+{
+  "kind": "QA55_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r02-s01-q03",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "윤활식 터보차저를 교환한 직후 재시동 전 확인할 사항으로 우선순위가 높은 것은?",
+        "choices": [
+          "터보 오일 배출호스를 분리한 채 시동한다",
+          "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
+          "연료압력이 정상이면 윤활유 상태는 확인하지 않는다",
+          "시동 직후 최대 과급으로만 베어링 상태를 확인한다"
+        ],
+        "answer": 2,
+        "reason": "터보 축 베어링은 고속으로 회전한다. 오일 공급이 부족하면 초기 시동 시 손상이 생길 수 있으므로 지정된 프라이밍과 공급·리턴 배관 연결 상태를 확인한다.",
+        "key_point": "터보 교환 직후에는 초기 윤활·오일 배관이 핵심이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "터보 오일 배출호스를 분리한 채 시동한다",
+            "verdict": "incorrect",
+            "rationale": "오일 회수라인을 빼고 시동하면 윤활유 누출·오일 부족 위험이 있어 적절하지 않다."
+          },
+          {
+            "number": 2,
+            "text": "오일 공급·회수라인 연결 및 초기 윤활 절차를 확인한다",
+            "verdict": "correct",
+            "rationale": "터보 설치 후 공급·회수라인 체결과 초기 윤활·프라이밍 절차를 확인하는 것이 적절하다."
+          },
+          {
+            "number": 3,
+            "text": "연료압력이 정상이면 윤활유 상태는 확인하지 않는다",
+            "verdict": "incorrect",
+            "rationale": "연료압력이 정상이라도 터보 베어링 윤활 부족 가능성을 배제할 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "시동 직후 최대 과급으로만 베어링 상태를 확인한다",
+            "verdict": "incorrect",
+            "rationale": "장착 직후 최대 과급 운전만으로 베어링 상태를 점검하는 것은 설치 지침과 맞지 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "오일 윤활식 터보차저에서 오일 공급은 정상인데 중력식 오일 회수라인이 막혀 있다. 예상되는 현상은?",
+        "choices": [
+          "터보차저 중심 하우징에 오일이 고일 가능성이 줄어든다",
+          "오일이 원활하게 회수되지 않아 중심 하우징에 고이고 흡기 또는 배기 측으로 누유될 수 있다",
+          "오일 회수 불량은 터보차저의 밀봉 상태와 무관하다",
+          "오일 회수라인을 좁힐수록 누유를 예방할 수 있다"
+        ],
+        "answer": 2,
+        "reason": "오일 공급이 정상이어도 중력식 회수라인의 제한으로 중심 하우징에 오일이 고일 수 있다. 이는 터보의 흡기·배기 측 누유 원인 후보이다. 실제 원인은 크랭크케이스 압력과 밀봉 상태 등도 종합해 판단한다.",
+        "key_point": "터보 오일 회수 불량은 누유의 원인 후보이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "터보차저 중심 하우징에 오일이 고일 가능성이 줄어든다",
+            "verdict": "incorrect",
+            "rationale": "회수 제한은 오일 축적 가능성을 높인다."
+          },
+          {
+            "number": 2,
+            "text": "오일이 원활하게 회수되지 않아 중심 하우징에 고이고 흡기 또는 배기 측으로 누유될 수 있다",
+            "verdict": "correct",
+            "rationale": "배출 제한으로 오일이 고이면서 누유가 발생할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "오일 회수 불량은 터보차저의 밀봉 상태와 무관하다",
+            "verdict": "incorrect",
+            "rationale": "회수 상태는 터보 밀봉 및 누유와 관련된다."
+          },
+          {
+            "number": 4,
+            "text": "오일 회수라인을 좁힐수록 누유를 예방할 수 있다",
+            "verdict": "incorrect",
+            "rationale": "회수 제한은 누유 방지 방법이 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.garrettmotion.com/knowledge-center-category/racing-and-performance/turbocharger-oil-drainage/",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s02-q05",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "자동변속기 제어기의 실시간 데이터를 살펴보려 한다. 관련성이 가장 높은 조합은?",
+        "choices": [
+          "모든 제어입력을 ATF 색상 변화로 대체한다",
+          "입력축 회전속도만 읽고 솔레노이드 명령을 무시한다",
+          "솔레노이드 지령·입출력 회전수와 ATF 온도를 확인한다",
+          "변속단 명령을 무시하고 휠속도 하나만 확인한다"
+        ],
+        "answer": 3,
+        "reason": "변속기 전자제어 진단에는 변속 상태, 솔레노이드 지령, 입출력 회전속도, 온도, 고장코드가 직접적인 단서가 된다. 관련 없는 편의장치 상태는 우선 검사항목이 아니다.",
+        "key_point": "변속기 진단에는 변속 제어·속도·유체 온도 정보가 중요하다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 제어입력을 ATF 색상 변화로 대체한다",
+            "verdict": "incorrect",
+            "rationale": "ATF 색상 하나만으로 솔레노이드 지령 등 모든 제어 입력값을 대체할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "입력축 회전속도만 읽고 솔레노이드 명령을 무시한다",
+            "verdict": "incorrect",
+            "rationale": "입력축 속도만 보아서는 솔레노이드 지령·출력축 변화 등의 진단 단서를 놓친다."
+          },
+          {
+            "number": 3,
+            "text": "솔레노이드 지령·입출력 회전수와 ATF 온도를 확인한다",
+            "verdict": "correct",
+            "rationale": "변속기 솔레노이드 명령·입출력 회전수·ATF 온도는 관련 진단 자료다."
+          },
+          {
+            "number": 4,
+            "text": "변속단 명령을 무시하고 휠속도 하나만 확인한다",
+            "verdict": "incorrect",
+            "rationale": "변속단 명령을 무시하고 휠속도 하나로 변속 제어 상태를 판단할 수는 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "자동변속기의 입력축이 2,400rpm, 출력축이 1,200rpm으로 회전한다. 입력축 회전수/출력축 회전수로 정의한 현재 변속비는?",
+        "choices": [
+          "0.5:1",
+          "1:1",
+          "2:1",
+          "4:1"
+        ],
+        "answer": 3,
+        "reason": "변속비를 입력축 회전수 ÷ 출력축 회전수로 정의하면 2,400 ÷ 1,200 = 2이다. 따라서 2:1이다. 실제 차량에서는 센서가 측정하는 축과 변속기 구조를 확인해야 한다.",
+        "key_point": "변속비 = 입력축 회전수 / 출력축 회전수.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0.5:1",
+            "verdict": "incorrect",
+            "rationale": "입출력 회전수의 비를 반대로 계산한 값이다."
+          },
+          {
+            "number": 2,
+            "text": "1:1",
+            "verdict": "incorrect",
+            "rationale": "두 축의 속도가 같을 때의 비이다."
+          },
+          {
+            "number": 3,
+            "text": "2:1",
+            "verdict": "correct",
+            "rationale": "2,400/1,200은 2이므로 2:1이다."
+          },
+          {
+            "number": 4,
+            "text": "4:1",
+            "verdict": "incorrect",
+            "rationale": "주어진 두 회전수로부터 4가 나오지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s03-q13",
+      "kind": "answer_leak",
+      "before": {
+        "question": "내연기관 차량의 냉각수를 이용한 온수식 히터에서 실내로 열을 전달하는 1차 매체는?",
+        "choices": [
+          "변속기 ATF",
+          "공조 냉매만",
+          "배터리 전해액",
+          "엔진 냉각수"
+        ],
+        "answer": 4,
+        "reason": "온수식 난방은 엔진 냉각수가 히터 코어를 지나가면서 송풍 공기에 열을 준다. 전기차 히트펌프나 전기히터는 다른 난방 방식을 사용할 수 있다.",
+        "key_point": "온수식 히터는 엔진 냉각수의 열을 이용한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "변속기 ATF",
+            "verdict": "incorrect",
+            "rationale": "변속기 ATF는 일반적인 온수식 승객실 히터의 1차 열전달 유체가 아니다."
+          },
+          {
+            "number": 2,
+            "text": "공조 냉매만",
+            "verdict": "incorrect",
+            "rationale": "냉매는 에어컨/열펌프 회로에서 쓰이며 내연기관 냉각수 히터의 1차 열매체가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "배터리 전해액",
+            "verdict": "incorrect",
+            "rationale": "배터리 전해액은 일반적인 온수식 히터의 열전달 매체가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "엔진 냉각수",
+            "verdict": "correct",
+            "rationale": "엔진 냉각수는 히터코어에 열을 공급하는 일반적인 온수식 난방의 열매체다."
+          }
+        ]
+      },
+      "after": {
+        "question": "내연기관의 온수식 히터에서 냉각수가 히터코어를 통과할 때 실내 공기가 따뜻해지는 원리는?",
+        "choices": [
+          "냉각수가 실내 공기와 직접 섞여 온도를 높인다",
+          "응축기에서 냉매가 증발하여 공기를 데운다",
+          "송풍기 모터의 저항 발열만으로 난방한다",
+          "히터코어를 통한 냉각수와 송풍 공기 사이의 열교환"
+        ],
+        "answer": 4,
+        "reason": "엔진에서 열을 받은 냉각수가 히터코어 내부를 흐르고, 송풍 공기는 코어 외부를 통과하며 열을 전달받는다. 두 유체는 정상 상태에서 직접 혼합되지 않는다.",
+        "key_point": "온수식 히터는 히터코어의 열교환으로 난방한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "냉각수가 실내 공기와 직접 섞여 온도를 높인다",
+            "verdict": "incorrect",
+            "rationale": "냉각수와 공기는 정상 상태에서 직접 혼합되지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "응축기에서 냉매가 증발하여 공기를 데운다",
+            "verdict": "incorrect",
+            "rationale": "온수식 히터의 열교환 원리를 설명하지 못한다."
+          },
+          {
+            "number": 3,
+            "text": "송풍기 모터의 저항 발열만으로 난방한다",
+            "verdict": "incorrect",
+            "rationale": "송풍기는 공기를 이동시키며 주된 열원은 엔진 냉각수이다."
+          },
+          {
+            "number": 4,
+            "text": "히터코어를 통한 냉각수와 송풍 공기 사이의 열교환",
+            "verdict": "correct",
+            "rationale": "히터코어에서 냉각수 열이 공기로 전달된다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s04-q10",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "PEM 수소연료전지의 애노드 촉매에서 이루어지는 주된 반응은?",
+        "choices": [
+          "수소 분자가 양성자와 전자로 산화되는 과정",
+          "산소가 연료탱크에서 액화되는 과정",
+          "수소가 디젤연료로 변하는 과정",
+          "바퀴의 회전 운동을 기어로 전달하는 과정"
+        ],
+        "answer": 1,
+        "reason": "연료전지 애노드에서는 수소가 산화되어 H+와 전자를 만든다. 전자는 외부회로를 따라 이동하며 캐소드에서 산소 환원 반응이 일어난다.",
+        "key_point": "PEM 연료전지 애노드는 수소 산화 반응이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "수소 분자가 양성자와 전자로 산화되는 과정",
+            "verdict": "correct",
+            "rationale": "PEM 연료전지 애노드에서는 수소 분자의 전기화학적 산화가 일어난다."
+          },
+          {
+            "number": 2,
+            "text": "산소가 연료탱크에서 액화되는 과정",
+            "verdict": "incorrect",
+            "rationale": "연료전지 산소가 탱크 내부에서 액체 연료로 변환되는 반응은 애노드 주반응이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "수소가 디젤연료로 변하는 과정",
+            "verdict": "incorrect",
+            "rationale": "수소가 디젤 연료로 전환되는 반응은 PEM 연료전지의 작동 원리가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "바퀴의 회전 운동을 기어로 전달하는 과정",
+            "verdict": "incorrect",
+            "rationale": "바퀴의 기계적 동력 전달은 연료전지 애노드 전기화학 반응이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "PEM 수소연료전지의 캐소드(양극)에서 일어나는 대표적인 반응은?",
+        "choices": [
+          "산소가 양성자와 전자를 받아 물을 생성한다",
+          "수소가 양성자와 전자로 산화된다",
+          "물만 전기분해하여 수소와 산소를 생성한다",
+          "양성자가 전자와 만나 수소 기체만 생성한다"
+        ],
+        "answer": 1,
+        "reason": "PEM 연료전지의 캐소드에서는 산소가 막을 통과한 양성자 및 외부 회로의 전자와 반응하여 물을 생성한다. 애노드의 수소 산화와 구별한다. 반응식은 O₂ + 4H⁺ + 4e⁻ → 2H₂O이다.",
+        "key_point": "PEM 캐소드에서는 산소 환원으로 물이 생성된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "산소가 양성자와 전자를 받아 물을 생성한다",
+            "verdict": "correct",
+            "rationale": "산소·양성자·전자의 반응으로 물이 생성된다."
+          },
+          {
+            "number": 2,
+            "text": "수소가 양성자와 전자로 산화된다",
+            "verdict": "incorrect",
+            "rationale": "수소 산화는 연료전지 애노드에서 일어난다."
+          },
+          {
+            "number": 3,
+            "text": "물만 전기분해하여 수소와 산소를 생성한다",
+            "verdict": "incorrect",
+            "rationale": "물 전기분해는 이 연료전지의 발전 반응과 다르다."
+          },
+          {
+            "number": 4,
+            "text": "양성자가 전자와 만나 수소 기체만 생성한다",
+            "verdict": "incorrect",
+            "rationale": "산소 환원으로 물을 만드는 반응을 설명하지 못한다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.energy.gov/cmei/fuels/fuel-cell-animation-text-version",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s04-q11",
+      "kind": "clarify_chemical_reaction",
+      "before": {
+        "question": "식물성 기름의 지방산 에스터를 만들 때 전이에스터화 공정에서 함께 나오는 부산물은?",
+        "choices": [
+          "오존",
+          "글리세롤(글리세린)",
+          "질소산화물",
+          "일산화탄소"
+        ],
+        "answer": 2,
+        "reason": "중성지방과 알코올의 전이에스터화 반응으로 지방산 알킬에스터(바이오디젤)와 글리세롤이 생성된다. 부산물의 정제·처리 공정이 필요하다.",
+        "key_point": "바이오디젤 전이에스터화 부산물은 글리세롤이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "오존",
+            "verdict": "incorrect",
+            "rationale": "전이에스터화 공정의 대표 부산물은 오존이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "글리세롤(글리세린)",
+            "verdict": "correct",
+            "rationale": "식물성 기름의 중성지방을 전이에스터화하면 지방산 알킬에스터와 글리세롤이 생성된다."
+          },
+          {
+            "number": 3,
+            "text": "질소산화물",
+            "verdict": "incorrect",
+            "rationale": "NOx는 바이오디젤 합성의 대표 부산물로 생성되는 물질이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "일산화탄소",
+            "verdict": "incorrect",
+            "rationale": "일산화탄소는 바이오디젤 전이에스터화의 대표 분리 부산물이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "식물성 유지의 트라이글리세라이드를 메탄올과 전이에스터화하여 FAME 바이오디젤을 제조할 때 생성되는 대표 부산물은?",
+        "choices": [
+          "오존",
+          "글리세롤(글리세린)",
+          "질소산화물",
+          "일산화탄소"
+        ],
+        "answer": 2,
+        "reason": "트라이글리세라이드와 메탄올의 전이에스터화는 지방산 메틸에스터(FAME)와 글리세롤을 생성한다. 유리지방산의 직접 에스터화와 혼동하지 않는다.",
+        "key_point": "유지의 전이에스터화 부산물은 글리세롤이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "오존",
+            "verdict": "incorrect",
+            "rationale": "오존은 해당 전이에스터화 부산물이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "글리세롤(글리세린)",
+            "verdict": "correct",
+            "rationale": "트라이글리세라이드의 글리세롤 골격에서 글리세롤이 생성된다."
+          },
+          {
+            "number": 3,
+            "text": "질소산화물",
+            "verdict": "incorrect",
+            "rationale": "질소산화물은 해당 반응의 대표 부산물이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "일산화탄소",
+            "verdict": "incorrect",
+            "rationale": "일산화탄소는 해당 반응의 대표 부산물이 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://afdc.energy.gov/fuels/biodiesel-production?source=post_page---------------------------",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r02-s04-q18",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "전기차가 감속하면서 구동모터가 발전기 역할을 한다. 에너지 흐름으로 올바른 것은?",
+        "choices": [
+          "차량의 운동에너지 일부 → 전기에너지 → 배터리 저장",
+          "브레이크 마찰열 전부 → 전기에너지로 직접 회수",
+          "배터리 전기에너지 → 브레이크 마찰열로만 전환",
+          "타이어 압축공기 → 배터리의 화학에너지"
+        ],
+        "answer": 1,
+        "reason": "회생제동은 바퀴에서 전달되는 차량 운동에너지의 일부를 모터가 발전하면서 전기에너지로 바꿔 배터리에 저장한다. 마찰 브레이크의 열 자체를 직접 전기로 바꾸는 것은 아니다.",
+        "key_point": "회생제동은 운동에너지에서 전기에너지로의 변환이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "차량의 운동에너지 일부 → 전기에너지 → 배터리 저장",
+            "verdict": "correct",
+            "rationale": "감속 중 차량의 운동에너지가 모터 발전을 거쳐 전기에너지로 전환돼 배터리에 저장될 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "브레이크 마찰열 전부 → 전기에너지로 직접 회수",
+            "verdict": "incorrect",
+            "rationale": "회생제동이 마찰 브레이크 열을 직접 전기화하는 것은 아니며 기계적 운동에너지를 회수한다."
+          },
+          {
+            "number": 3,
+            "text": "배터리 전기에너지 → 브레이크 마찰열로만 전환",
+            "verdict": "incorrect",
+            "rationale": "감속 시 회생제동은 배터리 에너지를 단순히 마찰열로 모두 소모하는 작동과 구분된다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 압축공기 → 배터리의 화학에너지",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기 압축만으로 직접 충전용 전기에너지를 만들어내는 원리가 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "배터리 전기차가 완전 충전 직후 내리막에서 감속한다. 배터리 충전 수용 능력이 제한될 때 회생제동에 대한 설명으로 옳은 것은?",
+        "choices": [
+          "회생제동량이 제한될 수 있으며 필요한 제동력은 차량 제동 시스템으로 확보해야 한다",
+          "배터리 SOC가 높을수록 회생제동 전력을 항상 더 많이 수용한다",
+          "회생제동이 제한되면 마찰제동도 반드시 함께 작동 불능이 된다",
+          "배터리 충전 수용 능력은 회생제동량과 무관하다"
+        ],
+        "answer": 1,
+        "reason": "회생제동 전력을 배터리가 받아들이는 능력은 SOC, 온도 및 충전 제한에 따라 달라질 수 있다. 완전 충전 또는 저온 상태에서 회생제동이 제한되는 차량이 있으며 제동 제어 방식은 차량별로 다르다. 운전자는 차량 지침에 맞춰 필요한 제동을 해야 한다.",
+        "key_point": "배터리 충전 수용 제한은 회생제동량에 영향을 준다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "회생제동량이 제한될 수 있으며 필요한 제동력은 차량 제동 시스템으로 확보해야 한다",
+            "verdict": "correct",
+            "rationale": "충전 수용 한계로 회생제동량이 제한될 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "배터리 SOC가 높을수록 회생제동 전력을 항상 더 많이 수용한다",
+            "verdict": "incorrect",
+            "rationale": "높은 SOC는 오히려 충전 수용 한계를 초래할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "회생제동이 제한되면 마찰제동도 반드시 함께 작동 불능이 된다",
+            "verdict": "incorrect",
+            "rationale": "회생제동 제한과 마찰제동 불능은 동일하지 않다."
+          },
+          {
+            "number": 4,
+            "text": "배터리 충전 수용 능력은 회생제동량과 무관하다",
+            "verdict": "incorrect",
+            "rationale": "배터리 충전 수용 능력은 회생제동 제한 조건과 관련된다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.tesla.com/ownersmanual/modely/en_us/GUID-3DFFB071-C0F6-474D-8A45-17BE1A006365.html",
+        "access": "search_excerpt_verified"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 6,
+    "answer_index_changes": 0,
+    "source_excerpt_checked": 4
+  }
+}
