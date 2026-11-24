@@ -59,3 +59,14 @@ assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
 console.log("PASS: approved-only public manifest, base 124 records, no ZIP picker, DOM references.");
+
+// QA67 public bank editorial-review ledger consistency (not expert certification).
+{
+  const audit=JSON.parse(read("data/qa/technical-qa67-public-practice-review.json"));
+  const publicExpected=["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(read("data/expected/"+s+".json")));
+  const map=new Map(publicExpected.map(q=>[q.id,q]));
+  assert.equal(audit.reviewed.length,112);assert.equal(new Set(audit.reviewed.map(q=>q.id)).size,112);
+  assert.equal(audit.changed.length,8);
+  for(const row of audit.reviewed){const q=map.get(row.id);assert.ok(q);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(row.independent_expert_approved,false);}
+  for(const row of audit.changed){const q=map.get(row.id);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],row.after[k]);assert.equal(row.before.answer,row.after.answer);}
+}

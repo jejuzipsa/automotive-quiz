@@ -208,7 +208,7 @@
     "track": "expected",
     "origin": "original_practice",
     "subject": "engine",
-    "question": "정상 조건에서 삼원촉매가 주로 감소시키도록 설계된 배출 성분의 조합은?",
+    "question": "이론공연비 부근에서 충분히 활성화된 가솔린 기관의 삼원촉매가 주로 감소시키는 배출 성분의 조합은?",
     "choices": [
       "산소·질소·수증기",
       "CO·HC·NOx",
@@ -216,7 +216,7 @@
       "이산화탄소·산소·수소"
     ],
     "answer": 2,
-    "explanation": "삼원촉매는 일산화탄소와 탄화수소를 산화시키고 질소산화물을 환원하는 기능을 수행한다.",
+    "explanation": "삼원촉매는 이론공연비 부근에서 일산화탄소(CO)와 탄화수소(HC)를 산화하고 질소산화물(NOx)을 환원한다. 촉매 온도와 공연비 제어 상태에 따라 정화 효율이 달라진다.",
     "review_status": "editorial_draft",
     "publishable": true
   },
@@ -420,7 +420,7 @@
     "track": "expected",
     "origin": "original_practice",
     "subject": "engine",
-    "question": "가상 배기가스 냉각기의 질량유량이 0.04kg/s, 일정한 비열이 1kJ/(kg·K), 온도 감소량이 75K이다. 열손실 외 다른 변화가 없다면 제거 열전달률은?",
+    "question": "정상상태의 가상 배기가스 냉각기에서 질량유량은 0.04kg/s, 일정한 정압비열은 1kJ/(kg·K), 온도 감소량은 75K이다. 축일과 운동·위치에너지 변화를 무시하면 배기가스에서 제거되는 열전달률의 크기는?",
     "choices": [
       "3kW",
       "0.3kW",
@@ -428,7 +428,7 @@
       "1.875kW"
     ],
     "answer": 1,
-    "explanation": "열전달률은 질량유량×비열×온도차이다. 0.04×1×75=3kJ/s=3kW이다.",
+    "explanation": "정상상태에서 축일과 운동·위치에너지 변화를 무시하면 제거 열전달률의 크기는 질량유량×정압비열×온도차이다. 0.04×1×75=3kJ/s=3kW이다.",
     "review_status": "editorial_draft",
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",

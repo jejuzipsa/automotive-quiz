@@ -37,7 +37,7 @@
       "previous_answer": 4,
       "reference_url": null,
       "verification": "explicit_definition_and_arithmetic",
-      "basis": "Defined diameter difference: 60.05−60.00=0.05 mm.",
+      "basis": "Published variant: 50.08−50.00=0.08 mm.",
       "question": "가상 베어링 내경이 50.08mm이고 저널 외경이 50.00mm이다. 두 지름의 차로 정의한 지름 간극은?",
       "choices": [
         "0.04mm",
@@ -50,7 +50,8 @@
       "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
       "source_draft_promoted": false,
       "independent_expert_approved": false,
-      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam",
+      "source_draft_basis": "Defined diameter difference: 60.05−60.00=0.05 mm."
     },
     {
       "id": "original-engine-28",
@@ -59,7 +60,7 @@
       "previous_answer": 1,
       "reference_url": null,
       "verification": "explicit_definition_and_arithmetic",
-      "basis": "Explicit mass fraction 20/(80+20)=20%.",
+      "basis": "Published variant: 30/(90+30)×100=25%.",
       "question": "신선 공기 질량유량 90g/s와 재순환 배기가스 30g/s가 혼합된다. 전체 혼합기 질량유량 대비 재순환 배기가스의 비율은?",
       "choices": [
         "30%",
@@ -72,7 +73,8 @@
       "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
       "source_draft_promoted": false,
       "independent_expert_approved": false,
-      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam",
+      "source_draft_basis": "Explicit mass fraction 20/(80+20)=20%."
     },
     {
       "id": "original-chassis-26",
@@ -103,7 +105,7 @@
       "previous_answer": 1,
       "reference_url": null,
       "verification": "explicit_definition_and_arithmetic",
-      "basis": "Explicit sum +0.10°+0.15°=+0.25°.",
+      "basis": "Published variant: +0.12°−0.04°=+0.08°.",
       "question": "가상 얼라인먼트 장비의 좌측 개별 토가 +0.12°, 우측이 −0.04°이다. 전체 토를 대수합으로 정의하면?",
       "choices": [
         "+0.16°",
@@ -116,7 +118,8 @@
       "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
       "source_draft_promoted": false,
       "independent_expert_approved": false,
-      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam",
+      "source_draft_basis": "Explicit sum +0.10°+0.15°=+0.25°."
     },
     {
       "id": "original-chassis-28",
@@ -125,7 +128,7 @@
       "previous_answer": 4,
       "reference_url": null,
       "verification": "explicit_definition_and_arithmetic",
-      "basis": "Defined pulses per revolution × rotations per second: 48×5=240 Hz.",
+      "basis": "Published variant: 36×(300/60)=180 Hz.",
       "question": "가상 휠속도 센서가 회전당 36펄스를 발생시킨다. 차륜이 300rpm으로 회전할 때 펄스 주파수는?",
       "choices": [
         "36Hz",
@@ -138,7 +141,8 @@
       "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
       "source_draft_promoted": false,
       "independent_expert_approved": false,
-      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam",
+      "source_draft_basis": "Defined pulses per revolution × rotations per second: 48×5=240 Hz."
     },
     {
       "id": "original-electrical-26",
@@ -191,7 +195,7 @@
       "previous_answer": 1,
       "reference_url": null,
       "verification": "explicit_definition_and_arithmetic",
-      "basis": "Defined constant angular rate times time: 10×3=30°.",
+      "basis": "Published variant: 12×2.5=30°.",
       "question": "차체 수직축을 중심으로 일정한 요레이트 12°/s로 2.5초간 회전하는 가상 차량의 각변위 크기는?",
       "choices": [
         "4.8°",
@@ -204,7 +208,8 @@
       "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
       "source_draft_promoted": false,
       "independent_expert_approved": false,
-      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam",
+      "source_draft_basis": "Defined constant angular rate times time: 10×3=30°."
     },
     {
       "id": "original-eco-26",
