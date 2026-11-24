@@ -40,7 +40,15 @@
     "approved_past_bank_path_pattern": "data/past/approved/{subject}.json",
     "approved_past_bank_gate": "publishable=true AND review_status=approved AND technical_answer_status=independently_approved AND rights_cleared=true AND no subject hold",
     "draft_files_publicly_retrievable_from_public_repository": true,
-    "draft_access_note": "Although omitted from public data/manifest.json and not available in the quiz UI, reauthored draft JSON checked into a public repository can be fetched directly. This is not access control; move unpublished draft assets to a private repository when confidentiality is required. Private publisher source/OCR was not uploaded."
+    "draft_access_note": "Although omitted from public data/manifest.json and not available in the quiz UI, reauthored draft JSON checked into a public repository can be fetched directly. This is not access control; move unpublished draft assets to a private repository when confidentiality is required. Private publisher source/OCR was not uploaded.",
+    "public_concept_count": 48,
+    "original_concept_practice_count": 44,
+    "concept_subject_counts": {
+      "engine": 12,
+      "chassis": 12,
+      "electrical": 12,
+      "eco": 12
+    }
   },
   "source_captures": {
     "original": 57,
@@ -2572,5 +2580,14 @@
     "subject_holds": 55,
     "independent_expert_approved": 0,
     "source_draft_promoted": 0
+  },
+  "qa72_concept_expansion": {
+    "total": 48,
+    "new": 44,
+    "existing_demo": 4,
+    "source": "QA67 public expected questions",
+    "independent_expert_approved": false,
+    "expected_count_unchanged": 112,
+    "drafts_promoted": 0
   }
 }

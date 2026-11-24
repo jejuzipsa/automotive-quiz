@@ -54,11 +54,11 @@ for(const entry of manifest.banks){
 }
 assert.equal(counts.expected,112);
 assert.equal(counts.demo,8);
-assert.equal(counts.concept,4);
+assert.equal(counts.concept,48);
 assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
-console.log("PASS: approved-only public manifest, base 124 records, no ZIP picker, DOM references.");
+console.log("PASS: approved-only public manifest, base 168 records, no ZIP picker, DOM references.");
 
 // QA67 public bank editorial-review ledger consistency (not expert certification).
 {
@@ -69,4 +69,16 @@ console.log("PASS: approved-only public manifest, base 124 records, no ZIP picke
   assert.equal(audit.changed.length,8);
   for(const row of audit.reviewed){const q=map.get(row.id);assert.ok(q);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(row.independent_expert_approved,false);}
   for(const row of audit.changed){const q=map.get(row.id);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],row.after[k]);assert.equal(row.before.answer,row.after.answer);}
+}
+
+// QA72: source links, unique blank prompts, choice uniqueness and per-subject distribution.
+{
+ const qs=JSON.parse(read("data/concept.json")),a=JSON.parse(read("data/qa/qa72-concept-expansion.json"));
+ const expected=new Map(["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(read("data/expected/"+s+".json"))).map(q=>[q.id,q]));
+ assert.equal(a.added.length,44);assert.equal(new Set(a.added.map(x=>x.id)).size,44);
+ assert.equal(new Set(qs.map(q=>q.question)).size,48);
+ for(const subject of ["engine","chassis","electrical","eco"])assert.equal(qs.filter(q=>q.subject===subject).length,12);
+ for(const q of qs){assert.equal((q.question.match(/\(    \)/g)||[]).length,1);assert.equal(new Set(q.choices).size,4);}
+ for(const row of a.added){const q=qs.find(q=>q.id===row.id),source=expected.get(row.source_expected_id);assert.ok(q&&source);assert.equal(q.subject,source.subject);assert.equal(q.source_expected_id,source.id);assert.equal(row.source_correct_choice,source.choices[source.answer-1]);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.review_status,"editorial_draft");assert.equal(row.independent_expert_approved,false);}
+ console.log("PASS: 48 concept blanks, 44 traceable editorial items, 12 per subject");
 }

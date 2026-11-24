@@ -187,6 +187,21 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.deepEqual(history(),imported,"legacy import must not double count");
   assert.equal(oldResult.items.length,80);
 
+  await els.homeBtn.click();await els.conceptEntryBtn.click();
+  assert.equal(els.conceptGrid.children.length,4);
+  const concepts=JSON.parse(fs.readFileSync(path.join(root,"data/concept.json"),"utf8"));
+  for(let subject=0;subject<4;subject++){
+    assert.ok(els.conceptGrid.children[subject].children[1].textContent.includes("12개"));
+    await els.conceptGrid.children[subject].click();
+    const seen=new Set();
+    for(let i=0;i<12;i++){const q=concepts.find(q=>q.question===els.questionText.textContent);
+      assert.ok(q&&!seen.has(q.id));seen.add(q.id);
+      await els.answerChoices.children.find(x=>x.children[1].textContent===q.choices[q.answer-1]).click();
+      assert.ok(els.feedback.children[0].textContent.includes("정답이야"));await els.nextBtn.click();}
+    assert.ok(els.resultScore.textContent.includes("12 / 12문제"));
+    await els.resultHomeBtn.click();await els.conceptEntryBtn.click();
+  }
+  console.log("PASS: all 48 concept questions exercised with shuffled answers");
   console.log("PASS: cumulative wrong history, submitted exam blanks, repeat errors, resolved filter");
   console.log("PASS: exam resume, order, answers, deadline, expiry");
   console.log("PASS: JSON auto-fetch, shuffle/remap, 80-question 4-subject exam, 120min timer, back navigation, per-subject pass/fail, unanswered.");

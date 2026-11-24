@@ -409,7 +409,7 @@
     const audit=$("quizAuditInfo");
     if(q.review_status==="editorial_draft") {
       audit.classList.remove("hidden");
-      audit.textContent="자체제작 연습문제 · 편집 검토 단계";
+      audit.textContent=q.track==="concept"?"자체제작 개념문제 · 편집 검토 단계":"자체제작 연습문제 · 편집 검토 단계";
     } else audit.classList.add("hidden");
     $("questionCard").classList.remove("correct","wrong");
     const box=$("answerChoices");box.replaceChildren();
@@ -599,7 +599,7 @@
       const count=poolFor("concept",s.id).length;
       const card=make("button","concept-card");
       card.type="button";
-      card.append(make("strong","",s.name),make("span","",`시연용 괄호문제 ${count}개`));
+      card.append(make("strong","",s.name),make("span","",`괄호문제 ${count}개`));
       card.addEventListener("click",()=>startConcept(s.id));
       grid.append(card);
     });

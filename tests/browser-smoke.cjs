@@ -150,6 +150,15 @@ async function testDevice(browser,name,viewport,mobile){
     await el("wrongScopes").getByRole("button",{name:"전체 오답 이력",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     await layout();await page.screenshot({path:path.join(out,name+"-wrong-history.png"),fullPage:true});
+    await el("homeBtn").click();await el("conceptEntryBtn").click();
+    assert.equal(await el("conceptGrid").locator(".concept-card").count(),4);
+    const concept=read("data/concept.json"),seen=new Set();
+    await el("conceptGrid").locator(".concept-card").first().click();
+    for(let i=0;i<12;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);
+      assert.ok(item&&item.subject==="engine"&&!seen.has(item.id));seen.add(item.id);
+      await choose(item,true);await visible("feedback");await layout();await el("nextBtn").click();
+    }
+    assert.match(await text("resultScore"),/12 \/ 12문제/);
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}
