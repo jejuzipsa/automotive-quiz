@@ -115,9 +115,20 @@ async function testDevice(browser,name,viewport,mobile){
       const q=await currentQuestion();assert.ok(!ids.has(q.id),"duplicate exam question");ids.add(q.id);counts[q.subject]++;
       await choose(q,true);assert.ok(!(await el("feedback").isVisible()));
       if(i===0){
-        await el("nextBtn").click();await el("previousBtn").click();
+        const key="automotiveQuizActiveExamV1";
+        const saved=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),key);
+        const originalChoices=await el("answerChoices").locator(".choice-text").allTextContents();
+        assert.ok(saved&&saved.choices[0]>0,"exam answer persisted");
+        await el("nextBtn").click();await page.reload();
+        await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
+        await el("resumeExamBtn").click();
+        assert.equal(await text("quizProgress"),"2 / 80");
+        await el("previousBtn").click();
         assert.equal(await text("quizProgress"),"1 / 80");
+        assert.equal((await currentQuestion()).id,q.id);
+        assert.deepEqual(await el("answerChoices").locator(".choice-text").allTextContents(),originalChoices);
         assert.equal(await el("answerChoices").locator(".selected").count(),1);
+        assert.equal(await page.evaluate(k=>JSON.parse(localStorage.getItem(k)).examDeadline,key),saved.examDeadline);
       }
       await el("nextBtn").click();
     }
