@@ -1,0 +1,771 @@
+{
+  "kind": "QA61_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r07-s01-q08",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "MAP 센서의 단위가 kPa로 표시된다. 이 값이 의미하는 물리량은?",
+        "choices": [
+          "연료탱크의 액체 부피",
+          "배터리 단자 간 저항값",
+          "흡기 매니폴드 내부의 절대 압력",
+          "타이어 트레드 깊이"
+        ],
+        "answer": 3,
+        "reason": "MAP는 매니폴드 절대압 센서다. 매니폴드 압력을 측정하여 엔진 부하와 흡입 공기량 추정 등의 제어에 사용한다.",
+        "key_point": "MAP = Manifold Absolute Pressure.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "연료탱크의 액체 부피",
+            "verdict": "incorrect",
+            "rationale": "연료탱크 액체 부피는 MAP의 압력 측정량과 다르다."
+          },
+          {
+            "number": 2,
+            "text": "배터리 단자 간 저항값",
+            "verdict": "incorrect",
+            "rationale": "전기 저항의 단위는 Ω이며 MAP 센서 kPa와 다르다."
+          },
+          {
+            "number": 3,
+            "text": "흡기 매니폴드 내부의 절대 압력",
+            "verdict": "correct",
+            "rationale": "MAP는 흡기매니폴드의 절대압력에 대한 정보를 제공한다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 트레드 깊이",
+            "verdict": "incorrect",
+            "rationale": "타이어 트레드 깊이는 길이 단위이므로 MAP kPa 측정 대상이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "터보 압축기의 입구 절대압력이 90kPa이고 출구 절대압력이 180kPa이다. 압축기 압력비는?",
+        "choices": [
+          "0.5",
+          "1.0",
+          "2.0",
+          "3.0"
+        ],
+        "answer": 3,
+        "reason": "압축기 압력비는 출구 절대압력을 입구 절대압력으로 나눈 무차원 값이다. 180÷90=2.0이다. 실제 압축기 입출구의 압력과 매니폴드 압력은 유로 손실로 서로 다를 수 있다.",
+        "key_point": "압축기 압력비 = 출구 절대압력/입구 절대압력.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0.5",
+            "verdict": "incorrect",
+            "rationale": "입출구의 순서를 반대로 계산했다."
+          },
+          {
+            "number": 2,
+            "text": "1.0",
+            "verdict": "incorrect",
+            "rationale": "입출구 압력이 같은 경우의 비율이다."
+          },
+          {
+            "number": 3,
+            "text": "2.0",
+            "verdict": "correct",
+            "rationale": "180÷90=2.0이다."
+          },
+          {
+            "number": 4,
+            "text": "3.0",
+            "verdict": "incorrect",
+            "rationale": "두 압력의 합을 입구 압력으로 나눈 값이다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.garrettmotion.com/news/newsroom/article/how-to-select-a-turbo-part-2-understanding-calculations-to-turbo-any-engine/",
+        "access": "search_excerpt_only",
+        "scope": "general concept; no OEM or domestic regulatory approval"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s01-q16",
+      "kind": "clarify_leakdown_condition",
+      "before": {
+        "question": "실린더에 압축공기를 넣었더니 흡기 매니폴드에서 공기가 샌다. 누설시험으로 추정할 위치는?",
+        "choices": [
+          "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+          "변속기 ATF 쿨러 내부",
+          "브레이크 캘리퍼 피스톤 씰",
+          "차체 사이드미러 장착부"
+        ],
+        "answer": 1,
+        "reason": "실린더 누설시험에서 압축공기가 흡기로 새면 흡기밸브 기밀을 의심한다. 배기는 배기밸브, 크랭크케이스는 링/실린더 부위를 시사한다.",
+        "key_point": "실린더 누설시험은 누설음 위치로 원인을 좁힌다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+            "verdict": "correct",
+            "rationale": "실린더 누설시험 중 흡기 쪽으로 공기가 빠져나오면 흡기밸브/시트 밀봉 불량을 의심한다."
+          },
+          {
+            "number": 2,
+            "text": "변속기 ATF 쿨러 내부",
+            "verdict": "incorrect",
+            "rationale": "변속기 ATF 쿨러 내부는 실린더 흡기밸브 누설의 직접 경로가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "브레이크 캘리퍼 피스톤 씰",
+            "verdict": "incorrect",
+            "rationale": "브레이크 캘리퍼 피스톤씰은 실린더 누설시험 공기의 흡기관 배출과 무관하다."
+          },
+          {
+            "number": 4,
+            "text": "차체 사이드미러 장착부",
+            "verdict": "incorrect",
+            "rationale": "사이드미러 체결부는 실린더 압축 기밀 경로가 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "제조사 지정 실린더 누설시험에서 피스톤을 압축상사점에 두고 양쪽 밸브가 닫혀야 하는 조건을 확보했다. 흡기 매니폴드 쪽에서 지속적인 공기 누설이 확인될 때 우선 의심할 부위는?",
+        "choices": [
+          "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+          "변속기 ATF 쿨러 내부",
+          "브레이크 캘리퍼 피스톤 씰",
+          "차체 사이드미러 장착부"
+        ],
+        "answer": 1,
+        "reason": "정상적으로 흡·배기밸브가 닫혀야 하는 압축상사점에서 흡기 쪽 누설이 확인되면 흡기밸브와 시트의 밀봉 불량 등을 의심한다. 시험 중 압축공기에 의해 엔진이 회전할 위험이 있으므로 제조사 지정 안전 고정과 시험 절차를 따른다. 실제 결함은 추가 점검으로 구분한다.",
+        "key_point": "압축상사점 누설시험에서 흡기측 누설은 흡기밸브 밀봉 문제의 단서이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "흡기밸브의 밀봉 불량 또는 밸브 시트 누설",
+            "verdict": "correct",
+            "rationale": "흡기밸브와 시트의 밀봉 불량은 흡기측 누설과 직접 관련된다."
+          },
+          {
+            "number": 2,
+            "text": "변속기 ATF 쿨러 내부",
+            "verdict": "incorrect",
+            "rationale": "ATF 쿨러는 해당 실린더 흡기 누설 경로가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "브레이크 캘리퍼 피스톤 씰",
+            "verdict": "incorrect",
+            "rationale": "캘리퍼 씰은 엔진 실린더 기밀과 무관하다."
+          },
+          {
+            "number": 4,
+            "text": "차체 사이드미러 장착부",
+            "verdict": "incorrect",
+            "rationale": "미러 장착부는 엔진 흡기 누설 경로가 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s01-q18",
+      "kind": "safety_clarification",
+      "before": {
+        "question": "회전 중 저유압 경고등이 간헐적으로 켜진다. 안전한 첫 대응은?",
+        "choices": [
+          "안전한 곳에 정차하고 오일량·누유·압력 등을 점검한다",
+          "경고등을 가리면 오일압력 문제가 해결된다",
+          "윤활 상태 확인 없이 DPF 재생만 한다",
+          "고회전으로 계속 주행해 경고를 무시한다"
+        ],
+        "answer": 1,
+        "reason": "엔진 오일압력 저하는 베어링 손상으로 이어질 수 있어 주행을 계속하지 않는 것이 중요하다. 레벨·센서·압력계를 이용해 실압력을 확인해야 한다.",
+        "key_point": "오일압력 경고 → 안전 정차·윤활 계통 점검.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "안전한 곳에 정차하고 오일량·누유·압력 등을 점검한다",
+            "verdict": "correct",
+            "rationale": "윤활유 저압경고가 반복되면 안전정지 후 오일량·누설·실압력 확인이 필요하다."
+          },
+          {
+            "number": 2,
+            "text": "경고등을 가리면 오일압력 문제가 해결된다",
+            "verdict": "incorrect",
+            "rationale": "저유압 경고등을 가리는 행위는 실제 윤활불량을 해소하지 못한다."
+          },
+          {
+            "number": 3,
+            "text": "윤활 상태 확인 없이 DPF 재생만 한다",
+            "verdict": "incorrect",
+            "rationale": "저유압 원인을 확인하지 않고 DPF 재생만 시행해도 해결된다고 볼 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "고회전으로 계속 주행해 경고를 무시한다",
+            "verdict": "incorrect",
+            "rationale": "윤활 고장 경고를 무시하고 고회전을 계속하면 엔진 손상 위험이 커진다."
+          }
+        ]
+      },
+      "after": {
+        "question": "주행 중 엔진 저유압 경고가 나타났다. 실제 오일압력 저하 가능성을 고려한 운전자의 첫 대응은?",
+        "choices": [
+          "안전하게 정차하여 엔진을 정지하고 차량 지침에 따라 점검·정비를 요청한다",
+          "경고 표시만 가리고 주행을 계속한다",
+          "고회전으로 운전해 오일압력을 올리려 한다",
+          "DPF 재생부터 시행하며 경고를 무시한다"
+        ],
+        "answer": 1,
+        "reason": "실제 윤활유 압력이 부족하면 엔진이 손상될 수 있다. 안전하게 정차해 엔진을 끄고 차량 지침에 따라 오일량과 누설 등을 확인하거나 전문 정비를 요청한다. 경고의 원인이 확인되기 전에는 주행을 재개하지 않는다. 정비 단계에서 지정 조건에 맞춰 실제 압력을 검증한다.",
+        "key_point": "저유압 경고는 안전 정차 및 엔진 정지가 우선이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "안전하게 정차하여 엔진을 정지하고 차량 지침에 따라 점검·정비를 요청한다",
+            "verdict": "correct",
+            "rationale": "안전 정지 후 실제 원인 확인이 필요하다."
+          },
+          {
+            "number": 2,
+            "text": "경고 표시만 가리고 주행을 계속한다",
+            "verdict": "incorrect",
+            "rationale": "경고 은폐는 압력 문제를 해결하지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "고회전으로 운전해 오일압력을 올리려 한다",
+            "verdict": "incorrect",
+            "rationale": "고회전 운행은 윤활 불량 손상을 악화시킬 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "DPF 재생부터 시행하며 경고를 무시한다",
+            "verdict": "incorrect",
+            "rationale": "DPF 재생은 윤활압력 경고의 적절한 대응이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s02-q09",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "휠 얼라인먼트 뒤 조향각 센서 영점을 확인한다. 관련성이 낮은 자료는?",
+        "choices": [
+          "라디오 방송 주파수 설정",
+          "타이로드 조정량과 토",
+          "스티어링 휠 중앙 기준",
+          "조향각 센서의 영점값"
+        ],
+        "answer": 1,
+        "reason": "조향각 보정은 차륜의 직진 상태와 기계적 정렬이 중요하다. 공조·오디오 설정은 조향 영점 조정의 직접 기준이 아니다.",
+        "key_point": "조향각 영점과 휠 얼라인먼트는 같은 직진 기준을 사용.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "라디오 방송 주파수 설정",
+            "verdict": "correct",
+            "rationale": "라디오 수신주파수는 조향각 영점과 무관한 자료야."
+          },
+          {
+            "number": 2,
+            "text": "타이로드 조정량과 토",
+            "verdict": "incorrect",
+            "rationale": "토와 타이로드 조정은 직진 정렬 기준과 관련돼."
+          },
+          {
+            "number": 3,
+            "text": "스티어링 휠 중앙 기준",
+            "verdict": "incorrect",
+            "rationale": "스티어링 휠 중앙이 조향각 보정의 기준이 돼."
+          },
+          {
+            "number": 4,
+            "text": "조향각 센서의 영점값",
+            "verdict": "incorrect",
+            "rationale": "조향각 센서 영점은 얼라인먼트 후 확인 대상이야."
+          }
+        ]
+      },
+      "after": {
+        "question": "휠 얼라인먼트에서 전륜 좌우 개별 토를 각각 +0.10°와 +0.15°로 측정했다. 두 값의 합으로 정의한 전륜 전체 토는?",
+        "choices": [
+          "+0.25°",
+          "+0.05°",
+          "−0.25°",
+          "+0.125°"
+        ],
+        "answer": 1,
+        "reason": "전체 토를 좌우 개별 토의 합으로 정의했으므로 +0.10°+0.15°=+0.25°이다. 실제 판정에는 장비의 부호 정의와 차종별 전체·개별 토 규격을 적용한다.",
+        "key_point": "전체 토는 동일 부호 규약에서 좌우 개별 토의 합이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "+0.25°",
+            "verdict": "correct",
+            "rationale": "두 개별 토의 합은 +0.25°이다."
+          },
+          {
+            "number": 2,
+            "text": "+0.05°",
+            "verdict": "incorrect",
+            "rationale": "두 값의 차이다."
+          },
+          {
+            "number": 3,
+            "text": "−0.25°",
+            "verdict": "incorrect",
+            "rationale": "합산 결과의 부호를 반대로 적용했다."
+          },
+          {
+            "number": 4,
+            "text": "+0.125°",
+            "verdict": "incorrect",
+            "rationale": "두 값의 평균이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s02-q20",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "차량의 두 ABS 휠속도 센서 파형이 서로 다른 형식이다. 합리적인 설명은?",
+        "choices": [
+          "모든 센서는 반드시 똑같은 0~5V 사각파만 출력",
+          "모든 센서는 속도와 상관없이 12V 고정",
+          "센서 형식은 진단에 어떤 영향도 없다",
+          "센서 구조에 따라 아날로그 교류 또는 디지털/전류변조 신호를 낼 수 있다"
+        ],
+        "answer": 4,
+        "reason": "패시브 유도식은 속도에 따른 교류 전압이 생성될 수 있고 액티브 센서는 전원 공급 및 펄스/전류변조를 사용한다. 사양별 신호를 대조해야 한다.",
+        "key_point": "ABS 휠속도 센서의 신호 형식은 종류별로 다르다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 센서는 반드시 똑같은 0~5V 사각파만 출력",
+            "verdict": "incorrect",
+            "rationale": "모든 센서가 같은 사각파만 출력하는 것은 아니야."
+          },
+          {
+            "number": 2,
+            "text": "모든 센서는 속도와 상관없이 12V 고정",
+            "verdict": "incorrect",
+            "rationale": "센서 신호는 회전속도와 무관하게 12V 고정이 아니야."
+          },
+          {
+            "number": 3,
+            "text": "센서 형식은 진단에 어떤 영향도 없다",
+            "verdict": "incorrect",
+            "rationale": "센서 구조별로 파형·전원 요구조건이 다르기 때문에 진단에 영향이 있어."
+          },
+          {
+            "number": 4,
+            "text": "센서 구조에 따라 아날로그 교류 또는 디지털/전류변조 신호를 낼 수 있다",
+            "verdict": "correct",
+            "rationale": "패시브 유도식은 AC, 액티브형은 디지털·전류형 신호일 수 있어."
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 휠속도 센서 출력이 한 바퀴당 40펄스이며 차륜의 유효 구름둘레는 2m이다. 200Hz의 펄스가 발생하고 미끄럼이 없다면 차량 속도는?",
+        "choices": [
+          "5km/h",
+          "10km/h",
+          "20km/h",
+          "36km/h"
+        ],
+        "answer": 4,
+        "reason": "200펄스/s÷40펄스/회=5회/s이다. 유효 구름둘레 2m를 곱하면 10m/s이며 3.6을 곱해 36km/h로 환산한다. 실제 차량에서는 엔코더 펄스 정의, 유효 구름둘레와 슬립 등을 고려한다.",
+        "key_point": "차속 = 펄스 주파수/회전당 펄스 수×유효 구름둘레.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "5km/h",
+            "verdict": "incorrect",
+            "rationale": "5는 초당 회전수이며 km/h 값이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "10km/h",
+            "verdict": "incorrect",
+            "rationale": "10은 m/s 수치이다."
+          },
+          {
+            "number": 3,
+            "text": "20km/h",
+            "verdict": "incorrect",
+            "rationale": "주어진 회전수와 둘레를 이용한 환산값이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "36km/h",
+            "verdict": "correct",
+            "rationale": "10m/s×3.6=36km/h이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s03-q01",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "CAN 버스에서 여러 ECU가 동시에 송신을 시도한다. 프레임 우선권을 처리하는 기본 방식은?",
+        "choices": [
+          "식별자 비트를 이용한 비파괴 중재 방식",
+          "이더넷 충돌을 감지한 뒤 무조건 프레임 폐기",
+          "IP 주소의 크기로 모든 센서의 우선권 결정",
+          "변속기 라인압을 통해 송신 순서 결정"
+        ],
+        "answer": 1,
+        "reason": "CAN은 버스의 우성·열성 비트를 이용해 식별자에 따라 우선권을 결정한다. 일반적인 Ethernet CSMA/CD와 같다고 가르치면 부정확하다.",
+        "key_point": "CAN = 식별자 우선권의 비파괴 중재.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "식별자 비트를 이용한 비파괴 중재 방식",
+            "verdict": "correct",
+            "rationale": "식별자 필드의 우성·열성 비트를 비교해 낮은 우선순위 송신자가 양보하며, 승자 프레임은 파괴되지 않아."
+          },
+          {
+            "number": 2,
+            "text": "이더넷 충돌을 감지한 뒤 무조건 프레임 폐기",
+            "verdict": "incorrect",
+            "rationale": "CAN의 중재를 이더넷 충돌 뒤 모든 프레임 폐기 방식과 동일시할 수 없어."
+          },
+          {
+            "number": 3,
+            "text": "IP 주소의 크기로 모든 센서의 우선권 결정",
+            "verdict": "incorrect",
+            "rationale": "CAN 프레임 우선순위는 IP 주소의 크기로 정하는 방식이 아니야."
+          },
+          {
+            "number": 4,
+            "text": "변속기 라인압을 통해 송신 순서 결정",
+            "verdict": "incorrect",
+            "rationale": "변속기 라인압은 CAN 버스의 비트 중재를 제어하지 않아."
+          }
+        ]
+      },
+      "after": {
+        "question": "전원이 차단되고 지정 측정 조건이 확보된 가상의 고속 CAN 버스에서 CAN-H와 CAN-L 사이에 각각 120Ω의 종단저항 두 개가 병렬로 연결돼 있다. 다른 경로를 무시한 합성저항은?",
+        "choices": [
+          "60Ω",
+          "120Ω",
+          "240Ω",
+          "0Ω"
+        ],
+        "answer": 1,
+        "reason": "양 끝 120Ω 종단저항은 두 통신선 사이에서 병렬로 보인다. 이상적인 합성저항은 120×120/(120+120)=60Ω이다. 실제 차량의 토폴로지, 종단 방식, 전원 차단·분리 조건은 제조사 지침에 따라 확인한다.",
+        "key_point": "120Ω 두 개의 병렬 합성저항은 60Ω이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "60Ω",
+            "verdict": "correct",
+            "rationale": "같은 120Ω 두 저항의 병렬 합성값이다."
+          },
+          {
+            "number": 2,
+            "text": "120Ω",
+            "verdict": "incorrect",
+            "rationale": "한 개 종단저항의 값이다."
+          },
+          {
+            "number": 3,
+            "text": "240Ω",
+            "verdict": "incorrect",
+            "rationale": "두 저항을 직렬로 합산한 값이다."
+          },
+          {
+            "number": 4,
+            "text": "0Ω",
+            "verdict": "incorrect",
+            "rationale": "정상 저항 두 개의 병렬 연결은 단락이 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.analog.com/en/resources/app-notes/an-1123.html",
+        "access": "search_excerpt_only",
+        "scope": "general concept; no OEM or domestic regulatory approval"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s04-q04",
+      "kind": "clarify_energy_density",
+      "before": {
+        "question": "같은 셀 화학계의 전기차에 용량이 더 큰 배터리 팩을 단순 추가했다. 일반적인 무게 변화는?",
+        "choices": [
+          "용량이 늘면 어떤 기술이든 반드시 무게가 감소한다",
+          "추가 셀·하우징 때문에 차체 질량이 늘어날 수 있다",
+          "배터리를 추가하면 주행저항이 0이 된다",
+          "용량과 에너지 밀도는 항상 동일한 개념이다"
+        ],
+        "answer": 2,
+        "reason": "배터리 팩 용량과 무게는 셀 에너지밀도·하우징·열관리 설계에 따라 달라진다. 동일 조건에서 단순 셀 증설은 대개 질량을 늘린다.",
+        "key_point": "배터리 용량 증가가 무게 감소를 보장하지 않는다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "용량이 늘면 어떤 기술이든 반드시 무게가 감소한다",
+            "verdict": "incorrect",
+            "rationale": "셀을 추가한다고 모든 기술과 설계에서 질량이 반드시 줄어드는 것은 아니야."
+          },
+          {
+            "number": 2,
+            "text": "추가 셀·하우징 때문에 차체 질량이 늘어날 수 있다",
+            "verdict": "correct",
+            "rationale": "동일한 구성 요소를 추가하면 셀·모듈·케이스 무게만큼 질량이 늘 수 있어."
+          },
+          {
+            "number": 3,
+            "text": "배터리를 추가하면 주행저항이 0이 된다",
+            "verdict": "incorrect",
+            "rationale": "배터리 용량 추가가 구름·공기 저항을 0으로 만들지 않아."
+          },
+          {
+            "number": 4,
+            "text": "용량과 에너지 밀도는 항상 동일한 개념이다",
+            "verdict": "incorrect",
+            "rationale": "에너지밀도는 단위 질량/부피당 에너지라 총 용량과 같은 개념이 아니야."
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 배터리 팩이 60kWh의 에너지를 저장하며 팩 전체 질량이 400kg이다. 질량당 저장 에너지(비에너지)는?",
+        "choices": [
+          "15Wh/kg",
+          "150Wh/kg",
+          "6.67Wh/kg",
+          "24,000Wh/kg"
+        ],
+        "answer": 2,
+        "reason": "60kWh=60,000Wh이다. 이를 팩 질량 400kg으로 나누면 150Wh/kg이다. 셀과 팩의 질량당 에너지는 하우징·냉각·보호회로 때문에 다를 수 있다.",
+        "key_point": "질량당 저장 에너지 = 에너지(Wh)/질량(kg).",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "15Wh/kg",
+            "verdict": "incorrect",
+            "rationale": "주어진 에너지의 단위를 잘못 환산한 값이다."
+          },
+          {
+            "number": 2,
+            "text": "150Wh/kg",
+            "verdict": "correct",
+            "rationale": "60,000÷400=150Wh/kg이다."
+          },
+          {
+            "number": 3,
+            "text": "6.67Wh/kg",
+            "verdict": "incorrect",
+            "rationale": "에너지와 질량의 관계를 반대로 적용한 값이다."
+          },
+          {
+            "number": 4,
+            "text": "24,000Wh/kg",
+            "verdict": "incorrect",
+            "rationale": "에너지와 질량을 곱하는 것은 비에너지 계산이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s04-q14",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "배터리 팩에 큰 과전류가 흘렀을 때 설계된 용단 특성으로 한 번 작동하면 교체해야 하는 보호부품은?",
+        "choices": [
+          "프리차지 저항기",
+          "BMS 전압 감시 입력",
+          "고전압 시스템 인터록 스위치",
+          "고전압용 퓨즈·퓨저블 링크"
+        ],
+        "answer": 4,
+        "reason": "고전압 퓨즈는 지나친 전류가 흐를 때 용단돼 배선을 보호한다. 메인 접촉기와는 전류 차단 방식과 목적이 다르다.",
+        "key_point": "HV 퓨즈 = 과전류 발생 시 회로 보호.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "프리차지 저항기",
+            "verdict": "incorrect",
+            "rationale": "프리차지 저항은 전압 평형을 돕는 부품으로 과전류 용단식 퓨즈와 달라."
+          },
+          {
+            "number": 2,
+            "text": "BMS 전압 감시 입력",
+            "verdict": "incorrect",
+            "rationale": "BMS 전압 감시 입력은 과전류 발생 시 용단되는 일회용 보호소자가 아니야."
+          },
+          {
+            "number": 3,
+            "text": "고전압 시스템 인터록 스위치",
+            "verdict": "incorrect",
+            "rationale": "고전압 인터록 감시회로는 커넥터 분리감지 등 기능이며 퓨즈 용단과 구분해야 해."
+          },
+          {
+            "number": 4,
+            "text": "고전압용 퓨즈·퓨저블 링크",
+            "verdict": "correct",
+            "rationale": "HV 퓨즈·퓨저블 링크는 설계 이상 과전류에 용단돼 재사용 대신 정품교체 대상이 돼."
+          }
+        ]
+      },
+      "after": {
+        "question": "이상적인 고전압 인버터 DC 링크의 프리차지 회로에서 프리차지 저항을 사용하는 주된 이유는?",
+        "choices": [
+          "배터리 셀의 SOC를 직접 계측한다",
+          "구동모터의 회전자 위치각을 측정한다",
+          "고전압 커넥터의 결합 상태를 검지한다",
+          "DC 링크 커패시터 충전 시 초기 돌입전류를 제한한다"
+        ],
+        "answer": 4,
+        "reason": "프리차지는 DC 링크 커패시터의 초기 충전 과정에서 큰 돌입전류를 줄이는 기능이다. 저항을 사용하는 설계에서는 제한된 경로로 커패시터를 충전한 뒤 지정 조건에 따라 주회로가 연결된다. 실제 작동 순서와 구성은 차량별이며 고전압 회로를 임의 조작해서는 안 된다.",
+        "key_point": "저항식 프리차지의 목적은 커패시터 충전 돌입전류 제한이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "배터리 셀의 SOC를 직접 계측한다",
+            "verdict": "incorrect",
+            "rationale": "SOC 추정은 BMS 관련 기능이다."
+          },
+          {
+            "number": 2,
+            "text": "구동모터의 회전자 위치각을 측정한다",
+            "verdict": "incorrect",
+            "rationale": "회전자 위치 검출은 리졸버 등 센서 관련 기능이다."
+          },
+          {
+            "number": 3,
+            "text": "고전압 커넥터의 결합 상태를 검지한다",
+            "verdict": "incorrect",
+            "rationale": "커넥터 연결 감시는 HVIL 등의 기능이다."
+          },
+          {
+            "number": 4,
+            "text": "DC 링크 커패시터 충전 시 초기 돌입전류를 제한한다",
+            "verdict": "correct",
+            "rationale": "프리차지 저항은 초기 커패시터 충전전류를 제한한다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r07-s04-q20",
+      "kind": "clarify_b100_definition",
+      "before": {
+        "question": "바이오디젤(B100)을 사용하는 엔진 적용 조건을 정하려 한다. 타당한 설명은?",
+        "choices": [
+          "연료 규격과 엔진 제작사의 사용 허용·혼합비를 확인한다",
+          "바이오디젤은 디젤과 모든 물성이 완전히 같다",
+          "바이오디젤은 모든 가솔린 엔진의 기본 연료다",
+          "혼합비를 올리면 모든 차종에서 고장 위험은 사라진다"
+        ],
+        "answer": 1,
+        "reason": "바이오디젤은 재생 가능한 기름 등을 전환한 디젤계 대체연료다. 사용 가능 혼합비와 고무·연료장치 호환성은 제조사 지침과 연료 규격을 확인해야 한다.",
+        "key_point": "바이오디젤은 디젤 엔진용 대체연료, 제조사 허용 확인.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "연료 규격과 엔진 제작사의 사용 허용·혼합비를 확인한다",
+            "verdict": "correct",
+            "rationale": "B100은 연료 규격과 엔진 OEM이 허용한 연료·혼합비·부품 적합성을 확인해야 해."
+          },
+          {
+            "number": 2,
+            "text": "바이오디젤은 디젤과 모든 물성이 완전히 같다",
+            "verdict": "incorrect",
+            "rationale": "바이오디젤 B100의 에너지함량·저온특성 등이 일반 경유와 동일하지 않아."
+          },
+          {
+            "number": 3,
+            "text": "바이오디젤은 모든 가솔린 엔진의 기본 연료다",
+            "verdict": "incorrect",
+            "rationale": "B100은 디젤 계열 연료이며 모든 가솔린 점화식 엔진의 기본 연료는 아니야."
+          },
+          {
+            "number": 4,
+            "text": "혼합비를 올리면 모든 차종에서 고장 위험은 사라진다",
+            "verdict": "incorrect",
+            "rationale": "혼합비를 높일수록 모든 차량의 고장 위험이 사라진다는 근거는 없어."
+          }
+        ]
+      },
+      "after": {
+        "question": "바이오디젤 혼합유의 B표기에서 B100이 뜻하는 연료에 관한 설명으로 옳은 것은?",
+        "choices": [
+          "석유계 디젤을 혼합하지 않은 바이오디젤이며 실제 사용 전 규격과 제조사 허용 여부를 확인한다",
+          "석유계 디젤 100%를 뜻한다",
+          "바이오디젤 10%와 석유계 디젤 90%의 혼합유이다",
+          "B100은 모든 디젤 엔진에서 제한 없이 사용할 수 있음을 뜻한다"
+        ],
+        "answer": 1,
+        "reason": "B100은 일반적으로 석유계 디젤과 혼합하지 않은 순수 바이오디젤을 가리킨다. 혼합비 표기와 개별 엔진의 사용 승인은 별개다. 실제 사용 시 적용 연료 규격과 차량 제작사의 허용 여부, 재료 및 저온 운용 조건을 확인한다.",
+        "key_point": "B100은 비혼합 바이오디젤을 의미하며 범용 사용 승인이 아니다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "석유계 디젤을 혼합하지 않은 바이오디젤이며 실제 사용 전 규격과 제조사 허용 여부를 확인한다",
+            "verdict": "correct",
+            "rationale": "B100의 의미와 실제 적용 확인 조건에 부합한다."
+          },
+          {
+            "number": 2,
+            "text": "석유계 디젤 100%를 뜻한다",
+            "verdict": "incorrect",
+            "rationale": "석유계 디젤 100%를 뜻하지 않는다."
+          },
+          {
+            "number": 3,
+            "text": "바이오디젤 10%와 석유계 디젤 90%의 혼합유이다",
+            "verdict": "incorrect",
+            "rationale": "바이오디젤 10% 혼합유는 B10에 해당한다."
+          },
+          {
+            "number": 4,
+            "text": "B100은 모든 디젤 엔진에서 제한 없이 사용할 수 있음을 뜻한다",
+            "verdict": "incorrect",
+            "rationale": "연료 표기가 모든 엔진 사용 승인을 의미하지 않는다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://afdc.energy.gov/fuels/biodiesel-blends",
+        "access": "search_excerpt_only",
+        "scope": "general concept; no OEM or domestic regulatory approval"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 9,
+    "answer_index_changes": 0,
+    "source_excerpt_checked": 3,
+    "new_source_page_checks": 0
+  }
+}
