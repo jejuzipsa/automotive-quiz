@@ -443,5 +443,272 @@
       ]
     },
     "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r02-s02-q02",
+    "round": 2,
+    "subject": "chassis",
+    "number": 2,
+    "stage": "11",
+    "before": {
+      "question": "정지한 상태에서 블로워를 켰을 때만 작은 소리가 나고 구동계와 무관한 증상이다. 우선 구분해야 할 것은?",
+      "choices": [
+        "변속기 내부 기어 파손",
+        "차륜 허브 베어링 수명",
+        "디퍼렌셜 기어 백래시",
+        "실내 공조 송풍기 또는 오디오 등 편의장치 소음"
+      ],
+      "answer": 4,
+      "reason": "차량 소음은 여러 계통에서 생길 수 있다. 블로워 ON/OFF에 따라 발생한다면 공조계의 전기모터나 주변 진동을 먼저 구별해야 하고, 기계적 구동계 고장으로 단정하지 않는다.",
+      "key_point": "소음 발생 조건은 원인 계통을 분리하는 단서다.",
+      "correct_choice": "실내 공조 송풍기 또는 오디오 등 편의장치 소음",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "변속기 내부 기어 파손",
+          "verdict": "incorrect",
+          "rationale": "송풍기를 켰을 때만 나는 소음이라면 변속기 내부 기어 파손부터 확정하면 안 된다."
+        },
+        {
+          "number": 2,
+          "text": "차륜 허브 베어링 수명",
+          "verdict": "incorrect",
+          "rationale": "차륜 허브베어링의 마모만으로 정지 중 블로워 ON/OFF 연동 소음을 설명하기 어렵다."
+        },
+        {
+          "number": 3,
+          "text": "디퍼렌셜 기어 백래시",
+          "verdict": "incorrect",
+          "rationale": "차동기어 백래시는 차량 블로워 작동만으로 나타나는 소음의 직접적 원인으로 보기 어렵다."
+        },
+        {
+          "number": 4,
+          "text": "실내 공조 송풍기 또는 오디오 등 편의장치 소음",
+          "verdict": "correct",
+          "rationale": "정차 중 블로워 ON/OFF에 연동되면 실내 공조 송풍기나 편의장치 진동을 구분해야 한다."
+        }
+      ]
+    },
+    "after": {
+      "question": "EPS가 장착된 차량에서 운전자가 조향할 때 토크센서 입력과 모터 보조토크 명령이 서로 맞지 않는다. 우선 확인할 것은?",
+      "choices": [
+        "엔진 점화플러그 열가만 비교해 조향 오류를 확정한다",
+        "차량 실내 송풍기 방향과 토크센서의 관계만 계산한다",
+        "조향 경고가 있어도 모든 EPS 시스템을 임의로 무전원 운행한다",
+        "조향 토크센서 입력·EPS 제어 명령과 모터 전원 및 관련 DTC"
+      ],
+      "answer": 4,
+      "reason": "EPS 보조력은 운전자가 입력한 조향토크, 차량 상태 및 모터 제어에 따라 달라진다. 토크 입력과 모터 명령의 일치 여부를 확인하고 전원·배선·고장코드를 제조사 절차로 비교해야 한다.",
+      "key_point": "EPS 토크 입력·보조모터 명령·전원과 진단코드 교차점검.",
+      "correct_choice": "조향 토크센서 입력·EPS 제어 명령과 모터 전원 및 관련 DTC",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "엔진 점화플러그 열가만 비교해 조향 오류를 확정한다",
+          "verdict": "incorrect",
+          "rationale": "점화플러그의 열가는 EPS 조향센서의 전기적 오류를 판별하지 못해."
+        },
+        {
+          "number": 2,
+          "text": "차량 실내 송풍기 방향과 토크센서의 관계만 계산한다",
+          "verdict": "incorrect",
+          "rationale": "실내 공조 풍량방향은 조향 보조토크 제어의 직접 입력이 아니야."
+        },
+        {
+          "number": 3,
+          "text": "조향 경고가 있어도 모든 EPS 시스템을 임의로 무전원 운행한다",
+          "verdict": "incorrect",
+          "rationale": "안전상 문제를 확인하지 않고 조향 보조를 임의 해제해 운행해서는 안 돼."
+        },
+        {
+          "number": 4,
+          "text": "조향 토크센서 입력·EPS 제어 명령과 모터 전원 및 관련 DTC",
+          "verdict": "correct",
+          "rationale": "조향토크 입력과 EPS 모터 제어 반응을 비교하면 관련 센서·전원 문제를 좁힐 수 있어."
+        }
+      ],
+      "reference_urls": [
+        "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r02-s02-q04",
+    "round": 2,
+    "subject": "chassis",
+    "number": 4,
+    "stage": "11",
+    "before": {
+      "question": "OBD에서 P0300이 표시되었다. 가장 알맞은 설명은?",
+      "choices": [
+        "변속기 오일 압력이 높다는 뜻",
+        "불규칙·복수 실린더 실화가 감지되었다는 뜻",
+        "휠 얼라인먼트가 틀어졌다는 뜻",
+        "ABS 휠 속도 센서 단선이라는 뜻"
+      ],
+      "answer": 2,
+      "reason": "P0300은 엔진에서 랜덤 또는 복수 실린더 실화가 감지됐다는 일반적인 OBD 고장코드다. 해당 코드 하나만으로 점화코일 불량을 확정할 수는 없다.",
+      "key_point": "P0300은 특정 부품명이 아니라 실화 감지 정보다.",
+      "correct_choice": "불규칙·복수 실린더 실화가 감지되었다는 뜻",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "변속기 오일 압력이 높다는 뜻",
+          "verdict": "incorrect",
+          "rationale": "P0300은 변속기 ATF의 고압상태를 지시하는 고장코드가 아니다."
+        },
+        {
+          "number": 2,
+          "text": "불규칙·복수 실린더 실화가 감지되었다는 뜻",
+          "verdict": "correct",
+          "rationale": "P0300은 OBD에서 랜덤 또는 다중 실린더 실화 감지와 관련된 코드다."
+        },
+        {
+          "number": 3,
+          "text": "휠 얼라인먼트가 틀어졌다는 뜻",
+          "verdict": "incorrect",
+          "rationale": "P0300은 휠 얼라인먼트 변화만을 알리는 코드가 아니다."
+        },
+        {
+          "number": 4,
+          "text": "ABS 휠 속도 센서 단선이라는 뜻",
+          "verdict": "incorrect",
+          "rationale": "P0300은 ABS 휠 속도 센서 단선코드와 구분된다."
+        }
+      ]
+    },
+    "after": {
+      "question": "자동변속기에서 변속 충격이 커지고 변속 솔레노이드 관련 DTC가 저장됐다. 우선 비교할 데이터 조합은?",
+      "choices": [
+        "실내 온도센서 설정값만 진단기에서 초기화한다",
+        "TCM 솔레노이드 명령과 실제 변속·유압 반응 및 ATF 상태",
+        "ABS 휠속도 센서의 장착 색상만 확인한다",
+        "엔진 실화 여부만으로 변속기 내부 유압 제어를 확정한다"
+      ],
+      "answer": 2,
+      "reason": "전자제어 자동변속기는 솔레노이드로 클러치·브레이크의 유압을 제어할 수 있다. 변속 충격과 관련 DTC가 동시에 있을 때 명령값, 유압·속도변화, ATF 상태를 차량별 검사조건에서 비교한다.",
+      "key_point": "자동변속기 변속충격 → 솔레노이드·유압·ATF 및 실측 변속 반응.",
+      "correct_choice": "TCM 솔레노이드 명령과 실제 변속·유압 반응 및 ATF 상태",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "실내 온도센서 설정값만 진단기에서 초기화한다",
+          "verdict": "incorrect",
+          "rationale": "공조 온도설정은 변속기 내부 솔레노이드의 압력 제어를 직접 확인하지 못해."
+        },
+        {
+          "number": 2,
+          "text": "TCM 솔레노이드 명령과 실제 변속·유압 반응 및 ATF 상태",
+          "verdict": "correct",
+          "rationale": "솔레노이드 명령과 변속 반응을 대조하면 전자제어·유압 불량을 구분할 단서가 돼."
+        },
+        {
+          "number": 3,
+          "text": "ABS 휠속도 센서의 장착 색상만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "ABS 센서 장착 색상은 자동변속기 유압 조절 기능의 진단자료가 아니야."
+        },
+        {
+          "number": 4,
+          "text": "엔진 실화 여부만으로 변속기 내부 유압 제어를 확정한다",
+          "verdict": "incorrect",
+          "rationale": "엔진 실화가 없다는 이유로 변속기 내부 유압 문제까지 제외할 수 없어."
+        }
+      ],
+      "reference_urls": [
+        "https://aftermarket.zf.com/sg/aftermarket-portal/for-workshops/useful-tips/transmission-oil-change-pc/"
+      ]
+    },
+    "subject_hold_retained": true
+  },
+  {
+    "id": "auto-made-r02-s03-q08",
+    "round": 2,
+    "subject": "electrical",
+    "number": 8,
+    "stage": "12",
+    "before": {
+      "question": "현가 부품 교환으로 캠버 또는 토 설정값이 달라질 가능성이 있다. 후속 점검으로 알맞은 것은?",
+      "choices": [
+        "서비스 지침에 따른 휠 얼라인먼트 확인",
+        "내비게이션 목적지 변경",
+        "엔진오일 점도 측정만",
+        "사이드미러 접힘 속도 측정"
+      ],
+      "answer": 1,
+      "reason": "서스펜션이나 조향 관련 부품 교체는 차륜 정렬에 영향을 줄 수 있다. 지정된 차고·적재·정비 조건에서 얼라인먼트 검사가 필요한지 제조사 지침을 확인한다.",
+      "key_point": "서스펜션 정비 후 얼라인먼트는 작업 종류와 규격에 따라 점검한다.",
+      "correct_choice": "서비스 지침에 따른 휠 얼라인먼트 확인",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "서비스 지침에 따른 휠 얼라인먼트 확인",
+          "verdict": "correct",
+          "rationale": "현가 부품 교환 후 지정 휠 얼라인먼트 점검은 조향·섀시 기구의 적절한 정비 후속 단계다."
+        },
+        {
+          "number": 2,
+          "text": "내비게이션 목적지 변경",
+          "verdict": "incorrect",
+          "rationale": "내비게이션 목적지 설정은 캠버·토 정렬 상태 확인이 아니다."
+        },
+        {
+          "number": 3,
+          "text": "엔진오일 점도 측정만",
+          "verdict": "incorrect",
+          "rationale": "엔진오일 점도만으로 캠버·토 변화를 진단할 수 없다."
+        },
+        {
+          "number": 4,
+          "text": "사이드미러 접힘 속도 측정",
+          "verdict": "incorrect",
+          "rationale": "사이드미러 접힘 속도는 휠 얼라인먼트 상태와 관계가 없다."
+        }
+      ]
+    },
+    "after": {
+      "question": "실내 공조 송풍기 속도 조절이 되지 않고 최대 풍량만 나온다. 전기전자 회로 진단에서 직접 확인할 항목은?",
+      "choices": [
+        "송풍기 속도제어기(레귤레이터)·전원·접지와 제어신호",
+        "휠 얼라인먼트 캠버값과 조향각 영점만 확인한다",
+        "변속기 유압 회로의 미세 누설만 조사한다",
+        "연료분사기 분사보정량만 재설정한다"
+      ],
+      "answer": 1,
+      "reason": "차량 실내 송풍기의 회전속도는 레귤레이터 또는 저항팩 및 공조 제어장치의 신호에 따라 조절된다. 특정 풍량으로만 작동하면 해당 회로의 전원·접지·구동신호 및 부하 상태를 점검한다.",
+      "key_point": "송풍기 최대풍량만 동작 → 레귤레이터와 제어신호·전원 점검.",
+      "correct_choice": "송풍기 속도제어기(레귤레이터)·전원·접지와 제어신호",
+      "option_analysis": [
+        {
+          "number": 1,
+          "text": "송풍기 속도제어기(레귤레이터)·전원·접지와 제어신호",
+          "verdict": "correct",
+          "rationale": "송풍기 전자제어 소자가 고장 나면 속도 조절 범위가 제한될 수 있어."
+        },
+        {
+          "number": 2,
+          "text": "휠 얼라인먼트 캠버값과 조향각 영점만 확인한다",
+          "verdict": "incorrect",
+          "rationale": "차륜 정렬값은 실내 송풍기 속도조절 회로를 확인하는 자료가 아니야."
+        },
+        {
+          "number": 3,
+          "text": "변속기 유압 회로의 미세 누설만 조사한다",
+          "verdict": "incorrect",
+          "rationale": "변속기 유압은 공조 송풍기 레귤레이터 전기회로와 다른 계통이야."
+        },
+        {
+          "number": 4,
+          "text": "연료분사기 분사보정량만 재설정한다",
+          "verdict": "incorrect",
+          "rationale": "연료분사 보정값 변경으로 송풍기 구동신호를 진단할 수 없어."
+        }
+      ],
+      "reference_urls": [
+        "https://www.hella.com/techworld/us/passenger-car-parts/thermal-management/interior-blower-regulators/"
+      ]
+    },
+    "subject_hold_retained": true
   }
 ]
