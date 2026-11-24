@@ -550,7 +550,7 @@
         "choices": [
           "4.5kW",
           "0.2kW",
-          "45kW",
+          "0.45kW",
           "5,000kW"
         ],
         "answer": 1,
@@ -571,9 +571,9 @@
           },
           {
             "number": 3,
-            "text": "45kW",
+            "text": "0.45kW",
             "verdict": "incorrect",
-            "rationale": "계산값보다 10배 크다."
+            "rationale": "계산값보다 10배 작다."
           },
           {
             "number": 4,
