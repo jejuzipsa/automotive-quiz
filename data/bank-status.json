@@ -690,7 +690,7 @@
     "no_zip": true,
     "next": "technical and answer-distractor QA -> approve questions individually -> auto-link approved JSON to site mock exam -> create explanation-based fill-in question bank"
   },
-  "latest_qa_stage": "QA47_round01_balanced_first20_source_preflight_9_attempts__no_expert_approval",
+  "latest_qa_stage": "QA50_model_logic_review_40_of_720",
   "technical_qa1": {
     "stage": "risk_triage_and_limited_direct_content_edits",
     "scanned_question_explanation_pairs": 720,
@@ -2243,5 +2243,20 @@
     "reviewer_packet_artifact": "qa47-first20-review-packet",
     "report": "docs/TECHNICAL_QA47.md",
     "next": "Review 11 unchecked source pages; independently assess all four options of 20 items using OEM and actual detailed Q-net HWP; no publication before rights and final approvals."
+  },
+  "technical_qa50": {
+    "date": "2026-11-24",
+    "new_questions": 20,
+    "new_options": 80,
+    "cumulative_model_review_questions": 40,
+    "cumulative_model_review_options": 160,
+    "external_source_reopened": false,
+    "answer_changes": 0,
+    "independent_final_approvals": 0,
+    "subject_holds": 55,
+    "published_past": 0,
+    "published_expected": 80,
+    "ledger": "data/qa/technical-qa50-next20-option-review.json",
+    "next": "QA51 remediate duplicate and editorial candidates, verify regressions, then select next 20"
   }
 }
