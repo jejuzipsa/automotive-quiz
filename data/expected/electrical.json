@@ -433,5 +433,69 @@
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",
     "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-electrical-26",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "동일 형식의 클래식 CAN 표준 데이터 프레임 세 개가 동시에 송신을 시작한다. ID가 0x100, 0x080, 0x200이면 정상 중재의 우선권은?",
+    "choices": [
+      "0x200",
+      "0x100",
+      "세 프레임의 우선권이 동일하다",
+      "0x080"
+    ],
+    "answer": 4,
+    "explanation": "동일 표준 데이터 프레임에서는 낮은 ID가 우선한다. 0x080이 가장 작고 우성 0이 열성 1보다 우선한다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://www.analog.com/en/resources/app-notes/an-1123.html"
+    ]
+  },
+  {
+    "id": "original-electrical-27",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "전원이 없는 이상적인 CAN 모델에서 두 120Ω 종단저항만 병렬 연결돼 있다. 한 저항이 개방되었을 때 남은 합성저항은?",
+    "choices": [
+      "120Ω",
+      "60Ω",
+      "240Ω",
+      "0Ω"
+    ],
+    "answer": 1,
+    "explanation": "정상 두 저항의 병렬값은 60Ω이나 한 경로가 개방되면 남은 저항은 120Ω이다. 실제 차량 임의 탈거를 의미하지 않는다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://www.analog.com/en/resources/app-notes/an-1123.html"
+    ]
+  },
+  {
+    "id": "original-electrical-28",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "차체 수직축을 중심으로 일정한 요레이트 12°/s로 2.5초간 회전하는 가상 차량의 각변위 크기는?",
+    "choices": [
+      "4.8°",
+      "30°",
+      "12°",
+      "14.5°"
+    ],
+    "answer": 2,
+    "explanation": "각속도가 일정하므로 12×2.5=30°이다. 실제 센서값은 시간에 따라 적분하고 오차를 고려한다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": []
   }
 ]

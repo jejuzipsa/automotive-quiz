@@ -1,0 +1,289 @@
+{
+  "kind": "QA66_SOURCE_AND_CALCULATION_CHECKED_ORIGINAL_PRACTICE_SELECTION",
+  "date": "2026-11-24",
+  "qnet": {
+    "url": "https://www.q-net.or.kr/cst006.do?artlSeq=5213442&brdId=Q006&code=1202&gId=&gSite=Q&id=cst00602",
+    "period": "2025-01-01–2027-12-31",
+    "posting_opened": true,
+    "hwp_body_opened": false
+  },
+  "items": [
+    {
+      "id": "original-engine-26",
+      "source_draft_id": "auto-made-r09-s01-q03",
+      "revision_ledger": "data/qa/technical-qa63-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100LFHF.TXT",
+      "verification": "direct_web_text_checked",
+      "basis": "EPA lines 15–28, 50–56: soot oxidation and separate ash removal.",
+      "question": "DPF 재생이 정상적으로 완료된 후에도 비가연성 회분이 남았다. 적절한 설명은?",
+      "choices": [
+        "재생은 가연성 그을음을 줄이며 회분 제거와 구별된다",
+        "회분 잔류만으로 재생이 전혀 없었다고 판정한다",
+        "정상 재생의 목적은 비가연성 회분의 기화이다",
+        "SCR 환원제가 모든 회분을 제거한다"
+      ],
+      "answer": 1,
+      "explanation": "재생은 포집된 가연성 그을음을 산화한다. 비가연성 회분은 별도의 관리 대상이며 청소·교환은 제조사 기준에 따른다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-engine-27",
+      "source_draft_id": "auto-made-r09-s01-q14",
+      "revision_ledger": "data/qa/technical-qa63-editorial-corrections.json",
+      "previous_answer": 4,
+      "reference_url": null,
+      "verification": "explicit_definition_and_arithmetic",
+      "basis": "Defined diameter difference: 60.05−60.00=0.05 mm.",
+      "question": "가상 베어링 내경이 50.08mm이고 저널 외경이 50.00mm이다. 두 지름의 차로 정의한 지름 간극은?",
+      "choices": [
+        "0.04mm",
+        "0.80mm",
+        "0.08mm",
+        "0.16mm"
+      ],
+      "answer": 3,
+      "explanation": "50.08−50.00=0.08mm이다. 반경 간극 0.04mm와 구별한다. 실제 서비스 한계는 차종별이다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-engine-28",
+      "source_draft_id": "auto-made-r03-s01-q17",
+      "revision_ledger": "data/qa/technical-qa57-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": null,
+      "verification": "explicit_definition_and_arithmetic",
+      "basis": "Explicit mass fraction 20/(80+20)=20%.",
+      "question": "신선 공기 질량유량 90g/s와 재순환 배기가스 30g/s가 혼합된다. 전체 혼합기 질량유량 대비 재순환 배기가스의 비율은?",
+      "choices": [
+        "30%",
+        "33.3%",
+        "75%",
+        "25%"
+      ],
+      "answer": 4,
+      "explanation": "전체 유량은 120g/s이며 30÷120×100=25%이다. 실제 EGR 표시값의 정의는 차량별로 다를 수 있다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-chassis-26",
+      "source_draft_id": "auto-made-r04-s02-q11",
+      "revision_ledger": "data/qa/technical-qa58-editorial-corrections.json",
+      "previous_answer": 4,
+      "reference_url": "https://openstax.org/books/physics/pages/6-3-rotational-motion",
+      "verification": "direct_web_text_checked",
+      "basis": "OpenStax lines 117–126: perpendicular force and lever arm torque.",
+      "question": "조향축에서 0.18m 떨어진 핸들 림에 접선 방향으로 20N의 힘을 가한다. 이 힘의 조향 토크 크기는?",
+      "choices": [
+        "3.6N·m",
+        "20N·m",
+        "111.1N·m",
+        "0.9N·m"
+      ],
+      "answer": 1,
+      "explanation": "힘이 반지름에 수직이므로 0.18×20=3.6N·m이다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-chassis-27",
+      "source_draft_id": "auto-made-r07-s02-q09",
+      "revision_ledger": "data/qa/technical-qa61-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": null,
+      "verification": "explicit_definition_and_arithmetic",
+      "basis": "Explicit sum +0.10°+0.15°=+0.25°.",
+      "question": "가상 얼라인먼트 장비의 좌측 개별 토가 +0.12°, 우측이 −0.04°이다. 전체 토를 대수합으로 정의하면?",
+      "choices": [
+        "+0.16°",
+        "+0.08°",
+        "−0.12°",
+        "+0.04°"
+      ],
+      "answer": 2,
+      "explanation": "부호를 포함해 +0.12−0.04=+0.08°이다. 실제 규정은 장비 부호 기준과 차량 규격을 적용한다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-chassis-28",
+      "source_draft_id": "auto-made-r03-s02-q04",
+      "revision_ledger": "data/qa/technical-qa57-editorial-corrections.json",
+      "previous_answer": 4,
+      "reference_url": null,
+      "verification": "explicit_definition_and_arithmetic",
+      "basis": "Defined pulses per revolution × rotations per second: 48×5=240 Hz.",
+      "question": "가상 휠속도 센서가 회전당 36펄스를 발생시킨다. 차륜이 300rpm으로 회전할 때 펄스 주파수는?",
+      "choices": [
+        "36Hz",
+        "300Hz",
+        "180Hz",
+        "10,800Hz"
+      ],
+      "answer": 3,
+      "explanation": "300rpm은 초당 5회전이다. 36×5=180Hz이다. 실제 펄스 수는 센서 설계별로 다르다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-electrical-26",
+      "source_draft_id": "auto-made-r03-s03-q01",
+      "revision_ledger": "data/qa/technical-qa57-editorial-corrections.json",
+      "previous_answer": 2,
+      "reference_url": "https://www.analog.com/en/resources/app-notes/an-1123.html",
+      "verification": "direct_web_text_checked",
+      "basis": "AN-1123 lines 86–99: dominant zero, identifier arbitration.",
+      "question": "동일 형식의 클래식 CAN 표준 데이터 프레임 세 개가 동시에 송신을 시작한다. ID가 0x100, 0x080, 0x200이면 정상 중재의 우선권은?",
+      "choices": [
+        "0x200",
+        "0x100",
+        "세 프레임의 우선권이 동일하다",
+        "0x080"
+      ],
+      "answer": 4,
+      "explanation": "동일 표준 데이터 프레임에서는 낮은 ID가 우선한다. 0x080이 가장 작고 우성 0이 열성 1보다 우선한다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-electrical-27",
+      "source_draft_id": "auto-made-r07-s03-q01",
+      "revision_ledger": "data/qa/technical-qa61-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": "https://www.analog.com/en/resources/app-notes/an-1123.html",
+      "verification": "direct_web_text_checked",
+      "basis": "AN-1123 lines 202–213: nominal 120Ω each end.",
+      "question": "전원이 없는 이상적인 CAN 모델에서 두 120Ω 종단저항만 병렬 연결돼 있다. 한 저항이 개방되었을 때 남은 합성저항은?",
+      "choices": [
+        "120Ω",
+        "60Ω",
+        "240Ω",
+        "0Ω"
+      ],
+      "answer": 1,
+      "explanation": "정상 두 저항의 병렬값은 60Ω이나 한 경로가 개방되면 남은 저항은 120Ω이다. 실제 차량 임의 탈거를 의미하지 않는다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-electrical-28",
+      "source_draft_id": "auto-made-r04-s03-q02",
+      "revision_ledger": "data/qa/technical-qa58-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": null,
+      "verification": "explicit_definition_and_arithmetic",
+      "basis": "Defined constant angular rate times time: 10×3=30°.",
+      "question": "차체 수직축을 중심으로 일정한 요레이트 12°/s로 2.5초간 회전하는 가상 차량의 각변위 크기는?",
+      "choices": [
+        "4.8°",
+        "30°",
+        "12°",
+        "14.5°"
+      ],
+      "answer": 2,
+      "explanation": "각속도가 일정하므로 12×2.5=30°이다. 실제 센서값은 시간에 따라 적분하고 오차를 고려한다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-eco-26",
+      "source_draft_id": "auto-made-r02-s04-q10",
+      "revision_ledger": "data/qa/technical-qa55-editorial-corrections.json",
+      "previous_answer": 1,
+      "reference_url": "https://www.energy.gov/cmei/fuels/fuel-cell-animation-text-version",
+      "verification": "direct_web_text_checked",
+      "basis": "DOE lines 18–22 and 32–47: cathode oxygen reduction/water.",
+      "question": "PEM 연료전지 발전 중 산소가 양성자와 외부 회로의 전자를 받아 반응하는 전극과 주생성물의 조합은?",
+      "choices": [
+        "애노드–물",
+        "캐소드–수소",
+        "캐소드–물",
+        "애노드–산소"
+      ],
+      "answer": 3,
+      "explanation": "캐소드에서 산소 환원으로 물이 생성된다. 애노드에서는 수소가 산화된다. 캐소드 반응식은 O₂+4H⁺+4e⁻→2H₂O이다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-eco-27",
+      "source_draft_id": "auto-made-r02-s04-q11",
+      "revision_ledger": "data/qa/technical-qa55-editorial-corrections.json",
+      "previous_answer": 2,
+      "reference_url": "https://afdc.energy.gov/fuels/biodiesel-production",
+      "verification": "direct_web_text_checked",
+      "basis": "AFDC lines 54–59: transesterification yields biodiesel and glycerin.",
+      "question": "유지와 메탄올의 전이에스터화로 얻는 지방산 메틸에스터와 함께 생성되는 대표 공동생성물은?",
+      "choices": [
+        "에틸렌",
+        "메탄",
+        "요소",
+        "글리세롤"
+      ],
+      "answer": 4,
+      "explanation": "트라이글리세라이드와 메탄올의 전이에스터화에서 지방산 메틸에스터와 글리세롤이 생성된다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    },
+    {
+      "id": "original-eco-28",
+      "source_draft_id": "auto-made-r09-s04-q03",
+      "revision_ledger": "data/qa/technical-qa63-editorial-corrections.json",
+      "previous_answer": 2,
+      "reference_url": "https://www.energy.gov/cmei/fuels/fuel-cell-animation-text-version",
+      "verification": "direct_web_text_checked",
+      "basis": "DOE lines 53–60: stack cells connected in series.",
+      "question": "가상 PEM 스택에 단위셀 240개가 직렬 연결돼 있으며 각 셀의 부하 전압이 0.65V이다. 스택 전압은?",
+      "choices": [
+        "156V",
+        "240V",
+        "369.2V",
+        "0.65V"
+      ],
+      "answer": 1,
+      "explanation": "직렬 셀의 전압을 합산하면 240×0.65=156V이다. 실제 전압은 셀 상태와 부하에 따라 다르다.",
+      "subject_scope": "provisional broad fit; detailed Q-net HWP not opened",
+      "source_draft_promoted": false,
+      "independent_expert_approved": false,
+      "publication_basis": "independent educational wording and examples based on reviewed facts; not textbook text or reconstructed exam"
+    }
+  ],
+  "excluded_example": {
+    "id": "auto-made-r03-s03-q14",
+    "reason": "subject_classification_hold"
+  },
+  "summary": {
+    "added": 12,
+    "previously_reviewed_draft_topics": 12,
+    "external_page_supported": 7,
+    "definition_and_arithmetic": 5,
+    "independent_expert_approved": 0,
+    "draft_promotions": 0,
+    "expected_count": 112
+  }
+}

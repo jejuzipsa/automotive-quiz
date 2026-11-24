@@ -7,25 +7,25 @@
       "file": "data/expected/engine.json",
       "track": "expected",
       "subject": "engine",
-      "count": 25
+      "count": 28
     },
     {
       "file": "data/expected/chassis.json",
       "track": "expected",
       "subject": "chassis",
-      "count": 25
+      "count": 28
     },
     {
       "file": "data/expected/electrical.json",
       "track": "expected",
       "subject": "electrical",
-      "count": 25
+      "count": 28
     },
     {
       "file": "data/expected/eco.json",
       "track": "expected",
       "subject": "eco",
-      "count": 25
+      "count": 28
     },
     {
       "file": "data/demo.json",

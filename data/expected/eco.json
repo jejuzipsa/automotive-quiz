@@ -433,5 +433,71 @@
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",
     "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-eco-26",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "eco",
+    "question": "PEM 연료전지 발전 중 산소가 양성자와 외부 회로의 전자를 받아 반응하는 전극과 주생성물의 조합은?",
+    "choices": [
+      "애노드–물",
+      "캐소드–수소",
+      "캐소드–물",
+      "애노드–산소"
+    ],
+    "answer": 3,
+    "explanation": "캐소드에서 산소 환원으로 물이 생성된다. 애노드에서는 수소가 산화된다. 캐소드 반응식은 O₂+4H⁺+4e⁻→2H₂O이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://www.energy.gov/cmei/fuels/fuel-cell-animation-text-version"
+    ]
+  },
+  {
+    "id": "original-eco-27",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "eco",
+    "question": "유지와 메탄올의 전이에스터화로 얻는 지방산 메틸에스터와 함께 생성되는 대표 공동생성물은?",
+    "choices": [
+      "에틸렌",
+      "메탄",
+      "요소",
+      "글리세롤"
+    ],
+    "answer": 4,
+    "explanation": "트라이글리세라이드와 메탄올의 전이에스터화에서 지방산 메틸에스터와 글리세롤이 생성된다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://afdc.energy.gov/fuels/biodiesel-production"
+    ]
+  },
+  {
+    "id": "original-eco-28",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "eco",
+    "question": "가상 PEM 스택에 단위셀 240개가 직렬 연결돼 있으며 각 셀의 부하 전압이 0.65V이다. 스택 전압은?",
+    "choices": [
+      "156V",
+      "240V",
+      "369.2V",
+      "0.65V"
+    ],
+    "answer": 1,
+    "explanation": "직렬 셀의 전압을 합산하면 240×0.65=156V이다. 실제 전압은 셀 상태와 부하에 따라 다르다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://www.energy.gov/cmei/fuels/fuel-cell-animation-text-version"
+    ]
   }
 ]
