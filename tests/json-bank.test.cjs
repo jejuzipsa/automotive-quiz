@@ -170,6 +170,10 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.wrongScopes.children[1].click();
   assert.ok(els.wrongList.children.some(x=>x.children[1]?.textContent===target.question));
   assert.equal(count(),252);
+  const clean=history(),bad={...clean.records[0],correct:-1,updatedAt:Date.now()+1000};
+  memory[historyKey]=JSON.stringify({version:1,records:[...clean.records,bad,clean.records[0],null]});
+  await els.wrongEntryBtn.click();assert.ok(els.wrongSummary.textContent.includes("누적 252회"),"invalid and duplicate rows excluded");
+  memory[historyKey]=JSON.stringify(clean);
   // Existing releases retained only the last result. Import it exactly once.
   delete memory[historyKey];
   const oldResult=JSON.parse(memory.automotiveQuizLastSessionV1);

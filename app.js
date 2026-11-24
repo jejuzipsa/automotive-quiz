@@ -118,11 +118,23 @@
   function saveStorage(key,value) { try { localStorage.setItem(key,JSON.stringify(value)); } catch {} }
   // Restore only unchanged, currently public questions with their original order.
   function questionSignature(q) {return JSON.stringify([q.question,q.choices,q.answer,q.explanation]);}
-  // Per-question history keeps only metadata, not old question bodies.
+  // Per-question history stores counters and an exact serialized content signature; old questions are not rendered.
   // A content change starts a new learning record; never review withdrawn material.
   function loadHistory() {
     const raw=readStorage(HISTORY_KEY,null);
-    if(raw?.version===1&&Array.isArray(raw.records))return raw;
+    if(raw?.version===1&&Array.isArray(raw.records)){
+      // Keep only valid counters and newest valid row per question ID.
+      const rows=new Map();
+      for(const row of raw.records){
+        if(!row||typeof row.id!=="string"||typeof row.signature!=="string"||
+          !["correct","wrong","unanswered"].includes(row.last)||
+          ![row.correct,row.wrong,row.unanswered].every(n=>Number.isSafeInteger(n)&&n>=0&&n<Number.MAX_SAFE_INTEGER)||
+          !Number.isFinite(row.updatedAt)||row[row.last]<1)continue;
+        const previous=rows.get(row.id);
+        if(!previous||row.updatedAt>previous.updatedAt)rows.set(row.id,row);
+      }
+      return {version:1,records:[...rows.values()]};
+    }
     const history={version:1,records:[]};
     if(bankLoadState!=="ready")return history;
     // Import only the last session, which is all that older releases stored.
@@ -430,7 +442,10 @@
         make("span","",q.explanation)
       );
       $("questionCard").classList.add(isCorrect?"correct":"wrong");
-      if(mode==="review") $("reviewBackBtn").classList.remove("hidden");
+      if(mode==="review"){
+        $("reviewBackBtn").textContent=returnView==="wrong"?"오답 목록으로 돌아가기":"결과로 돌아가기";
+        $("reviewBackBtn").classList.remove("hidden");
+      }
       else {
         $("nextBtn").classList.remove("hidden");
         $("nextBtn").textContent=index===items.length-1?"결과 보기":"다음 문제";
