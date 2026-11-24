@@ -5,6 +5,7 @@ const path=require("node:path");
 const root=process.env.AUTO_QUIZ_REPO||path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const qa42ById=new Map(read("data/qa/technical-qa42-eco-scope-replacements.json").map(x=>[x.id,x]));
+const qa44ById=new Map(read("data/qa/technical-qa44-later-scope-edits.json").map(x=>[x.id,x]));
 const expected={electrical:{supported:6,held:14,legacyHolds:[13],supportedNumbers:[1,2,9,10,14,15]},eco:{supported:4,held:16,legacyHolds:[5,12,13,14,15,20],supportedNumbers:[1,7,10,19]}};
 let total=0,choices=0;
 for(const [subject,plan] of Object.entries(expected)){
@@ -17,7 +18,7 @@ for(const [subject,plan] of Object.entries(expected)){
  assert.equal(audit.filter(x=>x.evidence_grade==="needs_additional_model_or_syllabus_review").length,plan.held);
  assert.deepEqual(audit.filter(x=>x.evidence_grade==="source_supported_first_pass").map(x=>x.question_number),plan.supportedNumbers);
  for(let i=0;i<20;i++){
-  const q=qs[i],e=es[i],a=audit[i],latest=qa42ById.get(q.id);
+  const q=qs[i],e=es[i],a=audit[i],latest=qa44ById.get(q.id)||qa42ById.get(q.id);
   assert.equal(q.id,e.id);assert.equal(q.id,a.id);
   assert.equal(q.round,6);assert.equal(q.subject,subject);assert.equal(q.question_number,i+1);
   assert.equal(a.question_at_review,latest?latest.before.question:q.question);
