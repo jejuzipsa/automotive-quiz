@@ -26,6 +26,15 @@ for(const id of ["auto-made-r04-s04-q05","auto-made-r04-s04-q12","auto-made-r04-
 "auto-made-r05-s04-q05","auto-made-r05-s04-q12","auto-made-r05-s04-q13","auto-made-r05-s04-q14","auto-made-r05-s04-q15",
 "auto-made-r06-s04-q05","auto-made-r06-s04-q12","auto-made-r06-s04-q13","auto-made-r06-s04-q14","auto-made-r06-s04-q15"])
  overrides[id]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"eco",note:"QA42에서 EV/HEV/FCEV 자체학습문제로 전면 대체. 과거 과목 보류는 공식 세부 출제기준·전문 기술 및 권리 확인 전까지 유지."};
+// QA43/44: 18 previously cross-subject items rewritten; QA45: 3 boundary items narrowed to electrical circuit diagnosis.
+for(const edit of [
+ ...read("data/qa/technical-qa43-remaining-scope-edits.json"),
+ ...read("data/qa/technical-qa44-later-scope-edits.json"),
+ ...read("data/qa/technical-qa45-overlap-edits.json")
+]) overrides[edit.id]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:edit.subject,
+ note:"QA43-45에서 해당 과목의 자체작성 학습문제로 교정; 기술·법령·권리 독립확인 및 세부 출제기준 검사 전 기존 과목 보류 유지."};
+overrides["auto-made-r06-s04-q20"]={category:"in_scope_reauthored_but_held",priority:"P1",target_subject:"eco",
+ note:"과거 가정용 태양광 인버터 과목이탈 사유는 QA2 EV 구동용 인버터 재작성 후 현행 질문에 부합하지 않음. QA45 이력오탐 재심사 완료, 기술·사용권리 최종승인은 보류."};
 const majors={
  engine:["과급장치","가솔린 전자제어장치","디젤 전자제어장치","엔진 본체","배출가스장치"],
  chassis:["자동변속기","유압식 현가장치","전자제어 현가장치","전자제어 조향장치","전자제어 제동장치"],
@@ -51,7 +60,8 @@ for(let round=1;round<=9;round++)for(const subject of subjects){
 }
 assert.equal(holds.length,55);assert.equal(new Set(holds.map(x=>x.id)).size,55);
 for(const id of Object.keys(overrides))assert.ok(holds.some(x=>x.id===id),"unmatched override "+id);
-assert.equal(holds.filter(x=>x.category==="legacy_false_positive_candidate").length,1);
+assert.equal(holds.filter(x=>x.category==="legacy_false_positive_candidate").length,0);
+assert.equal(holds.filter(x=>x.category==="in_scope_reauthored_but_held").length,55);
 const counts={};for(const h of holds)counts[h.category]=(counts[h.category]||0)+1;
 const out={kind:"PROVISIONAL_55_HOLD_TOPIC_TRIAGE_NOT_TECHNICAL_APPROVAL",date:"2026-11-23",
  subject_majors_provisionally_summarized: majors,
