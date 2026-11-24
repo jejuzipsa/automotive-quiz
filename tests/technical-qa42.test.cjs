@@ -49,7 +49,7 @@ for(const row of ledger){
 }
 assert.equal(count,60);
 const m=read("data/manifest.json");assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));
-assert.equal(m.banks.filter(b=>b.track==="expected").reduce((s,b)=>s+b.count,0),100);
+assert.equal(m.banks.filter(b=>b.track==="expected").reduce((s,b)=>s+b.count,0),112);
 const st=read("data/bank-status.json").technical_qa42;
 assert.equal(st.reauthored_eco_items,15);
 assert.equal(st.historical_subject_holds_retained,55);

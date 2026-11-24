@@ -71,6 +71,7 @@ jobs:
           QA47_PACKET_OUT=qa47-first20-review-packet.json node tests/qa47-first20-source-review-packet.test.cjs
           QA52_OUT_DIR=qa52-working-bank node tests/qa51-52-working-bank.test.cjs
           QA52_OUT_DIR=qa52-working-bank node tests/qa64-current-bank-quality.test.cjs
+          node tests/qa66-practice-selection.test.cjs
           QA39_SUBJECT_REPORT_OUT=qa39-subject-review.json node tests/qa39-subject-triage.test.cjs
           QA19_REPORT_OUT=qa19-review-queue.json node tests/qa19-round05-09-risk-queue.test.cjs
           QA5_REPORT_OUT=qa5-report.json node tests/qa5-bank-integrity.test.cjs

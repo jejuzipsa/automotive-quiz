@@ -433,5 +433,67 @@
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",
     "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-engine-26",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "DPF 재생이 정상적으로 완료된 후에도 비가연성 회분이 남았다. 적절한 설명은?",
+    "choices": [
+      "재생은 가연성 그을음을 줄이며 회분 제거와 구별된다",
+      "회분 잔류만으로 재생이 전혀 없었다고 판정한다",
+      "정상 재생의 목적은 비가연성 회분의 기화이다",
+      "SCR 환원제가 모든 회분을 제거한다"
+    ],
+    "answer": 1,
+    "explanation": "재생은 포집된 가연성 그을음을 산화한다. 비가연성 회분은 별도의 관리 대상이며 청소·교환은 제조사 기준에 따른다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P100LFHF.TXT"
+    ]
+  },
+  {
+    "id": "original-engine-27",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "가상 베어링 내경이 50.08mm이고 저널 외경이 50.00mm이다. 두 지름의 차로 정의한 지름 간극은?",
+    "choices": [
+      "0.04mm",
+      "0.80mm",
+      "0.08mm",
+      "0.16mm"
+    ],
+    "answer": 3,
+    "explanation": "50.08−50.00=0.08mm이다. 반경 간극 0.04mm와 구별한다. 실제 서비스 한계는 차종별이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": []
+  },
+  {
+    "id": "original-engine-28",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "신선 공기 질량유량 90g/s와 재순환 배기가스 30g/s가 혼합된다. 전체 혼합기 질량유량 대비 재순환 배기가스의 비율은?",
+    "choices": [
+      "30%",
+      "33.3%",
+      "75%",
+      "25%"
+    ],
+    "answer": 4,
+    "explanation": "전체 유량은 120g/s이며 30÷120×100=25%이다. 실제 EGR 표시값의 정의는 차량별로 다를 수 있다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": []
   }
 ]

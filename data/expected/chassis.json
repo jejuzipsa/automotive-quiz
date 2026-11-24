@@ -433,5 +433,67 @@
     "publishable": true,
     "authoring_batch": "QA65-66_new_original_calculation_practice",
     "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-chassis-26",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "조향축에서 0.18m 떨어진 핸들 림에 접선 방향으로 20N의 힘을 가한다. 이 힘의 조향 토크 크기는?",
+    "choices": [
+      "3.6N·m",
+      "20N·m",
+      "111.1N·m",
+      "0.9N·m"
+    ],
+    "answer": 1,
+    "explanation": "힘이 반지름에 수직이므로 0.18×20=3.6N·m이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": [
+      "https://openstax.org/books/physics/pages/6-3-rotational-motion"
+    ]
+  },
+  {
+    "id": "original-chassis-27",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "가상 얼라인먼트 장비의 좌측 개별 토가 +0.12°, 우측이 −0.04°이다. 전체 토를 대수합으로 정의하면?",
+    "choices": [
+      "+0.16°",
+      "+0.08°",
+      "−0.12°",
+      "+0.04°"
+    ],
+    "answer": 2,
+    "explanation": "부호를 포함해 +0.12−0.04=+0.08°이다. 실제 규정은 장비 부호 기준과 차량 규격을 적용한다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": []
+  },
+  {
+    "id": "original-chassis-28",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "chassis",
+    "question": "가상 휠속도 센서가 회전당 36펄스를 발생시킨다. 차륜이 300rpm으로 회전할 때 펄스 주파수는?",
+    "choices": [
+      "36Hz",
+      "300Hz",
+      "180Hz",
+      "10,800Hz"
+    ],
+    "answer": 3,
+    "explanation": "300rpm은 초당 5회전이다. 36×5=180Hz이다. 실제 펄스 수는 센서 설계별로 다르다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA66_current_revision_based_original_practice",
+    "technical_answer_status": "model_checked_not_independently_approved",
+    "reference_urls": []
   }
 ]
