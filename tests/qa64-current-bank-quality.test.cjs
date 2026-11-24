@@ -32,9 +32,9 @@ pairs.sort((a,b)=>Number(b.exact_stem)-Number(a.exact_stem)||b.score-a.score||a.
 const byId=new Map(all.map(q=>[q.id,q]));
 // Explicitly compared source stems and answers; assert the current versions have not changed.
 const reviewed=[
- ["auto-made-r05-s03-q09","auto-made-r09-s03-q17","리시버드라이어의 수분·이물 관리; 9회 해설 수정은 학습목표를 바꾸지 않음","revise_second"],
- ["auto-made-r07-s02-q10","auto-made-r09-s02-q09","조향계 정비 후 지정 영점/학습 확인; 상황 차이는 있으나 같은 기본 판단","review_overlap"],
- ["auto-made-r08-s04-q10","auto-made-r09-s04-q20","수소 감압 레귤레이터의 기능","revise_second"],
+ ["auto-made-r05-s03-q09","auto-made-r09-s03-q17","QA65 5회 문제를 냉매 과냉각으로 변경, 9회는 리시버드라이어 유지","retain_distinct"],
+ ["auto-made-r07-s02-q10","auto-made-r09-s02-q09","QA65 9회 문제는 EPS 입력전력 계산으로 변경","retain_distinct"],
+ ["auto-made-r08-s04-q10","auto-made-r09-s04-q20","QA65 9회는 연료전지 순전력 계산으로 변경; 과목 보류 유지","retain_distinct"],
  ["auto-made-r02-s01-q19","auto-made-r09-s01-q03","DPF 포집 대상과 개정된 그을음/회분 구분은 다른 학습목표","retain_distinct"],
  ["auto-made-r06-s01-q16","auto-made-r09-s01-q14","베어링 캡 조립과 개정된 지름 간극 계산은 다른 학습목표","retain_distinct"],
  ["auto-made-r02-s04-q15","auto-made-r03-s04-q15","HVIL 감시 목적과 보호제어는 관련되나 구별 가능; 3회 과목보류 유지","review_overlap"]

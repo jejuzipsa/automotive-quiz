@@ -44,7 +44,7 @@ assert.equal(total,720);
 assert.equal(livePaths.some(x=>x.includes("data/past/approved/")),false,
   "no past bank has received final technical and rights approval");
 const eligibleExpected=subjects.flatMap(subject=>read("data/expected/"+subject+".json"));
-assert.equal(eligibleExpected.length,80);
-for(const subject of subjects)assert.equal(eligibleExpected.filter(q=>q.subject===subject).length,20);
+assert.equal(eligibleExpected.length,100);
+for(const subject of subjects)assert.equal(eligibleExpected.filter(q=>q.subject===subject).length,25);
 assert.ok(eligibleExpected.every(q=>q.origin==="original_practice"&&q.track==="expected"&&q.publishable===true));
-console.log("PASS release gate: 720 unapproved reconstructed drafts excluded; 4 x 20 public original-practice items eligible for learning mock exam.");
+console.log("PASS release gate: 720 unapproved reconstructed drafts excluded; 4 x 25 public original-practice items eligible for learning mock exam.");

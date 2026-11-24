@@ -1,0 +1,508 @@
+{
+  "kind": "QA65_VERSIONED_EDITORIAL_CORRECTIONS",
+  "date": "2026-11-24",
+  "items": [
+    {
+      "id": "auto-made-r05-s03-q09",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "자동차 냉방장치의 리시버드라이어 역할로 적절한 것은?",
+        "choices": [
+          "냉매 수분과 이물 관리·액상 냉매 저장 역할",
+          "브레이크 압력을 배분",
+          "냉매를 기계적으로 고압 압축",
+          "엔진오일 점도를 측정"
+        ],
+        "answer": 1,
+        "reason": "리시버드라이어는 시스템 구성에 따라 액상 냉매를 저장하고 수분·이물질을 제거한다. 압축작업은 컴프레서가 수행한다.",
+        "key_point": "리시버드라이어 ≠ 컴프레서.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "냉매 수분과 이물 관리·액상 냉매 저장 역할",
+            "verdict": "correct",
+            "rationale": "리시버드라이어는 냉매 저장·수분·이물 관리를 담당할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "브레이크 압력을 배분",
+            "verdict": "incorrect",
+            "rationale": "제동압 분배 장치는 A/C 냉매 리시버드라이어의 기능이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "냉매를 기계적으로 고압 압축",
+            "verdict": "incorrect",
+            "rationale": "냉매를 기계적으로 압축하는 역할은 압축기이며 드라이어가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "엔진오일 점도를 측정",
+            "verdict": "incorrect",
+            "rationale": "엔진오일 점도 검사는 리시버드라이어의 냉매 처리 기능이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "정상적으로 작동하는 일반적인 증기압축식 자동차 공조 회로에서 응축기와 팽창밸브 사이의 액상 냉매가 포화온도보다 5K 낮다. 이 상태를 부르는 용어는?",
+        "choices": [
+          "과냉각",
+          "과열",
+          "단열압축",
+          "등온증발"
+        ],
+        "answer": 1,
+        "reason": "액체 냉매 온도가 해당 압력의 포화온도보다 낮으면 과냉각 상태이다. 실제 냉매 종류와 압력에 따른 포화온도 관계를 적용한다.",
+        "key_point": "과냉각도는 해당 압력의 포화온도와 액체 온도의 차이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "과냉각",
+            "verdict": "correct",
+            "rationale": "포화온도보다 낮은 액체 냉매 상태이다."
+          },
+          {
+            "number": 2,
+            "text": "과열",
+            "verdict": "incorrect",
+            "rationale": "과열은 증기 온도가 포화온도보다 높은 상태이다."
+          },
+          {
+            "number": 3,
+            "text": "단열압축",
+            "verdict": "incorrect",
+            "rationale": "압축 과정에 대한 설명이다."
+          },
+          {
+            "number": 4,
+            "text": "등온증발",
+            "verdict": "incorrect",
+            "rationale": "액체의 포화온도 미만 상태를 뜻하지 않는다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s04-q20",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "수소연료전지차에서 고압 저장탱크의 수소를 연료전지 공급계통에 맞는 압력으로 낮추는 장치는?",
+        "choices": [
+          "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+          "엔진 SCR 촉매의 요소수 분사장치",
+          "구동모터의 회전자 위치센서 리졸버",
+          "전기차 구동배터리의 셀 밸런싱 회로"
+        ],
+        "answer": 1,
+        "reason": "연료전지차에서는 고압으로 저장된 수소를 연료전지 공급계통에 맞는 압력으로 제어하기 위해 감압 레귤레이터를 사용한다. 저장압·후단 압력 기준과 레귤레이터 구조는 차량 설계별로 다르며 수소 누출·압력 관련 작업은 OEM 전문안전절차가 필수다.",
+        "key_point": "FCEV 수소 감압 레귤레이터 → 저장 고압을 공급계통 요구압으로 낮춤.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "수소 공급압력을 제어해 후단 계통의 요구압력으로 감압하는 레귤레이터",
+            "verdict": "correct",
+            "rationale": "고압 수소를 스택에 적합한 공급압력으로 제어하는 부품이야."
+          },
+          {
+            "number": 2,
+            "text": "엔진 SCR 촉매의 요소수 분사장치",
+            "verdict": "incorrect",
+            "rationale": "SCR 요소수 장치는 디젤 배기가스 질소산화물 저감 계통이야."
+          },
+          {
+            "number": 3,
+            "text": "구동모터의 회전자 위치센서 리졸버",
+            "verdict": "incorrect",
+            "rationale": "리졸버는 모터 회전자 위치를 감지하며 수소 공급압력 감압장치가 아니야."
+          },
+          {
+            "number": 4,
+            "text": "전기차 구동배터리의 셀 밸런싱 회로",
+            "verdict": "incorrect",
+            "rationale": "셀 밸런싱은 배터리 충전상태 편차를 관리하는 기능이야."
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 연료전지 시스템이 40kW의 직류 전력을 생산하고 보조장치에 5kW를 소비한다. 다른 손실을 무시하면 외부에 공급 가능한 순전력은?",
+        "choices": [
+          "35kW",
+          "45kW",
+          "8kW",
+          "200kW"
+        ],
+        "answer": 1,
+        "reason": "생성 전력에서 보조장치 소비 전력을 빼면 순전력은 40−5=35kW이다. 실제 시스템은 공기압축기, 냉각계통 등 보조장치와 변환 손실의 영향을 받는다.",
+        "key_point": "순전력=총 발전전력−보조장치 소비전력.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "35kW",
+            "verdict": "correct",
+            "rationale": "40−5=35kW이다."
+          },
+          {
+            "number": 2,
+            "text": "45kW",
+            "verdict": "incorrect",
+            "rationale": "소비 전력을 더한 값이다."
+          },
+          {
+            "number": 3,
+            "text": "8kW",
+            "verdict": "incorrect",
+            "rationale": "두 전력을 나눈 수치이다."
+          },
+          {
+            "number": 4,
+            "text": "200kW",
+            "verdict": "incorrect",
+            "rationale": "두 전력을 곱한 수치이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s02-q09",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "조향기어를 교환한 뒤 EPS 경고가 켜졌다. 제조사가 정한 후속 조치가 될 수 있는 것은?",
+        "choices": [
+          "타이어 밸브캡만 교환",
+          "모든 차량은 교환 후 코딩·학습이 절대 불필요",
+          "차륜 정렬과 무관하므로 확인 금지",
+          "관련 초기화·각도 또는 토크센서 학습 수행"
+        ],
+        "answer": 4,
+        "reason": "EPS 정비 후에는 차종에 따라 센서 영점 학습·제어기 코딩이 필요하다. 스캔툴 절차와 정렬 상태를 확인해야 한다.",
+        "key_point": "EPS 부품 교환 후 차종별 보정 절차 검토.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "타이어 밸브캡만 교환",
+            "verdict": "incorrect",
+            "rationale": "타이어 밸브캡 교환은 ECU 조향 학습과 무관해"
+          },
+          {
+            "number": 2,
+            "text": "모든 차량은 교환 후 코딩·학습이 절대 불필요",
+            "verdict": "incorrect",
+            "rationale": "교환 후 모든 차에서 학습이 불필요하다는 단정은 틀려"
+          },
+          {
+            "number": 3,
+            "text": "차륜 정렬과 무관하므로 확인 금지",
+            "verdict": "incorrect",
+            "rationale": "조향기어 교체 뒤 정렬 상태를 무조건 배제하면 안 돼"
+          },
+          {
+            "number": 4,
+            "text": "관련 초기화·각도 또는 토크센서 학습 수행",
+            "verdict": "correct",
+            "rationale": "EPS 정비 후에는 차종에 따라 센서 영점 학습·제어기 코딩이 필요하다. 스캔툴 절차와 정렬 상태를 확인해야 한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "가상의 EPS 보조모터가 12V에서 25A를 소비한다. 이때 모터의 전기 입력 전력은?",
+        "choices": [
+          "0.48W",
+          "37W",
+          "150W",
+          "300W"
+        ],
+        "answer": 4,
+        "reason": "직류 입력 전력은 전압과 전류의 곱이다. 12×25=300W이다. 실제 기계 출력은 효율에 따라 입력 전력보다 작으며 차량 전압과 부하 조건은 제조사별로 다르다.",
+        "key_point": "전기 입력 전력 P=VI.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "0.48W",
+            "verdict": "incorrect",
+            "rationale": "전압을 전류로 나눈 수치이다."
+          },
+          {
+            "number": 2,
+            "text": "37W",
+            "verdict": "incorrect",
+            "rationale": "전압과 전류를 더한 수치이다."
+          },
+          {
+            "number": 3,
+            "text": "150W",
+            "verdict": "incorrect",
+            "rationale": "주어진 전압과 전류의 곱이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "300W",
+            "verdict": "correct",
+            "rationale": "12×25=300W이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s02-q16",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "휠 얼라인먼트 조정 뒤 운전대는 중앙인데 ESC의 조향각이 8° 표시된다. 확인할 내용은?",
+        "choices": [
+          "브레이크액을 전량 바꾸면 자동 영점",
+          "조향각과 실제 차륜 방향은 항상 독립이라 무시",
+          "타이어색을 바꾸면 센서 영점이 수정",
+          "차륜 직진 기준과 조향각 영점학습 필요성"
+        ],
+        "answer": 4,
+        "reason": "차륜 정렬 후 ESC 센서의 영점이 맞지 않으면 차량의 자세제어 판단이 부정확해질 수 있다. 차종별 보정 절차로 영점을 확인한다.",
+        "key_point": "얼라인먼트 후 조향각 영점·직진 기준 함께 확인.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "브레이크액을 전량 바꾸면 자동 영점",
+            "verdict": "incorrect",
+            "rationale": "브레이크액 전체교환만으로 SAS 영점이 맞아지지는 않아"
+          },
+          {
+            "number": 2,
+            "text": "조향각과 실제 차륜 방향은 항상 독립이라 무시",
+            "verdict": "incorrect",
+            "rationale": "조향각과 실제 직진방향은 ESC 판단에 연관돼"
+          },
+          {
+            "number": 3,
+            "text": "타이어색을 바꾸면 센서 영점이 수정",
+            "verdict": "incorrect",
+            "rationale": "타이어 색으로 조향각 영점을 변경할 수 없어"
+          },
+          {
+            "number": 4,
+            "text": "차륜 직진 기준과 조향각 영점학습 필요성",
+            "verdict": "correct",
+            "rationale": "차륜 정렬 후 ESC 센서의 영점이 맞지 않으면 차량의 자세제어 판단이 부정확해질 수 있다. 차종별 보정 절차로 영점을 확인한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "조향각 센서가 실제 직진 위치에서 +8°를 표시하고, 가상의 선형 오프셋 보정 모델에서 이 값을 영점 오프셋으로 사용한다. 이후 센서 표시가 +23°이면 보정된 각도는?",
+        "choices": [
+          "31°",
+          "23°",
+          "8°",
+          "15°"
+        ],
+        "answer": 4,
+        "reason": "지문에서 정의한 모델에서는 표시값에서 영점 오프셋을 뺀다. 23−8=15°이다. 실제 차량에서 임의 오프셋을 입력하는 절차를 의미하지 않으며 제조사 보정 지침을 따른다.",
+        "key_point": "정의된 보정 모델: 표시각−영점 오프셋.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "31°",
+            "verdict": "incorrect",
+            "rationale": "오프셋을 더한 값이다."
+          },
+          {
+            "number": 2,
+            "text": "23°",
+            "verdict": "incorrect",
+            "rationale": "보정 전 표시값이다."
+          },
+          {
+            "number": 3,
+            "text": "8°",
+            "verdict": "incorrect",
+            "rationale": "영점 오프셋 자체이다."
+          },
+          {
+            "number": 4,
+            "text": "15°",
+            "verdict": "correct",
+            "rationale": "23−8=15°이다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r09-s01-q04",
+      "kind": "distractor_quality_and_explanation",
+      "before": {
+        "question": "엔진 오일 소모가 과도하다. 원인 진단에 직접 관련성이 큰 항목은?",
+        "choices": [
+          "피스톤 링·밸브 스템 씰과 외부 누유 상태",
+          "트렁크 램프의 전구색상만",
+          "사이드미러 접힘 속도만",
+          "인포테인먼트 저장공간만"
+        ],
+        "answer": 1,
+        "reason": "오일 소모는 실린더 내 연소, PCV 이상, 터보차저 누유나 외부 누설 등으로 발생할 수 있다. 냉각수온 센서만을 고장으로 단정할 수 없다.",
+        "key_point": "과다 오일소모 → 내부 연소·PCV·터보·외부 누유 구분.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "피스톤 링·밸브 스템 씰과 외부 누유 상태",
+            "verdict": "correct",
+            "rationale": "오일 소모는 실린더 내 연소, PCV 이상, 터보차저 누유나 외부 누설 등으로 발생할 수 있다. 냉각수온 센서만을 고장으로 단정할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "트렁크 램프의 전구색상만",
+            "verdict": "incorrect",
+            "rationale": "트렁크 램프 색상은 엔진오일 소비량 원인과 무관해"
+          },
+          {
+            "number": 3,
+            "text": "사이드미러 접힘 속도만",
+            "verdict": "incorrect",
+            "rationale": "사이드미러 접힘속도로 링·씰 누유를 판단할 수 없어"
+          },
+          {
+            "number": 4,
+            "text": "인포테인먼트 저장공간만",
+            "verdict": "incorrect",
+            "rationale": "인포테인먼트 저장용량은 윤활유 소비진단 지표가 아니야"
+          }
+        ]
+      },
+      "after": {
+        "question": "외부 누유가 없다고 확인된 가솔린 엔진에서 장시간 공회전 후 가속할 때 청색 배기가스가 반복적으로 나타난다. 오일 유입 가능성이 있는 부위 중 이 조건과 관련해 우선 확인할 항목은?",
+        "choices": [
+          "밸브 스템 씰과 가이드의 상태",
+          "냉각수 서모스탯의 개방온도",
+          "연료탱크 증발가스 캐니스터의 용량",
+          "흡기온도 센서의 기준전압"
+        ],
+        "answer": 1,
+        "reason": "장시간 공회전 후 가속 시 청색 연기가 나타나는 현상은 밸브 스템 씰이나 가이드를 통한 오일 유입 가능성을 시사한다. 단일 증상만으로 확정할 수 없으므로 피스톤 링, PCV 및 터보 장착 차량의 터보 누유 등 다른 원인도 확인한다.",
+        "key_point": "청색 배기가스는 오일 연소 가능성을 나타내며 발생 조건으로 원인을 좁힌다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "밸브 스템 씰과 가이드의 상태",
+            "verdict": "correct",
+            "rationale": "공회전 이후 가속 시 오일 유입 가능성이 있는 직접 관련 부위이다."
+          },
+          {
+            "number": 2,
+            "text": "냉각수 서모스탯의 개방온도",
+            "verdict": "incorrect",
+            "rationale": "냉각수 온도 제어 부품으로 오일 유입의 직접 경로는 아니다."
+          },
+          {
+            "number": 3,
+            "text": "연료탱크 증발가스 캐니스터의 용량",
+            "verdict": "incorrect",
+            "rationale": "연료 증발가스 저장 부품이다."
+          },
+          {
+            "number": 4,
+            "text": "흡기온도 센서의 기준전압",
+            "verdict": "incorrect",
+            "rationale": "흡기온 측정회로이며 오일 유입 경로 자체는 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r05-s03-q11",
+      "kind": "remove_editorial_residue",
+      "before": {
+        "question": "히터코어 입·출구 냉각수 온도가 충분한데도 설정온도를 변경해도 송풍구 온도가 거의 변하지 않는다. 전자제어 공조에서 직접 확인할 항목은?",
+        "choices": [
+          "타이어 공기압과 구동축의 종감속비만 확인한다",
+          "브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다",
+          "냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다",
+          "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다"
+        ],
+        "answer": 4,
+        "reason": "히터코어의 냉각수 열원이 확보돼 있는데 공조 온도설정 변경에 따라 송풍구 온도가 달라지지 않는 경우, 혼합도어(블렌드 도어)가 공기 유로를 적절히 바꾸는지 확인해야 한다. 액추에이터 명령·위치 신호, 링크의 걸림, 전원·접지와 제어기 DTC를 차종별 정비절차에 따라 비교한다. 히터코어 누설 여부를 묻던 같은 회차 10번과 다른 전기제어 진단 목표다.",
+        "key_point": "열원은 정상이나 온도조절이 안 되면 공조 혼합도어 액추에이터 명령·위치와 기구 걸림을 확인한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "타이어 공기압과 구동축의 종감속비만 확인한다",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기압·구동축 감속비는 블렌드도어의 명령/실제 개도 진단과 직접 관련이 적다."
+          },
+          {
+            "number": 2,
+            "text": "브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다",
+            "verdict": "incorrect",
+            "rationale": "브레이크유 수분만으로 공조 온도도어 위치를 판정할 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다",
+            "verdict": "incorrect",
+            "rationale": "히터코어 누수가 없더라도 블렌드도어 구동 이상은 발생할 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다",
+            "verdict": "correct",
+            "rationale": "온도 혼합도어 액추에이터 명령·피드백과 기계적 걸림을 비교해야 한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "히터코어 입·출구 냉각수 온도가 충분한데도 설정온도를 변경해도 송풍구 온도가 거의 변하지 않는다. 전자제어 공조에서 직접 확인할 항목은?",
+        "choices": [
+          "타이어 공기압과 구동축의 종감속비만 확인한다",
+          "브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다",
+          "냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다",
+          "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다"
+        ],
+        "answer": 4,
+        "reason": "히터코어의 열원이 확보되어도 혼합도어가 공기 유로를 바꾸지 못하면 설정온도에 따라 송풍구 온도가 달라지지 않을 수 있다. 액추에이터 명령·위치 피드백, 링크 걸림 및 전원·접지와 관련 DTC를 제조사 절차에 따라 확인한다.",
+        "key_point": "열원이 정상이라면 혼합도어의 명령과 실제 위치를 비교한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "타이어 공기압과 구동축의 종감속비만 확인한다",
+            "verdict": "incorrect",
+            "rationale": "타이어 압력과 종감속비는 혼합도어의 직접 진단값이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "브레이크액의 수분 함량만으로 히터 공기 혼합상태를 확정한다",
+            "verdict": "incorrect",
+            "rationale": "브레이크액 수분으로 공조 유로를 판단할 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "냉각수 누설 흔적이 없으면 공조 온도 도어를 점검할 이유가 없다",
+            "verdict": "incorrect",
+            "rationale": "누설이 없더라도 혼합도어 고장이 발생할 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "온도 혼합도어 액추에이터의 구동명령·위치 피드백과 도어 걸림을 확인한다",
+            "verdict": "correct",
+            "rationale": "명령·피드백과 기구부 점검이 직접 관련된다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ],
+  "summary": {
+    "revised_questions": 6,
+    "new_source_page_checks": 0
+  }
+}

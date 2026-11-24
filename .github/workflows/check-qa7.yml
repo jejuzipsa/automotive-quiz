@@ -83,11 +83,11 @@ jobs:
           path: qa52-working-bank/qa64-quality/
           if-no-files-found: warn
           retention-days: 30
-      - name: Upload QA63 complete versioned working bank and empty pending queue (not approved)
+      - name: Upload QA65 complete versioned working bank and empty pending queue (not approved)
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: qa63-working-bank-all-720-model-reviewed
+          name: qa65-working-bank-all-720-model-reviewed
           path: qa52-working-bank/
           if-no-files-found: warn
           retention-days: 30

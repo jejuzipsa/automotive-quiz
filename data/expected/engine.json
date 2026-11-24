@@ -338,5 +338,100 @@
     "explanation": "DTC는 고장 진단의 단서이므로 데이터·배선·기계적 상태 등 추가 진단으로 원인을 확인해야 한다.",
     "review_status": "editorial_draft",
     "publishable": true
+  },
+  {
+    "id": "original-engine-21",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "4행정 4기통 엔진의 한 실린더 배기량이 450cm³이다. 전체 배기량은?",
+    "choices": [
+      "1,800cm³",
+      "900cm³",
+      "450cm³",
+      "2,250cm³"
+    ],
+    "answer": 1,
+    "explanation": "전체 배기량은 실린더당 배기량에 실린더 수를 곱한다. 450×4=1,800cm³이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-engine-22",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "가상 터보차저 압축기의 입구 절대압력이 100kPa, 출구 절대압력이 160kPa이다. 압력비는?",
+    "choices": [
+      "0.625",
+      "1.6",
+      "60",
+      "2.6"
+    ],
+    "answer": 2,
+    "explanation": "압축기 압력비는 출구 절대압력을 입구 절대압력으로 나눈 무차원 값이다. 160÷100=1.6이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-engine-23",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "대기압이 95kPa인 장소에서 흡기 매니폴드 절대압력이 145kPa이다. 대기압 기준 게이지압력은?",
+    "choices": [
+      "145kPa",
+      "95kPa",
+      "50kPa",
+      "240kPa"
+    ],
+    "answer": 3,
+    "explanation": "게이지압력은 절대압력에서 기준 대기압을 뺀 값이다. 145−95=50kPa이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-engine-24",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "가상 엔진의 압축 전 실린더 체적이 500cm³, 압축 후 체적이 50cm³이다. 기하학적 압축비는?",
+    "choices": [
+      "9:1",
+      "5:1",
+      "11:1",
+      "10:1"
+    ],
+    "answer": 4,
+    "explanation": "압축비는 하사점의 전체 체적을 상사점의 연소실 체적으로 나눈 값이다. 500÷50=10이다. 지문 값은 전체 체적이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-engine-25",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "engine",
+    "question": "가상 배기가스 냉각기의 질량유량이 0.04kg/s, 일정한 비열이 1kJ/(kg·K), 온도 감소량이 75K이다. 열손실 외 다른 변화가 없다면 제거 열전달률은?",
+    "choices": [
+      "3kW",
+      "0.3kW",
+      "30kW",
+      "1.875kW"
+    ],
+    "answer": 1,
+    "explanation": "열전달률은 질량유량×비열×온도차이다. 0.04×1×75=3kJ/s=3kW이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
   }
 ]

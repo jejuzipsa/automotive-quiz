@@ -78,5 +78,5 @@ console.log("QA38 grades "+JSON.stringify(graded)+"; answer index "+JSON.stringi
 console.log("QA38 top 12 similar "+JSON.stringify(similar.slice(0,12)));
 console.log("QA38 legacy suspected hold "+JSON.stringify(suspect));
 assert.equal(issues.length,0,"QA38 integrity issues: "+JSON.stringify(issues.slice(0,14)));
-const manifest=read("data/manifest.json");assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")));
+const manifest=read("data/manifest.json");assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),100);assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")));
 console.log("PASS QA38: structural audit and release guard; candidates require human review.");
