@@ -338,5 +338,100 @@
     "explanation": "고장코드는 진단의 출발점이며 센서 자체뿐 아니라 배선과 전원·접지의 영향을 점검해야 한다.",
     "review_status": "editorial_draft",
     "publishable": true
+  },
+  {
+    "id": "original-electrical-21",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "이상적인 12V 직류 전원에 3Ω과 6Ω의 저항을 직렬 연결했다. 회로 전류는?",
+    "choices": [
+      "4A",
+      "2A",
+      "4/3A",
+      "9A"
+    ],
+    "answer": 3,
+    "explanation": "직렬 합성저항은 9Ω이다. 옴의 법칙에 따라 12÷9=4/3A이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-electrical-22",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "가상 12V 회로에 12Ω 저항 두 개를 병렬 연결했다. 전원에서 공급되는 전체 전류는?",
+    "choices": [
+      "0.5A",
+      "1A",
+      "24A",
+      "2A"
+    ],
+    "answer": 4,
+    "explanation": "각 가지에 12÷12=1A가 흐른다. 전체 전류는 두 가지의 합인 2A이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-electrical-23",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "가상 전장 부하가 12V에서 4A를 소비한다. 전력은?",
+    "choices": [
+      "48W",
+      "3W",
+      "16W",
+      "0.33W"
+    ],
+    "answer": 1,
+    "explanation": "직류 전력 P=VI이다. 12×4=48W이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-electrical-24",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "정상 작동 중인 가상 조명 회로의 배선 구간에 5A가 흐르고, 그 구간의 저항이 0.1Ω이라고 주어졌다. 해당 구간의 전압강하는?",
+    "choices": [
+      "0.05V",
+      "0.5V",
+      "5V",
+      "50V"
+    ],
+    "answer": 2,
+    "explanation": "V=IR이므로 5×0.1=0.5V이다. 주어진 값으로 계산하는 문제이며 통전 회로에 저항계를 연결하는 측정법을 의미하지 않는다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
+  },
+  {
+    "id": "original-electrical-25",
+    "track": "expected",
+    "origin": "original_practice",
+    "subject": "electrical",
+    "question": "가상의 PWM 신호가 한 주기 20ms 중 5ms 동안 ON 상태이다. 듀티비는?",
+    "choices": [
+      "4%",
+      "20%",
+      "25%",
+      "75%"
+    ],
+    "answer": 3,
+    "explanation": "듀티비는 ON 시간÷전체 주기×100이다. 5÷20×100=25%이다.",
+    "review_status": "editorial_draft",
+    "publishable": true,
+    "authoring_batch": "QA65-66_new_original_calculation_practice",
+    "technical_answer_status": "model_checked_not_independently_approved"
   }
 ]
