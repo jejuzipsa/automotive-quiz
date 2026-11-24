@@ -1,0 +1,1284 @@
+{
+  "kind": "QA51_VERSIONED_EDITORIAL_REVISIONS",
+  "date": "2026-11-24",
+  "base_commit": "7e6a42c2eb2e39bbcd0ee135c8e662def394a61e",
+  "policy": "Preserve historical source snapshots. Materialize revised working questions and explanations through QA52 generator. Not publishable or independently approved.",
+  "summary": {
+    "revised_questions": 15,
+    "answer_index_changes": 0
+  },
+  "items": [
+    {
+      "id": "auto-made-r01-s01-q01",
+      "kind": "answer_leak",
+      "before": {
+        "question": "제조사 정비지침에 밸브 간극 측정 조건이 ‘냉간’으로 지정된 엔진이다. 어느 조건에서 간극을 측정해야 하는가?",
+        "choices": [
+          "제조사 지정 냉간 온도까지 충분히 냉각한 상태에서 측정한다",
+          "냉간 규격이더라도 정상 작동온도까지 가열한 즉시 측정한다",
+          "밸브가 열린 상태에서 캠 위치를 확인하지 않고 측정한다",
+          "냉간 규격 대신 임의로 추정한 열간 규격으로 측정한다"
+        ],
+        "answer": 1,
+        "reason": "정비지침이 냉간 간극을 규정했다면 지정된 냉간 온도 조건과 캠·밸브 위치에서 측정해야 한다. 열간 상태를 임의로 적용하거나 밸브가 열린 상태에서 측정하면 규정 간극과 비교할 수 없다. 일부 엔진은 열간 또는 별도 조건을 요구하므로 해당 차종 지침이 우선이다.",
+        "key_point": "밸브 간극 측정 기준은 제조사 지정 온도와 측정 위치다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "제조사 지정 냉간 온도까지 충분히 냉각한 상태에서 측정한다",
+            "verdict": "correct",
+            "rationale": "냉간 온도 기준과 캠 측정 위치가 제조사 기준에 맞는다."
+          },
+          {
+            "number": 2,
+            "text": "냉간 규격이더라도 정상 작동온도까지 가열한 즉시 측정한다",
+            "verdict": "incorrect",
+            "rationale": "냉간 기준으로 지정된 간극을 열간 상태에 그대로 적용한다."
+          },
+          {
+            "number": 3,
+            "text": "밸브가 열린 상태에서 캠 위치를 확인하지 않고 측정한다",
+            "verdict": "incorrect",
+            "rationale": "밸브 작동 위치를 확인하지 않으면 기준 간극 측정 조건이 아니다."
+          },
+          {
+            "number": 4,
+            "text": "냉간 규격 대신 임의로 추정한 열간 규격으로 측정한다",
+            "verdict": "incorrect",
+            "rationale": "임의로 열간 규격을 추정할 수 없으며 제조사 규격을 따라야 한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "밸브 간극 측정값을 정비지침의 기준값과 비교하기 전에 일치시켜야 할 조건은?",
+        "choices": [
+          "제조사가 지정한 엔진 온도와 캠 위치",
+          "엔진 회전수와 연료탱크의 연료량",
+          "냉각수의 색상과 점화플러그 열가",
+          "주행거리와 타이어 공기압"
+        ],
+        "answer": 1,
+        "reason": "밸브 간극은 온도에 따른 열팽창 및 캠 위치의 영향을 받는다. 지정 온도에서 해당 밸브가 규정된 측정 위치에 있을 때 측정해야 기준값과 비교할 수 있다.",
+        "key_point": "밸브 간극은 지정 온도 및 캠 위치에서 측정한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "제조사가 지정한 엔진 온도와 캠 위치",
+            "verdict": "correct",
+            "rationale": "온도와 캠 위치가 간극의 기준 조건이다."
+          },
+          {
+            "number": 2,
+            "text": "엔진 회전수와 연료탱크의 연료량",
+            "verdict": "incorrect",
+            "rationale": "회전수와 연료량은 정지 상태의 간극 기준 조건을 대체하지 못한다."
+          },
+          {
+            "number": 3,
+            "text": "냉각수의 색상과 점화플러그 열가",
+            "verdict": "incorrect",
+            "rationale": "냉각수 색상과 플러그 열가는 간극 측정 위치를 결정하지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "주행거리와 타이어 공기압",
+            "verdict": "incorrect",
+            "rationale": "주행거리와 타이어 압력은 기준 간극의 측정 조건이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q02",
+      "kind": "irrelevant_explanation",
+      "before": {
+        "question": "배기 에너지를 이용하는 터보차저의 공기 압축 과정으로 적절한 것은?",
+        "choices": [
+          "엔진 크랭크축에서 벨트로 압축기만 직접 구동한다",
+          "배기가 터빈을 돌리고 같은 축의 압축기가 흡입 공기를 압축한다",
+          "배기가 압축기 임펠러를 직접 통과해 흡기 매니폴드로 흐른다",
+          "터빈 대신 흡기 매니폴드의 부압만으로 압축기를 회전시킨다"
+        ],
+        "answer": 2,
+        "reason": "터보차저는 배기 흐름이 터빈을 회전시키면 같은 축의 컴프레서가 흡입 공기를 압축한다. 과급압과 엔진 출력은 다양한 제어 요소의 영향을 받지만 촉매가 공기를 압축하지는 않는다.",
+        "key_point": "배기 터빈과 흡기 컴프레서는 축으로 연결된다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 크랭크축에서 벨트로 압축기만 직접 구동한다",
+            "verdict": "incorrect",
+            "rationale": "배기 터빈 대신 크랭크축 벨트로 구동하는 것은 기계식 과급기의 설명에 가깝다."
+          },
+          {
+            "number": 2,
+            "text": "배기가 터빈을 돌리고 같은 축의 압축기가 흡입 공기를 압축한다",
+            "verdict": "correct",
+            "rationale": "배기가 터빈을 돌리고 같은 축으로 연결된 컴프레서가 흡기를 압축한다."
+          },
+          {
+            "number": 3,
+            "text": "배기가 압축기 임펠러를 직접 통과해 흡기 매니폴드로 흐른다",
+            "verdict": "incorrect",
+            "rationale": "배기가 통과하는 쪽은 터빈이며 압축기를 통과하는 유체는 흡기 공기다."
+          },
+          {
+            "number": 4,
+            "text": "터빈 대신 흡기 매니폴드의 부압만으로 압축기를 회전시킨다",
+            "verdict": "incorrect",
+            "rationale": "흡기 매니폴드의 부압만으로 터보 압축기를 회전시키지 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "배기 에너지를 이용하는 터보차저의 공기 압축 과정으로 적절한 것은?",
+        "choices": [
+          "엔진 크랭크축에서 벨트로 압축기만 직접 구동한다",
+          "배기가 터빈을 돌리고 같은 축의 압축기가 흡입 공기를 압축한다",
+          "배기가 압축기 임펠러를 직접 통과해 흡기 매니폴드로 흐른다",
+          "터빈 대신 흡기 매니폴드의 부압만으로 압축기를 회전시킨다"
+        ],
+        "answer": 2,
+        "reason": "터보차저는 배기가스가 터빈을 회전시키면 같은 축에 연결된 압축기가 흡입 공기를 압축한다. 배기 터빈과 흡기 압축기의 유로는 분리되어 있으며, 크랭크축 벨트로 직접 구동하는 기계식 과급기와 구별된다.",
+        "key_point": "배기 에너지로 터빈과 동축 압축기를 구동한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 크랭크축에서 벨트로 압축기만 직접 구동한다",
+            "verdict": "incorrect",
+            "rationale": "배기 터빈 대신 크랭크축 벨트로 구동하는 것은 기계식 과급기의 설명에 가깝다."
+          },
+          {
+            "number": 2,
+            "text": "배기가 터빈을 돌리고 같은 축의 압축기가 흡입 공기를 압축한다",
+            "verdict": "correct",
+            "rationale": "배기가 터빈을 돌리고 같은 축으로 연결된 컴프레서가 흡기를 압축한다."
+          },
+          {
+            "number": 3,
+            "text": "배기가 압축기 임펠러를 직접 통과해 흡기 매니폴드로 흐른다",
+            "verdict": "incorrect",
+            "rationale": "배기가 통과하는 쪽은 터빈이며 압축기를 통과하는 유체는 흡기 공기다."
+          },
+          {
+            "number": 4,
+            "text": "터빈 대신 흡기 매니폴드의 부압만으로 압축기를 회전시킨다",
+            "verdict": "incorrect",
+            "rationale": "흡기 매니폴드의 부압만으로 터보 압축기를 회전시키지 않는다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.garrettmotion.com/knowledge-center-category/oem/what-is-a-turbo-and-how-does-it-work/",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s01-q08",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "MAF 센서를 사용하는 엔진에서 ECU에 흡입 공기의 실제 질량 유량을 직접 제공하는 값은?",
+        "choices": [
+          "MAF 센서가 측정한 흡입 공기 질량 유량",
+          "MAP 센서가 측정한 흡기 매니폴드 절대압만의 값",
+          "스로틀 위치 센서가 감지한 개도율만의 값",
+          "흡기온 센서가 측정한 공기 온도만의 값"
+        ],
+        "answer": 1,
+        "reason": "MAF 방식에서는 측정된 흡입 공기 질량이 기본 분사량 계산의 주요 입력이다. ECU는 회전속도·온도·산소 센서 등으로 값을 보정한다.",
+        "key_point": "연료량은 공기량과 운전 상태를 함께 고려한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "MAF 센서가 측정한 흡입 공기 질량 유량",
+            "verdict": "correct",
+            "rationale": "MAF 방식은 흡기 공기 질량유량 측정값을 분사량 계산에 활용한다."
+          },
+          {
+            "number": 2,
+            "text": "MAP 센서가 측정한 흡기 매니폴드 절대압만의 값",
+            "verdict": "incorrect",
+            "rationale": "MAP은 압력만 측정하고 그 값 단독은 직접 질량유량 측정이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "스로틀 위치 센서가 감지한 개도율만의 값",
+            "verdict": "incorrect",
+            "rationale": "TPS 개도만으로 실제 질량유량을 직접 알 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "흡기온 센서가 측정한 공기 온도만의 값",
+            "verdict": "incorrect",
+            "rationale": "IAT는 온도이며 질량유량을 직접 측정하지 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "열막식(hot-film) 흡입공기 질량유량 센서가 공기량을 검출하는 기본 원리는?",
+        "choices": [
+          "가열된 센서 표면에서 공기 흐름에 따른 열전달 변화를 검출한다",
+          "흡기 매니폴드의 절대압만 측정한다",
+          "스로틀밸브의 회전각만 측정한다",
+          "흡기 공기의 산소 농도만 측정한다"
+        ],
+        "answer": 1,
+        "reason": "열막식 센서는 가열된 측정 소자 주변의 공기 흐름에 따른 온도 분포 또는 열전달 변화를 전기적 신호로 변환한다. 이 신호를 통해 흡입공기의 질량유량을 산출하며 단순한 압력·개도·산소농도 측정과는 다르다.",
+        "key_point": "열막식 MAF는 공기 흐름에 따른 열전달 변화를 이용한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "가열된 센서 표면에서 공기 흐름에 따른 열전달 변화를 검출한다",
+            "verdict": "correct",
+            "rationale": "열막의 온도 분포 변화로 질량유량을 산출한다."
+          },
+          {
+            "number": 2,
+            "text": "흡기 매니폴드의 절대압만 측정한다",
+            "verdict": "incorrect",
+            "rationale": "절대압은 MAP 센서의 측정 대상이다."
+          },
+          {
+            "number": 3,
+            "text": "스로틀밸브의 회전각만 측정한다",
+            "verdict": "incorrect",
+            "rationale": "스로틀 회전각은 위치 센서의 측정 대상이다."
+          },
+          {
+            "number": 4,
+            "text": "흡기 공기의 산소 농도만 측정한다",
+            "verdict": "incorrect",
+            "rationale": "산소 농도 측정은 열막식 유량 검출 원리가 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.bosch-mobility.com/en/solutions/sensors/hotfilm-airflow-sensor/",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q02",
+      "kind": "distractor_quality",
+      "before": {
+        "question": "ABS 제동 중 한 바퀴의 휠속도 데이터가 간헐적으로 사라진다. 부품 교환 전에 우선 비교할 것은?",
+        "choices": [
+          "엔진 오일의 점도 변화만 측정한 기록",
+          "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+          "타이어 외관 색상과 운전자 좌석 높이",
+          "공조 송풍기 모터의 최대 회전속도"
+        ],
+        "answer": 2,
+        "reason": "휠속도 신호가 간헐적으로 끊기는 경우에는 다른 바퀴와 신호를 비교하고 센서 전원·배선·엔코더 또는 톤링 손상을 확인한다. ABS 관련 안전 진단은 차종별 지정 절차로 시행한다.",
+        "key_point": "ABS 신호 이상 → 차륜별 신호·센서·엔코더·배선 비교.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 오일의 점도 변화만 측정한 기록",
+            "verdict": "incorrect",
+            "rationale": "윤활유 점도는 ABS 휠속도 신호의 직접 측정항목이 아니야."
+          },
+          {
+            "number": 2,
+            "text": "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+            "verdict": "correct",
+            "rationale": "한 바퀴만 비정상인 경우 해당 회전 신호의 생성·전달 부품을 비교해야 해."
+          },
+          {
+            "number": 3,
+            "text": "타이어 외관 색상과 운전자 좌석 높이",
+            "verdict": "incorrect",
+            "rationale": "차량 실내 상태나 타이어 색상만으로 센서 출력 결손을 파악하지 못해."
+          },
+          {
+            "number": 4,
+            "text": "공조 송풍기 모터의 최대 회전속도",
+            "verdict": "incorrect",
+            "rationale": "공조 송풍기의 회전수는 바퀴속도 신호 불연속을 설명하지 못해."
+          }
+        ]
+      },
+      "after": {
+        "question": "ABS 제동 중 한 바퀴의 휠속도 데이터가 간헐적으로 사라진다. 부품 교환 전에 우선 비교할 것은?",
+        "choices": [
+          "고장코드에 표시된 차륜의 센서를 추가 점검 없이 교환한다",
+          "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+          "브레이크액 압력만 측정해 휠속도 신호 이상을 확정한다",
+          "휠속도 신호의 입력 상태를 확인하지 않고 조향각 영점 보정만 시행한다"
+        ],
+        "answer": 2,
+        "reason": "특정 바퀴의 속도 데이터가 간헐적으로 사라지면 센서와 해당 신호 전달 경로의 상태를 비교해야 한다. 센서 형식에 맞는 신호 검사와 배선·엔코더 점검이 우선이며, DTC만으로 센서 교환을 확정하지 않는다. 제동 관련 진단은 제조사 지정 안전 절차를 따른다.",
+        "key_point": "간헐적 휠속도 신호 이상은 센서·엔코더·배선부터 비교한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "고장코드에 표시된 차륜의 센서를 추가 점검 없이 교환한다",
+            "verdict": "incorrect",
+            "rationale": "DTC만으로 부품 자체 불량을 확정할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "해당 차륜의 센서 파형·톤링 또는 엔코더 상태와 배선",
+            "verdict": "correct",
+            "rationale": "신호와 엔코더·배선 상태는 직접 관련된 진단 대상이다."
+          },
+          {
+            "number": 3,
+            "text": "브레이크액 압력만 측정해 휠속도 신호 이상을 확정한다",
+            "verdict": "incorrect",
+            "rationale": "유압 측정만으로 전기적 신호 단절 원인을 확정할 수 없다."
+          },
+          {
+            "number": 4,
+            "text": "휠속도 신호의 입력 상태를 확인하지 않고 조향각 영점 보정만 시행한다",
+            "verdict": "incorrect",
+            "rationale": "조향각 영점 보정은 휠속도 입력 검사를 대체하지 못한다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q03",
+      "kind": "distractor_quality",
+      "before": {
+        "question": "자동변속기 솔레노이드의 코일 저항을 측정했다. 판정 기준으로 가장 적절한 것은?",
+        "choices": [
+          "모든 차종에서 반드시 15Ω이어야 한다",
+          "미세한 오차도 항상 고장이다",
+          "부품번호와 온도 조건에 맞는 제조사 규정값과 비교한다",
+          "전기저항 대신 타이어 외경으로 판단한다"
+        ],
+        "answer": 3,
+        "reason": "솔레노이드 코일 저항의 규정 범위는 차량, 밸브 형식, 온도에 따라 달라질 수 있다. 따라서 단일 보편값을 적용하지 말고 해당 부품의 서비스 데이터를 기준으로 판정한다.",
+        "key_point": "솔레노이드 저항은 부품별 규격과 측정 조건이 핵심이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모든 차종에서 반드시 15Ω이어야 한다",
+            "verdict": "incorrect",
+            "rationale": "전자제어 변속기 솔레노이드의 규격은 부품별로 달라 모든 차종 15Ω 고정 주장은 부적절하다."
+          },
+          {
+            "number": 2,
+            "text": "미세한 오차도 항상 고장이다",
+            "verdict": "incorrect",
+            "rationale": "실측값의 허용 오차와 온도 영향은 제조사 규격으로 판정해야 한다."
+          },
+          {
+            "number": 3,
+            "text": "부품번호와 온도 조건에 맞는 제조사 규정값과 비교한다",
+            "verdict": "correct",
+            "rationale": "부품번호·온도 등 정비 조건에 맞춰 실제 코일 저항을 비교해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "전기저항 대신 타이어 외경으로 판단한다",
+            "verdict": "incorrect",
+            "rationale": "타이어 외경은 솔레노이드 코일의 전기저항 판정 기준이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "자동변속기 솔레노이드의 코일 저항을 측정했다. 판정 기준으로 가장 적절한 것은?",
+        "choices": [
+          "동일 전압을 사용하는 모든 변속기 솔레노이드에 같은 저항 기준을 적용한다",
+          "같은 제조사의 다른 형식 솔레노이드에서 측정한 저항을 기준으로 판정한다",
+          "부품번호와 온도 조건에 맞는 제조사 규정값과 비교한다",
+          "코일 저항이 규정값이면 유압 제어 기능까지 반드시 정상으로 확정한다"
+        ],
+        "answer": 3,
+        "reason": "솔레노이드 코일 저항은 부품 형식과 측정 온도에 따른 지정 범위를 적용한다. 코일 저항이 정상이어도 밸브의 기계적 작동 및 유압 제어 상태까지 입증되는 것은 아니다.",
+        "key_point": "코일 저항은 해당 부품·온도의 규정값으로 판단한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "동일 전압을 사용하는 모든 변속기 솔레노이드에 같은 저항 기준을 적용한다",
+            "verdict": "incorrect",
+            "rationale": "공급전압이 같아도 코일 설계가 다를 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "같은 제조사의 다른 형식 솔레노이드에서 측정한 저항을 기준으로 판정한다",
+            "verdict": "incorrect",
+            "rationale": "다른 형식 부품의 규격은 직접 적용할 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "부품번호와 온도 조건에 맞는 제조사 규정값과 비교한다",
+            "verdict": "correct",
+            "rationale": "부품과 온도에 맞는 지정 저항 범위가 판정 기준이다."
+          },
+          {
+            "number": 4,
+            "text": "코일 저항이 규정값이면 유압 제어 기능까지 반드시 정상으로 확정한다",
+            "verdict": "incorrect",
+            "rationale": "전기 저항만으로 유압 기능까지 확정할 수 없다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q05",
+      "kind": "clarify_supported_data",
+      "before": {
+        "question": "일반적인 차량용 스캔 툴의 실시간 데이터만으로 직접 측정하기 어려운 항목은?",
+        "choices": [
+          "ATF 온도",
+          "변속기 입력축 회전속도",
+          "현재 선택한 기어",
+          "클러치 마찰재의 실제 잔여 두께"
+        ],
+        "answer": 4,
+        "reason": "스캔 툴은 센서값, 계산값, 제어 상태를 읽을 수 있다. 클러치 팩의 마찰재 두께는 직접 측정 센서가 없는 경우 분해 검사나 간접 진단이 필요하다.",
+        "key_point": "스캔 데이터가 곧 부품의 물리적 잔여 두께는 아니다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "ATF 온도",
+            "verdict": "incorrect",
+            "rationale": "변속기 ATF 온도는 지원 차량의 센서·실시간 데이터로 확인할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "변속기 입력축 회전속도",
+            "verdict": "incorrect",
+            "rationale": "변속기 입력축 속도는 속도 센서가 제공하는 값이다."
+          },
+          {
+            "number": 3,
+            "text": "현재 선택한 기어",
+            "verdict": "incorrect",
+            "rationale": "선택된 기어·제어 상태는 지원 차량에서 진단기로 확인할 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "클러치 마찰재의 실제 잔여 두께",
+            "verdict": "correct",
+            "rationale": "클러치 마찰재의 실제 잔여 두께는 일반 스캔 데이터 센서값만으로 직접 재는 물리량이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "자동변속기 제어기가 지원하는 센서값과 상태값을 스캔툴로 조회하고 있다. 별도의 기계적 측정 없이 직접 확인하기 가장 어려운 항목은?",
+        "choices": [
+          "ATF 온도",
+          "변속기 입력축 회전속도",
+          "현재 선택한 기어",
+          "클러치 마찰재의 실제 잔여 두께"
+        ],
+        "answer": 4,
+        "reason": "ATF 온도, 입력축 회전속도 및 선택 기어는 해당 차량이 지원하면 진단기로 조회할 수 있다. 일반적인 스캔툴 상태값만으로 클러치 마찰재의 실제 잔여 두께를 직접 계측할 수는 없다. 마모 추정값과 실제 두께는 구별해야 한다.",
+        "key_point": "지원되는 진단 데이터와 마찰재 실제 두께는 구별한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "ATF 온도",
+            "verdict": "incorrect",
+            "rationale": "변속기 ATF 온도는 지원 차량의 센서·실시간 데이터로 확인할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "변속기 입력축 회전속도",
+            "verdict": "incorrect",
+            "rationale": "변속기 입력축 속도는 속도 센서가 제공하는 값이다."
+          },
+          {
+            "number": 3,
+            "text": "현재 선택한 기어",
+            "verdict": "incorrect",
+            "rationale": "선택된 기어·제어 상태는 지원 차량에서 진단기로 확인할 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "클러치 마찰재의 실제 잔여 두께",
+            "verdict": "correct",
+            "rationale": "클러치 마찰재의 실제 잔여 두께는 일반 스캔 데이터 센서값만으로 직접 재는 물리량이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q16",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "EPS 경고등이 켜지고 조향 보조가 사라졌다. 제어장치 교환 전 기본 점검으로 적절한 것은?",
+        "choices": [
+          "EPS 모듈의 전원·접지와 관련 퓨즈·통신 상태를 확인한다",
+          "고장코드를 읽지 않고 EPS 모터와 ECU를 동시에 교환한다",
+          "조향각 센서를 학습하면 공급 전압 단선이 자동 복구된다",
+          "타이어 공기압만 교정하면 ECU 전원 불능까지 해결된다"
+        ],
+        "answer": 1,
+        "reason": "EPS 모터를 제어하려면 안정적인 전원이 공급되어야 한다. 오류코드와 함께 관련 퓨즈·전원·접지를 먼저 확인해 전원 문제인지 부품 문제인지 구별한다.",
+        "key_point": "조향 보조 불능 시 EPS 전원·접지 진단이 우선이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "EPS 모듈의 전원·접지와 관련 퓨즈·통신 상태를 확인한다",
+            "verdict": "correct",
+            "rationale": "EPS에 전원·통신 문제가 있을 수 있으므로 관련 퓨즈·접지를 우선 확인한다."
+          },
+          {
+            "number": 2,
+            "text": "고장코드를 읽지 않고 EPS 모터와 ECU를 동시에 교환한다",
+            "verdict": "incorrect",
+            "rationale": "진단 없이 EPS ECU와 모터를 동시에 바꾸는 것은 근거가 없다."
+          },
+          {
+            "number": 3,
+            "text": "조향각 센서를 학습하면 공급 전압 단선이 자동 복구된다",
+            "verdict": "incorrect",
+            "rationale": "센서 학습으로 단선된 공급 전압 회로가 물리적으로 복구되지는 않는다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 공기압만 교정하면 ECU 전원 불능까지 해결된다",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기압 조정만으로 ECU 전원 불능을 고칠 수 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "EPS 제어기의 전원·접지가 정상임을 제조사 기준으로 확인했지만 다른 제어기에 EPS 통신 이상 DTC가 반복된다. 다음 진단 대상으로 가장 적절한 것은?",
+        "choices": [
+          "EPS의 통신 배선·커넥터 및 네트워크 상태",
+          "EPS 모터의 무조건 교환",
+          "조향각 영점 학습만 반복",
+          "타이어 공기압만 조정"
+        ],
+        "answer": 1,
+        "reason": "전원·접지가 확인된 통신 장애에서는 네트워크 연결과 통신 조건을 제조사 절차로 확인한다. 통신 DTC만으로 EPS 모터의 불량을 확정하거나 학습 작업으로 단선·접촉 불량을 해결할 수는 없다.",
+        "key_point": "EPS 전원 정상 후 통신 장애는 해당 통신 경로를 진단한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "EPS의 통신 배선·커넥터 및 네트워크 상태",
+            "verdict": "correct",
+            "rationale": "통신 배선과 연결 상태가 통신 DTC의 직접 진단 대상이다."
+          },
+          {
+            "number": 2,
+            "text": "EPS 모터의 무조건 교환",
+            "verdict": "incorrect",
+            "rationale": "통신 DTC만으로 모터 교환을 결정할 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "조향각 영점 학습만 반복",
+            "verdict": "incorrect",
+            "rationale": "영점 학습은 통신 회로 이상 진단을 대체하지 못한다."
+          },
+          {
+            "number": 4,
+            "text": "타이어 공기압만 조정",
+            "verdict": "incorrect",
+            "rationale": "공기압 조정은 통신 장애의 직접 진단이 아니다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s02-q18",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "EPS 관련 부품 교환 후 서비스 매뉴얼에서 요구할 수 있는 후속 작업은?",
+        "choices": [
+          "에어컨 냉매 강제 충전",
+          "타이어 색상 교환",
+          "조향각 센서 및 EPS의 영점·학습 보정",
+          "엔진 피스톤 교체"
+        ],
+        "answer": 3,
+        "reason": "EPS와 조향각 센서 관련 작업 후 중립점 학습이나 보정이 필요할 수 있다. 정확한 요구 사항은 차량 모델별 서비스 지침을 따른다.",
+        "key_point": "EPS 교환 후 차량별 보정 필요 여부를 확인한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "에어컨 냉매 강제 충전",
+            "verdict": "incorrect",
+            "rationale": "EPS 관련 부품 교체 후 에어컨 냉매 강제 충전은 통상적인 보정 작업이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "타이어 색상 교환",
+            "verdict": "incorrect",
+            "rationale": "타이어 색상 변경은 EPS 센서 학습과 관계가 없다."
+          },
+          {
+            "number": 3,
+            "text": "조향각 센서 및 EPS의 영점·학습 보정",
+            "verdict": "correct",
+            "rationale": "해당 차량의 서비스매뉴얼이 요구하면 조향각·EPS의 영점/학습 보정을 실시한다."
+          },
+          {
+            "number": 4,
+            "text": "엔진 피스톤 교체",
+            "verdict": "incorrect",
+            "rationale": "엔진 피스톤 교환은 EPS 모듈 교체 후 전기식 보정과 관련이 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "EPS 제어기가 조향 토크 센서 신호를 이용하여 보조력 명령을 계산했다. 그 명령을 실제 조향 보조력으로 바꾸는 구성은?",
+        "choices": [
+          "조향 토크 센서가 기계적인 보조력을 직접 발생시킨다",
+          "차속 센서가 기계적으로 스티어링 랙을 움직인다",
+          "전동 모터와 조향계의 기계적 힘 전달 구조",
+          "진단 커넥터가 보조력을 발생시킨다"
+        ],
+        "answer": 3,
+        "reason": "EPS는 센서의 입력을 제어기가 처리하여 전동 모터를 제어하는 방식이다. 모터의 회전력은 시스템 구조에 따라 조향 칼럼·피니언·랙 등의 기계적 전달부를 통해 실제 조향 보조력으로 전달된다.",
+        "key_point": "EPS 모터는 제어 명령을 실제 조향 보조력으로 변환한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "조향 토크 센서가 기계적인 보조력을 직접 발생시킨다",
+            "verdict": "incorrect",
+            "rationale": "토크 센서는 운전자 입력을 감지하는 부품이다."
+          },
+          {
+            "number": 2,
+            "text": "차속 센서가 기계적으로 스티어링 랙을 움직인다",
+            "verdict": "incorrect",
+            "rationale": "차속 센서는 상태 정보의 입력 부품이다."
+          },
+          {
+            "number": 3,
+            "text": "전동 모터와 조향계의 기계적 힘 전달 구조",
+            "verdict": "correct",
+            "rationale": "전동 모터와 전달기구가 실제 보조력을 발생·전달한다."
+          },
+          {
+            "number": 4,
+            "text": "진단 커넥터가 보조력을 발생시킨다",
+            "verdict": "incorrect",
+            "rationale": "진단 커넥터는 진단 통신 경로이다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.bosch-mobility.com/en/solutions/steering/electric-power-steering-systems/",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q04",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "두 CAN 노드가 동시에 전송을 시작했다. 표준 CAN 버스에서 우선순위가 높은 프레임을 정하는 기준은?",
+        "choices": [
+          "식별자의 우성·열성 비트를 비교하는 비파괴 중재",
+          "충돌 검출 후 무조건 전 프레임을 버리는 이더넷 CSMA/CD 방식",
+          "제어기 설치 순서에 따라 매번 고정된 송신권을 주는 방식",
+          "모든 메시지에 동일한 우선권을 주고 무작위로 선택하는 방식"
+        ],
+        "answer": 1,
+        "reason": "CAN은 메시지 식별자 비트에 따른 중재를 사용한다. 우선순위가 높은 프레임이 버스를 계속 사용하고 다른 노드는 재시도할 수 있다. TCP 혼잡 제어와는 다른 개념이다.",
+        "key_point": "CAN의 버스 중재는 메시지 식별자로 이루어진다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "식별자의 우성·열성 비트를 비교하는 비파괴 중재",
+            "verdict": "correct",
+            "rationale": "CAN은 식별자 우성·열성 비트 중재로 우선권을 정해 동시 전송이 가능하다."
+          },
+          {
+            "number": 2,
+            "text": "충돌 검출 후 무조건 전 프레임을 버리는 이더넷 CSMA/CD 방식",
+            "verdict": "incorrect",
+            "rationale": "고전적 이더넷 충돌 검출 후 전송 폐기 방식은 CAN의 비파괴 중재와 다르다."
+          },
+          {
+            "number": 3,
+            "text": "제어기 설치 순서에 따라 매번 고정된 송신권을 주는 방식",
+            "verdict": "incorrect",
+            "rationale": "제어기를 물리적으로 설치한 순서만으로 메시지 우선순위를 정하지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "모든 메시지에 동일한 우선권을 주고 무작위로 선택하는 방식",
+            "verdict": "incorrect",
+            "rationale": "표준 CAN에서 식별자에 따른 우선순위가 있으므로 모든 프레임 우선순위가 같지는 않다."
+          }
+        ]
+      },
+      "after": {
+        "question": "정상적인 클래식 CAN 통신에서 수신 노드가 프레임을 오류 없이 수신했음을 알리는 ACK 슬롯의 동작은?",
+        "choices": [
+          "수신 노드가 ACK 슬롯에 우성 비트를 출력한다",
+          "송신 노드가 ACK 슬롯에서 식별자를 다시 전송한다",
+          "수신 노드가 ACK 슬롯에서 종단저항 값을 변경한다",
+          "수신 노드가 ACK 슬롯에서 모든 노드의 수신 완료를 보증한다"
+        ],
+        "answer": 1,
+        "reason": "클래식 CAN의 송신 노드는 ACK 슬롯을 열성 상태로 송신하고, 앞선 프레임 필드를 오류 없이 받은 정상 수신 노드는 우성 상태를 출력하여 수신을 확인한다. ACK가 있다고 모든 의도된 수신 노드의 애플리케이션 처리가 끝났음을 의미하지는 않는다.",
+        "key_point": "CAN ACK는 정상 수신 노드의 프레임 수신 확인이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "수신 노드가 ACK 슬롯에 우성 비트를 출력한다",
+            "verdict": "correct",
+            "rationale": "정상 수신 노드가 우성 ACK를 출력한다."
+          },
+          {
+            "number": 2,
+            "text": "송신 노드가 ACK 슬롯에서 식별자를 다시 전송한다",
+            "verdict": "incorrect",
+            "rationale": "식별자 재전송은 ACK 슬롯의 역할이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "수신 노드가 ACK 슬롯에서 종단저항 값을 변경한다",
+            "verdict": "incorrect",
+            "rationale": "종단저항은 통신선의 물리적 종단이며 ACK마다 변경하지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "수신 노드가 ACK 슬롯에서 모든 노드의 수신 완료를 보증한다",
+            "verdict": "incorrect",
+            "rationale": "ACK는 모든 노드 또는 상위 응용의 수신 완료 보증이 아니다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.analog.com/en/resources/app-notes/an-1123.html",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q09",
+      "kind": "duplicate_learning_objective",
+      "before": {
+        "question": "제동 중 한쪽 바퀴의 회전속도 신호가 끊겼고 ABS 경고등이 켜졌다. 직접 관련된 입력 부품은?",
+        "choices": [
+          "엔진 오일 온도 센서",
+          "연료 레벨 센서",
+          "휠 속도 센서",
+          "실내 조도 센서"
+        ],
+        "answer": 3,
+        "reason": "ABS(Anti-lock Braking System)는 각 바퀴 속도 신호를 사용해 잠김 위험을 판단하고 제동압을 조절한다. 바퀴 속도 신호가 없으면 ABS 제어에 문제가 생길 수 있다.",
+        "key_point": "ABS는 잠김 방지 제동장치이며 휠 속도 신호가 중요하다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "엔진 오일 온도 센서",
+            "verdict": "incorrect",
+            "rationale": "엔진 오일 온도 센서가 바퀴 회전속도 신호를 검출하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "연료 레벨 센서",
+            "verdict": "incorrect",
+            "rationale": "연료 레벨 센서로 ABS의 개별 휠속도를 측정할 수 없다."
+          },
+          {
+            "number": 3,
+            "text": "휠 속도 센서",
+            "verdict": "correct",
+            "rationale": "ABS 제어는 각 바퀴 휠속도 센서 신호를 사용하므로 단선 상황에 직접 관련된다."
+          },
+          {
+            "number": 4,
+            "text": "실내 조도 센서",
+            "verdict": "incorrect",
+            "rationale": "실내 조도 센서는 조명 제어용이며 제동 휠속도 신호와 무관하다."
+          }
+        ]
+      },
+      "after": {
+        "question": "수동 유도형(인덕티브) 휠속도 센서의 기본 출력 특성으로 옳은 것은?",
+        "choices": [
+          "별도 전원 없이 정지한 톤링에서도 계속 교류 신호가 발생한다",
+          "차륜 회전속도가 달라져도 신호 주파수는 항상 같다",
+          "톤링 회전에 따른 자속 변화로 교류 전압이 유도된다",
+          "모든 수동 유도형 센서는 공급전압을 받아 디지털 전류 신호만 출력한다"
+        ],
+        "answer": 3,
+        "reason": "수동 유도형 휠속도 센서는 톤링 회전으로 자속이 변화할 때 코일에 교류 전압이 유도되는 원리를 사용한다. 출력 주파수와 진폭은 회전 상태와 관련되며 별도 공급전압을 필요로 하는 능동형 센서와 구별한다.",
+        "key_point": "수동 유도형 휠속도 센서는 변화하는 자속으로 교류 신호를 만든다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "별도 전원 없이 정지한 톤링에서도 계속 교류 신호가 발생한다",
+            "verdict": "incorrect",
+            "rationale": "정지한 톤링에서는 회전에 따른 자속 변화가 없어 교류 출력이 지속되지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "차륜 회전속도가 달라져도 신호 주파수는 항상 같다",
+            "verdict": "incorrect",
+            "rationale": "회전속도가 변하면 톤링 통과 주파수도 달라진다."
+          },
+          {
+            "number": 3,
+            "text": "톤링 회전에 따른 자속 변화로 교류 전압이 유도된다",
+            "verdict": "correct",
+            "rationale": "변화하는 자속이 코일에 전압을 유도한다."
+          },
+          {
+            "number": 4,
+            "text": "모든 수동 유도형 센서는 공급전압을 받아 디지털 전류 신호만 출력한다",
+            "verdict": "incorrect",
+            "rationale": "별도 공급전압과 전자식 신호 출력은 능동형 센서의 특성일 수 있다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://www.hella.com/techworld/en/technical/sensors-and-actuators/check-and-change-abs-and-wheel-speed-sensors/",
+        "access": "direct_page_review"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q18",
+      "kind": "clarify_motor_type",
+      "before": {
+        "question": "도어 파워윈도우의 직류 모터를 정방향·역방향으로 구동하는 회로에서 회전 방향을 바꾸는 기본 원리는?",
+        "choices": [
+          "모터 공급전압의 주파수만 두 배로 한다",
+          "전류 방향은 그대로 두고 퓨즈 정격만 높인다",
+          "전원 극성은 유지한 채 모터 코일 저항만 높인다",
+          "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다"
+        ],
+        "answer": 4,
+        "reason": "일반적인 브러시형 DC 파워윈도우 모터는 양단 공급전압의 극성을 반대로 바꾸면 회전 방향이 반전된다. H브리지나 릴레이 전환 회로 등이 이 원리를 구현한다. 퓨즈 용량 변경은 정상적인 방향 제어 방법이 아니다.",
+        "key_point": "브러시형 직류모터의 정·역회전은 공급 전압의 극성 반전으로 구현할 수 있다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모터 공급전압의 주파수만 두 배로 한다",
+            "verdict": "incorrect",
+            "rationale": "일반 브러시형 DC 모터는 주파수 조절만으로 회전 방향을 결정하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "전류 방향은 그대로 두고 퓨즈 정격만 높인다",
+            "verdict": "incorrect",
+            "rationale": "퓨즈 정격만 높이는 것은 역회전 전기적 구동 원리가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "전원 극성은 유지한 채 모터 코일 저항만 높인다",
+            "verdict": "incorrect",
+            "rationale": "모터 양단 전원의 극성을 그대로 둔 채 저항만 조정해서 정상 역회전을 만들지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다",
+            "verdict": "correct",
+            "rationale": "2선 DC 파워윈도우 모터는 인가 극성 반전으로 정·역방향을 전환한다."
+          }
+        ]
+      },
+      "after": {
+        "question": "영구자석을 사용하는 브러시형 직류 파워윈도우 모터의 회전 방향을 바꾸는 기본 원리는?",
+        "choices": [
+          "모터 공급전압의 주파수만 두 배로 한다",
+          "전류 방향은 그대로 두고 퓨즈 정격만 높인다",
+          "전원 극성은 유지한 채 모터 코일 저항만 높인다",
+          "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다"
+        ],
+        "answer": 4,
+        "reason": "일반적인 브러시형 DC 파워윈도우 모터는 양단 공급전압의 극성을 반대로 바꾸면 회전 방향이 반전된다. H브리지나 릴레이 전환 회로 등이 이 원리를 구현한다. 퓨즈 용량 변경은 정상적인 방향 제어 방법이 아니다.",
+        "key_point": "브러시형 직류모터의 정·역회전은 공급 전압의 극성 반전으로 구현할 수 있다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "모터 공급전압의 주파수만 두 배로 한다",
+            "verdict": "incorrect",
+            "rationale": "일반 브러시형 DC 모터는 주파수 조절만으로 회전 방향을 결정하지 않는다."
+          },
+          {
+            "number": 2,
+            "text": "전류 방향은 그대로 두고 퓨즈 정격만 높인다",
+            "verdict": "incorrect",
+            "rationale": "퓨즈 정격만 높이는 것은 역회전 전기적 구동 원리가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "전원 극성은 유지한 채 모터 코일 저항만 높인다",
+            "verdict": "incorrect",
+            "rationale": "모터 양단 전원의 극성을 그대로 둔 채 저항만 조정해서 정상 역회전을 만들지 않는다."
+          },
+          {
+            "number": 4,
+            "text": "모터 양단에 인가하는 전압의 극성을 반대로 바꾼다",
+            "verdict": "correct",
+            "rationale": "2선 DC 파워윈도우 모터는 인가 극성 반전으로 정·역방향을 전환한다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://charm.li/Hyundai/2012/Accent%20L4-1.6L/Repair%20and%20Diagnosis/Windows%20and%20Glass/Windows/Power%20Window%20Motor/Testing%20and%20Inspection/",
+        "access": "search_result_reference_only"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q19",
+      "kind": "distractor_quality",
+      "before": {
+        "question": "파워윈도우 퓨즈는 정상인데 모터가 움직이지 않는다. 다음 진단으로 가장 적절한 것은?",
+        "choices": [
+          "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+          "타이어 공기압만 높인다",
+          "연료탱크를 세척한다",
+          "배기 센서를 임의로 제거한다"
+        ],
+        "answer": 1,
+        "reason": "퓨즈가 정상이면 스위치·배선·모터로 이어지는 전원·접지 경로를 점검할 수 있다. 해당 회로 전압과 접지 상태를 측정하면 모터 자체 불량과 공급 문제를 구별할 단서를 얻는다.",
+        "key_point": "전원·접지를 측정해 모터 자체 고장과 공급 문제를 구분한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+            "verdict": "correct",
+            "rationale": "퓨즈 정상일 때 스위치 작동 중 모터 공급전압과 접지/극성 확인이 다음 전기 진단에 적절하다."
+          },
+          {
+            "number": 2,
+            "text": "타이어 공기압만 높인다",
+            "verdict": "incorrect",
+            "rationale": "타이어 공기압 조정은 전기 모터 전원불량의 진단 방법이 아니다."
+          },
+          {
+            "number": 3,
+            "text": "연료탱크를 세척한다",
+            "verdict": "incorrect",
+            "rationale": "연료탱크 세척은 파워윈도우 구동 모터와 무관하다."
+          },
+          {
+            "number": 4,
+            "text": "배기 센서를 임의로 제거한다",
+            "verdict": "incorrect",
+            "rationale": "배기센서 제거는 파워윈도우 전원·접지 진단이 아니다."
+          }
+        ]
+      },
+      "after": {
+        "question": "파워윈도우 퓨즈는 정상인데 모터가 움직이지 않는다. 다음 진단으로 가장 적절한 것은?",
+        "choices": [
+          "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+          "무부하 배터리 단자전압만 정상이면 모터 전원 회로도 정상으로 확정한다",
+          "배선과 스위치 상태를 확인하지 않고 구동모터를 교환한다",
+          "유리의 위치 초기화만 반복하고 전원 경로 점검을 생략한다"
+        ],
+        "answer": 1,
+        "reason": "퓨즈가 정상이어도 스위치나 배선의 접촉 불량, 모터 전원·접지 경로 이상이 있을 수 있다. 차종별 회로와 정비 절차에 맞춰 작동 명령 상태의 전기적 공급 조건을 확인한 뒤 모터와 기계적 원인을 구별한다.",
+        "key_point": "파워윈도우 무작동은 퓨즈 확인 후 전원·접지 및 제어 경로를 진단한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "스위치 조작 중 모터 단자의 공급전압과 접지 상태를 확인한다",
+            "verdict": "correct",
+            "rationale": "작동 명령 시 모터 전원 조건은 직접적인 진단 자료이다."
+          },
+          {
+            "number": 2,
+            "text": "무부하 배터리 단자전압만 정상이면 모터 전원 회로도 정상으로 확정한다",
+            "verdict": "incorrect",
+            "rationale": "무부하 배터리 전압은 부하 중 접촉저항이나 단선을 배제하지 못한다."
+          },
+          {
+            "number": 3,
+            "text": "배선과 스위치 상태를 확인하지 않고 구동모터를 교환한다",
+            "verdict": "incorrect",
+            "rationale": "회로 확인 없는 교환은 오진 가능성이 있다."
+          },
+          {
+            "number": 4,
+            "text": "유리의 위치 초기화만 반복하고 전원 경로 점검을 생략한다",
+            "verdict": "incorrect",
+            "rationale": "초기화만으로 전원 경로 고장을 진단할 수 없다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s03-q20",
+      "kind": "clarify_diagnostic_conditions",
+      "before": {
+        "question": "히터 블로워는 정상이고 히터코어 입구가 뜨거운데 출구 호스가 크게 식는다. 냉각수량이 정상일 때 우선 확인할 대상은?",
+        "choices": [
+          "실내 공기분배용 도어 위치만",
+          "에어컨 냉매 압축기의 작동전류만",
+          "히터코어의 냉각수 흐름·막힘과 유량",
+          "블로워 모터의 저항값만"
+        ],
+        "answer": 3,
+        "reason": "냉각수 순환이 원활하지 않거나 히터 코어가 막히면 열 전달이 부족할 수 있다. 냉각수량·서모스탯·블렌드 도어도 함께 진단해야 한다.",
+        "key_point": "난방 불량은 히터 코어와 냉각수 순환 상태를 확인한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "실내 공기분배용 도어 위치만",
+            "verdict": "incorrect",
+            "rationale": "공기분배 도어 위치는 냉난방 온도 문제의 원인이지만 입·출구 냉각수 큰 온도차만으로 단독 원인이라고 할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "에어컨 냉매 압축기의 작동전류만",
+            "verdict": "incorrect",
+            "rationale": "냉매 압축기 전류는 히터코어의 냉각수 유량 문제와 직접 연관성이 낮다."
+          },
+          {
+            "number": 3,
+            "text": "히터코어의 냉각수 흐름·막힘과 유량",
+            "verdict": "correct",
+            "rationale": "히터코어 냉각수 입구·출구 온도차가 크면 막힘·저유량 가능성을 점검해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "블로워 모터의 저항값만",
+            "verdict": "incorrect",
+            "rationale": "블로워 저항은 송풍량 문제로 보통 히터코어 냉각수 유량을 직접 나타내지 않는다."
+          }
+        ]
+      },
+      "after": {
+        "question": "실내 난방이 약하다. 엔진 온도·냉각수량·송풍이 정상이고 히터코어 입구와 출구의 온도차가 제조사 점검 기준보다 크게 나타난다. 우선 확인할 대상은?",
+        "choices": [
+          "실내 공기분배용 도어 위치만",
+          "에어컨 냉매 압축기의 작동전류만",
+          "히터코어의 냉각수 흐름·막힘과 유량",
+          "블로워 모터의 저항값만"
+        ],
+        "answer": 3,
+        "reason": "정상적인 엔진 온도와 송풍 조건에서 입출구 온도차가 기준보다 크면 히터코어의 냉각수 흐름과 제한 여부가 관련된다. 온도차 자체만으로 막힘을 확정하지 않으며 냉각수 순환, 밸브 및 차량별 공조 구조도 정비정보에 맞춰 점검한다.",
+        "key_point": "난방 불량과 비정상적인 입출구 온도차는 냉각수 유량 진단의 단서이다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "실내 공기분배용 도어 위치만",
+            "verdict": "incorrect",
+            "rationale": "공기분배 도어 위치는 냉난방 온도 문제의 원인이지만 입·출구 냉각수 큰 온도차만으로 단독 원인이라고 할 수 없다."
+          },
+          {
+            "number": 2,
+            "text": "에어컨 냉매 압축기의 작동전류만",
+            "verdict": "incorrect",
+            "rationale": "냉매 압축기 전류는 히터코어의 냉각수 유량 문제와 직접 연관성이 낮다."
+          },
+          {
+            "number": 3,
+            "text": "히터코어의 냉각수 흐름·막힘과 유량",
+            "verdict": "correct",
+            "rationale": "히터코어 냉각수 입구·출구 온도차가 크면 막힘·저유량 가능성을 점검해야 한다."
+          },
+          {
+            "number": 4,
+            "text": "블로워 모터의 저항값만",
+            "verdict": "incorrect",
+            "rationale": "블로워 저항은 송풍량 문제로 보통 히터코어 냉각수 유량을 직접 나타내지 않는다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://iarepair.com/problems/heater-not-working",
+        "access": "search_result_reference_only"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q07",
+      "kind": "clarify_drivetrain_layout",
+      "before": {
+        "question": "배터리 전기차에서 구동모터의 회전력을 바퀴까지 전달하는 주요 기계적 동력 전달 구성은?",
+        "choices": [
+          "온보드 충전기와 DC/DC 컨버터",
+          "인버터와 고전압 배터리 관리 ECU",
+          "배터리 냉각펌프와 차체제어 모듈",
+          "감속기·차동기어·구동축"
+        ],
+        "answer": 4,
+        "reason": "전기차 구동 모터의 출력은 보통 감속기·차동장치·구동축을 통해 바퀴에 전달된다. 인버터·OBC·DC/DC는 전력변환·충전 관련 장치로 모터 이후의 기계적 동력 전달 장치가 아니다.",
+        "key_point": "기계적 전달: 모터 → 감속기·차동장치 → 구동축 → 바퀴.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "온보드 충전기와 DC/DC 컨버터",
+            "verdict": "incorrect",
+            "rationale": "OBC와 DC/DC는 충전·전압변환용이지 모터 회전력을 바퀴로 전달하는 기계식 구동축이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "인버터와 고전압 배터리 관리 ECU",
+            "verdict": "incorrect",
+            "rationale": "인버터와 BMS는 전력변환·배터리 관리와 관련된 장치이며 기계적 동력 전달부가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "배터리 냉각펌프와 차체제어 모듈",
+            "verdict": "incorrect",
+            "rationale": "배터리 냉각펌프와 차체 제어기는 모터축에서 휠로 토크를 전달하는 기구가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "감속기·차동기어·구동축",
+            "verdict": "correct",
+            "rationale": "감속기·차동기어·구동축은 구동모터의 기계적 회전력을 바퀴에 전달하는 통로다."
+          }
+        ]
+      },
+      "after": {
+        "question": "단일 구동모터와 기계식 차동장치를 사용하는 전기차에서 모터의 회전력을 바퀴까지 전달하는 주요 기계적 구성은?",
+        "choices": [
+          "온보드 충전기와 DC/DC 컨버터",
+          "인버터와 고전압 배터리 관리 ECU",
+          "배터리 냉각펌프와 차체제어 모듈",
+          "감속기·차동기어·구동축"
+        ],
+        "answer": 4,
+        "reason": "전기차 구동 모터의 출력은 보통 감속기·차동장치·구동축을 통해 바퀴에 전달된다. 인버터·OBC·DC/DC는 전력변환·충전 관련 장치로 모터 이후의 기계적 동력 전달 장치가 아니다.",
+        "key_point": "기계적 전달: 모터 → 감속기·차동장치 → 구동축 → 바퀴.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "온보드 충전기와 DC/DC 컨버터",
+            "verdict": "incorrect",
+            "rationale": "OBC와 DC/DC는 충전·전압변환용이지 모터 회전력을 바퀴로 전달하는 기계식 구동축이 아니다."
+          },
+          {
+            "number": 2,
+            "text": "인버터와 고전압 배터리 관리 ECU",
+            "verdict": "incorrect",
+            "rationale": "인버터와 BMS는 전력변환·배터리 관리와 관련된 장치이며 기계적 동력 전달부가 아니다."
+          },
+          {
+            "number": 3,
+            "text": "배터리 냉각펌프와 차체제어 모듈",
+            "verdict": "incorrect",
+            "rationale": "배터리 냉각펌프와 차체 제어기는 모터축에서 휠로 토크를 전달하는 기구가 아니다."
+          },
+          {
+            "number": 4,
+            "text": "감속기·차동기어·구동축",
+            "verdict": "correct",
+            "rationale": "감속기·차동기어·구동축은 구동모터의 기계적 회전력을 바퀴에 전달하는 통로다."
+          }
+        ]
+      },
+      "additional_reference": {
+        "url": "https://afdc.energy.gov/vehicles/how-do-all-electric-cars-work",
+        "access": "search_result_reference_only"
+      },
+      "approval": "pending_independent_review",
+      "publishable": false
+    },
+    {
+      "id": "auto-made-r01-s04-q14",
+      "kind": "ambiguous_multiple_answer",
+      "before": {
+        "question": "하이브리드 구동계의 에너지 손실이 의심된다. 일반 진단기로 DTC를 읽는 것만으로 알 수 없는 것은?",
+        "choices": [
+          "제어기에서 저장한 고장코드",
+          "지원되는 작동 상태값",
+          "관련 ECU의 통신 오류",
+          "엔진에서 바퀴까지 전달된 실제 총 효율의 정밀 수치"
+        ],
+        "answer": 4,
+        "reason": "고장코드는 특정 진단 조건에서 감지한 오류를 나타낸다. 실제 전달 효율은 회전수·토크·에너지 유량 등을 적절히 측정·계산해야 하므로 코드만으로 직접 산출할 수 없다.",
+        "key_point": "고장코드 확인과 동력 전달 효율 측정은 다르다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "제어기에서 저장한 고장코드",
+            "verdict": "incorrect",
+            "rationale": "진단기는 제어기가 기록한 고장코드 목록을 읽을 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "지원되는 작동 상태값",
+            "verdict": "incorrect",
+            "rationale": "진단기에 지원되는 상태값은 실시간 값으로 확인할 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "관련 ECU의 통신 오류",
+            "verdict": "incorrect",
+            "rationale": "차량 제어기의 통신 오류는 진단기 데이터로 발견할 수 있는 경우가 있다."
+          },
+          {
+            "number": 4,
+            "text": "엔진에서 바퀴까지 전달된 실제 총 효율의 정밀 수치",
+            "verdict": "correct",
+            "rationale": "엔진에서 바퀴까지 전달된 실제 총효율의 정밀 수치를 DTC 목록만으로 직접 구할 수는 없다."
+          }
+        ]
+      },
+      "after": {
+        "question": "하이브리드 차량에서 지원되는 고장코드와 실시간 상태값만 조회했다. 별도의 에너지 계측이나 효율 계산 없이 직접 확정하기 어려운 항목은?",
+        "choices": [
+          "제어기에 저장된 고장코드",
+          "진단기가 지원하는 현재 작동 상태값",
+          "저장된 ECU 통신 이상 고장코드",
+          "시험 구간의 실제 전체 구동계 에너지 전달 효율"
+        ],
+        "answer": 4,
+        "reason": "DTC는 감지된 이상을 나타내고 지원 상태값은 제어기의 현재 측정·계산 정보를 제공한다. 실제 전체 에너지 전달 효율은 정의된 시험 조건에서 입력과 출력의 에너지를 평가해야 한다. 코드와 상태값을 단순 조회하는 것만으로 정밀한 실측 효율을 확정할 수 없다.",
+        "key_point": "고장코드·상태값 조회와 실제 에너지 전달 효율 평가는 구별한다.",
+        "option_analysis": [
+          {
+            "number": 1,
+            "text": "제어기에 저장된 고장코드",
+            "verdict": "incorrect",
+            "rationale": "지원 진단기로 저장 코드를 조회할 수 있다."
+          },
+          {
+            "number": 2,
+            "text": "진단기가 지원하는 현재 작동 상태값",
+            "verdict": "incorrect",
+            "rationale": "지원되는 상태값은 진단기로 읽을 수 있다."
+          },
+          {
+            "number": 3,
+            "text": "저장된 ECU 통신 이상 고장코드",
+            "verdict": "incorrect",
+            "rationale": "저장된 통신 이상 코드는 진단 정보로 조회할 수 있다."
+          },
+          {
+            "number": 4,
+            "text": "시험 구간의 실제 전체 구동계 에너지 전달 효율",
+            "verdict": "correct",
+            "rationale": "전체 전달 효율은 별도 에너지 평가와 계산이 필요하다."
+          }
+        ]
+      },
+      "additional_reference": null,
+      "approval": "pending_independent_review",
+      "publishable": false
+    }
+  ]
+}

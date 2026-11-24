@@ -1,5 +1,14 @@
 # 자동차정비산업기사 사이트 — 다음 채팅 인계 문서
 
+## 2026-11-24 — QA51~52: 1회차 80문항 논리검토 완료·15문항 개정·잔여 640개 대기열
+
+- QA51 개정 원장 `data/qa/technical-qa51-editorial-revisions.json`: 15문항의 원본·개정 지문/4보기/정답/해설/선지별 근거를 버전별로 저장. 정답번호 변경0. MAF 측정원리, CAN ACK, EPS 통신 및 모터 전달, 수동형 휠속도 센서 등으로 중복 학습목표 5건 분리. 친환경1회14 DTC/상태값의 복수정답 가능 조건 교정. 난방 진단 및 브러시형 모터·단일모터 구동계 등 조건 명시, 변별력 및 해설 개선.
+- 원래 `data/past/drafts` 및 `data/explanations/drafts` 파일은 QA50까지의 역사 스냅샷으로 보존. **이후 검수의 실제 최신 작업용 질문/해설은 QA51 개정 원장을 적용한 QA52 working view를 사용**. `QA52_OUT_DIR=qa52-working-bank node tests/qa51-52-working-bank.test.cjs`로 4과목 각180개 최신 질문/해설 JSON 생성. 이전 QA 원장의 내용·평가를 덮어쓰지 않음. `current_option_analysis`, `current_reference_urls`, `current_version` 필드가 최신 작업 기준.
+- QA52 신규 40문항/160선지 검토 원장 `data/qa/technical-qa52-round01-remaining40-option-review.json`. QA47~49의20 + QA50의20 + QA52의40 = 중복 없이 **1회차 전체80문항/320선지 모델 논리 검토**. 8개 QA51 개정문항은 QA52에서 개정 내용으로 검토; 이전 40개 범위에 속하는 개정 7개는 QA51 개정 근거로 관리. 720 전체의 자동 구조 검사와 개별 기술 정답 검수는 서로 다른 단계.
+- CI에 전수 작업용 질문-해설 일치, 4보기 정오 매핑, QA51 원본 스냅샷 일치, coverage80/720, 잔여640/32개 과목 균형 묶음, 보류55 및 공개 예상80 검사와 아티팩트 `qa52-working-bank-and-remaining-640` 생성 추가. 실측 CI 결과는 PR Actions에서 확인. 정확한 지문/정답 문자열 겹침은 자동 후보일 뿐 의미 중복 확정 아님.
+- 외부 근거는 일부 개정에 대해서만 Bosch MAF/EPS, Analog Devices CAN, HELLA 휠속도, Garrett 등을 원문 확인; 다른 신규 40개 전체 원문 대조나 독립 OEM/국내법령 검증은 하지 않음. 독립 기술최종승인0/720, Q-net 상세 HWP 미확보, 공개 기출0, 예상80, 과목보류55, manifest 불변. 비공개 백업/권리 확인 전 초안 공개 출제 및 삭제 금지.
+- 다음 **QA53: QA52 working view의 batches/batch-01.json (2회차, 4과목별 1~5번 20문항)부터 batch-32까지 순서대로 검토**. 검수 결과 원장 추가→교정 시 버전 기록→새 materialized view 및 회귀검사. 전체 640개의 개별 판단을 일괄 자동승인하지 않는다.
+
 ## 2026-11-24 — QA50: 신규 20문항·80선지 현행 논리 검토
 
 - 1회 엔진1/2/4/5/7, 섀시1/3/5/7/9, 전기1~5, 친환경4~8. QA47 선정 20개와 중복 없이 신규 20개. [QA50 원장](../data/qa/technical-qa50-next20-option-review.json) 80선지 정오 근거 및 편집 후보 기록. 정답 변경0. 외부 출처 원문 재열람은 이번 단계에서 수행하지 않음.
