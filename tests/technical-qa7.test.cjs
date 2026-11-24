@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,"..");
 const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const audit=read("data/qa/technical-qa7-electrical-r01-option-audit.json");
 const qa9ById=new Map(read("data/qa/technical-qa9-changes.json").map(x=>[x.id,x]));
+const qa43ById=new Map(read("data/qa/technical-qa43-remaining-scope-edits.json").map(x=>[x.id,x]));
 const qs=read("data/past/drafts/electrical.json");
 const es=read("data/explanations/drafts/electrical.json");
 assert.equal(audit.length,20);
@@ -20,7 +21,7 @@ for(let i=0;i<20;i++){
  assert.equal(q.id,row.id);
  assert.equal(q.id,e.id);
  assert.equal(row.question_number,i+1);
- const later=qa9ById.get(q.id);
+ const later=qa9ById.get(q.id),rewrite=qa43ById.get(q.id);
  if(later){
    assert.equal(row.question_at_review,later.before.question);
    assert.equal(q.question,later.after.question);
@@ -29,15 +30,15 @@ for(let i=0;i<20;i++){
    assert.equal(q.technical_verification_qa7,undefined);
    assert.equal(e.technical_verification_qa7,undefined);
    assert.equal(e.option_analysis_qa7,undefined);
- }else assert.equal(row.question_at_review,q.question);
+ }else assert.equal(row.question_at_review,rewrite?rewrite.before.question:q.question);
  assert.equal(row.correct_number,q.answer);
- assert.equal(row.correct_choice,later?later.before.choices[later.before.answer-1]:q.choices[q.answer-1]);
+ assert.equal(row.correct_choice,later?later.before.choices[later.before.answer-1]:rewrite?rewrite.before.correct_choice:q.choices[q.answer-1]);
  assert.equal(e.correct_answer,q.answer);
  assert.equal(e.correct_choice,q.choices[q.answer-1]);
  if(!later){
    assert.equal(q.technical_verification_qa7.status,row.evidence_grade);
    assert.equal(e.technical_verification_qa7.status,row.evidence_grade);
-   assert.deepEqual(e.option_analysis_qa7,row.options);
+   assert.deepEqual(e.option_analysis_qa7,rewrite?rewrite.after.option_analysis:row.options);
  }
  assert.equal(row.options.length,4);
  assert.ok(row.source_urls.length>0);
@@ -52,7 +53,7 @@ for(let i=0;i<20;i++){
  assert.equal(q.review_status,"editorial_draft");
  for(let j=0;j<4;j++){
    const o=row.options[j];assert.equal(o.number,j+1);
-   assert.equal(o.text,later?later.before.choices[j]:q.choices[j]);
+   assert.equal(o.text,later?later.before.choices[j]:rewrite?rewrite.before.choices[j]:q.choices[j]);
    assert.equal(o.verdict,j+1===q.answer?"correct":"incorrect");
    assert.ok(o.rationale.length>=16);
    options++;
