@@ -93,6 +93,7 @@
     renderSubjects();
     updateExamAvailability();
     if(view==="concept")renderConcepts();
+    renderResumeExam();
   }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
   let activeTrack = "past";
@@ -100,6 +101,7 @@
   let recentResult = null;
   let lastSaved = null;
   let timerId = null;
+  const ACTIVE_EXAM_KEY="automotiveQuizActiveExamV1";
   let returnSession = null;
   let returnView = "result";
   let browseState = {items:[],page:1,title:"",track:"demo",subject:null};
@@ -110,6 +112,49 @@
     catch { return fallback; }
   }
   function saveStorage(key,value) { try { localStorage.setItem(key,JSON.stringify(value)); } catch {} }
+  // Restore only unchanged, currently public questions with their original order.
+  function questionSignature(q) {return JSON.stringify([q.question,q.choices,q.answer,q.explanation]);}
+  function persistExam() {
+    if(current?.mode!=="exam"||view!=="quiz")return;
+    saveStorage(ACTIVE_EXAM_KEY,{version:1,ids:current.items.map(q=>q.id),signatures:current.items.map(questionSignature),
+      choices:[...current.choices],orders:current.orders.map(o=>[...o]),index:current.index,track:current.track,
+      title:current.title,examMinutes:current.examMinutes,examDeadline:current.examDeadline});
+  }
+  function savedExam() {
+    const s=readStorage(ACTIVE_EXAM_KEY,null);
+    if(!s||s.version!==1||bankLoadState!=="ready")return null;
+    const n=s.track==="demo"?8:["expected","past"].includes(s.track)?80:0;
+    if(!n||!Array.isArray(s.ids)||s.ids.length!==n||new Set(s.ids).size!==n||
+      !Array.isArray(s.signatures)||s.signatures.length!==n||
+      !Array.isArray(s.choices)||s.choices.length!==n||!s.choices.every(a=>Number.isInteger(a)&&a>=0&&a<=4)||
+      !Array.isArray(s.orders)||s.orders.length!==n||
+      !s.orders.every(o=>Array.isArray(o)&&o.length===4&&new Set(o).size===4&&o.every(a=>[1,2,3,4].includes(a)))||
+      !Number.isInteger(s.index)||s.index<0||s.index>=n||
+      s.examMinutes!==(n===80?120:10)||!Number.isFinite(s.examDeadline)||
+      s.examDeadline>Date.now()+s.examMinutes*60000||typeof s.title!=="string")return null;
+    const map=new Map(ITEMS.map(q=>[q.id,q])),items=s.ids.map(id=>map.get(id));
+    if(items.some((q,i)=>!q||q.track!==s.track||questionSignature(q)!==s.signatures[i]))return null;
+    if(n===80&&!SUBJECTS.every(x=>items.filter(q=>q.subject===x.id).length===20))return null;
+    return {items,choices:[...s.choices],orders:s.orders.map(o=>[...o]),index:s.index,mode:"exam",title:s.title,
+      track:s.track,subject:null,examMinutes:s.examMinutes,examDeadline:s.examDeadline};
+  }
+  function renderResumeExam() {
+    const raw=readStorage(ACTIVE_EXAM_KEY,null),s=savedExam();
+    $("resumeExamPanel").classList.toggle("hidden",!raw);
+    $("resumeExamBtn").disabled=!s;
+    $("resumeExamInfo").textContent=bankLoadState!=="ready"?"문제은행을 불러온 뒤 이어 풀 수 있어.":
+      !s?"문제은행 변경 또는 저장 오류로 이어 풀 수 없어. 저장된 시험을 삭제해 줘.":
+      s.examDeadline<=Date.now()?"제한 시간이 끝났어. 저장된 답안을 채점할 수 있어.":
+      (s.index+1)+" / "+s.items.length+"문제 · 응답 "+s.choices.filter(Boolean).length+"개 · 시험 시간은 계속 진행돼.";
+  }
+  function resumeExam() {
+    const s=savedExam();if(!s){renderResumeExam();return;}
+    current=s;renderQuestion();showView("quiz");beginTimer();
+  }
+  function discardExam() {
+    if(!window.confirm("저장된 시험을 삭제할까?"))return;
+    saveStorage(ACTIVE_EXAM_KEY,null);renderResumeExam();
+  }
   function make(tag,cls,text) {
     const node=document.createElement(tag);
     if(cls) node.className=cls;
@@ -179,7 +224,7 @@
     }
   }
   function showHome() {
-    current=null;returnSession=null;renderSubjects();showView("home");
+    persistExam();current=null;returnSession=null;renderSubjects();showView("home");renderResumeExam();
   }
   function openBrowse(track,subject=null) {
     browseState={items:poolFor(track,subject),page:1,track,subject,title:`${TRACKS[track]} · ${currentSubjectLabel(subject)}`};
@@ -262,6 +307,7 @@
   function startSession(items,options) {
     if(!items.length){showHome();return;}
     const mode=options.mode||"practice";
+    if(mode==="exam"&&readStorage(ACTIVE_EXAM_KEY,null)&&!window.confirm("저장된 시험을 새 시험으로 바꿀까?"))return;
     const examMinutes=mode==="exam" && Number.isInteger(options.examMinutes) && options.examMinutes>0
       ?options.examMinutes:10;
     current={items:[...items],choices:Array(items.length).fill(0),
@@ -270,7 +316,7 @@
       subject:options.subject||null,examMinutes,
       examDeadline:mode==="exam"?Date.now()+examMinutes*60*1000:null};
     renderQuestion();showView("quiz");
-    if(mode==="exam") beginTimer();
+    if(mode==="exam"){persistExam();beginTimer();}
   }
 
   function stopTimer() {
@@ -278,14 +324,16 @@
   }
   function beginTimer() {
     stopTimer();
-    const tick=()=>{
-      if(!current||current.mode!=="exam"){stopTimer();return;}
-      const remaining=Math.max(0,Math.ceil((current.examDeadline-Date.now())/1000));
-      $("quizSource").textContent=`남은 시간 ${String(Math.floor(remaining/60)).padStart(2,"0")}:${String(remaining%60).padStart(2,"0")}`;
-      if(remaining===0){stopTimer();finishSession();}
-    };
-    tick();timerId=setInterval(tick,1000);
+    if(refreshTimer())timerId=setInterval(refreshTimer,1000);
   }
+  function refreshTimer() {
+    if(view!=="quiz"||current?.mode!=="exam"){stopTimer();return false;}
+    const remaining=Math.max(0,Math.ceil((current.examDeadline-Date.now())/1000));
+    $("quizSource").textContent=`남은 시간 ${String(Math.floor(remaining/60)).padStart(2,"0")}:${String(remaining%60).padStart(2,"0")}`;
+    if(remaining===0){finishSession();return false;}
+    return true;
+  }
+  function examStillOpen() {return current?.mode!=="exam"||refreshTimer();}
   function renderQuestion() {
     if(!current)return;
     const {items,index,choices,mode}=current;
@@ -344,21 +392,21 @@
     if(mode==="review") $("nextBtn").classList.add("hidden");
   }
   function selectAnswer(number) {
-    if(!current)return;
+    if(!current||!examStillOpen())return;
     if(current.mode!=="exam" && current.choices[current.index]!==0)return;
     current.choices[current.index]=number;
     renderQuestion();
-    if(current.mode==="exam") $("quizSource").textContent="답안 저장됨 · 변경 가능";
+    if(current.mode==="exam"){persistExam();refreshTimer();}
   }
   function previousQuestion() {
-    if(!current || current.mode!=="exam" || current.index<=0)return;
-    current.index--;renderQuestion();
+    if(!current || current.mode!=="exam" || !examStillOpen() || current.index<=0)return;
+    current.index--;renderQuestion();persistExam();refreshTimer();
   }
   function nextQuestion() {
-    if(!current)return;
+    if(!current||!examStillOpen())return;
     if(current.mode!=="exam" && !current.choices[current.index])return;
     if(current.index===current.items.length-1) {finishSession();return;}
-    current.index++;renderQuestion();
+    current.index++;renderQuestion();if(current.mode==="exam"){persistExam();refreshTimer();}
   }
   function finishSession() {
     if(!current)return;
@@ -372,6 +420,7 @@
     };
     lastSaved=recentResult;
     saveStorage("automotiveQuizLastSessionV1",recentResult);
+    if(current.mode==="exam")saveStorage(ACTIVE_EXAM_KEY,null);
     renderResults();showView("result");
   }
   function wrongIndices(s) {
@@ -512,7 +561,10 @@
     $("retryWrongBtn").addEventListener("click",retryWrong);
     $("retryAllBtn").addEventListener("click",retryAll);
     $("resultHomeBtn").addEventListener("click",showHome);
-    window.addEventListener("pagehide",stopTimer);
+    $("resumeExamBtn").addEventListener("click",resumeExam);
+    $("discardExamBtn").addEventListener("click",discardExam);
+    window.addEventListener("pagehide",()=>{persistExam();stopTimer();});
+    window.addEventListener("pageshow",()=>{if(view==="quiz"&&current?.mode==="exam")beginTimer();});
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
     setTrack("expected");showView("home");
