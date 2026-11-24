@@ -53,6 +53,6 @@ assert.equal(total,720);assert.equal(hold,55);
 const bank=read("data/bank-status.json").technical_qa45;
 assert.equal(bank.remaining_provisional_misplacements,0);assert.equal(bank.legacy_holds_retained,55);
 const manifest=read("data/manifest.json");
-assert.equal(manifest.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),80);
+assert.equal(manifest.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),100);
 assert.ok(manifest.banks.every(x=>!x.file.includes("/drafts/")));
 console.log("PASS QA43-45: 18 off-subject+3 overlap rewritten, 84 choice rationales matched, 1 legacy inverter recheck, 55 held; no expert approvals/publication.");

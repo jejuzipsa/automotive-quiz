@@ -32,7 +32,7 @@ for(let i=0;i<edits.length;i++){
  assert.equal(x.verdict,j+1===q.answer?"correct":"incorrect");assert.ok(x.rationale.length>=20);}
 }
 const expected=read("data/manifest.json");
-assert.equal(expected.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),80);
+assert.equal(expected.banks.filter(x=>x.track==="expected").reduce((n,x)=>n+x.count,0),100);
 assert.ok(expected.banks.every(x=>!x.file.includes("/drafts/")));
 const st=read("data/bank-status.json").technical_qa40;
 assert.equal(st.out_of_scope_engine_items_reauthored,3);

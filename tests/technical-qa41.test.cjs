@@ -35,7 +35,7 @@ for(const row of ledger){
   assert.equal(opt.verdict,i+1===q.answer?"correct":"incorrect");assert.ok(opt.rationale.length>=20);count++;}
 }
 assert.equal(count,60);
-const m=read("data/manifest.json");assert.equal(m.banks.filter(b=>b.track==="expected").reduce((s,b)=>s+b.count,0),80);
+const m=read("data/manifest.json");assert.equal(m.banks.filter(b=>b.track==="expected").reduce((s,b)=>s+b.count,0),100);
 assert.ok(m.banks.every(b=>!b.file.includes("/drafts/")));
 const st=read("data/bank-status.json").technical_qa41;
 assert.equal(st.reauthored_chassis_items,15);assert.equal(st.historical_holds_retained,55);
