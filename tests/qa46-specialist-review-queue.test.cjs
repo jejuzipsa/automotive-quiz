@@ -50,14 +50,14 @@ assert.equal(items.filter(x=>x.subject_hold).length,55);
 assert.equal(Object.values(editedCount).reduce((a,b)=>a+b,0),54);
 const src=read("data/manifest.json");
 assert.ok(src.banks.every(x=>!x.file.includes("/drafts/")));
-assert.equal(src.banks.filter(x=>x.track==="expected").reduce((a,b)=>a+b.count,0),80);
+assert.equal(src.banks.filter(x=>x.track==="expected").reduce((a,b)=>a+b.count,0),100);
 items.sort((a,b)=>a.priority.localeCompare(b.priority)||a.round-b.round||a.subject.localeCompare(b.subject)||a.number-b.number);
 const report={kind:"QA46_SPECIALIST_REVIEW_QUEUE_NOT_TECHNICAL_APPROVAL",date:"2026-11-24",
  official_criteria_page:officialCriteria,official_detailed_HWP_read:false,
  summary:{questions:items.length,options:items.length*4,historical_firstpass_grades:gradeCount,
  existing_subject_holds:55,current_study_question_rewrites:54,
  independent_final_technical_approvals:0,published_reconstructed_past:0,
- published_original_expected_practice:80,priority_counts:riskCount,subject_counts:subjectCount,
+ published_original_expected_practice:100,priority_counts:riskCount,subject_counts:subjectCount,
  new_post_editorial_specialist_review_needed:54},
  limitations:["Keyword safety priority is conservative, not expert risk classification.",
  "351 historical source-supported are NOT finally technically approved.",

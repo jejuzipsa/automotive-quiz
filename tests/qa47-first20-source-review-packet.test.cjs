@@ -77,13 +77,13 @@ assert.equal(stateCounts.unavailable,1);
 assert.equal(stateCounts.not_checked,11);
 assert.equal(packet.filter(x=>x.subject_hold).length,5);
 assert.ok(manifest.banks.every(b=>!b.file.includes("/drafts/")));
-assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),80);
+assert.equal(manifest.banks.filter(b=>b.track==="expected").reduce((n,b)=>n+b.count,0),100);
 const output={
  kind:"QA47_REVIEWER_PACKET_NOT_APPROVAL",date:ledger.date,
  description:"First round, balanced 5 questions per subject. Includes all options/explanations and source preflight; not reviewed or approved for public exam.",
  summary:{question_count:20,option_count:80,subject_counts:subjectCounts,
   source_preflight_counts:stateCounts,full_answer_technical_approvals:0,
-  syllabus_verified:0,rights_cleared:0,public_past_added:0,public_expected_preserved:80},
+  syllabus_verified:0,rights_cleared:0,public_past_added:0,public_expected_preserved:100},
  questions:packet
 };
 if(process.env.QA47_PACKET_OUT){

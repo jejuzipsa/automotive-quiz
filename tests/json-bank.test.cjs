@@ -63,9 +63,9 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
 (async()=>{
   vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
   await new Promise(resolve=>setImmediate(resolve));
-  assert.equal(els.bankLoadStatus.textContent.includes("80문항"),true,"JSON auto-load status");
+  assert.equal(els.bankLoadStatus.textContent.includes("100문항"),true,"JSON auto-load status");
   assert.equal(els.subjectGrid.children.length,4);
-  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"20문항");
+  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"25문항");
   assert.equal(els.trackExpected.attributes["aria-selected"],"true");
   assert.deepEqual(requestPaths,[
     "data/manifest.json",
@@ -88,10 +88,10 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.resultHomeBtn.click();
   await els.bankEntryBtn.click();
   assert.equal(els.browseList.children.length,10,"10 public JSON cards per page");
-  assert.equal(els.browseMeta.textContent,"전체 80문항");
+  assert.equal(els.browseMeta.textContent,"전체 100문항");
   await els.homeBtn.click();
   await els.examEntryBtn.click();
-  assert.equal(els.expectedExamBtn.disabled,false,"80-question expected bank should be connected");
+  assert.equal(els.expectedExamBtn.disabled,false,"expanded expected bank should be connected");
   assert.equal(els.approvedExamBtn.disabled,true,"unapproved past drafts must remain disabled");
   await els.expectedExamBtn.click();
   assert.equal(els.quizProgress.textContent,"1 / 80");
@@ -99,11 +99,11 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   const expected=['engine','chassis','electrical','eco'].flatMap(subject=>
     JSON.parse(fs.readFileSync(path.join(root,"data/expected",subject+".json"),"utf8")));
   const questionsByText=new Map(expected.map(q=>[q.question,q]));
-  assert.equal(questionsByText.size,80);
+  assert.equal(questionsByText.size,100);
   const seenSubjects={engine:0,chassis:0,electrical:0,eco:0};
   for(let i=0;i<80;i++){
     const q=questionsByText.get(els.questionText.textContent);
-    assert.ok(q,"question selected from the 80-question expected bank");
+    assert.ok(q,"question selected from the 100-question expected bank");
     seenSubjects[q.subject]++;
     const correct=q.choices[q.answer-1];
     const node=els.answerChoices.children.find(el=>el.children[1].textContent===correct);

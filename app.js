@@ -249,7 +249,7 @@
       ?"문제은행을 불러오지 못했어. 새로고침해 줘."
       :bankLoadState==="loading"
         ?"문제은행을 불러오는 중이야."
-        :"자체제작 예상문제 80문항 학습용 모의고사 이용 가능 · 최종 기술검수 전인 복원문제 720개는 출제 제외";
+        :`자체제작 예상문제 ${poolFor("expected").length}문항 중 과목별 20개, 총 80문항 학습용 모의고사 · 최종 기술검수 전인 복원문제 720개는 출제 제외`;
   }
   function startFullExam(track) {
     const items=examPool(track);

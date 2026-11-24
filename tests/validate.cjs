@@ -52,10 +52,10 @@ for(const entry of manifest.banks){
     counts[q.track]=(counts[q.track]||0)+1;
   }
 }
-assert.equal(counts.expected,80);
+assert.equal(counts.expected,100);
 assert.equal(counts.demo,8);
 assert.equal(counts.concept,4);
 assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
-console.log("PASS: approved-only public manifest, base 92 records, no ZIP picker, DOM references.");
+console.log("PASS: approved-only public manifest, base 112 records, no ZIP picker, DOM references.");
