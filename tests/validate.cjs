@@ -14,7 +14,19 @@ for(const match of app.matchAll(/\$\("([^"]+)"\)/g))
 for(const forbidden of ["personalTextBankInput","vendor/jszip.min.js","personal-text-bank.js"]){
   assert(!html.includes(forbidden),"legacy ZIP/public import must not return: "+forbidden);
 }
-assert.ok(html.includes('id="rotationFile" type="file"'),"private JSON import present");
+assert.ok(!html.includes('type="file"'),"no file picker required");
+const rotationSubjects=["engine","chassis","electrical","eco"],rotationIds=new Set();
+for(const subject of rotationSubjects){
+  const bank=JSON.parse(read("data/rotation/light/"+subject+".json"));
+  assert.equal(bank.length,180);
+  for(const q of bank){
+    assert.equal(q.subject,subject);assert.ok(!rotationIds.has(q.id));rotationIds.add(q.id);
+    assert.ok(q.question.trim()&&q.explanation.trim());
+    assert.equal(q.choices.length,4);assert.ok(q.choices.every(x=>x.trim()));
+    assert.ok([1,2,3,4].includes(q.answer));
+  }
+}
+assert.equal(rotationIds.size,720);
 const manifest=JSON.parse(read("data/manifest.json"));
 assert.equal(manifest.version,1);
 const baseFiles=new Set(["data/expected/engine.json","data/expected/chassis.json",
@@ -59,7 +71,7 @@ assert.equal(counts.concept,48);
 assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
-console.log("PASS: approved-only public manifest, base 168 records, no ZIP picker, DOM references.");
+console.log("PASS: separate expected/concept manifest, 720 additional rotation records, no file picker, DOM references.");
 
 // QA67 public bank editorial-review ledger consistency (not expert certification).
 {

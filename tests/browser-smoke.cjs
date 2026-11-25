@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file)];
+  const files=["index.html","app.js","styles.css","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -64,7 +64,12 @@ async function testDevice(browser,name,viewport,mobile){
       const subjectCount=expected.filter(q=>q.subject===b.subject).length;
       assert.equal(subjectCount,b.count);
     }
+    assert.match(await text("bankLoadStatus"),/1,440문항 자동 연결 완료/);
+    assert.equal(await el("trackPast").getAttribute("aria-selected"),"true");
+    for(const card of await el("subjectGrid").locator(".subject-card").all())assert.match(await card.innerText(),/360문항/);
+    assert.equal(await page.locator('input[type=file]').count(),0);
     await page.screenshot({path:path.join(out,name+"-home.png"),fullPage:true});
+    await el("trackExpected").click();
     await el("themeToggleBtn").click();
     assert.equal(await page.locator("html").getAttribute("data-theme"),"dark");
     await page.locator('[data-reading-size="large"]').click();
@@ -74,6 +79,7 @@ async function testDevice(browser,name,viewport,mobile){
     assert.ok(await page.locator("body").evaluate(b=>b.classList.contains("reading-large")));
     await el("themeToggleBtn").click();
     await page.locator('[data-reading-size="normal"]').click();
+    await el("trackExpected").click();
     await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
     let firstWrong;
     for(let i=0;i<10;i++){
@@ -113,10 +119,10 @@ async function testDevice(browser,name,viewport,mobile){
     await el("wrongScopes").getByRole("button",{name:"복습 완료",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     assert.match(await text("wrongSummary"),/누적 12회 풀이/);
-    await el("homeBtn").click();await el("bankEntryBtn").click();
+    await el("homeBtn").click();await el("trackExpected").click();await el("bankEntryBtn").click();
     assert.equal(await text("browseMeta"),"전체 "+expected.length+"문항");
     await el("homeBtn").click();await el("examEntryBtn").click();
-    assert.ok(await el("approvedExamBtn").isDisabled());
+    assert.ok(!(await el("approvedExamBtn").isDisabled()));
     await el("expectedExamBtn").click();assert.equal(await text("quizProgress"),"1 / 80");
     assert.match(await text("quizSource"),/남은 시간 (120:00|119:5[0-9])/);
     const counts={engine:0,chassis:0,electrical:0,eco:0},ids=new Set();
@@ -159,6 +165,30 @@ async function testDevice(browser,name,viewport,mobile){
       await choose(item,true);await visible("feedback");await layout();await el("nextBtn").click();
     }
     assert.match(await text("resultScore"),/12 \/ 12문제/);
+    // Actual served rotation, not a synthetic upload.
+    await el("resultHomeBtn").click();await el("trackPast").click();
+    await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
+    let variants=[];
+    for(let i=0;i<10;i++){
+      await visible("quizView");await layout();
+      variants.push(await text("quizAuditInfo"));
+      await el("answerChoices").locator(".choice").first().click();
+      await visible("feedback");
+      assert.equal(await el("answerChoices").locator(".correct").count(),1);
+      await el("nextBtn").click();
+    }
+    assert.equal(variants.filter(x=>x.includes("원본 기반")).length,5);
+    assert.equal(variants.filter(x=>x.includes("재작성본")).length,5);
+    assert.match(await text("resultScore"),/\/ 10문제/);
+    await el("resultHomeBtn").click();await page.reload();
+    await page.waitForFunction(()=>document.querySelector("#bankLoadStatus")?.textContent.includes("1,440문항 자동 연결 완료"));
+    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveRotationQueueV1")).engine.remaining.length),350);
+    await el("examEntryBtn").click();await el("approvedExamBtn").click();
+    const rotation=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveQuizActiveExamV1")));
+    assert.equal(rotation.ids.length,80);assert.equal(new Set(rotation.ids).size,80);
+    assert.equal(rotation.ids.filter(x=>x.startsWith("auto-light-")).length,40);
+    for(const s of ["01","02","03","04"])assert.equal(rotation.ids.filter(x=>x.includes("-s"+s+"-")).length,20);
+    console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam");
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}

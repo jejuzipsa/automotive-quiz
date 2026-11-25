@@ -47,4 +47,4 @@ const eligibleExpected=subjects.flatMap(subject=>read("data/expected/"+subject+"
 assert.equal(eligibleExpected.length,112);
 for(const subject of subjects)assert.equal(eligibleExpected.filter(q=>q.subject===subject).length,28);
 assert.ok(eligibleExpected.every(q=>q.origin==="original_practice"&&q.track==="expected"&&q.publishable===true));
-console.log("PASS release gate: 720 unapproved reconstructed drafts excluded; 4 x 28 public original-practice items eligible for learning mock exam.");
+console.log("PASS: original expected manifest and historical draft metadata preserved; learning rotation is a separate automatic track.");

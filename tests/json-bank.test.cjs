@@ -65,9 +65,12 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await new Promise(resolve=>setImmediate(resolve));
   assert.equal(els.bankLoadStatus.textContent.includes("112문항"),true,"JSON auto-load status");
   assert.equal(els.subjectGrid.children.length,4);
+  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
+  assert.equal(els.trackPast.attributes["aria-selected"],"true");
+  assert.ok(els.bankLoadStatus.textContent.includes("1,440문항"));
+  await els.trackExpected.click();
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"28문항");
-  assert.equal(els.trackExpected.attributes["aria-selected"],"true");
-  assert.deepEqual(requestPaths,[
+  assert.deepEqual(requestPaths.slice(0,7),[
     "data/manifest.json",
     "data/expected/engine.json",
     "data/expected/chassis.json",
@@ -92,7 +95,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.homeBtn.click();
   await els.examEntryBtn.click();
   assert.equal(els.expectedExamBtn.disabled,false,"expanded expected bank should be connected");
-  assert.equal(els.approvedExamBtn.disabled,true,"unapproved past drafts must remain disabled");
+  assert.equal(els.approvedExamBtn.disabled,false,"automatic 1440 rotation ready");
   await els.expectedExamBtn.click();
   assert.equal(els.quizProgress.textContent,"1 / 80");
   assert.ok(els.quizSource.textContent.includes("120:00"),"full exam must be 120 minutes");
@@ -202,19 +205,11 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
     await els.resultHomeBtn.click();await els.conceptEntryBtn.click();
   }
 
-  // Use synthetic private inputs based on public authored draft IDs; never upload the user's OCR.
-  const light=[];
-  for(let round=1;round<=9;round++)for(const subject of ["engine","chassis","electrical","eco"]){
-    const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
-    const raw=JSON.parse(fs.readFileSync(path.join(root,"data/past/drafts",prefix,subject+".json"),"utf8"));
-    for(const q of raw)light.push({id:q.source_question_id.replace("auto-","auto-light-"),source_question_id:q.source_question_id,subject,round,
-      question_number:q.question_number,question:"개인 로테이션 테스트: "+q.question,choices:q.choices,answer:q.answer,explanation:"테스트 전용 해설",variant:"light"});
-  }
-  await els.homeBtn.click();
-  const file={format:"automotive-personal-rotation-v1",questions:light};
-  els.rotationFile.files=[{size:1,text:async()=>JSON.stringify(file)}];
-  await els.rotationFile.listeners.change.at(-1)();
-  assert.match(els.rotationStatus.textContent,/1,440문항 연결 완료/);
+  // Exercise the actual automatic bank, not an imported synthetic fixture.
+  const light=["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(fs.readFileSync(path.join(root,"data/rotation/light",s+".json"),"utf8")));
+  assert.equal(light.length,720);
+  await els.homeBtn.click();await els.trackPast.click();
+  assert.match(els.bankLoadStatus.textContent,/1,440문항 자동 연결 완료/);
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
   const queueKey="automotiveRotationQueueV1",consumed=new Set();
   let previousQueue=null;
@@ -239,9 +234,9 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.homeBtn.click();
   vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
   await new Promise(resolve=>setImmediate(resolve));
-  assert.match(els.rotationStatus.textContent,/1,440문항 연결 완료/);
+  assert.match(els.bankLoadStatus.textContent,/1,440문항 자동 연결 완료/);
   assert.equal(els.resumeExamBtn.disabled,false);
-  console.log("PASS: personal 1440 import, full 360-item rotation, mixed 80-question exam, reload");
+  console.log("PASS: automatic 1440 bank, full 360-item rotation, mixed 80-question exam, reload");
 
   console.log("PASS: all 48 concept questions exercised with shuffled answers");
   console.log("PASS: cumulative wrong history, submitted exam blanks, repeat errors, resolved filter");
