@@ -82,3 +82,11 @@ console.log("PASS: approved-only public manifest, base 168 records, no ZIP picke
  for(const row of a.added){const q=qs.find(q=>q.id===row.id),source=expected.get(row.source_expected_id);assert.ok(q&&source);assert.equal(q.subject,source.subject);assert.equal(q.source_expected_id,source.id);assert.equal(row.source_correct_choice,source.choices[source.answer-1]);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.review_status,"editorial_draft");assert.equal(row.independent_expert_approved,false);}
  console.log("PASS: 48 concept blanks, 44 traceable editorial items, 12 per subject");
 }
+
+// QA73: current 48-record review ledger and unchanged correct answers.
+{
+ const qs=JSON.parse(read("data/concept.json")),a=JSON.parse(read("data/qa/qa73-concept-quality-review.json")),map=new Map(qs.map(q=>[q.id,q]));
+ assert.equal(a.reviewed.length,48);assert.equal(new Set(a.reviewed.map(q=>q.id)).size,48);assert.equal(a.changed.length,18);
+ for(const row of a.reviewed){const q=map.get(row.id);assert.ok(q);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(row.independent_expert_approved,false);}
+ for(const row of a.changed){const q=map.get(row.id);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],row.after[k]);assert.equal(row.before.answer,row.after.answer);assert.equal(row.before.choices[row.before.answer-1],row.after.choices[row.after.answer-1]);}
+}

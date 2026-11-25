@@ -3,15 +3,15 @@
     "id": "concept-engine-01",
     "track": "concept",
     "subject": "engine",
-    "question": "가솔린 엔진의 점화 플러그는 전기적인 (    )을 발생시켜 연소를 시작한다.",
+    "question": "불꽃점화 가솔린 기관에서 점화 플러그 전극 사이의 방전으로 발생하는 (    )이 혼합기를 점화한다.",
     "choices": [
       "불꽃",
-      "유압",
-      "냉각수",
-      "배기가스"
+      "열복사",
+      "압축열",
+      "마찰열"
     ],
     "answer": 1,
-    "explanation": "가솔린 엔진은 점화 플러그의 전기 불꽃을 사용해 혼합기를 점화해."
+    "explanation": "불꽃점화 가솔린 엔진은 점화 플러그의 전극 사이에서 발생하는 전기 불꽃으로 공기·연료 혼합기를 점화한다."
   },
   {
     "id": "concept-chassis-01",
@@ -31,12 +31,12 @@
     "id": "concept-electrical-01",
     "track": "concept",
     "subject": "electrical",
-    "question": "회로의 과전류 보호를 위해 사용하는 부품은 (    )이다.",
+    "question": "규정된 과전류 조건에서 가용체가 녹아 회로를 차단하는 보호 부품은 (    )이다.",
     "choices": [
       "퓨즈",
-      "헤드램프",
-      "혼",
-      "스피커"
+      "정류 다이오드",
+      "커패시터",
+      "릴레이"
     ],
     "answer": 1,
     "explanation": "퓨즈는 정해진 전류 조건에서 회로를 차단해 과전류로 인한 손상을 줄여."
@@ -59,11 +59,11 @@
     "id": "concept-engine-02",
     "track": "concept",
     "subject": "engine",
-    "question": "흡입 행정에서 피스톤은 상사점에서 (    )으로 이동한다.",
+    "question": "일반적인 4행정 기관의 흡입 행정은 피스톤이 상사점에서 출발해 (    )에 도달하는 행정이다.",
     "choices": [
       "하사점",
-      "압축상사점",
-      "점화 위치",
+      "상사점",
+      "행정 중앙점",
       "밸브 오버랩 위치"
     ],
     "answer": 1,
@@ -78,10 +78,10 @@
     "subject": "engine",
     "question": "피스톤과 실린더 벽 사이에서 연소가스 누설을 줄이는 링은 (    )이다.",
     "choices": [
-      "스냅 링",
+      "오일 링",
       "압축 링",
-      "오일 씰",
-      "밸브 시트"
+      "피스톤 핀",
+      "밸브 스템 씰"
     ],
     "answer": 2,
     "explanation": "압축 링은 연소실의 기밀을 유지하는 데 기여한다.",
@@ -93,12 +93,12 @@
     "id": "concept-engine-04",
     "track": "concept",
     "subject": "engine",
-    "question": "냉각수 온도에 따라 라디에이터 쪽 유량을 조절하는 부품은 (    )이다.",
+    "question": "일반적인 액체 냉각 엔진에서 냉각수 온도에 따라 라디에이터 방향의 유로 개도를 조절하는 부품은 (    )이다.",
     "choices": [
-      "오일 펌프",
-      "압력 센서",
+      "냉각수 펌프",
+      "라디에이터 압력 캡",
       "서모스탯",
-      "인터쿨러"
+      "냉각팬"
     ],
     "answer": 3,
     "explanation": "서모스탯은 냉간 예열과 정상 작동 온도 유지에 필요한 냉각수 흐름을 조절한다.",
@@ -169,7 +169,7 @@
       "냉각수 온도 센서"
     ],
     "answer": 3,
-    "explanation": "MAP는 흡기 매니폴드 절대압력의 약자다.",
+    "explanation": "MAP(Manifold Absolute Pressure)는 흡기 매니폴드 절대압력을 뜻한다. MAF 센서는 공기 질량 유량을 측정하므로 구별해야 한다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_expected_id": "original-engine-12"
@@ -214,13 +214,13 @@
     "subject": "engine",
     "question": "일부 배기가스를 흡기로 되돌려 연소 조건을 조절하고 NOx 생성을 줄이는 방식은 (    )이다.",
     "choices": [
-      "OBC",
+      "PCV",
       "EGR",
-      "ABS",
+      "과급압 제어",
       "DPF 재생"
     ],
     "answer": 2,
-    "explanation": "EGR은 배기가스 재순환으로 연소 온도 조건을 조절한다.",
+    "explanation": "EGR은 배기가스 일부를 흡기로 되돌려 연소 조건을 조절하고 NOx 생성을 줄이는 방식이다. PCV는 크랭크실 블로바이 가스를 흡기로 되돌리는 계통이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_expected_id": "original-engine-16"
@@ -231,10 +231,10 @@
     "subject": "engine",
     "question": "터보차저에서 압축된 흡입 공기를 냉각하는 열교환기는 (    )이다.",
     "choices": [
-      "오일 필터",
-      "소음기",
+      "엔진 오일 쿨러",
+      "EGR 쿨러",
       "인터쿨러",
-      "커먼레일"
+      "히터 코어"
     ],
     "answer": 3,
     "explanation": "인터쿨러는 과급 공기의 온도를 낮춰 공기 밀도를 높이는 데 도움을 준다.",
@@ -266,12 +266,12 @@
     "question": "제동 중 바퀴 잠김을 억제하기 위해 제동압을 조절하는 시스템은 (    )이다.",
     "choices": [
       "EPS",
-      "EGR",
+      "TCS",
       "ABS",
       "TPMS"
     ],
     "answer": 3,
-    "explanation": "ABS는 바퀴 속도 등의 정보를 이용해 제동압을 조절한다.",
+    "explanation": "ABS는 제동 중 바퀴 잠김을 억제한다. TCS는 주로 가속 시 구동 바퀴의 과도한 미끄러짐을 줄인다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_expected_id": "original-chassis-03"
@@ -280,11 +280,11 @@
     "id": "concept-chassis-04",
     "track": "concept",
     "subject": "chassis",
-    "question": "조향 의도와 실제 차량 거동의 차이를 줄이기 위해 제동력 등을 제어하는 장치는 (    )이다.",
+    "question": "운전자의 조향 의도와 실제 차량 거동을 비교하여 선택적 제동 등으로 차량 자세를 보정하는 장치는 (    )이다.",
     "choices": [
-      "TPMS",
-      "OBC",
-      "차동장치",
+      "EPS",
+      "ABS",
+      "TCS",
       "ESC"
     ],
     "answer": 4,
@@ -368,9 +368,9 @@
     "question": "좌우 현가장치의 상대 운동에 저항하여 선회 중 차체 롤을 줄이는 부품은 (    )이다.",
     "choices": [
       "스태빌라이저 바",
-      "프로펠러 샤프트",
-      "타이로드",
-      "클러치 디스크"
+      "코일 스프링",
+      "쇼크 업소버",
+      "컨트롤 암"
     ],
     "answer": 1,
     "explanation": "스태빌라이저 바는 좌우 서스펜션의 상대 변위에 저항한다.",
@@ -518,11 +518,11 @@
     "id": "concept-electrical-07",
     "track": "concept",
     "subject": "electrical",
-    "question": "분기가 없는 직렬 회로에서 각 저항에 흐르는 전류는 서로 (    ).",
+    "question": "분기가 없는 정상적인 직렬 회로에서 각 저항에 흐르는 전류의 크기는 서로 (    ).",
     "choices": [
       "저항값에 비례해 다르다",
-      "전압값에 반비례해 다르다",
-      "항상 0이다",
+      "저항값에 반비례해 다르다",
+      "전압 강하가 큰 소자에서만 작다",
       "같다"
     ],
     "answer": 4,
@@ -540,7 +540,7 @@
       "같다",
       "저항값에 비례해 다르다",
       "저항값에 반비례해 다르다",
-      "항상 0이다"
+      "전류가 큰 저항에서만 작다"
     ],
     "answer": 1,
     "explanation": "병렬 소자는 동일한 두 노드 사이에 연결되므로 양단 전위차가 같다.",
@@ -588,9 +588,9 @@
     "subject": "electrical",
     "question": "고속 CAN 통신의 CAN-H와 CAN-L은 내잡음성을 높이는 (    ) 방식에 사용된다.",
     "choices": [
-      "단일 접점",
-      "교류 전력 전송",
-      "아날로그 음성",
+      "단일 종단 신호",
+      "전력선 통신",
+      "광 신호",
       "차동 신호"
     ],
     "answer": 4,
@@ -623,8 +623,8 @@
     "question": "구동 배터리의 셀 전압·전류·온도 등을 감시하고 보호하는 시스템은 (    )이다.",
     "choices": [
       "OBC",
-      "ABS",
-      "ESC",
+      "구동 인버터",
+      "DC-DC 컨버터",
       "BMS"
     ],
     "answer": 4,
@@ -691,12 +691,12 @@
     "question": "배터리에 남은 전하의 충전 상태를 비율로 나타내는 지표는 (    )이다.",
     "choices": [
       "SOH",
-      "GWP",
-      "DTC",
+      "SOE",
+      "SOP",
       "SOC"
     ],
     "answer": 4,
-    "explanation": "SOC는 State of Charge로 충전 상태를 나타낸다.",
+    "explanation": "SOC(State of Charge)는 전하량을 기준으로 한 충전 상태다. SOE는 에너지 상태, SOH는 건전성, SOP는 가용 출력 상태를 나타내는 지표로 사용된다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_expected_id": "original-eco-09"
@@ -709,8 +709,8 @@
     "choices": [
       "SOH",
       "SOC",
-      "RPM",
-      "MAP"
+      "SOE",
+      "SOP"
     ],
     "answer": 1,
     "explanation": "SOH는 State of Health로 배터리 성능과 건전성의 상태를 나타낸다.",
@@ -759,8 +759,8 @@
     "question": "고전압 배터리 팩과 고전압 회로 사이 전기적 접속을 제어하는 스위치는 (    )이다.",
     "choices": [
       "전압 센서",
-      "온도 센서",
-      "냉각수 펌프",
+      "전류 센서",
+      "절연 감시 장치",
       "메인 컨택터"
     ],
     "answer": 4,
