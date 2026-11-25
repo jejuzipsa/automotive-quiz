@@ -438,9 +438,32 @@
   function startDemo() {
     startSession(shuffled(poolFor("demo")),{mode:"practice",title:"샘플 문제 풀이",track:"demo",subject:null});
   }
-  function startConcept(subject) {
+  const CONCEPT_ROTATION_KEY="automotiveConceptRotationV1";
+  function conceptRotation(pool,count) {
+    if(!pool.length)return [];
+    const subject=pool[0].subject,map=new Map(pool.map(q=>[q.id,q]));
+    const bankIds=[...map.keys()].sort(),raw=readStorage(CONCEPT_ROTATION_KEY,{});
+    const state=raw&&typeof raw==="object"&&!Array.isArray(raw)?raw:{};
+    const old=state[subject];
+    let queue=Array.isArray(old?.remaining)&&JSON.stringify(old.bankIds)===JSON.stringify(bankIds)&&
+      new Set(old.remaining).size===old.remaining.length&&old.remaining.every(id=>map.has(id))?[...old.remaining]:[];
+    const out=[],seen=new Set();
+    for(let i=0;i<Math.min(count,pool.length);i++){
+      if(!queue.length){
+        const ids=shuffled(bankIds);
+        queue=ids.filter(id=>!seen.has(id)).concat(ids.filter(id=>seen.has(id)));
+      }
+      const id=queue.shift();
+      if(seen.has(id))throw Error("괄호문제 로테이션 중복");
+      out.push(map.get(id));seen.add(id);
+    }
+    state[subject]={bankIds,remaining:queue};saveStorage(CONCEPT_ROTATION_KEY,state);
+    return out;
+  }
+  function startConcept(subject,count) {
     const pool=poolFor("concept",subject);
-    startSession(shuffled(pool),{mode:"concept",title:currentSubjectLabel(subject)+" · 괄호문제",track:"concept",subject});
+    if(!pool.length)return;
+    startSession(conceptRotation(pool,count??pool.length),{mode:"concept",title:currentSubjectLabel(subject)+" · 괄호문제",track:"concept",subject});
   }
   function startSampleExam(){
     startSession(shuffled(poolFor("demo")),{mode:"exam",title:"시연용 실전 시험",track:"demo",subject:null,examMinutes:10});
@@ -706,11 +729,14 @@
     const grid=$("conceptGrid");grid.replaceChildren();
     SUBJECTS.forEach(s=>{
       const count=poolFor("concept",s.id).length;
-      const card=make("button","concept-card");
-      card.type="button";
+      const card=make("div","concept-card");
       card.append(make("strong","",s.name),make("span","",`괄호문제 ${count}개`));
-      card.addEventListener("click",()=>startConcept(s.id));
-      grid.append(card);
+      const actions=make("div","home-actions");
+      actions.style.marginTop="10px";
+      appendButton(actions,"10문제","subject-browse-btn",()=>startConcept(s.id,10),!count);
+      appendButton(actions,"20문제","subject-browse-btn",()=>startConcept(s.id,20),!count);
+      appendButton(actions,"전체 풀기","subject-browse-btn",()=>startConcept(s.id,count),!count);
+      card.append(actions);grid.append(card);
     });
   }
   function initTheme(){

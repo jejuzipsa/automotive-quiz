@@ -194,16 +194,34 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.equal(els.conceptGrid.children.length,4);
   const concepts=JSON.parse(fs.readFileSync(path.join(root,"data/concept.json"),"utf8"));
   for(let subject=0;subject<4;subject++){
-    assert.ok(els.conceptGrid.children[subject].children[1].textContent.includes("12개"));
-    await els.conceptGrid.children[subject].click();
+    assert.ok(els.conceptGrid.children[subject].children[1].textContent.includes("100개"));
     const seen=new Set();
-    for(let i=0;i<12;i++){const q=concepts.find(q=>q.question===els.questionText.textContent);
+    for(let batch=0;batch<5;batch++){
+    await els.conceptGrid.children[subject].children[2].children[1].click();
+    for(let i=0;i<20;i++){const q=concepts.find(q=>q.question===els.questionText.textContent);
       assert.ok(q&&!seen.has(q.id));seen.add(q.id);
       await els.answerChoices.children.find(x=>x.children[1].textContent===q.choices[q.answer-1]).click();
       assert.ok(els.feedback.children[0].textContent.includes("정답이야"));await els.nextBtn.click();}
-    assert.ok(els.resultScore.textContent.includes("12 / 12문제"));
+    assert.ok(els.resultScore.textContent.includes("20 / 20문제"));
     await els.resultHomeBtn.click();await els.conceptEntryBtn.click();
+    }
+    assert.equal(seen.size,100);
   }
+  const conceptQueue=JSON.parse(memory.automotiveConceptRotationV1);
+  for(const s of ["engine","chassis","electrical","eco"])assert.equal(conceptQueue[s].remaining.length,0);
+  // Reload restores the separate concept queue, then 10-item sessions advance it.
+  await els.conceptGrid.children[0].children[2].children[0].click();
+  const before=JSON.parse(memory.automotiveConceptRotationV1).engine.remaining;
+  assert.equal(before.length,90);
+  await els.homeBtn.click();
+  vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
+  await new Promise(resolve=>setImmediate(resolve));
+  await els.conceptEntryBtn.click();
+  await els.conceptGrid.children[0].children[2].children[0].click();
+  const after=JSON.parse(memory.automotiveConceptRotationV1).engine.remaining;
+  assert.equal(after.length,80);
+  assert.deepEqual(after,before.slice(10));
+  await els.homeBtn.click();
 
   // Exercise the actual automatic bank, not an imported synthetic fixture.
   const light=["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(fs.readFileSync(path.join(root,"data/rotation/light",s+".json"),"utf8")));
@@ -238,7 +256,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.equal(els.resumeExamBtn.disabled,false);
   console.log("PASS: automatic 1440 bank, full 360-item rotation, mixed 80-question exam, reload");
 
-  console.log("PASS: all 48 concept questions exercised with shuffled answers");
+  console.log("PASS: all 400 concept questions exercised with shuffled answers and persistent 20/10-question rotation");
   console.log("PASS: cumulative wrong history, submitted exam blanks, repeat errors, resolved filter");
   console.log("PASS: exam resume, order, answers, deadline, expiry");
   console.log("PASS: JSON auto-fetch, shuffle/remap, 80-question 4-subject exam, 120min timer, back navigation, per-subject pass/fail, unanswered.");

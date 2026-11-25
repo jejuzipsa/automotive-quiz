@@ -67,7 +67,7 @@ for(const entry of manifest.banks){
 }
 assert.equal(counts.expected,112);
 assert.equal(counts.demo,8);
-assert.equal(counts.concept,48);
+assert.equal(counts.concept,400);
 assert.ok(!counts.past || counts.past<=720);
 for(const asset of ["styles.css","quiz-utils.js","app.js","data/manifest.json"])
   assert(fs.existsSync(path.join(root,asset)),"missing "+asset);
@@ -89,11 +89,24 @@ console.log("PASS: separate expected/concept manifest, 720 additional rotation r
  const qs=JSON.parse(read("data/concept.json")),a=JSON.parse(read("data/qa/qa72-concept-expansion.json"));
  const expected=new Map(["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(read("data/expected/"+s+".json"))).map(q=>[q.id,q]));
  assert.equal(a.added.length,44);assert.equal(new Set(a.added.map(x=>x.id)).size,44);
- assert.equal(new Set(qs.map(q=>q.question)).size,48);
- for(const subject of ["engine","chassis","electrical","eco"])assert.equal(qs.filter(q=>q.subject===subject).length,12);
+ assert.equal(new Set(qs.map(q=>q.question)).size,400);
+ for(const subject of ["engine","chassis","electrical","eco"])assert.equal(qs.filter(q=>q.subject===subject).length,100);
  for(const q of qs){assert.equal((q.question.match(/\(    \)/g)||[]).length,1);assert.equal(new Set(q.choices).size,4);}
  for(const row of a.added){const q=qs.find(q=>q.id===row.id),source=expected.get(row.source_expected_id);assert.ok(q&&source);assert.equal(q.subject,source.subject);assert.equal(q.source_expected_id,source.id);assert.equal(row.source_correct_choice,source.choices[source.answer-1]);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.review_status,"editorial_draft");assert.equal(row.independent_expert_approved,false);}
- console.log("PASS: 48 concept blanks, 44 traceable editorial items, 12 per subject");
+ const sourceMap=new Map(expected);
+ for(let round=1;round<=9;round++){
+   const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
+   for(const subject of ["engine","chassis","electrical","eco"])
+     for(const q of JSON.parse(read("data/past/drafts/"+prefix+subject+".json")))sourceMap.set(q.id,q);
+ }
+ const added=qs.filter(q=>q.source_question_id);
+ assert.equal(added.length,352);
+ for(const q of added){
+   const source=sourceMap.get(q.source_question_id);assert.ok(source,"missing concept source "+q.id);
+   assert.equal(q.subject,source.subject,"source subject mismatch "+q.id);
+   assert.equal(q.origin,"original_concept_practice");assert.ok(q.explanation.trim());
+ }
+ console.log("PASS: 400 concept blanks, 100 per subject, 352 new source-linked items, original 48 retained");
 }
 
 // QA73: current 48-record review ledger and unchanged correct answers.
