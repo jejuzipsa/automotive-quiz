@@ -27,7 +27,7 @@
     </header>
 
     <section id="homeView" class="view">
-      <div class="notice-line"><span aria-hidden="true">ⓘ</span><div><b>과목별 자동 출제</b> — 예상문제는 자동 연결되고, 개인 로테이션은 기존 재작성본 720문항과 개인 JSON 720문항을 함께 출제해.</div></div>
+      <div class="notice-line"><span aria-hidden="true">ⓘ</span><div><b>과목별 자동 출제</b> — 기출 기반 학습문제 1,440개를 과목별 360개씩 자동 출제해. 별도의 파일 선택은 필요 없어.</div></div>
       <section class="past-exam-home-section" aria-labelledby="homeSubjectTitle">
         <div class="section-header">
           <div>
@@ -37,12 +37,11 @@
           </div>
         </div>
         <div class="mode-switch" role="tablist" aria-label="문제은행 선택">
-          <button id="trackPast" type="button" role="tab" aria-selected="false">개인 로테이션</button>
-          <button id="trackExpected" type="button" role="tab" aria-selected="true" class="active">예상문제 · 자체제작</button>
+          <button id="trackPast" type="button" role="tab" aria-selected="true" class="active">기출 기반 로테이션</button>
+          <button id="trackExpected" type="button" role="tab" aria-selected="false">예상문제 · 자체제작</button>
         </div>
         <p id="trackSummary" class="track-summary"></p>
         <p id="bankLoadStatus" class="track-summary" role="status">과목별 JSON 문제은행을 불러오는 중이야.</p>
-        <div class="section-panel"><strong>개인 로테이션 1,440문항</strong><p>제공된 자동차정비 개인 JSON을 한 번 선택하면 재작성본과 합쳐 과목당 360문항을 순환해. 파일은 서버에 업로드하지 않고 이 브라우저에만 저장해.</p><div class="home-actions"><label for="rotationFile">개인 JSON 선택</label><input id="rotationFile" type="file" accept=".json,application/json" style="max-width:100%"><button id="rotationRemoveBtn" class="secondary-btn" type="button">개인 문제은행 제거</button></div><p id="rotationStatus" class="helper" role="status">개인 JSON을 선택해 줘.</p></div>
         <div class="home-actions hidden" id="resumeExamPanel"><button id="resumeExamBtn" class="primary-btn" type="button">저장된 시험 이어 풀기</button><button id="discardExamBtn" class="secondary-btn" type="button">저장된 시험 삭제</button><p id="resumeExamInfo" class="helper" role="status"></p></div>
         <div class="subject-grid" id="subjectGrid" aria-live="polite"></div>
       </section>
@@ -117,10 +116,10 @@
     <section id="examView" class="view hidden">
       <div class="section-panel" style="margin-top:0">
         <p class="eyebrow">실전 모의고사</p><h2><img class="section-heading-icon" src="assets/exam-icon.png" alt="" aria-hidden="true" width="42" height="42">시험 방식 선택</h2>
-        <p>4과목 각 20문항, 총 80문항을 제한 시간 120분으로 풀어 봐. 시험 중에는 정답과 해설을 숨기고 종료 후 과목별 점수·과락·평균을 확인해. 개인 로테이션 파일을 연결하면 두 세트를 함께 모의고사에 사용할 수 있어.</p>
+        <p>4과목 각 20문항, 총 80문항을 제한 시간 120분으로 풀어 봐. 시험 중에는 정답과 해설을 숨기고 종료 후 과목별 점수·과락·평균을 확인해. 기출 기반 로테이션은 두 버전을 함께 출제해.</p>
         <p id="examStatus" class="helper" role="status">문제은행을 불러오는 중이야.</p>
         <div class="exam-banner" style="margin-top:20px"><div><strong>자체제작 예상문제 모의고사</strong><br><span>80문항 · 120분 · 4과목 각 20문항 · 편집 검토 중인 학습용 문제</span></div><button id="expectedExamBtn" class="primary-btn" type="button" disabled>80문제 시작</button></div>
-        <div class="exam-banner" style="margin-top:10px"><div><strong>개인 로테이션 모의고사</strong><br><span>80문항 · 120분 · 개인 JSON을 연결하면 활성화</span></div><button id="approvedExamBtn" class="secondary-btn" type="button" disabled>80문제 시작</button></div>
+        <div class="exam-banner" style="margin-top:10px"><div><strong>기출 기반 로테이션 모의고사</strong><br><span>80문항 · 120분 · 1,440문항 중 과목별 20문항 자동 출제</span></div><button id="approvedExamBtn" class="secondary-btn" type="button" disabled>80문제 시작</button></div>
         <div class="exam-banner" style="margin-top:10px"><div><strong>샘플 실전 시험</strong><br><span>8문항 · 10분 · 마지막에 정답 공개</span></div><button id="sampleExamBtn" class="secondary-btn" type="button">샘플 시작</button></div>
       </div>
     </section>
@@ -145,6 +144,6 @@
     </section>
   </main>
   <script src="quiz-utils.js?v=1.0.0" defer></script>
-  <script src="app.js?v=1.5.0" defer></script>
+  <script src="app.js?v=1.6.0" defer></script>
 </body>
 </html>
