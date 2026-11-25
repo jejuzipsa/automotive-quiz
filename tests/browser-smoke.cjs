@@ -37,6 +37,34 @@ async function checkDeployedFiles(context){
   }while(Date.now()<deadline);
   throw problem;
 }
+
+async function checkHeader(page,width,mobile){
+  const bounds=await page.evaluate(()=>{
+    const rect=e=>{const b=e.getBoundingClientRect();return {left:b.left,right:b.right,top:b.top,bottom:b.bottom,width:b.width,height:b.height}};
+    const glyphs=e=>{const range=document.createRange();range.selectNodeContents(e);return rect(range)};
+    const title=document.querySelector("#headerTitle"),main=title.querySelector(".header-title-main"),
+      sub=title.querySelector(".header-title-sub"),actions=document.querySelector(".topbar-actions"),
+      wrap=document.querySelector(".topbar-title-wrap"),shell=document.querySelector(".app-shell");
+    return {title:rect(title),main:glyphs(main),sub:glyphs(sub),actions:rect(actions),wrap:rect(wrap),shell:rect(shell),
+      mainText:main.textContent,subText:sub.textContent,overflow:document.documentElement.scrollWidth>innerWidth+1,
+      textOverflow:getComputedStyle(document.querySelector("#headerTitleText")).overflowX};
+  });
+  assert.equal(bounds.mainText,"자동차정비산업기사");
+  assert.equal(bounds.subText,"기출문제");
+  assert.equal(bounds.overflow,false,"page overflow "+width);
+  assert.equal(bounds.textOverflow,"visible","title must not be clipped");
+  for(const b of [bounds.main,bounds.sub,bounds.actions]){
+    assert.ok(b.left>=bounds.shell.left-1&&b.right<=bounds.shell.right+1,"header exceeds shell "+width+" "+JSON.stringify(bounds));
+  }
+  if(mobile){
+    assert.ok(bounds.sub.top>=bounds.main.bottom-1,"title must be two lines "+width);
+    assert.ok(bounds.actions.top>=bounds.wrap.bottom-1,"controls must be below title "+width);
+  }else{
+    assert.ok(Math.abs(bounds.main.top-bounds.sub.top)<2,"desktop title must be single line "+width);
+    assert.ok(Math.max(bounds.main.right,bounds.sub.right)<=bounds.actions.left+1,"title overlaps controls "+width);
+  }
+}
+
 async function testDevice(browser,name,viewport,mobile){
   const context=await browser.newContext({viewport,isMobile:mobile,hasTouch:mobile,deviceScaleFactor:1,colorScheme:"light"});
   const page=await context.newPage();
@@ -68,6 +96,19 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(await el("trackPast").getAttribute("aria-selected"),"true");
     for(const card of await el("subjectGrid").locator(".subject-card").all())assert.match(await card.innerText(),/360문항/);
     assert.equal(await page.locator('input[type=file]').count(),0);
+
+    // Inspect actual glyph bounds (not only scrollWidth) so hidden title clipping fails.
+    for(const width of (mobile?[320,360,375,390,430,560,768,820]:[821,1024,1440])){
+      await page.setViewportSize({width,height:viewport.height});
+      for(const size of ["small","normal","large"]){
+        await page.locator('[data-reading-size="'+size+'"]').click();
+        await checkHeader(page,width,width<=820);
+      }
+    }
+    await page.setViewportSize(viewport);
+    await page.locator('[data-reading-size="normal"]').click();
+    await checkHeader(page,viewport.width,mobile);
+    console.log("PASS "+name+" responsive header: unclipped title, control layout and A-/A/A+");
     await page.screenshot({path:path.join(out,name+"-home.png"),fullPage:true});
     await el("trackExpected").click();
     await el("themeToggleBtn").click();
@@ -81,6 +122,8 @@ async function testDevice(browser,name,viewport,mobile){
     await page.locator('[data-reading-size="normal"]').click();
     await el("trackExpected").click();
     await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
+    await checkHeader(page,viewport.width,mobile);
+    if(mobile){await page.setViewportSize({width:320,height:viewport.height});await checkHeader(page,320,true);await page.setViewportSize(viewport);}
     let firstWrong;
     for(let i=0;i<10;i++){
       await visible("quizView");await layout();
