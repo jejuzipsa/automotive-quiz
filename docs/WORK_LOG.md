@@ -1,5 +1,13 @@
 # 자동차정비산업기사 개발·검수 작업 일지
 
+## 2026-11-25 — 자동 출제 적용 및 배포 확인
+
+- PR #61 main 30fc3f94e4004d18e2c099e6d3daff6dbb274d26; Node 45565065208, Pages 45565064708, 실제 배포 Chromium 45565065171 모두 성공.
+- 기본 1,440문항(과목별 360), 추가 예상112/개념48/시연8, 전체1,608. 파일 선택 제거. 제공된 최소 수정본 720개 학습 필드 일치 확인.
+- 현재 지침, 인계, README를 간략한 현재 상태로 정리한다. 아래 기록 및 이전 커밋의 문서는 역사적 이력이며 현재 필수 검수 지침이 아니다.
+- 과거 문서 원문: [AGENTS](https://github.com/jejuzipsa/automotive-quiz/blob/30fc3f94e4004d18e2c099e6d3daff6dbb274d26/AGENTS.md) · [HANDOFF](https://github.com/jejuzipsa/automotive-quiz/blob/30fc3f94e4004d18e2c099e6d3daff6dbb274d26/docs/HANDOFF.md) · [README](https://github.com/jejuzipsa/automotive-quiz/blob/30fc3f94e4004d18e2c099e6d3daff6dbb274d26/README.md).
+- 현재 사용법은 [ROTATION](ROTATION.md). 사이트 기능과 문제 데이터는 이번 정리에서 변경하지 않는다.
+
 ## 사용자 최종 결정 — 2026-11-25 기본 로테이션 자동 출제
 
 - 기존 720 재작성본(82개 수정 포함) + 제공된 최소 표현 수정 720문항을 자동 로딩한다. 첫 화면 과목별 360개, 총 1440개. 파일 선택/업로드/기기별 최초 import는 제거한다.
