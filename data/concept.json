@@ -1907,5 +1907,1110 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-chassis-13",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "운전자가 페달을 밟는 힘을 보조하여 제동력을 확보하기 쉽게 하는 장치는 (    )이다.",
+    "choices": [
+      "브레이크 부스터",
+      "마스터 실린더",
+      "휠 실린더",
+      "ABS 모듈레이터"
+    ],
+    "answer": 1,
+    "explanation": "부스터는 페달 입력력을 증폭하는 역할을 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-02"
+  },
+  {
+    "id": "concept-chassis-14",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "드럼 브레이크에서 드럼의 내면에 눌리는 마찰 부품은 (    )이다.",
+    "choices": [
+      "브레이크 패드",
+      "브레이크 슈",
+      "브레이크 디스크",
+      "캘리퍼"
+    ],
+    "answer": 2,
+    "explanation": "슈의 라이닝이 드럼 내면과 마찰한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-06"
+  },
+  {
+    "id": "concept-chassis-15",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "주차 중 차량이 움직이지 않게 유지하는 제동 장치는 (    )이다.",
+    "choices": [
+      "회생제동",
+      "ABS",
+      "주차 브레이크",
+      "TCS"
+    ],
+    "answer": 3,
+    "explanation": "주차 브레이크는 정차·주차 상태의 차량을 고정한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-07"
+  },
+  {
+    "id": "concept-chassis-16",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향축의 측면 기울기로 직진 안정성과 자기복원 성향에 영향을 주는 각은 (    )이다.",
+    "choices": [
+      "캠버",
+      "토",
+      "킹핀 오프셋",
+      "캐스터"
+    ],
+    "answer": 4,
+    "explanation": "캐스터는 조향의 복원성과 직진 안정성에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-10"
+  },
+  {
+    "id": "concept-chassis-17",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차체 하중을 지지하며 탄성 변형으로 에너지를 저장하고 반환하는 현가 부품은 (    )이다.",
+    "choices": [
+      "스프링",
+      "댐퍼",
+      "타이로드",
+      "차동기어"
+    ],
+    "answer": 1,
+    "explanation": "스프링은 하중 지지와 충격 완화를 담당한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-12"
+  },
+  {
+    "id": "concept-chassis-18",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전하는 휠과 타이어 질량 분포의 불균형을 교정하는 작업은 (    )이다.",
+    "choices": [
+      "토 조정",
+      "휠 밸런스",
+      "캐스터 조정",
+      "조향각 영점 보정"
+    ],
+    "answer": 2,
+    "explanation": "질량 불균형은 속도에 따라 진동을 유발할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-14"
+  },
+  {
+    "id": "concept-chassis-19",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "타이어 공기압 점검의 기본 기준은 제작사가 지정한 (    ) 공기압이다.",
+    "choices": [
+      "열간",
+      "최대 허용",
+      "냉간",
+      "파손 한계"
+    ],
+    "answer": 3,
+    "explanation": "문틀 표시나 사용설명서의 냉간 권장값을 적용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-15"
+  },
+  {
+    "id": "concept-chassis-20",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "타이어 공기압이 부족하면 주행 중 반복 변형에 따른 (    ) 위험이 커진다.",
+    "choices": [
+      "정렬 개선",
+      "감쇠력 증가",
+      "마찰재 두께 증가",
+      "발열"
+    ],
+    "answer": 4,
+    "explanation": "과도한 변형은 열 발생과 손상 가능성을 높인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-17"
+  },
+  {
+    "id": "concept-chassis-21",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "변속을 위해 엔진에서 변속기로 전달되는 토크를 분리하는 부품은 (    )이다.",
+    "choices": [
+      "클러치",
+      "차동장치",
+      "종감속기",
+      "등속 조인트"
+    ],
+    "answer": 1,
+    "explanation": "클러치는 엔진과 변속기 사이 동력 연결을 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-18"
+  },
+  {
+    "id": "concept-chassis-22",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "공기식 현가장치에서 주차 중 한쪽 차고가 내려가면 (    ) 누설 가능성을 살핀다.",
+    "choices": [
+      "연료",
+      "압축공기",
+      "냉매",
+      "배기가스"
+    ],
+    "answer": 2,
+    "explanation": "에어스프링과 공압 배관의 누설은 차고 유지에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q07"
+  },
+  {
+    "id": "concept-chassis-23",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압이 유지되지 않을 때 회로 외부로 유체가 나오지 않아도 발생할 수 있는 현상은 (    )이다.",
+    "choices": [
+      "휠 불균형",
+      "타이어 편마모",
+      "내부 누설",
+      "캐스터 증가"
+    ],
+    "answer": 3,
+    "explanation": "내부 밸브 또는 씰의 누설로 압력이 감소할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q08"
+  },
+  {
+    "id": "concept-chassis-24",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS가 운전자의 조향 입력력을 판단하는 데 사용하는 센서는 (    )이다.",
+    "choices": [
+      "냉각수 온도 센서",
+      "연료압 센서",
+      "산소 센서",
+      "토크 센서"
+    ],
+    "answer": 4,
+    "explanation": "조향 토크를 입력 신호로 이용해 보조력을 계산한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q13"
+  },
+  {
+    "id": "concept-chassis-25",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS의 전기적 제어 명령을 실제 보조력으로 변환하는 부품은 (    )이다.",
+    "choices": [
+      "보조 모터",
+      "조향각 센서",
+      "휠속도 센서",
+      "퓨즈"
+    ],
+    "answer": 1,
+    "explanation": "전동 모터가 조향 보조 토크를 발생시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q18"
+  },
+  {
+    "id": "concept-chassis-26",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자제어 제동장치에서 운전자의 제동 요구량을 파악하는 입력은 (    ) 신호이다.",
+    "choices": [
+      "가속 페달",
+      "브레이크 페달",
+      "연료 레벨",
+      "냉각팬"
+    ],
+    "answer": 2,
+    "explanation": "제동 요구는 브레이크 페달 입력 등으로 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q20"
+  },
+  {
+    "id": "concept-chassis-27",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ATF 교환 주기와 유종은 차량별 (    )을 기준으로 정한다.",
+    "choices": [
+      "타이어 규격",
+      "냉매 충전표",
+      "제작사 정비지침",
+      "배출가스 성적표"
+    ],
+    "answer": 3,
+    "explanation": "변속기 설계 및 가혹 운행 조건에 따라 주기가 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q03"
+  },
+  {
+    "id": "concept-chassis-28",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 2,000rpm, 출력축 회전수 500rpm인 변속기의 입력/출력 변속비는 (    )이다.",
+    "choices": [
+      "1:4",
+      "2:1",
+      "5:1",
+      "4:1"
+    ],
+    "answer": 4,
+    "explanation": "변속비는 2,000÷500=4이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q05"
+  },
+  {
+    "id": "concept-chassis-29",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자제어 현가장치에서 차량의 높이 변화를 파악하는 센서는 (    )이다.",
+    "choices": [
+      "차고 센서",
+      "조향 토크 센서",
+      "레일압 센서",
+      "배기 산소 센서"
+    ],
+    "answer": 1,
+    "explanation": "차고 정보는 차량 높이 제어에 활용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q10"
+  },
+  {
+    "id": "concept-chassis-30",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터 록업 상태 진단에 유용한 회전수 차이는 (    )이다.",
+    "choices": [
+      "엔진 공회전수",
+      "슬립 회전수",
+      "휠 회전수",
+      "캠축 회전수"
+    ],
+    "answer": 2,
+    "explanation": "록업 상태의 슬립은 엔진측과 터빈측의 회전수 비교로 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q03"
+  },
+  {
+    "id": "concept-chassis-31",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압 현가 계통에서 압력에너지를 저장하는 부품은 (    )이다.",
+    "choices": [
+      "조향각 센서",
+      "차동기어",
+      "축압기",
+      "타이로드"
+    ],
+    "answer": 3,
+    "explanation": "축압기는 유압 에너지 저장에 이용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q06"
+  },
+  {
+    "id": "concept-chassis-32",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압이 정해진 조건에 도달했는지를 전기적 접점 신호로 나타내는 부품은 (    )이다.",
+    "choices": [
+      "토크 센서",
+      "회전각 센서",
+      "온도 퓨즈",
+      "압력 스위치"
+    ],
+    "answer": 4,
+    "explanation": "압력 스위치는 유압 조건을 전기 신호로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q08"
+  },
+  {
+    "id": "concept-chassis-33",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자제어 현가장치에서 차체의 수직 운동을 검출하는 입력은 (    ) 센서이다.",
+    "choices": [
+      "가속도",
+      "연료압",
+      "산소",
+      "전류"
+    ],
+    "answer": 1,
+    "explanation": "차체 가속도는 현가 감쇠 제어에 활용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q09"
+  },
+  {
+    "id": "concept-chassis-34",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차체 진동을 줄이기 위한 반능동 현가의 대표적인 감쇠 제어 전략은 (    )이다.",
+    "choices": [
+      "록업 제어",
+      "스카이훅",
+      "슬립 중재",
+      "공연비 피드백"
+    ],
+    "answer": 2,
+    "explanation": "스카이훅은 차체 거동의 진동 저감을 목표로 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q10"
+  },
+  {
+    "id": "concept-chassis-35",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ESC에서 운전자의 조향 의도를 나타내는 입력 중 하나는 (    )이다.",
+    "choices": [
+      "연료압",
+      "변속기 유온",
+      "조향각",
+      "배기가스 온도"
+    ],
+    "answer": 3,
+    "explanation": "조향각을 실제 차체 거동 정보와 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q19"
+  },
+  {
+    "id": "concept-chassis-36",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "제동 유압 회로를 정비한 뒤 회로 안의 공기를 제거하는 작업은 (    )이다.",
+    "choices": [
+      "휠 밸런스",
+      "토 조정",
+      "록업 학습",
+      "공기빼기"
+    ],
+    "answer": 4,
+    "explanation": "공기는 압축되므로 제동 유압 전달에 영향을 준다. 차량 지정 절차를 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q20"
+  },
+  {
+    "id": "concept-chassis-37",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터의 스테이터를 한 방향으로 지지하는 부품은 (    )이다.",
+    "choices": [
+      "일방향 클러치",
+      "건식 마찰 클러치",
+      "차동기어",
+      "싱크로나이저 링"
+    ],
+    "answer": 1,
+    "explanation": "스테이터의 회전 방향을 제어해 유체 흐름을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q03"
+  },
+  {
+    "id": "concept-chassis-38",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터의 유체 슬립을 줄이기 위해 엔진측과 터빈측을 직접 연결하는 부품은 (    )이다.",
+    "choices": [
+      "일방향 클러치",
+      "록업 클러치",
+      "주차 폴",
+      "브레이크 밴드"
+    ],
+    "answer": 2,
+    "explanation": "록업 클러치는 조건에 따라 동력 전달 손실을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q05"
+  },
+  {
+    "id": "concept-chassis-39",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차체를 눌렀다 놓아 반복 흔들림을 관찰하는 시험은 (    )의 보조 진단이다.",
+    "choices": [
+      "변속기",
+      "차동기어",
+      "댐퍼",
+      "브레이크 부스터"
+    ],
+    "answer": 3,
+    "explanation": "반동시험만으로 댐퍼의 모든 성능을 확정하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q06"
+  },
+  {
+    "id": "concept-chassis-40",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차고 센서 연결 링크의 변형은 센서의 (    ) 오차를 일으킬 수 있다.",
+    "choices": [
+      "연료량 신호",
+      "배기 산소 신호",
+      "점화 시기 신호",
+      "위치 신호"
+    ],
+    "answer": 4,
+    "explanation": "링크 기하 관계가 바뀌면 높이 검출값에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q10"
+  },
+  {
+    "id": "concept-chassis-41",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS 경고등이 점등되었다고 하여 일반적인 (    ) 기능이 반드시 사라진 것은 아니다.",
+    "choices": [
+      "유압 제동",
+      "충전",
+      "냉방",
+      "조명"
+    ],
+    "answer": 1,
+    "explanation": "ABS 기능 제한과 일반 제동 기능 상실은 구별한다. 경고 발생 시 점검이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q14"
+  },
+  {
+    "id": "concept-chassis-42",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "댐퍼 피스톤로드의 표면 손상은 (    )을 손상시켜 누유를 일으킬 수 있다.",
+    "choices": [
+      "타이어 비드",
+      "오일 씰",
+      "브레이크 슈",
+      "클러치 허브"
+    ],
+    "answer": 2,
+    "explanation": "로드를 따라 작동하는 씰이 손상되면 오일이 누출될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q16"
+  },
+  {
+    "id": "concept-chassis-43",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기의 ATF 레벨은 제작사가 지정한 (    ) 등 측정 조건에서 확인한다.",
+    "choices": [
+      "점화플러그 간극",
+      "타이어 트레드 깊이",
+      "유체 온도",
+      "냉매 압력"
+    ],
+    "answer": 3,
+    "explanation": "오일은 온도에 따라 체적이 달라져 지정 점검 조건이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q20"
+  },
+  {
+    "id": "concept-chassis-44",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "특정 변속단에서 슬립이 심하면 해당 단을 구성하는 (    )과 유압을 점검한다.",
+    "choices": [
+      "타이어 비드",
+      "차고 센서",
+      "스태빌라이저",
+      "마찰요소"
+    ],
+    "answer": 4,
+    "explanation": "클러치 등 마찰요소가 충분한 토크를 전달하는지 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q01"
+  },
+  {
+    "id": "concept-chassis-45",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "엔진측 1,800rpm, 터빈측 1,650rpm일 때 양의 슬립 회전수는 (    )이다.",
+    "choices": [
+      "150rpm",
+      "1,650rpm",
+      "1,800rpm",
+      "3,450rpm"
+    ],
+    "answer": 1,
+    "explanation": "두 회전수의 차는 1,800−1,650=150rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q03"
+  },
+  {
+    "id": "concept-chassis-46",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링에서 작용력 F와 변위 x로 스프링 상수 k를 나타내면 (    )이다.",
+    "choices": [
+      "F×x",
+      "F/x",
+      "x/F",
+      "F+x"
+    ],
+    "answer": 2,
+    "explanation": "선형 탄성 범위에서는 힘과 변위의 비가 스프링 상수다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q08"
+  },
+  {
+    "id": "concept-chassis-47",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "공기식 현가장치에서 압축공기를 공급하는 부품은 (    )이다.",
+    "choices": [
+      "쇼크 업소버",
+      "마스터 실린더",
+      "에어 컴프레서",
+      "토크 센서"
+    ],
+    "answer": 3,
+    "explanation": "압축기가 공압 현가에 필요한 공기를 공급한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q10"
+  },
+  {
+    "id": "concept-chassis-48",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "양의 캐스터가 증가하면 일반적으로 조향의 (    )이 커지는 경향이 있다.",
+    "choices": [
+      "브레이크 유압",
+      "변속 충격",
+      "회생 전력",
+      "자기복원력"
+    ],
+    "answer": 4,
+    "explanation": "캐스터는 직진 안정성과 복원 성향에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q13"
+  },
+  {
+    "id": "concept-chassis-49",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "타이로드 교환 후 우선 기계적으로 확인해야 할 휠 얼라인먼트 항목은 (    )이다.",
+    "choices": [
+      "토",
+      "휠 밸런스",
+      "타이어 하중 지수",
+      "브레이크 디스크 두께"
+    ],
+    "answer": 1,
+    "explanation": "타이로드 길이는 바퀴의 토 정렬에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q18"
+  },
+  {
+    "id": "concept-chassis-50",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "일부 EPB 장착 차량의 패드 정비에 사용하는 지정 제어 상태는 (    )이다.",
+    "choices": [
+      "크루즈 모드",
+      "정비 모드",
+      "회생 모드",
+      "급속 충전 모드"
+    ],
+    "answer": 2,
+    "explanation": "차종별 EPB 정비 모드 및 안전 절차가 필요할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q19"
+  },
+  {
+    "id": "concept-chassis-51",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차량의 실제 수직축 회전 각속도를 나타내는 ESC 입력은 (    )이다.",
+    "choices": [
+      "캐스터",
+      "토인",
+      "요레이트",
+      "스프링 상수"
+    ],
+    "answer": 3,
+    "explanation": "요레이트는 차량이 회전하는 빠르기를 나타낸다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q20"
+  },
+  {
+    "id": "concept-chassis-52",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 변속 시점을 결정할 때 운전자의 가속 요구와 함께 활용되는 주요 입력은 (    )이다.",
+    "choices": [
+      "타이어 하중 지수",
+      "브레이크 패드 두께",
+      "냉매 종류",
+      "차속"
+    ],
+    "answer": 4,
+    "explanation": "변속 제어는 차속, 가속 요구, 유온 등 운전 조건에 대응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q05"
+  },
+  {
+    "id": "concept-chassis-53",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "솔레노이드 회로의 비정상적으로 높은 저항을 확인할 때 구동부 내부의 (    )도 점검 대상이다.",
+    "choices": [
+      "코일",
+      "드럼",
+      "기어 치면",
+      "스프링 시트"
+    ],
+    "answer": 1,
+    "explanation": "코일 자체 저항과 배선·접점 저항을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q10"
+  },
+  {
+    "id": "concept-chassis-54",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "별도 전원 공급이 필요한 휠속도 센서의 한 분류는 (    )형이다.",
+    "choices": [
+      "패시브 유도",
+      "액티브",
+      "기계식",
+      "진공식"
+    ],
+    "answer": 2,
+    "explanation": "액티브 센서와 수동 유도형 센서는 전원·출력 방식이 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q15"
+  },
+  {
+    "id": "concept-chassis-55",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기의 P/N 위치에서 시동 허용과 변속 위치 정보를 제공하는 장치는 (    )이다.",
+    "choices": [
+      "록업 클러치",
+      "웨이스트게이트",
+      "레인지 스위치",
+      "조향 토크 센서"
+    ],
+    "answer": 3,
+    "explanation": "인히비터 또는 레인지 스위치가 위치 정보를 제공한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q16"
+  },
+  {
+    "id": "concept-chassis-56",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스트럿 상단의 차체 연결 및 지지 부품은 (    )이다.",
+    "choices": [
+      "브레이크 슈",
+      "등속 조인트",
+      "스테이터",
+      "어퍼 마운트"
+    ],
+    "answer": 4,
+    "explanation": "상부 덜컹거림은 어퍼 마운트와 베어링 등을 점검한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q17"
+  },
+  {
+    "id": "concept-chassis-57",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "휠 베어링 교환 후 ABS 신호 이상 시 센서가 읽는 회전 신호원인 (    )를 확인한다.",
+    "choices": [
+      "엔코더",
+      "클러치 디스크",
+      "마스터 실린더",
+      "스프링 시트"
+    ],
+    "answer": 1,
+    "explanation": "엔코더와 센서의 설치 상태는 휠속도 신호에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q18"
+  },
+  {
+    "id": "concept-chassis-58",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차량이 한쪽으로 쏠리는 증상을 진단할 때 타이어·제동과 함께 바퀴의 (    ) 상태를 확인한다.",
+    "choices": [
+      "냉매 충전",
+      "정렬",
+      "연료 분무",
+      "점화 위상"
+    ],
+    "answer": 2,
+    "explanation": "휠 얼라인먼트의 불균형은 편향 주행의 원인 중 하나다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q04"
+  },
+  {
+    "id": "concept-chassis-59",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "같은 부호 기준에서 좌측 토가 +0.10°, 우측 토가 −0.03°라면 전체 토는 (    )이다.",
+    "choices": [
+      "+0.13°",
+      "−0.07°",
+      "+0.07°",
+      "−0.13°"
+    ],
+    "answer": 3,
+    "explanation": "좌우 개별 토의 합은 +0.10−0.03=+0.07°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-60",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "수동 유도형 휠속도 센서는 회전에 따라 일반적으로 (    ) 신호를 발생시킨다.",
+    "choices": [
+      "고정 직류",
+      "유압",
+      "공압",
+      "교류"
+    ],
+    "answer": 4,
+    "explanation": "회전에 따른 자속 변화가 유도전압을 발생시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q11"
+  },
+  {
+    "id": "concept-chassis-61",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 40펄스 센서가 초당 5회 회전할 때 출력 주파수는 (    )이다.",
+    "choices": [
+      "200Hz",
+      "8Hz",
+      "40Hz",
+      "2,000Hz"
+    ],
+    "answer": 1,
+    "explanation": "40×5=200펄스/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q12"
+  },
+  {
+    "id": "concept-chassis-62",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 40펄스, 주파수 200Hz, 유효 구름둘레 2m인 바퀴의 속력은 (    )이다.",
+    "choices": [
+      "5m/s",
+      "10m/s",
+      "20m/s",
+      "40m/s"
+    ],
+    "answer": 2,
+    "explanation": "200÷40×2=10m/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q20"
+  },
+  {
+    "id": "concept-chassis-63",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가장치의 기계적 구조 형식과 별개로 전자식 가변 댐퍼가 제어하는 물리량은 (    )이다.",
+    "choices": [
+      "타이어 반지름",
+      "종감속비",
+      "감쇠력",
+      "캐스터 각"
+    ],
+    "answer": 3,
+    "explanation": "전자제어 여부는 댐퍼의 제어 특성과 관계된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q05"
+  },
+  {
+    "id": "concept-chassis-64",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차고 센서 보정은 지정 하중과 타이어 조건 외에 (    )한 지면이 필요하다.",
+    "choices": [
+      "경사",
+      "요철",
+      "미끄러운",
+      "평탄"
+    ],
+    "answer": 4,
+    "explanation": "차량 높이 기준을 일관되게 측정하기 위한 조건이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q06"
+  },
+  {
+    "id": "concept-chassis-65",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 상보형 EPS 센서 두 출력의 합이 5V이고 한 출력이 1.8V이면 다른 출력은 (    )이다.",
+    "choices": [
+      "3.2V",
+      "1.8V",
+      "5.0V",
+      "6.8V"
+    ],
+    "answer": 1,
+    "explanation": "주어진 합계 조건에서 5−1.8=3.2V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q08"
+  },
+  {
+    "id": "concept-chassis-66",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 모터의 과전류 보호 제어는 조향 보조 출력을 (    )할 수 있다.",
+    "choices": [
+      "무조건 최대화",
+      "제한",
+      "영구 고정",
+      "반드시 증가"
+    ],
+    "answer": 2,
+    "explanation": "과전류 시 모터와 제어회로의 보호가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q15"
+  },
+  {
+    "id": "concept-chassis-67",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상적인 선형 댐퍼에서 감쇠력 600N, 운동 속도 0.3m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "180N·s/m",
+      "600N·s/m",
+      "2,000N·s/m",
+      "20N·s/m"
+    ],
+    "answer": 3,
+    "explanation": "c=F/v=600÷0.3=2,000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q17"
+  },
+  {
+    "id": "concept-chassis-68",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가스식 댐퍼에서 가스 가압의 역할 중 하나는 작동유의 (    ) 억제이다.",
+    "choices": [
+      "응고",
+      "완전 증발",
+      "전기 분해",
+      "발포"
+    ],
+    "answer": 4,
+    "explanation": "가스 가압은 작동유 거품 발생을 줄이는 데 도움을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q04"
+  },
+  {
+    "id": "concept-chassis-69",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS가 유압식 조향장치와 달리 조향 보조력을 얻는 주요 동력원은 (    )이다.",
+    "choices": [
+      "전동 모터",
+      "엔진 구동 유압펌프",
+      "배기 터빈",
+      "브레이크 부스터"
+    ],
+    "answer": 1,
+    "explanation": "EPS는 전기적 구동으로 조향을 보조한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q07"
+  },
+  {
+    "id": "concept-chassis-70",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "12V 전원을 사용하는 가상 EPS 모터 회로에 25A가 흐를 때 전기 입력 전력은 (    )이다.",
+    "choices": [
+      "37W",
+      "300W",
+      "0.48W",
+      "3,000W"
+    ],
+    "answer": 2,
+    "explanation": "P=VI=12×25=300W이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-71",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "지문에서 정의한 유압식 ABS 감압 단계에서 휠 실린더 압력은 (    )한다.",
+    "choices": [
+      "증가",
+      "일정",
+      "감소",
+      "대기압으로 즉시 고정"
+    ],
+    "answer": 3,
+    "explanation": "공급을 차단하고 저압측 유로를 개방해 휠 압력을 낮춘다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q15"
+  },
+  {
+    "id": "concept-chassis-72",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS가 정상적으로 제동압을 반복 조절할 때 페달에서 느껴질 수 있는 현상은 (    )이다.",
+    "choices": [
+      "지속적인 완전 고정",
+      "냉각수 분출",
+      "변속 레버 잠김",
+      "진동"
+    ],
+    "answer": 4,
+    "explanation": "유압 변조에 따라 페달 맥동이 느껴질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q17"
+  },
+  {
+    "id": "concept-chassis-73",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상적 유압 장치에서 입력 면적 3cm², 출력 면적 12cm², 입력력 150N이면 출력력은 (    )이다.",
+    "choices": [
+      "600N",
+      "450N",
+      "37.5N",
+      "1,800N"
+    ],
+    "answer": 1,
+    "explanation": "같은 압력에서 힘은 면적에 비례하므로 150×12÷3=600N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-74",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링에 400N의 힘으로 0.02m 변위가 생기면 스프링 상수는 (    )이다.",
+    "choices": [
+      "8N/m",
+      "20,000N/m",
+      "200N/m",
+      "400N/m"
+    ],
+    "answer": 2,
+    "explanation": "k=400÷0.02=20,000N/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-75",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차속 20m/s를 km/h로 환산하면 (    )이다.",
+    "choices": [
+      "56km/h",
+      "36km/h",
+      "72km/h",
+      "7.2km/h"
+    ],
+    "answer": 3,
+    "explanation": "1m/s=3.6km/h이므로 20×3.6=72이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-76",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "주어진 슬립률 정의가 (기준 회전수−실제 회전수)/기준 회전수×100일 때 2,000rpm과 1,800rpm의 슬립률은 (    )이다.",
+    "choices": [
+      "20%",
+      "90%",
+      "11.1%",
+      "10%"
+    ],
+    "answer": 4,
+    "explanation": "200÷2,000×100=10%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-77",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "반지름 0.2m인 조향휠에 수직으로 30N을 가하면 토크는 (    )이다.",
+    "choices": [
+      "6N·m",
+      "1.5N·m",
+      "30N·m",
+      "150N·m"
+    ],
+    "answer": 1,
+    "explanation": "토크는 힘×수직 반지름=30×0.2이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
   }
 ]
