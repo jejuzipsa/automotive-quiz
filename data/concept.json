@@ -4151,5 +4151,1246 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r09-s03-q17"
+  },
+  {
+    "id": "concept-eco-13",
+    "track": "concept",
+    "subject": "eco",
+    "question": "내연기관 없이 구동 배터리와 전동모터로 주행하는 자동차의 약칭은 (    )이다.",
+    "choices": [
+      "BEV",
+      "PHEV",
+      "HEV",
+      "FCEV"
+    ],
+    "answer": 1,
+    "explanation": "BEV는 고전압 배터리 전력으로 구동 전동기를 작동시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-01"
+  },
+  {
+    "id": "concept-eco-14",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전식 배터리가 전기에너지를 저장하는 기본 원리는 (    ) 반응이다.",
+    "choices": [
+      "핵분열",
+      "전기화학",
+      "열기관 연소",
+      "전자기 유도"
+    ],
+    "answer": 2,
+    "explanation": "충전식 배터리는 전기화학 반응으로 에너지를 저장하고 방전한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-02"
+  },
+  {
+    "id": "concept-eco-15",
+    "track": "concept",
+    "subject": "eco",
+    "question": "일반적인 DC 급속충전에서 교류를 직류로 변환하는 주체는 (    )이다.",
+    "choices": [
+      "차량의 구동 모터",
+      "차량의 차동기어",
+      "외부 충전 설비",
+      "차량의 감속기"
+    ],
+    "answer": 3,
+    "explanation": "DC 충전 설비에서 변환한 직류를 배터리 충전에 공급한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-07"
+  },
+  {
+    "id": "concept-eco-16",
+    "track": "concept",
+    "subject": "eco",
+    "question": "많은 전기차에서 고전압 케이블을 식별하기 위해 사용하는 대표적인 피복 색은 (    )이다.",
+    "choices": [
+      "검은색",
+      "흰색",
+      "녹색",
+      "주황색"
+    ],
+    "answer": 4,
+    "explanation": "색상은 식별용이며 무전압 여부를 증명하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-13"
+  },
+  {
+    "id": "concept-eco-17",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 회로와 차체 사이 전기적 분리 상태를 확인하는 지표는 (    )이다.",
+    "choices": [
+      "절연저항",
+      "타이어 구름저항",
+      "모터 회전수",
+      "브레이크압"
+    ],
+    "answer": 1,
+    "explanation": "고전압 절연 감시는 누설과 감전 위험을 파악하기 위한 기능이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-16"
+  },
+  {
+    "id": "concept-eco-18",
+    "track": "concept",
+    "subject": "eco",
+    "question": "내연기관과 전기모터를 함께 활용하지만 반드시 외부 충전을 요구하지 않는 대표 차량 분류는 (    )이다.",
+    "choices": [
+      "BEV",
+      "HEV",
+      "FCEV",
+      "ICE 단독 차량"
+    ],
+    "answer": 2,
+    "explanation": "일반 HEV는 내연기관과 전기구동을 조합한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-17"
+  },
+  {
+    "id": "concept-eco-19",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS가 충전 상태와 온도에 따라 배터리를 보호하기 위해 제한할 수 있는 물리량은 충전 (    )이다.",
+    "choices": [
+      "타이어 직경",
+      "차체 길이",
+      "전류",
+      "스프링 상수"
+    ],
+    "answer": 3,
+    "explanation": "충전 허용전류는 온도와 SOC 등 보호 조건에 따라 달라질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-20"
+  },
+  {
+    "id": "concept-eco-20",
+    "track": "concept",
+    "subject": "eco",
+    "question": "100km당 16kWh를 일정하게 소비하는 전기차가 50km 주행할 때 소비에너지는 (    )이다.",
+    "choices": [
+      "16kWh",
+      "32kWh",
+      "50kWh",
+      "8kWh"
+    ],
+    "answer": 4,
+    "explanation": "16×50÷100=8kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-21",
+    "track": "concept",
+    "subject": "eco",
+    "question": "실제 저장 전력이 일정하게 5kW인 배터리를 4시간 충전하면 저장 에너지 증가량은 (    )이다.",
+    "choices": [
+      "20kWh",
+      "5kWh",
+      "9kWh",
+      "1.25kWh"
+    ],
+    "answer": 1,
+    "explanation": "저장 에너지 증가량은 실제 저장 전력×시간이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-22",
+    "track": "concept",
+    "subject": "eco",
+    "question": "저장 에너지 60kWh, 질량 300kg인 팩의 질량당 에너지 밀도는 (    )이다.",
+    "choices": [
+      "20Wh/kg",
+      "200Wh/kg",
+      "180Wh/kg",
+      "2,000Wh/kg"
+    ],
+    "answer": 2,
+    "explanation": "60,000Wh÷300kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-23",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 25kW, 효율 96%인 전력변환장치의 출력은 (    )이다.",
+    "choices": [
+      "1kW",
+      "25kW",
+      "24kW",
+      "26kW"
+    ],
+    "answer": 3,
+    "explanation": "출력은 25×0.96=24kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-24",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속 과정에서 감소한 운동에너지가 250kJ이고 저장 효율이 40%라면 회수 에너지는 (    )이다.",
+    "choices": [
+      "150kJ",
+      "250kJ",
+      "625kJ",
+      "100kJ"
+    ],
+    "answer": 4,
+    "explanation": "250×0.40=100kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-25",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 산소의 환원 반응이 일어나는 전극은 (    )이다.",
+    "choices": [
+      "캐소드",
+      "애노드",
+      "분리판",
+      "전해질막"
+    ],
+    "answer": 1,
+    "explanation": "캐소드에서 산소와 양성자, 전자가 반응해 물을 만든다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-26"
+  },
+  {
+    "id": "concept-eco-26",
+    "track": "concept",
+    "subject": "eco",
+    "question": "유지와 메탄올의 전이에스터화로 바이오디젤을 생산할 때 발생하는 부산물은 (    )이다.",
+    "choices": [
+      "프로판",
+      "글리세롤",
+      "질소",
+      "에틸렌"
+    ],
+    "answer": 2,
+    "explanation": "지방산 메틸에스터와 글리세롤이 생성된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-27"
+  },
+  {
+    "id": "concept-eco-27",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전압 0.7V인 연료전지 단위 셀 200개를 직렬 연결하면 합계 전압은 (    )이다.",
+    "choices": [
+      "20V",
+      "200V",
+      "140V",
+      "285.7V"
+    ],
+    "answer": 3,
+    "explanation": "직렬 전압은 각 셀 전압의 합이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-28",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 작업용 절연장갑을 선택할 때 해당 회로와 대조하는 보호구의 핵심 사양은 (    )이다.",
+    "choices": [
+      "표면 색상",
+      "충전 효율",
+      "타이어 속도 등급",
+      "전압 등급"
+    ],
+    "answer": 4,
+    "explanation": "절연 보호구는 정격과 상태가 작업 조건에 적합해야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q01"
+  },
+  {
+    "id": "concept-eco-29",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 모터의 높은 회전속도를 바퀴에 적합한 속도로 낮추는 기계 장치는 (    )이다.",
+    "choices": [
+      "감속기",
+      "인버터",
+      "컨택터",
+      "OBC"
+    ],
+    "answer": 1,
+    "explanation": "모터의 회전력은 감속기와 차동장치를 거쳐 바퀴로 전달된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q07"
+  },
+  {
+    "id": "concept-eco-30",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고압 수소 저장용기에 수소를 공급할 때 유동을 만드는 기본적인 물리적 조건은 (    )이다.",
+    "choices": [
+      "전압 차이",
+      "압력 차이",
+      "절연저항 차이",
+      "모터 위상차"
+    ],
+    "answer": 2,
+    "explanation": "충전 설비는 압력 차와 온도 등 조건을 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q09"
+  },
+  {
+    "id": "concept-eco-31",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 수소가 산화되는 전극은 (    )이다.",
+    "choices": [
+      "캐소드",
+      "전해질막",
+      "애노드",
+      "분리판"
+    ],
+    "answer": 3,
+    "explanation": "애노드에서 수소가 양성자와 전자로 분리된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q10"
+  },
+  {
+    "id": "concept-eco-32",
+    "track": "concept",
+    "subject": "eco",
+    "question": "바이오디젤 제조에 쓰이는 대표 원료는 (    )이다.",
+    "choices": [
+      "프로판",
+      "압축수소",
+      "광물성 냉매",
+      "식물성 유지"
+    ],
+    "answer": 4,
+    "explanation": "유지류를 화학적으로 전환해 바이오디젤을 만들 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q11"
+  },
+  {
+    "id": "concept-eco-33",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 운행 조건에서 배터리 가용 용량이 감소하면 주행 가능 거리는 (    )하는 경향이 있다.",
+    "choices": [
+      "감소",
+      "증가",
+      "항상 일정",
+      "두 배 증가"
+    ],
+    "answer": 1,
+    "explanation": "같은 거리당 에너지 소비라면 가용 에너지가 적을수록 주행 거리가 짧아진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q12"
+  },
+  {
+    "id": "concept-eco-34",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리의 실제 열화 상태를 파악하는 지표는 배선 회로도가 아니라 (    )이다.",
+    "choices": [
+      "차속",
+      "SOH",
+      "조향각",
+      "냉매압"
+    ],
+    "answer": 2,
+    "explanation": "SOH는 배터리 건전 상태를 나타내며 회로도는 연결 구조를 나타낸다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q15"
+  },
+  {
+    "id": "concept-eco-35",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 전원을 차단한 뒤 안전 상태를 별도로 검증하는 필수 단계는 (    )이다.",
+    "choices": [
+      "색상 확인만",
+      "고장코드 삭제",
+      "무전압 확인",
+      "조향각 학습"
+    ],
+    "answer": 3,
+    "explanation": "고전압 차단과 무전압 검증은 서로 다른 단계다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q16"
+  },
+  {
+    "id": "concept-eco-36",
+    "track": "concept",
+    "subject": "eco",
+    "question": "직렬 배터리 셀 사이의 충전상태나 전압 편차를 줄이는 BMS 기능은 (    )이다.",
+    "choices": [
+      "전압 정류",
+      "PWM 송풍 제어",
+      "차량 토 조정",
+      "셀 밸런싱"
+    ],
+    "answer": 4,
+    "explanation": "셀 밸런싱은 셀 간 불균형을 완화한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q07"
+  },
+  {
+    "id": "concept-eco-37",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 용기가 과도한 열에 노출될 때 열에 의해 작동하는 안전방출장치는 (    )이다.",
+    "choices": [
+      "TPRD",
+      "OBC",
+      "HVIL",
+      "BMS"
+    ],
+    "answer": 1,
+    "explanation": "TPRD는 열 작동식 압력 방출장치다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q09"
+  },
+  {
+    "id": "concept-eco-38",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기모터의 전기적 상태 검사에서 코일 자체의 상태와 관련된 부위는 (    )이다.",
+    "choices": [
+      "감속기 기어",
+      "권선",
+      "타이어 트레드",
+      "차동기어"
+    ],
+    "answer": 2,
+    "explanation": "모터 권선과 절연, 연결 배선을 구분해 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q13"
+  },
+  {
+    "id": "concept-eco-39",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 연결부의 체결·연결 무결성을 저전압 루프로 감시하는 장치는 (    )이다.",
+    "choices": [
+      "OBC",
+      "TCS",
+      "HVIL",
+      "TPMS"
+    ],
+    "answer": 3,
+    "explanation": "HVIL은 연결부 감시에 사용하며 무전압 검증을 대체하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q15"
+  },
+  {
+    "id": "concept-eco-40",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 모터 제어에서 회전력의 크기를 나타내는 물리량은 (    )이다.",
+    "choices": [
+      "공연비",
+      "압축비",
+      "차압",
+      "토크"
+    ],
+    "answer": 4,
+    "explanation": "모터 제어는 운전자 요구 등에 따라 토크와 속도를 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q17"
+  },
+  {
+    "id": "concept-eco-41",
+    "track": "concept",
+    "subject": "eco",
+    "question": "차량의 전기 구동 관련 제어를 통합·조정하는 제어장치는 (    )이다.",
+    "choices": [
+      "EVCU",
+      "DPF",
+      "EVAP",
+      "TCC"
+    ],
+    "answer": 1,
+    "explanation": "EVCU는 전기차 구동 제어를 조정한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q05"
+  },
+  {
+    "id": "concept-eco-42",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 작업 시 단락 및 감전 위험을 줄이기 위해 제거하는 개인 물품은 (    )이다.",
+    "choices": [
+      "절연 보호구",
+      "금속 장신구",
+      "안전 표지",
+      "규정된 계측기"
+    ],
+    "answer": 2,
+    "explanation": "도전성 장신구는 고전압 작업에 위험을 더할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q06"
+  },
+  {
+    "id": "concept-eco-43",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 회로의 절연 상태를 제작사 지정 시험 조건에서 평가하는 계측기는 (    )이다.",
+    "choices": [
+      "타이밍 라이트",
+      "휠 밸런서",
+      "절연저항계",
+      "냉매 게이지"
+    ],
+    "answer": 3,
+    "explanation": "시험 전압과 회로 조건에 맞는 절연저항계를 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q08"
+  },
+  {
+    "id": "concept-eco-44",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 누출 여부를 감지하는 전용 검출 장비의 핵심 부품은 (    )이다.",
+    "choices": [
+      "휠속도 센서",
+      "산소 센서",
+      "레인 센서",
+      "수소 가스 센서"
+    ],
+    "answer": 4,
+    "explanation": "수소 전용 센서를 사용해 누출 위험을 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q09"
+  },
+  {
+    "id": "concept-eco-45",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지의 전기화학 반응에서 생성되는 주된 물질은 (    )이다.",
+    "choices": [
+      "물",
+      "메탄",
+      "일산화탄소",
+      "탄화수소"
+    ],
+    "answer": 1,
+    "explanation": "수소와 산소의 반응으로 물과 전기, 열이 생성된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q10"
+  },
+  {
+    "id": "concept-eco-46",
+    "track": "concept",
+    "subject": "eco",
+    "question": "바이오연료의 온실가스 감축 효과를 생산부터 사용까지 평가하는 방식은 (    )이다.",
+    "choices": [
+      "배기 압축시험",
+      "전과정 평가",
+      "휠 얼라인먼트",
+      "냉매 누설시험"
+    ],
+    "answer": 2,
+    "explanation": "원료 생산과 가공 등 전체 과정에 따라 효과가 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q11"
+  },
+  {
+    "id": "concept-eco-47",
+    "track": "concept",
+    "subject": "eco",
+    "question": "구동 인버터의 열 상태를 관리하는 기능은 전력 변환과 별도의 (    ) 계통이다.",
+    "choices": [
+      "배기 정화",
+      "연료 분사",
+      "냉각",
+      "주차 제동"
+    ],
+    "answer": 3,
+    "explanation": "인버터 성능과 보호를 위해 냉각 및 제어 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q13"
+  },
+  {
+    "id": "concept-eco-48",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리가 회생제동 에너지를 받아들일 수 있는 양은 BMS의 충전 (    )에 따라 제한될 수 있다.",
+    "choices": [
+      "타이어 접지폭",
+      "캐스터 각",
+      "브레이크 디스크 직경",
+      "허용전력"
+    ],
+    "answer": 4,
+    "explanation": "SOC와 온도에 따른 충전 수용 한계가 회생제동량에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q17"
+  },
+  {
+    "id": "concept-eco-49",
+    "track": "concept",
+    "subject": "eco",
+    "question": "SOC가 지나치게 낮을 때 배터리 보호를 위해 BMS가 제한할 수 있는 것은 구동 (    )이다.",
+    "choices": [
+      "출력",
+      "타이어 공기압",
+      "차체 높이",
+      "조향각"
+    ],
+    "answer": 1,
+    "explanation": "방전 하한 보호에 따라 구동 전력이 제한될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q02"
+  },
+  {
+    "id": "concept-eco-50",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 절연장갑의 구멍이나 누설을 확인하는 검사 중 하나는 (    )이다.",
+    "choices": [
+      "냉매 압력 검사",
+      "공기 누설 검사",
+      "차속 검사",
+      "연료 분무 검사"
+    ],
+    "answer": 2,
+    "explanation": "육안 확인 및 규정된 누설·유효시험 상태를 점검한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q07"
+  },
+  {
+    "id": "concept-eco-51",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 모듈 교체 후 모듈 간 (    ) 상태를 확인하는 이유는 불균형을 줄이기 위해서다.",
+    "choices": [
+      "타이어 마모 균형",
+      "휠 밸런스",
+      "전압 균형",
+      "제동력 배분"
+    ],
+    "answer": 3,
+    "explanation": "모듈 전압과 BMS 관리 및 절연 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q09"
+  },
+  {
+    "id": "concept-eco-52",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 캐소드에 필요한 산소를 포함한 공기를 공급하는 대표 구동 부품은 (    )이다.",
+    "choices": [
+      "수소 감압기",
+      "구동 감속기",
+      "배터리 컨택터",
+      "공기 압축기"
+    ],
+    "answer": 4,
+    "explanation": "공기 압축기는 스택에 필요한 공기 공급을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q12"
+  },
+  {
+    "id": "concept-eco-53",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의할 때 48kWh/60kWh의 SOH는 (    )이다.",
+    "choices": [
+      "80%",
+      "75%",
+      "125%",
+      "12%"
+    ],
+    "answer": 1,
+    "explanation": "48÷60×100=80%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-54",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 전해질막의 양성자 전도성 유지를 위해 중요한 관리 요소는 (    )이다.",
+    "choices": [
+      "엔진오일 점도",
+      "막 수분",
+      "변속비",
+      "타이어 온도"
+    ],
+    "answer": 2,
+    "explanation": "적절한 막 가습과 물 배출을 관리해야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q15"
+  },
+  {
+    "id": "concept-eco-55",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 고압 충전 시 공급 압력 외에 충전 안전·제어에 영향을 미치는 저장용기 상태량은 (    )이다.",
+    "choices": [
+      "외부 조도",
+      "조향각",
+      "온도",
+      "타이어 편마모"
+    ],
+    "answer": 3,
+    "explanation": "수소 충전은 저장용기의 압력과 온도 조건을 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q16"
+  },
+  {
+    "id": "concept-eco-56",
+    "track": "concept",
+    "subject": "eco",
+    "question": "인버터 과전류가 감지될 때 보호 제어가 수행할 수 있는 조치는 (    )이다.",
+    "choices": [
+      "충전전압 무조건 상승",
+      "배터리 강제 직결",
+      "모터 최대토크 고정",
+      "출력 제한"
+    ],
+    "answer": 4,
+    "explanation": "과전류 보호는 출력 제한이나 정지로 장치를 보호할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q19"
+  },
+  {
+    "id": "concept-eco-57",
+    "track": "concept",
+    "subject": "eco",
+    "question": "유지에서 지방산 에스터를 만들어 바이오디젤을 생산하는 화학 반응은 (    )이다.",
+    "choices": [
+      "전이에스터화",
+      "전기분해",
+      "수소 압축",
+      "암모니아 환원"
+    ],
+    "answer": 1,
+    "explanation": "전이에스터화는 유지와 알코올을 반응시켜 에스터를 생성한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q20"
+  },
+  {
+    "id": "concept-eco-58",
+    "track": "concept",
+    "subject": "eco",
+    "question": "엔진이 정지한 상태에서도 전기를 사용해 냉방을 유지할 수 있는 부품은 (    )이다.",
+    "choices": [
+      "벨트 구동 압축기",
+      "전동 컴프레서",
+      "배기 터빈",
+      "연료 펌프"
+    ],
+    "answer": 2,
+    "explanation": "전동 압축기는 엔진의 직접 구동과 독립적으로 작동 가능하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q02"
+  },
+  {
+    "id": "concept-eco-59",
+    "track": "concept",
+    "subject": "eco",
+    "question": "하이브리드 가속 보조 시 구동모터가 추가하는 물리량은 (    )이다.",
+    "choices": [
+      "배기 산소량",
+      "엔진 압축비",
+      "구동 토크",
+      "냉각수 체적"
+    ],
+    "answer": 3,
+    "explanation": "배터리 전력을 활용해 모터 토크를 더할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q05"
+  },
+  {
+    "id": "concept-eco-60",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 팩의 세 셀 가용 용량이 각각 40Ah, 38Ah, 35Ah라면 동일 조건에서 팩 용량을 제한하는 셀의 가용량은 (    )이다.",
+    "choices": [
+      "38Ah",
+      "40Ah",
+      "113Ah",
+      "35Ah"
+    ],
+    "answer": 4,
+    "explanation": "직렬 연결에서 가용 전하량은 가장 작은 셀 용량의 제한을 받는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-61",
+    "track": "concept",
+    "subject": "eco",
+    "question": "파워스플릿형 하이브리드에서 엔진·발전기·구동계의 동력을 분기하는 기계 장치는 (    )이다.",
+    "choices": [
+      "동력분기장치",
+      "팽창밸브",
+      "ABS 모듈레이터",
+      "웨이스트게이트"
+    ],
+    "answer": 1,
+    "explanation": "동력분기장치는 여러 구동원의 동력 경로를 연계한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q12"
+  },
+  {
+    "id": "concept-eco-62",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기모터 회전자의 위치를 사인·코사인 신호 등으로 검출하는 센서는 (    )이다.",
+    "choices": [
+      "MAF",
+      "리졸버",
+      "노크 센서",
+      "압력 스위치"
+    ],
+    "answer": 2,
+    "explanation": "리졸버 피드백은 회전자 위치와 속도 추정에 쓰인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q13"
+  },
+  {
+    "id": "concept-eco-63",
+    "track": "concept",
+    "subject": "eco",
+    "question": "저온 배터리의 충전속도가 제한되는 경우 BMS가 고려하는 주요 상태량은 (    )이다.",
+    "choices": [
+      "냉매 종류",
+      "타이어 하중 지수",
+      "배터리 온도",
+      "차고"
+    ],
+    "answer": 3,
+    "explanation": "낮은 배터리 온도는 충전 허용전류에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q14"
+  },
+  {
+    "id": "concept-eco-64",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지차에서 순간 구동전력 보조 및 회생 에너지 저장에 사용하는 전력 저장 부품은 (    )이다.",
+    "choices": [
+      "수소 감압기",
+      "공기 압축기",
+      "연료전지 분리판",
+      "보조 구동 배터리"
+    ],
+    "answer": 4,
+    "explanation": "구동 배터리는 스택의 출력 변동을 보완하고 회생 에너지를 저장할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q15"
+  },
+  {
+    "id": "concept-eco-65",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차의 12V 전원계통 충전 이상 시 출력 전압을 확인할 전력변환장치는 (    )이다.",
+    "choices": [
+      "LDC",
+      "OBC",
+      "구동 인버터",
+      "연료전지 스택"
+    ],
+    "answer": 1,
+    "explanation": "LDC는 저전압 보조전원 계통에 전력을 공급한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q18"
+  },
+  {
+    "id": "concept-eco-66",
+    "track": "concept",
+    "subject": "eco",
+    "question": "모터 회전자의 공극 편심과 관련해 나타날 수 있는 주기적 회전력 변동은 (    )이다.",
+    "choices": [
+      "냉매 과냉각",
+      "토크 맥동",
+      "타이어 수막현상",
+      "유압 캐비테이션"
+    ],
+    "answer": 2,
+    "explanation": "모터의 전자기적 불균형은 토크 변동의 원인 후보가 될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q02"
+  },
+  {
+    "id": "concept-eco-67",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회로를 삽입형 계기로 끊지 않고 정격에 맞는 직류 전류를 검출하는 계측기 유형은 (    )이다.",
+    "choices": [
+      "압축압력 게이지",
+      "저항계",
+      "DC 클램프 전류계",
+      "냉매 회수기"
+    ],
+    "answer": 3,
+    "explanation": "고전압 전류 측정은 정격 장비와 지정 절차가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q06"
+  },
+  {
+    "id": "concept-eco-68",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 전원 회로에서 과전류에 의해 회로를 보호하는 소모성 보호 부품은 (    )이다.",
+    "choices": [
+      "리졸버",
+      "열교환기",
+      "감속기",
+      "퓨저블 링크"
+    ],
+    "answer": 4,
+    "explanation": "퓨저블 링크는 규정 과전류에서 회로를 차단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q07"
+  },
+  {
+    "id": "concept-eco-69",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전 설비 설치 시 접지와 함께 전기 누설 위험을 줄이는 보호 기능은 (    )이다.",
+    "choices": [
+      "누전 보호",
+      "조향각 보정",
+      "회생제동",
+      "캐스터 조정"
+    ],
+    "answer": 1,
+    "explanation": "충전 설비의 안전은 적합한 보호장치와 접지 등을 필요로 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q09"
+  },
+  {
+    "id": "concept-eco-70",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 스택의 애노드 쪽 축적된 비반응 기체와 수분을 배출·관리하는 과정은 (    )이다.",
+    "choices": [
+      "배터리 밸런싱",
+      "애노드 퍼지",
+      "냉매 과냉각",
+      "구동 모터 정류"
+    ],
+    "answer": 2,
+    "explanation": "퍼지는 애노드의 반응 환경 유지에 기여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q13"
+  },
+  {
+    "id": "concept-eco-71",
+    "track": "concept",
+    "subject": "eco",
+    "question": "AC 충전에서 EVSE와 차량의 준비 상태 및 허용전류 정보를 교환하는 대표 신호는 (    )이다.",
+    "choices": [
+      "CKP 신호",
+      "MAF 신호",
+      "CP 신호",
+      "TPS 신호"
+    ],
+    "answer": 3,
+    "explanation": "Control Pilot 신호는 충전 가능 조건과 전류 허용 정보 전달에 쓰인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q15"
+  },
+  {
+    "id": "concept-eco-72",
+    "track": "concept",
+    "subject": "eco",
+    "question": "저장용기의 고압 수소를 공급계통 요구 압력으로 낮추는 장치는 (    )이다.",
+    "choices": [
+      "OBC",
+      "인버터",
+      "공기 필터",
+      "감압 레귤레이터"
+    ],
+    "answer": 4,
+    "explanation": "감압기는 저장계와 연료전지 공급계 사이 압력을 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q16"
+  },
+  {
+    "id": "concept-eco-73",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 수명에 영향을 미치는 충방전 운용 지표 중 하나는 (    ) 범위이다.",
+    "choices": [
+      "SOC",
+      "토",
+      "캐스터",
+      "차량 회전반경"
+    ],
+    "answer": 1,
+    "explanation": "온도와 전류 및 SOC 운용 범위는 배터리 열화에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q10"
+  },
+  {
+    "id": "concept-eco-74",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 컨택터 본 연결 전 커패시터 충전의 돌입전류를 제한하는 회로는 (    )이다.",
+    "choices": [
+      "회생제동 회로",
+      "프리차지 회로",
+      "냉각팬 회로",
+      "등속 조인트"
+    ],
+    "answer": 2,
+    "explanation": "프리차지 저항을 통해 초기 커패시터 충전 전류를 제한한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q14"
+  },
+  {
+    "id": "concept-eco-75",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지의 막과 전극을 결합한 핵심 조립체는 (    )이다.",
+    "choices": [
+      "HVIL",
+      "PCU",
+      "MEA",
+      "DLC"
+    ],
+    "answer": 3,
+    "explanation": "MEA는 막전극접합체로 전기화학 반응의 핵심 구성이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q17"
+  },
+  {
+    "id": "concept-eco-76",
+    "track": "concept",
+    "subject": "eco",
+    "question": "석유계 경유를 섞지 않은 바이오디젤 연료의 표기 중 하나는 (    )이다.",
+    "choices": [
+      "B20",
+      "B5",
+      "E10",
+      "B100"
+    ],
+    "answer": 4,
+    "explanation": "B100은 비혼합 바이오디젤을 뜻하며 모든 차량에서 사용 가능한 것은 아니다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q20"
+  },
+  {
+    "id": "concept-eco-77",
+    "track": "concept",
+    "subject": "eco",
+    "question": "엔진과 모터가 모두 기계적으로 차량 구동에 참여할 수 있는 하이브리드 구성은 (    )이다.",
+    "choices": [
+      "병렬형",
+      "직렬형",
+      "순수 배터리형",
+      "연료전지 단독형"
+    ],
+    "answer": 1,
+    "explanation": "병렬형은 엔진과 모터의 동력으로 구동이 가능하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q04"
+  },
+  {
+    "id": "concept-eco-78",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 용기 압력 등급의 단위 환산에서 70MPa는 (    )이다.",
+    "choices": [
+      "70bar",
+      "700bar",
+      "7bar",
+      "7,000bar"
+    ],
+    "answer": 2,
+    "explanation": "1MPa=10bar이므로 70MPa=700bar이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-79",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1,000kg인 차가 20m/s에서 10m/s로 감속할 때 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "50kJ",
+      "100kJ",
+      "150kJ",
+      "200kJ"
+    ],
+    "answer": 3,
+    "explanation": "½×1,000×(400−100)=150,000J이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-80",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 단위 셀들을 쌓아 전압과 출력을 확보하는 조립체는 (    )이다.",
+    "choices": [
+      "인버터",
+      "감속기",
+      "컨택터",
+      "스택"
+    ],
+    "answer": 4,
+    "explanation": "스택은 다수의 단위 셀을 조합한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q03"
+  },
+  {
+    "id": "concept-eco-81",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회생제동 중 교류 모터의 발전 전력을 직류 배터리 충전용 전력으로 변환하는 동작은 (    )이다.",
+    "choices": [
+      "AC→DC 변환",
+      "DC→AC 변환",
+      "DC→DC 강압",
+      "기계적 감속"
+    ],
+    "answer": 1,
+    "explanation": "구동 인버터는 발전 모드에서 교류 전력을 직류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q04"
+  },
+  {
+    "id": "concept-eco-82",
+    "track": "concept",
+    "subject": "eco",
+    "question": "액체 냉각 방식의 구동 배터리 열관리 회로에서 냉각수를 순환시키는 부품은 (    )이다.",
+    "choices": [
+      "수소 레귤레이터",
+      "냉각수 펌프",
+      "차동기어",
+      "컨택터"
+    ],
+    "answer": 2,
+    "explanation": "냉각수 순환은 배터리 온도 관리에 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q07"
+  },
+  {
+    "id": "concept-eco-83",
+    "track": "concept",
+    "subject": "eco",
+    "question": "구동 배터리 교환 뒤 차종에 따라 수행할 수 있는 BMS 설정 작업은 (    )이다.",
+    "choices": [
+      "타이어 밸런스",
+      "냉매 회수",
+      "등록·학습",
+      "브레이크 공기빼기"
+    ],
+    "answer": 3,
+    "explanation": "제작사 지침에 따른 배터리 정보 등록·학습을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q11"
+  },
+  {
+    "id": "concept-eco-84",
+    "track": "concept",
+    "subject": "eco",
+    "question": "구동 배터리 SOC가 상한에 가까울 때 회생제동 수용량은 (    )할 수 있다.",
+    "choices": [
+      "무조건 증가",
+      "항상 고정",
+      "무한 증가",
+      "감소"
+    ],
+    "answer": 4,
+    "explanation": "충전 가능 에너지 및 전력이 제한되면 회생제동도 제한될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q13"
+  },
+  {
+    "id": "concept-eco-85",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 연료전지의 총 발전전력이 90kW이고 보조장치 소비전력이 12kW이면 순전력은 (    )이다.",
+    "choices": [
+      "78kW",
+      "102kW",
+      "90kW",
+      "12kW"
+    ],
+    "answer": 1,
+    "explanation": "순전력은 총 발전전력에서 보조장치 소비전력을 뺀 78kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
   }
 ]
