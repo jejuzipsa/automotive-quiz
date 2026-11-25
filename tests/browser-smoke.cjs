@@ -58,7 +58,9 @@ async function checkHeader(page,width,mobile){
   }
   if(mobile){
     assert.ok(bounds.sub.top>=bounds.main.bottom-1,"title must be two lines "+width);
-    assert.ok(bounds.actions.top>=bounds.wrap.bottom-1,"controls must be below title "+width);
+    assert.ok(Math.max(bounds.main.right,bounds.sub.right)<=bounds.actions.left+1,"title overlaps controls "+width+" "+JSON.stringify(bounds));
+    assert.ok(bounds.actions.top<bounds.wrap.bottom && bounds.actions.bottom>bounds.wrap.top,"controls must be beside title "+width);
+    assert.ok(Math.abs((bounds.actions.top+bounds.actions.bottom)/2-(bounds.wrap.top+bounds.wrap.bottom)/2)<=2,"controls vertically centered "+width);
   }else{
     assert.ok(Math.abs(bounds.main.top-bounds.sub.top)<2,"desktop title must be single line "+width);
     assert.ok(Math.max(bounds.main.right,bounds.sub.right)<=bounds.actions.left+1,"title overlaps controls "+width);
