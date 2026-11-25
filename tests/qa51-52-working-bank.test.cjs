@@ -199,3 +199,11 @@ console.log("PASS QA65 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APP
  for(const row of a.items){const q=map.get(row.id);assert.ok(q);assert.equal(q.subject,row.subject);assert.equal(q.question,row.question);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.classification_hold,true);assert.equal(row.status,"hold_do_not_publish");assert.equal(row.official_detail_verified,false);assert.equal(q.publishable,false);}
  console.log("PASS QA73 seven current hold snapshots, no release");
 }
+
+// QA74: compare current hold ledger to materialized working bank, not obsolete text.
+{
+ const prior=read("data/qa/qa73-current-hold-review.json"),a=read("data/qa/qa74-current-hold-review.json"),map=new Map(all.map(q=>[q.id,q]));
+ assert.equal(a.items.length,18);assert.equal(new Set([...prior.items,...a.items].map(q=>q.id)).size,25);assert.equal(a.total_holds,55);assert.equal(a.released,0);
+ for(const row of a.items){const q=map.get(row.id);assert.ok(q);assert.equal(q.subject,row.subject);assert.equal(q.question,row.question);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.classification_hold,true);assert.equal(row.status,"hold_do_not_publish");assert.equal(row.official_detail_verified,false);assert.equal(q.publishable,false);}
+ console.log("PASS QA74 eighteen current hold snapshots, cumulative 25 of 55, no release");
+}

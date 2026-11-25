@@ -2599,5 +2599,14 @@
     "independent_approvals": 0,
     "hold_current_screened": 7,
     "hold_current_remaining": 48
+  },
+  "qa74_hold_review": {
+    "new_screened": 18,
+    "cumulative_screened": 25,
+    "remaining": 30,
+    "total_holds": 55,
+    "released": 0,
+    "independent_approvals": 0,
+    "official_detail_verified": false
   }
 }
