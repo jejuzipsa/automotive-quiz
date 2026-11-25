@@ -11,9 +11,10 @@ const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(x=>x[1]);
 assert.equal(new Set(ids).size,ids.length,"duplicate element IDs");
 for(const match of app.matchAll(/\$\("([^"]+)"\)/g))
   assert(ids.includes(match[1]),"missing HTML id "+match[1]);
-for(const forbidden of ['type="file"',"personalTextBankInput","vendor/jszip.min.js","personal-text-bank.js"]){
-  assert(!html.includes(forbidden),"ZIP/file picker must not be public: "+forbidden);
+for(const forbidden of ["personalTextBankInput","vendor/jszip.min.js","personal-text-bank.js"]){
+  assert(!html.includes(forbidden),"legacy ZIP/public import must not return: "+forbidden);
 }
+assert.ok(html.includes('id="rotationFile" type="file"'),"private JSON import present");
 const manifest=JSON.parse(read("data/manifest.json"));
 assert.equal(manifest.version,1);
 const baseFiles=new Set(["data/expected/engine.json","data/expected/chassis.json",
