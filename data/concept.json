@@ -802,5 +802,1110 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_expected_id": "original-eco-19"
+  },
+  {
+    "id": "concept-engine-13",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 기관에서 압축 행정의 피스톤은 하사점에서 (    )으로 이동한다.",
+    "choices": [
+      "상사점",
+      "하사점",
+      "행정 중앙점",
+      "밸브 오버랩점"
+    ],
+    "answer": 1,
+    "explanation": "압축 행정은 피스톤의 상승으로 실린더 안의 기체 체적을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-02"
+  },
+  {
+    "id": "concept-engine-14",
+    "track": "concept",
+    "subject": "engine",
+    "question": "순환 엔진오일의 오염 입자를 제거하는 부품은 (    )이다.",
+    "choices": [
+      "오일 펌프",
+      "오일 필터",
+      "오일 팬",
+      "오일 압력 센서"
+    ],
+    "answer": 2,
+    "explanation": "오일 필터는 이물질에 의한 마찰면 손상을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-04"
+  },
+  {
+    "id": "concept-engine-15",
+    "track": "concept",
+    "subject": "engine",
+    "question": "엔진의 윤활 경로에 오일을 압송하는 부품은 (    )이다.",
+    "choices": [
+      "오일 필터",
+      "오일 팬",
+      "오일 펌프",
+      "오일 쿨러"
+    ],
+    "answer": 3,
+    "explanation": "오일 펌프는 윤활에 필요한 유량과 압력을 확보한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-07"
+  },
+  {
+    "id": "concept-engine-16",
+    "track": "concept",
+    "subject": "engine",
+    "question": "고온의 가압 냉각계통을 개방할 때 발생할 수 있는 위험은 (    )이다.",
+    "choices": [
+      "연료 역류",
+      "배기 역화",
+      "흡기 압력 상승",
+      "뜨거운 냉각수 분출"
+    ],
+    "answer": 4,
+    "explanation": "고온·가압 상태에서는 냉각수가 분출해 화상을 입을 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-06"
+  },
+  {
+    "id": "concept-engine-17",
+    "track": "concept",
+    "subject": "engine",
+    "question": "배기 산소 센서의 신호는 ECU의 (    ) 제어에 활용된다.",
+    "choices": [
+      "공연비",
+      "밸브 간극",
+      "오일 점도",
+      "냉각수량"
+    ],
+    "answer": 1,
+    "explanation": "배기 산소 정보로 혼합비 상태를 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-10"
+  },
+  {
+    "id": "concept-engine-18",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 기관의 저온 압축착화를 돕는 부품은 (    )이다.",
+    "choices": [
+      "점화 플러그",
+      "예열 플러그",
+      "노크 센서",
+      "연료 압력 조절기"
+    ],
+    "answer": 2,
+    "explanation": "예열 플러그는 냉간 시 연소실 주변을 가열한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-14"
+  },
+  {
+    "id": "concept-engine-19",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터빈으로 가는 배기가스 일부를 우회시키는 과급압 제어 부품은 (    )이다.",
+    "choices": [
+      "스로틀 밸브",
+      "PCV 밸브",
+      "웨이스트게이트",
+      "서모스탯"
+    ],
+    "answer": 3,
+    "explanation": "터빈을 통과하는 배기가스 에너지를 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-17"
+  },
+  {
+    "id": "concept-engine-20",
+    "track": "concept",
+    "subject": "engine",
+    "question": "노킹이 감지되면 ECU가 보정할 수 있는 제어량은 (    )이다.",
+    "choices": [
+      "피스톤 지름",
+      "밸브 스프링 길이",
+      "압축 링 두께",
+      "점화 시기"
+    ],
+    "answer": 4,
+    "explanation": "점화 시기 조절은 이상 연소 억제에 사용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-19"
+  },
+  {
+    "id": "concept-engine-21",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보차저에서 배기 터빈과 흡기 압축기는 (    )으로 연결된다.",
+    "choices": [
+      "공통 회전축",
+      "타이밍 체인",
+      "변속 기어",
+      "유압 피스톤"
+    ],
+    "answer": 1,
+    "explanation": "배기 에너지로 터빈과 동축 압축기를 회전시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q02"
+  },
+  {
+    "id": "concept-engine-22",
+    "track": "concept",
+    "subject": "engine",
+    "question": "기계식 슈퍼차저의 구동 에너지원은 일반적으로 (    )이다.",
+    "choices": [
+      "배기가스의 운동에너지",
+      "엔진의 기계적 동력",
+      "냉각수의 열에너지",
+      "배기 산소의 화학에너지"
+    ],
+    "answer": 2,
+    "explanation": "기계식 과급기는 엔진 구동력을 일부 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q02"
+  },
+  {
+    "id": "concept-engine-23",
+    "track": "concept",
+    "subject": "engine",
+    "question": "점화 방전의 발생 여부를 확인하는 전용 시험기는 (    )이다.",
+    "choices": [
+      "압축압력 게이지",
+      "연료압 게이지",
+      "스파크 테스터",
+      "노즐 테스터"
+    ],
+    "answer": 3,
+    "explanation": "점화 계통의 방전을 지정 방식으로 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q07"
+  },
+  {
+    "id": "concept-engine-24",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더에 공기를 공급하여 누설 경로를 찾는 시험은 (    )이다.",
+    "choices": [
+      "오일압력 시험",
+      "냉각수 가압 시험",
+      "인젝터 분무 시험",
+      "압축누설 시험"
+    ],
+    "answer": 4,
+    "explanation": "압축압력 저하의 원인을 누설 경로로 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q11"
+  },
+  {
+    "id": "concept-engine-25",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DTC 발생 당시의 운전 조건을 저장한 진단 데이터는 (    )이다.",
+    "choices": [
+      "프리즈프레임",
+      "코딩값",
+      "차대번호",
+      "보정코드"
+    ],
+    "answer": 1,
+    "explanation": "프리즈프레임은 고장 발생 당시 상태를 파악하는 단서다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q04"
+  },
+  {
+    "id": "concept-engine-26",
+    "track": "concept",
+    "subject": "engine",
+    "question": "기계식 디젤 분사노즐의 분사 개시 특성을 시험하는 압력은 (    )이다.",
+    "choices": [
+      "흡기 절대압",
+      "개방압",
+      "냉각수압",
+      "오일압"
+    ],
+    "answer": 2,
+    "explanation": "기계식 노즐 시험에서 개방압과 분무 형상을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q07"
+  },
+  {
+    "id": "concept-engine-27",
+    "track": "concept",
+    "subject": "engine",
+    "question": "스로틀 밸브의 개도를 감지하는 센서는 (    )이다.",
+    "choices": [
+      "ECT",
+      "CKP",
+      "TPS",
+      "RPS"
+    ],
+    "answer": 3,
+    "explanation": "TPS는 스로틀 위치의 변화를 전기 신호로 제공한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q08"
+  },
+  {
+    "id": "concept-engine-28",
+    "track": "concept",
+    "subject": "engine",
+    "question": "시간에 따라 변하는 센서 전압 파형을 관찰하는 계측기는 (    )이다.",
+    "choices": [
+      "압력 게이지",
+      "진공 게이지",
+      "토크 렌치",
+      "오실로스코프"
+    ],
+    "answer": 4,
+    "explanation": "오실로스코프는 펄스의 시간적 변화를 나타낸다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q09"
+  },
+  {
+    "id": "concept-engine-29",
+    "track": "concept",
+    "subject": "engine",
+    "question": "엔진오일 누유를 진단할 때 우선 찾아야 하는 것은 (    )이다.",
+    "choices": [
+      "누유 시작 지점",
+      "배기가스 온도",
+      "냉각팬 회전수",
+      "인젝터 보정량"
+    ],
+    "answer": 1,
+    "explanation": "흘러내린 자국과 실제 누유 발생 위치를 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q16"
+  },
+  {
+    "id": "concept-engine-30",
+    "track": "concept",
+    "subject": "engine",
+    "question": "SCR에서 요소수로부터 생성되어 NOx 환원에 쓰이는 물질은 (    )이다.",
+    "choices": [
+      "메탄",
+      "암모니아",
+      "일산화탄소",
+      "산소"
+    ],
+    "answer": 2,
+    "explanation": "암모니아는 SCR 촉매에서 질소산화물 환원에 관여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q17"
+  },
+  {
+    "id": "concept-engine-31",
+    "track": "concept",
+    "subject": "engine",
+    "question": "연료 탄소가 불완전 산화할 때 발생하는 대표 기체는 (    )이다.",
+    "choices": [
+      "질소",
+      "산소",
+      "일산화탄소",
+      "수증기"
+    ],
+    "answer": 3,
+    "explanation": "CO는 불완전 연소와 관련된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q18"
+  },
+  {
+    "id": "concept-engine-32",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 배기가스의 입자상 물질을 포집하는 후처리 장치는 (    )이다.",
+    "choices": [
+      "SCR",
+      "EGR",
+      "EVAP",
+      "DPF"
+    ],
+    "answer": 4,
+    "explanation": "DPF는 매연 입자를 포집하며 재생으로 가연성 그을음을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q19"
+  },
+  {
+    "id": "concept-engine-33",
+    "track": "concept",
+    "subject": "engine",
+    "question": "냉각수 온도를 ECU에 전달하는 센서는 (    )이다.",
+    "choices": [
+      "ECT",
+      "TPS",
+      "MAF",
+      "CKP"
+    ],
+    "answer": 1,
+    "explanation": "ECT는 냉각수 온도 경로의 지정 위치에 장착된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q06"
+  },
+  {
+    "id": "concept-engine-34",
+    "track": "concept",
+    "subject": "engine",
+    "question": "노크 센서가 감지하는 물리량은 엔진의 (    )이다.",
+    "choices": [
+      "유량",
+      "진동",
+      "냉각수압",
+      "오일 점도"
+    ],
+    "answer": 2,
+    "explanation": "특정 진동 주파수 성분으로 노킹을 감지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q10"
+  },
+  {
+    "id": "concept-engine-35",
+    "track": "concept",
+    "subject": "engine",
+    "question": "예열 플러그 저항을 측정하는 계측 기능은 (    )이다.",
+    "choices": [
+      "전압계",
+      "주파수계",
+      "저항계",
+      "압력계"
+    ],
+    "answer": 3,
+    "explanation": "저항 측정은 지정된 무전원 조건과 규격에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q12"
+  },
+  {
+    "id": "concept-engine-36",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크케이스 환기 및 블로바이 가스 배출에 사용하는 계통은 (    )이다.",
+    "choices": [
+      "SCR",
+      "DPF",
+      "CVVT",
+      "PCV"
+    ],
+    "answer": 4,
+    "explanation": "PCV 계통 이상은 크랭크케이스 압력 상승 및 누유와 관련될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q14"
+  },
+  {
+    "id": "concept-engine-37",
+    "track": "concept",
+    "subject": "engine",
+    "question": "기계음의 발생 위치를 비교하는 정비 도구는 (    )이다.",
+    "choices": [
+      "정비용 청진기",
+      "토크 렌치",
+      "스파크 테스터",
+      "압축압력 게이지"
+    ],
+    "answer": 1,
+    "explanation": "청진기는 기계음의 위치 비교에 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q16"
+  },
+  {
+    "id": "concept-engine-38",
+    "track": "concept",
+    "subject": "engine",
+    "question": "OBD 코드 P0420이 가리키는 대표적인 감지 내용은 (    )이다.",
+    "choices": [
+      "뱅크 1 혼합기 희박",
+      "뱅크 1 촉매 효율 저하",
+      "크랭크축 신호 이상",
+      "냉각수 온도 과다"
+    ],
+    "answer": 2,
+    "explanation": "P0420은 촉매 효율 관련 코드로 추가 원인 진단이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q20"
+  },
+  {
+    "id": "concept-engine-39",
+    "track": "concept",
+    "subject": "engine",
+    "question": "OBD 코드 P0171이 나타내는 혼합기 상태는 뱅크 1의 (    )이다.",
+    "choices": [
+      "농후",
+      "실화 없음",
+      "희박",
+      "과급 과다"
+    ],
+    "answer": 3,
+    "explanation": "P0171은 뱅크 1 혼합기가 희박한 상태를 뜻한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q04"
+  },
+  {
+    "id": "concept-engine-40",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정상 작동하는 협대역 지르코니아 산소 센서에서 낮은 출력전압은 상대적으로 (    )한 배기 상태를 나타낸다.",
+    "choices": [
+      "농후",
+      "고온",
+      "고압",
+      "희박"
+    ],
+    "answer": 4,
+    "explanation": "협대역 센서는 일반적으로 낮은 전압이 희박, 높은 전압이 농후에 대응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q05"
+  },
+  {
+    "id": "concept-engine-41",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DPF 양단 압력의 차이는 (    )으로 부른다.",
+    "choices": [
+      "차압",
+      "절대압",
+      "대기압",
+      "압축비"
+    ],
+    "answer": 1,
+    "explanation": "필터 전후 차압은 배기 저항과 필터 상태를 평가하는 데이터다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-42",
+    "track": "concept",
+    "subject": "engine",
+    "question": "건식 압축시험보다 습식 시험에서 압력이 크게 올라가면 (    )의 기밀 저하를 의심할 수 있다.",
+    "choices": [
+      "흡기 매니폴드와 스로틀",
+      "피스톤 링과 실린더 벽",
+      "냉각수 펌프와 라디에이터",
+      "연료 레일과 인젝터"
+    ],
+    "answer": 2,
+    "explanation": "오일이 링 주변 밀봉을 일시적으로 돕기 때문이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q17"
+  },
+  {
+    "id": "concept-engine-43",
+    "track": "concept",
+    "subject": "engine",
+    "question": "온도가 올라갈수록 저항이 감소하는 서미스터는 (    )형이다.",
+    "choices": [
+      "PTC",
+      "홀",
+      "NTC",
+      "유도"
+    ],
+    "answer": 3,
+    "explanation": "NTC는 부온도계수 특성을 가진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q05"
+  },
+  {
+    "id": "concept-engine-44",
+    "track": "concept",
+    "subject": "engine",
+    "question": "일반적인 주철에 비해 알루미늄 합금의 열전도율은 (    ) 경향이 있다.",
+    "choices": [
+      "낮은",
+      "같은",
+      "항상 일정한",
+      "높은"
+    ],
+    "answer": 4,
+    "explanation": "알루미늄 합금은 일반적으로 열전도가 비교적 빠르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q13"
+  },
+  {
+    "id": "concept-engine-45",
+    "track": "concept",
+    "subject": "engine",
+    "question": "지정 토크로 조인 뒤 지정 각도를 추가하는 체결 방식은 (    )이다.",
+    "choices": [
+      "토크-각도 체결",
+      "유압 압입",
+      "열간 압입",
+      "손 조임"
+    ],
+    "answer": 1,
+    "explanation": "토크 단계와 회전각 단계가 구분된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q16"
+  },
+  {
+    "id": "concept-engine-46",
+    "track": "concept",
+    "subject": "engine",
+    "question": "미연소 연료의 배출과 관련되어 실화 시 증가할 수 있는 성분은 (    )이다.",
+    "choices": [
+      "N₂",
+      "HC",
+      "O₂",
+      "수증기"
+    ],
+    "answer": 2,
+    "explanation": "실화로 미연소 탄화수소가 증가할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q20"
+  },
+  {
+    "id": "concept-engine-47",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보차저 축의 축방향 하중을 지지하는 베어링은 (    )이다.",
+    "choices": [
+      "저널 베어링",
+      "휠 베어링",
+      "스러스트 베어링",
+      "캠 베어링"
+    ],
+    "answer": 3,
+    "explanation": "스러스트 지지부는 축방향 유격과 관련된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q02"
+  },
+  {
+    "id": "concept-engine-48",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보차저 축의 반경방향을 지지하는 대표 부품은 (    )이다.",
+    "choices": [
+      "스러스트 베어링",
+      "밸브 시트",
+      "피스톤 핀",
+      "저널 베어링"
+    ],
+    "answer": 4,
+    "explanation": "저널 베어링은 축의 반경방향 지지에 사용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q03"
+  },
+  {
+    "id": "concept-engine-49",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 교체 후 차종별로 해당 실린더에 입력하는 값은 (    )이다.",
+    "choices": [
+      "인젝터 보정코드",
+      "차대번호",
+      "캠축 위상각",
+      "오일 점도 등급"
+    ],
+    "answer": 1,
+    "explanation": "지원 차량에서는 교체 인젝터의 보정 정보를 맞는 실린더에 등록한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q09"
+  },
+  {
+    "id": "concept-engine-50",
+    "track": "concept",
+    "subject": "engine",
+    "question": "밸브 가이드 유격 과다는 연소실로 (    ) 유입을 늘릴 수 있다.",
+    "choices": [
+      "냉각팬 공기",
+      "엔진오일",
+      "브레이크액",
+      "배터리 전해액"
+    ],
+    "answer": 2,
+    "explanation": "가이드와 밸브 스템 씰 상태는 내부 오일 소모에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q15"
+  },
+  {
+    "id": "concept-engine-51",
+    "track": "concept",
+    "subject": "engine",
+    "question": "EGR 밸브가 공회전에서 과도하게 열린 상태로 고착되면 (    )이 발생할 수 있다.",
+    "choices": [
+      "오일 여과 효율 향상",
+      "압축비 증가",
+      "연소 불안정",
+      "밸브 간극 자동 감소"
+    ],
+    "answer": 3,
+    "explanation": "과도한 배기가스 재순환은 안정적인 공회전을 방해할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q19"
+  },
+  {
+    "id": "concept-engine-52",
+    "track": "concept",
+    "subject": "engine",
+    "question": "캠 위상을 바꾸어 흡·배기 밸브 개폐 시기를 조절하는 방식은 (    )이다.",
+    "choices": [
+      "EVAP",
+      "PCV",
+      "SCR",
+      "CVVT"
+    ],
+    "answer": 4,
+    "explanation": "가변 밸브 타이밍은 운전 조건에 따라 밸브 위상을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q07"
+  },
+  {
+    "id": "concept-engine-53",
+    "track": "concept",
+    "subject": "engine",
+    "question": "연료 증발가스를 활성탄에 흡착해 저장하는 부품은 (    )이다.",
+    "choices": [
+      "캐니스터",
+      "인터쿨러",
+      "커먼레일",
+      "촉매 변환기"
+    ],
+    "answer": 1,
+    "explanation": "캐니스터는 증발가스를 저장하고 이후 퍼지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q09"
+  },
+  {
+    "id": "concept-engine-54",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크축과 캠축 사이의 회전 위상 동기를 유지하는 부품은 (    )이다.",
+    "choices": [
+      "팬 벨트",
+      "타이밍 벨트",
+      "클러치 디스크",
+      "피스톤 링"
+    ],
+    "answer": 2,
+    "explanation": "타이밍 벨트는 밸브 개폐와 피스톤 운동을 동기화한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q11"
+  },
+  {
+    "id": "concept-engine-55",
+    "track": "concept",
+    "subject": "engine",
+    "question": "SCR에 사용하는 요소수는 요소가 녹아 있는 (    )이다.",
+    "choices": [
+      "윤활유",
+      "경유",
+      "수용액",
+      "냉매"
+    ],
+    "answer": 3,
+    "explanation": "요소수는 규정된 농도의 요소 수용액이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q13"
+  },
+  {
+    "id": "concept-engine-56",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더 벽의 윤활유 막 양을 조절하는 피스톤 링은 (    )이다.",
+    "choices": [
+      "압축 링",
+      "스냅 링",
+      "씰 링",
+      "오일 링"
+    ],
+    "answer": 4,
+    "explanation": "오일 링은 실린더 벽에 남는 오일량을 관리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q14"
+  },
+  {
+    "id": "concept-engine-57",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축상사점 누설시험에서 흡기 쪽으로 공기가 새면 (    )의 밀봉 불량을 의심한다.",
+    "choices": [
+      "흡기 밸브",
+      "배기 밸브",
+      "오일 필터",
+      "냉각수 캡"
+    ],
+    "answer": 1,
+    "explanation": "흡기측 누설은 흡기 밸브와 시트 기밀 문제의 단서다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q16"
+  },
+  {
+    "id": "concept-engine-58",
+    "track": "concept",
+    "subject": "engine",
+    "question": "서모스탯이 열린 채 고착되면 냉간 엔진의 예열은 (    )될 수 있다.",
+    "choices": [
+      "즉시 완료",
+      "지연",
+      "생략",
+      "항상 과열"
+    ],
+    "answer": 2,
+    "explanation": "라디에이터로 냉각수가 일찍 흐르면 난기가 지연될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q17"
+  },
+  {
+    "id": "concept-engine-59",
+    "track": "concept",
+    "subject": "engine",
+    "question": "흡기로 되돌아가는 배기가스를 냉각하는 열교환기는 (    )이다.",
+    "choices": [
+      "인터쿨러",
+      "오일 쿨러",
+      "EGR 쿨러",
+      "히터 코어"
+    ],
+    "answer": 3,
+    "explanation": "EGR 쿨러는 재순환 배기가스의 온도를 낮춘다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q13"
+  },
+  {
+    "id": "concept-engine-60",
+    "track": "concept",
+    "subject": "engine",
+    "question": "일반적인 가솔린의 이론공연비는 공기와 연료의 질량비로 약 (    )이다.",
+    "choices": [
+      "9:1",
+      "20:1",
+      "25:1",
+      "14.7:1"
+    ],
+    "answer": 4,
+    "explanation": "연료 조성에 따라 차이가 있으나 가솔린은 약 14.7:1을 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q17"
+  },
+  {
+    "id": "concept-engine-61",
+    "track": "concept",
+    "subject": "engine",
+    "question": "냉각계통의 누설 여부를 지정 압력으로 확인하는 장비는 (    )이다.",
+    "choices": [
+      "냉각수 가압 시험기",
+      "연료 분무 시험기",
+      "점화 파형 시험기",
+      "압축누설 시험기"
+    ],
+    "answer": 1,
+    "explanation": "냉각회로의 압력 유지 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q18"
+  },
+  {
+    "id": "concept-engine-62",
+    "track": "concept",
+    "subject": "engine",
+    "question": "배기가스가 청색을 띠면 연소실 내 (    ) 연소 가능성을 의심한다.",
+    "choices": [
+      "냉각수",
+      "엔진오일",
+      "브레이크액",
+      "요소수"
+    ],
+    "answer": 2,
+    "explanation": "청색 배기는 내부 오일 연소와 연관될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q04"
+  },
+  {
+    "id": "concept-engine-63",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DPF 재생에서 포집된 가연성 그을음을 줄이는 주요 반응은 (    )이다.",
+    "choices": [
+      "응축",
+      "흡착",
+      "산화",
+      "환원"
+    ],
+    "answer": 3,
+    "explanation": "재생 시 배기온도 상승으로 그을음 산화를 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q06"
+  },
+  {
+    "id": "concept-engine-64",
+    "track": "concept",
+    "subject": "engine",
+    "question": "오일 필터의 압력차가 커질 때 우회 유로를 여는 부품은 (    )이다.",
+    "choices": [
+      "서모스탯",
+      "PCV 밸브",
+      "웨이스트게이트",
+      "바이패스 밸브"
+    ],
+    "answer": 4,
+    "explanation": "필터 막힘 등에서 윤활유 흐름을 유지하는 데 쓰인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q08"
+  },
+  {
+    "id": "concept-engine-65",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터빈 유로 단면을 가변 베인으로 조절하는 터보차저는 (    )이다.",
+    "choices": [
+      "VGT",
+      "고정형 슈퍼차저",
+      "커먼레일",
+      "CVVT"
+    ],
+    "answer": 1,
+    "explanation": "VGT는 운전 조건에 따라 터빈 유로를 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q09"
+  },
+  {
+    "id": "concept-engine-66",
+    "track": "concept",
+    "subject": "engine",
+    "question": "캠에 의해 열린 밸브를 시트 쪽으로 복귀시키는 부품은 (    )이다.",
+    "choices": [
+      "밸브 가이드",
+      "밸브 스프링",
+      "밸브 시트",
+      "로커암"
+    ],
+    "answer": 2,
+    "explanation": "스프링의 복귀력으로 밸브가 닫힌다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q10"
+  },
+  {
+    "id": "concept-engine-67",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더 블록과 헤드 사이의 연소실 및 유체 통로를 밀봉하는 부품은 (    )이다.",
+    "choices": [
+      "오일 팬 가스켓",
+      "밸브 커버 가스켓",
+      "헤드 가스켓",
+      "흡기 가스켓"
+    ],
+    "answer": 3,
+    "explanation": "연소실과 냉각수·윤활유 통로의 기밀을 유지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q13"
+  },
+  {
+    "id": "concept-engine-68",
+    "track": "concept",
+    "subject": "engine",
+    "question": "엔진오일이 유화된 상태라면 (    ) 혼입 가능성을 점검한다.",
+    "choices": [
+      "배기 공기",
+      "타이어 질소",
+      "냉매 기체",
+      "냉각수"
+    ],
+    "answer": 4,
+    "explanation": "냉각수와 오일이 섞이는 경로를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q18"
+  },
+  {
+    "id": "concept-engine-69",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더 밸런스 시험은 각 실린더의 (    ) 차이를 비교한다.",
+    "choices": [
+      "토크 기여도",
+      "피스톤 지름",
+      "냉각수 용량",
+      "오일 규격"
+    ],
+    "answer": 1,
+    "explanation": "실린더별 출력 기여를 비교해 불균형을 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q20"
+  },
+  {
+    "id": "concept-engine-70",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더당 배기량이 400cm³인 4기통 기관의 전체 배기량은 (    )이다.",
+    "choices": [
+      "400cm³",
+      "1,600cm³",
+      "800cm³",
+      "2,000cm³"
+    ],
+    "answer": 2,
+    "explanation": "전체 배기량은 400×4=1,600cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-71",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 100kPa, 출구 절대압력 180kPa일 때 압력비는 (    )이다.",
+    "choices": [
+      "0.8",
+      "2.8",
+      "1.8",
+      "18"
+    ],
+    "answer": 3,
+    "explanation": "압력비는 출구 절대압력÷입구 절대압력=180÷100이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-72",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 100kPa, 흡기 절대압력 150kPa일 때 게이지압력은 (    )이다.",
+    "choices": [
+      "100kPa",
+      "150kPa",
+      "250kPa",
+      "50kPa"
+    ],
+    "answer": 4,
+    "explanation": "게이지압력은 절대압력에서 대기압을 뺀 값이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-73",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축 전 전체 체적 600cm³, 압축 후 체적 60cm³일 때 압축비는 (    )이다.",
+    "choices": [
+      "10:1",
+      "9:1",
+      "11:1",
+      "6:1"
+    ],
+    "answer": 1,
+    "explanation": "기하학적 압축비는 600÷60=10이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-74",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정상상태 냉각기에서 질량유량 0.05kg/s, 정압비열 1kJ/(kg·K), 온도 감소 60K이고 축일 등의 변화가 없을 때 제거 열전달률은 (    )이다.",
+    "choices": [
+      "0.3kW",
+      "3kW",
+      "6kW",
+      "30kW"
+    ],
+    "answer": 2,
+    "explanation": "0.05×1×60=3kJ/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-75",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DPF 재생 후 남는 비가연성 물질은 (    )이다.",
+    "choices": [
+      "가연성 그을음",
+      "수소",
+      "회분",
+      "일산화탄소"
+    ],
+    "answer": 3,
+    "explanation": "회분은 일반적인 그을음 산화 재생으로 제거되지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-26"
+  },
+  {
+    "id": "concept-engine-76",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 40.06mm와 저널 외경 40.00mm의 지름 간극은 (    )이다.",
+    "choices": [
+      "0.03mm",
+      "0.12mm",
+      "0.60mm",
+      "0.06mm"
+    ],
+    "answer": 4,
+    "explanation": "지름 간극은 40.06−40.00=0.06mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-77",
+    "track": "concept",
+    "subject": "engine",
+    "question": "신선 공기 80g/s와 재순환 배기가스 20g/s가 섞일 때 전체 질량유량 대비 EGR 비율은 (    )이다.",
+    "choices": [
+      "20%",
+      "25%",
+      "40%",
+      "80%"
+    ],
+    "answer": 1,
+    "explanation": "20÷(80+20)×100=20%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
   }
 ]
