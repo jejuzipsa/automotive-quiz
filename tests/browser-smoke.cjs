@@ -11,6 +11,28 @@ const read=p=>JSON.parse(fs.readFileSync(path.join(root,p),"utf8"));
 const manifest=read("data/manifest.json");
 const expected=manifest.banks.filter(b=>b.track==="expected").flatMap(b=>read(b.file));
 const byText=new Map(expected.map(q=>[q.question,q]));
+// Synthetic fixture only: no private OCR file is committed or uploaded by CI.
+const variants=new Map(),light=[];
+const overlays=new Map();
+for(const name of ["51-editorial-revisions","54-technical-corrections","55-editorial-corrections","57-editorial-corrections",
+  "58-editorial-corrections","59-editorial-corrections","60-editorial-corrections","61-editorial-corrections",
+  "62-editorial-corrections","63-editorial-corrections","65-editorial-corrections"]){
+  for(const p of read("data/qa/technical-qa"+name+".json").items)overlays.set(p.id,p.after);
+}
+for(let round=1;round<=9;round++)for(const subject of ["engine","chassis","electrical","eco"]){
+  const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
+  const explanations=new Map(read("data/explanations/drafts/"+prefix+subject+".json").map(e=>[e.id,e]));
+  for(const q of read("data/past/drafts/"+prefix+subject+".json")){
+    const p=overlays.get(q.id),row={id:q.id,source_question_id:q.source_question_id,subject,round,question_number:q.question_number,
+      question:p?.question??q.question,choices:p?.choices??q.choices,answer:q.answer,explanation:p?.reason??explanations.get(q.id).reason};
+    variants.set(row.id,row);
+    const l={...row,id:q.source_question_id.replace("auto-","auto-light-"),question:"[로테이션 테스트 "+q.source_question_id+"] "+row.question,explanation:"로테이션 검사 전용 해설"};
+    light.push(l);variants.set(l.id,l);
+  }
+}
+assert.equal(light.length,720);assert.equal(variants.size,1440);
+const fixture=Buffer.from(JSON.stringify({format:"automotive-personal-rotation-v1",questions:light}));
+
 const out=path.resolve(process.env.SCREENSHOT_DIR||"browser-smoke");
 fs.mkdirSync(out,{recursive:true});
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
@@ -159,6 +181,63 @@ async function testDevice(browser,name,viewport,mobile){
       await choose(item,true);await visible("feedback");await layout();await el("nextBtn").click();
     }
     assert.match(await text("resultScore"),/12 \/ 12문제/);
+    // Real file-picker, local-only storage, both question variants, exam resume and removal.
+    await el("resultHomeBtn").click();
+    await el("rotationFile").setInputFiles({name:"invalid.json",mimeType:"application/json",buffer:Buffer.from("{}")});
+    await page.waitForFunction(()=>document.querySelector("#rotationStatus")?.textContent.includes("연결 실패"));
+    await el("rotationFile").setInputFiles({name:"rotation-test.json",mimeType:"application/json",buffer:fixture});
+    await page.waitForFunction(()=>document.querySelector("#rotationStatus")?.textContent.includes("1,440문항 연결 완료"),null,{timeout:60000});
+    assert.match(await text("trackSummary"),/1440문항/);
+    const cards=el("subjectGrid").locator(".subject-card");
+    for(let i=0;i<4;i++)assert.match(await cards.nth(i).innerText(),/360문항/);
+    await layout();
+    await page.screenshot({path:path.join(out,name+"-rotation-home.png"),fullPage:true});
+    const pick=async()=>{
+      const prompt=await text("questionText");
+      const displayed=await el("answerChoices").locator(".choice-text").allTextContents();
+      const found=[...variants.values()].find(q=>q.question===prompt&&q.choices.every(c=>displayed.includes(c)));
+      assert.ok(found,"unknown rotation question");return found;
+    };
+    await cards.first().getByRole("button",{name:"10문제",exact:true}).click();
+    const selected=new Set(),types={made:0,light:0};
+    let lastSource=null;
+    for(let i=0;i<10;i++){
+      const q=await pick();
+      assert.ok(!selected.has(q.id));selected.add(q.id);
+      assert.notEqual(q.source_question_id,lastSource);lastSource=q.source_question_id;
+      types[q.id.startsWith("auto-light-")?"light":"made"]++;
+      await choose(q,i!==0);
+      assert.ok((await text("feedback")).includes(q.explanation));
+      await layout();await el("nextBtn").click();
+    }
+    assert.deepEqual(types,{made:5,light:5});
+    assert.match(await text("resultScore"),/9 \/ 10문제/);
+    await el("resultHomeBtn").click();
+    await page.reload();
+    await page.waitForFunction(()=>document.querySelector("#rotationStatus")?.textContent.includes("1,440문항 연결 완료"),null,{timeout:60000});
+    assert.match(await text("trackSummary"),/1440문항/);
+    assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveRotationQueueV1")).engine.remaining.length),350);
+    await el("examEntryBtn").click();
+    assert.ok(!(await el("approvedExamBtn").isDisabled()));
+    await el("approvedExamBtn").click();
+    const key="automotiveQuizActiveExamV1",snapshot=await page.evaluate(k=>JSON.parse(localStorage.getItem(k)),key);
+    assert.equal(snapshot.ids.length,80);assert.equal(new Set(snapshot.ids).size,80);
+    assert.equal(snapshot.ids.filter(id=>id.startsWith("auto-light-")).length,40);
+    for(const s of ["01","02","03","04"])assert.equal(snapshot.ids.filter(id=>id.includes("-s"+s+"-")).length,20);
+    const first=variants.get(snapshot.ids[0]);await choose(first,true);await el("nextBtn").click();
+    await page.reload();
+    await page.waitForFunction(()=>document.querySelector("#rotationStatus")?.textContent.includes("1,440문항 연결 완료"),null,{timeout:60000});
+    await el("resumeExamBtn").click();
+    assert.equal(await text("quizProgress"),"2 / 80");
+    await el("previousBtn").click();assert.equal(await text("questionText"),first.question);
+    assert.equal(await el("answerChoices").locator(".selected").count(),1);
+    await el("homeBtn").click();page.once("dialog",d=>d.accept());await el("discardExamBtn").click();
+    page.once("dialog",d=>d.accept());await el("rotationRemoveBtn").click();
+    assert.match(await text("rotationStatus"),/제거 완료/);
+    assert.equal(await page.evaluate(()=>localStorage.getItem("automotivePersonalRotationV1")),null);
+    await el("trackPast").click();assert.match(await text("trackSummary"),/0문항/);
+    await layout();
+    console.log("PASS "+name+" private file input, 1440 rotation, 10 answers, mixed 80 exam, reload/resume, removal");
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}
