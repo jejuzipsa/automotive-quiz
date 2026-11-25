@@ -7,7 +7,7 @@
     {id:"electrical",name:"자동차 전기·전자장치정비"},
     {id:"eco",name:"친환경 자동차정비"}
   ];
-  const TRACKS = {past:"기존 기출문제",expected:"예상문제",demo:"시연용 문제",concept:"핵심 개념 퀴즈"};
+  const TRACKS = {past:"개인 로테이션",expected:"예상문제",demo:"시연용 문제",concept:"핵심 개념 퀴즈"};
   // The public site reads six same-origin JSON files automatically; no ZIP/file picker.
   let ITEMS = [];
   let bankLoadState = "loading";
@@ -83,7 +83,9 @@
       ITEMS=result;
       bankLoadState="ready";
       const expected=result.filter(q=>q.track==="expected").length;
-      status.textContent=`과목별 JSON 자동 연결 완료 · 자체제작 예상문제 ${expected}문항 · 파일 선택 필요 없음`;
+      status.textContent=`과목별 JSON 자동 연결 완료 · 자체제작 예상문제 ${expected}문항`;
+      const saved=readStorage(PERSONAL_KEY,null);
+      if(saved){try{await activatePersonal(saved,false);}catch(e){$("rotationStatus").textContent="개인 문제은행 복원 실패: "+e.message;}}
     }catch(error){
       ITEMS=[];
       bankLoadState="error";
@@ -96,6 +98,124 @@
     renderResumeExam();
     if(bankLoadState==="ready")loadHistory();
     if(view==="wrong")renderWrong();
+  }
+  const PERSONAL_KEY="automotivePersonalRotationV1", ROTATION_KEY="automotiveRotationQueueV1";
+  let personalLoading=false;
+  const SUBJECT_CODES={engine:"01",chassis:"02",electrical:"03",eco:"04"};
+  const sourceId=(subject,round,n)=>"auto-r"+String(round).padStart(2,"0")+"-s"+SUBJECT_CODES[subject]+"-q"+String(n).padStart(2,"0");
+  const validStudy=q=>q && typeof q.id==="string" && typeof q.question==="string" && q.question.trim() &&
+    Array.isArray(q.choices)&&q.choices.length===4&&q.choices.every(x=>typeof x==="string"&&x.trim())&&
+    Number.isInteger(q.answer)&&q.answer>=1&&q.answer<=4&&typeof q.explanation==="string"&&q.explanation.trim();
+  function normalizeLight(data){
+    if(data?.format!=="automotive-personal-rotation-v1"||!Array.isArray(data.questions)||data.questions.length!==720)
+      throw Error("개인 로테이션용 720문항 JSON 파일이 필요해.");
+    const seen=new Set();
+    return data.questions.map(q=>{
+      if(!validStudy(q)||!SUBJECT_CODES[q.subject]||!Number.isInteger(q.round)||q.round<1||q.round>9||
+        !Number.isInteger(q.question_number)||q.question_number<1||q.question_number>20||
+        q.source_question_id!==sourceId(q.subject,q.round,q.question_number)||
+        q.id!==q.source_question_id.replace("auto-","auto-light-")||seen.has(q.source_question_id))
+        throw Error("문항 형식 또는 회차·과목·번호 오류");
+      seen.add(q.source_question_id);
+      return {id:q.id,source_question_id:q.source_question_id,subject:q.subject,round:q.round,question_number:q.question_number,
+        question:q.question,choices:[...q.choices],answer:q.answer,explanation:q.explanation,track:"past",variant:"light",personal:true};
+    });
+  }
+  async function fetchStudyJson(path){
+    const res=await fetch(path,{cache:"no-cache"});if(!res.ok)throw Error(path+" HTTP "+res.status);return res.json();
+  }
+  let rebuiltPromise=null;
+  async function loadRebuilt(){
+    if(!rebuiltPromise)rebuiltPromise=(async()=>{
+      const ledgers=["51-editorial-revisions","54-technical-corrections","55-editorial-corrections","57-editorial-corrections",
+        "58-editorial-corrections","59-editorial-corrections","60-editorial-corrections","61-editorial-corrections",
+        "62-editorial-corrections","63-editorial-corrections","65-editorial-corrections"];
+      const patches=new Map();
+      for(const ledger of await Promise.all(ledgers.map(x=>fetchStudyJson("data/qa/technical-qa"+x+".json")))){
+        for(const p of ledger.items){if(patches.has(p.id))throw Error("중복 수정 ID");patches.set(p.id,p);}
+      }
+      if(patches.size!==82)throw Error("재작성본 수정 수 불일치");
+      const applied=new Set(),rows=[];
+      for(let round=1;round<=9;round++){
+        const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
+        const groups=await Promise.all(SUBJECTS.map(async({id:subject})=>{
+          const [qs,es]=await Promise.all([fetchStudyJson("data/past/drafts/"+prefix+subject+".json"),
+            fetchStudyJson("data/explanations/drafts/"+prefix+subject+".json")]);
+          if(qs.length!==20||es.length!==20)throw Error("회차별 문항 수 불일치");
+          const em=new Map(es.map(e=>[e.id,e]));
+          return qs.map((q,i)=>{
+            const key=sourceId(subject,round,i+1),e=em.get(q.id),p=patches.get(q.id);
+            if(!e||q.source_question_id!==key||q.id!==key.replace("auto-","auto-made-")||q.answer!==e.correct_answer||
+              q.choices[q.answer-1]!==e.correct_choice)throw Error("기존 재작성본 연결 오류");
+            if(p){
+              if(p.before.question!==q.question||JSON.stringify(p.before.choices)!==JSON.stringify(q.choices)||
+                p.before.answer!==q.answer||p.before.reason!==e.reason||p.after.answer!==q.answer)throw Error("수정본 불일치");
+              applied.add(q.id);
+            }
+            const row={id:q.id,source_question_id:key,subject,round,question_number:i+1,question:p?.after.question??q.question,
+              choices:p?.after.choices??q.choices,answer:q.answer,explanation:p?.after.reason??e.reason,track:"past",
+              variant:"rebuilt",personal:true};
+            if(!validStudy(row))throw Error("재작성본 문항 오류");return row;
+          });
+        }));
+        rows.push(...groups.flat());
+      }
+      if(rows.length!==720||new Set(rows.map(q=>q.id)).size!==720||applied.size!==82)throw Error("재작성본 통합 오류");
+      return rows;
+    })().catch(e=>{rebuiltPromise=null;throw e;});
+    return rebuiltPromise;
+  }
+  async function activatePersonal(data,store){
+    const light=normalizeLight(data),rebuilt=await loadRebuilt();
+    if(store)localStorage.setItem(PERSONAL_KEY,JSON.stringify({format:"automotive-personal-rotation-v1",questions:light}));
+    ITEMS=ITEMS.filter(q=>!q.personal).concat(rebuilt,light);
+    $("rotationStatus").textContent="개인 문제은행 1,440문항 연결 완료 · 과목당 360문항 · 이 브라우저에 저장";
+    setTrack("past");updateExamAvailability();renderResumeExam();
+  }
+  async function importPersonal(){
+    const file=$("rotationFile").files?.[0];if(!file||personalLoading)return;
+    personalLoading=true;$("rotationFile").disabled=true;
+    $("rotationStatus").textContent="개인 JSON과 기존 720문항 연결 중…";
+    try{
+      if(bankLoadState!=="ready")throw Error("기본 문제은행을 먼저 불러와 줘.");
+      if(file.size>3000000)throw Error("파일 크기가 너무 커.");
+      await activatePersonal(JSON.parse(await file.text()),true);
+    }catch(e){$("rotationStatus").textContent="연결 실패: "+e.message;}
+    finally{personalLoading=false;$("rotationFile").disabled=false;$("rotationFile").value="";}
+  }
+  function removePersonal(){
+    if(personalLoading||!window.confirm("이 브라우저에서 개인 문제은행을 제거할까? 학습 이력은 보존돼."))return;
+    try{localStorage.removeItem(PERSONAL_KEY);localStorage.removeItem(ROTATION_KEY);}
+    catch(e){$("rotationStatus").textContent="삭제 실패: "+e.message;return;}
+    ITEMS=ITEMS.filter(q=>!q.personal);setTrack("expected");updateExamAvailability();renderResumeExam();
+    $("rotationStatus").textContent="개인 문제은행 제거 완료. 다시 파일을 선택하면 사용할 수 있어.";
+  }
+  function personalRotation(pool,count){
+    if(!pool.length||!pool.every(q=>q.personal))return shuffled(pool).slice(0,count);
+    const subject=pool[0].subject;
+    if(!pool.every(q=>q.subject===subject)||pool.length!==360)throw Error("과목별 로테이션 구성 오류");
+    const map=new Map(pool.map(q=>[q.id,q])),state=readStorage(ROTATION_KEY,{});
+    const old=state[subject],queue=Array.isArray(old?.remaining)&&new Set(old.remaining).size===old.remaining.length&&
+      old.remaining.every(id=>map.has(id))?[...old.remaining]:[];
+    let last=old?.lastSource||null,lastVariant=old?.lastVariant||null;
+    const out=[],seen=new Set();
+    function refill(){
+      const a=shuffled(pool.filter(q=>q.variant==="rebuilt")),b=new Map(pool.filter(q=>q.variant==="light").map(q=>[q.source_question_id,q]));
+      for(let i=0;i<a.length;i++)queue.push(a[i].id,b.get(a[(i+90)%a.length].source_question_id).id);
+    }
+    for(let i=0;i<Math.min(count,pool.length);i++){
+      if(!queue.length)refill();
+      let j=queue.findIndex(id=>!seen.has(id)&&map.get(id).source_question_id!==last&&map.get(id).variant!==lastVariant);
+      if(j<0)j=queue.findIndex(id=>!seen.has(id)&&map.get(id).source_question_id!==last);
+      if(j<0)j=queue.findIndex(id=>!seen.has(id));
+      if(j<0){refill(); // Keep any deferred current-cycle IDs before the fresh cycle, removing duplicates.
+        const unique=[...new Set(queue)];queue.splice(0,queue.length,...unique);
+        j=queue.findIndex(id=>!seen.has(id)&&map.get(id).source_question_id!==last);
+        if(j<0)j=queue.findIndex(id=>!seen.has(id));
+      }
+      const [id]=queue.splice(j,1),q=map.get(id);out.push(q);seen.add(id);last=q.source_question_id;lastVariant=q.variant;
+    }
+    state[subject]={remaining:queue,lastSource:last,lastVariant};saveStorage(ROTATION_KEY,state);return out;
   }
   const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
   let activeTrack = "past";
@@ -268,7 +388,7 @@
     const box=$("subjectGrid");box.replaceChildren();
     const total=poolFor(activeTrack).length;
     $("trackSummary").textContent=bankLoadState==="loading"?"문제은행을 불러오는 중이야.":
-      `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" · 자체 제작 연습문제(편집 검토 중)":" · 이용이 허가된 기출문제 등록 전"}`;
+      `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" · 자체 제작 연습문제(편집 검토 중)":(total?" · 재작성본 + 원본 기반 학습용":" · 개인 JSON을 먼저 선택해 줘")}`;
     for(const subject of SUBJECTS){
       const count=poolFor(activeTrack,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
@@ -297,7 +417,7 @@
     const container=$("browseList");container.replaceChildren();
     const pages=$("browsePagination");pages.replaceChildren();
     if(!state.items.length) {
-      displayEmpty(container,"이 분류에는 아직 검수된 문제가 없어. 구매한 교재의 스캔본은 공개 데이터로 등록하지 않았어.");
+      displayEmpty(container,"개인 로테이션 파일을 홈에서 선택하면 1,440문항을 이용할 수 있어.");
       return;
     }
     const pageSize=10;
@@ -326,7 +446,7 @@
   function startTrack(track,subject,count) {
     const pool=poolFor(track,subject);
     if(!pool.length) {openBrowse(track,subject);return;}
-    startSession(shuffled(pool).slice(0,Math.min(count,pool.length)),{
+    startSession(personalRotation(pool,count),{
       mode:"practice",title:`${TRACKS[track]} · ${currentSubjectLabel(subject)}`,
       track,subject
     });
@@ -341,9 +461,13 @@
   function startSampleExam(){
     startSession(shuffled(poolFor("demo")),{mode:"exam",title:"시연용 실전 시험",track:"demo",subject:null,examMinutes:10});
   }
-  function examPool(track) {
+  function examPool(track,consume=false) {
     const groups=SUBJECTS.map(subject=>poolFor(track,subject.id));
     if(groups.some(group=>group.length<20))return null;
+    if(consume&&track==="past"&&groups.every(g=>g.every(q=>q.personal))){
+      const chosen=shuffled(groups.map(g=>personalRotation(g,20)));
+      return Array.from({length:20},(_,i)=>chosen.map(g=>g[i])).flat();
+    }
     return shuffled(groups.flatMap(group=>shuffled(group).slice(0,20)));
   }
   function updateExamAvailability() {
@@ -353,13 +477,13 @@
       ?"문제은행을 불러오지 못했어. 새로고침해 줘."
       :bankLoadState==="loading"
         ?"문제은행을 불러오는 중이야."
-        :`자체제작 예상문제 ${poolFor("expected").length}문항 중 과목별 20개, 총 80문항 학습용 모의고사 · 최종 기술검수 전인 복원문제 720개는 출제 제외`;
+        :`자체제작 예상문제 ${poolFor("expected").length}문항 중 과목별 20개, 총 80문항 학습용 모의고사 · 개인 로테이션 ${poolFor("past").length}문항`;
   }
   function startFullExam(track) {
-    const items=examPool(track);
+    const items=examPool(track,true);
     if(!items){updateExamAvailability();return;}
     startSession(items,{
-      mode:"exam",title:track==="past"?"승인된 기출 복원 모의고사":"자체제작 예상문제 모의고사 (학습용)",
+      mode:"exam",title:track==="past"?"개인 로테이션 모의고사":"자체제작 예상문제 모의고사 (학습용)",
       track,subject:null,examMinutes:120
     });
   }
@@ -407,7 +531,8 @@
     $("questionNumber").textContent=`문제 ${index+1}`;
     $("questionText").textContent=q.question;
     const audit=$("quizAuditInfo");
-    if(q.review_status==="editorial_draft") {
+    if(q.personal){audit.classList.remove("hidden");audit.textContent=q.variant==="light"?"개인 학습 · 원본 기반 표현 수정":"개인 학습 · 기존 재작성본";}
+    else if(q.review_status==="editorial_draft") {
       audit.classList.remove("hidden");
       audit.textContent=q.track==="concept"?"자체제작 개념문제 · 편집 검토 단계":"자체제작 연습문제 · 편집 검토 단계";
     } else audit.classList.add("hidden");
@@ -625,6 +750,8 @@
     saveStorage("automotiveQuizReadingSizeV1",size);
   }
   function connect(){
+    $("rotationFile").addEventListener("change",importPersonal);
+    $("rotationRemoveBtn").addEventListener("click",removePersonal);
     $("trackPast").addEventListener("click",()=>setTrack("past"));
     $("trackExpected").addEventListener("click",()=>setTrack("expected"));
     $("themeToggleBtn").addEventListener("click",toggleTheme);
@@ -639,7 +766,7 @@
     $("sampleExamBtn").addEventListener("click",startSampleExam);
     $("expectedExamBtn").addEventListener("click",()=>startFullExam("expected"));
     $("approvedExamBtn").addEventListener("click",()=>startFullExam("past"));
-    $("browseStartBtn").addEventListener("click",()=>startSession(shuffled(browseState.items),
+    $("browseStartBtn").addEventListener("click",()=>startSession(browseState.track==="past"&&browseState.subject?personalRotation(browseState.items,browseState.items.length):shuffled(browseState.items),
       {mode:"practice",title:browseState.title,track:browseState.track,subject:browseState.subject}));
     $("previousBtn").addEventListener("click",previousQuestion);
     $("nextBtn").addEventListener("click",nextQuestion);
