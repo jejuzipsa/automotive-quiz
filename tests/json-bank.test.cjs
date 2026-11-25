@@ -50,7 +50,7 @@ const document={
  querySelectorAll:selector=>selector===".reading-size-btn"?sizes:[]
 };
 const memory={};
-const localStorage={getItem:k=>memory[k]??null,setItem:(k,v)=>{memory[k]=v}};
+const localStorage={getItem:k=>memory[k]??null,setItem:(k,v)=>{memory[k]=v},removeItem:k=>{delete memory[k]}};
 const requestPaths=[];
 async function fetch(url){
   requestPaths.push(url);
@@ -201,6 +201,48 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
     assert.ok(els.resultScore.textContent.includes("12 / 12문제"));
     await els.resultHomeBtn.click();await els.conceptEntryBtn.click();
   }
+
+  // Use synthetic private inputs based on public authored draft IDs; never upload the user's OCR.
+  const light=[];
+  for(let round=1;round<=9;round++)for(const subject of ["engine","chassis","electrical","eco"]){
+    const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
+    const raw=JSON.parse(fs.readFileSync(path.join(root,"data/past/drafts",prefix,subject+".json"),"utf8"));
+    for(const q of raw)light.push({id:q.source_question_id.replace("auto-","auto-light-"),source_question_id:q.source_question_id,subject,round,
+      question_number:q.question_number,question:"개인 로테이션 테스트: "+q.question,choices:q.choices,answer:q.answer,explanation:"테스트 전용 해설",variant:"light"});
+  }
+  await els.homeBtn.click();
+  const file={format:"automotive-personal-rotation-v1",questions:light};
+  els.rotationFile.files=[{size:1,text:async()=>JSON.stringify(file)}];
+  await els.rotationFile.listeners.change.at(-1)();
+  assert.match(els.rotationStatus.textContent,/1,440문항 연결 완료/);
+  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
+  const queueKey="automotiveRotationQueueV1",consumed=new Set();
+  let previousQueue=null;
+  for(let i=0;i<36;i++){
+    await els.subjectGrid.children[0].children[1].children[0].click();
+    const queue=JSON.parse(memory[queueKey]).engine.remaining;
+    assert.equal(queue.length,360-(i+1)*10);
+    if(previousQueue){const batch=previousQueue.filter(id=>!queue.includes(id));assert.equal(batch.length,10);for(const id of batch){assert.ok(!consumed.has(id));consumed.add(id);}}
+    else {const all=light.filter(q=>q.subject==="engine").flatMap(q=>[q.id,q.source_question_id.replace("auto-","auto-made-")]);for(const id of all.filter(id=>!queue.includes(id)))consumed.add(id);}
+    previousQueue=queue;
+    await els.homeBtn.click();
+  }
+  assert.equal(consumed.size,360);
+  await els.examEntryBtn.click();assert.equal(els.approvedExamBtn.disabled,false);
+  await els.approvedExamBtn.click();
+  const rotationExam=JSON.parse(memory.automotiveQuizActiveExamV1);
+  assert.equal(rotationExam.ids.length,80);assert.equal(new Set(rotationExam.ids).size,80);
+  assert.equal(rotationExam.ids.filter(x=>x.startsWith("auto-light-")).length,40);
+  assert.equal(rotationExam.ids.filter(x=>x.startsWith("auto-made-")).length,40);
+  for(let i=1;i<80;i++)assert.notEqual(rotationExam.ids[i].replace(/^auto-(light|made)-/,"auto-"),rotationExam.ids[i-1].replace(/^auto-(light|made)-/,"auto-"));
+  for(const n of ["01","02","03","04"])assert.equal(rotationExam.ids.filter(x=>x.includes("-s"+n+"-")).length,20);
+  await els.homeBtn.click();
+  vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
+  await new Promise(resolve=>setImmediate(resolve));
+  assert.match(els.rotationStatus.textContent,/1,440문항 연결 완료/);
+  assert.equal(els.resumeExamBtn.disabled,false);
+  console.log("PASS: personal 1440 import, full 360-item rotation, mixed 80-question exam, reload");
+
   console.log("PASS: all 48 concept questions exercised with shuffled answers");
   console.log("PASS: cumulative wrong history, submitted exam blanks, repeat errors, resolved filter");
   console.log("PASS: exam resume, order, answers, deadline, expiry");

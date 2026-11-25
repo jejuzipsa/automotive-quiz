@@ -194,7 +194,7 @@
     if(!pool.length||!pool.every(q=>q.personal))return shuffled(pool).slice(0,count);
     const subject=pool[0].subject;
     if(!pool.every(q=>q.subject===subject)||pool.length!==360)throw Error("과목별 로테이션 구성 오류");
-    const map=new Map(pool.map(q=>[q.id,q])),state=readStorage(ROTATION_KEY,{});
+    const map=new Map(pool.map(q=>[q.id,q])),raw=readStorage(ROTATION_KEY,{}),state=raw&&typeof raw==="object"&&!Array.isArray(raw)?raw:{};
     const old=state[subject],queue=Array.isArray(old?.remaining)&&new Set(old.remaining).size===old.remaining.length&&
       old.remaining.every(id=>map.has(id))?[...old.remaining]:[];
     let last=old?.lastSource||null,lastVariant=old?.lastVariant||null;

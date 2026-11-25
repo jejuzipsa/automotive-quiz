@@ -14,6 +14,7 @@ for(const match of app.matchAll(/\$\("([^"]+)"\)/g))
 for(const forbidden of ["personalTextBankInput","vendor/jszip.min.js","personal-text-bank.js"]){
   assert(!html.includes(forbidden),"legacy ZIP/public import must not return: "+forbidden);
 }
+assert.ok(html.includes('id="rotationFile" type="file"'),"private JSON import present");
 const manifest=JSON.parse(read("data/manifest.json"));
 assert.equal(manifest.version,1);
 const baseFiles=new Set(["data/expected/engine.json","data/expected/chassis.json",
