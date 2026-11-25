@@ -1,0 +1,830 @@
+{
+  "stage": "QA73",
+  "reviewed": [
+    {
+      "id": "concept-engine-01",
+      "answer": 1,
+      "correct_choice": "불꽃",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-01",
+      "answer": 2,
+      "correct_choice": "브레이크액",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-01",
+      "answer": 1,
+      "correct_choice": "퓨즈",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-01",
+      "answer": 3,
+      "correct_choice": "회생제동",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-02",
+      "answer": 1,
+      "correct_choice": "하사점",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-03",
+      "answer": 2,
+      "correct_choice": "압축 링",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-04",
+      "answer": 3,
+      "correct_choice": "서모스탯",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-05",
+      "answer": 4,
+      "correct_choice": "1회전",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-06",
+      "answer": 1,
+      "correct_choice": "CKP 센서",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-07",
+      "answer": 2,
+      "correct_choice": "MAF 센서",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-08",
+      "answer": 3,
+      "correct_choice": "MAP 센서",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-09",
+      "answer": 4,
+      "correct_choice": "NOx",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-10",
+      "answer": 1,
+      "correct_choice": "커먼레일",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-11",
+      "answer": 2,
+      "correct_choice": "EGR",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-12",
+      "answer": 3,
+      "correct_choice": "인터쿨러",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-02",
+      "answer": 2,
+      "correct_choice": "마스터 실린더",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-03",
+      "answer": 3,
+      "correct_choice": "ABS",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-04",
+      "answer": 4,
+      "correct_choice": "ESC",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-05",
+      "answer": 1,
+      "correct_choice": "캘리퍼",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-06",
+      "answer": 2,
+      "correct_choice": "포지티브 캠버",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-07",
+      "answer": 3,
+      "correct_choice": "토인",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-08",
+      "answer": 4,
+      "correct_choice": "쇼크 업소버",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-09",
+      "answer": 1,
+      "correct_choice": "스태빌라이저 바",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-10",
+      "answer": 2,
+      "correct_choice": "수막현상",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-11",
+      "answer": 3,
+      "correct_choice": "차동장치",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-12",
+      "answer": 4,
+      "correct_choice": "등속 조인트",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-02",
+      "answer": 3,
+      "correct_choice": "릴레이",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-03",
+      "answer": 4,
+      "correct_choice": "12 V",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-04",
+      "answer": 1,
+      "correct_choice": "알터네이터",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-05",
+      "answer": 2,
+      "correct_choice": "다이오드",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-06",
+      "answer": 3,
+      "correct_choice": "옴(Ω)",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-07",
+      "answer": 4,
+      "correct_choice": "같다",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-08",
+      "answer": 1,
+      "correct_choice": "같다",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-09",
+      "answer": 2,
+      "correct_choice": "병렬",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-10",
+      "answer": 3,
+      "correct_choice": "개방",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-11",
+      "answer": 4,
+      "correct_choice": "차동 신호",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-12",
+      "answer": 1,
+      "correct_choice": "홀 센서",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-02",
+      "answer": 4,
+      "correct_choice": "BMS",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-03",
+      "answer": 1,
+      "correct_choice": "인버터",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-04",
+      "answer": 2,
+      "correct_choice": "DC-DC 컨버터",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-05",
+      "answer": 3,
+      "correct_choice": "OBC",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-06",
+      "answer": 4,
+      "correct_choice": "SOC",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-07",
+      "answer": 1,
+      "correct_choice": "SOH",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-08",
+      "answer": 2,
+      "correct_choice": "배터리 열관리계통",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-09",
+      "answer": 3,
+      "correct_choice": "열폭주",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-10",
+      "answer": 4,
+      "correct_choice": "메인 컨택터",
+      "decision": "refined",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-11",
+      "answer": 1,
+      "correct_choice": "PHEV",
+      "decision": "retain",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-12",
+      "answer": 2,
+      "correct_choice": "연료전지 스택",
+      "decision": "retain",
+      "independent_expert_approved": false
+    }
+  ],
+  "changed": [
+    {
+      "id": "concept-engine-01",
+      "before": {
+        "question": "가솔린 엔진의 점화 플러그는 전기적인 (    )을 발생시켜 연소를 시작한다.",
+        "choices": [
+          "불꽃",
+          "유압",
+          "냉각수",
+          "배기가스"
+        ],
+        "answer": 1,
+        "explanation": "가솔린 엔진은 점화 플러그의 전기 불꽃을 사용해 혼합기를 점화해."
+      },
+      "after": {
+        "question": "불꽃점화 가솔린 기관에서 점화 플러그 전극 사이의 방전으로 발생하는 (    )이 혼합기를 점화한다.",
+        "choices": [
+          "불꽃",
+          "열복사",
+          "압축열",
+          "마찰열"
+        ],
+        "answer": 1,
+        "explanation": "불꽃점화 가솔린 엔진은 점화 플러그의 전극 사이에서 발생하는 전기 불꽃으로 공기·연료 혼합기를 점화한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-01",
+      "before": {
+        "question": "회로의 과전류 보호를 위해 사용하는 부품은 (    )이다.",
+        "choices": [
+          "퓨즈",
+          "헤드램프",
+          "혼",
+          "스피커"
+        ],
+        "answer": 1,
+        "explanation": "퓨즈는 정해진 전류 조건에서 회로를 차단해 과전류로 인한 손상을 줄여."
+      },
+      "after": {
+        "question": "규정된 과전류 조건에서 가용체가 녹아 회로를 차단하는 보호 부품은 (    )이다.",
+        "choices": [
+          "퓨즈",
+          "정류 다이오드",
+          "커패시터",
+          "릴레이"
+        ],
+        "answer": 1,
+        "explanation": "퓨즈는 정해진 전류 조건에서 회로를 차단해 과전류로 인한 손상을 줄여."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-02",
+      "before": {
+        "question": "흡입 행정에서 피스톤은 상사점에서 (    )으로 이동한다.",
+        "choices": [
+          "하사점",
+          "압축상사점",
+          "점화 위치",
+          "밸브 오버랩 위치"
+        ],
+        "answer": 1,
+        "explanation": "흡입 행정에서는 피스톤이 내려가며 실린더에 공기 또는 혼합기가 유입된다."
+      },
+      "after": {
+        "question": "일반적인 4행정 기관의 흡입 행정은 피스톤이 상사점에서 출발해 (    )에 도달하는 행정이다.",
+        "choices": [
+          "하사점",
+          "상사점",
+          "행정 중앙점",
+          "밸브 오버랩 위치"
+        ],
+        "answer": 1,
+        "explanation": "흡입 행정에서는 피스톤이 내려가며 실린더에 공기 또는 혼합기가 유입된다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-03",
+      "before": {
+        "question": "피스톤과 실린더 벽 사이에서 연소가스 누설을 줄이는 링은 (    )이다.",
+        "choices": [
+          "스냅 링",
+          "압축 링",
+          "오일 씰",
+          "밸브 시트"
+        ],
+        "answer": 2,
+        "explanation": "압축 링은 연소실의 기밀을 유지하는 데 기여한다."
+      },
+      "after": {
+        "question": "피스톤과 실린더 벽 사이에서 연소가스 누설을 줄이는 링은 (    )이다.",
+        "choices": [
+          "오일 링",
+          "압축 링",
+          "피스톤 핀",
+          "밸브 스템 씰"
+        ],
+        "answer": 2,
+        "explanation": "압축 링은 연소실의 기밀을 유지하는 데 기여한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-04",
+      "before": {
+        "question": "냉각수 온도에 따라 라디에이터 쪽 유량을 조절하는 부품은 (    )이다.",
+        "choices": [
+          "오일 펌프",
+          "압력 센서",
+          "서모스탯",
+          "인터쿨러"
+        ],
+        "answer": 3,
+        "explanation": "서모스탯은 냉간 예열과 정상 작동 온도 유지에 필요한 냉각수 흐름을 조절한다."
+      },
+      "after": {
+        "question": "일반적인 액체 냉각 엔진에서 냉각수 온도에 따라 라디에이터 방향의 유로 개도를 조절하는 부품은 (    )이다.",
+        "choices": [
+          "냉각수 펌프",
+          "라디에이터 압력 캡",
+          "서모스탯",
+          "냉각팬"
+        ],
+        "answer": 3,
+        "explanation": "서모스탯은 냉간 예열과 정상 작동 온도 유지에 필요한 냉각수 흐름을 조절한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-08",
+      "before": {
+        "question": "흡기 매니폴드의 절대압력을 측정하는 센서는 (    )이다.",
+        "choices": [
+          "MAF 센서",
+          "산소 센서",
+          "MAP 센서",
+          "냉각수 온도 센서"
+        ],
+        "answer": 3,
+        "explanation": "MAP는 흡기 매니폴드 절대압력의 약자다."
+      },
+      "after": {
+        "question": "흡기 매니폴드의 절대압력을 측정하는 센서는 (    )이다.",
+        "choices": [
+          "MAF 센서",
+          "산소 센서",
+          "MAP 센서",
+          "냉각수 온도 센서"
+        ],
+        "answer": 3,
+        "explanation": "MAP(Manifold Absolute Pressure)는 흡기 매니폴드 절대압력을 뜻한다. MAF 센서는 공기 질량 유량을 측정하므로 구별해야 한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-11",
+      "before": {
+        "question": "일부 배기가스를 흡기로 되돌려 연소 조건을 조절하고 NOx 생성을 줄이는 방식은 (    )이다.",
+        "choices": [
+          "OBC",
+          "EGR",
+          "ABS",
+          "DPF 재생"
+        ],
+        "answer": 2,
+        "explanation": "EGR은 배기가스 재순환으로 연소 온도 조건을 조절한다."
+      },
+      "after": {
+        "question": "일부 배기가스를 흡기로 되돌려 연소 조건을 조절하고 NOx 생성을 줄이는 방식은 (    )이다.",
+        "choices": [
+          "PCV",
+          "EGR",
+          "과급압 제어",
+          "DPF 재생"
+        ],
+        "answer": 2,
+        "explanation": "EGR은 배기가스 일부를 흡기로 되돌려 연소 조건을 조절하고 NOx 생성을 줄이는 방식이다. PCV는 크랭크실 블로바이 가스를 흡기로 되돌리는 계통이다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-engine-12",
+      "before": {
+        "question": "터보차저에서 압축된 흡입 공기를 냉각하는 열교환기는 (    )이다.",
+        "choices": [
+          "오일 필터",
+          "소음기",
+          "인터쿨러",
+          "커먼레일"
+        ],
+        "answer": 3,
+        "explanation": "인터쿨러는 과급 공기의 온도를 낮춰 공기 밀도를 높이는 데 도움을 준다."
+      },
+      "after": {
+        "question": "터보차저에서 압축된 흡입 공기를 냉각하는 열교환기는 (    )이다.",
+        "choices": [
+          "엔진 오일 쿨러",
+          "EGR 쿨러",
+          "인터쿨러",
+          "히터 코어"
+        ],
+        "answer": 3,
+        "explanation": "인터쿨러는 과급 공기의 온도를 낮춰 공기 밀도를 높이는 데 도움을 준다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-03",
+      "before": {
+        "question": "제동 중 바퀴 잠김을 억제하기 위해 제동압을 조절하는 시스템은 (    )이다.",
+        "choices": [
+          "EPS",
+          "EGR",
+          "ABS",
+          "TPMS"
+        ],
+        "answer": 3,
+        "explanation": "ABS는 바퀴 속도 등의 정보를 이용해 제동압을 조절한다."
+      },
+      "after": {
+        "question": "제동 중 바퀴 잠김을 억제하기 위해 제동압을 조절하는 시스템은 (    )이다.",
+        "choices": [
+          "EPS",
+          "TCS",
+          "ABS",
+          "TPMS"
+        ],
+        "answer": 3,
+        "explanation": "ABS는 제동 중 바퀴 잠김을 억제한다. TCS는 주로 가속 시 구동 바퀴의 과도한 미끄러짐을 줄인다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-04",
+      "before": {
+        "question": "조향 의도와 실제 차량 거동의 차이를 줄이기 위해 제동력 등을 제어하는 장치는 (    )이다.",
+        "choices": [
+          "TPMS",
+          "OBC",
+          "차동장치",
+          "ESC"
+        ],
+        "answer": 4,
+        "explanation": "ESC는 차량의 자세 안정화를 위해 필요한 제동력과 구동력을 제어할 수 있다."
+      },
+      "after": {
+        "question": "운전자의 조향 의도와 실제 차량 거동을 비교하여 선택적 제동 등으로 차량 자세를 보정하는 장치는 (    )이다.",
+        "choices": [
+          "EPS",
+          "ABS",
+          "TCS",
+          "ESC"
+        ],
+        "answer": 4,
+        "explanation": "ESC는 차량의 자세 안정화를 위해 필요한 제동력과 구동력을 제어할 수 있다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-chassis-09",
+      "before": {
+        "question": "좌우 현가장치의 상대 운동에 저항하여 선회 중 차체 롤을 줄이는 부품은 (    )이다.",
+        "choices": [
+          "스태빌라이저 바",
+          "프로펠러 샤프트",
+          "타이로드",
+          "클러치 디스크"
+        ],
+        "answer": 1,
+        "explanation": "스태빌라이저 바는 좌우 서스펜션의 상대 변위에 저항한다."
+      },
+      "after": {
+        "question": "좌우 현가장치의 상대 운동에 저항하여 선회 중 차체 롤을 줄이는 부품은 (    )이다.",
+        "choices": [
+          "스태빌라이저 바",
+          "코일 스프링",
+          "쇼크 업소버",
+          "컨트롤 암"
+        ],
+        "answer": 1,
+        "explanation": "스태빌라이저 바는 좌우 서스펜션의 상대 변위에 저항한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-07",
+      "before": {
+        "question": "분기가 없는 직렬 회로에서 각 저항에 흐르는 전류는 서로 (    ).",
+        "choices": [
+          "저항값에 비례해 다르다",
+          "전압값에 반비례해 다르다",
+          "항상 0이다",
+          "같다"
+        ],
+        "answer": 4,
+        "explanation": "직렬 회로는 전류 경로가 하나이므로 모든 소자에 같은 전류가 흐른다."
+      },
+      "after": {
+        "question": "분기가 없는 정상적인 직렬 회로에서 각 저항에 흐르는 전류의 크기는 서로 (    ).",
+        "choices": [
+          "저항값에 비례해 다르다",
+          "저항값에 반비례해 다르다",
+          "전압 강하가 큰 소자에서만 작다",
+          "같다"
+        ],
+        "answer": 4,
+        "explanation": "직렬 회로는 전류 경로가 하나이므로 모든 소자에 같은 전류가 흐른다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-08",
+      "before": {
+        "question": "같은 두 노드에 연결된 병렬 저항의 양단 전압은 서로 (    ).",
+        "choices": [
+          "같다",
+          "저항값에 비례해 다르다",
+          "저항값에 반비례해 다르다",
+          "항상 0이다"
+        ],
+        "answer": 1,
+        "explanation": "병렬 소자는 동일한 두 노드 사이에 연결되므로 양단 전위차가 같다."
+      },
+      "after": {
+        "question": "같은 두 노드에 연결된 병렬 저항의 양단 전압은 서로 (    ).",
+        "choices": [
+          "같다",
+          "저항값에 비례해 다르다",
+          "저항값에 반비례해 다르다",
+          "전류가 큰 저항에서만 작다"
+        ],
+        "answer": 1,
+        "explanation": "병렬 소자는 동일한 두 노드 사이에 연결되므로 양단 전위차가 같다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-electrical-11",
+      "before": {
+        "question": "고속 CAN 통신의 CAN-H와 CAN-L은 내잡음성을 높이는 (    ) 방식에 사용된다.",
+        "choices": [
+          "단일 접점",
+          "교류 전력 전송",
+          "아날로그 음성",
+          "차동 신호"
+        ],
+        "answer": 4,
+        "explanation": "차동 신호는 두 선 사이의 전위차를 이용해 통신한다."
+      },
+      "after": {
+        "question": "고속 CAN 통신의 CAN-H와 CAN-L은 내잡음성을 높이는 (    ) 방식에 사용된다.",
+        "choices": [
+          "단일 종단 신호",
+          "전력선 통신",
+          "광 신호",
+          "차동 신호"
+        ],
+        "answer": 4,
+        "explanation": "차동 신호는 두 선 사이의 전위차를 이용해 통신한다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-02",
+      "before": {
+        "question": "구동 배터리의 셀 전압·전류·온도 등을 감시하고 보호하는 시스템은 (    )이다.",
+        "choices": [
+          "OBC",
+          "ABS",
+          "ESC",
+          "BMS"
+        ],
+        "answer": 4,
+        "explanation": "배터리관리시스템(BMS)은 셀 상태를 감시하고 배터리 보호에 사용된다."
+      },
+      "after": {
+        "question": "구동 배터리의 셀 전압·전류·온도 등을 감시하고 보호하는 시스템은 (    )이다.",
+        "choices": [
+          "OBC",
+          "구동 인버터",
+          "DC-DC 컨버터",
+          "BMS"
+        ],
+        "answer": 4,
+        "explanation": "배터리관리시스템(BMS)은 셀 상태를 감시하고 배터리 보호에 사용된다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-06",
+      "before": {
+        "question": "배터리에 남은 전하의 충전 상태를 비율로 나타내는 지표는 (    )이다.",
+        "choices": [
+          "SOH",
+          "GWP",
+          "DTC",
+          "SOC"
+        ],
+        "answer": 4,
+        "explanation": "SOC는 State of Charge로 충전 상태를 나타낸다."
+      },
+      "after": {
+        "question": "배터리에 남은 전하의 충전 상태를 비율로 나타내는 지표는 (    )이다.",
+        "choices": [
+          "SOH",
+          "SOE",
+          "SOP",
+          "SOC"
+        ],
+        "answer": 4,
+        "explanation": "SOC(State of Charge)는 전하량을 기준으로 한 충전 상태다. SOE는 에너지 상태, SOH는 건전성, SOP는 가용 출력 상태를 나타내는 지표로 사용된다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-07",
+      "before": {
+        "question": "신품 대비 배터리의 용량이나 저항 등 성능·건전성을 평가하는 지표는 (    )이다.",
+        "choices": [
+          "SOH",
+          "SOC",
+          "RPM",
+          "MAP"
+        ],
+        "answer": 1,
+        "explanation": "SOH는 State of Health로 배터리 성능과 건전성의 상태를 나타낸다."
+      },
+      "after": {
+        "question": "신품 대비 배터리의 용량이나 저항 등 성능·건전성을 평가하는 지표는 (    )이다.",
+        "choices": [
+          "SOH",
+          "SOC",
+          "SOE",
+          "SOP"
+        ],
+        "answer": 1,
+        "explanation": "SOH는 State of Health로 배터리 성능과 건전성의 상태를 나타낸다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    },
+    {
+      "id": "concept-eco-10",
+      "before": {
+        "question": "고전압 배터리 팩과 고전압 회로 사이 전기적 접속을 제어하는 스위치는 (    )이다.",
+        "choices": [
+          "전압 센서",
+          "온도 센서",
+          "냉각수 펌프",
+          "메인 컨택터"
+        ],
+        "answer": 4,
+        "explanation": "메인 컨택터는 고전압 배터리와 회로를 전기적으로 연결 또는 분리하도록 제어된다."
+      },
+      "after": {
+        "question": "고전압 배터리 팩과 고전압 회로 사이 전기적 접속을 제어하는 스위치는 (    )이다.",
+        "choices": [
+          "전압 센서",
+          "전류 센서",
+          "절연 감시 장치",
+          "메인 컨택터"
+        ],
+        "answer": 4,
+        "explanation": "메인 컨택터는 고전압 배터리와 회로를 전기적으로 연결 또는 분리하도록 제어된다."
+      },
+      "reason": "문항 조건 또는 동종 계통 오답 보기 명확화; 정답 위치와 정답 텍스트 유지",
+      "independent_expert_approved": false
+    }
+  ],
+  "scope": "48문항 현재 지문, 보기, 정답, 해설 내부 모델 논리 및 편집 재검토; 외부 전문가 승인 아님"
+}

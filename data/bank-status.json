@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24",
+  "updated_at": "2026-11-25",
   "site_repo": "jejuzipsa/automotive-quiz",
   "source_of_truth": "Independently-authored educational draft bank (720 questions/2880 options): QA40-45 replaced 54 historically miscategorized or ambiguous items with new subject-focused study prompts, which are not verbatim original past exams. All legacy audit records preserved. 55 classification holds still held, no expert final approvals (0/720), reconstructed past not live (0/720); original expected practice112 including 32 newly authored practice items. QA38 historical firstpass 351 source supported and 369 additional review is not independently approved.",
   "public_site": {
@@ -2589,5 +2589,15 @@
     "independent_expert_approved": false,
     "expected_count_unchanged": 112,
     "drafts_promoted": 0
+  },
+  "qa73_quality_review": {
+    "concept_reviewed": 48,
+    "concept_revised": 18,
+    "correct_answer_changes": 0,
+    "total_holds": 55,
+    "released": 0,
+    "independent_approvals": 0,
+    "hold_current_screened": 7,
+    "hold_current_remaining": 48
   }
 }
