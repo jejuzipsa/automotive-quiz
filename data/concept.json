@@ -8950,15 +8950,15 @@
     "id": "concept-chassis-128",
     "track": "concept",
     "subject": "chassis",
-    "question": "스프링과 댐퍼 중 차체 진동 에너지를 열 등으로 소산시키는 부품은 (    )이다.",
+    "question": "현가장치에서 스프링과 달리 유압 댐퍼가 운동에너지를 주로 변환하는 에너지 형태는 (    )이다.",
     "choices": [
-      "코일 스프링",
-      "리프 스프링",
-      "타이어 비드",
-      "댐퍼"
+      "열에너지",
+      "화학에너지",
+      "전기에너지",
+      "탄성 위치에너지"
     ],
-    "answer": 4,
-    "explanation": "스프링은 탄성 에너지를 저장하고 댐퍼는 운동에너지를 소산한다.",
+    "answer": 1,
+    "explanation": "댐퍼는 작동유 유동 저항 등으로 기계적 진동 에너지를 주로 열로 소산시킨다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r04-s02-q08"
@@ -9018,15 +9018,15 @@
     "id": "concept-chassis-132",
     "track": "concept",
     "subject": "chassis",
-    "question": "ABS 유압 제어에서 바퀴 잠김 경향을 완화하도록 압력을 낮추는 단계는 (    )이다.",
+    "question": "ABS 유압 제어에서 휠의 잠김 경향이 해소된 후 제동력을 다시 증가시키는 단계는 (    )이다.",
     "choices": [
       "증압",
+      "감압",
       "유지",
-      "충전",
-      "감압"
+      "배기"
     ],
-    "answer": 4,
-    "explanation": "ABS는 바퀴 상태에 따라 제동압을 조절한다.",
+    "answer": 1,
+    "explanation": "ABS는 바퀴의 회전 상태에 따라 감압·유지·증압을 반복 제어한다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r05-s02-q14"
@@ -9936,15 +9936,15 @@
     "id": "concept-chassis-186",
     "track": "concept",
     "subject": "chassis",
-    "question": "선형 댐퍼의 감쇠력 600N, 운동 속도 0.3m/s일 때 감쇠계수는 (    )이다.",
+    "question": "선형 댐퍼의 감쇠력 750N, 운동 속도 0.25m/s일 때 감쇠계수는 (    )이다.",
     "choices": [
-      "180N·s/m",
-      "2000N·s/m",
-      "600N·s/m",
-      "0.001N·s/m"
+      "3000N·s/m",
+      "187.5N·s/m",
+      "750N·s/m",
+      "0.000333N·s/m"
     ],
-    "answer": 2,
-    "explanation": "c=F/v=600÷0.3=2000N·s/m이다.",
+    "answer": 1,
+    "explanation": "c=F/v=750÷0.25=3000N·s/m이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r04-s02-q09"
@@ -12146,18 +12146,18 @@
     "id": "concept-eco-116",
     "track": "concept",
     "subject": "eco",
-    "question": "수소연료전지의 발전 과정은 연소기관의 열기관 방식과 달리 직접적인 (    ) 변환이다.",
+    "question": "PEM 연료전지에서 외부 전기회로를 통해 이동하며 전류를 형성하는 입자는 (    )이다.",
     "choices": [
-      "유압 에너지",
-      "타이어 운동",
-      "핵분열 에너지",
-      "전기화학적 에너지"
+      "전자",
+      "양성자",
+      "산소 분자",
+      "물 분자"
     ],
-    "answer": 4,
-    "explanation": "수소와 산소의 전기화학 반응으로 전력을 생산한다.",
+    "answer": 1,
+    "explanation": "애노드에서 수소가 산화되면 전자는 외부 회로를 통해 이동하고 양성자는 막을 통과한다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
-    "source_question_id": "original-eco-19"
+    "source_question_id": "original-eco-26"
   },
   {
     "id": "concept-eco-117",
@@ -13047,15 +13047,15 @@
     "id": "concept-eco-169",
     "track": "concept",
     "subject": "eco",
-    "question": "입력 전력 40kW, 변환 효율 95%인 장치의 손실 전력은 (    )이다.",
+    "question": "입력 전력 60kW, 변환 효율 95%인 장치의 손실 전력은 (    )이다.",
     "choices": [
-      "2kW",
-      "38kW",
-      "40kW",
-      "0.95kW"
+      "3kW",
+      "57kW",
+      "60kW",
+      "0.05kW"
     ],
     "answer": 1,
-    "explanation": "손실=40×(100−95)/100=2kW이다.",
+    "explanation": "손실=60×(100−95)/100=3kW이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-eco-24"
@@ -13081,15 +13081,15 @@
     "id": "concept-eco-171",
     "track": "concept",
     "subject": "eco",
-    "question": "감속으로 감소한 운동에너지가 200kJ이고 저장 효율이 50%라면 저장되지 않은 에너지는 (    )이다.",
+    "question": "감속으로 감소한 운동에너지가 240kJ이고 저장 효율이 25%라면 저장되지 않은 에너지는 (    )이다.",
     "choices": [
-      "200kJ",
-      "10000kJ",
-      "100kJ",
-      "151kJ"
+      "180kJ",
+      "60kJ",
+      "240kJ",
+      "960kJ"
     ],
-    "answer": 3,
-    "explanation": "저장되지 않은 양=200×(100−50)/100=100kJ이다.",
+    "answer": 1,
+    "explanation": "저장되지 않은 양=240×(1−0.25)=180kJ이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-eco-25"
@@ -13217,15 +13217,15 @@
     "id": "concept-eco-179",
     "track": "concept",
     "subject": "eco",
-    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 60kWh, SOH 80%에서 현재 가용 에너지는 (    )이다.",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 65kWh, SOH 80%에서 현재 가용 에너지는 (    )이다.",
     "choices": [
-      "60kWh",
-      "12kWh",
-      "48kWh",
-      "75kWh"
+      "52kWh",
+      "65kWh",
+      "13kWh",
+      "81.25kWh"
     ],
-    "answer": 3,
-    "explanation": "현재 가용 에너지=60×80/100=48kWh이다.",
+    "answer": 1,
+    "explanation": "현재 가용 에너지=65×0.8=52kWh이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r04-s04-q13"

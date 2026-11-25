@@ -204,7 +204,7 @@ async function testDevice(browser,name,viewport,mobile){
     await el("homeBtn").click();await el("conceptEntryBtn").click();
     assert.equal(await el("conceptGrid").locator(".concept-card").count(),4);
     const concept=read("data/concept.json"),seen=new Set();
-    for(const card of await el("conceptGrid").locator(".concept-card").all())assert.match(await card.innerText(),/100개/);
+    for(const card of await el("conceptGrid").locator(".concept-card").all())assert.match(await card.innerText(),/200개/);
     await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"10문제",exact:true}).click();
     for(let i=0;i<10;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);
       assert.ok(item&&item.subject==="engine"&&!seen.has(item.id));seen.add(item.id);
@@ -212,7 +212,7 @@ async function testDevice(browser,name,viewport,mobile){
     }
     assert.match(await text("resultScore"),/10 \/ 10문제/);
     const firstConceptQueue=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveConceptRotationV1")).engine.remaining);
-    assert.equal(firstConceptQueue.length,90);
+    assert.equal(firstConceptQueue.length,190);
     await el("resultHomeBtn").click();await page.reload();
     await page.waitForFunction(()=>document.querySelector("#bankLoadStatus")?.textContent.includes("1,440문항 자동 연결 완료"));
     await el("conceptEntryBtn").click();
