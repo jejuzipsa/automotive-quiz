@@ -2898,15 +2898,15 @@
     "id": "concept-chassis-71",
     "track": "concept",
     "subject": "chassis",
-    "question": "지문에서 정의한 유압식 ABS 감압 단계에서 휠 실린더 압력은 (    )한다.",
+    "question": "유압식 ABS에서 휠 실린더 쪽 고압 공급을 차단하고 저압측 유로를 열 때의 제어 단계는 (    )이다.",
     "choices": [
-      "증가",
-      "일정",
-      "감소",
-      "대기압으로 즉시 고정"
+      "감압",
+      "증압",
+      "유지",
+      "충전"
     ],
-    "answer": 3,
-    "explanation": "공급을 차단하고 저압측 유로를 개방해 휠 압력을 낮춘다.",
+    "answer": 1,
+    "explanation": "해당 유압 회로에서 저압측 유로를 개방하면 휠 실린더 압력이 낮아진다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r09-s02-q15"
@@ -4156,7 +4156,7 @@
     "id": "concept-eco-13",
     "track": "concept",
     "subject": "eco",
-    "question": "내연기관 없이 구동 배터리와 전동모터로 주행하는 자동차의 약칭은 (    )이다.",
+    "question": "외부에서 충전한 구동 배터리를 유일한 주행 에너지원으로 사용하는 전기자동차의 약칭은 (    )이다.",
     "choices": [
       "BEV",
       "PHEV",
@@ -4164,7 +4164,7 @@
       "FCEV"
     ],
     "answer": 1,
-    "explanation": "BEV는 고전압 배터리 전력으로 구동 전동기를 작동시킨다.",
+    "explanation": "BEV는 배터리에 저장된 전기에너지를 주행에 이용한다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-eco-01"
@@ -6587,18 +6587,18 @@
     "id": "concept-eco-89",
     "track": "concept",
     "subject": "eco",
-    "question": "회생제동으로 얻은 에너지를 저장할 때 배터리의 충전 수용 한계가 낮아지면 실제 회수량은 (    )할 수 있다.",
+    "question": "가상 회생제동의 기계적 입력전력이 20kW이고 배터리에 저장되는 전력이 12kW라면 전력 기준 저장 효율은 (    )이다.",
     "choices": [
-      "무조건 증가",
-      "항상 일정",
-      "무한 증가",
-      "감소"
+      "60%",
+      "40%",
+      "80%",
+      "166.7%"
     ],
-    "answer": 4,
-    "explanation": "배터리가 받아들일 수 있는 전력 제한은 회생 에너지에 영향을 준다.",
+    "answer": 1,
+    "explanation": "효율은 실제 저장전력을 입력전력으로 나눈 값이므로 12÷20×100=60%이다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
-    "source_question_id": "auto-made-r02-s04-q18"
+    "source_question_id": "original-eco-24"
   },
   {
     "id": "concept-eco-90",
@@ -6740,18 +6740,18 @@
     "id": "concept-eco-98",
     "track": "concept",
     "subject": "eco",
-    "question": "TPRD가 일반적인 압력 조절밸브와 다른 주요 작동 조건은 (    )이다.",
+    "question": "연료전지 스택에서 가스 공급 및 수분 관리와 함께 성능에 영향을 주는 열적 관리 요소는 (    )이다.",
     "choices": [
-      "온도 상승",
-      "모터 회전수",
-      "배터리 SOC",
-      "차속"
+      "스택 온도",
+      "타이어 공기압",
+      "브레이크액 수준",
+      "조향각"
     ],
     "answer": 1,
-    "explanation": "TPRD는 온도에 의해 작동하는 안전 방출장치이다.",
+    "explanation": "스택 성능은 수소·산소 공급, 물 관리, 온도 등 운전 조건에 영향을 받는다.",
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
-    "source_question_id": "auto-made-r07-s04-q18"
+    "source_question_id": "auto-made-r07-s04-q19"
   },
   {
     "id": "concept-eco-99",

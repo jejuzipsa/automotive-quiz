@@ -204,12 +204,23 @@ async function testDevice(browser,name,viewport,mobile){
     await el("homeBtn").click();await el("conceptEntryBtn").click();
     assert.equal(await el("conceptGrid").locator(".concept-card").count(),4);
     const concept=read("data/concept.json"),seen=new Set();
-    await el("conceptGrid").locator(".concept-card").first().click();
-    for(let i=0;i<12;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);
+    for(const card of await el("conceptGrid").locator(".concept-card").all())assert.match(await card.innerText(),/100개/);
+    await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"10문제",exact:true}).click();
+    for(let i=0;i<10;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);
       assert.ok(item&&item.subject==="engine"&&!seen.has(item.id));seen.add(item.id);
       await choose(item,true);await visible("feedback");await layout();await el("nextBtn").click();
     }
-    assert.match(await text("resultScore"),/12 \/ 12문제/);
+    assert.match(await text("resultScore"),/10 \/ 10문제/);
+    const firstConceptQueue=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveConceptRotationV1")).engine.remaining);
+    assert.equal(firstConceptQueue.length,90);
+    await el("resultHomeBtn").click();await page.reload();
+    await page.waitForFunction(()=>document.querySelector("#bankLoadStatus")?.textContent.includes("1,440문항 자동 연결 완료"));
+    await el("conceptEntryBtn").click();
+    await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"20문제",exact:true}).click();
+    for(let i=0;i<20;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);assert.ok(item&&!seen.has(item.id));seen.add(item.id);await choose(item,true);await el("nextBtn").click();}
+    assert.match(await text("resultScore"),/20 \/ 20문제/);
+    assert.equal(seen.size,30);
+    assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveConceptRotationV1")).engine.remaining),firstConceptQueue.slice(20));
     // Actual served rotation, not a synthetic upload.
     await el("resultHomeBtn").click();await el("trackPast").click();
     await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
