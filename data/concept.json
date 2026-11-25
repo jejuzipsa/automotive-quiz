@@ -8486,5 +8486,1705 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-chassis-101",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상적인 밀폐 유압 회로에서 외부에서 가한 압력이 유체 전체에 전달되는 원리는 (    )이다.",
+    "choices": [
+      "파스칼의 원리",
+      "베르누이의 원리",
+      "렌츠의 법칙",
+      "옴의 법칙"
+    ],
+    "answer": 1,
+    "explanation": "마스터 실린더 압력은 브레이크액을 통해 전달된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-01"
+  },
+  {
+    "id": "concept-chassis-102",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차량 정면에서 타이어 윗부분이 차체 안쪽으로 기울어진 정렬은 (    )이다.",
+    "choices": [
+      "포지티브 캠버",
+      "네거티브 캠버",
+      "토인",
+      "토아웃"
+    ],
+    "answer": 2,
+    "explanation": "캠버는 정면에서 본 바퀴의 기울기다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-08"
+  },
+  {
+    "id": "concept-chassis-103",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "양쪽 바퀴 앞쪽 사이 간격이 뒤쪽보다 넓은 정렬은 (    )이다.",
+    "choices": [
+      "토인",
+      "포지티브 캐스터",
+      "토아웃",
+      "네거티브 캠버"
+    ],
+    "answer": 3,
+    "explanation": "토는 위에서 본 좌우 바퀴의 진행 방향 관계다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-09"
+  },
+  {
+    "id": "concept-chassis-104",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "측면에서 조향축의 윗부분이 뒤쪽으로 기울어진 상태는 (    )이다.",
+    "choices": [
+      "네거티브 캐스터",
+      "포지티브 캠버",
+      "토인",
+      "포지티브 캐스터"
+    ],
+    "answer": 4,
+    "explanation": "양의 캐스터는 직진 안정성과 자기복원 성향에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-10"
+  },
+  {
+    "id": "concept-chassis-105",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스프링이 변형될 때 일시적으로 저장하는 에너지는 (    )이다.",
+    "choices": [
+      "탄성 위치에너지",
+      "전기에너지",
+      "화학에너지",
+      "열전달률"
+    ],
+    "answer": 1,
+    "explanation": "스프링은 탄성 에너지를 저장하고 돌려준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-12"
+  },
+  {
+    "id": "concept-chassis-106",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스태빌라이저 바는 좌우 바퀴의 상대 변위에 의해 주로 (    ) 변형된다.",
+    "choices": [
+      "인장만",
+      "비틀림",
+      "압축만",
+      "열팽창만"
+    ],
+    "answer": 2,
+    "explanation": "좌우 현가 운동이 다를 때 바의 비틀림 저항이 차체 롤을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-13"
+  },
+  {
+    "id": "concept-chassis-107",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "휠 밸런스에서 질량 분포의 불균형을 보정하는 부품은 (    )이다.",
+    "choices": [
+      "휠 베어링",
+      "스프링 시트",
+      "밸런스 웨이트",
+      "브레이크 슈"
+    ],
+    "answer": 3,
+    "explanation": "웨이트로 회전 질량의 불균형을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-14"
+  },
+  {
+    "id": "concept-chassis-108",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "타이어 트레드 홈은 빗길에서 (    )을 배출하는 데 기여한다.",
+    "choices": [
+      "브레이크액",
+      "냉매",
+      "ATF",
+      "물"
+    ],
+    "answer": 4,
+    "explanation": "물 배출 능력 저하는 수막현상 위험을 높인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-16"
+  },
+  {
+    "id": "concept-chassis-109",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "엔진과 변속기 사이 클러치가 완전히 분리되면 엔진 토크 전달은 (    )된다.",
+    "choices": [
+      "차단",
+      "증폭",
+      "항상 일정",
+      "반전"
+    ],
+    "answer": 1,
+    "explanation": "클러치 분리는 변속이나 정차를 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-18"
+  },
+  {
+    "id": "concept-chassis-110",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "간헐적 ABS 휠속도 오류가 나타날 때 센서 자체 외에 회전 신호원과 (    )를 비교한다.",
+    "choices": [
+      "브레이크액 색상",
+      "배선",
+      "ATF 규격",
+      "타이어 브랜드"
+    ],
+    "answer": 2,
+    "explanation": "센서·엔코더·배선의 신호를 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q02"
+  },
+  {
+    "id": "concept-chassis-111",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "솔레노이드 코일 저항을 규정과 비교할 때 부품별 조건 외에 고려할 물리량은 (    )이다.",
+    "choices": [
+      "차체 폭",
+      "타이어 트레드",
+      "온도",
+      "차량 색상"
+    ],
+    "answer": 3,
+    "explanation": "코일 저항은 측정 온도에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q03"
+  },
+  {
+    "id": "concept-chassis-112",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 보조력 저하와 저전압 코드가 함께 발생하면 제어기의 (    ) 품질을 확인한다.",
+    "choices": [
+      "차고",
+      "브레이크액",
+      "타이어 정렬",
+      "공급전원"
+    ],
+    "answer": 4,
+    "explanation": "전원·접지와 충전 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q04"
+  },
+  {
+    "id": "concept-chassis-113",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가압된 유압 현가계의 누설 정비 전 관리해야 할 위험 에너지는 회로의 (    )이다.",
+    "choices": [
+      "잔압",
+      "휠속도",
+      "조향각",
+      "캠버"
+    ],
+    "answer": 1,
+    "explanation": "잔류 압력은 지정 안전 절차로 관리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q06"
+  },
+  {
+    "id": "concept-chassis-114",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "반능동 전자제어 현가장치의 가변 댐퍼가 조절하는 주요 물리량은 (    )이다.",
+    "choices": [
+      "타이어 직경",
+      "감쇠계수",
+      "차축 길이",
+      "종감속비"
+    ],
+    "answer": 2,
+    "explanation": "가변 댐퍼는 감쇠 특성을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q10"
+  },
+  {
+    "id": "concept-chassis-115",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향각 센서가 직진 기준을 올바르게 표시하도록 조정하는 작업은 (    )이다.",
+    "choices": [
+      "휠 밸런스",
+      "브레이크 공기빼기",
+      "영점 보정",
+      "ATF 교환"
+    ],
+    "answer": 3,
+    "explanation": "제작사 지정 직진 기준과 센서 보정 절차를 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q14"
+  },
+  {
+    "id": "concept-chassis-116",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 전원과 접지가 정상인데 제어기 통신이 불가능할 때 확인할 회로는 (    )이다.",
+    "choices": [
+      "브레이크 유압관",
+      "에어스프링 배관",
+      "변속기 오일관",
+      "통신 배선"
+    ],
+    "answer": 4,
+    "explanation": "통신 경로와 관련 제어기를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q16"
+  },
+  {
+    "id": "concept-chassis-117",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 변속충격이 발생할 때 실제 변속 반응과 비교하는 전기적 구동 요소는 (    )이다.",
+    "choices": [
+      "솔레노이드 제어",
+      "조향각 영점",
+      "휠 밸런스",
+      "캠버 보정"
+    ],
+    "answer": 1,
+    "explanation": "유압·ATF와 솔레노이드 제어를 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q04"
+  },
+  {
+    "id": "concept-chassis-118",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압 현가 압력이 부족할 때 유체 부족 및 누설과 함께 검토할 압력 생성 요소는 (    )이다.",
+    "choices": [
+      "차동 기어",
+      "유압 펌프",
+      "조향각 센서",
+      "브레이크 디스크"
+    ],
+    "answer": 2,
+    "explanation": "유체 공급과 실제 유압을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q06"
+  },
+  {
+    "id": "concept-chassis-119",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가 수리 후 체결 토크 외에 차량별 센서 (    ) 필요 여부를 확인한다.",
+    "choices": [
+      "정류",
+      "연료 분사",
+      "보정",
+      "냉매 충전"
+    ],
+    "answer": 3,
+    "explanation": "수리 후 작동시험과 필요한 센서 보정을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q12"
+  },
+  {
+    "id": "concept-chassis-120",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자제어 조향장치에서 기계적 헐거움이 의심될 때 스캔 검사와 구별하여 확인할 것은 (    )이다.",
+    "choices": [
+      "냉매 압력",
+      "CAN 식별자",
+      "배터리 SOC",
+      "조향 유격"
+    ],
+    "answer": 4,
+    "explanation": "기계적 유격은 실물 점검이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q19"
+  },
+  {
+    "id": "concept-chassis-121",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가 액추에이터가 명령에 반응하지 않으면 전기회로와 별도로 (    )의 작동 여부를 확인한다.",
+    "choices": [
+      "기계 구동부",
+      "연료분사기",
+      "촉매",
+      "냉각수 캡"
+    ],
+    "answer": 1,
+    "explanation": "전기 입력과 기계 작동 이상을 분리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q11"
+  },
+  {
+    "id": "concept-chassis-122",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 모터 전류를 비교할 때 차량 지정 규격과 (    )이 같은 상태인지 확인한다.",
+    "choices": [
+      "차량 색상",
+      "동작 조건",
+      "운전자 신장",
+      "냉매 종류"
+    ],
+    "answer": 2,
+    "explanation": "전류는 조향 부하와 운전 조건에 영향을 받는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q14"
+  },
+  {
+    "id": "concept-chassis-123",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 보조력이 약해졌을 때 전원·모터 문제 외에 조향계의 (    ) 원인도 확인한다.",
+    "choices": [
+      "냉매 과충전",
+      "배기 농후",
+      "기계적 저항",
+      "연료 분무"
+    ],
+    "answer": 3,
+    "explanation": "전자 제어 원인과 기계적 걸림 등을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q16"
+  },
+  {
+    "id": "concept-chassis-124",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS와 ESC가 차량 상태 정보를 서로 전달할 때 사용하는 연결 수단은 (    )이다.",
+    "choices": [
+      "연료 레일",
+      "냉매 고압관",
+      "브레이크 디스크",
+      "차량 통신망"
+    ],
+    "answer": 4,
+    "explanation": "네트워크는 제어기 간 정보 공유를 지원한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q18"
+  },
+  {
+    "id": "concept-chassis-125",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 라인압이 낮을 때 펌프·내부 누설과 함께 점검할 압력 제어 부품은 (    )이다.",
+    "choices": [
+      "압력 조절밸브",
+      "조향각 센서",
+      "타이어 비드",
+      "드럼 라이닝"
+    ],
+    "answer": 1,
+    "explanation": "라인압 저하는 공급·제어·누설 원인을 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q02"
+  },
+  {
+    "id": "concept-chassis-126",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터 스테이터의 기본 역할은 유체 흐름의 (    )을 바꾸는 것이다.",
+    "choices": [
+      "전압",
+      "방향",
+      "온도만",
+      "주파수"
+    ],
+    "answer": 2,
+    "explanation": "스테이터는 환류 유체의 방향을 바꾸어 토크 증대에 기여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q03"
+  },
+  {
+    "id": "concept-chassis-127",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "휠속도 신호가 소실되면 센서 교환에 앞서 접속부인 (    )를 점검한다.",
+    "choices": [
+      "스프링 시트",
+      "브레이크 드럼",
+      "커넥터",
+      "휠 림"
+    ],
+    "answer": 3,
+    "explanation": "센서 신호 경로와 커넥터 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q07"
+  },
+  {
+    "id": "concept-chassis-128",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스프링과 댐퍼 중 차체 진동 에너지를 열 등으로 소산시키는 부품은 (    )이다.",
+    "choices": [
+      "코일 스프링",
+      "리프 스프링",
+      "타이어 비드",
+      "댐퍼"
+    ],
+    "answer": 4,
+    "explanation": "스프링은 탄성 에너지를 저장하고 댐퍼는 운동에너지를 소산한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q08"
+  },
+  {
+    "id": "concept-chassis-129",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "주차 중 한쪽만 차고가 내려가는 공기 현가에서 에어라인과 밸브 외에 누설을 확인할 부품은 (    )이다.",
+    "choices": [
+      "에어스프링 벨로스",
+      "조향 랙",
+      "브레이크 캘리퍼",
+      "록업 클러치"
+    ],
+    "answer": 1,
+    "explanation": "벨로스의 손상은 공압 누설의 원인 후보이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q19"
+  },
+  {
+    "id": "concept-chassis-130",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "변속기 오일팬 볼트를 조립할 때 한쪽만 강하게 조이지 않고 지정 (    )을 균일하게 적용한다.",
+    "choices": [
+      "타이어 공기압",
+      "단계별 체결 토크",
+      "연료 압력",
+      "캐스터 각"
+    ],
+    "answer": 2,
+    "explanation": "균일한 단계별 체결은 밀봉과 변형 관리에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q04"
+  },
+  {
+    "id": "concept-chassis-131",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스톨 시험에서 변속기 과열 등을 방지하기 위해 특히 제한하는 것은 (    )이다.",
+    "choices": [
+      "차체 폭",
+      "타이어 규격",
+      "시험 지속시간",
+      "연료 옥탄가"
+    ],
+    "answer": 3,
+    "explanation": "제작사 안전 조건과 짧은 규정시간을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q05"
+  },
+  {
+    "id": "concept-chassis-132",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS 유압 제어에서 바퀴 잠김 경향을 완화하도록 압력을 낮추는 단계는 (    )이다.",
+    "choices": [
+      "증압",
+      "유지",
+      "충전",
+      "감압"
+    ],
+    "answer": 4,
+    "explanation": "ABS는 바퀴 상태에 따라 제동압을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q14"
+  },
+  {
+    "id": "concept-chassis-133",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자댐퍼 단선 코드에서 실제 회로 단선 여부를 확인할 대상은 (    )이다.",
+    "choices": [
+      "하네스",
+      "댐퍼 외부 도장",
+      "스프링 길이",
+      "타이어 트레드"
+    ],
+    "answer": 1,
+    "explanation": "배선과 커넥터·구동 코일을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q17"
+  },
+  {
+    "id": "concept-chassis-134",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "특정 변속단에서만 큰 충격이 발생하면 공통 원인 외에 해당 단의 유압 (    ) 계통을 검토한다.",
+    "choices": [
+      "냉매 증발",
+      "완충",
+      "휠 속도",
+      "조향 복원"
+    ],
+    "answer": 2,
+    "explanation": "해당 변속단의 압력 제어와 충격 완화 계통을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q02"
+  },
+  {
+    "id": "concept-chassis-135",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 변속 시점 진단에서 가속 요구와 차속 외에 ATF의 (    )를 비교한다.",
+    "choices": [
+      "색상만",
+      "브랜드만",
+      "온도",
+      "부피만"
+    ],
+    "answer": 3,
+    "explanation": "유온은 변속 제어와 유체 특성에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q05"
+  },
+  {
+    "id": "concept-chassis-136",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자 현가 센서 이상 시 제어기가 보호 목적으로 취할 수 있는 조치는 (    )이다.",
+    "choices": [
+      "감쇠력 무한 증가",
+      "차량 높이 무한 증가",
+      "무조건 정상 판정",
+      "제어 기능 제한"
+    ],
+    "answer": 4,
+    "explanation": "센서 고장으로 기능 제한이나 DTC가 발생할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q07"
+  },
+  {
+    "id": "concept-chassis-137",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 작동 시 소음의 원인을 확인할 때 모터와 장착부 외에 회전력 전달 부품인 (    )를 점검한다.",
+    "choices": [
+      "감속기",
+      "연료펌프",
+      "EGR 밸브",
+      "증발기"
+    ],
+    "answer": 1,
+    "explanation": "보조 모터의 감속 기구와 장착부를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q12"
+  },
+  {
+    "id": "concept-chassis-138",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차고 센서 교환 후 표시 높이가 실제와 다르면 센서 장착 상태와 (    )을 확인한다.",
+    "choices": [
+      "타이어 밸런스",
+      "높이 기준 보정",
+      "냉매 보충",
+      "연료 분사 보정"
+    ],
+    "answer": 2,
+    "explanation": "장착 및 차량 지정 높이 보정 절차를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q20"
+  },
+  {
+    "id": "concept-chassis-139",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터와 변속기를 엔진에 결합하기 전 컨버터의 (    ) 상태를 확인한다.",
+    "choices": [
+      "반쯤 삽입",
+      "외부 도장",
+      "완전 삽입",
+      "유리 투과율"
+    ],
+    "answer": 3,
+    "explanation": "차량별 결합 절차에 맞춰 컨버터의 삽입 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q03"
+  },
+  {
+    "id": "concept-chassis-140",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 토크 입력과 모터 구동 데이터를 비교하는 것은 명령에 대한 실제 (    )을 평가하기 위해서다.",
+    "choices": [
+      "냉매 응축",
+      "연료 분사",
+      "배터리 충전량",
+      "보조력 반응"
+    ],
+    "answer": 4,
+    "explanation": "조향 입력과 전동 모터 응답의 관계를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q08"
+  },
+  {
+    "id": "concept-chassis-141",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "얼라인먼트 후 센서의 영점이 자동 보정되었다고 단정하지 말고 (    )을 확인한다.",
+    "choices": [
+      "차종별 보정 절차",
+      "냉매 압력표",
+      "배출가스 성적표",
+      "오일 점도표"
+    ],
+    "answer": 1,
+    "explanation": "차량마다 조향각 영점 절차가 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q10"
+  },
+  {
+    "id": "concept-chassis-142",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기의 실제 라인압을 계측하는 대표 계기는 (    )이다.",
+    "choices": [
+      "스파크 테스터",
+      "유압 게이지",
+      "청진기",
+      "조도계"
+    ],
+    "answer": 2,
+    "explanation": "제조사 지정 측정점과 조건에 맞춰 실제 유압을 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q16"
+  },
+  {
+    "id": "concept-chassis-143",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자 현가 검사에서는 댐퍼의 제어 명령과 실제 차체 (    )을 비교한다.",
+    "choices": [
+      "배기 조성",
+      "연료 소비만",
+      "거동",
+      "전조등 밝기"
+    ],
+    "answer": 3,
+    "explanation": "차고·감쇠 명령과 차량 반응을 함께 살핀다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q07"
+  },
+  {
+    "id": "concept-chassis-144",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS ECU가 다른 제어기와 데이터를 주고받는 대표 차량 통신 방식은 (    )이다.",
+    "choices": [
+      "유압",
+      "공압",
+      "기계 케이블",
+      "CAN"
+    ],
+    "answer": 4,
+    "explanation": "CAN 등의 통신망을 통해 제어기 정보를 공유한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q12"
+  },
+  {
+    "id": "concept-chassis-145",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ATF에서 금속입자를 발견하면 변속기 내부 외에 오일라인과 (    )의 오염도 확인한다.",
+    "choices": [
+      "토크 컨버터",
+      "히터 코어",
+      "라디에이터 팬",
+      "타이어 밸브"
+    ],
+    "answer": 1,
+    "explanation": "오염물은 연결된 변속기 유체 계통을 따라 이동할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q20"
+  },
+  {
+    "id": "concept-chassis-146",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ATF의 실제 점도를 정확히 평가하려면 스캔 데이터가 아닌 (    )이 필요하다.",
+    "choices": [
+      "조향각 학습",
+      "물성시험",
+      "ABS 코딩",
+      "타이어 균형"
+    ],
+    "answer": 2,
+    "explanation": "오일 물성은 별도의 시험으로 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q01"
+  },
+  {
+    "id": "concept-chassis-147",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS 톤링을 교환할 때 일체형 구조인지 여부를 확인하는 관련 회전부품은 (    )이다.",
+    "choices": [
+      "브레이크 페달",
+      "변속기 레버",
+      "휠 베어링",
+      "스태빌라이저 바"
+    ],
+    "answer": 3,
+    "explanation": "센서 신호원은 베어링 등에 일체화될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q12"
+  },
+  {
+    "id": "concept-chassis-148",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "댐퍼 장착 방향은 외형만 보고 결정하지 않고 (    )을 확인한다.",
+    "choices": [
+      "오일 브랜드",
+      "차량 도장색",
+      "타이어 제조일",
+      "제작사 정비지침"
+    ],
+    "answer": 4,
+    "explanation": "댐퍼 장착 방향은 차량 설계에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q13"
+  },
+  {
+    "id": "concept-chassis-149",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 2cm², 출력 면적 8cm², 출력력 480N일 때 입력력은 (    )이다.",
+    "choices": [
+      "120N",
+      "480N",
+      "30N",
+      "240N"
+    ],
+    "answer": 1,
+    "explanation": "F입력=F출력×A입력/A출력=120N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-150",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 3cm², 출력 면적 15cm², 출력력 750N일 때 입력력은 (    )이다.",
+    "choices": [
+      "750N",
+      "150N",
+      "30N",
+      "300N"
+    ],
+    "answer": 2,
+    "explanation": "F입력=F출력×A입력/A출력=150N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-151",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 4cm², 출력 면적 12cm², 출력력 300N일 때 입력력은 (    )이다.",
+    "choices": [
+      "300N",
+      "33.333N",
+      "100N",
+      "200N"
+    ],
+    "answer": 3,
+    "explanation": "F입력=F출력×A입력/A출력=100N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-152",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 5cm², 출력 면적 20cm², 출력력 800N일 때 입력력은 (    )이다.",
+    "choices": [
+      "800N",
+      "50N",
+      "400N",
+      "200N"
+    ],
+    "answer": 4,
+    "explanation": "F입력=F출력×A입력/A출력=200N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-153",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 18000N/m, 압축량 0.02m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "360N",
+      "900000N",
+      "180N",
+      "18000.02N"
+    ],
+    "answer": 1,
+    "explanation": "F=kx=18000×0.02=360N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-154",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 24000N/m, 압축량 0.025m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "960000N",
+      "600N",
+      "300N",
+      "24000.025N"
+    ],
+    "answer": 2,
+    "explanation": "F=kx=24000×0.025=600N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-155",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 30000N/m, 압축량 0.015m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "2000000N",
+      "225N",
+      "450N",
+      "30000.015N"
+    ],
+    "answer": 3,
+    "explanation": "F=kx=30000×0.015=450N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-156",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 12000N/m, 압축량 0.03m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "400000N",
+      "180N",
+      "12000.03N",
+      "360N"
+    ],
+    "answer": 4,
+    "explanation": "F=kx=12000×0.03=360N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-157",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 20000N/m에 500N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "25mm",
+      "0.025mm",
+      "10000mm",
+      "2.5mm"
+    ],
+    "answer": 1,
+    "explanation": "x=F/k=0.025m=25mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-158",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 30000N/m에 600N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.02mm",
+      "20mm",
+      "18000mm",
+      "2mm"
+    ],
+    "answer": 2,
+    "explanation": "x=F/k=0.02m=20mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-159",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 15000N/m에 450N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.03mm",
+      "6750mm",
+      "30mm",
+      "3mm"
+    ],
+    "answer": 3,
+    "explanation": "x=F/k=0.03m=30mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-160",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 25000N/m에 1000N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.04mm",
+      "25000mm",
+      "4mm",
+      "40mm"
+    ],
+    "answer": 4,
+    "explanation": "x=F/k=0.04m=40mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-161",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2m, 차량 속력 72km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "10회/s",
+      "36회/s",
+      "20회/s",
+      "144회/s"
+    ],
+    "answer": 1,
+    "explanation": "초당 회전수=72÷3.6÷2=10이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-162",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 1.8m, 차량 속력 54km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "30회/s",
+      "8.333회/s",
+      "15회/s",
+      "97.2회/s"
+    ],
+    "answer": 2,
+    "explanation": "초당 회전수=54÷3.6÷1.8=8.333이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-163",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2.5m, 차량 속력 90km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "36회/s",
+      "25회/s",
+      "10회/s",
+      "225회/s"
+    ],
+    "answer": 3,
+    "explanation": "초당 회전수=90÷3.6÷2.5=10이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-164",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2m, 차량 속력 36km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "18회/s",
+      "10회/s",
+      "72회/s",
+      "5회/s"
+    ],
+    "answer": 4,
+    "explanation": "초당 회전수=36÷3.6÷2=5이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-165",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 3000rpm, 입력/출력 회전수 비 5:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "600rpm",
+      "15000rpm",
+      "3000rpm",
+      "300rpm"
+    ],
+    "answer": 1,
+    "explanation": "출력 회전수=3000÷5=600rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-166",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 2400rpm, 입력/출력 회전수 비 3:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "7200rpm",
+      "800rpm",
+      "2400rpm",
+      "400rpm"
+    ],
+    "answer": 2,
+    "explanation": "출력 회전수=2400÷3=800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-167",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 1800rpm, 입력/출력 회전수 비 2:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "3600rpm",
+      "1800rpm",
+      "900rpm",
+      "450rpm"
+    ],
+    "answer": 3,
+    "explanation": "출력 회전수=1800÷2=900rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-168",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 3200rpm, 입력/출력 회전수 비 4:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "12800rpm",
+      "3200rpm",
+      "400rpm",
+      "800rpm"
+    ],
+    "answer": 4,
+    "explanation": "출력 회전수=3200÷4=800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-169",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 2000rpm, 슬립률 10%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "1800rpm",
+      "200rpm",
+      "2000rpm",
+      "2200rpm"
+    ],
+    "answer": 1,
+    "explanation": "실제 회전수=2000×(1−10/100)=1800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-170",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 2500rpm, 슬립률 20%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "500rpm",
+      "2000rpm",
+      "2500rpm",
+      "3000rpm"
+    ],
+    "answer": 2,
+    "explanation": "실제 회전수=2500×(1−20/100)=2000rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-171",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 3000rpm, 슬립률 5%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "150rpm",
+      "3000rpm",
+      "2850rpm",
+      "3150rpm"
+    ],
+    "answer": 3,
+    "explanation": "실제 회전수=3000×(1−5/100)=2850rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-172",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 1800rpm, 슬립률 25%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "450rpm",
+      "1800rpm",
+      "2250rpm",
+      "1350rpm"
+    ],
+    "answer": 4,
+    "explanation": "실제 회전수=1800×(1−25/100)=1350rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-173",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.2m에 수직으로 힘을 가해 8N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "40N",
+      "1.6N",
+      "8N",
+      "20N"
+    ],
+    "answer": 1,
+    "explanation": "F=T/r=8÷0.2=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-174",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.25m에 수직으로 힘을 가해 10N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "2.5N",
+      "40N",
+      "10N",
+      "20N"
+    ],
+    "answer": 2,
+    "explanation": "F=T/r=10÷0.25=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-175",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.15m에 수직으로 힘을 가해 6N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "0.9N",
+      "6N",
+      "40N",
+      "20N"
+    ],
+    "answer": 3,
+    "explanation": "F=T/r=6÷0.15=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-176",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.18m에 수직으로 힘을 가해 9N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "1.62N",
+      "9N",
+      "25N",
+      "50N"
+    ],
+    "answer": 4,
+    "explanation": "F=T/r=9÷0.18=50N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-177",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.15°, 전체 토 0.2°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.05°",
+      "0.35°",
+      "0.15°",
+      "0.2°"
+    ],
+    "answer": 1,
+    "explanation": "우측 토=전체 토−좌측 토=0.2−(0.15)=0.05°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-178",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 -0.1°, 전체 토 0.05°이면 우측 토는 (    )이다.",
+    "choices": [
+      "-0.05°",
+      "0.15°",
+      "-0.1°",
+      "0.05°"
+    ],
+    "answer": 2,
+    "explanation": "우측 토=전체 토−좌측 토=0.05−(-0.1)=0.15°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-179",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.08°, 전체 토 -0.02°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.06°",
+      "0.08°",
+      "-0.1°",
+      "-0.02°"
+    ],
+    "answer": 3,
+    "explanation": "우측 토=전체 토−좌측 토=-0.02−(0.08)=-0.1°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-180",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.12°, 전체 토 0°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.12°",
+      "0°",
+      "0.82°",
+      "-0.12°"
+    ],
+    "answer": 4,
+    "explanation": "우측 토=전체 토−좌측 토=0−(0.12)=-0.12°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-181",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 48펄스인 휠 센서에서 240Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "300rpm",
+      "240rpm",
+      "2880rpm",
+      "5rpm"
+    ],
+    "answer": 1,
+    "explanation": "회전수=240÷48×60=300rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-182",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 36펄스인 휠 센서에서 180Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "180rpm",
+      "300rpm",
+      "2160rpm",
+      "5rpm"
+    ],
+    "answer": 2,
+    "explanation": "회전수=180÷36×60=300rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-183",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 40펄스인 휠 센서에서 320Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "320rpm",
+      "2400rpm",
+      "480rpm",
+      "8rpm"
+    ],
+    "answer": 3,
+    "explanation": "회전수=320÷40×60=480rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-184",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 50펄스인 휠 센서에서 500Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "500rpm",
+      "3000rpm",
+      "10rpm",
+      "600rpm"
+    ],
+    "answer": 4,
+    "explanation": "회전수=500÷50×60=600rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-185",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 400N, 운동 속도 0.2m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "2000N·s/m",
+      "80N·s/m",
+      "400N·s/m",
+      "0.001N·s/m"
+    ],
+    "answer": 1,
+    "explanation": "c=F/v=400÷0.2=2000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-186",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 600N, 운동 속도 0.3m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "180N·s/m",
+      "2000N·s/m",
+      "600N·s/m",
+      "0.001N·s/m"
+    ],
+    "answer": 2,
+    "explanation": "c=F/v=600÷0.3=2000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-187",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 1000N, 운동 속도 0.5m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "500N·s/m",
+      "1000N·s/m",
+      "2000N·s/m",
+      "0.001N·s/m"
+    ],
+    "answer": 3,
+    "explanation": "c=F/v=1000÷0.5=2000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-188",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 900N, 운동 속도 0.6m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "540N·s/m",
+      "900N·s/m",
+      "0.001N·s/m",
+      "1500N·s/m"
+    ],
+    "answer": 4,
+    "explanation": "c=F/v=900÷0.6=1500N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-189",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 250kPa 유효압력에서 5000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "200cm²",
+      "20cm²",
+      "2000cm²",
+      "250cm²"
+    ],
+    "answer": 1,
+    "explanation": "A=F/P=0.02m²=200cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-190",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 400kPa 유효압력에서 6000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "15cm²",
+      "150cm²",
+      "1500cm²",
+      "400cm²"
+    ],
+    "answer": 2,
+    "explanation": "A=F/P=0.015m²=150cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-191",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 350kPa 유효압력에서 10500N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "30cm²",
+      "3000cm²",
+      "300cm²",
+      "350cm²"
+    ],
+    "answer": 3,
+    "explanation": "A=F/P=0.03m²=300cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-192",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 500kPa 유효압력에서 5000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "10cm²",
+      "1000cm²",
+      "500cm²",
+      "100cm²"
+    ],
+    "answer": 4,
+    "explanation": "A=F/P=0.01m²=100cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-193",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 12V에서 소비전력 360W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "30A",
+      "360A",
+      "0.4A",
+      "60A"
+    ],
+    "answer": 1,
+    "explanation": "I=P/V=360÷12=30A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-194",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 24V에서 소비전력 240W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "240A",
+      "10A",
+      "2.4A",
+      "20A"
+    ],
+    "answer": 2,
+    "explanation": "I=P/V=240÷24=10A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-195",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 12V에서 소비전력 540W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "540A",
+      "0.267A",
+      "45A",
+      "90A"
+    ],
+    "answer": 3,
+    "explanation": "I=P/V=540÷12=45A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-196",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 48V에서 소비전력 720W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "720A",
+      "3.2A",
+      "30A",
+      "15A"
+    ],
+    "answer": 4,
+    "explanation": "I=P/V=720÷48=15A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-197",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 8°, 오프셋 3°이면 보정각은 (    )이다.",
+    "choices": [
+      "5°",
+      "11°",
+      "8°",
+      "3°"
+    ],
+    "answer": 1,
+    "explanation": "보정각=8−(3)=5°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-198",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 12°, 오프셋 -2°이면 보정각은 (    )이다.",
+    "choices": [
+      "10°",
+      "14°",
+      "12°",
+      "-2°"
+    ],
+    "answer": 2,
+    "explanation": "보정각=12−(-2)=14°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-199",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 -5°, 오프셋 2°이면 보정각은 (    )이다.",
+    "choices": [
+      "-3°",
+      "-5°",
+      "-7°",
+      "2°"
+    ],
+    "answer": 3,
+    "explanation": "보정각=-5−(2)=-7°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-200",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 7°, 오프셋 4°이면 보정각은 (    )이다.",
+    "choices": [
+      "11°",
+      "7°",
+      "4°",
+      "3°"
+    ],
+    "answer": 4,
+    "explanation": "보정각=7−(4)=3°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
   }
 ]
