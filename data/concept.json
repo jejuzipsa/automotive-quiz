@@ -3012,5 +3012,1144 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-electrical-13",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일반적인 12V 납축전지를 구성하는 직렬 셀의 수는 (    )이다.",
+    "choices": [
+      "6개",
+      "3개",
+      "4개",
+      "12개"
+    ],
+    "answer": 1,
+    "explanation": "납축전지의 셀당 공칭전압은 약 2V이며 6개가 직렬 연결된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-03"
+  },
+  {
+    "id": "concept-electrical-14",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "삽입형 전류계를 전류 측정 대상 회로에 연결하는 방식은 (    )이다.",
+    "choices": [
+      "병렬",
+      "직렬",
+      "차동",
+      "개방"
+    ],
+    "answer": 2,
+    "explanation": "삽입형 전류계는 측정 경로에 직렬로 연결한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-10"
+  },
+  {
+    "id": "concept-electrical-15",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "의도하지 않은 낮은 저항 경로로 큰 전류가 흐르는 회로 고장은 (    )이다.",
+    "choices": [
+      "개방",
+      "고저항 접촉",
+      "단락",
+      "정상 접지"
+    ],
+    "answer": 3,
+    "explanation": "단락은 과전류를 일으켜 보호장치가 작동할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-12"
+  },
+  {
+    "id": "concept-electrical-16",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일반적인 차체 접지 회로에서 금속 차체는 공통 (    ) 경로로 사용된다.",
+    "choices": [
+      "냉매 순환",
+      "연료 압송",
+      "흡기 흐름",
+      "전류 귀환"
+    ],
+    "answer": 4,
+    "explanation": "차체를 공통 귀환 경로로 활용하면 배선이 단순해질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-13"
+  },
+  {
+    "id": "concept-electrical-17",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "ECU의 출력 명령을 받아 물리적 작동을 수행하는 부품은 (    )이다.",
+    "choices": [
+      "액추에이터",
+      "입력 센서",
+      "진단 커넥터",
+      "종단저항"
+    ],
+    "answer": 1,
+    "explanation": "인젝터나 모터 같은 액추에이터는 제어 명령을 실행한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-15"
+  },
+  {
+    "id": "concept-electrical-18",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "부하가 통전 중인 회로에서 접촉저항이 커지면 해당 접점 양단의 (    )이 증가할 수 있다.",
+    "choices": [
+      "절연저항",
+      "전압강하",
+      "충전용량",
+      "공칭 주파수"
+    ],
+    "answer": 2,
+    "explanation": "같은 전류에서 저항이 커지면 V=IR에 따라 전압강하가 커진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-17"
+  },
+  {
+    "id": "concept-electrical-19",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "공통 기준전원을 공유하는 여러 센서의 코드가 함께 나타날 때 확인할 공통 공급전압의 대표값은 (    )이다.",
+    "choices": [
+      "24V",
+      "48V",
+      "5V",
+      "100V"
+    ],
+    "answer": 3,
+    "explanation": "5V 기준전원 이상은 복수 센서의 신호에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-20"
+  },
+  {
+    "id": "concept-electrical-20",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "3Ω과 6Ω의 저항을 직렬로 연결한 회로의 합성저항은 (    )이다.",
+    "choices": [
+      "2Ω",
+      "3Ω",
+      "18Ω",
+      "9Ω"
+    ],
+    "answer": 4,
+    "explanation": "직렬 연결의 합성저항은 개별 저항의 합이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-21"
+  },
+  {
+    "id": "concept-electrical-21",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "12Ω 저항 두 개가 병렬 연결되고 전압이 12V이면 전체 전류는 (    )이다.",
+    "choices": [
+      "2A",
+      "1A",
+      "0.5A",
+      "12A"
+    ],
+    "answer": 1,
+    "explanation": "각 가지에 1A씩 흐르므로 전체 전류는 2A다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-22",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 전압 12V, 전류 5A인 부하의 소비전력은 (    )이다.",
+    "choices": [
+      "17W",
+      "60W",
+      "2.4W",
+      "120W"
+    ],
+    "answer": 2,
+    "explanation": "P=VI=12×5=60W이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-23"
+  },
+  {
+    "id": "concept-electrical-23",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "5A가 흐르는 0.2Ω 저항 양단의 전압강하는 (    )이다.",
+    "choices": [
+      "0.04V",
+      "5.2V",
+      "1V",
+      "25V"
+    ],
+    "answer": 3,
+    "explanation": "V=IR=5×0.2=1V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-24"
+  },
+  {
+    "id": "concept-electrical-24",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 신호의 주기가 10ms이고 ON 시간이 3ms라면 듀티비는 (    )이다.",
+    "choices": [
+      "3%",
+      "70%",
+      "33.3%",
+      "30%"
+    ],
+    "answer": 4,
+    "explanation": "듀티비=ON 시간÷주기×100이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-25"
+  },
+  {
+    "id": "concept-electrical-25",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "동일 표준 CAN 데이터 프레임에서 0x080과 0x100 중 중재 우선순위가 높은 ID는 (    )이다.",
+    "choices": [
+      "0x080",
+      "0x100",
+      "두 ID 동일",
+      "ID와 무관"
+    ],
+    "answer": 1,
+    "explanation": "표준 프레임끼리 중재할 때 낮은 ID가 우선한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-26"
+  },
+  {
+    "id": "concept-electrical-26",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "고속 CAN에서 120Ω 종단 두 개 중 한 경로가 개방되면 남은 종단의 등가저항은 (    )이다.",
+    "choices": [
+      "60Ω",
+      "120Ω",
+      "240Ω",
+      "0Ω"
+    ],
+    "answer": 2,
+    "explanation": "정상적으로 두 개가 병렬이면 60Ω이며 하나만 남으면 120Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-27"
+  },
+  {
+    "id": "concept-electrical-27",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일정한 요레이트 10°/s로 3초간 회전한 차체의 각변위는 (    )이다.",
+    "choices": [
+      "3°",
+      "10°",
+      "30°",
+      "13°"
+    ],
+    "answer": 3,
+    "explanation": "각변위는 일정 각속도와 시간의 곱이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-28"
+  },
+  {
+    "id": "concept-electrical-28",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차량용 100BASE-T1 이더넷에서 사용하는 신호 배선은 (    )이다.",
+    "choices": [
+      "4쌍 트위스트페어",
+      "동축 단선",
+      "전원 단선",
+      "단일 트위스트페어"
+    ],
+    "answer": 4,
+    "explanation": "100BASE-T1은 단일 꼬임선 쌍을 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q02"
+  },
+  {
+    "id": "concept-electrical-29",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "CAN 프레임에서 정상 수신 노드의 수신 확인에 해당하는 필드는 (    )이다.",
+    "choices": [
+      "ACK",
+      "CRC",
+      "SOF",
+      "ID"
+    ],
+    "answer": 1,
+    "explanation": "ACK는 정상 수신 노드의 프레임 수신 확인을 위한 것이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q04"
+  },
+  {
+    "id": "concept-electrical-30",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "수동 유도형 휠속도 센서에서 신호를 발생시키는 원리는 변화하는 자속에 의한 (    )이다.",
+    "choices": [
+      "광전효과",
+      "전자기 유도",
+      "열전효과",
+      "압전효과"
+    ],
+    "answer": 2,
+    "explanation": "회전에 따른 자속 변화가 유도전압을 발생시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q09"
+  },
+  {
+    "id": "concept-electrical-31",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "형광제를 이용한 냉매 누설 확인에 사용하는 광원은 (    )이다.",
+    "choices": [
+      "적외선",
+      "초음파",
+      "자외선",
+      "마이크로파"
+    ],
+    "answer": 3,
+    "explanation": "형광제는 적절한 UV 광원으로 관찰한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q13"
+  },
+  {
+    "id": "concept-electrical-32",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일반 브러시형 직류모터의 회전 방향은 공급 전압의 (    )을 반대로 하여 바꿀 수 있다.",
+    "choices": [
+      "주파수",
+      "공칭전력",
+      "저항값",
+      "극성"
+    ],
+    "answer": 4,
+    "explanation": "전류의 방향을 바꾸면 회전 방향이 달라질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q18"
+  },
+  {
+    "id": "concept-electrical-33",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "진단기를 차량 통신망에 접속하기 위한 진단용 단자는 (    )이다.",
+    "choices": [
+      "DLC",
+      "TCC",
+      "PCV",
+      "OBC"
+    ],
+    "answer": 1,
+    "explanation": "DLC는 데이터 링크 커넥터다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q01"
+  },
+  {
+    "id": "concept-electrical-34",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "통신 시스템에서 비트 신호와 전기적 연결 특성을 정의하는 계층은 (    )이다.",
+    "choices": [
+      "응용 계층",
+      "물리 계층",
+      "전송 계층",
+      "네트워크 계층"
+    ],
+    "answer": 2,
+    "explanation": "물리 계층은 전기적 신호 및 연결 방식에 관한 것이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q02"
+  },
+  {
+    "id": "concept-electrical-35",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이더넷 프레임의 CRC가 담당하는 기능은 (    )이다.",
+    "choices": [
+      "오류 자동 수정",
+      "전원 변환",
+      "오류 검출",
+      "주소 할당"
+    ],
+    "answer": 3,
+    "explanation": "CRC는 수신 데이터 오류를 검출하는 데 사용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q04"
+  },
+  {
+    "id": "concept-electrical-36",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "알터네이터 내부의 교류 발전 전력을 직류로 변환하는 과정은 (    )이다.",
+    "choices": [
+      "증폭",
+      "변조",
+      "역변환",
+      "정류"
+    ],
+    "answer": 4,
+    "explanation": "정류 다이오드로 발전기 교류를 직류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q05"
+  },
+  {
+    "id": "concept-electrical-37",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일부 송풍기 회로에서 최대 풍량만 작동할 때 우선 확인할 풍량 제어 부품은 (    )이다.",
+    "choices": [
+      "블로워 레귤레이터",
+      "응축기 팬",
+      "증발기",
+      "팽창밸브"
+    ],
+    "answer": 1,
+    "explanation": "풍량 제어회로와 레귤레이터 고장이 원인일 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q08"
+  },
+  {
+    "id": "concept-electrical-38",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "엔진 냉각수의 열을 실내 공기에 전달하는 공조 부품은 (    )이다.",
+    "choices": [
+      "응축기",
+      "히터 코어",
+      "증발기",
+      "리시버드라이어"
+    ],
+    "answer": 2,
+    "explanation": "온수식 난방은 냉각수와 공기의 열교환을 이용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q13"
+  },
+  {
+    "id": "concept-electrical-39",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "자동 공조장치가 목표 실내온도를 유지하기 위해 이용하는 입력은 (    )이다.",
+    "choices": [
+      "휠속도 센서",
+      "크랭크축 센서",
+      "실내온도 센서",
+      "타이어 압력 센서"
+    ],
+    "answer": 3,
+    "explanation": "실내온도 검출값은 공조의 온도 제어에 활용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q19"
+  },
+  {
+    "id": "concept-electrical-40",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이더넷 스위치가 목적지 포트를 판단하는 대표적인 주소는 (    )이다.",
+    "choices": [
+      "DTC 코드",
+      "차대번호",
+      "CAN 종단저항",
+      "MAC 주소"
+    ],
+    "answer": 4,
+    "explanation": "스위치는 MAC 주소를 기반으로 프레임을 전달한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q02"
+  },
+  {
+    "id": "concept-electrical-41",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "데이터를 작은 단위로 나눠 통신 자원을 유연하게 공유하는 방식은 (    )이다.",
+    "choices": [
+      "패킷 교환",
+      "회선 고정",
+      "직류 정류",
+      "전압 분배"
+    ],
+    "answer": 1,
+    "explanation": "패킷 교환은 네트워크 자원 공유를 가능하게 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q04"
+  },
+  {
+    "id": "concept-electrical-42",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전기 신호의 증폭 또는 스위칭에 활용되는 반도체 부품은 (    )이다.",
+    "choices": [
+      "퓨즈",
+      "트랜지스터",
+      "커넥터",
+      "인덕터"
+    ],
+    "answer": 2,
+    "explanation": "트랜지스터는 전기 신호 제어에 활용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q05"
+  },
+  {
+    "id": "concept-electrical-43",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "가속 시 구동바퀴의 헛돎을 억제하는 제어 시스템은 (    )이다.",
+    "choices": [
+      "LDW",
+      "TPMS",
+      "TCS",
+      "SRS"
+    ],
+    "answer": 3,
+    "explanation": "TCS는 구동토크 및 제동력을 제어해 구동 슬립을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q09"
+  },
+  {
+    "id": "concept-electrical-44",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "카메라로 차선을 감지하여 의도하지 않은 이탈을 경고하는 장치는 (    )이다.",
+    "choices": [
+      "ACC",
+      "AEB",
+      "TPMS",
+      "LDW"
+    ],
+    "answer": 4,
+    "explanation": "LDW는 차선 이탈 경고 시스템이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q11"
+  },
+  {
+    "id": "concept-electrical-45",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 회로의 과도한 압력을 안전하게 제한하는 방출형 보호 부품은 (    )이다.",
+    "choices": [
+      "압력 릴리프 밸브",
+      "팽창밸브",
+      "히터 코어",
+      "블로워 모터"
+    ],
+    "answer": 1,
+    "explanation": "압력 릴리프 밸브는 규정된 과압에서 안전 방출 기능을 수행한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q13"
+  },
+  {
+    "id": "concept-electrical-46",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "정상 고속 CAN에서 우성 상태는 열성 상태보다 CAN-H와 CAN-L 사이의 양의 (    )이 크게 나타난다.",
+    "choices": [
+      "공급전류",
+      "차동전압",
+      "절연저항",
+      "주파수"
+    ],
+    "answer": 2,
+    "explanation": "우성 상태와 열성 상태는 차동전압으로 구별된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q14"
+  },
+  {
+    "id": "concept-electrical-47",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "기본 정속주행 제어가 설정 속도를 유지하는 데 이용하는 정보는 (    )이다.",
+    "choices": [
+      "연료 온도",
+      "냉매량",
+      "차속",
+      "배터리 SOH"
+    ],
+    "answer": 3,
+    "explanation": "차속을 설정 속도와 비교해 구동을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q19"
+  },
+  {
+    "id": "concept-electrical-48",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "수동 코일형 센서의 규정 측정에서 저항이 무한대로 나타나면 (    )을 의심한다.",
+    "choices": [
+      "정상 연속성",
+      "정상 단락",
+      "완전 충전",
+      "단선"
+    ],
+    "answer": 4,
+    "explanation": "회로가 끊어지면 저항이 매우 커질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q04"
+  },
+  {
+    "id": "concept-electrical-49",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "증발기에 맺힌 응축수를 차량 외부로 배출하는 부품은 (    )이다.",
+    "choices": [
+      "드레인 호스",
+      "고압 냉매 호스",
+      "블렌드 도어",
+      "히터 코어"
+    ],
+    "answer": 1,
+    "explanation": "응축수 배수 불량은 습기나 악취의 원인이 될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q08"
+  },
+  {
+    "id": "concept-electrical-50",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "응축기 냉각팬이 작동하지 않으면 냉매의 (    ) 효율이 저하될 수 있다.",
+    "choices": [
+      "팽창",
+      "응축",
+      "전기 정류",
+      "배터리 충전"
+    ],
+    "answer": 2,
+    "explanation": "응축기는 외부로 열을 방출하므로 냉각풍이 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q11"
+  },
+  {
+    "id": "concept-electrical-51",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차량 내 서로 다른 통신 네트워크 사이의 정보 전달을 담당하는 제어기는 (    )이다.",
+    "choices": [
+      "인버터",
+      "블로워 레귤레이터",
+      "게이트웨이",
+      "퓨즈"
+    ],
+    "answer": 3,
+    "explanation": "게이트웨이는 복수 네트워크를 연결한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q13"
+  },
+  {
+    "id": "concept-electrical-52",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "파워윈도우 모터는 회전하지만 유리가 움직이지 않을 때 확인할 기계적 전달 장치는 (    )이다.",
+    "choices": [
+      "마스터 실린더",
+      "응축기 팬",
+      "리시버드라이어",
+      "윈도우 레귤레이터"
+    ],
+    "answer": 4,
+    "explanation": "레귤레이터는 모터의 운동을 유리의 상하 이동으로 전달한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q14"
+  },
+  {
+    "id": "concept-electrical-53",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "스마트키 모듈 교체 후 차종별로 필요한 인증 설정 작업은 (    )이다.",
+    "choices": [
+      "키 등록",
+      "휠 밸런스",
+      "냉매 충전",
+      "배출가스 재생"
+    ],
+    "answer": 1,
+    "explanation": "스마트키의 인증 정보는 지정 등록 절차가 필요할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q16"
+  },
+  {
+    "id": "concept-electrical-54",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류전압 측정에서 실제 전압의 방향과 프로브 연결 방향이 반대이면 표시값에 (    ) 부호가 나타날 수 있다.",
+    "choices": [
+      "항상 양수",
+      "음수",
+      "무한대",
+      "항상 0"
+    ],
+    "answer": 2,
+    "explanation": "전압계는 기준 단자와 측정 단자 사이의 전위차를 표시한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q01"
+  },
+  {
+    "id": "concept-electrical-55",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "액체 냉매의 온도가 해당 압력에서의 포화온도보다 낮은 상태는 (    )이다.",
+    "choices": [
+      "과열",
+      "단열압축",
+      "과냉각",
+      "포화증발"
+    ],
+    "answer": 3,
+    "explanation": "과냉각도는 포화온도와 액체온도의 차이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q09"
+  },
+  {
+    "id": "concept-electrical-56",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "열원은 정상인데 실내 토출온도가 조절되지 않을 때 확인할 공기 혼합 제어 부품은 (    )이다.",
+    "choices": [
+      "냉매 드라이어",
+      "차속 센서",
+      "알터네이터",
+      "혼합도어 액추에이터"
+    ],
+    "answer": 4,
+    "explanation": "혼합도어의 명령과 실제 위치를 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q11"
+  },
+  {
+    "id": "concept-electrical-57",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "도어 개폐 상태를 제어기에 입력하는 부품은 (    )이다.",
+    "choices": [
+      "도어 스위치",
+      "도어 체커",
+      "도어 트림",
+      "도어 힌지"
+    ],
+    "answer": 1,
+    "explanation": "도어 스위치는 문이 열렸는지 닫혔는지를 감지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q15"
+  },
+  {
+    "id": "concept-electrical-58",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "배터리 분리 후 일부 원터치 윈도우 기능 복구에 필요한 작업은 (    )이다.",
+    "choices": [
+      "냉매 충전",
+      "위치 초기화",
+      "조향각 증폭",
+      "연료압 조정"
+    ],
+    "answer": 2,
+    "explanation": "차종에 따라 유리 위치 학습 또는 초기화가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q16"
+  },
+  {
+    "id": "concept-electrical-59",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "ADAS 카메라를 지정된 표적 앞에서 정지 상태로 보정하는 방식은 (    )이다.",
+    "choices": [
+      "동적 보정",
+      "듀티비 제어",
+      "정적 보정",
+      "전류 중재"
+    ],
+    "answer": 3,
+    "explanation": "정적 보정과 주행 중 동적 보정은 제조사 기준으로 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q04"
+  },
+  {
+    "id": "concept-electrical-60",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "증발기 결빙을 억제하는 공조 제어에 중요한 입력은 (    )이다.",
+    "choices": [
+      "배기 산소량",
+      "휠 회전수",
+      "밸브 간극",
+      "증발기 온도"
+    ],
+    "answer": 4,
+    "explanation": "증발기 온도 정보를 활용해 냉방을 제어할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q09"
+  },
+  {
+    "id": "concept-electrical-61",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "알터네이터의 정류 다이오드 이상이 있을 때 충전전압에서 증가할 수 있는 교류 성분은 (    )이다.",
+    "choices": [
+      "리플",
+      "직류 오프셋",
+      "절연저항",
+      "정류 효율"
+    ],
+    "answer": 1,
+    "explanation": "정류 이상은 출력 전압 파형의 리플을 증가시킬 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q13"
+  },
+  {
+    "id": "concept-electrical-62",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "도어가 일정 각도에서 유지되도록 돕는 기계 부품은 (    )이다.",
+    "choices": [
+      "도어 스위치",
+      "도어 체커",
+      "도어 잠금 릴레이",
+      "윈도우 모터"
+    ],
+    "answer": 2,
+    "explanation": "도어 개방각에서 발생하는 소음과 유지 이상은 체커 상태를 살핀다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q19"
+  },
+  {
+    "id": "concept-electrical-63",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "증기압축식 냉방에서 냉매가 증발하면서 실내 공기의 열을 흡수하는 부품은 (    )이다.",
+    "choices": [
+      "응축기",
+      "컴프레서",
+      "증발기",
+      "리시버드라이어"
+    ],
+    "answer": 3,
+    "explanation": "증발기에서 냉매가 열을 흡수한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q08"
+  },
+  {
+    "id": "concept-electrical-64",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "공조장치에서 실내 송풍량을 만드는 구동 부품은 (    )이다.",
+    "choices": [
+      "컴프레서",
+      "응축기",
+      "팽창밸브",
+      "블로워 모터"
+    ],
+    "answer": 4,
+    "explanation": "블로워 모터는 실내 공기 순환을 담당한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q09"
+  },
+  {
+    "id": "concept-electrical-65",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "오토라이트의 자동 점등 판단에 사용하는 입력은 외부 (    )이다.",
+    "choices": [
+      "조도",
+      "기압",
+      "냉매압",
+      "가속도"
+    ],
+    "answer": 1,
+    "explanation": "외부 조도 변화에 따라 점등을 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q11"
+  },
+  {
+    "id": "concept-electrical-66",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전력의 SI 유도단위는 (    )이다.",
+    "choices": [
+      "볼트(V)",
+      "와트(W)",
+      "암페어(A)",
+      "옴(Ω)"
+    ],
+    "answer": 2,
+    "explanation": "전력은 에너지 전달률이며 W로 나타낸다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q12"
+  },
+  {
+    "id": "concept-electrical-67",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "충돌 위험을 판단해 자동으로 제동에 개입하는 장치는 (    )이다.",
+    "choices": [
+      "FCW",
+      "LDW",
+      "AEB",
+      "TPMS"
+    ],
+    "answer": 3,
+    "explanation": "AEB는 위험 시 제동을 보조하거나 자동으로 개입한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q16"
+  },
+  {
+    "id": "concept-electrical-68",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매를 감압하고 증발기로 공급되는 양을 조절하는 부품은 (    )이다.",
+    "choices": [
+      "응축기",
+      "리시버드라이어",
+      "히터 코어",
+      "팽창밸브"
+    ],
+    "answer": 4,
+    "explanation": "팽창밸브는 냉매 감압과 공급량 제어를 수행한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q18"
+  },
+  {
+    "id": "concept-electrical-69",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "코디네이터 중심으로 작동하는 비교적 저속의 차량용 통신 방식은 (    )이다.",
+    "choices": [
+      "LIN",
+      "FlexRay",
+      "100BASE-T1",
+      "MOST"
+    ],
+    "answer": 1,
+    "explanation": "LIN은 주로 단순한 차량 편의장치 통신에 쓰인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q01"
+  },
+  {
+    "id": "concept-electrical-70",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전자클러치가 있는 냉방 압축기에서 엔진 동력을 연결하거나 차단하는 부품은 (    )이다.",
+    "choices": [
+      "팽창밸브",
+      "전자클러치",
+      "온도 센서",
+      "리시버드라이어"
+    ],
+    "answer": 2,
+    "explanation": "전자클러치는 압축기 구동 여부를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q08"
+  },
+  {
+    "id": "concept-electrical-71",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "설정 속도 유지와 앞차와의 거리 추종을 함께 수행하는 기능은 (    )이다.",
+    "choices": [
+      "LDW",
+      "FCW",
+      "ACC",
+      "TPMS"
+    ],
+    "answer": 3,
+    "explanation": "ACC는 차간거리까지 고려하는 적응형 정속주행 제어다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q11"
+  },
+  {
+    "id": "concept-electrical-72",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전방 충돌 위험을 운전자에게 경고하는 기능은 (    )이다.",
+    "choices": [
+      "TCS",
+      "TPMS",
+      "EPB",
+      "FCW"
+    ],
+    "answer": 4,
+    "explanation": "FCW는 경고 기능이며 AEB의 자동 제동 기능과 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q15"
+  },
+  {
+    "id": "concept-electrical-73",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이상화한 증발기에서 질량유량 0.02kg/s, 비엔탈피 상승량 150kJ/kg일 때 열흡수율은 (    )이다.",
+    "choices": [
+      "3kW",
+      "0.3kW",
+      "30kW",
+      "7.5kW"
+    ],
+    "answer": 1,
+    "explanation": "열전달률은 질량유량×비엔탈피 변화량=0.02×150=3kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q17"
+  },
+  {
+    "id": "concept-electrical-74",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉방 컴프레서 오일의 주요 역할 중 하나는 압축기 내부의 (    )이다.",
+    "choices": [
+      "통신 중재",
+      "윤활",
+      "전압 증폭",
+      "수분 흡착"
+    ],
+    "answer": 2,
+    "explanation": "압축기 오일은 마찰면의 윤활과 열관리를 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q18"
+  },
+  {
+    "id": "concept-electrical-75",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "인포테인먼트용 차량 네트워크의 대표적인 명칭은 (    )이다.",
+    "choices": [
+      "OBD-II",
+      "LIN",
+      "MOST",
+      "PWM"
+    ],
+    "answer": 3,
+    "explanation": "MOST는 멀티미디어 정보 전송에 활용되는 네트워크다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q01"
+  },
+  {
+    "id": "concept-electrical-76",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "증기압축식 냉방에서 고압 냉매 기체가 열을 방출하며 액화되는 주요 부품은 (    )이다.",
+    "choices": [
+      "증발기",
+      "팽창밸브",
+      "블로워 모터",
+      "응축기"
+    ],
+    "answer": 4,
+    "explanation": "응축기는 냉매의 열을 외부로 방출한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q07"
+  },
+  {
+    "id": "concept-electrical-77",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "빗물의 유무나 정도를 감지해 와이퍼 작동에 활용하는 센서는 (    )이다.",
+    "choices": [
+      "레인 센서",
+      "조도 센서",
+      "요레이트 센서",
+      "홀 센서"
+    ],
+    "answer": 1,
+    "explanation": "레인 센서의 입력으로 자동 와이퍼를 제어할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q10"
+  },
+  {
+    "id": "concept-electrical-78",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "타이어의 낮은 공기압을 감시하고 운전자에게 경고하는 장치는 (    )이다.",
+    "choices": [
+      "ACC",
+      "TPMS",
+      "AEB",
+      "LIN"
+    ],
+    "answer": 2,
+    "explanation": "TPMS는 타이어 공기압 감시 시스템이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q14"
+  },
+  {
+    "id": "concept-electrical-79",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "액상 냉매의 수분과 이물을 관리하는 부품은 (    )이다.",
+    "choices": [
+      "컴프레서",
+      "증발기",
+      "리시버드라이어",
+      "블로워 모터"
+    ],
+    "answer": 3,
+    "explanation": "건조제와 필터로 냉매의 수분 및 이물을 관리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q17"
   }
 ]
