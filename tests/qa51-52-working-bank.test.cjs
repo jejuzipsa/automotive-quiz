@@ -191,3 +191,11 @@ if(process.env.QA52_OUT_DIR){
  for(const b of batchQueue)write("batches/batch-"+String(b.batch).padStart(2,"0")+".json",b);
 }
 console.log("PASS QA65 working bank: "+JSON.stringify(summary)+"; NOT EXPERT APPROVAL");
+
+// QA73: current classification snapshot and preserved publication holds.
+{
+ const a=read("data/qa/qa73-current-hold-review.json"),map=new Map(all.map(q=>[q.id,q]));
+ assert.equal(a.items.length,7);assert.equal(new Set(a.items.map(q=>q.id)).size,7);assert.equal(a.total_holds,55);assert.equal(a.released,0);
+ for(const row of a.items){const q=map.get(row.id);assert.ok(q);assert.equal(q.subject,row.subject);assert.equal(q.question,row.question);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(q.classification_hold,true);assert.equal(row.status,"hold_do_not_publish");assert.equal(row.official_detail_verified,false);assert.equal(q.publishable,false);}
+ console.log("PASS QA73 seven current hold snapshots, no release");
+}

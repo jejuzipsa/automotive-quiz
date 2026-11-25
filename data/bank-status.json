@@ -2596,6 +2596,8 @@
     "correct_answer_changes": 0,
     "total_holds": 55,
     "released": 0,
-    "independent_approvals": 0
+    "independent_approvals": 0,
+    "hold_current_screened": 7,
+    "hold_current_remaining": 48
   }
 }
