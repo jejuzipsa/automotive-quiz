@@ -11886,5 +11886,1705 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r09-s03-q13"
+  },
+  {
+    "id": "concept-eco-101",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전식 배터리가 방전할 때 화학에너지는 주로 (    )로 변환된다.",
+    "choices": [
+      "전기에너지",
+      "기계적 위치에너지",
+      "핵에너지",
+      "음향에너지"
+    ],
+    "answer": 1,
+    "explanation": "배터리는 전기화학 반응을 이용해 전력을 공급한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-02"
+  },
+  {
+    "id": "concept-eco-102",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS가 보호 제어를 위해 팩 전체 전압 외에 개별적으로 감시하는 전압은 (    )이다.",
+    "choices": [
+      "점화 2차 전압",
+      "셀 전압",
+      "냉매 압력",
+      "발전기 회전수"
+    ],
+    "answer": 2,
+    "explanation": "개별 셀 상태가 충방전 보호에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-03"
+  },
+  {
+    "id": "concept-eco-103",
+    "track": "concept",
+    "subject": "eco",
+    "question": "교류 구동모터를 사용하는 전기차에서 구동 인버터의 출력 전력 형태는 (    )이다.",
+    "choices": [
+      "직류만",
+      "압축공기",
+      "교류",
+      "유압"
+    ],
+    "answer": 3,
+    "explanation": "배터리 직류 전력을 모터에 적합한 교류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-04"
+  },
+  {
+    "id": "concept-eco-104",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 배터리에서 저전압 보조전원으로 전력을 공급하는 컨버터의 입력 전력은 (    )이다.",
+    "choices": [
+      "교류",
+      "유압",
+      "압축공기",
+      "직류"
+    ],
+    "answer": 4,
+    "explanation": "고전압 DC에서 저전압 DC로 전압을 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-05"
+  },
+  {
+    "id": "concept-eco-105",
+    "track": "concept",
+    "subject": "eco",
+    "question": "OBC가 차량에 탑재되어 교류 충전 시 수행하는 주요 변환은 (    )이다.",
+    "choices": [
+      "AC→DC",
+      "DC→AC",
+      "DC→DC만",
+      "기계적 감속"
+    ],
+    "answer": 1,
+    "explanation": "OBC는 외부 교류를 배터리 충전에 필요한 직류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-06"
+  },
+  {
+    "id": "concept-eco-106",
+    "track": "concept",
+    "subject": "eco",
+    "question": "DC 급속충전에서 외부 설비가 변환한 전력은 차량과의 충전 제어를 거쳐 (    )에 공급된다.",
+    "choices": [
+      "연료 탱크",
+      "구동 배터리",
+      "배기 촉매",
+      "타이어"
+    ],
+    "answer": 2,
+    "explanation": "직류 급속충전은 차량의 충전 허용 조건을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-07"
+  },
+  {
+    "id": "concept-eco-107",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회생제동에서 구동모터는 감속 중 (    ) 모드로 작동할 수 있다.",
+    "choices": [
+      "연료 분사",
+      "냉매 압축",
+      "발전",
+      "점화"
+    ],
+    "answer": 3,
+    "explanation": "감속 운동에너지 일부를 전기로 회수한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-08"
+  },
+  {
+    "id": "concept-eco-108",
+    "track": "concept",
+    "subject": "eco",
+    "question": "SOC를 잔존 전하량 기준으로 정의할 때 분모에 해당하는 양은 기준 (    )이다.",
+    "choices": [
+      "차체 질량",
+      "모터 토크",
+      "배터리 저항",
+      "전하 용량"
+    ],
+    "answer": 4,
+    "explanation": "정의된 기준 용량 대비 남은 전하량을 비율로 표시한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-09"
+  },
+  {
+    "id": "concept-eco-109",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 건전도를 평가할 때 가용 용량과 함께 열화를 반영하는 전기적 특성은 (    )이다.",
+    "choices": [
+      "내부저항",
+      "차속",
+      "타이어 지름",
+      "조향각"
+    ],
+    "answer": 1,
+    "explanation": "용량 감소와 저항 변화는 배터리 열화의 지표가 될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-10"
+  },
+  {
+    "id": "concept-eco-110",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리의 온도 관리는 고온 냉각뿐 아니라 저온 조건에서의 (    )에도 활용될 수 있다.",
+    "choices": [
+      "회전 감속",
+      "가열",
+      "전압 정류만",
+      "연료 분사"
+    ],
+    "answer": 2,
+    "explanation": "적정 작동 온도를 유지하기 위한 열관리가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-11"
+  },
+  {
+    "id": "concept-eco-111",
+    "track": "concept",
+    "subject": "eco",
+    "question": "열폭주에서는 내부 발열과 그에 따른 반응 증가가 서로 (    )되는 위험이 있다.",
+    "choices": [
+      "상쇄만",
+      "완전히 정지",
+      "증폭",
+      "무관"
+    ],
+    "answer": 3,
+    "explanation": "발열 반응이 제어되지 않고 연쇄적으로 확대되는 현상이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-12"
+  },
+  {
+    "id": "concept-eco-112",
+    "track": "concept",
+    "subject": "eco",
+    "question": "주황색 고전압 케이블 식별은 해당 회로의 (    ) 확인을 대신하지 못한다.",
+    "choices": [
+      "차체 색상",
+      "냉매량",
+      "타이어 규격",
+      "무전압"
+    ],
+    "answer": 4,
+    "explanation": "피복 색은 식별용이며 실제 전압 상태를 보증하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-13"
+  },
+  {
+    "id": "concept-eco-113",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 차단 후 커패시터 잔류전압 때문에 필요한 안전 단계 중 하나는 지정된 (    )이다.",
+    "choices": [
+      "대기시간 준수",
+      "즉시 작업",
+      "강제 재투입",
+      "경고등 삭제"
+    ],
+    "answer": 1,
+    "explanation": "전원 차단 후 지정 대기 및 무전압 검증이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-14"
+  },
+  {
+    "id": "concept-eco-114",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연 감시장치가 감시하는 관계는 고전압 회로와 (    ) 사이의 절연 상태다.",
+    "choices": [
+      "타이어 트레드",
+      "차체",
+      "냉매통",
+      "연료탱크만"
+    ],
+    "answer": 2,
+    "explanation": "고전압 회로와 차체 간 절연 이상을 파악한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-16"
+  },
+  {
+    "id": "concept-eco-115",
+    "track": "concept",
+    "subject": "eco",
+    "question": "내연기관과 전기모터를 조합하는 차량에서 각 동력원의 출력을 나누는 제어를 (    )이라 한다.",
+    "choices": [
+      "냉매 정량 충전",
+      "휠 밸런스",
+      "동력 협조 제어",
+      "배기 누설 검사"
+    ],
+    "answer": 3,
+    "explanation": "운전 조건에 따라 엔진과 모터의 역할을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-17"
+  },
+  {
+    "id": "concept-eco-116",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소연료전지의 발전 과정은 연소기관의 열기관 방식과 달리 직접적인 (    ) 변환이다.",
+    "choices": [
+      "유압 에너지",
+      "타이어 운동",
+      "핵분열 에너지",
+      "전기화학적 에너지"
+    ],
+    "answer": 4,
+    "explanation": "수소와 산소의 전기화학 반응으로 전력을 생산한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-19"
+  },
+  {
+    "id": "concept-eco-117",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속기를 지난 구동력이 좌우 바퀴로 전달되면서 회전수 차이를 허용하는 부품은 (    )이다.",
+    "choices": [
+      "차동장치",
+      "OBC",
+      "인버터",
+      "BMS"
+    ],
+    "answer": 1,
+    "explanation": "차동장치는 선회 시 좌우 구동바퀴의 회전차를 허용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q07"
+  },
+  {
+    "id": "concept-eco-118",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 이상을 진단할 때 관련 ECU의 DTC와 함께 확인하는 데이터는 (    )이다.",
+    "choices": [
+      "차량 도장색",
+      "실시간 상태값",
+      "타이어 제조일",
+      "유리 투과율"
+    ],
+    "answer": 2,
+    "explanation": "구동 제어 상태와 실제 운전 데이터를 함께 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q08"
+  },
+  {
+    "id": "concept-eco-119",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소는 가연성이 있으므로 누설을 확인하는 목적으로 (    )을 사용하면 안 된다.",
+    "choices": [
+      "수소 전용 검지기",
+      "지정 감지 센서",
+      "불꽃",
+      "승인된 누설 검사 장비"
+    ],
+    "answer": 3,
+    "explanation": "불꽃은 수소에 점화될 위험이 있으므로 사용하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q20"
+  },
+  {
+    "id": "concept-eco-120",
+    "track": "concept",
+    "subject": "eco",
+    "question": "모터의 속도만으로 성능을 판단하지 않고 회전력인 (    )와 전기 입력을 함께 평가한다.",
+    "choices": [
+      "차압",
+      "공연비",
+      "캐스터",
+      "토크"
+    ],
+    "answer": 4,
+    "explanation": "모터의 성능은 속도와 토크, 전기 입력 및 운전 조건에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q04"
+  },
+  {
+    "id": "concept-eco-121",
+    "track": "concept",
+    "subject": "eco",
+    "question": "순수 배터리 전기차의 구동 계통에는 내연기관의 (    ) 계통이 필요하지 않다.",
+    "choices": [
+      "연료 분사",
+      "모터 제어",
+      "절연 감시",
+      "전력 변환"
+    ],
+    "answer": 1,
+    "explanation": "BEV는 내연기관 연료 분사를 사용하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q05"
+  },
+  {
+    "id": "concept-eco-122",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 구동 계통의 심각한 경고가 발생하면 계속 운행하기보다 우선 (    )을 확보한다.",
+    "choices": [
+      "최대 출력",
+      "안전한 정지",
+      "고속 주행",
+      "강제 재시동"
+    ],
+    "answer": 2,
+    "explanation": "안전한 정지 후 지정 진단 절차에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q12"
+  },
+  {
+    "id": "concept-eco-123",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 실제 성능은 회로도만으로 판단하지 않고 지정된 (    ) 시험을 통해 평가할 수 있다.",
+    "choices": [
+      "타이어 트레드",
+      "냉매 누설",
+      "용량",
+      "브레이크 토"
+    ],
+    "answer": 3,
+    "explanation": "전기적 상태와 열적 조건을 고려한 성능시험이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q14"
+  },
+  {
+    "id": "concept-eco-124",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 정비 구역에서 작업자 외 사람의 접근을 막기 위한 기본 관리는 (    )이다.",
+    "choices": [
+      "고전압 회로 강제 연결",
+      "장비 무정격 사용",
+      "경고 표지 제거",
+      "작업 구역 표시·통제"
+    ],
+    "answer": 4,
+    "explanation": "표시와 출입 통제, 정격 장비 및 절차 준수가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q16"
+  },
+  {
+    "id": "concept-eco-125",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 토크의 허용 한계를 결정할 때 운전자 요구와 차속 외에 (    ) 제한을 고려한다.",
+    "choices": [
+      "배터리 전력",
+      "차체 도장색",
+      "워셔액 용량",
+      "타이어 제조일"
+    ],
+    "answer": 1,
+    "explanation": "전원에서 공급할 수 있는 전력에 맞춰 구동 출력을 제한할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q19"
+  },
+  {
+    "id": "concept-eco-126",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수랭식 구동모터의 정비에서는 고전압 안전 외에 (    ) 연결 상태도 확인한다.",
+    "choices": [
+      "배기 촉매",
+      "냉각 회로",
+      "연료 분사기",
+      "점화 플러그"
+    ],
+    "answer": 2,
+    "explanation": "모터 구조에 따라 냉각과 기계적 장착 조건도 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q03"
+  },
+  {
+    "id": "concept-eco-127",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회생제동 작동을 평가할 때 SOC 변화 외에 모터의 실제 발전 (    )을 비교한다.",
+    "choices": [
+      "차고",
+      "캠버",
+      "전력",
+      "냉매압"
+    ],
+    "answer": 3,
+    "explanation": "토크·전력·운전 조건을 함께 확인해야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q04"
+  },
+  {
+    "id": "concept-eco-128",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연저항을 시험할 때 차량별 지정 조건에 맞는 계측기의 (    ) 설정을 확인한다.",
+    "choices": [
+      "타이어 하중",
+      "조향각",
+      "냉매 충전량",
+      "시험 전압"
+    ],
+    "answer": 4,
+    "explanation": "절연시험은 지정 회로 분리 및 시험전압 조건을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q08"
+  },
+  {
+    "id": "concept-eco-129",
+    "track": "concept",
+    "subject": "eco",
+    "question": "하이브리드 동력 전환 이상은 단일 ECU 외에도 관련 제어기 사이의 (    ) 문제인지 확인한다.",
+    "choices": [
+      "통신·협조",
+      "타이어 규격",
+      "냉매 종류",
+      "브레이크액 색상"
+    ],
+    "answer": 1,
+    "explanation": "여러 제어기의 상태와 협조 명령을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q12"
+  },
+  {
+    "id": "concept-eco-130",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 절연 이상은 경고 삭제만으로 해결하지 않고 제작사 절차에 따른 (    )을 우선한다.",
+    "choices": [
+      "강제 접촉기 작동",
+      "안전 격리",
+      "무조건 충전",
+      "최대 출력 운전"
+    ],
+    "answer": 2,
+    "explanation": "안전 상태를 확보하고 절연 이상 원인을 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q16"
+  },
+  {
+    "id": "concept-eco-131",
+    "track": "concept",
+    "subject": "eco",
+    "question": "교류 완속충전이 안 될 때 OBC 입력·출력과 함께 확인할 제어 조건은 충전 (    )이다.",
+    "choices": [
+      "조향각",
+      "휠 밸런스",
+      "허가",
+      "차고"
+    ],
+    "answer": 3,
+    "explanation": "충전기와 차량의 허가 조건 및 BMS 제한을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q05"
+  },
+  {
+    "id": "concept-eco-132",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 부품 수리 후 전원을 정상 복원하기 전에 확인해야 하는 전기적 분리 상태는 (    )이다.",
+    "choices": [
+      "캐스터",
+      "토인",
+      "냉매 과냉각",
+      "절연 상태"
+    ],
+    "answer": 4,
+    "explanation": "제작사 절차에 따라 절연과 안전 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q06"
+  },
+  {
+    "id": "concept-eco-133",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연장갑의 물리적 손상과 공기 누설 상태 외에 확인할 것은 정기 (    )의 유효 여부다.",
+    "choices": [
+      "절연 시험",
+      "타이어 균형",
+      "휠 정렬",
+      "냉매 누설"
+    ],
+    "answer": 1,
+    "explanation": "보호구는 유효한 검사 상태와 적정 정격을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q07"
+  },
+  {
+    "id": "concept-eco-134",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 제어기 교환 후 필요한 학습 절차는 공통 단일값이 아니라 (    )을 따른다.",
+    "choices": [
+      "타이어 규격만",
+      "차종별 지침",
+      "도장색",
+      "외기 조도"
+    ],
+    "answer": 2,
+    "explanation": "제어기 설정 및 학습은 차량 설계에 따라 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q11"
+  },
+  {
+    "id": "concept-eco-135",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 생성된 물이 지나치게 쌓여 가스 공급을 방해하는 현상은 (    )이다.",
+    "choices": [
+      "프리차지",
+      "수막제동",
+      "플러딩",
+      "전압 정류"
+    ],
+    "answer": 3,
+    "explanation": "수분 관리는 막 가습과 과도한 물 축적 방지를 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q15"
+  },
+  {
+    "id": "concept-eco-136",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 누출 경고가 발생하면 일반 운전자는 안전한 정지와 (    )를 우선한다.",
+    "choices": [
+      "임의 고압 부품 분해",
+      "점화원 접근",
+      "경고 삭제 후 운행",
+      "대피·전문 조치"
+    ],
+    "answer": 4,
+    "explanation": "누출 가능성은 안전을 확보하고 전문 절차에 따라 대응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q17"
+  },
+  {
+    "id": "concept-eco-137",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 모듈 검사에서 전압과 온도 외에 전기적 열화를 비교하는 값은 (    )이다.",
+    "choices": [
+      "저항",
+      "캐스터",
+      "연료 압력",
+      "냉매 압력"
+    ],
+    "answer": 1,
+    "explanation": "모듈 전압·저항·온도를 종합해 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q06"
+  },
+  {
+    "id": "concept-eco-138",
+    "track": "concept",
+    "subject": "eco",
+    "question": "서비스 플러그를 분리했다는 사실만으로 고전압 회로의 (    )이 증명되는 것은 아니다.",
+    "choices": [
+      "전력 손실",
+      "작업 안전",
+      "냉매량",
+      "타이어 마모"
+    ],
+    "answer": 2,
+    "explanation": "지정 대기와 검전 절차를 거쳐야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q07"
+  },
+  {
+    "id": "concept-eco-139",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전이 중단될 때 오류코드와 함께 충전 케이블의 (    ) 상태를 확인한다.",
+    "choices": [
+      "배기 촉매",
+      "연료 분사기",
+      "커넥터",
+      "엔진 압축링"
+    ],
+    "answer": 3,
+    "explanation": "연결 상태와 충전 보호 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q09"
+  },
+  {
+    "id": "concept-eco-140",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 회로도에서 특정 점선의 의미는 추측하지 말고 (    )를 확인한다.",
+    "choices": [
+      "배터리 색상",
+      "타이어 공기압",
+      "차량 번호",
+      "범례"
+    ],
+    "answer": 4,
+    "explanation": "회로 기호는 해당 회로도의 범례가 기준이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q11"
+  },
+  {
+    "id": "concept-eco-141",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 누출 경고가 발생한 경우 안전 확보 뒤 실제 누출과 (    ) 회로 이상을 구분한다.",
+    "choices": [
+      "검지기",
+      "타이어 공기압",
+      "냉매량",
+      "캠버"
+    ],
+    "answer": 1,
+    "explanation": "전문 진단에서는 검지기 신호와 배선 및 DTC를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q17"
+  },
+  {
+    "id": "concept-eco-142",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 진단 포트 통신이 불가능할 때 고전압 팩보다 먼저 확인할 수 있는 제어기 공통 공급전원은 (    ) 계통이다.",
+    "choices": [
+      "고압 수소",
+      "12V 보조전원",
+      "브레이크 유압",
+      "압축공기"
+    ],
+    "answer": 2,
+    "explanation": "보조전원·접지·진단 포트는 통신의 기본 조건이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q01"
+  },
+  {
+    "id": "concept-eco-143",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 소음의 진단에서 모터 회전 상태 외에 기계적으로 연결된 (    ) 회전계통을 확인한다.",
+    "choices": [
+      "OBC",
+      "BMS",
+      "감속기",
+      "충전기"
+    ],
+    "answer": 3,
+    "explanation": "전기 모터와 감속기 등 기계적 원인을 분리해 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q12"
+  },
+  {
+    "id": "concept-eco-144",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS의 온도센서 신호가 실제와 다를 때 충전 제어에 나타날 수 있는 결과는 (    )이다.",
+    "choices": [
+      "충전 무조건 증가",
+      "전압 무한 증가",
+      "차고 상승",
+      "보호 제한"
+    ],
+    "answer": 4,
+    "explanation": "잘못된 온도값은 배터리 보호 제한을 유발할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q14"
+  },
+  {
+    "id": "concept-eco-145",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 스택 전체 전압이 낮을 때 평균값 외에 개별 (    ) 전압의 편차를 확인한다.",
+    "choices": [
+      "셀",
+      "타이어",
+      "차축",
+      "냉각팬"
+    ],
+    "answer": 1,
+    "explanation": "셀별 전압은 스택 내 불균형을 파악하는 자료다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q18"
+  },
+  {
+    "id": "concept-eco-146",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 과열이 감지될 때 BMS가 수행할 수 있는 열적 보호 동작은 (    ) 제어이다.",
+    "choices": [
+      "배기 분사",
+      "냉각",
+      "차고 상승",
+      "휠 정렬"
+    ],
+    "answer": 2,
+    "explanation": "온도 보호에는 냉각 및 충방전 출력 제한이 포함될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q02"
+  },
+  {
+    "id": "concept-eco-147",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 충전기 선택 시 AC/DC 방식 외에 차량과 충전기의 (    ) 호환성을 확인한다.",
+    "choices": [
+      "타이어 브랜드",
+      "도장색",
+      "충전 규격",
+      "차량 길이"
+    ],
+    "answer": 3,
+    "explanation": "충전 규격은 지역과 차량·충전기 방식에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q08"
+  },
+  {
+    "id": "concept-eco-148",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 화재 발생 시 일반인의 우선 행동은 접근하여 고전압 부품을 조작하는 것이 아니라 (    )이다.",
+    "choices": [
+      "배터리 분해",
+      "컨택터 강제 작동",
+      "충전 계속",
+      "대피 및 신고"
+    ],
+    "answer": 4,
+    "explanation": "차량에서 떨어져 안전을 확보하고 신고한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q11"
+  },
+  {
+    "id": "concept-eco-149",
+    "track": "concept",
+    "subject": "eco",
+    "question": "FCEV는 연료전지로 전력을 생산하고 바퀴는 일반적으로 (    )로 구동한다.",
+    "choices": [
+      "전동모터",
+      "수소 직접 분사 엔진",
+      "증기 터빈",
+      "기계식 슈퍼차저"
+    ],
+    "answer": 1,
+    "explanation": "연료전지 전력으로 전기 구동계를 작동시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q15"
+  },
+  {
+    "id": "concept-eco-150",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장용기 충전에서 허용 압력은 용기와 충전기의 (    )에 맞춰야 한다.",
+    "choices": [
+      "타이어 등급",
+      "설계 등급",
+      "차체 색상",
+      "냉매 종류"
+    ],
+    "answer": 2,
+    "explanation": "압력 등급과 지정 충전 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q16"
+  },
+  {
+    "id": "concept-eco-151",
+    "track": "concept",
+    "subject": "eco",
+    "question": "하이브리드 차량의 동력 분담은 운전자 요구 토크 외에 구동배터리 (    )를 고려한다.",
+    "choices": [
+      "타이어 규격",
+      "냉매 종류",
+      "SOC",
+      "외부 조도"
+    ],
+    "answer": 3,
+    "explanation": "충전 상태에 따라 엔진과 모터의 역할이 달라질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q19"
+  },
+  {
+    "id": "concept-eco-152",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 스택에 공급되는 공기 중 오염 입자를 줄이는 구성품은 (    )이다.",
+    "choices": [
+      "수소 감압기",
+      "배터리 컨택터",
+      "감속기",
+      "공기 필터"
+    ],
+    "answer": 4,
+    "explanation": "공기 공급계통은 압축·여과·수분 관리 기능을 포함한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q06"
+  },
+  {
+    "id": "concept-eco-153",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전동모터 냉각 방식 중 액체 대신 공기를 냉각매체로 이용하는 방식은 (    )이다.",
+    "choices": [
+      "공랭",
+      "수랭",
+      "오일 냉각",
+      "증발 잠열식만"
+    ],
+    "answer": 1,
+    "explanation": "모터 냉각 방식은 차종마다 다양하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q09"
+  },
+  {
+    "id": "concept-eco-154",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS가 개별 셀 전압의 상한 도달을 감지하면 제한하는 것은 (    ) 전류이다.",
+    "choices": [
+      "냉각수 유량",
+      "충전",
+      "타이어 공기",
+      "조향 토크"
+    ],
+    "answer": 2,
+    "explanation": "셀 과충전을 방지하기 위해 충전전류를 제한하거나 차단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q15"
+  },
+  {
+    "id": "concept-eco-155",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 18kWh를 소비한다. 150km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "18kWh",
+      "8.333kWh",
+      "27kWh",
+      "12kWh"
+    ],
+    "answer": 3,
+    "explanation": "소비에너지=18×150÷100=27kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-156",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 16kWh를 소비한다. 250km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "16kWh",
+      "15.625kWh",
+      "6.4kWh",
+      "40kWh"
+    ],
+    "answer": 4,
+    "explanation": "소비에너지=16×250÷100=40kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-157",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 20kWh를 소비한다. 180km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "36kWh",
+      "20kWh",
+      "9kWh",
+      "11.111kWh"
+    ],
+    "answer": 1,
+    "explanation": "소비에너지=20×180÷100=36kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-158",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 15kWh를 소비한다. 300km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "15kWh",
+      "45kWh",
+      "20kWh",
+      "5kWh"
+    ],
+    "answer": 2,
+    "explanation": "소비에너지=15×300÷100=45kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-159",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 6kW가 일정하게 저장될 때 24kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "144h",
+      "0.25h",
+      "4h",
+      "24h"
+    ],
+    "answer": 3,
+    "explanation": "시간=에너지/저장전력=24÷6=4h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-160",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 3kW가 일정하게 저장될 때 18kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "54h",
+      "0.167h",
+      "18h",
+      "6h"
+    ],
+    "answer": 4,
+    "explanation": "시간=에너지/저장전력=18÷3=6h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-161",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 9kW가 일정하게 저장될 때 45kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "5h",
+      "405h",
+      "0.2h",
+      "45h"
+    ],
+    "answer": 1,
+    "explanation": "시간=에너지/저장전력=45÷9=5h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-162",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 10kW가 일정하게 저장될 때 30kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "300h",
+      "3h",
+      "0.333h",
+      "30h"
+    ],
+    "answer": 2,
+    "explanation": "시간=에너지/저장전력=30÷10=3h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-163",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 72kWh인 배터리 팩 질량이 360kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.2Wh/kg",
+      "5Wh/kg",
+      "200Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 3,
+    "explanation": "72000Wh÷360kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-164",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 48kWh인 배터리 팩 질량이 300kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.16Wh/kg",
+      "6.25Wh/kg",
+      "16Wh/kg",
+      "160Wh/kg"
+    ],
+    "answer": 4,
+    "explanation": "48000Wh÷300kg=160Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-165",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 80kWh인 배터리 팩 질량이 400kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "200Wh/kg",
+      "0.2Wh/kg",
+      "5Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 1,
+    "explanation": "80000Wh÷400kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-166",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 54kWh인 배터리 팩 질량이 270kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.2Wh/kg",
+      "200Wh/kg",
+      "5Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 2,
+    "explanation": "54000Wh÷270kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-167",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 20kW, 변환 효율 90%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "18kW",
+      "20kW",
+      "2kW",
+      "0.9kW"
+    ],
+    "answer": 3,
+    "explanation": "손실=20×(100−90)/100=2kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-168",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 50kW, 변환 효율 96%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "48kW",
+      "50kW",
+      "0.96kW",
+      "2kW"
+    ],
+    "answer": 4,
+    "explanation": "손실=50×(100−96)/100=2kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-169",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 40kW, 변환 효율 95%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "2kW",
+      "38kW",
+      "40kW",
+      "0.95kW"
+    ],
+    "answer": 1,
+    "explanation": "손실=40×(100−95)/100=2kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-170",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 30kW, 변환 효율 80%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "24kW",
+      "6kW",
+      "30kW",
+      "0.8kW"
+    ],
+    "answer": 2,
+    "explanation": "손실=30×(100−80)/100=6kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-171",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 200kJ이고 저장 효율이 50%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "200kJ",
+      "10000kJ",
+      "100kJ",
+      "151kJ"
+    ],
+    "answer": 3,
+    "explanation": "저장되지 않은 양=200×(100−50)/100=100kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-172",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 400kJ이고 저장 효율이 30%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "120kJ",
+      "400kJ",
+      "12000kJ",
+      "280kJ"
+    ],
+    "answer": 4,
+    "explanation": "저장되지 않은 양=400×(100−30)/100=280kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-173",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 150kJ이고 저장 효율이 60%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "60kJ",
+      "90kJ",
+      "150kJ",
+      "9000kJ"
+    ],
+    "answer": 1,
+    "explanation": "저장되지 않은 양=150×(100−60)/100=60kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-174",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 500kJ이고 저장 효율이 40%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "200kJ",
+      "300kJ",
+      "500kJ",
+      "20000kJ"
+    ],
+    "answer": 2,
+    "explanation": "저장되지 않은 양=500×(100−40)/100=300kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-175",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 130V이다. 단위 셀 전압 0.65V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "130개",
+      "84.5개",
+      "200개",
+      "100개"
+    ],
+    "answer": 3,
+    "explanation": "셀 수=스택 전압/셀 전압=130÷0.65=200개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-176",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 126V이다. 단위 셀 전압 0.7V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "126개",
+      "88.2개",
+      "90개",
+      "180개"
+    ],
+    "answer": 4,
+    "explanation": "셀 수=스택 전압/셀 전압=126÷0.7=180개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-177",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 150V이다. 단위 셀 전압 0.6V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "250개",
+      "150개",
+      "90개",
+      "125개"
+    ],
+    "answer": 1,
+    "explanation": "셀 수=스택 전압/셀 전압=150÷0.6=250개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-178",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 80V이다. 단위 셀 전압 0.8V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "80개",
+      "100개",
+      "64개",
+      "50개"
+    ],
+    "answer": 2,
+    "explanation": "셀 수=스택 전압/셀 전압=80÷0.8=100개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-179",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 60kWh, SOH 80%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "60kWh",
+      "12kWh",
+      "48kWh",
+      "75kWh"
+    ],
+    "answer": 3,
+    "explanation": "현재 가용 에너지=60×80/100=48kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-180",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 80kWh, SOH 75%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "80kWh",
+      "20kWh",
+      "106.667kWh",
+      "60kWh"
+    ],
+    "answer": 4,
+    "explanation": "현재 가용 에너지=80×75/100=60kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-181",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 50kWh, SOH 90%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "45kWh",
+      "50kWh",
+      "5kWh",
+      "55.556kWh"
+    ],
+    "answer": 1,
+    "explanation": "현재 가용 에너지=50×90/100=45kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-182",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 72kWh, SOH 75%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "72kWh",
+      "54kWh",
+      "18kWh",
+      "96kWh"
+    ],
+    "answer": 2,
+    "explanation": "현재 가용 에너지=72×75/100=54kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-183",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1200kg인 가상 차량이 20m/s에서 10m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "360kJ",
+      "60kJ",
+      "180kJ",
+      "240kJ"
+    ],
+    "answer": 3,
+    "explanation": "감소량=½×1200×(20²−10²)/1000=180kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-184",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1600kg인 가상 차량이 15m/s에서 5m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "320kJ",
+      "80kJ",
+      "180kJ",
+      "160kJ"
+    ],
+    "answer": 4,
+    "explanation": "감소량=½×1600×(15²−5²)/1000=160kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-185",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1500kg인 가상 차량이 20m/s에서 0m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "300kJ",
+      "600kJ",
+      "451kJ",
+      "602kJ"
+    ],
+    "answer": 1,
+    "explanation": "감소량=½×1500×(20²−0²)/1000=300kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-186",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1000kg인 가상 차량이 30m/s에서 10m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "800kJ",
+      "400kJ",
+      "200kJ",
+      "450kJ"
+    ],
+    "answer": 2,
+    "explanation": "감소량=½×1000×(30²−10²)/1000=400kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-187",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 100kW, 보조장치 소비전력 15kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "115kW",
+      "100kW",
+      "85kW",
+      "15kW"
+    ],
+    "answer": 3,
+    "explanation": "순전력=100−15=85kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-188",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 80kW, 보조장치 소비전력 8kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "88kW",
+      "80kW",
+      "8kW",
+      "72kW"
+    ],
+    "answer": 4,
+    "explanation": "순전력=80−8=72kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-189",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 120kW, 보조장치 소비전력 20kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "100kW",
+      "140kW",
+      "120kW",
+      "20kW"
+    ],
+    "answer": 1,
+    "explanation": "순전력=120−20=100kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-190",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 95kW, 보조장치 소비전력 10kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "105kW",
+      "85kW",
+      "95kW",
+      "10kW"
+    ],
+    "answer": 2,
+    "explanation": "순전력=95−10=85kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-191",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 350bar는 (    )에 해당한다.",
+    "choices": [
+      "350MPa",
+      "3500MPa",
+      "35MPa",
+      "3.5MPa"
+    ],
+    "answer": 3,
+    "explanation": "1MPa=10bar이므로 350÷10=35MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-192",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 700bar는 (    )에 해당한다.",
+    "choices": [
+      "700MPa",
+      "7000MPa",
+      "7MPa",
+      "70MPa"
+    ],
+    "answer": 4,
+    "explanation": "1MPa=10bar이므로 700÷10=70MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-193",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 500bar는 (    )에 해당한다.",
+    "choices": [
+      "50MPa",
+      "500MPa",
+      "5000MPa",
+      "5MPa"
+    ],
+    "answer": 1,
+    "explanation": "1MPa=10bar이므로 500÷10=50MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-194",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 250bar는 (    )에 해당한다.",
+    "choices": [
+      "250MPa",
+      "25MPa",
+      "2500MPa",
+      "2.5MPa"
+    ],
+    "answer": 2,
+    "explanation": "1MPa=10bar이므로 250÷10=25MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-195",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 30, 28, 32Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "32Ah",
+      "90Ah",
+      "28Ah",
+      "30Ah"
+    ],
+    "answer": 3,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 28Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-196",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 60, 55, 58Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "60Ah",
+      "173Ah",
+      "57.667Ah",
+      "55Ah"
+    ],
+    "answer": 4,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 55Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-197",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 45, 48, 50Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "45Ah",
+      "50Ah",
+      "143Ah",
+      "47.667Ah"
+    ],
+    "answer": 1,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 45Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-198",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 80, 72, 76Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "80Ah",
+      "72Ah",
+      "228Ah",
+      "76Ah"
+    ],
+    "answer": 2,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 72Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-199",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전력변환장치의 출력이 24kW, 효율이 80%라면 입력 전력은 (    )이다.",
+    "choices": [
+      "19.2kW",
+      "24kW",
+      "30kW",
+      "4.8kW"
+    ],
+    "answer": 3,
+    "explanation": "입력=출력/효율=24÷0.8=30kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q10"
+  },
+  {
+    "id": "concept-eco-200",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전력변환장치의 출력이 40kW, 효율이 95%라면 입력 전력은 (    )이다.",
+    "choices": [
+      "38kW",
+      "40kW",
+      "2kW",
+      "42.105kW"
+    ],
+    "answer": 4,
+    "explanation": "입력=출력/효율=40÷0.95=42.105kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q10"
   }
 ]
