@@ -6786,5 +6786,1705 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r09-s04-q18"
+  },
+  {
+    "id": "concept-engine-101",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축 행정 중 밀폐된 기체가 압축되면 압력은 일반적으로 (    )한다.",
+    "choices": [
+      "상승",
+      "하강",
+      "유지",
+      "소실"
+    ],
+    "answer": 1,
+    "explanation": "피스톤 상승으로 기체 체적이 감소하고 압력이 높아진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-02"
+  },
+  {
+    "id": "concept-engine-102",
+    "track": "concept",
+    "subject": "engine",
+    "question": "냉간 시 서모스탯이 라디에이터 방향 유로를 제한하는 이유는 엔진의 (    )을 돕기 위해서다.",
+    "choices": [
+      "과급",
+      "예열",
+      "오일 여과",
+      "연료 증발"
+    ],
+    "answer": 2,
+    "explanation": "라디에이터 열 방출을 제한해 정상 온도 도달을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-05"
+  },
+  {
+    "id": "concept-engine-103",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 기관의 한 사이클에 필요한 크랭크축 회전각은 (    )이다.",
+    "choices": [
+      "180°",
+      "360°",
+      "720°",
+      "540°"
+    ],
+    "answer": 3,
+    "explanation": "크랭크축 2회전은 720°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-engine-104",
+    "track": "concept",
+    "subject": "engine",
+    "question": "삼원촉매에서 CO가 산소와 반응해 CO₂가 되는 반응은 (    )이다.",
+    "choices": [
+      "환원",
+      "응축",
+      "흡착",
+      "산화"
+    ],
+    "answer": 4,
+    "explanation": "CO와 HC는 산화되고 NOx는 환원된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-13"
+  },
+  {
+    "id": "concept-engine-105",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압력이 같을 때 인터쿨러가 흡입 공기 온도를 낮추면 밀도는 (    )한다.",
+    "choices": [
+      "증가",
+      "감소",
+      "소실",
+      "유지"
+    ],
+    "answer": 1,
+    "explanation": "같은 압력에서 기체 온도가 낮아지면 밀도가 높아진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-18"
+  },
+  {
+    "id": "concept-engine-106",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보차저에서 흡입 공기 압력을 높이는 회전체는 (    )이다.",
+    "choices": [
+      "터빈 휠",
+      "컴프레서 휠",
+      "플라이휠",
+      "캠 기어"
+    ],
+    "answer": 2,
+    "explanation": "배기 터빈은 축을 구동하고 압축기 휠이 공기를 압축한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q02"
+  },
+  {
+    "id": "concept-engine-107",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보 교환 직후 오일 부족에 의한 손상을 막기 위해 확인하는 조건은 (    ) 상태다.",
+    "choices": [
+      "배기 산소 농도",
+      "점화 순서",
+      "초기 윤활",
+      "흡기 필터 여과율"
+    ],
+    "answer": 3,
+    "explanation": "제작사 절차에 따른 초기 윤활과 오일 공급을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q03"
+  },
+  {
+    "id": "concept-engine-108",
+    "track": "concept",
+    "subject": "engine",
+    "question": "스캔툴 표시만으로 직접 측정할 수 없는 엔진오일 물성은 실제 (    )이다.",
+    "choices": [
+      "엔진 회전수",
+      "센서 전압",
+      "흡기 압력",
+      "동점도"
+    ],
+    "answer": 4,
+    "explanation": "오일 동점도는 별도 물성시험이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q04"
+  },
+  {
+    "id": "concept-engine-109",
+    "track": "concept",
+    "subject": "engine",
+    "question": "혼합비 피드백용 전단 산소 센서는 일반적으로 삼원촉매 (    ) 배기관에 위치한다.",
+    "choices": [
+      "앞쪽",
+      "뒤쪽",
+      "외부 공기 필터 안",
+      "연료탱크 안"
+    ],
+    "answer": 1,
+    "explanation": "촉매에 들어가기 전 배기가스의 산소 상태를 감지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q06"
+  },
+  {
+    "id": "concept-engine-110",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 인젝터의 정밀 성능 검사는 기계식 노즐 시험과 구분되는 (    ) 장비가 필요하다.",
+    "choices": [
+      "냉각계 가압 시험",
+      "커먼레일 전용 시험",
+      "점화 파형 시험",
+      "압축누설 시험"
+    ],
+    "answer": 2,
+    "explanation": "인젝터 형식에 맞는 시험장비와 규격을 적용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q12"
+  },
+  {
+    "id": "concept-engine-111",
+    "track": "concept",
+    "subject": "engine",
+    "question": "모든 실린더에서 압축압력이 낮을 때 개별 링 교환보다 먼저 검토할 공통 기계 조건은 (    )이다.",
+    "choices": [
+      "한 개 점화플러그 간극",
+      "한 개 인젝터 분무",
+      "밸브 타이밍",
+      "한 개 배기밸브 시트"
+    ],
+    "answer": 3,
+    "explanation": "전 실린더 공통 이상은 타이밍과 측정 조건을 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q16"
+  },
+  {
+    "id": "concept-engine-112",
+    "track": "concept",
+    "subject": "engine",
+    "question": "NOx와 휘발성 유기화합물이 햇빛 아래 반응하여 형성할 수 있는 물질은 (    )이다.",
+    "choices": [
+      "헬륨",
+      "아르곤",
+      "수소",
+      "지표 오존"
+    ],
+    "answer": 4,
+    "explanation": "광화학 반응은 지표 오존 형성에 관여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q18"
+  },
+  {
+    "id": "concept-engine-113",
+    "track": "concept",
+    "subject": "engine",
+    "question": "삼원촉매에서 NOx의 산소를 제거하는 과정은 (    )이다.",
+    "choices": [
+      "환원",
+      "산화",
+      "기화",
+      "응고"
+    ],
+    "answer": 1,
+    "explanation": "NOx 환원은 질소 성분의 생성을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q19"
+  },
+  {
+    "id": "concept-engine-114",
+    "track": "concept",
+    "subject": "engine",
+    "question": "과급 제어 진단에서는 실제 과급압과 ECU가 요구한 (    )을 같은 운전 조건에서 비교한다.",
+    "choices": [
+      "연료 옥탄가",
+      "목표 과급압",
+      "냉각수 용량",
+      "배기량"
+    ],
+    "answer": 2,
+    "explanation": "목표값과 실측값의 차이를 진단 단서로 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q01"
+  },
+  {
+    "id": "concept-engine-115",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 예열 플러그가 연소실을 예열하는 기본 원리는 (    )이다.",
+    "choices": [
+      "전자기 정류",
+      "기체 감압",
+      "저항 발열",
+      "열전 냉각"
+    ],
+    "answer": 3,
+    "explanation": "전류에 의한 발열로 냉간 시동을 보조한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q10"
+  },
+  {
+    "id": "concept-engine-116",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더 헤드 상부의 규칙적 기계음은 캠과 로커암을 포함한 (    ) 점검 단서다.",
+    "choices": [
+      "냉매 순환계",
+      "연료 탱크",
+      "차동장치",
+      "밸브 구동계"
+    ],
+    "answer": 4,
+    "explanation": "밸브 구동계의 간극과 마모 등을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q14"
+  },
+  {
+    "id": "concept-engine-117",
+    "track": "concept",
+    "subject": "engine",
+    "question": "EGR은 디젤 기관 외에도 설계에 따라 (    ) 기관에 적용할 수 있다.",
+    "choices": [
+      "가솔린",
+      "전기모터 단독",
+      "증기 터빈",
+      "연료전지 단독"
+    ],
+    "answer": 1,
+    "explanation": "연료 종류만으로 EGR 적용 여부를 결정하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q15"
+  },
+  {
+    "id": "concept-engine-118",
+    "track": "concept",
+    "subject": "engine",
+    "question": "공회전이 불안정할 때 스로틀 명령과 실제 개도 외에 불필요한 공기가 들어오는 (    )을 확인한다.",
+    "choices": [
+      "배터리 용량",
+      "흡기 누설",
+      "타이어 마모",
+      "냉매 응축"
+    ],
+    "answer": 2,
+    "explanation": "흡기 누설은 공회전 공기량 제어를 방해할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q05"
+  },
+  {
+    "id": "concept-engine-119",
+    "track": "concept",
+    "subject": "engine",
+    "question": "센서 DTC가 있어도 신호 전달 경로의 (    ) 불량인지 구분해야 한다.",
+    "choices": [
+      "타이어 트레드",
+      "오일 팬 용량",
+      "커넥터",
+      "냉각수 색상"
+    ],
+    "answer": 3,
+    "explanation": "센서 전원·접지·배선을 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q09"
+  },
+  {
+    "id": "concept-engine-120",
+    "track": "concept",
+    "subject": "engine",
+    "question": "교환 후 발생한 폐엔진오일은 (    ) 경로로 처리한다.",
+    "choices": [
+      "도로 배수구",
+      "냉각수 탱크",
+      "연료 탱크",
+      "지정 수거·재활용"
+    ],
+    "answer": 4,
+    "explanation": "폐유는 지정 처리 절차를 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q15"
+  },
+  {
+    "id": "concept-engine-121",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정상 협대역 지르코니아 산소 센서에서 상대적으로 높은 전압은 (    )한 배기 상태를 나타낸다.",
+    "choices": [
+      "농후",
+      "희박",
+      "무압력",
+      "무온도"
+    ],
+    "answer": 1,
+    "explanation": "센서 활성 조건에서 농후·희박 변화에 반응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q05"
+  },
+  {
+    "id": "concept-engine-122",
+    "track": "concept",
+    "subject": "engine",
+    "question": "산소 센서 파형을 판정하기 전 센서 종류와 함께 고려할 작동 조건은 센서의 (    )이다.",
+    "choices": [
+      "외부 도장색",
+      "온도",
+      "타이어 직경",
+      "머플러 길이만"
+    ],
+    "answer": 2,
+    "explanation": "활성 온도와 시험 조건이 파형 판단에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q07"
+  },
+  {
+    "id": "concept-engine-123",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DPF 재생 상태를 확인할 때 필터 전후 차압 외에 중요한 데이터는 (    )이다.",
+    "choices": [
+      "휠 토 각",
+      "브레이크 패드 두께",
+      "배기온도",
+      "차체 폭"
+    ],
+    "answer": 3,
+    "explanation": "배기온도는 그을음 산화 열 조건을 보여준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-124",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 실제 압력과 목표 압력이 다를 때 압력 센서의 (    ) 이상도 원인 후보이다.",
+    "choices": [
+      "피스톤 직경",
+      "타이어 하중",
+      "스프링 상수",
+      "전기 신호"
+    ],
+    "answer": 4,
+    "explanation": "실제 압력 이상과 측정 이상을 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q10"
+  },
+  {
+    "id": "concept-engine-125",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 보정량 외에 인젝터 내부 누설을 평가하는 측정량은 (    )이다.",
+    "choices": [
+      "리턴 유량",
+      "캠축 회전각",
+      "냉매 과냉각도",
+      "휠 회전수"
+    ],
+    "answer": 1,
+    "explanation": "리턴 유량과 압축 등 다른 자료를 함께 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q12"
+  },
+  {
+    "id": "concept-engine-126",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 압축압력 계측기 연결 위치는 인젝터 홀 또는 지정된 (    ) 경로일 수 있다.",
+    "choices": [
+      "라디에이터 캡",
+      "예열 플러그",
+      "배기 산소 센서",
+      "오일 필터"
+    ],
+    "answer": 2,
+    "explanation": "엔진 구조에 맞는 지정 측정 경로를 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q15"
+  },
+  {
+    "id": "concept-engine-127",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU의 기본 제어 흐름은 센서 입력을 처리하여 (    ) 명령을 생성하는 것이다.",
+    "choices": [
+      "타이어 규격",
+      "배기량",
+      "액추에이터",
+      "차체 색상"
+    ],
+    "answer": 3,
+    "explanation": "ECU는 분사 및 점화 등의 작동기를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q04"
+  },
+  {
+    "id": "concept-engine-128",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 회로의 스위칭 소자가 부하 접지측을 제어하는 방식은 (    )이다.",
+    "choices": [
+      "하이사이드",
+      "무전원",
+      "열전달",
+      "로우사이드"
+    ],
+    "answer": 4,
+    "explanation": "로우사이드는 접지측 경로를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q07"
+  },
+  {
+    "id": "concept-engine-129",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 보정량의 양수·음수 의미는 해당 차종의 (    )을 확인한다.",
+    "choices": [
+      "부호 정의",
+      "휠 사이즈",
+      "냉매 종류",
+      "연료탱크 용량"
+    ],
+    "answer": 1,
+    "explanation": "보정량 부호의 정의는 진단기와 차종에 따라 다를 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q10"
+  },
+  {
+    "id": "concept-engine-130",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU 교환 후 차종에 따라 기존 키 인증과 연계하여 필요한 설정은 (    )이다.",
+    "choices": [
+      "타이어 밸런스",
+      "이모빌라이저 등록",
+      "브레이크 패드 연마",
+      "냉매 충전"
+    ],
+    "answer": 2,
+    "explanation": "코딩·키 등록·학습 필요 여부를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q11"
+  },
+  {
+    "id": "concept-engine-131",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더에 삽입한 피스톤 링의 양 끝 사이 간격은 (    )이다.",
+    "choices": [
+      "밸브 리프트",
+      "베어링 축방향 유격",
+      "링 끝간극",
+      "피스톤 행정"
+    ],
+    "answer": 3,
+    "explanation": "링 끝간극은 차종별 지정 한계로 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q15"
+  },
+  {
+    "id": "concept-engine-132",
+    "track": "concept",
+    "subject": "engine",
+    "question": "스로틀을 움직일 때 TPS 출력이 끊기지 않고 변하는지 검사하는 특성은 신호의 (    )이다.",
+    "choices": [
+      "회분량",
+      "압축비",
+      "점도",
+      "연속성"
+    ],
+    "answer": 4,
+    "explanation": "개도와 출력의 연속적 대응을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q05"
+  },
+  {
+    "id": "concept-engine-133",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU 교환 후 보정값을 다시 형성하는 과정은 (    )이다.",
+    "choices": [
+      "적응값 학습",
+      "오일 여과",
+      "과급기 냉각",
+      "캠축 연마"
+    ],
+    "answer": 1,
+    "explanation": "필요한 초기 학습은 차종별로 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q06"
+  },
+  {
+    "id": "concept-engine-134",
+    "track": "concept",
+    "subject": "engine",
+    "question": "SCV 코일 저항 비교에서 부품번호와 함께 고려할 측정 조건은 (    )이다.",
+    "choices": [
+      "차체 높이",
+      "온도",
+      "타이어 공기압",
+      "휠 밸런스"
+    ],
+    "answer": 2,
+    "explanation": "저항 규격은 온도 등의 지정 조건에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q10"
+  },
+  {
+    "id": "concept-engine-135",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 압력이 부족할 때 고압 펌프 이전의 공급 경로는 (    ) 계통이다.",
+    "choices": [
+      "고압 냉매",
+      "브레이크 유압",
+      "저압 연료 공급",
+      "에어 서스펜션"
+    ],
+    "answer": 3,
+    "explanation": "저압 공급 부족이 고압 생성에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q12"
+  },
+  {
+    "id": "concept-engine-136",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정비 중 연료 누출을 발견하면 작업을 중지하고 화재 위험을 높이는 (    )을 통제한다.",
+    "choices": [
+      "휠 정렬",
+      "타이어 공기압",
+      "차고 센서",
+      "점화원"
+    ],
+    "answer": 4,
+    "explanation": "인명 안전과 점화원 통제가 우선이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q14"
+  },
+  {
+    "id": "concept-engine-137",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크축 베어링 캡을 재조립할 때 유지해야 할 정보는 (    )이다.",
+    "choices": [
+      "기존 위치와 방향",
+      "배기 온도",
+      "연료 분사량",
+      "냉매 종류"
+    ],
+    "answer": 1,
+    "explanation": "캡은 지정된 위치·방향·체결 조건을 유지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q16"
+  },
+  {
+    "id": "concept-engine-138",
+    "track": "concept",
+    "subject": "engine",
+    "question": "일반 디젤 기관에서 연료가 착화되는 기본 원인은 공기의 (    )이다.",
+    "choices": [
+      "점화플러그 불꽃",
+      "압축열",
+      "전기분해",
+      "냉각수 순환"
+    ],
+    "answer": 2,
+    "explanation": "공기를 압축해 온도를 높여 연료를 착화시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q20"
+  },
+  {
+    "id": "concept-engine-139",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 분무가 불균일할 때 분무구 막힘과 함께 확인할 내부 작동 부품은 (    )이다.",
+    "choices": [
+      "스로틀 플레이트",
+      "피스톤 링",
+      "니들 밸브",
+      "터빈 베인"
+    ],
+    "answer": 3,
+    "explanation": "니들 고착·마모는 분무에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q04"
+  },
+  {
+    "id": "concept-engine-140",
+    "track": "concept",
+    "subject": "engine",
+    "question": "캐니스터에 저장된 증발가스를 흡기로 보내는 제어는 (    )이다.",
+    "choices": [
+      "프리차지",
+      "록업",
+      "감쇠",
+      "퍼지"
+    ],
+    "answer": 4,
+    "explanation": "증발가스는 지정 조건에서 흡기로 보내 연소시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q09"
+  },
+  {
+    "id": "concept-engine-141",
+    "track": "concept",
+    "subject": "engine",
+    "question": "피스톤 링은 기밀·오일 조절 외에 피스톤에서 실린더 벽으로의 (    )에도 관여한다.",
+    "choices": [
+      "열전달",
+      "전압 증폭",
+      "연료 분사",
+      "냉매 감압"
+    ],
+    "answer": 1,
+    "explanation": "링은 피스톤 열을 전달하는 경로다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q10"
+  },
+  {
+    "id": "concept-engine-142",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축압력을 실린더별로 비교할 때 일관되게 유지할 회전 조건은 (    ) 속도이다.",
+    "choices": [
+      "주행",
+      "크랭킹",
+      "캠축 연마",
+      "냉각팬"
+    ],
+    "answer": 2,
+    "explanation": "압축압력은 측정 시 회전속도의 영향을 받는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q20"
+  },
+  {
+    "id": "concept-engine-143",
+    "track": "concept",
+    "subject": "engine",
+    "question": "노킹을 줄이기 위한 대표 점화 제어는 점화시기의 (    )이다.",
+    "choices": [
+      "진각",
+      "영구 고정",
+      "지각",
+      "완전 제거"
+    ],
+    "answer": 3,
+    "explanation": "점화시기를 늦춰 노킹을 억제할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q02"
+  },
+  {
+    "id": "concept-engine-144",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크축 베어링에는 여러 재료의 조합과 (    ) 구조를 사용할 수 있다.",
+    "choices": [
+      "고무 트레드",
+      "활성탄층",
+      "냉매 필터",
+      "다층 코팅"
+    ],
+    "answer": 4,
+    "explanation": "베어링 소재와 코팅은 설계별로 다양하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q10"
+  },
+  {
+    "id": "concept-engine-145",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실화가 계속되면 미연소 연료가 촉매에서 반응하여 촉매의 (    ) 위험을 높인다.",
+    "choices": [
+      "과열",
+      "결빙",
+      "압축비 증가",
+      "공기압 상승"
+    ],
+    "answer": 1,
+    "explanation": "실화와 과도한 발열은 촉매 손상 원인 후보다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q15"
+  },
+  {
+    "id": "concept-engine-146",
+    "track": "concept",
+    "subject": "engine",
+    "question": "엔진오일 교환주기는 주행거리 외에 제작사가 지정한 (    ) 조건을 고려한다.",
+    "choices": [
+      "타이어 회전 방향",
+      "경과 시간",
+      "전조등 조도",
+      "차체 폭"
+    ],
+    "answer": 2,
+    "explanation": "거리·시간과 가혹 운행 조건을 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q16"
+  },
+  {
+    "id": "concept-engine-147",
+    "track": "concept",
+    "subject": "engine",
+    "question": "예열 명령은 정상이나 플러그 전압이 없으면 (    )의 출력을 점검한다.",
+    "choices": [
+      "산소 센서",
+      "휠속도 센서",
+      "예열 릴레이·제어모듈",
+      "냉각수 캡"
+    ],
+    "answer": 3,
+    "explanation": "공급 경로 및 제어모듈 출력을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q20"
+  },
+  {
+    "id": "concept-engine-148",
+    "track": "concept",
+    "subject": "engine",
+    "question": "산소 대비 연료가 과다한 혼합기 상태는 (    )이다.",
+    "choices": [
+      "희박",
+      "무부하",
+      "과냉각",
+      "농후"
+    ],
+    "answer": 4,
+    "explanation": "농후 혼합기는 CO 증가와 관련될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q05"
+  },
+  {
+    "id": "concept-engine-149",
+    "track": "concept",
+    "subject": "engine",
+    "question": "높은 점화 2차 전압 파형 관찰에 사용하는 장비는 정격에 맞는 (    )이다.",
+    "choices": [
+      "측정 프로브",
+      "일반 무정격 전선",
+      "냉각수 호스",
+      "토크 렌치"
+    ],
+    "answer": 1,
+    "explanation": "점화 2차 회로는 지정 절연 측정 픽업이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q12"
+  },
+  {
+    "id": "concept-engine-150",
+    "track": "concept",
+    "subject": "engine",
+    "question": "EGR 재순환량이 부족해 연소온도가 상승하면 (    ) 생성이 늘어날 수 있다.",
+    "choices": [
+      "냉각수",
+      "NOx",
+      "엔진오일",
+      "요소수"
+    ],
+    "answer": 2,
+    "explanation": "고온 연소와 EGR 작동 상태를 함께 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q15"
+  },
+  {
+    "id": "concept-engine-151",
+    "track": "concept",
+    "subject": "engine",
+    "question": "6기통 기관의 전체 배기량 2400cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "2400cm³",
+      "14400cm³",
+      "400cm³",
+      "200cm³"
+    ],
+    "answer": 3,
+    "explanation": "2400÷6=400cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-152",
+    "track": "concept",
+    "subject": "engine",
+    "question": "3기통 기관의 전체 배기량 1500cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "1500cm³",
+      "4500cm³",
+      "250cm³",
+      "500cm³"
+    ],
+    "answer": 4,
+    "explanation": "1500÷3=500cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-153",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4기통 기관의 전체 배기량 2200cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "550cm³",
+      "2200cm³",
+      "8800cm³",
+      "275cm³"
+    ],
+    "answer": 1,
+    "explanation": "2200÷4=550cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-154",
+    "track": "concept",
+    "subject": "engine",
+    "question": "8기통 기관의 전체 배기량 4800cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "4800cm³",
+      "600cm³",
+      "38400cm³",
+      "300cm³"
+    ],
+    "answer": 2,
+    "explanation": "4800÷8=600cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-155",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 90kPa, 압력비 2일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "90kPa",
+      "45kPa",
+      "180kPa",
+      "270kPa"
+    ],
+    "answer": 3,
+    "explanation": "출구 절대압력=90×2=180kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-156",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 100kPa, 압력비 1.5일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "100kPa",
+      "66.667kPa",
+      "250kPa",
+      "150kPa"
+    ],
+    "answer": 4,
+    "explanation": "출구 절대압력=100×1.5=150kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-157",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 110kPa, 압력비 1.8일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "198kPa",
+      "110kPa",
+      "61.111kPa",
+      "308kPa"
+    ],
+    "answer": 1,
+    "explanation": "출구 절대압력=110×1.8=198kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-158",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 100kPa, 압력비 2.2일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "100kPa",
+      "220kPa",
+      "45.455kPa",
+      "320kPa"
+    ],
+    "answer": 2,
+    "explanation": "출구 절대압력=100×2.2=220kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-159",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 98kPa, 과급 게이지압 62kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "36kPa",
+      "62kPa",
+      "160kPa",
+      "98kPa"
+    ],
+    "answer": 3,
+    "explanation": "절대압력=98+62=160kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-160",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 95kPa, 과급 게이지압 45kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "50kPa",
+      "45kPa",
+      "95kPa",
+      "140kPa"
+    ],
+    "answer": 4,
+    "explanation": "절대압력=95+45=140kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-161",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 100kPa, 과급 게이지압 80kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "180kPa",
+      "20kPa",
+      "80kPa",
+      "100kPa"
+    ],
+    "answer": 1,
+    "explanation": "절대압력=100+80=180kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-162",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 92kPa, 과급 게이지압 58kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "34kPa",
+      "150kPa",
+      "58kPa",
+      "92kPa"
+    ],
+    "answer": 2,
+    "explanation": "절대압력=92+58=150kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-163",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 10:1, 하사점 전체 체적 500cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "500cm³",
+      "450cm³",
+      "50cm³",
+      "5000cm³"
+    ],
+    "answer": 3,
+    "explanation": "상사점 체적=500÷10=50cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-164",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 12:1, 하사점 전체 체적 720cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "720cm³",
+      "660cm³",
+      "8640cm³",
+      "60cm³"
+    ],
+    "answer": 4,
+    "explanation": "상사점 체적=720÷12=60cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-165",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 8:1, 하사점 전체 체적 600cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "75cm³",
+      "600cm³",
+      "525cm³",
+      "4800cm³"
+    ],
+    "answer": 1,
+    "explanation": "상사점 체적=600÷8=75cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-166",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 11:1, 하사점 전체 체적 660cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "660cm³",
+      "60cm³",
+      "600cm³",
+      "7260cm³"
+    ],
+    "answer": 2,
+    "explanation": "상사점 체적=660÷11=60cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-167",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 4kW, 질량유량 0.08kg/s, 정압비열 1kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.32K",
+      "60K",
+      "50K",
+      "100K"
+    ],
+    "answer": 3,
+    "explanation": "ΔT=4÷(0.08×1)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-168",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 6kW, 질량유량 0.1kg/s, 정압비열 1.2kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.72K",
+      "82K",
+      "100K",
+      "50K"
+    ],
+    "answer": 4,
+    "explanation": "ΔT=6÷(0.1×1.2)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-169",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 2kW, 질량유량 0.04kg/s, 정압비열 1kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "50K",
+      "0.08K",
+      "60K",
+      "100K"
+    ],
+    "answer": 1,
+    "explanation": "ΔT=2÷(0.04×1)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-170",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 3kW, 질량유량 0.05kg/s, 정압비열 1.2kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.18K",
+      "50K",
+      "82K",
+      "100K"
+    ],
+    "answer": 2,
+    "explanation": "ΔT=3÷(0.05×1.2)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-171",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 50.08mm, 저널 외경 50mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.08mm",
+      "0.16mm",
+      "0.04mm",
+      "0.02mm"
+    ],
+    "answer": 3,
+    "explanation": "반경 간극=(50.08−50)÷2=0.04mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-172",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 40.06mm, 저널 외경 40mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.06mm",
+      "0.12mm",
+      "0.015mm",
+      "0.03mm"
+    ],
+    "answer": 4,
+    "explanation": "반경 간극=(40.06−40)÷2=0.03mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-173",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 60.1mm, 저널 외경 60mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.05mm",
+      "0.1mm",
+      "0.2mm",
+      "0.025mm"
+    ],
+    "answer": 1,
+    "explanation": "반경 간극=(60.1−60)÷2=0.05mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-174",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 55.12mm, 저널 외경 55mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.12mm",
+      "0.06mm",
+      "0.24mm",
+      "0.03mm"
+    ],
+    "answer": 2,
+    "explanation": "반경 간극=(55.12−55)÷2=0.06mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-175",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 120g/s, EGR 질량 비율 25%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "120g/s",
+      "90g/s",
+      "30g/s",
+      "0.208g/s"
+    ],
+    "answer": 3,
+    "explanation": "재순환 유량=120×25/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-176",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 100g/s, EGR 질량 비율 30%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "100g/s",
+      "70g/s",
+      "0.3g/s",
+      "30g/s"
+    ],
+    "answer": 4,
+    "explanation": "재순환 유량=100×30/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-177",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 150g/s, EGR 질량 비율 20%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "30g/s",
+      "150g/s",
+      "120g/s",
+      "0.133g/s"
+    ],
+    "answer": 1,
+    "explanation": "재순환 유량=150×20/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-178",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 200g/s, EGR 질량 비율 15%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "200g/s",
+      "30g/s",
+      "170g/s",
+      "0.075g/s"
+    ],
+    "answer": 2,
+    "explanation": "재순환 유량=200×15/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-179",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 100mg/s, 출구 30mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "30%",
+      "233.333%",
+      "70%",
+      "100%"
+    ],
+    "answer": 3,
+    "explanation": "저감률=(100−30)÷100×100=70%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-180",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 80mg/s, 출구 20mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "25%",
+      "300%",
+      "100%",
+      "75%"
+    ],
+    "answer": 4,
+    "explanation": "저감률=(80−20)÷80×100=75%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-181",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 120mg/s, 출구 48mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "60%",
+      "40%",
+      "150%",
+      "100%"
+    ],
+    "answer": 1,
+    "explanation": "저감률=(120−48)÷120×100=60%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-182",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 200mg/s, 출구 50mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "25%",
+      "75%",
+      "300%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanation": "저감률=(200−50)÷200×100=75%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-183",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 60펄스 센서의 출력이 900Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "15rpm",
+      "54000rpm",
+      "900rpm",
+      "1351rpm"
+    ],
+    "answer": 3,
+    "explanation": "rpm=900÷60×60=900이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-184",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 36펄스 센서의 출력이 720Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "20rpm",
+      "25920rpm",
+      "720rpm",
+      "1200rpm"
+    ],
+    "answer": 4,
+    "explanation": "rpm=720÷36×60=1200이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-185",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 24펄스 센서의 출력이 400Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "1000rpm",
+      "16.667rpm",
+      "9600rpm",
+      "400rpm"
+    ],
+    "answer": 1,
+    "explanation": "rpm=400÷24×60=1000이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-186",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 48펄스 센서의 출력이 960Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "20rpm",
+      "1200rpm",
+      "46080rpm",
+      "960rpm"
+    ],
+    "answer": 2,
+    "explanation": "rpm=960÷48×60=1200이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-187",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 180MPa, 실제 150MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "20%",
+      "83.333%",
+      "16.667%",
+      "100%"
+    ],
+    "answer": 3,
+    "explanation": "부족률=(180−150)÷180×100=16.667%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-188",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 200MPa, 실제 160MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "25%",
+      "80%",
+      "100%",
+      "20%"
+    ],
+    "answer": 4,
+    "explanation": "부족률=(200−160)÷200×100=20%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-189",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 160MPa, 실제 120MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "25%",
+      "33.333%",
+      "75%",
+      "100%"
+    ],
+    "answer": 1,
+    "explanation": "부족률=(160−120)÷160×100=25%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-190",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 100MPa, 실제 70MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "42.857%",
+      "30%",
+      "70%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanation": "부족률=(100−70)÷100×100=30%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-191",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 20kPa, 출구 11kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "31kPa",
+      "11kPa",
+      "9kPa",
+      "20kPa"
+    ],
+    "answer": 3,
+    "explanation": "차압=20−11=9kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-192",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 26kPa, 출구 14kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "40kPa",
+      "14kPa",
+      "26kPa",
+      "12kPa"
+    ],
+    "answer": 4,
+    "explanation": "차압=26−14=12kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-193",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 18kPa, 출구 6kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "12kPa",
+      "24kPa",
+      "6kPa",
+      "18kPa"
+    ],
+    "answer": 1,
+    "explanation": "차압=18−6=12kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-194",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 30kPa, 출구 20kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "50kPa",
+      "10kPa",
+      "20kPa",
+      "30kPa"
+    ],
+    "answer": 2,
+    "explanation": "차압=30−20=10kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-195",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.4mm, 목표 0.25mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.4mm",
+      "0.25mm",
+      "0.15mm",
+      "0.65mm"
+    ],
+    "answer": 3,
+    "explanation": "간극을 0.15mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-196",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.3mm, 목표 0.2mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.3mm",
+      "0.2mm",
+      "0.5mm",
+      "0.1mm"
+    ],
+    "answer": 4,
+    "explanation": "간극을 0.1mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-197",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.35mm, 목표 0.15mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.2mm",
+      "0.35mm",
+      "0.15mm",
+      "0.5mm"
+    ],
+    "answer": 1,
+    "explanation": "간극을 0.2mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-198",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.45mm, 목표 0.3mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.45mm",
+      "0.15mm",
+      "0.3mm",
+      "0.75mm"
+    ],
+    "answer": 2,
+    "explanation": "간극을 0.15mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-199",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 6기통 기관에서 크랭크축 회전수가 3000rpm일 때 캠축 회전수는 (    )이다.",
+    "choices": [
+      "3000rpm",
+      "6000rpm",
+      "1500rpm",
+      "750rpm"
+    ],
+    "answer": 3,
+    "explanation": "캠축은 크랭크축 절반 속도인 1500rpm으로 회전한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-engine-200",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 4기통 기관에서 크랭크축 회전수가 3600rpm일 때 캠축 회전수는 (    )이다.",
+    "choices": [
+      "3600rpm",
+      "7200rpm",
+      "900rpm",
+      "1800rpm"
+    ],
+    "answer": 4,
+    "explanation": "캠축은 크랭크축 절반 속도인 1800rpm으로 회전한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
   }
 ]
