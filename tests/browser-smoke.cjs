@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -109,7 +109,22 @@ async function testDevice(browser,name,viewport,mobile){
     assert.match(await el("headerTitle").evaluate(e=>getComputedStyle(e,"::before").backgroundImage),/automotive-icon\.png/);
     assert.equal(await page.locator("#homeView #trackPast,#homeView #trackExpected,#homeView #wrongEntryBtn").count(),0);
     assert.equal(await page.locator("#homeView .home-feature-stack .home-feature-card").allTextContents().then(a=>a.map(x=>x.trim()).join("|")),"핵심 단어 카드|한손노트");
-    await el("coreCardEntryBtn").click();await visible("coreCardView");await el("homeBtn").click();
+    await el("coreCardEntryBtn").click();
+    await page.waitForURL("**/core-cards/index.html");
+    await visible("cardGrid");
+    assert.equal(await text("heroCount"),"105");
+    assert.equal(await page.locator(".core-card").count(),mobile?1:3);
+    await page.locator(".card-action.important").first().click();
+    await page.locator(".card-action.memorized").first().click();
+    assert.equal(await text("importantCount"),"1");assert.equal(await text("memorizedCount"),"1");
+    await el("importantStatBtn").click();assert.equal(await page.locator(".core-card").count(),1);
+    await el("registeredStatBtn").click();
+    await el("subjectButton").click();
+    await page.locator('.subject-option[data-code="eco"]').click();assert.equal(await text("heroCount"),"96");
+    await el("cardSearch").fill("회생제동");assert.ok((await page.locator(".core-card h2").allTextContents()).some(t=>t.includes("회생제동")));
+    await page.screenshot({path:path.join(out,name+"-core-cards.png"),fullPage:true});
+    await page.locator(".appbar-actions .home-btn").click();
+    await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await el("handNoteEntryBtn").click();await visible("handNoteView");assert.equal(await page.locator(".study-note-entry").count(),4);await el("homeBtn").click();
     assert.equal(await el("homeSubjectTitle").innerText(),"과목별 예상문제");
     assert.equal(await el("subjectGrid").locator(".subject-card").count(),4);
@@ -212,7 +227,7 @@ async function testDevice(browser,name,viewport,mobile){
       assert.equal(await text("browseMeta"),"전체 360문항");
       await el("homeBtn").click();
     }
-    await el("homeBtn").click();await el("examEntryBtn").click();
+    await el("examEntryBtn").click();
     assert.ok(!(await el("approvedExamBtn").isDisabled()));
     await el("expectedExamBtn").click();assert.equal(await text("quizProgress"),"1 / 80");
     assert.match(await text("quizSource"),/남은 시간 (120:00|119:5[0-9])/);

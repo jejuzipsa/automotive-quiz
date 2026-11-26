@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#f4f8f7" />
+  <script>
+  (() => {
+    const key='automotiveQuizThemeV1';
+    try {
+      const saved=JSON.parse(localStorage.getItem(key)||'null');
+      const theme=(saved==='dark'||saved==='light')?saved:(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');
+      document.documentElement.dataset.theme=theme;
+      document.documentElement.style.colorScheme=theme;
+      document.querySelector('meta[name="theme-color"]')?.setAttribute('content',theme==='dark'?'#101b19':'#f4f8f7');
+    } catch (_) { document.documentElement.dataset.theme='light'; }
+  })();
+  </script>
+  <link rel="icon" type="image/png" href="../assets/automotive-icon.png" />
+  <title>핵심 단어 카드 | 자동차정비산업기사</title>
+  <link rel="stylesheet" href="cards.css?v=1" />
+</head>
+<body>
+  <header class="card-appbar">
+    <a class="brand-link" href="../index.html" aria-label="기출문제 홈으로">
+      <img src="../assets/core-card-icon.png?v=2.30" alt="" aria-hidden="true" />
+      <span><strong>자동차정비산업기사</strong></span>
+    </a>
+    <div class="appbar-page-title" aria-label="반복 암기 핵심 단어 카드">
+      <span>반복 암기</span>
+      <strong>핵심 단어 카드</strong>
+    </div>
+    <div class="appbar-actions">
+      <a class="home-btn" href="../index.html" aria-label="홈으로" title="홈으로">
+        <svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11.2 12 4l9 7.2"/>
+          <path d="M5.5 10.5V20h13v-9.5"/>
+          <path d="M9.5 20v-6h5v6"/>
+        </svg>
+      </a>
+      <button id="themeToggleBtn" class="theme-toggle-btn" type="button" aria-label="다크모드 켜기" title="다크모드 켜기" aria-pressed="false">
+        <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.2A8.5 8.5 0 0 1 9.8 3.5 8.5 8.5 0 1 0 20.5 14.2Z"/></svg>
+        <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.42 1.42M17.65 17.65l1.42 1.42M2 12h2M20 12h2M4.93 19.07l1.42-1.42M17.65 6.35l1.42-1.42"/></svg>
+      </button>
+    </div>
+  </header>
+  <main class="card-shell">
+    <section class="card-controls" aria-label="핵심 단어 카드 필터">
+      <div class="overview-row">
+        <div class="scope-stack">
+          <div class="scope-box subject-field">
+            <span id="subjectLabel">과목</span>
+            <div id="subjectPicker" class="subject-picker">
+              <button
+                id="subjectButton"
+                class="subject-button"
+                type="button"
+                aria-haspopup="listbox"
+                aria-expanded="false"
+                aria-controls="subjectMenu"
+                aria-labelledby="subjectLabel subjectButtonText"
+              >
+                <span id="subjectButtonText">자동차 엔진정비</span>
+                <svg class="subject-chevron" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="m7 9.5 5 5 5-5"></path>
+                </svg>
+              </button>
+              <div id="subjectMenu" class="subject-menu" role="listbox" aria-labelledby="subjectLabel" hidden></div>
+            </div>
+          </div>
+          <div class="scope-box progress-box">
+            <span>현재 범위</span>
+            <strong id="rangeText" aria-live="polite">1 / 105</strong>
+            <div class="progress-seek">
+              <div class="progress-track" aria-hidden="true"><span id="progressFill"></span></div>
+              <input id="progressSlider" class="progress-slider" type="range"
+                min="1" max="105" step="1" value="1"
+                aria-label="현재 범위 빠른 이동" aria-describedby="progressHint"
+                aria-valuetext="1 / 105" />
+              <output id="progressPreview" class="progress-preview" for="progressSlider" hidden></output>
+              <span id="progressHint" class="sr-only">드래그하거나 트랙을 눌러 이동. 화살표 키로 페이지 이동, Home과 End로 처음과 끝 이동.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-stats" aria-label="카드 상태 요약">
+          <button id="importantStatBtn" class="hero-badge hero-stat-btn important-stat" type="button" aria-pressed="false">
+            <span class="hero-stat-icon" aria-hidden="true">★</span>
+            <strong id="importantCount">0</strong><span>중요 카드</span>
+          </button>
+          <button id="memorizedStatBtn" class="hero-badge hero-stat-btn memorized-stat" type="button" aria-pressed="false">
+            <span class="hero-stat-icon" aria-hidden="true">✓</span>
+            <strong id="memorizedCount">0</strong><span>외움 카드</span>
+          </button>
+          <button id="registeredStatBtn" class="hero-badge hero-stat-btn registered-stat" type="button" aria-pressed="true">
+            <strong id="heroCount">105</strong><span>등록카드(전체)</span>
+          </button>
+        </div>
+      </div>
+
+      <div id="searchField" class="search-field">
+        <label class="search-input-wrap" for="cardSearch">
+          <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="11" cy="11" r="6.5"></circle>
+            <path d="m16 16 4 4"></path>
+          </svg>
+          <span class="sr-only">카드 검색</span>
+          <input
+            id="cardSearch"
+            type="search"
+            placeholder="개념, 키워드로 검색..."
+            autocomplete="off"
+            role="combobox"
+            aria-autocomplete="list"
+            aria-expanded="false"
+            aria-controls="searchPanel"
+          />
+        </label>
+        <div id="searchPanel" class="search-panel" hidden>
+          <section id="searchCategorySection" class="search-panel-section" aria-labelledby="searchCategoryTitle">
+            <div class="search-panel-heading">
+              <strong id="searchCategoryTitle">카테고리</strong>
+              <span>눌러서 바로 보기</span>
+            </div>
+            <div id="searchCategoryList" class="search-category-list"></div>
+          </section>
+          <section id="searchSuggestSection" class="search-panel-section" aria-labelledby="searchSuggestTitle">
+            <div class="search-panel-heading">
+              <strong id="searchSuggestTitle">추천 키워드</strong>
+              <span>입력하면 자동완성</span>
+            </div>
+            <div id="searchSuggestions" class="search-suggestions" role="listbox"></div>
+          </section>
+        </div>
+      </div>
+
+      <div class="order-controls" role="group" aria-label="카드 보기 순서">
+        <button id="randomOrderBtn" class="order-btn" type="button" aria-pressed="false">랜덤보기</button>
+        <button id="easyOrderBtn" class="order-btn active" type="button" aria-pressed="true">쉬운순</button>
+        <button id="hardOrderBtn" class="order-btn" type="button" aria-pressed="false">어려운순</button>
+      </div>
+    </section>
+    <section class="card-stage" aria-label="핵심 단어 카드">
+      <button id="prevBtn" class="stage-nav prev" type="button" aria-label="이전 카드"><span class="stage-nav-icon" aria-hidden="true">‹</span></button>
+      <div id="cardGrid" class="core-card-grid"></div>
+      <button id="nextBtn" class="stage-nav next" type="button" aria-label="다음 카드"><span class="stage-nav-icon" aria-hidden="true">›</span></button>
+    </section>
+    <div id="mobileDots" class="mobile-dots" aria-hidden="true"></div>
+    <footer class="card-footer">
+      <p id="statusText">자동차 엔진정비 · 전체 단원</p>
+      <p>자동차 엔진정비 105장 · 자동차 섀시정비 88장 · 자동차 전기·전자장치정비 97장 · 친환경 자동차정비 96장 · 총 386장. 기존 학습문제와 해설 기반이며 공식 기출·독립 기술감수 자료는 아니야.</p>
+    </footer>
+  </main>
+  <script src="data.js?v=1"></script>
+  <script src="cards.js?v=1"></script>
+</body>
+</html>

@@ -7,7 +7,7 @@
   <meta name="description" content="자동차정비산업기사 필기 연습. 과목별 객관식 문제풀이, 오답 복습, 실전 시험과 핵심 개념 퀴즈.">
   <title>자동차정비산업기사 기출·예상문제</title>
   <link rel="icon" type="image/png" href="assets/automotive-icon.png">
-  <link rel="stylesheet" href="styles.css?v=1.2.3">
+  <link rel="stylesheet" href="styles.css?v=1.2.4">
 </head>
 <body>
   <main class="app-shell" id="app">
@@ -45,9 +45,9 @@
           <img class="feature-icon exam-entry-icon" src="assets/exam-icon.png" alt="" aria-hidden="true" width="72" height="72"><span>실전처럼 시험 보기</span>
         </button>
         <div class="home-feature-stack">
-          <button id="coreCardEntryBtn" class="feature-card exam-entry-card exam-entry-card-button home-feature-card core-card-entry-button" type="button">
+          <a id="coreCardEntryBtn" class="feature-card exam-entry-card exam-entry-card-button home-feature-card core-card-entry-button" href="core-cards/index.html">
             <img class="feature-icon exam-entry-icon" src="assets/core-card-icon.png" alt="" aria-hidden="true" width="42" height="42"><span>핵심 단어 카드</span>
-          </button>
+          </a>
           <button id="handNoteEntryBtn" class="feature-card exam-entry-card exam-entry-card-button home-feature-card hand-note-entry-button" type="button">
             <img class="feature-icon exam-entry-icon" src="assets/hand-note-icon.png" alt="" aria-hidden="true" width="42" height="42"><span>한손노트</span>
           </button>
@@ -64,14 +64,6 @@
       </section>
 
       <div class="site-footer"><span>© 2026 제주집사 · 자동차정비산업기사</span><a href="https://github.com/jejuzipsa/automotive-quiz" target="_blank" rel="noopener noreferrer">GitHub 저장소</a></div>
-    </section>
-
-    <section id="coreCardView" class="view hidden">
-      <section class="study-placeholder" aria-labelledby="coreCardTitle">
-        <p class="eyebrow">반복 암기</p><h2 id="coreCardTitle"><img class="section-heading-icon" src="assets/core-card-icon.png" alt="" aria-hidden="true">핵심 단어 카드</h2>
-        <p class="study-lead">자동차정비산업기사 과목별 핵심 용어를 정리할 공간이야.</p>
-        <div class="study-state" role="status"><strong>핵심 단어 카드 등록 준비 중</strong>아직 등록된 단어 카드는 없어.</div>
-      </section>
     </section>
 
     <section id="handNoteView" class="view hidden">
@@ -163,6 +155,6 @@
     </section>
   </main>
   <script src="quiz-utils.js?v=1.0.0" defer></script>
-  <script src="app.js?v=1.8.3" defer></script>
+  <script src="app.js?v=1.8.4" defer></script>
 </body>
 </html>

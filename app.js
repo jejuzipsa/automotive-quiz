@@ -202,7 +202,7 @@
     }
     state[subject]={remaining:queue,lastSource:last,lastVariant};saveStorage(ROTATION_KEY,state);return out;
   }
-  const VIEWS = ["home","coreCard","handNote","browse","quiz","result","exam","wrong"];
+  const VIEWS = ["home","handNote","browse","quiz","result","exam","wrong"];
   let current = null;
   let recentResult = null;
   let lastSaved = null;
@@ -772,7 +772,6 @@
     $("themeToggleBtn").addEventListener("click",toggleTheme);
     for(const b of document.querySelectorAll(".reading-size-btn"))b.addEventListener("click",()=>setReadingSize(b.dataset.readingSize));
     $("homeBtn").addEventListener("click",showHome);
-    $("coreCardEntryBtn").addEventListener("click",()=>showView("coreCard"));
     $("handNoteEntryBtn").addEventListener("click",()=>showView("handNote"));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
     $("wrongEntryBtn").addEventListener("click",()=>{wrongSubject="all";wrongScope="pending";renderWrong();showView("wrong");});

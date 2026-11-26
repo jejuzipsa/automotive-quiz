@@ -2612,3 +2612,5 @@ body.reading-large .choice{font-size:19px}
 .browse-track-controls .mode-switch button.active{background:var(--surface);color:var(--primary)}
 .browse-quick-actions{display:flex;gap:6px}
 @media(max-width:560px){#homeView .past-exam-home-head{display:block}.browse-track-controls .mode-switch button{padding:0 8px;font-size:12px}}
+
+#homeView a.home-feature-card{text-decoration:none;cursor:pointer}
