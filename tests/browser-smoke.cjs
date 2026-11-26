@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","assets/home-nav.css","past-exam/index.html","past-exam/exam.js","past-exam/exam.css","hand-note/diagrams.js","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","assets/home-nav.css","past-exam/index.html","past-exam/exam.js","past-exam/exam.css","past-exam/data/shared.json",...["2020-08-22","2020-06-06","2019-08-04","2019-04-27","2019-03-03","2018-08-19","2018-04-28","2018-03-04"].map(d=>"past-exam/data/"+d+".json"),"hand-note/diagrams.js","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -362,8 +362,8 @@ async function testDevice(browser,name,viewport,mobile){
     await el("examEntryBtn").click();
     const rounds=page.locator(".past-round-link");
     assert.equal(await rounds.count(),8);
-    assert.deepEqual(await rounds.evaluateAll(els=>els.map(e=>e.href)),["https://cbtbank.kr/exam/nn20200822","https://cbtbank.kr/exam/nn20200606","https://cbtbank.kr/exam/nn20190804","https://cbtbank.kr/exam/nn20190427","https://cbtbank.kr/exam/nn20190303","https://cbtbank.kr/exam/nn20180819","https://cbtbank.kr/exam/nn20180428","https://cbtbank.kr/exam/nn20180304"]);
-    assert.ok(await rounds.evaluateAll(els=>els.every(e=>e.target==="_blank"&&e.rel.includes("noopener"))));
+    assert.deepEqual(await rounds.evaluateAll(els=>els.map(e=>new URL(e.href).searchParams.get("round"))),["2020-08-22","2020-06-06","2019-08-04","2019-04-27","2019-03-03","2018-08-19","2018-04-28","2018-03-04"]);
+    assert.ok(await rounds.evaluateAll(els=>els.every(e=>new URL(e.href).origin===location.origin&&!e.target)));
     await layout();
     await el("approvedExamBtn").click();
     const rotation=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveQuizActiveExamV1")));
@@ -371,41 +371,37 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(rotation.ids.filter(x=>x.startsWith("auto-light-")).length,40);
     for(const s of ["01","02","03","04"])assert.equal(rotation.ids.filter(x=>x.includes("-s"+s+"-")).length,20);
     console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam");
-    // No private source data in the repository: exercise the local reader with synthetic material.
+    // Actual review05 data: fresh browser, no file import, exact original ordering.
     await page.goto(new URL("past-exam/index.html",base).href);
-    const dates=["2020-08-22","2020-06-06","2019-08-04","2019-04-27","2019-03-03","2018-08-19","2018-04-28","2018-03-04"],subjects=["legacy_mechanics","legacy_engine","legacy_chassis","legacy_electrical"];
-    const fixture={format:"automotive-private-exam-v1",version:"synthetic-test",images:{},variants:[],rounds:dates.map(d=>({exam_date:d,questions:Array.from({length:80},(_,i)=>({id:"legacy-"+d+"-q"+String(i+1).padStart(2,"0"),question_number:i+1,original_subject:subjects[Math.floor(i/20)],question:"synthetic "+(i+1),question_html:i===0?"<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>":"synthetic "+(i+1),choices:["one","two","three","four"],answer:2,review:{status:i===1?"hold":"preliminary_supported"},explanation:"synthetic only"}))}))};
-    await page.locator("#file").setInputFiles({name:"synthetic.json",mimeType:"application/json",buffer:Buffer.from(JSON.stringify(fixture))});
     await page.locator("#rounds button").first().waitFor();
     assert.equal(await page.locator("#rounds button").count(),8);
+    assert.equal(await page.locator('input[type="file"]').count(),0);
+    const past=read("past-exam/data/2020-08-22.json").questions, heldIndex=past.findIndex(q=>q.review.status==="hold"), heldCount=past.filter(q=>q.review.status==="hold").length;
     await page.locator("#rounds button").first().click();
     assert.equal(await page.locator("#numbers button").count(),80);
-    assert.equal(await page.locator("#stem math").count(),1);
-    await page.locator("#choices button").nth(1).click();
-    await page.locator("#next").click();
+    await page.locator("#choices button").nth(past[0].answer-1).click();
+    await page.locator("#numbers button").nth(heldIndex).click();
     assert.ok(await page.locator("#warning").isVisible());
-    await page.locator("#choices button").nth(1).click();
+    await page.locator("#choices button").nth(past[heldIndex].answer-1).click();
     await page.reload();
     await page.locator("#resume").waitFor();
     await page.locator("#resume").click();
-    assert.match(await page.locator("#position").textContent(),/2\/80/);
+    assert.ok((await page.locator("#position").textContent()).includes((heldIndex+1)+"/80"));
     assert.equal(await page.locator("#choices button.selected").count(),1);
+    const mi=past.findIndex(q=>[q.question_html,...q.choices_html].some(s=>typeof s==="string"&&s.includes("<math")));
+    if(mi>=0){await page.locator("#numbers button").nth(mi).click();assert.ok(await page.locator("#exam math").count()>0)}
+    const ii=past.findIndex(q=>[q.question_html,...q.choices_html].some(s=>typeof s==="string"&&s.includes("<img")));
+    if(ii>=0){await page.locator("#numbers button").nth(ii).click();assert.ok(await page.locator("#exam img").count()>0)}
     page.once("dialog",d=>d.accept());
     await page.locator("#submit").click();
-    assert.match(await page.locator("#summary").textContent(),/2\/80/);
-    assert.match(await page.locator("#summary").textContent(),/1\/79/);
-    await page.locator("#wrong").click();
-    assert.equal(await page.locator(".review-item").count(),79);
-    await page.reload();
-    await page.locator("#lastResult").waitFor();
-    await page.locator("#lastResult").click();
-    assert.match(await page.locator("#summary").textContent(),/1\/79/);
-    await page.locator("#back").click();
-    page.once("dialog",d=>d.accept());
-    await page.locator("#forget").click();
-    await page.waitForFunction(()=>document.querySelector("#rounds").children.length===0);
-    console.log("PASS "+name+" private local exam synthetic input, math, resume, hold-excluded scores, result persistence, delete");
-
+    const summary=await page.locator("#summary").textContent();
+    assert.ok(summary.includes("2/80"));assert.ok(summary.includes("1/"+(80-heldCount)));
+    await page.locator("#wrong").click();assert.equal(await page.locator(".review-item").count(),79);
+    await page.reload();await page.locator("#lastResult").waitFor();await page.locator("#lastResult").click();
+    assert.ok((await page.locator("#summary").textContent()).includes("1/"+(80-heldCount)));
+    await page.goto(new URL("past-exam/index.html?round=2018-03-04",base).href);
+    await page.locator("#exam").waitFor();assert.match(await page.locator("#position").textContent(),/2018-03-04/);
+    console.log("PASS "+name+" automatic actual 640 bank, original round, math/images, resume, hold-excluded scores, direct entry");
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}

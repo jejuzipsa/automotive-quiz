@@ -2,11 +2,11 @@
   "schema_version": 1,
   "qualification": "자동차정비산업기사",
   "scope": "2018~2020년 공개 기출/복원자료",
-  "status": "awaiting_html_source",
+  "status": "integrated_review05",
   "expected_question_count": 640,
-  "archived_question_count": 0,
+  "archived_question_count": 640,
   "source_rights_status": "unverified",
-  "public_question_release": false,
+  "public_question_release": true,
   "subjects": [
     {
       "code": "legacy_mechanics",
@@ -33,14 +33,15 @@
         3
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20200822",
         "download_page": "https://www.comcbt.com/xe/nn/4494813"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2020-08-22.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2020-08-22.json"
     },
     {
       "id": "legacy-2020-06-06",
@@ -50,14 +51,15 @@
         2
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20200606",
         "download_page": "https://www.comcbt.com/xe/nn/4376924"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2020-06-06.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2020-06-06.json"
     },
     {
       "id": "legacy-2019-08-04",
@@ -66,14 +68,15 @@
         3
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20190804",
         "download_page": "https://www.comcbt.com/xe/nn/3709995"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2019-08-04.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2019-08-04.json"
     },
     {
       "id": "legacy-2019-04-27",
@@ -82,14 +85,15 @@
         2
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20190427",
         "download_page": "https://www.comcbt.com/xe/nn/3572717"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2019-04-27.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2019-04-27.json"
     },
     {
       "id": "legacy-2019-03-03",
@@ -98,14 +102,15 @@
         1
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20190303",
         "download_page": "https://www.comcbt.com/xe/nn/3528943"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2019-03-03.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2019-03-03.json"
     },
     {
       "id": "legacy-2018-08-19",
@@ -114,14 +119,15 @@
         3
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20180819",
         "download_page": "https://www.comcbt.com/xe/nn/3136326"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2018-08-19.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2018-08-19.json"
     },
     {
       "id": "legacy-2018-04-28",
@@ -130,14 +136,15 @@
         2
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20180428",
         "download_page": "https://www.comcbt.com/xe/nn/2980681"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2018-04-28.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2018-04-28.json"
     },
     {
       "id": "legacy-2018-03-04",
@@ -146,14 +153,15 @@
         1
       ],
       "expected_count": 80,
-      "archived_count": 0,
+      "archived_count": 80,
       "source_urls": {
         "cbt": "https://cbtbank.kr/exam/nn20180304",
         "download_page": "https://www.comcbt.com/xe/nn/2852857"
       },
-      "source_file_status": "raw_html_unavailable_in_session",
+      "source_file_status": "user_saved_html_compared",
       "private_json_filename": "automotive-2018-03-04.json",
-      "status": "awaiting_user_source"
+      "status": "integrated_review05",
+      "runtime_file": "past-exam/data/2018-03-04.json"
     }
   ]
 }
