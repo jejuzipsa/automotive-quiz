@@ -116,3 +116,12 @@ console.log("PASS: separate expected/concept manifest, 720 additional rotation r
  for(const row of a.reviewed){const q=map.get(row.id);assert.ok(q);assert.equal(q.answer,row.answer);assert.equal(q.choices[q.answer-1],row.correct_choice);assert.equal(row.independent_expert_approved,false);}
  for(const row of a.changed){const q=map.get(row.id);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],row.after[k]);assert.equal(row.before.answer,row.after.answer);assert.equal(row.before.choices[row.before.answer-1],row.after.choices[row.after.answer-1]);}
 }
+
+// Engine review batch 2: verify the new ledger and corrected shim answer.
+{
+ const qs=JSON.parse(read("data/rotation/light/engine.json")),ledger=JSON.parse(read("data/qa/engine-targeted-review-20261127-batch2.json"));
+ const map=new Map(qs.map(q=>[q.id,q]));
+ assert.equal(ledger.screened,50);assert.equal(ledger.changed,ledger.changes.length);assert.equal(new Set(ledger.changes.map(c=>c.id)).size,ledger.changed);
+ for(const c of ledger.changes){const q=map.get(c.id);assert.ok(q);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],c.after[k]);}
+ const shim=map.get("auto-light-r04-s01-q02");assert.equal(shim.answer,1);assert.equal(shim.choices[0],"기존보다 0.10mm 더 두꺼운 심");
+}
