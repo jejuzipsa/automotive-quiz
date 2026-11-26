@@ -68,8 +68,9 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
   assert.equal(els.trackPast.attributes["aria-selected"],"true");
   assert.ok(els.bankLoadStatus.textContent.includes("1,440문항"));
-  await els.trackExpected.click();
-  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"28문항");
+  await els.bankEntryBtn.click();await els.trackExpected.click();
+  assert.equal(els.bankSubjectGrid.children[0].children[0].children[1].textContent,"28문항");
+  assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
   assert.deepEqual(requestPaths.slice(0,7),[
     "data/manifest.json",
     "data/expected/engine.json",
@@ -79,7 +80,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
     "data/demo.json",
     "data/concept.json"
   ]);
-  await els.subjectGrid.children[0].children[1].children[0].children[0].click();
+  await els.bankSubjectGrid.children[0].children[1].children[0].children[0].click();
   assert.equal(els.answerChoices.children.length,4);
   assert.equal(els.quizAuditInfo.textContent.includes("편집 검토 단계"),true);
   for(let i=0;i<10;i++){
@@ -89,7 +90,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.ok(els.resultScore.textContent.includes("/ 10문제"));
   assert.equal(els.resultGrid.children.length,10);
   await els.resultHomeBtn.click();
-  await els.bankEntryBtn.click();
+  await els.bankEntryBtn.click();await els.trackExpected.click();await els.bankAllBtn.click();
   assert.equal(els.browseList.children.length,10,"10 public JSON cards per page");
   assert.equal(els.browseMeta.textContent,"전체 112문항");
   await els.homeBtn.click();
@@ -153,7 +154,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   const count=()=>history().records.reduce((n,x)=>n+x.correct+x.wrong+x.unanswered,0);
   assert.equal(count(),250,"10 practice + three submitted exams counted once");
   assert.equal(history().records.reduce((n,x)=>n+x.unanswered,0),159);
-  await els.resultHomeBtn.click();await els.wrongEntryBtn.click();
+  await els.wrongEntryBtn.click();
   assert.ok(els.wrongSummary.textContent.includes("누적 250회"));
   const firstCard=els.wrongList.children[0];
   await firstCard.click();

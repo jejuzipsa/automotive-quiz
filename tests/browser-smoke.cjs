@@ -102,8 +102,13 @@ async function testDevice(browser,name,viewport,mobile){
     await visible("homeView");await layout();
     await visible("conceptHomeSection");
     assert.equal(await page.locator("#homeView .home-feature-card").count(),3);
-    assert.equal(await el("demoTitle").isVisible(),false);
-    assert.equal(await page.locator("#headerTitle").evaluate(e=>getComputedStyle(e,"::before").display),"none");
+    assert.equal(await el("demoTitle").count(),0);
+    assert.equal(await page.locator(".brand-mark").count(),0);
+    assert.equal(await el("bankEntryBtn").locator("img").count(),0);
+    assert.equal(await page.locator("#homeView #trackPast,#homeView #trackExpected,#homeView #wrongEntryBtn").count(),0);
+    assert.equal(await page.locator("#homeView .home-feature-stack .home-feature-card").allTextContents().then(a=>a.map(x=>x.trim()).join("|")),"핵심 단어 카드|한손노트");
+    await el("coreCardEntryBtn").click();await visible("coreCardView");await el("homeBtn").click();
+    await el("handNoteEntryBtn").click();await visible("handNoteView");assert.equal(await page.locator(".study-note-entry").count(),4);await el("homeBtn").click();
     assert.equal(await el("homeSubjectTitle").innerText(),"과목별 예상문제");
     assert.equal(await el("subjectGrid").locator(".subject-card").count(),4);
     for(const b of manifest.banks.filter(b=>b.track==="expected")){
@@ -143,7 +148,6 @@ async function testDevice(browser,name,viewport,mobile){
     await checkHeader(page,viewport.width,mobile);
     console.log("PASS "+name+" responsive header: unclipped title, control layout and A-/A/A+");
     await page.screenshot({path:path.join(out,name+"-home.png"),fullPage:true});
-    await el("trackExpected").click();
     await el("themeToggleBtn").click();
     assert.equal(await page.locator("html").getAttribute("data-theme"),"dark");
     await page.locator('[data-reading-size="large"]').click();
@@ -153,8 +157,8 @@ async function testDevice(browser,name,viewport,mobile){
     assert.ok(await page.locator("body").evaluate(b=>b.classList.contains("reading-large")));
     await el("themeToggleBtn").click();
     await page.locator('[data-reading-size="normal"]').click();
-    await el("trackExpected").click();
-    await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
+    await el("bankEntryBtn").click();await el("trackExpected").click();
+    await el("bankSubjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
     await checkHeader(page,viewport.width,mobile);
     if(mobile){await page.setViewportSize({width:320,height:viewport.height});await checkHeader(page,320,true);await page.setViewportSize(viewport);}
     let firstWrong;
@@ -182,8 +186,6 @@ async function testDevice(browser,name,viewport,mobile){
     const review=await currentQuestion();assert.equal(review.id,firstWrong);
     await choose(review,false);await visible("reviewBackBtn");assert.ok(!(await el("nextBtn").isVisible()));
     await el("reviewBackBtn").click();await visible("resultView");
-    await el("resultHomeBtn").click();await page.reload();
-    await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await el("wrongEntryBtn").click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     assert.match(await text("wrongSummary"),/누적 11회 풀이/);
@@ -195,7 +197,9 @@ async function testDevice(browser,name,viewport,mobile){
     await el("wrongScopes").getByRole("button",{name:"복습 완료",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     assert.match(await text("wrongSummary"),/누적 12회 풀이/);
-    await el("homeBtn").click();await el("trackExpected").click();await el("bankEntryBtn").click();
+    await el("homeBtn").click();await page.reload();
+    await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
+    await el("bankEntryBtn").click();await el("trackExpected").click();await el("bankAllBtn").click();
     assert.equal(await text("browseMeta"),"전체 "+expected.length+"문항");
     await el("homeBtn").click();await el("examEntryBtn").click();
     assert.ok(!(await el("approvedExamBtn").isDisabled()));
@@ -227,7 +231,7 @@ async function testDevice(browser,name,viewport,mobile){
     await visible("resultView");assert.match(await text("resultScore"),/80 \/ 80문제/);
     assert.match(await text("resultStats"),/학습용 합격 기준 충족/);
     await layout();await page.screenshot({path:path.join(out,name+"-exam-result.png"),fullPage:true});
-    await el("resultHomeBtn").click();await el("wrongEntryBtn").click();
+    await el("wrongEntryBtn").click();
     assert.match(await text("wrongSummary"),/누적 92회 풀이/);
     await el("wrongScopes").getByRole("button",{name:"전체 오답 이력",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
@@ -260,7 +264,6 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(await text("quizProgress"),"1 / 200");
     await el("homeBtn").click();
     // Actual served rotation, not a synthetic upload.
-    await el("trackPast").click();
     await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
     let variants=[];
     for(let i=0;i<10;i++){

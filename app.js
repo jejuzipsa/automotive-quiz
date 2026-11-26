@@ -202,7 +202,7 @@
     }
     state[subject]={remaining:queue,lastSource:last,lastVariant};saveStorage(ROTATION_KEY,state);return out;
   }
-  const VIEWS = ["home","browse","quiz","result","exam","wrong"];
+  const VIEWS = ["home","bank","coreCard","handNote","browse","quiz","result","exam","wrong"];
   let activeTrack = "past";
   let current = null;
   let recentResult = null;
@@ -374,17 +374,23 @@
     const total=poolFor(activeTrack).length;
     $("trackSummary").textContent=bankLoadState==="loading"?"문제은행을 불러오는 중이야.":
       `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" · 자체 제작 연습문제(편집 검토 중)":(total?" · 재작성본 + 원본 기반 학습용":" · 문제은행을 불러오지 못했어. 새로고침해 줘")}`;
+    renderSubjectCards(box,"past");
+    renderSubjectCards($("bankSubjectGrid"),activeTrack);
+    $("bankAllBtn").disabled=!total;
+  }
+  function renderSubjectCards(box,track){
+    box.replaceChildren();
     for(const subject of SUBJECTS){
-      const count=poolFor(activeTrack,subject.id).length;
+      const count=poolFor(track,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
       const detail=make("div","subject-info");
       detail.append(make("strong","",subject.name),make("span","",`${count}문항`));
       const action=make("div","subject-actions");
       const quick=make("div","subject-quick-actions");
-      appendButton(quick,"10문제","subject-quiz-count-btn",()=>startTrack(activeTrack,subject.id,10),count===0);
-      appendButton(quick,"20문제","subject-quiz-count-btn",()=>startTrack(activeTrack,subject.id,20),count===0);
+      appendButton(quick,"10문제","subject-quiz-count-btn",()=>startTrack(track,subject.id,10),count===0);
+      appendButton(quick,"20문제","subject-quiz-count-btn",()=>startTrack(track,subject.id,20),count===0);
       action.append(quick);
-      appendButton(action,"전체 문제 보기","subject-browse-btn",()=>openBrowse(activeTrack,subject.id),count===0);
+      appendButton(action,"전체 문제 보기","subject-browse-btn",()=>openBrowse(track,subject.id),count===0);
       card.append(detail,action);box.appendChild(card);
     }
   }
@@ -770,9 +776,10 @@
     $("themeToggleBtn").addEventListener("click",toggleTheme);
     for(const b of document.querySelectorAll(".reading-size-btn"))b.addEventListener("click",()=>setReadingSize(b.dataset.readingSize));
     $("homeBtn").addEventListener("click",showHome);
-    $("demoEntryBtn").addEventListener("click",startDemo);
-    $("demoBrowseBtn").addEventListener("click",()=>openBrowse("demo"));
-    $("bankEntryBtn").addEventListener("click",()=>openBrowse(activeTrack));
+    $("bankEntryBtn").addEventListener("click",()=>{setTrack("past");showView("bank");});
+    $("bankAllBtn").addEventListener("click",()=>openBrowse(activeTrack));
+    $("coreCardEntryBtn").addEventListener("click",()=>showView("coreCard"));
+    $("handNoteEntryBtn").addEventListener("click",()=>showView("handNote"));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
     $("wrongEntryBtn").addEventListener("click",()=>{wrongSubject="all";wrongScope="pending";renderWrong();showView("wrong");});
     $("sampleExamBtn").addEventListener("click",startSampleExam);
