@@ -3,8 +3,9 @@ const assert=require("node:assert/strict"),fs=require("node:fs"),path=require("n
 const root=path.resolve(__dirname,".."),ctx={window:{}};
 vm.runInNewContext(fs.readFileSync(path.join(root,"core-cards/data.js"),"utf8"),ctx);
 const {buildNotes}=require("../hand-note/model.js");
-const notes=buildNotes(ctx.window.CORE_WORD_CARD_BANK);
-const bank=ctx.window.CORE_WORD_CARD_BANK.cards;
+const sourceBank=JSON.parse(JSON.stringify(ctx.window.CORE_WORD_CARD_BANK));
+const notes=buildNotes(sourceBank);
+const bank=sourceBank.cards;
 assert.deepEqual(notes.map(s=>[s.code,s.parts.length,s.pages.length,s.conceptCount]),[["engine",6,29,105],["chassis",5,23,88],["electrical",6,28,97],["eco",6,28,96]]);
 const points=notes.flatMap(s=>s.pages.flatMap(p=>p.points));
 assert.equal(points.length,386);assert.equal(new Set(points.map(p=>p.id)).size,386);

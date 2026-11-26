@@ -4,7 +4,7 @@
   else root.AutomotiveHandNote=api;
 })(typeof window==="undefined"?globalThis:window,function(){
   "use strict";
-  // Keep the reviewed question-linked card bank as the single source of study text.
+  // Keep the question-linked card bank as the single source of study text.
   // A POINT is a short topic cluster; a PART is the existing subject category.
   function buildNotes(bank){
     if(!bank||!Array.isArray(bank.subjects)||!Array.isArray(bank.cards))throw Error("학습 자료 형식 오류");
