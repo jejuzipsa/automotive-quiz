@@ -2614,3 +2614,17 @@ body.reading-large .choice{font-size:19px}
 @media(max-width:560px){#homeView .past-exam-home-head{display:block}.browse-track-controls .mode-switch button{padding:0 8px;font-size:12px}}
 
 #homeView a.home-feature-card{text-decoration:none;cursor:pointer}
+
+/* Older paper-era source rounds: distinct from the native current-format mock exam. */
+.past-round-section{margin-top:20px;padding:18px;border:1px solid var(--line);border-radius:17px;background:var(--surface)}
+.past-round-section h3{margin:5px 0 8px;font-size:21px}
+.past-round-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:14px 0}
+.past-round-year{min-width:0;background:var(--surface2,var(--surface-2,var(--surface)));padding:12px;border:1px solid var(--line);border-radius:12px}
+.past-round-year h4{margin:0 0 10px;font-size:15px;color:var(--primary)}
+.past-round-link{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:10px;margin-top:7px;border:1px solid var(--line);border-radius:9px;background:var(--surface);text-decoration:none;color:var(--text);font-size:13px;font-weight:750;min-height:44px}
+.past-round-action{color:var(--primary);font-size:12px;white-space:nowrap}
+.past-round-link:hover,.past-round-link:focus-visible{border-color:var(--primary);outline:2px solid var(--primary);outline-offset:2px}
+.past-round-note{margin:8px 0 0;line-height:1.6}
+.past-round-note a{color:var(--primary);text-decoration:underline}
+.past-round-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+@media(max-width:820px){.past-round-grid{grid-template-columns:1fr}.past-round-section{padding:14px}.past-round-year{padding:10px}}

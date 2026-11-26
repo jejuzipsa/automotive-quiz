@@ -359,7 +359,13 @@ async function testDevice(browser,name,viewport,mobile){
     await el("resultHomeBtn").click();await page.reload();
     await page.waitForFunction(()=>document.querySelector("#bankLoadStatus")?.textContent.includes("1,440문항 자동 연결 완료"));
     assert.equal(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveRotationQueueV1")).engine.remaining.length),350);
-    await el("examEntryBtn").click();await el("approvedExamBtn").click();
+    await el("examEntryBtn").click();
+    const rounds=page.locator(".past-round-link");
+    assert.equal(await rounds.count(),8);
+    assert.deepEqual(await rounds.evaluateAll(els=>els.map(e=>e.href)),["https://cbtbank.kr/exam/nn20200822","https://cbtbank.kr/exam/nn20200606","https://cbtbank.kr/exam/nn20190804","https://cbtbank.kr/exam/nn20190427","https://cbtbank.kr/exam/nn20190303","https://cbtbank.kr/exam/nn20180819","https://cbtbank.kr/exam/nn20180428","https://cbtbank.kr/exam/nn20180304"]);
+    assert.ok(await rounds.evaluateAll(els=>els.every(e=>e.target==="_blank"&&e.rel.includes("noopener"))));
+    await layout();
+    await el("approvedExamBtn").click();
     const rotation=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveQuizActiveExamV1")));
     assert.equal(rotation.ids.length,80);assert.equal(new Set(rotation.ids).size,80);
     assert.equal(rotation.ids.filter(x=>x.startsWith("auto-light-")).length,40);
