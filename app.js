@@ -104,7 +104,7 @@
     }
     renderSubjects();
     updateExamAvailability();
-    if(view==="concept")renderConcepts();
+    renderConcepts();
     renderResumeExam();
     if(bankLoadState==="ready")loadHistory();
     if(view==="wrong")renderWrong();
@@ -201,7 +201,7 @@
     }
     state[subject]={remaining:queue,lastSource:last,lastVariant};saveStorage(ROTATION_KEY,state);return out;
   }
-  const VIEWS = ["home","browse","quiz","result","exam","concept","wrong"];
+  const VIEWS = ["home","browse","quiz","result","exam","wrong"];
   let activeTrack = "past";
   let current = null;
   let recentResult = null;
@@ -379,10 +379,9 @@
       const detail=make("div","subject-btn");
       detail.append(make("strong","",subject.name),make("span","",`${count}문항`));
       const action=make("div","subject-action-stack");
-      action.style.cssText="display:flex;flex-direction:column;gap:7px;min-width:95px";
       appendButton(action,"10문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,10),count===0);
       appendButton(action,"20문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,20),count===0);
-      appendButton(action,"전체 보기","subject-browse-btn",()=>openBrowse(activeTrack,subject.id));
+      appendButton(action,"전체 문제 보기","subject-browse-btn subject-all-btn",()=>openBrowse(activeTrack,subject.id),count===0);
       card.append(detail,action);box.appendChild(card);
     }
   }
@@ -731,11 +730,10 @@
       const count=poolFor("concept",s.id).length;
       const card=make("div","concept-card");
       card.append(make("strong","",s.name),make("span","",`괄호문제 ${count}개`));
-      const actions=make("div","home-actions");
-      actions.style.marginTop="10px";
+      const actions=make("div","concept-action-stack");
       appendButton(actions,"10문제","subject-browse-btn",()=>startConcept(s.id,10),!count);
       appendButton(actions,"20문제","subject-browse-btn",()=>startConcept(s.id,20),!count);
-      appendButton(actions,"전체 풀기","subject-browse-btn",()=>startConcept(s.id,count),!count);
+      appendButton(actions,`괄호문제 · ${count}`,"subject-browse-btn concept-blank-btn",()=>startConcept(s.id,count),!count);
       card.append(actions);grid.append(card);
     });
   }
@@ -769,7 +767,6 @@
     $("demoBrowseBtn").addEventListener("click",()=>openBrowse("demo"));
     $("bankEntryBtn").addEventListener("click",()=>openBrowse(activeTrack));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
-    $("conceptEntryBtn").addEventListener("click",()=>{renderConcepts();showView("concept");});
     $("wrongEntryBtn").addEventListener("click",()=>{wrongSubject="all";wrongScope="pending";renderWrong();showView("wrong");});
     $("sampleExamBtn").addEventListener("click",startSampleExam);
     $("expectedExamBtn").addEventListener("click",()=>startFullExam("expected"));
@@ -788,7 +785,7 @@
     window.addEventListener("pageshow",()=>{if(view==="quiz"&&current?.mode==="exam")beginTimer();});
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
-    setTrack("past");showView("home");
+    setTrack("past");renderConcepts();showView("home");
     loadPublicBank();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",connect);

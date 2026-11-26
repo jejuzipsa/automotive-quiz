@@ -1,5 +1,9 @@
 # 자동차정비산업기사 개발·검수 작업 일지
 
+## 홈 UX 통일 — 2026-11-26
+- 2026-11-26 홈 UX: 공인중개사 gichul-quiz의 홈 배치를 기준으로 자동차정비 전용 4과목 카드(10·20/전체 보기), 큰 실전 시험 메뉴와 우측 문제은행·오답 메뉴, 홈에 과목별 괄호문제 200개 직접 출제(10·20 또는 전체), 기존 톱니바퀴 브랜드와 녹색 테마 유지. 중복 상단 아이콘과 안내문, 홈 샘플 체험을 숨김. 샘플 시험 및 데이터는 유지. 기존 문제/정답/해설, 로테이션·학습 기록·모의고사 로직 불변. Node 및 Chromium 홈/모바일 회귀검사 갱신; 최신 Actions 결과 확인 필요.
+
+
 ## 2026-11-26 — 브라우저 답안 선택기 충돌 수정
 - 최신 배포 `7ebe626`: [Pages](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814053) 및 [JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814509) 성공. [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814346)는 실제 운영 사이트 성공, 로컬 모바일 실패(버튼 번호 1과 80kPa의 결합 문자열이 180kPa와 충돌). 자동 테스트에서 `.choice-text` 요소에만 정확히 일치하도록 수정하고 재현 회귀검사를 추가했다. 재검사 결과는 최신 main Actions에서 확인한다. 문제은행 및 앱 동작 변경 없음. 실제 iPhone Safari 실기기 확인은 아직 미실시.
 

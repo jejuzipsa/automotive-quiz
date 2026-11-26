@@ -100,6 +100,10 @@ async function testDevice(browser,name,viewport,mobile){
     await page.goto(base.href,{waitUntil:"domcontentloaded"});
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await visible("homeView");await layout();
+    await visible("conceptHomeSection");
+    assert.equal(await page.locator("#homeView .home-feature-card").count(),3);
+    assert.equal(await el("demoTitle").isVisible(),false);
+    assert.equal(await page.locator("#headerTitle").evaluate(e=>getComputedStyle(e,"::before").display),"none");
     assert.equal(await el("subjectGrid").locator(".subject-card").count(),4);
     for(const b of manifest.banks.filter(b=>b.track==="expected")){
       const subjectCount=expected.filter(q=>q.subject===b.subject).length;
@@ -116,6 +120,15 @@ async function testDevice(browser,name,viewport,mobile){
       for(const size of ["small","normal","large"]){
         await page.locator('[data-reading-size="'+size+'"]').click();
         await checkHeader(page,width,width<=820);
+        const layoutInfo=await page.evaluate(()=>{
+          const bounds=e=>e.getBoundingClientRect();
+          const contained=(parent,child)=>{const p=bounds(parent),c=bounds(child);return c.left>=p.left-1&&c.right<=p.right+1&&c.top>=p.top-1&&c.bottom<=p.bottom+1;};
+          const cards=[...document.querySelectorAll("#homeView .subject-card,#homeView .concept-card")];
+          return {contained:cards.every(c=>[...c.querySelectorAll("button,strong,span")].every(e=>contained(c,e))),
+            buttons:cards.every(c=>c.querySelectorAll("button").length===3),
+            overflow:document.documentElement.scrollWidth>innerWidth+1};
+        });
+        assert.deepEqual(layoutInfo,{contained:true,buttons:true,overflow:false},"home card layout "+width);
       }
     }
     await page.setViewportSize(viewport);
@@ -212,8 +225,11 @@ async function testDevice(browser,name,viewport,mobile){
     await el("wrongScopes").getByRole("button",{name:"전체 오답 이력",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     await layout();await page.screenshot({path:path.join(out,name+"-wrong-history.png"),fullPage:true});
-    await el("homeBtn").click();await el("conceptEntryBtn").click();
+    await el("homeBtn").click();
+    await visible("conceptHomeSection");await visible("conceptGrid");
     assert.equal(await el("conceptGrid").locator(".concept-card").count(),4);
+    assert.equal(await el("conceptGrid").locator(".concept-blank-btn").count(),4);
+    assert.equal(await el("conceptGrid").locator(".concept-blank-btn").first().innerText(),"괄호문제 · 200");
     const concept=read("data/concept.json"),seen=new Set();
     for(const card of await el("conceptGrid").locator(".concept-card").all())assert.match(await card.innerText(),/200개/);
     await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"10문제",exact:true}).click();
@@ -226,14 +242,18 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(firstConceptQueue.length,190);
     await el("resultHomeBtn").click();await page.reload();
     await page.waitForFunction(()=>document.querySelector("#bankLoadStatus")?.textContent.includes("1,440문항 자동 연결 완료"));
-    await el("conceptEntryBtn").click();
+    
     await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"20문제",exact:true}).click();
     for(let i=0;i<20;i++){const prompt=await text("questionText"),item=concept.find(x=>x.question===prompt);assert.ok(item&&!seen.has(item.id));seen.add(item.id);await choose(item,true);await el("nextBtn").click();}
     assert.match(await text("resultScore"),/20 \/ 20문제/);
     assert.equal(seen.size,30);
     assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveConceptRotationV1")).engine.remaining),firstConceptQueue.slice(20));
+    await el("resultHomeBtn").click();
+    await el("conceptGrid").locator(".concept-card").first().getByRole("button",{name:"괄호문제 · 200",exact:true}).click();
+    assert.equal(await text("quizProgress"),"1 / 200");
+    await el("homeBtn").click();
     // Actual served rotation, not a synthetic upload.
-    await el("resultHomeBtn").click();await el("trackPast").click();
+    await el("trackPast").click();
     await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
     let variants=[];
     for(let i=0;i<10;i++){

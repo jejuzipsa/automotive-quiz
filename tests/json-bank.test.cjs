@@ -190,8 +190,9 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.deepEqual(history(),imported,"legacy import must not double count");
   assert.equal(oldResult.items.length,80);
 
-  await els.homeBtn.click();await els.conceptEntryBtn.click();
+  await els.homeBtn.click();
   assert.equal(els.conceptGrid.children.length,4);
+  assert.equal(els.conceptGrid.children[0].children[2].children[2].textContent,"괄호문제 · 200");
   const concepts=JSON.parse(fs.readFileSync(path.join(root,"data/concept.json"),"utf8"));
   for(let subject=0;subject<4;subject++){
     assert.ok(els.conceptGrid.children[subject].children[1].textContent.includes("200개"));
@@ -203,7 +204,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
       await els.answerChoices.children.find(x=>x.children[1].textContent===q.choices[q.answer-1]).click();
       assert.ok(els.feedback.children[0].textContent.includes("정답이야"));await els.nextBtn.click();}
     assert.ok(els.resultScore.textContent.includes("20 / 20문제"));
-    await els.resultHomeBtn.click();await els.conceptEntryBtn.click();
+    await els.resultHomeBtn.click();
     }
     assert.equal(seen.size,200);
   }
@@ -216,7 +217,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   await els.homeBtn.click();
   vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
   await new Promise(resolve=>setImmediate(resolve));
-  await els.conceptEntryBtn.click();
+  
   await els.conceptGrid.children[0].children[2].children[0].click();
   const after=JSON.parse(memory.automotiveConceptRotationV1).engine.remaining;
   assert.equal(after.length,180);
