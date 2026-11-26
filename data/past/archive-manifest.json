@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "qualification": "자동차정비산업기사",
+  "scope": "2018~2020년 공개 기출/복원자료",
+  "status": "source_index_only",
+  "expected_question_count": 640,
+  "archived_question_count": 0,
+  "source_rights_status": "unverified",
+  "public_question_release": false,
+  "subjects": [
+    {
+      "code": "legacy_mechanics",
+      "name": "일반기계공학"
+    },
+    {
+      "code": "legacy_engine",
+      "name": "자동차엔진"
+    },
+    {
+      "code": "legacy_chassis",
+      "name": "자동차섀시"
+    },
+    {
+      "code": "legacy_electrical",
+      "name": "자동차전기"
+    }
+  ],
+  "rounds": [
+    {
+      "id": "legacy-2020-08-22",
+      "exam_date": "2020-08-22",
+      "round_numbers": [
+        3
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20200822",
+        "download_page": "https://www.comcbt.com/xe/nn/4494813"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2020-08-22.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2020-06-06",
+      "exam_date": "2020-06-06",
+      "round_numbers": [
+        1,
+        2
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20200606",
+        "download_page": "https://www.comcbt.com/xe/nn/4376924"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2020-06-06.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2019-08-04",
+      "exam_date": "2019-08-04",
+      "round_numbers": [
+        3
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20190804",
+        "download_page": "https://www.comcbt.com/xe/nn/3709995"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2019-08-04.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2019-04-27",
+      "exam_date": "2019-04-27",
+      "round_numbers": [
+        2
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20190427",
+        "download_page": "https://www.comcbt.com/xe/nn/3572717"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2019-04-27.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2019-03-03",
+      "exam_date": "2019-03-03",
+      "round_numbers": [
+        1
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20190303",
+        "download_page": "https://www.comcbt.com/xe/nn/3528943"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2019-03-03.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2018-08-19",
+      "exam_date": "2018-08-19",
+      "round_numbers": [
+        3
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20180819",
+        "download_page": "https://www.comcbt.com/xe/nn/3136326"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2018-08-19.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2018-04-28",
+      "exam_date": "2018-04-28",
+      "round_numbers": [
+        2
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20180428",
+        "download_page": "https://www.comcbt.com/xe/nn/2980681"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2018-04-28.json",
+      "status": "awaiting_user_source"
+    },
+    {
+      "id": "legacy-2018-03-04",
+      "exam_date": "2018-03-04",
+      "round_numbers": [
+        1
+      ],
+      "expected_count": 80,
+      "archived_count": 0,
+      "source_urls": {
+        "cbt": "https://cbtbank.kr/exam/nn20180304",
+        "download_page": "https://www.comcbt.com/xe/nn/2852857"
+      },
+      "source_file_status": "download_unavailable_in_session",
+      "private_json_filename": "automotive-2018-03-04.json",
+      "status": "awaiting_user_source"
+    }
+  ]
+}
