@@ -12,7 +12,9 @@ PC·모바일 반응형 개인 학습용 사이트. 별도의 파일 선택 없�
 | 친환경 자동차정비 | 180 | 180 | 360 |
 | 총계 | 720 | 720 | 1,440 |
 
-별도 예상문제 112, 핵심 개념 48, 시연 8문항을 포함하면 총 1,608문항이다.
+별도 예상문제 112, 괄호 퀴즈 800(과목별 200), 시연 8문항을 포함하면 총 2,360문항이다.
+
+2026-11-26: [PR #65](https://github.com/jejuzipsa/automotive-quiz/pull/65) 병합 (`730b78d`), 기존 400개 유지 및 400개 추가. [병합 전 JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639655)와 [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639710) 성공.
 
 ## 기능
 
