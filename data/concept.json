@@ -6786,5 +6786,6805 @@
     "origin": "original_concept_practice",
     "review_status": "editorial_draft",
     "source_question_id": "auto-made-r09-s04-q18"
+  },
+  {
+    "id": "concept-engine-101",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축 행정 중 밀폐된 기체가 압축되면 압력은 일반적으로 (    )한다.",
+    "choices": [
+      "상승",
+      "하강",
+      "유지",
+      "소실"
+    ],
+    "answer": 1,
+    "explanation": "피스톤 상승으로 기체 체적이 감소하고 압력이 높아진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-02"
+  },
+  {
+    "id": "concept-engine-102",
+    "track": "concept",
+    "subject": "engine",
+    "question": "냉간 시 서모스탯이 라디에이터 방향 유로를 제한하는 이유는 엔진의 (    )을 돕기 위해서다.",
+    "choices": [
+      "과급",
+      "예열",
+      "오일 여과",
+      "연료 증발"
+    ],
+    "answer": 2,
+    "explanation": "라디에이터 열 방출을 제한해 정상 온도 도달을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-05"
+  },
+  {
+    "id": "concept-engine-103",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 기관의 한 사이클에 필요한 크랭크축 회전각은 (    )이다.",
+    "choices": [
+      "180°",
+      "360°",
+      "720°",
+      "540°"
+    ],
+    "answer": 3,
+    "explanation": "크랭크축 2회전은 720°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-engine-104",
+    "track": "concept",
+    "subject": "engine",
+    "question": "삼원촉매에서 CO가 산소와 반응해 CO₂가 되는 반응은 (    )이다.",
+    "choices": [
+      "환원",
+      "응축",
+      "흡착",
+      "산화"
+    ],
+    "answer": 4,
+    "explanation": "CO와 HC는 산화되고 NOx는 환원된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-13"
+  },
+  {
+    "id": "concept-engine-105",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압력이 같을 때 인터쿨러가 흡입 공기 온도를 낮추면 밀도는 (    )한다.",
+    "choices": [
+      "증가",
+      "감소",
+      "소실",
+      "유지"
+    ],
+    "answer": 1,
+    "explanation": "같은 압력에서 기체 온도가 낮아지면 밀도가 높아진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-18"
+  },
+  {
+    "id": "concept-engine-106",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보차저에서 흡입 공기 압력을 높이는 회전체는 (    )이다.",
+    "choices": [
+      "터빈 휠",
+      "컴프레서 휠",
+      "플라이휠",
+      "캠 기어"
+    ],
+    "answer": 2,
+    "explanation": "배기 터빈은 축을 구동하고 압축기 휠이 공기를 압축한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q02"
+  },
+  {
+    "id": "concept-engine-107",
+    "track": "concept",
+    "subject": "engine",
+    "question": "터보 교환 직후 오일 부족에 의한 손상을 막기 위해 확인하는 조건은 (    ) 상태다.",
+    "choices": [
+      "배기 산소 농도",
+      "점화 순서",
+      "초기 윤활",
+      "흡기 필터 여과율"
+    ],
+    "answer": 3,
+    "explanation": "제작사 절차에 따른 초기 윤활과 오일 공급을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q03"
+  },
+  {
+    "id": "concept-engine-108",
+    "track": "concept",
+    "subject": "engine",
+    "question": "스캔툴 표시만으로 직접 측정할 수 없는 엔진오일 물성은 실제 (    )이다.",
+    "choices": [
+      "엔진 회전수",
+      "센서 전압",
+      "흡기 압력",
+      "동점도"
+    ],
+    "answer": 4,
+    "explanation": "오일 동점도는 별도 물성시험이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q04"
+  },
+  {
+    "id": "concept-engine-109",
+    "track": "concept",
+    "subject": "engine",
+    "question": "혼합비 피드백용 전단 산소 센서는 일반적으로 삼원촉매 (    ) 배기관에 위치한다.",
+    "choices": [
+      "앞쪽",
+      "뒤쪽",
+      "외부 공기 필터 안",
+      "연료탱크 안"
+    ],
+    "answer": 1,
+    "explanation": "촉매에 들어가기 전 배기가스의 산소 상태를 감지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q06"
+  },
+  {
+    "id": "concept-engine-110",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 인젝터의 정밀 성능 검사는 기계식 노즐 시험과 구분되는 (    ) 장비가 필요하다.",
+    "choices": [
+      "냉각계 가압 시험",
+      "커먼레일 전용 시험",
+      "점화 파형 시험",
+      "압축누설 시험"
+    ],
+    "answer": 2,
+    "explanation": "인젝터 형식에 맞는 시험장비와 규격을 적용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q12"
+  },
+  {
+    "id": "concept-engine-111",
+    "track": "concept",
+    "subject": "engine",
+    "question": "모든 실린더에서 압축압력이 낮을 때 개별 링 교환보다 먼저 검토할 공통 기계 조건은 (    )이다.",
+    "choices": [
+      "한 개 점화플러그 간극",
+      "한 개 인젝터 분무",
+      "밸브 타이밍",
+      "한 개 배기밸브 시트"
+    ],
+    "answer": 3,
+    "explanation": "전 실린더 공통 이상은 타이밍과 측정 조건을 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q16"
+  },
+  {
+    "id": "concept-engine-112",
+    "track": "concept",
+    "subject": "engine",
+    "question": "NOx와 휘발성 유기화합물이 햇빛 아래 반응하여 형성할 수 있는 물질은 (    )이다.",
+    "choices": [
+      "헬륨",
+      "아르곤",
+      "수소",
+      "지표 오존"
+    ],
+    "answer": 4,
+    "explanation": "광화학 반응은 지표 오존 형성에 관여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q18"
+  },
+  {
+    "id": "concept-engine-113",
+    "track": "concept",
+    "subject": "engine",
+    "question": "삼원촉매에서 NOx의 산소를 제거하는 과정은 (    )이다.",
+    "choices": [
+      "환원",
+      "산화",
+      "기화",
+      "응고"
+    ],
+    "answer": 1,
+    "explanation": "NOx 환원은 질소 성분의 생성을 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s01-q19"
+  },
+  {
+    "id": "concept-engine-114",
+    "track": "concept",
+    "subject": "engine",
+    "question": "과급 제어 진단에서는 실제 과급압과 ECU가 요구한 (    )을 같은 운전 조건에서 비교한다.",
+    "choices": [
+      "연료 옥탄가",
+      "목표 과급압",
+      "냉각수 용량",
+      "배기량"
+    ],
+    "answer": 2,
+    "explanation": "목표값과 실측값의 차이를 진단 단서로 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q01"
+  },
+  {
+    "id": "concept-engine-115",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 예열 플러그가 연소실을 예열하는 기본 원리는 (    )이다.",
+    "choices": [
+      "전자기 정류",
+      "기체 감압",
+      "저항 발열",
+      "열전 냉각"
+    ],
+    "answer": 3,
+    "explanation": "전류에 의한 발열로 냉간 시동을 보조한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q10"
+  },
+  {
+    "id": "concept-engine-116",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더 헤드 상부의 규칙적 기계음은 캠과 로커암을 포함한 (    ) 점검 단서다.",
+    "choices": [
+      "냉매 순환계",
+      "연료 탱크",
+      "차동장치",
+      "밸브 구동계"
+    ],
+    "answer": 4,
+    "explanation": "밸브 구동계의 간극과 마모 등을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q14"
+  },
+  {
+    "id": "concept-engine-117",
+    "track": "concept",
+    "subject": "engine",
+    "question": "EGR은 디젤 기관 외에도 설계에 따라 (    ) 기관에 적용할 수 있다.",
+    "choices": [
+      "가솔린",
+      "전기모터 단독",
+      "증기 터빈",
+      "연료전지 단독"
+    ],
+    "answer": 1,
+    "explanation": "연료 종류만으로 EGR 적용 여부를 결정하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s01-q15"
+  },
+  {
+    "id": "concept-engine-118",
+    "track": "concept",
+    "subject": "engine",
+    "question": "공회전이 불안정할 때 스로틀 명령과 실제 개도 외에 불필요한 공기가 들어오는 (    )을 확인한다.",
+    "choices": [
+      "배터리 용량",
+      "흡기 누설",
+      "타이어 마모",
+      "냉매 응축"
+    ],
+    "answer": 2,
+    "explanation": "흡기 누설은 공회전 공기량 제어를 방해할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q05"
+  },
+  {
+    "id": "concept-engine-119",
+    "track": "concept",
+    "subject": "engine",
+    "question": "센서 DTC가 있어도 신호 전달 경로의 (    ) 불량인지 구분해야 한다.",
+    "choices": [
+      "타이어 트레드",
+      "오일 팬 용량",
+      "커넥터",
+      "냉각수 색상"
+    ],
+    "answer": 3,
+    "explanation": "센서 전원·접지·배선을 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q09"
+  },
+  {
+    "id": "concept-engine-120",
+    "track": "concept",
+    "subject": "engine",
+    "question": "교환 후 발생한 폐엔진오일은 (    ) 경로로 처리한다.",
+    "choices": [
+      "도로 배수구",
+      "냉각수 탱크",
+      "연료 탱크",
+      "지정 수거·재활용"
+    ],
+    "answer": 4,
+    "explanation": "폐유는 지정 처리 절차를 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q15"
+  },
+  {
+    "id": "concept-engine-121",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정상 협대역 지르코니아 산소 센서에서 상대적으로 높은 전압은 (    )한 배기 상태를 나타낸다.",
+    "choices": [
+      "농후",
+      "희박",
+      "무압력",
+      "무온도"
+    ],
+    "answer": 1,
+    "explanation": "센서 활성 조건에서 농후·희박 변화에 반응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q05"
+  },
+  {
+    "id": "concept-engine-122",
+    "track": "concept",
+    "subject": "engine",
+    "question": "산소 센서 파형을 판정하기 전 센서 종류와 함께 고려할 작동 조건은 센서의 (    )이다.",
+    "choices": [
+      "외부 도장색",
+      "온도",
+      "타이어 직경",
+      "머플러 길이만"
+    ],
+    "answer": 2,
+    "explanation": "활성 온도와 시험 조건이 파형 판단에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q07"
+  },
+  {
+    "id": "concept-engine-123",
+    "track": "concept",
+    "subject": "engine",
+    "question": "DPF 재생 상태를 확인할 때 필터 전후 차압 외에 중요한 데이터는 (    )이다.",
+    "choices": [
+      "휠 토 각",
+      "브레이크 패드 두께",
+      "배기온도",
+      "차체 폭"
+    ],
+    "answer": 3,
+    "explanation": "배기온도는 그을음 산화 열 조건을 보여준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-124",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 실제 압력과 목표 압력이 다를 때 압력 센서의 (    ) 이상도 원인 후보이다.",
+    "choices": [
+      "피스톤 직경",
+      "타이어 하중",
+      "스프링 상수",
+      "전기 신호"
+    ],
+    "answer": 4,
+    "explanation": "실제 압력 이상과 측정 이상을 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q10"
+  },
+  {
+    "id": "concept-engine-125",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 보정량 외에 인젝터 내부 누설을 평가하는 측정량은 (    )이다.",
+    "choices": [
+      "리턴 유량",
+      "캠축 회전각",
+      "냉매 과냉각도",
+      "휠 회전수"
+    ],
+    "answer": 1,
+    "explanation": "리턴 유량과 압축 등 다른 자료를 함께 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q12"
+  },
+  {
+    "id": "concept-engine-126",
+    "track": "concept",
+    "subject": "engine",
+    "question": "디젤 압축압력 계측기 연결 위치는 인젝터 홀 또는 지정된 (    ) 경로일 수 있다.",
+    "choices": [
+      "라디에이터 캡",
+      "예열 플러그",
+      "배기 산소 센서",
+      "오일 필터"
+    ],
+    "answer": 2,
+    "explanation": "엔진 구조에 맞는 지정 측정 경로를 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q15"
+  },
+  {
+    "id": "concept-engine-127",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU의 기본 제어 흐름은 센서 입력을 처리하여 (    ) 명령을 생성하는 것이다.",
+    "choices": [
+      "타이어 규격",
+      "배기량",
+      "액추에이터",
+      "차체 색상"
+    ],
+    "answer": 3,
+    "explanation": "ECU는 분사 및 점화 등의 작동기를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q04"
+  },
+  {
+    "id": "concept-engine-128",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 회로의 스위칭 소자가 부하 접지측을 제어하는 방식은 (    )이다.",
+    "choices": [
+      "하이사이드",
+      "무전원",
+      "열전달",
+      "로우사이드"
+    ],
+    "answer": 4,
+    "explanation": "로우사이드는 접지측 경로를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q07"
+  },
+  {
+    "id": "concept-engine-129",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 보정량의 양수·음수 의미는 해당 차종의 (    )을 확인한다.",
+    "choices": [
+      "부호 정의",
+      "휠 사이즈",
+      "냉매 종류",
+      "연료탱크 용량"
+    ],
+    "answer": 1,
+    "explanation": "보정량 부호의 정의는 진단기와 차종에 따라 다를 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q10"
+  },
+  {
+    "id": "concept-engine-130",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU 교환 후 차종에 따라 기존 키 인증과 연계하여 필요한 설정은 (    )이다.",
+    "choices": [
+      "타이어 밸런스",
+      "이모빌라이저 등록",
+      "브레이크 패드 연마",
+      "냉매 충전"
+    ],
+    "answer": 2,
+    "explanation": "코딩·키 등록·학습 필요 여부를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q11"
+  },
+  {
+    "id": "concept-engine-131",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실린더에 삽입한 피스톤 링의 양 끝 사이 간격은 (    )이다.",
+    "choices": [
+      "밸브 리프트",
+      "베어링 축방향 유격",
+      "링 끝간극",
+      "피스톤 행정"
+    ],
+    "answer": 3,
+    "explanation": "링 끝간극은 차종별 지정 한계로 판단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s01-q15"
+  },
+  {
+    "id": "concept-engine-132",
+    "track": "concept",
+    "subject": "engine",
+    "question": "스로틀을 움직일 때 TPS 출력이 끊기지 않고 변하는지 검사하는 특성은 신호의 (    )이다.",
+    "choices": [
+      "회분량",
+      "압축비",
+      "점도",
+      "연속성"
+    ],
+    "answer": 4,
+    "explanation": "개도와 출력의 연속적 대응을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q05"
+  },
+  {
+    "id": "concept-engine-133",
+    "track": "concept",
+    "subject": "engine",
+    "question": "ECU 교환 후 보정값을 다시 형성하는 과정은 (    )이다.",
+    "choices": [
+      "적응값 학습",
+      "오일 여과",
+      "과급기 냉각",
+      "캠축 연마"
+    ],
+    "answer": 1,
+    "explanation": "필요한 초기 학습은 차종별로 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q06"
+  },
+  {
+    "id": "concept-engine-134",
+    "track": "concept",
+    "subject": "engine",
+    "question": "SCV 코일 저항 비교에서 부품번호와 함께 고려할 측정 조건은 (    )이다.",
+    "choices": [
+      "차체 높이",
+      "온도",
+      "타이어 공기압",
+      "휠 밸런스"
+    ],
+    "answer": 2,
+    "explanation": "저항 규격은 온도 등의 지정 조건에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q10"
+  },
+  {
+    "id": "concept-engine-135",
+    "track": "concept",
+    "subject": "engine",
+    "question": "커먼레일 압력이 부족할 때 고압 펌프 이전의 공급 경로는 (    ) 계통이다.",
+    "choices": [
+      "고압 냉매",
+      "브레이크 유압",
+      "저압 연료 공급",
+      "에어 서스펜션"
+    ],
+    "answer": 3,
+    "explanation": "저압 공급 부족이 고압 생성에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q12"
+  },
+  {
+    "id": "concept-engine-136",
+    "track": "concept",
+    "subject": "engine",
+    "question": "정비 중 연료 누출을 발견하면 작업을 중지하고 화재 위험을 높이는 (    )을 통제한다.",
+    "choices": [
+      "휠 정렬",
+      "타이어 공기압",
+      "차고 센서",
+      "점화원"
+    ],
+    "answer": 4,
+    "explanation": "인명 안전과 점화원 통제가 우선이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q14"
+  },
+  {
+    "id": "concept-engine-137",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크축 베어링 캡을 재조립할 때 유지해야 할 정보는 (    )이다.",
+    "choices": [
+      "기존 위치와 방향",
+      "배기 온도",
+      "연료 분사량",
+      "냉매 종류"
+    ],
+    "answer": 1,
+    "explanation": "캡은 지정된 위치·방향·체결 조건을 유지한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q16"
+  },
+  {
+    "id": "concept-engine-138",
+    "track": "concept",
+    "subject": "engine",
+    "question": "일반 디젤 기관에서 연료가 착화되는 기본 원인은 공기의 (    )이다.",
+    "choices": [
+      "점화플러그 불꽃",
+      "압축열",
+      "전기분해",
+      "냉각수 순환"
+    ],
+    "answer": 2,
+    "explanation": "공기를 압축해 온도를 높여 연료를 착화시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s01-q20"
+  },
+  {
+    "id": "concept-engine-139",
+    "track": "concept",
+    "subject": "engine",
+    "question": "인젝터 분무가 불균일할 때 분무구 막힘과 함께 확인할 내부 작동 부품은 (    )이다.",
+    "choices": [
+      "스로틀 플레이트",
+      "피스톤 링",
+      "니들 밸브",
+      "터빈 베인"
+    ],
+    "answer": 3,
+    "explanation": "니들 고착·마모는 분무에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q04"
+  },
+  {
+    "id": "concept-engine-140",
+    "track": "concept",
+    "subject": "engine",
+    "question": "캐니스터에 저장된 증발가스를 흡기로 보내는 제어는 (    )이다.",
+    "choices": [
+      "프리차지",
+      "록업",
+      "감쇠",
+      "퍼지"
+    ],
+    "answer": 4,
+    "explanation": "증발가스는 지정 조건에서 흡기로 보내 연소시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q09"
+  },
+  {
+    "id": "concept-engine-141",
+    "track": "concept",
+    "subject": "engine",
+    "question": "피스톤 링은 기밀·오일 조절 외에 피스톤에서 실린더 벽으로의 (    )에도 관여한다.",
+    "choices": [
+      "열전달",
+      "전압 증폭",
+      "연료 분사",
+      "냉매 감압"
+    ],
+    "answer": 1,
+    "explanation": "링은 피스톤 열을 전달하는 경로다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q10"
+  },
+  {
+    "id": "concept-engine-142",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축압력을 실린더별로 비교할 때 일관되게 유지할 회전 조건은 (    ) 속도이다.",
+    "choices": [
+      "주행",
+      "크랭킹",
+      "캠축 연마",
+      "냉각팬"
+    ],
+    "answer": 2,
+    "explanation": "압축압력은 측정 시 회전속도의 영향을 받는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s01-q20"
+  },
+  {
+    "id": "concept-engine-143",
+    "track": "concept",
+    "subject": "engine",
+    "question": "노킹을 줄이기 위한 대표 점화 제어는 점화시기의 (    )이다.",
+    "choices": [
+      "진각",
+      "영구 고정",
+      "지각",
+      "완전 제거"
+    ],
+    "answer": 3,
+    "explanation": "점화시기를 늦춰 노킹을 억제할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q02"
+  },
+  {
+    "id": "concept-engine-144",
+    "track": "concept",
+    "subject": "engine",
+    "question": "크랭크축 베어링에는 여러 재료의 조합과 (    ) 구조를 사용할 수 있다.",
+    "choices": [
+      "고무 트레드",
+      "활성탄층",
+      "냉매 필터",
+      "다층 코팅"
+    ],
+    "answer": 4,
+    "explanation": "베어링 소재와 코팅은 설계별로 다양하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q10"
+  },
+  {
+    "id": "concept-engine-145",
+    "track": "concept",
+    "subject": "engine",
+    "question": "실화가 계속되면 미연소 연료가 촉매에서 반응하여 촉매의 (    ) 위험을 높인다.",
+    "choices": [
+      "과열",
+      "결빙",
+      "압축비 증가",
+      "공기압 상승"
+    ],
+    "answer": 1,
+    "explanation": "실화와 과도한 발열은 촉매 손상 원인 후보다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q15"
+  },
+  {
+    "id": "concept-engine-146",
+    "track": "concept",
+    "subject": "engine",
+    "question": "엔진오일 교환주기는 주행거리 외에 제작사가 지정한 (    ) 조건을 고려한다.",
+    "choices": [
+      "타이어 회전 방향",
+      "경과 시간",
+      "전조등 조도",
+      "차체 폭"
+    ],
+    "answer": 2,
+    "explanation": "거리·시간과 가혹 운행 조건을 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q16"
+  },
+  {
+    "id": "concept-engine-147",
+    "track": "concept",
+    "subject": "engine",
+    "question": "예열 명령은 정상이나 플러그 전압이 없으면 (    )의 출력을 점검한다.",
+    "choices": [
+      "산소 센서",
+      "휠속도 센서",
+      "예열 릴레이·제어모듈",
+      "냉각수 캡"
+    ],
+    "answer": 3,
+    "explanation": "공급 경로 및 제어모듈 출력을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q20"
+  },
+  {
+    "id": "concept-engine-148",
+    "track": "concept",
+    "subject": "engine",
+    "question": "산소 대비 연료가 과다한 혼합기 상태는 (    )이다.",
+    "choices": [
+      "희박",
+      "무부하",
+      "과냉각",
+      "농후"
+    ],
+    "answer": 4,
+    "explanation": "농후 혼합기는 CO 증가와 관련될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q05"
+  },
+  {
+    "id": "concept-engine-149",
+    "track": "concept",
+    "subject": "engine",
+    "question": "높은 점화 2차 전압 파형 관찰에 사용하는 장비는 정격에 맞는 (    )이다.",
+    "choices": [
+      "측정 프로브",
+      "일반 무정격 전선",
+      "냉각수 호스",
+      "토크 렌치"
+    ],
+    "answer": 1,
+    "explanation": "점화 2차 회로는 지정 절연 측정 픽업이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q12"
+  },
+  {
+    "id": "concept-engine-150",
+    "track": "concept",
+    "subject": "engine",
+    "question": "EGR 재순환량이 부족해 연소온도가 상승하면 (    ) 생성이 늘어날 수 있다.",
+    "choices": [
+      "냉각수",
+      "NOx",
+      "엔진오일",
+      "요소수"
+    ],
+    "answer": 2,
+    "explanation": "고온 연소와 EGR 작동 상태를 함께 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s01-q15"
+  },
+  {
+    "id": "concept-engine-151",
+    "track": "concept",
+    "subject": "engine",
+    "question": "6기통 기관의 전체 배기량 2400cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "2400cm³",
+      "14400cm³",
+      "400cm³",
+      "200cm³"
+    ],
+    "answer": 3,
+    "explanation": "2400÷6=400cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-152",
+    "track": "concept",
+    "subject": "engine",
+    "question": "3기통 기관의 전체 배기량 1500cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "1500cm³",
+      "4500cm³",
+      "250cm³",
+      "500cm³"
+    ],
+    "answer": 4,
+    "explanation": "1500÷3=500cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-153",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4기통 기관의 전체 배기량 2200cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "550cm³",
+      "2200cm³",
+      "8800cm³",
+      "275cm³"
+    ],
+    "answer": 1,
+    "explanation": "2200÷4=550cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-154",
+    "track": "concept",
+    "subject": "engine",
+    "question": "8기통 기관의 전체 배기량 4800cm³에서 실린더당 배기량은 (    )이다.",
+    "choices": [
+      "4800cm³",
+      "600cm³",
+      "38400cm³",
+      "300cm³"
+    ],
+    "answer": 2,
+    "explanation": "4800÷8=600cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-21"
+  },
+  {
+    "id": "concept-engine-155",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 90kPa, 압력비 2일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "90kPa",
+      "45kPa",
+      "180kPa",
+      "270kPa"
+    ],
+    "answer": 3,
+    "explanation": "출구 절대압력=90×2=180kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-156",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 100kPa, 압력비 1.5일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "100kPa",
+      "66.667kPa",
+      "250kPa",
+      "150kPa"
+    ],
+    "answer": 4,
+    "explanation": "출구 절대압력=100×1.5=150kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-157",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 110kPa, 압력비 1.8일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "198kPa",
+      "110kPa",
+      "61.111kPa",
+      "308kPa"
+    ],
+    "answer": 1,
+    "explanation": "출구 절대압력=110×1.8=198kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-158",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축기 입구 절대압력 100kPa, 압력비 2.2일 때 출구 절대압력은 (    )이다.",
+    "choices": [
+      "100kPa",
+      "220kPa",
+      "45.455kPa",
+      "320kPa"
+    ],
+    "answer": 2,
+    "explanation": "출구 절대압력=100×2.2=220kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-22"
+  },
+  {
+    "id": "concept-engine-159",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 98kPa, 과급 게이지압 62kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "36kPa",
+      "62kPa",
+      "160kPa",
+      "98kPa"
+    ],
+    "answer": 3,
+    "explanation": "절대압력=98+62=160kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-160",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 95kPa, 과급 게이지압 45kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "50kPa",
+      "45kPa",
+      "95kPa",
+      "140kPa"
+    ],
+    "answer": 4,
+    "explanation": "절대압력=95+45=140kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-161",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 100kPa, 과급 게이지압 80kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "180kPa",
+      "20kPa",
+      "80kPa",
+      "100kPa"
+    ],
+    "answer": 1,
+    "explanation": "절대압력=100+80=180kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-162",
+    "track": "concept",
+    "subject": "engine",
+    "question": "대기압 92kPa, 과급 게이지압 58kPa일 때 흡기 절대압력은 (    )이다.",
+    "choices": [
+      "34kPa",
+      "150kPa",
+      "58kPa",
+      "92kPa"
+    ],
+    "answer": 2,
+    "explanation": "절대압력=92+58=150kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-23"
+  },
+  {
+    "id": "concept-engine-163",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 10:1, 하사점 전체 체적 500cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "500cm³",
+      "450cm³",
+      "50cm³",
+      "5000cm³"
+    ],
+    "answer": 3,
+    "explanation": "상사점 체적=500÷10=50cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-164",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 12:1, 하사점 전체 체적 720cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "720cm³",
+      "660cm³",
+      "8640cm³",
+      "60cm³"
+    ],
+    "answer": 4,
+    "explanation": "상사점 체적=720÷12=60cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-165",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 8:1, 하사점 전체 체적 600cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "75cm³",
+      "600cm³",
+      "525cm³",
+      "4800cm³"
+    ],
+    "answer": 1,
+    "explanation": "상사점 체적=600÷8=75cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-166",
+    "track": "concept",
+    "subject": "engine",
+    "question": "압축비 11:1, 하사점 전체 체적 660cm³일 때 상사점 체적은 (    )이다.",
+    "choices": [
+      "660cm³",
+      "60cm³",
+      "600cm³",
+      "7260cm³"
+    ],
+    "answer": 2,
+    "explanation": "상사점 체적=660÷11=60cm³이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-24"
+  },
+  {
+    "id": "concept-engine-167",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 4kW, 질량유량 0.08kg/s, 정압비열 1kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.32K",
+      "60K",
+      "50K",
+      "100K"
+    ],
+    "answer": 3,
+    "explanation": "ΔT=4÷(0.08×1)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-168",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 6kW, 질량유량 0.1kg/s, 정압비열 1.2kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.72K",
+      "82K",
+      "100K",
+      "50K"
+    ],
+    "answer": 4,
+    "explanation": "ΔT=6÷(0.1×1.2)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-169",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 2kW, 질량유량 0.04kg/s, 정압비열 1kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "50K",
+      "0.08K",
+      "60K",
+      "100K"
+    ],
+    "answer": 1,
+    "explanation": "ΔT=2÷(0.04×1)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-170",
+    "track": "concept",
+    "subject": "engine",
+    "question": "축일 등을 무시한 정상 냉각기에서 제거 열전달률 3kW, 질량유량 0.05kg/s, 정압비열 1.2kJ/(kg·K)이면 온도 감소량은 (    )이다.",
+    "choices": [
+      "0.18K",
+      "50K",
+      "82K",
+      "100K"
+    ],
+    "answer": 2,
+    "explanation": "ΔT=3÷(0.05×1.2)=50K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-25"
+  },
+  {
+    "id": "concept-engine-171",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 50.08mm, 저널 외경 50mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.08mm",
+      "0.16mm",
+      "0.04mm",
+      "0.02mm"
+    ],
+    "answer": 3,
+    "explanation": "반경 간극=(50.08−50)÷2=0.04mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-172",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 40.06mm, 저널 외경 40mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.06mm",
+      "0.12mm",
+      "0.015mm",
+      "0.03mm"
+    ],
+    "answer": 4,
+    "explanation": "반경 간극=(40.06−40)÷2=0.03mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-173",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 60.1mm, 저널 외경 60mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.05mm",
+      "0.1mm",
+      "0.2mm",
+      "0.025mm"
+    ],
+    "answer": 1,
+    "explanation": "반경 간극=(60.1−60)÷2=0.05mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-174",
+    "track": "concept",
+    "subject": "engine",
+    "question": "베어링 내경 55.12mm, 저널 외경 55mm일 때 반경 간극은 (    )이다.",
+    "choices": [
+      "0.12mm",
+      "0.06mm",
+      "0.24mm",
+      "0.03mm"
+    ],
+    "answer": 2,
+    "explanation": "반경 간극=(55.12−55)÷2=0.06mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-27"
+  },
+  {
+    "id": "concept-engine-175",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 120g/s, EGR 질량 비율 25%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "120g/s",
+      "90g/s",
+      "30g/s",
+      "0.208g/s"
+    ],
+    "answer": 3,
+    "explanation": "재순환 유량=120×25/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-176",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 100g/s, EGR 질량 비율 30%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "100g/s",
+      "70g/s",
+      "0.3g/s",
+      "30g/s"
+    ],
+    "answer": 4,
+    "explanation": "재순환 유량=100×30/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-177",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 150g/s, EGR 질량 비율 20%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "30g/s",
+      "150g/s",
+      "120g/s",
+      "0.133g/s"
+    ],
+    "answer": 1,
+    "explanation": "재순환 유량=150×20/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-178",
+    "track": "concept",
+    "subject": "engine",
+    "question": "전체 혼합기 유량 200g/s, EGR 질량 비율 15%일 때 재순환 유량은 (    )이다.",
+    "choices": [
+      "200g/s",
+      "30g/s",
+      "170g/s",
+      "0.075g/s"
+    ],
+    "answer": 2,
+    "explanation": "재순환 유량=200×15/100=30g/s이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-28"
+  },
+  {
+    "id": "concept-engine-179",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 100mg/s, 출구 30mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "30%",
+      "233.333%",
+      "70%",
+      "100%"
+    ],
+    "answer": 3,
+    "explanation": "저감률=(100−30)÷100×100=70%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-180",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 80mg/s, 출구 20mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "25%",
+      "300%",
+      "100%",
+      "75%"
+    ],
+    "answer": 4,
+    "explanation": "저감률=(80−20)÷80×100=75%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-181",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 120mg/s, 출구 48mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "60%",
+      "40%",
+      "150%",
+      "100%"
+    ],
+    "answer": 1,
+    "explanation": "저감률=(120−48)÷120×100=60%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-182",
+    "track": "concept",
+    "subject": "engine",
+    "question": "가상 SCR 입구 NOx 질량유량 200mg/s, 출구 50mg/s일 때 저감률은 (    )이다.",
+    "choices": [
+      "25%",
+      "75%",
+      "300%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanation": "저감률=(200−50)÷200×100=75%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s01-q19"
+  },
+  {
+    "id": "concept-engine-183",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 60펄스 센서의 출력이 900Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "15rpm",
+      "54000rpm",
+      "900rpm",
+      "1351rpm"
+    ],
+    "answer": 3,
+    "explanation": "rpm=900÷60×60=900이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-184",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 36펄스 센서의 출력이 720Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "20rpm",
+      "25920rpm",
+      "720rpm",
+      "1200rpm"
+    ],
+    "answer": 4,
+    "explanation": "rpm=720÷36×60=1200이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-185",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 24펄스 센서의 출력이 400Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "1000rpm",
+      "16.667rpm",
+      "9600rpm",
+      "400rpm"
+    ],
+    "answer": 1,
+    "explanation": "rpm=400÷24×60=1000이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-186",
+    "track": "concept",
+    "subject": "engine",
+    "question": "회전당 48펄스 센서의 출력이 960Hz이면 회전수는 (    )이다.",
+    "choices": [
+      "20rpm",
+      "1200rpm",
+      "46080rpm",
+      "960rpm"
+    ],
+    "answer": 2,
+    "explanation": "rpm=960÷48×60=1200이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q06"
+  },
+  {
+    "id": "concept-engine-187",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 180MPa, 실제 150MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "20%",
+      "83.333%",
+      "16.667%",
+      "100%"
+    ],
+    "answer": 3,
+    "explanation": "부족률=(180−150)÷180×100=16.667%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-188",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 200MPa, 실제 160MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "25%",
+      "80%",
+      "100%",
+      "20%"
+    ],
+    "answer": 4,
+    "explanation": "부족률=(200−160)÷200×100=20%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-189",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 160MPa, 실제 120MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "25%",
+      "33.333%",
+      "75%",
+      "100%"
+    ],
+    "answer": 1,
+    "explanation": "부족률=(160−120)÷160×100=25%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-190",
+    "track": "concept",
+    "subject": "engine",
+    "question": "목표 레일압 100MPa, 실제 70MPa일 때 목표 대비 부족률은 (    )이다.",
+    "choices": [
+      "42.857%",
+      "30%",
+      "70%",
+      "100%"
+    ],
+    "answer": 2,
+    "explanation": "부족률=(100−70)÷100×100=30%이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s01-q09"
+  },
+  {
+    "id": "concept-engine-191",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 20kPa, 출구 11kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "31kPa",
+      "11kPa",
+      "9kPa",
+      "20kPa"
+    ],
+    "answer": 3,
+    "explanation": "차압=20−11=9kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-192",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 26kPa, 출구 14kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "40kPa",
+      "14kPa",
+      "26kPa",
+      "12kPa"
+    ],
+    "answer": 4,
+    "explanation": "차압=26−14=12kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-193",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 18kPa, 출구 6kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "12kPa",
+      "24kPa",
+      "6kPa",
+      "18kPa"
+    ],
+    "answer": 1,
+    "explanation": "차압=18−6=12kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-194",
+    "track": "concept",
+    "subject": "engine",
+    "question": "같은 기준으로 DPF 입구 30kPa, 출구 20kPa를 측정했다. 필터 전후 차압은 (    )이다.",
+    "choices": [
+      "50kPa",
+      "10kPa",
+      "20kPa",
+      "30kPa"
+    ],
+    "answer": 2,
+    "explanation": "차압=30−20=10kPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q09"
+  },
+  {
+    "id": "concept-engine-195",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.4mm, 목표 0.25mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.4mm",
+      "0.25mm",
+      "0.15mm",
+      "0.65mm"
+    ],
+    "answer": 3,
+    "explanation": "간극을 0.15mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-196",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.3mm, 목표 0.2mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.3mm",
+      "0.2mm",
+      "0.5mm",
+      "0.1mm"
+    ],
+    "answer": 4,
+    "explanation": "간극을 0.1mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-197",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.35mm, 목표 0.15mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.2mm",
+      "0.35mm",
+      "0.15mm",
+      "0.5mm"
+    ],
+    "answer": 1,
+    "explanation": "간극을 0.2mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-198",
+    "track": "concept",
+    "subject": "engine",
+    "question": "직접 접촉식 심 구조에서 측정 간극 0.45mm, 목표 0.3mm일 때 심 두께 증가량은 (    )이다.",
+    "choices": [
+      "0.45mm",
+      "0.15mm",
+      "0.3mm",
+      "0.75mm"
+    ],
+    "answer": 2,
+    "explanation": "간극을 0.15mm 줄이기 위해 심을 그만큼 두껍게 하는 계산이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s01-q02"
+  },
+  {
+    "id": "concept-engine-199",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 6기통 기관에서 크랭크축 회전수가 3000rpm일 때 캠축 회전수는 (    )이다.",
+    "choices": [
+      "3000rpm",
+      "6000rpm",
+      "1500rpm",
+      "750rpm"
+    ],
+    "answer": 3,
+    "explanation": "캠축은 크랭크축 절반 속도인 1500rpm으로 회전한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-engine-200",
+    "track": "concept",
+    "subject": "engine",
+    "question": "4행정 4기통 기관에서 크랭크축 회전수가 3600rpm일 때 캠축 회전수는 (    )이다.",
+    "choices": [
+      "3600rpm",
+      "7200rpm",
+      "900rpm",
+      "1800rpm"
+    ],
+    "answer": 4,
+    "explanation": "캠축은 크랭크축 절반 속도인 1800rpm으로 회전한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-engine-08"
+  },
+  {
+    "id": "concept-chassis-101",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상적인 밀폐 유압 회로에서 외부에서 가한 압력이 유체 전체에 전달되는 원리는 (    )이다.",
+    "choices": [
+      "파스칼의 원리",
+      "베르누이의 원리",
+      "렌츠의 법칙",
+      "옴의 법칙"
+    ],
+    "answer": 1,
+    "explanation": "마스터 실린더 압력은 브레이크액을 통해 전달된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-01"
+  },
+  {
+    "id": "concept-chassis-102",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차량 정면에서 타이어 윗부분이 차체 안쪽으로 기울어진 정렬은 (    )이다.",
+    "choices": [
+      "포지티브 캠버",
+      "네거티브 캠버",
+      "토인",
+      "토아웃"
+    ],
+    "answer": 2,
+    "explanation": "캠버는 정면에서 본 바퀴의 기울기다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-08"
+  },
+  {
+    "id": "concept-chassis-103",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "양쪽 바퀴 앞쪽 사이 간격이 뒤쪽보다 넓은 정렬은 (    )이다.",
+    "choices": [
+      "토인",
+      "포지티브 캐스터",
+      "토아웃",
+      "네거티브 캠버"
+    ],
+    "answer": 3,
+    "explanation": "토는 위에서 본 좌우 바퀴의 진행 방향 관계다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-09"
+  },
+  {
+    "id": "concept-chassis-104",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "측면에서 조향축의 윗부분이 뒤쪽으로 기울어진 상태는 (    )이다.",
+    "choices": [
+      "네거티브 캐스터",
+      "포지티브 캠버",
+      "토인",
+      "포지티브 캐스터"
+    ],
+    "answer": 4,
+    "explanation": "양의 캐스터는 직진 안정성과 자기복원 성향에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-10"
+  },
+  {
+    "id": "concept-chassis-105",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스프링이 변형될 때 일시적으로 저장하는 에너지는 (    )이다.",
+    "choices": [
+      "탄성 위치에너지",
+      "전기에너지",
+      "화학에너지",
+      "열전달률"
+    ],
+    "answer": 1,
+    "explanation": "스프링은 탄성 에너지를 저장하고 돌려준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-12"
+  },
+  {
+    "id": "concept-chassis-106",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스태빌라이저 바는 좌우 바퀴의 상대 변위에 의해 주로 (    ) 변형된다.",
+    "choices": [
+      "인장만",
+      "비틀림",
+      "압축만",
+      "열팽창만"
+    ],
+    "answer": 2,
+    "explanation": "좌우 현가 운동이 다를 때 바의 비틀림 저항이 차체 롤을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-13"
+  },
+  {
+    "id": "concept-chassis-107",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "휠 밸런스에서 질량 분포의 불균형을 보정하는 부품은 (    )이다.",
+    "choices": [
+      "휠 베어링",
+      "스프링 시트",
+      "밸런스 웨이트",
+      "브레이크 슈"
+    ],
+    "answer": 3,
+    "explanation": "웨이트로 회전 질량의 불균형을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-14"
+  },
+  {
+    "id": "concept-chassis-108",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "타이어 트레드 홈은 빗길에서 (    )을 배출하는 데 기여한다.",
+    "choices": [
+      "브레이크액",
+      "냉매",
+      "ATF",
+      "물"
+    ],
+    "answer": 4,
+    "explanation": "물 배출 능력 저하는 수막현상 위험을 높인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-16"
+  },
+  {
+    "id": "concept-chassis-109",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "엔진과 변속기 사이 클러치가 완전히 분리되면 엔진 토크 전달은 (    )된다.",
+    "choices": [
+      "차단",
+      "증폭",
+      "항상 일정",
+      "반전"
+    ],
+    "answer": 1,
+    "explanation": "클러치 분리는 변속이나 정차를 돕는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-18"
+  },
+  {
+    "id": "concept-chassis-110",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "간헐적 ABS 휠속도 오류가 나타날 때 센서 자체 외에 회전 신호원과 (    )를 비교한다.",
+    "choices": [
+      "브레이크액 색상",
+      "배선",
+      "ATF 규격",
+      "타이어 브랜드"
+    ],
+    "answer": 2,
+    "explanation": "센서·엔코더·배선의 신호를 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q02"
+  },
+  {
+    "id": "concept-chassis-111",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "솔레노이드 코일 저항을 규정과 비교할 때 부품별 조건 외에 고려할 물리량은 (    )이다.",
+    "choices": [
+      "차체 폭",
+      "타이어 트레드",
+      "온도",
+      "차량 색상"
+    ],
+    "answer": 3,
+    "explanation": "코일 저항은 측정 온도에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q03"
+  },
+  {
+    "id": "concept-chassis-112",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 보조력 저하와 저전압 코드가 함께 발생하면 제어기의 (    ) 품질을 확인한다.",
+    "choices": [
+      "차고",
+      "브레이크액",
+      "타이어 정렬",
+      "공급전원"
+    ],
+    "answer": 4,
+    "explanation": "전원·접지와 충전 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q04"
+  },
+  {
+    "id": "concept-chassis-113",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가압된 유압 현가계의 누설 정비 전 관리해야 할 위험 에너지는 회로의 (    )이다.",
+    "choices": [
+      "잔압",
+      "휠속도",
+      "조향각",
+      "캠버"
+    ],
+    "answer": 1,
+    "explanation": "잔류 압력은 지정 안전 절차로 관리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q06"
+  },
+  {
+    "id": "concept-chassis-114",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "반능동 전자제어 현가장치의 가변 댐퍼가 조절하는 주요 물리량은 (    )이다.",
+    "choices": [
+      "타이어 직경",
+      "감쇠계수",
+      "차축 길이",
+      "종감속비"
+    ],
+    "answer": 2,
+    "explanation": "가변 댐퍼는 감쇠 특성을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q10"
+  },
+  {
+    "id": "concept-chassis-115",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향각 센서가 직진 기준을 올바르게 표시하도록 조정하는 작업은 (    )이다.",
+    "choices": [
+      "휠 밸런스",
+      "브레이크 공기빼기",
+      "영점 보정",
+      "ATF 교환"
+    ],
+    "answer": 3,
+    "explanation": "제작사 지정 직진 기준과 센서 보정 절차를 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q14"
+  },
+  {
+    "id": "concept-chassis-116",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 전원과 접지가 정상인데 제어기 통신이 불가능할 때 확인할 회로는 (    )이다.",
+    "choices": [
+      "브레이크 유압관",
+      "에어스프링 배관",
+      "변속기 오일관",
+      "통신 배선"
+    ],
+    "answer": 4,
+    "explanation": "통신 경로와 관련 제어기를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s02-q16"
+  },
+  {
+    "id": "concept-chassis-117",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 변속충격이 발생할 때 실제 변속 반응과 비교하는 전기적 구동 요소는 (    )이다.",
+    "choices": [
+      "솔레노이드 제어",
+      "조향각 영점",
+      "휠 밸런스",
+      "캠버 보정"
+    ],
+    "answer": 1,
+    "explanation": "유압·ATF와 솔레노이드 제어를 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q04"
+  },
+  {
+    "id": "concept-chassis-118",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "유압 현가 압력이 부족할 때 유체 부족 및 누설과 함께 검토할 압력 생성 요소는 (    )이다.",
+    "choices": [
+      "차동 기어",
+      "유압 펌프",
+      "조향각 센서",
+      "브레이크 디스크"
+    ],
+    "answer": 2,
+    "explanation": "유체 공급과 실제 유압을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q06"
+  },
+  {
+    "id": "concept-chassis-119",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가 수리 후 체결 토크 외에 차량별 센서 (    ) 필요 여부를 확인한다.",
+    "choices": [
+      "정류",
+      "연료 분사",
+      "보정",
+      "냉매 충전"
+    ],
+    "answer": 3,
+    "explanation": "수리 후 작동시험과 필요한 센서 보정을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q12"
+  },
+  {
+    "id": "concept-chassis-120",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자제어 조향장치에서 기계적 헐거움이 의심될 때 스캔 검사와 구별하여 확인할 것은 (    )이다.",
+    "choices": [
+      "냉매 압력",
+      "CAN 식별자",
+      "배터리 SOC",
+      "조향 유격"
+    ],
+    "answer": 4,
+    "explanation": "기계적 유격은 실물 점검이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s02-q19"
+  },
+  {
+    "id": "concept-chassis-121",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가 액추에이터가 명령에 반응하지 않으면 전기회로와 별도로 (    )의 작동 여부를 확인한다.",
+    "choices": [
+      "기계 구동부",
+      "연료분사기",
+      "촉매",
+      "냉각수 캡"
+    ],
+    "answer": 1,
+    "explanation": "전기 입력과 기계 작동 이상을 분리한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q11"
+  },
+  {
+    "id": "concept-chassis-122",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 모터 전류를 비교할 때 차량 지정 규격과 (    )이 같은 상태인지 확인한다.",
+    "choices": [
+      "차량 색상",
+      "동작 조건",
+      "운전자 신장",
+      "냉매 종류"
+    ],
+    "answer": 2,
+    "explanation": "전류는 조향 부하와 운전 조건에 영향을 받는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q14"
+  },
+  {
+    "id": "concept-chassis-123",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 보조력이 약해졌을 때 전원·모터 문제 외에 조향계의 (    ) 원인도 확인한다.",
+    "choices": [
+      "냉매 과충전",
+      "배기 농후",
+      "기계적 저항",
+      "연료 분무"
+    ],
+    "answer": 3,
+    "explanation": "전자 제어 원인과 기계적 걸림 등을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q16"
+  },
+  {
+    "id": "concept-chassis-124",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS와 ESC가 차량 상태 정보를 서로 전달할 때 사용하는 연결 수단은 (    )이다.",
+    "choices": [
+      "연료 레일",
+      "냉매 고압관",
+      "브레이크 디스크",
+      "차량 통신망"
+    ],
+    "answer": 4,
+    "explanation": "네트워크는 제어기 간 정보 공유를 지원한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q18"
+  },
+  {
+    "id": "concept-chassis-125",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 라인압이 낮을 때 펌프·내부 누설과 함께 점검할 압력 제어 부품은 (    )이다.",
+    "choices": [
+      "압력 조절밸브",
+      "조향각 센서",
+      "타이어 비드",
+      "드럼 라이닝"
+    ],
+    "answer": 1,
+    "explanation": "라인압 저하는 공급·제어·누설 원인을 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q02"
+  },
+  {
+    "id": "concept-chassis-126",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터 스테이터의 기본 역할은 유체 흐름의 (    )을 바꾸는 것이다.",
+    "choices": [
+      "전압",
+      "방향",
+      "온도만",
+      "주파수"
+    ],
+    "answer": 2,
+    "explanation": "스테이터는 환류 유체의 방향을 바꾸어 토크 증대에 기여한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q03"
+  },
+  {
+    "id": "concept-chassis-127",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "휠속도 신호가 소실되면 센서 교환에 앞서 접속부인 (    )를 점검한다.",
+    "choices": [
+      "스프링 시트",
+      "브레이크 드럼",
+      "커넥터",
+      "휠 림"
+    ],
+    "answer": 3,
+    "explanation": "센서 신호 경로와 커넥터 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q07"
+  },
+  {
+    "id": "concept-chassis-128",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "현가장치에서 스프링과 달리 유압 댐퍼가 운동에너지를 주로 변환하는 에너지 형태는 (    )이다.",
+    "choices": [
+      "열에너지",
+      "화학에너지",
+      "전기에너지",
+      "탄성 위치에너지"
+    ],
+    "answer": 1,
+    "explanation": "댐퍼는 작동유 유동 저항 등으로 기계적 진동 에너지를 주로 열로 소산시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q08"
+  },
+  {
+    "id": "concept-chassis-129",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "주차 중 한쪽만 차고가 내려가는 공기 현가에서 에어라인과 밸브 외에 누설을 확인할 부품은 (    )이다.",
+    "choices": [
+      "에어스프링 벨로스",
+      "조향 랙",
+      "브레이크 캘리퍼",
+      "록업 클러치"
+    ],
+    "answer": 1,
+    "explanation": "벨로스의 손상은 공압 누설의 원인 후보이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q19"
+  },
+  {
+    "id": "concept-chassis-130",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "변속기 오일팬 볼트를 조립할 때 한쪽만 강하게 조이지 않고 지정 (    )을 균일하게 적용한다.",
+    "choices": [
+      "타이어 공기압",
+      "단계별 체결 토크",
+      "연료 압력",
+      "캐스터 각"
+    ],
+    "answer": 2,
+    "explanation": "균일한 단계별 체결은 밀봉과 변형 관리에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q04"
+  },
+  {
+    "id": "concept-chassis-131",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "스톨 시험에서 변속기 과열 등을 방지하기 위해 특히 제한하는 것은 (    )이다.",
+    "choices": [
+      "차체 폭",
+      "타이어 규격",
+      "시험 지속시간",
+      "연료 옥탄가"
+    ],
+    "answer": 3,
+    "explanation": "제작사 안전 조건과 짧은 규정시간을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q05"
+  },
+  {
+    "id": "concept-chassis-132",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS 유압 제어에서 휠의 잠김 경향이 해소된 후 제동력을 다시 증가시키는 단계는 (    )이다.",
+    "choices": [
+      "증압",
+      "감압",
+      "유지",
+      "배기"
+    ],
+    "answer": 1,
+    "explanation": "ABS는 바퀴의 회전 상태에 따라 감압·유지·증압을 반복 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q14"
+  },
+  {
+    "id": "concept-chassis-133",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자댐퍼 단선 코드에서 실제 회로 단선 여부를 확인할 대상은 (    )이다.",
+    "choices": [
+      "하네스",
+      "댐퍼 외부 도장",
+      "스프링 길이",
+      "타이어 트레드"
+    ],
+    "answer": 1,
+    "explanation": "배선과 커넥터·구동 코일을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s02-q17"
+  },
+  {
+    "id": "concept-chassis-134",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "특정 변속단에서만 큰 충격이 발생하면 공통 원인 외에 해당 단의 유압 (    ) 계통을 검토한다.",
+    "choices": [
+      "냉매 증발",
+      "완충",
+      "휠 속도",
+      "조향 복원"
+    ],
+    "answer": 2,
+    "explanation": "해당 변속단의 압력 제어와 충격 완화 계통을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q02"
+  },
+  {
+    "id": "concept-chassis-135",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기 변속 시점 진단에서 가속 요구와 차속 외에 ATF의 (    )를 비교한다.",
+    "choices": [
+      "색상만",
+      "브랜드만",
+      "온도",
+      "부피만"
+    ],
+    "answer": 3,
+    "explanation": "유온은 변속 제어와 유체 특성에 영향을 준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q05"
+  },
+  {
+    "id": "concept-chassis-136",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자 현가 센서 이상 시 제어기가 보호 목적으로 취할 수 있는 조치는 (    )이다.",
+    "choices": [
+      "감쇠력 무한 증가",
+      "차량 높이 무한 증가",
+      "무조건 정상 판정",
+      "제어 기능 제한"
+    ],
+    "answer": 4,
+    "explanation": "센서 고장으로 기능 제한이나 DTC가 발생할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q07"
+  },
+  {
+    "id": "concept-chassis-137",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 작동 시 소음의 원인을 확인할 때 모터와 장착부 외에 회전력 전달 부품인 (    )를 점검한다.",
+    "choices": [
+      "감속기",
+      "연료펌프",
+      "EGR 밸브",
+      "증발기"
+    ],
+    "answer": 1,
+    "explanation": "보조 모터의 감속 기구와 장착부를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q12"
+  },
+  {
+    "id": "concept-chassis-138",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "차고 센서 교환 후 표시 높이가 실제와 다르면 센서 장착 상태와 (    )을 확인한다.",
+    "choices": [
+      "타이어 밸런스",
+      "높이 기준 보정",
+      "냉매 보충",
+      "연료 분사 보정"
+    ],
+    "answer": 2,
+    "explanation": "장착 및 차량 지정 높이 보정 절차를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q20"
+  },
+  {
+    "id": "concept-chassis-139",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "토크 컨버터와 변속기를 엔진에 결합하기 전 컨버터의 (    ) 상태를 확인한다.",
+    "choices": [
+      "반쯤 삽입",
+      "외부 도장",
+      "완전 삽입",
+      "유리 투과율"
+    ],
+    "answer": 3,
+    "explanation": "차량별 결합 절차에 맞춰 컨버터의 삽입 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q03"
+  },
+  {
+    "id": "concept-chassis-140",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "EPS 토크 입력과 모터 구동 데이터를 비교하는 것은 명령에 대한 실제 (    )을 평가하기 위해서다.",
+    "choices": [
+      "냉매 응축",
+      "연료 분사",
+      "배터리 충전량",
+      "보조력 반응"
+    ],
+    "answer": 4,
+    "explanation": "조향 입력과 전동 모터 응답의 관계를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q08"
+  },
+  {
+    "id": "concept-chassis-141",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "얼라인먼트 후 센서의 영점이 자동 보정되었다고 단정하지 말고 (    )을 확인한다.",
+    "choices": [
+      "차종별 보정 절차",
+      "냉매 압력표",
+      "배출가스 성적표",
+      "오일 점도표"
+    ],
+    "answer": 1,
+    "explanation": "차량마다 조향각 영점 절차가 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q10"
+  },
+  {
+    "id": "concept-chassis-142",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "자동변속기의 실제 라인압을 계측하는 대표 계기는 (    )이다.",
+    "choices": [
+      "스파크 테스터",
+      "유압 게이지",
+      "청진기",
+      "조도계"
+    ],
+    "answer": 2,
+    "explanation": "제조사 지정 측정점과 조건에 맞춰 실제 유압을 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q16"
+  },
+  {
+    "id": "concept-chassis-143",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "전자 현가 검사에서는 댐퍼의 제어 명령과 실제 차체 (    )을 비교한다.",
+    "choices": [
+      "배기 조성",
+      "연료 소비만",
+      "거동",
+      "전조등 밝기"
+    ],
+    "answer": 3,
+    "explanation": "차고·감쇠 명령과 차량 반응을 함께 살핀다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q07"
+  },
+  {
+    "id": "concept-chassis-144",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS ECU가 다른 제어기와 데이터를 주고받는 대표 차량 통신 방식은 (    )이다.",
+    "choices": [
+      "유압",
+      "공압",
+      "기계 케이블",
+      "CAN"
+    ],
+    "answer": 4,
+    "explanation": "CAN 등의 통신망을 통해 제어기 정보를 공유한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q12"
+  },
+  {
+    "id": "concept-chassis-145",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ATF에서 금속입자를 발견하면 변속기 내부 외에 오일라인과 (    )의 오염도 확인한다.",
+    "choices": [
+      "토크 컨버터",
+      "히터 코어",
+      "라디에이터 팬",
+      "타이어 밸브"
+    ],
+    "answer": 1,
+    "explanation": "오염물은 연결된 변속기 유체 계통을 따라 이동할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s02-q20"
+  },
+  {
+    "id": "concept-chassis-146",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ATF의 실제 점도를 정확히 평가하려면 스캔 데이터가 아닌 (    )이 필요하다.",
+    "choices": [
+      "조향각 학습",
+      "물성시험",
+      "ABS 코딩",
+      "타이어 균형"
+    ],
+    "answer": 2,
+    "explanation": "오일 물성은 별도의 시험으로 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q01"
+  },
+  {
+    "id": "concept-chassis-147",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "ABS 톤링을 교환할 때 일체형 구조인지 여부를 확인하는 관련 회전부품은 (    )이다.",
+    "choices": [
+      "브레이크 페달",
+      "변속기 레버",
+      "휠 베어링",
+      "스태빌라이저 바"
+    ],
+    "answer": 3,
+    "explanation": "센서 신호원은 베어링 등에 일체화될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q12"
+  },
+  {
+    "id": "concept-chassis-148",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "댐퍼 장착 방향은 외형만 보고 결정하지 않고 (    )을 확인한다.",
+    "choices": [
+      "오일 브랜드",
+      "차량 도장색",
+      "타이어 제조일",
+      "제작사 정비지침"
+    ],
+    "answer": 4,
+    "explanation": "댐퍼 장착 방향은 차량 설계에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q13"
+  },
+  {
+    "id": "concept-chassis-149",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 2cm², 출력 면적 8cm², 출력력 480N일 때 입력력은 (    )이다.",
+    "choices": [
+      "120N",
+      "480N",
+      "30N",
+      "240N"
+    ],
+    "answer": 1,
+    "explanation": "F입력=F출력×A입력/A출력=120N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-150",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 3cm², 출력 면적 15cm², 출력력 750N일 때 입력력은 (    )이다.",
+    "choices": [
+      "750N",
+      "150N",
+      "30N",
+      "300N"
+    ],
+    "answer": 2,
+    "explanation": "F입력=F출력×A입력/A출력=150N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-151",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 4cm², 출력 면적 12cm², 출력력 300N일 때 입력력은 (    )이다.",
+    "choices": [
+      "300N",
+      "33.333N",
+      "100N",
+      "200N"
+    ],
+    "answer": 3,
+    "explanation": "F입력=F출력×A입력/A출력=100N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-152",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 유압 장치에서 입력 면적 5cm², 출력 면적 20cm², 출력력 800N일 때 입력력은 (    )이다.",
+    "choices": [
+      "800N",
+      "50N",
+      "400N",
+      "200N"
+    ],
+    "answer": 4,
+    "explanation": "F입력=F출력×A입력/A출력=200N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-21"
+  },
+  {
+    "id": "concept-chassis-153",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 18000N/m, 압축량 0.02m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "360N",
+      "900000N",
+      "180N",
+      "18000.02N"
+    ],
+    "answer": 1,
+    "explanation": "F=kx=18000×0.02=360N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-154",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 24000N/m, 압축량 0.025m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "960000N",
+      "600N",
+      "300N",
+      "24000.025N"
+    ],
+    "answer": 2,
+    "explanation": "F=kx=24000×0.025=600N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-155",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 30000N/m, 압축량 0.015m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "2000000N",
+      "225N",
+      "450N",
+      "30000.015N"
+    ],
+    "answer": 3,
+    "explanation": "F=kx=30000×0.015=450N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-156",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 12000N/m, 압축량 0.03m일 때 필요한 힘의 크기는 (    )이다.",
+    "choices": [
+      "400000N",
+      "180N",
+      "12000.03N",
+      "360N"
+    ],
+    "answer": 4,
+    "explanation": "F=kx=12000×0.03=360N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-157",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 20000N/m에 500N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "25mm",
+      "0.025mm",
+      "10000mm",
+      "2.5mm"
+    ],
+    "answer": 1,
+    "explanation": "x=F/k=0.025m=25mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-158",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 30000N/m에 600N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.02mm",
+      "20mm",
+      "18000mm",
+      "2mm"
+    ],
+    "answer": 2,
+    "explanation": "x=F/k=0.02m=20mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-159",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 15000N/m에 450N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.03mm",
+      "6750mm",
+      "30mm",
+      "3mm"
+    ],
+    "answer": 3,
+    "explanation": "x=F/k=0.03m=30mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-160",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 스프링 상수 25000N/m에 1000N을 가했을 때 변위는 (    )이다.",
+    "choices": [
+      "0.04mm",
+      "25000mm",
+      "4mm",
+      "40mm"
+    ],
+    "answer": 4,
+    "explanation": "x=F/k=0.04m=40mm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-22"
+  },
+  {
+    "id": "concept-chassis-161",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2m, 차량 속력 72km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "10회/s",
+      "36회/s",
+      "20회/s",
+      "144회/s"
+    ],
+    "answer": 1,
+    "explanation": "초당 회전수=72÷3.6÷2=10이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-162",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 1.8m, 차량 속력 54km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "30회/s",
+      "8.333회/s",
+      "15회/s",
+      "97.2회/s"
+    ],
+    "answer": 2,
+    "explanation": "초당 회전수=54÷3.6÷1.8=8.333이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-163",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2.5m, 차량 속력 90km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "36회/s",
+      "25회/s",
+      "10회/s",
+      "225회/s"
+    ],
+    "answer": 3,
+    "explanation": "초당 회전수=90÷3.6÷2.5=10이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-164",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "미끄럼이 없는 바퀴의 유효 구름둘레 2m, 차량 속력 36km/h일 때 초당 회전수는 (    )이다.",
+    "choices": [
+      "18회/s",
+      "10회/s",
+      "72회/s",
+      "5회/s"
+    ],
+    "answer": 4,
+    "explanation": "초당 회전수=36÷3.6÷2=5이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-23"
+  },
+  {
+    "id": "concept-chassis-165",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 3000rpm, 입력/출력 회전수 비 5:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "600rpm",
+      "15000rpm",
+      "3000rpm",
+      "300rpm"
+    ],
+    "answer": 1,
+    "explanation": "출력 회전수=3000÷5=600rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-166",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 2400rpm, 입력/출력 회전수 비 3:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "7200rpm",
+      "800rpm",
+      "2400rpm",
+      "400rpm"
+    ],
+    "answer": 2,
+    "explanation": "출력 회전수=2400÷3=800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-167",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 1800rpm, 입력/출력 회전수 비 2:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "3600rpm",
+      "1800rpm",
+      "900rpm",
+      "450rpm"
+    ],
+    "answer": 3,
+    "explanation": "출력 회전수=1800÷2=900rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-168",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "입력축 회전수 3200rpm, 입력/출력 회전수 비 4:1이면 출력축은 (    )으로 회전한다.",
+    "choices": [
+      "12800rpm",
+      "3200rpm",
+      "400rpm",
+      "800rpm"
+    ],
+    "answer": 4,
+    "explanation": "출력 회전수=3200÷4=800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-24"
+  },
+  {
+    "id": "concept-chassis-169",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 2000rpm, 슬립률 10%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "1800rpm",
+      "200rpm",
+      "2000rpm",
+      "2200rpm"
+    ],
+    "answer": 1,
+    "explanation": "실제 회전수=2000×(1−10/100)=1800rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-170",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 2500rpm, 슬립률 20%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "500rpm",
+      "2000rpm",
+      "2500rpm",
+      "3000rpm"
+    ],
+    "answer": 2,
+    "explanation": "실제 회전수=2500×(1−20/100)=2000rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-171",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 3000rpm, 슬립률 5%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "150rpm",
+      "3000rpm",
+      "2850rpm",
+      "3150rpm"
+    ],
+    "answer": 3,
+    "explanation": "실제 회전수=3000×(1−5/100)=2850rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-172",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "슬립률을 기준 대비 회전수 감소율로 정의한다. 기준 1800rpm, 슬립률 25%일 때 실제 회전수는 (    )이다.",
+    "choices": [
+      "450rpm",
+      "1800rpm",
+      "2250rpm",
+      "1350rpm"
+    ],
+    "answer": 4,
+    "explanation": "실제 회전수=1800×(1−25/100)=1350rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-25"
+  },
+  {
+    "id": "concept-chassis-173",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.2m에 수직으로 힘을 가해 8N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "40N",
+      "1.6N",
+      "8N",
+      "20N"
+    ],
+    "answer": 1,
+    "explanation": "F=T/r=8÷0.2=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-174",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.25m에 수직으로 힘을 가해 10N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "2.5N",
+      "40N",
+      "10N",
+      "20N"
+    ],
+    "answer": 2,
+    "explanation": "F=T/r=10÷0.25=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-175",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.15m에 수직으로 힘을 가해 6N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "0.9N",
+      "6N",
+      "40N",
+      "20N"
+    ],
+    "answer": 3,
+    "explanation": "F=T/r=6÷0.15=40N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-176",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "조향휠 반지름 0.18m에 수직으로 힘을 가해 9N·m 토크를 얻을 때 힘은 (    )이다.",
+    "choices": [
+      "1.62N",
+      "9N",
+      "25N",
+      "50N"
+    ],
+    "answer": 4,
+    "explanation": "F=T/r=9÷0.18=50N이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-chassis-26"
+  },
+  {
+    "id": "concept-chassis-177",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.15°, 전체 토 0.2°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.05°",
+      "0.35°",
+      "0.15°",
+      "0.2°"
+    ],
+    "answer": 1,
+    "explanation": "우측 토=전체 토−좌측 토=0.2−(0.15)=0.05°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-178",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 -0.1°, 전체 토 0.05°이면 우측 토는 (    )이다.",
+    "choices": [
+      "-0.05°",
+      "0.15°",
+      "-0.1°",
+      "0.05°"
+    ],
+    "answer": 2,
+    "explanation": "우측 토=전체 토−좌측 토=0.05−(-0.1)=0.15°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-179",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.08°, 전체 토 -0.02°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.06°",
+      "0.08°",
+      "-0.1°",
+      "-0.02°"
+    ],
+    "answer": 3,
+    "explanation": "우측 토=전체 토−좌측 토=-0.02−(0.08)=-0.1°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-180",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "동일 부호 기준 좌측 토 0.12°, 전체 토 0°이면 우측 토는 (    )이다.",
+    "choices": [
+      "0.12°",
+      "0°",
+      "0.82°",
+      "-0.12°"
+    ],
+    "answer": 4,
+    "explanation": "우측 토=전체 토−좌측 토=0−(0.12)=-0.12°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s02-q09"
+  },
+  {
+    "id": "concept-chassis-181",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 48펄스인 휠 센서에서 240Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "300rpm",
+      "240rpm",
+      "2880rpm",
+      "5rpm"
+    ],
+    "answer": 1,
+    "explanation": "회전수=240÷48×60=300rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-182",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 36펄스인 휠 센서에서 180Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "180rpm",
+      "300rpm",
+      "2160rpm",
+      "5rpm"
+    ],
+    "answer": 2,
+    "explanation": "회전수=180÷36×60=300rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-183",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 40펄스인 휠 센서에서 320Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "320rpm",
+      "2400rpm",
+      "480rpm",
+      "8rpm"
+    ],
+    "answer": 3,
+    "explanation": "회전수=320÷40×60=480rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-184",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "회전당 50펄스인 휠 센서에서 500Hz 신호를 얻었을 때 바퀴 회전수는 (    )이다.",
+    "choices": [
+      "500rpm",
+      "3000rpm",
+      "10rpm",
+      "600rpm"
+    ],
+    "answer": 4,
+    "explanation": "회전수=500÷50×60=600rpm이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s02-q04"
+  },
+  {
+    "id": "concept-chassis-185",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 400N, 운동 속도 0.2m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "2000N·s/m",
+      "80N·s/m",
+      "400N·s/m",
+      "0.001N·s/m"
+    ],
+    "answer": 1,
+    "explanation": "c=F/v=400÷0.2=2000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-186",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 750N, 운동 속도 0.25m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "3000N·s/m",
+      "187.5N·s/m",
+      "750N·s/m",
+      "0.000333N·s/m"
+    ],
+    "answer": 1,
+    "explanation": "c=F/v=750÷0.25=3000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-187",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 1000N, 운동 속도 0.5m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "500N·s/m",
+      "1000N·s/m",
+      "2000N·s/m",
+      "0.001N·s/m"
+    ],
+    "answer": 3,
+    "explanation": "c=F/v=1000÷0.5=2000N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-188",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "선형 댐퍼의 감쇠력 900N, 운동 속도 0.6m/s일 때 감쇠계수는 (    )이다.",
+    "choices": [
+      "540N·s/m",
+      "900N·s/m",
+      "0.001N·s/m",
+      "1500N·s/m"
+    ],
+    "answer": 4,
+    "explanation": "c=F/v=900÷0.6=1500N·s/m이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s02-q09"
+  },
+  {
+    "id": "concept-chassis-189",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 250kPa 유효압력에서 5000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "200cm²",
+      "20cm²",
+      "2000cm²",
+      "250cm²"
+    ],
+    "answer": 1,
+    "explanation": "A=F/P=0.02m²=200cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-190",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 400kPa 유효압력에서 6000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "15cm²",
+      "150cm²",
+      "1500cm²",
+      "400cm²"
+    ],
+    "answer": 2,
+    "explanation": "A=F/P=0.015m²=150cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-191",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 350kPa 유효압력에서 10500N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "30cm²",
+      "3000cm²",
+      "300cm²",
+      "350cm²"
+    ],
+    "answer": 3,
+    "explanation": "A=F/P=0.03m²=300cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-192",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "이상 공기스프링이 500kPa 유효압력에서 5000N을 지지할 때 유효 면적은 (    )이다.",
+    "choices": [
+      "10cm²",
+      "1000cm²",
+      "500cm²",
+      "100cm²"
+    ],
+    "answer": 4,
+    "explanation": "A=F/P=0.01m²=100cm²이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s02-q09"
+  },
+  {
+    "id": "concept-chassis-193",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 12V에서 소비전력 360W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "30A",
+      "360A",
+      "0.4A",
+      "60A"
+    ],
+    "answer": 1,
+    "explanation": "I=P/V=360÷12=30A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-194",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 24V에서 소비전력 240W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "240A",
+      "10A",
+      "2.4A",
+      "20A"
+    ],
+    "answer": 2,
+    "explanation": "I=P/V=240÷24=10A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-195",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 12V에서 소비전력 540W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "540A",
+      "0.267A",
+      "45A",
+      "90A"
+    ],
+    "answer": 3,
+    "explanation": "I=P/V=540÷12=45A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-196",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "가상 EPS 전원 48V에서 소비전력 720W일 때 회로 전류는 (    )이다.",
+    "choices": [
+      "720A",
+      "3.2A",
+      "30A",
+      "15A"
+    ],
+    "answer": 4,
+    "explanation": "I=P/V=720÷48=15A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q09"
+  },
+  {
+    "id": "concept-chassis-197",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 8°, 오프셋 3°이면 보정각은 (    )이다.",
+    "choices": [
+      "5°",
+      "11°",
+      "8°",
+      "3°"
+    ],
+    "answer": 1,
+    "explanation": "보정각=8−(3)=5°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-198",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 12°, 오프셋 -2°이면 보정각은 (    )이다.",
+    "choices": [
+      "10°",
+      "14°",
+      "12°",
+      "-2°"
+    ],
+    "answer": 2,
+    "explanation": "보정각=12−(-2)=14°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-199",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 -5°, 오프셋 2°이면 보정각은 (    )이다.",
+    "choices": [
+      "-3°",
+      "-5°",
+      "-7°",
+      "2°"
+    ],
+    "answer": 3,
+    "explanation": "보정각=-5−(2)=-7°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-chassis-200",
+    "track": "concept",
+    "subject": "chassis",
+    "question": "표시각에서 영점 오프셋을 빼는 모델에서 표시각 7°, 오프셋 4°이면 보정각은 (    )이다.",
+    "choices": [
+      "11°",
+      "7°",
+      "4°",
+      "3°"
+    ],
+    "answer": 4,
+    "explanation": "보정각=7−(4)=3°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s02-q16"
+  },
+  {
+    "id": "concept-electrical-101",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "자동차 퓨즈는 회로에 규정 이상의 전류가 흐르면 가용체가 (    )되어 회로를 차단한다.",
+    "choices": [
+      "용융",
+      "정류",
+      "충전",
+      "자화"
+    ],
+    "answer": 1,
+    "explanation": "퓨즈는 과전류 조건에서 가용체가 녹아 배선을 보호한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-01"
+  },
+  {
+    "id": "concept-electrical-102",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일반 전자기식 릴레이에서 제어 전류를 흘려 자기장을 만드는 부품은 (    )이다.",
+    "choices": [
+      "접점",
+      "코일",
+      "퓨즈",
+      "콘덴서"
+    ],
+    "answer": 2,
+    "explanation": "코일의 자력으로 접점이 움직여 부하 회로를 제어한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-02"
+  },
+  {
+    "id": "concept-electrical-103",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "12V 납축전지의 단위 셀 공칭전압은 약 (    )이다.",
+    "choices": [
+      "1.2V",
+      "3.7V",
+      "2V",
+      "6V"
+    ],
+    "answer": 3,
+    "explanation": "공칭 2V 셀 여섯 개를 직렬 연결한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-03"
+  },
+  {
+    "id": "concept-electrical-104",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "알터네이터의 발전 기본 원리는 (    )이다.",
+    "choices": [
+      "열전효과",
+      "광전효과",
+      "압전효과",
+      "전자기 유도"
+    ],
+    "answer": 4,
+    "explanation": "기계적 회전에 따른 자속 변화를 전기에너지로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-04"
+  },
+  {
+    "id": "concept-electrical-105",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "정류용 다이오드가 정상적으로 전류를 통과시키는 주된 방향은 (    )이다.",
+    "choices": [
+      "순방향",
+      "역방향",
+      "양방향 동일",
+      "무방향"
+    ],
+    "answer": 1,
+    "explanation": "다이오드는 순방향으로 전류를 통과시키고 역방향은 제한한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-05"
+  },
+  {
+    "id": "concept-electrical-106",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직렬 회로에서 전체 전압은 각 저항에 발생한 전압강하의 (    )이다.",
+    "choices": [
+      "평균",
+      "합",
+      "곱",
+      "최솟값"
+    ],
+    "answer": 2,
+    "explanation": "직렬 회로의 전체 전압은 개별 전압강하를 합한 값이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-07"
+  },
+  {
+    "id": "concept-electrical-107",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "병렬 회로에서 전원 전류는 각 분기 전류의 (    )이다.",
+    "choices": [
+      "평균",
+      "곱",
+      "합",
+      "최솟값"
+    ],
+    "answer": 3,
+    "explanation": "전류는 각 분기로 나뉘며 전체 전류는 분기 전류의 합이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-08"
+  },
+  {
+    "id": "concept-electrical-108",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "삽입형 전류계를 전원 양단에 직접 연결하면 (    ) 위험이 있다.",
+    "choices": [
+      "개방",
+      "과냉각",
+      "전자기 유도 감소",
+      "단락"
+    ],
+    "answer": 4,
+    "explanation": "전류계의 낮은 내부저항으로 큰 전류가 흐를 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-10"
+  },
+  {
+    "id": "concept-electrical-109",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "단락에 따른 과전류는 배선의 (    ) 위험을 증가시킨다.",
+    "choices": [
+      "과열",
+      "절연 강화",
+      "저항 무한대",
+      "전압 자동 안정"
+    ],
+    "answer": 1,
+    "explanation": "낮은 저항 경로의 과전류로 배선이 과열될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-12"
+  },
+  {
+    "id": "concept-electrical-110",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "홀 센서에서 감지하는 물리 현상은 반도체 내 전하 이동에 대한 (    )의 영향이다.",
+    "choices": [
+      "냉매 압력",
+      "자기장",
+      "습도",
+      "기체 유속"
+    ],
+    "answer": 2,
+    "explanation": "홀 효과를 이용해 위치나 속도 등의 정보를 얻는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-16"
+  },
+  {
+    "id": "concept-electrical-111",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "여러 센서가 공유하는 5V 전원 하나가 고장 나면 동시에 (    ) DTC가 발생할 수 있다.",
+    "choices": [
+      "한 타이어",
+      "한 기어",
+      "복수 센서",
+      "한 냉매"
+    ],
+    "answer": 3,
+    "explanation": "공통 기준전원 이상은 연결 센서 여러 개에 영향을 줄 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-20"
+  },
+  {
+    "id": "concept-electrical-112",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "CAN에서 여러 송신 노드가 동시에 프레임을 전송하려고 할 때 우선권을 정하는 기능은 (    )이다.",
+    "choices": [
+      "전압 정류",
+      "센서 영점",
+      "전류 제한",
+      "버스 중재"
+    ],
+    "answer": 4,
+    "explanation": "식별자에 따른 비파괴적 중재를 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q01"
+  },
+  {
+    "id": "concept-electrical-113",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "고속 CAN 양 끝에 종단저항을 사용하는 목적은 신호의 (    )을 억제하는 것이다.",
+    "choices": [
+      "반사",
+      "전력 변환",
+      "온도 상승",
+      "회전 속도"
+    ],
+    "answer": 1,
+    "explanation": "종단은 전송선의 반사 영향을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q03"
+  },
+  {
+    "id": "concept-electrical-114",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "OBD 진단기가 제공하는 고장 정보는 정비 부품 확정이 아니라 (    )의 단서이다.",
+    "choices": [
+      "무조건 교환",
+      "원인 진단",
+      "정상 인증",
+      "자동 수리"
+    ],
+    "answer": 2,
+    "explanation": "실측 데이터와 회로 점검 등 추가 확인이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q08"
+  },
+  {
+    "id": "concept-electrical-115",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "LIN에서 통신 스케줄을 관리하고 프레임을 시작하는 노드는 (    )이다.",
+    "choices": [
+      "종단저항",
+      "발전기 로터",
+      "코디네이터",
+      "냉각팬"
+    ],
+    "answer": 3,
+    "explanation": "LIN은 코디네이터가 통신을 주도하는 구조를 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s03-q14"
+  },
+  {
+    "id": "concept-electrical-116",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "여러 ECU와 동시에 CAN 통신이 불가능하면 개별 ECU 외에 공통 (    )을 먼저 확인한다.",
+    "choices": [
+      "개별 타이어",
+      "개별 와이퍼 블레이드",
+      "실내 필터",
+      "통신망 전원·배선"
+    ],
+    "answer": 4,
+    "explanation": "공통 네트워크 및 전원·접지 문제를 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q03"
+  },
+  {
+    "id": "concept-electrical-117",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "알터네이터에서 정류 후 출력전압을 제어하는 장치는 (    )이다.",
+    "choices": [
+      "전압 조정기",
+      "전류계",
+      "조향각 센서",
+      "스파크 플러그"
+    ],
+    "answer": 1,
+    "explanation": "발전·정류·전압제어가 충전계통을 구성한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q05"
+  },
+  {
+    "id": "concept-electrical-118",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "요레이트 센서가 측정하는 회전은 차체의 (    )축을 기준으로 한다.",
+    "choices": [
+      "횡",
+      "수직",
+      "종",
+      "구동축"
+    ],
+    "answer": 2,
+    "explanation": "요 운동은 차량 수직축을 중심으로 한 회전이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q09"
+  },
+  {
+    "id": "concept-electrical-119",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "ESC는 운전자의 조향 의도와 차량의 실제 (    ) 차이를 바탕으로 제어한다.",
+    "choices": [
+      "냉매량",
+      "실내온도",
+      "주행 거동",
+      "오디오 음량"
+    ],
+    "answer": 3,
+    "explanation": "조향 의도와 차체 반응을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q11"
+  },
+  {
+    "id": "concept-electrical-120",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "납축전지의 상태는 무부하 전압만으로 확정하지 않고 (    ) 특성을 함께 평가한다.",
+    "choices": [
+      "차고",
+      "냉매 압력",
+      "배기 온도",
+      "부하"
+    ],
+    "answer": 4,
+    "explanation": "부하 조건과 온도 등을 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q14"
+  },
+  {
+    "id": "concept-electrical-121",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전기 회로도에서 확인할 수 있는 대표 정보는 부품 사이의 (    ) 관계다.",
+    "choices": [
+      "전기적 연결",
+      "실제 마모 두께",
+      "현재 남은 수명",
+      "냉매 충전 질량"
+    ],
+    "answer": 1,
+    "explanation": "회로도는 부품과 전원·접지의 연결 구조를 보여준다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q15"
+  },
+  {
+    "id": "concept-electrical-122",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "온수식 난방의 열원은 정상 엔진의 (    )이다.",
+    "choices": [
+      "ATF",
+      "냉각수",
+      "브레이크액",
+      "워셔액"
+    ],
+    "answer": 2,
+    "explanation": "히터 코어가 냉각수의 열을 실내로 전달한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s03-q16"
+  },
+  {
+    "id": "concept-electrical-123",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이더넷 스위치와 달리 입력 신호를 여러 포트로 반복 전달하는 장비는 (    )이다.",
+    "choices": [
+      "릴레이",
+      "게이트웨이",
+      "허브",
+      "전압 조정기"
+    ],
+    "answer": 3,
+    "explanation": "허브는 신호 반복 기능을 수행한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q02"
+  },
+  {
+    "id": "concept-electrical-124",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "트랜지스터가 전자회로에서 수행하는 대표 기능 중 하나는 신호 (    )이다.",
+    "choices": [
+      "냉각수 저장",
+      "냉매 압축",
+      "기어 감속",
+      "증폭"
+    ],
+    "answer": 4,
+    "explanation": "트랜지스터는 증폭과 전자 스위칭에 활용된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q05"
+  },
+  {
+    "id": "concept-electrical-125",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "TCS는 구동바퀴의 슬립을 줄이기 위해 제동 제어와 (    ) 제어를 사용할 수 있다.",
+    "choices": [
+      "구동 토크",
+      "실내온도",
+      "와이퍼 속도",
+      "라디오 주파수"
+    ],
+    "answer": 1,
+    "explanation": "구동 출력과 제동력 조절로 헛돎을 줄인다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q09"
+  },
+  {
+    "id": "concept-electrical-126",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "고속 CAN의 열성 상태는 우성 상태보다 두 선의 차동전압이 (    ) 상태다.",
+    "choices": [
+      "큰",
+      "작은",
+      "항상 최대",
+      "항상 공급전압과 같은"
+    ],
+    "answer": 2,
+    "explanation": "차동전압 크기로 우성·열성 상태를 구별한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q14"
+  },
+  {
+    "id": "concept-electrical-127",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전동시트가 한 방향으로만 움직이지 않으면 모터 회로와 함께 방향 선택 (    )을 확인한다.",
+    "choices": [
+      "히터 코어",
+      "냉매 센서",
+      "스위치",
+      "퓨즈 정격표만"
+    ],
+    "answer": 3,
+    "explanation": "방향별 제어 입력과 모터 회로를 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q17"
+  },
+  {
+    "id": "concept-electrical-128",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "동일 정격 퓨즈가 반복 단선되면 단순 교환보다 회로의 (    ) 원인을 찾아야 한다.",
+    "choices": [
+      "차체 높이",
+      "점화시기 지각",
+      "냉각수 유량",
+      "과전류"
+    ],
+    "answer": 4,
+    "explanation": "반복 단선은 단락이나 과부하 등 전기적 이상을 시사한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q01"
+  },
+  {
+    "id": "concept-electrical-129",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "센서 자체 저항이 정상이어도 ECU에 신호가 전달되지 않을 수 있는 원인은 (    ) 불량이다.",
+    "choices": [
+      "하네스",
+      "타이어 트레드",
+      "스프링 상수",
+      "배기 촉매"
+    ],
+    "answer": 1,
+    "explanation": "센서 단품 검사와 신호 전달 경로는 별개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q03"
+  },
+  {
+    "id": "concept-electrical-130",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "에어컨 냉매 압력은 고압과 저압 외에도 (    ) 등 운전 조건과 함께 판단한다.",
+    "choices": [
+      "차체 색상",
+      "온도",
+      "타이어 제조일",
+      "도어 수"
+    ],
+    "answer": 2,
+    "explanation": "압력만으로 고장 부품을 단정할 수 없다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q09"
+  },
+  {
+    "id": "concept-electrical-131",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "고압이 높고 저압이 낮은 냉매 계통에서는 두 구간 사이의 (    ) 가능성을 검토한다.",
+    "choices": [
+      "퓨즈 단선만",
+      "휠 불균형",
+      "유로 제한",
+      "배터리 방전만"
+    ],
+    "answer": 3,
+    "explanation": "팽창장치나 유로 제한 등의 원인을 조건과 함께 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q12"
+  },
+  {
+    "id": "concept-electrical-132",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전동시트 모터가 회전해도 시트가 움직이지 않을 때 전기회로 외에 확인할 계통은 (    )이다.",
+    "choices": [
+      "냉매 회수",
+      "연료 분사",
+      "차량 통신만",
+      "기계적 동력 전달"
+    ],
+    "answer": 4,
+    "explanation": "구동기와 기계적 전달계 이상을 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q19"
+  },
+  {
+    "id": "concept-electrical-133",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "히터 코어 냉각수 순환 불량의 원인 중 하나는 냉각계 내부에 갇힌 (    )이다.",
+    "choices": [
+      "공기",
+      "냉매액",
+      "브레이크액",
+      "타이어 질소"
+    ],
+    "answer": 1,
+    "explanation": "에어록은 냉각수 순환을 방해할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q08"
+  },
+  {
+    "id": "concept-electrical-134",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "한 개 도어만 잠금이 불량할 경우 공통 제어기 외에 해당 도어의 (    )을 점검한다.",
+    "choices": [
+      "알터네이터 로터",
+      "잠금 액추에이터",
+      "증발기",
+      "차속 센서"
+    ],
+    "answer": 2,
+    "explanation": "개별 도어 구동기 및 배선 등을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q14"
+  },
+  {
+    "id": "concept-electrical-135",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "여러 도어 잠금장치가 동시에 작동하지 않으면 개별 모터 외에 (    )의 이상을 확인한다.",
+    "choices": [
+      "타이어 공기압",
+      "냉매 과냉각",
+      "공통 전원·제어",
+      "차체 캠버"
+    ],
+    "answer": 3,
+    "explanation": "공통 경로 문제와 각 구동기 문제를 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q18"
+  },
+  {
+    "id": "concept-electrical-136",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "선루프가 움직일 때 걸리거나 소음이 나면 전기 신호 외에 가이드 레일의 (    ) 상태를 점검한다.",
+    "choices": [
+      "충전전압",
+      "정류",
+      "종단저항",
+      "윤활"
+    ],
+    "answer": 4,
+    "explanation": "레일과 구동 케이블 등 기계적 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q19"
+  },
+  {
+    "id": "concept-electrical-137",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "ADAS 카메라 보정 중 지정 조건에서 차량을 주행하면서 보정하는 방식은 (    )이다.",
+    "choices": [
+      "동적 보정",
+      "정적 보정",
+      "공연비 보정",
+      "셀 밸런싱"
+    ],
+    "answer": 1,
+    "explanation": "동적 보정은 제조사가 정한 주행 조건을 이용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q04"
+  },
+  {
+    "id": "concept-electrical-138",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "A/C 컴프레서가 반복적으로 켜졌다 꺼질 때 비교할 냉매계 센서 정보는 (    )이다.",
+    "choices": [
+      "배기 산소",
+      "냉매 압력",
+      "타이어 온도",
+      "휠 토"
+    ],
+    "answer": 2,
+    "explanation": "냉매 압력·센서 신호와 제어 명령을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q08"
+  },
+  {
+    "id": "concept-electrical-139",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 상태를 관찰하는 사이트 글라스의 기포만으로는 실제 (    )을 확정할 수 없다.",
+    "choices": [
+      "차속",
+      "전압 극성",
+      "냉매 충전량",
+      "휠 밸런스"
+    ],
+    "answer": 3,
+    "explanation": "냉매량은 지정 정량 충전과 누설 진단을 통해 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q11"
+  },
+  {
+    "id": "concept-electrical-140",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "리모트키 인식 거리는 키 배터리뿐 아니라 주변의 (    ) 환경에 영향을 받을 수 있다.",
+    "choices": [
+      "냉각수 온도",
+      "브레이크압",
+      "타이어 트레드",
+      "무선주파수"
+    ],
+    "answer": 4,
+    "explanation": "RF 간섭 등 무선 환경을 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q14"
+  },
+  {
+    "id": "concept-electrical-141",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "선루프가 닫히다가 다시 열리는 현상은 기계적 걸림과 (    ) 보호 기능의 작동 여부를 확인한다.",
+    "choices": [
+      "끼임 방지",
+      "과급 제한",
+      "ABS 잠김 방지",
+      "회생제동"
+    ],
+    "answer": 1,
+    "explanation": "닫힘 과정의 안전 제어와 기계 상태를 구분한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q18"
+  },
+  {
+    "id": "concept-electrical-142",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전동 미러의 접힘 모터는 작동하지만 미러가 움직이지 않으면 (    ) 전달 기구를 점검한다.",
+    "choices": [
+      "퓨즈",
+      "기어",
+      "온도 센서",
+      "종단저항"
+    ],
+    "answer": 2,
+    "explanation": "접힘 구동 기어 및 힌지의 이상을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s03-q20"
+  },
+  {
+    "id": "concept-electrical-143",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "자동차 퓨즈의 정격을 결정할 때 부하 전류와 함께 고려해야 하는 것은 (    )이다.",
+    "choices": [
+      "타이어 크기",
+      "오일 점도",
+      "배선 허용전류",
+      "냉매 색상"
+    ],
+    "answer": 3,
+    "explanation": "퓨즈는 부하 및 배선 보호에 맞는 지정 정격을 사용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q02"
+  },
+  {
+    "id": "concept-electrical-144",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "기본 크루즈 컨트롤과 달리 ACC가 추가로 제어하는 주요 대상은 앞차와의 (    )이다.",
+    "choices": [
+      "색상",
+      "등록 번호",
+      "타이어 종류",
+      "거리"
+    ],
+    "answer": 4,
+    "explanation": "ACC는 속도와 앞차와의 거리 등을 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q10"
+  },
+  {
+    "id": "concept-electrical-145",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "카메라 기반 차선 이탈 경고에서 영상 센서의 시야를 방해하는 오염은 (    ) 정확도에 영향을 줄 수 있다.",
+    "choices": [
+      "차선 인식",
+      "배터리 충전",
+      "제동 유압",
+      "엔진 압축"
+    ],
+    "answer": 1,
+    "explanation": "전방 카메라 시야와 보정 상태를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q15"
+  },
+  {
+    "id": "concept-electrical-146",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "후방 카메라의 기본 역할은 차량 뒤쪽의 (    ) 정보를 표시장치로 전달하는 것이다.",
+    "choices": [
+      "냉각수압",
+      "영상",
+      "냉매 질량",
+      "오일 점도"
+    ],
+    "answer": 2,
+    "explanation": "후방 영상의 촬영과 표시를 지원한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q19"
+  },
+  {
+    "id": "concept-electrical-147",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "일반적인 초음파 주차 보조 센서는 물체에서 되돌아오는 (    )을 이용한다.",
+    "choices": [
+      "직류 전압강하",
+      "냉매 압력파",
+      "반사파",
+      "열복사만"
+    ],
+    "answer": 3,
+    "explanation": "초음파 반사 신호로 장애물 거리를 추정할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s03-q20"
+  },
+  {
+    "id": "concept-electrical-148",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "R-1234yf의 안전 분류 A2L이 나타내는 가연성 특성은 (    )이다.",
+    "choices": [
+      "완전 불연성",
+      "고폭발성 분류",
+      "분류 없음",
+      "약가연성"
+    ],
+    "answer": 4,
+    "explanation": "A2L은 낮은 독성과 약가연성 계열의 안전 분류다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q07"
+  },
+  {
+    "id": "concept-electrical-149",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "ECU 내부에서 프로그램의 연산 및 처리 명령을 실행하는 핵심 부품은 (    )이다.",
+    "choices": [
+      "CPU",
+      "퓨즈",
+      "릴레이 접점",
+      "전동 모터"
+    ],
+    "answer": 1,
+    "explanation": "제어기는 연산부와 메모리 및 입출력 회로를 포함한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q20"
+  },
+  {
+    "id": "concept-electrical-150",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 회로에 12V를 인가했을 때 3A가 흐르면 부하 저항은 (    )이다.",
+    "choices": [
+      "36Ω",
+      "4Ω",
+      "0.25Ω",
+      "15Ω"
+    ],
+    "answer": 2,
+    "explanation": "R=V/I=12÷3=4Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-06"
+  },
+  {
+    "id": "concept-electrical-151",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 회로에 24V를 인가했을 때 4A가 흐르면 부하 저항은 (    )이다.",
+    "choices": [
+      "96Ω",
+      "0.167Ω",
+      "6Ω",
+      "28Ω"
+    ],
+    "answer": 3,
+    "explanation": "R=V/I=24÷4=6Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-06"
+  },
+  {
+    "id": "concept-electrical-152",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 회로에 6V를 인가했을 때 2A가 흐르면 부하 저항은 (    )이다.",
+    "choices": [
+      "12Ω",
+      "0.333Ω",
+      "8Ω",
+      "3Ω"
+    ],
+    "answer": 4,
+    "explanation": "R=V/I=6÷2=3Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-06"
+  },
+  {
+    "id": "concept-electrical-153",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 회로에 48V를 인가했을 때 8A가 흐르면 부하 저항은 (    )이다.",
+    "choices": [
+      "6Ω",
+      "384Ω",
+      "0.167Ω",
+      "56Ω"
+    ],
+    "answer": 1,
+    "explanation": "R=V/I=48÷8=6Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-06"
+  },
+  {
+    "id": "concept-electrical-154",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 4Ω과 8Ω을 직렬로 연결하고 전체 전압 24V를 인가하면 회로 전류는 (    )이다.",
+    "choices": [
+      "6A",
+      "2A",
+      "3A",
+      "288A"
+    ],
+    "answer": 2,
+    "explanation": "I=24÷(4+8)=2A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-21"
+  },
+  {
+    "id": "concept-electrical-155",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 3Ω과 9Ω을 직렬로 연결하고 전체 전압 12V를 인가하면 회로 전류는 (    )이다.",
+    "choices": [
+      "4A",
+      "1.333A",
+      "1A",
+      "144A"
+    ],
+    "answer": 3,
+    "explanation": "I=12÷(3+9)=1A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-21"
+  },
+  {
+    "id": "concept-electrical-156",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 5Ω과 10Ω을 직렬로 연결하고 전체 전압 30V를 인가하면 회로 전류는 (    )이다.",
+    "choices": [
+      "6A",
+      "3A",
+      "450A",
+      "2A"
+    ],
+    "answer": 4,
+    "explanation": "I=30÷(5+10)=2A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-21"
+  },
+  {
+    "id": "concept-electrical-157",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 6Ω과 18Ω을 직렬로 연결하고 전체 전압 48V를 인가하면 회로 전류는 (    )이다.",
+    "choices": [
+      "2A",
+      "8A",
+      "2.667A",
+      "1152A"
+    ],
+    "answer": 1,
+    "explanation": "I=48÷(6+18)=2A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-21"
+  },
+  {
+    "id": "concept-electrical-158",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 6Ω과 3Ω의 병렬 합성저항은 (    )이다.",
+    "choices": [
+      "9Ω",
+      "2Ω",
+      "18Ω",
+      "3Ω"
+    ],
+    "answer": 2,
+    "explanation": "R=(6×3)÷(6+3)=2Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-159",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 8Ω과 24Ω의 병렬 합성저항은 (    )이다.",
+    "choices": [
+      "32Ω",
+      "192Ω",
+      "6Ω",
+      "16Ω"
+    ],
+    "answer": 3,
+    "explanation": "R=(8×24)÷(8+24)=6Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-160",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 12Ω과 4Ω의 병렬 합성저항은 (    )이다.",
+    "choices": [
+      "16Ω",
+      "48Ω",
+      "8Ω",
+      "3Ω"
+    ],
+    "answer": 4,
+    "explanation": "R=(12×4)÷(12+4)=3Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-161",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "저항 10Ω과 15Ω의 병렬 합성저항은 (    )이다.",
+    "choices": [
+      "6Ω",
+      "25Ω",
+      "150Ω",
+      "5Ω"
+    ],
+    "answer": 1,
+    "explanation": "R=(10×15)÷(10+15)=6Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-162",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 전압 12V인 부하의 전력이 72W일 때 소비전류는 (    )이다.",
+    "choices": [
+      "864A",
+      "6A",
+      "0.167A",
+      "72A"
+    ],
+    "answer": 2,
+    "explanation": "I=P/V=72÷12=6A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-23"
+  },
+  {
+    "id": "concept-electrical-163",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 전압 24V인 부하의 전력이 96W일 때 소비전류는 (    )이다.",
+    "choices": [
+      "2304A",
+      "0.25A",
+      "4A",
+      "96A"
+    ],
+    "answer": 3,
+    "explanation": "I=P/V=96÷24=4A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-23"
+  },
+  {
+    "id": "concept-electrical-164",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 전압 48V인 부하의 전력이 240W일 때 소비전류는 (    )이다.",
+    "choices": [
+      "11520A",
+      "0.2A",
+      "240A",
+      "5A"
+    ],
+    "answer": 4,
+    "explanation": "I=P/V=240÷48=5A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-23"
+  },
+  {
+    "id": "concept-electrical-165",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직류 전압 6V인 부하의 전력이 18W일 때 소비전류는 (    )이다.",
+    "choices": [
+      "3A",
+      "108A",
+      "0.333A",
+      "18A"
+    ],
+    "answer": 1,
+    "explanation": "I=P/V=18÷6=3A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-23"
+  },
+  {
+    "id": "concept-electrical-166",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전류 5A가 흐르는 접속부에서 전압강하가 0.5V라면 해당 접속부 저항은 (    )이다.",
+    "choices": [
+      "2.5Ω",
+      "0.1Ω",
+      "10Ω",
+      "0.5Ω"
+    ],
+    "answer": 2,
+    "explanation": "R=0.5÷5=0.1Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-24"
+  },
+  {
+    "id": "concept-electrical-167",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전류 4A가 흐르는 접속부에서 전압강하가 0.8V라면 해당 접속부 저항은 (    )이다.",
+    "choices": [
+      "3.2Ω",
+      "5Ω",
+      "0.2Ω",
+      "0.8Ω"
+    ],
+    "answer": 3,
+    "explanation": "R=0.8÷4=0.2Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-24"
+  },
+  {
+    "id": "concept-electrical-168",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전류 10A가 흐르는 접속부에서 전압강하가 0.2V라면 해당 접속부 저항은 (    )이다.",
+    "choices": [
+      "2Ω",
+      "50Ω",
+      "0.2Ω",
+      "0.02Ω"
+    ],
+    "answer": 4,
+    "explanation": "R=0.2÷10=0.02Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-24"
+  },
+  {
+    "id": "concept-electrical-169",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "전류 2A가 흐르는 접속부에서 전압강하가 0.6V라면 해당 접속부 저항은 (    )이다.",
+    "choices": [
+      "0.3Ω",
+      "1.2Ω",
+      "3.333Ω",
+      "0.6Ω"
+    ],
+    "answer": 1,
+    "explanation": "R=0.6÷2=0.3Ω이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-24"
+  },
+  {
+    "id": "concept-electrical-170",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 주기가 20ms, 듀티비가 40%라면 ON 시간은 (    )이다.",
+    "choices": [
+      "20ms",
+      "8ms",
+      "12ms",
+      "2ms"
+    ],
+    "answer": 2,
+    "explanation": "ON 시간=20×40/100=8ms이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-25"
+  },
+  {
+    "id": "concept-electrical-171",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 주기가 10ms, 듀티비가 70%라면 ON 시간은 (    )이다.",
+    "choices": [
+      "10ms",
+      "3ms",
+      "7ms",
+      "11.5ms"
+    ],
+    "answer": 3,
+    "explanation": "ON 시간=10×70/100=7ms이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-25"
+  },
+  {
+    "id": "concept-electrical-172",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 주기가 8ms, 듀티비가 25%라면 ON 시간은 (    )이다.",
+    "choices": [
+      "8ms",
+      "6ms",
+      "3.125ms",
+      "2ms"
+    ],
+    "answer": 4,
+    "explanation": "ON 시간=8×25/100=2ms이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-25"
+  },
+  {
+    "id": "concept-electrical-173",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 주기가 16ms, 듀티비가 75%라면 ON 시간은 (    )이다.",
+    "choices": [
+      "12ms",
+      "16ms",
+      "4ms",
+      "4.688ms"
+    ],
+    "answer": 1,
+    "explanation": "ON 시간=16×75/100=12ms이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-25"
+  },
+  {
+    "id": "concept-electrical-174",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 신호 한 주기가 5ms인 경우 주파수는 (    )이다.",
+    "choices": [
+      "5Hz",
+      "200Hz",
+      "0.2Hz",
+      "5000Hz"
+    ],
+    "answer": 2,
+    "explanation": "주파수=1/주기(s)=1000÷5=200Hz이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q15"
+  },
+  {
+    "id": "concept-electrical-175",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 신호 한 주기가 10ms인 경우 주파수는 (    )이다.",
+    "choices": [
+      "10Hz",
+      "0.1Hz",
+      "100Hz",
+      "10000Hz"
+    ],
+    "answer": 3,
+    "explanation": "주파수=1/주기(s)=1000÷10=100Hz이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q15"
+  },
+  {
+    "id": "concept-electrical-176",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 신호 한 주기가 20ms인 경우 주파수는 (    )이다.",
+    "choices": [
+      "20Hz",
+      "0.05Hz",
+      "20000Hz",
+      "50Hz"
+    ],
+    "answer": 4,
+    "explanation": "주파수=1/주기(s)=1000÷20=50Hz이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q15"
+  },
+  {
+    "id": "concept-electrical-177",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "PWM 신호 한 주기가 4ms인 경우 주파수는 (    )이다.",
+    "choices": [
+      "250Hz",
+      "4Hz",
+      "0.25Hz",
+      "4000Hz"
+    ],
+    "answer": 1,
+    "explanation": "주파수=1/주기(s)=1000÷4=250Hz이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s03-q15"
+  },
+  {
+    "id": "concept-electrical-178",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직렬 회로의 두 저항에서 각각 3V와 6V의 전압강하가 발생하면 전체 전압은 (    )이다.",
+    "choices": [
+      "3V",
+      "9V",
+      "6V",
+      "18V"
+    ],
+    "answer": 2,
+    "explanation": "전체 전압=3+6=9V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q12"
+  },
+  {
+    "id": "concept-electrical-179",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직렬 회로의 두 저항에서 각각 2V와 8V의 전압강하가 발생하면 전체 전압은 (    )이다.",
+    "choices": [
+      "2V",
+      "8V",
+      "10V",
+      "16V"
+    ],
+    "answer": 3,
+    "explanation": "전체 전압=2+8=10V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q12"
+  },
+  {
+    "id": "concept-electrical-180",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직렬 회로의 두 저항에서 각각 5V와 7V의 전압강하가 발생하면 전체 전압은 (    )이다.",
+    "choices": [
+      "5V",
+      "7V",
+      "35V",
+      "12V"
+    ],
+    "answer": 4,
+    "explanation": "전체 전압=5+7=12V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q12"
+  },
+  {
+    "id": "concept-electrical-181",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "직렬 회로의 두 저항에서 각각 4V와 10V의 전압강하가 발생하면 전체 전압은 (    )이다.",
+    "choices": [
+      "14V",
+      "4V",
+      "10V",
+      "40V"
+    ],
+    "answer": 1,
+    "explanation": "전체 전압=4+10=14V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q12"
+  },
+  {
+    "id": "concept-electrical-182",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "병렬 회로의 두 가지 전류가 8A와 3A이면 전원에서 공급되는 전체 전류는 (    )이다.",
+    "choices": [
+      "5A",
+      "11A",
+      "8A",
+      "3A"
+    ],
+    "answer": 2,
+    "explanation": "전체 전류=8+3=11A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-183",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "병렬 회로의 두 가지 전류가 6A와 2A이면 전원에서 공급되는 전체 전류는 (    )이다.",
+    "choices": [
+      "4A",
+      "6A",
+      "8A",
+      "2A"
+    ],
+    "answer": 3,
+    "explanation": "전체 전류=6+2=8A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-184",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "병렬 회로의 두 가지 전류가 10A와 4A이면 전원에서 공급되는 전체 전류는 (    )이다.",
+    "choices": [
+      "6A",
+      "10A",
+      "4A",
+      "14A"
+    ],
+    "answer": 4,
+    "explanation": "전체 전류=10+4=14A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-185",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "병렬 회로의 두 가지 전류가 5A와 1A이면 전원에서 공급되는 전체 전류는 (    )이다.",
+    "choices": [
+      "6A",
+      "4A",
+      "5A",
+      "1A"
+    ],
+    "answer": 1,
+    "explanation": "전체 전류=5+1=6A이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-electrical-22"
+  },
+  {
+    "id": "concept-electrical-186",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차체 요레이트가 일정하게 8°/s이고 4초간 유지되면 각변위는 (    )이다.",
+    "choices": [
+      "2°",
+      "32°",
+      "12°",
+      "0.5°"
+    ],
+    "answer": 2,
+    "explanation": "각변위=각속도×시간=8×4=32°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q02"
+  },
+  {
+    "id": "concept-electrical-187",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차체 요레이트가 일정하게 15°/s이고 2초간 유지되면 각변위는 (    )이다.",
+    "choices": [
+      "7.5°",
+      "17°",
+      "30°",
+      "0.133°"
+    ],
+    "answer": 3,
+    "explanation": "각변위=각속도×시간=15×2=30°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q02"
+  },
+  {
+    "id": "concept-electrical-188",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차체 요레이트가 일정하게 6°/s이고 5초간 유지되면 각변위는 (    )이다.",
+    "choices": [
+      "1.2°",
+      "11°",
+      "0.833°",
+      "30°"
+    ],
+    "answer": 4,
+    "explanation": "각변위=각속도×시간=6×5=30°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q02"
+  },
+  {
+    "id": "concept-electrical-189",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "차체 요레이트가 일정하게 12°/s이고 3초간 유지되면 각변위는 (    )이다.",
+    "choices": [
+      "36°",
+      "4°",
+      "15°",
+      "0.25°"
+    ],
+    "answer": 1,
+    "explanation": "각변위=각속도×시간=12×3=36°이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s03-q02"
+  },
+  {
+    "id": "concept-electrical-190",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 고압측 포화온도가 45°C, 액체 냉매 온도가 38°C일 때 과냉각도는 (    )이다.",
+    "choices": [
+      "83K",
+      "7K",
+      "45K",
+      "38K"
+    ],
+    "answer": 2,
+    "explanation": "과냉각도=45−38=7K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q09"
+  },
+  {
+    "id": "concept-electrical-191",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 고압측 포화온도가 40°C, 액체 냉매 온도가 34°C일 때 과냉각도는 (    )이다.",
+    "choices": [
+      "74K",
+      "40K",
+      "6K",
+      "34K"
+    ],
+    "answer": 3,
+    "explanation": "과냉각도=40−34=6K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q09"
+  },
+  {
+    "id": "concept-electrical-192",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 고압측 포화온도가 50°C, 액체 냉매 온도가 42°C일 때 과냉각도는 (    )이다.",
+    "choices": [
+      "92K",
+      "50K",
+      "42K",
+      "8K"
+    ],
+    "answer": 4,
+    "explanation": "과냉각도=50−42=8K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q09"
+  },
+  {
+    "id": "concept-electrical-193",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "냉매 고압측 포화온도가 35°C, 액체 냉매 온도가 30°C일 때 과냉각도는 (    )이다.",
+    "choices": [
+      "5K",
+      "65K",
+      "35K",
+      "30K"
+    ],
+    "answer": 1,
+    "explanation": "과냉각도=35−30=5K이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s03-q09"
+  },
+  {
+    "id": "concept-electrical-194",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이상 증발기의 냉매 질량유량 0.03kg/s, 비엔탈피 증가량 100kJ/kg이면 열흡수율은 (    )이다.",
+    "choices": [
+      "0kW",
+      "3kW",
+      "3333.333kW",
+      "30kW"
+    ],
+    "answer": 2,
+    "explanation": "열흡수율=0.03×100=3kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q17"
+  },
+  {
+    "id": "concept-electrical-195",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이상 증발기의 냉매 질량유량 0.04kg/s, 비엔탈피 증가량 120kJ/kg이면 열흡수율은 (    )이다.",
+    "choices": [
+      "0kW",
+      "3000kW",
+      "4.8kW",
+      "48kW"
+    ],
+    "answer": 3,
+    "explanation": "열흡수율=0.04×120=4.8kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q17"
+  },
+  {
+    "id": "concept-electrical-196",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이상 증발기의 냉매 질량유량 0.02kg/s, 비엔탈피 증가량 200kJ/kg이면 열흡수율은 (    )이다.",
+    "choices": [
+      "0kW",
+      "10000kW",
+      "40kW",
+      "4kW"
+    ],
+    "answer": 4,
+    "explanation": "열흡수율=0.02×200=4kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q17"
+  },
+  {
+    "id": "concept-electrical-197",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "이상 증발기의 냉매 질량유량 0.05kg/s, 비엔탈피 증가량 60kJ/kg이면 열흡수율은 (    )이다.",
+    "choices": [
+      "3kW",
+      "0.001kW",
+      "1200kW",
+      "30kW"
+    ],
+    "answer": 1,
+    "explanation": "열흡수율=0.05×60=3kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s03-q17"
+  },
+  {
+    "id": "concept-electrical-198",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "가상 부하의 저항 4Ω에 3A가 흐르면 양단 전압은 (    )이다.",
+    "choices": [
+      "1.333V",
+      "12V",
+      "0.75V",
+      "7V"
+    ],
+    "answer": 2,
+    "explanation": "V=IR=3×4=12V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q13"
+  },
+  {
+    "id": "concept-electrical-199",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "가상 부하의 저항 2Ω에 5A가 흐르면 양단 전압은 (    )이다.",
+    "choices": [
+      "0.4V",
+      "2.5V",
+      "10V",
+      "7V"
+    ],
+    "answer": 3,
+    "explanation": "V=IR=5×2=10V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q13"
+  },
+  {
+    "id": "concept-electrical-200",
+    "track": "concept",
+    "subject": "electrical",
+    "question": "가상 부하의 저항 3Ω에 8A가 흐르면 양단 전압은 (    )이다.",
+    "choices": [
+      "0.375V",
+      "2.667V",
+      "11V",
+      "24V"
+    ],
+    "answer": 4,
+    "explanation": "V=IR=8×3=24V이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s03-q13"
+  },
+  {
+    "id": "concept-eco-101",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전식 배터리가 방전할 때 화학에너지는 주로 (    )로 변환된다.",
+    "choices": [
+      "전기에너지",
+      "기계적 위치에너지",
+      "핵에너지",
+      "음향에너지"
+    ],
+    "answer": 1,
+    "explanation": "배터리는 전기화학 반응을 이용해 전력을 공급한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-02"
+  },
+  {
+    "id": "concept-eco-102",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS가 보호 제어를 위해 팩 전체 전압 외에 개별적으로 감시하는 전압은 (    )이다.",
+    "choices": [
+      "점화 2차 전압",
+      "셀 전압",
+      "냉매 압력",
+      "발전기 회전수"
+    ],
+    "answer": 2,
+    "explanation": "개별 셀 상태가 충방전 보호에 중요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-03"
+  },
+  {
+    "id": "concept-eco-103",
+    "track": "concept",
+    "subject": "eco",
+    "question": "교류 구동모터를 사용하는 전기차에서 구동 인버터의 출력 전력 형태는 (    )이다.",
+    "choices": [
+      "직류만",
+      "압축공기",
+      "교류",
+      "유압"
+    ],
+    "answer": 3,
+    "explanation": "배터리 직류 전력을 모터에 적합한 교류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-04"
+  },
+  {
+    "id": "concept-eco-104",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 배터리에서 저전압 보조전원으로 전력을 공급하는 컨버터의 입력 전력은 (    )이다.",
+    "choices": [
+      "교류",
+      "유압",
+      "압축공기",
+      "직류"
+    ],
+    "answer": 4,
+    "explanation": "고전압 DC에서 저전압 DC로 전압을 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-05"
+  },
+  {
+    "id": "concept-eco-105",
+    "track": "concept",
+    "subject": "eco",
+    "question": "OBC가 차량에 탑재되어 교류 충전 시 수행하는 주요 변환은 (    )이다.",
+    "choices": [
+      "AC→DC",
+      "DC→AC",
+      "DC→DC만",
+      "기계적 감속"
+    ],
+    "answer": 1,
+    "explanation": "OBC는 외부 교류를 배터리 충전에 필요한 직류로 변환한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-06"
+  },
+  {
+    "id": "concept-eco-106",
+    "track": "concept",
+    "subject": "eco",
+    "question": "DC 급속충전에서 외부 설비가 변환한 전력은 차량과의 충전 제어를 거쳐 (    )에 공급된다.",
+    "choices": [
+      "연료 탱크",
+      "구동 배터리",
+      "배기 촉매",
+      "타이어"
+    ],
+    "answer": 2,
+    "explanation": "직류 급속충전은 차량의 충전 허용 조건을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-07"
+  },
+  {
+    "id": "concept-eco-107",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회생제동에서 구동모터는 감속 중 (    ) 모드로 작동할 수 있다.",
+    "choices": [
+      "연료 분사",
+      "냉매 압축",
+      "발전",
+      "점화"
+    ],
+    "answer": 3,
+    "explanation": "감속 운동에너지 일부를 전기로 회수한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-08"
+  },
+  {
+    "id": "concept-eco-108",
+    "track": "concept",
+    "subject": "eco",
+    "question": "SOC를 잔존 전하량 기준으로 정의할 때 분모에 해당하는 양은 기준 (    )이다.",
+    "choices": [
+      "차체 질량",
+      "모터 토크",
+      "배터리 저항",
+      "전하 용량"
+    ],
+    "answer": 4,
+    "explanation": "정의된 기준 용량 대비 남은 전하량을 비율로 표시한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-09"
+  },
+  {
+    "id": "concept-eco-109",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 건전도를 평가할 때 가용 용량과 함께 열화를 반영하는 전기적 특성은 (    )이다.",
+    "choices": [
+      "내부저항",
+      "차속",
+      "타이어 지름",
+      "조향각"
+    ],
+    "answer": 1,
+    "explanation": "용량 감소와 저항 변화는 배터리 열화의 지표가 될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-10"
+  },
+  {
+    "id": "concept-eco-110",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리의 온도 관리는 고온 냉각뿐 아니라 저온 조건에서의 (    )에도 활용될 수 있다.",
+    "choices": [
+      "회전 감속",
+      "가열",
+      "전압 정류만",
+      "연료 분사"
+    ],
+    "answer": 2,
+    "explanation": "적정 작동 온도를 유지하기 위한 열관리가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-11"
+  },
+  {
+    "id": "concept-eco-111",
+    "track": "concept",
+    "subject": "eco",
+    "question": "열폭주에서는 내부 발열과 그에 따른 반응 증가가 서로 (    )되는 위험이 있다.",
+    "choices": [
+      "상쇄만",
+      "완전히 정지",
+      "증폭",
+      "무관"
+    ],
+    "answer": 3,
+    "explanation": "발열 반응이 제어되지 않고 연쇄적으로 확대되는 현상이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-12"
+  },
+  {
+    "id": "concept-eco-112",
+    "track": "concept",
+    "subject": "eco",
+    "question": "주황색 고전압 케이블 식별은 해당 회로의 (    ) 확인을 대신하지 못한다.",
+    "choices": [
+      "차체 색상",
+      "냉매량",
+      "타이어 규격",
+      "무전압"
+    ],
+    "answer": 4,
+    "explanation": "피복 색은 식별용이며 실제 전압 상태를 보증하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-13"
+  },
+  {
+    "id": "concept-eco-113",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 차단 후 커패시터 잔류전압 때문에 필요한 안전 단계 중 하나는 지정된 (    )이다.",
+    "choices": [
+      "대기시간 준수",
+      "즉시 작업",
+      "강제 재투입",
+      "경고등 삭제"
+    ],
+    "answer": 1,
+    "explanation": "전원 차단 후 지정 대기 및 무전압 검증이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-14"
+  },
+  {
+    "id": "concept-eco-114",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연 감시장치가 감시하는 관계는 고전압 회로와 (    ) 사이의 절연 상태다.",
+    "choices": [
+      "타이어 트레드",
+      "차체",
+      "냉매통",
+      "연료탱크만"
+    ],
+    "answer": 2,
+    "explanation": "고전압 회로와 차체 간 절연 이상을 파악한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-16"
+  },
+  {
+    "id": "concept-eco-115",
+    "track": "concept",
+    "subject": "eco",
+    "question": "내연기관과 전기모터를 조합하는 차량에서 각 동력원의 출력을 나누는 제어를 (    )이라 한다.",
+    "choices": [
+      "냉매 정량 충전",
+      "휠 밸런스",
+      "동력 협조 제어",
+      "배기 누설 검사"
+    ],
+    "answer": 3,
+    "explanation": "운전 조건에 따라 엔진과 모터의 역할을 조절한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-17"
+  },
+  {
+    "id": "concept-eco-116",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 외부 전기회로를 통해 이동하며 전류를 형성하는 입자는 (    )이다.",
+    "choices": [
+      "전자",
+      "양성자",
+      "산소 분자",
+      "물 분자"
+    ],
+    "answer": 1,
+    "explanation": "애노드에서 수소가 산화되면 전자는 외부 회로를 통해 이동하고 양성자는 막을 통과한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-26"
+  },
+  {
+    "id": "concept-eco-117",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속기를 지난 구동력이 좌우 바퀴로 전달되면서 회전수 차이를 허용하는 부품은 (    )이다.",
+    "choices": [
+      "차동장치",
+      "OBC",
+      "인버터",
+      "BMS"
+    ],
+    "answer": 1,
+    "explanation": "차동장치는 선회 시 좌우 구동바퀴의 회전차를 허용한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q07"
+  },
+  {
+    "id": "concept-eco-118",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 이상을 진단할 때 관련 ECU의 DTC와 함께 확인하는 데이터는 (    )이다.",
+    "choices": [
+      "차량 도장색",
+      "실시간 상태값",
+      "타이어 제조일",
+      "유리 투과율"
+    ],
+    "answer": 2,
+    "explanation": "구동 제어 상태와 실제 운전 데이터를 함께 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q08"
+  },
+  {
+    "id": "concept-eco-119",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소는 가연성이 있으므로 누설을 확인하는 목적으로 (    )을 사용하면 안 된다.",
+    "choices": [
+      "수소 전용 검지기",
+      "지정 감지 센서",
+      "불꽃",
+      "승인된 누설 검사 장비"
+    ],
+    "answer": 3,
+    "explanation": "불꽃은 수소에 점화될 위험이 있으므로 사용하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r01-s04-q20"
+  },
+  {
+    "id": "concept-eco-120",
+    "track": "concept",
+    "subject": "eco",
+    "question": "모터의 속도만으로 성능을 판단하지 않고 회전력인 (    )와 전기 입력을 함께 평가한다.",
+    "choices": [
+      "차압",
+      "공연비",
+      "캐스터",
+      "토크"
+    ],
+    "answer": 4,
+    "explanation": "모터의 성능은 속도와 토크, 전기 입력 및 운전 조건에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q04"
+  },
+  {
+    "id": "concept-eco-121",
+    "track": "concept",
+    "subject": "eco",
+    "question": "순수 배터리 전기차의 구동 계통에는 내연기관의 (    ) 계통이 필요하지 않다.",
+    "choices": [
+      "연료 분사",
+      "모터 제어",
+      "절연 감시",
+      "전력 변환"
+    ],
+    "answer": 1,
+    "explanation": "BEV는 내연기관 연료 분사를 사용하지 않는다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q05"
+  },
+  {
+    "id": "concept-eco-122",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 구동 계통의 심각한 경고가 발생하면 계속 운행하기보다 우선 (    )을 확보한다.",
+    "choices": [
+      "최대 출력",
+      "안전한 정지",
+      "고속 주행",
+      "강제 재시동"
+    ],
+    "answer": 2,
+    "explanation": "안전한 정지 후 지정 진단 절차에 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q12"
+  },
+  {
+    "id": "concept-eco-123",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 실제 성능은 회로도만으로 판단하지 않고 지정된 (    ) 시험을 통해 평가할 수 있다.",
+    "choices": [
+      "타이어 트레드",
+      "냉매 누설",
+      "용량",
+      "브레이크 토"
+    ],
+    "answer": 3,
+    "explanation": "전기적 상태와 열적 조건을 고려한 성능시험이 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q14"
+  },
+  {
+    "id": "concept-eco-124",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 정비 구역에서 작업자 외 사람의 접근을 막기 위한 기본 관리는 (    )이다.",
+    "choices": [
+      "고전압 회로 강제 연결",
+      "장비 무정격 사용",
+      "경고 표지 제거",
+      "작업 구역 표시·통제"
+    ],
+    "answer": 4,
+    "explanation": "표시와 출입 통제, 정격 장비 및 절차 준수가 필요하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q16"
+  },
+  {
+    "id": "concept-eco-125",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 토크의 허용 한계를 결정할 때 운전자 요구와 차속 외에 (    ) 제한을 고려한다.",
+    "choices": [
+      "배터리 전력",
+      "차체 도장색",
+      "워셔액 용량",
+      "타이어 제조일"
+    ],
+    "answer": 1,
+    "explanation": "전원에서 공급할 수 있는 전력에 맞춰 구동 출력을 제한할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r02-s04-q19"
+  },
+  {
+    "id": "concept-eco-126",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수랭식 구동모터의 정비에서는 고전압 안전 외에 (    ) 연결 상태도 확인한다.",
+    "choices": [
+      "배기 촉매",
+      "냉각 회로",
+      "연료 분사기",
+      "점화 플러그"
+    ],
+    "answer": 2,
+    "explanation": "모터 구조에 따라 냉각과 기계적 장착 조건도 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q03"
+  },
+  {
+    "id": "concept-eco-127",
+    "track": "concept",
+    "subject": "eco",
+    "question": "회생제동 작동을 평가할 때 SOC 변화 외에 모터의 실제 발전 (    )을 비교한다.",
+    "choices": [
+      "차고",
+      "캠버",
+      "전력",
+      "냉매압"
+    ],
+    "answer": 3,
+    "explanation": "토크·전력·운전 조건을 함께 확인해야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q04"
+  },
+  {
+    "id": "concept-eco-128",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연저항을 시험할 때 차량별 지정 조건에 맞는 계측기의 (    ) 설정을 확인한다.",
+    "choices": [
+      "타이어 하중",
+      "조향각",
+      "냉매 충전량",
+      "시험 전압"
+    ],
+    "answer": 4,
+    "explanation": "절연시험은 지정 회로 분리 및 시험전압 조건을 따른다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q08"
+  },
+  {
+    "id": "concept-eco-129",
+    "track": "concept",
+    "subject": "eco",
+    "question": "하이브리드 동력 전환 이상은 단일 ECU 외에도 관련 제어기 사이의 (    ) 문제인지 확인한다.",
+    "choices": [
+      "통신·협조",
+      "타이어 규격",
+      "냉매 종류",
+      "브레이크액 색상"
+    ],
+    "answer": 1,
+    "explanation": "여러 제어기의 상태와 협조 명령을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q12"
+  },
+  {
+    "id": "concept-eco-130",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 절연 이상은 경고 삭제만으로 해결하지 않고 제작사 절차에 따른 (    )을 우선한다.",
+    "choices": [
+      "강제 접촉기 작동",
+      "안전 격리",
+      "무조건 충전",
+      "최대 출력 운전"
+    ],
+    "answer": 2,
+    "explanation": "안전 상태를 확보하고 절연 이상 원인을 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r03-s04-q16"
+  },
+  {
+    "id": "concept-eco-131",
+    "track": "concept",
+    "subject": "eco",
+    "question": "교류 완속충전이 안 될 때 OBC 입력·출력과 함께 확인할 제어 조건은 충전 (    )이다.",
+    "choices": [
+      "조향각",
+      "휠 밸런스",
+      "허가",
+      "차고"
+    ],
+    "answer": 3,
+    "explanation": "충전기와 차량의 허가 조건 및 BMS 제한을 비교한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q05"
+  },
+  {
+    "id": "concept-eco-132",
+    "track": "concept",
+    "subject": "eco",
+    "question": "고전압 부품 수리 후 전원을 정상 복원하기 전에 확인해야 하는 전기적 분리 상태는 (    )이다.",
+    "choices": [
+      "캐스터",
+      "토인",
+      "냉매 과냉각",
+      "절연 상태"
+    ],
+    "answer": 4,
+    "explanation": "제작사 절차에 따라 절연과 안전 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q06"
+  },
+  {
+    "id": "concept-eco-133",
+    "track": "concept",
+    "subject": "eco",
+    "question": "절연장갑의 물리적 손상과 공기 누설 상태 외에 확인할 것은 정기 (    )의 유효 여부다.",
+    "choices": [
+      "절연 시험",
+      "타이어 균형",
+      "휠 정렬",
+      "냉매 누설"
+    ],
+    "answer": 1,
+    "explanation": "보호구는 유효한 검사 상태와 적정 정격을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q07"
+  },
+  {
+    "id": "concept-eco-134",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 제어기 교환 후 필요한 학습 절차는 공통 단일값이 아니라 (    )을 따른다.",
+    "choices": [
+      "타이어 규격만",
+      "차종별 지침",
+      "도장색",
+      "외기 조도"
+    ],
+    "answer": 2,
+    "explanation": "제어기 설정 및 학습은 차량 설계에 따라 다르다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q11"
+  },
+  {
+    "id": "concept-eco-135",
+    "track": "concept",
+    "subject": "eco",
+    "question": "PEM 연료전지에서 생성된 물이 지나치게 쌓여 가스 공급을 방해하는 현상은 (    )이다.",
+    "choices": [
+      "프리차지",
+      "수막제동",
+      "플러딩",
+      "전압 정류"
+    ],
+    "answer": 3,
+    "explanation": "수분 관리는 막 가습과 과도한 물 축적 방지를 함께 고려한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q15"
+  },
+  {
+    "id": "concept-eco-136",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 누출 경고가 발생하면 일반 운전자는 안전한 정지와 (    )를 우선한다.",
+    "choices": [
+      "임의 고압 부품 분해",
+      "점화원 접근",
+      "경고 삭제 후 운행",
+      "대피·전문 조치"
+    ],
+    "answer": 4,
+    "explanation": "누출 가능성은 안전을 확보하고 전문 절차에 따라 대응한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q17"
+  },
+  {
+    "id": "concept-eco-137",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 모듈 검사에서 전압과 온도 외에 전기적 열화를 비교하는 값은 (    )이다.",
+    "choices": [
+      "저항",
+      "캐스터",
+      "연료 압력",
+      "냉매 압력"
+    ],
+    "answer": 1,
+    "explanation": "모듈 전압·저항·온도를 종합해 평가한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q06"
+  },
+  {
+    "id": "concept-eco-138",
+    "track": "concept",
+    "subject": "eco",
+    "question": "서비스 플러그를 분리했다는 사실만으로 고전압 회로의 (    )이 증명되는 것은 아니다.",
+    "choices": [
+      "전력 손실",
+      "작업 안전",
+      "냉매량",
+      "타이어 마모"
+    ],
+    "answer": 2,
+    "explanation": "지정 대기와 검전 절차를 거쳐야 한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q07"
+  },
+  {
+    "id": "concept-eco-139",
+    "track": "concept",
+    "subject": "eco",
+    "question": "충전이 중단될 때 오류코드와 함께 충전 케이블의 (    ) 상태를 확인한다.",
+    "choices": [
+      "배기 촉매",
+      "연료 분사기",
+      "커넥터",
+      "엔진 압축링"
+    ],
+    "answer": 3,
+    "explanation": "연결 상태와 충전 보호 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q09"
+  },
+  {
+    "id": "concept-eco-140",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 회로도에서 특정 점선의 의미는 추측하지 말고 (    )를 확인한다.",
+    "choices": [
+      "배터리 색상",
+      "타이어 공기압",
+      "차량 번호",
+      "범례"
+    ],
+    "answer": 4,
+    "explanation": "회로 기호는 해당 회로도의 범례가 기준이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q11"
+  },
+  {
+    "id": "concept-eco-141",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 누출 경고가 발생한 경우 안전 확보 뒤 실제 누출과 (    ) 회로 이상을 구분한다.",
+    "choices": [
+      "검지기",
+      "타이어 공기압",
+      "냉매량",
+      "캠버"
+    ],
+    "answer": 1,
+    "explanation": "전문 진단에서는 검지기 신호와 배선 및 DTC를 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q17"
+  },
+  {
+    "id": "concept-eco-142",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 진단 포트 통신이 불가능할 때 고전압 팩보다 먼저 확인할 수 있는 제어기 공통 공급전원은 (    ) 계통이다.",
+    "choices": [
+      "고압 수소",
+      "12V 보조전원",
+      "브레이크 유압",
+      "압축공기"
+    ],
+    "answer": 2,
+    "explanation": "보조전원·접지·진단 포트는 통신의 기본 조건이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q01"
+  },
+  {
+    "id": "concept-eco-143",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 구동 소음의 진단에서 모터 회전 상태 외에 기계적으로 연결된 (    ) 회전계통을 확인한다.",
+    "choices": [
+      "OBC",
+      "BMS",
+      "감속기",
+      "충전기"
+    ],
+    "answer": 3,
+    "explanation": "전기 모터와 감속기 등 기계적 원인을 분리해 진단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q12"
+  },
+  {
+    "id": "concept-eco-144",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS의 온도센서 신호가 실제와 다를 때 충전 제어에 나타날 수 있는 결과는 (    )이다.",
+    "choices": [
+      "충전 무조건 증가",
+      "전압 무한 증가",
+      "차고 상승",
+      "보호 제한"
+    ],
+    "answer": 4,
+    "explanation": "잘못된 온도값은 배터리 보호 제한을 유발할 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q14"
+  },
+  {
+    "id": "concept-eco-145",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 스택 전체 전압이 낮을 때 평균값 외에 개별 (    ) 전압의 편차를 확인한다.",
+    "choices": [
+      "셀",
+      "타이어",
+      "차축",
+      "냉각팬"
+    ],
+    "answer": 1,
+    "explanation": "셀별 전압은 스택 내 불균형을 파악하는 자료다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r06-s04-q18"
+  },
+  {
+    "id": "concept-eco-146",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리 과열이 감지될 때 BMS가 수행할 수 있는 열적 보호 동작은 (    ) 제어이다.",
+    "choices": [
+      "배기 분사",
+      "냉각",
+      "차고 상승",
+      "휠 정렬"
+    ],
+    "answer": 2,
+    "explanation": "온도 보호에는 냉각 및 충방전 출력 제한이 포함될 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q02"
+  },
+  {
+    "id": "concept-eco-147",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 충전기 선택 시 AC/DC 방식 외에 차량과 충전기의 (    ) 호환성을 확인한다.",
+    "choices": [
+      "타이어 브랜드",
+      "도장색",
+      "충전 규격",
+      "차량 길이"
+    ],
+    "answer": 3,
+    "explanation": "충전 규격은 지역과 차량·충전기 방식에 따라 달라진다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q08"
+  },
+  {
+    "id": "concept-eco-148",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전기차 화재 발생 시 일반인의 우선 행동은 접근하여 고전압 부품을 조작하는 것이 아니라 (    )이다.",
+    "choices": [
+      "배터리 분해",
+      "컨택터 강제 작동",
+      "충전 계속",
+      "대피 및 신고"
+    ],
+    "answer": 4,
+    "explanation": "차량에서 떨어져 안전을 확보하고 신고한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q11"
+  },
+  {
+    "id": "concept-eco-149",
+    "track": "concept",
+    "subject": "eco",
+    "question": "FCEV는 연료전지로 전력을 생산하고 바퀴는 일반적으로 (    )로 구동한다.",
+    "choices": [
+      "전동모터",
+      "수소 직접 분사 엔진",
+      "증기 터빈",
+      "기계식 슈퍼차저"
+    ],
+    "answer": 1,
+    "explanation": "연료전지 전력으로 전기 구동계를 작동시킨다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q15"
+  },
+  {
+    "id": "concept-eco-150",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장용기 충전에서 허용 압력은 용기와 충전기의 (    )에 맞춰야 한다.",
+    "choices": [
+      "타이어 등급",
+      "설계 등급",
+      "차체 색상",
+      "냉매 종류"
+    ],
+    "answer": 2,
+    "explanation": "압력 등급과 지정 충전 조건을 확인한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r07-s04-q16"
+  },
+  {
+    "id": "concept-eco-151",
+    "track": "concept",
+    "subject": "eco",
+    "question": "하이브리드 차량의 동력 분담은 운전자 요구 토크 외에 구동배터리 (    )를 고려한다.",
+    "choices": [
+      "타이어 규격",
+      "냉매 종류",
+      "SOC",
+      "외부 조도"
+    ],
+    "answer": 3,
+    "explanation": "충전 상태에 따라 엔진과 모터의 역할이 달라질 수 있다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q19"
+  },
+  {
+    "id": "concept-eco-152",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지 스택에 공급되는 공기 중 오염 입자를 줄이는 구성품은 (    )이다.",
+    "choices": [
+      "수소 감압기",
+      "배터리 컨택터",
+      "감속기",
+      "공기 필터"
+    ],
+    "answer": 4,
+    "explanation": "공기 공급계통은 압축·여과·수분 관리 기능을 포함한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q06"
+  },
+  {
+    "id": "concept-eco-153",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전동모터 냉각 방식 중 액체 대신 공기를 냉각매체로 이용하는 방식은 (    )이다.",
+    "choices": [
+      "공랭",
+      "수랭",
+      "오일 냉각",
+      "증발 잠열식만"
+    ],
+    "answer": 1,
+    "explanation": "모터 냉각 방식은 차종마다 다양하다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q09"
+  },
+  {
+    "id": "concept-eco-154",
+    "track": "concept",
+    "subject": "eco",
+    "question": "BMS가 개별 셀 전압의 상한 도달을 감지하면 제한하는 것은 (    ) 전류이다.",
+    "choices": [
+      "냉각수 유량",
+      "충전",
+      "타이어 공기",
+      "조향 토크"
+    ],
+    "answer": 2,
+    "explanation": "셀 과충전을 방지하기 위해 충전전류를 제한하거나 차단한다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q15"
+  },
+  {
+    "id": "concept-eco-155",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 18kWh를 소비한다. 150km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "18kWh",
+      "8.333kWh",
+      "27kWh",
+      "12kWh"
+    ],
+    "answer": 3,
+    "explanation": "소비에너지=18×150÷100=27kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-156",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 16kWh를 소비한다. 250km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "16kWh",
+      "15.625kWh",
+      "6.4kWh",
+      "40kWh"
+    ],
+    "answer": 4,
+    "explanation": "소비에너지=16×250÷100=40kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-157",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 20kWh를 소비한다. 180km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "36kWh",
+      "20kWh",
+      "9kWh",
+      "11.111kWh"
+    ],
+    "answer": 1,
+    "explanation": "소비에너지=20×180÷100=36kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-158",
+    "track": "concept",
+    "subject": "eco",
+    "question": "거리당 소비량이 일정한 전기차가 100km당 15kWh를 소비한다. 300km 주행에 필요한 에너지는 (    )이다.",
+    "choices": [
+      "15kWh",
+      "45kWh",
+      "20kWh",
+      "5kWh"
+    ],
+    "answer": 2,
+    "explanation": "소비에너지=15×300÷100=45kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-21"
+  },
+  {
+    "id": "concept-eco-159",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 6kW가 일정하게 저장될 때 24kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "144h",
+      "0.25h",
+      "4h",
+      "24h"
+    ],
+    "answer": 3,
+    "explanation": "시간=에너지/저장전력=24÷6=4h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-160",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 3kW가 일정하게 저장될 때 18kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "54h",
+      "0.167h",
+      "18h",
+      "6h"
+    ],
+    "answer": 4,
+    "explanation": "시간=에너지/저장전력=18÷3=6h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-161",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 9kW가 일정하게 저장될 때 45kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "5h",
+      "405h",
+      "0.2h",
+      "45h"
+    ],
+    "answer": 1,
+    "explanation": "시간=에너지/저장전력=45÷9=5h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-162",
+    "track": "concept",
+    "subject": "eco",
+    "question": "배터리에 실제로 10kW가 일정하게 저장될 때 30kWh를 더 저장하는 데 필요한 시간은 (    )이다.",
+    "choices": [
+      "300h",
+      "3h",
+      "0.333h",
+      "30h"
+    ],
+    "answer": 2,
+    "explanation": "시간=에너지/저장전력=30÷10=3h이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-22"
+  },
+  {
+    "id": "concept-eco-163",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 72kWh인 배터리 팩 질량이 360kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.2Wh/kg",
+      "5Wh/kg",
+      "200Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 3,
+    "explanation": "72000Wh÷360kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-164",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 48kWh인 배터리 팩 질량이 300kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.16Wh/kg",
+      "6.25Wh/kg",
+      "16Wh/kg",
+      "160Wh/kg"
+    ],
+    "answer": 4,
+    "explanation": "48000Wh÷300kg=160Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-165",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 80kWh인 배터리 팩 질량이 400kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "200Wh/kg",
+      "0.2Wh/kg",
+      "5Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 1,
+    "explanation": "80000Wh÷400kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-166",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가용 에너지 54kWh인 배터리 팩 질량이 270kg이면 질량당 가용 에너지는 (    )이다.",
+    "choices": [
+      "0.2Wh/kg",
+      "200Wh/kg",
+      "5Wh/kg",
+      "20Wh/kg"
+    ],
+    "answer": 2,
+    "explanation": "54000Wh÷270kg=200Wh/kg이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-23"
+  },
+  {
+    "id": "concept-eco-167",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 20kW, 변환 효율 90%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "18kW",
+      "20kW",
+      "2kW",
+      "0.9kW"
+    ],
+    "answer": 3,
+    "explanation": "손실=20×(100−90)/100=2kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-168",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 50kW, 변환 효율 96%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "48kW",
+      "50kW",
+      "0.96kW",
+      "2kW"
+    ],
+    "answer": 4,
+    "explanation": "손실=50×(100−96)/100=2kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-169",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 60kW, 변환 효율 95%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "3kW",
+      "57kW",
+      "60kW",
+      "0.05kW"
+    ],
+    "answer": 1,
+    "explanation": "손실=60×(100−95)/100=3kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-170",
+    "track": "concept",
+    "subject": "eco",
+    "question": "입력 전력 30kW, 변환 효율 80%인 장치의 손실 전력은 (    )이다.",
+    "choices": [
+      "24kW",
+      "6kW",
+      "30kW",
+      "0.8kW"
+    ],
+    "answer": 2,
+    "explanation": "손실=30×(100−80)/100=6kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-24"
+  },
+  {
+    "id": "concept-eco-171",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 240kJ이고 저장 효율이 25%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "180kJ",
+      "60kJ",
+      "240kJ",
+      "960kJ"
+    ],
+    "answer": 1,
+    "explanation": "저장되지 않은 양=240×(1−0.25)=180kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-172",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 400kJ이고 저장 효율이 30%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "120kJ",
+      "400kJ",
+      "12000kJ",
+      "280kJ"
+    ],
+    "answer": 4,
+    "explanation": "저장되지 않은 양=400×(100−30)/100=280kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-173",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 150kJ이고 저장 효율이 60%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "60kJ",
+      "90kJ",
+      "150kJ",
+      "9000kJ"
+    ],
+    "answer": 1,
+    "explanation": "저장되지 않은 양=150×(100−60)/100=60kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-174",
+    "track": "concept",
+    "subject": "eco",
+    "question": "감속으로 감소한 운동에너지가 500kJ이고 저장 효율이 40%라면 저장되지 않은 에너지는 (    )이다.",
+    "choices": [
+      "200kJ",
+      "300kJ",
+      "500kJ",
+      "20000kJ"
+    ],
+    "answer": 2,
+    "explanation": "저장되지 않은 양=500×(100−40)/100=300kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-25"
+  },
+  {
+    "id": "concept-eco-175",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 130V이다. 단위 셀 전압 0.65V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "130개",
+      "84.5개",
+      "200개",
+      "100개"
+    ],
+    "answer": 3,
+    "explanation": "셀 수=스택 전압/셀 전압=130÷0.65=200개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-176",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 126V이다. 단위 셀 전압 0.7V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "126개",
+      "88.2개",
+      "90개",
+      "180개"
+    ],
+    "answer": 4,
+    "explanation": "셀 수=스택 전압/셀 전압=126÷0.7=180개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-177",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 150V이다. 단위 셀 전압 0.6V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "250개",
+      "150개",
+      "90개",
+      "125개"
+    ],
+    "answer": 1,
+    "explanation": "셀 수=스택 전압/셀 전압=150÷0.6=250개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-178",
+    "track": "concept",
+    "subject": "eco",
+    "question": "동일한 단위 셀을 직렬로 연결한 스택의 전압이 80V이다. 단위 셀 전압 0.8V일 때 셀 수는 (    )이다.",
+    "choices": [
+      "80개",
+      "100개",
+      "64개",
+      "50개"
+    ],
+    "answer": 2,
+    "explanation": "셀 수=스택 전압/셀 전압=80÷0.8=100개이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "original-eco-28"
+  },
+  {
+    "id": "concept-eco-179",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 65kWh, SOH 80%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "52kWh",
+      "65kWh",
+      "13kWh",
+      "81.25kWh"
+    ],
+    "answer": 1,
+    "explanation": "현재 가용 에너지=65×0.8=52kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-180",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 80kWh, SOH 75%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "80kWh",
+      "20kWh",
+      "106.667kWh",
+      "60kWh"
+    ],
+    "answer": 4,
+    "explanation": "현재 가용 에너지=80×75/100=60kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-181",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 50kWh, SOH 90%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "45kWh",
+      "50kWh",
+      "5kWh",
+      "55.556kWh"
+    ],
+    "answer": 1,
+    "explanation": "현재 가용 에너지=50×90/100=45kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-182",
+    "track": "concept",
+    "subject": "eco",
+    "question": "용량 기준 SOH를 현재 가용 에너지/신품 가용 에너지로 정의한다. 신품 72kWh, SOH 75%에서 현재 가용 에너지는 (    )이다.",
+    "choices": [
+      "72kWh",
+      "54kWh",
+      "18kWh",
+      "96kWh"
+    ],
+    "answer": 2,
+    "explanation": "현재 가용 에너지=72×75/100=54kWh이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r04-s04-q13"
+  },
+  {
+    "id": "concept-eco-183",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1200kg인 가상 차량이 20m/s에서 10m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "360kJ",
+      "60kJ",
+      "180kJ",
+      "240kJ"
+    ],
+    "answer": 3,
+    "explanation": "감소량=½×1200×(20²−10²)/1000=180kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-184",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1600kg인 가상 차량이 15m/s에서 5m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "320kJ",
+      "80kJ",
+      "180kJ",
+      "160kJ"
+    ],
+    "answer": 4,
+    "explanation": "감소량=½×1600×(15²−5²)/1000=160kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-185",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1500kg인 가상 차량이 20m/s에서 0m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "300kJ",
+      "600kJ",
+      "451kJ",
+      "602kJ"
+    ],
+    "answer": 1,
+    "explanation": "감소량=½×1500×(20²−0²)/1000=300kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-186",
+    "track": "concept",
+    "subject": "eco",
+    "question": "질량 1000kg인 가상 차량이 30m/s에서 10m/s로 감속한다. 운동에너지 감소량은 (    )이다.",
+    "choices": [
+      "800kJ",
+      "400kJ",
+      "200kJ",
+      "450kJ"
+    ],
+    "answer": 2,
+    "explanation": "감소량=½×1000×(30²−10²)/1000=400kJ이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q02"
+  },
+  {
+    "id": "concept-eco-187",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 100kW, 보조장치 소비전력 15kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "115kW",
+      "100kW",
+      "85kW",
+      "15kW"
+    ],
+    "answer": 3,
+    "explanation": "순전력=100−15=85kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-188",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 80kW, 보조장치 소비전력 8kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "88kW",
+      "80kW",
+      "8kW",
+      "72kW"
+    ],
+    "answer": 4,
+    "explanation": "순전력=80−8=72kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-189",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 120kW, 보조장치 소비전력 20kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "100kW",
+      "140kW",
+      "120kW",
+      "20kW"
+    ],
+    "answer": 1,
+    "explanation": "순전력=120−20=100kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-190",
+    "track": "concept",
+    "subject": "eco",
+    "question": "연료전지의 총 발전전력 95kW, 보조장치 소비전력 10kW일 때 순전력은 (    )이다.",
+    "choices": [
+      "105kW",
+      "85kW",
+      "95kW",
+      "10kW"
+    ],
+    "answer": 2,
+    "explanation": "순전력=95−10=85kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r09-s04-q20"
+  },
+  {
+    "id": "concept-eco-191",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 350bar는 (    )에 해당한다.",
+    "choices": [
+      "350MPa",
+      "3500MPa",
+      "35MPa",
+      "3.5MPa"
+    ],
+    "answer": 3,
+    "explanation": "1MPa=10bar이므로 350÷10=35MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-192",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 700bar는 (    )에 해당한다.",
+    "choices": [
+      "700MPa",
+      "7000MPa",
+      "7MPa",
+      "70MPa"
+    ],
+    "answer": 4,
+    "explanation": "1MPa=10bar이므로 700÷10=70MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-193",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 500bar는 (    )에 해당한다.",
+    "choices": [
+      "50MPa",
+      "500MPa",
+      "5000MPa",
+      "5MPa"
+    ],
+    "answer": 1,
+    "explanation": "1MPa=10bar이므로 500÷10=50MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-194",
+    "track": "concept",
+    "subject": "eco",
+    "question": "수소 저장 압력 단위 환산에서 250bar는 (    )에 해당한다.",
+    "choices": [
+      "250MPa",
+      "25MPa",
+      "2500MPa",
+      "2.5MPa"
+    ],
+    "answer": 2,
+    "explanation": "1MPa=10bar이므로 250÷10=25MPa이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r08-s04-q14"
+  },
+  {
+    "id": "concept-eco-195",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 30, 28, 32Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "32Ah",
+      "90Ah",
+      "28Ah",
+      "30Ah"
+    ],
+    "answer": 3,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 28Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-196",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 60, 55, 58Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "60Ah",
+      "173Ah",
+      "57.667Ah",
+      "55Ah"
+    ],
+    "answer": 4,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 55Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-197",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 45, 48, 50Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "45Ah",
+      "50Ah",
+      "143Ah",
+      "47.667Ah"
+    ],
+    "answer": 1,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 45Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-198",
+    "track": "concept",
+    "subject": "eco",
+    "question": "가상 직렬 배터리 세 셀의 가용 전하량이 80, 72, 76Ah이다. 동일 조건에서 팩을 제한하는 셀의 용량은 (    )이다.",
+    "choices": [
+      "80Ah",
+      "72Ah",
+      "228Ah",
+      "76Ah"
+    ],
+    "answer": 2,
+    "explanation": "직렬 팩의 가용 전하량은 최소 셀 용량 72Ah에 제한된다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q08"
+  },
+  {
+    "id": "concept-eco-199",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전력변환장치의 출력이 24kW, 효율이 80%라면 입력 전력은 (    )이다.",
+    "choices": [
+      "19.2kW",
+      "24kW",
+      "30kW",
+      "4.8kW"
+    ],
+    "answer": 3,
+    "explanation": "입력=출력/효율=24÷0.8=30kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q10"
+  },
+  {
+    "id": "concept-eco-200",
+    "track": "concept",
+    "subject": "eco",
+    "question": "전력변환장치의 출력이 40kW, 효율이 95%라면 입력 전력은 (    )이다.",
+    "choices": [
+      "38kW",
+      "40kW",
+      "2kW",
+      "42.105kW"
+    ],
+    "answer": 4,
+    "explanation": "입력=출력/효율=40÷0.95=42.105kW이다.",
+    "origin": "original_concept_practice",
+    "review_status": "editorial_draft",
+    "source_question_id": "auto-made-r05-s04-q10"
   }
 ]
