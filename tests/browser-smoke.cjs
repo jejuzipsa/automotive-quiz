@@ -425,7 +425,23 @@ async function testDevice(browser,name,viewport,mobile){
     await page.locator("#results").waitFor();
     assert.match(await page.locator("#summary").textContent(),/0\/80/);
     assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotivePrivateExamLastResultV1")).answers),{},"answer at deadline must not be recorded");
-    console.log("PASS "+name+" automatic actual 640 bank, original round, math/images, resume, hold-excluded scores, direct entry, deadline guard");
+    const legacy=await page.evaluate(()=>JSON.parse(localStorage.getItem("automotiveLegacyWrongHistoryV1")));
+    assert.equal(Object.keys(legacy.rows).length,160-heldCount-read("past-exam/data/2018-03-04.json").questions.filter(q=>q.review.status==="hold").length);
+    assert.ok(!legacy.rows[past[heldIndex].id],"held questions must not enter cumulative history");
+    assert.equal(legacy.rows[past[0].id].correct,1,"reopening results must not duplicate attempts");
+    const target=past.find((q,i)=>i!==0&&q.review.status!=="hold");
+    await page.locator("#resultHistory").click();await page.locator("#legacyList").waitFor();
+    await page.locator("#legacyDate").selectOption("2020-08-22");
+    const entry=page.locator('#legacyList button[data-question-id="'+target.id+'"]');
+    await entry.click();await page.locator("#practice").waitFor();
+    await page.locator("#practiceChoices button").nth(target.answer-1).click();
+    assert.equal(await page.locator("#practiceChoices .correct").count(),1);
+    await page.locator("#practiceBack").click();assert.equal(await entry.count(),0);
+    await page.locator("#legacyScope").selectOption("resolved");assert.equal(await entry.count(),1);
+    await page.locator('#historyPanel a[href="../index.html?view=wrong"]').click();await visible("wrongView");
+    await page.locator("#legacyWrongLink").click();await page.locator("#legacyList").waitFor();
+    assert.match(await page.locator("#legacySummary").textContent(),/복습 완료 1문항/);
+    console.log("PASS "+name+" automatic actual 640 bank, original round, math/images, resume, hold-excluded scores, direct entry, deadline guard, cumulative legacy review");
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}

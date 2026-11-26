@@ -796,6 +796,7 @@
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
     renderSubjects();renderConcepts();showView("home");
+    if(new URLSearchParams(location.search).get("view")==="wrong"){history.replaceState(null,"",location.pathname);showView("wrong");renderWrong();}
     loadPublicBank();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",connect);
