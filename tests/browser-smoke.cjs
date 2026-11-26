@@ -376,20 +376,27 @@ async function testDevice(browser,name,viewport,mobile){
     assert.deepEqual(await page.evaluate(()=>[localStorage.getItem("automotiveRotationQueueV1"),localStorage.getItem("automotiveQuizActiveExamV1")]),beforeCancel,"cancelled replacement must not consume questions or replace saved exam");
     console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam, cancelled replacement");
     // Actual review05 data: fresh browser, no file import, exact original ordering.
+    const roundRequests=[];
+    page.on("request",req=>{const p=new URL(req.url()).pathname,m=p.match(/\/past-exam\/data\/(\d{4}-\d{2}-\d{2})\.json$/);if(m)roundRequests.push(m[1]);});
     await page.goto(new URL("past-exam/index.html",base).href);
     await page.locator("#rounds button").first().waitFor();
+    assert.deepEqual(roundRequests,[],"round selection must not fetch any round");
     assert.equal(await page.locator("#rounds button").count(),8);
     assert.equal(await page.locator('input[type="file"]').count(),0);
     const past=read("past-exam/data/2020-08-22.json").questions, heldIndex=past.findIndex(q=>q.review.status==="hold"), heldCount=past.filter(q=>q.review.status==="hold").length;
     await page.locator("#rounds button").first().click();
+    await page.locator("#numbers button").first().waitFor();
+    assert.deepEqual(roundRequests,["2020-08-22"],"only the chosen round may load");
     assert.equal(await page.locator("#numbers button").count(),80);
     await page.locator("#choices button").nth(past[0].answer-1).click();
     await page.locator("#numbers button").nth(heldIndex).click();
     assert.ok(await page.locator("#warning").isVisible());
     await page.locator("#choices button").nth(past[heldIndex].answer-1).click();
-    await page.reload();
+    roundRequests.length=0;await page.reload();
     await page.locator("#resume").waitFor();
-    await page.locator("#resume").click();
+    assert.deepEqual(roundRequests,[]);
+    await page.locator("#resume").click();await page.locator("#exam").waitFor();
+    assert.deepEqual(roundRequests,["2020-08-22"],"resume must load only the saved round");
     assert.ok((await page.locator("#position").textContent()).includes((heldIndex+1)+"/80"));
     assert.equal(await page.locator("#choices button.selected").count(),1);
     const mi=past.findIndex(q=>[q.question_html,...q.choices_html].some(s=>typeof s==="string"&&s.includes("<math")));
@@ -401,10 +408,14 @@ async function testDevice(browser,name,viewport,mobile){
     const summary=await page.locator("#summary").textContent();
     assert.ok(summary.includes("2/80"));assert.ok(summary.includes("1/"+(80-heldCount)));
     await page.locator("#wrong").click();assert.equal(await page.locator(".review-item").count(),79);
-    await page.reload();await page.locator("#lastResult").waitFor();await page.locator("#lastResult").click();
+    roundRequests.length=0;await page.reload();await page.locator("#lastResult").waitFor();await page.locator("#lastResult").click();await page.locator("#results").waitFor();
     assert.ok((await page.locator("#summary").textContent()).includes("1/"+(80-heldCount)));
-    await page.goto(new URL("past-exam/index.html?round=2018-03-04",base).href);
+    assert.deepEqual(roundRequests,["2020-08-22"],"result loads only its round");
+    await page.locator("#back").click();await page.locator("#lastResult").click();await page.locator("#results").waitFor();
+    assert.deepEqual(roundRequests,["2020-08-22"],"same-page review must reuse cached round");
+    roundRequests.length=0;await page.goto(new URL("past-exam/index.html?round=2018-03-04",base).href);
     await page.locator("#exam").waitFor();assert.match(await page.locator("#position").textContent(),/2018-03-04/);
+    assert.deepEqual(roundRequests,["2018-03-04"],"direct entry loads only requested round");
     await page.evaluate(()=>{
       const originalNow=Date.now;
       const deadline=JSON.parse(localStorage.getItem("automotivePrivateExamProgressV1")).deadline;
