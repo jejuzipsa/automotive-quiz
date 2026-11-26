@@ -82,10 +82,21 @@ async function testDevice(browser,name,viewport,mobile){
   const choose=async(q,correct)=>{
     const answer=q.choices[q.answer-1];
     const target=correct?answer:q.choices.find(x=>x!==answer);
-    await el("answerChoices").getByText(target,{exact:true}).click();
+    // Only match the answer text, never the concatenated number + text of a button.
+    const match=el("answerChoices").locator(".choice-text").and(el("answerChoices").getByText(target,{exact:true}));
+    assert.equal(await match.count(),1,"unique answer text: "+q.id+" / "+target);
+    await match.click();
   };
   try{
     if(name==="desktop")await checkDeployedFiles(context);
+    // Regression: button 1 + "80kPa" must not be mistaken for answer "180kPa".
+    await page.setContent("<div id=\"answerChoices\"><button class=\"choice\" onclick=\"this.classList.add('selected')\"><span class=\"choice-index\">1</span><span class=\"choice-text\">80kPa</span></button><button class=\"choice\" onclick=\"this.classList.add('selected')\"><span class=\"choice-index\">2</span><span class=\"choice-text\">180kPa</span></button></div>");
+    const collision={id:"selector-regression",choices:["80kPa","180kPa"],answer:2};
+    await choose(collision,true);
+    assert.deepEqual(await el("answerChoices").locator(".selected .choice-text").allTextContents(),["180kPa"]);
+    await choose(collision,false);
+    assert.deepEqual(await el("answerChoices").locator(".selected .choice-text").allTextContents(),["80kPa","180kPa"]);
+    console.log("PASS "+name+" exact answer text selector (80kPa / 180kPa)");
     await page.goto(base.href,{waitUntil:"domcontentloaded"});
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await visible("homeView");await layout();

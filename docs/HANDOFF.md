@@ -4,7 +4,7 @@
 
 PR #64(400문항)는 main 9a26ffd에 병합. PR #65는 병합 전 Node 및 Chromium 검사 성공 후 main `730b78d62bc52a73f7eb8fe272b8c0d0263c6608`에 병합 완료. main의 실제 `data/concept.json`에서 과목별 200개, 총 800개 및 고유 ID 800개를 확인했다. 기존 400문항을 보존하고 400개를 추가한 목표 달성 상태다. 추가 400개 중 201개는 개념·진단 질문, 199개는 기존 공식과 수치를 이용한 가상 응용 계산 문제다. 수치 변형은 독립 개념 400개를 의미하지 않는다. source_question_id, 4지선다, 한 개 빈칸, 정답 및 해설을 갖추고 별도 순환 대기열을 사용한다. 기존 1,440문항·예상 112·시연 8은 그대로 유지. 기술 전문가 인증을 의미하지 않으며 전수 감수 단계는 추가하지 않는다. 이전 확장 1차 내용은 이력이다.
 
-병합 전 [JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639655) 및 [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639710) 성공. #65 병합 후 Actions: Pages 배포 완료 미확인, JSON 검사 완료 미확인, Chromium 워크플로 완료 미확인.
+병합 전 [JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639655) 및 [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45687639710) 성공. 최신 배포 `7ebe626`: [Pages](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814053) 및 [JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814509) 성공. [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814346)는 실제 운영 사이트 성공, 로컬 모바일 실패(버튼 번호 1과 80kPa의 결합 문자열이 180kPa와 충돌). 자동 테스트에서 `.choice-text` 요소에만 정확히 일치하도록 수정하고 재현 회귀검사를 추가했다. 재검사 결과는 최신 main Actions에서 확인한다. 문제은행 및 앱 동작 변경 없음. 실제 iPhone Safari 실기기 확인은 아직 미실시.
 
 ## 괄호퀴즈 확장 1차 — 2026-11-26 (과거 기록)
 

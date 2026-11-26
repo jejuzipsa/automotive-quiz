@@ -1,5 +1,9 @@
 # 자동차정비산업기사 개발·검수 작업 일지
 
+## 2026-11-26 — 브라우저 답안 선택기 충돌 수정
+- 최신 배포 `7ebe626`: [Pages](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814053) 및 [JSON 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814509) 성공. [Chromium 검사](https://github.com/jejuzipsa/automotive-quiz/actions/runs/45764814346)는 실제 운영 사이트 성공, 로컬 모바일 실패(버튼 번호 1과 80kPa의 결합 문자열이 180kPa와 충돌). 자동 테스트에서 `.choice-text` 요소에만 정확히 일치하도록 수정하고 재현 회귀검사를 추가했다. 재검사 결과는 최신 main Actions에서 확인한다. 문제은행 및 앱 동작 변경 없음. 실제 iPhone Safari 실기기 확인은 아직 미실시.
+
+
 ## 2026-11-26 — PR #65 병합 및 문서 동기화
 - #65를 사전 JSON 및 Chromium 성공 확인 후 squash 병합: 730b78d62bc52a73f7eb8fe272b8c0d0263c6608.
 - main 실제 개념 JSON 800개, 4과목 각 200개, 고유 ID 800개 확인. 총 2,360문항(기출 기반 1,440 + 괄호 800 + 예상 112 + 시연 8).
