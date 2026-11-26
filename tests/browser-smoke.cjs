@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","assets/home-nav.css","hand-note/diagrams.js","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","assets/home-nav.css","past-exam/index.html","past-exam/exam.js","past-exam/exam.css","hand-note/diagrams.js","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -371,6 +371,41 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(rotation.ids.filter(x=>x.startsWith("auto-light-")).length,40);
     for(const s of ["01","02","03","04"])assert.equal(rotation.ids.filter(x=>x.includes("-s"+s+"-")).length,20);
     console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam");
+    // No private source data in the repository: exercise the local reader with synthetic material.
+    await page.goto(new URL("past-exam/index.html",base).href);
+    const dates=["2020-08-22","2020-06-06","2019-08-04","2019-04-27","2019-03-03","2018-08-19","2018-04-28","2018-03-04"],subjects=["legacy_mechanics","legacy_engine","legacy_chassis","legacy_electrical"];
+    const fixture={format:"automotive-private-exam-v1",version:"synthetic-test",images:{},variants:[],rounds:dates.map(d=>({exam_date:d,questions:Array.from({length:80},(_,i)=>({id:"legacy-"+d+"-q"+String(i+1).padStart(2,"0"),question_number:i+1,original_subject:subjects[Math.floor(i/20)],question:"synthetic "+(i+1),question_html:i===0?"<math><mfrac><mn>1</mn><mn>2</mn></mfrac></math>":"synthetic "+(i+1),choices:["one","two","three","four"],answer:2,review:{status:i===1?"hold":"preliminary_supported"},explanation:"synthetic only"}))}))};
+    await page.locator("#file").setInputFiles({name:"synthetic.json",mimeType:"application/json",buffer:Buffer.from(JSON.stringify(fixture))});
+    await page.locator("#rounds button").first().waitFor();
+    assert.equal(await page.locator("#rounds button").count(),8);
+    await page.locator("#rounds button").first().click();
+    assert.equal(await page.locator("#numbers button").count(),80);
+    assert.equal(await page.locator("#stem math").count(),1);
+    await page.locator("#choices button").nth(1).click();
+    await page.locator("#next").click();
+    assert.ok(await page.locator("#warning").isVisible());
+    await page.locator("#choices button").nth(1).click();
+    await page.reload();
+    await page.locator("#resume").waitFor();
+    await page.locator("#resume").click();
+    assert.match(await page.locator("#position").textContent(),/2\/80/);
+    assert.equal(await page.locator("#choices button.selected").count(),1);
+    page.once("dialog",d=>d.accept());
+    await page.locator("#submit").click();
+    assert.match(await page.locator("#summary").textContent(),/2\/80/);
+    assert.match(await page.locator("#summary").textContent(),/1\/79/);
+    await page.locator("#wrong").click();
+    assert.equal(await page.locator(".review-item").count(),79);
+    await page.reload();
+    await page.locator("#lastResult").waitFor();
+    await page.locator("#lastResult").click();
+    assert.match(await page.locator("#summary").textContent(),/1\/79/);
+    await page.locator("#back").click();
+    page.once("dialog",d=>d.accept());
+    await page.locator("#forget").click();
+    await page.waitForFunction(()=>document.querySelector("#rounds").children.length===0);
+    console.log("PASS "+name+" private local exam synthetic input, math, resume, hold-excluded scores, result persistence, delete");
+
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}
