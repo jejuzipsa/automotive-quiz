@@ -6,7 +6,8 @@
   <meta name="theme-color" content="#f4f8f7">
   <meta name="description" content="자동차정비산업기사 필기 연습. 과목별 객관식 문제풀이, 오답 복습, 실전 시험과 핵심 개념 퀴즈.">
   <title>자동차정비산업기사 기출·예상문제</title>
-  <link rel="stylesheet" href="styles.css?v=1.2.2">
+  <link rel="icon" type="image/png" href="assets/automotive-icon.png">
+  <link rel="stylesheet" href="styles.css?v=1.2.3">
 </head>
 <body>
   <main class="app-shell" id="app">
@@ -33,7 +34,6 @@
             <h2 id="homeSubjectTitle"><img class="section-heading-icon" src="assets/gichul-icon.png" alt="" aria-hidden="true" width="42" height="42">과목별 예상문제</h2>
             <p>과목을 고른 뒤 10문제·20문제 또는 전체 문제를 선택해 풀어봐.</p>
           </div>
-          <button id="bankEntryBtn" class="subject-browse-btn home-bank-link" type="button">문제은행 전체 보기</button>
         </div>
         <p id="bankLoadStatus" class="track-summary" role="status">과목별 JSON 문제은행을 불러오는 중이야.</p>
         <div class="home-actions hidden" id="resumeExamPanel"><button id="resumeExamBtn" class="primary-btn" type="button">저장된 시험 이어 풀기</button><button id="discardExamBtn" class="secondary-btn" type="button">저장된 시험 삭제</button><p id="resumeExamInfo" class="helper" role="status"></p></div>
@@ -66,18 +66,6 @@
       <div class="site-footer"><span>© 2026 제주집사 · 자동차정비산업기사</span><a href="https://github.com/jejuzipsa/automotive-quiz" target="_blank" rel="noopener noreferrer">GitHub 저장소</a></div>
     </section>
 
-    <section id="bankView" class="view hidden">
-      <section class="past-exam-home-section">
-        <div class="past-exam-home-head"><div><p class="past-exam-eyebrow">학습 문제은행</p><h2>문제은행 전체 보기</h2><p>문제은행과 과목을 선택해.</p></div><button id="bankAllBtn" class="subject-browse-btn" type="button">선택한 문제은행 전체 보기</button></div>
-        <div class="mode-switch" role="tablist" aria-label="문제은행 선택">
-          <button id="trackPast" type="button" role="tab" aria-selected="true" class="active">기출 기반 로테이션</button>
-          <button id="trackExpected" type="button" role="tab" aria-selected="false">예상문제 · 자체제작</button>
-        </div>
-        <p id="trackSummary" class="track-summary"></p>
-        <div id="bankSubjectGrid" class="subject-grid"></div>
-      </section>
-    </section>
-
     <section id="coreCardView" class="view hidden">
       <section class="study-placeholder" aria-labelledby="coreCardTitle">
         <p class="eyebrow">반복 암기</p><h2 id="coreCardTitle"><img class="section-heading-icon" src="assets/core-card-icon.png" alt="" aria-hidden="true">핵심 단어 카드</h2>
@@ -104,6 +92,13 @@
       <div class="bank-browser-head">
         <div><p class="eyebrow">전체 문제 보기</p><h2 id="browseTitle">문제은행</h2><p id="browseMeta" class="bank-browser-summary"></p></div>
         <button class="primary-btn" id="browseStartBtn" type="button">문제 풀기</button>
+      </div>
+      <div id="browseTrackControls" class="browse-track-controls">
+        <div class="mode-switch" role="group" aria-label="이 과목의 문제 종류">
+          <button id="trackPast" type="button" aria-pressed="true" class="active">기출 기반</button>
+          <button id="trackExpected" type="button" aria-pressed="false">자체제작 예상문제</button>
+        </div>
+        <div class="browse-quick-actions"><button id="browse10Btn" type="button" class="subject-quiz-count-btn">10문제</button><button id="browse20Btn" type="button" class="subject-quiz-count-btn">20문제</button></div>
       </div>
       <div class="list-questions" id="browseList"></div>
       <nav class="pagination" id="browsePagination" aria-label="문제 페이지"></nav>
@@ -168,6 +163,6 @@
     </section>
   </main>
   <script src="quiz-utils.js?v=1.0.0" defer></script>
-  <script src="app.js?v=1.8.2" defer></script>
+  <script src="app.js?v=1.8.3" defer></script>
 </body>
 </html>

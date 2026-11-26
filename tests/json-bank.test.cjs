@@ -66,10 +66,11 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.equal(els.bankLoadStatus.textContent.includes("112문항"),true,"JSON auto-load status");
   assert.equal(els.subjectGrid.children.length,4);
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
-  assert.equal(els.trackPast.attributes["aria-selected"],"true");
   assert.ok(els.bankLoadStatus.textContent.includes("1,440문항"));
-  await els.bankEntryBtn.click();await els.trackExpected.click();
-  assert.equal(els.bankSubjectGrid.children[0].children[0].children[1].textContent,"28문항");
+  await els.subjectGrid.children[0].children[1].children[1].click();
+  assert.equal(els.browseMeta.textContent,"전체 360문항");
+  await els.trackExpected.click();
+  assert.equal(els.browseMeta.textContent,"전체 28문항");
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
   assert.deepEqual(requestPaths.slice(0,7),[
     "data/manifest.json",
@@ -80,7 +81,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
     "data/demo.json",
     "data/concept.json"
   ]);
-  await els.bankSubjectGrid.children[0].children[1].children[0].children[0].click();
+  await els.browse10Btn.click();
   assert.equal(els.answerChoices.children.length,4);
   assert.equal(els.quizAuditInfo.textContent.includes("편집 검토 단계"),true);
   for(let i=0;i<10;i++){
@@ -90,9 +91,9 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   assert.ok(els.resultScore.textContent.includes("/ 10문제"));
   assert.equal(els.resultGrid.children.length,10);
   await els.resultHomeBtn.click();
-  await els.bankEntryBtn.click();await els.trackExpected.click();await els.bankAllBtn.click();
+  await els.subjectGrid.children[0].children[1].children[1].click();await els.trackExpected.click();
   assert.equal(els.browseList.children.length,10,"10 public JSON cards per page");
-  assert.equal(els.browseMeta.textContent,"전체 112문항");
+  assert.equal(els.browseMeta.textContent,"전체 28문항");
   await els.homeBtn.click();
   await els.examEntryBtn.click();
   assert.equal(els.expectedExamBtn.disabled,false,"expanded expected bank should be connected");
@@ -228,7 +229,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   // Exercise the actual automatic bank, not an imported synthetic fixture.
   const light=["engine","chassis","electrical","eco"].flatMap(s=>JSON.parse(fs.readFileSync(path.join(root,"data/rotation/light",s+".json"),"utf8")));
   assert.equal(light.length,720);
-  await els.homeBtn.click();await els.trackPast.click();
+  await els.homeBtn.click();
   assert.match(els.bankLoadStatus.textContent,/1,440문항 자동 연결 완료/);
   assert.equal(els.subjectGrid.children[0].children[0].children[1].textContent,"360문항");
   const queueKey="automotiveRotationQueueV1",consumed=new Set();

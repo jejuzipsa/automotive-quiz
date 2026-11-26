@@ -202,8 +202,7 @@
     }
     state[subject]={remaining:queue,lastSource:last,lastVariant};saveStorage(ROTATION_KEY,state);return out;
   }
-  const VIEWS = ["home","bank","coreCard","handNote","browse","quiz","result","exam","wrong"];
-  let activeTrack = "past";
+  const VIEWS = ["home","coreCard","handNote","browse","quiz","result","exam","wrong"];
   let current = null;
   let recentResult = null;
   let lastSaved = null;
@@ -361,22 +360,8 @@
     parent.append(box);
   }
 
-  function setTrack(track) {
-    activeTrack=track==="expected"?"expected":"past";
-    $("trackPast").classList.toggle("active",activeTrack==="past");
-    $("trackExpected").classList.toggle("active",activeTrack==="expected");
-    $("trackPast").setAttribute("aria-selected",String(activeTrack==="past"));
-    $("trackExpected").setAttribute("aria-selected",String(activeTrack==="expected"));
-    renderSubjects();
-  }
   function renderSubjects() {
-    const box=$("subjectGrid");box.replaceChildren();
-    const total=poolFor(activeTrack).length;
-    $("trackSummary").textContent=bankLoadState==="loading"?"문제은행을 불러오는 중이야.":
-      `${TRACKS[activeTrack]} · 총 ${total}문항${activeTrack==="expected"?" · 자체 제작 연습문제(편집 검토 중)":(total?" · 재작성본 + 원본 기반 학습용":" · 문제은행을 불러오지 못했어. 새로고침해 줘")}`;
-    renderSubjectCards(box,"past");
-    renderSubjectCards($("bankSubjectGrid"),activeTrack);
-    $("bankAllBtn").disabled=!total;
+    renderSubjectCards($("subjectGrid"),"past");
   }
   function renderSubjectCards(box,track){
     box.replaceChildren();
@@ -406,6 +391,15 @@
     $("browseTitle").textContent=state.title;
     $("browseMeta").textContent=`전체 ${state.items.length}문항`;
     $("browseStartBtn").disabled=state.items.length===0;
+    const selectable=!!state.subject&&["past","expected"].includes(state.track);
+    $("browseTrackControls").classList.toggle("hidden",!selectable);
+    for(const [id,track] of [["trackPast","past"],["trackExpected","expected"]]){
+      const btn=$(id),active=state.track===track;
+      btn.classList.toggle("active",active);btn.setAttribute("aria-pressed",String(active));
+      btn.disabled=!selectable||!poolFor(track,state.subject).length;
+    }
+    $("browse10Btn").disabled=state.items.length<10;
+    $("browse20Btn").disabled=state.items.length<20;
     const container=$("browseList");container.replaceChildren();
     const pages=$("browsePagination");pages.replaceChildren();
     if(!state.items.length) {
@@ -771,13 +765,13 @@
     saveStorage("automotiveQuizReadingSizeV1",size);
   }
   function connect(){
-    $("trackPast").addEventListener("click",()=>setTrack("past"));
-    $("trackExpected").addEventListener("click",()=>setTrack("expected"));
+    $("trackPast").addEventListener("click",()=>{if(browseState?.subject)openBrowse("past",browseState.subject);});
+    $("trackExpected").addEventListener("click",()=>{if(browseState?.subject)openBrowse("expected",browseState.subject);});
+    $("browse10Btn").addEventListener("click",()=>{if(browseState?.subject)startTrack(browseState.track,browseState.subject,10);});
+    $("browse20Btn").addEventListener("click",()=>{if(browseState?.subject)startTrack(browseState.track,browseState.subject,20);});
     $("themeToggleBtn").addEventListener("click",toggleTheme);
     for(const b of document.querySelectorAll(".reading-size-btn"))b.addEventListener("click",()=>setReadingSize(b.dataset.readingSize));
     $("homeBtn").addEventListener("click",showHome);
-    $("bankEntryBtn").addEventListener("click",()=>{setTrack("past");showView("bank");});
-    $("bankAllBtn").addEventListener("click",()=>openBrowse(activeTrack));
     $("coreCardEntryBtn").addEventListener("click",()=>showView("coreCard"));
     $("handNoteEntryBtn").addEventListener("click",()=>showView("handNote"));
     $("examEntryBtn").addEventListener("click",()=>showView("exam"));
@@ -799,7 +793,7 @@
     window.addEventListener("pageshow",()=>{if(view==="quiz"&&current?.mode==="exam")beginTimer();});
     initTheme();
     setReadingSize(readStorage("automotiveQuizReadingSizeV1","normal"));
-    setTrack("past");renderConcepts();showView("home");
+    renderSubjects();renderConcepts();showView("home");
     loadPublicBank();
   }
   if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",connect);

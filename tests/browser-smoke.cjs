@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -104,7 +104,9 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(await page.locator("#homeView .home-feature-card").count(),3);
     assert.equal(await el("demoTitle").count(),0);
     assert.equal(await page.locator(".brand-mark").count(),0);
-    assert.equal(await el("bankEntryBtn").locator("img").count(),0);
+    assert.equal(await el("bankEntryBtn").count(),0);
+    assert.equal(await el("bankView").count(),0);
+    assert.match(await el("headerTitle").evaluate(e=>getComputedStyle(e,"::before").backgroundImage),/automotive-icon\.png/);
     assert.equal(await page.locator("#homeView #trackPast,#homeView #trackExpected,#homeView #wrongEntryBtn").count(),0);
     assert.equal(await page.locator("#homeView .home-feature-stack .home-feature-card").allTextContents().then(a=>a.map(x=>x.trim()).join("|")),"핵심 단어 카드|한손노트");
     await el("coreCardEntryBtn").click();await visible("coreCardView");await el("homeBtn").click();
@@ -116,7 +118,6 @@ async function testDevice(browser,name,viewport,mobile){
       assert.equal(subjectCount,b.count);
     }
     assert.match(await text("bankLoadStatus"),/1,440문항 자동 연결 완료/);
-    assert.equal(await el("trackPast").getAttribute("aria-selected"),"true");
     for(const card of await el("subjectGrid").locator(".subject-card").all())assert.match(await card.innerText(),/360문항/);
     assert.equal(await page.locator('input[type=file]').count(),0);
 
@@ -157,8 +158,11 @@ async function testDevice(browser,name,viewport,mobile){
     assert.ok(await page.locator("body").evaluate(b=>b.classList.contains("reading-large")));
     await el("themeToggleBtn").click();
     await page.locator('[data-reading-size="normal"]').click();
-    await el("bankEntryBtn").click();await el("trackExpected").click();
-    await el("bankSubjectGrid").locator(".subject-card").first().getByRole("button",{name:"10문제",exact:true}).click();
+    await el("subjectGrid").locator(".subject-card").first().getByRole("button",{name:"전체 문제 보기",exact:true}).click();
+    assert.equal(await text("browseMeta"),"전체 360문항");
+    await el("trackExpected").click();
+    assert.equal(await text("browseMeta"),"전체 28문항");
+    await el("browse10Btn").click();
     await checkHeader(page,viewport.width,mobile);
     if(mobile){await page.setViewportSize({width:320,height:viewport.height});await checkHeader(page,320,true);await page.setViewportSize(viewport);}
     let firstWrong;
@@ -199,8 +203,15 @@ async function testDevice(browser,name,viewport,mobile){
     assert.match(await text("wrongSummary"),/누적 12회 풀이/);
     await el("homeBtn").click();await page.reload();
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
-    await el("bankEntryBtn").click();await el("trackExpected").click();await el("bankAllBtn").click();
-    assert.equal(await text("browseMeta"),"전체 "+expected.length+"문항");
+    for(let i=0;i<4;i++){
+      await el("subjectGrid").locator(".subject-card").nth(i).getByRole("button",{name:"전체 문제 보기",exact:true}).click();
+      assert.equal(await text("browseMeta"),"전체 360문항");
+      await el("trackExpected").click();
+      assert.equal(await text("browseMeta"),"전체 28문항");
+      await el("trackPast").click();
+      assert.equal(await text("browseMeta"),"전체 360문항");
+      await el("homeBtn").click();
+    }
     await el("homeBtn").click();await el("examEntryBtn").click();
     assert.ok(!(await el("approvedExamBtn").isDisabled()));
     await el("expectedExamBtn").click();assert.equal(await text("quizProgress"),"1 / 80");
