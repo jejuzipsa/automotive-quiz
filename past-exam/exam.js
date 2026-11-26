@@ -47,11 +47,11 @@ function start(date){
   if(saved()&&!confirm("이전 시험 기록을 새 시험으로 바꿀까?"))return;
   return withRound(date,()=>{active={version:bank.version,date,index:0,answers:{},deadline:Date.now()+(date==="variants"?20:120)*60000};persist();begin()});
 }
-function begin(){view("exam");draw();clearInterval(tick);tick=setInterval(update,500);update()}
+function begin(){view("exam");setNumbers(false);draw();clearInterval(tick);tick=setInterval(update,500);update()}
 function update(){const s=Math.max(0,Math.ceil((active.deadline-Date.now())/1000));$("timer").textContent=Math.floor(s/60)+":"+String(s%60).padStart(2,"0");if(!s)finish()}
 function stillOpen(){if(!active||$("exam").hidden)return false;if(Date.now()>=active.deadline){finish();return false}return true}
-function draw(){const qs=questions(),q=qs[active.index];$("position").textContent=(active.date==="variants"?"수정 학습문항":active.date+" · "+names[q.original_subject])+" · "+(active.index+1)+"/"+qs.length;$("warning").hidden=!held(q);$("warning").textContent="채점 주의 · 원문 보존, 검수 점수에서 제외";render($("stem"),q.question_html,q.question);$("choices").replaceChildren();q.choices.forEach((c,i)=>{const b=el("button",undefined,"choice"+(active.answers[q.id]===i+1?" selected":"")),s=el("span");b.append(el("span",String(i+1)+"."),s);render(s,q.choices_html?.[i],c);b.setAttribute("aria-pressed",String(active.answers[q.id]===i+1));b.onclick=()=>{if(!stillOpen())return;active.answers[q.id]=i+1;persist();draw()};$("choices").append(b)});$("prev").disabled=active.index===0;$("next").disabled=active.index===qs.length-1;$("numbers").replaceChildren();qs.forEach((x,i)=>{const b=el("button",String(i+1),(active.answers[x.id]?"answered ":"")+(i===active.index?"current":""));b.onclick=()=>go(i);$("numbers").append(b)})}
-function go(i){if(!stillOpen())return;active.index=i;persist();draw();window.scrollTo(0,0)}
+function draw(){const qs=questions(),q=qs[active.index];$("position").textContent=(active.date==="variants"?"수정 학습문항":active.date+" · "+names[q.original_subject])+" · "+(active.index+1)+"/"+qs.length;$("warning").hidden=!held(q);$("warning").textContent="채점 주의 · 원문 보존, 검수 점수에서 제외";render($("stem"),q.question_html,q.question);$("choices").replaceChildren();q.choices.forEach((c,i)=>{const b=el("button",undefined,"choice"+(active.answers[q.id]===i+1?" selected":"")),s=el("span");b.append(el("span",String(i+1)+"."),s);render(s,q.choices_html?.[i],c);b.setAttribute("aria-pressed",String(active.answers[q.id]===i+1));b.onclick=()=>{if(!stillOpen())return;active.answers[q.id]=i+1;persist();draw()};$("choices").append(b)});$("prev").disabled=active.index===0;$("next").disabled=active.index===qs.length-1;$("answeredCount").textContent=Object.keys(active.answers).length+" / "+qs.length+" 응답";$("examProgress").max=qs.length;$("examProgress").value=Object.keys(active.answers).length;$("numbers").replaceChildren();qs.forEach((x,i)=>{const b=el("button",String(i+1),(active.answers[x.id]?"answered ":"")+(i===active.index?"current":""));b.setAttribute("aria-label",(i+1)+"번 "+(active.answers[x.id]?"응답 완료":"미응답"));if(i===active.index)b.setAttribute("aria-current","true");b.onclick=()=>{setNumbers(false);go(i)};$("numbers").append(b)})}
+function go(i){if(!stillOpen()||i<0||i>=questions().length)return;active.index=i;persist();draw();window.scrollTo(0,0)}
 function score(qs,exclude){const arr=qs.filter(q=>!exclude||!held(q));return {n:arr.length,correct:arr.filter(q=>active.answers[q.id]===q.answer).length}}
 function finish(fromHistory=false){clearInterval(tick);view("results");const qs=questions(),a=score(qs,false),b=score(qs,true);$("summary").replaceChildren(el("p","원본 표시 정답 기준 참고 점수: "+a.correct+"/"+a.n),el("p","보류 제외 검수 참고 점수: "+b.correct+"/"+b.n),el("p","보류 "+(a.n-b.n)+"문항 · 공식 성적이나 합격 판정이 아님."));if(active.date!=="variants")for(const [k,n] of Object.entries(names)){const sub=qs.filter(q=>q.original_subject===k),s=score(sub,true),t=score(sub,false);$("summary").append(el("p",n+" — 원문 "+t.correct+"/"+t.n+" · 보류 제외 "+s.correct+"/"+s.n))}if(!fromHistory)try{recordExamHistory(active,qs);localStorage.setItem(RESULT,JSON.stringify(active));localStorage.removeItem(KEY)}catch{}review(false)}
 function review(only){$("review").replaceChildren();for(const q of questions()){const ans=active.answers[q.id],ok=ans===q.answer;if(only&&ok&&!held(q))continue;const d=el("article",undefined,"review-item"),h=el("h3",(q.question_number||"수정")+" · "+(held(q)?"채점 보류":ok?"정답":ans?"오답":"미응답"));d.append(h);const s=el("p");render(s,q.question_html,q.question);d.append(s);q.choices.forEach((c,i)=>{const p=el("div",undefined,i+1===q.answer?"correct":ans===i+1?"incorrect":"");p.append(el("span",String(i+1)+". "));const v=el("span");render(v,q.choices_html?.[i],c);p.append(v);d.append(p)});d.append(el("p","선택: "+(ans||"미응답")+(active.date==="variants"?" / 수정 문항 정답: ":" / 원본 표시 정답: ")+q.answer));if(q.review?.reported_accepted_answers)d.append(el("p","사이트 복수 정답 기록: "+q.review.reported_accepted_answers.join(", ")+" (공식 미확인)"));if(q.review?.review_note)d.append(el("p",q.review.review_note));if(q.review?.study_explanation)d.append(el("pre",q.review.study_explanation));else{const e=el("div");render(e,q.explanation_html,q.explanation);d.append(el("p",active.date==="variants"?"수정 학습 해설 (공식 원문 아님)":"원본 해설 (검증 미완료)"),e)}$("review").append(d)}}
@@ -180,4 +180,29 @@ async function loadBank(){
   }
 }
 $("retry").onclick=()=>retryAction?.();
+function setNumbers(open){
+  $("numbers").classList.toggle("numbers-open",open);
+  $("jumpNumbers").setAttribute("aria-expanded",String(open));
+}
+$("jumpNumbers").onclick=()=>{
+  const open=!$("numbers").classList.contains("numbers-open");setNumbers(open);
+  if(open)$("numbers").scrollIntoView({block:"nearest"});
+};
+function setTheme(t){
+  document.documentElement.dataset.theme=t;
+  $("legacyTheme").textContent=t==="dark"?"☀":"☾";
+  $("legacyTheme").setAttribute("aria-label",t==="dark"?"라이트모드 전환":"다크모드 전환");
+  try{localStorage.setItem("automotiveQuizThemeV1",JSON.stringify(t))}catch{}
+}
+function setSize(s){
+  if(!["small","normal","large"].includes(s))s="normal";
+  document.body.dataset.readingSize=s;
+  for(const b of document.querySelectorAll("[data-size]"))b.setAttribute("aria-pressed",String(b.dataset.size===s));
+  try{localStorage.setItem("automotiveQuizReadingSizeV1",JSON.stringify(s))}catch{}
+}
+const theme=saved("automotiveQuizThemeV1");
+setTheme(["dark","light"].includes(theme)?theme:matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");
+setSize(saved("automotiveQuizReadingSizeV1"));
+$("legacyTheme").onclick=()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark");
+for(const b of document.querySelectorAll("[data-size]"))b.onclick=()=>setSize(b.dataset.size);
 loadBank();
