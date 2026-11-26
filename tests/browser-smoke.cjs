@@ -142,6 +142,24 @@ async function testDevice(browser,name,viewport,mobile){
       await el("notePart").selectOption(target.part);await el("notePoint").selectOption({index:target.point});
       assert.ok(await page.locator('[data-diagram-id="'+target.id+'"] svg').isVisible());await layout();
       await el("notePart").selectOption({index:0});await el("notePoint").selectOption({index:0});
+      const seek=el("noteSeek"),rect=await seek.boundingBox(),mid=1+Math.round((count-1)/2);
+      const xFor=n=>rect.x+10+(rect.width-20)*(n-1)/(count-1);
+      const y=rect.y+rect.height/2;
+      await page.mouse.move(xFor(mid),y);await visible("noteSeekPreview");
+      assert.match(await text("noteSeekPreviewPart"),new RegExp("^"+mid+" / "+count));
+      assert.ok((await text("noteSeekPreviewTitle")).length>0);
+      assert.equal(await text("noteRange"),"1 / "+count,"hover must not navigate");
+      await page.mouse.click(xFor(mid),y);assert.equal(await text("noteRange"),mid+" / "+count);
+      await page.mouse.move(xFor(mid),y);await page.mouse.down();await page.mouse.move(xFor(count),y,{steps:6});
+      assert.match(await text("noteSeekPreviewPart"),new RegExp("^"+count+" / "+count));
+      assert.equal(await text("noteRange"),mid+" / "+count,"drag previews before release");
+      await page.mouse.up();assert.equal(await text("noteRange"),count+" / "+count);
+      assert.ok(await el("noteNext").isDisabled());
+      await seek.focus();await seek.press("Home");assert.equal(await text("noteRange"),"1 / "+count);
+      await seek.press("ArrowRight");assert.equal(await text("noteRange"),"2 / "+count);
+      await seek.press("Home");assert.equal(await text("noteRange"),"1 / "+count);
+      if(mobile){await page.touchscreen.tap(xFor(mid),y);assert.equal(await text("noteRange"),mid+" / "+count);}
+      await el("notePart").selectOption({index:0});await el("notePoint").selectOption({index:0});
       await el("noteNext").click();assert.equal(await text("noteRange"),"2 / "+count);
       await el("noteBack").click();await visible("noteHome");
       await page.locator('[data-subject="'+subject+'"]').click();assert.equal(await text("noteRange"),"2 / "+count);

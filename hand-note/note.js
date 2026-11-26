@@ -14,7 +14,7 @@
   size(read(sizeKey,"normal"));document.querySelectorAll("[data-size]").forEach(b=>b.onclick=()=>size(b.dataset.size,true));
   const lastIndex=s=>Math.max(0,s.pages.findIndex(p=>p.id===positions[s.code]));
   function home(){
-    current=null;$("noteReader").hidden=true;$("noteHome").hidden=false;
+    hideSeekPreview();current=null;$("noteReader").hidden=true;$("noteHome").hidden=false;
     const list=$("noteSubjects");list.replaceChildren();
     for(const s of notes){
       const btn=make("button","entry study-note-entry");btn.type="button";btn.dataset.subject=s.code;
@@ -54,10 +54,65 @@
     }
     $("noteSourceIds").textContent=p.refs.join(" · ");$("noteSources").open=false;
     $("noteProgress").textContent=(index+1)+" / "+current.pages.length+" 페이지";$("noteRange").textContent=(index+1)+" / "+current.pages.length;
-    $("noteProgressFill").style.width=(100*(index+1)/current.pages.length)+"%";$("notePrev").disabled=index===0;$("noteNext").disabled=index===current.pages.length-1;
+    syncSeek();$("notePrev").disabled=index===0;$("noteNext").disabled=index===current.pages.length-1;
     positions[current.code]=p.id;save(posKey,positions);
     if(scroll)window.scrollTo(0,0);
   }
+  const seek=$("noteSeek"),seekWrap=$("noteSeekWrap"),preview=$("noteSeekPreview");
+  let seekPointer=null;
+  const clamp=(n,min,max)=>Math.min(max,Math.max(min,n));
+  const pageLabel=n=>{const p=current.pages[n-1];return n+" / "+current.pages.length+" · PART "+String(p.partNumber).padStart(2,"0")+" "+p.partTitle+" · POINT "+String(p.pointNumber).padStart(2,"0")};
+  const pageTitle=n=>current.pages[n-1].points.map(t=>t.title).join(" · ");
+  function paintSeek(n){
+    const total=current.pages.length,ratio=total>1?(n-1)/(total-1):0;
+    seek.style.setProperty("--seek-fill",(ratio*100)+"%");
+    seek.setAttribute("aria-valuetext",pageLabel(n)+" · "+pageTitle(n));
+  }
+  function syncSeek(){
+    seek.max=String(current.pages.length);seek.value=String(index+1);seek.disabled=current.pages.length<=1;paintSeek(index+1);
+  }
+  function hideSeekPreview(){preview.hidden=true;seekPointer=null}
+  function positionForPage(n){
+    const rect=seek.getBoundingClientRect(),thumb=20;
+    return rect.left+thumb/2+(rect.width-thumb)*(current.pages.length>1?(n-1)/(current.pages.length-1):0);
+  }
+  function pageAtX(x){
+    const r=seek.getBoundingClientRect();
+    return 1+Math.round(clamp((x-r.left-10)/Math.max(1,r.width-20),0,1)*(current.pages.length-1));
+  }
+  function showSeekPreview(n,x){
+    if(!current)return;
+    n=clamp(n,1,current.pages.length);
+    $("noteSeekPreviewPart").textContent=pageLabel(n);$("noteSeekPreviewTitle").textContent=pageTitle(n);
+    preview.hidden=false;
+    const r=seekWrap.getBoundingClientRect(),w=preview.offsetWidth;
+    preview.style.left=clamp(x-r.left-w/2,0,Math.max(0,r.width-w))+"px";
+  }
+  seek.addEventListener("pointerdown",e=>{
+    if(!current||seek.disabled||e.button!==0||!e.isPrimary)return;
+    seekPointer=e.pointerId;seek.focus({preventScroll:true});
+    seek.setPointerCapture(e.pointerId);e.preventDefault();
+    const n=pageAtX(e.clientX);seek.value=String(n);paintSeek(n);showSeekPreview(n,e.clientX);
+  });
+  seek.addEventListener("pointermove",e=>{
+    if(!current||seek.disabled)return;
+    if(seekPointer===e.pointerId){const n=pageAtX(e.clientX);seek.value=String(n);paintSeek(n);showSeekPreview(n,e.clientX);}
+    else if(seekPointer===null&&e.pointerType==="mouse"){showSeekPreview(pageAtX(e.clientX),e.clientX);}
+  });
+  seek.addEventListener("pointerup",e=>{
+    if(seekPointer!==e.pointerId||!current)return;
+    const n=pageAtX(e.clientX);seekPointer=null;
+    if(seek.hasPointerCapture(e.pointerId))seek.releasePointerCapture(e.pointerId);
+    index=n-1;render(false);
+    if(e.pointerType==="mouse")showSeekPreview(n,e.clientX);else hideSeekPreview();
+  });
+  seek.addEventListener("pointercancel",()=>{if(current)syncSeek();hideSeekPreview()});
+  seek.addEventListener("lostpointercapture",()=>{if(seekPointer!==null){if(current)syncSeek();hideSeekPreview()}});
+  seek.addEventListener("pointerleave",()=>{if(seekPointer===null)preview.hidden=true});
+  seek.addEventListener("input",()=>{if(!current)return;const n=Number(seek.value);paintSeek(n);showSeekPreview(n,positionForPage(n));});
+  seek.addEventListener("change",()=>{if(!current||seekPointer!==null)return;index=Number(seek.value)-1;render(false);showSeekPreview(index+1,positionForPage(index+1));});
+  seek.addEventListener("blur",()=>{if(seekPointer===null)preview.hidden=true});
+  window.addEventListener("resize",()=>{if(seekPointer===null)preview.hidden=true},{passive:true});
   function move(n){if(!current)return;const next=index+n;if(next<0||next>=current.pages.length)return;index=next;render(true)}
   $("noteBack").onclick=()=>{home();window.scrollTo(0,0)};
   $("notePrev").onclick=()=>move(-1);$("noteNext").onclick=()=>move(1);
