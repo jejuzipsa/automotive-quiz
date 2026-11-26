@@ -30,6 +30,7 @@ jobs:
           node tests/validate.cjs
           node tests/json-bank.test.cjs
           node tests/core-cards.test.cjs
+          node tests/hand-note.test.cjs
           node tests/draft-bank.test.cjs
           node tests/draft-bank-rounds.test.cjs
           node tests/technical-qa1.test.cjs

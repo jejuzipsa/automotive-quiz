@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -125,7 +125,31 @@ async function testDevice(browser,name,viewport,mobile){
     await page.screenshot({path:path.join(out,name+"-core-cards.png"),fullPage:true});
     await page.locator(".appbar-actions .home-btn").click();
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
-    await el("handNoteEntryBtn").click();await visible("handNoteView");assert.equal(await page.locator(".study-note-entry").count(),4);await el("homeBtn").click();
+    await el("handNoteEntryBtn").click();await page.waitForURL("**/hand-note/index.html");
+    await visible("noteHome");assert.equal(await page.locator(".study-note-entry").count(),4);
+    assert.match(await text("noteTotal"),/108페이지/);
+    for(const [subject,count] of [["engine",29],["chassis",23],["electrical",28],["eco",28]]){
+      await page.locator('[data-subject="'+subject+'"]').click();await visible("noteReader");
+      assert.equal(await text("noteRange"),"1 / "+count);
+      assert.ok(await page.locator(".point-block").count()>0);assert.ok(await el("notePrev").isDisabled());
+      await el("noteNext").click();assert.equal(await text("noteRange"),"2 / "+count);
+      await el("noteBack").click();await visible("noteHome");
+      await page.locator('[data-subject="'+subject+'"]').click();assert.equal(await text("noteRange"),"2 / "+count);
+      await el("notePart").selectOption({index:1});
+      assert.match(await text("partLabel"),/PART 02/);
+      await el("notePoint").selectOption({index:0});
+      await el("noteSources").locator("summary").click();assert.ok((await text("noteSourceIds")).includes("concept-"));
+      await el("noteSources").locator("summary").click();
+      await page.locator('[data-size="large"]').click();await layout();
+      await page.locator('[data-size="normal"]').click();
+      await el("noteBack").click();
+    }
+    await page.locator('[data-subject="engine"]').click();
+    await page.screenshot({path:path.join(out,name+"-hand-note.png"),fullPage:true});
+    await page.reload();await visible("noteHome");
+    await page.locator('[data-subject="engine"]').click();assert.match(await text("partLabel"),/PART 02/);
+    await page.locator(".top-actions a.back").click();
+    await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     assert.equal(await el("homeSubjectTitle").innerText(),"과목별 예상문제");
     assert.equal(await el("subjectGrid").locator(".subject-card").count(),4);
     for(const b of manifest.banks.filter(b=>b.track==="expected")){
