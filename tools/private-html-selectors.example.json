@@ -1,0 +1,19 @@
+{
+  "_note": "Synthetic example only; CBTbank actual raw DOM selectors not verified. Replace after inspecting a saved HTML file. Never use selected/user-answer as correct marker.",
+  "question_selector": ".example-question",
+  "number_attr": "data-number",
+  "stem_selector": ".example-stem",
+  "choice_selector": ".example-choice",
+  "choice_number_attr": "data-original-number",
+  "choice_text_selector": ".example-choice-content",
+  "answer_attr": "data-verified-correct-number",
+  "explanation_selector": ".example-explanation",
+  "confirmed_20_question_subject_order": false,
+  "subject_selector": ".example-subject",
+  "subject_map": {
+    "일반기계공학": "legacy_mechanics",
+    "자동차엔진": "legacy_engine",
+    "자동차섀시": "legacy_chassis",
+    "자동차전기": "legacy_electrical"
+  }
+}
