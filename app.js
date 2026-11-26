@@ -102,6 +102,7 @@
       status.textContent="문제은행을 읽지 못했어. 새로고침하거나 잠시 후 다시 확인해 줘. ("+
         (error?.message||"원인 미상")+")";
     }
+    status.classList.toggle("bank-ready",bankLoadState==="ready");
     renderSubjects();
     updateExamAvailability();
     renderConcepts();
@@ -376,12 +377,14 @@
     for(const subject of SUBJECTS){
       const count=poolFor(activeTrack,subject.id).length;
       const card=make("div","subject-card"+(count===0?" is-empty":""));
-      const detail=make("div","subject-btn");
+      const detail=make("div","subject-info");
       detail.append(make("strong","",subject.name),make("span","",`${count}문항`));
-      const action=make("div","subject-action-stack");
-      appendButton(action,"10문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,10),count===0);
-      appendButton(action,"20문제","subject-browse-btn",()=>startTrack(activeTrack,subject.id,20),count===0);
-      appendButton(action,"전체 문제 보기","subject-browse-btn subject-all-btn",()=>openBrowse(activeTrack,subject.id),count===0);
+      const action=make("div","subject-actions");
+      const quick=make("div","subject-quick-actions");
+      appendButton(quick,"10문제","subject-quiz-count-btn",()=>startTrack(activeTrack,subject.id,10),count===0);
+      appendButton(quick,"20문제","subject-quiz-count-btn",()=>startTrack(activeTrack,subject.id,20),count===0);
+      action.append(quick);
+      appendButton(action,"전체 문제 보기","subject-browse-btn",()=>openBrowse(activeTrack,subject.id),count===0);
       card.append(detail,action);box.appendChild(card);
     }
   }
@@ -728,13 +731,16 @@
     const grid=$("conceptGrid");grid.replaceChildren();
     SUBJECTS.forEach(s=>{
       const count=poolFor("concept",s.id).length;
-      const card=make("div","concept-card");
-      card.append(make("strong","",s.name),make("span","",`괄호문제 ${count}개`));
-      const actions=make("div","concept-action-stack");
-      appendButton(actions,"10문제","subject-browse-btn",()=>startConcept(s.id,10),!count);
-      appendButton(actions,"20문제","subject-browse-btn",()=>startConcept(s.id,20),!count);
-      appendButton(actions,`괄호문제 · ${count}`,"subject-browse-btn concept-blank-btn",()=>startConcept(s.id,count),!count);
-      card.append(actions);grid.append(card);
+      const card=make("div","concept-card word-quiz-subject-btn word-quiz-subject-card");
+      const info=make("div","word-quiz-subject-info");
+      info.append(make("strong","",s.name),make("span","",`괄호문제 ${count}개`));
+      const actions=make("div","word-quiz-action-stack");
+      const quick=make("div","word-quiz-count-actions");
+      appendButton(quick,"10문제","word-quiz-count-btn",()=>startConcept(s.id,10),!count);
+      appendButton(quick,"20문제","word-quiz-count-btn",()=>startConcept(s.id,20),!count);
+      actions.append(quick);
+      appendButton(actions,`괄호문제 · ${count}`,"word-quiz-blank-action concept-blank-btn",()=>startConcept(s.id,count),!count);
+      card.append(info,actions);grid.append(card);
     });
   }
   function initTheme(){
@@ -753,6 +759,7 @@
     if(!["small","normal","large"].includes(size))size="normal";
     document.body.classList.remove("reading-small","reading-normal","reading-large");
     document.body.classList.add("reading-"+size);
+    document.body.dataset.readingSize=size;
     for(const btn of document.querySelectorAll(".reading-size-btn"))
       btn.setAttribute("aria-pressed",String(btn.dataset.readingSize===size));
     saveStorage("automotiveQuizReadingSizeV1",size);

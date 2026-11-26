@@ -104,6 +104,7 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(await page.locator("#homeView .home-feature-card").count(),3);
     assert.equal(await el("demoTitle").isVisible(),false);
     assert.equal(await page.locator("#headerTitle").evaluate(e=>getComputedStyle(e,"::before").display),"none");
+    assert.equal(await el("homeSubjectTitle").innerText(),"과목별 예상문제");
     assert.equal(await el("subjectGrid").locator(".subject-card").count(),4);
     for(const b of manifest.banks.filter(b=>b.track==="expected")){
       const subjectCount=expected.filter(q=>q.subject===b.subject).length;
@@ -129,6 +130,12 @@ async function testDevice(browser,name,viewport,mobile){
             overflow:document.documentElement.scrollWidth>innerWidth+1};
         });
         assert.deepEqual(layoutInfo,{contained:true,buttons:true,overflow:false},"home card layout "+width);
+        const columns=width>820?3:width>560?2:1;
+        for(const id of ["subjectGrid","conceptGrid"]){
+          assert.equal(await el(id).evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(" ").length),columns,"reference grid columns "+id+" "+width);
+        }
+        const feature=await page.locator(".home-feature-grid").evaluate(e=>getComputedStyle(e).gridTemplateColumns.split(" ").length);
+        assert.equal(feature,width>720?2:1,"reference feature columns "+width);
       }
     }
     await page.setViewportSize(viewport);

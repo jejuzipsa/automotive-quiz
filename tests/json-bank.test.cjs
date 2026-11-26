@@ -79,7 +79,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
     "data/demo.json",
     "data/concept.json"
   ]);
-  await els.subjectGrid.children[0].children[1].children[0].click();
+  await els.subjectGrid.children[0].children[1].children[0].children[0].click();
   assert.equal(els.answerChoices.children.length,4);
   assert.equal(els.quizAuditInfo.textContent.includes("편집 검토 단계"),true);
   for(let i=0;i<10;i++){
@@ -192,13 +192,13 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
 
   await els.homeBtn.click();
   assert.equal(els.conceptGrid.children.length,4);
-  assert.equal(els.conceptGrid.children[0].children[2].children[2].textContent,"괄호문제 · 200");
+  assert.equal(els.conceptGrid.children[0].children[1].children[1].textContent,"괄호문제 · 200");
   const concepts=JSON.parse(fs.readFileSync(path.join(root,"data/concept.json"),"utf8"));
   for(let subject=0;subject<4;subject++){
-    assert.ok(els.conceptGrid.children[subject].children[1].textContent.includes("200개"));
+    assert.ok(els.conceptGrid.children[subject].children[0].children[1].textContent.includes("200개"));
     const seen=new Set();
     for(let batch=0;batch<10;batch++){
-    await els.conceptGrid.children[subject].children[2].children[1].click();
+    await els.conceptGrid.children[subject].children[1].children[0].children[1].click();
     for(let i=0;i<20;i++){const q=concepts.find(q=>q.question===els.questionText.textContent);
       assert.ok(q&&!seen.has(q.id));seen.add(q.id);
       await els.answerChoices.children.find(x=>x.children[1].textContent===q.choices[q.answer-1]).click();
@@ -211,14 +211,14 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   const conceptQueue=JSON.parse(memory.automotiveConceptRotationV1);
   for(const s of ["engine","chassis","electrical","eco"])assert.equal(conceptQueue[s].remaining.length,0);
   // Reload restores the separate concept queue, then 10-item sessions advance it.
-  await els.conceptGrid.children[0].children[2].children[0].click();
+  await els.conceptGrid.children[0].children[1].children[0].children[0].click();
   const before=JSON.parse(memory.automotiveConceptRotationV1).engine.remaining;
   assert.equal(before.length,190);
   await els.homeBtn.click();
   vm.runInNewContext(src,{window,document,localStorage,fetch,setInterval:()=>1,clearInterval(){}});
   await new Promise(resolve=>setImmediate(resolve));
   
-  await els.conceptGrid.children[0].children[2].children[0].click();
+  await els.conceptGrid.children[0].children[1].children[0].children[0].click();
   const after=JSON.parse(memory.automotiveConceptRotationV1).engine.remaining;
   assert.equal(after.length,180);
   assert.deepEqual(after,before.slice(10));
@@ -233,7 +233,7 @@ const window={AutomotiveQuizUtils:utils,scrollTo(){},matchMedia:()=>({matches:fa
   const queueKey="automotiveRotationQueueV1",consumed=new Set();
   let previousQueue=null;
   for(let i=0;i<36;i++){
-    await els.subjectGrid.children[0].children[1].children[0].click();
+    await els.subjectGrid.children[0].children[1].children[0].children[0].click();
     const queue=JSON.parse(memory[queueKey]).engine.remaining;
     assert.equal(queue.length,360-(i+1)*10);
     if(previousQueue){const batch=previousQueue.filter(id=>!queue.includes(id));assert.equal(batch.length,10);for(const id of batch){assert.ok(!consumed.has(id));consumed.add(id);}}
