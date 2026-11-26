@@ -370,7 +370,11 @@ async function testDevice(browser,name,viewport,mobile){
     assert.equal(rotation.ids.length,80);assert.equal(new Set(rotation.ids).size,80);
     assert.equal(rotation.ids.filter(x=>x.startsWith("auto-light-")).length,40);
     for(const s of ["01","02","03","04"])assert.equal(rotation.ids.filter(x=>x.includes("-s"+s+"-")).length,20);
-    console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam");
+    const beforeCancel=await page.evaluate(()=>[localStorage.getItem("automotiveRotationQueueV1"),localStorage.getItem("automotiveQuizActiveExamV1")]);
+    await el("homeBtn").click();await el("examEntryBtn").click();
+    page.once("dialog",d=>d.dismiss());await el("approvedExamBtn").click();
+    assert.deepEqual(await page.evaluate(()=>[localStorage.getItem("automotiveRotationQueueV1"),localStorage.getItem("automotiveQuizActiveExamV1")]),beforeCancel,"cancelled replacement must not consume questions or replace saved exam");
+    console.log("PASS "+name+" actual 1440 auto-load, default 360 per subject, both variants, queue resume, mixed exam, cancelled replacement");
     // Actual review05 data: fresh browser, no file import, exact original ordering.
     await page.goto(new URL("past-exam/index.html",base).href);
     await page.locator("#rounds button").first().waitFor();
@@ -401,7 +405,16 @@ async function testDevice(browser,name,viewport,mobile){
     assert.ok((await page.locator("#summary").textContent()).includes("1/"+(80-heldCount)));
     await page.goto(new URL("past-exam/index.html?round=2018-03-04",base).href);
     await page.locator("#exam").waitFor();assert.match(await page.locator("#position").textContent(),/2018-03-04/);
-    console.log("PASS "+name+" automatic actual 640 bank, original round, math/images, resume, hold-excluded scores, direct entry");
+    await page.evaluate(()=>{
+      const originalNow=Date.now;
+      const deadline=JSON.parse(localStorage.getItem("automotivePrivateExamProgressV1")).deadline;
+      try {Date.now=()=>deadline;document.querySelector("#choices button").click();}
+      finally {Date.now=originalNow;}
+    });
+    await page.locator("#results").waitFor();
+    assert.match(await page.locator("#summary").textContent(),/0\/80/);
+    assert.deepEqual(await page.evaluate(()=>JSON.parse(localStorage.getItem("automotivePrivateExamLastResultV1")).answers),{},"answer at deadline must not be recorded");
+    console.log("PASS "+name+" automatic actual 640 bank, original round, math/images, resume, hold-excluded scores, direct entry, deadline guard");
     assert.deepEqual(errors,[],"browser JS errors");assert.deepEqual(failed,[],"same-origin resource failures");
     console.log("PASS "+name+" "+viewport.width+"x"+viewport.height+" practice, wrong review, exam, theme, layout");
   }catch(e){await page.screenshot({path:path.join(out,name+"-failure.png"),fullPage:true}).catch(()=>{});throw e;}

@@ -489,17 +489,21 @@
         :`자체제작 예상문제 ${poolFor("expected").length}문항 중 과목별 20개, 총 80문항 학습용 모의고사 · 기출 기반 로테이션 ${poolFor("past").length}문항`;
   }
   function startFullExam(track) {
+    if(!examPool(track)){updateExamAvailability();return;}
+    if(!confirmExamReplacement())return;
     const items=examPool(track,true);
-    if(!items){updateExamAvailability();return;}
     startSession(items,{
       mode:"exam",title:track==="past"?"기출 기반 로테이션 모의고사":"자체제작 예상문제 모의고사 (학습용)",
-      track,subject:null,examMinutes:120
+      track,subject:null,examMinutes:120,replacementConfirmed:true
     });
+  }
+  function confirmExamReplacement(){
+    return !readStorage(ACTIVE_EXAM_KEY,null)||window.confirm("저장된 시험을 새 시험으로 바꿀까?");
   }
   function startSession(items,options) {
     if(!items.length){showHome();return;}
     const mode=options.mode||"practice";
-    if(mode==="exam"&&readStorage(ACTIVE_EXAM_KEY,null)&&!window.confirm("저장된 시험을 새 시험으로 바꿀까?"))return;
+    if(mode==="exam"&&!options.replacementConfirmed&&!confirmExamReplacement())return;
     const examMinutes=mode==="exam" && Number.isInteger(options.examMinutes) && options.examMinutes>0
       ?options.examMinutes:10;
     current={items:[...items],choices:Array(items.length).fill(0),
