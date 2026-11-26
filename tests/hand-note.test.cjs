@@ -14,3 +14,8 @@ for(const c of bank){const p=byId.get(c.id);assert.ok(p,c.id);assert.equal(p.tit
 for(const s of notes){for(const p of s.parts){assert.ok(p.count>0);assert.ok(s.pages.slice(p.start,p.start+p.count).every(q=>q.partId===p.id));}assert.equal(new Set(s.pages.map(p=>p.id)).size,s.pages.length);}
 new vm.Script(fs.readFileSync(path.join(root,"hand-note/note.js"),"utf8"));
 console.log("PASS hand note: 4 subjects, 23 PARTs, 108 pages, 386 source-linked concepts");
+
+const diagrams=require("../hand-note/diagrams.js");
+assert.equal(diagrams.rows.length,20);assert.equal(Object.keys(diagrams.byId).length,20);
+for(const s of notes){const ds=diagrams.rows.filter(d=>d.id.startsWith("auto-card-"+s.code+"-"));assert.equal(ds.length,5);for(const d of ds){assert.ok(byId.has(d.id),d.id);assert.ok(d.title&&d.description&&d.markup.startsWith("<svg"));assert.ok(!/<script|onload=|<foreignObject/i.test(d.markup));if(d.source)assert.ok(d.source.startsWith("https://"));}}
+console.log("PASS hand note: 20 original SVG study diagrams linked to existing concepts");

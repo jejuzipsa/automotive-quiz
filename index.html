@@ -8,6 +8,7 @@
   <title>자동차정비산업기사 기출·예상문제</title>
   <link rel="icon" type="image/png" href="assets/automotive-icon.png">
   <link rel="stylesheet" href="styles.css?v=1.2.4">
+  <link rel="stylesheet" href="assets/home-nav.css?v=1">
 </head>
 <body>
   <main class="app-shell" id="app">
@@ -22,7 +23,7 @@
           <button class="reading-size-btn" data-reading-size="normal" type="button" aria-label="보통">A</button>
           <button class="reading-size-btn" data-reading-size="large" type="button" aria-label="크게">A+</button>
         </div>
-        <button id="homeBtn" class="secondary-btn hidden" type="button" title="홈으로">홈</button>
+        <button id="homeBtn" class="secondary-btn hidden unified-home" type="button" title="홈으로" aria-label="홈으로"><svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.2 12 4l9 7.2"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 20v-6h5v6"/></svg></button>
       </div>
     </header>
 
@@ -114,7 +115,7 @@
         <button id="retryWrongBtn" class="primary-btn" type="button">틀린 문제 다시 풀기</button>
         <button id="wrongEntryBtn" class="secondary-btn" type="button">누적 오답 노트</button>
         <button id="retryAllBtn" class="secondary-btn" type="button">다시 시작</button>
-        <button id="resultHomeBtn" class="ghost-btn" type="button">과목 선택</button>
+        <button id="resultHomeBtn" class="ghost-btn unified-home" type="button" aria-label="홈으로" title="홈으로"><svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 11.2 12 4l9 7.2"/><path d="M5.5 10.5V20h13v-9.5"/><path d="M9.5 20v-6h5v6"/></svg></button>
       </div>
     </section>
 

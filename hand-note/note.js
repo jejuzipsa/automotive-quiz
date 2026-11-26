@@ -37,6 +37,19 @@
       const block=make("section","point-block");block.dataset.cardId=t.id;block.append(make("h3","",t.title));
       const ul=make("ul");for(const line of t.lines)ul.append(make("li","",line));block.append(ul);
       if(t.formula){const f=make("div","formula");f.append(make("b","","핵심 공식"),document.createTextNode(t.formula));block.append(f)}
+      const diagram=window.AutomotiveNoteDiagrams?.byId[t.id];
+      if(diagram){
+        const figure=make("figure","note-diagram");
+        figure.dataset.diagramId=diagram.id;
+        const caption=make("figcaption","",diagram.title);
+        const graphic=make("div","diagram-graphic");
+        graphic.setAttribute("role","img");graphic.setAttribute("aria-label",diagram.description);
+        graphic.innerHTML=diagram.markup; // authored, static local SVG only
+        figure.append(caption,graphic,make("p","diagram-description",diagram.description));
+        const credit=make("p","diagram-credit","시험 학습용 개념도 · 실제 차량 정비 도면 아님");
+        if(diagram.source){const a=make("a","","참고 자료");a.href=diagram.source;a.target="_blank";a.rel="noopener noreferrer";credit.append(document.createTextNode(" · "),a)}
+        figure.append(credit);block.append(figure);
+      }
       points.append(block);
     }
     $("noteSourceIds").textContent=p.refs.join(" · ");$("noteSources").open=false;

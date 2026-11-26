@@ -36,3 +36,23 @@ select{max-width:100%;width:100%;min-height:43px;background:var(--surface2);bord
 body[data-reading-size="small"]{--note-font:14px}body[data-reading-size="large"]{--note-font:18px}
 @media(max-width:500px){.shell{width:calc(100% - 20px);padding:12px 0 16px}.top{gap:8px;margin-bottom:13px}.brand{font-size:12px}.brand img{width:34px;height:34px}.top-actions{gap:4px}.top-actions .back,.top-actions .control{font-size:12px;padding:6px 9px;min-height:38px}.page{padding:17px;border-radius:17px}.selectors{grid-template-columns:1fr;gap:6px}.point-block{padding:13px 0}.reader-nav{gap:5px}}
 @media(max-width:350px){.top-actions{width:100%;justify-content:flex-end}.reader-head h1{font-size:20px}}
+
+/* Responsive original vector study diagrams, including dark theme. */
+.note-diagram{margin:14px 0 3px;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--surface2);overflow:hidden}
+.note-diagram figcaption{font-weight:850;color:var(--primary);font-size:14px;margin-bottom:8px}
+.diagram-graphic{max-width:480px;margin:0 auto;width:100%}
+.diagram-graphic svg{display:block;width:100%;height:auto;overflow:visible;color:var(--text)}
+.diagram-graphic svg text{font-family:inherit;font-size:11.5px;font-weight:650;fill:var(--text);stroke:none}
+.diagram-graphic svg text.small{font-size:10px;font-weight:550}
+.diagram-graphic svg .node{fill:var(--surface);stroke:var(--muted);stroke-width:1.4}
+.diagram-graphic svg .wire{fill:none;stroke:var(--text);stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.diagram-graphic svg .node.accent{fill:var(--soft);stroke:var(--primary)}
+.diagram-graphic svg .wire.accent{stroke:var(--primary);stroke-width:2}
+.diagram-graphic svg .node.cold{fill:#d9eafc;stroke:#3977aa}.diagram-graphic svg .wire.cold{stroke:#3977aa;stroke-width:2}
+.diagram-graphic svg .node.hot{fill:#ffe5d3;stroke:#b85529}.diagram-graphic svg .wire.hot{stroke:#b85529;stroke-width:2}
+:root[data-theme="dark"] .diagram-graphic svg .node.cold{fill:#25445b;stroke:#82b8e8}:root[data-theme="dark"] .diagram-graphic svg .wire.cold{stroke:#82b8e8}
+:root[data-theme="dark"] .diagram-graphic svg .node.hot{fill:#5a372b;stroke:#edac85}:root[data-theme="dark"] .diagram-graphic svg .wire.hot{stroke:#edac85}
+.diagram-graphic svg .wire.dash{stroke-dasharray:4 3;stroke:var(--muted)}
+.diagram-graphic svg .wire.tire{stroke:var(--text);stroke-width:12}
+.diagram-description{font-size:13px;line-height:1.6;margin:8px 0;color:var(--text)}
+.diagram-credit{font-size:11px;line-height:1.5;margin:0;color:var(--muted)}.diagram-credit a{text-decoration:underline;color:var(--primary)}

@@ -18,7 +18,7 @@ const sleep=ms=>new Promise(r=>setTimeout(r,ms));
 async function checkDeployedFiles(context){
   // Verify the deployed files match this commit; don't mistake a previous
   // successful deployment for this revision. Retry only for Pages propagation.
-  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
+  const files=["index.html","app.js","styles.css","assets/automotive-icon.png","assets/home-nav.css","hand-note/diagrams.js","hand-note/index.html","hand-note/model.js","hand-note/note.js","hand-note/note.css","core-cards/index.html","core-cards/cards.css","core-cards/cards.js","core-cards/data.js","quiz-utils.js","data/manifest.json",...manifest.banks.map(b=>b.file),...["engine","chassis","electrical","eco"].map(s=>"data/rotation/light/"+s+".json")];
   const deadline=Date.now()+Number(process.env.PAGES_WAIT_MS||0);
   let problem;
   do{
@@ -123,6 +123,8 @@ async function testDevice(browser,name,viewport,mobile){
     await page.locator('.subject-option[data-code="eco"]').click();assert.equal(await text("heroCount"),"96");
     await el("cardSearch").fill("회생제동");assert.ok((await page.locator(".core-card h2").allTextContents()).some(t=>t.includes("회생제동")));
     await page.screenshot({path:path.join(out,name+"-core-cards.png"),fullPage:true});
+    assert.equal(await page.locator(".appbar-actions .unified-home svg").count(),1);
+    assert.equal(await page.locator(".appbar-actions .unified-home").innerText(),"");
     await page.locator(".appbar-actions .home-btn").click();
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     await el("handNoteEntryBtn").click();await page.waitForURL("**/hand-note/index.html");
@@ -132,6 +134,14 @@ async function testDevice(browser,name,viewport,mobile){
       await page.locator('[data-subject="'+subject+'"]').click();await visible("noteReader");
       assert.equal(await text("noteRange"),"1 / "+count);
       assert.ok(await page.locator(".point-block").count()>0);assert.ok(await el("notePrev").isDisabled());
+      assert.equal(await page.locator(".top-actions .unified-home svg").count(),1);
+      assert.equal(await page.locator(".top-actions .unified-home").innerText(),"");
+      const diagramCount=await page.evaluate(()=>window.AutomotiveNoteDiagrams.rows.length);
+      assert.equal(diagramCount,20);
+      const target=await page.evaluate(s=>{const n=window.AutomotiveHandNote.buildNotes(window.CORE_WORD_CARD_BANK).find(x=>x.code===s);const d=window.AutomotiveNoteDiagrams.rows.find(d=>d.id.startsWith("auto-card-"+s+"-"));const p=n.pages.find(p=>p.points.some(q=>q.id===d.id));return {part:p.partId,point:p.pointNumber-1,id:d.id}},subject);
+      await el("notePart").selectOption(target.part);await el("notePoint").selectOption({index:target.point});
+      assert.ok(await page.locator('[data-diagram-id="'+target.id+'"] svg').isVisible());await layout();
+      await el("notePart").selectOption({index:0});await el("notePoint").selectOption({index:0});
       await el("noteNext").click();assert.equal(await text("noteRange"),"2 / "+count);
       await el("noteBack").click();await visible("noteHome");
       await page.locator('[data-subject="'+subject+'"]').click();assert.equal(await text("noteRange"),"2 / "+count);
@@ -240,6 +250,7 @@ async function testDevice(browser,name,viewport,mobile){
     await el("wrongScopes").getByRole("button",{name:"복습 완료",exact:true}).click();
     assert.equal(await el("wrongList").locator(".bank-question-card").count(),1);
     assert.match(await text("wrongSummary"),/누적 12회 풀이/);
+    assert.equal(await el("homeBtn").locator("svg").count(),1);assert.equal(await el("homeBtn").innerText(),"");
     await el("homeBtn").click();await page.reload();
     await page.waitForFunction(n=>document.querySelector("#bankLoadStatus")?.textContent.includes(n+"문항"),expected.length);
     for(let i=0;i<4;i++){
