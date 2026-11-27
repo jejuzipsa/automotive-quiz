@@ -125,3 +125,10 @@ console.log("PASS: separate expected/concept manifest, 720 additional rotation r
  for(const c of ledger.changes){const q=map.get(c.id);assert.ok(q);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],c.after[k]);}
  const shim=map.get("auto-light-r04-s01-q02");assert.equal(shim.answer,1);assert.equal(shim.choices[0],"기존보다 0.10mm 더 두꺼운 심");
 }
+
+// Engine review batch 3: ledger consistency and stable answer positions.
+{
+ const qs=JSON.parse(read("data/rotation/light/engine.json")),audit=JSON.parse(read("data/qa/engine-targeted-review-20261127-batch3.json")),map=new Map(qs.map(q=>[q.id,q]));
+ assert.equal(audit.screened,100);assert.equal(audit.changed,audit.changes.length);assert.equal(new Set(audit.changes.map(c=>c.id)).size,audit.changed);
+ for(const c of audit.changes){const q=map.get(c.id);assert.ok(q&&q.round>=5&&q.round<=9);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],c.after[k]);assert.equal(c.before.answer,c.after.answer);}
+}
