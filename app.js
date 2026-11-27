@@ -145,6 +145,9 @@
         for(const p of ledger.items){if(patches.has(p.id))throw Error("중복 수정 ID");patches.set(p.id,p);}
       }
       if(patches.size!==82)throw Error("재작성본 수정 수 불일치");
+      const engineReview=await fetchStudyJson("data/qa/engine-rebuilt-corrections-20261127.json");
+      if(!Array.isArray(engineReview.items)||engineReview.items.length!==16)throw Error("엔진 추가 수정 수 불일치");
+      for(const p of engineReview.items){if(!/^auto-made-r0[1-9]-s01-q(0[1-9]|1[0-9]|20)$/.test(p.id)||patches.has(p.id))throw Error("엔진 추가 수정 ID 오류");patches.set(p.id,p);}
       const applied=new Set(),rows=[];
       for(let round=1;round<=9;round++){
         const prefix=round===1?"":"round"+String(round).padStart(2,"0")+"/";
@@ -170,7 +173,7 @@
         }));
         rows.push(...groups.flat());
       }
-      if(rows.length!==720||new Set(rows.map(q=>q.id)).size!==720||applied.size!==82)throw Error("재작성본 통합 오류");
+      if(rows.length!==720||new Set(rows.map(q=>q.id)).size!==720||applied.size!==98)throw Error("재작성본 통합 오류");
       return rows;
     })().catch(e=>{rebuiltPromise=null;throw e;});
     return rebuiltPromise;

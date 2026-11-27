@@ -132,3 +132,10 @@ console.log("PASS: separate expected/concept manifest, 720 additional rotation r
  assert.equal(audit.screened,100);assert.equal(audit.changed,audit.changes.length);assert.equal(new Set(audit.changes.map(c=>c.id)).size,audit.changed);
  for(const c of audit.changes){const q=map.get(c.id);assert.ok(q&&q.round>=5&&q.round<=9);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],c.after[k]);assert.equal(c.before.answer,c.after.answer);}
 }
+
+// Targeted engine rebuilt corrections.
+{
+ const audit=JSON.parse(read("data/qa/engine-rebuilt-corrections-20261127.json"));assert.equal(audit.screened,180);assert.equal(audit.items.length,16);assert.equal(new Set(audit.items.map(p=>p.id)).size,16);
+ for(const p of audit.items){const m=p.id.match(/^auto-made-r(0[1-9])-s01-q(\d{2})$/);assert.ok(m);const prefix=m[1]==="01"?"":"round"+m[1]+"/";const q=JSON.parse(read("data/past/drafts/"+prefix+"engine.json")).find(x=>x.id===p.id),e=JSON.parse(read("data/explanations/drafts/"+prefix+"engine.json")).find(x=>x.id===p.id);assert.ok(q&&e);assert.deepEqual(p.before,{question:q.question,choices:q.choices,answer:q.answer,reason:e.reason});assert.equal(p.after.answer,q.answer);assert.equal(p.after.choices.length,4);assert.equal(new Set(p.after.choices).size,4);assert.ok(p.after.reason.trim());}
+ const q=JSON.parse(read("data/rotation/light/engine.json")).find(q=>q.id===audit.light_followup.id);for(const k of ["question","choices","answer","explanation"])assert.deepEqual(q[k],audit.light_followup.after[k]);
+}
